@@ -96,18 +96,31 @@ _(Actual category frequencies: pending extraction + tagging.)_
 
 ## 5. The listing (seed)
 
-`data/listing.json` is the browser-captured index of audit reports. One record per report:
+`data/listing.json` is the index of audit reports — the **single seed** the pipeline runs from. It is parsed (`pipeline/listing.py`) from a saved snapshot of `ferc.gov/audits` in `data/sources/` (the live page is Cloudflare-blocked; see [ISSUES.md](ISSUES.md)). One record per report, mirroring `ListingEntry` in `pipeline/models.py`:
 
 ```
 ListingEntry
-  company        str   as shown on ferc.gov/audits
-  docket         str?
-  issued_date    str?  as shown (normalized downstream)
-  source_url     str   PDF URL (the /sites/default/files/... asset)
-  captured_at    str   date the listing was captured
+  id                str   readable stable slug (date_company_docket)
+  company           str   display name (anchor text, sans docket)
+  company_raw       str   verbatim anchor text (provenance)
+  docket            str?  e.g. "PA21-2"
+  accession_number  str   unique eLibrary key, e.g. "20250410-3014"
+  issued_date       date? derived from the accession (YYYYMMDD prefix)
+  source_page_url   str   eLibrary filelist URL (human-facing)
+  pdf_download_url  str   eLibraryWebAPI DownloadPDF URL (machine)
+  captured_at       date  snapshot capture date
 ```
 
-This is the **single seed** the pipeline runs from. Re-running `fetch` from it is idempotent (dedupe by `source_url`).
+**Observed (snapshot 2026-02-03):** 71 reports, **all** with docket + date, spanning **2019-04-23 → 2025-09-29** (the page advertises "since FY2015," but only 2019+ are currently linked). Re-running is idempotent (dedupe by `accession_number`).
+
+### 5.1 How a report PDF is fetched
+
+Reports are not static PDFs — each lives in **eLibrary** (an Angular SPA + IIS/F5 backend). The pipeline:
+
+1. **GET** `https://elibrary.ferc.gov/eLibrary/filelist?accession_number={acc}&optimized=false` once to obtain the F5 `TS…` session cookie.
+2. **POST** `https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber={acc}` (note FERC's literal `accesssionNumber` typo) with the cookie, app-like headers (`Origin`, `Referer`, `X-Requested-With`, `Content-Type: application/json`), and body `{"serverLocation":""}`. The response is the **combined PDF** for the accession.
+
+Without the cookie + headers the F5 WAF returns `Request Rejected`. See [ISSUES.md](ISSUES.md).
 
 ---
 
