@@ -31,21 +31,25 @@ SOURCE = "https://www.ferc.gov/audits"
 
 def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dict) -> str:
     out: list[str] = []
-    out.append("# FERC Audit Explorer")
+    out.append("# FERC Form 1 Audit Explorer")
     out.append("")
     out.append(
         "> Machine-readable findings of noncompliance and staff recommendations from "
-        "FERC's published audit reports (Office of Enforcement, Division of Audits & "
-        "Accounting). Each report is parsed into findings -> recommendations, and "
-        "cross-report themes are mined."
+        "FERC's published **Form 1 (electric utility)** audit reports (Office of "
+        "Enforcement, Division of Audits & Accounting). Covers both financial (FA) and "
+        "performance (PA) audits of electric utilities, ISOs, and RTOs. Each report is "
+        "parsed into findings -> recommendations, and cross-report themes are mined."
     )
     out.append("")
     out.append(
-        f"As of {meta.get('generated_at')}, {meta.get('reports_structured')} of "
-        f"{meta.get('reports_listed')} listed audit reports are structured. Findings and "
+        f"Scope: {meta.get('scope', 'FERC Form 1 (electric) audits')} — gas (Form 2) and "
+        f"oil (Form 6) audits are out of scope for now. As of {meta.get('generated_at')}, "
+        f"{meta.get('reports_structured')} electric reports are structured "
+        f"({meta.get('electric_identified')} electric audits identified of "
+        f"{meta.get('reports_total_listed')} total audits listed). Findings and "
         "recommendations are quoted verbatim from each report's Executive Summary. "
-        f"Primary source: {SOURCE}. This is an independent public-interest tool, not "
-        "affiliated with FERC. Links below are relative to the site root."
+        f"Primary source: {SOURCE}. Independent public-interest tool, not affiliated with "
+        "FERC. Links below are relative to the site root."
     )
     out.append("")
     out.append("## Data (machine-readable)")
@@ -60,7 +64,7 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
         suffix = f" — findings: {titles}" if titles else ""
         out.append(
             f"- [{r.company}]({r.source_page_url}): Docket {r.docket_full or r.docket or 'n/a'}, "
-            f"issued {r.issued_date or 'n/a'}, {r.industry or 'industry n/a'}, "
+            f"issued {r.issued_date or 'n/a'}, {r.audit_type or 'audit'} audit, "
             f"{r.finding_count} finding(s){suffix}"
         )
     out.append("")
@@ -79,11 +83,11 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
     total_f = sum(r.finding_count for r in reports)
     total_r = sum(len(f.recommendations) for r in reports for f in r.findings)
     out: list[str] = []
-    out.append("# FERC Audit Explorer — full structured corpus")
+    out.append("# FERC Form 1 Audit Explorer — full structured corpus")
     out.append("")
     out.append(
-        f"> All structured FERC audit reports: findings (verbatim) plus staff "
-        f"recommendations. {len(reports)} reports, {total_f} findings, {total_r} "
+        f"> All structured FERC Form 1 (electric) audit reports: findings (verbatim) plus "
+        f"staff recommendations. {len(reports)} reports, {total_f} findings, {total_r} "
         f"recommendations. Generated {meta.get('generated_at')}."
     )
     out.append("")
@@ -97,7 +101,7 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
         out.append("")
         out.append(f"## {r.company}")
         forms = ", ".join(f"No. {f}" for f in r.forms) or "n/a"
-        out.append(f"- Docket: {r.docket_full or r.docket or 'n/a'}")
+        out.append(f"- Docket: {r.docket_full or r.docket or 'n/a'} | Audit type: {r.audit_type or 'n/a'}")
         out.append(f"- Issued: {r.issued_date or 'n/a'} | Industry: {r.industry or 'n/a'} | FERC Form: {forms}")
         if r.audit_period:
             out.append(f"- Audit period: {r.audit_period}")
@@ -128,7 +132,9 @@ def _meta_fallback(reports: list[AuditReport]) -> dict:
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
     return {
         "generated_at": date.today().isoformat(),
-        "reports_listed": len(listing),
+        "scope": "FERC Form 1 (electric) audits",
+        "reports_total_listed": len(listing),
+        "electric_identified": len(reports),
         "reports_structured": len(reports),
     }
 

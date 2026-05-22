@@ -18,7 +18,7 @@ import re
 from pathlib import Path
 from typing import Optional
 
-from pipeline import config
+from pipeline import config, forms
 from pipeline.models import AuditReport, Finding, ListingEntry, Recommendation, ReportText
 
 logger = logging.getLogger(__name__)
@@ -26,8 +26,6 @@ logger = logging.getLogger(__name__)
 _DOCKET_FULL_RE = re.compile(r"Docket No\.?\s*([A-Z]{2}\d{2}-\d+-\d+)")
 _DATE_LINE_RE = re.compile(r"(?m)^\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*$")
 _AUDIT_PERIOD_RE = re.compile(r"audit covered the period\s+(.+?)\.", re.S)
-_FORM_RE = re.compile(r"FERC Form No\.?\s*(\d+(?:-[A-Z])?)")
-_FORM_TO_INDUSTRY = {"1": "electric", "2": "gas", "6": "oil"}
 
 
 def _clean(text: str, docket_full: Optional[str]) -> str:
@@ -52,6 +50,15 @@ def _section(full: str, start: str, ends: list[str]) -> Optional[str]:
         positions = [rest.find(e) for e in ends if rest.find(e) != -1]
         end = m.end() + min(positions) if positions else len(full)
         return full[m.end() : end]
+    return None
+
+
+def _section_any(full: str, starts: list[str], ends: list[str]) -> Optional[str]:
+    """Try several header phrasings; return the first that matches (FERC varies them)."""
+    for start in starts:
+        sec = _section(full, start, ends)
+        if sec is not None:
+            return sec
     return None
 
 
@@ -131,9 +138,12 @@ def _metadata(page1: str, full: str) -> dict:
     period = (m.group(1).strip() if (m := _AUDIT_PERIOD_RE.search(full)) else None)
     if period:
         period = re.sub(r"\s+", " ", period)
-    forms = sorted(set(_FORM_RE.findall(full[:6000])))  # forms named up front
-    industry = next((_FORM_TO_INDUSTRY[f] for f in forms if f in _FORM_TO_INDUSTRY), None)
-    return {"docket_full": docket_full, "audit_period": period, "forms": forms, "industry": industry}
+    return {
+        "docket_full": docket_full,
+        "audit_period": period,
+        "forms": forms.detect_forms(full),
+        "industry": forms.primary_industry(full),
+    }
 
 
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
@@ -142,9 +152,13 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     meta = _metadata(page1, full_raw)
     full = _clean(full_raw, meta["docket_full"])
 
-    findings_sec = _section(
+    findings_sec = _section_any(
         full,
-        "Summary of Noncompliance Findings",
+        [
+            "Summary of Noncompliance Findings",
+            "Summary of Findings of Noncompliance",
+            "Summary of Findings",
+        ],
         ["Summary of Other Matter", "Recommendations", "II. Background"],
     )
     other_sec = _section(full, "Summary of Other Matter", ["Recommendations", "II. Background"])
@@ -188,6 +202,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         ocr_used=text.ocr_used,
         audit_period=meta["audit_period"],
         industry=meta["industry"],
+        audit_type=forms.audit_type_from_docket(entry.docket),
         forms=meta["forms"],
         finding_count=sum(1 for f in findings if not f.is_other_matter),
         findings=findings,
@@ -204,10 +219,25 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Structure extracted report text into findings")
     ap.add_argument("--listing", type=Path, default=config.LISTING_PATH)
     ap.add_argument("--limit", type=int, default=None, help="only the N most-recent reports")
+    ap.add_argument(
+        "--electric-only",
+        action="store_true",
+        help="restrict to Form 1 / electric reports (uses classification.json)",
+    )
     args = ap.parse_args()
 
     listing = load_listing(args.listing)
     ids = list(listing.keys())  # listing.json is newest-first
+
+    if args.electric_only:
+        classification_path = config.PROCESSED_DIR / "classification.json"
+        if not classification_path.exists():
+            logger.error("classification.json missing — run `python -m pipeline.classify` first")
+            return
+        classification = json.loads(classification_path.read_text(encoding="utf-8"))
+        electric = {rid for rid, c in classification.items() if c.get("industry") == "electric"}
+        ids = [rid for rid in ids if rid in electric]
+
     if args.limit is not None:
         ids = ids[: args.limit]
 

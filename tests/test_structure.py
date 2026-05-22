@@ -119,24 +119,29 @@ def test_structure_report_end_to_end():
     assert [r.number for r in report.findings[0].recommendations] == [1, 2]
     assert [r.number for r in report.findings[1].recommendations] == [3]
     assert report.industry == "electric"
+    assert report.audit_type == "performance"  # PA docket
     assert report.docket_full == "PA99-1-000"
 
 
 @pytest.mark.parametrize(
-    "rid, min_findings, min_recs",
+    "rid, audit_type, min_findings, min_recs",
     [
-        ("2025-09-29_kern-river-gas-transmission-company_fa23-10", 5, 15),
-        ("2025-09-25_medallion-pipeline-company-llc_fa23-9", 8, 30),
+        # The two in-scope electric reports (Form 1). Header phrasing differs
+        # between them, so this guards the multi-header parsing.
+        ("2025-09-18_pacific-gas-and-electric-company_fa23-8", "financial", 8, 30),
+        ("2025-09-08_talen-energy_pa22-7", "performance", 3, 6),
     ],
 )
-def test_real_reports_regression(rid, min_findings, min_recs):
+def test_real_reports_regression(rid, audit_type, min_findings, min_recs):
     text_path = config.PROCESSED_DIR / rid / "text.json"
     if not text_path.exists():
-        pytest.skip(f"{rid} not extracted locally (run: python -m pipeline.extract --limit 2)")
+        pytest.skip(f"{rid} not extracted locally (run: extract --electric-only --limit 2)")
     listing = json.loads(config.LISTING_PATH.read_text())
     entry = next(ListingEntry.model_validate(d) for d in listing if d["id"] == rid)
     text = ReportText.model_validate_json(text_path.read_text(encoding="utf-8"))
     report = structure.structure_report(entry, text)
+    assert report.industry == "electric"
+    assert report.audit_type == audit_type
     assert report.finding_count >= min_findings
     assert sum(len(f.recommendations) for f in report.findings) >= min_recs
     assert all(f.title for f in report.findings)  # every finding has a title

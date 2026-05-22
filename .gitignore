@@ -18,6 +18,9 @@ data/processed/*/text.json
 # Standalone patterns CLI output — the site reads the baked docs/data/ version.
 data/processed/patterns.json
 
+# Corpus form/industry triage — regenerable via `python -m pipeline.classify`.
+data/processed/classification.json
+
 # Secrets (none used today, but never commit these)
 .env
 .env.local

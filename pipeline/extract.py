@@ -104,9 +104,22 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Extract per-page text from report PDFs")
     ap.add_argument("--listing", type=Path, default=config.LISTING_PATH)
     ap.add_argument("--limit", type=int, default=None, help="only the N most-recent reports")
+    ap.add_argument(
+        "--electric-only",
+        action="store_true",
+        help="restrict to Form 1 / electric reports (uses classification.json)",
+    )
     args = ap.parse_args()
 
     entries = load_listing(args.listing)
+    if args.electric_only:
+        classification_path = config.PROCESSED_DIR / "classification.json"
+        if not classification_path.exists():
+            logger.error("classification.json missing — run `python -m pipeline.classify` first")
+            return
+        classification = json.loads(classification_path.read_text(encoding="utf-8"))
+        electric = {rid for rid, c in classification.items() if c.get("industry") == "electric"}
+        entries = [e for e in entries if e.id in electric]
     if args.limit is not None:
         entries = entries[: args.limit]
 

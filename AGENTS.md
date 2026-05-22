@@ -11,13 +11,15 @@
 ```
 pipeline/            CLI stages (each idempotent, cacheable)
   config.py          single source of truth: paths, FERC URLs, rate limits
-  models.py          Pydantic schemas (AuditReport, Finding, Recommendation)
+  models.py          Pydantic schemas (AuditReport, Finding, Recommendation, ...)
+  forms.py           FERC form -> industry + audit-type (FA/PA) detection (shared)
+  listing.py         build listing.json from a saved /audits snapshot
   fetch.py           download report PDFs over plain HTTP (rate-limited, cached)
+  classify.py        tag each PDF by form/industry -> classification.json (scoping)
   extract.py         PDF -> text (pdfplumber + PyMuPDF; flags scanned pages)
   structure.py       text -> structured report (findings, recs, metadata)
   patterns.py        cross-report aggregation (themes, recurrences)
-  build.py           emit docs/data/*.json for the site
-  listing.py         build listing.json from a saved /audits snapshot
+  build.py           emit docs/data/*.json + llms.txt for the site (electric-scoped)
   (each stage runs as `python -m pipeline.<stage>`; there is no cli.py wrapper —
    a run-all is intentionally omitted while the 2-report gate is in effect)
 data/
@@ -35,10 +37,11 @@ tests/               pytest
 | Install deps | `pip install -r requirements.txt` (all already present) |
 | Build listing from snapshot | `python -m pipeline.listing` |
 | Download PDFs from listing | `python -m pipeline.fetch` (add `--limit N`) |
-| Extract text (2 most-recent) | `python -m pipeline.extract --limit 2` |
-| Structure reports | `python -m pipeline.structure --limit 2` |
+| Classify by form/industry | `python -m pipeline.classify` |
+| Extract text (2 recent electric) | `python -m pipeline.extract --electric-only --limit 2` |
+| Structure reports | `python -m pipeline.structure --electric-only --limit 2` |
 | Mine patterns | `python -m pipeline.patterns` |
-| Bake site JSON | `python -m pipeline.build` |
+| Bake site JSON + llms.txt | `python -m pipeline.build` |
 | Tests | `pytest -q` |
 | Preview site | `python -m http.server -d docs 8000` |
 

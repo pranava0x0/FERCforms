@@ -15,7 +15,7 @@ The north-star feature (later — see [BACKLOG.md](BACKLOG.md)) is an **"audit-m
 Load-bearing facts for any change here:
 
 - **Source & access.** Reports live at <https://www.ferc.gov/audits>. The HTML is Cloudflare-challenged (403 to scripts); the **PDFs** under `/sites/default/files/` download over plain HTTP. Listing is browser-captured, PDFs scripted. See [ISSUES.md](ISSUES.md).
-- **Scope discipline (now).** Full corpus is *downloaded*, but only the **2 most-recent** reports are run through the full extract→structure→patterns pipeline in v1. Don't silently widen this; it's a deliberate "start small" gate.
+- **Scope (now): Form 1 / electric only.** The full corpus is *downloaded* and *classified* by form (`pipeline/classify.py`); the tool covers **electric (Form 1)** audits — both **financial (FA)** and **performance (PA)** types. Gas (Form 2) and oil (Form 6) audits are out of scope and live in [BACKLOG.md](BACKLOG.md). Only the **2 most-recent electric** reports are structured E2E in v1 (a deliberate "start small" gate — don't silently widen). `audit_type` (FA/PA) comes from the docket prefix; `industry` from form/statute signals.
 - **Data is the product.** Findings are quoted **verbatim** with a source URL + capture date. No paraphrase, no "compliance score," no LLM-judged editorial calls. See [AGENTS.md](AGENTS.md) and [DESIGN.md §15.6](DESIGN.md).
 - **Zero-backend, zero-paid-deps.** Vanilla HTML/CSS/JS site reads baked JSON; Python CLI pipeline produces it. No framework.
 

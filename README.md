@@ -27,20 +27,23 @@ tests/         pytest suite
 ```bash
 pip install -r requirements.txt          # all deps already present in this env
 
-python -m pipeline.listing               # parse data/listing.json from the snapshot (71 reports)
-python -m pipeline.fetch                  # download report PDFs -> data/raw/ (rate-limited, cached)
-python -m pipeline.extract   --limit 2    # PDF -> per-page text (2 most-recent in v1)
-python -m pipeline.structure --limit 2    # text -> findings + recommendations
-python -m pipeline.patterns               # cross-report themes -> data/processed/patterns.json
-python -m pipeline.build                  # bake docs/data/*.json + llms.txt + llms-full.txt
+python -m pipeline.listing                              # parse data/listing.json from the snapshot (71 reports)
+python -m pipeline.fetch                                 # download report PDFs -> data/raw/ (rate-limited, cached)
+python -m pipeline.classify                              # tag each PDF by FERC form -> industry (finds the electric subset)
+python -m pipeline.extract   --electric-only --limit 2   # PDF -> per-page text (2 most-recent electric)
+python -m pipeline.structure --electric-only --limit 2   # text -> findings + recommendations (+ FA/PA audit_type)
+python -m pipeline.patterns                              # cross-report themes
+python -m pipeline.build                                 # bake docs/data/*.json + llms.txt (electric-scoped)
 
-python -m http.server -d docs 8000        # preview the site at http://localhost:8000
-pytest -q                                 # run the test suite
+python -m http.server -d docs 8000                       # preview at http://localhost:8000
+pytest -q                                                # run the test suite
 ```
 
-The pipeline is **idempotent** — re-running skips cached downloads. v1 deliberately
-structures only the 2 most-recent reports (`--limit 2`); the full corpus is downloaded.
-Drop the `--limit` to process everything once you're ready (see [BACKLOG.md](BACKLOG.md)).
+**Scope:** the tool is the **FERC Form 1 (electric) audit explorer** — both financial (FA)
+and performance (PA) audits of electric utilities, ISOs, and RTOs. Gas (Form 2) and oil
+(Form 6) audits are downloaded and classified but **out of scope** for now ([BACKLOG.md](BACKLOG.md)).
+The pipeline is **idempotent** (re-runs skip cached downloads); v1 deliberately structures only
+the **2 most-recent electric** reports (`--electric-only --limit 2`).
 
 ## Project docs
 
