@@ -49,4 +49,4 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## Infra
 
-- **[high] GitHub Pages deploy.** No remote yet — create the repo, push, enable Pages on `docs/`. Then revisit absolute llms.txt URLs above.
+- **[done] GitHub Pages deploy.** `.github/workflows/deploy.yml` publishes `docs/` to Pages on push to `main`. Repo: github.com/pranava0x0/FERCforms. (Next: revisit absolute llms.txt URLs now that the domain is known — pranava0x0.github.io/FERCforms.)
