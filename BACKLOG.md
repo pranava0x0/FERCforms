@@ -8,6 +8,10 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[high] OCR fallback for scanned reports.** Born-digital PDFs extract cleanly with pdfplumber/PyMuPDF. Older/scanned reports need real OCR. Add a tesseract-based fallback (`brew install tesseract` + `pytesseract`) behind an `--ocr` flag. **Run the security sweep before installing.** Pages under `MIN_TEXT_CHARS_PER_PAGE` are already flagged as image-only.
 - **[med] Incremental listing refresh.** Re-capture `/audits` and append only new reports (idempotent by docket number).
 - **[med] eLibrary docket resolution.** Some reports link via an eLibrary docket rather than a static PDF. Resolve those dockets to downloadable URLs.
+- **[med] Detailed-section (Section IV) parsing.** v1 parses the Executive Summary (clean + consistent). The *detailed* findings carry dollar impacts, CFR / USofA-account citations, and "Pertinent Guidance" — extract these into `amount_usd`, `regulations[]`, and richer per-finding text.
+- **[med] Capture the company-response section.** Each report ends with the audited entity's response (agree/disagree + remediation plan). Parse it onto each report/finding.
+- **[med] Listing freshness vs. live.** The seed is the 2026-02-03 Wayback snapshot (covers 2019–2025). Anything FERC issued after that is missing. Refresh via a real browser to catch newer reports, then re-sort "most recent."
+- **[low] Multi-docket reports.** The listing parser captures one docket per report; some reports cite several. Handle the multi-docket case.
 - **[low] Pull related Commission orders.** Audit reports cite related orders; fetch and cross-reference them.
 
 ## Analysis
@@ -15,6 +19,8 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[high] Finding taxonomy.** A controlled vocabulary of finding types (accounting misclassification, formula-rate inputs, affiliate transactions, capitalization vs expense, etc.); tag every finding.
 - **[med] Cross-report trend charts.** Findings per year, per company, per category.
 - **[low] Recommendation-outcome tracking.** Did the company implement the recommendation? (Annual Reports on Enforcement note status.)
+- **[med] Full-text search across report bodies.** v1 search covers titles/summaries; index the full extracted text for deeper queries.
+- **[low] Dollar-impact aggregation.** Once `amount_usd` is extracted, sum quantified impacts by theme / company / year.
 
 ## The bigger vision
 
@@ -25,6 +31,13 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[med] Wave-style threaded theme.** Google Wave inspiration: findings as threaded/conversational items with an inbox-like reading flow. Swappable.
 - **[med] Editorial + periwinkle theme.** Restrained FT/ProPublica public-record look, periwinkle accents. Swappable.
 - **[low] Runtime theme switcher.** Toggle Plus-stream / Wave-threaded / Editorial to decide which the user prefers (chosen v1 = Plus-stream).
+- **[med] Verify the mobile layout visually.** Mobile CSS (single-column, bottom-sheet filters, KPI scroll-snap) is implemented but was **not visually confirmed** this session (the Chrome screenshot tool is fixed-width; the preview server is sandbox-blocked). Check at 375px before claiming mobile-done.
+- **[low] "Compare two reports" view.** Side-by-side findings/themes for two selected reports.
+
+## Quality & testing
+
+- **[med] Listing↔PDF integrity check.** A test/CLI confirming every `listing.json` entry resolves to a downloadable PDF — catches eLibrary API changes early.
+- **[low] Accessibility / Lighthouse pass.** Audit contrast, focus order, and performance once the site is deployed.
 
 ## LLM-readability (llms.txt)
 
