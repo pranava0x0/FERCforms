@@ -109,11 +109,9 @@ a:hover { color: var(--accent-hover); }
   border-radius: 10px;
   background: var(--accent);
   color: #fff;
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 20px;
   flex: none;
 }
+.brand-mark svg { width: 24px; height: 24px; display: block; }
 .brand-text { display: flex; flex-direction: column; min-width: 0; }
 .brand-text strong { font-family: var(--font-serif); font-size: 18px; letter-spacing: 0.01em; }
 .brand-sub { color: var(--text-muted); font-size: 12.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

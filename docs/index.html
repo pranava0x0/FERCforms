@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FERC Form 1 Audit Explorer — electric utility audit findings</title>
   <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published Form 1 (electric utility) audit reports — financial (FA) and non-financial (PA) audits." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
   <script>
@@ -24,7 +25,11 @@
 
   <header class="site-header" role="banner">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true">F</span>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 26 15 7" /><path d="M23 26 17 7" /><path d="M15 7H17" /><path d="M11.5 13H20.5" /><path d="M9.5 19H22.5" /><path d="M13 19 19 25" /><path d="M19 19 13 25" />
+        </svg>
+      </span>
       <span class="brand-text">
         <strong>FERC Form 1 Audit Explorer</strong>
         <span class="brand-sub">Findings from FERC's electric-utility (Form 1) audit reports</span>
