@@ -62,9 +62,10 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
     for r in reports:
         titles = "; ".join(f.title for f in r.findings if not f.is_other_matter)
         suffix = f" — findings: {titles}" if titles else ""
+        fns = "/".join(r.functions) if r.functions else "n/a"
         out.append(
             f"- [{r.company}]({r.source_page_url}): Docket {r.docket_full or r.docket or 'n/a'}, "
-            f"issued {r.issued_date or 'n/a'}, {r.audit_type or 'audit'} audit, "
+            f"issued {r.issued_date or 'n/a'}, {r.audit_type or 'audit'} audit, {fns}, "
             f"{r.finding_count} finding(s){suffix}"
         )
     out.append("")
@@ -103,6 +104,7 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
         forms = ", ".join(f"No. {f}" for f in r.forms) or "n/a"
         out.append(f"- Docket: {r.docket_full or r.docket or 'n/a'} | Audit type: {r.audit_type or 'n/a'}")
         out.append(f"- Issued: {r.issued_date or 'n/a'} | Industry: {r.industry or 'n/a'} | FERC Form: {forms}")
+        out.append(f"- Function(s): {', '.join(r.functions) if r.functions else 'n/a'}")
         if r.audit_period:
             out.append(f"- Audit period: {r.audit_period}")
         out.append(f"- Source: {r.source_page_url}")

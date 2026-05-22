@@ -8,7 +8,7 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", audit_type: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
 };
 
 /* ---------- tiny DOM helper ---------- */
@@ -77,13 +77,18 @@ function chip(label, count, group, value) {
 }
 
 const _ABBR = { financial: "Financial (FA)", performance: "Performance (PA)" };
+const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
 function renderFilters() {
   const types = uniqueSorted(state.reports.map((r) => r.audit_type));
+  const functions = uniqueSorted(state.reports.flatMap((r) => r.functions || []));
   const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
 
   const typeBox = document.getElementById("type-options");
   types.forEach((t) => typeBox.appendChild(chip(_ABBR[t] || t, null, "audit_type", t)));
+
+  const fnBox = document.getElementById("function-options");
+  functions.forEach((fn) => fnBox.appendChild(chip(cap(fn), null, "functions", fn)));
 
   const yearBox = document.getElementById("year-options");
   years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
@@ -108,6 +113,7 @@ function toggleFilter(group, value, btn) {
 function resetFilters() {
   state.filters.search = "";
   state.filters.audit_type.clear();
+  state.filters.functions.clear();
   state.filters.year.clear();
   state.filters.theme.clear();
   document.getElementById("search").value = "";
@@ -118,6 +124,7 @@ function resetFilters() {
 function matches(report) {
   const f = state.filters;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
+  if (f.functions.size && !(report.functions || []).some((x) => f.functions.has(x))) return false;
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
   if (f.theme.size && !(report.themes || []).some((t) => f.theme.has(t))) return false;
   if (f.search) {
@@ -199,6 +206,7 @@ function cardNode(r) {
       r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
       el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` }),
       el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }),
+      ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
     ]),
   ]);
 
@@ -206,6 +214,7 @@ function cardNode(r) {
     el("dl", {}, [
       ...kv("Audit period", r.audit_period || "Not stated", !r.audit_period),
       ...kv("Audit type", r.audit_type ? (_ABBR[r.audit_type] || r.audit_type) : "Not stated", !r.audit_type),
+      ...kv("Function(s)", r.functions && r.functions.length ? r.functions.map(cap).join(", ") : "Not stated", !(r.functions || []).length),
       ...kv("FERC forms", r.forms && r.forms.length ? r.forms.map((f) => "No. " + f).join(", ") : "Not stated", !(r.forms || []).length),
       ...kv("Pages", String(r.page_count), false),
     ]),

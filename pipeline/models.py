@@ -104,6 +104,7 @@ class AuditReport(BaseModel):
     audit_period: Optional[str] = None  # e.g. "January 1, 2020 to December 31, 2023"
     industry: Optional[str] = None      # "electric" | "gas" | "oil" | None
     audit_type: Optional[str] = None    # "financial" (FA) | "performance" (PA), from docket
+    functions: list[str] = Field(default_factory=list)  # generation/transmission/distribution
     forms: list[str] = Field(default_factory=list)  # e.g. ["1"] for FERC Form No. 1
     finding_count: int = 0
     findings: list[Finding] = Field(default_factory=list)
@@ -132,6 +133,7 @@ class PatternsSummary(BaseModel):
     recommendation_count: int
     by_industry: dict[str, int]
     by_year: dict[str, int]
+    by_function: dict[str, int]   # reports touching each function (gen/trans/distribution)
     themes: list[ThemeStat]       # sorted by report_count desc
     top_titles: list[dict]        # [{"title": str, "count": int}], most common first
     generated_at: date

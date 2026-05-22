@@ -203,6 +203,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         audit_period=meta["audit_period"],
         industry=meta["industry"],
         audit_type=forms.audit_type_from_docket(entry.docket),
+        functions=forms.detect_functions(full_raw),
         forms=meta["forms"],
         finding_count=sum(1 for f in findings if not f.is_other_matter),
         findings=findings,

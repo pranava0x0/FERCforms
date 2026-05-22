@@ -61,3 +61,44 @@ def audit_type_from_docket(docket: Optional[str]) -> Optional[str]:
     if not docket:
         return None
     return _AUDIT_TYPE.get(docket[:2].upper())
+
+
+# Functional focus within the electric sector — an audit can span several
+# (a vertically-integrated utility's audit covers transmission AND distribution).
+# Ordered generation -> transmission -> distribution for stable output.
+_FUNCTION_SIGNALS: dict[str, list[str]] = {
+    "generation": [
+        r"market-based rate", r"generat(?:ion|or|ors|ing)", r"\bgads\b",
+        r"generating availability data", r"exempt wholesale generator",
+        r"qualifying facilit", r"power plant", r"\bmerchant\b", r"generator outage",
+    ],
+    "transmission": [
+        r"open access transmission tariff", r"\boatt\b", r"attachment\s+[oh]\b",
+        r"transmission formula rate", r"transmission owner",
+        r"transmission revenue requirement", r"transmission rate base",
+        r"regional transmission",
+    ],
+    "distribution": [
+        r"wholesale distribution", r"distribution formula rate",
+        r"distribution facilit", r"local delivery", r"load[- ]serving",
+    ],
+}
+_FUNCTION_COMPILED = {
+    fn: [re.compile(p, re.I) for p in pats] for fn, pats in _FUNCTION_SIGNALS.items()
+}
+
+
+def detect_functions(text: str, floor: int = 4, frac: float = 0.2) -> list[str]:
+    """Functional focus areas present in the report (generation/transmission/
+    distribution). Multi-valued: include any whose signal count clears both an
+    absolute floor and a fraction of the top-scoring function (so a few stray
+    mentions don't tag a function the audit isn't really about)."""
+    scores = {
+        fn: sum(len(rx.findall(text)) for rx in pats)
+        for fn, pats in _FUNCTION_COMPILED.items()
+    }
+    top = max(scores.values())
+    if top == 0:
+        return []
+    threshold = max(floor, frac * top)
+    return [fn for fn in _FUNCTION_SIGNALS if scores[fn] >= threshold]

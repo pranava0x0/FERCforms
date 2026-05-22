@@ -24,13 +24,13 @@ logger = logging.getLogger(__name__)
 PAGES_TO_SCAN = 8  # form/statute/USofA signals appear in the cover + scope sections
 
 
-def classify_pdf(path: Path) -> tuple[list[str], Optional[str]]:
+def classify_pdf(path: Path) -> tuple[list[str], Optional[str], list[str]]:
     parts: list[str] = []
     with fitz.open(path) as doc:
         for i in range(min(PAGES_TO_SCAN, doc.page_count)):
             parts.append(doc[i].get_text("text") or "")
     text = "\n".join(parts)
-    return forms.detect_forms(text), forms.primary_industry(text)
+    return forms.detect_forms(text), forms.primary_industry(text), forms.detect_functions(text)
 
 
 def load_listing(path: Path) -> list[ListingEntry]:
@@ -44,7 +44,7 @@ def classify_corpus(listing: list[ListingEntry], raw_dir: Path) -> dict:
         if not pdf.exists():
             continue
         try:
-            forms_found, industry = classify_pdf(pdf)
+            forms_found, industry, functions = classify_pdf(pdf)
         except Exception as exc:  # noqa: BLE001
             logger.warning("classify failed for %s: %s", entry.id, exc)
             continue
@@ -56,6 +56,7 @@ def classify_corpus(listing: list[ListingEntry], raw_dir: Path) -> dict:
             "audit_type": forms.audit_type_from_docket(entry.docket),
             "forms": forms_found,
             "industry": industry,
+            "functions": functions,
         }
     return out
 

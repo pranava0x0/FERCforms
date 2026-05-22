@@ -14,6 +14,9 @@
   "audit_period": "January 1, 2019 to October 31, 2024",
   "industry": "electric",
   "audit_type": "performance",
+  "functions": [
+    "generation"
+  ],
   "forms": [],
   "finding_count": 3,
   "findings": [

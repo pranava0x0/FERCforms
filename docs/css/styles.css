@@ -292,6 +292,7 @@ a:hover { color: var(--accent-hover); }
 .pill.solid { background: var(--accent); color: #fff; }
 .pill.outline { border: 1px solid var(--border); color: var(--text-muted); }
 .pill.kind { border: 1px solid var(--accent-line); color: var(--accent-hover); }
+.pill.func { background: var(--surface-2); color: var(--text-muted); text-transform: capitalize; }
 
 /* ---------- Thread (expanded) ---------- */
 .thread { padding: 0 16px 16px; border-top: 1px solid var(--border); }

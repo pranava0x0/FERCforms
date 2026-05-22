@@ -7,7 +7,9 @@ from pipeline import patterns
 from pipeline.models import AuditReport, Finding, Recommendation
 
 
-def _report(rid: str, industry: str, year: int, findings: list[Finding]) -> AuditReport:
+def _report(
+    rid: str, industry: str, year: int, findings: list[Finding], functions=()
+) -> AuditReport:
     return AuditReport(
         id=rid,
         company="Co",
@@ -18,6 +20,7 @@ def _report(rid: str, industry: str, year: int, findings: list[Finding]) -> Audi
         captured_at=date(2026, 1, 1),
         page_count=1,
         industry=industry,
+        functions=list(functions),
         finding_count=sum(1 for f in findings if not f.is_other_matter),
         findings=findings,
     )
@@ -36,24 +39,27 @@ def test_themes_for_matches_and_misses():
 
 def test_summarize_counts_and_themes():
     r1 = _report(
-        "a", "gas", 2025,
+        "a", "electric", 2025,
         [Finding(index=1, title="Depreciation Rates", summary="x",
                  recommendations=[Recommendation(number=1, text="r")])],
+        functions=["transmission", "distribution"],
     )
     r2 = _report(
-        "b", "oil", 2024,
+        "b", "electric", 2024,
         [
             Finding(index=1, title="Depreciation Study", summary="y"),
             Finding(index=2, title="Creditworthiness Standards", summary="z", is_other_matter=True),
         ],
+        functions=["transmission"],
     )
     s = patterns.summarize([r1, r2])
     assert s.report_count == 2
     assert s.finding_count == 2          # other-matter excluded
     assert s.other_matter_count == 1
     assert s.recommendation_count == 1
-    assert s.by_industry == {"gas": 1, "oil": 1}
+    assert s.by_industry == {"electric": 2}
     assert s.by_year == {"2024": 1, "2025": 1}
+    assert s.by_function == {"transmission": 2, "distribution": 1}
 
     dep = next(t for t in s.themes if t.theme == "Depreciation")
     assert dep.report_count == 2 and dep.finding_count == 2

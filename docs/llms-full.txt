@@ -9,6 +9,7 @@ Primary source: https://www.ferc.gov/audits. Findings and recommendations are qu
 ## Pacific Gas and Electric Company
 - Docket: FA23-8-000 | Audit type: financial
 - Issued: 2025-09-18 | Industry: electric | FERC Form: No. 1
+- Function(s): transmission, distribution
 - Audit period: January 1, 2020 through April 30, 2025
 - Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3011&optimized=false
 
@@ -94,6 +95,7 @@ Recommendations:
 ## Talen Energy
 - Docket: PA22-7-000 | Audit type: performance
 - Issued: 2025-09-08 | Industry: electric | FERC Form: n/a
+- Function(s): generation
 - Audit period: January 1, 2019 to October 31, 2024
 - Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250908-3009&optimized=false
 

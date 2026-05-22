@@ -18,6 +18,8 @@ This project starts with **audit reports** because they are where FERC *names th
 
 **Two audit types, three industries.** Reports split by docket prefix into **FA = Financial Audit** (Chief Accountant; accounting/USofA/forms compliance) and **PA = Performance Audit** (tariff/market/operational compliance). Audited entities span electric utilities + ISOs/RTOs (Form 1), gas pipelines (Form 2), and oil pipelines (Form 6). **v1 is scoped to electric / Form 1** (both FA and PA); `pipeline/classify.py` triages the corpus by form/statute so the electric subset can be selected. Observed (snapshot, 71 reports): ~39 electric, ~8 oil, ~4 gas.
 
+**Functional focus (electric).** Within electric, audits target different functions — **generation** (market-based rates, generator outage / GADS reporting), **transmission** (formula rates, OATT / Attachment O), and **distribution** (wholesale distribution formula rate). `forms.detect_functions` tags this **multi-valued** (a vertically-integrated utility's audit spans transmission + distribution — e.g. PG&E). Observed across the classified electric set: **transmission ≫ generation ≫ distribution** (transmission formula-rate audits dominate; pure distribution is rare). Surfaced as the site's **Function** facet and `by_function` in patterns.
+
 ---
 
 ## 2. Anatomy of a FERC audit report (PDF)
@@ -63,6 +65,7 @@ AuditReport
   audit_period      str?   e.g. "January 1, 2020 to December 31, 2023"
   industry          str?   "electric" | "gas" | "oil" (form + statute signals, forms.py)
   audit_type        str?   "financial" (FA) | "performance" (PA), from docket prefix
+  functions         [str]  functional focus: generation / transmission / distribution
   forms             [str]  e.g. ["1"] for FERC Form No. 1
   finding_count     int    count of noncompliance findings (excl. other matter)
   findings          [Finding]

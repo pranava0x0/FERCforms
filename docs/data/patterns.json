@@ -9,6 +9,11 @@
   "by_year": {
     "2025": 2
   },
+  "by_function": {
+    "transmission": 1,
+    "distribution": 1,
+    "generation": 1
+  },
   "themes": [
     {
       "theme": "Form reporting (Form No. 1/2/6, Page 700)",

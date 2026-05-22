@@ -35,6 +35,25 @@ def test_primary_industry_none():
     assert forms.primary_industry("nothing industry-identifying here") is None
 
 
+def test_detect_functions_generation_only():
+    text = "generator outage reporting to the RTO; GADS; market-based rate authority " * 3
+    assert forms.detect_functions(text) == ["generation"]
+
+
+def test_detect_functions_multi():
+    text = (
+        "wholesale distribution formula rate; distribution facilities " * 8
+        + "open access transmission tariff (OATT); transmission formula rate " * 6
+    )
+    fns = forms.detect_functions(text)
+    assert "transmission" in fns and "distribution" in fns
+    assert fns == ["transmission", "distribution"]  # stable order, generation excluded
+
+
+def test_detect_functions_none():
+    assert forms.detect_functions("nothing functional here at all") == []
+
+
 def test_audit_type_from_docket():
     assert forms.audit_type_from_docket("FA23-8") == "financial"
     assert forms.audit_type_from_docket("PA22-7") == "performance"

@@ -54,8 +54,9 @@ def _patterns() -> PatternsSummary:
         finding_count=1,
         other_matter_count=0,
         recommendation_count=1,
-        by_industry={"gas": 1},
+        by_industry={"electric": 1},
         by_year={"2025": 1},
+        by_function={"transmission": 1},
         themes=[
             ThemeStat(
                 theme="AFUDC / cost of capital",

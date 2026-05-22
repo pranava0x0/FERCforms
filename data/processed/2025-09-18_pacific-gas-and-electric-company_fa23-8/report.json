@@ -14,6 +14,10 @@
   "audit_period": "January 1, 2020 through April 30, 2025",
   "industry": "electric",
   "audit_type": "financial",
+  "functions": [
+    "transmission",
+    "distribution"
+  ],
   "forms": [
     "1"
   ],

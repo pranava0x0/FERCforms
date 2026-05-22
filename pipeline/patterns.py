@@ -58,6 +58,7 @@ def load_reports(processed_dir: Path) -> list[AuditReport]:
 def summarize(reports: list[AuditReport]) -> PatternsSummary:
     by_industry: Counter[str] = Counter()
     by_year: Counter[str] = Counter()
+    by_function: Counter[str] = Counter()
     title_counts: Counter[str] = Counter()
     theme_findings: Counter[str] = Counter()
     theme_reports: dict[str, set[str]] = {theme: set() for theme, _ in THEME_RULES}
@@ -69,6 +70,8 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
         by_industry[r.industry or "unknown"] += 1
         if r.issued_date:
             by_year[str(r.issued_date.year)] += 1
+        for fn in r.functions:
+            by_function[fn] += 1
         for f in r.findings:
             rec_count += len(f.recommendations)
             if f.is_other_matter:
@@ -104,6 +107,7 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
         recommendation_count=rec_count,
         by_industry=dict(by_industry.most_common()),
         by_year=dict(sorted(by_year.items())),
+        by_function=dict(by_function.most_common()),
         themes=themes,
         top_titles=top_titles,
         generated_at=date.today(),
