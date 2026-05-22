@@ -27,6 +27,12 @@ AUDITS_LISTING_URL: str = f"{FERC_BASE}/audits"
 # themselves over plain HTTP.
 FILES_PREFIX: str = f"{FERC_BASE}/sites/default/files/"
 
+# Audit-report PDFs live in eLibrary, behind an F5 WAF (see DATA_STRUCTURE §5.1):
+# GET a filelist page to seed the session cookie, then POST DownloadPDF. The
+# honest bot User-Agent above works — the WAF only requires the cookie + app
+# headers, not a browser UA (verified 2026-05-22).
+ELIBRARY_ORIGIN: str = "https://elibrary.ferc.gov"
+
 # --- HTTP politeness (see CLAUDE.md "Network ethics & rate limiting") ---------
 USER_AGENT: str = (
     "FERC-Audit-Tool/0.1 (public-interest research; see project README) "
