@@ -150,6 +150,33 @@ a:hover { color: var(--accent-hover); }
 .kpi-num { display: block; font-family: var(--font-serif); font-size: 26px; font-weight: 700; line-height: 1.1; }
 .kpi-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-top: 2px; }
 
+/* ---------- How to use ---------- */
+.how-to { max-width: 1180px; margin: 16px auto 0; padding: 0 16px; }
+.how-to details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-rest);
+}
+.how-to summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+}
+.how-to summary::-webkit-details-marker { display: none; }
+.how-to details[open] summary .chev { transform: rotate(180deg); }
+.how-to-body { padding: 2px 16px 14px; font-size: 13.5px; color: var(--text); }
+.how-to-body p { margin: 0 0 8px; }
+.how-to-body ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+
 /* ---------- Layout ---------- */
 .layout {
   max-width: 1180px;
