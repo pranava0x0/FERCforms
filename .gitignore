@@ -26,3 +26,6 @@ secrets/
 
 # OS
 .DS_Store
+
+# Local tooling / editor config (preview launch config, local settings)
+.claude/

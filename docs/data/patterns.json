@@ -1,0 +1,240 @@
+{
+  "report_count": 2,
+  "finding_count": 13,
+  "other_matter_count": 1,
+  "recommendation_count": 47,
+  "by_industry": {
+    "gas": 1,
+    "oil": 1
+  },
+  "by_year": {
+    "2025": 2
+  },
+  "themes": [
+    {
+      "theme": "Accounting misclassification",
+      "keywords": [
+        "misclassif",
+        "incorrectly recorded",
+        "improperly recorded",
+        "improperly included",
+        "incorrectly included"
+      ],
+      "finding_count": 6,
+      "report_count": 2,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Annual Membership Dues",
+        "Nonoperating and Operating Expenses",
+        "Noncarrier Property Revenue, Expenses, and Net Income"
+      ]
+    },
+    {
+      "theme": "Property & plant records",
+      "keywords": [
+        "property unit",
+        "carrier property",
+        "noncarrier property",
+        "plant in service",
+        "property record"
+      ],
+      "finding_count": 4,
+      "report_count": 2,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Noncarrier Property Revenue, Expenses, and Net Income",
+        "Property Unit Listing",
+        "Depreciation Rates and Study"
+      ]
+    },
+    {
+      "theme": "Cost of service & rates",
+      "keywords": [
+        "cost of service",
+        "cost-of-service",
+        "rate base",
+        "rate of return",
+        "return on equity"
+      ],
+      "finding_count": 3,
+      "report_count": 2,
+      "example_titles": [
+        "Annual Membership Dues",
+        "Annual Cost of Service Based Analysis Schedule",
+        "Nonoperating and Operating Expenses"
+      ]
+    },
+    {
+      "theme": "Depreciation",
+      "keywords": [
+        "depreciation"
+      ],
+      "finding_count": 2,
+      "report_count": 2,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Depreciation Rates and Study"
+      ]
+    },
+    {
+      "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+      "keywords": [
+        "lobbying",
+        "charitable",
+        "below-the-line",
+        "nonoperating",
+        "non-operating"
+      ],
+      "finding_count": 2,
+      "report_count": 2,
+      "example_titles": [
+        "Annual Membership Dues",
+        "Nonoperating and Operating Expenses"
+      ]
+    },
+    {
+      "theme": "Form reporting (Form No. 1/2/6, Page 700)",
+      "keywords": [
+        "form no.",
+        "page 700",
+        "annual report",
+        "reporting"
+      ],
+      "finding_count": 6,
+      "report_count": 1,
+      "example_titles": [
+        "Annual Cost of Service Based Analysis Schedule",
+        "Nonoperating and Operating Expenses",
+        "Noncarrier Property Revenue, Expenses, and Net Income",
+        "Crude Oil Accounting Misclassifications"
+      ]
+    },
+    {
+      "theme": "Tariff administration & oversight",
+      "keywords": [
+        "tariff"
+      ],
+      "finding_count": 3,
+      "report_count": 1,
+      "example_titles": [
+        "Renewable Natural Gas Quality Specifications",
+        "Tariff Administration and Oversight",
+        "Creditworthiness Standards"
+      ]
+    },
+    {
+      "theme": "Informational postings",
+      "keywords": [
+        "informational posting",
+        "posting"
+      ],
+      "finding_count": 2,
+      "report_count": 1,
+      "example_titles": [
+        "Renewable Natural Gas Quality Specifications",
+        "Informational Postings"
+      ]
+    },
+    {
+      "theme": "AFUDC / cost of capital",
+      "keywords": [
+        "allowance for funds used during construction",
+        "afudc"
+      ],
+      "finding_count": 1,
+      "report_count": 1,
+      "example_titles": [
+        "Allowance for Funds Used During Construction"
+      ]
+    },
+    {
+      "theme": "Membership dues & industry associations",
+      "keywords": [
+        "membership dues",
+        "industry association"
+      ],
+      "finding_count": 1,
+      "report_count": 1,
+      "example_titles": [
+        "Annual Membership Dues"
+      ]
+    },
+    {
+      "theme": "Creditworthiness",
+      "keywords": [
+        "creditworthiness"
+      ],
+      "finding_count": 1,
+      "report_count": 1,
+      "example_titles": [
+        "Creditworthiness Standards"
+      ]
+    },
+    {
+      "theme": "Capitalization vs. expense",
+      "keywords": [
+        "capitaliz"
+      ],
+      "finding_count": 1,
+      "report_count": 1,
+      "example_titles": [
+        "Property Unit Listing"
+      ]
+    }
+  ],
+  "top_titles": [
+    {
+      "title": "Renewable Natural Gas Quality Specifications",
+      "count": 1
+    },
+    {
+      "title": "Tariff Administration and Oversight",
+      "count": 1
+    },
+    {
+      "title": "Informational Postings",
+      "count": 1
+    },
+    {
+      "title": "Allowance for Funds Used During Construction",
+      "count": 1
+    },
+    {
+      "title": "Annual Membership Dues",
+      "count": 1
+    },
+    {
+      "title": "Annual Cost of Service Based Analysis Schedule",
+      "count": 1
+    },
+    {
+      "title": "Nonoperating and Operating Expenses",
+      "count": 1
+    },
+    {
+      "title": "Noncarrier Property Revenue, Expenses, and Net Income",
+      "count": 1
+    },
+    {
+      "title": "Crude Oil Accounting Misclassifications",
+      "count": 1
+    },
+    {
+      "title": "Other Accounting Misclassifications",
+      "count": 1
+    },
+    {
+      "title": "Property Unit Listing",
+      "count": 1
+    },
+    {
+      "title": "Depreciation Rates and Study",
+      "count": 1
+    },
+    {
+      "title": "FERC Form No. 6 Reporting",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-22"
+}

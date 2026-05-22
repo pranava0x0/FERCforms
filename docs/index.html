@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FERC Audit Explorer — findings of noncompliance</title>
+  <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published audit reports (Division of Audits & Accounting)." />
+  <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    /* Set theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var t = localStorage.getItem("ferc-theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#stream">Skip to results</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span class="brand-text">
+        <strong>FERC Audit Explorer</strong>
+        <span class="brand-sub">Findings of noncompliance from FERC's published audit reports</span>
+      </span>
+    </div>
+    <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <!-- KPI strip -->
+  <section class="kpi-strip" aria-label="Corpus summary">
+    <div class="kpi"><span class="kpi-num" id="kpi-reports">—</span><span class="kpi-label">Reports</span></div>
+    <div class="kpi"><span class="kpi-num" id="kpi-findings">—</span><span class="kpi-label">Findings</span></div>
+    <div class="kpi"><span class="kpi-num" id="kpi-recs">—</span><span class="kpi-label">Recommendations</span></div>
+    <div class="kpi"><span class="kpi-num" id="kpi-themes">—</span><span class="kpi-label">Themes</span></div>
+  </section>
+
+  <div class="layout">
+    <!-- Filters -->
+    <aside class="filters" id="filters" aria-label="Filters">
+      <form id="filter-form">
+        <div class="field">
+          <label class="field-label" for="search">Search</label>
+          <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
+        </div>
+        <fieldset class="field">
+          <legend class="field-label">Industry</legend>
+          <div id="industry-options" class="chip-options"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend class="field-label">Year</legend>
+          <div id="year-options" class="chip-options"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend class="field-label">Theme</legend>
+          <div id="theme-options" class="chip-options theme-list"></div>
+        </fieldset>
+        <button type="button" id="reset-filters" class="btn-secondary">Reset filters</button>
+      </form>
+    </aside>
+
+    <!-- Stream -->
+    <main class="stream-wrap" id="main" role="main">
+      <div class="stream-toolbar">
+        <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
+        <span class="result-count" id="result-count" aria-live="polite">Loading…</span>
+      </div>
+      <div id="stream" class="stream"></div>
+      <p id="empty-state" class="empty-state" hidden>No reports match these filters. <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
+    </main>
+
+    <!-- Patterns rail -->
+    <aside class="patterns" aria-label="Common patterns">
+      <h2 class="rail-title">Common patterns</h2>
+      <p class="rail-note">Themes across the structured corpus. Click to filter.</p>
+      <ol id="theme-rail" class="theme-rail"></ol>
+    </aside>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <p id="footer-meta">—</p>
+    <p class="footer-source">
+      Source: <a id="footer-link" href="https://www.ferc.gov/audits" rel="noopener">ferc.gov/audits</a>.
+      Findings and recommendations are quoted verbatim from each report's Executive Summary.
+      This is an independent public-interest tool, not affiliated with FERC.
+    </p>
+  </footer>
+
+  <noscript>
+    <p style="padding:1rem;text-align:center">This explorer needs JavaScript to render the audit-report stream. The underlying data is in <code>docs/data/</code>.</p>
+  </noscript>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+[
+  {
+    "id": "2025-09-29_kern-river-gas-transmission-company_fa23-10",
+    "company": "Kern River Gas Transmission Company",
+    "company_raw": "Kern River Gas Transmission Company (FA23-10)",
+    "docket": "FA23-10",
+    "docket_full": "FA23-10-000",
+    "issued_date": "2025-09-29",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250929-3000",
+    "captured_at": "2026-02-03",
+    "page_count": 61,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2020 to December 31, 2023",
+    "industry": "gas",
+    "forms": [
+      "2"
+    ],
+    "finding_count": 5,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Renewable Natural Gas Quality Specifications",
+        "summary": "Kern River posted a Biomethane Operating Policy on its Informational Postings website, which lays out gas quality specifications for Renewable Natural Gas (RNG). However, the gas quality specifications in the Biomethane Operating Policy have not been incorporated into Kern River’s Tariff; thus, consistent with the Gas Quality Policy Statement, they cannot be enforced.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "To the extent Kern River has been or intends in the future to enforce the quality specifications detailed in the Biomethane Gas Quality Policy Statement, make an NGA section 4 filing to include those quality specifications in its Tariff."
+          },
+          {
+            "number": 2,
+            "text": "Until such time as the quality specifications are accepted by the Commission and included in its Tariff, Kern River should consider removing the Biomethane Gas Quality Policy Statement from its"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Tariff Administration and Oversight",
+        "summary": "Kern River misapplied certain tariff provisions for capacity allocation, capacity release, and its customer activities website. Kern River’s misapplication of these tariff provisions did not appear to have caused any harm to shippers, and Kern River promptly contacted impacted shippers to correct the misapplication of its Tariff.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Revise and implement policies and procedures to ensure that tariff provisions are followed when making business decisions and interacting with shippers. Ensure that employees consistently review processes and procedures to prevent noncompliance, and promptly implement corrective actions to prevent its recurrence when noncompliance is identified."
+          },
+          {
+            "number": 4,
+            "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 3, and repeat such trainings as needed."
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "title": "Informational Postings",
+        "summary": "Kern River did not post and/or incorrectly posted certain required information on its Informational Postings website. This primarily included information pertaining to contracts and pipeline capacity. As a result, shippers did not have timely access to information potentially needed to make informed decisions on available capacity.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 5,
+            "text": "Revise and implement policies and procedures to ensure that all required postings are complete, accurate, and made timely to its Informational Postings Website, consistent with Commission requirements."
+          },
+          {
+            "number": 6,
+            "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 5, and repeat such trainings as needed."
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "title": "Allowance for Funds Used During Construction",
+        "summary": "Kern River improperly included unpaid contract retention amounts in its Allowance for Funds Used During Construction (AFUDC) rate calculation. This error resulted in Kern River over accruing AFUDC and consequently overstating gas plant in service and depreciation expense.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 7,
+            "text": "Revise and implement policies and procedures for calculating AFUDC consistent with the requirements of GPI No. 3. Revisions should ensure that unpaid contract retentions are excluded from the CWIP balance used for the purposes of the AFUDC accrual calculation."
+          },
+          {
+            "number": 8,
+            "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 7, and repeat such trainings as needed."
+          },
+          {
+            "number": 9,
+            "text": "Recalculate accrued AFUDC in a manner consistent with GPI No. 3 that corrects for the improper inclusion of unpaid contract retention in the CWIP balances used for the purposes of the AFUDC accrual calculation."
+          },
+          {
+            "number": 10,
+            "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of CWIP, gas plant in service, accumulated depreciation, ADIT, and other accounts impacted by the over accrual of AFUDC within 60 days of the date of the audit report."
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "title": "Annual Membership Dues",
+        "summary": "Kern River incorrectly recorded certain membership dues in Account 850, Operation Supervision and Engineering, rather than in Accounts 921, Office Supplies and Expenses, and 930.2, Miscellaneous General Expenses. Additionally, a portion of the dues paid for one membership supported lobbying activities, which Kern River should have recorded in Account 426.4, Expenditures for Certain Civic, Political and Related Activities, instead of Account 850. Such misclassifications can affect Kern River’s cost-of-service rate development and result in improper functionalization of costs and rate recovery of nonoperating expenses. D.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 11,
+            "text": "Revise and implement policies and procedures to ensure proper accounting for all membership dues consistent with the Commission’s accounting regulations."
+          },
+          {
+            "number": 12,
+            "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 11, and repeat such trainings as needed."
+          },
+          {
+            "number": 13,
+            "text": "Provide a recent journal entry, and supporting documentation, which demonstrates that membership dues such as those with the identified accounting misclassifications are now being recorded in accordance with the Commission’s accounting regulations."
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "title": "Creditworthiness Standards",
+        "summary": "Under the Commission’s creditworthiness policy, pipelines may require shippers who do not meet the pipeline’s creditworthiness standards to provide collateral up to three months’ worth of reservation charges. Section 29.2 of Kern River’s Tariff, which pertains to shippers who fail to establish creditworthiness, does not establish such a ceiling on the amount of collateral required. Absent a reference to this ceiling in its Tariff, Kern River could implement its creditworthiness requirements in a manner contrary to the Commission’s general policy of ensuring that open access service is reasonably available to shippers, and without allowing the Commission to consider any deviations from its general policy. E.",
+        "is_other_matter": true,
+        "recommendations": [
+          {
+            "number": 14,
+            "text": "Kern River should consider revising or removing section 29.2(c) of its Tariff. If Kern River decides to revise section 29.2(c), it should file the changes with the Commission and provide audit staff notification of that filing. If Kern River determines that this provision is no longer applicable for its creditworthiness determination, and decides to remove section 29.2(c), it should file this change with the Commission and provide audit staff notification of that filing."
+          },
+          {
+            "number": 15,
+            "text": "If Kern River revises section 29.2(c), update policies and procedures to reflect the Commission’s Creditworthiness Policy Statement value limit for the security interest in collateral from a non-creditworthy shipper. F."
+          }
+        ]
+      }
+    ],
+    "themes": [
+      "AFUDC / cost of capital",
+      "Accounting misclassification",
+      "Below-the-line costs (lobbying, charitable, etc.)",
+      "Cost of service & rates",
+      "Creditworthiness",
+      "Depreciation",
+      "Informational postings",
+      "Membership dues & industry associations",
+      "Property & plant records",
+      "Tariff administration & oversight"
+    ]
+  },
+  {
+    "id": "2025-09-25_medallion-pipeline-company-llc_fa23-9",
+    "company": "Medallion Pipeline Company, LLC",
+    "company_raw": "Medallion Pipeline Company, LLC (FA23-9)",
+    "docket": "FA23-9",
+    "docket_full": "FA23-9-000",
+    "issued_date": "2025-09-25",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250925-3005&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250925-3005",
+    "captured_at": "2026-02-03",
+    "page_count": 73,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2020 to December 31, 2023",
+    "industry": "oil",
+    "forms": [
+      "6"
+    ],
+    "finding_count": 8,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Annual Cost of Service Based Analysis Schedule",
+        "summary": "Medallion’s Page 700, Annual Cost of Service Based Analysis Schedule, in its FERC Form No. 6 submissions, contained input and calculation errors, inconsistencies in the application of Commission regulations, and deficiencies in workpaper support. These errors reduced the overall accuracy and usefulness of Medallion’s Page 700 submissions.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Revise and implement policies and procedures to ensure that Page 700 is prepared in a manner consistent with Opinion No. 154-B, Order Nos. 620 and 620-A, and the instructions of the FERC Form No. 6. These policies and procedures should address each issue identified in this finding, including input and calculation errors, amounts that were derived inconsistently with the Commission’s regulations, and deficiencies in workpaper support."
+          },
+          {
+            "number": 2,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such trainings as needed."
+          },
+          {
+            "number": 3,
+            "text": "Implement the method of equally weighting the Capital Asset Pricing Model (CAPM) and Discounted Cash Flow (DCF) model for the Return on Equity (ROE) calculation on Page 700 in accordance with Commission policy established in Docket No. PL19-4-000."
+          },
+          {
+            "number": 4,
+            "text": "Provide a copy of all workpapers supporting Medallion’s Page 700 calculations and inputs for the most recent submission of its FERC Form No. 6 to DAA for review within 30 days of the issuance of this report. The workpapers should show that Medallion has included and retained calculations and other information which adequately support the balances reported for each line item on Page 700."
+          },
+          {
+            "number": 5,
+            "text": "Perform an analysis to determine the impact on Page 700 resulting from the errors identified herein, for each year, from 2019 to the present. This analysis should be submitted to DAA within 90 days of the issuance of this report. For 2019 and 2024, refile the FERC Form No. 6 (only restating and footnoting Page 700) after audit staff reviews and approves all analyses and revised procedures."
+          },
+          {
+            "number": 6,
+            "text": "For the FERC Form No. 6 annual filings submitted after the issuance of this audit report, ensure that corrections made to impacted accounts and inputs are properly reported in the current year financial statements, including prior year corrected numbers, supporting schedules, and Page 700. Also ensure footnote disclosures about the corrections made are included in the notes to the financial statements and other relevant pages of the FERC Form No. 6."
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Nonoperating and Operating Expenses",
+        "summary": "Medallion improperly recorded certain nonoperating expenses, including costs for charitable donations and lobbying costs, in operating expense accounts, rather than recording these costs 2 As a result of the ONEOK Acquisition, Medallion’s headquarters are now in Tulsa, Oklahoma. 3 A reticulated pipeline system has a “web-like” design, with multiple paths to any given point, which may allow oil to be rerouted in the event of problems on certain pipeline segments. 4 During the audit period, Medallion reported that it provided transportation service on its pipeline system exclusively by gathering lines. in a nonoperating expense account. The incorrect accounting for these expenses resulted in Medallion overstating operating expenses and the total cost of service on Page 700. Additionally, Medallion misclassified dues paid to certain industry and trade associations in an incorrect operating expense account, which did not impact the total cost of service on Page 700.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 7,
+            "text": "Revise and implement policies and procedures to ensure that operating expenses and nonoperating expenses, including charitable donations and industry trade association dues, are recorded and reported in accordance with the Commission’s accounting regulations and related orders."
+          },
+          {
+            "number": 8,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 7, and repeat such trainings as needed."
+          },
+          {
+            "number": 9,
+            "text": "Review expenses for the current year and make necessary correcting entries to reclassify amounts for charitable donations, lobbying expenses, and any other expenses that are nonoperating in nature from either Account 390 or Account 590 to Account 660. Perform a similar review of expenses for the current year and make necessary correcting entries to reclassify operating expenses incorrectly recorded in Account 390 to Account 590. Continue to apply this accounting for operating and nonoperating expenses prospectively."
+          },
+          {
+            "number": 10,
+            "text": "Provide a copy of the correcting entries made to DAA for review within 60 days of the issuance of this report."
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "title": "Noncarrier Property Revenue, Expenses, and Net Income",
+        "summary": "Medallion incorrectly recorded the revenues and expenses associated with noncarrier property in operating expense and revenue accounts, during the audit period. This resulted in Medallion overstating the balances in operating expense and revenue accounts associated with carrier property and understating the balances in operating expense and revenue accounts associated with noncarrier property. This also affected the accuracy, comparability and usefulness of certain schedules in the FERC Form No. 6.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 11,
+            "text": "Revise and implement policies and procedures to ensure that revenues, expenses, and net income associated with noncarrier property are accounted for and reported in accordance with the Commission’s accounting regulations. Also strengthen policies and procedures to ensure personnel responsible for completing and reviewing the FERC Form No. 6 follow the instructions for completing the schedules prior to submission, to eliminate errors."
+          },
+          {
+            "number": 12,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 11, and repeat such trainings as needed."
+          },
+          {
+            "number": 13,
+            "text": "Reclassify revenues and expenses associated with noncarrier property to Account 620 for the current year. Submit a copy of the journal entries to DAA within 30 days of the issuance of this report."
+          },
+          {
+            "number": 14,
+            "text": "Perform an analysis to determine the impact on Page 700 resulting from the errors identified herein, for each year, from 2019 to the present. This analysis should be submitted to DAA within 90 days of the issuance of this report. For 2019 and 2024, refile the FERC Form No. 6 (only restating and footnoting Page 700) after audit staff reviews and approves all analyses and revised procedures."
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "title": "Crude Oil Accounting Misclassifications",
+        "summary": "Medallion incorrectly recorded certain crude oil transactions associated with pipeline loss allowance, sales and purchases of oil, oil spills and leaks, and transportation revenues. These misclassifications reduced the accuracy of Medallion’s accounting records and financial reporting in the FERC Form No. 6.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 15,
+            "text": "Revise and implement policies and procedures to ensure that Medallion accounts for pipeline loss allowance, sales and purchases of oil, and oil spills and leaks, and EPIC transportation revenues in accordance with the Commission’s accounting regulations."
+          },
+          {
+            "number": 16,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 15, and repeat such trainings as needed."
+          },
+          {
+            "number": 17,
+            "text": "Make journal entries to correct the accounting for each misclassification for the current accounting year. Provide a copy of these journal entries to DAA for review within 60 days of the issuance of this report. These journal entries should support the implementation of the revised policies and procedures to correct the accounting for all the misclassification discussed in this finding."
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "title": "Other Accounting Misclassifications",
+        "summary": "Medallion incorrectly recorded certain transactions associated with the accounting for contributions in aid of constructions (CIAC), incidental revenues, and taxes other than income taxes. These misclassifications reduced the accuracy of Medallion’s accounting records and financial reporting in the FERC Form No. 6.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Revise and implement policies and procedures to ensure that Medallion accounts for CIAC, incidental revenues, and taxes other than income taxes in accordance with the Commission’s accounting regulations."
+          },
+          {
+            "number": 19,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 18, and repeat such trainings as needed."
+          },
+          {
+            "number": 20,
+            "text": "Make journal entries to correct the accounting for each misclassification for the current accounting year. Provide a copy of these journal entries to DAA within 60 days of the issuance of this report for review. These journal entries should support the implementation of the revised policies and procedures to correct for all the accounting misclassifications discussed in this finding."
+          },
+          {
+            "number": 21,
+            "text": "Perform an analysis to determine the impact on Page 700 resulting from the errors identified herein, for each year, from 2019 to the present. This analysis should be submitted to DAA within 90 days of the issuance of this report. For 2019 and 2024, refile the FERC Form No. 6 (only restating and footnoting Page 700) after audit staff reviews and approves all analyses and revised procedures."
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "title": "Property Unit Listing",
+        "summary": "Medallion did not maintain a written property unit listing for additions and retirements of its carrier property. Medallion instead applied its capitalization policy, which did not identify and describe what constituted property units for each carrier property account. As a result, Medallion did not meet the Commission’s requirement to maintain a written property unit listing, which serves to provide consistent accounting for additions and retirements of carrier property. Absent having a written property unit listing, Medallion could not identify the criteria it used to account for additions and retirements of carrier property to comply with the Commission’s accounting requirements.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 22,
+            "text": "Establish and implement policies and procedures to ensure that all property units are defined in a property unit listing and that Medallion consistently applies its written property unit listing pursuant to 18 C.F.R. Part 352."
+          },
+          {
+            "number": 23,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 22, and repeat such trainings as needed."
+          },
+          {
+            "number": 24,
+            "text": "Update Medallion’s property unit listing to contain descriptions of the property units that make up each account. Submit a copy of the updated property unit listing to DAA for review within 60 days of the issuance of this report."
+          },
+          {
+            "number": 25,
+            "text": "Review and update Medallion’s fixed asset subledger to incorporate the policy and procedural changes discussed herein to ensure Medallion captures costs for additions and retirements consistently with its property unit listing."
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "title": "Depreciation Rates and Study",
+        "summary": "Medallion did not prepare a depreciation study or seek approval from the Commission for its initial depreciation rates used to calculate depreciation expense from 2014 to 2018. In 2020, Medallion filed a depreciation study but failed to propose a depreciation rate or provide the associated support for one account. These deficiencies impeded the Commission’s ability to ensure Medallion was complying with statutory accounting and ratemaking requirements and to verify that the pipeline was systematically and rationally allocating the cost of carrier property assets over such assets’ useful lives consistent with regulatory standards.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 26,
+            "text": "Revise and implement policies and procedures to ensure that Medallion uses Commission-approved depreciation rates for all carrier property assets (or accounts). These policies and procedures should ensure that those depreciation rates, along with a supporting depreciation study, are timely filed with the Commission, in accordance with GI 1-8."
+          },
+          {
+            "number": 27,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 26, and repeat such trainings as needed."
+          },
+          {
+            "number": 28,
+            "text": "Update the 2020 depreciation study to include appropriate schedules to support the derivation of the depreciation rate for Account 116."
+          },
+          {
+            "number": 29,
+            "text": "Based on the updated depreciation study, make a filing with the Commission that supports the depreciation rate used for the carrier property Account 116 that was depreciated without having that rate on file with the Commission."
+          },
+          {
+            "number": 30,
+            "text": "In the filing made with the Commission, explain changes or adjustments that were made to any existing depreciation rate because of the updated or new depreciation study. If applicable, include a footnote disclosure in the next FERC Form No. 6 report filed with the Commission."
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "title": "FERC Form No. 6 Reporting",
+        "summary": "Medallion did not report complete and accurate information in certain supporting schedules of its FERC Form No. 6 filings. These reporting deficiencies and discrepancies reduced the accuracy and usefulness of certain information reported in Medallion’s FERC Form No. 6 during the audit period. D.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 31,
+            "text": "Revise and implement policies and procedures to ensure that Medallion reports complete and accurate information according to the Commission’s FERC Form No. 6 instructions. These revised policies and procedures should address all reporting deficiencies for each page of the FERC Form No. 6 discussed in this finding."
+          },
+          {
+            "number": 32,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 31, and repeat such trainings as needed. E."
+          }
+        ]
+      }
+    ],
+    "themes": [
+      "Accounting misclassification",
+      "Below-the-line costs (lobbying, charitable, etc.)",
+      "Capitalization vs. expense",
+      "Cost of service & rates",
+      "Depreciation",
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Property & plant records"
+    ]
+  }
+]
