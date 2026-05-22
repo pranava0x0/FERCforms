@@ -1,0 +1,62 @@
+{
+  "id": "2025-09-03_alabama-power-company_pa24-5",
+  "company": "Alabama Power Company",
+  "company_raw": "Alabama Power Company (PA24-5)",
+  "docket": "PA24-5",
+  "docket_full": "PA24-5-000",
+  "issued_date": "2025-09-03",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250903-3001&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250903-3001",
+  "captured_at": "2026-02-03",
+  "page_count": 44,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2019 to December 31, 2023",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Acquisition-Related Expenses",
+      "summary": "Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission- jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Acquisition-Related Internal Labor",
+      "summary": "Alabama Power did not track and exclude $1,768,184 of internal labor for its employees who performed work on either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "Alabama Power improperly recorded $818,002 of lobbying expenses in Account 920, Administrative and General Salaries, and Account 426.5, Other Deductions, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and improperly billed to transmission customers taking service under the OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Account Misclassifications",
+      "summary": "Alabama Power improperly recorded expenses totaling $602,665 in various administrative and general (A&G) accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Edison Electric Institute Membership Dues",
+      "summary": "Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirements calculation and billed to transmission customers taking service under the OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

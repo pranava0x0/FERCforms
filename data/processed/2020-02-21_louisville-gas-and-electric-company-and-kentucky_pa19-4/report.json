@@ -1,0 +1,26 @@
+{
+  "id": "2020-02-21_louisville-gas-and-electric-company-and-kentucky_pa19-4",
+  "company": "Louisville Gas and Electric Company and Kentucky Utilities Company",
+  "company_raw": "Louisville Gas and Electric Company and Kentucky Utilities Company (PA19-4)",
+  "docket": "PA19-4",
+  "docket_full": "PA19-4-000",
+  "issued_date": "2020-02-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200221-3036&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200221-3036",
+  "captured_at": "2026-02-03",
+  "page_count": 24,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2016, through October 31, 2019",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

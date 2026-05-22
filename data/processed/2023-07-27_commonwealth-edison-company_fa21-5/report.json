@@ -1,0 +1,359 @@
+{
+  "id": "2023-07-27_commonwealth-edison-company_fa21-5",
+  "company": "Commonwealth Edison Company",
+  "company_raw": "Commonwealth Edison Company (FA21-5)",
+  "docket": "FA21-5",
+  "docket_full": "FA21-5-000",
+  "issued_date": "2023-07-27",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230727-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230727-3010",
+  "captured_at": "2026-02-03",
+  "page_count": 101,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2017 through August 31, 2022",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Expenditures for Certain Civic, Political, and Related Activities",
+      "summary": "ComEd recorded approximately $6.1 million of costs incurred for the purpose of influencing the decisions of public official in various A&G and O&M accounts. As a result, ComEd improperly included costs incurred for the performance of certain political and related activities in the computation of its annual transmission revenue requirements and in billings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies and procedures and strengthen internal controls to ensure expenditures for certain civic, political, and related activities are recorded consistent with Commission accounting regulations."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on the revised policies and procedures, and internal control enhancements for tracking and recording expenditures for certain civic, political, and related activities. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of improper costs recovered in the transmission formula rate for civic, political, and related activities from 2021 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 4,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 5,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Settlements with the City of Chicago",
+      "summary": "ComEd improperly recorded two settlement payments, totaling $109 million, made to the City of Chicago, that related to its distribution and production operations, in Account 186, Miscellaneous Deferred Debits, instead of expensing the cost to the distribution and production O&M accounts when it incurred the cost. Also, ComEd improperly amortized the distribution and production related settlement payments to Account 930.2, Miscellaneous General Expenses, instead of expensing the cost to the distribution and production O&M accounts when it incurred the cost. As a result of the improper accountin",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Revise policies and procedures to ensure that ComEd properly accounts for settlement expenditures in its books and records."
+        },
+        {
+          "number": 7,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for settlement expenditures in ComEd’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Asset Retirement Obligations",
+      "summary": "ComEd’s accounting and transmission formula rate treatment of AROs and ARCs were contrary to Commission regulations. Specifically, ComEd made the following errors: (1) removed accumulated depreciation amounts from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, without Commission approval and excluded some of the removed amounts from the wholesale transmission formula rate; (2) included ARCs recorded in Electric Plant in Service balances in wholesale transmission formula rate base without Commission approval; and (3) included depreciation and accretion, respectiv",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise policies and procedures to ensure that ComEd’s accounting and wholesale transmission formula rate treatment of AROs and ARCs are consistent with the Commission’s regulations."
+        },
+        {
+          "number": 9,
+          "text": "Provide training to its staff on the revised procedures for proper accounting and wholesale transmission formula rate treatment of AROs and ARCs. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that resulted from the improper accounting and wholesale transmission formula rate treatment of AROs and ARCs from 2021 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allocation of Overhead Costs to CWIP",
+      "summary": "ComEd capitalized overhead costs to Account 107, CWIP – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This may have led to ComEd charging costs to Account 107 that did not have a definitive relationship to construction. As a result, ComEd may have overstated construction costs recorded in Account 107, Construction Work in Progress, and electric plant in service, as well as accumulated depreciation and ADIT, and may have understated operating expenses. Moreover, this accounting",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Retain an independent third-party entity to conduct a representative labor-time study for allocation of overhead costs incurred in 2023, and to assist with the development of procedures ComEd shall use after 2023 to periodically determine the allocation of overhead labor and labor-related costs capitalized by ComEd into the cost of construction. The consultant should have experience independently performing time studies used in the determination of overhead capitalization rates of U.S.-based utilities subject to the accounting requirements prescribed for public utilities and licensees or for natural gas companies under 18 C.F.R. Part 101 or Part 201, respectively. The time study should involve a representative sample of study participants (employees) that provides for extrapolation of the study results to the full population of ComEd employees. The time study should include processes to apply the study results from the audit period to the issue date of this audit report. In addition, the study should include processes to apply the capitalization rate(s) the study finds for 2023 back to the period January 1, 2017 through December 31, 2022, either with no change to the capitalization rates found in the study or with such modifications to the capitalization rate(s) that the independent consultant finds reasonable and supported by evidence. The independent consultant should use its expertise and all relevant information available to it to make recommendations as to what the capitalization rate(s) should be for prior years for ComEd, set forth the basis for its recommendations, and provide both the recommendations and the basis to ComEd and DAA. If there is no recommendation by the independent consultant for any year or other period between January 1, 2017 and December 31, 2022 for any specific capitalizable cost center, then ComEd should base its capitalization rate and the amount to be capitalized for such year or period on the rates and costs of such specific cost centers for which ComEd can provide to DAA reasonable evidence as to the time employees in such cost centers spent having a definite relation to construction and exclude from consideration those cost centers for which ComEd cannot provide such evidence, per, for example, 18 C.F.R. Part 101, General Instruction No. 2 and § 41.8."
+        },
+        {
+          "number": 14,
+          "text": "The progress of the study should be reported to DAA within 120 days of issuance of this audit report, the time study results should be provided to DAA for review and consideration within 180 days of the date of issuance of this audit report, and the developed allocation procedures should be submitted when complete but no later than 60 days after completion of DAA’s review of the labor time study. At a minimum, the developed allocation procedures should provide a method for overhead cost allocation and capitalization to construction based on actual timecard distributions or, where this procedure is impractical, based on periodic time studies."
+        },
+        {
+          "number": 15,
+          "text": "Revise written policies, practices, and procedures governing the methods used to account for, track, report, and review overhead labor, labor-related costs, and all other costs allocated to construction projects to be consistent with Commission accounting requirements. In addition, adopt procedures to retain formal documentation supporting the amount of overhead costs allocated to electric plant accounts."
+        },
+        {
+          "number": 16,
+          "text": "Provide training to relevant staff on the revised overhead allocation policies, practices, procedures, and documentation. Provide periodic training in this area, as needed."
+        },
+        {
+          "number": 17,
+          "text": "Within 30 days of the completion of Recommendation No. 13, submit an estimate to DAA, including the calculations and determinative components, of overhead costs that would have been allocated to CWIP from January 1, 2017 through the present consistent with the requirements of Electric Plant Instruction No. 4 and General Instruction No. 9. The estimate should be based on a recalculation of 2017 and subsequent years’ overhead costs allocated to construction with labor and labor-related costs removed from the cost of plant (transmission, distribution, general, and production) that were not associated with construction activities based on the methodology developed in response to Recommendation No. 13."
+        },
+        {
+          "number": 18,
+          "text": "With the response to Recommendation No. 17, submit proposed accounting entries to DAA that remove the overhead costs that were allocated to electric plant in CWIP and in service during the audit period. The amount of overhead costs removed should be the excess amount of such costs that was allocated to the accounts based on the methodology developed in response to Recommendation No. 17. Also, provide proposed accounting entries to remove associated amounts from other accounts and balances affected by the inappropriately allocated costs such as the accumulated depreciation and ADIT accounts and AFUDC balances capitalized into CWIP and plant in service. If the adjusting entries result in a significant impact to income for the current year, ComEd may account for the transaction as a correction of a prior period error in Account 439, Adjustments to Retained Earnings. Such an entry should be submitted with the proposed accounting entries."
+        },
+        {
+          "number": 19,
+          "text": "Submit a refund analysis to DAA that explains and details the following: (1) calculation of refunds, plus interest, that result from correction of the overstatement of electric plant in service due to the improper capitalization of labor costs, as determined by the labor time study conducted in response to Recommendation No. 13, from 2021 to the present; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 20,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 21,
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Materials and Supplies",
+      "summary": "ComEd’s accounting and transmission formula rate treatment of costs of materials and supplies inventory items was deficient. Specifically, ComEd charged the cost of materials and supplies that it determined to be in excess, no longer usable, or obsolete for its business operations to Account 930.2, Miscellaneous General Expenses, while continuing to retain most of these same materials and supplies in its inventory. The costs of some of these materials and supplies retained in inventory were also charged to O&M or capital work orders. In addition, ComEd improperly included the cost of missing o",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Revise policies and procedures to ensure that the accounting for materials and supplies is consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 23,
+          "text": "Train relevant staff on the revised procedures for properly accounting for materials and supplies, and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 24,
+          "text": "Conduct an inventory audit of materials and supplies and associated costs recorded in ComEd’s financial records. Provide a list of materials and supplies with cost information for the items that could not be located (i.e., missing or lost items). Report the progress of this inventory audit within 90 days of the date of issuance of this audit report and provide the results to DAA for review and consideration within 120 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 25,
+          "text": "With the response to Recommendation No. 24, submit proposed accounting entries to DAA that remove missing or lost materials and supplies items from Account 154."
+        },
+        {
+          "number": 26,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ComEd’s wholesale transmission customers from 2021 to the present, plus interest, relating to materials and supplies that were determined to be unusable or obsolete and inappropriately recorded in Account 930.2; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 27,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 28,
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Penalties",
+      "summary": "ComEd improperly recorded penalties for violations of city codes and ordinances in various O&M and A&G Accounts, instead of in Account 426.3, Penalties. As a result, ComEd overstated its annual transmission revenue requirement and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Revise its policies and procedures to ensure that it properly accounts for penalties for violating city codes and ordinances or other regulations or statues consistent with Commission accounting regulations."
+        },
+        {
+          "number": 30,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for penalties for violating city codes and ordinances or other regulations or statues in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 31,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of improper cost of penalties recovered in the transmission formula rates from 2021 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 32,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 33,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting Misclassifications",
+      "summary": "ComEd recorded various O&M and A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, ComEd overstated its annual transmission revenue requirement and overbilled its wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 34,
+          "text": "Revise policies and procedures to ensure that ComEd properly accounts for expenditures in consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 35,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in ComEd’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 36,
+          "text": "Perform an analysis of A&G expense accounts to identify all MGP site labor costs that were improperly recovered through ComEd’s transmission formula rate and the related transmission customer billings from 2021 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 37,
+          "text": "Perform an analysis of A&G expense accounts to identify expenses that were improperly recovered through ComEd’s transmission formula rate and the related transmission customer billings, such as charitable contributions, customer engagement expenses, and distribution function costs improperly charged to accounts included in the transmission formula rate from 2021 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 38,
+          "text": "Perform an analysis to determine the appropriate allocation percentage to apply to those costs accumulated in the environmental hazards, prevention, and mitigation project account by year from 2021 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 39,
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving this audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries from 2021 to the present, that resulted from the improper accounting for expenses recorded in A&G accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 40,
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving this audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries from 2021 to the present that resulted from the improper accounting for MGP site labor cost in A&G accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 41,
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving this audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries from 2021 to the present, that resulted from the unsupported cost allocation between transmission and distribution functions, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 42,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 43,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Compromised Settlements",
+      "summary": "ComEd improperly recorded approximately $180 thousand of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages, instead of in Account 426.5, Other Deductions. As a result, ComEd overstated its wholesale annual transmission revenue requirement and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "Strengthen and revise accounting processes and procedures to ensure that ComEd properly records compromise settlement payments related to employment discrimination claims in Account 426.5, consistent with Accounting Release No. 12."
+        },
+        {
+          "number": 45,
+          "text": "Provide training to staff on the revised processes and procedures for properly accounting for compromise settlement payments resulting from employment discrimination claims in Account 426.5. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 46,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ComEd’s wholesale transmission customers from 2021 to the present, plus interest, relating to the inclusion of compromise settlement payments and the other potential costs of the alleged employment discrimination claims; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 47,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 48,
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "ComEd improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, in the equity balances used for the purpose of computing its AFUDC rate. In addition, ComEd improperly used its quarter-end book balances for long-term debt and common equity for the purpose of computing its AFUDC rate rather than using its calendar year-end balances for long-term debt and common equity reported in its FERC Form No. 1. Also, ComEd improperly recorded amounts related to equity AFUDC ADIT in Account 254, Other Regulatory Liabilities, and Account 190, Accumulated Deferred Income Taxes, inst",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 49,
+          "text": "Revise and implement processes and procedures to calculate the AFUDC rate consistent with Electric Plant Instruction No. 3(A)(17), and other applicable Commission requirements. Revisions should include processes to prevent the inclusion of balances in Account 216.1 and to ensure the use of calendar year-end book balances for long-term debt, preferred stock, and common equity for the purpose of computing the AFUDC rate. The revisions should also include accounting for equity AFUDC ADIT amounts in a manner consistent with the Commission’s requirements."
+        },
+        {
+          "number": 50,
+          "text": "Provide training to staff on the revised processes and procedures for calculating the AFUDC rate consistent with Electric Plant Instruction No. 3(A)(17), and other applicable Commission requirements. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 51,
+          "text": "Recalculate accrued AFUDC in a manner consistent with Electric Plant Instruction No. 3(A)(17) that corrects for the improper inclusion of Account 216.1 from 2017 through the date of the audit report and submit the recalculation to DAA for review within 60 days of this report."
+        },
+        {
+          "number": 52,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by the overaccrual of AFUDC within 60 days of the date of the audit report."
+        },
+        {
+          "number": 53,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of equity AFUDC ADIT and equity AFUDC ADIT gross up amounts from Accounts 190 and 254, within 60 days of the date of the audit report."
+        },
+        {
+          "number": 54,
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by overaccrual of AFUDC and the improper accounting of equity AFUDC ADIT and equity AFUDC ADIT gross up amounts after receiving DAA’s assessment of the proposed accounting entries per Recommendation Nos. 52 and 53."
+        },
+        {
+          "number": 55,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ComEd’s wholesale transmission customers from 2021 to the present, plus interest, relating to the excess AFUDC resulting from inclusion of Account 216.1; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 56,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 57,
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Excess Accumulated Deferred Income Tax",
+      "summary": "ComEd improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the TCJA of 2017 and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in ComEd’s FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 58,
+          "text": "Revise accounting policies and procedures to ensure ComEd properly records and reports the effect of changes in tax laws or tax rates resulting from the TCJA of 2017 consistent with the Commission’s accounting guidance in Docket No. AI93- 5."
+        },
+        {
+          "number": 59,
+          "text": "Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates. Provide periodic training in these areas as needed."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "ComEd did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of certain pages of the FERC Form No.1 reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 60,
+          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, and complete information in the FERC Form No. 1 consistent with the pages’ instructions. Include footnotes when software limitations prevent reporting complete information."
+        },
+        {
+          "number": 61,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas as needed. E."
+        }
+      ]
+    }
+  ]
+}

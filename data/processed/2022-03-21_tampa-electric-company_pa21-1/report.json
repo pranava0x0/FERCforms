@@ -1,0 +1,24 @@
+{
+  "id": "2022-03-21_tampa-electric-company_pa21-1",
+  "company": "Tampa Electric Company",
+  "company_raw": "Tampa Electric Company (PA21-1)",
+  "docket": "PA21-1",
+  "docket_full": "PA21-1-000",
+  "issued_date": "2022-03-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220321-3011&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220321-3011",
+  "captured_at": "2026-02-03",
+  "page_count": 16,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to August 31, 2021",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

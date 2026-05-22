@@ -1,0 +1,43 @@
+{
+  "id": "2021-04-14_evergy-inc_pa20-2",
+  "company": "Evergy, Inc.",
+  "company_raw": "Evergy, Inc. (PA20-2)",
+  "docket": "PA20-2",
+  "docket_full": null,
+  "issued_date": "2021-04-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210414-3002&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210414-3002",
+  "captured_at": "2026-02-03",
+  "page_count": 37,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [],
+  "forms": [],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Merger-Related Costs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Merger-Related Accumulated Deferred Income Taxes",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Merger-Related Regulatory Assets",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

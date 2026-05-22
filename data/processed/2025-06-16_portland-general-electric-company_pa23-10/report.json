@@ -1,0 +1,219 @@
+{
+  "id": "2025-06-16_portland-general-electric-company_pa23-10",
+  "company": "Portland General Electric Company",
+  "company_raw": "Portland General Electric Company (PA23-10)",
+  "docket": "PA23-10",
+  "docket_full": "PA23-10-000",
+  "issued_date": "2025-06-16",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250616-3008&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250616-3008",
+  "captured_at": "2026-02-03",
+  "page_count": 52,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2021 to October 31, 2024",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Public Access to Monthly and Yearly Capability Information",
+      "summary": "PGE’s postings for monthly and yearly capability in the OASIS available transfer capability (ATC)/total transfer capability (TTC) Monitor were not made publicly available.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Review system settings for all OASIS posting functions that require user access and develop policies and procedures to ensure that settings are set to provide proper access for OASIS users. Provide a report to audit staff that summarizes the results of this review."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Narrative Explanations for ATC Unavailability",
+      "summary": "PGE did not post narrative explanations of the reasons for the unavailability of ATC when the monthly and yearly capability remained unchanged at a value of zero for a period of six months or longer for several transmission paths.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Revise policies and procedures to ensure that PGE posts a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months or longer for a given path."
+        },
+        {
+          "number": 4,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 3, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Deviation Information for Generator Interconnection Studies",
+      "summary": "PGE did not post generator interconnection study timeline deviations on OASIS during the audit period. Also, PGE did not post generator interconnection project in-service date deviations during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Reestablish a policy and procedure to post generator interconnection study timeline deviations on OASIS."
+        },
+        {
+          "number": 6,
+          "text": "Establish a policy and procedure to post generator interconnection in-service date deviations on OASIS."
+        },
+        {
+          "number": 7,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 5 and 6, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Interconnection Request List Study Availability",
+      "summary": "PGE did not identify the availability of restudies related to two interconnection requests on its OASIS list of interconnection requests.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise policies and procedures to ensure that the active and inactive generator interconnection request lists indicate the availability of any studies relating to a project, including restudies."
+        },
+        {
+          "number": 9,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 8, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Preservation of Records",
+      "summary": "PGE did not preserve certain emails that were classified as records to be retained for four years pursuant to the Commission’s preservation of records regulations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise document retention policies and procedures to ensure that PGE properly identifies, indexes, and retains emails that are records in accordance with the Commission’s preservation of records regulations."
+        },
+        {
+          "number": 11,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 10, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Quarterly Generator Interconnection Service Metrics",
+      "summary": "PGE did not post accurate metrics for interconnection feasibility studies processing time in its quarterly generator interconnection service metrics reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Develop a process to perform periodic reviews of PGE’s OASIS interconnection study metrics postings to verify that PGE is posting complete and accurate information."
+        },
+        {
+          "number": 13,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 12, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Quarterly Transmission Service Metrics Reports and Study Costs",
+      "summary": "PGE did not timely post quarterly transmission service metrics on OASIS within 15 calendar days of the end of the calendar quarter and did not post accurate system impact study costs.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Revise policies and procedures to ensure that quarterly transmission service metrics reports are timely uploaded to OASIS."
+        },
+        {
+          "number": 15,
+          "text": "Implement a quality control process to ensure all posted information in quarterly transmission service metrics reports is accurate and complete."
+        },
+        {
+          "number": 16,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 14 and 15, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Listing of Transmission Service Request Completed Studies",
+      "summary": "PGE did not update its list of completed transmission service request studies posted on OASIS during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise policies and procedures to ensure that PGE accurately posts transmission service request study information on OASIS and accurately and timely reports this information in its quarterly transmission service request metrics reports."
+        },
+        {
+          "number": 18,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 17, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Posting of Short Circuit Information",
+      "summary": "PGE did not post short circuit information on either its OASIS site or a password-protected website during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise policies and procedures to ensure that all base case data, including short circuit information, is posted on the OASIS or a password-protected website."
+        },
+        {
+          "number": 20,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 19, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Transmission Planning Study Cycle Meetings",
+      "summary": "PGE did not host a public meeting to review its draft Near Term Local Transmission Plan in Quarter 3 of its eight- quarter (i.e., two-year) planning cycle and did not host a public meeting to review its draft Longer Term Local Transmission Plan in Quarter 7 of its two-year planning cycle.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Develop and implement policies, procedures, and review processes to ensure that PGE adheres to Attachment K, Section 3.2, Sequence of Events, and fulfills its responsibilities for each planning quarter, from Quarter 1 (Section 3.2.1) to Quarter 8 (Section 3.2.8)."
+        },
+        {
+          "number": 22,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 21, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Posting of Transmission Planning Content",
+      "summary": "PGE did not post certain transmission planning content on its OASIS website during the audit period. D.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Perform a comprehensive review of PGE’s Transmission Planning Business Practice Manual, transmission planning notices, agendas, and meeting minutes posted on OASIS to correct incorrect or broken links, remove outdated materials, or add any missing information."
+        },
+        {
+          "number": 24,
+          "text": "Revise policies and procedures to ensure compliance with the posting requirements, timelines, and relevant specifications set forth in Attachment K, Section 5.2."
+        },
+        {
+          "number": 25,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 24, and repeat such trainings as needed."
+        },
+        {
+          "number": 26,
+          "text": "Perform periodic reviews of PGE’s OASIS postings to verify that PGE is posting all required Attachment K information timely and accurately. E."
+        }
+      ]
+    }
+  ]
+}

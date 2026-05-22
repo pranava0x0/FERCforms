@@ -1,0 +1,106 @@
+{
+  "id": "2025-07-25_duke-energy-progress-llc_fa23-6",
+  "company": "Duke Energy Progress, LLC",
+  "company_raw": "Duke Energy Progress, LLC (FA23-6)",
+  "docket": "FA23-6",
+  "docket_full": "FA23-6-000",
+  "issued_date": "2025-07-25",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250725-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250725-3010",
+  "captured_at": "2026-02-03",
+  "page_count": 101,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2020 to September 30, 2024",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "3-Q",
+    "580"
+  ],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Recovery of Fuel Contract Buyout Costs",
+      "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers by approximately $3,500,000 during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Fuel Storage and Handling",
+      "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Wholesale Revenue Credits",
+      "summary": "DEP improperly allocated power production revenue credits to multiple functions, instead of assigning 100% of these revenue credits to the power production function. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Auxiliary Fuel Costs in Nuclear Power Generation",
+      "summary": "DEP misstated Account 518, Nuclear Fuel Expense, due to an incorrect application of its inventory accounting procedures for auxiliary fuel. Various other misclassifications and clerical errors caused DEP to incorrectly account for additional auxiliary fuel expense in other nuclear operations and maintenance (O&M) accounts. These errors improperly increased DEP’s wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "DEP improperly accrued AFUDC on ineligible projects that were completed or ready to be placed into service. As a result, DEP over-accrued AFUDC and overstated plant in service during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Distribution and Meter-Related Costs",
+      "summary": "DEP recorded affiliate charges for distribution and customer-related IT systems in Administrative and General (A&G) expense accounts. This accounting was not consistent with the functional character of these charges, which should have instead been recorded in the relevant distribution and customer-related functional O&M expense accounts. As a result, inputs to FERC-jurisdictional formula rates and resulting wholesale customer billings were overstated.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Political Activities",
+      "summary": "DEP improperly charged labor costs of a registered lobbyist engaged in political activities to Account 920, Administrative and General Salaries, rather than to Account 426.4, Expenditures for Certain Civic, Political and Related Activities. By improperly including these amounts in Account 920, DEP overstated FERC-jurisdictional formula rate inputs, revenue requirements, and customer billings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Steam Maintenance Expenses",
+      "summary": "DEP improperly recorded O&M expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting for the O&M expense, DEP included excess costs as inputs to its system average energy formula rate that should have been included as inputs to its production capacity formula rate and shifted billing inputs from capacity to energy charges among DEP’s wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Accounting for A&G Overheads and Accruals",
+      "summary": "DEP did not use Account 922, Administrative Expenses Transferred – Credit, to record administrative expenses from Account 920 and Account 921 that were transferred to construction projects or to nonutility accounts. DEP also did not properly disaggregate its year-end salary accruals by utility function. As a result of DEP’s improper accounting, the transparency of its capitalization activities and labor cost reporting were reduced.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "FERC Form No. 580 Reporting",
+      "summary": "DEP did not properly follow FERC Form No. 580 instructions and did not report all required information in its FERC Form No. 580 filings. These actions affected the transparency, accuracy, and usefulness of certain sections of the FERC Form No. 580.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 11,
+      "title": "FERC Form Nos. 1 and 3-Q Reporting",
+      "summary": "DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions affected the transparency, accuracy, and usefulness of certain information in the reports.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "id": "2024-09-27_southern-indiana-gas-and-electric-company_fa23-4",
+  "company": "Southern Indiana Gas and Electric Company",
+  "company_raw": "Southern Indiana Gas and Electric Company (FA23-4)",
+  "docket": "FA23-4",
+  "docket_full": "FA23-4-000",
+  "issued_date": "2024-09-27",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240927-3006&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240927-3006",
+  "captured_at": "2026-02-03",
+  "page_count": 63,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through December 31, 2023",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Merger Costs",
+      "summary": "Audit Staff Finding: SIGECO incorrectly included $24.3 million of merger costs in wholesale transmission formula rate service cost determinations, contrary to the directives of the 2018 Merger Order. As a result, SIGECO overstated its wholesale transmission revenue requirement by approximately $2.3 million and overbilled wholesale transmission customers. SIGECO Response: SIGECO accepts the finding and the associated recommendations. Comments on",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Update policies and procedures to ensure SIGECO accurately excludes all merger costs from its transmission formula rate, as required by the hold harmless provisions in the 2018 Merger Order."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to its staff on the revised policies and procedures for tracking and excluding all merger costs from the computation of the ATRR. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Perform a comprehensive analysis to identify all merger related costs recorded in SIGECO’s books during the hold harmless commitment period."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 90 days of receiving the final audit report, to DAA that explains and details the following: (1) the calculation of refunds that resulted from correcting for the improper inclusion of merger related costs in wholesale transmission formula rates, plus interest; (2) the determinative components of the refund; (3) the refund method; (4) customers to receive refunds; and (5) the period(s) in which refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Audit Staff Finding: SIGECO improperly calculated its AFUDC rate. Specifically, SIGECO: (1) incorrectly calculated its long-term debt cost rate; (2) used Generally Accepted Accounting Principles (GAAP) amounts for the prior year long- term debt and equity balances instead of FERC Form No. 1 balances; (3) did not properly update its short-term debt and CWIP prior year-end balances used in the AFUDC calculation; and (4) incorrectly calculated and reported its Accumulated Deferred Income Tax on equity AFUDC. Additionally, SIGECO recorded a portion of equity AFUDC in Account 419, Interest and Divi",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise and implement policies and procedures to calculate the AFUDC rate consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 8,
+          "text": "Revise and implement policies and procedures to properly calculate and record equity AFUDC ADIT."
+        },
+        {
+          "number": 9,
+          "text": "Provide training to relevant staff on the revised policies and procedures for calculating the AFUDC rate. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 10,
+          "text": "Recalculate accrued AFUDC consistent with the Commission’s accounting requirements from 2019 through the date of the audit report and submit the recalculations to DAA for review within 60 days of this report."
+        },
+        {
+          "number": 11,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC within 60 days of the date of the audit report."
+        },
+        {
+          "number": 12,
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 11."
+        },
+        {
+          "number": 13,
+          "text": "Submit a refund analysis, within 90 days of the date of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from excess AFUDC and its impacts on related accounts included in SIGECO’s transmission formula rate during the audit period, plus interest; (2) the determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) the period(s) in which refunds will be made."
+        },
+        {
+          "number": 14,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 15,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Operating Expense Accounting Misclassifications",
+      "summary": "Audit Staff Finding: SIGECO recorded approximately $4.4 million in various A&G expense accounts in a manner contrary to the Commission’s accounting regulations. This improper accounting resulted in SIGECO overstating its ATRR by approximately $440,000 and overbilling its wholesale transmission customers. SIGECO Response: SIGECO accepts the finding that the Company recorded amounts in various A&G expense accounts in a manner contrary to the Commission’s accounting regulations. For the part of this finding regarding the improper recording of $9,472 of AFUDC to Account 930.2, Miscellaneous Genera",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Revise policies and procedures to properly account for operating expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 17,
+          "text": "Provide training to relevant staff on the revised policies and procedures for properly accounting for operating expenses. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 18,
+          "text": "Perform an analysis of A&G expense accounts to identify costs that were improperly accounted for and included in SIGECO’s ATRR and customer billings during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 19,
+          "text": "Perform an analysis of capital work orders to determine that AFUDC was not accrued on an asset purchase. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 20,
+          "text": "Submit a refund analysis to DAA, within 90 days of receiving the audit report, that explains and details the following: (1) calculation of refunds resulting from inappropriate recoveries due to the improper accounting for expenses recorded in A&G accounts during the audit period, identified through completing Recommendations 18 and 19, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) the period(s) in which refunds will be made."
+        },
+        {
+          "number": 21,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 22,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations. Non-operating Expense Accounting Misclassifications"
+        },
+        {
+          "number": 23,
+          "text": "Revise policies and procedures to properly account for non-operating expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 24,
+          "text": "Provide training to relevant staff on the revised processes and procedures for properly accounting for non-operating expenses. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 25,
+          "text": "Perform an analysis of A&G expense accounts to identify non-operating expenses that were improperly accounted for and included in SIGECO’s ATRR and the related customer billings during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 26,
+          "text": "Submit a refund analysis to DAA, within 90 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for non-operating expenses recorded in A&G accounts during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) the period(s) in which refunds will be made."
+        },
+        {
+          "number": 27,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 28,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Non-Operating Expense Accounting Misclassifications",
+      "summary": "Audit Staff Finding: SIGECO recorded approximately $364,000 in various non-operating expenses in a manner contrary to the Commission’s accounting regulations. The improper accounting resulted in SIGECO overstating its ATRR by approximately $36,400 and overbilling its wholesale transmission customers. SIGECO Response: SIGECO accepts the finding that the Company recorded various non-operating expenses in a manner contrary to the Commission’s accounting regulations. Lobbying Costs SIGECO accepts the finding that lobbying costs are properly charged to FERC Account 426.4, Expenditures for Certain C",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Materials and Supplies",
+      "summary": "Audit Staff Finding: SIGECO improperly reported construction-related materials and supplies on FERC Form No. 1. The improper reporting resulted in SIGECO overstating its ATRR and overbilling its wholesale transmission customers. SIGECO Response: SIGECO accepts the finding that page 227 of FERC Form No. 1 was prepared improperly. In July 2024, SIGECO developed a process that will allow use of a construction-versus-O&M percentage split for materials and supplies. This split will allow SIGECO to estimate construction and O&M and prepare page 227 in accordance with FERC Form No. 1’s instructions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Revise policies and procedures to account for and report materials and supplies consistent with Commission accounting requirements."
+        },
+        {
+          "number": 30,
+          "text": "Provide training to relevant staff on the revised processes and procedures for properly accounting for and reporting materials and supplies on FERC Form No."
+        },
+        {
+          "number": 1,
+          "text": "Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 31,
+          "text": "Perform an analysis of the materials and supplies account to identify expenses that were improperly accounted for and included in SIGECO’s ATRR and the related customer billings during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 32,
+          "text": "Submit a refund analysis to DAA, within 90 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting and reporting of materials and supplies during the audit period, plus interest; (2) determinative components of the refund; (3) refund method (4) customers to receive refunds; and (5); the period(s) in which refunds will be made."
+        },
+        {
+          "number": 33,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 34,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Excess Accumulated Deferred Income Tax",
+      "summary": "Audit Staff Finding: SIGECO improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the TCJA of 2017 and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SIGECO’s FERC Form No. 1 filings. SIGECO Response: SIGECO netted the excess and deficient accumulated deferred income tax when recording its regulatory liability for the change in rate resulting from the Tax",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Revise accounting policies and procedures to properly account for and report the effect of changes in tax laws or tax rates consistent with Commission accounting requirements."
+        },
+        {
+          "number": 36,
+          "text": "Submit correcting journal entries, within 60 days of issuance of this audit report, with proposed accounting entries and supporting documentation to DAA that reflect corrections to recorded excess and deficient ADIT in the appropriate USofA accounts."
+        },
+        {
+          "number": 37,
+          "text": "Provide training to relevant staff on the revised policies and procedures for accounting for and reporting the effect of changes in tax laws or tax rates. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "Audit Staff Finding: SIGECO did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information in certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC No. 1 filings. SIGECO Response: SIGECO accepts this finding and the associated recommendations. Comments on",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the page instructions of the form. Include footnotes when software limitations prevent reporting complete information."
+        },
+        {
+          "number": 39,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E."
+        }
+      ]
+    }
+  ]
+}

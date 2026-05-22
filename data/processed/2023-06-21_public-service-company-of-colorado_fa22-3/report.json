@@ -1,0 +1,211 @@
+{
+  "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
+  "company": "Public Service Company of Colorado",
+  "company_raw": "Public Service Company of Colorado (FA22-3)",
+  "docket": "FA22-3",
+  "docket_full": "FA22-3-000",
+  "issued_date": "2023-06-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230621-3003&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230621-3003",
+  "captured_at": "2026-02-03",
+  "page_count": 59,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through January 31, 2023",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allocation of Overhead Costs to CWIP",
+      "summary": "PSCo capitalized overhead costs to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a study of the time actually engaged during a representative period. This led to PSCo charging costs to Account 107 that did not have a definite relation to construction. As a result, PSCo may have overstated construction costs recorded in Account 107 and electric plant in service costs recorded in Account 101 or other plant accounts, as well as accumulated depreciation and ADIT, a",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Retain an independent third-party entity to conduct a representative labor-time study for allocation of overhead costs incurred in 2023, and to assist with the development of procedures PSCo shall use after 2023 to periodically determine the allocation of overhead labor and labor-related costs capitalized by PSCo into the cost of construction. The consultant should have experience independently performing time studies used in the determination of overhead capitalization rates of U.S.-based utilities subject to the accounting requirements prescribed for public utilities and licensees or for natural gas companies under 18 C.F.R. Part 101 or Part 201, respectively. The time study should involve a representative sample of study participants (employees) that provides for extrapolation of the study results to the full population of PSCo employees. The time study should include processes to apply the study results from the beginning of the audit period to the issue date of this audit report. In addition, the study should include processes to apply the capitalization rate(s) the study finds for 2023 back to the period January 1, 2018 through December 31, 2022, either with no change to the capitalization rates found in the study or with such modifications to the capitalization rate(s) that the independent consultant finds reasonable and supported by evidence. The independent consultant should use its expertise and all relevant information available to it to make recommendations as to what the capitalization rate(s) should be for prior years for PSCo, set forth the basis for its recommendations, and provide both the recommendations and the basis to PSCo and DAA. If there is no recommendation by the independent consultant for any year or other period between January 1, 2018 and December 31, 2022 for any specific capitalizable department and associated internal orders, then PSCo should base its capitalization rate and the amount to be capitalized for such year or period on the rates and costs of such specific internal orders for which PSCo can provide to DAA reasonable evidence as to the time employees charging such internal orders spent having a definite relation to construction and exclude from consideration those internal orders for which PSCo cannot provide such evidence, per, for example, 18 C.F.R. Part 101, General Instruction No. 2 and § 41.8."
+        },
+        {
+          "number": 2,
+          "text": "Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of this audit report. The allocation procedures should be submitted when complete but no later than 60 days after completion of DAA’s review of the labor time study. At a minimum, the allocation procedures should provide a method for overhead cost allocation and capitalization to construction based on actual timecards or, where this procedure is impractical, based on periodic time studies."
+        },
+        {
+          "number": 3,
+          "text": "Revise policies and procedures governing the methods used to account for, track, report, and review overhead labor, labor-related costs, and all other costs allocated to construction projects to be consistent with Commission accounting requirements. In addition, adopt procedures to retain formal documentation supporting the amount of overhead costs allocated to electric plant accounts."
+        },
+        {
+          "number": 4,
+          "text": "Provide training to relevant staff on the revised overhead allocation policies, practices, procedures, and documentation. Provide periodic training in this area, as needed."
+        },
+        {
+          "number": 5,
+          "text": "Within 30 days of the completion of Recommendation No. 1, submit an estimate to DAA, including the calculations and determinative components, of overhead costs that would have been allocated to CWIP from January 1, 2018 through the present consistent with the requirements of Electric Plant Instruction No. 4 and General Instruction No. 9. The estimate should be based on a recalculation of 2018 and subsequent years’ overhead costs allocated to construction with labor and labor-related costs removed from the cost of plant (Transmission, Distribution, General, and Production) that were not associated with construction activities based on the methodology developed in response to Recommendation No. 1."
+        },
+        {
+          "number": 6,
+          "text": "With the response to Recommendation No. 5, submit proposed accounting entries to DAA that remove excess overhead costs from Transmission, Distribution, General, and Production plant accounts that were allocated to electric plant in CWIP and in service during the audit period. The amount of overhead costs removed should be the excess amount of such costs as determined based on the methodology developed in response to Recommendation No. 1. Also, provide proposed accounting entries to remove associated amounts from other accounts and balances affected by the inappropriately allocated costs such as the accumulated depreciation and ADIT accounts and AFUDC balances capitalized into CWIP and plant in service. If the adjusting entries result in a significant impact to income for the current year, PSCo may account for the transaction as a correction of a prior period error in Account 439, Adjustments to Retained Earnings. Such an entry should be submitted with the proposed accounting entries."
+        },
+        {
+          "number": 7,
+          "text": "Submit a refund analysis, within 60 days of DAA’s approval of the time study performed, to DAA that explains and details the following: (1) calculation of refunds, plus interest, that result from correction of the overstatement of electric plant in service due to the improper capitalization of labor costs, as determined by the labor time study conducted in response to Recommendation No. 1, from January 1, 2018 to the present; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 8,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 9,
+          "text": "Refund amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Joint Owner Billing",
+      "summary": "PSCo did not functionalize portions of third-party billings characterized as A&G expenses for the operation and maintenance of the Craig Generating Station. As a result, PSCo overstated A&G expenses and understated expenses recorded in the production O&M expense accounts. Moreover, this accounting error led PSCo to overstate its ATRR and overbill transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise policies and procedures governing the methods used to account for, track, report, and review costs associated with joint-owner billings to comply with the Commission’s accounting regulations."
+        },
+        {
+          "number": 11,
+          "text": "Train relevant staff on the revised policies and procedures for properly accounting for costs associated with joint-owner billings, and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 12,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper inclusion of production costs associated with joint-owner billings in the ATRR from 2018 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 13,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 14,
+          "text": "Refund amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting Misclassifications",
+      "summary": "PSCo recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, PSCo overstated its ATRR and APRR and overbilled customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise policies and procedures to help ensure that PSCo properly accounts for expenditures consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 16,
+          "text": "Provide training to relevant staff on the revised policies and procedures for properly accounting for expenditures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 17,
+          "text": "Perform an analysis of A&G expense accounts to identify expenses that were improperly included in accounts that had balances used as inputs to PSCo’s transmission and production formula rates and the determination of customer billings from 2018 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 18,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for expenses recorded in A&G accounts from 2018 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 19,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 20,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Mutual Aid Services",
+      "summary": "PSCo improperly recorded revenues and expenses associated with mutual aid services in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, PSCo overstated its ATRR and APRR and overbilled customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Develop and implement procedures and policies to help ensure that mutual aid service revenues and costs are properly accounted for consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 22,
+          "text": "Provide training to relevant staff on the revised policies and procedures for properly accounting for mutual aid revenues and costs. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 23,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for mutual aid revenues and expenses from 2013 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 24,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 25,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "PSCo improperly recorded $82,195 in compromise settlement payments relating to claims of alleged employee discrimination in Account 920, Administrative and General Salaries, and in Account 925, Injuries and Damages, instead of in Account 426.5, Other Deductions. As a result, PSCo overstated its ATRR and APRR and overbilled its customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Revise accounting policies and procedures to properly record compromise settlement payments related to employment discrimination claims in Account 426.5, consistent with Commission accounting regulations."
+        },
+        {
+          "number": 27,
+          "text": "Provide training to relevant staff on the revised processes and procedures for properly accounting for compromise settlement payments relating to employment discrimination claims in Account 426.5. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 28,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that resulted from the improper accounting for employment discrimination claims resolved by compromise settlements, expenses of internal and external counsel’s legal defense, and other costs of employment discrimination claims from 2018 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 29,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 30,
+          "text": "Refund amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "PSCo’s method for computing and accounting for its AFUDC rate was deficient. Specifically, PSCo improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component of its AFUDC rate. Also, PSCo improperly recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Revise policies and procedures to calculate and account for AFUDC and equity ADIT consistent with Commission accounting regulations."
+        },
+        {
+          "number": 32,
+          "text": "Provide training to relevant staff on the revised policies and procedures for accounting for AFUDC and equity ADIT consistent with Commission accounting regulations. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 33,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the accounting for equity ADIT in Account 283, within 60 days of the date of the audit report."
+        },
+        {
+          "number": 34,
+          "text": "Revise ADIT account balances after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 33. E."
+        }
+      ]
+    }
+  ]
+}

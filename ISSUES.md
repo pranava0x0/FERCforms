@@ -11,4 +11,10 @@ Living audit trail. Each bug: date · area · description · root cause (**code 
 
 ## Fixed
 
-_(none yet)_
+- **2026-05-22 · structure · parser overfit → 44/47 reports parsed to 0 findings on scale-up.** The structurer only read findings from the Executive-Summary "Summary of Noncompliance Findings" list, which I'd validated on 2 reports. Most reports don't have that list — they expose findings only via the TOC "Findings and Recommendations" subsection. **Root cause: code bug** (overfit). **Fix:** added a TOC fallback (`_toc_titles` + `_body_summary`) that parses finding titles from the TOC and pulls each finding's verbatim opening paragraph from the body; the exec-summary path still wins where present. Coverage 3 → 42 of 53 reports with findings (257 findings); the remaining 11 are genuine clean audits whose section is just "A. Conclusion". Regression test `test_structure_report_toc_fallback` added.
+- **2026-05-22 · fetch · old (2019) reports timed out at 60s.** eLibrary's DownloadPDF generates the combined PDF server-side; large/old accessions exceeded the 60s read timeout (9 failed). **Fix:** raised `REQUEST_TIMEOUT_SECONDS` to 180; a re-run (idempotent) recovered all 9. Status: **Fixed.**
+
+## Known limitations (backlogged)
+
+- `_body_summary` occasionally grabs a nearby citation instead of the finding's opening sentence for titles that recur in regulatory references. Most summaries are clean; see BACKLOG.
+- A few reports without a parseable TOC findings block (e.g., different section wording) show 0 findings even if they have some.

@@ -1,0 +1,69 @@
+{
+  "id": "2020-07-02_michigan-electric-transmission-company-llc_fa19-7",
+  "company": "Michigan Electric Transmission Company, LLC",
+  "company_raw": "Michigan Electric Transmission Company, LLC (FA19-7)",
+  "docket": "FA19-7",
+  "docket_full": "FA19-7-000",
+  "issued_date": "2020-07-02",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200702-3012&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200702-3012",
+  "captured_at": "2026-02-03",
+  "page_count": 39,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2015 to December 31, 2018",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Lobbying Costs",
+      "summary": "METC recorded lobbying costs associated with pensions in Account 926, Employee Pensions and Benefits, instead of in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. Account 926 is included in METC’s formula rate while Account 426.4 is not. As a result, METC overstated its wholesale transmission revenue requirement used to bill transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Settlements Related to Employment Discrimination Claims",
+      "summary": "METC incorrectly recorded $287,435 of allocated settlement costs related to employment discrimination claims from ITC Holdings, its parent holding company, in its operating expense accounts. The operating expense accounts were included in the METC’s wholesale transmission formula rate mechanism. As a result, METC overstated its wholesale transmission revenue requirement used to bill transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Abandoned Transmission Projects",
+      "summary": "METC did not assign any engineering and supervision (E&S) costs to abandoned transmission construction projects; instead, it reallocated the associated E&S costs to ongoing transmission projects and improperly accrued AFUDC on the reallocated amounts. As a result, METC improperly accrued and recovered AFUDC on E&S costs related to abandoned transmission projects capitalized to plant in service and understated the cost of abandoned projects recorded to expense.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Donations",
+      "summary": "METC inappropriately accounted for a donation as an operating expense. This accounting misclassification led to improper amounts being included in the inputs to METC’s wholesale transmission formula rate mechanism which resulted in METC overbilling its wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Asset Retirement Obligations",
+      "summary": "METC failed to use the income statement and used only balance sheet accounts to record Asset Retirement Obligations (AROs) related to its utility plant assets.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "METC did not properly follow the instructions of the FERC Form No. 1 and therefore in some cases did not report all the required information in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

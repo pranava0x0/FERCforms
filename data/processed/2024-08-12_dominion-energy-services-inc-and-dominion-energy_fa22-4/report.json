@@ -1,0 +1,416 @@
+{
+  "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
+  "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
+  "company_raw": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc. (FA22-4)",
+  "docket": "FA22-4",
+  "docket_full": "FA22-4-000",
+  "issued_date": "2024-08-12",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240812-3031&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240812-3031",
+  "captured_at": "2026-02-03",
+  "page_count": 113,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2019 to December 31, 2023",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 12,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Merger-Related Voluntary Retirement Program",
+      "summary": "DES incurred merger-related VRP costs of approximately $97,872,000 that it allocated to its affiliates, including VEPCO and DESC, which then partially recovered these costs through FERC-jurisdictional rates without the Commission’s approval. DESC also improperly partially recovered an additional $84,000 of its own pre-VRP merger-related severance costs through FERC-jurisdictional rates without Commission approval.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen policies, procedures, and controls to account for all merger-related costs consistent with the Commission’s accounting requirements and Dominion Energy’s hold harmless commitment."
+        },
+        {
+          "number": 2,
+          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements."
+        },
+        {
+          "number": 3,
+          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 4,
+          "text": "Perform an analysis to identify the impact of DES VRP costs on rates subject to the Commission’s jurisdiction during the hold harmless commitment period, including costs that were reallocated to jurisdictional utility rates via special purpose entities and other cost-allocating affiliates to which DES VRP costs were initially charged. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 5,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of DES VRP costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 6,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 7,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Merger Compensation",
+      "summary": "DES, VEPCO, and DESC incurred merger labor and labor-related costs, including incentive compensation, of approximately $5,176,000 that it did not track as merger- related. As a result, a portion of these costs was included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger-related labor and labor-related costs, including incentive compensation costs, from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more timely creation of and notice to relevant employees of merger cost codes during the pre- announcement phase."
+        },
+        {
+          "number": 9,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the hold harmless period to all relevant personnel across all relevant business units."
+        },
+        {
+          "number": 10,
+          "text": "Perform an analysis of the impact of the $5,176,000 of merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 11,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related labor and labor-related costs, including incentive compensation costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 12,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 13,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Merger Project Configuration",
+      "summary": "DES misconfigured certain merger-related billing Work Breakdown Structure (WBS) elements within its cost accumulation system, causing it to inadvertently bill approximately $4,599,000 of merger costs to VEPCO and DESC. As a result, portions of these costs were included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC- jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Revise all policies, procedures, and controls for configuring cost accumulation and billing WBS elements that are intended to exclude costs from FERC- jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more thorough review and testing of the billing behavior of all such WBS elements in the test phase and additional review of the billing of and accounting for such costs on the books of any affiliate to which a FERC hold harmless commitment applies."
+        },
+        {
+          "number": 15,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training as needed."
+        },
+        {
+          "number": 16,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper merger WBS element configuration, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 17,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 18,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Merger Integration Project Cost Tracking",
+      "summary": "DES, VEPCO, and DESC incurred approximately $2,361,000 of merger-related costs that were not tracked as merger costs. As a result, portions of these costs were included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger integration project costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include continued monitoring of merger integration project costs against a budget or other independent authorization, procedures to ensure the completeness of costs tracked in merger WBS elements, and enhanced cost review procedures by managers who themselves are, or who supervise employees who are, responsible for any merger-related projects."
+        },
+        {
+          "number": 20,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the importance in Dominion’s cost accumulation systems of selecting the proper WBS element for a given transaction."
+        },
+        {
+          "number": 21,
+          "text": "Perform an analysis to identify merger integration project costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 22,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger integration project costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 23,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 24,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Merger Financing Costs",
+      "summary": "DESC incurred merger-related refinancing costs of $2,552,000 but did not exclude them from FERC-jurisdictional revenue requirements. As a result, a portion of these costs were recovered from FERC-jurisdictional customers without the Commission’s approval.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Revise policies, procedures, and controls for tracking, accounting for, and excluding merger-related financing costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include incremental review of significant, unusual, or non-recurring charges, including financing costs, incurred by entities to which a FERC hold harmless commitment applies."
+        },
+        {
+          "number": 26,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders be provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the possible significant, unusual, or non-recurring charges, including financing costs, that could be merger-related."
+        },
+        {
+          "number": 27,
+          "text": "Perform an analysis to identify merger-related financing costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 28,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related financing costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 29,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 30,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Allocation Methods",
+      "summary": "Certain DES allocation factors were improperly configured to allocate charges to incorrect affiliates. Certain DES expenses were also charged using incorrect allocation methods that did not correspond to the affiliates who benefited from those expenses. Finally, DES’s FERC Form No. 60 disclosures did not completely or adequately describe the operation of certain allocation methods. As a result, service company costs may have been misallocated and public utility affiliates overcharged. This may have resulted in FERC-jurisdictional utility customers likewise being overcharged.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements."
+        },
+        {
+          "number": 32,
+          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly exclude from the O&M Method asset impairments, gain/loss on disposals, and other significant nonrecurring transactions."
+        },
+        {
+          "number": 33,
+          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly explain the mechanisms by which the Plant Factor and Aviation Factor are calculated."
+        },
+        {
+          "number": 34,
+          "text": "Submit an amended Cost Allocation Manual to DAA for review within 60 days of the issuance of this audit report."
+        },
+        {
+          "number": 35,
+          "text": "Strengthen policies, procedures, and controls to ensure that new allocation WBS elements are reviewed for correlation between the purpose as designed of the allocation WBS elements and the affiliates benefitting from the costs."
+        },
+        {
+          "number": 36,
+          "text": "Strengthen policies, procedures, and controls to ensure that all costs are charged to the proper WBS element."
+        },
+        {
+          "number": 37,
+          "text": "Strengthen policies, procedures, and controls to ensure that all supporting calculations for cost allocation methodologies are retained in accordance with the Commission’s records retention policies for centralized service companies."
+        },
+        {
+          "number": 38,
+          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 39,
+          "text": "Perform an analysis of cost centers within the service function areas Information Technology, Finance, Business Planning, Human Resources, and Legal to identify any costs that were assigned to incorrect WBS elements during the audit period. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 40,
+          "text": "Perform an analysis of existing allocation WBS elements to ensure that the purpose of the allocation WBS element corresponds to the benefiting affiliates. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 41,
+          "text": "Submit a refund analysis for VEPCO and DESC, within 30 days of receiving DAA’s approval of the cost center and WBS element analyses, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from improper or inaccurate allocation methods, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 42,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 43,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Customer Accounts Expenses",
+      "summary": "VEPCO and DESC improperly accounted for consultant fees related to customer accounts expenses that were allocated from DES. VEPCO’s accounting resulted in Account 923, Outside Services Employed, being overstated and Account 901, Supervision, being understated, while DESC’s accounting resulted in Account 905, Miscellaneous Customer Accounts Expenses, being overstated and Account 901 being understated. Because Account 923 is an input to VEPCO’s FERC-jurisdictional rates, VEPCO’s improper accounting also caused VEPCO to overstate its FERC-jurisdictional revenue requirements and overcharge its FER",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "Strengthen policies, procedures, and controls to account for customer accounts expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 45,
+          "text": "Train relevant staff on the methods to account for customer accounts expenses and provide periodic training, as needed."
+        },
+        {
+          "number": 46,
+          "text": "Perform an analysis for DES and VEPCO to identify all customer accounts expenses that were improperly recorded in A&G expense accounts during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 47,
+          "text": "Submit a refund analysis for VEPCO, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for customer accounts expenses in A&G accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 48,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 49,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Administrative and General Expense Misclassifications",
+      "summary": "DES misclassified administrative and general (A&G) expenses that it incurred during the audit period. DES’s accounting resulted in such expenses being incorrectly included in accounts that are FERC-jurisdictional rate inputs for VEPCO and DESC. This caused VEPCO and DESC to overstate their FERC-jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 50,
+          "text": "Strengthen policies, procedures, and controls to account for membership dues, donations, and customer records and collection expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 51,
+          "text": "Train relevant staff on the methods to account for membership dues, donations, and customer records and collection expenses and provide periodic training, as needed."
+        },
+        {
+          "number": 52,
+          "text": "Perform an analysis to identify other membership dues recorded in Account 921 that were Company memberships that should be recorded in Account 930.2, donations not properly recorded in Account 426.1, and customer records and collection expenses that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 53,
+          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for membership dues, donations, and customer records and collection expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 54,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 55,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Accounting for EEI Annual Membership Dues",
+      "summary": "DES misclassified Edison Electric Institute (EEI) annual membership dues designated as being for lobbying in Account 930.2, Miscellaneous General Expenses, rather than recording them in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. DES’s improper accounting resulted in such expenses being incorrectly recorded on the books of VEPCO and DESC and included as an input to FERC-jurisdictional rates. This caused VEPCO and DESC to overstate their FERC- jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 56,
+          "text": "Strengthen policies, procedures, and controls to account for trade association dues and the portions of such dues designated as being for lobbying consistent with Commission accounting requirements."
+        },
+        {
+          "number": 57,
+          "text": "Train relevant staff on the revised policies and procedures and provide periodic training, as needed."
+        },
+        {
+          "number": 58,
+          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following for the audit period: (1) calculation of refunds resulting from improper accounting for trade association dues, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 59,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 60,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Accounting for Service Company Property",
+      "summary": "Legacy DESS misclassified various service company assets in Account 398, Miscellaneous Equipment, which should have been classified in other service company property accounts. This misclassification affected the transparency, accuracy, and usefulness of both DES’s and legacy DESS’s FERC Form No. 60 reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 61,
+          "text": "Strengthen policies, procedures, and controls to classify service company property costs consistent with Commission regulations."
+        },
+        {
+          "number": 62,
+          "text": "Train relevant staff on the revised plant accounting policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 63,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA to reflect the reclassification of service company property within 60 days of the date of this audit report."
+        },
+        {
+          "number": 64,
+          "text": "Correct the service company property balances after receiving DAA’s assessment of the proposed accounting entries and restate and footnote the balances reported in DES’s most recent FERC Form No. 60 as necessary to reflect and disclose the revisions."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Accounting for Prepayments",
+      "summary": "DES reclassified certain prepaid expense balances from Account 165, Prepayments, to Account 930.2, Miscellaneous General Expenses, because it lacked supporting documentation for such balances. DES’s accounting resulted in unsupported amounts being incorrectly included in an operating expense account, in conflict with the Commission’s accounting regulations. Because Account 930.2 is an input to FERC- jurisdictional rates, this caused VEPCO to overstate its FERC-jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 65,
+          "text": "Strengthen policies, procedures, and controls to maintain and retain documentation to support prepayment amounts consistent with Commission record retention requirements."
+        },
+        {
+          "number": 66,
+          "text": "Strengthen policies, procedures, and controls to properly account for the write- off of unsupported prepayments in Account 426.5."
+        },
+        {
+          "number": 67,
+          "text": "Train relevant staff on the revised prepayment policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 68,
+          "text": "Submit a refund analysis for VEPCO, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the overstatement of Account 930.2 due to the improper inclusion in Account 930.2 of the write-off of prepayments, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 69,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 70,
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "FERC Form No. 60 Reporting",
+      "summary": "DES and legacy DESS did not accurately disclose in their FERC Forms No. 60 the functional classification of expenses between capital, utility O&M, customer accounts expense, and A&G accounts in 2019 and 2020. This caused their FERC Forms No. 60 to overstate various A&G and capital accounts and understate various O&M, customer accounts expense, and non-operating accounts on the FERC Form No. 60. This affected the transparency, accuracy, and usefulness of certain sections of these financial disclosures.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 71,
+          "text": "Strengthen policies, procedures, and controls to properly report the functional expense classifications of DES’s affiliate billings in accordance with the Commission’s accounting and reporting regulations."
+        },
+        {
+          "number": 72,
+          "text": "Provide training to relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 73,
+          "text": "Within 120 days of the issuance of this audit report, refile revised DES FERC Forms No. 60 for 2019 and 2020 to accurately report functional expense classification by correcting the errors noted in this finding. E."
+        }
+      ]
+    }
+  ]
+}

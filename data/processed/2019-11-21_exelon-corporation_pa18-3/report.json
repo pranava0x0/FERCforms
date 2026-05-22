@@ -1,0 +1,55 @@
+{
+  "id": "2019-11-21_exelon-corporation_pa18-3",
+  "company": "Exelon Corporation",
+  "company_raw": "Exelon Corporation (PA18-3)",
+  "docket": "PA18-3",
+  "docket_full": "PA18-3-000",
+  "issued_date": "2019-11-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191121-3049&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191121-3049",
+  "captured_at": "2026-02-03",
+  "page_count": 40,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 through March 26, 2019",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Merger-Related Regulatory Assets",
+      "summary": "BG&E improperly included the amortization of merger-related regulatory assets approved by a retail regulator in wholesale transmission formula rates. As a result, BG&E overstated its wholesale transmission revenue requirements and overbilled its wholesale customers by approximately $1.4 million.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Transmission Formula Rate Allocators",
+      "summary": "Exelon’s public utilities improperly included merger-related costs in their transmission formula rate allocators when they computed wholesale transmission revenue requirements. As a result, Exelon’s public utilities overstated their wholesale transmission revenue requirements, which led to overbilling wholesale transmission customers by approximately $333,056.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Merger Commitment Costs",
+      "summary": "Exelon’s public utilities improperly included merger commitment costs for the Exelon and PHI merger in their transmission revenue requirements. As a result, Exelon’s public utilities overstated their transmission revenue requirements, which led to overbilling wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Amortization of Retail Regulatory Assets",
+      "summary": "Exelon’s public utilities improperly recorded the amortization of certain regulatory assets and improperly included the amortization of the regulatory assets in their wholesale transmission formula rates without Commission approval to recover such amounts. As a result, Exelon’s public utilities overstated their wholesale transmission revenue requirements and overbilled their wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

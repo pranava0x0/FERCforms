@@ -1,0 +1,80 @@
+{
+  "id": "2021-01-28_el-paso-electric-company_pa19-3",
+  "company": "El Paso Electric Company",
+  "company_raw": "El Paso Electric Company (PA19-3)",
+  "docket": "PA19-3",
+  "docket_full": "PA19-3-000",
+  "issued_date": "2021-01-28",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210128-3015&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210128-3015",
+  "captured_at": "2026-02-03",
+  "page_count": 33,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2016 to June 30, 2020",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Posting of Available Transfer Capability/Total Transfer Capability on Interconnection Paths",
+      "summary": "El Paso did not post the ATC and TTC for nine control area to control area interconnection paths on its OASIS as required by the Commission’s OASIS posting requirements. This practice may hinder customers from obtaining transmission service on these paths.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Use of Designated Network Resource to Make Firm Off-System Sales",
+      "summary": "El Paso incorrectly used a DNR to make firm off-system sales, which was inconsistent with its OATT requirements.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Joint Owner Billing",
+      "summary": "El Paso did not functionalize portions of third-party billings characterized as A&G expenses for the operation and maintenance of the Palo Verde Generating Station, the Four Corners Generating Station, and the Palo Verde Transmission Switchyard. As a result, El Paso overstated A&G expenses and understated expenses in the generating and transmission O&M accounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Review and revise policies and procedures governing the methods used to account for, track, report, and review general and administrative costs associated with joint owner billings from third parties to comply with the Commission’s accounting regulations."
+        },
+        {
+          "number": 8,
+          "text": "Communicate joint owner billing accounting policies and procedures to El Paso employees and provide training as necessary, to ensure that the proper accounting procedures are followed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Application of Nonapproved Depreciation Rates",
+      "summary": "El Paso applied state-approved depreciation rates to assets included in its wholesale production formula rate from 2016 through 2018, but did not file these updated depreciation rates with the Commission and obtain Commission approval prior to using them in wholesale formula rate determinations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Strengthen processes and procedures to ensure the use of only Commission- approved depreciation rates in the calculation of Commission-jurisdictional rates, including training for employees performing accounting functions and formula rate input calculations."
+        },
+        {
+          "number": 10,
+          "text": "Strengthen processes and procedures to report changes in, and seek Commission approval to use, new or revised deprecation rates, if El Paso intends to use these rates for Commission-approved formula rates. F."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Use of Transmission Service Numbers",
+      "summary": "El Paso’s transmission function created TSNs and assigned these TSNs to its merchant function to facilitate scheduling of transmission service, which is less transparent than assigning TSRs created in OASIS because TSNs are manually created outside of OASIS.",
+      "is_other_matter": true,
+      "recommendations": []
+    }
+  ]
+}

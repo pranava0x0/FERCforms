@@ -1,0 +1,184 @@
+{
+  "id": "2021-09-16_versant-power_fa20-9",
+  "company": "Versant Power",
+  "company_raw": "Versant Power (FA20-9)",
+  "docket": "FA20-9",
+  "docket_full": "FA20-9-000",
+  "issued_date": "2021-09-16",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210916-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210916-3010",
+  "captured_at": "2026-02-03",
+  "page_count": 48,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through April 30, 2021",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allocation of Overhead Costs to CWIP",
+      "summary": "1. Retain an independent third-party entity to conduct a representative labor time study for allocation of overhead costs incurred in 2020 to CWIP, and to assist with the development of procedures Versant Power shall use to periodically determine the allocation of overhead labor and labor-related costs capitalized into the cost of construction after 2020. Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of this audit report, and the developed allocation procedures when complete. At a minimum, the",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Retain an independent third-party entity to conduct a representative labor time study for allocation of overhead costs incurred in 2020 to CWIP, and to assist with the development of procedures Versant Power shall use to periodically determine the allocation of overhead labor and labor-related costs capitalized into the cost of construction after 2020. Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of this audit report, and the developed allocation procedures when complete. At a minimum, the developed allocation procedures should provide a method for overhead cost allocation and capitalization to construction based on actual timecard distributions or, where this procedure is impractical, based on periodic time studies."
+        },
+        {
+          "number": 2,
+          "text": "Revise written policies, practices, and procedures governing the methods used to account for, track, report, and review overhead labor, labor-related costs, and all other costs allocated to construction projects to be consistent with Commission accounting requirements. In addition, adopt procedures to retain formal documentation supporting the amount of overhead costs allocated to electric plant accounts."
+        },
+        {
+          "number": 3,
+          "text": "Provide training to relevant staff on the revised overhead allocation policies, practices, procedures, and documentation. Provide periodic training in this area, as needed."
+        },
+        {
+          "number": 4,
+          "text": "Within 30 days of the completion of Recommendation No. 1, submit an estimate to DAA, including the calculations and determinative components, of overhead costs that would have been allocated to CWIP from 2014 and subsequent years consistent with the requirements of Electric Plant Instruction (EPI) No. 4 and General Instruction (GI) No. 9. The estimate should be based on a recalculation of 2014 and subsequent years overhead cost allocated to construction with labor and labor-related costs removed from the cost of plant that were not associated with construction activities based on the methodology developed in response to Recommendation No. 1."
+        },
+        {
+          "number": 5,
+          "text": "With the response to Recommendation No. 4, submit proposed accounting entries to DAA that remove the overhead costs that were allocated to electric plant in CWIP and in service during the audit period. The amount of overhead costs removed should be the excess amount of such costs that was allocated to the accounts based on the methodology developed in response to Recommendation No. 1. Also, provide proposed accounting entries to remove associated amounts from other accounts and balances affected by the inappropriately allocated cost such as the accumulated depreciation and ADIT accounts, and AFUDC balances capitalized into CWIP and plant in service. If the adjusting entries result in a significant impact to income for the current year, Versant Power may account for the transaction as a correction of a prior period error in Account 439, Adjustments to Retained Earnings. Such an entry should be submitted with the proposed accounting entries."
+        },
+        {
+          "number": 6,
+          "text": "Revise account balances for utility plant, accumulated depreciation, ADIT, and other account balances impacted by the inappropriate allocation of unsupported overhead cost after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 5, and restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+        },
+        {
+          "number": 7,
+          "text": "Submit a refund analysis to DAA that explains and details the following: (1) calculation of refunds that result from correction of the overstatement of electric plant in service due to the improper capitalization of labor costs, as determined by the labor time study, since January 1, 2014, plus interest computed in accordance with section 35.19a of the Commission’s regulations; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 8,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis"
+        },
+        {
+          "number": 9,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "10. Revise and implement procedures to calculate the AFUDC rate consistent with, EPI No. 3(A)(17), and other applicable Commission requirements. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 11. Provide training to relevant staff on the revised procedures implemented under",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with, EPI No. 3(A)(17), and other applicable Commission requirements."
+        },
+        {
+          "number": 11,
+          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation No 10. Provide periodic training in these areas as needed."
+        },
+        {
+          "number": 12,
+          "text": "Recalculate accrued AFUDC, in a manner consistent with EPI No. 3(A)(17) that corrects for the improper inclusion of Account 216.1 from 2014 through the date of the audit report."
+        },
+        {
+          "number": 13,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC within 60 days of the date of the audit report."
+        },
+        {
+          "number": 14,
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 13 and restate and footnote the FERC Form No. 1 for current and comparative years as necessary"
+        },
+        {
+          "number": 15,
+          "text": "Submit a refund analysis, within 60 days of the date of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC and impacts on related accounts included in the transmission formula rates, since January 1, 2014, plus interest computed in accordance with section 35.19a of the Commission’s regulations; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 16,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 17,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Income Tax Receivables",
+      "summary": "18. Revise accounting policies and procedures to properly account for income tax refund receivables consistent with the Commission accounting requirements. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 19. Provide training to relevant staff on the revised procedures for properly accounting for income tax refund receivables. Provide periodic training in these areas as needed. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 90 days o",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Revise accounting policies and procedures to properly account for income tax refund receivables consistent with the Commission accounting requirements."
+        },
+        {
+          "number": 19,
+          "text": "Provide training to relevant staff on the revised procedures for properly accounting for income tax refund receivables. Provide periodic training in these areas as needed."
+        },
+        {
+          "number": 20,
+          "text": "Submit a refund analysis to DAA, within 60 days of the date of this audit report, that explains and details the following: (1) calculation of refunds that results from eliminating income tax refund receivables from its transmission rate base during the audit period, including interest computed in accordance with section 35.19a of the Commission’s regulations; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 21,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 22,
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. Transmission Revenue Credit"
+        },
+        {
+          "number": 23,
+          "text": "Revise policies and procedures to properly populate transmission revenue credit inputs into the wholesale transmission formula rates consistent with the wholesale transmission formula rate in each open access transmission tariff (OATT)."
+        },
+        {
+          "number": 24,
+          "text": "Provide training to relevant staff on the revised procedures for properly populating transmission revenue credit inputs into the wholesale transmission formula in each OATT. Provide periodic training in these areas as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Transmission Revenue Credits",
+      "summary": "Versant Power included an incorrect amount for transmission rental revenues in its wholesale transmission formula rate for the BHD. As a result, Versant Power overstated the revenue credits included in its wholesale transmission formula rate calculations for the BHD, which led to understatement of its wholesale transmission revenue requirements and billings to its wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Excess Accumulated Deferred Income Tax",
+      "summary": "25. Revise accounting policies and procedures to properly record and report the effect of changes in tax laws or tax rates consistent with the Commission’s accounting guidance in Docket No. AI93-5. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 26. Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates. Provide periodic training in these areas as needed. Versant Power will comply with this recomme",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Revise accounting policies and procedures to properly record and report the effect of changes in tax laws or tax rates consistent with the Commission’s accounting guidance in Docket No. AI93-5.3"
+        },
+        {
+          "number": 26,
+          "text": "Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates. Provide periodic training in these areas as needed. Form No. 1 Reporting"
+        },
+        {
+          "number": 27,
+          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the page instructions."
+        },
+        {
+          "number": 28,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas as needed. E."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "Versant Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

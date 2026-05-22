@@ -1,0 +1,23 @@
+{
+  "id": "2023-11-21_dte-energy-company_pa20-7",
+  "company": "DTE Energy Company",
+  "company_raw": "DTE Energy Company (PA20-7)",
+  "docket": "PA20-7",
+  "docket_full": null,
+  "issued_date": "2023-11-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20231121-3001&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20231121-3001",
+  "captured_at": "2026-02-03",
+  "page_count": 32,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

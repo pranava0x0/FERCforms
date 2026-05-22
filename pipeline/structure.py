@@ -146,13 +146,55 @@ def _metadata(page1: str, full: str) -> dict:
     }
 
 
+# --- TOC-based extraction (most reports expose findings only via the Table of
+# Contents "Findings and Recommendations" subsection, not an exec-summary list) ---
+_TOC_FR_RE = re.compile(r"Findings and Recommendations\s*\.{2,}\s*\d+")
+_TOC_OM_RE = re.compile(r"Other Matter[s]?\s*\.{2,}\s*\d+")
+_TOC_END_RE = re.compile(r"(?m)^\s*(?:[IVX]{1,4}\.\s|Other Matter|Appendix|Acronyms)")
+_TOC_ITEM_RE = re.compile(r"(\d+)\.\s+(.+?)\s*\.{3,}\s*\d+")
+
+
+def _toc_titles(full: str, start_re) -> list[str]:
+    """Titles from a TOC subsection's numbered, dotted-leader entries."""
+    m = start_re.search(full)
+    if not m:
+        return []
+    rest = full[m.end():]
+    end = _TOC_END_RE.search(rest)
+    block = re.sub(r"\s+", " ", rest[: end.start() if end else 1600])
+    return [t.strip() for _n, t in _TOC_ITEM_RE.findall(block)]
+
+
+def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional[str]:
+    """Best-effort verbatim opening paragraph of a finding's body section."""
+    pat = re.compile(r"\s+".join(re.escape(w) for w in title.split()))
+    best = None
+    for m in pat.finditer(full):
+        if "\n" not in full[max(0, m.start() - 6): m.start()]:
+            continue  # mid-sentence mention/citation, not a heading -> skip
+        if full[m.end(): m.end() + 60].count(".") >= 4:  # dotted TOC leader -> skip
+            continue
+        best = m  # latest line-start, non-TOC occurrence = the body heading
+    if best is None:
+        return None
+    chunk = _clean(full[best.end(): best.end() + 1200], docket_full)
+    chunk = re.split(r"Pertinent Guidance|Recommendation|Background", chunk)[0]
+    chunk = re.sub(r"\s+", " ", chunk).strip()
+    chunk = re.sub(r"^[\s:.–—-]+", "", chunk)  # strip leading dash/colon
+    return chunk[:600].strip() or None
+
+
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     page1 = text.pages[0].text if text.pages else ""
     full_raw = "\n".join(p.text for p in text.pages)
     meta = _metadata(page1, full_raw)
     full = _clean(full_raw, meta["docket_full"])
 
-    findings_sec = _section_any(
+    # Findings: prefer the exec-summary "Summary of [Noncompliance] Findings" list
+    # (title + inline verbatim summary). Most reports lack it, so fall back to the
+    # TOC "Findings and Recommendations" subsection + body-paragraph summaries.
+    # Reports whose section is just "A. Conclusion" legitimately have 0 findings.
+    es_block = _section_any(
         full,
         [
             "Summary of Noncompliance Findings",
@@ -161,30 +203,28 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         ],
         ["Summary of Other Matter", "Recommendations", "II. Background"],
     )
-    other_sec = _section(full, "Summary of Other Matter", ["Recommendations", "II. Background"])
-    recs_sec = _recommendations_section(full)
+    es_items = _parse_numbered_findings(es_block)
+    if es_items:
+        specs = [(t, s, False) for _n, t, s in es_items]
+        om_block = _section(full, "Summary of Other Matter", ["Recommendations", "II. Background"])
+        specs += [(t, s, True) for _n, t, s in _parse_numbered_findings(om_block)]
+    else:
+        dk = meta["docket_full"]
+        specs = [(t, _body_summary(full_raw, t, dk), False) for t in _toc_titles(full_raw, _TOC_FR_RE)]
+        specs += [(t, _body_summary(full_raw, t, dk), True) for t in _toc_titles(full_raw, _TOC_OM_RE)]
 
-    parsed_findings = _parse_numbered_findings(findings_sec)
-    parsed_other = _parse_numbered_findings(other_sec)
-    titles = [t for _, t, _ in parsed_findings] + [t for _, t, _ in parsed_other]
-    parsed_recs = _parse_recommendations(recs_sec, titles)
+    titles = [t for t, _s, _o in specs]
+    parsed_recs = _parse_recommendations(_recommendations_section(full), titles)
 
     findings: list[Finding] = []
-    for idx, (_, title, summary) in enumerate(parsed_findings, 1):
-        recs = [
-            Recommendation(number=r["number"], text=r["text"])
-            for r in parsed_recs
-            if r["group"] == title
-        ]
-        findings.append(Finding(index=idx, title=title, summary=summary, recommendations=recs))
-    for idx, (_, title, summary) in enumerate(parsed_other, len(findings) + 1):
+    for idx, (title, summary, is_other) in enumerate(specs, 1):
         recs = [
             Recommendation(number=r["number"], text=r["text"])
             for r in parsed_recs
             if r["group"] == title
         ]
         findings.append(
-            Finding(index=idx, title=title, summary=summary, is_other_matter=True, recommendations=recs)
+            Finding(index=idx, title=title, summary=summary, is_other_matter=is_other, recommendations=recs)
         )
 
     return AuditReport(

@@ -4,7 +4,9 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## Pipeline & data
 
-- **[high] Process the full FY2015–present corpus.** v1 runs the full E2E pipeline (extract → structure → patterns) on only the **2 most-recent** reports, by design. Scale it to every downloaded PDF once the slice is proven.
+- **[done] Process the full electric corpus.** All **53 electric (Form 1)** reports are extracted → structured → mined (42 with findings; 11 are clean "A. Conclusion" audits). Gas/oil remain out of scope (see Design/scope items).
+- **[med] Improve `_body_summary` precision.** For TOC-fallback reports it occasionally grabs a nearby regulatory citation instead of the finding's opening sentence (titles that recur in cited orders). Anchor more tightly on the section heading.
+- **[low] Handle remaining no-TOC report formats.** A few reports lack a parseable TOC "Findings and Recommendations" block (different wording) and show 0 findings even if they have some.
 - **[high] OCR fallback for scanned reports.** Born-digital PDFs extract cleanly with pdfplumber/PyMuPDF. Older/scanned reports need real OCR. Add a tesseract-based fallback (`brew install tesseract` + `pytesseract`) behind an `--ocr` flag. **Run the security sweep before installing.** Pages under `MIN_TEXT_CHARS_PER_PAGE` are already flagged as image-only.
 - **[med] Incremental listing refresh.** Re-capture `/audits` and append only new reports (idempotent by docket number).
 - **[med] eLibrary docket resolution.** Some reports link via an eLibrary docket rather than a static PDF. Resolve those dockets to downloadable URLs.

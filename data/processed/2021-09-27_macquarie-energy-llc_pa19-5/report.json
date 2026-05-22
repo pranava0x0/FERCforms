@@ -1,0 +1,25 @@
+{
+  "id": "2021-09-27_macquarie-energy-llc_pa19-5",
+  "company": "Macquarie Energy LLC",
+  "company_raw": "Macquarie Energy LLC (PA19-5)",
+  "docket": "PA19-5",
+  "docket_full": "PA19-5-000",
+  "issued_date": "2021-09-27",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210927-3001&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210927-3001",
+  "captured_at": "2026-02-03",
+  "page_count": 29,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2016 to May 31, 2021",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

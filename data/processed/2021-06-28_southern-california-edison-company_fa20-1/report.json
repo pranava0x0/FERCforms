@@ -1,0 +1,161 @@
+{
+  "id": "2021-06-28_southern-california-edison-company_fa20-1",
+  "company": "Southern California Edison Company",
+  "company_raw": "Southern California Edison Company (FA20-1)",
+  "docket": "FA20-1",
+  "docket_full": "FA20-1-000",
+  "issued_date": "2021-06-28",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210628-3011&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210628-3011",
+  "captured_at": "2026-02-03",
+  "page_count": 57,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2017 through March 31, 2021",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "SCE improperly recorded approximately $7.3 million of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages. As a result of the improper accounting for compromise settlements, SCE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers. SCE Response: SCE respectfully disagrees with this Draft Audit Report finding for policy and other reasons, which include but are not limited to SCE’s position that costs associated with mere claims and allegations without any actual findings of wrongdoing should",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen and revise accounting processes and procedures to ensure that SCE properly records compromise settlement payments related to employment discrimination claims in Account 426.5 as consistent with Accounting Release No. 12."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to staff on the revised accounting for compromise settlement payments resulting from employment discrimination claims in Account 426.5 for regulatory accounting and annual transmission revenue requirement development. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to SCE’s wholesale transmission customers since January 1, 2017, plus interest, relating to the inclusion of compromise settlement payments resulting from employment discrimination claims; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 4,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 5,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Vendor Discounts",
+      "summary": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Miscellaneous General Expenses. As a result of the improper accounting for vendor discounts, SCE understated A&G expense and overstated various Operating and Maintenance as well as Electric Plant in Service accounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Revise policies and procedures to properly account for vendor discounts consistent Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible with Commission accounting requirements."
+        },
+        {
+          "number": 7,
+          "text": "Provide training to staff on the revised procedures for accounting for vendor discounts. Also, develop a training program that supports periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Equity Component The equity component of SCE’s method for computing the AFUDC rate was deficient. Specifically, SCE improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component used to compute its AFUDC rate.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction No. 3(A)(17), and other applicable Commission requirements."
+        },
+        {
+          "number": 9,
+          "text": "Revise procedures to timely cease AFUDC accrual on all suspended or cancelled construction projects, consistent with Commission accounting requirements."
+        },
+        {
+          "number": 10,
+          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation Nos. 8 and 9. Provide periodic training in these areas as needed."
+        },
+        {
+          "number": 11,
+          "text": "Recalculate accrued AFUDC in a manner consistent with Electric Plant Instruction No. 3(A)(17) that corrects the improper exclusion of short-term debt beginning in 2010 to the present and long-term debt amounts only for 2019."
+        },
+        {
+          "number": 12,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report."
+        },
+        {
+          "number": 13,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC included in the transmission formula rate billing charges since 2017, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 14,
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 12, and restate and footnote the FERC Form No. 1 for current and comparative years as necessary."
+        },
+        {
+          "number": 15,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible"
+        },
+        {
+          "number": 16,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        },
+        {
+          "number": 17,
+          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction 3(A)(17), and other applicable Commission requirements."
+        },
+        {
+          "number": 18,
+          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation 17. Provide periodic training in these areas as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allowance for Funds Used During Construction – Equity Component",
+      "summary": "The equity component of SCE’s method for computing the AFUDC rate was deficient. Specifically, SCE improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component used to compute its AFUDC rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Administrative and General Expenses",
+      "summary": "SCE improperly recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, SCE misrepresented A&G expense account balances reported in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise policies and procedures to properly account for A&G expenditures consistent with Commission accounting requirements."
+        },
+        {
+          "number": 20,
+          "text": "Provide training to relevant staff on the revised procedures for properly accounting for A&G expenditures. Also, develop a training program for periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "SCE did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, and complete information in the FERC Form No. 1, consistent with the page instructions."
+        },
+        {
+          "number": 22,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports periodic training in this area, as needed. E."
+        }
+      ]
+    }
+  ]
+}

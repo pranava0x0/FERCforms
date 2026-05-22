@@ -39,7 +39,10 @@ USER_AGENT: str = (
     "python-requests/2.32"
 )
 REQUEST_DELAY_SECONDS: float = 2.0     # min gap between requests to one host
-REQUEST_TIMEOUT_SECONDS: int = 60
+# eLibrary's DownloadPDF generates the combined PDF server-side; large/old
+# accessions can take >60s, so allow generous headroom (some 2019 reports
+# timed out at 60s — see ISSUES.md).
+REQUEST_TIMEOUT_SECONDS: int = 180
 MAX_RETRIES: int = 4
 BACKOFF_BASE_SECONDS: int = 10         # exponential backoff start on 429/5xx
 

@@ -1,0 +1,89 @@
+{
+  "id": "2024-08-22_black-hills-corporation_pa23-3",
+  "company": "Black Hills Corporation",
+  "company_raw": "Black Hills Corporation (PA23-3)",
+  "docket": "PA23-3",
+  "docket_full": "PA23-3-000",
+  "issued_date": "2024-08-22",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240822-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240822-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 23,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2020 to November 30, 2023",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Load Forecast Data",
+      "summary": "The Black Hills Electric Utilities did not post their load forecasts on a daily basis, including underlying assumptions and daily peak load for the prior day. As a result, there was a lack of transparency and information on transmission system conditions, which may have impacted transmission customers and their transmission activities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Perform a review of the automated process to determine why the transfer of load forecast data to OASIS stopped working and make corrections, as needed. Provide a report to audit staff that summarizes the results of this review."
+        },
+        {
+          "number": 2,
+          "text": "Post load forecast data since January 2022 on their respective OASIS sites."
+        },
+        {
+          "number": 3,
+          "text": "Develop and implement procedures and controls to ensure that the Black Hills Electric Utilities are timely posting all required information to OASIS, including load forecast data, underlying assumptions, and daily peak loads."
+        },
+        {
+          "number": 4,
+          "text": "Develop and implement policies and procedures for a periodic review of OASIS postings in order to verify that the Black Hills Electric Utilities are posting load forecast data, underlying assumptions, and daily peak loads."
+        },
+        {
+          "number": 5,
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 3 and 4 with future training as needed."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Narrative Explanation for ATC Unavailability",
+      "summary": "Black Hills Power did not post narrative explanations of the reasons for the unavailability of ATC when the monthly and yearly capability remained unchanged at a value of zero for a period of six months or longer for several transmission paths. As a result, there was a lack of transparency and information available to transmission customers regarding ATC availability and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Develop and implement policies and procedures to identify when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path."
+        },
+        {
+          "number": 7,
+          "text": "Develop and implement policies and procedures to post a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 6 and 7 with future training as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Public Access for Monthly and Yearly Capability Information",
+      "summary": "The Black Hills Electric Utilities’ postings for monthly and yearly capability, along with a narrative explanation, for instances in which TTC changed by more than 10 percent were not made publicly available. As a result, there was a lack of transparency and information available to transmission customers regarding TTC and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Review system settings for all OASIS posting functions that require public access and develop policies and procedures to ensure that settings are set to provide proper access for public users. Provide a report to audit staff that summarizes the results of this review."
+        },
+        {
+          "number": 10,
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendation 9 with future training as needed. E."
+        }
+      ]
+    }
+  ]
+}

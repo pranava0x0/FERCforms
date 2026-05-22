@@ -1,0 +1,55 @@
+{
+  "id": "2024-11-27_alliant-energy-corporate-services-inc_fa23-7",
+  "company": "Alliant Energy Corporate Services, Inc.",
+  "company_raw": "Alliant Energy Corporate Services, Inc. (FA23-7)",
+  "docket": "FA23-7",
+  "docket_full": "FA23-7-000",
+  "issued_date": "2024-11-27",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20241127-3007&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20241127-3007",
+  "captured_at": "2026-02-03",
+  "page_count": 34,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Service Company Allocation Factors",
+      "summary": "AECS improperly allocated costs to both FERC-jurisdictional and non- jurisdictional entities, causing an error in accounting and reporting. As a result, WPL overcharged its wholesale power customers and IPL undercharged its wholesale power customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "AECS improperly recorded lobbying expenses in administrative and general (A&G) expense accounts, rather than recording the expenditures in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. Due to AECS’s accounting misclassifications, these expenses were improperly accounted for and reported on the books of WPL and IPL. As a result, WPL and IPL overcharged their wholesale power customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Electric Vehicle Charging Stations",
+      "summary": "WPL incorrectly recovered a portion of the cost of distribution-related Electric Vehicle (EV) charging stations through its wholesale power formula rates. As a result, WPL overstated its wholesale power revenue requirements, which led to overbillings to wholesale power customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Donations",
+      "summary": "AECS improperly recorded two donations totaling $10,000 in Account 921, Office Supplies and Expenses, rather than in Account 426.1, Donations. Due to the service company’s accounting misclassifications, these expenses were improperly accounted for and reported on the books of WPL and IPL. As a result, WPL and IPL included these amounts in wholesale power rate determinations and overcharged wholesale power customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

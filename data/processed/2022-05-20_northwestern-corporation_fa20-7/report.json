@@ -1,0 +1,182 @@
+{
+  "id": "2022-05-20_northwestern-corporation_fa20-7",
+  "company": "NorthWestern Corporation",
+  "company_raw": "NorthWestern Corporation (FA20-7)",
+  "docket": "FA20-7",
+  "docket_full": "FA20-7-000",
+  "issued_date": "2022-05-20",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220520-3001&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220520-3001",
+  "captured_at": "2026-02-03",
+  "page_count": 45,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to October 31, 2021",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "NorthWestern’s method for calculating its AFUDC rate was inconsistent with the Commission’s accounting regulations. Specifically, NorthWestern inappropriately used prior month balances instead of prior year balances in the long-term debt and equity components for the purpose of computing its AFUDC rate and inappropriately included undistributed subsidiary earnings as a part of the equity component for the purpose of computing its AFUDC rate. Additionally, when applying AFUDC, NorthWestern improperly compounded its AFUDC on a monthly basis rather than compounding on a semi-annual basis and inap",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise its policies and procedures to ensure that its AFUDC base and rate calculation is consistent with Electric Plant Instruction (EPI) No. 3(A)(17) and other applicable Commission requirements. Revisions should include procedures to: use prior year ending balances as reported in NorthWestern’s FERC Form No. 1 filings for the long-term debt and equity components; prevent balances in Account 216.1 from being included in the equity component; ensure AFUDC is compounded, at most, semi-annually; and prevent inclusion of unpaid contract retention amounts in the CWIP base in AFUDC calculations."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to staff on the revised policies and procedures described in the previous recommendation. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Recalculate AFUDC for the period 2018 through 2021 in accordance with the requirements of EPI No. 3(A)(17) and the other pertinent guidance discussed in this finding. Based on the calculations, for periods in which AFUDC was over- accrued, submit a yearly estimate of over accruals to DAA within 60 days of receiving this audit report, with proposed corrected accounting entries and supporting documentation that reflects corrections to remove over-accrued AFUDC balances from plant and associated accounts, such as depreciation, income tax expense, accumulated provision for depreciation, and accumulated deferred income taxes (ADIT)."
+        },
+        {
+          "number": 4,
+          "text": "Revise electric plant, accumulated provision for depreciation, ADIT, and other account balances impacted by over-accrual of AFUDC after receiving DAA’s approval of the proposed accounting entries, and restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+        },
+        {
+          "number": 5,
+          "text": "Submit a refund report, within 60 days of receiving DAA’s approval of the proposed accounting entries, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper AFUDC computations during the audit period; (2) determinative components of the refund; (3) refund method; (4) the customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 6,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 7,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Revolving Credit Facility Upfront and Commitment Fees",
+      "summary": "NorthWestern inappropriately recorded in Account 181, Unamortized Debt Expense, upfront fees it paid when establishing its revolving line of credit, and inappropriately recorded in Account 921, Office Supplies and Expenses, commitment fees it paid for its revolving credit facility.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise existing accounting policies, procedures, and practices relating to accounting for credit agreement expenses used for general liquidity, such as upfront, commitment, revolving line of credit, and letter of credit fees, to be consistent with Commission accounting requirements."
+        },
+        {
+          "number": 9,
+          "text": "Train relevant staff on the revised accounting policies and provide periodic training, as needed."
+        },
+        {
+          "number": 10,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA to reflect the transfer of credit agreement-related balances improperly recorded in Account 181 to Account 186, Miscellaneous Deferred Debits."
+        },
+        {
+          "number": 11,
+          "text": "Revise miscellaneous deferred debit balances to appropriately account for and report credit agreement-related balances after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary, to reflect and disclose the revisions."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Membership Dues",
+      "summary": "NorthWestern misclassified $19,188, constituting part of the lobbying portion of membership dues it paid during the audit period and therefore associated with nonoperating activities, in Account 930.2, Miscellaneous General Expenses, and Account 921, Office Supplies and Expenses, instead of in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. This led to a reporting error in its 2018 FERC Form No. 1.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Strengthen policies, procedures, and controls to account for the lobbying portion of membership dues consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 13,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 14,
+          "text": "Perform an analysis to identify other membership dues that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of receiving this report."
+        },
+        {
+          "number": 15,
+          "text": "Submit a refund report, within 60 days of receiving this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper accounting of lobbying costs in transmission formula rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive the refunds, and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 16,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 17,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "NorthWestern misclassified $341,902 of lobbying expenses in various administrative and general expense accounts instead of Account 426.4, Expenditures for Certain Civic, Political and Related Activities. This resulted in NorthWestern inappropriately including these costs in transmission formula rate service cost determinations. As a result, FERC-jurisdictional transmission customers were overbilled $32,509 in Montana and $2,584 in South Dakota.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Develop and implement procedures and policies to track, report, review, and account for lobbying and other expenses of activities associated with influencing legislation and with other political activity consistent with Commission accounting requirements."
+        },
+        {
+          "number": 19,
+          "text": "Train relevant staff on the procedures and policies and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 20,
+          "text": "Perform an analysis to identify other lobbying costs that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 21,
+          "text": "Submit a refund report, within 60 days of receiving this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper accounting of lobbying costs in transmission formula rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive the refunds, and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 22,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 23,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Miscellaneous Accounting Classification Errors",
+      "summary": "NorthWestern misclassified various costs in its books and records. As a result, the amounts reported on FERC Form No. 1 for Administrative and General Expenses were incorrect, which impacted development of the annual transmission revenue requirements used for determining charges for NorthWestern’s FERC-jurisdictional transmission customers in Montana and South Dakota. Specifically, misclassification of certain general advertising expenses in Account 923, Outside Services Employed, resulted in overbillings to FERC-jurisdictional transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Strengthen policies, procedures, and controls to ensure that NorthWestern records the different administrative and general expenses in the proper accounts consistent with Commission accounting requirements."
+        },
+        {
+          "number": 25,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 26,
+          "text": "Perform an analysis to identify other administrative and general expenses that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 27,
+          "text": "If the net results of the analysis from Recommendation 26 and the errors identified in this finding impacted formula rate billings, submit a refund report, within 60 days of receiving this report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from improper accounting of administrative and general expense impacting charges under transmission formula rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 28,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 29,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. E. Implementation of Recommendations Audit staff further recommends that NorthWestern submit the following for audit staff’s review:  A plan for implementing corrective actions that address each recommendation within 30 days after the issuance of this audit report;  Quarterly reports to DAA describing NorthWestern’s progress in completing each corrective action taken for each recommendation. NorthWestern should submit these nonpublic quarterly reports no later than 30 days after the end of each calendar quarter, beginning with the first quarter after the issuance of this audit report, and continuing each calendar quarter until NorthWestern completes all recommended corrective actions; and  Copies of any written policies and procedures developed or updated in response to the audit report’s recommendations; copies of journal entries made to correct accounting errors and deficiencies; and other information supporting the corrective actions made. NorthWestern should submit these documents for audit staff’s review in the first nonpublic quarterly report after it completes them."
+        }
+      ]
+    }
+  ]
+}

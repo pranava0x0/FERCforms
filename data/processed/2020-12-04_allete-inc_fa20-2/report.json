@@ -1,0 +1,226 @@
+{
+  "id": "2020-12-04_allete-inc_fa20-2",
+  "company": "ALLETE, Inc.",
+  "company_raw": "ALLETE, Inc. (FA20-2)",
+  "docket": "FA20-2",
+  "docket_full": "FA20-2-000",
+  "issued_date": "2020-12-04",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201204-3005&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201204-3005",
+  "captured_at": "2026-02-03",
+  "page_count": 47,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2016 through September 3, 2020",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Transmission Incentives",
+      "summary": "ALLETE accepts this finding and the related recommendations. 2. Accounting for Environmental Costs It is ALLETE’s position that this finding overlooks important policy considerations that should inform the proper accounting of related expenses. Nonetheless, ALLETE accepts this finding and the related recommendations. 3. Transmission and Distribution Plant Accounting ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this fi",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Update and implement policies and procedures to ensure the accurate calculation of Pre-funded AFUDC recorded in Account 254 and included in the wholesale transmission formula rate."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to staff on the updated Pre-funded AFUDC accounting and wholesale transmission formula rate procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the Pre-funded AFUDC amounts in Account 254, and other accounts impacted by the under-accrual of Pre-funded AFUDC within 60 days of issuance of the audit report."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the adjustments made in response to the preceding recommendation; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Environmental Costs",
+      "summary": "It is ALLETE’s position that this finding overlooks important policy considerations that should inform the proper accounting of related expenses. Nonetheless, ALLETE accepts this finding and the related recommendations. 3. Transmission and Distribution Plant Accounting ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE acce",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise policies and procedures to ensure that ALLETE properly accounts for donations in accordance with Commission accounting regulations."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to its staff on the revised procedures for recording donations. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 9,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the improper accounting for donation costs in Account 930.2; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 10,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 11,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Transmission and Distribution Plant Accounting",
+      "summary": "ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Revise and implement policies and procedures to ensure assets are recorded in the proper accounts under the Commission’s accounting regulations."
+        },
+        {
+          "number": 13,
+          "text": "Provide training to staff on the revised asset accounting procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 14,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the adjustments made in response to the preceding two recommendations; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 15,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 16,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Long-Term Debt and Interest Expense",
+      "summary": "ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendat",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise and implement policies and procedures to ensure that long-term debt and interest expense are recorded in the proper accounts under the Commission’s accounting regulations."
+        },
+        {
+          "number": 18,
+          "text": "Provide training to staff on the revised accounting procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 19,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the long-term debt amounts in Account 186 within 60 days of issuance of the audit report."
+        },
+        {
+          "number": 20,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the adjustments made in response to the preceding recommendation; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 21,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 22,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting Misclassifications",
+      "summary": "ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective ac",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Revise policies and procedures to ensure that ALLETE properly accounts for expenditures in its books and records."
+        },
+        {
+          "number": 24,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in ALLETE’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 25,
+          "text": "Perform an analysis of A&G accounts to identify additional expenses that were inappropriately recovered through ALLETE’s transmission formula rates, such as lobbying costs, during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 26,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the adjustments made in response to the preceding recommendation; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 27,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 28,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Application of Nonapproved Depreciation Rates",
+      "summary": "ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective action, and ALLETE will provide copies of any written policies and procedures developed in response to the recom",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Develop and implement processes and procedures to ensure that depreciation rates and related studies are filed with the Commission for consideration and decision before being used for ratemaking purposes."
+        },
+        {
+          "number": 30,
+          "text": "File current depreciation studies in dockets relating to ALLETE’s Wholesale Transmission Formula Rates within 60 days."
+        },
+        {
+          "number": 31,
+          "text": "Provide training to its staff on the revised procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 32,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to ALLETE’s wholesale transmission customers since January 1, 2016, plus interest, relating to the improper accounting for depreciation associated with electric plant held for future use in Account 403; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 33,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 34,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective action, and ALLETE will provide copies of any written policies and procedures developed in response to the recommendations. If you have any questions regarding this filing, please contact me at (218) 723- 3963 or dmoeller@allete.com. Yours truly, David R. Moeller Senior Attor",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Revise and strengthen documented policies, procedures, and practices to ensure that information reported in the FERC Form No. 1 is correct, accurate, complete, and consistent with the instructions of the form."
+        },
+        {
+          "number": 36,
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E."
+        }
+      ]
+    }
+  ]
+}

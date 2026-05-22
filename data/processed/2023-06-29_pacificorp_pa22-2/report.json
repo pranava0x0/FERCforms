@@ -1,0 +1,26 @@
+{
+  "id": "2023-06-29_pacificorp_pa22-2",
+  "company": "PacifiCorp",
+  "company_raw": "PacifiCorp (PA22-2)",
+  "docket": "PA22-2",
+  "docket_full": "PA22-2-000",
+  "issued_date": "2023-06-29",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230629-3002&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230629-3002",
+  "captured_at": "2026-02-03",
+  "page_count": 18,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to October 31, 2022",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

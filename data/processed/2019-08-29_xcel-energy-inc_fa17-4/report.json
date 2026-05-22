@@ -1,0 +1,60 @@
+{
+  "id": "2019-08-29_xcel-energy-inc_fa17-4",
+  "company": "Xcel Energy Inc.",
+  "company_raw": "Xcel Energy Inc. (FA17-4)",
+  "docket": "FA17-4",
+  "docket_full": "FA17-4-000",
+  "issued_date": "2019-08-29",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190829-3023&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190829-3023",
+  "captured_at": "2026-02-03",
+  "page_count": 33,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2014 through December 31, 2018",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Capitalized Software Allocation",
+      "summary": "XES incorrectly allocated capital costs of corporate software only to the Xcel utilities. Capital costs of software should be allocated to all Xcel companies benefitting from XES’s use of the software. Xcel’s utilities were charged an excessive amount of capital software costs as a result of XES’s improper allocation.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Allocation of Information Technology Costs",
+      "summary": "XES used an improper allocation methodology to assign shared costs for operation, maintenance, and management of the company’s information technology network in 2016 and 2017. Use of this allocation methodology led XES to improperly charge administrative and general costs to Xcel’s utilities and led to improper billings to Xcel’s wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Allocation of XES Income Tax Expense",
+      "summary": "XES allocated its income tax expense only to the Xcel utilities. XES should have allocated its income tax expense to all Xcel companies benefiting from XES’s activities that caused XES to incur income tax expense.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "XES incorrectly recorded approximately $150,000 of payments resulting from compromise settlements in its operating expense accounts, rather than in Account 426.5, Other Deductions, as required. Further, XES allocated these costs to the Xcel utilities, who also incorrectly recorded the costs in their operating expense accounts. These operating expense accounts were included in the utilities’ wholesale transmission formula rate mechanisms. As a result, Xcel’s utilities overstated their wholesale transmission revenue requirement used to bill transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Reporting of Cost Allocation Methodologies",
+      "summary": "XES did not disclose all allocation methods used to allocate costs in its FERC Form No. 60 filings during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "2022-09-01_pjm-interconnection-l-l-c_pa19-2",
+  "company": "PJM Interconnection, L.L.C.",
+  "company_raw": "PJM Interconnection, L.L.C. (PA19-2)",
+  "docket": "PA19-2",
+  "docket_full": "PA19-2-000",
+  "issued_date": "2022-09-01",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220901-3021&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220901-3021",
+  "captured_at": "2026-02-03",
+  "page_count": 62,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2016 through May 31, 2021",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Offer Capping of Generation Resources",
+      "summary": "PJM did not offer cap a self-scheduled generation resource in the Day-ahead energy market for 18 hours on January 21, 2019, despite the fact that its owner had failed the TPS test. The error was caused by operators applying outdated provisions of PJM’s OATT, along with a lack of current written procedures and operator instructions. PJM’s application of the outdated provisions may have resulted in additional self-scheduled resources not being appropriately offer capped since November 1, 2017 when the new OATT provisions went into effect.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

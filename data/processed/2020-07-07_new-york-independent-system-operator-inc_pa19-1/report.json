@@ -1,0 +1,24 @@
+{
+  "id": "2020-07-07_new-york-independent-system-operator-inc_pa19-1",
+  "company": "New York Independent System Operator, Inc.",
+  "company_raw": "New York Independent System Operator, Inc. (PA19-1)",
+  "docket": "PA19-1",
+  "docket_full": "PA19-1-000",
+  "issued_date": "2020-07-07",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3024&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200707-3024",
+  "captured_at": "2026-02-03",
+  "page_count": 28,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2016 through December 2, 2019",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

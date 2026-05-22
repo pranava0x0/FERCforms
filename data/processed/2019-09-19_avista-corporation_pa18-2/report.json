@@ -1,0 +1,167 @@
+{
+  "id": "2019-09-19_avista-corporation_pa18-2",
+  "company": "Avista Corporation",
+  "company_raw": "Avista Corporation (PA18-2)",
+  "docket": "PA18-2",
+  "docket_full": "PA18-2-000",
+  "issued_date": "2019-09-19",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190919-3007&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190919-3007",
+  "captured_at": "2026-02-03",
+  "page_count": 48,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2015 to December 31, 2018",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Secondary Network Transmission Service",
+      "summary": "Avista improperly reserved hourly secondary network transmission service 61 times, representing 5,233 MWh, to support off-system sales to non-network customers. Of the 61 requests, 34 requests remained confirmed, representing 3,353 MWh, while 27 requests were annulled. Of these 34 requests, 11 were scheduled for energy delivery, representing 1,395 MWh. As a result, Avista’s merchant function was not charged PTP transmission charges and obtained service with a higher service priority.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Develop and implement controls to ensure that Avista neither requests nor approves network transmission service and secondary network transmission service for any purpose other than to serve network customers."
+        },
+        {
+          "number": 2,
+          "text": "Enhance training for its marketing function employees responsible for reserving and/or scheduling secondary network service to ensure that secondary network service is only reserved to serve Avista’s native load customers, unless reserved on behalf of another network customer pursuant to an executed agent agreement."
+        },
+        {
+          "number": 3,
+          "text": "Enhance training for its transmission function employees responsible for approving transmission schedules to ensure network transmission customers, including Avista’s marketing function, properly use secondary network service."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Avista’s methods for calculating and accounting for its AFUDC rate were deficient and caused Avista’s AFUDC to exceed the maximum AFUDC permitted Avista by the Commission’s regulations, as follows: • Avista included revolving credit facility commitment fees (up-front and quarterly) as part of short-term debt interest expense to compute its AFUDC rate. Avista did not have Commission approval, required by Order No. 561-A, to include revolving credit facility commitment fees in the calculation of its AFUDC rate. • Avista incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Revise and implement procedures to ensure its AFUDC rate calculation is consistent with Electric Plant Instructions No. 3(17), Order Nos. 561 and 561- A, and other applicable Commission accounting regulations."
+        },
+        {
+          "number": 5,
+          "text": "Revise and implement procedures to ensure that Account 216.1 and Account 219 are excluded from the equity components used to derive the AFUDC rate."
+        },
+        {
+          "number": 6,
+          "text": "Revise and implement procedures to ensure that the year-end amounts reported on Avista’s FERC Form No. 1 filings are used to compute the AFUDC rate in accordance with the Commission’s accounting regulations."
+        },
+        {
+          "number": 7,
+          "text": "Revise and implement procedures to ensure that the AFUDC amount capitalized as a cost of plant is computed in accordance with the Commission’s accounting regulations."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to appropriate employees on AFUDC computation in accordance with the Commission’s accounting regulations and Avista’s revised procedures."
+        },
+        {
+          "number": 9,
+          "text": "Recalculate AFUDC amounts in accordance with the Commission’s accounting regulations from January 1, 2010 (effective date of current fixed transmission rates) to the present, determine the excess amount capitalized by Avista, determine the impacts on other accounts due to over-capitalization, and submit correcting journal entries to the DAA for review and approval."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Deferred Income Taxes - AFUDC",
+      "summary": "Avista’s methods for accounting for Deferred Income Taxes related to the equity component of the AFUDC rate were deficient as follows: • Avista incorrectly recorded a debit in Account 410.1, Provision for Deferred Income Taxes, based on the amount of the equity component of AFUDC included in income Account 419.1, Allowance for Other Funds Used During Construction, and credited Account 282, Accumulated Deferred Income Taxes – Other Property. Avista should have recorded the deferred tax debit amount in Account 182.3, Other Regulatory Assets. • Avista should have recorded a gross up for the incom",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise and implement Avista’s accounting policies and procedures relating to Deferred Income Taxes to comply with the Commission’s accounting regulations."
+        },
+        {
+          "number": 11,
+          "text": "Provide training to appropriate employees on accounting procedures related to AFUDC and related income taxes."
+        },
+        {
+          "number": 12,
+          "text": "Provide the amount of Deferred Income Taxes on the AFUDC Equity Component flowed through since January 1, 2010 (effective date of current fixed transmission rates), and the amount that should have been included in Account 182.3, Other Regulatory Assets, as of December 31, 2017, and submit detailed analyses to the DAA for review and approval."
+        },
+        {
+          "number": 13,
+          "text": "Report the accounting change in 2018 including the impact on annual balances reported on prior Form No. 1 filings as a note on the next Form No. 1."
+        },
+        {
+          "number": 14,
+          "text": "Inform DAA about any state rate treatment addressing Avista’s incorrect accounting for Deferred Income Tax Expense prior to January 1, 2018. Provide details of any such state actions with supporting documentation."
+        },
+        {
+          "number": 15,
+          "text": "Submit journal entries, if appropriate, related to any state commissions’ actions to the DAA for review and approval."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Capitalization of System Planning Costs",
+      "summary": "Avista improperly capitalized system planning costs of approximately $2.8 million as a cost of plant through its CWIP between 2014 and 2017. When subsequently correcting this error, by removing approximately $2.6 million from the cost of plant, Avista did not remove the related accumulated provision for depreciation, current and deferred income taxes, and AFUDC.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Revise and implement procedures to effect correction of errors including corrections to accounts which require Commission approval."
+        },
+        {
+          "number": 17,
+          "text": "Provide enhanced training to appropriate staff on procedures for corrections including requirements to get Commission approval."
+        },
+        {
+          "number": 18,
+          "text": "Submit journal entries to a) remove the remaining over-capitalized system planning costs from the cost of plant, b) remove appropriate accumulated depreciation from accumulated provision for depreciation, and c) correct related Accumulated Deferred Income Tax Account balances, for DAA review and approval."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Asset Retirement Obligations",
+      "summary": "Avista improperly accounted for certain items related to its Asset Retirement Obligations (ARO). Specifically, Avista did not record Asset Retirement Cost (ARC) depreciation expense in Account 403.1, Depreciation Expense, and ARO accretion expense in Account 411.10, Accretion Expense. Instead, Avista recorded those expenses directly in Account 182.3, Other Regulatory Assets.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise and implement policies and procedures to ensure Avista properly accounts for ARO-related costs in accordance with the Commission’s accounting regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "Avista did not comply with the instructions on page 398, Purchase and Sale of Ancillary Services, on its FERC Form No. 1 filings. This deficient reporting affected the reliability of information reported in Avista’s FERC Form No. 1 submissions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Revise and strengthen documented policies, procedures, and practices to help ensure information in its FERC Form No. 1 submissions is correct, accurate, and consistent with the instructions of the form."
+        },
+        {
+          "number": 21,
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. Use of Transmission Service Numbers"
+        },
+        {
+          "number": 22,
+          "text": "Continue to evaluate and take actions to reduce the use of TSNs."
+        },
+        {
+          "number": 23,
+          "text": "Provide training to transmission employees on OATT requirements and implement an ongoing process to ensure that TSNs are used for limited scheduling purposes where a valid adjacent commercial path TSR is not available in OASIS. E."
+        }
+      ]
+    }
+  ]
+}

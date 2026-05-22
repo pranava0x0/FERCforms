@@ -1,0 +1,24 @@
+{
+  "id": "2022-03-31_duke-energy-corporation_pa20-3",
+  "company": "Duke Energy Corporation",
+  "company_raw": "Duke Energy Corporation (PA20-3)",
+  "docket": "PA20-3",
+  "docket_full": "PA20-3-000",
+  "issued_date": "2022-03-31",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220331-3004&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220331-3004",
+  "captured_at": "2026-02-03",
+  "page_count": 17,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2017 to October 31, 2021",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+  "company": "San Diego Gas & Electric Company",
+  "company_raw": "San Diego Gas & Electric Company (FA19-3)",
+  "docket": "FA19-3",
+  "docket_full": "FA19-3-000",
+  "issued_date": "2020-07-30",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200730-3038&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038",
+  "captured_at": "2026-02-03",
+  "page_count": 85,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2016 through February 4, 2020",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

@@ -44,9 +44,13 @@ Key identifiers to capture: **company**, **docket number(s)** (e.g., `PA21-4-000
 
 ## 3. Structured data model
 
-Mirrors `pipeline/models.py` (Pydantic, `extra="forbid"`). v1 parses the
-**Executive Summary** (the most consistent, quotable section) rather than the
-long detailed sections. One audit report normalizes to:
+Mirrors `pipeline/models.py` (Pydantic, `extra="forbid"`). Findings are parsed
+from the **Executive-Summary "Summary of Noncompliance Findings" list** where a
+report has one (title + inline verbatim summary); otherwise from the **Table of
+Contents "Findings and Recommendations" subsection** (titles) plus each
+finding's opening body paragraph (verbatim summary). Reports whose findings
+section is just "A. Conclusion" legitimately have **zero** findings. One audit
+report normalizes to:
 
 ```
 AuditReport
@@ -164,4 +168,4 @@ docs/
 
 **Classification (`pipeline/classify.py`):** scans the first ~8 pages of each PDF and scores industry from form number + governing statute (FPA→electric, NGA→gas, ICA→oil) + USofA part + tariff/ISO/RTO signals (`pipeline/forms.py`). Statute signals matter because **non-financial (PA) audits often don't cite a form number**. Observed across the snapshot corpus: ~39 electric, ~8 oil, ~4 gas, ~1 unknown.
 
-**Structured (2 electric reports, in scope):** both fully **born-digital** — 0 image-only pages, no OCR needed (PG&E 76 pp, Talen 34 pp). Header phrasing varies ("Summary of **Noncompliance Findings**" vs "Summary of **Findings of Noncompliance**"), so the parser tries several phrasings. Yielded PG&E (FA) = 8 findings / 37 recs, Talen (PA) = 3 findings / 6 recs. _(Full-corpus structuring pending — see [BACKLOG.md](BACKLOG.md).)_
+**Structured (full electric corpus):** **53 electric reports** — all born-digital (0 image-only, no OCR). **42 have findings (257 findings, 812 recommendations)**; the other 11 are genuine clean audits ("A. Conclusion", no noncompliance). Header phrasing varies, and most reports lack the exec-summary list entirely — so the parser falls back to the TOC (see §3). Functions: transmission 44, generation 35, distribution 2. Top themes: accounting misclassification (31 reports), forms reporting (28), AFUDC (18), depreciation (15).

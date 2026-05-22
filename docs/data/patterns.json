@@ -1,37 +1,26 @@
 {
-  "report_count": 2,
-  "finding_count": 11,
-  "other_matter_count": 0,
-  "recommendation_count": 43,
+  "report_count": 53,
+  "finding_count": 257,
+  "other_matter_count": 2,
+  "recommendation_count": 812,
   "by_industry": {
-    "electric": 2
+    "electric": 53
   },
   "by_year": {
-    "2025": 2
+    "2019": 8,
+    "2020": 7,
+    "2021": 7,
+    "2022": 10,
+    "2023": 7,
+    "2024": 8,
+    "2025": 6
   },
   "by_function": {
-    "transmission": 1,
-    "distribution": 1,
-    "generation": 1
+    "transmission": 44,
+    "generation": 35,
+    "distribution": 2
   },
   "themes": [
-    {
-      "theme": "Form reporting (Form No. 1/2/6, Page 700)",
-      "keywords": [
-        "form no.",
-        "page 700",
-        "annual report",
-        "reporting"
-      ],
-      "finding_count": 5,
-      "report_count": 2,
-      "example_titles": [
-        "Accounting for Customer Advances",
-        "Prepayments",
-        "FERC Form No. 1 Reporting",
-        "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System"
-      ]
-    },
     {
       "theme": "Accounting misclassification",
       "keywords": [
@@ -41,12 +30,30 @@
         "improperly included",
         "incorrectly included"
       ],
-      "finding_count": 3,
-      "report_count": 1,
+      "finding_count": 104,
+      "report_count": 31,
       "example_titles": [
         "Accounting for Compromise Settlements",
         "Allowance for Funds Used During Construction",
-        "Prepayments"
+        "Prepayments",
+        "Acquisition-Related Expenses"
+      ]
+    },
+    {
+      "theme": "Form reporting (Form No. 1/2/6, Page 700)",
+      "keywords": [
+        "form no.",
+        "page 700",
+        "annual report",
+        "reporting"
+      ],
+      "finding_count": 57,
+      "report_count": 28,
+      "example_titles": [
+        "Accounting for Customer Advances",
+        "Prepayments",
+        "FERC Form No. 1 Reporting",
+        "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System"
       ]
     },
     {
@@ -55,10 +62,13 @@
         "allowance for funds used during construction",
         "afudc"
       ],
-      "finding_count": 1,
-      "report_count": 1,
+      "finding_count": 27,
+      "report_count": 18,
       "example_titles": [
-        "Allowance for Funds Used During Construction"
+        "Allowance for Funds Used During Construction",
+        "Operating Expense Accounting Misclassifications",
+        "Transmission Incentives",
+        "Accounting for Commitment Fees"
       ]
     },
     {
@@ -66,10 +76,45 @@
       "keywords": [
         "depreciation"
       ],
-      "finding_count": 1,
-      "report_count": 1,
+      "finding_count": 25,
+      "report_count": 15,
       "example_titles": [
-        "Allocation of Overhead Costs to CWIP"
+        "Allocation of Overhead Costs to CWIP",
+        "Application of Nonapproved Depreciation Rates",
+        "Asset Retirement Obligations",
+        "Unrecovered Costs of Plant Facilities"
+      ]
+    },
+    {
+      "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+      "keywords": [
+        "lobbying",
+        "charitable",
+        "below-the-line",
+        "nonoperating",
+        "non-operating"
+      ],
+      "finding_count": 15,
+      "report_count": 12,
+      "example_titles": [
+        "Accounting for Lobbying Expenses",
+        "Accounting for Edison Electric Institute Membership Dues",
+        "Non-Operating Expense Accounting Misclassifications",
+        "Accounting for EEI Annual Membership Dues"
+      ]
+    },
+    {
+      "theme": "Capitalization vs. expense",
+      "keywords": [
+        "capitaliz"
+      ],
+      "finding_count": 13,
+      "report_count": 12,
+      "example_titles": [
+        "Allocation of Overhead Costs to CWIP",
+        "Accounting for A&G Overheads and Accruals",
+        "Accounting for Costs in Account 922",
+        "Accounting for Vegetation Management Costs"
       ]
     },
     {
@@ -81,67 +126,192 @@
         "plant in service",
         "property record"
       ],
-      "finding_count": 1,
-      "report_count": 1,
+      "finding_count": 13,
+      "report_count": 11,
       "example_titles": [
-        "Allocation of Overhead Costs to CWIP"
+        "Allocation of Overhead Costs to CWIP",
+        "Allowance for Funds Used During Construction",
+        "Asset Retirement Obligations",
+        "Accounting for Vendor Discounts"
       ]
     },
     {
-      "theme": "Capitalization vs. expense",
+      "theme": "Informational postings",
       "keywords": [
-        "capitaliz"
+        "informational posting",
+        "posting"
       ],
-      "finding_count": 1,
-      "report_count": 1,
+      "finding_count": 13,
+      "report_count": 8,
       "example_titles": [
-        "Allocation of Overhead Costs to CWIP"
+        "Public Access to Monthly and Yearly Capability Information",
+        "Posting of Short Circuit Information",
+        "Posting of Transmission Planning Content",
+        "Posting of Generator Interconnection Study Times"
+      ]
+    },
+    {
+      "theme": "Affiliate / intercompany transactions",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 11,
+      "report_count": 8,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Reporting of Transactions with Associated (Affiliated) Companies",
+        "Merger-Related Voluntary Retirement Program",
+        "Allocation Methods"
+      ]
+    },
+    {
+      "theme": "Cost of service & rates",
+      "keywords": [
+        "cost of service",
+        "cost-of-service",
+        "rate base",
+        "rate of return",
+        "return on equity"
+      ],
+      "finding_count": 6,
+      "report_count": 5,
+      "example_titles": [
+        "Asset Retirement Obligations",
+        "Transmission Incentives",
+        "Accounting for Tax Receivables",
+        "Allowance for Funds Used During Construction"
+      ]
+    },
+    {
+      "theme": "Membership dues & industry associations",
+      "keywords": [
+        "membership dues",
+        "industry association"
+      ],
+      "finding_count": 4,
+      "report_count": 4,
+      "example_titles": [
+        "Accounting for Edison Electric Institute Membership Dues",
+        "Accounting for EEI Annual Membership Dues",
+        "Accounting for Membership Dues",
+        "Accounting for Administrative and General Expenses"
+      ]
+    },
+    {
+      "theme": "Tariff administration & oversight",
+      "keywords": [
+        "tariff"
+      ],
+      "finding_count": 3,
+      "report_count": 3,
+      "example_titles": [
+        "Posting of Generator Interconnection Study Times",
+        "Accounting for Fuel – Coal Supply and Other Consulting Services",
+        "Postretirement Benefits Other Than Pensions"
       ]
     }
   ],
   "top_titles": [
     {
-      "title": "Allocation of Overhead Costs to CWIP",
-      "count": 1
-    },
-    {
-      "title": "Accounting for Operating and Maintenance Expenses",
-      "count": 1
-    },
-    {
-      "title": "Accounting for Administrative and General Expenses",
-      "count": 1
-    },
-    {
-      "title": "Accounting for Compromise Settlements",
-      "count": 1
-    },
-    {
       "title": "Allowance for Funds Used During Construction",
-      "count": 1
-    },
-    {
-      "title": "Accounting for Customer Advances",
-      "count": 1
-    },
-    {
-      "title": "Prepayments",
-      "count": 1
+      "count": 16
     },
     {
       "title": "FERC Form No. 1 Reporting",
-      "count": 1
+      "count": 14
     },
     {
-      "title": "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System",
-      "count": 1
+      "title": "Accounting for Compromise Settlements",
+      "count": 6
     },
     {
-      "title": "Generation Outage Reporting in Generating Availability Data System (GADS)",
-      "count": 1
+      "title": "Accounting Misclassifications",
+      "count": 6
     },
     {
-      "title": "Discrepancies between Reported Generator Outages and Offer Schedules",
+      "title": "Allocation of Overhead Costs to CWIP",
+      "count": 5
+    },
+    {
+      "title": "Excess Accumulated Deferred Income Tax",
+      "count": 5
+    },
+    {
+      "title": "Asset Retirement Obligations",
+      "count": 5
+    },
+    {
+      "title": "Accounting for Administrative and General Expenses",
+      "count": 4
+    },
+    {
+      "title": "Accounting for Lobbying Expenses",
+      "count": 4
+    },
+    {
+      "title": "Transmission Revenue Credits",
+      "count": 4
+    },
+    {
+      "title": "Application of Nonapproved Depreciation Rates",
+      "count": 4
+    },
+    {
+      "title": "Amortization of Retail Regulatory Assets",
+      "count": 3
+    },
+    {
+      "title": "Prepayments",
+      "count": 2
+    },
+    {
+      "title": "FERC Form No. 580 Reporting",
+      "count": 2
+    },
+    {
+      "title": "Preservation of Records",
+      "count": 2
+    },
+    {
+      "title": "Posting of Transmission Service Metrics",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Donations",
+      "count": 2
+    },
+    {
+      "title": "Administrative and General Expense Misclassifications",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Prepayments",
+      "count": 2
+    },
+    {
+      "title": "Transmission Incentives",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Commitment Fees",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Joint Owner Billing",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Vendor Discounts",
+      "count": 2
+    },
+    {
+      "title": "Income Tax Receivables",
+      "count": 2
+    },
+    {
+      "title": "Accounting for Operating and Maintenance Expenses",
       "count": 1
     }
   ],

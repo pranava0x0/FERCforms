@@ -1,0 +1,68 @@
+{
+  "id": "2019-07-31_northern-states-power-company-minnesota_fa17-5",
+  "company": "Northern States Power Company (Minnesota)",
+  "company_raw": "Northern States Power Company (Minnesota) (FA17-5)",
+  "docket": "FA17-5",
+  "docket_full": "FA17-5-000",
+  "issued_date": "2019-07-31",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190731-3033&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190731-3033",
+  "captured_at": "2026-02-03",
+  "page_count": 56,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Income Tax Receivables",
+      "summary": "NSPM incorrectly recorded an income tax receivable that represented a refund for a tax overpayment in Account 165, Prepayments, instead of in Account 143, Other Accounts Receivable. The incorrect accounting led to an overstatement of NSPM’s rate base used in its wholesale transmission formula rate calculations and overbillings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Prepayments",
+      "summary": "NSPM misclassified certain costs in Account 165, Prepayments, resulting in an overstatement of the account. The misclassifications in Account 165 resulted in an overstatement of NSPM’s rate base used in the wholesale transmission formula rate calculations and overbillings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Miscellaneous Expenses",
+      "summary": "NSPM’s accounting classifications for some expenses were not consistent with the requirements of the Uniform System of Accounts. In addition, there were instances when the accounting misclassifications led to improper amounts being included in the wholesale transmission formula rate and NSPM overbilling its wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting Classification for Contingent Liabilities",
+      "summary": "NSPM did not use the proper accounts to classify certain contingent liabilities in accordance with the requirements of the Uniform System of Accounts.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Depreciation Rates",
+      "summary": "During the audit period, NSPM used depreciation rates that were not previously filed with the Commission in the development of its wholesale transmission formula rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Retirement Units",
+      "summary": "NSPM inconsistently implemented a change to accounting for the retirement of transmission insulators to a retirement unit from a minor item of property, resulting in the gross balances of plant in service and the accumulated provision for depreciation being inappropriately stated in its financial reports, which adversely impacted the amounts used for billings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

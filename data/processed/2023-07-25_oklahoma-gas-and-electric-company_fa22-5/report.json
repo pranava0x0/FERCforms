@@ -1,0 +1,265 @@
+{
+  "id": "2023-07-25_oklahoma-gas-and-electric-company_fa22-5",
+  "company": "Oklahoma Gas and Electric Company",
+  "company_raw": "Oklahoma Gas and Electric Company (FA22-5)",
+  "docket": "FA22-5",
+  "docket_full": "FA22-5-000",
+  "issued_date": "2023-07-25",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230725-3008&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230725-3008",
+  "captured_at": "2026-02-03",
+  "page_count": 73,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through December 31, 2022",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 8,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Amortization of Retail Regulatory Assets",
+      "summary": "OG&E included the amortization of certain retail regulatory assets in its wholesale transmission formula rate without Commission approval. As a result, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies and procedures for computing its transmission formula rate ATRRs and transmission customer billings to exclude amortization of retail regulatory assets which were not approved by the Commission for recovery through OG&E’s transmission formula rate."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to staff on the revised policies and procedures for excluding retail regulatory assets from OG&E’s transmission formula rate calculations. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of regulatory asset amortizations which were inappropriately included in OG&E’s transmission formula rate calculations and customer billings without Commission prior authorization and the refunds resulting from the inclusion of those regulatory asset amortizations in the transmission formula rate calculations from 2012 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 4,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 5,
+          "text": "Refund amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Transmission Incentives",
+      "summary": "OG&E improperly included the amortization of AFUDC associated with transmission incentive projects as inputs to its transmission formula rate. The Commission had already authorized these projects for CWIP in rate base treatment. As a result, OG&E overstated its ATRR by approximately $1.8 million and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Revise procedures for computing transmission formula rate ATRRs and customer billings to exclude amortized retail AFUDC consistent with the Commission’s order approving the OG&E transmission incentives."
+        },
+        {
+          "number": 7,
+          "text": "Provide training to staff on the revised transmission formula rate policies and procedures for excluding amortized retail AFUDC from OG&E’s transmission formula rate calculations. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 8,
+          "text": "Submit a refund analysis, within 60 days of the issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of the amount of refunds resulting from correction of the inappropriate inclusion of amortized AFUDC relating to the two projects in transmission formula rate calculations from 2012 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 9,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 10,
+          "text": "Refund amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Asset Retirement Obligations",
+      "summary": "The $2.5 million represented accumulated depreciation amounts associated with OG&E’s obligation to remove long-lived assets after their useful life. The $2.5 million had already been collected by OG&E from its customers through rates charged. Per Order No. 631, OG&E’s accounting for AROs should have had no impact on utility service rate determinations unless the company sought and received Commission approval. Audit staff reviewed OG&E’s transmission formula rate inputs and supporting worksheets and found that the accumulated depreciation of approximately $2.5 million removed from Account 108",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise policies and procedures to ensure that OG&E’s accounting and transmission formula rate treatment of AROs and ARCs are consistent with the Commission’s regulations."
+        },
+        {
+          "number": 12,
+          "text": "Provide training to its staff on the revised policies and procedures for proper accounting and transmission formula rate treatment of AROs and ARCs. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 13,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that resulted from correcting the improper accounting and transmission formula rate treatment of AROs and ARCs from 2008 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 14,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 15,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Allowance for Funds Using During Construction"
+        },
+        {
+          "number": 16,
+          "text": "Revise and implement policies and procedures to calculate the AFUDC rate consistent with Electric Plant Instruction No. 3(A)(17), and other applicable Commission regulations and orders."
+        },
+        {
+          "number": 17,
+          "text": "Provide training to staff on the revised policies and procedures for calculating the AFUDC rate consistent with Electric Plant Instruction No. 3(A)(17), and other applicable Commission regulations and orders. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 18,
+          "text": "Recalculate accrued AFUDC in a manner consistent with Electric Plant Instruction No. 3(A)(17) and the Commission order on the AFUDC waiver that corrects the short-term debt rate and long-term debt balances from 2018 through present and submit the recalculation to DAA for review within 60 days of this report."
+        },
+        {
+          "number": 19,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC within 90 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 20,
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over accrual of AFUDC and the improper accounting of equity ADIT gross-up amounts after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 19."
+        },
+        {
+          "number": 21,
+          "text": "Submit a refund analysis, within 90 days of the date of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC and impacts on related accounts included in the transmission formula rates, since January 1, 2018 to the present, plus interest computed in accordance with section 35.19a of the Commission’s regulations; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 22,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 23,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "OG&E improperly calculated its AFUDC rate. Specifically, OG&E incorrectly: (1) calculated its short-term debt cost rate; (2) included Account 226, Unamortized Discount on Long-Term Debt, in long-term debt balances; and (3) recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. As a result, OG&E over accrued AFUDC included in utility plant accounts and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting Misclassifications",
+      "summary": "OG&E recorded various O&M and A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Revise policies and procedures to ensure that OG&E properly accounts for expenditures consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 25,
+          "text": "Provide training to its staff on the revised policies and procedures for properly accounting for expenditures in OG&E’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 26,
+          "text": "Perform an analysis of O&M and A&G expense accounts to identify expenses that were improperly accounted for and included in OG&E’s transmission formula rate and the related customer billings, such as lobbying expenses, advertising costs, employee related expenses, and production costs improperly charged to accounts included in the transmission formula rate from 2018 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 27,
+          "text": "Submit a refund analysis to DAA, within 60 days of issuance of the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for expenses recorded in A&G and O&M accounts from 2018 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 28,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 29,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "OG&E improperly recorded compromise settlement payments made for alleged employment discrimination in Account 925, Injuries and Damages, instead of Account 426.5, Other Deductions. As a result, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "Strengthen and revise accounting policies and procedures to ensure that OG&E properly records compromise settlement payments related to employment discrimination claims in Account 426.5, consistent with Commission accounting regulations."
+        },
+        {
+          "number": 31,
+          "text": "Provide training to relevant staff on the revised policies and procedures for properly accounting for compromise settlement payments resulting from employment discrimination claims in Account 426.5. Also, develop a training program that supports periodic training in this area, as needed."
+        },
+        {
+          "number": 32,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that result from correcting the improper accounting for compromise settlement payments, the internal and external legal defense costs, and other potential costs of the settled alleged employment discrimination claims from 2018 to the present, plus interest,; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 33,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 34,
+          "text": "Refund amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Commitment Fees",
+      "summary": "OG&E improperly accounted for upfront fees it paid associated with revolving credit facility agreements in Account 181, Unamortized Debt Expense, and improperly accounted for quarterly commitment fees in Account 431, Other Interest Expense. In addition, OG&E improperly included the amortization of the upfront and quarterly commitment fees associated with the revolving credit facility agreements in its calculation of short-term debt interest expense used to compute its AFUDC rate. As a result of the improper accounting, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Revise accounting policies and procedures relating to accounting for revolving credit facility agreements to be consistent with Commission accounting regulations."
+        },
+        {
+          "number": 36,
+          "text": "Revise policies and procedures for calculating the AFUDC rate to be consistent with Electric Plant Instruction No. 3(A)(17) and other applicable Commission regulations. Revisions should include processes to exclude upfront and quarterly commitment fees from AFUDC rate calculations unless the costs are associated with debt issuances and are approved by the Commission for inclusion."
+        },
+        {
+          "number": 37,
+          "text": "Train relevant staff on the revised policies and procedures, and provide periodic training, as needed."
+        },
+        {
+          "number": 38,
+          "text": "Within 60 days of issuance of this audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of credit facility agreement-related balances improperly recorded in Account 181 to Account 186."
+        },
+        {
+          "number": 39,
+          "text": "Revise miscellaneous deferred debit balances to appropriately account for and report credit agreement-related balances after receiving DAA’s assessment of the proposed accounting entries and restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+        },
+        {
+          "number": 40,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC and impacts on related accounts included in the transmission formula rate ATRR and billings to transmission customers, since January 1, 2018 to the present, plus interest computed in accordance with section 35.19a of the Commission’s regulations; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 41,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. In addition, notify the audit team after filing the refund report."
+        },
+        {
+          "number": 42,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "OG&E did not properly follow the FERC Form No. 1 reporting instructions and, therefore, did not accurately report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "Revise and strengthen policies and procedures to report correct, accurate, complete information in the FERC Form No. 1 consistent with the page instructions. Include footnotes when software limitations prevent reporting complete information."
+        },
+        {
+          "number": 44,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies and procedures. Provide periodic training in these areas as needed. E."
+        }
+      ]
+    }
+  ]
+}

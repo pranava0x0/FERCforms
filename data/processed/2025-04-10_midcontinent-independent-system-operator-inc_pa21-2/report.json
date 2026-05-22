@@ -1,0 +1,106 @@
+{
+  "id": "2025-04-10_midcontinent-independent-system-operator-inc_pa21-2",
+  "company": "Midcontinent Independent System Operator, Inc.",
+  "company_raw": "Midcontinent Independent System Operator, Inc. (PA21-2)",
+  "docket": "PA21-2",
+  "docket_full": "PA21-2-000",
+  "issued_date": "2025-04-10",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250410-3014&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250410-3014",
+  "captured_at": "2026-02-03",
+  "page_count": 54,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through April 19, 2024",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "714"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Preservation of Records",
+      "summary": "MISO did not comply with the Commission’s preservation of records requirements.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Enhance record identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain records across a broad range of media and formats, including documents, laptops, and mobile devices."
+        },
+        {
+          "number": 2,
+          "text": "Develop and implement training on enhanced record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Posting of Generator Interconnection Study Times",
+      "summary": "MISO did not timely post the aggregate number of hours spent studying generator interconnection projects during Quarter 3, 2022 and Quarter 4, 2022, as required by the MISO Tariff after MISO’s performance of interconnection studies exceeded the established delay threshold for more than 25% of one or more study types for two consecutive quarters beginning in Quarter 1, 2020.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Develop and implement a process to perform periodic reviews of MISO’s website and OASIS postings to verify that MISO is posting all required information, including posting the required interconnection study information within 30 calendar days of the end of the calendar quarter."
+        },
+        {
+          "number": 4,
+          "text": "Develop and implement quality controls to ensure all posted interconnection study information is accurate and complete. 2 Winter Storm Uri was a severe winter and ice storm that had widespread impacts across the United States, Northern Mexico, and parts of Canada from February 13 to 17, 2021."
+        },
+        {
+          "number": 5,
+          "text": "Train employees on the review process and quality controls developed under Recommendations 3 and 4, and repeat such training as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Posting of Transmission Service Metrics",
+      "summary": "MISO did not post quarterly transmission service metrics on its OASIS website within 15 calendar days of the end of the calendar quarter for multiple quarters during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Develop and implement a process to perform periodic reviews of MISO’s OASIS postings to verify that MISO is posting all required information, including posting the required transmission service metrics within 15 days of the end of each calendar quarter."
+        },
+        {
+          "number": 7,
+          "text": "Develop and implement quality controls to ensure all posted transmission service metric information is accurate and complete."
+        },
+        {
+          "number": 8,
+          "text": "Train employees on the review process and quality controls developed under Recommendations 6 and 7, and repeat such training as needed. Other Matters DAA recommends that MISO consider: Operations Related to Economic Derates"
+        },
+        {
+          "number": 9,
+          "text": "Enhancing tools, software, and training to better inform system operators when real-time resources are economically-derated and are capable of performing at a higher level of output above their economically-derated capability, and repeat such training as needed. Real-time Ex-Post Market Clearing Price Transparency"
+        },
+        {
+          "number": 10,
+          "text": "Strengthening policies, procedures, and controls regarding how price corrections are made to its Market Reports to ensure that updated price data is publicly available in a timely manner. Monitoring of Energy Must Offer Compliance"
+        },
+        {
+          "number": 11,
+          "text": "Developing processes and procedures to ensure that it fully addresses and resolves all instances when its automated energy must offer compliance reporting system identifies a market participant’s resource for not meeting its daily energy must offer obligation, including considering ways to escalate for potential remediation or enforcement action instances when market participants are not fully responsive to MISO's outreach. Email Retention Processes and Procedures"
+        },
+        {
+          "number": 12,
+          "text": "Enhancing identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain emails that constitute records."
+        },
+        {
+          "number": 13,
+          "text": "Developing and implementing training on enhanced email record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed."
+        },
+        {
+          "number": 14,
+          "text": "Enhancing policies and procedures to ensure that records retention practices align with internal schedules and requirements. F."
+        }
+      ]
+    }
+  ]
+}

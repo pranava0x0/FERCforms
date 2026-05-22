@@ -1,0 +1,26 @@
+{
+  "id": "2023-02-10_wec-business-services-llc_fa21-2",
+  "company": "WEC Business Services LLC",
+  "company_raw": "WEC Business Services LLC (FA21-2)",
+  "docket": "FA21-2",
+  "docket_full": null,
+  "issued_date": "2023-02-10",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230210-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 65,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

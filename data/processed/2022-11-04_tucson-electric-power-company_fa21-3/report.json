@@ -1,0 +1,331 @@
+{
+  "id": "2022-11-04_tucson-electric-power-company_fa21-3",
+  "company": "Tucson Electric Power Company",
+  "company_raw": "Tucson Electric Power Company (FA21-3)",
+  "docket": "FA21-3",
+  "docket_full": "FA21-3-000",
+  "issued_date": "2022-11-04",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20221104-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20221104-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 82,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to December 31, 2021",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Electric Distribution Maintenance Expenses",
+      "summary": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period. TEP’s accounting resulted in distribution-related maintenance expenses being improperly recorded in accounts that were for transmission-related maintenance expenses and that were FERC- jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdi",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies and procedures to properly account for substation maintenance work orders consistent with Commission accounting requirements."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for substation maintenance in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis of costs incurred at substations during the audit period to determine whether distribution-related expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission and distribution expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for distribution-related O&M expenses in transmission expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Research, Development, and Demonstration Expenses",
+      "summary": "TEP improperly accounted for and reported $667,500 of Research, Development, and Demonstration (RD&D) expenses associated with renewable power generation in Account 909, Informational and Instructional Advertising Expenses (Major Only), and Account 923, Outside Services Employed, instead of in Account 549, Miscellaneous Other Power Generation Expenses (Major Only). TEP’s accounting resulted in expenses being improperly included in accounts that were FERC-jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requir",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise policies and procedures to properly account for RD&D expenditures consistent with Commission accounting requirements."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for RD&D expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 9,
+          "text": "Perform an analysis of costs incurred for RD&D activities, including costs relating to RD&D performed by outside research institutions, during the audit period to determine whether RD&D activities were charged to the correct utility function. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for RD&D expenses in administrative & general expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Unrecovered Costs of Plant Facilities",
+      "summary": "TEP accounted for and reported approximately $29 million of unrecovered plant on its books when it retired, prior to the end of their useful life, certain generating assets during the audit period. However, TEP did not record the unrecovered plant balance in Account 182.2, Unrecovered Plant and Regulatory Study Costs, nor seek authorization from the Commission for its proposed accounting entries for this early retirement of the generating assets. TEP also misclassified the amortization of the unrecovered plant balance to Account 403, Depreciation Expense, rather than recording the amortization",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise policies and procedures to properly account for early retirements of significant electric plant facilities consistent with Commission accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for asset retirements in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 15,
+          "text": "File, within 60 days of issuance of this audit report, a request for approval of proposed retirement journal entries to justify its proposed use of Account 182.2 and period of amortization, including a description of the policies and procedures in place to prevent any additional early plant retirement costs from being charged to FERC-jurisdictional customers absent separate Commission approval of changes to its FERC-jurisdictional tariffs."
+        },
+        {
+          "number": 16,
+          "text": "Perform an analysis of costs recorded in Depreciation Expense accounts during the audit period to determine whether early plant retirement costs were recorded in these accounts. Provide the results of the analysis to audit staff within 60 days of the date of the final audit report."
+        },
+        {
+          "number": 17,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for early plant retirement costs; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 18,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 19,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Compromise Settlement Agreement",
+      "summary": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various administrative and general (A&G) expense accounts, rather than recording the expenditures in Account 426.5, Other Deductions. TEP’s accounting resulted in expenses being improperly included and reported in accounts that were FERC- jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $39,300.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Strengthen policies, procedures, and controls to account for expenditures associated with compromise settlements consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 21,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 22,
+          "text": "Perform an analysis to identify other expenditures associated with compromise settlements that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report."
+        },
+        {
+          "number": 23,
+          "text": "Submit a refund report, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from improper accounting for expenditures associated with compromise settlements, which impacted inputs to TEP’s transmission formula rate during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive the refunds, and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 24,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 25,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Payments on Behalf of Affiliates",
+      "summary": "TEP improperly accounted for and reported $211,000 in its A&G and Operational and Maintenance (O&M) Expense accounts that should have been allocated to one or more of its affiliates. TEP overstated certain A&G and O&M expense accounts, which led to utility customers improperly subsidizing non-regulated operations. This also led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $19,300.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Revise policies and procedures to properly account for transactions with affiliate companies consistent with Commission accounting requirements."
+        },
+        {
+          "number": 27,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for affiliate transactions in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 28,
+          "text": "Perform an analysis of costs incurred in its utility O&M accounts and A&G accounts during the audit period to determine whether expenses were charged to the correct affiliate(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 29,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper allocation of costs associated with affiliate transactions, plus interest; (2) determinative components of the refund; (3) refund method; (4) FERC-jurisdictional customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 30,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 31,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Administrative and General Expense Misclassifications",
+      "summary": "TEP improperly accounted for and reported various A&G expenses, and then reported account balances reflecting these expenses in its FERC Form No. 1 filings. TEP’s accounting resulted in expenses being improperly included in accounts that were FERC-jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $26,500.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "Revise policies and procedures to properly account for A&G expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 33,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for A&G expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 34,
+          "text": "Perform an analysis of costs incurred in A&G accounts during the audit period to determine whether expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 35,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for lobbying and general advertising expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 36,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 37,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Operation and Maintenance Expense Misclassifications",
+      "summary": "TEP improperly accounted for and reported various utility O&M expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting for certain O&M expenses, TEP overstated its annual transmission revenue requirement by approximately $58,800 and over collected revenues from FERC- jurisdictional transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "Revise policies and procedures to properly account for O&M expenses consistent with Commission accounting requirements."
+        },
+        {
+          "number": 39,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for O&M expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 40,
+          "text": "Perform an analysis of costs reported in Transmission O&M accounts during the audit period to determine whether such costs were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 41,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for power generation and distribution-related expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 42,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 43,
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Use of Unapproved Depreciation Rates",
+      "summary": "TEP did not use Commission-approved depreciation rates to calculate depreciation expense for plant balances in Account 397, Communication Equipment. The use of depreciation rates not approved by the Commission resulted in TEP understating Account 403, Depreciation Expense, and Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only). In addition, by understating the accumulated depreciation, TEP overstated the net balance of Account 397.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "Revise policies and procedures to ensure that Commission-approved depreciation rates are used to determine depreciation expense for all classes of property."
+        },
+        {
+          "number": 45,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for depreciation expense in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 46,
+          "text": "Use Commission-approved depreciation rates to calculate inputs to its formula rate, or timely file a request under FPA section 205 for a change in rates."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Asset Retirement Obligations",
+      "summary": ", and an ARO asset in the electric utility or nonutility plant account, as appropriate, that is associated with the ARO liability. Audit staff analyzed the accounting that TEP used to initially record AROs. Audit staff also examined the methods the company used to account for depreciation, accretion, and measurement changes on AROs, and evaluated supporting documentation associated with these transactions. TEP recorded ARO liabilities in Account 230 at the present value of future cash flows the company estimated would be required to settle the obligations and recorded an ARO asset in the plant",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "Revise and implement policies, procedures, and controls to ensure TEP properly accounts for ARO-related costs consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 48,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 49,
+          "text": "Within 60 days of issuance of this audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of ARO-related costs improperly recorded in Account 108 to Account 182.3."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Accounting for Vendor Discounts",
+      "summary": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Office Supplies and Expenses. As a result of this improper accounting for vendor discounts, TEP understated balances in various A&G expense accounts and overstated balances in various O&M, as well as electric plant in service, accounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 50,
+          "text": "Revise policies and procedures to properly account for vendor discounts consistent with Commission accounting requirements."
+        },
+        {
+          "number": 51,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for vendor discounts in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "FERC Form No. 1 Reporting Schedules",
+      "summary": "TEP did not report complete and accurate information as required in certain supporting schedules of its 2018, 2019, 2020, and 2021 FERC Form No. 1 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 1.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 52,
+          "text": "Strengthen policies, procedures, and controls to ensure that all FERC Form No. 1 schedules are completed in accordance with Commission instructions."
+        },
+        {
+          "number": 53,
+          "text": "Strengthen procedures for completing review of the FERC Form No. 1 instructions, prior to submission, to eliminate errors."
+        },
+        {
+          "number": 54,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed. E."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "2022-04-15_florida-power-light-company_fa21-6",
+  "company": "Florida Power & Light Company",
+  "company_raw": "Florida Power & Light Company (FA21-6)",
+  "docket": "FA21-6",
+  "docket_full": "FA21-6-000",
+  "issued_date": "2022-04-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220415-3012&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220415-3012",
+  "captured_at": "2026-02-03",
+  "page_count": 34,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 through December 31, 2021",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Environmental Cleanup Costs",
+      "summary": "FPL improperly recorded environmental cleanup costs in Account 930.2, Miscellaneous General Expenses, and Account 105, Electric Plant Held for Future Use, instead of in Account 186, Miscellaneous Deferred Debits. As a result of the improper accounting, FPL misstated A&G and Electric Plant Held for Future Use account balances reported in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise and implement accounting policies and procedures to ensure that it properly accounts for environmental cleanup costs consistent with Commission accounting requirements."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for environmental cleanup costs in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the environmental cleanup costs improperly accounted for in Account 930.2 and Account 105 within 60 days of the date of the audit report."
+        },
+        {
+          "number": 4,
+          "text": "Revise the cost of the land reported in Account 105, the refunds and expenses recorded in Account 930.2, and entries in other accounts impacted by the improper accounting for the environmental cleanup costs after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 3. Restate and footnote the FERC Form No. 1 for the current year."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Prepayments",
+      "summary": "FPL improperly recorded certain advance payments that were applicable to future accounting periods in A&G and O&M accounts, instead of in Account 165, Prepayments. As a result, FPL did not accurately recognize certain expenses in the accounting period in which they were incurred, leading to the misstatement of A&G, O&M, and balance sheet account balances reported on its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise its accounting policies and procedures to ensure that it properly records all advance payments that are applicable to future periods in accordance with the Commission’s regulations."
+        },
+        {
+          "number": 6,
+          "text": "Provide training to staff on the revised prepayment accounting policies and procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting Misclassifications",
+      "summary": "FPL improperly recorded various expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, FPL misstated A&G and O&M account balances reported in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise its policies and procedures to ensure that it properly accounts for expenditures consistent with Commission accounting regulations."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "FPL did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Revise and strengthen its policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the instructions of each schedule page."
+        },
+        {
+          "number": 10,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas, as needed. E."
+        }
+      ]
+    }
+  ]
+}

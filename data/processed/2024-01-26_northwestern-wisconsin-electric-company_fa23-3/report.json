@@ -1,0 +1,165 @@
+{
+  "id": "2024-01-26_northwestern-wisconsin-electric-company_fa23-3",
+  "company": "Northwestern Wisconsin Electric Company",
+  "company_raw": "Northwestern Wisconsin Electric Company (FA23-3)",
+  "docket": "FA23-3",
+  "docket_full": "FA23-3-000",
+  "issued_date": "2024-01-26",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240126-3008&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240126-3008",
+  "captured_at": "2026-02-03",
+  "page_count": 40,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2020 through July 31, 2023",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Transmission Revenue Credits",
+      "summary": "1. Revise policies and procedures to properly include transmission revenue credit inputs in the ATRR and customer billing charges consistent with the requirements of its transmission rate formula. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 2. Provide training to relevant staff on the revised policies and procedures, and provide periodic training, as needed. NWECo will comply with this recommendation. NWECo anticipates completing this task within 90 days of the date of the final audit report. 3. Submit",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies and procedures to properly include transmission revenue credit inputs in the ATRR and customer billing charges consistent with the requirements of its transmission formula rate."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on the revised policies and procedures, and provide periodic training, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Submit a refund analysis, within 90 days of issuance of this audit report, to audit staff that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper exclusion of transmission-related rental revenues during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 4,
+          "text": "File a refund report with the Commission after receiving audit staff’s assessment of the refund analysis."
+        },
+        {
+          "number": 5,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Accounting for Income Tax Receivables"
+        },
+        {
+          "number": 6,
+          "text": "Revise accounting policies and procedures to properly account for income tax transactions consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 7,
+          "text": "Provide training to relevant staff on the revised policies and procedures to properly account for income tax transactions, and provide periodic training, as needed."
+        },
+        {
+          "number": 8,
+          "text": "Submit a refund analysis to audit staff, within 90 days of the date of this audit report, that explains and details the following: (1) calculation of refunds that results from excluding the 2015 and 2016 additional tax payments from its transmission rate base during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 9,
+          "text": "File a refund report with the Commission after receiving audit staff’s assessment of the refund analysis."
+        },
+        {
+          "number": 10,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Income Taxes",
+      "summary": "Under SFAS 109, 64 FERC ¶ 61,352 (1993).",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting Misclassifications",
+      "summary": "11. Revise accounting policies and procedures to help ensure that NWECo properly accounts for expenditures consistent with the Commission’s accounting requirements. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 12. Provide training to relevant staff on the revised policies and procedures to properly account for expenditures, and provide periodic training, as needed. NWECo will comply with this recommendation. NWECo anticipates completing this task within 90 days of the date of the final audit report. 13.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise accounting policies and procedures to help ensure that NWECo properly accounts for expenditures consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 12,
+          "text": "Provide training to relevant staff on the revised policies and procedures to properly account for expenditures, and provide periodic training, as needed."
+        },
+        {
+          "number": 13,
+          "text": "Perform an analysis of O&M and A&G expense accounts from 2020 to the present to identify costs that were improperly accounted for and included in NWECo’s transmission formula rate calculations and the related customer billings, such as donations and distribution O&M costs. Provide the results of the analysis to audit staff within 90 days of the date of issuance of the audit report."
+        },
+        {
+          "number": 14,
+          "text": "Submit a refund analysis, within 90 days of issuance of this audit report, to audit staff that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for expenses recorded in O&M and A&G accounts from 2020 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 15,
+          "text": "File a refund report with the Commission after receiving audit staff’s assessment of the refund analysis."
+        },
+        {
+          "number": 16,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Application of Nonapproved Depreciation Rates",
+      "summary": "17. Develop and implement processes and procedures to help ensure that depreciation rates and related studies are filed with the Commission for consideration and decision before being used for transmission ratemaking purposes. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 18. Provide training to relevant staff on the processes and procedures, and provide periodic training, as needed. NWECo will comply with this recommendation. NWECo anticipates completing this task within 90 days of the date of the final",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Develop and implement processes and procedures to help ensure that depreciation rates and related studies are filed with the Commission for consideration and decision before being used for transmission ratemaking purposes."
+        },
+        {
+          "number": 18,
+          "text": "Provide training to relevant staff on the processes and procedures, and provide periodic training, as needed."
+        },
+        {
+          "number": 19,
+          "text": "File current depreciation studies and associated depreciation rates in dockets relating to its wholesale transmission formula rate within 180 days of issuance of the audit report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Excess Accumulated Deferred Income Tax",
+      "summary": "20. Revise accounting policies and procedures to help ensure NWECo properly records and reports the effect of changes in tax laws or tax rates resulting from the TCJA consistent with the Commission’s accounting guidance in Docket No. AI93-5. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 21. Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates, and provide periodic training, as needed. NWECo will comply with th",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Revise accounting policies and procedures to help ensure NWECo properly records and reports the effect of changes in tax laws or tax rates resulting from the TCJA consistent with the Commission’s accounting guidance in Docket No. AI93- 5."
+        },
+        {
+          "number": 21,
+          "text": "Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates, and provide periodic training, as needed."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "22. Revise and strengthen policies and procedures to report correct, accurate and complete information in the FERC Form No. 1 consistent with the page instructions. Work with third-party vendor to correct software limitations to prevent reporting incomplete information. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 23. Provide training to relevant staff on the revised FERC Form No. 1 reporting policies and procedures, and provide periodic training, as needed. NWECo will comply with this recommendation. N",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Revise and strengthen policies and procedures to report correct, accurate, and complete information in the FERC Form No. 1 consistent with the page instructions. Work with third-party vendor to correct software limitations to prevent reporting incomplete information."
+        },
+        {
+          "number": 23,
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 reporting policies and procedures, and provide periodic training, as needed. E."
+        }
+      ]
+    }
+  ]
+}

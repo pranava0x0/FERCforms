@@ -1,0 +1,255 @@
+{
+  "id": "2020-07-07_pnm-resources-inc_pa18-1",
+  "company": "PNM Resources, Inc.",
+  "company_raw": "PNM Resources, Inc. (PA18-1)",
+  "docket": "PA18-1",
+  "docket_full": "PA18-1-000",
+  "issued_date": "2020-07-07",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3025&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200707-3025",
+  "captured_at": "2026-02-03",
+  "page_count": 67,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2015 to December 31, 2019",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Independent Functioning of PNM’s Transmission Function",
+      "summary": "During the audit period, upon its WPM function’s request, PNM’s transmission function employees procured PTP transmission service on certain paths for WPM function employees, contrary to the Commission’s Independent Functioning Rule. As a result, PNM’s transmission function employees conducted a marketing function and did not function independently of its marketing function employees.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Enhance Standards of Conduct training for all applicable employees."
+        },
+        {
+          "number": 2,
+          "text": "Develop and implement controls to limit, monitor and document non-OASIS communications between PNM’s transmission and WPM functions."
+        },
+        {
+          "number": 3,
+          "text": "Perform quarterly reviews using controls, monitoring, and documentation developed in response to Recommendation 2 listed above."
+        },
+        {
+          "number": 4,
+          "text": "Provide to DAA a summary of the above-described review in a quarterly compliance report for two consecutive quarters after this audit report is issued."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Cost-Based Sales",
+      "summary": "PNM incorrectly used estimated transmission costs to price certain cost-based energy sales. These estimated costs did not reflect the actual transmission costs and resulted in PNM overcharging a transmission customer by approximately $121,500.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Refund the overcharged amount of $121,500 to the affected customer in a timely manner."
+        },
+        {
+          "number": 6,
+          "text": "Develop and implement procedures for validating cost-based sale prices to ensure that these prices reflect the actual cost of incremental resources including transmission cost."
+        },
+        {
+          "number": 7,
+          "text": "After the new process is adopted, provide validation results in a quarterly compliance report to DAA for two consecutive quarters after this audit report is issued to demonstrate the new process works consistently."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Use of Secondary Network Transmission Service",
+      "summary": "During the audit period, PNM’s transmission function improperly allowed its WPM function to use secondary network transmission service to deliver energy outside of PNM’s control area. For most of these instances, WPM used secondary network transmission service to deliver energy to two generation plants located outside of PNM’s control area in order to facilitate station service at those locations. As a result, PNM did not follow the requirements of its OATT associated with the use of secondary network transmission service.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Enhance controls to ensure that WPM employees only use secondary network transmission service to serve PNM native load."
+        },
+        {
+          "number": 9,
+          "text": "Develop and implement processes and procedures to validate secondary network transmission service requests for delivering power to any intermediate points of delivery outside the PNM control area and ensure the requests are ultimately to serve the designated network load prior to confirming the request."
+        },
+        {
+          "number": 10,
+          "text": "Develop and implement processes and procedures to review e-tags that have a transmission segment(s) associated with a Network Integration Transmission Service (NITS) request to ensure the proper use of transmission service."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Termination of Network Resources",
+      "summary": "PNM did not fully implement Commission-approved North American Energy Standards Board (NAESB) standards that require network customers to submit terminations (temporary and indefinite) of network resources through OASIS in a timely manner. As a result, PNM allowed its network customers to submit terminations of network resources outside of OASIS for more than two years after the Order No. 676-H compliance deadline of March 1, 2017.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Develop and implement processes and procedures to ensure use of NITS on OASIS template requirements adopted in Order 676-H."
+        },
+        {
+          "number": 12,
+          "text": "Provide training with respect to the processes and procedures developed in response to Recommendation 11."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Asset Retirement Obligations",
+      "summary": "PNM did not obtain Commission approval in advance of recovering asset retirement obligation costs in its transmission formula rate calculations. Also, PNM did not file its accounting entries with the Commission to reclassify approximately $37 million from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only) to Account 435, Extraordinary Deductions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "PNM’s methods for calculating and accounting for its AFUDC rate were deficient and caused PNM’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • PNM improperly included in its short-term debt rate an amount labeled “other interest,” which represented the interest recorded against transmission and interconnection study advances paid to PNM. • PNM incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • PNM combined the costs of all debt issuances,",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Revise its procedures to ensure that its AFUDC rate calculation is consistent with Electric Plant Instruction No. 3(17), Order Nos. 561 and 561-A, and other applicable Commission accounting regulations."
+        },
+        {
+          "number": 15,
+          "text": "Revise its procedures to exclude the underlying “other interest” from the short- term debt rate determination used when calculating its AFUDC rate."
+        },
+        {
+          "number": 16,
+          "text": "Revise procedures to ensure that Account 216.1, Unappropriated Undistributed Subsidiary Earnings, is excluded from equity components used to derive its AFUDC rate."
+        },
+        {
+          "number": 17,
+          "text": "Revise procedures to ensure that the long-term debt data reported by PNM on its FERC Form No. 1 submissions are used to compute the long-term debt rate used by PNM for calculating PNM’s AFUDC rate."
+        },
+        {
+          "number": 18,
+          "text": "Provide training to PNM’s staff on the revised AFUDC accounting and rate calculation method. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 19,
+          "text": "Make adjustments within 60 days of receiving the final audit report to all impacted accounts, for the period January 1, 2015 to December 31, 2019, including Account 101, Electric Plant in Service, and the accounts for accumulated depreciation, ADIT, and retained earnings, and submit these adjustments to DAA for review and approval. Also, include in this submission to DAA the impact to PNM’s Annual Transmission Revenue Requirement produced by PNM’s formula rate as a result of changes to these accounts."
+        },
+        {
+          "number": 20,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds to PNM’s wholesale customers since January 1, 2015, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+        },
+        {
+          "number": 21,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 22,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Commitment Fees",
+      "summary": "PNM improperly accounted for upfront and quarterly commitment fees that it paid for a credit facility, in Accounts 428, Amortization of Debt Discount and Expense, and 431, Other Interest Expense, respectively, and included these items in its calculation of short-term debt interest expense used to compute its AFUDC rate.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Revise its procedures so as to exclude upfront and quarterly commitment fees from the cost of short-term debt when calculating its AFUDC rate."
+        },
+        {
+          "number": 24,
+          "text": "Revise its procedures to record the upfront and quarterly commitment fees excluded from AFUDC rate calculations in Account 930.2, Miscellaneous General Expenses."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Production-Related Remediation Expenses",
+      "summary": "PNM improperly accounted for remediation expenses related to its Santa Fe and Person Generating Stations in Account 930.2, Miscellaneous General Expenses. Since these expenses are production-related expenses, they should have been recorded in Account 506, Miscellaneous Steam Power Expenses (Major Only).",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Revise its accounting policies to ensure that production-related remediation expenses are accounted for in production expense accounts, consistent with the Commission’s accounting regulations."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "OASIS Posting of Transmission Schedules",
+      "summary": "PNM improperly posted certain transmission schedules associated with its transmission function and WPM as non-affiliated transactions on OASIS rather than affiliated transactions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Develop and implement processes and procedures to verify schedules against non-OASIS reservations as part of its e-tag validation process to ensure the accuracy of all attributes, including the “Affiliate” flag."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Short-Term Transmission Capacity Reassignments",
+      "summary": "PNM did not execute transmission service agreements governing 15 non- affiliated transmission capacity reassignments prior to commencing the reassigned transmission service. Also, PNM did not report these reassignments in its EQR filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "Develop and implement processes and procedures to ensure that transmission service agreements are executed prior to confirming reassignments of transmission capacity."
+        },
+        {
+          "number": 28,
+          "text": "Refile the affected EQR filings in coordination with the refilings to be undertaken pursuant to Recommendation 31 in Finding 10 of this audit report."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "EQR Filing Requirements",
+      "summary": "PNM’s EQR filings contained reporting errors including the improper reporting of cost-based power sales and unreported capacity reassignments.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Enhance EQR filing procedures to ensure PNM reports data accurately and completely, and consistently complies with Commission EQR filing guidance."
+        },
+        {
+          "number": 30,
+          "text": "Provide training on preparing and submitting EQR filings in accordance with Commission EQR filing guidance to personnel responsible for performing and overseeing these functions."
+        },
+        {
+          "number": 31,
+          "text": "Begin an internal review process to examine all EQR filings made by PNM during the audit period."
+        },
+        {
+          "number": 32,
+          "text": "Correct all the errors identified during the audit as well as those discovered in its subsequent internal review process and refile the amended EQR data in a timely manner. Other Matter – Use of Transmission Service Numbers"
+        },
+        {
+          "number": 33,
+          "text": "Continue to evaluate and take actions to reduce the use of TSNs."
+        },
+        {
+          "number": 34,
+          "text": "Post its TSN practices on OASIS and a list of TSNs (active and inactive) along with the intended business purpose. Other Matter – After-the-Fact (ATF) Reservation and Scheduling Practice"
+        },
+        {
+          "number": 35,
+          "text": "Document its ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review, including PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. E."
+        }
+      ]
+    }
+  ]
+}

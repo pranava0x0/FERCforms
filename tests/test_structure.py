@@ -123,6 +123,64 @@ def test_structure_report_end_to_end():
     assert report.docket_full == "PA99-1-000"
 
 
+_TOC_COVER = """FEDERAL ENERGY REGULATORY COMMISSION
+Docket No. FA00-0-000
+March 5, 2024
+The audit covered the period January 1, 2021 to December 31, 2022.
+compliance with the FERC Form No. 1 reporting requirements and the Federal Power Act.
+"""
+
+# A report with NO exec-summary "Summary of Noncompliance Findings" list — findings
+# are only in the TOC + body. This is the format that regressed to 0 findings.
+_TOC_BODY = (
+    "Some Electric Co Docket No. FA00-0-000\n"
+    "IV. Findings and Recommendations ................................. 10\n"
+    "1. Accounting for Lobbying Costs ................................. 10\n"
+    "2. Depreciation Rates ........................................... 14\n"
+    "V. Company Response ............................................. 20\n"
+    "\n"
+    "IV. Findings and Recommendations\n"
+    "1. Accounting for Lobbying Costs\n"
+    "The company improperly recorded lobbying costs in Account 426 that overstated recoverable expenses.\n"
+    "Pertinent Guidance\n"
+    "18 C.F.R. Part 101.\n"
+    "2. Depreciation Rates\n"
+    "The company used unapproved depreciation rates for several plant accounts.\n"
+    "Pertinent Guidance\n"
+)
+
+
+def test_structure_report_toc_fallback():
+    """Reports without an exec-summary findings list parse via the TOC (regression)."""
+    entry = ListingEntry(
+        id="2024-03-05_some-electric-co_fa00-0",
+        company="Some Electric Co",
+        company_raw="Some Electric Co (FA00-0)",
+        docket="FA00-0",
+        accession_number="20240305-0000",
+        issued_date=date(2024, 3, 5),
+        source_page_url="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240305-0000",
+        pdf_download_url="https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240305-0000",
+        captured_at=date(2026, 2, 3),
+    )
+    text = ReportText(
+        id=entry.id,
+        accession_number=entry.accession_number,
+        page_count=2,
+        scanned_pages=[],
+        ocr_used=False,
+        pages=[
+            PageText(page=1, char_count=len(_TOC_COVER), is_image_only=False, extractor="pdfplumber", text=_TOC_COVER),
+            PageText(page=2, char_count=len(_TOC_BODY), is_image_only=False, extractor="pdfplumber", text=_TOC_BODY),
+        ],
+    )
+    report = structure.structure_report(entry, text)
+    assert report.finding_count == 2
+    assert [f.title for f in report.findings] == ["Accounting for Lobbying Costs", "Depreciation Rates"]
+    assert report.findings[0].summary.startswith("The company improperly recorded lobbying costs")
+    assert report.audit_type == "financial"
+
+
 @pytest.mark.parametrize(
     "rid, audit_type, min_findings, min_recs",
     [

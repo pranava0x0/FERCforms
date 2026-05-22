@@ -1,0 +1,171 @@
+{
+  "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
+  "company": "Connecticut Light and Power Company",
+  "company_raw": "Connecticut Light and Power Company (FA19-8)",
+  "docket": "FA19-8",
+  "docket_full": "FA19-8-000",
+  "issued_date": "2022-02-04",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220204-3014&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220204-3014",
+  "captured_at": "2026-02-03",
+  "page_count": 44,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2015 to December 31, 2019",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "CL&P improperly included accumulated other comprehensive income and unamortized debt-related balances in long-term debt and equity balances used to compute its AFUDC rates. As a result, CL&P over-accrued AFUDC amounts included in utility plant accounts, which led it to overstate its annual transmission revenue requirement and overbill transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise and implement procedures to ensure that AFUDC rate calculations are consistent with Commission accounting requirements."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on the revised AFUDC rate calculation procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Recalculate AFUDC for capital work orders, in a manner consistent with Electric Plant Instruction (EPI) No. 3(A)(17) that corrects the improper inclusion of accumulated other comprehensive income and unamortized debt-related balances in AFUDC rate calculations during the audit period."
+        },
+        {
+          "number": 4,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the Construction Work In Progress-Electric (CWIP), electric plant in service, accumulated depreciation, Accumulated Deferred Income Taxes (ADIT), and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report."
+        },
+        {
+          "number": 5,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from correction of excess AFUDC in plant included in transmission formula rate annual transmission revenue requirement determinations during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 6,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 7,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "CL&P incorrectly accounted for compromise settlement costs in operating expense accounts instead of Account 426.3, Penalties, or Account 426.5, Other Deductions, as required. The operating expense accounts used were included in CL&P’s transmission formula rate calculations. As a result, CL&P overstated its annual transmission revenue requirement and overbilled transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise existing or establish new policies, procedures, and controls to account for and track legal settlements and associated expenses relating to compromise settlements consistent with Commission accounting requirements."
+        },
+        {
+          "number": 9,
+          "text": "Provide training to relevant staff on the methods to account for expenses relating to such compromise settlements. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from the exclusion of compromise settlement amounts from transmission formula rate calculations during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Tax Receivables",
+      "summary": "CL&P incorrectly recorded accounts receivable that represented refunds for overpayments of income taxes in Account 165, Prepayments, instead of in Account 143, Other Accounts Receivable. The incorrect accounting led to an overstatement of CL&P’s rate base used in its transmission formula rate calculations. As a result, CL&P overstated its annual transmission revenue requirement and overbilled transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise accounting policies and procedures to account for income tax refunds consistent with Commission accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Provide training to relevant staff on the revised accounting policies and procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 15,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the accounts receivable and prepayment balances within 60 days of issuance of the audit report."
+        },
+        {
+          "number": 16,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) the calculation of refunds that results from excluding income tax account receivable balances from transmission rates during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 17,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 18,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Merger Transaction Costs",
+      "summary": "CL&P improperly included merger transaction costs in operating accounts, contrary to the Commission’s long-standing policy that such expenses be recorded in nonoperating accounts. As a result, CL&P overstated its annual transmission revenue requirement and overbilled transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Enhance accounting policies and procedures for tracking and accounting for merger-related costs consistent with Commission accounting requirements."
+        },
+        {
+          "number": 20,
+          "text": "Provide training to relevant staff on the revised accounting policies and procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 21,
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from correcting the improper inclusion of merger transaction costs in transmission formula rates during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 22,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 23,
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Application of Nonapproved Depreciation Rates",
+      "summary": "CL&P used a depreciation rate for accounting and transmission ratemaking purposes that was not filed with, and approved by, the Commission. As a result, the Commission was not afforded an opportunity to review or decide on the appropriateness of the inclusion of the depreciation rate in the transmission service rate determination.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Revise and implement processes and procedures to ensure that depreciation rates and related studies are filed with the Commission for consideration and decision before being used for transmission ratemaking purposes."
+        },
+        {
+          "number": 25,
+          "text": "Provide training to relevant staff on the revised procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 26,
+          "text": "File a depreciation study and associated depreciation rate for the Norwalk Harbor- Northport underground transmission line in a docket relating to its transmission formula rate within 60 days of issuance of the audit report. F."
+        }
+      ]
+    }
+  ]
+}

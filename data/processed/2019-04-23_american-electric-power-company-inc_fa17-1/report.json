@@ -1,0 +1,56 @@
+{
+  "id": "2019-04-23_american-electric-power-company-inc_fa17-1",
+  "company": "American Electric Power Company, Inc.",
+  "company_raw": "American Electric Power Company, Inc. (FA17-1)",
+  "docket": "FA17-1",
+  "docket_full": "FA17-1-000",
+  "issued_date": "2019-04-23",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190423-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190423-3010",
+  "captured_at": "2026-02-03",
+  "page_count": 38,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 through August 31, 2018",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Certain AEP jurisdictional utilities’ method for computing Allowance for Funds Used During Construction (AFUDC) improperly included Account 219, Accumulated Other Comprehensive Income, in the equity component of the formula and improperly determined the AFUDC rate on a monthly basis. As a result, three jurisdictional utilities over accrued AFUDC on transmission plant by approximately $6.1 million from 2012 through 2017. The three jurisdictional utilities overbilled wholesale transmission customers for the excessive AFUDC costs included in utility plant that was included in transmission formula",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Merger-Related Costs",
+      "summary": "AEP jurisdictional utilities improperly included approximately $295,000 of merger-related capital costs in transmission formula rate determinations without first making a compliance filing under section 205 of the Federal Power Act. As a result, wholesale transmission customers were overbilled due to the inclusion of merger costs.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Charitable Contributions and Penalties",
+      "summary": "AEPSC improperly recorded charitable contributions and penalties in various administrative and general, and operation and maintenance expense accounts, instead of using the appropriate non-operating expense accounts.16 In addition, AEPSC allocated 15F and billed these costs to the jurisdictional utilities, and these utilities then misclassified and misreported these costs in their FERC Form No. 1 filings. These amounts were included in the jurisdictional utilities’ formula rate mechanisms. As a result, the improper accounting for charitable contributions and penalties amounts led to overbillin",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Administrative and General Expenses",
+      "summary": "AEPSC misclassified various administrative and general labor, membership dues, outside services, and advertising expenses among various administrative and general expense accounts. In addition, AEPSC allocated and billed these costs to the jurisdictional utilities, and these utilities then misclassified these costs in their FERC Form No. 1 filings. As a result, the improper accounting for certain administrative and general expenses led to overbillings to wholesale transmission customers through the jurisdictional utilities’ formula rate mechanisms.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
+  "company": "NextEra Energy Transmission, LLC",
+  "company_raw": "NextEra Energy Transmission, LLC (PA23-2)",
+  "docket": "PA23-2",
+  "docket_full": "PA23-2-000",
+  "issued_date": "2024-08-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240821-3003&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240821-3003",
+  "captured_at": "2026-02-03",
+  "page_count": 52,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018, to December 31, 2023",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission",
+    "distribution"
+  ],
+  "forms": [
+    "1",
+    "3-Q",
+    "60"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Acquisition Integration Cost Tracking",
+      "summary": "NEET incurred $8,801 of acquisition-related costs that it allocated to the GridLiance Transcos, which then recovered these costs through FERC-jurisdictional rates. As a result, the GridLiance Transcos inappropriately billed FERC-jurisdictional customers for acquisition-related costs without Commission approval.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen policies, procedures, and controls to track merger- and acquisition- related expenditures consistent with the Commission’s requirements."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant employees on revised procedures for properly tracking merger- and acquisition-related expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis for the GridLiance Transcos to identify acquisition-related expenditures that were improperly tracked and included within FERC- jurisdictional rate inputs during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper tracking of acquisition-related expenditures impacting charges under FERC-jurisdictional rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "NEET improperly recorded $139,385 of lobbying expenses on the books of the GridLiance Transcos in Account 561.5, Reliability, Planning, and Standards Development, a transmission function account, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political, and Related Activities. This resulted in the GridLiance Transcos inappropriately including these costs in their FERC- jurisdictional rates. As a result, FERC-jurisdictional customers were improperly billed for lobbying expenses by the GridLiance Transcos.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Strengthen policies, procedures, and controls to account for lobbying expenses consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to appropriate accounting employees on the revised procedures for properly accounting for lobbying expenditures in NEET’s and the GridLiance Transcos’ books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 9,
+          "text": "Perform an analysis for the GridLiance Transcos to identify other lobbying costs that were improperly accounted for during the audit period subsequent to NEET’s acquisition of the GridLiance Transcos. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper accounting of lobbying costs impacting charges under FERC-jurisdictional formula rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Account 920 Misclassifications",
+      "summary": "NEET improperly recorded $14,283 of expenses in Account 920, Administrative and General Salaries, on the books of the GridLiance Transcos, that should have been classified in other expense accounts on the books of the GridLiance Transcos. This misclassification affected the transparency, accuracy, and usefulness of the Companies’ FERC Form No. 1 and 3-Q reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Strengthen policies, procedures, and controls to account for A&G and O&M expenditures consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Provide training to appropriate accounting employees on the revised procedures for properly accounting for A&G and O&M expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+        },
+        {
+          "number": 15,
+          "text": "Perform an analysis for the GridLiance Transcos to identify other A&G and O&M expenses that were improperly accounted for during the portion of the audit period subsequent to NEET’s acquisition of the GridLiance Transcos. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 16,
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amounts of inappropriate recoveries that resulted from improper accounting of administrative and general expense impacting charges under FERC-jurisdictional formula rates during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 17,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 18,
+          "text": "Refund the amounts disclosed in the refund report to FERC-jurisdictional customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Costs in Account 922",
+      "summary": "Trans Bay Cable did not use Account 922, Administrative Expenses Transferred – Credit, to record administrative expenses from Account 920 and Account 921 that were transferred to construction projects or to nonutility accounts. As a result of Trans Bay Cable’s improper accounting, the transparency of its capitalization activities and the ability to compare those activities and their costs to those of others in the industry were reduced.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Strengthen policies, procedures, and controls regarding the use of Account 922 to record the allocation of administrative and general overheads to construction work in progress or to nonutility accounts consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 20,
+          "text": "Provide training to appropriate accounting employees on the use of Account 922 to record the allocation of administrative and general overheads to construction work in progress and to nonutility accounts."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Reporting of Transactions with Associated (Affiliated) Companies",
+      "summary": "The FERC Form No. 1 filings of Trans Bay Cable and the GridLiance Transcos reported transactions with affiliated companies in a manner that lacked transparency and was inconsistent with Commission reporting requirements.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Strengthen policies and procedures to ensure operating companies accurately, completely, and consistently prepare the schedules on page 429 of the FERC Form No. 1 according to schedule instructions, namely, by providing (1) the FERC account(s), as discussed in this finding, on page 429 and (2) explanations of all allocation processes applicable to amounts billed to or received from affiliates."
+        },
+        {
+          "number": 22,
+          "text": "Provide training to relevant staff on revised procedures for properly reporting the information required on page 429 of the FERC Form No. 1. Also, develop a training program that supports the provision of periodic training in this area, as needed. E."
+        }
+      ]
+    }
+  ]
+}

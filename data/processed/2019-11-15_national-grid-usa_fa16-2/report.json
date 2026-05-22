@@ -1,0 +1,25 @@
+{
+  "id": "2019-11-15_national-grid-usa_fa16-2",
+  "company": "National Grid USA",
+  "company_raw": "National Grid USA (FA16-2)",
+  "docket": "FA16-2",
+  "docket_full": null,
+  "issued_date": "2019-11-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191115-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010",
+  "captured_at": "2026-02-03",
+  "page_count": 53,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "1",
+    "3-Q",
+    "60"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

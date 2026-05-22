@@ -1,0 +1,63 @@
+{
+  "id": "2022-03-23_arizona-public-service-company_pa20-1",
+  "company": "Arizona Public Service Company",
+  "company_raw": "Arizona Public Service Company (PA20-1)",
+  "docket": "PA20-1",
+  "docket_full": "PA20-1-000",
+  "issued_date": "2022-03-23",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220323-3002&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220323-3002",
+  "captured_at": "2026-02-03",
+  "page_count": 24,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2016 to October 30, 2021",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Transmission Line Outage Postings",
+      "summary": "APS did not timely post transmission line outages on its OASIS on six occasions. As a result, the ATC/TTC values were not updated to reflect these outages, which then led to the curtailment of 16 transmission service schedules.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise processes and procedures related to the posting of transmission line outage information on OASIS and enhance the process to timely and accurately communicate outage information to the Balancing Authority Area (BAA) operators."
+        },
+        {
+          "number": 2,
+          "text": "Provide training to transmission operators on the new policies, processes, and procedures."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Non-Firm Redirect Service Requests",
+      "summary": "APS transmission staff improperly directed existing long-term firm PTP customers to execute a short-term transmission service agreement when requesting non-firm redirect service. This process was implemented because an OASIS configuration error prevented existing long-term firm PTP customers from requesting non-firm redirect service on APS’s OASIS, and instead required customers to manually request redirect service. Not only was the process involving these short-term agreements inconsistent with APS’s OATT, the process also improperly enabled customers to manually select a higher priority for",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Correct OASIS settings to allow short-term non-firm redirect service requests associated with existing long-term firm PTP transmission service."
+        },
+        {
+          "number": 4,
+          "text": "Revise policies and procedures regarding short-term non-firm redirect requests and discontinue the practice of requiring short-term transmission service agreements associated with these redirect requests."
+        },
+        {
+          "number": 5,
+          "text": "Provide training to transmission personnel regarding the updated policies and procedures. E."
+        }
+      ]
+    }
+  ]
+}

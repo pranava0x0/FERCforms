@@ -1,0 +1,56 @@
+{
+  "id": "2024-03-15_appalachian-power-company_fa22-1",
+  "company": "Appalachian Power Company",
+  "company_raw": "Appalachian Power Company (FA22-1)",
+  "docket": "FA22-1",
+  "docket_full": "FA22-1-000",
+  "issued_date": "2024-03-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240315-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240315-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 42,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2019 to June 30, 2023",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "580"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Amortization of Retail Regulatory Assets",
+      "summary": "APCo improperly included the amortization of certain regulatory assets arising from state-jurisdictional rate adjustment clauses in Account 501, Fuel Expense, as an input to the Company’s cost-based formula rates without Commission approval.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Classification of Purchased Power Costs",
+      "summary": "APCo improperly included approximately $7,606,000 of non-energy costs in the purchased power component of FAC calculations from 2019 to 2021, in which only energy-related economic purchases should be included. As a result, certain FERC- jurisdictional wholesale customers were overcharged by approximately $490,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Fly Ash Sales Revenue and Expenses",
+      "summary": "APCo did not exclude the expenses it incurred in connection with fly ash sales for beneficial reuse from its wholesale cost-based fuel recovery formulas. By not excluding fly ash sales-related costs as required by its wholesale Requirements Service formulas, APCo overstated its revenue requirement by approximately $178,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "FERC Form No. 580 Reporting",
+      "summary": "APCo did not properly follow the FERC Form No. 580 instructions and, therefore, did not report all required information in its FERC Form No. 580 filings. These actions affected the transparency, accuracy, and usefulness of certain sections of the FERC Form No. 580.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

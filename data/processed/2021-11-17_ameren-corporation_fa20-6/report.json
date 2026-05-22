@@ -1,0 +1,285 @@
+{
+  "id": "2021-11-17_ameren-corporation_fa20-6",
+  "company": "Ameren Corporation",
+  "company_raw": "Ameren Corporation (FA20-6)",
+  "docket": "FA20-6",
+  "docket_full": "FA20-6-000",
+  "issued_date": "2021-11-17",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20211117-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20211117-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 71,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2016 through December 31, 2019",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 9,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Reporting of Materials and Supplies",
+      "summary": "Ameren Missouri incorrectly reported M&S assigned to transmission-related construction on line 8 of page 227, Materials and Supplies, of its 2016-2018 FERC Form No. 1 reports, rather than on line 5 of the same page. As a result of overstating line 8, Ameren Missouri incorrectly increased the working capital component of its formula rate mechanism, which led to an overstatement of its wholesale transmission revenue requirement used to determine billings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies, procedures, and practices to ensure that FERC Form No. 1, page 227 is completed in accordance with the reporting instructions, including reporting the amount of plant materials and operating supplies under the primary functional classifications as indicated in column (a) of page 227."
+        },
+        {
+          "number": 2,
+          "text": "Train relevant staff on the revised reporting policies, procedures, and practices and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis that reflects the proper functionalization of plant M&S to construction for 2016-2018. Provide the results of the analysis to audit staff within 60 days of the date of the final audit report."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 60 days of the issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper reporting of M&S on page 227 of the FERC Form No. 1 as determined by the analysis performed in response to Recommendation No. 3, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. Remeasurement of Accumulated Deferred Income Taxes Resulting from the Tax Cuts and Jobs Act"
+        },
+        {
+          "number": 7,
+          "text": "Strengthen policies, procedures, and controls to maintain and retain documentation to support ADIT amounts consistent with Commission record retention requirements."
+        },
+        {
+          "number": 8,
+          "text": "Train relevant staff on the revised ADIT policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 9,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the overstatement of Account 923 due to the improper write-off of unidentified ADIT, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 10,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 11,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. Accounting for Service Company’s Depreciation, Amortization, Taxes, and Interest Expenses"
+        },
+        {
+          "number": 12,
+          "text": "Revise policies and procedures to ensure that the Ameren public utilities properly account for depreciation, amortization, tax, and interest expenses allocated from AMS in Account 930.2."
+        },
+        {
+          "number": 13,
+          "text": "Train relevant staff on the revised policies and procedures for properly accounting for depreciation, amortization, tax, and interest expenses allocated from AMS, and provide periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Remeasurement of Accumulated Deferred Income Taxes Resulting from the Tax Cuts and Jobs Act",
+      "summary": "AMS overstated its ADIT balance on its books when it made adjustments in response to the TCJA. AMS could not provide documentation to support an expense totaling $1,197,220 that was included as part of the remeasurement of its ADIT. This unsupported cost was allocated to the Ameren public utilities and incorrectly included in an account that is a wholesale transmission formula rate input. This led the Ameren public utilities to overstate their wholesale transmission revenue requirements and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Service Company’s Depreciation, Amortization, Tax, and Interest Expenses",
+      "summary": "The Ameren public utilities improperly accounted for AMS’s allocated depreciation, amortization, tax, and interest expenses in Account 923, Outside Services Employed, instead of Account 930.2, Miscellaneous General Expenses. As a result, the Ameren public utilities overstated Account 923 and understated Account 930.2. This improper accounting had no impact on the Ameren public utilities’ wholesale transmission revenue requirements.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Non-Power Goods and Services Provided to Affiliates",
+      "summary": "The Ameren public utilities improperly recorded the costs of providing non-power goods and services to their associated companies in Account 921, Office Supplies and Expenses, rather than recording them in the appropriate accounts for transactions of the same nature. As a result of the misclassifications, the Ameren public utilities overstated their annual transmission revenue requirements, which led to overbillings to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Revise policies and procedures to ensure that affiliate transactions are recorded in the appropriate accounts for transactions of the same nature."
+        },
+        {
+          "number": 15,
+          "text": "Train relevant staff on the revised policies and procedures and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 16,
+          "text": "Perform an analysis of Account 921 to identify any affiliate transactions that were improperly recorded in Account 921 during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 17,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper accounting of affiliate transactions as identified pursuant to the analysis performed in response to Recommendation No. 16, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 18,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 19,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Allocation of Non-Regulated Affiliate Expenses",
+      "summary": "AMS improperly allocated costs associated with its non-regulated affiliate to the Ameren public utilities. This led the Ameren public utilities to overstate their wholesale transmission revenue requirements and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Strengthen policies, procedures, and controls to ensure that costs are properly allocated to non-regulated affiliates."
+        },
+        {
+          "number": 21,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 22,
+          "text": "Perform an analysis to identify other costs related to non-regulated affiliates that were improperly allocated to the Ameren public utilities during the audit period. Provide the results of the analysis to audit staff within 60 days of the issuance of this audit report."
+        },
+        {
+          "number": 23,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper allocation of costs related to the Ameren Accelerator program and other costs as identified pursuant to the analysis performed in response to Recommendation No. 22, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 24,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 25,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Allocation of Overhead Labor Costs to Construction Work In Progress",
+      "summary": "Ameren’s subsidiaries capitalized overhead labor to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This led Ameren’s subsidiaries to charge costs to Account 107 that may not have a definite relationship to construction. As a result, the Ameren public utilities may have overstated construction costs recorded in Account 107 and electric plant in service, as well as ADIT balances, and may have understated operating expenses. Moreover, t",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Retain an independent third-party entity to conduct a representative labor time study for allocation of overhead costs incurred in 2021 to Construction Work in Progress (CWIP), and to assist with the development of procedures that the Ameren public utilities shall use to periodically determine the allocation of overhead labor and labor-related costs capitalized into the cost of construction after 2021. Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of issuance of this audit report and the developed allocation procedures when complete. At a minimum, the developed allocation procedures should provide a method for overhead cost allocation and capitalization to construction based on actual timecard distributions or where this procedure is impractical, based on periodic time studies."
+        },
+        {
+          "number": 27,
+          "text": "Revise policies, practices, procedures, and controls governing the methods used to account for, track, report, and review overhead labor and related costs, and all other costs allocated to construction projects to be consistent with Commission accounting requirements. In addition, adopt procedures to retain formal documentation supporting the amount of overhead costs allocated to electric plant accounts."
+        },
+        {
+          "number": 28,
+          "text": "Train relevant staff on the revised overhead allocation and control procedures and documentation, and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 29,
+          "text": "Submit an estimate, within 30 days of the completion of Recommendation No. 26, to DAA for review, that includes the calculations and determinative components, of overhead costs that would have been allocated to CWIP during the audit period consistent with the requirements of Electric Plant Instruction No. 4 and General Instruction No. 9. The estimate should be based on a recalculation of 2016 and subsequent years’ overhead costs allocated to construction with labor and related costs removed from the cost of plant that were not associated with construction activities based on the methodology developed in response to Recommendation No. 26."
+        },
+        {
+          "number": 30,
+          "text": "With the response to Recommendation No. 29, submit proposed accounting entries to DAA for review that remove the overhead costs that were allocated to CWIP and electric plant in service in 2016 and subsequent years that exceed the amount of costs that would have been allocated to the accounts based on the methodology developed in response to Recommendation No. 26. Also, provide proposed accounting entries to remove associated amounts from other accounts and balances affected by the inappropriately allocated cost such as ADIT accounts, and allowance for funds used during construction balances capitalized into CWIP and plant in service accounts. If the adjusting entries result in a significant impact to income for the current year, Ameren public utilities may account for the transaction as a correction of a prior period error in Account 439, Adjustments to Retained Earnings. Such an entry should be submitted with the proposed accounting entries."
+        },
+        {
+          "number": 31,
+          "text": "Revise account balances for the Ameren public utilities’ utility plant, accumulated depreciation, ADIT, and other account balances impacted by the inappropriate allocation of unsupported overhead costs after receiving DAA’s assessment of the proposed accounting entries submitted per Recommendation No. 30, and restate and footnote the balances reported in the next-filed FERC Form No. 1 reports of the Ameren public utilities for both the current and comparative years presented in each subsidiary’s next- filed report, as necessary to reflect and disclose the revisions."
+        },
+        {
+          "number": 32,
+          "text": "Submit a refund analysis, within 30 days of the completion of Recommendation No. 29, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries in 2016 and subsequent years that resulted from the overstatement of transmission plant due to the improperly capitalized labor costs, as determined by the labor time study, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 33,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 34,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Miscellaneous Accounting Misclassifications",
+      "summary": "AMS misclassified various costs in its books and records. These costs were allocated to the Ameren public utilities where they were also misclassified. This led the Ameren public utilities to overstate their wholesale transmission revenue requirements, and they may have overcharged wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Strengthen policies, procedures, and controls to account for distribution- related expenses, lobbying expenses, membership dues, and prepayments consistent with Commission accounting requirements."
+        },
+        {
+          "number": 36,
+          "text": "Strengthen policies, procedures, and controls to ensure that costs are charged to the proper service request."
+        },
+        {
+          "number": 37,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 38,
+          "text": "Perform an analysis to identify other distribution-related expenses, lobbying expenses, membership dues, and prepayments that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+        },
+        {
+          "number": 39,
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper accounting for distribution-related costs, lobbying expenses, membership dues, and prepayments recorded in the wrong accounts as identified pursuant to the analysis performed in response to Recommendation No. 38, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 40,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 41,
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "FERC-61 Filings",
+      "summary": "Ameren did not submit the FERC-61, Narrative Description of Service Company Functions, filings for STARS Alliance during the audit period, and did not timely submit the 2016 and 2017 FERC-61 filings for Fuelco as required by Commission regulations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 42,
+          "text": "Submit FERC-61 filings to the Commission for STARS Alliance for the audit period."
+        },
+        {
+          "number": 43,
+          "text": "Revise policies, procedures, and controls to ensure that all special-purpose companies in the Ameren holding company system file a FERC-61 filing and that all FERC-61 filings are filed timely."
+        },
+        {
+          "number": 44,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Reporting of Premature Loss of Records",
+      "summary": "Ameren did not notify the Commission as required when the company discovered certain records were prematurely destroyed or lost.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 45,
+          "text": "Revise policies, procedures, and controls to ensure that a filing is made with the Commission when the company has discovered that records have been prematurely destroyed or lost."
+        },
+        {
+          "number": 46,
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+        },
+        {
+          "number": 47,
+          "text": "Submit a filing to the Commission, within 60 days of issuance of this audit report, for the records that were prematurely destroyed or lost. E. Implementation of Recommendations Audit staff further recommends that Ameren submit the following: • A plan for implementing the recommendations within 30 days after this audit report is issued; • Quarterly reports describing progress in completing each corrective action recommended. Quarterly nonpublic submissions should be made no later than 30 days after the end of each calendar quarter, beginning with the first quarter after this audit report is issued, and continuing each quarter until all recommended corrective actions are completed; and • Copies of written policies and procedures developed in response to the recommendations. These documents should be submitted in the first quarterly filing after the development of a written policy or procedures."
+        }
+      ]
+    }
+  ]
+}

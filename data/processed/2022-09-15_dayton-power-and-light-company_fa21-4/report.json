@@ -1,0 +1,83 @@
+{
+  "id": "2022-09-15_dayton-power-and-light-company_fa21-4",
+  "company": "Dayton Power and Light Company",
+  "company_raw": "Dayton Power and Light Company (FA21-4)",
+  "docket": "FA21-4",
+  "docket_full": null,
+  "issued_date": "2022-09-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220915-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220915-3000",
+  "captured_at": "2026-02-03",
+  "page_count": 64,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 8,
+  "findings": [
+    {
+      "index": 1,
+      "title": "AFUDC Rate Inputs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "AFUDC Computations",
+      "summary": "DP&L’s methodology for computing AFUDC was deficient in multiple areas. Audit staff found that DP&L did the following: • Incorrectly compounded AFUDC during the audit period; • Did not suspend AFUDC when projects had been delayed or suspended; and • Improperly included RWIP balances in the CWIP base when computing AFUDC. As a result, DP&L over accrued AFUDC included in CWIP and utility plant accounts, and overbilled FERC-jurisdictional transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Income Tax Receivables",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Distribution-Related Expenses",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Customer-Related Expenses",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Service Company Costs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting for RECs",
+      "summary": "DP&L improperly accounted for the purchase of RECs in Account 154, Materials and Supplies. DP&L also improperly amortized the Alternative Energy Rider regulatory asset in Account 930.2, Miscellaneous General Expenses. As a result of the improper accounting, DP&L overstated Account 154 and Account 930.2 account balances reported in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Accounting Misclassification",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

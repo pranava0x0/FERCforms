@@ -1,0 +1,59 @@
+{
+  "id": "2023-08-18_puget-sound-energy-inc_pa21-5",
+  "company": "Puget Sound Energy Inc.",
+  "company_raw": "Puget Sound Energy Inc. (PA21-5)",
+  "docket": "PA21-5",
+  "docket_full": "PA21-5-000",
+  "issued_date": "2023-08-18",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230818-3022&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230818-3022",
+  "captured_at": "2026-02-03",
+  "page_count": 23,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2019 to December 31, 2022",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Filing of Transmission Service Agreements",
+      "summary": "PSE did not file four non-conforming transmission service agreements with the Commission within 30 days after electric service had commenced, as required by 18 C.F.R. §§ 35.1(g) and 35.3(a)(2).",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Develop procedures for reviewing and filing transmission service agreements to ensure PSE has the most current and complete agreements on file with the Commission."
+        },
+        {
+          "number": 2,
+          "text": "Train employees on filing procedures developed from Recommendation 1 on an ongoing, as needed basis."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Posting of Transmission Service Request Study Metrics Reports",
+      "summary": "PSE did not timely post several quarterly transmission service study metrics reports on OASIS during the audit period, as required by 18 CFR § 37.6(h)(2).",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Enhance cross-office coordination practices and develop procedures to ensure timely posting of quarterly transmission service study metrics reports on OASIS."
+        },
+        {
+          "number": 4,
+          "text": "Train employees on procedures developed from Recommendation 3 on an ongoing, as needed basis. E."
+        }
+      ]
+    }
+  ]
+}
