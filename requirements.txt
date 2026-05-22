@@ -1,0 +1,10 @@
+# Pinned to versions verified present in the environment on 2026-05-22 (Python 3.9).
+# No new installs were required for v1 — see security.md.
+pdfplumber==0.11.8
+PyMuPDF==1.26.5
+pydantic==2.9.2
+requests==2.32.3
+pandas==2.3.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+pytest==8.4.2

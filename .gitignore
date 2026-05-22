@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Downloaded source PDFs — large binaries, re-fetchable from data/listing.json
+data/raw/
+
+# Secrets (none used today, but never commit these)
+.env
+.env.local
+credentials.json
+secrets/
+
+# OS
+.DS_Store
