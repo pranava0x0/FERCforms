@@ -16,6 +16,8 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## Analysis
 
+- **[high] Audit-type facet (FA vs PA).** The corpus is two distinct audit types: **FA = Financial Audit** (Chief Accountant — accounting/USofA/forms compliance) and **PA = Performance/non-financial Audit** (tariff/market/operational compliance). Derivable for free from the docket prefix. Add `audit_type` to the model and as a first-class filter — findings differ sharply by type.
+- **[high] Form/industry is a mix, not all Form 1.** Audited entities span electric utilities (Form 1), gas pipelines (Form 2), oil pipelines (Form 6), and market operators (ISOs/RTOs). A true "Form 1 tool" would filter to electric FA audits; decide whether to scope down or keep the broader explorer (current). Industry is already parsed; surface it + a Form-1-only view.
 - **[high] Finding taxonomy.** A controlled vocabulary of finding types (accounting misclassification, formula-rate inputs, affiliate transactions, capitalization vs expense, etc.); tag every finding.
 - **[med] Cross-report trend charts.** Findings per year, per company, per category.
 - **[low] Recommendation-outcome tracking.** Did the company implement the recommendation? (Annual Reports on Enforcement note status.)
@@ -25,6 +27,7 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 ## The bigger vision
 
 - **[high] "Audit-my-document" mode.** The longer-term goal: feed in an application/filing and flag likely issues using the pattern library mined from historical audits. v1 builds that library; this feature consumes it.
+- **[med] Ingest the underlying FERC Form 1 financial data (via PUDL).** The audits scrutinize the *numbers* in Form 1/2/6. FERC publishes that data in formats needing special software — Visual FoxPro `.DBF` (1994–2020) and XBRL (2021+) — painful on macOS. Use **PUDL** (catalystcoop, pip-installable, SQLite/Parquet output) to ingest it with **no FERC installer**, then cross-reference audit findings against the reported figures.
 
 ## Design / UI — theme variants to A/B (user wants to test which sticks)
 
