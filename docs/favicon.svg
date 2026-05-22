@@ -1,22 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="FERC Form 1 Audit Explorer">
   <rect width="32" height="32" rx="7" fill="#e7e7fb" stroke="#c7c7f0"/>
   <g fill="none" stroke="#5B5BD6" stroke-linecap="round" stroke-linejoin="round">
-    <!-- tower: legs, top, two cross-arms, lattice brace -->
-    <g stroke-width="2">
-      <path d="M8 27 14.5 6"/>
-      <path d="M24 27 17.5 6"/>
-      <path d="M14.5 6H17.5"/>
-      <path d="M9.5 11H22.5"/>
-      <path d="M7.5 16H24.5"/>
-      <path d="M12.5 16 19.5 22"/>
-      <path d="M19.5 16 12.5 22"/>
+    <!-- conductors threading through the line of towers (drawn first, behind) -->
+    <g stroke-width="1.2">
+      <path d="M2 16 Q3.5 14 7 12 Q11.5 15.5 16 9 Q20 11 24.5 7 Q27.5 6.5 30 8"/>
+      <path d="M2 19 Q3 16.5 3.5 15 Q7 16 10.5 15 Q12 16.5 13 12 Q16 13 19 12 Q21 13 22.3 9.5 Q24.5 10.5 26.7 9.5 Q28.5 9 30 10.5"/>
     </g>
-    <!-- conductors: catenary spans drooping from the cross-arm tips -->
-    <g stroke-width="1.4">
-      <path d="M9.5 11Q5.5 14.5 2.5 13"/>
-      <path d="M22.5 11Q26.5 14.5 29.5 13"/>
-      <path d="M7.5 16Q4.5 19.5 2.5 18.5"/>
-      <path d="M24.5 16Q27.5 19.5 29.5 18.5"/>
+    <!-- three towers, receding up-right (decreasing size) -->
+    <g stroke-width="1.8">
+      <path d="M3 28 7 12M11 28 7 12M3.5 15H10.5"/>
+      <path d="M12.5 23 16 9M19.5 23 16 9M13 12H19"/>
+      <path d="M22 18 24.5 7M27 18 24.5 7M22.3 9.5H26.7"/>
     </g>
   </g>
 </svg>
