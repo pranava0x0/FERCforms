@@ -106,3 +106,31 @@ class AuditReport(BaseModel):
     forms: list[str] = Field(default_factory=list)  # e.g. ["2"] for FERC Form No. 2
     finding_count: int = 0
     findings: list[Finding] = Field(default_factory=list)
+
+
+class ThemeStat(BaseModel):
+    """How often a cross-report theme appears (transparent keyword tagging)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    theme: str
+    keywords: list[str]            # the rule's keywords (shown for transparency)
+    finding_count: int            # findings matching this theme
+    report_count: int             # distinct reports with >=1 matching finding
+    example_titles: list[str]     # up to a few real finding titles that matched
+
+
+class PatternsSummary(BaseModel):
+    """Cross-report aggregates (data/processed/patterns.json)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    report_count: int
+    finding_count: int
+    other_matter_count: int
+    recommendation_count: int
+    by_industry: dict[str, int]
+    by_year: dict[str, int]
+    themes: list[ThemeStat]       # sorted by report_count desc
+    top_titles: list[dict]        # [{"title": str, "count": int}], most common first
+    generated_at: date
