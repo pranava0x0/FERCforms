@@ -32,65 +32,66 @@ Audit reports are born-digital PDFs (FY2015+) with a fairly stable structure. Ty
 
 Key identifiers to capture: **company**, **docket number(s)** (e.g., `PA21-4-000`), **issue date**, **audit period**, the regulations cited (CFR parts, USofA accounts, tariff sections).
 
-_(Observed structural variations across the corpus: pending extraction.)_
+**The Executive Summary is the parse target.** It carries the report in miniature with consistent subsections — `A. Overview`, `B. <Company>`, `C. Summary of Noncompliance Findings`, (optional) `D. Summary of Other Matter`, then `Recommendations`, then `Compliance and Implementation of Recommendations`. v1 parses `C` (findings) and the Recommendations subsection (grouped under each finding title); the long detailed Section IV is left for later.
+
+**Observed variation:** the **letter prefix shifts** when a report has no "Other Matter" — Recommendations is `E.` with Other Matter (Kern River) but `D.` without it (Medallion). The parser therefore anchors on header *text* + the "Audit staff('s) recommendations" intro, never the letter. See [ISSUES.md](ISSUES.md).
 
 ---
 
 ## 3. Structured data model
 
-Mirrors `pipeline/models.py` (Pydantic, `extra="forbid"`). One audit report normalizes to:
+Mirrors `pipeline/models.py` (Pydantic, `extra="forbid"`). v1 parses the
+**Executive Summary** (the most consistent, quotable section) rather than the
+long detailed sections. One audit report normalizes to:
 
 ```
 AuditReport
-  id                str    stable slug, e.g. "2025-southern-company-pa21-4"
-  company           str    title-cased display name
-  company_raw       str    verbatim source casing (provenance)
-  docket_numbers    [str]  e.g. ["PA21-4-000"]
-  issued_date       date?  report issue date (null -> "Not stated")
-  audit_period      str?   e.g. "2019-01-01 .. 2021-12-31" or free text
-  source_url        str    the FERC PDF URL
-  captured_at       date   when we downloaded it
+  id                str    stable slug, e.g. "2025-09-29_kern-river-..._fa23-10"
+  company           str    display name (from the listing)
+  company_raw       str    verbatim anchor text (provenance)
+  docket            str?   short form from the listing, e.g. "FA23-10"
+  docket_full       str?   full form parsed from the PDF, e.g. "FA23-10-000"
+  issued_date       date?
+  source_page_url   str    eLibrary filelist URL
+  pdf_download_url  str    eLibraryWebAPI DownloadPDF URL
+  captured_at       date
   page_count        int
-  ocr_used          bool   true if any page needed OCR (image-only)
-  scanned_pages     [int]  page numbers flagged as image-only
-  summary           str?   report's own scope/conclusion (verbatim excerpt)
+  scanned_pages     [int]  pages flagged image-only
+  ocr_used          bool   v1: always False (no OCR yet)
+  audit_period      str?   e.g. "January 1, 2020 to December 31, 2023"
+  industry          str?   "electric" | "gas" | "oil" (from FERC Form No.)
+  forms             [str]  e.g. ["2"] for FERC Form No. 2
+  finding_count     int    count of noncompliance findings (excl. other matter)
   findings          [Finding]
 
 Finding
-  id                str    "<report_id>#f<N>"
-  index             int    order within the report
-  heading           str    the finding's title/heading
-  text              str    VERBATIM finding text (never paraphrased)
-  category          str?   controlled-vocab tag (see §4; null until taxonomy lands)
-  regulations       [str]  cited authorities (CFR, USofA account, tariff §)
-  amount_usd        float? quantified impact, if stated
-  page_ref          int?   source page in the PDF
+  index             int    order within the report (1-based)
+  title             str    e.g. "Allowance for Funds Used During Construction"
+  summary           str?   VERBATIM noncompliance description (never paraphrased)
+  is_other_matter   bool   True for "Other Matter" items vs. noncompliance
   recommendations   [Recommendation]
 
 Recommendation
-  id                str    "<finding_id>r<M>"
+  number            int    report-wide recommendation number
   text              str    VERBATIM recommendation text
-  company_response  str?   audited entity's response, if present
 ```
 
-Provenance is mandatory on every `AuditReport` (`source_url`, `captured_at`) per [CLAUDE.md](CLAUDE.md) → Data handling.
+Provenance is mandatory on every `AuditReport` (`source_page_url` + `captured_at`) per [CLAUDE.md](CLAUDE.md) → Data handling. Findings/recommendations are quoted verbatim from the Executive Summary; the report-level "company response" section is captured in a later pass (see [BACKLOG.md](BACKLOG.md)).
 
 ---
 
-## 4. Finding taxonomy (controlled vocabulary)
+## 4. Finding taxonomy
 
-`category` is intentionally **null in v1** — assigning it is a [BACKLOG.md](BACKLOG.md) item (needs the corpus to define honest buckets, not guesses). Candidate buckets seeded from FERC's known recurring audit themes, to validate against real data:
+There is **no separate `category` field in v1** — the finding **`title`** is the natural label and is captured verbatim. A *normalized* taxonomy (mapping many phrasings to shared buckets, e.g. "AFUDC" ⇄ "Allowance for Funds Used During Construction") is a [BACKLOG.md](BACKLOG.md) item to define from the full corpus rather than guess.
 
-- Accounting / USofA misclassification
-- Capitalization vs. expense
-- Formula-rate inputs & true-ups
-- Affiliate / intercompany transactions
-- Cost allocation
-- Executive compensation & incentive comp recovery
-- Below-the-line / non-recoverable costs
-- Records retention & internal controls
+**Observed finding titles (2 reports processed so far):**
 
-_(Actual category frequencies: pending extraction + tagging.)_
+- *Kern River (gas, FA23-10):* Renewable Natural Gas Quality Specifications · Tariff Administration and Oversight · Informational Postings · Allowance for Funds Used During Construction · Annual Membership Dues · (other matter) Creditworthiness Standards
+- *Medallion (oil, FA23-9):* Annual Cost of Service Based Analysis Schedule · Nonoperating and Operating Expenses · Noncarrier Property Revenue, Expenses, and Net Income · Crude Oil Accounting Misclassifications · Other Accounting Misclassifications · Property Unit Listing · Depreciation Rates and Study · FERC Form No. 6 Reporting
+
+Even across two reports, recurring themes are visible (accounting misclassification, tariff/forms reporting, AFUDC/cost recovery) — the raw material for cross-report patterns (§ patterns stage).
+
+_(Full-corpus title frequencies: pending — only 2 of 71 structured in v1.)_
 
 ---
 
@@ -148,4 +149,4 @@ docs/data/
 - **Primary:** `pdfplumber` for text + layout. **Fallback:** `PyMuPDF` (`fitz`) for pages pdfplumber mis-handles.
 - **Scanned detection:** a page yielding `< MIN_TEXT_CHARS_PER_PAGE` (config) extractable chars is treated as **image-only**, recorded in `scanned_pages`, and the report's `ocr_used` is set when OCR eventually fills it. v1 does **not** OCR (no tesseract installed) — it flags. See [BACKLOG.md](BACKLOG.md).
 
-_(Corpus extraction stats — counts, scanned-page rate, parse failures: pending extraction.)_
+**Observed (2 reports):** both fully **born-digital** — 0 image-only pages, so no OCR was needed (Kern River 61 pp, Medallion 73 pp). pdfplumber handled most pages with PyMuPDF filling a few. Structuring yielded Kern River = 5 findings + 1 other matter / 15 recs, Medallion = 8 findings / 32 recs. _(Full-corpus stats pending — 71 PDFs downloaded, 2 structured.)_

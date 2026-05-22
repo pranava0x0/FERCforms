@@ -10,7 +10,7 @@ from __future__ import annotations
 from datetime import date
 from typing import Optional
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class ListingEntry(BaseModel):
@@ -31,3 +31,78 @@ class ListingEntry(BaseModel):
     source_page_url: str          # eLibrary filelist URL (human-facing)
     pdf_download_url: str          # eLibraryWebAPI DownloadPDF URL (machine)
     captured_at: date             # when the listing snapshot was captured
+
+
+class PageText(BaseModel):
+    """Extracted text for a single PDF page."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    page: int            # 1-based page number
+    char_count: int
+    is_image_only: bool  # True when no extractor cleared the text threshold
+    extractor: str       # "pdfplumber" | "pymupdf" | "none"
+    text: str
+
+
+class ReportText(BaseModel):
+    """Per-page extraction output for one report (data/processed/<id>/text.json)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    id: str
+    accession_number: str
+    page_count: int
+    scanned_pages: list[int]   # 1-based pages flagged image-only
+    ocr_used: bool             # whether OCR filled any page (v1: always False)
+    pages: list[PageText]
+
+
+class Recommendation(BaseModel):
+    """A staff recommendation for corrective action (verbatim)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    number: int
+    text: str
+
+
+class Finding(BaseModel):
+    """One area of noncompliance from the Executive Summary (verbatim)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    index: int                 # order within the report (1-based)
+    title: str                 # e.g. "Tariff Administration and Oversight"
+    summary: Optional[str] = None  # verbatim noncompliance description
+    is_other_matter: bool = False  # True for "Other Matter" items vs noncompliance
+    recommendations: list[Recommendation] = Field(default_factory=list)
+
+
+class AuditReport(BaseModel):
+    """A structured FERC audit report (data/processed/<id>/report.json)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    # Provenance / identity (from the listing seed)
+    id: str
+    company: str
+    company_raw: str
+    docket: Optional[str] = None        # short form from the listing, e.g. "FA23-10"
+    docket_full: Optional[str] = None   # full form from the PDF, e.g. "FA23-10-000"
+    issued_date: Optional[date] = None
+    source_page_url: str
+    pdf_download_url: str
+    captured_at: date
+
+    # Extraction stats
+    page_count: int
+    scanned_pages: list[int] = Field(default_factory=list)
+    ocr_used: bool = False
+
+    # Structured content
+    audit_period: Optional[str] = None  # e.g. "January 1, 2020 to December 31, 2023"
+    industry: Optional[str] = None      # "electric" | "gas" | "oil" | None
+    forms: list[str] = Field(default_factory=list)  # e.g. ["2"] for FERC Form No. 2
+    finding_count: int = 0
+    findings: list[Finding] = Field(default_factory=list)

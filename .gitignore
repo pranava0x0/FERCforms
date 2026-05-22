@@ -11,6 +11,10 @@ venv/
 # Downloaded source PDFs — large binaries, re-fetchable from data/listing.json
 data/raw/
 
+# Per-page extracted text — large intermediate, regenerable from the PDF via
+# `python -m pipeline.extract`. The structured report.json IS committed.
+data/processed/*/text.json
+
 # Secrets (none used today, but never commit these)
 .env
 .env.local
