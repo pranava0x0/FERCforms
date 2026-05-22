@@ -26,6 +26,11 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[med] Editorial + periwinkle theme.** Restrained FT/ProPublica public-record look, periwinkle accents. Swappable.
 - **[low] Runtime theme switcher.** Toggle Plus-stream / Wave-threaded / Editorial to decide which the user prefers (chosen v1 = Plus-stream).
 
+## LLM-readability (llms.txt)
+
+- **[med] Absolute URLs in llms.txt once a deploy domain exists.** `llms.txt`/`llms-full.txt` currently use site-root-relative links (no domain fixed yet). The llmstxt.org convention prefers absolute URLs for portability — switch when the GitHub Pages URL is known (thread it through `pipeline/llmstxt.py`).
+- **[low] Per-report markdown pages + an llms.txt link section to them.** Static `report/<id>.md` pages would give LLMs (and humans) stable per-report URLs to cite.
+
 ## Infra
 
-- **[low] GitHub Pages deploy workflow.** GitHub Action to publish `docs/` on push to `main`.
+- **[high] GitHub Pages deploy.** No remote yet — create the repo, push, enable Pages on `docs/`. Then revisit absolute llms.txt URLs above.

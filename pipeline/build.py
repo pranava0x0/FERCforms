@@ -15,7 +15,7 @@ import logging
 from datetime import date
 from pathlib import Path
 
-from pipeline import config
+from pipeline import config, llmstxt
 from pipeline.patterns import _themes_for, load_reports, summarize
 
 logger = logging.getLogger(__name__)
@@ -49,8 +49,9 @@ def main() -> None:
         d["themes"] = sorted(themes)
         report_dicts.append(d)
 
+    summary = summarize(reports)
     _write_json(args.out / "reports.json", report_dicts)
-    _write_json(args.out / "patterns.json", json.loads(summarize(reports).model_dump_json()))
+    _write_json(args.out / "patterns.json", json.loads(summary.model_dump_json()))
 
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
     meta = {
@@ -62,8 +63,11 @@ def main() -> None:
     }
     _write_json(args.out / "meta.json", meta)
 
+    # LLM-friendly entry points (llms.txt + llms-full.txt) at the site root.
+    llmstxt.write_llms(config.DOCS_DIR, reports, summary, meta)
+
     logger.info(
-        "baked %d reports -> %s (listed=%d, structured=%d)",
+        "baked %d reports -> %s (+ llms.txt, llms-full.txt; listed=%d, structured=%d)",
         len(reports), args.out, meta["reports_listed"], meta["reports_structured"],
     )
 
