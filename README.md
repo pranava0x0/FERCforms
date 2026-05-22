@@ -25,9 +25,22 @@ tests/         pytest suite
 ## Quickstart
 
 ```bash
-pip install -r requirements.txt        # all deps already present in this env
-# (CLI commands documented here as each stage lands)
+pip install -r requirements.txt          # all deps already present in this env
+
+python -m pipeline.listing               # parse data/listing.json from the snapshot (71 reports)
+python -m pipeline.fetch                  # download report PDFs -> data/raw/ (rate-limited, cached)
+python -m pipeline.extract   --limit 2    # PDF -> per-page text (2 most-recent in v1)
+python -m pipeline.structure --limit 2    # text -> findings + recommendations
+python -m pipeline.patterns               # cross-report themes -> data/processed/patterns.json
+python -m pipeline.build                  # bake docs/data/*.json the site reads
+
+python -m http.server -d docs 8000        # preview the site at http://localhost:8000
+pytest -q                                 # run the test suite
 ```
+
+The pipeline is **idempotent** — re-running skips cached downloads. v1 deliberately
+structures only the 2 most-recent reports (`--limit 2`); the full corpus is downloaded.
+Drop the `--limit` to process everything once you're ready (see [BACKLOG.md](BACKLOG.md)).
 
 ## Project docs
 

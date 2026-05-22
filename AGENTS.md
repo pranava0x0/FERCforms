@@ -15,9 +15,11 @@ pipeline/            CLI stages (each idempotent, cacheable)
   fetch.py           download report PDFs over plain HTTP (rate-limited, cached)
   extract.py         PDF -> text (pdfplumber + PyMuPDF; flags scanned pages)
   structure.py       text -> structured report (findings, recs, metadata)
-  patterns.py        cross-report aggregation (categories, recurrences)
+  patterns.py        cross-report aggregation (themes, recurrences)
   build.py           emit docs/data/*.json for the site
-  cli.py             entry point: fetch | extract | structure | patterns | build
+  listing.py         build listing.json from a saved /audits snapshot
+  (each stage runs as `python -m pipeline.<stage>`; there is no cli.py wrapper —
+   a run-all is intentionally omitted while the 2-report gate is in effect)
 data/
   listing.json       browser-captured audit index (the SEED — committed)
   raw/               downloaded PDFs (gitignored; re-fetchable from listing)
@@ -31,11 +33,12 @@ tests/               pytest
 | Goal | Command |
 | --- | --- |
 | Install deps | `pip install -r requirements.txt` (all already present) |
-| Download PDFs from listing | `python -m pipeline.cli fetch` |
-| Extract text (2 most-recent) | `python -m pipeline.cli extract --limit 2` |
-| Structure reports | `python -m pipeline.cli structure --limit 2` |
-| Mine patterns | `python -m pipeline.cli patterns` |
-| Bake site JSON | `python -m pipeline.cli build` |
+| Build listing from snapshot | `python -m pipeline.listing` |
+| Download PDFs from listing | `python -m pipeline.fetch` (add `--limit N`) |
+| Extract text (2 most-recent) | `python -m pipeline.extract --limit 2` |
+| Structure reports | `python -m pipeline.structure --limit 2` |
+| Mine patterns | `python -m pipeline.patterns` |
+| Bake site JSON | `python -m pipeline.build` |
 | Tests | `pytest -q` |
 | Preview site | `python -m http.server -d docs 8000` |
 
