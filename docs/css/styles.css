@@ -107,8 +107,9 @@ a:hover { color: var(--accent-hover); }
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: var(--accent);
-  color: #fff;
+  background: var(--accent-weak);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);            /* the pylon (stroke: currentColor) is periwinkle */
   flex: none;
 }
 .brand-mark svg { width: 24px; height: 24px; display: block; }
