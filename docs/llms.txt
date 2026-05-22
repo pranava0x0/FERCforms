@@ -1,8 +1,8 @@
-# FERC Audit Explorer
+# FERC Form 1 Audit Explorer
 
-> Machine-readable findings of noncompliance and staff recommendations from FERC's published audit reports (Office of Enforcement, Division of Audits & Accounting). Each report is parsed into findings -> recommendations, and cross-report themes are mined.
+> Machine-readable findings of noncompliance and staff recommendations from FERC's published **Form 1 (electric utility)** audit reports (Office of Enforcement, Division of Audits & Accounting). Covers both financial (FA) and performance (PA) audits of electric utilities, ISOs, and RTOs. Each report is parsed into findings -> recommendations, and cross-report themes are mined.
 
-As of 2026-05-22, 2 of 71 listed audit reports are structured. Findings and recommendations are quoted verbatim from each report's Executive Summary. Primary source: https://www.ferc.gov/audits. This is an independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
+Scope: FERC Form 1 (electric) audits — gas (Form 2) and oil (Form 6) audits are out of scope for now. As of 2026-05-22, 2 electric reports are structured (39 electric audits identified of 71 total audits listed). Findings and recommendations are quoted verbatim from each report's Executive Summary. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 
 ## Data (machine-readable)
 - [Reports](data/reports.json): every structured report with findings, recommendations, and themes
@@ -11,21 +11,15 @@ As of 2026-05-22, 2 of 71 listed audit reports are structured. Findings and reco
 - [Full corpus text](llms-full.txt): all findings and recommendations in one file (verbatim)
 
 ## Reports
-- [Kern River Gas Transmission Company](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false): Docket FA23-10-000, issued 2025-09-29, gas, 5 finding(s) — findings: Renewable Natural Gas Quality Specifications; Tariff Administration and Oversight; Informational Postings; Allowance for Funds Used During Construction; Annual Membership Dues
-- [Medallion Pipeline Company, LLC](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250925-3005&optimized=false): Docket FA23-9-000, issued 2025-09-25, oil, 8 finding(s) — findings: Annual Cost of Service Based Analysis Schedule; Nonoperating and Operating Expenses; Noncarrier Property Revenue, Expenses, and Net Income; Crude Oil Accounting Misclassifications; Other Accounting Misclassifications; Property Unit Listing; Depreciation Rates and Study; FERC Form No. 6 Reporting
+- [Pacific Gas and Electric Company](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3011&optimized=false): Docket FA23-8-000, issued 2025-09-18, financial audit, 8 finding(s) — findings: Allocation of Overhead Costs to CWIP; Accounting for Operating and Maintenance Expenses; Accounting for Administrative and General Expenses; Accounting for Compromise Settlements; Allowance for Funds Used During Construction; Accounting for Customer Advances; Prepayments; FERC Form No. 1 Reporting
+- [Talen Energy](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250908-3009&optimized=false): Docket PA22-7-000, issued 2025-09-08, performance audit, 3 finding(s) — findings: Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System; Generation Outage Reporting in Generating Availability Data System (GADS); Discrepancies between Reported Generator Outages and Offer Schedules
 
 ## Common themes
-- Accounting misclassification: 2 report(s), 6 finding(s)
-- Property & plant records: 2 report(s), 4 finding(s)
-- Cost of service & rates: 2 report(s), 3 finding(s)
-- Depreciation: 2 report(s), 2 finding(s)
-- Below-the-line costs (lobbying, charitable, etc.): 2 report(s), 2 finding(s)
-- Form reporting (Form No. 1/2/6, Page 700): 1 report(s), 6 finding(s)
-- Tariff administration & oversight: 1 report(s), 3 finding(s)
-- Informational postings: 1 report(s), 2 finding(s)
+- Form reporting (Form No. 1/2/6, Page 700): 2 report(s), 5 finding(s)
+- Accounting misclassification: 1 report(s), 3 finding(s)
 - AFUDC / cost of capital: 1 report(s), 1 finding(s)
-- Membership dues & industry associations: 1 report(s), 1 finding(s)
-- Creditworthiness: 1 report(s), 1 finding(s)
+- Depreciation: 1 report(s), 1 finding(s)
+- Property & plant records: 1 report(s), 1 finding(s)
 - Capitalization vs. expense: 1 report(s), 1 finding(s)
 
 ## Optional

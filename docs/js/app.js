@@ -8,7 +8,7 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", industry: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", audit_type: new Set(), year: new Set(), theme: new Set() },
 };
 
 /* ---------- tiny DOM helper ---------- */
@@ -76,12 +76,14 @@ function chip(label, count, group, value) {
   return c;
 }
 
+const _ABBR = { financial: "Financial (FA)", performance: "Performance (PA)" };
+
 function renderFilters() {
-  const industries = uniqueSorted(state.reports.map((r) => r.industry));
+  const types = uniqueSorted(state.reports.map((r) => r.audit_type));
   const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
 
-  const indBox = document.getElementById("industry-options");
-  industries.forEach((i) => indBox.appendChild(chip(i[0].toUpperCase() + i.slice(1), null, "industry", i)));
+  const typeBox = document.getElementById("type-options");
+  types.forEach((t) => typeBox.appendChild(chip(_ABBR[t] || t, null, "audit_type", t)));
 
   const yearBox = document.getElementById("year-options");
   years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
@@ -105,7 +107,7 @@ function toggleFilter(group, value, btn) {
 
 function resetFilters() {
   state.filters.search = "";
-  state.filters.industry.clear();
+  state.filters.audit_type.clear();
   state.filters.year.clear();
   state.filters.theme.clear();
   document.getElementById("search").value = "";
@@ -115,7 +117,7 @@ function resetFilters() {
 
 function matches(report) {
   const f = state.filters;
-  if (f.industry.size && !f.industry.has(report.industry)) return false;
+  if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
   if (f.theme.size && !(report.themes || []).some((t) => f.theme.has(t))) return false;
   if (f.search) {
@@ -194,7 +196,7 @@ function cardNode(r) {
       el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
     ]),
     el("div", { class: "chips" }, [
-      r.industry ? el("span", { class: "pill industry", text: r.industry }) : null,
+      r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
       el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` }),
       el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }),
     ]),
@@ -203,7 +205,7 @@ function cardNode(r) {
   const root = el("div", { class: "thread-root" }, [
     el("dl", {}, [
       ...kv("Audit period", r.audit_period || "Not stated", !r.audit_period),
-      ...kv("Industry", r.industry ? r.industry[0].toUpperCase() + r.industry.slice(1) : "Not stated", !r.industry),
+      ...kv("Audit type", r.audit_type ? (_ABBR[r.audit_type] || r.audit_type) : "Not stated", !r.audit_type),
       ...kv("FERC forms", r.forms && r.forms.length ? r.forms.map((f) => "No. " + f).join(", ") : "Not stated", !(r.forms || []).length),
       ...kv("Pages", String(r.page_count), false),
     ]),
@@ -248,7 +250,8 @@ function applyFilters() {
 function renderFooter() {
   const m = state.meta;
   document.getElementById("footer-meta").textContent =
-    `Structured ${m.reports_structured} of ${m.reports_listed} listed audit reports. ` +
+    `Scope: ${m.scope}. ${m.reports_structured} of ${m.electric_identified} electric audits ` +
+    `structured (${m.reports_total_listed} total audits listed). ` +
     `Listing captured ${fmtDate(m.listing_captured_at)}; built ${fmtDate(m.generated_at)}.`;
   if (m.source) document.getElementById("footer-link").href = m.source;
 }

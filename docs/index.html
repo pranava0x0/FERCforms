@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FERC Audit Explorer — findings of noncompliance</title>
-  <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published audit reports (Division of Audits & Accounting)." />
+  <title>FERC Form 1 Audit Explorer — electric utility audit findings</title>
+  <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published Form 1 (electric utility) audit reports — financial (FA) and performance (PA) audits." />
   <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
   <script>
@@ -26,8 +26,8 @@
     <div class="brand">
       <span class="brand-mark" aria-hidden="true">F</span>
       <span class="brand-text">
-        <strong>FERC Audit Explorer</strong>
-        <span class="brand-sub">Findings of noncompliance from FERC's published audit reports</span>
+        <strong>FERC Form 1 Audit Explorer</strong>
+        <span class="brand-sub">Findings from FERC's electric-utility (Form 1) audit reports</span>
       </span>
     </div>
     <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -52,8 +52,8 @@
           <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
         </div>
         <fieldset class="field">
-          <legend class="field-label">Industry</legend>
-          <div id="industry-options" class="chip-options"></div>
+          <legend class="field-label">Audit type</legend>
+          <div id="type-options" class="chip-options"></div>
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Year</legend>
