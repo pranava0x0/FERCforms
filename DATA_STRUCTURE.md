@@ -16,7 +16,7 @@ How the source documents are shaped, and how this project turns them into struct
 
 This project starts with **audit reports** because they are where FERC *names the issues* — exactly the pattern library the later "audit-my-document" tool needs.
 
-**Two audit types, three industries.** Reports split by docket prefix into **FA = Financial Audit** (Chief Accountant; accounting/USofA/forms compliance) and **PA = Performance Audit** (tariff/market/operational compliance). Audited entities span electric utilities + ISOs/RTOs (Form 1), gas pipelines (Form 2), and oil pipelines (Form 6). **v1 is scoped to electric / Form 1** (both FA and PA); `pipeline/classify.py` triages the corpus by form/statute so the electric subset can be selected. Observed (snapshot, 71 reports): ~39 electric, ~8 oil, ~4 gas.
+**Two audit types, three industries.** Reports split by docket prefix into **FA = Financial Audit** and **PA = Non-Financial Audit** (FERC's own wording on ferc.gov/audits: "a 'PA' docket denotes a Non-Financial Audit (e.g. compliance or operational audits)"). FA = Chief Accountant accounting/USofA/forms compliance; PA = tariff/market/operational compliance. Audited entities span electric utilities + ISOs/RTOs (Form 1), gas pipelines (Form 2), and oil pipelines (Form 6). **v1 is scoped to electric / Form 1** (both FA and PA); `pipeline/classify.py` triages the corpus by form/statute so the electric subset can be selected. Observed (snapshot, 71 reports): ~39 electric, ~8 oil, ~4 gas.
 
 **Functional focus (electric).** Within electric, audits target different functions — **generation** (market-based rates, generator outage / GADS reporting), **transmission** (formula rates, OATT / Attachment O), and **distribution** (wholesale distribution formula rate). `forms.detect_functions` tags this **multi-valued** (a vertically-integrated utility's audit spans transmission + distribution — e.g. PG&E). Observed across the classified electric set: **transmission ≫ generation ≫ distribution** (transmission formula-rate audits dominate; pure distribution is rare). Surfaced as the site's **Function** facet and `by_function` in patterns.
 
@@ -64,7 +64,7 @@ AuditReport
   ocr_used          bool   v1: always False (no OCR yet)
   audit_period      str?   e.g. "January 1, 2020 to December 31, 2023"
   industry          str?   "electric" | "gas" | "oil" (form + statute signals, forms.py)
-  audit_type        str?   "financial" (FA) | "performance" (PA), from docket prefix
+  audit_type        str?   "financial" (FA) | "non-financial" (PA), from docket prefix
   functions         [str]  functional focus: generation / transmission / distribution
   forms             [str]  e.g. ["1"] for FERC Form No. 1
   finding_count     int    count of noncompliance findings (excl. other matter)
@@ -162,6 +162,6 @@ docs/
 - **Primary:** `pdfplumber` for text + layout. **Fallback:** `PyMuPDF` (`fitz`) for pages pdfplumber mis-handles.
 - **Scanned detection:** a page yielding `< MIN_TEXT_CHARS_PER_PAGE` (config) extractable chars is treated as **image-only**, recorded in `scanned_pages`, and the report's `ocr_used` is set when OCR eventually fills it. v1 does **not** OCR (no tesseract installed) — it flags. See [BACKLOG.md](BACKLOG.md).
 
-**Classification (`pipeline/classify.py`):** scans the first ~8 pages of each PDF and scores industry from form number + governing statute (FPA→electric, NGA→gas, ICA→oil) + USofA part + tariff/ISO/RTO signals (`pipeline/forms.py`). Statute signals matter because **performance (PA) audits often don't cite a form number**. Observed across the snapshot corpus: ~39 electric, ~8 oil, ~4 gas, ~1 unknown.
+**Classification (`pipeline/classify.py`):** scans the first ~8 pages of each PDF and scores industry from form number + governing statute (FPA→electric, NGA→gas, ICA→oil) + USofA part + tariff/ISO/RTO signals (`pipeline/forms.py`). Statute signals matter because **non-financial (PA) audits often don't cite a form number**. Observed across the snapshot corpus: ~39 electric, ~8 oil, ~4 gas, ~1 unknown.
 
 **Structured (2 electric reports, in scope):** both fully **born-digital** — 0 image-only pages, no OCR needed (PG&E 76 pp, Talen 34 pp). Header phrasing varies ("Summary of **Noncompliance Findings**" vs "Summary of **Findings of Noncompliance**"), so the parser tries several phrasings. Yielded PG&E (FA) = 8 findings / 37 recs, Talen (PA) = 3 findings / 6 recs. _(Full-corpus structuring pending — see [BACKLOG.md](BACKLOG.md).)_

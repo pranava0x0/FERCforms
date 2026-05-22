@@ -93,7 +93,7 @@ Recommendations:
 ---
 
 ## Talen Energy
-- Docket: PA22-7-000 | Audit type: performance
+- Docket: PA22-7-000 | Audit type: non-financial
 - Issued: 2025-09-08 | Industry: electric | FERC Form: n/a
 - Function(s): generation
 - Audit period: January 1, 2019 to October 31, 2024

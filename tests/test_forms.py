@@ -15,8 +15,8 @@ def test_primary_industry_electric_financial():
     assert forms.primary_industry(text) == "electric"
 
 
-def test_primary_industry_electric_performance_without_form():
-    # A performance audit that never cites the form — statute/OATT/ISO signals carry it.
+def test_primary_industry_electric_non_financial_without_form():
+    # A non-financial (PA) audit that never cites the form — statute/OATT/ISO signals carry it.
     text = "audit of the Open Access Transmission Tariff of an independent system operator (ISO)"
     assert forms.primary_industry(text) == "electric"
 
@@ -56,6 +56,6 @@ def test_detect_functions_none():
 
 def test_audit_type_from_docket():
     assert forms.audit_type_from_docket("FA23-8") == "financial"
-    assert forms.audit_type_from_docket("PA22-7") == "performance"
+    assert forms.audit_type_from_docket("PA22-7") == "non-financial"
     assert forms.audit_type_from_docket("XY00-0") is None
     assert forms.audit_type_from_docket(None) is None

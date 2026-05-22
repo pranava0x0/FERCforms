@@ -37,7 +37,7 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
         "> Machine-readable findings of noncompliance and staff recommendations from "
         "FERC's published **Form 1 (electric utility)** audit reports (Office of "
         "Enforcement, Division of Audits & Accounting). Covers both financial (FA) and "
-        "performance (PA) audits of electric utilities, ISOs, and RTOs. Each report is "
+        "non-financial (PA) audits of electric utilities, ISOs, and RTOs. Each report is "
         "parsed into findings -> recommendations, and cross-report themes are mined."
     )
     out.append("")

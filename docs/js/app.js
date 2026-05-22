@@ -76,7 +76,7 @@ function chip(label, count, group, value) {
   return c;
 }
 
-const _ABBR = { financial: "Financial (FA)", performance: "Performance (PA)" };
+const _ABBR = { financial: "Financial (FA)", "non-financial": "Non-financial (PA)" };
 const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
 function renderFilters() {

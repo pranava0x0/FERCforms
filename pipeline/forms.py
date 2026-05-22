@@ -14,10 +14,12 @@ from typing import Optional
 
 _FORM_RE = re.compile(r"FERC Form No\.?\s*(\d+(?:-[A-Z])?)")
 FORM_TO_INDUSTRY: dict[str, str] = {"1": "electric", "2": "gas", "6": "oil"}
-_AUDIT_TYPE = {"FA": "financial", "PA": "performance"}
+# FERC's own terms (ferc.gov/audits): 'FA' = Financial Audit, 'PA' = Non-Financial
+# Audit (e.g. compliance or operational audits) — not "performance audit".
+_AUDIT_TYPE = {"FA": "financial", "PA": "non-financial"}
 
 # Industry signals beyond the form number — financial audits cite the form, but
-# performance (PA) audits identify the industry by governing statute / tariff /
+# non-financial (PA) audits identify the industry by governing statute / tariff /
 # Uniform System of Accounts part. Weighted by how definitive each is.
 _SIGNALS: dict[str, list[tuple[str, int]]] = {
     "electric": [
@@ -57,7 +59,7 @@ def primary_industry(text: str) -> Optional[str]:
 
 
 def audit_type_from_docket(docket: Optional[str]) -> Optional[str]:
-    """FA -> 'financial', PA -> 'performance' (from the docket prefix)."""
+    """FA -> 'financial', PA -> 'non-financial' (from the docket prefix)."""
     if not docket:
         return None
     return _AUDIT_TYPE.get(docket[:2].upper())

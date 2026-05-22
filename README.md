@@ -40,7 +40,7 @@ pytest -q                                                # run the test suite
 ```
 
 **Scope:** the tool is the **FERC Form 1 (electric) audit explorer** — both financial (FA)
-and performance (PA) audits of electric utilities, ISOs, and RTOs. Gas (Form 2) and oil
+and non-financial (PA) audits of electric utilities, ISOs, and RTOs. Gas (Form 2) and oil
 (Form 6) audits are downloaded and classified but **out of scope** for now ([BACKLOG.md](BACKLOG.md)).
 The pipeline is **idempotent** (re-runs skip cached downloads); v1 deliberately structures only
 the **2 most-recent electric** reports (`--electric-only --limit 2`).

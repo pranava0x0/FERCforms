@@ -16,7 +16,7 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## Analysis
 
-- **[high] Audit-type facet (FA vs PA).** The corpus is two distinct audit types: **FA = Financial Audit** (Chief Accountant — accounting/USofA/forms compliance) and **PA = Performance/non-financial Audit** (tariff/market/operational compliance). Derivable for free from the docket prefix. Add `audit_type` to the model and as a first-class filter — findings differ sharply by type.
+- **[done] Audit-type facet (FA vs PA).** Two types per FERC: **FA = Financial Audit**, **PA = Non-Financial Audit** (compliance/operational). Derived from the docket prefix; shipped as `audit_type` + a site filter.
 - **[high] Form/industry is a mix, not all Form 1.** Audited entities span electric utilities (Form 1), gas pipelines (Form 2), oil pipelines (Form 6), and market operators (ISOs/RTOs). A true "Form 1 tool" would filter to electric FA audits; decide whether to scope down or keep the broader explorer (current). Industry is already parsed; surface it + a Form-1-only view.
 - **[high] Finding taxonomy.** A controlled vocabulary of finding types (accounting misclassification, formula-rate inputs, affiliate transactions, capitalization vs expense, etc.); tag every finding.
 - **[med] Cross-report trend charts.** Findings per year, per company, per category.

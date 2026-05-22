@@ -103,7 +103,7 @@ class AuditReport(BaseModel):
     # Structured content
     audit_period: Optional[str] = None  # e.g. "January 1, 2020 to December 31, 2023"
     industry: Optional[str] = None      # "electric" | "gas" | "oil" | None
-    audit_type: Optional[str] = None    # "financial" (FA) | "performance" (PA), from docket
+    audit_type: Optional[str] = None    # "financial" (FA) | "non-financial" (PA), from docket
     functions: list[str] = Field(default_factory=list)  # generation/transmission/distribution
     forms: list[str] = Field(default_factory=list)  # e.g. ["1"] for FERC Form No. 1
     finding_count: int = 0

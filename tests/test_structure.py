@@ -119,7 +119,7 @@ def test_structure_report_end_to_end():
     assert [r.number for r in report.findings[0].recommendations] == [1, 2]
     assert [r.number for r in report.findings[1].recommendations] == [3]
     assert report.industry == "electric"
-    assert report.audit_type == "performance"  # PA docket
+    assert report.audit_type == "non-financial"  # PA docket
     assert report.docket_full == "PA99-1-000"
 
 
@@ -129,7 +129,7 @@ def test_structure_report_end_to_end():
         # The two in-scope electric reports (Form 1). Header phrasing differs
         # between them, so this guards the multi-header parsing.
         ("2025-09-18_pacific-gas-and-electric-company_fa23-8", "financial", 8, 30),
-        ("2025-09-08_talen-energy_pa22-7", "performance", 3, 6),
+        ("2025-09-08_talen-energy_pa22-7", "non-financial", 3, 6),
     ],
 )
 def test_real_reports_regression(rid, audit_type, min_findings, min_recs):
