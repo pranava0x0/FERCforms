@@ -14,9 +14,9 @@ from pipeline.models import (
 
 _META = {
     "generated_at": "2026-05-22",
-    "scope": "FERC Form 1 (electric) audits",
+    "scope": "FERC utility audits — electric, gas & oil",
     "reports_total_listed": 71,
-    "electric_identified": 39,
+    "by_industry_identified": {"electric": 53, "oil": 10, "gas": 7},
     "reports_structured": 1,
 }
 
@@ -73,11 +73,12 @@ def _patterns() -> PatternsSummary:
 
 def test_index_is_spec_shaped():
     s = llmstxt.build_index([_report()], _patterns(), _META)
-    assert s.startswith("# FERC Form 1 Audit Explorer")  # required H1
+    assert s.startswith("# FERC Audit Explorer")  # required H1
     assert "\n> " in s                            # blockquote summary
     assert "data/reports.json" in s               # links to machine-readable data
     assert "llms-full.txt" in s
-    assert "39 electric audits identified of 71" in s   # uses the real meta counts
+    assert "of 71 listed" in s                    # uses the real meta counts
+    assert "(53 electric, 10 oil, 7 gas identified)" in s
     assert "Acme Electric Co" in s and "AFUDC Error" in s
     assert "AFUDC / cost of capital" in s          # themes listed
 
@@ -94,5 +95,5 @@ def test_full_has_verbatim_findings_and_recs():
 
 def test_write_llms_creates_both_files(tmp_path):
     llmstxt.write_llms(tmp_path, [_report()], _patterns(), _META)
-    assert (tmp_path / "llms.txt").read_text(encoding="utf-8").startswith("# FERC Form 1 Audit Explorer")
+    assert (tmp_path / "llms.txt").read_text(encoding="utf-8").startswith("# FERC Audit Explorer")
     assert "full structured corpus" in (tmp_path / "llms-full.txt").read_text(encoding="utf-8")

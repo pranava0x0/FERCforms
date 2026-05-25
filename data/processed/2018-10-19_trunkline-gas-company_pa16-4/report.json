@@ -1,0 +1,176 @@
+{
+  "id": "2018-10-19_trunkline-gas-company_pa16-4",
+  "company": "Trunkline Gas Company",
+  "company_raw": "PA16-4 Trunkline Gas Company",
+  "docket": "PA16-4",
+  "docket_full": "PA16-4-000",
+  "issued_date": "2018-10-19",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181019-3029&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181019-3029",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20181019-3029 (fileID 15076706).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 68,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 to December 31, 2017",
+  "industry": "gas",
+  "audit_type": "non-financial",
+  "functions": [],
+  "forms": [],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Reservation Charge Crediting Tariff Provision",
+      "summary": "Trunkline’s tariff did not contain a provision for reservation charge credits to shippers with firm service affected by force majeure and non-force majeure events, as required by Commission policy. As a result, certain shippers with firm service that qualified for full reservation charge credits did not receive any credits following non- force majeure events. Additionally, Trunkline improperly included a reference to maintenance activities in the force majeure definition of its tariff.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Operational Balancing Agreement",
+      "summary": "s, Docket No. RP16-1253-000, (October 19, 2016). Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC 3. Reporting of Gas Equivalents in the Fuel Reimbursement Filing Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Reporting of Gas Equivalents in the Fuel Reimbursement Filing",
+      "summary": "Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Cash Management and Affiliate Transactions",
+      "summary": "Trunkline incorrectly recorded cash management and affiliate transactions that it carried for less than a year as long-term investments or cash advances rather than as short-term receivables or payables. As a result, Trunkline incorrectly reported short-term receivables, short-term payables, long-term investments, and long-term cash advances in its FERC Form 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise policies and procedures to ensure it prospectively records short- and long-term cash management and affiliate transactions in the accounts prescribed by the Commission regulations."
+        },
+        {
+          "number": 11,
+          "text": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "Trunkline applied AFUDC rates that exceeded the maximum rate permitted by the Commission to calculate interest costs on construction. While the Commission requires natural gas companies to develop AFUDC rates based on the Commission’s prescribed formula, it restricts the maximum rate to the overall rate of return in its recourse rates. In using rates that exceeded the maximum, Trunkline over accrued AFUDC by approximately $342,823 from 2013 to 2016. Additionally, Trunkline did not consider the effects of the cash management program in its AFUDC rate calculation, which may have resulted in a ra",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Strengthen procedures to ensure AFUDC rates do not exceed the maximum permitted by the Commission. Include procedures for the treatment of borrowings associated with the cash management program in the development of its AFUDC rates."
+        },
+        {
+          "number": 13,
+          "text": "Evaluate the AFUDC rate applied and the percentage amount that exceeded the maximum rate permitted by the Commission for the periods affected. Also, include in your evaluation how debt borrowings associated with the cash management program factored into its AFUDC calculation and the effect on the derivation of its maximum AFUDC rate. Submit the results to DAA for review within 30 days of completion."
+        },
+        {
+          "number": 14,
+          "text": "Adjust plant in service, accumulated depreciation, and other affected accounts to remove the over accrual of AFUDC for the periods affected."
+        },
+        {
+          "number": 15,
+          "text": "Disclose in the FERC Form 2 that the maximum AFUDC rate cannot exceed its overall rate of return in its recourse rate, when applicable."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Transmission and Storage Operating Expenses",
+      "summary": "Trunkline misclassified labor and other costs associated with system gas control employees as an administrative and general expense, rather than as a transmission operating expense. Trunkline also misclassified general supervision associated with its underground gas storage facilities as transmission rather than storage operating expense. The misclassifications reduced the transparency of these activities in the FERC Form 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Modify its accounting policies and procedures to ensure expenses associated with system gas control and underground storage are treated as operating expenses consistent with Commission accounting instructions."
+        },
+        {
+          "number": 17,
+          "text": "Reclassify all amounts associated with system gas control currently in Accounts 920 and 921 to Account 851 and amounts associated with technical engineering services of underground storage facilities from Account 850 to Account 814 for the current year."
+        },
+        {
+          "number": 18,
+          "text": "Include a footnote disclosure that explains changes in the presentation of system gas control and underground storage costs in its next FERC Form 2."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Penalty Revenues and Refunds",
+      "summary": "Trunkline incorrectly accounted for penalty revenues collected from offending shippers and refunded to nonoffending shippers as it did not use Account 495, Other Gas Revenues, and Account 254, Other Regulatory Liabilities. As a result, Trunkline’s financial statements did not properly reflect the nature of these activities for accounting and reporting purposes.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Modify accounting policies and procedures for penalty revenues and refunds to ensure consistency with Commission accounting instructions."
+        },
+        {
+          "number": 20,
+          "text": "Reclassify all amounts associated with penalty revenues and refunds in Accounts 142 and 242 with respective entries to Accounts 495 and 254 for the current year. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC"
+        },
+        {
+          "number": 21,
+          "text": "Include a footnote disclosure that explains the changes in the presentation of penalty revenues and refunds in its next FERC Form 2. Accounting for Lost and Unaccounted for Gas"
+        },
+        {
+          "number": 22,
+          "text": "Modify its accounting policies and procedures for LAUF to ensure consistency with Commission accounting instructions."
+        },
+        {
+          "number": 23,
+          "text": "Reclassify all amounts associated with LAUF recorded in Account 854 to Account 813 for the current year."
+        },
+        {
+          "number": 24,
+          "text": "Include a footnote disclosure to explain changes in the presentation of LAUF in its next FERC Form 2."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Lost and Unaccounted-for Gas (LAUF)",
+      "summary": "Trunkline incorrectly accounted for LAUF as compressor fuel rather than in accounts designated for system gas losses. This accounting reduced the transparency of LAUF for financial reporting and fuel reimbursement purposes.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Removal of Assets and Liabilities Sold to an Affiliate",
+      "summary": "Trunkline did not timely remove from its books certain assets and a regulatory liability for an asset retirement obligation associated with the sale of onshore and offshore facilities to its affiliate Sea Robin Pipeline Company in 2012. As a result, Trunkline continued to reflect these activities on its books and accrue depreciation expense on these assets in 2013-2015.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Strengthen processes and procedures to ensure assets and related amounts sold are removed timely from its books."
+        },
+        {
+          "number": 26,
+          "text": "Remove the remaining assets, accumulated provision for depreciation, and ARO regulatory liability associated with the sale to Sea Robin from its books."
+        },
+        {
+          "number": 27,
+          "text": "Make a correcting entry to reverse the depreciation expense improperly accrued in the periods subsequent to the sale."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Reporting of Volumes for Gas Storage Projects",
+      "summary": "Trunkline incorrectly reported volumetric data for its gas storage facility in the FERC Form 2. The error affected the accuracy of the amounts recorded in Account 808.1, Gas Withdrawn from Storage-Debit, and Account 808.2, Gas Injected into Storage-Credit.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Enhance procedures to ensure it correctly reports gas storage quantities for injections and withdrawals on Page 512 of the FERC Form 2 and the related amounts recorded in Accounts 808.1 and 808.2. E."
+        }
+      ]
+    }
+  ]
+}

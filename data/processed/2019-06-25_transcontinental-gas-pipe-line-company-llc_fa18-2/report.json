@@ -1,0 +1,230 @@
+{
+  "id": "2019-06-25_transcontinental-gas-pipe-line-company-llc_fa18-2",
+  "company": "Transcontinental Gas Pipe Line Company, LLC",
+  "company_raw": "Transcontinental Gas Pipe Line Company, LLC (FA18-2)",
+  "docket": "FA18-2",
+  "docket_full": "FA18-2-000",
+  "issued_date": "2019-06-25",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190625-3009&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190625-3009",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 60,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2014 through December 28, 2018",
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2"
+  ],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Replacement of Minor Items of Property",
+      "summary": "Transco improperly accounted for the cost to replace minor items of property. Transco capitalized the cost to utility plant instead of recording it in maintenance accounts as incurred. Transco’s accounting caused utility plant to be overstated and maintenance expenses to be understated.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies, procedures, and practices to track, report, review, and account for transactions to replace minor items of property consistent with Commission requirements."
+        },
+        {
+          "number": 2,
+          "text": "Train staff on the revised methods and provide periodic training."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis from 2014 through the date of the final audit report to identify maintenance expenses improperly capitalized into CWIP and plant in service. Provide the results of the analysis and all applicable work papers supporting the analysis, including factors used to calculate the amount of the error, to DAA within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 4,
+          "text": "Submit proposed accounting entries based on the analysis performed pursuant to Recommendation No. 3 to DAA, within 90 days of receiving the final audit report, for the removal of the estimated capitalized cost to replace minor items of property from CWIP and plant in service, and to remove associated amounts from other accounts affected, such as accumulated depreciation and accumulated deferred income taxes (ADIT)."
+        },
+        {
+          "number": 5,
+          "text": "Revise CWIP, gas plant in service, accumulated depreciation, ADIT, and other accounts impacted by the improperly capitalized cost to replace minor items of property after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances in the FERC Form No. 2 for current and comparative years as necessary."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Operating Expenses",
+      "summary": "Transco improperly accounted for allocated direct and indirect overhead operating expenses, resulting in misstated operating expense balances reported in its FERC Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Revise policies, procedures, and practices to track, report, review, and account for operating expenses consistent with Commission requirements."
+        },
+        {
+          "number": 7,
+          "text": "Train staff on the revised methods to account for operating expenses and provide periodic training."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Non-Operating Expenses",
+      "summary": "Transco improperly accounted for allocated direct and indirect overhead non- operating expenses in utility plant and operating expense accounts, resulting in misstated utility plant and operating expense balances reported in its FERC Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise policies, procedures, and practices to track, report, review, and account for non-operating costs consistent with Commission requirements."
+        },
+        {
+          "number": 9,
+          "text": "Train staff on the revised methods to account for non-operating expenses and provide periodic training."
+        },
+        {
+          "number": 10,
+          "text": "Perform an analysis from 2014 through the date of the final audit report to identify non-operating expenses improperly capitalized into CWIP and plant in service. Provide the results of the analysis and all applicable work papers supporting the analysis, including factors used to calculate the amount of the error, to DAA within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 11,
+          "text": "Submit proposed accounting entries based on the analysis performed per Recommendation No. 10 to DAA, within 90 days of receiving the final audit report, for the removal of the estimated capitalized non-operating costs from CWIP and plant in service accounts, and to remove associated amounts from other accounts affected, such as accumulated depreciation and ADIT."
+        },
+        {
+          "number": 12,
+          "text": "Revise CWIP, gas plant in service, accumulated depreciation, ADIT, and other accounts impacted by the improperly capitalized donations, lobbying, and advertising expenses after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances in the FERC Form No. 2 for current and comparative years as necessary."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Unused Materials",
+      "summary": "Transco improperly included unused materials in the cost of plant recorded in Account 106, Completed Construction Not Classified, during the audit period. This led the company to overstate its plant in service.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise accounting and work order policies and procedures to remove from capital work orders, Account 107, and Account 106 unused materials and supplies not used in construction, and associated accrued AFUDC consistent with Commission regulations."
+        },
+        {
+          "number": 14,
+          "text": "Provide training on the revised policies and procedures, and provide periodic training."
+        },
+        {
+          "number": 15,
+          "text": "Submit proposed accounting entries and all applicable work papers to DAA, within 60 days of receiving the final audit report, to reclassify unused materials from Accounts 106 and 107 to Account 154, and remove improperly accrued AFUDC."
+        },
+        {
+          "number": 16,
+          "text": "Revise balances in Accounts 106, 107, and 154 after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances in the FERC Form No. 2 in the current and comparative years of the report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Transco improperly included undistributed subsidiary earnings, accumulated other comprehensive income, and unamortized discounts on long-term debt in debt and equity for the purposes of computing AFUDC rates. As a result, Transco over-accrued AFUDC, which led it to overstate its CWIP and plant in service balances.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise policies and procedures for calculating AFUDC rates consistent with Gas Plant Instruction (GPI) No. 3(A)(17) and other applicable Commission requirements. Revisions should include processes to prevent inclusion of balances in Accounts 216.1, 219, and 226 in the AFUDC rate calculations."
+        },
+        {
+          "number": 18,
+          "text": "Train staff on the revised AFUDC rate calculation methods and provide periodic training."
+        },
+        {
+          "number": 19,
+          "text": "Recalculate AFUDC accrued in accordance with GPI No. 3(A)(17) from 2014 through the date of the final audit report. For periods in which AFUDC was over-accrued due to the inclusion of balances recorded in Accounts 216.1, 219, and 226, submit a report to DAA, within 60 days of receiving the final audit report, of proposed accounting entries and documentation to remove over-accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and ADIT."
+        },
+        {
+          "number": 20,
+          "text": "Revise CWIP, gas plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the FERC Form No. 2 for current and comparative years as necessary."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Preliminary Survey and Investigation Charges",
+      "summary": "Transco improperly accounted for feasibility evaluation costs on contemplated construction projects. As a result, expenses reported in the FERC Form No. 2 were overstated in some periods and understated in others.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Update policies and procedures to account for and report expenses related to feasibility evaluation costs associated with proposed construction projects consistent with Commission regulations."
+        },
+        {
+          "number": 22,
+          "text": "Train staff on the updated methods to account for expenses related to feasibility evaluations, and provide periodic training."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Incremental Rate Facilities Expenses",
+      "summary": "Transco improperly reported expenses related to incremental rate facilities. As a result, its FERC Form No. 2 schedule page 217a, Non-Traditional Rate Treatment Afforded New Projects, was not accurate. This also impacted stakeholders’ ability to discern expenses related to incremental rate facilities for rate and accounting purposes.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Update policies and procedures to account for and report expenses related to incremental rate facilities consistent with Commission regulations."
+        },
+        {
+          "number": 24,
+          "text": "Strengthen procedures to complete FERC Form No. 2 schedules, in particular pages 217-217a, Non-Traditional Rate Treatment Afforded New Projects, in accordance with the instructions."
+        },
+        {
+          "number": 25,
+          "text": "Train staff on the revised methods to account for and report expenses related to incremental rate facilities and provide periodic training."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "FERC Form No. 2 Reporting",
+      "summary": "Transco did not report required information in its FERC Form No. 2 filings, resulting in reduced transparency, accuracy, and usefulness of the reports.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Revise and strengthen policies, procedures, and practices to help ensure the FERC Form No. 2 is correct, accurate, and consistent with the instructions."
+        },
+        {
+          "number": 27,
+          "text": "Train staff on the revised FERC Form No. 2 reporting procedures and provide periodic training."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Distributing and Accounting for Penalty Revenue",
+      "summary": "Transco erroneously distributed penalty revenue to shippers that incurred the penalties, reducing the amount distributable to non-offending shippers. In addition, Transco improperly accounted for regulatory liabilities associated with penalty revenue collected.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Submit revised policies and procedures to help ensure penalty revenue is allocated in accordance with Transco’s FERC NGA Gas Tariff provisions, and to account for regulatory liabilities consistent with Commission requirements."
+        },
+        {
+          "number": 29,
+          "text": "Train staff on the revised policies and procedures and provide periodic training."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Reservation Charge Credits",
+      "summary": "Transco had three firm storage rate schedules in its FERC NGA Gas Tariff that did not contain a provision for reservation charge credits to shippers with firm service affected by non-force majeure and force majeure events, as required by Commission policy.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "Enhance policies and procedures to comply with Commission requirements on a timely basis."
+        },
+        {
+          "number": 31,
+          "text": "File tariff revisions to its FERC NGA Gas Tariff to include a reservation charge crediting provision for force majeure and non-force majeure events for its Washington Storage Service-Open Access, Leidy Storage Service, and SS-2 Storage Service rate schedules, and notify stakeholders consistent with requirements. E."
+        }
+      ]
+    }
+  ]
+}

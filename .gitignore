@@ -8,8 +8,10 @@ venv/
 .pytest_cache/
 .mypy_cache/
 
-# Downloaded source PDFs — large binaries, re-fetchable from data/listing.json
-data/raw/
+# Downloaded source PDFs — large binaries, re-fetchable from data/listing.json.
+# No trailing slash so a `data/raw` symlink (e.g. a worktree pointing at the main
+# checkout's PDFs) is ignored too, not just a real directory's contents.
+data/raw
 
 # Per-page extracted text — large intermediate, regenerable from the PDF via
 # `python -m pipeline.extract`. The structured report.json IS committed.

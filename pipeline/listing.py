@@ -88,6 +88,11 @@ def parse_listing(html: str, captured_at: date) -> list[ListingEntry]:
                     f"?accesssionNumber={accession}"
                 ),
                 captured_at=captured_at,
+                source_note=(
+                    f"Listed on FERC {config.AUDITS_LISTING_URL} "
+                    f"(listing captured {captured_at.isoformat()})."
+                ),
+                archived_via=None,
             )
         except ValidationError as exc:
             logger.warning("skipping accession %s: %s", accession, exc)

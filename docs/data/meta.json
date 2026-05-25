@@ -1,9 +1,14 @@
 {
-  "generated_at": "2026-05-22",
+  "generated_at": "2026-05-25",
   "source": "https://www.ferc.gov/audits",
-  "scope": "FERC Form 1 (electric) audits",
-  "reports_total_listed": 71,
-  "electric_identified": 53,
-  "reports_structured": 53,
+  "scope": "FERC utility audits — electric, gas & oil",
+  "reports_total_listed": 120,
+  "by_industry_identified": {
+    "gas": 14,
+    "oil": 17,
+    "electric": 86,
+    "unknown": 3
+  },
+  "reports_structured": 120,
   "listing_captured_at": "2026-02-03"
 }

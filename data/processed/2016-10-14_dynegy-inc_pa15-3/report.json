@@ -1,0 +1,25 @@
+{
+  "id": "2016-10-14_dynegy-inc_pa15-3",
+  "company": "Dynegy, Inc.",
+  "company_raw": "PA15-3 Dynegy, Inc.",
+  "docket": "PA15-3",
+  "docket_full": "PA15-03-000",
+  "issued_date": "2016-10-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161014-3018&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20161014-3018",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20161014-3018 (fileID 14376678).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 28,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 through April 30, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

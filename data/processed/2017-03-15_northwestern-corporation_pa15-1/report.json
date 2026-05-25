@@ -1,0 +1,69 @@
+{
+  "id": "2017-03-15_northwestern-corporation_pa15-1",
+  "company": "NorthWestern Corporation",
+  "company_raw": "PA15-1 NorthWestern Corporation",
+  "docket": "PA15-1",
+  "docket_full": "PA15-1-000",
+  "issued_date": "2017-03-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170315-4016&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170315-4016",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170315-4016 (fileID 14519641).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 41,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 through December 31, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Assignment of Redirect Priority",
+      "summary": "NorthWestern Montana’s transmission function improperly approved 79 nonfirm transmission redirect requests that were assigned a higher priority than was permitted under its OATT. This represented less than 1 percent of the over 33,000 redirect requests that were made during the audit period. Out of these 79 redirect requests, 17 requests, made by NorthWestern’s merchant function, resulted in improperly displacing the service scheduled by other customers when curtailments occurred, which was inconsistent with OATT Section 22.1. This resulted in a total loss of 1,238 MWhs of transmission service",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Use of Secondary Network Transmission Service",
+      "summary": "by Non-network Customers In 34 instances, NorthWestern approved secondary network transmission service requests made by two non-network customers purportedly serving as agents of network service customers without verifying that the reserved network transmission service would be used to serve network loads. Audit staff is concerned that permitting such a practice inhibits NorthWestern’s ability to properly grant transmission requests, which could result in misallocation of transmission capacity and affect transmission service for other transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Communications Between Transmission and Merchant Functions",
+      "summary": "On two occasions, NorthWestern Montana’s transmission function employees improperly disclosed nonpublic transmission information to NorthWestern merchant function employees, which is contrary to the Commission’s Standards of Conduct. Audit staff determined that these disclosures did not provide the merchant function with a competitive advantage because the schedules of NorthWestern’s merchant were not approved on these two occasions and, therefore, there were no transmission curtailments to other transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Temporary Termination/Redesignation Procedures",
+      "summary": "The standard form that NorthWestern provided to its network customers for temporarily terminating a network resource and redesignating the same resource did not include certain information required by section 30.3 of its OATT.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Filing and Reporting of Jurisdictional Service Agreements",
+      "summary": "NorthWestern did not file 15 large generator interconnection agreements (LGIAs) containing nonconforming terms and conditions with the Commission prior to commencing service and receiving customer payments under those agreements, as required by Commission regulations. NorthWestern also did not report four service agreements, including three interconnection agreements and one network operating service agreement, in its Electric Quarterly Report filing.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Reports of Issued Securities",
+      "summary": "NorthWestern did not file reports of issued securities in a timely and accurate manner. These filing errors were caused by several issues, including a lack of controls to monitor and ensure timely and accurate reporting of security and debt issuances and a lack of administrative oversight.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

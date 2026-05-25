@@ -1,0 +1,42 @@
+{
+  "id": "2015-06-17_conocophillips_fa14-5",
+  "company": "ConocoPhillips",
+  "company_raw": "FA14-5 ConocoPhillips",
+  "docket": "FA14-5",
+  "docket_full": "FA14-5-000",
+  "issued_date": "2015-06-17",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3055&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150617-3055",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150617-3055 (fileID 13906962).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 25,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2011 through present",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Aggregation of Next-Day Gas Deals",
+      "summary": "COP did not report some physical next-day gas transactions to price index publishers due to deal entry practices used by COP’s gas traders. These practices were enabled by lapses in internal controls in COP’s deal capture system and processes.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "FERC Form No. 552 Reporting",
+      "summary": "COP aggregated natural gas volumes purchased and sold by affiliate companies on its 2010, 2011, and 2012 Form 552s, but did not disclose the name of an affiliate company in those filings due to a lack of controls in its Form 552 preparation process. Although COP’s reported volumes on the 2010, 2011, and 2012 Form 552 filings were accurate, the omission of the affiliate company’s name resulted in a lack of transparency to users of the Form 552.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

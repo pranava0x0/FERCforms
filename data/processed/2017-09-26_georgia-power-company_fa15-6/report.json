@@ -1,0 +1,128 @@
+{
+  "id": "2017-09-26_georgia-power-company_fa15-6",
+  "company": "Georgia Power Company",
+  "company_raw": "FA15-6 Georgia Power Company",
+  "docket": "FA15-6",
+  "docket_full": "FA15-6-000",
+  "issued_date": "2017-09-26",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3017&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170926-3017",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170926-3017 (fileID 14692532).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 104,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 14,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Income Tax Receivables",
+      "summary": "issue similar to the findings and recommendations in the draft audit report) x Inception of a rate refund with respect to the Income Tax Receivable issue Based on our understanding of the sequence of the expected events that would occur if the FERC maintains its position regarding the Income Tax Receivables issue, we believe that there is significant risk that the IRS would assert that a deferred tax normalization violation occurs upon issuance of the final audit reports, but we believe that the Southern Operating Companies could credibly assert that the effective date of sanctions for a defer",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Wholesale Storm Damage Revenues",
+      "summary": "From 2012 through 2014, Georgia Power did not retain $1,061,285 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations. Also, Georgia Power did not provide its wholesale customers with the time value of money associated with excessive storm damage revenues.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Commitment Fees",
+      "summary": "Georgia Power improperly accounted for upfront fees paid associated with revolving line of credit agreements in Account 165, Prepayments, and quarterly commitment and letter of credit fees on the agreements in Account 930.2, Miscellaneous General Expenses. In addition, Georgia Power inappropriately amortized the upfront fees paid to Account 930.2. The accounting misclassifications of the fees overstated the transmission revenue requirement and resulted in overbillings to Georgia Power’s wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Asset Retirement Obligations",
+      "summary": "Georgia Power inappropriately included accumulated depreciation balances in wholesale transmission formula rate determinations that it recorded in Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, following an accounting adjustment related to asset retirement obligations (AROs) in 2005. As a result, Georgia Power overstated accumulated depreciation balances in its wholesale transmission formula rate by approximately $9.5 million since 2005, which had an impact on billings to its wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Formula Rate Errors",
+      "summary": "Georgia Power made several errors in determining billings to wholesale transmission customers. This occurred because Georgia Power’s wholesale formula rate filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Georgia Power overbilled its wholesale customers during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Southern Nuclear Transactions",
+      "summary": "Georgia Power improperly accounted for certain production-related costs allocated from its affiliate services company, Southern Nuclear Operating Company (Southern Nuclear), in administrative and general expense accounts instead of the appropriate nuclear production operation and maintenance expense accounts. This accounting error resulted in increased billings to Georgia Power’s wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Regulatory Assets",
+      "summary": "Georgia Power inappropriately included regulatory assets associated with retail- related storm damage costs and unpaid vacation pay in wholesale formula rate determinations without specific Commission authorization. As a result, Georgia Power improperly billed its wholesale customers a return on the regulatory asset for: (1) storm damage costs that were not incurred to repair or restore transmission facilities and (2) unpaid vacation pay that resulted in no outlay of cash.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Cancelled Production Projects",
+      "summary": "Georgia Power improperly wrote-off the costs of cancelled production projects accounted for in Account 183, Preliminary Survey and Investigation Charges to Account 930.2, Miscellaneous General Expenses. As a result, Georgia Power inappropriately overbilled its wholesale customers due to the inclusion of unauthorized production- related cost included in the wholesale transmission rates.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Construction Work in Progress",
+      "summary": "Georgia Power inappropriately accounted for the costs of vegetation management and certain tools and test equipment directly in Account 107, Construction Work in Progress – Electric, instead of expensing these costs to the appropriate operations and maintenance expense accounts. Also, Georgia Power improperly accrued AFUDC on the vegetation management costs incorrectly included in CWIP. As a result, Georgia Power incorrectly billed its wholesale customers due to the inclusion of excessive AFUDC costs in electric plant in service that it included in wholesale formula rate determinations through",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Calculation of Allowance of Funds Used During Construction",
+      "summary": "Georgia Power incorrectly determined the equity cost component in its calculation of the Allowance for Funds Used During Construction (AFUDC) rate. Georgia Power also included accumulated deferred income tax (ADIT) balances in the determination of the construction base using the Georgia Commission method which was inconsistent with the Commission’s AFUDC requirements. As a result of these errors, Georgia Power applied to construction work in progress (CWIP) an AFUDC rate that exceeded the maximum rate allowed by the Commission. Thus, Georgia Power overbilled its wholesale customers due to the",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 11,
+      "title": "Accumulated Provision of Depreciation of Electric Plant",
+      "summary": "Georgia Power inappropriately removed $350.8 million of accumulated depreciation expenses related to production, transmission, distribution, and general plant from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, without obtaining approval from the Commission. This accounting led Georgia Power to misrepresent the net book balance of plant assets reported in its FERC Form No. 1 and resulted in decreased billings to its wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 12,
+      "title": "Prior Period Adjustments",
+      "summary": "Georgia Power’s accounting and rate considerations associated with prior period adjustments were deficient. Specifically, Georgia Power did not: • Have adequate procedures to address in a timely manner prior period adjustments stemming from errors, misstatements, or corrections to estimates previously recorded in its books and records. • Correct prior period adjustments ranging from one to four years after the prior period adjustments were originally discovered. • Record correcting accounting entries in the current period in some situations when it deemed certain prior period adjustments immat",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 13,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "Georgia Power did not properly follow the FERC Form No. 1 reporting instructions and therefore did not report all the required information in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 14,
+      "title": "Separation of Nuclear Decommissioning Trust Fund Monies",
+      "summary": "Georgia Power did not separately account for monies in its nuclear decommissioning trust funds (NDTFs) that were collected from wholesale and retail customers to provide for the decommissioning of its nuclear plant. As a result, monies collected from wholesale and retail customers were comingled rather than separately accounted for in Georgia Power’s NDTFs.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

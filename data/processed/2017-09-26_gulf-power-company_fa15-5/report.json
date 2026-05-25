@@ -1,0 +1,100 @@
+{
+  "id": "2017-09-26_gulf-power-company_fa15-5",
+  "company": "Gulf Power Company",
+  "company_raw": "FA15-5 Gulf Power Company",
+  "docket": "FA15-5",
+  "docket_full": "FA15-5-000",
+  "issued_date": "2017-09-26",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3016&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170926-3016",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170926-3016 (fileID 14692208).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 87,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "60"
+  ],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Income Tax Receivables",
+      "summary": "issue similar to the findings and recommendations in the draft audit report) x Inception of a rate refund with respect to the Income Tax Receivable issue Based on our understanding of the sequence of the expected events that would occur if the FERC maintains its position regarding the Income Tax Receivables issue, we believe that there is significant risk that the IRS would assert that a deferred tax normalization violation occurs upon issuance of the final audit reports, but we believe that the Southern Operating Companies could credibly assert that the effective date of sanctions for a defer",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Wholesale Storm Damage Revenues",
+      "summary": "From 2012 through 2014, Gulf Power did not retain $138,245 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations. Also, Gulf Power did not provide its wholesale customers with the time value of money associated with excessive storm damage revenues.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Other Special Funds Related To Storm Damages",
+      "summary": "Gulf Power incorrectly overstated the wholesale transmission rate base by retail related storm damage investments and associated earnings on such investments. As a result, Gulf Power overstated its revenue requirement and overbilled its wholesale customers in years prior to and during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Commitment Fees",
+      "summary": "Gulf Power improperly accounted for upfront bank fees paid associated with revolving lines of credit agreements in Account 165, Prepayments, and improperly amortized the fees to Account 930.2, Miscellaneous General Expenses, over the term of the line of credit agreements. In addition, Gulf Power improperly accounted for the related quarterly commitment fees in Account 930.2. As a result of these errors, Gulf Power overstated its revenue requirement and increased billings to wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Asset Retirement Obligations",
+      "summary": "Gulf Power inappropriately excluded accumulated depreciation balances from wholesale transmission formula rate determinations that it removed from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, in the years following an accounting adjustment related to asset retirement obligations (AROs) in 2005. As a result, Gulf Power understated accumulated depreciation balances in its wholesale transmission formula rate by approximately $9.9 million since 2005, which had an impact on billings to its wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Calculation of an Allowance for Funds Used During Construction",
+      "summary": "Gulf Power incorrectly determined its allowance for funds used during construction (AFUDC) rate using the Florida Public Service Commission’s (Florida Commission) method which was inconsistent with the Commission’s AFUDC requirements. The Florida Commission’s method used resulted in an AFUDC rate that exceeded the maximum rate permitted in accordance with the Commission AFUDC requirements. As a result, Gulf Power overbilled its wholesale customers for the excessive AFUDC costs included in utility plant that was included in formula rate determinations through rate base and depreciation charges.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Formula Rate Errors",
+      "summary": "Gulf Power’s formula rate true-up filings contained erroneous formula implementations for Gulf Power. This occurred because Gulf Power’s wholesale formula rate filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result, Gulf Power overstated its return on transmission rate base during the audit period, resulting in overbillings to its wholesale customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Prior Period Adjustments",
+      "summary": "Gulf Power improperly used materiality thresholds as justification for not recording adjustments stemming from accounting errors previously recorded in its books and records and reported in its FERC Form No. 1. In addition, Gulf Power did not have adequate procedures to timely address these accounting errors. Gulf Power also did not have procedures in place to reflect the formula rate impact of the accounting errors on billings to wholesale customers. This resulted in Gulf Power recording incomplete amounts in its books and records and in its FERC Form No. 1, as well as, improper billings to i",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Coal Handling Expenses",
+      "summary": "Gulf Power has coal supply contracts to buy coal to be used in its coal-fired generating facilities. At least some if not all of the coal purchased under these contracts is transported to the ASPA terminal via railcars, ships, and barges (i.e., transportation equipment). Under the master agreement, Southern Company agreed to pay a fixed capacity assessment fee for its share of the construction cost associated with the ASPA terminal conversion. Southern Company pays its share of the capacity assessment fee over the term of the master agreement. The capacity assessment fee is a charge that ASPA",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "Gulf Power did not properly follow FERC Form No. 1 instructions and, therefore, did not report all the required information in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

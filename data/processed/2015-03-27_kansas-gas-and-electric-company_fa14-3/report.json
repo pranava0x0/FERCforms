@@ -1,0 +1,42 @@
+{
+  "id": "2015-03-27_kansas-gas-and-electric-company_fa14-3",
+  "company": "Kansas Gas and Electric Company",
+  "company_raw": "FA14-3 Kansas Gas and Electric Company",
+  "docket": "FA14-3",
+  "docket_full": "FA14-3-000",
+  "issued_date": "2015-03-27",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150327-3035&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150327-3035",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150327-3035 (fileID 13817513).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 30,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Commission-Jurisdictional Trust Fund Assets",
+      "summary": "KGE did not clearly distinguish Commission-jurisdictional assets from non- Commission-jurisdictional assets in the Wolf Creek trust fund. Specifically, KGE: • Did not establish and maintain clearly identifiable accounts within a single trust fund. As a result, KGE could not readily identify the amount of Commission-jurisdictional from non-Commission-jurisdictional assets in the trust fund. • Erroneously directed its trustee to record zero contributions to the Commission-jurisdictional portion of the trust fund since 2010. As a result, KGE understated Commission-jurisdictional contributions by",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Filing of Nuclear Decommissioning Trust Fund Reports",
+      "summary": "KGE did not file annual nuclear decommissioning trust fund reports with the Commission from 2004-2013. In response to the audit, KGE filed a trust fund report for 2013 with the Commission in March 2014. While KGE took immediate action to file this report, the report did not include all required information. Also, absent filing reports for nearly 10 years, audit staff had no historical records to verify the accuracy of the balances in the 2013 trust fund report.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

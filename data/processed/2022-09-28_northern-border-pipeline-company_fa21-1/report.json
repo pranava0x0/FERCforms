@@ -1,0 +1,118 @@
+{
+  "id": "2022-09-28_northern-border-pipeline-company_fa21-1",
+  "company": "Northern Border Pipeline Company",
+  "company_raw": "Northern Border Pipeline Company (FA21-1)",
+  "docket": "FA21-1",
+  "docket_full": "FA21-1-000",
+  "issued_date": "2022-09-28",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220928-3032&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220928-3032",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 58,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to December 31, 2020",
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2",
+    "501-G"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Company Use Gas Percentage Filings",
+      "summary": "Northern Border did not make required filings to show the inputs and calculations that support the adjustments it made to its Company Use Gas Percentages. Absent making these annual filings there was a lack of transparency and opportunity for interested parties to opine on the changes to the Company Use Gas Percentages in prior years and review the inputs and calculations supporting these percentages.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies and procedures to ensure that annual filings are made with the Commission to include a detailed explanation of the methodology used to develop its monthly Company Use Gas Percentages."
+        },
+        {
+          "number": 2,
+          "text": "Inform Northern Border’s staff regarding these revised policies and procedures, and provide periodic training as needed."
+        },
+        {
+          "number": 3,
+          "text": "Post on its informational website a notice that it will be making Company Use Gas Percentage filings with the Commission annually."
+        },
+        {
+          "number": 4,
+          "text": "File with the Commission an annual report showing the inputs and calculations for deriving its monthly Company Use Gas Percentages for 2022 and file a similar report in all future years in which this fuel mechanism remains in effect."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Shared Services and Nonoperating Expenses",
+      "summary": "Northern Border recorded all shared services costs in Account 923, Outside Services, rather than recording these costs to the appropriate operations and maintenance (O&M) and administrative and general (A&G) accounts based on the nature of each cost. Northern Border also improperly recorded nonoperating expenses allocated to it in Accounts 853, Compressor Station Labor and Expenses; 923, Outside Services; and 930.2, Miscellaneous General Expenses instead of the appropriate accounts. Absent proper procedural safeguards, these misclassifications could affect Northern Border’s cost-of- service ra",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise policies and procedures used to track, review, and account for all directly assigned and allocated costs, to ensure that O&M and A&G expenses are recorded in the appropriate account based on the nature of the cost consistent with GI No. 14 and that nonoperating expenses are properly recorded in the 426 series of accounts. These policies and procedures should have no dollar threshold (i.e., $100,000) for classifying O&M, A&G, and nonoperating expenses based on the nature of the costs."
+        },
+        {
+          "number": 6,
+          "text": "Inform relevant staff of the need for these revised policies and procedures and provide staff periodic training, as needed. Additionally, communicate the need for these revised policies and procedures to all corporate accounting personnel to ensure they understand potential accounting impacts and effects on the development of cost-of-service rates. Provide support that this communication was provided within 30 days of this report."
+        },
+        {
+          "number": 7,
+          "text": "Provide recent journal entries and supporting documentation that demonstrate that the accounting misclassifications identified in this finding have been corrected and the related expenses are now recorded in accordance with the Commission’s accounting requirements."
+        },
+        {
+          "number": 8,
+          "text": "Restate and footnote the comparative year balances reported in the next FERC Form No. 2 filed, including all schedules affected, to reflect and disclose these revisions. Allowance for Funds Used During Construction"
+        },
+        {
+          "number": 9,
+          "text": "Revise policies and procedures for calculating AFUDC consistent with the requirements of GPI No. 3. Revisions should prevent the improper inclusion of unpaid contract retention in the AFUDC accrual calculations, and ensure that capital projects stop accruing AFUDC when construction delays occur and when completed projects are placed in service."
+        },
+        {
+          "number": 10,
+          "text": "Inform relevant staff of these revised policies and procedures and provide staff periodic training, as needed."
+        },
+        {
+          "number": 11,
+          "text": "Recalculate AFUDC accrued in accordance with GPI No. 3 for projects on which AFUDC was over-accrued. Also provide proposed accounting entries and documentation that reflect these corrections to remove over-accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation, deferred taxes, and depreciation expense within 30 days of the issuance of this report."
+        },
+        {
+          "number": 12,
+          "text": "Restate and footnote the comparative year balances reported in the next FERC Form No. 2 filed, including all schedules affected, to reflect and disclose these revisions."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "Northern Border inappropriately included unpaid contract retentions in its AFUDC accrual calculation and improperly accrued AFUDC on delayed and completed construction projects. These errors resulted in the over accrual of AFUDC and consequently overstated plant in service by approximately $369,000 during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "FERC Form No. 2 Reporting",
+      "summary": "Northern Border did not report complete and accurate information in certain supporting schedules of its FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information in the FERC Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 2 in accordance with the instructions of the report. This includes addressing all reporting deficiencies in this finding and, in particular, ensuring that all costs associated with its incremental rate projects are reported in columns (g) and (h) of pages 217 and 217a, Non- Traditional Rate Treatment Afforded New Projects."
+        },
+        {
+          "number": 14,
+          "text": "Inform relevant staff regarding these revised policies and procedures and provide staff periodic training, as needed."
+        },
+        {
+          "number": 15,
+          "text": "Review the reporting deficiencies with relevant staff to ensure they include, on a prospective basis, all required information in the FERC Form No. 2. F."
+        }
+      ]
+    }
+  ]
+}

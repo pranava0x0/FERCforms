@@ -1,0 +1,57 @@
+{
+  "id": "2018-02-21_entergy-arkansas-inc_fa15-11",
+  "company": "Entergy Arkansas, Inc.",
+  "company_raw": "FA15-11 Entergy Arkansas, Inc.",
+  "docket": "FA15-11",
+  "docket_full": "FA15-11-000",
+  "issued_date": "2018-02-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3030&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180221-3030",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180221-3030 (fileID 14826910).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 38,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2012 to December 31, 2014",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "3-Q"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "EAI incorrectly recorded lobbying costs associated with industry association dues in an operating expense account in 2012. This misclassification resulted in improper recovery of lobbying costs through EAI’s transmission formula rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Settlements",
+      "summary": "EAI incorrectly recorded $230,000 to settle an employee discrimination lawsuit in Account 925, Injuries and Damages, instead of Account 426.5, Other Deductions, in 2012 and 2013. This resulted in the inappropriate inclusion of $20,585 in its transmission revenue requirement.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Progress Payments",
+      "summary": "EAI inappropriately classified the progress payments for dry cask storage containers used for the interim storage of spent nuclear fuel assemblies in Account 107, Construction Work in Progress-Electric. EAI also improperly accrued AFUDC on the progress payment associated with dry casks.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Nuclear Fuel Fees",
+      "summary": "EAI incorrectly recorded legal, financing, and audit fees associated with nuclear fuel in Account 518, Nuclear Fuel Expense (Major Only), instead of Account 524, Miscellaneous Nuclear Power Expenses.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

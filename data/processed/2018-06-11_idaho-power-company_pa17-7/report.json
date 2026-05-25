@@ -1,0 +1,26 @@
+{
+  "id": "2018-06-11_idaho-power-company_pa17-7",
+  "company": "Idaho Power Company",
+  "company_raw": "PA17-7 Idaho Power Company",
+  "docket": "PA17-7",
+  "docket_full": "PA17-7-000",
+  "issued_date": "2018-06-11",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180611-3038&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180611-3038",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180611-3038 (fileID 14943440).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 49,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2015 through April 30, 2018",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 0,
+  "findings": []
+}

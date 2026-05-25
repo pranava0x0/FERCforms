@@ -8,7 +8,7 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
 };
 
 /* ---------- tiny DOM helper ---------- */
@@ -80,15 +80,23 @@ const _ABBR = { financial: "Financial (FA)", "non-financial": "Non-financial (PA
 const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
 function renderFilters() {
+  const industries = uniqueSorted(state.reports.map((r) => r.industry));
   const types = uniqueSorted(state.reports.map((r) => r.audit_type));
   const functions = uniqueSorted(state.reports.flatMap((r) => r.functions || []));
   const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
+
+  const indBox = document.getElementById("industry-options");
+  if (indBox) industries.forEach((i) => indBox.appendChild(chip(cap(i), null, "industry", i)));
 
   const typeBox = document.getElementById("type-options");
   types.forEach((t) => typeBox.appendChild(chip(_ABBR[t] || t, null, "audit_type", t)));
 
   const fnBox = document.getElementById("function-options");
   functions.forEach((fn) => fnBox.appendChild(chip(cap(fn), null, "functions", fn)));
+
+  const formsList = uniqueSorted(state.reports.flatMap((r) => r.forms || []));
+  const formBox = document.getElementById("form-options");
+  if (formBox) formsList.forEach((fm) => formBox.appendChild(chip("No. " + fm, null, "form", fm)));
 
   const yearBox = document.getElementById("year-options");
   years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
@@ -112,6 +120,8 @@ function toggleFilter(group, value, btn) {
 
 function resetFilters() {
   state.filters.search = "";
+  state.filters.industry.clear();
+  state.filters.form.clear();
   state.filters.audit_type.clear();
   state.filters.functions.clear();
   state.filters.year.clear();
@@ -123,6 +133,8 @@ function resetFilters() {
 
 function matches(report) {
   const f = state.filters;
+  if (f.industry.size && !f.industry.has(report.industry)) return false;
+  if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
   if (f.functions.size && !(report.functions || []).some((x) => f.functions.has(x))) return false;
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
@@ -217,6 +229,7 @@ function cardNode(r) {
       ...kv("Function(s)", r.functions && r.functions.length ? r.functions.map(cap).join(", ") : "Not stated", !(r.functions || []).length),
       ...kv("FERC forms", r.forms && r.forms.length ? r.forms.map((f) => "No. " + f).join(", ") : "Not stated", !(r.forms || []).length),
       ...kv("Pages", String(r.page_count), false),
+      ...kv("Source", r.source_note || "Not stated", !r.source_note),
     ]),
   ]);
 
@@ -235,6 +248,9 @@ function cardNode(r) {
 
   const footer = el("div", { class: "thread-footer" }, [
     el("a", { class: "btn-secondary", href: r.source_page_url, rel: "noopener", target: "_blank", text: "View on eLibrary ↗" }),
+    r.archived_via
+      ? el("a", { class: "btn-secondary", href: r.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
+      : null,
     copyBtn,
   ]);
 
@@ -258,9 +274,15 @@ function applyFilters() {
 /* ---------- footer ---------- */
 function renderFooter() {
   const m = state.meta;
+  const bi = m.by_industry_identified || {};
+  const idents = Object.entries(bi)
+    .filter(([k]) => k !== "unknown")
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v]) => `${v} ${k}`)
+    .join(", ");
   document.getElementById("footer-meta").textContent =
-    `Scope: ${m.scope}. ${m.reports_structured} of ${m.electric_identified} electric audits ` +
-    `structured (${m.reports_total_listed} total audits listed). ` +
+    `Scope: ${m.scope}. ${m.reports_structured} of ${m.reports_total_listed} listed audits structured` +
+    (idents ? ` (${idents} identified)` : "") + `. ` +
     `Listing captured ${fmtDate(m.listing_captured_at)}; built ${fmtDate(m.generated_at)}.`;
   if (m.source) document.getElementById("footer-link").href = m.source;
 }

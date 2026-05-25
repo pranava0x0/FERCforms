@@ -1,0 +1,25 @@
+{
+  "id": "2020-12-17_dominion-energy-transmission-inc_fa15-16",
+  "company": "Dominion Energy Transmission, Inc.",
+  "company_raw": "FA15-16 Dominion Energy Transmission, Inc.",
+  "docket": "FA15-16",
+  "docket_full": "FA15-16-000",
+  "issued_date": "2020-12-17",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201217-3130&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201217-3130",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20201217-3130 (fileID 14751843).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 87,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

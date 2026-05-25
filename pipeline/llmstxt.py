@@ -29,27 +29,33 @@ logger = logging.getLogger(__name__)
 SOURCE = "https://www.ferc.gov/audits"
 
 
+def _industry_suffix(meta: dict) -> str:
+    """Render ' (53 electric, 10 oil, 7 gas identified)' from meta, or ''."""
+    bi = meta.get("by_industry_identified") or {}
+    parts = [f"{v} {k}" for k, v in sorted(bi.items(), key=lambda kv: -kv[1]) if k != "unknown"]
+    return f" ({', '.join(parts)} identified)" if parts else ""
+
+
 def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dict) -> str:
     out: list[str] = []
-    out.append("# FERC Form 1 Audit Explorer")
+    out.append("# FERC Audit Explorer")
     out.append("")
     out.append(
         "> Machine-readable findings of noncompliance and staff recommendations from "
-        "FERC's published **Form 1 (electric utility)** audit reports (Office of "
-        "Enforcement, Division of Audits & Accounting). Covers both financial (FA) and "
-        "non-financial (PA) audits of electric utilities, ISOs, and RTOs. Each report is "
-        "parsed into findings -> recommendations, and cross-report themes are mined."
+        "FERC's published **utility audit reports** — across the **electric, gas, and oil "
+        "sectors** (primarily FERC Forms 1, 2, and 6, plus related forms) — issued by the "
+        "Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) "
+        "and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report "
+        "is parsed into findings -> recommendations, and cross-report themes are mined."
     )
     out.append("")
     out.append(
-        f"Scope: {meta.get('scope', 'FERC Form 1 (electric) audits')} — gas (Form 2) and "
-        f"oil (Form 6) audits are out of scope for now. As of {meta.get('generated_at')}, "
-        f"{meta.get('reports_structured')} electric reports are structured "
-        f"({meta.get('electric_identified')} electric audits identified of "
-        f"{meta.get('reports_total_listed')} total audits listed). Findings and "
-        "recommendations are quoted verbatim from each report's Executive Summary. "
-        f"Primary source: {SOURCE}. Independent public-interest tool, not affiliated with "
-        "FERC. Links below are relative to the site root."
+        f"Scope: {meta.get('scope', 'FERC utility audits — electric, gas & oil')}. "
+        f"As of {meta.get('generated_at')}, {meta.get('reports_structured')} reports are "
+        f"structured of {meta.get('reports_total_listed')} listed{_industry_suffix(meta)}. "
+        "Findings and recommendations are quoted verbatim from each report's Executive "
+        f"Summary. Primary source: {SOURCE}. Independent public-interest tool, not affiliated "
+        "with FERC. Links below are relative to the site root."
     )
     out.append("")
     out.append("## Data (machine-readable)")
@@ -84,12 +90,12 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
     total_f = sum(r.finding_count for r in reports)
     total_r = sum(len(f.recommendations) for r in reports for f in r.findings)
     out: list[str] = []
-    out.append("# FERC Form 1 Audit Explorer — full structured corpus")
+    out.append("# FERC Audit Explorer — full structured corpus")
     out.append("")
     out.append(
-        f"> All structured FERC Form 1 (electric) audit reports: findings (verbatim) plus "
-        f"staff recommendations. {len(reports)} reports, {total_f} findings, {total_r} "
-        f"recommendations. Generated {meta.get('generated_at')}."
+        f"> All structured FERC utility audit reports (electric, gas & oil): findings "
+        f"(verbatim) plus staff recommendations. {len(reports)} reports, {total_f} findings, "
+        f"{total_r} recommendations. Generated {meta.get('generated_at')}."
     )
     out.append("")
     out.append(
@@ -132,11 +138,13 @@ def write_llms(out_dir: Path, reports: list[AuditReport], patterns: PatternsSumm
 def _meta_fallback(reports: list[AuditReport]) -> dict:
     """Standalone meta when build's meta.json isn't present yet."""
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
+    from collections import Counter
+
     return {
         "generated_at": date.today().isoformat(),
-        "scope": "FERC Form 1 (electric) audits",
+        "scope": "FERC utility audits — electric, gas & oil",
         "reports_total_listed": len(listing),
-        "electric_identified": len(reports),
+        "by_industry_identified": dict(Counter(r.industry or "unknown" for r in reports)),
         "reports_structured": len(reports),
     }
 

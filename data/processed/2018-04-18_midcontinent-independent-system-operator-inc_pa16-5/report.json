@@ -1,0 +1,27 @@
+{
+  "id": "2018-04-18_midcontinent-independent-system-operator-inc_pa16-5",
+  "company": "Midcontinent Independent System Operator, Inc.",
+  "company_raw": "PA16-5 Midcontinent Independent System Operator, Inc.",
+  "docket": "PA16-5",
+  "docket_full": "PA16-5-000",
+  "issued_date": "2018-04-18",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180418-3060&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180418-3060",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180418-3060 (fileID 14892059).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 28,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "June 1, 2013 through August 11, 2017",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

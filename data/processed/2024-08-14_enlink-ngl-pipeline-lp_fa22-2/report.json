@@ -1,0 +1,158 @@
+{
+  "id": "2024-08-14_enlink-ngl-pipeline-lp_fa22-2",
+  "company": "EnLink NGL Pipeline, LP",
+  "company_raw": "EnLink NGL Pipeline, LP (FA22-2)",
+  "docket": "FA22-2",
+  "docket_full": "FA22-2-000",
+  "issued_date": "2024-08-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240814-3002&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240814-3002",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 60,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2019 to December 31, 2022",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Recording of Carrier Property",
+      "summary": "EnLink NGL did not record the cost of two mainline pipeline segments in its books and records that it had used in carrier service since 2014. The cost of these pipeline segments – $80.9 million – was erroneously recorded in an affiliated company’s books and records, instead of EnLink NGL’s. As a result, EnLink NGL understated carrier property and accrued depreciation–carrier property, and understated depreciation expense and associated operating and maintenance expenses, since 2014. This understatement materially impacted EnLink NGL’s Income Statement and Balance Sheet, along with supporting s",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies, procedures, and controls as needed to ensure that all carrier property is recorded on its books and records consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 2,
+          "text": "Inform relevant staff of the procedural and control changes adopted for carrier property accounting and provide periodic training, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis of all asset and related adjusting entries needed to correct the carrier property and all other impacted accounts, including the effect on the balance sheet, income statement, and supporting schedules."
+        },
+        {
+          "number": 4,
+          "text": "Restate and footnote Page 700 of EnLink NGL’s 2019 FERC Form No. 6. For 2019, refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page 700. For the FERC Form No. 6 annual filings subsequent to this report, ensure that corrections made to adjust carrier property costs and other impacted accounts are properly reported in current year financial statements, including prior year corrected numbers, supporting schedules and Page 700. Also ensure appropriate footnote disclosures about the corrections made are included in the notes to the financial statements and other relevant pages of the FERC Form No. 6."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Recording of Noncarrier Property",
+      "summary": "EnLink NGL did not record certain property it owned in its books and records since 2014. EnLink NGL confirmed that this property was, and will continue to be, used by an affiliated company for its business, which indicates that the property should have been recorded as noncarrier property and any related expenses should also have been recorded as noncarrier. The total amount of noncarrier property unrecorded was $7.2 million, along with $0.2 million of annual expenses.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise policies, procedures, and controls as needed to ensure that all noncarrier property is recorded on its books and records consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 6,
+          "text": "Inform relevant staff of the procedural and control changes adopted for noncarrier property accounting and provide periodic training, as needed."
+        },
+        {
+          "number": 7,
+          "text": "Perform an analysis of all asset and related adjusting entries needed to correct the noncarrier property and all other impacted accounts, including the effect on the balance sheet, income statement, and supporting schedules."
+        },
+        {
+          "number": 8,
+          "text": "For the FERC Form No. 6 annual filings subsequent to this report, ensure that corrections are made to adjust noncarrier property costs and that other impacted accounts are properly reported in current year financial statements, including prior year corrected numbers and supporting schedules. Also provide appropriate footnote disclosures in the notes to the financial statements and other relevant pages of the FERC Form No. 6."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Recognition of Intrastate Transportation Movements",
+      "summary": "EnLink NGL improperly classified certain intrastate movements of liquids as interstate movements. This misclassification of intrastate movements overstated the cost of service and the interstate barrel-miles on Page 700 of the FERC Form No. 6 as this schedule should only include interstate data.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Revise policies, procedures, and controls to ensure that all transportation movements are properly classified as either interstate or intrastate movements and volumetric information is similarly classified."
+        },
+        {
+          "number": 10,
+          "text": "Inform relevant staff of the procedural and control changes for classification of intrastate movements and provide periodic training, as needed."
+        },
+        {
+          "number": 11,
+          "text": "For the FERC Form No. 6 annual filings subsequent to this report, ensure that corrections are made to adjust the interstate and intrastate volumes and costs are properly reported in current year financial statements, including prior year corrected numbers, supporting schedules and Page 700. Also, ensure appropriate footnote disclosures are included on the relevant pages of the FERC Form No. 6 filing."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Minor Items of Carrier Property",
+      "summary": "EnLink NGL accounted for replacement of minor items of property as a capital investment rather than maintenance expense, which was inconsistent with the Commission’s accounting rules and regulations under 18 C.F.R. Part 352. This resulted in EnLink NGL understating maintenance expenses and overstating carrier property.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Revise policies, procedures, and controls to ensure that EnLink NGL consistently maintains and applies its written property units listing pursuant to 18 C.F.R. Part 352. Those revised policies and procedures should ensure that only property units and improvements are capitalized and minor items of property are expensed, and that if a replacement qualifies as an improvement, then EnLink NGL retires the costs of the minor item(s) replaced and capitalizes the costs of the improvement(s)."
+        },
+        {
+          "number": 13,
+          "text": "Inform relevant staff of the procedural and control changes for the accounting and reporting of retirement units and minor units of property and provide periodic training, as needed."
+        },
+        {
+          "number": 14,
+          "text": "Update the property unit listing and capitalization manual to ensure that only property units and improvements are capitalized. Provide a copy of the revised document(s) and a summary of the updates made to DAA for review within 90 days from the issuance of this report."
+        },
+        {
+          "number": 15,
+          "text": "Perform an analysis of all projects that replaced “substantial items” and other minor items of property to identify whether they were treated as a capital or maintenance expense for the audit period. Provide a copy of the analysis and proposed accounting entries to DAA staff for review within 90 days from the issuance of this report. Upon receiving DAA staff approval, make a correcting entry to adjust carrier property. If the correcting entry results in a significant impact to income for the current year, EnLink NGL may request approval from the Commission to account for the transaction as a correction of a prior period error in Account 705."
+        },
+        {
+          "number": 16,
+          "text": "Restate and footnote Page 700 of EnLink NGL’s 2019 FERC Form No. 6. For 2019, refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page 700. For FERC Form No. 6 annual filings subsequent to this report, ensure that corrections made to adjust project costs from capital to maintenance are properly reported in current year financial statements, including prior year corrected numbers, supporting schedules, and Page"
+        },
+        {
+          "number": 700,
+          "text": "Also, ensure appropriate footnote disclosures in the notes to the financial statements and other relevant pages of the FERC Form No. 6."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting Period for Affiliate Transactions",
+      "summary": "EnLink NGL’s accrual for affiliate transactions did not conform to the Commission’s rules and regulations under 18 C.F.R. Part 352. Specifically, EnLink NGL prepared books and records for affiliate transactions on a quarterly basis rather than a monthly basis. As a result, EnLink NGL’s books and records did not accurately reflect all the costs incurred at the end of each month.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise procedures and controls to ensure that all affiliate transactions are accrued on a monthly basis in its general ledger consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 18,
+          "text": "Inform relevant staff of the procedural and control changes for accrual of affiliate charges and provide periodic training, as needed."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Written Shipper Nominations",
+      "summary": "EnLink NGL improperly accepted nominations for transportation of liquids that were not submitted in the written form required by its FERC tariff. While this did not impact financial statements or operations, this was a violation of its tariff.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise policies, procedures, and controls to ensure that all transportation movements are properly nominated in writing as required by EnLink NGL’s FERC tariff."
+        },
+        {
+          "number": 20,
+          "text": "Inform relevant staff of the procedural and control changes for transportation nominations and provide training, as needed. E."
+        }
+      ]
+    }
+  ]
+}

@@ -8,14 +8,14 @@
 
 ## Project intent
 
-A static, GitHub Pages-hosted toolkit to **read FERC documents and surface what matters in them.** The first module is a **FERC Form 1 Audit explorer**: download FERC's published audit reports (FY2015–present), extract/OCR them, structure each into reports → findings → recommendations, mine the **common patterns** of noncompliance, and present them as a browsable feed.
+A static, GitHub Pages-hosted toolkit to **read FERC documents and surface what matters in them.** The first module is the **FERC Audit Explorer** — electric (Form 1), gas (Form 2) and oil (Form 6) audits: download FERC's published audit reports (every available year, issued 2014→present), extract/OCR them, structure each into reports → findings → recommendations, mine the **common patterns** of noncompliance, and present them as a browsable feed.
 
 The north-star feature (later — see [BACKLOG.md](BACKLOG.md)) is an **"audit-my-document" mode**: given a filing, flag the issues a FERC auditor would likely raise, using the pattern library mined here. So v1's real deliverable is a **clean, well-attributed structured dataset of historical findings** — the model quality later depends on it.
 
 Load-bearing facts for any change here:
 
-- **Source & access.** Reports live at <https://www.ferc.gov/audits>. The HTML is Cloudflare-challenged (403 to scripts); the **PDFs** under `/sites/default/files/` download over plain HTTP. Listing is browser-captured, PDFs scripted. See [ISSUES.md](ISSUES.md).
-- **Scope (now): Form 1 / electric only.** The full corpus is *downloaded* and *classified* by form (`pipeline/classify.py`); the tool covers **electric (Form 1)** audits — both **financial (FA)** and **non-financial (PA)** types (FERC's terms). Gas (Form 2) and oil (Form 6) audits are out of scope and live in [BACKLOG.md](BACKLOG.md). Only the **2 most-recent electric** reports are structured E2E in v1 (a deliberate "start small" gate — don't silently widen). `audit_type` (FA/PA) comes from the docket prefix; `industry` from form/statute signals.
+- **Source & access.** Reports live at <https://www.ferc.gov/audits> (Cloudflare-challenged: 403 to scripts → the listing is **browser-captured**). The live page lists **2019+** only; **FY2014-2018** are recovered from a saved Internet Archive **Wayback** snapshot of /audits, with each older report's eLibrary accession resolved via the eLibrary **Docket Search** API (`pipeline/backfill.py`, **ferc.gov-origin only**). Report PDFs download from eLibrary (F5 WAF — scripted cookie dance in `pipeline/fetch.py`). See [ISSUES.md](ISSUES.md).
+- **Scope: all FERC utility audits — electric (Form 1), gas (Form 2), oil (Form 6).** Both **financial (FA)** and **non-financial (PA)** types (FERC's terms), for **every available year** (issued 2014→present). The whole corpus is downloaded, classified (`pipeline/classify.py`), and structured E2E. `audit_type` (FA/PA) comes from the docket prefix; `industry` from form/statute signals. Every record carries a provenance `source_note` (and `archived_via` for Wayback-sourced reports).
 - **Data is the product.** Findings are quoted **verbatim** with a source URL + capture date. No paraphrase, no "compliance score," no LLM-judged editorial calls. See [AGENTS.md](AGENTS.md) and [DESIGN.md §15.6](DESIGN.md).
 - **Zero-backend, zero-paid-deps.** Vanilla HTML/CSS/JS site reads baked JSON; Python CLI pipeline produces it. No framework.
 
@@ -114,6 +114,7 @@ Never blindly write code. Always follow this loop:
 
 - **Commit often** at natural checkpoints — small, focused commits over large monolithic ones.
 - **Per natural unit:** per new module / feature, per bug fix (with its regression test), per doc update.
+- **Commit in logical chunks — proactively.** When a body of work spans multiple concerns (e.g. a feature, its data regeneration, docs), split it into separate coherent commits in dependency order rather than one monolith. Once a chunk is self-consistent and verified (tests/build green), commit it when it makes sense — agents should do this without waiting for per-commit sign-off, narrating the chunk plan as they go. Keep the seed (`data/listing.json`) and its baked output (`docs/data/*.json`) in the **same** commit (see [AGENTS.md](AGENTS.md)).
 - **Descriptive messages explain *what* and *why*.** Not "fix bug" — "fix off-by-one in pagination when filter is empty."
 - **Never commit large binaries, downloaded data, or API keys.**
 - **Don't amend pushed commits.** Create new commits — amend rewrites history that may already be on a teammate's machine.

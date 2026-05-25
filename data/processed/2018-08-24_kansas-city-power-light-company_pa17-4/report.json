@@ -1,0 +1,27 @@
+{
+  "id": "2018-08-24_kansas-city-power-light-company_pa17-4",
+  "company": "Kansas City Power & Light Company",
+  "company_raw": "PA17-4 Kansas City Power & Light Company",
+  "docket": "PA17-4",
+  "docket_full": "PA17-4-000",
+  "issued_date": "2018-08-24",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180824-3012&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180824-3012",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180824-3012 (fileID 15003376).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 27,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1,2014 through December 31, 2017",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

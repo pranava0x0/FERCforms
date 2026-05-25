@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FERC Form 1 Audit Explorer — electric utility audit findings</title>
-  <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published Form 1 (electric utility) audit reports — financial (FA) and non-financial (PA) audits." />
+  <title>FERC Audit Explorer — electric, gas &amp; oil utility audit findings</title>
+  <meta name="description" content="A browsable stream of findings of noncompliance and staff recommendations from FERC's published utility audit reports across the electric, gas, and oil sectors — financial (FA) and non-financial (PA) audits." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -39,8 +39,8 @@
         </svg>
       </span>
       <span class="brand-text">
-        <strong>FERC Form 1 Audit Explorer</strong>
-        <span class="brand-sub">Findings from FERC's electric-utility (Form 1) audit reports</span>
+        <strong>FERC Audit Explorer</strong>
+        <span class="brand-sub">Findings from FERC's electric, gas &amp; oil utility audit reports</span>
       </span>
     </div>
     <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -56,10 +56,10 @@
         <span class="chev" aria-hidden="true">▾</span>
       </summary>
       <div class="how-to-body">
-        <p>A browsable index of <strong>FERC Form 1 (electric) audit reports</strong> — what FERC's auditors found and recommended. Each card below is one audit.</p>
+        <p>A browsable index of <strong>FERC utility audit reports</strong> across the electric, gas, and oil sectors — what FERC's auditors found and recommended. Each card below is one audit.</p>
         <ul>
           <li><strong>Open a report:</strong> click a card to expand its thread — the findings of noncompliance, each with the staff recommendations nested beneath, quoted verbatim from the report.</li>
-          <li><strong>Filter</strong> (left rail): by <strong>audit type</strong> (Financial / Non-financial), <strong>function</strong> (generation / transmission / distribution), <strong>year</strong>, or <strong>theme</strong> — or type in <strong>Search</strong>. Selections within a filter are OR; across filters, AND.</li>
+          <li><strong>Filter</strong> (left rail): by <strong>industry</strong> (electric / gas / oil), <strong>FERC form</strong> (No. 1 / 2 / 6 / …), <strong>audit type</strong> (Financial / Non-financial), <strong>function</strong> (generation / transmission / distribution), <strong>year</strong>, or <strong>theme</strong> — or type in <strong>Search</strong>. Selections within a filter are OR; across filters, AND.</li>
           <li><strong>Common patterns</strong> (right rail): click a theme to narrow the stream to reports with that issue.</li>
           <li><strong>Trace the source:</strong> each report links to FERC's original PDF via <em>View on eLibrary</em>, and <em>Copy citation</em> grabs a reference.</li>
         </ul>
@@ -84,12 +84,20 @@
           <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
         </div>
         <fieldset class="field">
+          <legend class="field-label">Industry</legend>
+          <div id="industry-options" class="chip-options"></div>
+        </fieldset>
+        <fieldset class="field">
           <legend class="field-label">Audit type</legend>
           <div id="type-options" class="chip-options"></div>
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Function</legend>
           <div id="function-options" class="chip-options"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend class="field-label">FERC form</legend>
+          <div id="form-options" class="chip-options"></div>
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Year</legend>

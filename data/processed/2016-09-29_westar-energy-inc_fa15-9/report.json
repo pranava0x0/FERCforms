@@ -1,0 +1,152 @@
+{
+  "id": "2016-09-29_westar-energy-inc_fa15-9",
+  "company": "Westar Energy, Inc.",
+  "company_raw": "FA15-9 Westar Energy, Inc.",
+  "docket": "FA15-9",
+  "docket_full": "FA15-9-000",
+  "issued_date": "2016-09-29",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160929-3027&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160929-3027",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160929-3027 (fileID 14365485).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 39,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2005 to December 31, 2015",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Classification of Utility Plant",
+      "summary": "Westar improperly recorded distribution plant amounts in transmission accounts that are included in the wholesale transmission formula rate. As a result, Westar overstated various transmission accounts and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen processes and procedures to ensure that Westar’s transmission and distribution assets are properly classified, and that amounts included in Westar’s transmission formula rate calculations are properly includible in those calculations. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions and formula rate input calculations."
+        },
+        {
+          "number": 2,
+          "text": "Reclassify distribution plant and associated amounts into the proper accounts. Adjusted accounts should include, but are not limited to, transmission and distribution plant in service, depreciation expense, accumulated reserve for depreciation, deferred taxes, and transmission and distribution operations and maintenance expenses."
+        },
+        {
+          "number": 3,
+          "text": "Determine the impact of the misclassifications on Westar’s transmission formula rate. To the extent that the misclassified amounts affected Westar’s transmission formula rate, submit refund calculations to DAA for review that explains and details Westar’s calculation of the refunds and determinative components. Following submittal of the refund calculations to DAA, submit a refund report to the Commission in Docket No. ER11-2395. The refunds should include the net amount of inappropriate recoveries that resulted from the misclassifications, including interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 4,
+          "text": "Refund amounts over-collected consistent with the applicable provisions of Westar’s OATT."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Westar Energy Foundation Activities",
+      "summary": "Westar improperly recorded nonoperating expenses in operating expense accounts that are included in the wholesale transmission formula rate. Specifically, Westar improperly recorded labor expenses associated with Westar’s employees performing nonoperating activities on behalf of the Westar Energy Foundation (WEF). Westar improperly recorded the labor expenses due to insufficient controls over the employees who work on WEF activities. As a result, Westar overstated various operating expense accounts and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Strengthen accounting procedures to ensure it properly tracks and records time spent by Westar employees on WEF activities according to Commission accounting regulations. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions and formula rate input calculations."
+        },
+        {
+          "number": 6,
+          "text": "Conduct a review of time and resources spent on foundation activities to identify expenses used to support WEF activities."
+        },
+        {
+          "number": 7,
+          "text": "Determine the impact of misclassified costs associated with WEF activities on Westar’s transmission formula rate. To the extent that the misclassified amounts affected Westar’s transmission formula rate, submit refund calculations to DAA for review that explains and details Westar’s calculation of the refunds and determinative components. Following submittal of the refund calculations to DAA, submit a refund report to the Commission in Docket No. ER11-2395. The refunds should include the net amount of inappropriate recoveries that resulted from the misclassifications, including interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 8,
+          "text": "Refund amounts over-collected consistent with the applicable provisions of Westar’s OATT."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Discriminatory Employment Practices",
+      "summary": "Westar improperly recorded costs associated with discriminatory employment practices in various administrative and general (A&G) accounts, instead of using Account 426.5, Other Deductions. As a result, Westar overstated various A&G expense accounts, which are included in the wholesale transmission formula rate, and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Strengthen processes and procedures to ensure that Westar properly accounts for expenses related to discriminatory employment practices, and excludes such amounts from its transmission formula rate calculations. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions and formula rate input calculations."
+        },
+        {
+          "number": 10,
+          "text": "Determine the impact of misclassified costs associated with discriminatory employment practices on Westar’s transmission formula rate. To the extent that the misclassified amounts affected a transmission formula rate, submit refund calculations to DAA for review that explains and details Westar’s calculation of the refunds and determinative components. Following submittal of the refund calculations to DAA, submit a refund report to the Commission in Docket No. ER11-2395. The refunds should include the net amount of inappropriate recoveries that resulted from the misclassifications, including interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 11,
+          "text": "Refund amounts over-collected consistent with the applicable provisions of Westar’s OATT."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Corporate Owned Life Insurance (COLI) Policies",
+      "summary": "Westar improperly recorded COLI expenses for officers and other employees for policies in which Westar is the beneficiary in Account 926, Employee Pensions and Benefits, instead of Account 426.2, Life Insurance. As a result, Westar overstated Account 926, which is included in the wholesale transmission formula rate, and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Strengthen processes and procedures to ensure that Westar properly accounts for expenses related to corporate-owned life insurance policies, and excludes such amounts from its transmission formula rate calculations. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions and formula rate input calculations."
+        },
+        {
+          "number": 13,
+          "text": "Determine the impact of corporate-owned life insurance amounts on Westar’s transmission formula rate. To the extent that these COLI amounts affected Westar’s transmission formula rate, submit refund calculations to DAA for review that explains and details Westar’s calculation of the refunds and determinative components. Following submittal of the refund calculations to DAA, submit a refund report to the Commission in Docket No. ER11-2395. The refunds should include the net amount of inappropriate recoveries that resulted from the misclassifications, including interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 14,
+          "text": "Refund amounts over-collected consistent with the applicable provisions of Westar’s OATT."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Completed Construction Not Classified",
+      "summary": "Westar did not transfer the balances to Account 101, Electric Plant in Service, from Account 106, Completed Construction Not Classified – Electric, in a timely manner despite the fact that those projects could be readily classified according to prescribed account classifications. Westar represented that balances remained in Account 106 due to process inefficiencies in Westar’s construction and engineering departments, system- related issues, and employee turnover in the property accounting department.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Strengthen processes and written procedures to ensure that items are cleared out of Account 106 and into Account 101 so that the balances in Accounts 101 and 106 are classified as accurately as practicable according to prescribed account classifications. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions."
+        },
+        {
+          "number": 16,
+          "text": "Conduct a review of assets currently classified in Account 106 to determine if any assets can be accurately transferred from Account 106 to Account 101 and into the proper functional utility plant accounts. Make all necessary accounting entries to transfer assets."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Asset Retirement Obligations",
+      "summary": "Westar improperly accounted for asset retirement obligations (AROs) related to its utility plant assets by:  Improperly recording asset retirement cost depreciation expense in Account 182.3 rather than properly recording this expense in Account 403.1, Depreciation Expense for Asset Retirement Costs; and  Improperly recording accretion expense in Account 182.3, Other Regulatory Assets, rather than properly recording this expense to Account 411.10, Accretion Expense. Based on this improper accounting, Westar only recorded ARO amounts in balance sheet accounts and not income statement accounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Strengthen processes and procedures to ensure that Westar accounts for asset retirement obligations in accordance with Commission accounting rules and regulations. At a minimum, processes and procedures should be strengthened to include training for employees performing accounting functions."
+        },
+        {
+          "number": 18,
+          "text": "Going forward, classify accretion of ARO liabilities in Account 411.10, Accretion Expense."
+        },
+        {
+          "number": 19,
+          "text": "Going forward, classify the depreciation of asset retirement costs in Account 403.1, Depreciation Expense for Asset Retirement Costs. E."
+        }
+      ]
+    }
+  ]
+}

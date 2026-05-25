@@ -1,0 +1,49 @@
+{
+  "id": "2018-02-14_american-transmission-company-llc_fa16-1",
+  "company": "American Transmission Company, LLC",
+  "company_raw": "FA16-1 American Transmission Company, LLC",
+  "docket": "FA16-1",
+  "docket_full": "FA16-1-000",
+  "issued_date": "2018-02-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180214-3031&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180214-3031",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180214-3031 (fileID 14822404).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 31,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Inclusion of Construction Work in Progress in Rate Base",
+      "summary": "ATC improperly implemented certain aspects of its settlement order involving incentive rate treatment for Construction Work in Progress (CWIP) included in rate base. Specifically, ATC improperly collected an incentive return from its customers for construction projects that were: (1) never submitted by ATC to MISO for inclusion in the MISO Transmission Expansion Plan (MTEP) and (2) submitted but not yet approved by MISO’s Board of Directors in the MTEP. As a result, ATC overbilled its customers an excessive incentive return amounting to approximately $20,000,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Lobbying Costs",
+      "summary": "ATC did not properly account for costs charged to it associated with ATC Management Inc.’s internal lobbyist. ATC recorded the lobbying costs in an operating account instead of using a nonoperating expense account. As a result, ATC improperly recovered these costs through its transmission formula rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting and Filings Associated With Electric Plant Sold",
+      "summary": "ATC did not use Account 102, Electric Plant Purchased or Sold, to record two sales of operating units, and did not file with the Commission the journal entries for three sales of operating units. Additionally, ATC improperly recorded the gains and losses for the sales of land in Account 411.6, Gains from disposition of utility plant, and Account 411.7, Losses from disposition of utility plant, instead of Account 421.1, Gain on Disposition of Property, and Account 421.2, Loss on Disposition of Property, as the Commission requires.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "2018-01-12_explorer-pipeline-company_fa16-5",
+  "company": "Explorer Pipeline Company",
+  "company_raw": "FA16-5 Explorer Pipeline Company",
+  "docket": "FA16-5",
+  "docket_full": "FA16-5-000",
+  "issued_date": "2018-01-12",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3040&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3040",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180112-3040 (fileID 14796817).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 81,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2013 to December 31, 2016",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 13,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Shipper Historical Capacity for Prorationing",
+      "summary": "Explorer did not correctly calculate shippers’ historical capacity used for prorationing when it included capacity from both the original and revised delivery tickets, rather than the capacity from only the revised ticket, to calculate shippers’ historical capacity. This resulted in incorrect allocation percentages that over allocated capacity to some shippers and under allocated capacity to other shippers during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Prorationing of Bid Capacity",
+      "summary": "Explorer did not assign bid capacity between shippers having equal price offers according to its proration policy for the October 2013 and April 2014 capacity auctions. This resulted in Explorer under awarding capacity to one unaffiliated shipper and over awarding capacity to another in two of the 48 monthly bid capacity auctions during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Awarding of Bid Capacity",
+      "summary": "Explorer did not properly award bid capacity under its tariff to a shipper with a higher price offer than another shipper in the November 2015 bid capacity auction. As a result, Explorer incorrectly awarded 50,000 barrels of bid capacity between two shippers. Also, Explorer’s tariff did not clearly describe the procedures it used to award bid capacity on each pipeline segment, which reduced the transparency of this process to shippers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Transportation Rates for Refined Products",
+      "summary": "On one occasion, Explorer did not charge an unaffiliated shipper its approved tariff rate of $1.096 for the delivery of 25,004 barrels of refined product. On three other occasions, it charged a rate to the same unaffiliated shipper inconsistent with the Commission’s intermediate point requirements. The rate charged was higher than the approved tariff rate causing an over collection of revenues from this shipper of $1,458. These oversights led to inaccurate billings to the shipper and misreporting of operating revenues in its income statement.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Form of Tariff",
+      "summary": "Explorer omitted the index of commodities schedule and an appropriate reference to the shipper manual from its tariffs. While this did not adversely affect shippers, it caused a lack of transparency to potential users of Explorer’s local and joint tariffs.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Revise its tariffs to include an index of commodities and the appropriate reference to the shipper manual, to be consistent with the Commission’s regulations in 18 C.F.R. § 341.3."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Subsidiary Investments",
+      "summary": "Explorer improperly reported certain activities related to its investment in its wholly owned subsidiary, the Service Company, under the consolidated method of accounting instead of using the equity method of accounting required by the Commission. Explorer also did not keep worksheets or memorandum accounts to support its investment activity in the Service Company since its creation in January 1997. As a result of consolidation, Explorer incorrectly reported investment activities of the Service Company in its financial statements.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Update policies and procedures to ensure its investment in the Service Company are accounted and reported for under the equity method consistent with Instruction for Balance Sheet Accounts 2-2."
+        },
+        {
+          "number": 12,
+          "text": "Create a memorandum account or worksheet detailing its investment in the Service Company since its creation, as required under Instruction for Balance Sheet Accounts 2-2."
+        },
+        {
+          "number": 13,
+          "text": "Make appropriate adjustments to the comparative financial statements and include footnote disclosure explaining these adjustments to financial statement presentation associated with the equity method of accounting in its next Form 6."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Affiliate Transaction Markups",
+      "summary": "Explorer improperly recorded the markup above costs for services received from its wholly owned subsidiary, the Service Company, as operating expenses instead of recording the markup as a nonoperating expense. As a result, Explorer overstated operating expenses since 1997.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Update accounting policies and procedures to ensure transactions with the Service Company are accounted for consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 15,
+          "text": "Implement procedures to record the affiliate’s profit markup to Account 660, a nonoperating expense account, prospectively. Document Accession #: 20180112-3040 Filed Date: 01/12/2018 Explorer Pipeline Company"
+        },
+        {
+          "number": 16,
+          "text": "Make appropriate adjustments to the comparative financial statements and include footnote disclosure explaining these adjustments to financial statement presentation in its next Form 6."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Interest Rate Swap",
+      "summary": "Explorer improperly accounted for accrued interest and fair value adjustments related to an interest rate swap during the period it held this derivative instrument. Explorer also improperly deferred and amortized the gain from the sale of the interest rate swap over a five year period, rather than recognizing it in income in the accounting period it was sold. This resulted in an understatement of net income from inception, up to and including the period in which the swap was sold. Subsequent to the sale of the interest rate swap the balance sheet and net income were overstated.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Develop appropriate policies and procedures to address Explorer’s accounting for derivative instruments."
+        },
+        {
+          "number": 18,
+          "text": "Retain proper documentation for interest rate swaps and other derivative instruments to support their designation as hedge transactions as appropriate."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Carrier Property Depreciation Accruals",
+      "summary": "Explorer accrued depreciation expense for vehicles and other work equipment after these assets were fully depreciated. This resulted in Explorer recording depreciation expense in excess of the book cost of vehicles and other work equipment from 2012 through 2016.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Refrain from accruing depreciation on assets that are fully depreciated and periodically monitor the depreciation rates used for carrier property to ensure that carrier property is being depreciated over the respective assets’ useful lives."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Depreciation on Completed Construction Projects",
+      "summary": "Explorer did not transfer construction project costs in a timely manner from Account 187, Construction Work In Progress to primary plant accounts when it completed and put projects into service. Explorer also did not recognize depreciation expense in the proper period for these projects. As a result, Explorer understated depreciation expense and overstated the net book value of carrier property.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Strengthen policies and procedures to ensure projects are transferred timely from Account 187 to the primary plant accounts and depreciation is recognized in the proper period."
+        },
+        {
+          "number": 21,
+          "text": "Make appropriate adjustments to the comparative financial statements and include footnote disclosure explaining the change to accumulated depreciation reserve. Submit accounting entries supporting this adjustment to DAA within 30 days of issuance of this report."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "FERC Form No. 6 Accounting and Reporting",
+      "summary": "Explorer did not map its general ledger accounts to FERC prescribed accounts consistently as required by the instructions of the Commission’s Uniform System of Accounts to populate its Form 6. Additionally, Explorer’s Form 6 contained other discrepancies, including incorrect balances and incomplete information for certain supporting pages to the financial statements. These inconsistencies and deficiencies reduced the overall transparency, accuracy, and usefulness of the Form 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Revise and strengthen policies, procedures, and practices to ensure information in the Form 6 is accurate and consistent with the Commission’s accounting and reporting requirements."
+        },
+        {
+          "number": 23,
+          "text": "Strengthen accounting procedures to ensure transactions are mapped and classified to the appropriate accounts according to Commission instructions and regulations."
+        },
+        {
+          "number": 24,
+          "text": "Establish regular evaluations of accounting and reporting decisions and adequate checks and balances over employees performing these duties. Document Accession #: 20180112-3040 Filed Date: 01/12/2018 Explorer Pipeline Company"
+        },
+        {
+          "number": 25,
+          "text": "Consider engaging an outside party for guidance to strengthen its compliance with Commission accounting and reporting requirements. Also consider reaching out to the Regulatory Accounting Branch within DAA for accounting inquiries and Division of Energy Market Oversight for Form 6 reporting guidance."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Statement of Cash Flows",
+      "summary": "Payment for Retirement of Long Term Debt Page 121, Line Explorer could not explain or provide records or documents to support the difference between the retirement of long term debt reported on page 121, Line 73 and page 227, Line 30, Column (g) in its 2014 Form 6. Carrier Property Page 213, Column (g) Explorer could not explain or provide records or documents to support the amount recorded as an adjustment to carrier property for the audit period. Accrued Depreciation – Carrier Property Page 216, Column (d), Lines 21 and 26 Explorer could not provide records or documents to support the amount",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Update procedures to ensure it prepares the statement of cash flows consistent with Order 505 and the instructions of the Form 6."
+        },
+        {
+          "number": 27,
+          "text": "Make appropriate adjustments to the comparative statement of cash flows and include a footnote disclosure explaining changes made to the previous year’s activities in its next Form 6."
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "Preservation of Records",
+      "summary": "Balance Sheet - Derivative Instrument Liabilities (Hedge) Page 113 Explorer did not maintain records and documents to support the carrying value and subsequent monthly valuations from the initial recording of the interest rate swap in 2002 to the balance reported in Explorer’s 2013 Form 6. Statement of Cash Flows – Untitled Page 120, Line Explorer could not explain or provide records or documents to support the manual adjustment reported on this line for 2013 and 2014. This line consisted of several activities, including a change in other deferred charges, accumulated deferred income tax credi",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Update record retention policies, procedures, and controls to ensure all records are retained and stored consistent with the Commission’s preservation of records requirements. E."
+        }
+      ]
+    }
+  ]
+}

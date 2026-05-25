@@ -1,0 +1,142 @@
+{
+  "id": "2021-07-20_mustang-pipe-line-llc_fa20-4",
+  "company": "Mustang Pipe Line LLC",
+  "company_raw": "Mustang Pipe Line LLC (FA20-4)",
+  "docket": "FA20-4",
+  "docket_full": "FA20-4-000",
+  "issued_date": "2021-07-20",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210720-3012&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210720-3012",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 57,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2014 to December 31, 2018",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Depreciation Rates and Expense",
+      "summary": "Mustang did not use Commission-approved depreciation rates to calculate depreciation expense for certain carrier property assets. Additionally, Mustang’s depreciation expense accrual started on the date that Mustang transferred project costs from its CWIP account to its carrier property accounts rather than on the date it placed projects into service. These errors caused Mustang to overstate rate base and understate depreciation expense in its cost of service reported on Page 700 during and prior to the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen procedures and controls to ensure that it uses Commission- approved depreciation rates for all carrier property assets (or accounts) and that depreciation begins on the date assets are placed in service."
+        },
+        {
+          "number": 2,
+          "text": "Update policies and procedures to ensure depreciation studies are filed with the Commission in a timely manner consistent with 18 C.F.R. Part 347 and Part 352, General Instruction 1-8 of the Commission’s regulations."
+        },
+        {
+          "number": 3,
+          "text": "File a new depreciation study to request depreciation rate approval for Account 165, Vehicles and other work equipment, as it relates to the assets acquired in 2018."
+        },
+        {
+          "number": 4,
+          "text": "Submit accounting entries for necessary adjustments within the accrued depreciation accounts to DAA for review within 30 days of issuance of this audit report. This should reflect the use of the corrected depreciation rates and calculation of depreciation expense based on the in-service date rather than the date project costs are posted to its carrier property accounts . Upon approval from DAA, make the needed accounting entries supporting these adjustments within 30 days."
+        },
+        {
+          "number": 5,
+          "text": "Upon receiving DAA staff’s review and response, restate and footnote the comparative year balances reported in the 2020 FERC Form No. 6 to reflect and disclose the revisions, which should include all schedules affected."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Return on Equity and Capital Structure",
+      "summary": "Mustang used the ROE rate developed by its indirect parent, Mobil, and Plantation, an affiliate, and relied on the capital structure of one of its ultimate parent companies, ExxonMobil, to determine the weighted cost of capital on Page 700. The percentages Mustang used for its ROE and capital structure were unsupported and there was no analysis to support certain inputs of its weighted cost of capital determination. Mustang should have supported its ROE figures with analysis based on a proxy group consisting of pipelines with comparable risks used in a discounted cash flow or similar analysis",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Update its internal FERC Form No. 6 Page 700 reporting policies and procedures to ensure that all items reported on Page 700 are sufficiently documented and supported in accordance with the Commission’s regulations."
+        },
+        {
+          "number": 7,
+          "text": "Train staff on the updated policies and procedures referred to in the preceding recommendation to Mustang’s staff responsible for preparing Page 700 of the FERC Form No. 6."
+        },
+        {
+          "number": 8,
+          "text": "Perform an analysis consistent with the Commission’s Proxy Group Policy Statement (Docket No. PL07-2-000) and ROE Policy Statement (Docket No. PL19-4-000) to develop an appropriate proxy group and either continue use of a 12 percent ROE in preparing Mustang’s Page 700 if supported by such analysis or adjust the ROE to one that is supported by the analysis. Further perform an analysis consistent with Commission Opinion Nos. 7, 268, and 502 to determine whether the 90 percent-equity capital structure used during the audit period was appropriate or whether a different, hypothetical capital structure should be used. Provide a copy of the analysis as evidence of Mustang’s supporting work papers for its Page 700 reporting."
+        },
+        {
+          "number": 9,
+          "text": "Determine the impacts to Page 700 based on the analyses performed in response to Recommendation No. 8, including to Line 6, Rate of Return, and to any other applicable lines on Page 700 for 2019 and 2020. Provide these impacts and the analyses described in Recommendation No. 8 to DAA within 90 days of this report."
+        },
+        {
+          "number": 10,
+          "text": "After receiving DAA’s approval, incorporate any changes prospectively into the 2020 FERC Form No. 6 and apply them to comparative years. Include footnotes to disclose the revisions made to the capital structure and ROE and the impact on cost of service."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Cost of Service Based Analysis Schedule",
+      "summary": "reported on Page 700 and reduced the overall usefulness and transparency of the FERC Form No. 6, during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise and strengthen policies and procedures to ensure that Page 700 is prepared and reported in a manner consistent with Opinion No. 154-B and the instructions of the FERC Form No. 6. These instructions include developing procedures to calculate AFUDC on monthly expenditures and the length of construction periods; maintaining records of the monthly construction expenditures; and excluding ineligible costs."
+        },
+        {
+          "number": 12,
+          "text": "Train staff on the revised Page 700 preparation and reporting policies and procedures and provide periodic training, as needed."
+        },
+        {
+          "number": 13,
+          "text": "File a FERC Form No. 6 for 2020 that reflects the AFUDC procedural changes described in Recommendation No. 11, restates the Page 700 balances reported in the comparative years of the report, and include footnotes necessary to explain the revisions."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "FERC Form No. 6 Reporting",
+      "summary": "Mustang did not report complete and accurate information on certain supporting schedules of the FERC Form No. 6. These errors affected the accuracy of barrel-miles in the Annual Cost of Service Based Analysis Schedule reported on Page 700, and reduced the overall usefulness and transparency of the FERC Form No. 6, during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Strengthen policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 6 in accordance with the Commission’s reporting requirements and instructions."
+        },
+        {
+          "number": 15,
+          "text": "Train staff on the revised filing policies and procedures, and provide periodic reminders as necessary."
+        },
+        {
+          "number": 16,
+          "text": "Review the reporting deficiencies described in this Finding with relevant Mustang staff to ensure that the deficiencies are corrected and that Mustang includes accurate and complete information in the FERC Form No. 6 on a prospective basis free of the noted deficiencies."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Cash Management Agreement Filings",
+      "summary": "Mustang did not file its initial and amended cash management agreements with the Commission, which impaired the Commission’s knowledge of Mustang’s cash management program and limited the Commission’s ability to monitor the program.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise policies, procedures, and controls to ensure that cash management agreements involving Mustang and any amendments thereto are timely filed with the Commission, as required by 18 C.F.R. § 357.5."
+        },
+        {
+          "number": 18,
+          "text": "Train staff on the revised filing policies and procedures and provide periodic reminders as necessary."
+        },
+        {
+          "number": 19,
+          "text": "File the currently effective agreement or agreements relating to any cash management program in which Mustang participates with the Commission within 30 days of issuance of this audit report, and notify DAA upon such filing. E."
+        }
+      ]
+    }
+  ]
+}

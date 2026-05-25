@@ -237,6 +237,8 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         source_page_url=entry.source_page_url,
         pdf_download_url=entry.pdf_download_url,
         captured_at=entry.captured_at,
+        source_note=entry.source_note,
+        archived_via=entry.archived_via,
         page_count=text.page_count,
         scanned_pages=text.scanned_pages,
         ocr_used=text.ocr_used,

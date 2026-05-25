@@ -1,0 +1,85 @@
+{
+  "id": "2015-06-17_colonial-pipeline-company_fa14-4",
+  "company": "Colonial Pipeline Company",
+  "company_raw": "FA14-4 Colonial Pipeline Company",
+  "docket": "FA14-4",
+  "docket_full": "FA14-4-000",
+  "issued_date": "2015-06-17",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3056&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150617-3056",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150617-3056 (fileID 13906963).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 42,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Consolidated Method of Accounting",
+      "summary": "Colonial improperly reported its investment in Colonial Pipeline Company of Pennsylvania, CP Dogwood LLC, and Energy Logistics Solutions LLC under the consolidated method of accounting instead of using the equity method of accounting, as required by the Commission. By consolidating, Colonial’s financial statements did not appropriately reflect its investments in subsidiary companies.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Interest During Construction",
+      "summary": "Colonial incorrectly accounted for interest during construction in Account 166, Other Property, instead of recording the interest in the carrier property Accounts 153-161, which are the accounts used to record the related property costs. While this accounting affected the accuracy of the balances in these specific accounts, it did not affect total carrier property since Account 166 and Accounts 153-161 were used to derive the balance in Account 30, Carrier Property.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Nonoperating Expenses",
+      "summary": "Colonial improperly recorded amounts for donations, charitable contributions, fines and penalties, and lobbying activities as operating expenses in Accounts 390, Other Expenses, 580, Pipeline Taxes, and 590, Other Expenses. Colonial should have recorded these activities in Account 660, Miscellaneous Income Charges, as these activities are nonoperating in nature. Recording these activities as operating expenses increased amounts that factored into its annual cost of service schedule on page 700 of the Form 6, which provides stakeholders a gauge of Colonial’s cost of service. However, since Colo",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Regulatory Fees to Federal Agencies",
+      "summary": "Colonial incorrectly accounted for regulatory fees payable to Federal agencies in Account 56, Taxes Payable, instead of Account 52, Accounts Payable. Also, Colonial accounted for the payment of regulatory fees to the U.S. Department of Transportation (DOT) in Account 580, Pipeline Taxes, instead of Account 590, Other Expenses. While this accounting led to account misclassifications, it had no impact on total payables and operating expenses reported in the Form 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Record amounts payable for regulatory fees to Federal agencies in Account 52, Accounts Payable, rather than Account 56, Taxes Payable, prospectively."
+        },
+        {
+          "number": 11,
+          "text": "Record expense amounts paid to DOT for user fees in Account 590, Other Expenses, rather than Account 580, Pipeline Taxes, prospectively."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Reporting Intrastate Amounts on Page 700 of the Form 6",
+      "summary": "Colonial did not remove intrastate amounts when reporting certain line items on page 700 of the Form 6. As a result, Colonial overstated the total cost of service by approximately $7.6 million for 2013 on page 700, which provides stakeholders a gauge of Colonial’s cost of service. However, since Colonial has indexed- and market-based rates, this accounting treatment did not affect the rates shippers paid for transportation service on Colonial’s pipeline.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Enhance its review procedures to ensure the page 700 prepared by the third- party consultant is accurate and complete."
+        },
+        {
+          "number": 13,
+          "text": "Update its policies and procedures to ensure that intrastate activities are removed from page 700, and only interstate activities are reported."
+        },
+        {
+          "number": 14,
+          "text": "Restate 2013 page 700 with the corrected amounts in the 2014 Form 6. E."
+        }
+      ]
+    }
+  ]
+}

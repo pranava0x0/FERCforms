@@ -1,0 +1,393 @@
+{
+  "id": "2016-04-01_duke-energy-corporation_pa14-2",
+  "company": "Duke Energy Corporation",
+  "company_raw": "PA14-2 Duke Energy Corporation",
+  "docket": "PA14-2",
+  "docket_full": "PA14-2-000",
+  "issued_date": "2016-04-01",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160401-3008&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160401-3008",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160401-3008 (fileID 14187734).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 70,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2011 through January 31, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "65"
+  ],
+  "finding_count": 8,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Merger Transaction Costs",
+      "summary": "Duke Companies did not file merger transaction accounting entries with the Commission as required by the Merger Order, and the companies recorded merger transaction costs in operating accounts, contrary to the Commission’s long-standing policy that such costs be recorded in nonoperating accounts. By not filing the accounting entries, Duke Companies prevented Commission review of the merger accounting and correction of any entries that were not in accordance with Commission accounting requirements.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise accounting policies and procedures to appropriately account for merger transactions consistent with Commission accounting requirements."
+        },
+        {
+          "number": 2,
+          "text": "Develop written policies and procedures to timely identify proposed accounting transactions that would trigger a notification to the Commission."
+        },
+        {
+          "number": 3,
+          "text": "Develop written policies and procedures to submit accounting questions of doubtful interpretation to the Commission."
+        },
+        {
+          "number": 4,
+          "text": "Provide training to employees on compliance with the merger cost accounting conditions and the revised policies, procedures, and controls for complying with the conditions. Also, develop a training program that supports the provision of periodic training in this area. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation"
+        },
+        {
+          "number": 1,
+          "text": "Revise accounting policies and procedures to appropriately account for merger transactions consistent with Commission accounting requirements."
+        },
+        {
+          "number": 2,
+          "text": "Develop written policies and procedures to timely identify proposed accounting transactions that would trigger a notification to the Commission."
+        },
+        {
+          "number": 3,
+          "text": "Develop written policies and procedures to submit accounting questions of doubtful interpretation to the Commission."
+        },
+        {
+          "number": 4,
+          "text": "Provide training to employees on compliance with the merger cost accounting conditions and the revised policies, procedures, and controls for complying with the conditions. Also, develop a training program that supports the provision of periodic training in this area. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 2."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Merger Transaction Internal Labor Costs",
+      "summary": "Duke Companies improperly included approximately $31.4 million of merger transaction internal labor costs in wholesale power and transmission formula rate service cost determinations without first submitting a section 205 filing demonstrating that the costs were offset by quantified savings produced by the merger. As a result, the wholesale power and transmission customers’ revenue requirements were inappropriately overstated by an estimated $17.5 million.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise all policies and procedures for tracking, accounting, and excluding merger transaction costs from wholesale power and transmission formula rates, including amounts previously charged to utility plant, accumulated deferred income taxes, construction work in progress with the associated capitalized cost of funds used during construction (AFUDC), and maintenance and operating expense accounts, and future charges to such accounts for any transaction to which a FERC hold harmless obligation applies. The revised procedures should hold customers harmless from all merger transaction costs consistent with requirements of the Merger Order. Among other things, the revised policies and procedures should include an annual review of each subsidiary’s merger transaction cost adjustments as well as periodic evaluations within the year, as needed and appropriate."
+        },
+        {
+          "number": 6,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the inclusion of merger transaction internal labor and related costs in wholesale power and transmission formula rates during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+        },
+        {
+          "number": 7,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 8,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 5,
+          "text": "Revise all policies and procedures for tracking, accounting, and excluding merger transaction costs from wholesale power and transmission formula rates, including amounts previously charged to utility plant, accumulated deferred income taxes, construction work in progress with the associated capitalized cost of funds used during construction (AFUDC), and maintenance and operating expense accounts, and future charges to such accounts for any transaction to which a FERC hold harmless obligation applies. The revised procedures should hold customers harmless from all merger transaction costs consistent with requirements of the Merger Order. Among other things, the revised policies and procedures should include an annual review of each subsidiary’s merger transaction cost adjustments as well as periodic evaluations within the year, as needed and appropriate."
+        },
+        {
+          "number": 6,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the inclusion of merger transaction internal labor and related costs in wholesale power and transmission formula rates during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+        },
+        {
+          "number": 7,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 8,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 3."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Merger Transaction Outside Services and Related Costs",
+      "summary": "Duke Companies incorrectly included $1.5 million of merger transaction outside services and related costs in wholesale power and transmission formula rate service cost determinations without first submitting a section 205 application demonstrating the costs were offset by quantified savings produced by the merger. In addition, the companies recorded the merger transaction costs in operating accounts, contrary to the Commission’s long-standing policy that such costs be recorded in nonoperating accounts. As a result, the wholesale power and transmission customers’ revenue requirements were inapp",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Revise accounting policies and procedures to appropriately account for merger transaction costs consistent with Commission accounting requirements."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the inclusion of merger transaction outside services and related costs in wholesale power and transmission formula rate charges during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation"
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Use of the Consolidation Method of Accounting"
+        },
+        {
+          "number": 13,
+          "text": "Review and, as needed, revise accounting policies, practices, and procedures to ensure that investments in subsidiaries are accounted for consistent with the Commission’s equity method accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Evaluate the accounting applied to Duke Companies’ existing subsidiaries and notify DAA of any areas of noncompliance with Commission accounting requirements."
+        },
+        {
+          "number": 15,
+          "text": "Revise documented policies, procedures and processes to ensure timely notice is provided to relevant regulators regarding instances of noncompliance with regulations, rules, and orders."
+        },
+        {
+          "number": 16,
+          "text": "Provide training to staff on procedures, practices, and available tools to transparently or anonymously report instances of noncompliance to senior management, the Board of Directors, and relevant regulators."
+        },
+        {
+          "number": 9,
+          "text": "Revise accounting policies and procedures to appropriately account for merger transaction costs consistent with Commission accounting requirements."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the inclusion of merger transaction outside services and related costs in wholesale power and transmission formula rate charges during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 4."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Use of the Consolidated Method of Accounting",
+      "summary": "DEC and DEP accounted for investments in subsidiaries on a consolidated basis in their Form No. 1 reports, contrary to the Commission’s long-standing accounting policy.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2014,
+          "text": "However, neither audit staff nor the Commission was notified of the improper accounting and the associated rate impacts until August 2015. Duke Energy’s lack of timely disclosure of DEC and DEP’s noncompliance with Commission regulations is problematic. The company should take necessary steps to ensure that its corporate compliance culture and program are strengthened to prevent situations like this on a going forward basis. 33 Duke Energy Carolinas, LLC, et al., Request for Waiver, Docket No. AC15-174-000, (filed Aug. 19, 2015). The filing requested waivers of the equity accounting requirement on behalf of DEC, DEP, and DEF, which formed a wholly owned subsidiary Duke Energy Florida Receivables, LLC (DEFR) in 2014. The Chief Accountant issued a delegated letter order on February 12, 2016 that granted the requested waivers to the companies and directed specific accounting regarding sales of accounts receivable. Duke Companies filed a request for rehearing of the letter order on March 14, 2016. 34 Duke Energy Carolinas, LLC, et al., Docket Nos. ER16-577-000, ER16-578- 000, and ER16-579-000. The Commission issued delegated letter orders on February 11, 2016, accepting for filing the amendments to the Joint OATT and rate schedules to provide for DEC, DEP, and DEF’s use of the consolidated method of accounting for ratemaking purposes. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation Recommendations We recommend Duke Companies:"
+        },
+        {
+          "number": 13,
+          "text": "Review and, as needed, revise accounting policies, practices, and procedures to ensure that investments in subsidiaries are accounted for consistent with the Commission’s equity method accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Evaluate the accounting applied to Duke Companies’ existing subsidiaries and notify DAA of any areas of noncompliance with Commission accounting requirements."
+        },
+        {
+          "number": 15,
+          "text": "Revise documented policies, procedures and processes to ensure timely notice is provided to relevant regulators regarding instances of noncompliance with regulations, rules, and orders."
+        },
+        {
+          "number": 16,
+          "text": "Provide training to staff on procedures, practices, and available tools to transparently or anonymously report instances of noncompliance to senior management, the Board of Directors, and relevant regulators. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 5."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Sales of Accounts Receivable",
+      "summary": "DEC, DEP, and DEF misclassified an estimated $94.7 million of nonoperating expenses and receivables arising from transactions with their subsidiaries during the audit period. As a result, the wholesale power and transmission customers’ revenue requirements were inappropriately overstated by an estimated $61 million.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise procedures to ensure that all costs and account balances associated with the sale of accounts receivable are accounted for in accordance with Commission accounting regulations. Among other things, the corrected accounting should ensure that all losses associated with receivable sales are recorded in Account 426.5."
+        },
+        {
+          "number": 18,
+          "text": "Provide the revised procedures to DAA for review within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 19,
+          "text": "Recalculate charges to wholesale power and transmission customers of DEC, DEP, and DEF and submit the recalculations in a refund analysis to DAA for review within 60 days of receiving the final audit report. The refund analysis should explain and detail the: (1) return of collection service billings charged in 2014; (2) return of losses on the sales included in rates; (3) determinative components of the refund; (4) refund method; (5) period(s) refunds will be Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation made; and (6) interest calculated in accordance with section 35.19 of Commission regulations."
+        },
+        {
+          "number": 20,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 21,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 17,
+          "text": "Revise procedures to ensure that all costs and account balances associated with the sale of accounts receivable are accounted for in accordance with Commission accounting regulations. Among other things, the corrected accounting should ensure that all losses associated with receivable sales are recorded in Account 426.5."
+        },
+        {
+          "number": 18,
+          "text": "Provide the revised procedures to DAA for review within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 19,
+          "text": "Recalculate charges to wholesale power and transmission customers of DEC, DEP, and DEF and submit the recalculations in a refund analysis to DAA for review within 60 days of receiving the final audit report. The refund analysis should explain and detail the: (1) return of collection service billings charged in 2014; (2) return of losses on the sales included in rates; (3) determinative components of the refund; (4) refund method; (5) period(s) refunds will be made; and (6) interest calculated in accordance with section 35.19 of Commission regulations."
+        },
+        {
+          "number": 20,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 21,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 6."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "Duke Companies recorded approximately $2.4 million of lobbying expenses in above-the-line operating accounts from 2011 to 2013. As a consequence, Duke Companies improperly included these costs in wholesale power and transmission formula rate service cost determinations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Establish and implement written procedures governing the methods used to account for, track, report, and review lobbying costs incurred."
+        },
+        {
+          "number": 23,
+          "text": "Provide training on Commission accounting requirements and the impact of accounting on cost-of-service rate determinations to employees involved in lobbying and lobbying-related work, and those with oversight responsibility for lobbying cost allocations. Also, develop a training program that supports the provision of periodic training in this area."
+        },
+        {
+          "number": 24,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper inclusion of lobbying cost in operating accounts during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+        },
+        {
+          "number": 25,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 26,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+        },
+        {
+          "number": 22,
+          "text": "Establish and implement written procedures governing the methods used to account for, track, report, and review lobbying costs incurred."
+        },
+        {
+          "number": 23,
+          "text": "Provide training on Commission accounting requirements and the impact of accounting on cost-of-service rate determinations to employees involved in lobbying and lobbying-related work, and those with oversight responsibility for lobbying cost allocations. Also, develop a training program that supports the provision of periodic training in this area."
+        },
+        {
+          "number": 24,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper inclusion of lobbying costs in operating accounts during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+        },
+        {
+          "number": 25,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 26,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 7."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Allocation of Lobbyist Labor Costs",
+      "summary": "Duke Companies accounted for the labor costs of internal lobbyists and their support staff in operating accounts that lacked support for inclusion in the accounts. Improper accounting for the costs can lead to inappropriate recovery of the costs through rates charged and billed to customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "Revise written policies and procedures to create a process to document and verify appropriate allocation of lobbying and lobbying-related costs, and maintain auditable support for the cost included in rate determinations."
+        },
+        {
+          "number": 28,
+          "text": "Retain an independent third-party entity to conduct a representative labor time study to determine an appropriate allocation of internal lobbyist labor, support Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation staff, and associated costs that should be accounted for in operating and nonoperating accounts based on time spent by employees engaged in the activities. Provide the study results to audit staff within 180 days of the date of the final audit report."
+        },
+        {
+          "number": 29,
+          "text": "Include the results of the labor time study in the determination of lobbying- related labor cost allocations as of January 1, 2016."
+        },
+        {
+          "number": 30,
+          "text": "Implement policies and procedures to perform a labor time study biennially using an independent third-party or internal company resources that are able to attest to the results of the study. Revise the lobbying-related labor cost allocations based on the results of the study."
+        },
+        {
+          "number": 27,
+          "text": "Revise written policies and procedures to create a process to document and verify appropriate allocation of lobbying and lobbying-related costs, and maintain auditable support for the cost included in rate determinations."
+        },
+        {
+          "number": 28,
+          "text": "Retain an independent third-party entity to conduct a representative labor time study to determine an appropriate allocation of internal lobbyist labor, support Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation staff, and associated costs that should be accounted for in operating and nonoperating accounts based on time spent by employees engaged in the activities. Provide the study results to audit staff within 180 days of receiving the final audit report."
+        },
+        {
+          "number": 29,
+          "text": "Include the results of the labor time study in the determination of lobbying-related labor cost allocations as of January 1, 2016."
+        },
+        {
+          "number": 30,
+          "text": "Implement policies and procedures to perform a labor time study at least biennially using an independent third-party or internal company resources that are able to attest to the results of the study. Revise the lobbying-related labor cost allocations based on the results of the study. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation 8."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Nonutility Expenses in Operating Accounts",
+      "summary": "Duke Companies recorded approximately $490,000 of nonutility expenses in operating accounts in 2014. As a result, inappropriate costs were included in wholesale power and transmission formula rate service cost determinations and charged to customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Develop and implement written policies, procedures, and controls to ensure proper accounting and reporting of nonutility expenses."
+        },
+        {
+          "number": 32,
+          "text": "Provide training for employees involved in the invoicing process on Commission accounting requirements and the impact of the accounting on cost- of-service rate determinations."
+        },
+        {
+          "number": 33,
+          "text": "Within 60 days of receiving the final audit report, provide documentation supporting the analysis performed of invoiced expenses recorded to administrative and general (A&G) accounts in 2014 that identified misclassified nonutility expenses included in A&G accounts. Develop an estimate of misclassified nonutility expenses accounted for in operating accounts in 2011 through 2013 and 2015."
+        },
+        {
+          "number": 34,
+          "text": "Implement policies and procedures to provide periodic audits or reviews of A&G transactions by external or internal auditors."
+        },
+        {
+          "number": 35,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper inclusion of identified and estimated nonutility expenses in charges to wholesale power and transmission customers during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made. Include the results of the invoice analysis in the refund analysis."
+        },
+        {
+          "number": 36,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation"
+        },
+        {
+          "number": 37,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. E. Implementation of Recommendations Audit staff further recommends that Duke Companies submit the following for audit staff’s review: • A plan for implementing the audit recommendations within 30 days after the final audit report is issued; • Quarterly reports describing progress in completing each corrective action recommended in the final audit report. Quarterly nonpublic submissions should be made no later than 30 days after the end of each calendar quarter, beginning with the first quarter after the final audit report is issued, and continuing until all recommended corrective actions are completed; and • Copies of any written policies and procedures developed in response to recommendations in the audit report. These documents should be submitted in the first quarterly filing after Duke Companies complete such policies and procedures. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation II. Background A. Merger of Duke Energy and Progress Energy On January 10, 2011, Duke Energy and Progress Energy announced their intention to merge in a stock-for-stock transaction under which Progress Energy would become a wholly owned subsidiary of Duke Energy, and the shareholders of Progress Energy would become shareholders of Duke Energy. At the time, the transaction was valued at over $31 billion. The merger was poised to create the largest U.S. electric utility in history with over seven million electric customers and operations in six states. Following the announcement, on April 4, 2011, Duke Energy, Progress Energy, and their public utility subsidiaries (collectively, Duke Companies) filed an application with the Commission seeking authorization for the merger transaction under section 203 of the Federal Power Act (FPA)3 and Part 33 of Commission regulations.4 To receive authorization for the transaction, the companies committed to hold transmission and wholesale requirements customers harmless from the costs of the transaction for five years. The companies also contended that the transaction would not adversely affect competition, and thus there were no market power concerns associated with the transaction. On September 30, 2011, the Commission found that the transaction, as proposed in the application, would result in significant screen failures in the horizontal market power analysis and have an adverse effect on competition.5 As such, the Commission authorized the transaction subject to conditions. Among other things, the transaction was conditioned on Duke Companies holding transmission and wholesale requirements customers harmless from the costs of the transaction, and submitting proposed market power mitigation measures that the Commission approves. The Commission advised Duke Companies that sufficient mitigation measures could include membership in a regional transmission organization, implementing an independent coordinator of transmission arrangement, actual or virtual divestiture of generation, and/or transmission upgrades to provide greater market access to third-party energy suppliers. Further, the Commission stated that the hold harmless commitment included all merger transaction costs, not only costs related to consummating the transaction.6 To recover merger transaction costs through wholesale requirement or transmission rates, the 3 16 U.S.C. § 824b (2012). 4 18 C.F.R. Part 33. 5 Merger Order, 136 FERC ¶ 61,245 at PP 145-146. 6 Id. P 169. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation companies were required to submit a filing to the Commission that identified merger costs to be recovered and demonstrated that the costs were exceeded by savings produced by the transaction.7 Duke Companies did not submit a filing to recover merger transaction costs during the audit period. However, as discussed in detail below, the companies recovered merger transaction costs through rates charged. Consistent with the Commission’s merger authorization condition that required Duke Companies to submit proposed market power mitigation measures for approval, the companies submitted an initial compliance filing on October 17, 2011, which proposed to mitigate market power through virtual divestiture of generation. The filing proposed a must-offer obligation under which Duke Companies would sell specified quantities of energy at cost-based rates to entities directly or indirectly serving load in the DEC and DEP Balancing Authority Areas (BAAs). The Commission rejected the filing on the grounds that the market power mitigation proposals did not remedy the market power concerns identified in the Merger Order.8 A revised compliance filing was submitted by Duke Companies on March 26, 2012 that proposed permanent and interim market power mitigation measures. To permanently mitigate market power, Duke Companies proposed to build seven transmission expansion projects (TEPs), expedite completion of an eighth project that was already planned, and set aside 25 MW of transfer capacity on their transmission systems for use by third parties (Stub Mitigation). During construction of the TEPs, as an interim measure to protect against potential market power concerns, Duke Companies proposed to enter into power sale agreements with three unaffiliated firms – Cargill Power Marketing, EDF Trading, and Morgan Stanley Capital Markets – to which the companies would sell power during all periods requiring mitigation. The companies also proposed to hire an independent monitor, Potomac Economics Ltd. (Potomac Economics), to verify compliance with the provisions of the power sale agreements. The Commission accepted the revised compliance filing on June 8, 2012, subject to certain revisions and conditions, which included, among other things, requirements to hold customers harmless from the cost of the mitigation actions and to expand Potomac Economics’ duties to verify that the TEPs were completed within the prescribed scope and timeline.9 The merger was consummated on July 2, 2012. On December 6, 2013, after the merger was consummated, Duke Companies submitted a motion to supplement its March 26, 2012 compliance filing, due to newly identified information that affected calculation of the impact of the market power 7 Id. P 170. 8 Duke Energy Corp., 137 FERC ¶ 61,210 (2011). 9 See June 8 Compliance Order, 139 FERC ¶ 61,194 at P 113. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation mitigation measures. In the filing, Duke Companies offered to increase the Stub Mitigation by 104 MW (thereby raising the total amount of the transmission set-aside to 129 MW), repair out of service phase-shifting transformers at DEC’s Rockingham substation and return them to service, and operate the transformers so as to create additional import capability on the transmission system. The Commission granted the motion and accepted the supplementary compliance filing subject to conditions on October 29, 2014.10 Moreover, the Commission reiterated its requirement that transmission and wholesale requirements customers be held harmless from costs associated with repairing the transformers and returning them to service. B. Duke Energy’s Public Utility Subsidiaries During the audit period, the Duke Companies provided electricity service in portions of North Carolina, South Carolina, Florida, Indiana, Ohio, and Kentucky. DEO and DEK also provided natural gas service in portions of Ohio and Kentucky. The following describes the services provided by each company, its open access transmission tariff (OATT), membership in an independent system operator (ISO) or regional transmission organization (RTO), transmission formula rate, and market-based rate authority. Duke Energy Carolinas, LLC DEC is a vertically integrated public utility that generates, transmits, distributes, and sells electricity to 2.5 million customers in a 24,000 square mile service area in North and South Carolina. DEC owns 8,302 miles of transmission lines and 19,600 MW of generating capacity. DEC provided open access transmission service under a Commission-approved OATT at cost-based stated rates from 1995 through 2011.11 In 2011, DEC began recovery of its transmission service cost pursuant to a formula rate that became effective June 1, 2011.12 However, on March 26, 2012, in connection with the merger transaction, DEC, DEP, and DEF filed for approval of a Joint OATT under section 205 of the FPA and Part 35 of the Commission’s regulations. The filing was conditionally accepted by the Commission on June 8, 2012.13 10 October 29 Compliance Order, 149 FERC ¶ 61,078 (2014). 11 Duke Power Co., 73 FERC ¶ 61,309 (1995) (Duke Power Order). 12 Duke Energy Carolinas, LLC, 137 FERC ¶ 61,058 (2011). 13 Duke Energy Corp., 139 FERC ¶ 61,193 (2012). Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation The Joint OATT provided for transmission service at non pancaked rates for transactions involving the combined transmission systems of the companies. DEC’s transmission formula rate is incorporated as Schedule 10-B of the Joint OATT. DEC’s formula rate implementation protocols are incorporated as Exhibit A of the Joint OATT, and the formula rate template and formula rate principles are contained in Exhibit B. DEC does not belong to an ISO or RTO. DEC has wholesale power sale agreements with cost-based rates determined under a formula, and it has Commission authorization to make wholesale sales at market-based rates outside its and DEP’s BAAs and Peninsular Florida. Duke Energy Progress, LLC DEP is a vertically integrated public utility that generates, transmits, distributes, and sells electricity to 1.5 million customers in a 32,000 square mile service area in North and South Carolina. DEP owns 6,981 miles of transmission lines and 12,200 MW of generating capacity. DEP provided open access transmission service under a Commission-approved OATT at cost-based stated rates from 1996 through 2008. In 2008, DEP began recovery of its transmission service cost pursuant to a formula rate that became effective July 1, 2008.14 Since the merger, DEP has provided transmission service under the Joint OATT with DEC and DEF. DEP’s transmission formula rate is incorporated in Attachment H of the Joint OATT. The formula rate template is incorporated as Attachment H-1 of the Joint OATT, and the implementation protocols as Attachment H-2. DEP does not belong to an ISO or RTO. DEP has wholesale power sale agreements with cost-based rates determined under a formula, and it has Commission authorization to sell energy and capacity at market- based rates outside its and DEC’s BAAs and Peninsular Florida. Duke Energy Florida, LLC DEF is a vertically integrated public utility that generates, transmits, and delivers electricity to 1.7 million customers in a 13,000 square mile area in central and southern Florida. DEF owns 4,424 miles of transmission lines and 1,200 MW of generating capacity. 14 Carolina Power and Light Co., Docket No. ER08-889-000 (June 27, 2008) (delegated letter order). Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation DEF provided open access transmission service under a Commission-approved OATT at cost-based stated rates from 1996 through 2008. In 2008, DEF began recovery of its transmission service cost pursuant to a formula rate that became effective January 1, 2008.15 Since the merger, DEF has provided transmission service under the Joint OATT with DEC and DEP. DEF’s transmission formula rate is incorporated as Schedule 10-A of the Joint OATT. The implementation protocols are designated as Schedule 10-A.1 of the Joint OATT, and the formula rate template as Schedule 10-A.2. DEF does not belong to an ISO or RTO. Additionally, DEF has Commission authorization to sell energy and capacity outside the DEC and DEP BAAs and Peninsular Florida. Duke Energy Indiana, LLC DEI is a vertically integrated utility that generates, transmits, distributes, and sells electricity to 810,000 customers within a 23,000 square mile service territory in central, north central, and southern Indiana. DEI owns 7,500 MW of generating capacity and 4,815 miles of transmission lines. DEI became a member of the Midcontinent Independent System Operator, Inc., (MISO) in 1997 and recovered its cost of transmission service pursuant to cost-based stated rates. In 1998, DEI began to recover its transmission service cost pursuant to a transmission formula rate. DEI’s transmission formula rate template is included at Attachment O of the MISO Open Access Transmission, Energy, and Operating Reserve Markets Tariff. Additionally, DEI has Commission authorization to sell power at market- based rates outside the DEC and DEP BAAs and Peninsular Florida. Duke Energy Ohio, Inc. and Duke Energy Kentucky, Inc. DEO is the direct parent of DEK. The companies are combination electric and gas utilities that transmit, distribute, and sell electricity at retail and wholesale, and distribute and sell natural gas at retail in southwestern Ohio and northern Kentucky, respectively. DEO owns 1,879 miles of transmission lines. The company divested its generating assets pursuant to Ohio’s electric restructuring program and received Commission authorization for the divestiture.16 DEK owns 102 miles of transmission lines and about 1,200 MW of generating capacity. 15 Florida Power Corp., Docket No. ER08-105-000 (Dec. 17, 2007) (delegated letter order). 16 See Dynegy Resource I, LLC, 150 FERC ¶ 61,232 (2015). Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation DEO and DEK were members of MISO until January 1, 2012, when they withdrew their membership and joined PJM Interconnection, L.L.C. (PJM).17 The companies recover transmission service costs pursuant to a transmission formula rate under the PJM OATT. DEO and DEK’s transmission formula rate is incorporated as Attachment H-22 of the PJM OATT. The formula rate template is incorporated as Attachment H-22A of the OATT, and the implementation protocols as Attachment H- 22B. Additionally, DEO and DEK have Commission authorization to sell power at market-based rates outside the DEC and DEP BAAs and Peninsular Florida. 17 The Commission conditionally authorized the move in an order issued October 21, 2010. See Duke Energy Ohio, Inc., 133 FERC ¶ 61,058 (2010). Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation III. Introduction A. Objectives The audit evaluated Duke Companies’ compliance with conditions established in the Merger Order and associated orders on compliance, requirements of each company’s transmission formula rate tariff, and accounting and financial reporting regulations. The audit covered the period January 1, 2011 through January 31, 2016. B. Scope and Methodology Audit staff performed specific actions to facilitate the audit and evaluate compliance with the audit objectives. Audit staff also reviewed the effectiveness of Duke Companies’ compliance program in relation to the audit objectives and other key factors. To address overall audit objectives, audit staff: • Conducted an extensive review of publicly available materials to understand the companies’ corporate structure and organization, operations, financial accounting and reporting activities, and other key regulatory and business activities, both before and after the merger. Examples of materials and documentation reviewed include Commission rules, regulations, and orders, Form No. 1 reports, FERC Form No. 65, Notification of Holding Company Status, formula rate filings, the Commission’s enforcement hotline calls and company self-reports, company-related web sites, and relevant media sources. This also included a review of filings with other government agencies, such as the Securities and Exchange Commission Forms 10-K and 10-Q, Annual and Quarterly Reports; • Evaluated the companies’ internal policies and procedures relevant to the audit objectives; • Conferred with other Commission staff on various compliance issues to ensure audit findings were consistent with Commission precedent and policy. For example, audit staff communicated with staff from other divisions within the Office of Enforcement and staff from the Office of Energy Market Regulation and Office of General Counsel; • Conducted two site visits to Duke Energy’s headquarters in Charlotte, NC. The visits enabled audit staff to further understand the company’s corporate structure, functions, operations, accounting systems and practices, transmission planning and cost-estimating procedures, formula rate, internal audit function, and regulatory and corporate compliance programs. While on site, audit staff Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation interviewed employees and managers responsible for performing tasks within the audit scope, sampled and tested documents to verify compliance with Commission orders related to merger conditions, accounting regulations, financial reporting, transmission formula rates, and related matters. Additionally, audit staff also interviewed compliance program staff, senior officials, internal auditors, and employees who fulfill day-to-day compliance activities for the purposes of carrying out regulatory oversight responsibilities; • Conducted teleconferences to discuss audit objectives and scope, data requests and responses, technical and administrative matters, compliance concerns, and held a closing conference to discuss the completion of audit fieldwork and results; and • Issued data requests to gather information not available through public means. This information related to internal policies and procedures, business practices, reporting activities, corporate compliance, internal and external audit reports, merger order conditions and compliance, transaction and operational data, and other pertinent information. Audit staff used this information as underlying support for testing and evaluating compliance with Commission requirements relevant to the audit scope and objectives. Further, audit staff performed these specific actions to facilitate the testing and evaluation of compliance with relevant requirements for the audit scope areas. A summary of these actions follows. Compliance with Merger Conditions To evaluate compliance with the hold harmless and market power mitigation conditions established in the Merger Order and associated compliance orders, audit staff performed audit fieldwork applicable to the merger. Audit staff performed the following steps: • Reviewed the merger application, supporting testimony and exhibits to understand the context, terms, and conditions of the merger proposal and commitment to hold transmission and wholesale requirements customers harmless from costs of the transaction. Reviewed intervenor comments and protests, and responses to the comments and protests, and also reviewed Duke Companies’ compliance filings, intervenor responses, and answers to the responses; • Evaluated Duke Companies’ responses to Commission staff’s delegated data requests that sought information regarding the merger application and compliance filings; Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation • Examined the companies’ policies and procedures associated with tracking and accounting for merger transaction costs incurred prior to and following consummation of the merger; • Performed a comparative analysis of Duke Energy and Progress Energy’s accounting for costs of the merger prior to and after its consummation and the companies’ policies associated with the accounting; • Reviewed actions taken by the companies to maintain compliance with merger conditions; • Analyzed the companies’ procedures to ensure compliance with hold harmless conditions and to account for merger transaction costs; • Conducted sample-based tests of internal costs and external contracted costs incurred by the companies to assess the accounting for the costs and the impact on wholesale rate determinations; • Obtained information on staff involved in merger activities, including employee names, positions, salaries, work performed on merger activities, and time spent on merger-related activities; • Reviewed documentation and supporting evidence of merger transaction costs and performed substantive tests of sample data; • Inspected reports submitted by Potomac Economics regarding the Rockingham phase shifters and other relevant Commission filings; • Evaluated expenses incurred to repair the Rockingham phase shifters to assess the accounting for the costs and impacts on wholesale rate determinations; and • Examined costs incurred to operate the TEPs – including the Rockingham phase shifters – from 2012 through Q1 2015 to evaluate the accounting used to record cost of activity and the resulting impact on wholesale rate determinations. Furthermore, audit staff conducted the following additional steps to evaluate Duke Companies’ compliance with the market power mitigation conditions: • Reviewed the companies’ contract with Potomac Economics to ascertain whether the independent monitor had sufficient oversight authority and timely Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation access to data needed to monitor compliance with interim and permanent market power mitigation measures; • Examined the quarterly independent monitoring reports prepared by Potomac Economics detailing Duke Companies’ compliance with interim and permanent market power mitigation conditions; • Interviewed personnel responsible for reporting the status of TEP construction to Potomac Economics, and reviewed a sample of email communications between the parties; • Interviewed personnel involved with TEP planning, engineering and design, purchasing and contracting, construction, and project management to verify that the projects were completed as required and to ascertain the amount of labor time employees spent on the projects; • Identified scope changes made to the TEP plans and assessed the impact of changes on project cost and expected performance of the transmission system; • Examined a sample of information that Potomac Economics relied on to conclude that the TEPs were placed into service. This information included data from the supervisory control and data acquisition (SCADA) system on the operation of the constructed projects and associated work orders; • Analyzed photographs of TEP equipment nameplates for asset identification and facility ratings for a sample of major equipment installed, and compared nameplate information to construction work orders and internal company correspondence related to the TEPs; • Reviewed Duke Companies’ written procedures that governed implementation of the power sales agreements required by the Commission’s interim market power mitigation measures. Also, interviewed personnel responsible for developing and implementing the agreements, and reviewed Potomac Economics’ seasonal and event-based reports to the Commission on the company’s performance under the agreements; • Analyzed a sample of transaction data on power sales DEC and DEP made under the power sale agreements and reviewed transmission schedules on the Open Access Same-time Information System (OASIS) to verify the energy was scheduled and delivered; Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation • Interviewed power marketing personnel to gain information on operating procedures and processes used to comply with the requirement to set aside firm transmission capacity on the DEC-DEP interface (i.e., Stub Mitigation requirement); • Reviewed Potomac Economics’ reports on the Stub Mitigation requirement and analyzed a sample of data from OASIS regarding transmission offerings and requests for firm transmission service on the DEC-DEP interface; • Evaluated the DEC-DEP Joint Dispatch Agreement (JDA) and associated operating procedures to understand the methods used to forecast load and determine the mix of generating resources needed to meet load demand on daily and weekly bases; • Interviewed power marketing employees responsible for scheduling power between the DEC and DEP BAAs, and examined a sample of transactions that involved dispatch of generating resources, reserving and scheduling transmission service consistent with the JDA, and operating the respective BAAs separately. Also, tested a sample of OASIS transmission reservations and schedules to evaluate DEC and DEP’s reservations of point-to-point and network transmission service to transmit energy and capacity between the two BAAs; and • Identified instances in which DEC and DEP used network transmission to deliver power to their respective BAAs, and evaluated these transactions to assess compliance with conditions that restricted certain transactions in the BAAs. Transmission Formula Rates To evaluate compliance with the requirements of each company’s transmission formula rate tariff, audit staff: • Reviewed the initial applications filed seeking approval of each company’s transmission formula rate tariff, intervenor responses to the filings, any associated settlement agreements with wholesale customers and interested parties, and the Commission orders that approved the transmission formula rate tariffs; • Examined the transmission formula rate templates and all appendices and attachments used to compute key inputs to the annual transmission revenue requirement and associated formula rate protocols; Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation • Interviewed employees responsible for populating each public utility’s transmission formula rate template, verifying data and calculations, and reviewing and obtaining management approval of the calculated transmission service rates; • Assessed the adequacy of management oversight and verification controls that support performance of key activities; • Evaluated data responses and conducted conference calls to understand the accounting for major items affecting the formula rate, including miscellaneous deferred debits, income taxes, and others. Also, reviewed these items to determine compliance with relevant accounting regulations, instructions, and definitions; • Reviewed annual informational and true-up filings submitted after the initial rate years and during the audit period. Reconciled the Form No. 1 data with formula rate calculations and evaluated discrepancies. Conducted a detailed analysis of supporting worksheets and attachments to evaluate the calculation of transmission formula rate inputs; • Analyzed footnotes included in each company’s Form No. 1 to determine whether information disclosed provided for a reconciliation of publicly available data to balances used to calculate the transmission service rates; • Performed procedures to verify that transmission formula rate inputs were supported by data reported in each company’s Form No. 1; • Evaluated the companies’ accounting for merger transaction costs by assessing documented policies, operating processes, and procedures, and tested a sample of invoices and work orders that included merger activities and associated costs. Analyzed the accounting for the costs and the impact on transmission rate determinations; • Checked plant balances used to calculate transmission revenue requirements, sampled work order charges included in construction work in progress and plant balances, and performed tests on amortized pre-commercial costs; • Tested a sample of depreciation accruals on utility plant to assess the depreciation rates applied to the plant; and Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation • Performed substantive tests on a sample of invoices and work orders that included nonutility expenses, and evaluated the impact of identified misclassified items on transmission rate determinations. Accounting and Reporting To evaluate compliance with the Commission’s accounting and reporting regulations in the USofA under 18 C.F.R. Parts 101 and 141, audit staff performed the following with respect to the merger: • Conducted interviews and teleconferences and met with company staff to discuss accounting policies, procedures, and practices. These interviews included discussions with employees involved in the operation of each public utility subsidiary’s financial accounting systems to assess the adequacy of accounting and reporting oversight controls related to the merger, and employees in leadership positions responsible for day-to-day oversight of merger activities to understand how merger-related labor was reported on timesheets; • Examined procedures for preparing, reviewing, and obtaining management approval of the Form No. 1 reports. Reviewed disclosures in the reports to understand major accounting policies; • Reviewed and evaluated the processes, procedures, and controls the companies used before and after merger consummation to track and account for merger transaction costs; • Evaluated the Form No. 1 and Securities and Exchange Commission 10-K notes and disclosures related to tracking, accounting, and reporting merger transaction costs; • Analyzed the companies’ accounting entries that recorded merger-related labor, goodwill, TEP project costs and impairments, and the income tax effects of the transaction; • Reviewed third-party lobbying expenditure disclosures, press articles, meeting schedules, and agendas of internal lobbyists. Interviewed internal lobbyists and support staff to understand the nature and extent of the companies’ lobbying activities; Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation • Tested a sample of work orders, invoices, and associated accounting detail records that support internal lobbyists’ labor costs incurred; • Assessed the impact on wholesale rates of merger and other costs incurred by the companies that were reported in the Form No. 1; • Tested a sample of FERC accounts for compliance with the Merger Order as well as the companies’ internal policies and procedures; and • Evaluated certain income statement and balance sheet accounts and balances reported in the companies’ Form No. 1 reports for 2012 through 2014. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation IV. Findings and Recommendations 1."
+        },
+        {
+          "number": 31,
+          "text": "Develop and implement written policies, procedures, and controls to ensure proper accounting and reporting of nonutility expenses."
+        },
+        {
+          "number": 32,
+          "text": "Provide training for employees involved in the invoicing process on Commission accounting requirements and the impact of the accounting on cost-of-service rate determinations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation"
+        },
+        {
+          "number": 33,
+          "text": "Within 60 days of receiving the final audit report, provide documentation supporting the analysis performed of invoiced expenses recorded to A&G accounts in 2014 that identified misclassified nonutility expenses included in A&G accounts. Develop an estimate of misclassified nonutility expenses accounted for in operating accounts in 2011 through 2013 and 2015."
+        },
+        {
+          "number": 34,
+          "text": "Implement policies and procedures to provide periodic audits or reviews of A&G transactions by external or internal auditors."
+        },
+        {
+          "number": 35,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, for review to DAA that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper inclusion of identified and estimated nonutility expenses in charges to wholesale power and transmission customers during the audit period, plus interest on the costs; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made. Include the results of the invoice analysis in the refund analysis."
+        },
+        {
+          "number": 36,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 37,
+          "text": "Refund amounts disclosed in the refund report to wholesale power and transmission customers, with interest calculated in accordance with section 35.19a of Commission regulations. Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Duke Energy Corporation Appendix: Duke Energy’s Comments on Audit Report Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Accession #: 20160401-3008 Filed Date: 04/01/2016 Document Content(s) Delegated Letter.PDF......................................................1 Document Accession #: 20160401-3008 Filed Date: 04/01/2016"
+        }
+      ]
+    }
+  ]
+}

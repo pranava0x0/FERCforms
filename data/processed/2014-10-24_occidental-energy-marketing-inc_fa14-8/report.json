@@ -1,0 +1,25 @@
+{
+  "id": "2014-10-24_occidental-energy-marketing-inc_fa14-8",
+  "company": "Occidental Energy Marketing, Inc.",
+  "company_raw": "FA14-8 Occidental Energy Marketing, Inc.",
+  "docket": "FA14-8",
+  "docket_full": null,
+  "issued_date": "2014-10-24",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3018&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20141024-3018",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20141024-3018 (fileID 13666269).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 12,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 0,
+  "findings": []
+}
