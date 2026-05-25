@@ -120,6 +120,7 @@ Never blindly write code. Always follow this loop:
 - **Don't amend pushed commits.** Create new commits — amend rewrites history that may already be on a teammate's machine.
 - **Don't `--no-verify`.** If a hook fails, fix the underlying issue. Hooks exist because someone got burned.
 - **No agent co-authors.** Never add `Co-Authored-By:` lines for AI coding agents (Claude, Copilot, etc.) in commit messages. Commits are owned by the human who reviews and ships the work. Enforce per-repo with `git config --local claude.coauthor false`; set globally once with `git config --global claude.coauthor false` to cover all repos.
+- **Commit identity (use going forward).** Author commits via the GitHub account **`pranava0x0`** with its **noreply** email **`2497510+pranava0x0@users.noreply.github.com`** — attributes to the account without exposing a personal address in public history. Set **both** once — `git config --global user.name "pranava0x0" && git config --global user.email "2497510+pranava0x0@users.noreply.github.com"` — because if `user.name` is left unset git falls back to the OS full name. Agents don't change git config themselves — the human runs this.
 
 ---
 
