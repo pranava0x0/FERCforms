@@ -17,6 +17,7 @@ from datetime import date
 from pathlib import Path
 
 from pipeline import config, llmstxt
+from pipeline.models import AuditReport
 from pipeline.patterns import _themes_for, load_reports, summarize
 
 logger = logging.getLogger(__name__)
@@ -26,6 +27,26 @@ def _write_json(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def build_meta(reports: list[AuditReport], listing: list[dict]) -> dict:
+    """Corpus meta for the site footer / llms.txt.
+
+    Industry counts are computed from the structured `reports` themselves (which
+    are committed and each carry `industry`) — NOT from the gitignored
+    classification.json. That keeps a clean checkout's `pipeline.build` fully
+    reproducible instead of silently writing empty counts.
+    """
+    by_industry = Counter((r.industry or "unknown") for r in reports)
+    return {
+        "generated_at": date.today().isoformat(),
+        "source": config.AUDITS_LISTING_URL,
+        "scope": "FERC utility audits — electric, gas & oil",
+        "reports_total_listed": len(listing),
+        "by_industry_identified": dict(by_industry),
+        "reports_structured": len(reports),
+        "listing_captured_at": listing[0]["captured_at"] if listing else None,
+    }
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     ap = argparse.ArgumentParser(description="Bake docs/data/*.json for the static site")
@@ -33,8 +54,8 @@ def main() -> None:
     args = ap.parse_args()
 
     reports = load_reports(config.PROCESSED_DIR)
-    # Scope: all FERC utility audits — electric (Form 1), gas (Form 2), oil
-    # (Form 6), both financial (FA) and non-financial (PA). See CLAUDE.md.
+    # Scope: all FERC utility audits across the electric, gas, and oil sectors,
+    # both financial (FA) and non-financial (PA). See CLAUDE.md.
     reports.sort(key=lambda r: (r.issued_date or date.min, r.id), reverse=True)
     if not reports:
         logger.warning("no reports structured; run classify + structure first")
@@ -57,20 +78,7 @@ def main() -> None:
     _write_json(args.out / "patterns.json", json.loads(summary.model_dump_json()))
 
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
-    classification_path = config.PROCESSED_DIR / "classification.json"
-    classification = json.loads(classification_path.read_text(encoding="utf-8")) if classification_path.exists() else {}
-    by_industry_identified = Counter(
-        (c.get("industry") or "unknown") for c in classification.values()
-    )
-    meta = {
-        "generated_at": date.today().isoformat(),
-        "source": config.AUDITS_LISTING_URL,
-        "scope": "FERC utility audits — electric, gas & oil",
-        "reports_total_listed": len(listing),
-        "by_industry_identified": dict(by_industry_identified),
-        "reports_structured": len(reports),
-        "listing_captured_at": listing[0]["captured_at"] if listing else None,
-    }
+    meta = build_meta(reports, listing)
     _write_json(args.out / "meta.json", meta)
 
     # LLM-friendly entry points (llms.txt + llms-full.txt) at the site root.
