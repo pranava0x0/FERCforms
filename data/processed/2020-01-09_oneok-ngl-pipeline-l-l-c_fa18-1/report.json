@@ -1,0 +1,106 @@
+{
+  "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
+  "company": "ONEOK NGL Pipeline, L.L.C.",
+  "company_raw": "ONEOK NGL Pipeline, L.L.C. (FA18-1)",
+  "docket": "FA18-1",
+  "docket_full": "FA18-1-000",
+  "issued_date": "2020-01-09",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200109-3025&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200109-3025",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 43,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2015 to December 31, 2018",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Page 700 Reporting",
+      "summary": "ONEOK NGL improperly reported depreciation expense, AFUDC depreciation, and related rate base balances on its Page 700, Annual Cost-of-Service Based Analysis Schedule. Also, ONEOK NGL improperly included Account 187, Construction Work in Progress (CWIP), balances in the calculation of Rate Base – Original Cost on line 5a.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6. The policies and procedures should ensure complete and accurate reporting of Page 700 data."
+        },
+        {
+          "number": 2,
+          "text": "Develop and implement review procedures to ensure that personnel are performing thorough reviews of FERC Form No. 6 information, including Page 700, prior to submittal to the Commission."
+        },
+        {
+          "number": 3,
+          "text": "Provide training on updated processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6."
+        },
+        {
+          "number": 4,
+          "text": "Provide DAA with an analysis assessing the impact of these reporting errors to the FERC Form No. 6 for 2005-2018."
+        },
+        {
+          "number": 5,
+          "text": "Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, 2017, and 2018 that reflects the results of this analysis, including notes that explain the corrections being made."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Carrier Property",
+      "summary": "ONEOK NGL improperly accounted for certain inactive and abandoned pipeline assets as carrier property in Account 30, Carrier Property.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Revise accounting policies and procedures to ensure all components of carrier property, such as abandoned and inactive assets, are properly accounted for in accordance with Commission requirements. The procedures should include established communications protocols among the accounting staff that are responsible for asset retirements and implementation of a secondary review of all changes to carrier property."
+        },
+        {
+          "number": 7,
+          "text": "Reclassify all inactive carrier property recorded in Account 30 that will not be used in ONEOK NGL’s future pipeline operations to Account 34."
+        },
+        {
+          "number": 8,
+          "text": "Reclassify all abandoned pipeline assets recorded in Account 30 to Account 31."
+        },
+        {
+          "number": 9,
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other Lines on Page 700, and provide this analysis to DAA staff for further review. 10.Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, and 2017 that reflects the results of this analysis, including notes that explain the corrections being made."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Scheduling of Nominations",
+      "summary": "ONEOK NGL improperly transported product on its FERC gathering lines under FERC Tariff No. 9 without nominations, which are required under Item No. 45 - Notice of Tenders.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Incorrect Tariff Rate Charge",
+      "summary": "ONEOK NGL improperly accounted for interstate transportation revenues on its North Line pipeline by incorrectly charging an interstate rate, instead of an intrastate rate, from January 2016 to April 2017. As the interstate rate was higher than the intrastate rate, ONEOK NGL overcharged for these deliveries and overstated interstate transportation revenues.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Pipeline Leases",
+      "summary": "ONEOK NGL improperly recorded revenue for the lease of a pipeline asset owned by its affiliate as rental revenue in Account 250, Rental Revenue. The error resulted in overstatements in Account 250 of $3.1 million, $4.2 million, and $4.3 million in 2015, 2016, and 2017, respectively.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Use of Incorrect Depreciation Rates",
+      "summary": "ONEOK NGL improperly applied depreciation rates for carrier property assets that were not approved by and on file with the Commission. As a result, ONEOK NGL overstated depreciation expense and misreported amounts on its Page 700 from 2015- 2017.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

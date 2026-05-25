@@ -1,0 +1,36 @@
+{
+  "id": "2016-04-19_itc-holdings-corporation_fa15-14",
+  "company": "ITC Holdings Corporation",
+  "company_raw": "FA15-14 ITC Holdings Corporation",
+  "docket": "FA15-14",
+  "docket_full": "FA15-14-000",
+  "issued_date": "2016-04-19",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160419-3023&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160419-3023",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160419-3023 (fileID 14209363).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 20,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2011 to December 31, 2015",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "65"
+  ],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Merger-Related Costs",
+      "summary": "The ITC Operating Companies recorded merger-related costs in operating accounts included in the determination of transmission formula rate billings, rather than in Account 426.5, Other Deductions, as required by Commission precedent. The improper accounting led to inappropriate recovery of the merger-related costs in transmission formula rate billings.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "2016-07-15_southwest-power-pool-inc_pa15-6",
+  "company": "Southwest Power Pool, Inc.",
+  "company_raw": "PA15-6 Southwest Power Pool, Inc.",
+  "docket": "PA15-6",
+  "docket_full": "PA15-6-000",
+  "issued_date": "2016-07-15",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160715-3007&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160715-3007",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160715-3007 (fileID 14309533).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 61,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 through June 22, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "SPP RTO Involvement with MMU Operations",
+      "summary": "SPP RTO executives attended MMU meetings with the Oversight Committee, thereby having inappropriate access to information associated with MMU operations. In addition, SPP RTO executives were inappropriately involved in the performance evaluation of the MMU Director, approval of the MMU budget, and compensation adjustments for MMU staff. SPP RTO executives’ participation in the MMU Oversight Committee meetings and involvement in certain MMU operations resulted in an inadequate separation between the MMU and SPP RTO.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Separation of Functions",
+      "summary": "The MMU inappropriately relied on the SPP RTO for legal services, IT resources, and staffing. The MMU’s reliance on SPP RTO for these functions neither fostered the appropriate level of independence nor demonstrated a sufficient separation of functions between the MMU and SPP RTO.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "MMU Shared Staff",
+      "summary": "The MMU did not have a rigorous process in place to ensure that MMU staff members focused on MMU-related activities rather than performing SPP RTO activities unrelated to MMU operations. This practice contributed to a loss of clear separation between the MMU staff and the SPP RTO.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Operational Separation",
+      "summary": "Since the MMU and SPP RTO shared the same physical facilities, the MMU lacked sufficient physical safeguards to preserve the MMU’s independence and ensure adequate separation between itself and SPP RTO to protect against the potential access by SPP RTO of MMU confidential workproducts.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "MMU Involvement with SPP RTO Tariff Formation",
+      "summary": "The MMU did not limit its participation in SPP RTO tariff formation to the advisory role prescribed by the Commission. This resulted in conflicts that led to inefficient MMU and SPP RTO operations.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

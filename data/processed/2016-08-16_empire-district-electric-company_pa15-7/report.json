@@ -1,0 +1,43 @@
+{
+  "id": "2016-08-16_empire-district-electric-company_pa15-7",
+  "company": "Empire District Electric Company",
+  "company_raw": "PA15-7 Empire District Electric Company",
+  "docket": "PA15-7",
+  "docket_full": "PA15-7-000",
+  "issued_date": "2016-08-16",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160816-3031&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160816-3031",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160816-3031 (fileID 14330892).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 29,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2010 through December 31, 2015",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1",
+    "552"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Reporting of Energy and Capacity Sales in the EQR",
+      "summary": "Empire did not report its wholesale sales to four municipalities within Empire’s service territory or wholesale sales made from its hydro facility. As a result, Empire under-reported its sales in its EQRs by $121,910,668 and 2,089,983 MWh during the audit period. These omissions hampered the Commission and interested parties’ ability to review and evaluate Empire’s wholesale sales activity.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accuracy of Data Reported in the EQR",
+      "summary": "Empire’s EQRs during the audit period contained various errors in the contracts and transactions it reported, including incorrect prices, quantities, customers, points of delivery, and affiliate identifications. These errors resulted from the Company’s inadequate oversight of its EQR processes and procedures, hampering the Commission and interested parties’ ability to review and evaluate Empire’s wholesale sales activity.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

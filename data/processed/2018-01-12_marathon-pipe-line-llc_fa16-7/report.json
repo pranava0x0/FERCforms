@@ -1,0 +1,98 @@
+{
+  "id": "2018-01-12_marathon-pipe-line-llc_fa16-7",
+  "company": "Marathon Pipe Line, LLC",
+  "company_raw": "FA16-7 Marathon Pipe Line, LLC",
+  "docket": "FA16-7",
+  "docket_full": "FA16-7-000",
+  "issued_date": "2018-01-12",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3042&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3042",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180112-3042 (fileID 14796785).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 63,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 to September 30, 2017",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Reimbursable Capital Projects",
+      "summary": "Marathon did not credit cash received from MPC to the appropriate carrier property account for reimbursable construction projects. Rather, Marathon improperly recorded the cash received from MPC for reimbursable construction projects in Account 640, Miscellaneous Income. As a result, Marathon overstated its carrier property, depreciation, and revenue accounts reported in the Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Third Party Expenses",
+      "summary": "Marathon did not credit the appropriate operating expense accounts originally charged for reimbursable operating expenses. As a result, Marathon overstated operating expenses and miscellaneous income reported in its Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Affiliate Transaction Markup",
+      "summary": "Marathon improperly accounted for affiliate transaction markups, which represent the difference between cost and fair market value, as operating expenses instead of as nonoperating expenses, as required by Commission accounting regulations. As a result, Marathon overstated operating expenses and carrier property amounts reported on its Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Nonoperating Expenses",
+      "summary": "Marathon improperly accounted for donations and charitable contributions, lobbying activities, and fines and penalties as operating expenses. As a result, Marathon overstated operating expenses reported in its Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Carrier Property",
+      "summary": "Marathon improperly accounted for various carrier property assets. Specifically, Marathon improperly accounted for retirements, idle pipeline assets, and cancelled capital projects.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Interest During Construction",
+      "summary": "Marathon improperly accounted for interest during construction for the Patoka Tank Farm Expansion project in Account 155, Pipeline Construction, instead of recording the associated interest costs to Account 161, Oil Tanks, which was the same carrier property account as the construction costs upon placing those facilities into service, as required by Commission accounting regulations. While this accounting affected the accuracy of the balances in these specific carrier property accounts, it did not affect total carrier property since all carrier property accounts consolidate into Account 30, Ca",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Miscellaneous Accounting Misclassifications",
+      "summary": "Marathon misclassified certain operating expenses during the audit period in the wrong account. While this accounting led to account misclassifications, it did not affect the total operating expenses reported in the Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Miscellaneous Form 6 Reporting Errors",
+      "summary": "Marathon misreported certain items on supporting schedules and various accounts included in its Form 6. Specifically, Marathon misreported information related to miles of pipeline operated, noncarrier property, accumulated deferred income taxes, and oil losses and shortages.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Allocation of Intrastate Activities on Page 700",
+      "summary": "Marathon did not remove intrastate amounts when reporting certain line items on page 700 of its 2015 Form 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Request for Approval to Use Account 705",
+      "summary": "In 2013, Marathon improperly recorded a balance of $9.4 million in Account 705, Prior Period Adjustment to Beginning Retained Earnings, absent Commission approval. In accordance with Commission accounting regulations, Marathon should have filed with the Commission for approval prior to recording amounts in Account 705.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

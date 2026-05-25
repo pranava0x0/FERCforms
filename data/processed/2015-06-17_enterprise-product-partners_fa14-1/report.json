@@ -1,0 +1,97 @@
+{
+  "id": "2015-06-17_enterprise-product-partners_fa14-1",
+  "company": "Enterprise Product Partners",
+  "company_raw": "FA14-1 Enterprise Product Partners",
+  "docket": "FA14-1",
+  "docket_full": "FA14-1-000",
+  "issued_date": "2015-06-17",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3057&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150617-3057",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150617-3057 (fileID 13906964).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 65,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2011 to January 30, 2015",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6",
+    "6-Q"
+  ],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Applying Correct Rates to Intermediate Points",
+      "summary": "MAPL did not apply correct rates to intermediate points for two series of intermediate price movements involving an affiliate on its system from 2011 to 2012. This resulted in an under recovery of revenues of $1.7 million, which MAPL should have reported as affiliated company transactions on page 200, Receivables from Affiliated Companies. This understatement of revenues impacted the Form No. 6 for 2012, including page 700, and used in the calculation of the five-year indexed adjustment.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Depreciation",
+      "summary": "MAPL did not apply Commission-approved depreciation rates uniformly to certain property accounts. MAPL also did not reflect salvage and cost of removal (i.e. net salvage) in its depreciation rates. MAPL’s misapplication of depreciation rates resulted in a higher depreciation expense and larger accumulated reserve totaling $2.3 million. This also resulted in the misstatement of the 2012 and 2013 Form No. 6s depreciation expense and accumulated reserve by approximately $1 million between the income statement and balance sheet for each of those years. This would be included in page 700 and used i",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Reporting of Carrier Depreciation",
+      "summary": "In its 2012 Form No. 6, MAPL’s controls did not detect and correct misreporting of $6,458 of carrier depreciation as noncarrier depreciation. The misreporting of carrier depreciation impacts both the balance sheet and net income totals in the Form No. 6, as well as page 700, and is used in the calculation of the five-year index adjustment.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Charitable Contributions",
+      "summary": "MAPL incorrectly recorded $14,800 in donations and charitable contributions in Account 390, Other Expenses (Operating), and $1,250 in Account 590, Other Expenses (General), instead of in Account 660, Miscellaneous Income Charges, during the audit period. This resulted in an overstatement of operating expenses reported in the Form No. 6, which impacts page 700 and the calculation of the five-year index adjustment.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Outside Vendors",
+      "summary": "MAPL improperly accounted for seven charges to outside vendors in Account 300, Salaries and Wages, instead of in Account 320, Outside Services. This error resulted in the reclassification of approximately $3.6 million from Account 300 to Account 320.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Relocation Expenses",
+      "summary": "MAPL incorrectly recorded $141,000 in relocation expenses in Account 550, Employee Benefits, instead of in Account 390, Other Expenses, or Account 590, Other Expenses, depending on the classification of the employee receiving the relocation services. Since all of the accounts involved in the misclassification of relocation expenses are operating accounts, there is no impact on operating income. Nonetheless, ensuring the appropriate classification of these types of expenses is important to ensure accurate and transparent accounting and reporting.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Damages",
+      "summary": "MAPL incorrectly recorded $5,400 in payments for damages to the property/commodity of others in Accounts: 310, Materials and Supplies; 320, Outside Service; and 350, Rentals, instead of in Account 570. This change in accounting treatment for right-of-way damages will have no impact on the income statement in the Form No. 6 or the calculation used for indexed rates.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Retained Income",
+      "summary": "MAPL improperly transferred retained income in 2013 from Account 73, Additional Paid-in Capital, to Account 75, Unappropriated Retained Income, without the required Commission approval. MAPL should have cleared net income in Account 700, Net Balance Transferred from Income, before recording these amounts directly to Account 75. This accounting error affected certain equity accounts on the balance sheet as reported in the Form No. 6. But it affected neither the totals of the income statement and balance sheet in the Form No. 6, nor the calculation of the five-year index adjustment. It did, howe",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Accounting for Prepaid Leases",
+      "summary": "MAPL misclassified a prepaid lease asset in its books and records in the amount of $1,152,358. MAPL also imposed an unauthorized dollar threshold limitation when amortizing prepaid lease payments. While these accounting treatments do not have a significant impact on its Form No. 6 reporting, its books and records, or its current rates, nevertheless, corrections need to be made to bring MAPL into compliance with Commission accounting guidance.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Cash Management Filing Issue",
+      "summary": "25. Establish written policies and procedures, which ensure appropriate personnel are assigned the responsibility of monitoring compliance with cash management filing requirements. E. Compliance and Implementation of",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "2016-03-30_destin-pipeline-company_fa15-1",
+  "company": "Destin Pipeline Company",
+  "company_raw": "FA15-1 Destin Pipeline Company",
+  "docket": "FA15-1",
+  "docket_full": "FA15-1-000",
+  "issued_date": "2016-03-30",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160330-3003&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160330-3003",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160330-3003 (fileID 13682311).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 50,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 to July 31, 2015",
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2"
+  ],
+  "finding_count": 9,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Reservation Charge Credits",
+      "summary": "Destin’s tariff did not include language consistent with the Commission’s reservation charge crediting policy.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Imbalances",
+      "summary": "Destin improperly accounted for its gas imbalances by recording imbalances payable in Account 254, Other Regulatory Liabilities.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Fuel Used in Compressor Stations",
+      "summary": "Destin did not account for gas volumes furnished to the pipeline by its shippers for compressor fuel and other pipeline system use.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Calculating and Accounting for Lost and Unaccounted-for Gas Quantities",
+      "summary": "Destin neither calculated nor accounted for amounts related to lost and unaccounted-for gas since inception of operations.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting and Reporting of Accumulated Deferred Income Taxes",
+      "summary": "Destin improperly recorded deferred income taxes on its regulatory assets recognized for the equity portion of AFUDC in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. Also, in 2013, Destin improperly removed the balance associated with the deferred income taxes on the equity portion of AFUDC from Account 282. This amount was appropriately recorded and should have remained in Account 282.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting and Reporting Accrued Taxes",
+      "summary": "Destin recorded accrued income taxes in Account 236, Taxes Accrued, but did not record any offsetting entries to reflect income taxes paid by its member companies.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting and Reporting Accruals and Third-Party Reimbursements",
+      "summary": "Destin improperly recorded cost accruals related to construction work in progress in Account 253, Other Deferred Credits. Also, Destin improperly recorded certain nonrefundable reimbursements/advances of costs related to two projects under construction by customers in Account 253, instead of recording these amounts as reductions to Account 107, Construction Work in Progress – Gas.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "BP Management Fees",
+      "summary": "Destin did not recognize an accounts receivable or prepayment at the time it overpaid for services related to a management agreement between it and BP Pipelines (North America), Inc.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Form 2 Reporting",
+      "summary": "Destin did not properly comply with select filing instructions on pages 508-509 and 520 of its Form 2.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

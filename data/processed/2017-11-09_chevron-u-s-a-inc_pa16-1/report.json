@@ -1,0 +1,40 @@
+{
+  "id": "2017-11-09_chevron-u-s-a-inc_pa16-1",
+  "company": "Chevron U.S.A., Inc.",
+  "company_raw": "PA16-1 Chevron U.S.A., Inc.",
+  "docket": "PA16-1",
+  "docket_full": "PA16-1-000",
+  "issued_date": "2017-11-09",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20171109-3042&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20171109-3042",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20171109-3042 (fileID 14753835).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 23,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2014 through August 31, 2017",
+  "industry": "gas",
+  "audit_type": "non-financial",
+  "functions": [],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Price Index Reporting",
+      "summary": "CUSA excluded 27 reportable transactions from its price index reporting submissions during the audit period. The exclusion was an error due to misidentification of reportable and nonreportable transactions.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Form 552 Reporting",
+      "summary": "CUSA improperly reported four transactions on its 2014 Form 552 filing. Also, CUSA improperly applied a reporting threshold used to exclude individual transactions from Form 552 reporting when the volume of the transaction was smaller than 0.05 TBtu per year (or 137 MMBtu per day).",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

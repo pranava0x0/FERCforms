@@ -1,0 +1,48 @@
+{
+  "id": "2016-12-02_calpine-corporation_pa15-5",
+  "company": "Calpine Corporation",
+  "company_raw": "PA15-5 Calpine Corporation",
+  "docket": "PA15-5",
+  "docket_full": "PA15-5-000",
+  "issued_date": "2016-12-02",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161202-3004&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20161202-3004",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20161202-3004 (fileID 14414594).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 35,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 through April 30, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Uplift Payments",
+      "summary": "Calpine submitted inaccurate data to PJM resulting in overpayments of approximately $1.18 million for Lost Opportunity Cost (LOC) uplift credits as well as-yet undetermined Day-Ahead Scheduling Reserve (DASR) overpayments.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "PJM Offer Requirements",
+      "summary": "Calpine included Regional Greenhouse Gas Initiative (RGGI)-related emission costs in its offers from eight RGGI-associated New Jersey combustion turbine (CT) units after those costs were no longer allowable. This resulted in unwarranted increases in certain Operating Reserve (OR)11 credits to these units during this period. However, the units also received Lost Opportunity Cost (LOC) credits, which were lower than they otherwise would have been, due to inclusion of RGGI-related emission costs in their offers. Analysis performed indicate that these foregone lower LOC credits would have effectiv",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "EQR Filing Requirements",
+      "summary": "Calpine made EQR filings containing numerous errors, including: inaccurate uplift payment reporting, missing transactions, and improper class names for the increment denominated “peaking.” These errors inhibit the ability of the Commission and other interested parties to monitor wholesale electricity market activities.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2018-02-21_entergy-gulf-states-louisiana-llc_fa15-10",
+  "company": "Entergy Gulf States Louisiana, LLC",
+  "company_raw": "FA15-10 Entergy Gulf States Louisiana, LLC",
+  "docket": "FA15-10",
+  "docket_full": "FA15-10-000",
+  "issued_date": "2018-02-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3027&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180221-3027",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180221-3027 (fileID 14826909).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 39,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 to December 31, 2014",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "3-Q",
+    "580"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Interim Storage of Spent Nuclear Fuel",
+      "summary": "EGSL incorrectly recorded the costs to purchase and amortize dry casks used for the interim storage of spent nuclear fuel assemblies. As a result, EGSL overbilled its wholesale customers in FAC billings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Nuclear Fuel Fees",
+      "summary": "EGSL incorrectly recorded legal, financing, and audit fees associated with nuclear fuel in Account 518, Nuclear Fuel Expense (Major Only), instead of Account 524, Miscellaneous Nuclear Power Expenses. As a result, EGSL overbilled wholesale customers under its wholesale FAC.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": "EGSL incorrectly recorded lobbying costs associated with industry association dues in an operating expense account in 2012. This misclassification resulted in improper recovery of lobbying activity through EGSL’s transmission formula rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

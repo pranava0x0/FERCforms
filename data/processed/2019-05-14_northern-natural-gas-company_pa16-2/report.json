@@ -1,0 +1,127 @@
+{
+  "id": "2019-05-14_northern-natural-gas-company_pa16-2",
+  "company": "Northern Natural Gas Company",
+  "company_raw": "Northern Natural Gas Company (PA16-2)",
+  "docket": "PA16-2",
+  "docket_full": "PA16-2-000",
+  "issued_date": "2019-05-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190514-3013&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190514-3013",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 49,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "2"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Employee Labor Costs",
+      "summary": "Northern Natural misclassified labor costs of certain departments in administrative and general expense, and operating and maintenance expense accounts. The misclassifications averaging about $2.6 million per year during the audit period, affected the accuracy of expenses reported on Pages 317-325 of Northern Natural’s Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise accounting policies and procedures to account for Gas Control, Right of Way, and Welding and Machining Services labor in accordance with Commission accounting requirements. Also strengthen controls to ensure labor costs are properly recorded for all departments."
+        },
+        {
+          "number": 2,
+          "text": "Make correcting entries to reclassify current year costs associated with: (a) Gas Control labor from Account 920 to Account 851; (b) Right of Way Labor from Account 920 to the appropriate operating or maintenance account; (c) labor of machinists in Welding and Machining Services from Account 853 to the appropriate operating or maintenance account; and (d) labor of any other departments the company has identified as incorrectly classified as a result of the audit. Allocation of Costs to Market-Based Rate Storage Facilities"
+        },
+        {
+          "number": 3,
+          "text": "Strengthen procedures and controls to ensure percentages used to allocate labor and expenses between market- and cost-based storage facilities are reviewed annually and updated, if needed, and adequate documentation of the reviews is retained."
+        },
+        {
+          "number": 4,
+          "text": "Reinforce procedures and controls to ensure amounts reported on Page 217 of Form No. 2 are accurate and adequately supported."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Allocation of Costs to Market-Based Storage Facilities",
+      "summary": "Northern Natural inaccurately allocated payroll costs and never assigned compressor electricity costs to Redfield market-based storage facilities. As a result, Northern Natural overstated market-based storage operating and maintenance expenses reported on Page 217 of Form No. 2 by about $740,000 for the period reviewed.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Allocation of Payroll to Operating and Maintenance Accounts",
+      "summary": "Northern Natural did not maintain sufficient records to support payroll allocations to operating and maintenance expense accounts. As a result, Northern Natural could not demonstrate allocations were based on actual time engaged, or on a study of time engaged during a representative period, as Commission regulations require.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Develop and implement written policies, procedures, and controls governing the annual review and updating of allocation percentages for all cost centers."
+        },
+        {
+          "number": 6,
+          "text": "Revise procedures to require document retention of the annual reviews, including how they take into consideration asset additions and removals, employee changes, and other applicable information."
+        },
+        {
+          "number": 7,
+          "text": "Prepare the review for the current year and provide a copy for audit staff within 120 days of issuance of the final audit report."
+        },
+        {
+          "number": 8,
+          "text": "Adjust the affected operations and maintenance (O&M) accounts in the general ledger and in the Form No. 2, based on results of the review."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allocation of Costs to Construction Overheads",
+      "summary": "Northern Natural did not consistently perform annual surveys and maintain records to support the allocation of employee labor costs to construction overheads. Northern Natural also used an arbitrary percentage from a single budget year to allocate labor costs to overheads, which was inconsistent with Commission accounting instructions and company policy. As a result, Northern Natural could not demonstrate the allocations were based on actual time engaged, or on a study of time engaged during a representative period, as Commission regulations require.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Revise procedures and controls for allocating labor supporting construction. The revised procedures and controls should ensure labor costs are allocated to construction overheads based on actual time card distributions or, where impractical, on periodic representative time studies."
+        },
+        {
+          "number": 10,
+          "text": "Establish procedures and controls to require retention of records supporting the allocation of labor and expenses to construction overheads in accordance with Commission regulations."
+        },
+        {
+          "number": 11,
+          "text": "Conduct time studies to determine hours spent in support of construction by Accounting, Financial Planning, IT Support, and HR employees for the current year. Based on results, adjust allocation percentages and amounts recorded to construction overheads. Provide study results and correcting entries to DAA within 120 days of the date of the final audit report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Operational Gas Sales",
+      "summary": "Northern Natural’s accounting for operational gas sales was inconsistent with Commission regulations governing system gas accounting. Due to the inconsistencies, Northern Natural incorrectly reported the transactions in the Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Revise accounting policies and procedures to properly account for system gas transactions in accordance with Commission accounting regulations."
+        },
+        {
+          "number": 13,
+          "text": "Perform a review of its system gas accounting and revise any accounting found to be inconsistent with Commission accounting regulations and Northern Natural’s revised accounting policies. Submit the results for audit staff’s review within 120 days of the issuance of the final audit report."
+        },
+        {
+          "number": 14,
+          "text": "Make corrective entries to reclassify: (a) accounts payable for imbalances from Account 142 to Account 242; (b) operational sales of gas from Account 483 to Account 495; (c) any other transactions the company has identified as incorrectly classified as a result of the audit."
+        },
+        {
+          "number": 15,
+          "text": "Adjust the comparative financial statements in its next Form No. 2 and disclose the reasons for the changes in the presentation of accounts reclassified. E."
+        }
+      ]
+    }
+  ]
+}

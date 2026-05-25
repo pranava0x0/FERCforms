@@ -1,0 +1,171 @@
+{
+  "id": "2018-12-14_black-hills-corporation_fa16-3",
+  "company": "Black Hills Corporation",
+  "company_raw": "FA16-3 Black Hills Corporation",
+  "docket": "FA16-3",
+  "docket_full": "FA16-3-000",
+  "issued_date": "2018-12-14",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181214-3016&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181214-3016",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20181214-3016 (fileID 15117948).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 39,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 through December 31, 2017",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Payroll Taxes",
+      "summary": "BHP incorrectly accounted for its utility and non-utility operating income payroll taxes. In addition, BHP improperly included payroll taxes in its transmission formula rate calculations. As a result, BHP overstated its transmission formula rate revenue requirement by approximately $862,000 from 2010 to 2015. This resulted in BHP overcharging wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise processes and procedures to ensure BHP properly accounts for payroll taxes consistent with Commission accounting requirements and to properly include payroll taxes in the transmission formula rate."
+        },
+        {
+          "number": 2,
+          "text": "Make correcting entries to record payroll taxes in Accounts 408.1 and 408.2. Revise payroll tax expenses and other impacted account balances in BHP’s books and records."
+        },
+        {
+          "number": 3,
+          "text": "Restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions. The footnotes should include the adjustments by year with an explanation of the revisions."
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of payroll taxes which were inappropriately included in wholesale formula rates since 2010, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to be refunded; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 6,
+          "text": "Refund amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Document Accession #: 20181214-3016 Filed Date: 12/14/2018 Black Hills Power, Inc."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Computer Software and Hardware Costs",
+      "summary": "BHP improperly accounted for software maintenance costs. In addition, BHP recorded interest accruals on software and hardware that were ready for service, which resulted in BHP overstating their costs. BHP included the costs in its transmission formula rate determinations, which resulted in it overstating its transmission formula rate revenue requirement and overcharging wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise its policies and procedures to ensure BHP accounts for software license and maintenance costs consistent with Commission accounting requirements and BHP accrues interest consistent with the Commission’s regulations, as required by AR-5. Also, provide training on the revised policies for relevant employees performing accounting functions."
+        },
+        {
+          "number": 8,
+          "text": "Perform an analysis of all capitalized information technology (IT) projects from 2013 through the date of the final audit report to identify all instances of the inappropriate inclusion of IT maintenance costs and over accrual of interest. Provide the results of the analysis to DAA for review."
+        },
+        {
+          "number": 9,
+          "text": "Make correcting entries to reclassify IT maintenance costs into proper maintenance accounts and remove over-accrued interest. Adjusted accounts should include, but are not limited to, construction work in progress, electric plant in service, depreciation expense, accumulated provision for depreciation, and maintenance expenses."
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of software and hardware costs which were inappropriately included in wholesale formula rates, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to be refunded; and (5) period(s) refunds will be made."
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 12,
+          "text": "Refund amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Legal Expenses",
+      "summary": "BHP improperly accounted for the cost of litigation services received in 2013 by double counting certain expenses. BHP’s accounting impacted cost inputs to the 2014 transmission formula rate true-up and led it to overstate its transmission formula rate revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise existing rate development policies, procedures, and practices to ensure BHP includes in its rate determinations refunds for overbillings to wholesale transmission customers that result from errors corrected in a current rate period that impact past rate periods."
+        },
+        {
+          "number": 14,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculations of the refunds resulting from BHP’s accounting for legal expenses, plus interest; (2) Document Accession #: 20181214-3016 Filed Date: 12/14/2018 Black Hills Power, Inc. determinative components of the refund; (3) refund method; (4) customers to be refunded; and (5) period(s) in which refunds will be made."
+        },
+        {
+          "number": 15,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 16,
+          "text": "Refund amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Miscellaneous Accounting Misclassifications",
+      "summary": "BHP improperly accounted for various expenses in its books and records. These expenses were included in transmission formula rate determinations. As a result, BHP overstated its transmission formula rate revenue requirement and overcharged wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise policies and procedures to ensure that BHP properly accounts for expenditures in its books and records."
+        },
+        {
+          "number": 18,
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report to DAA that explains and details the following: (1) calculation of expenses that were inappropriately recovered through BHP’s transmission formula rate; (2) components of the refund; (3) refund method; and (4) the period(s) in which refunds will be made."
+        },
+        {
+          "number": 19,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+        },
+        {
+          "number": 20,
+          "text": "Refund amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Accounting for Pensions and Post-Retirement Benefits Costs"
+        },
+        {
+          "number": 21,
+          "text": "Revise its policies and procedures to ensure that pension and benefit expenses are recorded in Account 926 and noncurrent liabilities for pensions and benefits are recorded in Account 228.3, as required by the Commission accounting regulations."
+        },
+        {
+          "number": 22,
+          "text": "Make correcting entries to reclassify noncurrent liabilities for pensions and benefits from Account 253 to Account 228.3. Revise pension and benefit expenses and other impacted account balances in the BHP’s books of account and systems."
+        },
+        {
+          "number": 23,
+          "text": "Restate and footnote the balances reported in the FERC Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions. The footnotes should include the adjustments by year with an explanation of the revisions. Document Accession #: 20181214-3016 Filed Date: 12/14/2018 Black Hills Power, Inc."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Pensions and Benefits Costs",
+      "summary": "BHP inappropriately transferred its pension and benefit expenses to various operations and maintenance (O&M) accounts. In addition, BHP improperly accounted for liabilities for the underfunded status of its pension plans in Account 253, Other Deferred Credits, instead of Account 228.3, Accumulated Provision for Pensions and Benefits, as required by the Commission’s regulations. As a result, BHP incorrectly reported its pension and benefit expenses in its FERC Form No. 1.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Cost of Long-Term Debt",
+      "summary": "BHP calculated the cost rate of long-term debt in its 2014 transmission formula rate true-up using a method not consistent with Commission requirements, which resulted in a higher long-term debt cost rate than permitted.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Revise policies and procedures to ensure BHP calculates the weighted cost of long-term debt consistent with the Commission’s required methodology. E."
+        }
+      ]
+    }
+  ]
+}

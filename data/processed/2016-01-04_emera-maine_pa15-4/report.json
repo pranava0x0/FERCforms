@@ -1,0 +1,54 @@
+{
+  "id": "2016-01-04_emera-maine_pa15-4",
+  "company": "Emera Maine",
+  "company_raw": "PA15-4 Emera Maine",
+  "docket": "PA15-4",
+  "docket_full": "PA15-4-000",
+  "issued_date": "2016-01-04",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160104-3018&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160104-3018",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160104-3018 (fileID 14088674).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 31,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 through December 31, 2014",
+  "industry": null,
+  "audit_type": "non-financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Merger-Related Capital Costs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Merger-Related Expenses",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Misclassification of Canceled Stock",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

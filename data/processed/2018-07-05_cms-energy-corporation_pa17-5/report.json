@@ -1,0 +1,49 @@
+{
+  "id": "2018-07-05_cms-energy-corporation_pa17-5",
+  "company": "CMS Energy Corporation",
+  "company_raw": "PA17-5 CMS Energy Corporation",
+  "docket": "PA17-5",
+  "docket_full": "PA17-5-000",
+  "issued_date": "2018-07-05",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180705-3017&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180705-3017",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180705-3017 (fileID 14964860).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 36,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Economic Minimum Limits for Consumers’ Coal Units",
+      "summary": "The Hourly Economic Minimum Limits (Ecomin) Consumers offered for its coal units in the Midcontinent Independent System Operator, Inc.’s (MISO) real-time energy markets did not reflect the actual known physical capabilities and characteristics of the generating resources, as the MISO Open Access Transmission, Energy and Operating Tariff (MISO Tariff) requires. By preventing MISO from dispatching the units below Ecomin in real-time, the offers denied MISO the flexibility to optimize dispatch to reflect the actual marginal cost of energy, and to manage transmission congestion.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Ramp Rates for Consumers’ Coal Units",
+      "summary": "The bi-directional ramp rates Consumers offered for Campbell 2 and Campbell 3 in MISO’s energy markets during the audit period did not reflect the actual known physical capabilities and characteristics of the generating resources, as the MISO Tariff requires.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Economic Minimum Limits for Dearborn Industrial Generation",
+      "summary": "The Hourly Economic Minimum Limits (Ecomin) Energy Resource Management (ERM) offered for Dearborn Industrial Generation, LLC (DIG) in MISO’s day-ahead energy market did not reflect the actual known physical capabilities and characteristics of the generating resource, as the MISO Tariff requires. By preventing MISO from dispatching DIG below Ecomin, the offers denied MISO the flexibility to optimize dispatch to reflect the actual marginal cost of energy, and to manage transmission congestion.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

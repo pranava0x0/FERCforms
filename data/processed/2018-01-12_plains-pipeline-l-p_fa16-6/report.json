@@ -1,0 +1,242 @@
+{
+  "id": "2018-01-12_plains-pipeline-l-p_fa16-6",
+  "company": "Plains Pipeline, L.P.",
+  "company_raw": "FA16-6 Plains Pipeline, L.P.",
+  "docket": "FA16-6",
+  "docket_full": "FA16-6-000",
+  "issued_date": "2018-01-12",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3041&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3041",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180112-3041 (fileID 14796784).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 73,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2013 to September 30, 2017",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 12,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for the Line 901 Oil Spill",
+      "summary": "Plains improperly recorded expenses related to the Line 901 oil spill in Account 610, Operating Expenses, and Account 660, Miscellaneous Income Charges. Based on Commission accounting regulations, Plains should have considered this spill to be material and infrequent, which would have required it to record the expenses in Account 665, Unusual or Infrequent Items. As a result, Plains overstated operating expenses by $70 million and miscellaneous income charges by $15 million in its 2015 Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Implement policies and procedures to ensure the company considers the size of an oil spill and amount of ecological and property damages incurred in determining whether an oil spill is an unusual and/or infrequent event. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P."
+        },
+        {
+          "number": 2,
+          "text": "Update accounting policies and procedures to ensure expenditures related to an oil spill, including those that are unusual, infrequent, or extraordinary, are recorded consistent with Commission accounting regulations."
+        },
+        {
+          "number": 3,
+          "text": "Reclassify amounts improperly recorded in expense accounts and submit revised journal entries."
+        },
+        {
+          "number": 4,
+          "text": "Make a footnote disclosure in the Form No. 6 to disclose the change in account coding for the Line 901 expenses and the impact on the financial statements."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for the Pocahontas Line Oil Spill",
+      "summary": "Plains improperly recorded expenses related to the Pocahontas Station oil spill in Accounts 390, Other Expenses, and 520, Outside Services. Based on Commission accounting regulations, Plains should have recorded these expenses in Account 570, Casualty and Other Losses.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Reclassify amounts improperly recorded in Accounts 390 and 520 to Account 570 and submit revised journal entries."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Prorationing of Nominations",
+      "summary": "Plains did not reduce a shipper’s prorated volumes for the next month when a shipper was unable to tender crude petroleum equal to its allocated trunk space in the previous month, as required by Oil Tariff Item 85, Apportionment When Nominations are in Excess of Facilities. As a result, some shippers should have received more or less capacity than what Plains allocated.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Provide audit staff an analysis assessing the impact to shippers for all months in proration during the audit period."
+        },
+        {
+          "number": 7,
+          "text": "Revise and implement procedures and controls to ensure that jurisdictional transportation service is apportioned equitably among shippers when nominations exceed available capacity on a line segment or system and in accordance with Plains’ tariff on file with the Commission."
+        },
+        {
+          "number": 8,
+          "text": "Train employees how to determine each shipper’s equitable basis when a line segment or system is in proration."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Subsidiary Investments",
+      "summary": "In 2013 and 2014, Plains improperly reported its investments in four wholly owned subsidiaries by using the consolidated instead of the equity method of accounting, as required by the Commission. Consequently, Plains’ financial statements did not appropriately reflect its investments in subsidiary companies and multiple accounts on the Form No. 6 were overstated.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Implement procedures to ensure the company follows the equity method of accounting for all investments in subsidiaries over which it exercises significant influence and to ensure all accounting is consistent with Commission accounting regulations."
+        },
+        {
+          "number": 10,
+          "text": "Make necessary adjustments to ensure that the equity method of accounting is reflected in the company’s reporting of Plains Southcap Inc., Plains South Texas Gathering LLC, Plains Capline LLC, and Diamond Pipeline LLC including requiring the use of worksheets or memorandum accounts."
+        },
+        {
+          "number": 11,
+          "text": "Make a footnote disclosure in the Form No. 6 to disclose the change from the consolidated to the equity method of accounting and the impact on the financial statements. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P."
+        },
+        {
+          "number": 12,
+          "text": "Implement procedures to ensure that questions regarding guidance with unclear interpretation are submitted to the Commission for consideration in accordance with General Instruction 1-11 of the USofA."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Gain or Loss on Sale of Asset",
+      "summary": "Plains improperly recorded gains and losses from the sale of property used in carrier operations in Account 640, Miscellaneous Income, instead of Account 31, Accumulated Depreciation – Carrier Property, as required by Commission accounting regulations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Establish policies and procedures to ensure that dispositions of carrier property are accounted for in accordance with Commission regulations. Include provisions for requesting special accounting treatment when necessary."
+        },
+        {
+          "number": 14,
+          "text": "Record gains and losses from the sale of carrier property in Account 31, Accumulated Depreciation, prospectively."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Inactive and Idle Pipeline Assets",
+      "summary": "Plains improperly accounted for inactive and idle pipeline assets as carrier property.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise accounting policies and procedures to ensure idle carrier property is recorded in Account 34, and reclassify all idle carrier property recorded in Account 30 during the audit period that will not be used in Plains’ future pipeline operations to Account 34."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Nonoperating Expenses",
+      "summary": "Plains improperly accounted for donations and charitable contributions, lobbying activities, and fines and penalties as operating expenses. Since these expenses are nonoperating in nature, Plains should have recorded them in Account 660, Miscellaneous Income Charges.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Implement written procedures to account for, track, report, and review expenses associated with nonoperating activities."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Affiliate Receivables and Payables",
+      "summary": "Plains improperly accounted for affiliate receivables and payables from 2014 to 2015 by combining the balances in Account 63, Other Noncurrent Liability, instead of separately recording the balances in Account 13, Receivables from Affiliated Companies, and in Account 51, Payables to Affiliated Companies. As a result, the Form No. 6 supporting schedules on pages 200, Receivables from Affiliated Companies, and 225, Payables to Affiliated Companies, were not completed as required by Form No. 6 Instructions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Update policies and procedures to ensure affiliate account balances are accounted for consistently with the Commission’s regulations."
+        },
+        {
+          "number": 18,
+          "text": "Record current affiliate receivables and payables in Accounts 13 and 51, respectively, rather than in Account 63 on a prospective basis."
+        },
+        {
+          "number": 19,
+          "text": "Update procedures to ensure that all Form No. 6 schedules, in particular pages 200, Receivables from Affiliated Companies, and 225, Payables to Affiliated Companies, are completed in accordance with Commission instructions."
+        },
+        {
+          "number": 20,
+          "text": "Strengthen procedures for completing the Form No. 6 review instructions prior to submission to reduce the number of errors. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Accounting for Affiliate Expenses on Plains’ Books",
+      "summary": "Plains improperly recorded settlements totaling $212,550 on its books that were actually paid by affiliates, Plains All-American Pipeline, L.P. and Plains Marketing, L.P. The error resulted in operating expenses being overstated on Plains’ Form No. 6 by $100,000 in 2013 and $112,500 in 2014.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Implement policies, procedures, and controls to ensure that only Plains’ activities are recognized on Plains’ books."
+        },
+        {
+          "number": 22,
+          "text": "Reclassify the miscoded settlement payments recorded on Plains’ books to the entity incurring or recognizing the settlement."
+        },
+        {
+          "number": 23,
+          "text": "Record settlement payments in Account 660, Miscellaneous Income Charges."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Use of FERC-Approved Depreciation Rates",
+      "summary": "Plains used depreciation rates for carrier property assets that were not filed with the Commission. Therefore, Plains improperly applied unapproved depreciation rates to calculate depreciation and amortization expenses for those assets, and included them in its annual cost-of-service rate determinations and billings to transportation shippers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Establish procedures and controls to ensure that Plains uses Commission- approved depreciation rates for all carrier property assets (or accounts)."
+        },
+        {
+          "number": 25,
+          "text": "Use Commission-approved depreciation rates to calculate the depreciation expense included in the annual cost-of-service determinations, or timely file a request pursuant to Part 347 of the Commission’s regulations."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "FERC Form No. 6 Reporting Schedules",
+      "summary": "Plains did not complete certain Form No. 6 reporting schedules during the audit period, as required. In addition, Plains incorrectly recorded net income in Account 73, Additional Paid-In Capital, instead of in Account 700, Net Balance Transferred from Income. Although this led to account misclassifications, it did not impact amounts reported on Page 700 of the Form No. 6. Nonetheless, appropriate account classification is important to ensure accurate and transparent accounting and reporting.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Update procedures to ensure that all Form No. 6 schedules are completed in accordance with Commission instructions."
+        },
+        {
+          "number": 27,
+          "text": "Strengthen procedures for completing the Form No. 6 review instructions prior to submission to eliminate errors."
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Filing of Approval of Acquisition Journal Entry",
+      "summary": "Plains did not file journal entries with the Commission for consideration and approval related to a property acquisition in the amount of $10 million in 2015, as required by 18 C.F.R. Part 352, Instruction for Carrier Property Accounts 3-11, Acquisition by Merger, Consolidation, or Purchase.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Establish policies and procedures to ensure that acquisitions of properties comprising a distinct operating system, or an integral portion thereof, are accounted for in accordance with Commission regulations, including submitting tentative journal entries to the Commission for approval when the purchase price exceeds $250,000. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P. Other Matters Cost Allocation"
+        },
+        {
+          "number": 29,
+          "text": "Perform a study for its shared service cost allocation percentages to ensure that costs are reasonably and equitably allocated among the three reporting segments. Allowance Oil Inventory"
+        },
+        {
+          "number": 30,
+          "text": "Enhance transparency of the availability of allowance oil inventory volumes. E."
+        }
+      ]
+    }
+  ]
+}

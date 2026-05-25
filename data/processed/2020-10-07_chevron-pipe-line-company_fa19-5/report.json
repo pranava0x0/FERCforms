@@ -1,0 +1,138 @@
+{
+  "id": "2020-10-07_chevron-pipe-line-company_fa19-5",
+  "company": "Chevron Pipe Line Company",
+  "company_raw": "Chevron Pipe Line Company (FA19-5)",
+  "docket": "FA19-5",
+  "docket_full": "FA19-5-000",
+  "issued_date": "2020-10-07",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201007-3010&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201007-3010",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 48,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2014 to December 31, 2018",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Depreciation Rates and Reserve Balances",
+      "summary": "CPL’s accounting and financial reporting for depreciation included several deficiencies affecting depreciation expense and reserve balances and the accuracy of the Annual Cost of Service Based Analysis Schedule on Page 700 of CPL’s FERC Form No. 6 filings. Specifically, CPL:  Did not use Commission-approved depreciation rates to determine depreciation expense. Instead, CPL used slightly higher depreciation rates than the depreciation rates last approved by the Commission, resulting in increased depreciation expense and depreciation reserve balances.  Incorrectly continued to accrue depreciat",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Create procedures and controls to ensure depreciation rates remain relevant and applicable, and to make timely revisions when property accounts become fully accrued. Also strengthen procedures and controls to ensure that CPL applies Commission-approved rates to depreciate all carrier property assets and ceases accruing depreciation when assets accounts become fully depreciated."
+        },
+        {
+          "number": 2,
+          "text": "Conduct a depreciation study that reflects current economic conditions and includes other factors, including net salvage and interim retirements. Based on this study, determine whether to continue using CPL’s current Commission-approved depreciation rates to calculate the depreciation expense pursuant to Part 347, or to timely file a request to change depreciation rates pursuant to General Instruction 1-8."
+        },
+        {
+          "number": 3,
+          "text": "Submit a copy of this depreciation study to the Commission within 30 days of completion. CPL should also make appropriate changes to its existing depreciation rates when proposed revised rates are approved or modified by the Commission."
+        },
+        {
+          "number": 4,
+          "text": "Submit any necessary accounting entries supporting any proposed adjustments within the accrued depreciation accounts to DAA for review within 30 days of the Commission accepting CPL’s proposed depreciation rates. Upon approval from DAA, make needed accounting entries within 30 days."
+        },
+        {
+          "number": 5,
+          "text": "Provide worksheet(s) showing the effect and adjustment made to each component on Page 700 of the FERC Form No. 6."
+        },
+        {
+          "number": 6,
+          "text": "Upon receiving DAA staff’s review and response to CPL’s accounting entries and worksheets, restate and footnote the balances reported in the FERC Form No. 6 in the current and comparative years of the report, including all schedules affected, to reflect and disclose the revisions made."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Inactive and Idle Property",
+      "summary": "CPL improperly accounted for inactive and idle pipeline assets as carrier property rather than noncarrier property. This affected the accuracy of amounts reported in carrier and noncarrier property and depreciation accounts, and resulted in CPL overstating rate base and depreciation expense on Page 700 in its 2018 FERC Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Update accounting policies and procedures to ensure that inactive and idled pipeline assets are accounted for as noncarrier property consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 8,
+          "text": "Reclassify all inactive and idled pipeline assets recorded in Account 30 that will not be used in CPL’s future pipeline operations to Account 34, and reclassify the related accrued depreciation from Account 31 to Account 35. Submit accounting entries supporting adjustments within the carrier and noncarrier property accounts to audit staff for review within 30 days of issuance of this audit report. Upon approval from DAA, make accounting entries supporting this adjustment within 30 days."
+        },
+        {
+          "number": 9,
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other lines on Page 700, and provide this analysis to DAA staff for further review."
+        },
+        {
+          "number": 10,
+          "text": "Upon receiving DAA staff’s review and response, restate and footnote the balances reported in the FERC Form No. 6 in the current and comparative years of the report, including all schedules affected, to reflect and disclose the revisions made."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Noncarrier Property Revenues, Expenses, and Net Income",
+      "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Establish policies and procedures to ensure that revenues, expenses, and net income associated with noncarrier property are accounted for and reported in accordance with the Commission’s accounting regulations."
+        },
+        {
+          "number": 12,
+          "text": "Strengthen procedures to ensure personnel responsible for completing and reviewing the FERC Form No. 6 follow the instructions for completing the schedules prior to submission, to eliminate errors."
+        },
+        {
+          "number": 13,
+          "text": "Reclassify revenues and expenses associated with noncarrier property to Account 620 for the current year. Submit a copy of the journal entries to DAA within 30 days of the issuance of this report."
+        },
+        {
+          "number": 14,
+          "text": "Restate and footnote the income statement balances reported in the FERC Form No. 6 in the current and comparative years of the report for Accounts 600, 610, and 620, including all schedules affected, to reflect and disclose revisions made."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Legal Settlements and Regulatory Fees",
+      "summary": "CPL improperly accounted for legal settlements relating to employment discrimination claims as an operating rather than nonoperating expense. CPL also improperly accounted for regulatory fees paid to a federal agency in the wrong operating expense account. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Update policies and procedures to ensure employee discrimination claim settlement payments and regulatory fees are accounted for consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 16,
+          "text": "Record employee discrimination claim settlement payments in Account 660, Miscellaneous Income Charges, and record regulatory fees, such as PHMSA user fees, in Account 590, Other Expenses, prospectively."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Reporting of Interstate Operating Revenues",
+      "summary": "CPL omitted reporting some jurisdictional interstate operating revenues on Page 700 of its 2017 FERC Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Develop procedures and controls to ensure pipeline systems sold are appropriately removed from the FERC Form No. 6 Page 700."
+        },
+        {
+          "number": 18,
+          "text": "Strengthen processes to ensure employees perform adequate reviews of interstate operating revenues reported on Page 700 data. E."
+        }
+      ]
+    }
+  ]
+}

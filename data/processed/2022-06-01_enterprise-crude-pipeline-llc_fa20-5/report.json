@@ -1,0 +1,194 @@
+{
+  "id": "2022-06-01_enterprise-crude-pipeline-llc_fa20-5",
+  "company": "Enterprise Crude Pipeline LLC",
+  "company_raw": "Enterprise Crude Pipeline LLC (FA20-5)",
+  "docket": "FA20-5",
+  "docket_full": "FA20-5-000",
+  "issued_date": "2022-06-01",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220601-3039&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220601-3039",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 79,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2014 to December 31, 2018",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Interstate Allocation Percentage",
+      "summary": "ECPL incorrectly included barrel-miles for intrastate transportation movements, pump-over services, and a pipeline segment it did not own in its interstate allocation percentage. These errors caused ECPL to overstate its total cost of service, barrels, and barrel-miles, reported on Page 700 of its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should have excluded, to the extent practicable, costs associated with its terminal and pipeline system facilities that were used solely to su",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise and strengthen policies and procedures to ensure that Page 700 is prepared and reported in a manner consistent with Order Nos. 620 and 620-A and the FERC Form No. 6 instructions. Specifically, ECPL should only include interstate barrel-miles in the numerator and total system barrel-miles in the denominator. ECPL’s procedures should also where practicable exclude barrel-miles, cost of assets, and expenses associated with its terminal and storage facilities and 100 percent intrastate transportation pipeline systems in the development and application of the interstate allocation percentage."
+        },
+        {
+          "number": 2,
+          "text": "Train staff on the revised computation, policies, and procedures for calculating ECPL’s interstate allocation percentage, which is used to derive input balances reported on Page 700, Lines 1-5. The training should also include discussion of the findings of this audit report. Provide the training periodically as needed."
+        },
+        {
+          "number": 3,
+          "text": "Provide an analysis that shows the resulting changes to Page 700 from making the corrections described in this finding, including workpapers reflecting the underlying calculations made. Submit this analysis to DAA within 90 days of the issuance of this audit report. 2 On July 1, 2019, ECPL transferred its interstate assets to EIC; therefore, all of the recommendations contained in this report apply to EIC. At that time, ECPL was no longer a FERC jurisdictional entity as its business involved only intrastate transportation and FERC non-jurisdictional terminal and storage activities subsequent to the transfer."
+        },
+        {
+          "number": 4,
+          "text": "Restate and footnote Page 700 of ECPL’s FERC Form No. 6 for the year(s) affecting the Commission’s next five-year index review. For those year(s), refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page"
+        },
+        {
+          "number": 700,
+          "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Pipeline Loss Allowance and Gravity Shrinkage Revenues",
+      "summary": "ECPL incorrectly omitted PLA and GSD revenues recorded in Account 230, Allowance Oil Revenues, from Page 700, Line 10, Interstate Operating Revenues. This resulted in ECPL understating its annual interstate operating revenues on Page 700. The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise and strengthen financial reporting policies and procedures to ensure that PLA and GSD revenues are appropriately reported as interstate operating revenues on Page 700, Line 10."
+        },
+        {
+          "number": 6,
+          "text": "Train staff on revised policies and procedure for reporting interstate operating revenues on Page 700, Line 10, and provide periodic training, as needed."
+        },
+        {
+          "number": 7,
+          "text": "Ensure all future FERC Form No. 6 submissions reflect ECPL’s revised PLA and GSD procedures."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Idled Pipeline Segments",
+      "summary": "ECPL represented that it classified the majority of the assets associated with its pipeline segments in Account 30, Carrier Property, except for a few assets, which ECPL recorded in Account 34, Noncarrier Property. ECPL explained that it transferred these assets from Account 30 to Account 34 because there was no definite plan in place to support the future use of these assets in carrier operations. However, upon further review, audit staff determined ECPL misclassified other idled pipeline segments that did not have a definite plan for future carrier service in Account 30, as summarized below.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise accounting policies and procedures to ensure that all components of ECPL’s property, including idled pipeline segments, are properly accounted for and reported in accordance with Commission requirements. The procedures should include established communication protocols and implementation of a review process to ensure proper account classification of idled pipeline segments, including proper accounting for asset impairments at the time that the impairment determination is made."
+        },
+        {
+          "number": 9,
+          "text": "Reclassify all idled pipeline segments recorded in Account 30 that are not held for future carrier service within a reasonable time under a definite plan for pipeline operations to Account 34, and accrued depreciation from Account 31 to Account 35. Submit proposed accounting entries supporting adjustments within the carrier and noncarrier property accounts to DAA for review within 30 days of issuance of this final audit report. Upon receiving approval from DAA, make the approved accounting entries supporting this adjustment within 30 days."
+        },
+        {
+          "number": 10,
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other lines on Page 700, and provide this analysis to DAA audit staff for further review."
+        },
+        {
+          "number": 11,
+          "text": "Restate and footnote Page 700 of ECPL’s FERC Form No. 6 for the year(s) affecting the Commission’s next five-year index review. For those year(s), refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page"
+        },
+        {
+          "number": 700,
+          "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting and Reporting of Depreciation",
+      "summary": "ECPL did not use Commission approved depreciation rates, incorrectly applied the group method to calculate depreciation expense, over accrued depreciation reserve balances for some accounts, and incorrectly derived depreciation expense. These errors caused ECPL to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in ECPL including incorrect amounts in its cost of service reported on Page 700 since 2010.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Strengthen procedures and controls to ensure that it uses Commission- approved depreciation rates and the composite method to derive depreciation expense for all carrier property asset accounts and ceases accruing depreciation when asset accounts become fully accrued."
+        },
+        {
+          "number": 13,
+          "text": "Conduct a depreciation study that reflects current economic conditions and other factors, including net salvage and interim retirements. Based on this study, determine whether to continue using ECPL’s current depreciation rates to calculate the depreciation expense pursuant to Part 347, or make a filing to request a change in depreciation rates pursuant to GI 1-8."
+        },
+        {
+          "number": 14,
+          "text": "Submit a copy of this depreciation study to the Commission within 30 days of completion. ECPL should use the composite method of depreciation as required by GI 1-8, unless it receives Commission approval to use another method of depreciation. ECPL should also make appropriate changes to its existing depreciation rates only when proposed rates are approved or modified by the Commission."
+        },
+        {
+          "number": 15,
+          "text": "Perform an analysis of Account 31, Accumulated Depreciation – Carrier Property, to determine the impacts these errors had on the balance in this account. This analysis should include any adjustments made to correct this account balance for ECPL’s use of unapproved depreciation rates, component method of depreciation, over accrual of asset accounts, and improper calculation of depreciation expense. Submit this evaluation and any proposed adjusting entries to DAA within 90 days of the issuance of this audit report."
+        },
+        {
+          "number": 16,
+          "text": "File for approval of accounting entries for a prior period adjustment if deemed material in accordance with 18 C.F.R. Part 352, GI 1-6. Upon approval from the Commission, make accounting entries supporting this adjustment within 30 days."
+        },
+        {
+          "number": 17,
+          "text": "Provide worksheet(s) showing the effect and adjustment made to each component on Page 700 of the FERC Form No. 6 as a result of the analysis performed in Recommendation No. 15."
+        },
+        {
+          "number": 18,
+          "text": "Restate and footnote Page 700 of ECPL’s FERC Form No. 6 for the year(s) affecting the Commission’s next five-year index review. For those year(s), refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page"
+        },
+        {
+          "number": 700,
+          "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Non-Operating Expenses",
+      "summary": "ECPL incorrectly classified (1) administrative and general expenses, (2) a civil penalty, and (3) lobbying expenses as operating expenses rather than as non-operating expenses. While these errors did not affect net income, they resulted in ECPL overstating Page 700, Line 1, Operating and Maintenance Expenses, during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Update policies and procedures to ensure that administrative and general expenses of affiliated pipelines recorded on ECPL’s books, civil penalties, and lobbying expenses are accounted for as non-operating expenses consistent with Commission accounting requirements. These procedures should also cover other non-operating expenditures besides those identified."
+        },
+        {
+          "number": 20,
+          "text": "Train staff on the revised accounting for non-operating expenses and updated policies and procedures, and provide periodic training as needed."
+        },
+        {
+          "number": 21,
+          "text": "Submit a copy of a recent journal entry supporting the reclassification of administrative and general expenses, civil penalties, and lobbying expenses from operating to non-operating expense accounts to DAA within 30 days of issuance of this audit report."
+        },
+        {
+          "number": 22,
+          "text": "Restate and footnote Page 700 of ECPL’s FERC Form No. 6 for the year(s) affecting the Commission’s next five-year index review. For those year(s), refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page"
+        },
+        {
+          "number": 700,
+          "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "FERC Form No. 6 Reporting",
+      "summary": "ECPL incorrectly reported and calculated the AFUDC input on Page 700 and misreported barrels and barrel-miles for one pipeline segment on Pages 600-603. These errors reduced the accuracy, transparency, and usefulness of ECPL’s FERC Form No. 6 submissions.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Revise and strengthen policies and procedures to ensure that Page 700 is prepared and reported in a manner consistent with Opinion No. 154-B and the instructions of the FERC Form No. 6. These instructions include developing procedures to calculate AFUDC on monthly expenditures and for the actual length of construction periods; maintaining records of the monthly construction expenditures; and excluding ineligible costs. These policies and procedures should also revise and strengthen the reporting of barrels and barrel-miles on Page 600-603 to ensure accurate reporting."
+        },
+        {
+          "number": 24,
+          "text": "Provide to audit staff the revised FERC Form No. 6 Pages 600-603 and Page 700 policies and procedures and provide periodic training, as needed."
+        },
+        {
+          "number": 25,
+          "text": "Restate and footnote Page 700 of ECPL’s FERC Form No. 6 for the year(s) affecting the Commission’s next five-year index review. For those year(s), refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page"
+        },
+        {
+          "number": 700,
+          "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures. E."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
+  "company": "Maritimes & Northeast Pipeline, L.L.C.",
+  "company_raw": "Maritimes & Northeast Pipeline, L.L.C. (FA19-9)",
+  "docket": "FA19-9",
+  "docket_full": "FA19-9-000",
+  "issued_date": "2020-11-12",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201112-3002&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201112-3002",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 64,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2017 to December 31, 2018",
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2",
+    "501-G"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allocation of Labor Burden and Overhead Costs to Capital Projects",
+      "summary": "Maritimes did not record labor burden and overhead costs to capital projects based on actual costs as required by the Commission. Instead, Maritimes used allocation percentages, for which it did not perform timely studies and maintain appropriate records. This prevented audit staff from verifying whether the allocation percentages used to reimburse affiliates were reasonable and representative of actual costs.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Create policies and procedures to directly assign costs to capital projects or perform periodic studies of actual labor costs to ensure allocation percentages are reasonable and representative of actual costs, in accordance with General Instruction No. 9 (GI No. 9) and Gas Plant Instruction No. 4 (GPI No. 4)."
+        },
+        {
+          "number": 2,
+          "text": "Revise policies, procedures, and controls to ensure it maintains all records of studies supporting allocation percentages in accordance with General Instruction No. 2 (GI No. 2), if direct assignment of costs is impractical for capital projects."
+        },
+        {
+          "number": 3,
+          "text": "Directly assign costs for capital projects; however, if direct assignment of costs is deemed impractical, Maritimes should provide the evaluation it conducted to make this determination. Subsequently, conduct a study to support the allocation percentages that Maritimes determines should be used to reimburse its affiliates for labor burden and overhead costs. Provide study results, including supporting documentation, to DAA within 90 days of receiving the final audit report."
+        },
+        {
+          "number": 4,
+          "text": "Based on the study results, if the 100 and 130 percentage factors previously used are determined to be unreasonable or excessive compared to the results of the study, then adjust plant in service and other affected account balances for those amounts in accordance with GI No. 2(E) for the affected periods. Submit journal entries, calculations, and other supporting documentation within 30 days of receiving audit staff approval of the study performed and its results."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Reporting of O&M Expenses for Incremental Rate Projects",
+      "summary": "Maritimes did not perform a study to support the allocation percentage used to assign O&M expenses to its incremental rate projects. Absent a study, audit staff could not determine whether this allocation percentage was reasonable and representative of the actual O&M expenses assigned to incremental rate projects. Maritimes also improperly aggregated maintenance expenses with operating expenses, rather than separately reporting these expenses for its incremental rate projects in its FERC Form No. 2. This reduced the accuracy and completeness of these expenses reported for Maritimes’ incrementa",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise policies and procedures to ensure FERC Form No. 2 Pages 217- 217a are completed in accordance with the reporting instructions, including separately reporting maintenance expenses from operating expenses."
+        },
+        {
+          "number": 6,
+          "text": "Conduct a study to support the allocation percentage used for assigning O&M expenses that are not directly assigned to incremental rate projects. Provide the study results, including supporting documentation, to DAA within 90 days of the receiving the audit report."
+        },
+        {
+          "number": 7,
+          "text": "Train relevant staff on the revised methods to account for expenses related to incremental rate facilities and provide periodic training, as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Nonoperating and Unrelated Expenses",
+      "summary": "Maritimes’ affiliates allocated to Maritimes certain nonoperating expenses and costs that had no relationship to its interstate pipeline operations, which Maritimes improperly recorded in operating expense accounts. Operating expenses are recoverable, while nonoperating and unrelated expenses are generally nonrecoverable from customers in cost of service rates. Therefore, recording these expenses improperly imposes a risk of including and recovering these expenses in future cost of service rate determinations.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise policies, procedures, and controls to track, review, and account for nonoperating expenses and for expenses unrelated to its business allocated to it by affiliates consistent with Commission requirements."
+        },
+        {
+          "number": 9,
+          "text": "Provide a recent journal entry and supporting documentation that demonstrate that the accounting misclassifications identified in this finding have been corrected and the related costs are now recorded in accordance with the Commission’s accounting requirements."
+        },
+        {
+          "number": 10,
+          "text": "Perform an analysis of expenses allocated to Maritimes by its affiliates to identify all nonoperating and other expenses unrelated to Maritimes’ business operations that were incorrectly recorded as operating expenses by Maritimes during the audit period. This analysis should capture expenses in addition to those already identified during and subsequent to the audit period. Within 90 days of the date of the final audit report, provide results of the analysis, proposed correcting entries, and all applicable work papers supporting the analysis, to DAA."
+        },
+        {
+          "number": 11,
+          "text": "Train relevant staff on the revised methods to account for nonoperating expenses and unrelated expenses and provide periodic training, as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Operating Expenses",
+      "summary": "Maritimes improperly accounted for certain operating expenses, such as transmission operating expenses, regulatory activities, and legal fees, in a manner inconsistent with Commission’s accounting regulations. While these accounting misclassifications had no impact on total operating expenses, the misclassifications nevertheless reduced the accuracy and transparency of operating expenses as reported in Maritimes’ FERC Form No. 2 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Revise policies, procedures, and controls to track, report, review, and account for administrative and general (A&G) and operating expenses consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 13,
+          "text": "Provide a recent journal entry, and supporting documentation, which demonstrates that the identified accounting misclassifications are now recorded in accordance with the Commission’s accounting regulations."
+        },
+        {
+          "number": 14,
+          "text": "Train relevant staff on the revised methods to account for A&G and operating expenses and provide periodic training as needed."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "FERC Form No. 2 Reporting",
+      "summary": "Maritimes did not report complete information as required in certain supporting schedules of its 2017 and 2018 FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 2.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 2 in accordance with the instructions of the report."
+        },
+        {
+          "number": 16,
+          "text": "Review the reporting deficiencies with relevant staff to ensure they include on a prospective basis all required information in the FERC Form No. 2."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Fuel Retainage Quantity Filings",
+      "summary": "Maritimes misreported the deferred fuel balance and negative LAUF in its annual Fuel Retainage Quantity filings. Maritimes also did not separately break out its deferred fuel balance from other activities reported on Page 268, Miscellaneous Current and Accrued Liabilities, in its FERC Form No. 2 reports. These oversights reduced the accuracy and the usefulness of Maritimes’ Fuel Retainage Quantity filings and FERC Form No. 2 reports for shippers and other stakeholders during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Revise procedures and controls to ensure that Maritimes calculates, and reports deferred fuel balances consistently with section 20 of its Tariff."
+        },
+        {
+          "number": 18,
+          "text": "Update procedures to ensure that positive and negative LAUF are included as a component of Customer Use Gas in the projected fuel retainage percentage (FRP) calculation of its annual fuel filings, on a prospective basis. Also, provide footnote disclosures in the annual fuel filing as needed to increase transparency."
+        },
+        {
+          "number": 19,
+          "text": "Discuss the procedural changes that resulted in an over collection in deferred fuel balance with shippers. Maritimes should provide DAA with documentation to support that these discussions occurred and the outcome with shippers before its next fuel retainage quantity filing."
+        },
+        {
+          "number": 20,
+          "text": "Inform Maritimes’ staff that prepares the supporting schedule for Account 242 of the FERC Form No. 2 to break out each activity comprising the account balance according to the reporting threshold amount required by the instructions, including breaking out Maritimes’ cumulative deferred fuel balance when it exceeds the reporting threshold."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Reservation Charge Crediting",
+      "summary": "Section 8 of Maritimes’ Tariff contained general terms and conditions that were inconsistent with the Commission’s reservation charge crediting policy. Maritimes also improperly included references to maintenance activities in the force majeure definition in section 26 of its Tariff. Making these tariff terms and conditions consistent with the Commission’s policy will ensure that shippers are properly credited reservation charges for force majeure and non-force majeure events.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Revise policies and procedures to establish and maintain compliance with Commission’s reservation charge crediting requirements."
+        },
+        {
+          "number": 22,
+          "text": "File tariff revisions made to its reservation charge crediting provisions for force majeure and non-force majeure events in sections 8.8 and 8.9 of its Tariff, and remove (i) maintenance activities from its definition of a force majeure event and (ii) any restrictions on non-force majeure events from its definition of non-force majeure event, in section 26 of its Tariff. File these tariff revisions with the Commission within 60 days of the issuance of this report."
+        },
+        {
+          "number": 23,
+          "text": "Make an informational posting to inform shippers of the revisions made to tariff sections 8.8, 8.9, and 26. F."
+        }
+      ]
+    }
+  ]
+}

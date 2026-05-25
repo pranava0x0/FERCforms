@@ -1,0 +1,148 @@
+{
+  "id": "2017-02-01_nv-energy-inc_pa15-2",
+  "company": "NV Energy, Inc.",
+  "company_raw": "PA15-2 NV Energy, Inc.",
+  "docket": "PA15-2",
+  "docket_full": "PA15-2-000",
+  "issued_date": "2017-02-01",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170201-3016&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170201-3016",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170201-3016 (fileID 14480359).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 58,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 through September 30, 2016",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "580"
+  ],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Merger Costs",
+      "summary": "Nevada Power and Sierra Pacific accounted for merger transaction costs in operating accounts, contrary to the directives of the Merger Order and long-standing Commission policy that such costs be recorded in nonoperating accounts. This accounting resulted in the companies misrepresenting utility operating income and expenses reported in their respective Form No. 1 reports.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Asset Retirement Obligations",
+      "summary": "Summary of Proposed Finding and",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Revise accounting policies and procedures to properly account for measurement changes related to asset retirement obligations (ARO)."
+        },
+        {
+          "number": 5,
+          "text": "Perform an evaluation of the ARO-related regulatory assets to determine whether the items continue to meet the criteria for deferral as regulatory assets, and provide the evaluation to DAA within 60 days of receiving the final audit report. Regulatory assets associated with negative ARO assets that are no longer probable for recovery in future rates due to write-downs of the related ARO liabilities and assets should be reduced by the negative ARO asset balance and offset by increasing the ARO asset balance to zero."
+        },
+        {
+          "number": 6,
+          "text": "Within 60 days of receiving the final audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the removal of ARO asset- and liability-related depreciation and accretion expense amounts from the regulatory asset accounts no longer probable for recovery in future rates. Also, remove corresponding amounts of the negative ARO asset balances from the plant accounts."
+        },
+        {
+          "number": 7,
+          "text": "Revise ARO and regulatory asset balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Trust Funds",
+      "summary": "Summary of Proposed Finding and",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Establish and implement procedures to account for temporary renewable energy development (TRED) trust fund deposits in accordance with Commission regulations."
+        },
+        {
+          "number": 9,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of the special-purpose TRED funds deposited in the external trust from Account 165, Prepayments, to Account 128, Other Special Funds, for review within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 10,
+          "text": "Revise prepayment and other special-fund balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "AFUDC Rate Calculation and Application to Construction Costs",
+      "summary": "Summary of Proposed Finding and",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise policies and procedures, and reconfigure accounting systems used to calculate AFUDC rates consistent with the requirements of Electric Plant Instruction (EPI) No. 3.A.(17), Allowance for Funds Used During Construction. Among other things, the revisions should include processes to prevent inclusion of unpaid contract retention accruals and of goodwill in AFUDC rate calculations."
+        },
+        {
+          "number": 12,
+          "text": "Implement procedures to monitor differences between the maximum AFUDC rate calculated based on the requirements of EPI No. 3.A.(17) and the AFUDC rate as calculated with the inclusion of customer deposits. When inclusion of customer deposits in the calculation results in an AFUDC rate higher than the maximum allowed, the company must exclude the customer deposit balances from the AFUDC rate applied to construction cost."
+        },
+        {
+          "number": 13,
+          "text": "Perform an analysis of construction-related work orders and invoices from 2010 through the date of the final audit report to locate all instances of the inappropriate inclusion of unpaid contract retention accruals for all work orders, and also all errors applying AFUDC to construction costs incurred by Great Basin Transmission, LLC (Great Basin). Provide the results of the analysis to DAA for review."
+        },
+        {
+          "number": 14,
+          "text": "Recalculate the AFUDC rate since 2005 in accordance with the requirements of EPI No. 3.A.(17). Include the results of the work order and invoice analysis performed for 2010 through the date of the final audit report for the calculation required by Recommendation No. 13. Based on the calculations, in periods that the AFUDC rate used exceeded the maximum rate allowed pursuant to EPI No. 3.A.(17), submit a yearly estimate, with proposed accounting entries and support documentation to DAA that reflects corrections to remove over- accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and accumulated deferred income taxes in the companies’ respective books of account and systems."
+        },
+        {
+          "number": 15,
+          "text": "Revise plant, accumulated depreciation, accumulated deferred income taxes, and other impacted account balances that resulted from the over-accrual of AFUDC in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions. The footnotes should include the adjustments by year with an explanation of the revisions. Accounting for Lobbying Expenses"
+        },
+        {
+          "number": 16,
+          "text": "Establish and implement written procedures to properly account for, track, report, and review lobbying costs incurred through external party billings."
+        },
+        {
+          "number": 17,
+          "text": "Develop and implement policies, procedures, and controls to ensure proper accounting and reporting of payroll taxes and pension expenses associated with lobbying activities."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Lobbying Costs",
+      "summary": "Summary of Proposed Finding and",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Filing FERC Form No. 580 Reports",
+      "summary": "Summary of Proposed Finding and",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Revise and strengthen documented policies, procedures, and controls for timely completion and reporting of the FERC Form No. 580 in accordance with the instructions of the form."
+        },
+        {
+          "number": 19,
+          "text": "Develop and implement written policies, procedures, and controls to maintain compliance with regulatory reporting requirements of the Commission."
+        },
+        {
+          "number": 20,
+          "text": "Establish a documented succession plan that establishes procedures to transfer regulatory compliance responsibilities of departing staff on a timely basis."
+        },
+        {
+          "number": 21,
+          "text": "Provide training to staff on the revised policies, procedures, and controls to complete and file timely reports to the Commission. Also, develop a training program that supports the provision of periodic training in this area. E."
+        }
+      ]
+    }
+  ]
+}

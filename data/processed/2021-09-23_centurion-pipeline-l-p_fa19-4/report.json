@@ -1,0 +1,125 @@
+{
+  "id": "2021-09-23_centurion-pipeline-l-p_fa19-4",
+  "company": "Centurion Pipeline L.P.",
+  "company_raw": "Centurion Pipeline L.P. (FA19-4)",
+  "docket": "FA19-4",
+  "docket_full": "FA19-4-000",
+  "issued_date": "2021-09-23",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210923-3016&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210923-3016",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 54,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2014 to December 31, 2018",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Idled and Retired Assets",
+      "summary": "Centurion’s reporting of idled and retired assets was inconsistent with the Commission’s requirements. Specifically, Centurion did not remove the original cost of idled and retired assets from rate base in its cost of service reported on Page 700, Annual Cost of Service Based Analysis Schedule. Centurion also incorrectly removed retired assets at the book cost (purchase price) rather than original cost from rate base on Page 700. These errors resulted in misstating its cost of service on Page 700 from 2004 to 2018.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Strengthen procedures and controls to ensure assets are timely retired from the fixed asset ledger and in accordance with the Commission’s accounting requirements. These procedures and controls should ensure that idled assets with no definite plan for future use and appropriate costs for retired assets are excluded from the cost-of-service calculation prepared for Page 700."
+        },
+        {
+          "number": 2,
+          "text": "Make an accounting entry to remove retired assets and the remaining service life of those assets from the fixed asset ledger. Submit the accounting entry to DAA for review within 30 days of issuance of this audit report."
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other Lines on Page 700. Provide this analysis to DAA staff for review within 90 days of issuance of this audit report."
+        },
+        {
+          "number": 4,
+          "text": "Upon DAA staff’s review and response to Centurion’s analysis, restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions. Pipeline Loss Allowance and Gravity Shrinkage"
+        },
+        {
+          "number": 5,
+          "text": "Update accounting policies and procedures to ensure that operating oil losses during transportation are recorded in the appropriate operating expense account consistent with Commission accounting requirements."
+        },
+        {
+          "number": 6,
+          "text": "Revise and strengthen financial reporting policies and procedures to ensure that PLA and GSD are appropriately reported as operating expenses on Page 700, Line 1 and interstate operating revenues on Page 700, Line 10."
+        },
+        {
+          "number": 7,
+          "text": "Train staff on the revised accounting and reporting policies and procedures, and provide periodic training, as needed."
+        },
+        {
+          "number": 8,
+          "text": "Submit journal entries to support the change has been made in the accounting for PLA and GSD to DAA within 30 days of issuance of this audit report. Specifically, the journal entries should reflect that Centurion continues to record oil acquired and/or retained through tariff allowances in Account 230 and has changed its accounting to reflect oil lost or undelivered due to operating causes in Account 340."
+        },
+        {
+          "number": 9,
+          "text": "Restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Pipeline Loss Allowance and Gravity Shrinkage Deduction",
+      "summary": "Centurion incorrectly accounted for and reported certain activities associated with its pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD).  Centurion incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. Centurion understated its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. As a representative example for the audit period, Centurion understated oil losses in Line 1 by $6.1 million in 2018.  Centurion incorrectly omitted",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Sale of Carrier Property",
+      "summary": "Centurion improperly recorded the cash proceeds for sales of carrier property as incidental revenue rather than as a charge to the carrier property accrued depreciation account. Centurion also did not retire the carrier property from its books when sold. This resulted in Centurion overstating carrier property, revenue, and net income in its financial statements and the rate base and depreciation expense components of its cost of service schedule in its FERC Form No. 6 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Establish policies and procedures to ensure that dispositions of carrier property are accounted for in accordance with Commission regulations, including provisions for requesting special accounting treatment when necessary. These procedures should ensure timely retirement of carrier property, and proper accounting for carrier property retired, including the recording of gains and losses in accrued depreciation."
+        },
+        {
+          "number": 11,
+          "text": "Record gains and losses from the sale of carrier property in Account 31, Accumulated Depreciation, prospectively. Provide a journal entry for a recent sale of carrier property, in particular the sale of vehicles (if available), to demonstrate that the accounting procedures have changed and are correct."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Lobbying, Regulatory Fees and Association Dues",
+      "summary": "Centurion incorrectly recorded the lobbying portion of industry association dues in an operating expense account rather than a nonoperating expense account. This resulted in Centurion overstating operating expenses reported in the cost of service schedule on Page 700, Line 1. Centurion also improperly recorded the annual fees and dues paid to regulatory agencies and an industry trade association as operating and maintenance expenses rather than as general expenses. Collectively, this reduced the accuracy and overall usefulness of the information reported in Centurion’s FERC Form No. 6 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Update accounting policies and procedures to ensure that annual charges, regulatory fees, and industry association dues, including the lobbying portion of dues, are accounted for consistently with Commission requirements."
+        },
+        {
+          "number": 13,
+          "text": "Record FERC annual charges in Account 510, Materials and Supplies, and Department of Transportation (DOT) fees and the non-lobbying portion of Association of Oil Pipe Lines (AOPL) dues in Account 590, Other Expenses. Submit journal entries to support the change in accounting treatment to DAA within 30 days of issuance of this audit report."
+        },
+        {
+          "number": 14,
+          "text": "Record the lobbying portion of industry association dues in Account 660, Miscellaneous Income Charges. Submit journal entries to support the change in accounting treatment to DAA within 30 days of issuance of this audit report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "FERC Form No. 6 Report",
+      "summary": "Centurion did not provide complete and accurate information required on certain supporting schedules of its FERC Form No. 6. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 6, during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Update policies and procedures to ensure that information in the FERC Form No. 6 is accurate and consistent with the instructions of the report. E."
+        }
+      ]
+    }
+  ]
+}

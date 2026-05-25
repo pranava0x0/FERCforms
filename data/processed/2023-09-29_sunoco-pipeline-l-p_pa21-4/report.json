@@ -1,0 +1,256 @@
+{
+  "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
+  "company": "Sunoco Pipeline L.P.",
+  "company_raw": "Sunoco Pipeline L.P. (PA21-4)",
+  "docket": "PA21-4",
+  "docket_full": "PA21-4-000",
+  "issued_date": "2023-09-29",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230929-3011&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230929-3011",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 98,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2018 to December 31, 2021",
+  "industry": "oil",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Prorating Pipeline Capacity",
+      "summary": "Sunoco incorrectly calculated shippers’ historical shipments (shipper history) and improperly classified new shippers as regular shippers, during the audit period. These errors resulted in incorrect allocation percentages that overallocated capacity to some shippers and underallocated capacity to other shippers during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise policies, procedures, and controls to ensure that it allocates capacity based on correct historical capacities and appropriately classifies all shippers, during times of prorationing."
+        },
+        {
+          "number": 2,
+          "text": "Inform relevant staff of the procedural and control changes for prorating pipeline capacity and provide periodic training, as needed."
+        },
+        {
+          "number": 3,
+          "text": "Implement process improvements available through automated system processes or other means to increase efficiency and accuracy of prorated capacity awarded."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "eTariff Database Records",
+      "summary": "Sunoco did not properly file all tariff records in the Commission’s electronic eTariff database (eTariff). Specifically, Sunoco did not properly file Tariff Nos. 6.0.0 and 169.0.0 in eTariff and did not properly code and number several filings in eTariff. This impacted shippers’ and other interested parties’ ability to access and review the tariffs through eTariff.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Strengthen policies, procedures, and controls to ensure that all tariff records are properly filed and available for review in eTariff and monitor eTariff to ensure all tariffs are properly uploaded, removed, and numerically ordered in accordance with Order Nos. 714 and 714-A.2"
+        },
+        {
+          "number": 5,
+          "text": "Perform a comprehensive review of all tariffs filed since 2010 to confirm whether tariffs are shown in eTariff as effective. As part of this review determine whether there is a need for Tariff ID 25 or whether it can be withdrawn to avoid possible confusion when filing records in eTariff."
+        },
+        {
+          "number": 6,
+          "text": "Inform relevant staff of the procedural and control changes for complying with Order Nos. 714 and 714-A and provide periodic training, as needed."
+        },
+        {
+          "number": 7,
+          "text": "File currently effective versions of Tariff Nos. 6.0.0 and 169.0.0 in eTariff, along with any prior versions that were inadvertently omitted from eTariff, so that eTariff includes an accurate record of all Commission-approved versions of these tariffs. Also, correct the collation value(s), so that they 2 Electronic Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified Order No. 714-A, 147 FERC ¶ 61,115 (2014). will provide proper sequencing of Sunoco’s tariff records in eTariff and update all miscoded filings."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Noncarrier Property and Expenses",
+      "summary": "Sunoco improperly accounted for certain noncarrier property as carrier property, which affected the accuracy of several account balances reported in the FERC Form No. 6, including several line inputs used to derive cost of service on Page 700. This resulted in Sunoco overstating total cost of service by $104,113 (2018), $1,432,068 (2019), and $3,289,888 (2020).",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise accounting policies, procedures, and controls to ensure that idled and noncarrier assets are accounted for as noncarrier property and all associated expenses and revenues are recorded in Account 620 consistent with the Commission’s accounting requirements."
+        },
+        {
+          "number": 9,
+          "text": "Reclassify all idled assets for which no definite plan for future use exists and any other noncarrier assets incorrectly recorded in Account 30 to Account 34, and reclassify the related accrued depreciation from Account 31 to Account 35. Submit accounting entries supporting adjustments within the carrier and noncarrier property accounts to DAA for review within 60 days of issuance of this audit report. Make the accounting entries supporting this adjustment within 60 days of receiving approval from DAA."
+        },
+        {
+          "number": 10,
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts from improperly accounting for certain noncarrier property as carrier property, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other lines on Page 700, and provide this analysis to DAA staff for review within 60 days of receiving DAA’s approval described in Recommendation No. 9."
+        },
+        {
+          "number": 11,
+          "text": "For the next FERC Form No. 6 annual filing ensure that the noncarrier property and related expenses are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Nonoperating and Unrelated Expenses",
+      "summary": "Sunoco improperly recorded certain nonoperating expenses – including costs for penalties and settlements resulting from violations of laws and regulations, costs for donations and sponsorships, and amortization of acquisition premiums – in operating expense and carrier property accounts. Sunoco also improperly recorded on its books costs for services performed for an affiliate that were unrelated to Sunoco’s business. The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, r",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that carrier property, operating expenses, and nonoperating expenses are recorded and reported in accordance with the Commission’s accounting regulations."
+        },
+        {
+          "number": 13,
+          "text": "Perform an analysis of the current year’s operating expense accounts to ensure that penalties and settlement payments, donations and sponsorships, amortization of acquisition premiums, liability insurance premiums relating to affiliates, and other nonoperating expenses and charges are correctly accounted for and reported in nonoperating expense accounts in the FERC Form No. 6."
+        },
+        {
+          "number": 14,
+          "text": "Perform an analysis from 2018 through the date of the final audit report to identify nonoperating expenses improperly capitalized in Account 30. Provide the results of the analysis and all applicable work papers supporting the analysis, including factors used to calculate the amount of the error, to DAA within 60 days of receiving the final audit report."
+        },
+        {
+          "number": 15,
+          "text": "Submit proposed corrected accounting entries based on the analysis performed per Recommendation No. 14 to DAA, within 90 days of receiving the final audit report, for the removal of the estimated capitalized nonoperating expenses from Account 30, and to remove associated amounts from Account 31 and any other accounts impacted."
+        },
+        {
+          "number": 16,
+          "text": "Revise Accounts 30 and 31, and any other accounts impacted by the improperly capitalized nonoperating expenses, after receiving DAA’s assessment of the proposed accounting entries."
+        },
+        {
+          "number": 17,
+          "text": "For the next FERC Form No. 6 annual filing ensure that the nonoperating expenses and expenses unrelated to Sunoco’s business are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Depreciation Rates and Studies",
+      "summary": "Sunoco did not use Commission-approved depreciation rates and did not depreciate one of its primary property accounts. The application of unapproved rates to depreciate its assets and significant changes in Sunoco’s pipeline system caused Sunoco’s depreciation study and rates to become no longer relevant and outdated. These errors also caused Sunoco to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in Sunoco including incorrect amounts in its cost of service on Page 700 since 2003.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Develop and implement policies, procedures, and controls to ensure that it uses Commission-approved depreciation rates for all carrier property assets (or accounts) and that regular studies are conducted to ensure depreciation rates are relevant and do not become outdated."
+        },
+        {
+          "number": 19,
+          "text": "File a depreciation study with the Commission for all asset groups that do not have an appropriate depreciation rate on file with the Commission to reflect current economic conditions."
+        },
+        {
+          "number": 20,
+          "text": "For the next FERC Form No. 6 annual filing ensure that impacts from the changes in depreciation rates are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Pipeline Loss Allowance Revenues",
+      "summary": "Sunoco incorrectly omitted pipeline loss allowance (PLA) revenues recorded in Account 230, Allowance Oil Revenues, from Page 700, Line 10, Interstate Operating Revenues. This resulted in Sunoco understating its annual interstate operating revenues reported on Page 700. These understatements were approximately $5,509,857 (2018), $4,662,188 (2019), and $3,054,798 (2020).",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Revise and strengthen financial reporting policies, procedures, and controls to ensure that PLA revenues are appropriately tracked and reported as interstate operating revenues on Page 700, Line 10."
+        },
+        {
+          "number": 22,
+          "text": "Train staff on revised policies, procedures, and controls for reporting interstate operating revenues on Page 700, Line 10, and provide additional periodic training, as needed."
+        },
+        {
+          "number": 23,
+          "text": "Ensure that all future FERC Form No. 6 submissions reflect Sunoco’s revised PLA procedures. Additionally, for the next FERC Form No. 6 annual filing ensure that PLA is accurately reported in current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Capitalized Interest Expense",
+      "summary": "Sunoco included capitalized interest twice by including both IDC and AFUDC in the determination of its cost of service on Page 700 of its FERC Form No. 6 filings. Consequently, Sunoco overstated its total cost of service on Page 700 by $1,706,995 and $1,986,041 in 2019 and 2020, respectively. Sunoco further compounded this overstatement by calculating AFUDC on the IDC amounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that IDC is removed from carrier property accounts when calculating cost of service on Page 700 of the FERC Form No. 6."
+        },
+        {
+          "number": 25,
+          "text": "Inform staff responsible for preparing Page 700 of this error and provide periodic training, as necessary."
+        },
+        {
+          "number": 26,
+          "text": "Perform an analysis to determine the impact, resulting from the error identified, to Line 3, AFUDC Depreciation; Line 5, Rate Base; Line 7, Return on Rate Base; and Line 9, Total Cost of Service, on Page 700 of the current year FERC Form No. 6 and provide this analysis to DAA within 90 days of this report."
+        },
+        {
+          "number": 27,
+          "text": "For the next FERC Form No. 6 annual filing ensure that the effects of IDC are removed from the AFUDC computation for the current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Asset Retirement Costs",
+      "summary": "Sunoco improperly included Asset Retirement Costs in rate base on Page 700 of its FERC Form No. 6 filings. This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that cost components related to asset retirement obligations are excluded from rate base on Page 700 consistent with 18 C.F.R. § 346.3(a) and the instructions of the FERC Form No. 6."
+        },
+        {
+          "number": 29,
+          "text": "Train staff on avoiding this error and provide periodic training, as necessary, to ensure that rate base on Page 700 is calculated and reported correctly in accordance with Commission regulations."
+        },
+        {
+          "number": 30,
+          "text": "Perform an analysis to determine the impact resulting from the error identified in the prior two Recommendations on rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of issuance of this report."
+        },
+        {
+          "number": 31,
+          "text": "For the next FERC Form No. 6 annual filing made by Sunoco, exclude cost components related to asset retirement obligations that would impact the calculation of rate base from the rate base computation for the current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Annual Cost of Service Based Analysis Schedule",
+      "summary": "Sunoco’s Annual Cost of Service Based Analysis Schedule, reported on Page 700 of its FERC Form No. 6 filings, contained miscellaneous errors and inconsistencies with Opinion No. 154-B and other Commission guidance not already discussed above in the preceding findings. These miscellaneous errors and inconsistencies affected the accuracy of most inputs and balances on Page 700, which caused Sunoco to overstate its rate base and overall cost of service in each year of the audit period.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that Page 700 is prepared correctly, accurately, and consistent with Opinion No. 154- B and the instructions of the FERC Form No. 6."
+        },
+        {
+          "number": 33,
+          "text": "Train staff on avoiding these errors and provide periodic training, as necessary, to ensure that each line item on Page 700 is calculated and reported correctly in accordance with Commission regulations."
+        },
+        {
+          "number": 34,
+          "text": "Perform an analysis to determine the impact resulting from the errors identified to rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of the issuance of this report."
+        },
+        {
+          "number": 35,
+          "text": "For the next FERC Form No. 6 annual filing, correctly include amortization related to a throughput and deficiency (T&D) agreement in the depreciation expense computation and correctly calculate working capital in the rate base computation on Page 700 for the current and comparative years and provide appropriate footnote disclosures."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "FERC Form No. 6 Reporting and Accounting",
+      "summary": "Sunoco did not report complete information in certain supporting schedules of its FERC Form No. 6 filings. Sunoco also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While these oversights did not impact the determination of cost of service on Page 700, they did reduce the accuracy and usefulness of the information reported in Sunoco’s FERC Form No. 6 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 36,
+          "text": "Revise policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 6 in accordance with the instructions of the report and the Commission’s accounting instructions."
+        },
+        {
+          "number": 37,
+          "text": "Review the reporting deficiencies with relevant staff to ensure they include on a prospective basis all required information in Sunoco’s FERC Form No. 6 filings. E."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "2015-07-02_nrg-energy-inc_pa14-1",
+  "company": "NRG Energy, Inc.",
+  "company_raw": "PA14-1 NRG Energy, Inc.",
+  "docket": "PA14-1",
+  "docket_full": null,
+  "issued_date": "2015-07-02",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150702-3031&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150702-3031",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150702-3031 (fileID 13920116).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 28,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2011 to December 31,2014",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "552"
+  ],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Plant Outage Data",
+      "summary": "NRG reported outage data incorrectly either in the Generator Availability Data System (GADS) or when reporting the outage data to the relevant RTO/ISO. Some regions use GADS data to develop reserve requirements for purchasing in the capacity market. Therefore, accurate and complete data must be gathered to understand unit life cycle performance and obtain a complete historical assessment.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Premature Destruction ofRecords",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

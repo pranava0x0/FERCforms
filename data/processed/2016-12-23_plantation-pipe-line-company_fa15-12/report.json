@@ -1,0 +1,169 @@
+{
+  "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
+  "company": "Plantation Pipe Line Company",
+  "company_raw": "FA15-12 Plantation Pipe Line Company",
+  "docket": "FA15-12",
+  "docket_full": "FA15-12-000",
+  "issued_date": "2016-12-23",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161223-3023&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20161223-3023",
+  "captured_at": "2021-12-07",
+  "source_note": "Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20161223-3023 (fileID 14451918).",
+  "archived_via": "https://web.archive.org/web/20211207020015/https://www.ferc.gov/audits",
+  "page_count": 58,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "from January 1, 2012 to December 31, 2015",
+  "industry": "oil",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "6"
+  ],
+  "finding_count": 8,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Carrier Property Depreciation Rates and Accruals",
+      "summary": "Plantation did not adjust depreciation rates when they were no longer applicable and continued to accrue depreciation expense on certain carrier property accounts after they became fully depreciated. This resulted in Plantation recording $16.4 million of depreciation expense in excess of the book cost of the assets in these accounts, as of December 31, 2014.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Create procedures and controls to ensure depreciation rates remain relevant and applicable, and to make timely revisions when property accounts become fully accrued."
+        },
+        {
+          "number": 2,
+          "text": "Perform a new depreciation study that accounts for changes in assumptions for service lives."
+        },
+        {
+          "number": 3,
+          "text": "Submit a copy of this depreciation study to the Commission within 30 days of completion. Plantation should make appropriate changes to its existing depreciation rates pursuant to Commission action."
+        },
+        {
+          "number": 4,
+          "text": "Submit accounting entries supporting adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error to DAA for review within 30 days of issuance of this final audit report. Upon approval from DAA, make accounting entries supporting this adjustment within 60 days."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Retirement of Carrier Property Assets",
+      "summary": "Plantation did not timely remove the book cost of several assets from its carrier property accounts upon replacing and removing them from service. This resulted in the overstating of depreciation expense and the accrued depreciation reserve in the carrier property accounts. Additionally, Plantation did not maintain its records to readily provide, upon request, full information for some of the assets not properly removed from carrier property upon their retirement from service.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Modify its accounting policies and procedures to ensure retirements are promptly booked into its accounting systems, which should include establishing communication protocols among the various groups that work on asset retirements."
+        },
+        {
+          "number": 6,
+          "text": "Update its carrier property records to ensure information used to determine book cost is readily available and assets can be retired in a timely manner."
+        },
+        {
+          "number": 7,
+          "text": "Make appropriate adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error. Submit accounting entries supporting this adjustment to DAA within 60 days of issuance of this final audit report."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Fines and Penalties",
+      "summary": "Plantation incorrectly accounted for fines and penalties paid to regulatory agencies in Account 570, Casualty and Other Losses, instead of Account 660, Miscellaneous Income Charges. Recording these activities in Account 570 overstated operating expenses and understated nonoperating expenses from 2012-2014.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Update accounting policies and procedures to ensure fines and penalties are accounted for consistently with Commission requirements."
+        },
+        {
+          "number": 9,
+          "text": "Record fines and penalties in Account 660, instead of Account 570, on a forward going basis. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Regulatory Fees and Industry Dues",
+      "summary": "Plantation incorrectly accounted for regulatory fees and industry dues in Account 660, Miscellaneous Income Charges, instead of Account 510, Materials and Supplies, and Account 590, Other Expenses. Recording these activities in Account 660 overstated nonoperating expenses and understated operating expenses from 2012-2014.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Update its accounting policies and procedures to ensure annual charges, regulatory fees, and industry association dues are accounted for consistently with Commission accounting requirements."
+        },
+        {
+          "number": 11,
+          "text": "Record FERC annual charges in Account 510, and DOT-PHMSA fees, Commonwealth of Virginia fees, and Association of Oil Pipeline (AOPL) dues in Account 590, instead of Account 660. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Operating Expenses",
+      "summary": "Plantation improperly accounted for certain operating expenses in Account 310, Materials and Supplies, instead of Accounts 320, Outside Services, and 390 and 590, Other Expenses. As a result of the improper classification of these expenses, Plantation reduced the accuracy of its accounting and reporting for operating expense activities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Review and modify its account mapping for operating expenses to ensure activities recorded in internal cost centers are properly aligned with primary FERC accounts. Submit changes in account mapping to DAA within 60 days of issuance of this final audit report."
+        },
+        {
+          "number": 13,
+          "text": "Update accounting policies and procedures to ensure expenses are recorded in the appropriate operating expense account consistent with Commission accounting requirements."
+        },
+        {
+          "number": 14,
+          "text": "Reclassify amounts improperly recorded in Account 310 to Account 320, 390, and 590, to ensure these activities are recorded in the correct operating expense accounts. Review other operating expense accounts to ensure those expenses are mapped to the proper internal cost centers and FERC accounts."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Accounting and Reporting of Deferred Income Taxes",
+      "summary": "Plantation had several deficiencies in its accounting and reporting for deferred income taxes from 2012-2014. These deficiencies included: o Improper netting of current and noncurrent deferred tax balances in Account 64, Accumulated Deferred Income Tax Liability, instead of recording the current deferred income tax asset balance in Account 19-5, Deferred Income Tax Assets, and the noncurrent deferred tax liability in Account 64. o Misclassification of a tax refund receivable as a current deferred income tax asset in Account 19-5 instead of Account 19, Other Current Assets. o Incorrect balance",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise its procedures to ensure current and noncurrent deferred income tax balances are accounted for and reported consistently with Commission accounting requirements."
+        },
+        {
+          "number": 16,
+          "text": "Make a correcting entry to adjust balances in Account 19, Account 19-5, Account 64, Account 670, Income Taxes on Income From Continuing Operations, and Account 671, to ensure balances for the current year are correctly stated. Submit correcting entry and support to DAA within 60 days of issuance of this final audit report."
+        },
+        {
+          "number": 17,
+          "text": "Include appropriate footnote disclosure in the Form 6 for adjustments made to deferred income taxes that are reported in column (d) of page 230 of the Form 6 on a forward going basis."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Interest During Construction",
+      "summary": "Plantation improperly accrued Interest During Construction (IDC) on two construction projects beyond the completion and in-service dates of the project. As a result, Plantation over-accrued IDC on these construction projects, which increased costs recorded in carrier property accounts.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Strengthen its procedures to ensure the accrual of IDC stops upon completing project construction and placing assets into service."
+        },
+        {
+          "number": 19,
+          "text": "Strengthen communication between accountants and field engineers to ensure timely closure of project work orders. Reporting of Interstate Volumes"
+        },
+        {
+          "number": 20,
+          "text": "Strengthen its financial reporting procedures to ensure interstate barrel volumes are properly reported in its Form 6. E."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Misreporting of Interstate Barrel Volumes",
+      "summary": "Plantation over-reported interstate barrel volumes it transported under a joint tariff with Parkway on pages 600-601 of its 2014 Form 6. This error affected the accuracy of interstate barrel volumes used to determine the costs associated with interstate movements reported on page 700 of the Form 6 in 2014.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ]
+}

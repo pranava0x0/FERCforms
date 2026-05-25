@@ -1,0 +1,135 @@
+{
+  "id": "2025-09-29_kern-river-gas-transmission-company_fa23-10",
+  "company": "Kern River Gas Transmission Company",
+  "company_raw": "Kern River Gas Transmission Company (FA23-10)",
+  "docket": "FA23-10",
+  "docket_full": "FA23-10-000",
+  "issued_date": "2025-09-29",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250929-3000",
+  "captured_at": "2026-02-03",
+  "source_note": "Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).",
+  "archived_via": null,
+  "page_count": 61,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2020 to December 31, 2023",
+  "industry": "gas",
+  "audit_type": "financial",
+  "functions": [],
+  "forms": [
+    "2",
+    "501-G"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Renewable Natural Gas Quality Specifications",
+      "summary": "Kern River posted a Biomethane Operating Policy on its Informational Postings website, which lays out gas quality specifications for Renewable Natural Gas (RNG). However, the gas quality specifications in the Biomethane Operating Policy have not been incorporated into Kern River’s Tariff; thus, consistent with the Gas Quality Policy Statement, they cannot be enforced.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "To the extent Kern River has been or intends in the future to enforce the quality specifications detailed in the Biomethane Gas Quality Policy Statement, make an NGA section 4 filing to include those quality specifications in its Tariff."
+        },
+        {
+          "number": 2,
+          "text": "Until such time as the quality specifications are accepted by the Commission and included in its Tariff, Kern River should consider removing the Biomethane Gas Quality Policy Statement from its"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Tariff Administration and Oversight",
+      "summary": "Kern River misapplied certain tariff provisions for capacity allocation, capacity release, and its customer activities website. Kern River’s misapplication of these tariff provisions did not appear to have caused any harm to shippers, and Kern River promptly contacted impacted shippers to correct the misapplication of its Tariff.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Revise and implement policies and procedures to ensure that tariff provisions are followed when making business decisions and interacting with shippers. Ensure that employees consistently review processes and procedures to prevent noncompliance, and promptly implement corrective actions to prevent its recurrence when noncompliance is identified."
+        },
+        {
+          "number": 4,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 3, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Informational Postings",
+      "summary": "Kern River did not post and/or incorrectly posted certain required information on its Informational Postings website. This primarily included information pertaining to contracts and pipeline capacity. As a result, shippers did not have timely access to information potentially needed to make informed decisions on available capacity.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise and implement policies and procedures to ensure that all required postings are complete, accurate, and made timely to its Informational Postings Website, consistent with Commission requirements."
+        },
+        {
+          "number": 6,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 5, and repeat such trainings as needed."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "Kern River improperly included unpaid contract retention amounts in its Allowance for Funds Used During Construction (AFUDC) rate calculation. This error resulted in Kern River over accruing AFUDC and consequently overstating gas plant in service and depreciation expense.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise and implement policies and procedures for calculating AFUDC consistent with the requirements of GPI No. 3. Revisions should ensure that unpaid contract retentions are excluded from the CWIP balance used for the purposes of the AFUDC accrual calculation."
+        },
+        {
+          "number": 8,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 7, and repeat such trainings as needed."
+        },
+        {
+          "number": 9,
+          "text": "Recalculate accrued AFUDC in a manner consistent with GPI No. 3 that corrects for the improper inclusion of unpaid contract retention in the CWIP balances used for the purposes of the AFUDC accrual calculation."
+        },
+        {
+          "number": 10,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of CWIP, gas plant in service, accumulated depreciation, ADIT, and other accounts impacted by the over accrual of AFUDC within 60 days of the date of the audit report."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Annual Membership Dues",
+      "summary": "Kern River incorrectly recorded certain membership dues in Account 850, Operation Supervision and Engineering, rather than in Accounts 921, Office Supplies and Expenses, and 930.2, Miscellaneous General Expenses. Additionally, a portion of the dues paid for one membership supported lobbying activities, which Kern River should have recorded in Account 426.4, Expenditures for Certain Civic, Political and Related Activities, instead of Account 850. Such misclassifications can affect Kern River’s cost-of-service rate development and result in improper functionalization of costs and rate recovery of nonoperating expenses. D.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise and implement policies and procedures to ensure proper accounting for all membership dues consistent with the Commission’s accounting regulations."
+        },
+        {
+          "number": 12,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 11, and repeat such trainings as needed."
+        },
+        {
+          "number": 13,
+          "text": "Provide a recent journal entry, and supporting documentation, which demonstrates that membership dues such as those with the identified accounting misclassifications are now being recorded in accordance with the Commission’s accounting regulations."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Creditworthiness Standards",
+      "summary": "Under the Commission’s creditworthiness policy, pipelines may require shippers who do not meet the pipeline’s creditworthiness standards to provide collateral up to three months’ worth of reservation charges. Section 29.2 of Kern River’s Tariff, which pertains to shippers who fail to establish creditworthiness, does not establish such a ceiling on the amount of collateral required. Absent a reference to this ceiling in its Tariff, Kern River could implement its creditworthiness requirements in a manner contrary to the Commission’s general policy of ensuring that open access service is reasonably available to shippers, and without allowing the Commission to consider any deviations from its general policy. E.",
+      "is_other_matter": true,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Kern River should consider revising or removing section 29.2(c) of its Tariff. If Kern River decides to revise section 29.2(c), it should file the changes with the Commission and provide audit staff notification of that filing. If Kern River determines that this provision is no longer applicable for its creditworthiness determination, and decides to remove section 29.2(c), it should file this change with the Commission and provide audit staff notification of that filing."
+        },
+        {
+          "number": 15,
+          "text": "If Kern River revises section 29.2(c), update policies and procedures to reflect the Commission’s Creditworthiness Policy Statement value limit for the security interest in collateral from a non-creditworthy shipper. F."
+        }
+      ]
+    }
+  ]
+}
