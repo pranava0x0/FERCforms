@@ -1,0 +1,15 @@
+{
+  "_purpose": "Verification that the 8 dockets appearing on BOTH the 2021-12-07 Wayback /audits list and the live ferc.gov/audits page are the same document. Method: resolve each docket to its final-audit-report accession via the eLibrary Docket Search API and compare to the live listing's accession. Identical accession == same eLibrary filing == byte-identical PDF. Company names also compared line-for-line. Result: all 8 identical; the backfill excludes any docket already live, so the ferc.gov (live) entry always wins.",
+  "verified_at": "2026-05-25",
+  "result": "all_identical_default_to_ferc_gov_live",
+  "overlaps": [
+    {"docket": "FA17-1", "live_accession": "20190423-3010", "elibrary_resolved_accession": "20190423-3010", "same": true, "company_live": "American Electric Power Company, Inc.", "company_wayback": "American Electric Power Company, Inc."},
+    {"docket": "FA17-2", "live_accession": "20190906-3014", "elibrary_resolved_accession": "20190906-3014", "same": true, "company_live": "Ohio Power Company", "company_wayback": "Ohio Power Company"},
+    {"docket": "FA17-4", "live_accession": "20190829-3023", "elibrary_resolved_accession": "20190829-3023", "same": true, "company_live": "Xcel Energy Inc.", "company_wayback": "Xcel Energy Inc."},
+    {"docket": "FA17-5", "live_accession": "20190731-3033", "elibrary_resolved_accession": "20190731-3033", "same": true, "company_live": "Northern States Power Company (Minnesota)", "company_wayback": "Northern States Power Company (Minnesota)"},
+    {"docket": "FA18-2", "live_accession": "20190625-3009", "elibrary_resolved_accession": "20190625-3009", "same": true, "company_live": "Transcontinental Gas Pipe Line Company, LLC", "company_wayback": "Transcontinental Gas Pipe Line Company"},
+    {"docket": "FA18-3", "live_accession": "20190927-3042", "elibrary_resolved_accession": "20190927-3042", "same": true, "company_live": "Cleco Power LLC", "company_wayback": "Cleco Power LLC"},
+    {"docket": "PA16-2", "live_accession": "20190514-3013", "elibrary_resolved_accession": "20190514-3013", "same": true, "company_live": "Northern Natural Gas Company", "company_wayback": "Northern Natural Gas Company"},
+    {"docket": "PA18-2", "live_accession": "20190919-3007", "elibrary_resolved_accession": "20190919-3007", "same": true, "company_live": "Avista Corporation", "company_wayback": "Avista Corporation"}
+  ]
+}
