@@ -1,6 +1,6 @@
 # FERC Audit Explorer
 
-> Machine-readable findings of noncompliance and staff recommendations from FERC's published **utility audit reports** — electric (Form 1), gas (Form 2) and oil (Form 6) — issued by the Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report is parsed into findings -> recommendations, and cross-report themes are mined.
+> Machine-readable findings of noncompliance and staff recommendations from FERC's published **utility audit reports** — across the **electric, gas, and oil sectors** (primarily FERC Forms 1, 2, and 6, plus related forms) — issued by the Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report is parsed into findings -> recommendations, and cross-report themes are mined.
 
 Scope: FERC utility audits — electric, gas & oil. As of 2026-05-25, 120 reports are structured of 120 listed (86 electric, 17 oil, 14 gas identified). Findings and recommendations are quoted verbatim from each report's Executive Summary. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 

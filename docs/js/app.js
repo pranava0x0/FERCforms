@@ -8,7 +8,7 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", industry: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
 };
 
 /* ---------- tiny DOM helper ---------- */
@@ -94,6 +94,10 @@ function renderFilters() {
   const fnBox = document.getElementById("function-options");
   functions.forEach((fn) => fnBox.appendChild(chip(cap(fn), null, "functions", fn)));
 
+  const formsList = uniqueSorted(state.reports.flatMap((r) => r.forms || []));
+  const formBox = document.getElementById("form-options");
+  if (formBox) formsList.forEach((fm) => formBox.appendChild(chip("No. " + fm, null, "form", fm)));
+
   const yearBox = document.getElementById("year-options");
   years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
 
@@ -117,6 +121,7 @@ function toggleFilter(group, value, btn) {
 function resetFilters() {
   state.filters.search = "";
   state.filters.industry.clear();
+  state.filters.form.clear();
   state.filters.audit_type.clear();
   state.filters.functions.clear();
   state.filters.year.clear();
@@ -129,6 +134,7 @@ function resetFilters() {
 function matches(report) {
   const f = state.filters;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
+  if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
   if (f.functions.size && !(report.functions || []).some((x) => f.functions.has(x))) return false;
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
