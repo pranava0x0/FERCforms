@@ -2,7 +2,7 @@
 
 Static tooling to **download, extract, structure, and visualize FERC audit reports** — surfacing the findings of noncompliance and corrective recommendations that recur across the corpus.
 
-The first module is a **FERC Form 1 Audit** explorer. The longer-term goal is an *"audit-my-document"* tool that flags likely issues in a filing using patterns mined from historical audits.
+The first module is the **FERC Audit Explorer** — electric (Form 1), gas (Form 2) and oil (Form 6) audits. The longer-term goal is an *"audit-my-document"* tool that flags likely issues in a filing using patterns mined from historical audits.
 
 ## Principles
 
@@ -12,7 +12,7 @@ The first module is a **FERC Form 1 Audit** explorer. The longer-term goal is an
 ## Layout
 
 ```
-pipeline/      CLI stages: fetch → extract → structure → patterns → build
+pipeline/      CLI stages: listing → backfill → fetch → extract → structure → patterns → build
   config.py    single source of truth (paths, URLs, tunables)
 data/
   listing.json scraped audit index (the seed; committed)
@@ -27,23 +27,24 @@ tests/         pytest suite
 ```bash
 pip install -r requirements.txt          # all deps already present in this env
 
-python -m pipeline.listing                              # parse data/listing.json from the snapshot (71 reports)
-python -m pipeline.fetch                                 # download report PDFs -> data/raw/ (rate-limited, cached)
-python -m pipeline.classify                              # tag each PDF by FERC form -> industry (finds the electric subset)
-python -m pipeline.extract   --electric-only --limit 2   # PDF -> per-page text (2 most-recent electric)
-python -m pipeline.structure --electric-only --limit 2   # text -> findings + recommendations (+ FA/PA audit_type)
-python -m pipeline.patterns                              # cross-report themes
-python -m pipeline.build                                 # bake docs/data/*.json + llms.txt (electric-scoped)
+python -m pipeline.listing                # parse data/listing.json from the live snapshot (71 reports, 2019+)
+python -m pipeline.backfill               # add FY2014-2018 from a Wayback snapshot (+49 -> 120; ferc.gov-only)
+python -m pipeline.fetch                  # download report PDFs -> data/raw/ (rate-limited, cached)
+python -m pipeline.classify               # tag each PDF by FERC form -> industry (electric/gas/oil)
+python -m pipeline.extract                # PDF -> per-page text (all reports; --limit N to cap)
+python -m pipeline.structure              # text -> findings + recommendations (+ FA/PA audit_type)
+python -m pipeline.patterns               # cross-report themes
+python -m pipeline.build                  # bake docs/data/*.json + llms.txt (all forms)
 
 python -m http.server -d docs 8000                       # preview at http://localhost:8000
 pytest -q                                                # run the test suite
 ```
 
-**Scope:** the tool is the **FERC Form 1 (electric) audit explorer** — both financial (FA)
-and non-financial (PA) audits of electric utilities, ISOs, and RTOs. Gas (Form 2) and oil
-(Form 6) audits are downloaded and classified but **out of scope** for now ([BACKLOG.md](BACKLOG.md)).
-The pipeline is **idempotent** (re-runs skip cached downloads); v1 deliberately structures only
-the **2 most-recent electric** reports (`--electric-only --limit 2`).
+**Scope:** all FERC utility audits — electric (Form 1), gas (Form 2) and oil (Form 6),
+both financial (FA) and non-financial (PA), for every available year. The live /audits page
+lists 2019+; FY2014-2018 are backfilled from a saved Internet Archive Wayback snapshot
+(ferc.gov-origin only — see [ISSUES.md](ISSUES.md)). The pipeline is **idempotent**
+(re-runs skip cached downloads), and the whole corpus is structured end-to-end.
 
 ## Project docs
 

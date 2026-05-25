@@ -4,22 +4,23 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## Pipeline & data
 
-- **[done] Process the full electric corpus.** All **53 electric (Form 1)** reports are extracted → structured → mined (42 with findings; 11 are clean "A. Conclusion" audits). Gas/oil remain out of scope (see Design/scope items).
+- **[done] Process the full corpus — all forms, all years.** Every report — electric (Form 1), gas (Form 2), oil (Form 6), FA + PA — is extracted → structured → mined. FY2014-2018 (49 reports) were backfilled from a Wayback /audits snapshot via `pipeline.backfill` (ferc.gov-origin only); the live page covers 2019+.
+- **[high] FY2014-2018 findings parser.** ~9-10 backfill reports (e.g., CAISO PA17-3, PacifiCorp FA16-4, Dominion FA15-16) show 0 findings because the older format uses a combined "Summary of **Compliance** Findings and Other Matter" exec-summary and `(cid:9)` tab-leader TOCs, not the 2019+ "Summary of **Noncompliance** Findings" + dotted-leader layout. A naive header/leader extension regressed the validated 2019+ path (Cleco 12→1) and over-counted others (MISO 3→7) — see [ISSUES.md](ISSUES.md). Build a **separate** parser path for the FY2014-2018 era, selected by era/format detection so it can never alter the 2019+ output; validate against a no-regression snapshot of current finding counts.
 - **[med] Improve `_body_summary` precision.** For TOC-fallback reports it occasionally grabs a nearby regulatory citation instead of the finding's opening sentence (titles that recur in cited orders). Anchor more tightly on the section heading.
 - **[low] Handle remaining no-TOC report formats.** A few reports lack a parseable TOC "Findings and Recommendations" block (different wording) and show 0 findings even if they have some.
 - **[high] OCR fallback for scanned reports.** Born-digital PDFs extract cleanly with pdfplumber/PyMuPDF. Older/scanned reports need real OCR. Add a tesseract-based fallback (`brew install tesseract` + `pytesseract`) behind an `--ocr` flag. **Run the security sweep before installing.** Pages under `MIN_TEXT_CHARS_PER_PAGE` are already flagged as image-only.
 - **[med] Incremental listing refresh.** Re-capture `/audits` and append only new reports (idempotent by docket number).
-- **[med] eLibrary docket resolution.** Some reports link via an eLibrary docket rather than a static PDF. Resolve those dockets to downloadable URLs.
+- **[done] eLibrary docket resolution.** Backfill resolves docket → accession via the eLibrary Docket Search API, then downloads via the existing DownloadPDF path (`pipeline/backfill.py`; recipe in ISSUES.md).
 - **[med] Detailed-section (Section IV) parsing.** v1 parses the Executive Summary (clean + consistent). The *detailed* findings carry dollar impacts, CFR / USofA-account citations, and "Pertinent Guidance" — extract these into `amount_usd`, `regulations[]`, and richer per-finding text.
 - **[med] Capture the company-response section.** Each report ends with the audited entity's response (agree/disagree + remediation plan). Parse it onto each report/finding.
-- **[med] Listing freshness vs. live.** The seed is the 2026-02-03 Wayback snapshot (covers 2019–2025). Anything FERC issued after that is missing. Refresh via a real browser to catch newer reports, then re-sort "most recent."
+- **[done] Listing freshness vs. live.** Re-checked the live /audits page via a real browser on 2026-05-25 — byte-identical to the 2026-02-03 snapshot (no audits issued since Sept 2025). Re-run when FERC publishes new reports (incremental by accession).
 - **[low] Multi-docket reports.** The listing parser captures one docket per report; some reports cite several. Handle the multi-docket case.
 - **[low] Pull related Commission orders.** Audit reports cite related orders; fetch and cross-reference them.
 
 ## Analysis
 
 - **[done] Audit-type facet (FA vs PA).** Two types per FERC: **FA = Financial Audit**, **PA = Non-Financial Audit** (compliance/operational). Derived from the docket prefix; shipped as `audit_type` + a site filter.
-- **[high] Form/industry is a mix, not all Form 1.** Audited entities span electric utilities (Form 1), gas pipelines (Form 2), oil pipelines (Form 6), and market operators (ISOs/RTOs). A true "Form 1 tool" would filter to electric FA audits; decide whether to scope down or keep the broader explorer (current). Industry is already parsed; surface it + a Form-1-only view.
+- **[done] Form/industry mix → broad explorer.** Decision: keep the broad explorer covering electric (Form 1), gas (Form 2) and oil (Form 6) rather than scoping to Form 1 only. Industry is parsed and shipped as a site filter (Electric / Gas / Oil).
 - **[high] Finding taxonomy.** A controlled vocabulary of finding types (accounting misclassification, formula-rate inputs, affiliate transactions, capitalization vs expense, etc.); tag every finding.
 - **[med] Cross-report trend charts.** Findings per year, per company, per category.
 - **[low] Recommendation-outcome tracking.** Did the company implement the recommendation? (Annual Reports on Enforcement note status.)

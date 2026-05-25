@@ -14,14 +14,15 @@ pipeline/            CLI stages (each idempotent, cacheable)
   models.py          Pydantic schemas (AuditReport, Finding, Recommendation, ...)
   forms.py           FERC form -> industry + audit-type (FA/PA) detection (shared)
   listing.py         build listing.json from a saved /audits snapshot
+  backfill.py        add FY2014-2018 reports from a Wayback /audits snapshot (ferc.gov-only)
   fetch.py           download report PDFs over plain HTTP (rate-limited, cached)
   classify.py        tag each PDF by form/industry -> classification.json (scoping)
   extract.py         PDF -> text (pdfplumber + PyMuPDF; flags scanned pages)
   structure.py       text -> structured report (findings, recs, metadata)
   patterns.py        cross-report aggregation (themes, recurrences)
-  build.py           emit docs/data/*.json + llms.txt for the site (electric-scoped)
+  build.py           emit docs/data/*.json + llms.txt for the site (all forms)
   (each stage runs as `python -m pipeline.<stage>`; there is no cli.py wrapper —
-   a run-all is intentionally omitted while the 2-report gate is in effect)
+   run in order: listing -> backfill -> fetch -> classify -> extract -> structure -> build)
 data/
   listing.json       browser-captured audit index (the SEED — committed)
   raw/               downloaded PDFs (gitignored; re-fetchable from listing)
@@ -36,10 +37,11 @@ tests/               pytest
 | --- | --- |
 | Install deps | `pip install -r requirements.txt` (all already present) |
 | Build listing from snapshot | `python -m pipeline.listing` |
+| Backfill FY2014-2018 (Wayback) | `python -m pipeline.backfill` |
 | Download PDFs from listing | `python -m pipeline.fetch` (add `--limit N`) |
 | Classify by form/industry | `python -m pipeline.classify` |
-| Extract text (2 recent electric) | `python -m pipeline.extract --electric-only --limit 2` |
-| Structure reports | `python -m pipeline.structure --electric-only --limit 2` |
+| Extract text | `python -m pipeline.extract` (add `--limit N`) |
+| Structure reports | `python -m pipeline.structure` (add `--limit N`) |
 | Mine patterns | `python -m pipeline.patterns` |
 | Bake site JSON + llms.txt | `python -m pipeline.build` |
 | Tests | `pytest -q` |
@@ -49,7 +51,7 @@ tests/               pytest
 
 - The audit *listing* cannot be scraped headlessly (Cloudflare). Capture it via a real browser; never add code that "solves" the challenge. See [ISSUES.md](ISSUES.md).
 - `data/listing.json` and any baked `docs/data/*.json` move together with the seed change that produced them — never split across commits ([§ Common tasks](#common-tasks)).
-- Don't widen processing past the 2 most-recent reports without it being an explicit task ([CLAUDE.md](CLAUDE.md) → Project intent).
+- The corpus is all FERC utility audits (electric / gas / oil, FA + PA) for every available year. The live /audits page lists 2019+ only; FY2014-2018 are backfilled from a saved Wayback snapshot via `pipeline.backfill` (ferc.gov-origin only). See [ISSUES.md](ISSUES.md).
 
 ---
 

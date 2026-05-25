@@ -2,7 +2,7 @@
 
 How the source documents are shaped, and how this project turns them into structured data. Living document: the **schema** sections are authoritative now; the **"observed in corpus"** sections are filled in/refined as reports are actually processed.
 
-> Status: **v1 scoped to Form 1 / electric.** The full corpus is downloaded and classified by form (`pipeline/classify.py`); the tool covers **electric (Form 1)** audits only — gas (Form 2) and oil (Form 6) are out of scope (see [BACKLOG.md](BACKLOG.md)). 2 most-recent electric reports are structured E2E.
+> Status: **all FERC utility audits — electric (Form 1), gas (Form 2), oil (Form 6), FA + PA, every available year.** The whole corpus is downloaded, classified (`pipeline/classify.py`), and structured E2E. The live ferc.gov/audits page covers 2019+; FY2014-2018 are backfilled from a Wayback snapshot (ferc.gov-origin only — see §5.2 and [ISSUES.md](ISSUES.md)).
 
 ---
 
@@ -120,9 +120,11 @@ ListingEntry
   source_page_url   str   eLibrary filelist URL (human-facing)
   pdf_download_url  str   eLibraryWebAPI DownloadPDF URL (machine)
   captured_at       date  snapshot capture date
+  source_note       str   human-readable provenance ("Listed on ferc.gov/audits …")
+  archived_via      str?  Wayback snapshot URL when sourced via Internet Archive (else null)
 ```
 
-**Observed (snapshot 2026-02-03):** 71 reports, **all** with docket + date, spanning **2019-04-23 → 2025-09-29** (the page advertises "since FY2015," but only 2019+ are currently linked). Re-running is idempotent (dedupe by `accession_number`).
+**Observed:** **120 reports** spanning **2014 → 2025** (issued dates). The live page (snapshot 2026-02-03, re-verified unchanged 2026-05-25) links **71** reports, 2019-04-23 → 2025-09-29 — it advertises "since FY2015" but lists only 2019+. The other **49** (FY2014-2018) are backfilled from a Wayback snapshot — see §5.2. Re-running is idempotent (dedupe by `accession_number`; on any old-vs-new overlap the live ferc.gov entry wins).
 
 ### 5.1 How a report PDF is fetched
 
@@ -132,6 +134,24 @@ Reports are not static PDFs — each lives in **eLibrary** (an Angular SPA + IIS
 2. **POST** `https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber={acc}` (note FERC's literal `accesssionNumber` typo) with the cookie, app-like headers (`Origin`, `Referer`, `X-Requested-With`, `Content-Type: application/json`), and body `{"serverLocation":""}`. The response is the **combined PDF** for the accession.
 
 Without the cookie + headers the F5 WAF returns `Request Rejected`. See [ISSUES.md](ISSUES.md).
+
+### 5.2 Listing provenance & parsing by era (FERC's page format changes over time)
+
+FERC's audit listing has used **different link formats at different points in internet history**, so the listing is parsed *per era*. Always confirm which era a snapshot belongs to before parsing it:
+
+| Issued years | Source of listing | Link format in the HTML | Parser | Accession source |
+| --- | --- | --- | --- | --- |
+| **2019 → present** | Live `ferc.gov/audits` (browser-captured; Cloudflare-blocked to scripts) | `…/eLibrary/filelist?accession_number=YYYYMMDD-####` | `pipeline/listing.py` | embedded in the anchor href |
+| **2014 → 2018** | Internet Archive **Wayback** snapshot of `ferc.gov/audits` @ **2021-12-07** (`data/sources/ferc-audits-wayback-20211207.html`) | `…/idmws/common/opennat.asp?fileID=#######` — anchor text is "DOCKET Company"; **no accession in the link** | `pipeline/backfill.py` | resolved per docket via the eLibrary **Docket Search** API → final-audit-report accession, saved to `data/sources/elibrary_docket_accessions_*.json` |
+
+**Format-change timeline observed in Wayback** (pick the right snapshot for the era you need):
+- **≤ 2017 — old `.asp` site** (`ferc.gov/enforcement/audits/…`): `conducted.asp` is a *process* page, **not** a report list. Dead end for report links.
+- **2021-12 snapshot**: `opennat?fileID=` links, 57 reports back to **FA14** — the source used for the FY2014-2018 backfill.
+- **2022-12 onward**: switched to `filelist?accession_number=` **and dropped pre-2019 reports** (why the live page now starts at 2019).
+
+**Why the archived link can't be downloaded directly:** the `opennat?fileID=` URL now 302-redirects to the eLibrary Angular SPA shell (no PDF bytes were archived), so the fileID is useless for download. Instead the **docket** is resolved to its eLibrary accession (recipe in [ISSUES.md](ISSUES.md)), then the normal §5.1 path fetches the PDF from live eLibrary. **Every source is ferc.gov-origin** — `backfill.py` skips any archived link whose host is not `*.ferc.gov`.
+
+**Old-vs-new overlap (verified):** 8 dockets (FA17-1/2/4/5, FA18-2/3, PA16-2, PA18-2) appear on *both* the 2021 Wayback list and the live page. Each was tested to resolve to the **identical eLibrary accession** on both sources (same filing → byte-identical PDF; company names match line-for-line — see `data/sources/overlap_verification_20260525.json`). The backfill excludes any docket already listed live, so the **ferc.gov (live) entry always wins**.
 
 ---
 
@@ -168,4 +188,4 @@ docs/
 
 **Classification (`pipeline/classify.py`):** scans the first ~8 pages of each PDF and scores industry from form number + governing statute (FPA→electric, NGA→gas, ICA→oil) + USofA part + tariff/ISO/RTO signals (`pipeline/forms.py`). Statute signals matter because **non-financial (PA) audits often don't cite a form number**. Observed across the snapshot corpus: ~39 electric, ~8 oil, ~4 gas, ~1 unknown.
 
-**Structured (full electric corpus):** **53 electric reports** — all born-digital (0 image-only, no OCR). **42 have findings (257 findings, 812 recommendations)**; the other 11 are genuine clean audits ("A. Conclusion", no noncompliance). Header phrasing varies, and most reports lack the exec-summary list entirely — so the parser falls back to the TOC (see §3). Functions: transmission 44, generation 35, distribution 2. Top themes: accounting misclassification (31 reports), forms reporting (28), AFUDC (18), depreciation (15).
+**Structured (full corpus, all forms + years):** **120 reports** (86 electric, 17 oil, 14 gas, 3 unknown), issued 2014→2025 — all born-digital (0 image-only, no OCR). **94 have findings (599 findings, 1,505 recommendations).** The remaining 26 are either genuine clean audits ("A. Conclusion", no noncompliance) or older FY2014-2018 reports whose layout the 2019+-tuned parser doesn't yet fully read (~9-10 reports — see [ISSUES.md](ISSUES.md) "Known limitations"; the source PDF is linked on every card). Functions: transmission 67, generation 63, distribution 2. Top themes: Form reporting (68 reports), accounting misclassification (67), depreciation (40), below-the-line costs (40), property & plant records (36).
