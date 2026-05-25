@@ -31,6 +31,10 @@ class ListingEntry(BaseModel):
     source_page_url: str          # eLibrary filelist URL (human-facing)
     pdf_download_url: str          # eLibraryWebAPI DownloadPDF URL (machine)
     captured_at: date             # when the listing snapshot was captured
+    # Provenance note (see CLAUDE.md → Data handling). Every record states the
+    # ferc.gov source it was found on; only ferc.gov-origin documents are ingested.
+    source_note: str = ""         # human-readable, e.g. "Listed on ferc.gov/audits (captured 2026-02-03)"
+    archived_via: Optional[str] = None  # Internet Archive Wayback snapshot URL when not sourced live
 
 
 class PageText(BaseModel):
@@ -94,6 +98,9 @@ class AuditReport(BaseModel):
     source_page_url: str
     pdf_download_url: str
     captured_at: date
+    # Provenance note carried from the listing seed (ferc.gov-origin only).
+    source_note: str = ""
+    archived_via: Optional[str] = None  # Wayback snapshot URL when backfilled via Internet Archive
 
     # Extraction stats
     page_count: int

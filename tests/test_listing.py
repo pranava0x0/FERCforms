@@ -34,6 +34,15 @@ def test_all_have_required_fields(entries):
         assert e.captured_at == SNAPSHOT_CAPTURED
 
 
+def test_provenance_note_populated(entries):
+    # Every live-sourced record states its ferc.gov origin; none claim a Wayback
+    # snapshot (only the FY2014-2018 backfill sets archived_via).
+    for e in entries:
+        assert "ferc.gov/audits" in e.source_note
+        assert e.captured_at.isoformat() in e.source_note
+        assert e.archived_via is None
+
+
 def test_sorted_newest_first(entries):
     dated = [e.issued_date for e in entries if e.issued_date]
     assert dated == sorted(dated, reverse=True)

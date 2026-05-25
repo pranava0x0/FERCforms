@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -32,12 +33,11 @@ def main() -> None:
     args = ap.parse_args()
 
     reports = load_reports(config.PROCESSED_DIR)
-    # Scope: this tool is the FERC Form 1 / electric audit explorer. Non-electric
-    # (gas Form 2, oil Form 6) audits stay in the backlog (see BACKLOG.md).
-    reports = [r for r in reports if r.industry == "electric"]
+    # Scope: all FERC utility audits — electric (Form 1), gas (Form 2), oil
+    # (Form 6), both financial (FA) and non-financial (PA). See CLAUDE.md.
     reports.sort(key=lambda r: (r.issued_date or date.min, r.id), reverse=True)
     if not reports:
-        logger.warning("no electric reports structured; run classify + structure --electric-only")
+        logger.warning("no reports structured; run classify + structure first")
 
     args.out.mkdir(parents=True, exist_ok=True)
 
@@ -59,13 +59,15 @@ def main() -> None:
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
     classification_path = config.PROCESSED_DIR / "classification.json"
     classification = json.loads(classification_path.read_text(encoding="utf-8")) if classification_path.exists() else {}
-    electric_identified = sum(1 for c in classification.values() if c.get("industry") == "electric")
+    by_industry_identified = Counter(
+        (c.get("industry") or "unknown") for c in classification.values()
+    )
     meta = {
         "generated_at": date.today().isoformat(),
         "source": config.AUDITS_LISTING_URL,
-        "scope": "FERC Form 1 (electric) audits",
+        "scope": "FERC utility audits — electric, gas & oil",
         "reports_total_listed": len(listing),
-        "electric_identified": electric_identified,
+        "by_industry_identified": dict(by_industry_identified),
         "reports_structured": len(reports),
         "listing_captured_at": listing[0]["captured_at"] if listing else None,
     }
@@ -75,8 +77,8 @@ def main() -> None:
     llmstxt.write_llms(config.DOCS_DIR, reports, summary, meta)
 
     logger.info(
-        "baked %d electric reports -> %s (+ llms.txt, llms-full.txt; electric_identified=%d, total_listed=%d)",
-        len(reports), args.out, meta["electric_identified"], meta["reports_total_listed"],
+        "baked %d reports -> %s (+ llms.txt, llms-full.txt; by_industry=%s, total_listed=%d)",
+        len(reports), args.out, meta["by_industry_identified"], meta["reports_total_listed"],
     )
 
 
