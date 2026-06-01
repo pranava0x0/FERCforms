@@ -88,6 +88,16 @@ class AuditReport(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 
+    # Which collection / tab this record belongs to. Defaults keep the original
+    # FERC audit corpus valid without rewriting 120 committed report.json files.
+    #   "ferc_audit"      — FERC Office of Enforcement audit reports (Form 1/2/6)
+    #   "prudence_review" — FERC rate-case prudence determinations (metadata-only)
+    #   "state_audit"     — state PUC/PSC/SCC audits & prudence reviews
+    collection: str = "ferc_audit"
+    jurisdiction: str = "FERC"          # "FERC" | "PA" | "MI" | "VA" | "IL" | ...
+    source: str = ""                    # human label, e.g. "PA PUC Bureau of Audits"
+    doc_type: Optional[str] = None      # e.g. "management audit", "Commission order", "fuel reconciliation"
+
     # Provenance / identity (from the listing seed)
     id: str
     company: str
@@ -115,6 +125,10 @@ class AuditReport(BaseModel):
     forms: list[str] = Field(default_factory=list)  # e.g. ["1"] for FERC Form No. 1
     finding_count: int = 0
     findings: list[Finding] = Field(default_factory=list)
+    # False for metadata-only records (legal orders / testimony we deliberately do
+    # NOT parse into findings — see multi-source policy). Lets the UI distinguish
+    # "not machine-structured, read the source" from a genuinely finding-free audit.
+    structured: bool = True
 
 
 class ThemeStat(BaseModel):

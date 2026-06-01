@@ -48,9 +48,12 @@
     </button>
   </header>
 
+  <!-- Collection tabs — FERC audits vs. prudence reviews vs. state PUC audits -->
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Document collections"></nav>
+
   <!-- Intro + how to use -->
   <section class="intro" aria-label="About this explorer">
-    <p class="intro-lead">
+    <p class="intro-lead" id="intro-lead">
       Findings from <strong><span id="intro-count">—</span> FERC utility audits</strong> — electric, gas &amp; oil.
       Tap a <strong>pattern</strong> below to see an issue across companies, or open any card to read the findings, quoted verbatim.
     </p>
@@ -144,7 +147,7 @@
       </div>
       <div id="active-filters" class="active-filters" aria-label="Active filters" hidden></div>
       <div id="stream" class="stream"></div>
-      <p id="empty-state" class="empty-state" hidden>No reports match these filters. <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
+      <p id="empty-state" class="empty-state" hidden><span id="empty-msg">No reports match these filters.</span> <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>
   </div>
 

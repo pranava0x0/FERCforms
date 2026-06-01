@@ -22,6 +22,15 @@ from pipeline.patterns import _themes_for, is_ratepayer_harm, load_reports, summ
 
 logger = logging.getLogger(__name__)
 
+# Canonical collections — one per UI tab. Order is the tab order. The site mirrors
+# these keys/labels in docs/js/app.js; a test asserts the key sets stay in sync.
+COLLECTIONS: list[dict[str, str]] = [
+    {"key": "ferc_audit", "label": "FERC Audits"},
+    {"key": "prudence_review", "label": "Prudence Reviews"},
+    {"key": "state_audit", "label": "State PUC Audits"},
+]
+COLLECTION_KEYS: list[str] = [c["key"] for c in COLLECTIONS]
+
 
 def _write_json(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -59,6 +68,7 @@ def build_meta(reports: list[AuditReport], listing: list[dict]) -> dict:
     reproducible instead of silently writing empty counts.
     """
     by_industry = Counter((r.industry or "unknown") for r in reports)
+    by_collection = Counter(r.collection for r in reports)
     return {
         "generated_at": date.today().isoformat(),
         "source": config.AUDITS_LISTING_URL,
@@ -66,6 +76,9 @@ def build_meta(reports: list[AuditReport], listing: list[dict]) -> dict:
         "reports_total_listed": len(listing),
         "by_industry_identified": dict(by_industry),
         "reports_structured": len(reports),
+        # Per-tab report counts (every canonical collection present, even at 0, so
+        # the site can render an honest empty tab rather than a missing one).
+        "by_collection": {k: by_collection.get(k, 0) for k in COLLECTION_KEYS},
         "listing_captured_at": listing[0]["captured_at"] if listing else None,
     }
 
@@ -92,6 +105,18 @@ def main() -> None:
     summary = summarize(reports)
     _write_json(args.out / "reports.json", report_dicts)
     _write_json(args.out / "patterns.json", json.loads(summary.model_dump_json()))
+
+    # Per-collection aggregates (one PatternsSummary per tab) so each tab shows its
+    # OWN top stats/patterns/trends. Every canonical collection is emitted, even
+    # empty, so the site always has a summary to render for each tab.
+    by_collection = {
+        c["key"]: summarize([r for r in reports if r.collection == c["key"]])
+        for c in COLLECTIONS
+    }
+    _write_json(
+        args.out / "patterns_by_collection.json",
+        {k: json.loads(s.model_dump_json()) for k, s in by_collection.items()},
+    )
 
     listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8")) if config.LISTING_PATH.exists() else []
     meta = build_meta(reports, listing)

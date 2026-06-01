@@ -4,12 +4,42 @@
    Google+ style stream of report cards, each expanding into a thread of
    findings -> recommendations. No framework, no build step. */
 
+/* The three collections, one per tab. Keys mirror pipeline/build.py COLLECTIONS
+   (a Python test asserts the key sets stay in sync). `lead` is the per-tab intro
+   sentence; `empty` shows when a collection has no documents yet. */
+const COLLECTIONS = [
+  {
+    key: "ferc_audit",
+    label: "FERC Audits",
+    lead: "Findings from <strong><span class=\"intro-count\">—</span> FERC utility audits</strong> — electric, gas &amp; oil. Tap a <strong>pattern</strong> below to see an issue across companies, or open any card to read the findings, quoted verbatim.",
+    empty: "No FERC audit reports in this build yet.",
+  },
+  {
+    key: "prudence_review",
+    label: "Prudence Reviews",
+    lead: "<strong><span class=\"intro-count\">—</span> FERC prudence determinations</strong> from rate-case orders, formal challenges &amp; fuel-cost disputes. These are free-form legal orders — listed with their source, not parsed into findings.",
+    empty: "No FERC prudence determinations in this build yet — coming soon.",
+  },
+  {
+    key: "state_audit",
+    label: "State PUC Audits",
+    lead: "<strong><span class=\"intro-count\">—</span> state utility-commission audits &amp; prudence reviews</strong> (PUC / PSC / SCC). Management and focused audits are parsed into findings; orders &amp; testimony are listed with their source.",
+    empty: "No state PUC audits in this build yet — coming soon.",
+  },
+];
+
 const state = {
+  collection: "ferc_audit",
   reports: [],
-  patterns: null,
+  patterns: null,          // global summary (all collections)
+  patternsByCollection: {}, // { key: PatternsSummary }
   meta: null,
   filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
 };
+
+/* Patterns + reports for the active tab. */
+const activePatterns = () => state.patternsByCollection[state.collection] || { report_count: 0, finding_count: 0, recommendation_count: 0, themes: [], by_year: {}, by_industry: {}, by_function: {} };
+const collectionReports = () => state.reports.filter((r) => r.collection === state.collection);
 
 /* The ratepayer-harm axis: finding types that, by their nature, over-recover from
    or wrongly charge customers. Curated single-source in pipeline/patterns.py. */
@@ -43,26 +73,76 @@ const initials = (name) => (name || "?").replace(/[^A-Za-z ]/g, "").trim().charA
 
 /* ---------- data load ---------- */
 async function load() {
-  const [meta, patterns, reports] = await Promise.all([
+  const [meta, patterns, byCollection, reports] = await Promise.all([
     fetch("data/meta.json").then((r) => r.json()),
     fetch("data/patterns.json").then((r) => r.json()),
+    fetch("data/patterns_by_collection.json").then((r) => r.json()),
     fetch("data/reports.json").then((r) => r.json()),
   ]);
   state.meta = meta;
   state.patterns = patterns;
+  state.patternsByCollection = byCollection;
   // Newest first — a feed-like default. Null issued_date sorts last.
   state.reports = reports.slice().sort((a, b) => (b.issued_date || "").localeCompare(a.issued_date || ""));
 }
 
 /* ---------- KPIs ---------- */
 function renderKPIs() {
-  const p = state.patterns;
+  const p = activePatterns();
   document.getElementById("kpi-reports").textContent = p.report_count;
   document.getElementById("kpi-findings").textContent = p.finding_count;
   document.getElementById("kpi-recs").textContent = p.recommendation_count;
   document.getElementById("kpi-themes").textContent = p.themes.length;
-  const introCount = document.getElementById("intro-count");
-  if (introCount) introCount.textContent = p.report_count;
+  // The per-tab intro sentence carries one or more .intro-count spans.
+  document.querySelectorAll(".intro-count").forEach((n) => (n.textContent = p.report_count));
+}
+
+/* ---------- tabs ---------- */
+function renderTabs() {
+  const host = document.getElementById("tabs");
+  if (!host) return;
+  const counts = (state.meta && state.meta.by_collection) || {};
+  host.replaceChildren(
+    ...COLLECTIONS.map((c) => {
+      const tab = el("button", {
+        type: "button",
+        class: "tab",
+        role: "tab",
+        id: `tab-${c.key}`,
+        "aria-selected": c.key === state.collection ? "true" : "false",
+        "data-collection": c.key,
+      }, [
+        el("span", { text: c.label }),
+        el("span", { class: "tab-count", text: String(counts[c.key] != null ? counts[c.key] : 0) }),
+      ]);
+      tab.addEventListener("click", () => switchCollection(c.key));
+      return tab;
+    })
+  );
+}
+
+function switchCollection(key) {
+  if (key === state.collection) return;
+  state.collection = key;
+  resetFilters(); // facets differ per collection; start each tab clean
+  document.querySelectorAll(".tab").forEach((t) =>
+    t.setAttribute("aria-selected", t.dataset.collection === key ? "true" : "false")
+  );
+  const def = COLLECTIONS.find((c) => c.key === key);
+  const lead = document.getElementById("intro-lead");
+  if (lead && def) lead.innerHTML = def.lead;
+  renderKPIs();
+  renderFilters();
+  renderPatternsBand();
+  renderTrends();
+  // resetFilters already called applyFilters, but facet/intro DOM changed — re-run.
+  applyFilters();
+  scrollToTop();
+}
+
+function scrollToTop() {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
 }
 
 /* ---------- filters ---------- */
@@ -87,35 +167,35 @@ function chip(label, count, group, value) {
 const _ABBR = { financial: "Financial (FA)", "non-financial": "Non-financial (PA)" };
 const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
+/* Facets are derived from the ACTIVE collection's reports, so each tab shows only
+   the industries/forms/years that exist within it. A facet field with no values
+   is hidden so empty filter groups don't clutter a tab. */
+function fillFacet(boxId, chips) {
+  const box = document.getElementById(boxId);
+  if (!box) return;
+  box.replaceChildren(...chips);
+  const field = box.closest(".field");
+  if (field) field.hidden = chips.length === 0;
+}
+
 function renderFilters() {
-  const industries = uniqueSorted(state.reports.map((r) => r.industry));
-  const types = uniqueSorted(state.reports.map((r) => r.audit_type));
-  const functions = uniqueSorted(state.reports.flatMap((r) => r.functions || []));
-  const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
+  const reports = collectionReports();
+  const industries = uniqueSorted(reports.map((r) => r.industry));
+  const types = uniqueSorted(reports.map((r) => r.audit_type));
+  const functions = uniqueSorted(reports.flatMap((r) => r.functions || []));
+  const years = uniqueSorted(reports.map((r) => yearOf(r.issued_date))).reverse();
+  const formsList = uniqueSorted(reports.flatMap((r) => r.forms || []));
 
-  const impactBox = document.getElementById("impact-options");
-  if (impactBox) {
-    const harmCount = state.reports.filter((r) => r.cost_to_customers).length;
-    const impactChip = chip("Cost to customers", harmCount, "impact", "cost_to_customers");
-    impactChip.title = COST_TIP;
-    impactBox.appendChild(impactChip);
-  }
-
-  const indBox = document.getElementById("industry-options");
-  if (indBox) industries.forEach((i) => indBox.appendChild(chip(cap(i), null, "industry", i)));
-
-  const typeBox = document.getElementById("type-options");
-  types.forEach((t) => typeBox.appendChild(chip(_ABBR[t] || t, null, "audit_type", t)));
-
-  const fnBox = document.getElementById("function-options");
-  functions.forEach((fn) => fnBox.appendChild(chip(cap(fn), null, "functions", fn)));
-
-  const formsList = uniqueSorted(state.reports.flatMap((r) => r.forms || []));
-  const formBox = document.getElementById("form-options");
-  if (formBox) formsList.forEach((fm) => formBox.appendChild(chip("No. " + fm, null, "form", fm)));
-
-  const yearBox = document.getElementById("year-options");
-  years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
+  const harmCount = reports.filter((r) => r.cost_to_customers).length;
+  const impactChips = harmCount
+    ? [(() => { const c = chip("Cost to customers", harmCount, "impact", "cost_to_customers"); c.title = COST_TIP; return c; })()]
+    : [];
+  fillFacet("impact-options", impactChips);
+  fillFacet("industry-options", industries.map((i) => chip(cap(i), null, "industry", i)));
+  fillFacet("type-options", types.map((t) => chip(_ABBR[t] || t, null, "audit_type", t)));
+  fillFacet("function-options", functions.map((fn) => chip(cap(fn), null, "functions", fn)));
+  fillFacet("form-options", formsList.map((fm) => chip("No. " + fm, null, "form", fm)));
+  fillFacet("year-options", years.map((y) => chip(y, null, "year", y)));
 }
 
 function toggleFilter(group, value, btn) {
@@ -145,6 +225,7 @@ function resetFilters() {
 
 function matches(report) {
   const f = state.filters;
+  if (report.collection !== state.collection) return false;
   if (f.impact.size && !report.cost_to_customers) return false;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
   if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
@@ -179,8 +260,14 @@ function scrollToResults() {
 function renderPatternsBand() {
   const rail = document.getElementById("patterns-rail");
   if (!rail) return;
-  const total = state.patterns.report_count || state.reports.length || 1;
-  const themes = state.patterns.themes.slice().sort((a, b) => b.report_count - a.report_count);
+  rail.replaceChildren();
+  const p = activePatterns();
+  // Hide the whole band when the active tab has no mined patterns yet.
+  const band = rail.closest(".patterns-band");
+  if (band) band.hidden = !p.themes.length;
+  if (!p.themes.length) return;
+  const total = p.report_count || 1;
+  const themes = p.themes.slice().sort((a, b) => b.report_count - a.report_count);
   const max = Math.max(1, ...themes.map((t) => t.report_count));
   themes.forEach((t) => {
     const pct = Math.round((t.report_count / total) * 100);
@@ -248,7 +335,10 @@ function trendBars(title, unit, entries, note) {
 function renderTrends() {
   const host = document.getElementById("trends");
   if (!host) return;
-  const p = state.patterns;
+  const p = activePatterns();
+  const band = host.closest(".trends-band");
+  if (band) band.hidden = !p.report_count;
+  if (!p.report_count) { host.replaceChildren(); return; }
   // By year & by industry are clean counts (one issued-year / one industry per report).
   const years = Object.keys(p.by_year).sort();
   const industries = Object.entries(p.by_industry).sort((a, b) => b[1] - a[1]);
@@ -339,55 +429,74 @@ function findingNode(f) {
 }
 
 function citationText(r) {
-  return `${r.company}, FERC Audit Report, Docket No. ${r.docket_full || r.docket || "N/A"}` +
-    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source_page_url}`;
+  const kind = r.doc_type || (r.collection === "prudence_review" ? "FERC order" : r.collection === "state_audit" ? "Audit report" : "FERC Audit Report");
+  const docket = r.docket_full || r.docket;
+  return `${r.company}, ${kind}${docket ? ", Docket No. " + docket : ""}` +
+    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${r.source_page_url}`;
 }
 
 function cardNode(r) {
   const card = el("details", { class: "card" });
 
   const recCount = r.findings.reduce((n, f) => n + (f.recommendations ? f.recommendations.length : 0), 0);
+  const docket = r.docket_full || r.docket;
+  // Sub-meta: docket (if any) · issued date · source (for non-FERC provenance).
+  const subBits = [];
+  if (docket) subBits.push(`Docket No. ${docket}`);
+  subBits.push(`Issued ${fmtDate(r.issued_date)}`);
+  if (r.collection !== "ferc_audit" && r.source) subBits.push(r.source);
+
+  // Status pill: real findings → count; metadata-only legal doc → "read source";
+  // otherwise a genuinely finding-free audit.
+  const statusPill = r.finding_count > 0
+    ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
+    : r.structured === false
+      ? el("span", { class: "pill muted", text: "Listed for reference" })
+      : el("span", { class: "pill muted", text: "No findings extracted" });
+
   const summary = el("summary", { class: "card-summary" }, [
     el("div", { class: "source-line" }, [
       el("span", { class: "avatar", "aria-hidden": "true", text: initials(r.company) }),
       el("span", { class: "source-meta" }, [
         el("span", { class: "company", text: r.company }),
         el("br"),
-        el("span", {
-          class: "sub-meta",
-          text: `Docket No. ${r.docket_full || r.docket || "—"} · Issued ${fmtDate(r.issued_date)}`,
-        }),
+        el("span", { class: "sub-meta", text: subBits.join(" · ") }),
       ]),
       el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
     ]),
     el("div", { class: "chips" }, [
-      r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
-      r.finding_count > 0
-        ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
-        : el("span", { class: "pill muted", text: "No findings extracted" }),
+      r.doc_type ? el("span", { class: "pill kind", text: cap(r.doc_type) })
+        : r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
+      statusPill,
       r.finding_count > 0 ? el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }) : null,
       ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
     ]),
   ]);
 
-  const root = el("div", { class: "thread-root" }, [
-    el("dl", {}, [
-      ...kv("Audit period", r.audit_period || "Not stated", !r.audit_period),
-      ...kv("Audit type", r.audit_type ? (_ABBR[r.audit_type] || r.audit_type) : "Not stated", !r.audit_type),
-      ...kv("Function(s)", r.functions && r.functions.length ? r.functions.map(cap).join(", ") : "Not stated", !(r.functions || []).length),
-      ...kv("FERC forms", r.forms && r.forms.length ? r.forms.map((f) => "No. " + f).join(", ") : "Not stated", !(r.forms || []).length),
-      ...kv("Pages", String(r.page_count), false),
-      ...kv("Source", r.source_note || "Not stated", !r.source_note),
-    ]),
-  ]);
+  // Metadata rows — only include those that apply to this record's collection.
+  const rows = [];
+  if (r.audit_period) rows.push(...kv("Audit period", r.audit_period, false));
+  if (r.audit_type) rows.push(...kv("Audit type", _ABBR[r.audit_type] || r.audit_type, false));
+  if (r.doc_type) rows.push(...kv("Document type", cap(r.doc_type), false));
+  rows.push(...kv("Jurisdiction", r.jurisdiction || "—", !r.jurisdiction));
+  if (r.functions && r.functions.length) rows.push(...kv("Function(s)", r.functions.map(cap).join(", "), false));
+  if (r.forms && r.forms.length) rows.push(...kv("FERC forms", r.forms.map((f) => "No. " + f).join(", "), false));
+  rows.push(...kv("Pages", String(r.page_count), false));
+  rows.push(...kv("Source", r.source || r.source_note || "Not stated", !(r.source || r.source_note)));
+  const root = el("div", { class: "thread-root" }, [el("dl", {}, rows)]);
 
   const findings = r.finding_count > 0
     ? el("div", {}, r.findings.map(findingNode))
     : el("div", { class: "no-findings" }, [
-        el("p", {}, [
-          el("strong", { text: "No findings extracted. " }),
-          "This audit may have raised no noncompliance issues, or they aren’t yet machine-readable from the source PDF in this build — read the original via the links below.",
-        ]),
+        r.structured === false
+          ? el("p", {}, [
+              el("strong", { text: "Listed for reference. " }),
+              "This is a legal order or testimony, captured with its source for the pattern library — it isn’t parsed into findings. Read the full document via the link below.",
+            ])
+          : el("p", {}, [
+              el("strong", { text: "No findings extracted. " }),
+              "This audit may have raised no noncompliance issues, or they aren’t yet machine-readable from the source PDF in this build — read the original via the links below.",
+            ]),
       ]);
 
   const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });
@@ -401,8 +510,9 @@ function cardNode(r) {
     }
   });
 
+  const sourceLabel = r.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
   const footer = el("div", { class: "thread-footer" }, [
-    el("a", { class: "btn-secondary", href: r.source_page_url, rel: "noopener", target: "_blank", text: "View on eLibrary ↗" }),
+    el("a", { class: "btn-secondary", href: r.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
     r.archived_via
       ? el("a", { class: "btn-secondary", href: r.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
       : null,
@@ -423,6 +533,15 @@ function applyFilters() {
   const findings = visible.reduce((n, r) => n + r.finding_count, 0);
   document.getElementById("result-count").textContent =
     `${visible.length} report${visible.length === 1 ? "" : "s"} · ${findings} finding${findings === 1 ? "" : "s"}`;
+
+  // Empty-state copy depends on WHY it's empty: a tab with no documents at all
+  // gets the collection's "coming soon" line (and no Clear-filters button);
+  // a filtered-to-nothing tab keeps the filter-clearing prompt.
+  const collectionEmpty = collectionReports().length === 0;
+  const def = COLLECTIONS.find((c) => c.key === state.collection);
+  document.getElementById("empty-msg").textContent =
+    collectionEmpty && def ? def.empty : "No reports match these filters.";
+  document.getElementById("empty-reset").hidden = collectionEmpty;
   document.getElementById("empty-state").hidden = visible.length !== 0;
 
   renderActiveFilters();
@@ -434,16 +553,10 @@ function applyFilters() {
 /* ---------- footer ---------- */
 function renderFooter() {
   const m = state.meta;
-  const bi = m.by_industry_identified || {};
-  const idents = Object.entries(bi)
-    .filter(([k]) => k !== "unknown")
-    .sort((a, b) => b[1] - a[1])
-    .map(([k, v]) => `${v} ${k}`)
-    .join(", ");
+  const bc = m.by_collection || {};
+  const colParts = COLLECTIONS.map((c) => `${bc[c.key] != null ? bc[c.key] : 0} ${c.label}`).join(" · ");
   document.getElementById("footer-meta").textContent =
-    `Scope: ${m.scope}. ${m.reports_structured} of ${m.reports_total_listed} listed audits structured` +
-    (idents ? ` (${idents} identified)` : "") + `. ` +
-    `Listing captured ${fmtDate(m.listing_captured_at)}; built ${fmtDate(m.generated_at)}.`;
+    `${colParts}. FERC listing captured ${fmtDate(m.listing_captured_at)}; built ${fmtDate(m.generated_at)}.`;
   if (m.source) document.getElementById("footer-link").href = m.source;
 }
 
@@ -472,6 +585,25 @@ function wireChrome() {
     if (e.key === "Escape" && filters.classList.contains("open")) setFilters(false);
   });
 
+  // Tablist keyboard support (Left/Right/Home/End move between collection tabs).
+  const tabsNav = document.getElementById("tabs");
+  if (tabsNav) {
+    tabsNav.addEventListener("keydown", (e) => {
+      const keys = ["ArrowLeft", "ArrowRight", "Home", "End"];
+      if (!keys.includes(e.key)) return;
+      e.preventDefault();
+      const tabs = [...tabsNav.querySelectorAll(".tab")];
+      const i = tabs.findIndex((t) => t.dataset.collection === state.collection);
+      let n = i;
+      if (e.key === "ArrowLeft") n = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === "ArrowRight") n = (i + 1) % tabs.length;
+      else if (e.key === "Home") n = 0;
+      else if (e.key === "End") n = tabs.length - 1;
+      switchCollection(tabs[n].dataset.collection);
+      tabs[n].focus();
+    });
+  }
+
   document.getElementById("search").addEventListener("input", (e) => {
     state.filters.search = e.target.value;
     applyFilters();
@@ -490,6 +622,10 @@ function wireChrome() {
     console.error(e);
     return;
   }
+  renderTabs();
+  const def = COLLECTIONS.find((c) => c.key === state.collection);
+  const lead = document.getElementById("intro-lead");
+  if (lead && def) lead.innerHTML = def.lead;
   renderKPIs();
   renderFilters();
   renderPatternsBand();

@@ -130,6 +130,56 @@ a:hover { color: var(--accent-hover); }
 }
 .icon-btn:hover { background: var(--surface-2); }
 
+/* ---------- Collection tabs ---------- */
+.tabs {
+  display: flex;
+  gap: 6px;
+  max-width: 1180px;
+  margin: 14px auto 0;
+  padding: 0 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  background: var(--surface);
+  color: var(--text-muted);
+  border-radius: 10px 10px 0 0;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tab:hover { background: var(--surface-2); color: var(--text); }
+.tab[aria-selected="true"] {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  border-bottom-color: var(--accent);
+  background: var(--accent-weak);
+}
+.tab-count {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border-radius: 999px;
+  padding: 1px 8px;
+  min-width: 20px;
+  text-align: center;
+}
+.tab[aria-selected="true"] .tab-count { color: var(--accent-hover); background: var(--surface); }
+
 /* ---------- KPI strip ---------- */
 .kpi-strip {
   display: grid;

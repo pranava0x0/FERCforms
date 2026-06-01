@@ -10,5 +10,10 @@
     "unknown": 3
   },
   "reports_structured": 120,
+  "by_collection": {
+    "ferc_audit": 120,
+    "prudence_review": 0,
+    "state_audit": 0
+  },
   "listing_captured_at": "2026-02-03"
 }

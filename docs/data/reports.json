@@ -1,5 +1,9 @@
 [
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-09-29_kern-river-gas-transmission-company_fa23-10",
     "company": "Kern River Gas Transmission Company",
     "company_raw": "Kern River Gas Transmission Company (FA23-10)",
@@ -165,6 +169,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -180,6 +185,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-09-25_medallion-pipeline-company-llc_fa23-9",
     "company": "Medallion Pipeline Company, LLC",
     "company_raw": "Medallion Pipeline Company, LLC (FA23-9)",
@@ -438,6 +447,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -450,6 +460,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-09-18_pacific-gas-and-electric-company_fa23-8",
     "company": "Pacific Gas and Electric Company",
     "company_raw": "Pacific Gas and Electric Company (FA23-8)",
@@ -721,6 +735,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -732,6 +747,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-09-08_talen-energy_pa22-7",
     "company": "Talen Energy",
     "company_raw": "Talen Energy (PA22-7)",
@@ -812,12 +831,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-09-03_alabama-power-company_pa24-5",
     "company": "Alabama Power Company",
     "company_raw": "Alabama Power Company (PA24-5)",
@@ -903,6 +927,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -911,6 +936,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-07-25_duke-energy-progress-llc_fa23-6",
     "company": "Duke Energy Progress, LLC",
     "company_raw": "Duke Energy Progress, LLC (FA23-6)",
@@ -1055,6 +1084,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -1066,6 +1096,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-06-16_portland-general-electric-company_pa23-10",
     "company": "Portland General Electric Company",
     "company_raw": "Portland General Electric Company (PA23-10)",
@@ -1313,12 +1347,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-04-10_midcontinent-independent-system-operator-inc_pa21-2",
     "company": "Midcontinent Independent System Operator, Inc.",
     "company_raw": "Midcontinent Independent System Operator, Inc. (PA21-2)",
@@ -1436,6 +1475,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings",
       "Tariff administration & oversight"
@@ -1443,6 +1483,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
     "company": "Tallgrass Pony Express Pipeline, LLC",
     "company_raw": "Tallgrass Pony Express Pipeline, LLC (FA23-5)",
@@ -1605,6 +1649,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -1618,6 +1663,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-11-27_alliant-energy-corporate-services-inc_fa23-7",
     "company": "Alliant Energy Corporate Services, Inc.",
     "company_raw": "Alliant Energy Corporate Services, Inc. (FA23-7)",
@@ -1688,6 +1737,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -1696,6 +1746,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-09-27_southern-indiana-gas-and-electric-company_fa23-4",
     "company": "Southern Indiana Gas and Electric Company",
     "company_raw": "Southern Indiana Gas and Electric Company (FA23-4)",
@@ -1968,6 +2022,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -1977,6 +2032,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-08-22_black-hills-corporation_pa23-3",
     "company": "Black Hills Corporation",
     "company_raw": "Black Hills Corporation (PA23-3)",
@@ -2074,12 +2133,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
     "company": "NextEra Energy Transmission, LLC",
     "company_raw": "NextEra Energy Transmission, LLC (PA23-2)",
@@ -2259,6 +2323,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -2269,6 +2334,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-08-15_tri-state-generation-and-transmission-associatio_pa22-6",
     "company": "Tri-State Generation and Transmission Association, Inc.",
     "company_raw": "Tri-State Generation and Transmission Association, Inc. (PA22-6)",
@@ -2364,12 +2433,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-08-14_enlink-ngl-pipeline-lp_fa22-2",
     "company": "EnLink NGL Pipeline, LP",
     "company_raw": "EnLink NGL Pipeline, LP (FA22-2)",
@@ -2555,6 +2629,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -2567,6 +2642,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
     "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
     "company_raw": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc. (FA22-4)",
@@ -3026,6 +3105,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -3036,6 +3116,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-03-15_appalachian-power-company_fa22-1",
     "company": "Appalachian Power Company",
     "company_raw": "Appalachian Power Company (FA22-1)",
@@ -3106,6 +3190,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -3113,6 +3198,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-03-07_net-mexico-pipeline-partners-llc_pa23-1",
     "company": "NET Mexico Pipeline Partners, LLC",
     "company_raw": "NET Mexico Pipeline Partners, LLC (PA23-1)",
@@ -3338,12 +3427,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2024-01-26_northwestern-wisconsin-electric-company_fa23-3",
     "company": "Northwestern Wisconsin Electric Company",
     "company_raw": "Northwestern Wisconsin Electric Company (FA23-3)",
@@ -3529,6 +3623,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Depreciation",
@@ -3537,6 +3632,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-11-21_dte-energy-company_pa20-7",
     "company": "DTE Energy Company",
     "company_raw": "DTE Energy Company (PA20-7)",
@@ -3560,10 +3659,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
     "company": "Sunoco Pipeline L.P.",
     "company_raw": "Sunoco Pipeline L.P. (PA21-4)",
@@ -3873,6 +3977,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -3888,6 +3993,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-09-18_gulf-south-pipeline-company-llc_pa21-3",
     "company": "Gulf South Pipeline Company, LLC",
     "company_raw": "Gulf South Pipeline Company, LLC (PA21-3)",
@@ -4281,6 +4390,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -4295,6 +4405,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-08-18_puget-sound-energy-inc_pa21-5",
     "company": "Puget Sound Energy Inc.",
     "company_raw": "Puget Sound Energy Inc. (PA21-5)",
@@ -4360,12 +4474,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-07-27_commonwealth-edison-company_fa21-5",
     "company": "Commonwealth Edison Company",
     "company_raw": "Commonwealth Edison Company (FA21-5)",
@@ -4775,6 +4894,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -4787,6 +4907,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-07-25_oklahoma-gas-and-electric-company_fa22-5",
     "company": "Oklahoma Gas and Electric Company",
     "company_raw": "Oklahoma Gas and Electric Company (FA22-5)",
@@ -5085,6 +5209,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -5095,6 +5220,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-06-29_pacificorp_pa22-2",
     "company": "PacifiCorp",
     "company_raw": "PacifiCorp (PA22-2)",
@@ -5121,10 +5250,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
     "company": "Public Service Company of Colorado",
     "company_raw": "Public Service Company of Colorado (FA22-3)",
@@ -5361,6 +5495,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -5371,6 +5506,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2023-02-10_wec-business-services-llc_fa21-2",
     "company": "WEC Business Services LLC",
     "company_raw": "WEC Business Services LLC (FA21-2)",
@@ -5397,10 +5536,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-11-04_tucson-electric-power-company_fa21-3",
     "company": "Tucson Electric Power Company",
     "company_raw": "Tucson Electric Power Company (FA21-3)",
@@ -5778,6 +5922,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -5788,6 +5933,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-09-28_northern-border-pipeline-company_fa21-1",
     "company": "Northern Border Pipeline Company",
     "company_raw": "Northern Border Pipeline Company (FA21-1)",
@@ -5920,6 +6069,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -5930,6 +6080,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-09-15_dayton-power-and-light-company_fa21-4",
     "company": "Dayton Power and Light Company",
     "company_raw": "Dayton Power and Light Company (FA21-4)",
@@ -6038,6 +6192,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -6046,6 +6201,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-09-01_pjm-interconnection-l-l-c_pa19-2",
     "company": "PJM Interconnection, L.L.C.",
     "company_raw": "PJM Interconnection, L.L.C. (PA19-2)",
@@ -6080,10 +6239,15 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-06-01_enterprise-crude-pipeline-llc_fa20-5",
     "company": "Enterprise Crude Pipeline LLC",
     "company_raw": "Enterprise Crude Pipeline LLC (FA20-5)",
@@ -6308,6 +6472,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -6320,6 +6485,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-05-20_northwestern-corporation_fa20-7",
     "company": "NorthWestern Corporation",
     "company_raw": "NorthWestern Corporation (FA20-7)",
@@ -6525,6 +6694,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -6535,6 +6705,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-04-15_florida-power-light-company_fa21-6",
     "company": "Florida Power & Light Company",
     "company_raw": "Florida Power & Light Company (FA21-6)",
@@ -6653,6 +6827,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -6660,6 +6835,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-03-31_duke-energy-corporation_pa20-3",
     "company": "Duke Energy Corporation",
     "company_raw": "Duke Energy Corporation (PA20-3)",
@@ -6684,10 +6863,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-03-23_arizona-public-service-company_pa20-1",
     "company": "Arizona Public Service Company",
     "company_raw": "Arizona Public Service Company (PA20-1)",
@@ -6757,12 +6941,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Informational postings"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-03-21_tampa-electric-company_pa21-1",
     "company": "Tampa Electric Company",
     "company_raw": "Tampa Electric Company (PA21-1)",
@@ -6787,10 +6976,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-02-04_firstenergy-corporation_fa19-1",
     "company": "FirstEnergy Corporation",
     "company_raw": "FirstEnergy Corporation (FA19-1)",
@@ -7061,6 +7255,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -7074,6 +7269,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
     "company": "Connecticut Light and Power Company",
     "company_raw": "Connecticut Light and Power Company (FA19-8)",
@@ -7266,6 +7465,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -7276,6 +7476,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-11-17_ameren-corporation_fa20-6",
     "company": "Ameren Corporation",
     "company_raw": "Ameren Corporation (FA20-6)",
@@ -7597,6 +7801,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -7608,6 +7813,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-09-27_macquarie-energy-llc_pa19-5",
     "company": "Macquarie Energy LLC",
     "company_raw": "Macquarie Energy LLC (PA19-5)",
@@ -7633,10 +7842,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-09-23_centurion-pipeline-l-p_fa19-4",
     "company": "Centurion Pipeline L.P.",
     "company_raw": "Centurion Pipeline L.P. (FA19-4)",
@@ -7790,6 +8004,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -7802,6 +8017,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
     "company": "Bridger Pipeline LLC",
     "company_raw": "Bridger Pipeline LLC (FA19-10)",
@@ -8087,6 +8306,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -8099,6 +8319,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-09-16_versant-power_fa20-9",
     "company": "Versant Power",
     "company_raw": "Versant Power (FA20-9)",
@@ -8303,6 +8527,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Capitalization vs. expense",
@@ -8311,6 +8536,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-07-20_mustang-pipe-line-llc_fa20-4",
     "company": "Mustang Pipe Line LLC",
     "company_raw": "Mustang Pipe Line LLC (FA20-4)",
@@ -8476,6 +8705,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Affiliate / intercompany transactions",
       "Cost of service & rates",
@@ -8486,6 +8716,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-06-28_southern-california-edison-company_fa20-1",
     "company": "Southern California Edison Company",
     "company_raw": "Southern California Edison Company (FA20-1)",
@@ -8675,6 +8909,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -8684,6 +8919,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-04-14_evergy-inc_pa20-2",
     "company": "Evergy, Inc.",
     "company_raw": "Evergy, Inc. (PA20-2)",
@@ -8733,10 +8972,15 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-01-28_el-paso-electric-company_pa19-3",
     "company": "El Paso Electric Company",
     "company_raw": "El Paso Electric Company (PA19-3)",
@@ -8831,6 +9075,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Depreciation",
       "Informational postings"
@@ -8838,6 +9083,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2021-01-14_ugi-utilities-inc_fa20-3",
     "company": "UGI Utilities, Inc.",
     "company_raw": "UGI Utilities, Inc. (FA20-3)",
@@ -9187,6 +9436,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -9200,6 +9450,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-12-17_dominion-energy-transmission-inc_fa15-16",
     "company": "Dominion Energy Transmission, Inc.",
     "company_raw": "FA15-16 Dominion Energy Transmission, Inc.",
@@ -9223,10 +9477,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-12-04_allete-inc_fa20-2",
     "company": "ALLETE, Inc.",
     "company_raw": "ALLETE, Inc. (FA20-2)",
@@ -9489,6 +9748,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Depreciation",
@@ -9497,6 +9757,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
     "company": "Maritimes & Northeast Pipeline, L.L.C.",
     "company_raw": "Maritimes & Northeast Pipeline, L.L.C. (FA19-9)",
@@ -9703,6 +9967,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -9714,6 +9979,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-10-07_chevron-pipe-line-company_fa19-5",
     "company": "Chevron Pipe Line Company",
     "company_raw": "Chevron Pipe Line Company (FA19-5)",
@@ -9877,6 +10146,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
@@ -9887,6 +10157,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
     "company": "San Diego Gas & Electric Company",
     "company_raw": "San Diego Gas & Electric Company (FA19-3)",
@@ -9912,10 +10186,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-15_national-fuel-gas-supply-corporation_fa19-6",
     "company": "National Fuel Gas Supply Corporation",
     "company_raw": "National Fuel Gas Supply Corporation (FA19-6)",
@@ -10080,6 +10359,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -10093,6 +10373,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-07_pnm-resources-inc_pa18-1",
     "company": "PNM Resources, Inc.",
     "company_raw": "PNM Resources, Inc. (PA18-1)",
@@ -10384,6 +10668,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -10395,6 +10680,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-07_new-york-independent-system-operator-inc_pa19-1",
     "company": "New York Independent System Operator, Inc.",
     "company_raw": "New York Independent System Operator, Inc. (PA19-1)",
@@ -10419,10 +10708,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-02_midamerican-energy-company_fa19-2",
     "company": "MidAmerican Energy Company",
     "company_raw": "MidAmerican Energy Company (FA19-2)",
@@ -10448,10 +10742,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-07-02_michigan-electric-transmission-company-llc_fa19-7",
     "company": "Michigan Electric Transmission Company, LLC",
     "company_raw": "Michigan Electric Transmission Company, LLC (FA19-7)",
@@ -10545,6 +10844,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -10556,6 +10856,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-02-21_louisville-gas-and-electric-company-and-kentucky_pa19-4",
     "company": "Louisville Gas and Electric Company and Kentucky Utilities Company",
     "company_raw": "Louisville Gas and Electric Company and Kentucky Utilities Company (PA19-4)",
@@ -10582,10 +10886,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
     "company": "ONEOK NGL Pipeline, L.L.C.",
     "company_raw": "ONEOK NGL Pipeline, L.L.C. (FA18-1)",
@@ -10721,6 +11030,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -10734,6 +11044,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-11-21_exelon-corporation_pa18-3",
     "company": "Exelon Corporation",
     "company_raw": "Exelon Corporation (PA18-3)",
@@ -10805,12 +11119,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-11-15_national-grid-usa_fa16-2",
     "company": "National Grid USA",
     "company_raw": "National Grid USA (FA16-2)",
@@ -10836,10 +11155,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-09-27_cleco-power-llc_fa18-3",
     "company": "Cleco Power LLC",
     "company_raw": "Cleco Power LLC (FA18-3)",
@@ -11000,6 +11324,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -11011,6 +11336,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-09-19_avista-corporation_pa18-2",
     "company": "Avista Corporation",
     "company_raw": "Avista Corporation (PA18-2)",
@@ -11204,6 +11533,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -11214,6 +11544,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-09-06_ohio-power-company_fa17-2",
     "company": "Ohio Power Company",
     "company_raw": "Ohio Power Company (FA17-2)",
@@ -11296,6 +11630,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -11304,6 +11639,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-08-29_xcel-energy-inc_fa17-4",
     "company": "Xcel Energy Inc.",
     "company_raw": "Xcel Energy Inc. (FA17-4)",
@@ -11380,6 +11719,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Capitalization vs. expense",
@@ -11388,6 +11728,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-07-31_northern-states-power-company-minnesota_fa17-5",
     "company": "Northern States Power Company (Minnesota)",
     "company_raw": "Northern States Power Company (Minnesota) (FA17-5)",
@@ -11481,6 +11825,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Cost of service & rates",
@@ -11490,6 +11835,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-06-25_transcontinental-gas-pipe-line-company-llc_fa18-2",
     "company": "Transcontinental Gas Pipe Line Company, LLC",
     "company_raw": "Transcontinental Gas Pipe Line Company, LLC (FA18-2)",
@@ -11760,6 +12109,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -11772,6 +12122,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-05-14_northern-natural-gas-company_pa16-2",
     "company": "Northern Natural Gas Company",
     "company_raw": "Northern Natural Gas Company (PA16-2)",
@@ -11914,6 +12268,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -11921,6 +12276,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2019-04-23_american-electric-power-company-inc_fa17-1",
     "company": "American Electric Power Company, Inc.",
     "company_raw": "American Electric Power Company, Inc. (FA17-1)",
@@ -11998,6 +12357,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -12008,6 +12368,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-12-14_black-hills-corporation_fa16-3",
     "company": "Black Hills Corporation",
     "company_raw": "FA16-3 Black Hills Corporation",
@@ -12195,6 +12559,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -12202,6 +12567,10 @@
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-10-19_trunkline-gas-company_pa16-4",
     "company": "Trunkline Gas Company",
     "company_raw": "PA16-4 Trunkline Gas Company",
@@ -12420,6 +12789,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -12432,6 +12802,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-10-19_equitrans-l-p_fa17-6",
     "company": "Equitrans, L.P.",
     "company_raw": "FA17-6 Equitrans, L.P.",
@@ -12545,6 +12919,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -12557,6 +12932,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
     "company": "California Independent System Operator Corporation",
     "company_raw": "PA17-3 California Independent System Operator Corporation",
@@ -12583,10 +12962,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-08-24_kansas-city-power-light-company_pa17-4",
     "company": "Kansas City Power & Light Company",
     "company_raw": "PA17-4 Kansas City Power & Light Company",
@@ -12612,10 +12996,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-07-05_cms-energy-corporation_pa17-5",
     "company": "CMS Energy Corporation",
     "company_raw": "PA17-5 CMS Energy Corporation",
@@ -12675,12 +13064,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-06-11_idaho-power-company_pa17-7",
     "company": "Idaho Power Company",
     "company_raw": "PA17-7 Idaho Power Company",
@@ -12705,10 +13099,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-04-18_midcontinent-independent-system-operator-inc_pa16-5",
     "company": "Midcontinent Independent System Operator, Inc.",
     "company_raw": "PA16-5 Midcontinent Independent System Operator, Inc.",
@@ -12734,10 +13133,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-04-18_iso-new-england-inc_pa16-6",
     "company": "ISO New England, Inc.",
     "company_raw": "PA16-6 ISO New England, Inc.",
@@ -12763,10 +13167,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-02-21_entergy-gulf-states-louisiana-llc_fa15-10",
     "company": "Entergy Gulf States Louisiana, LLC",
     "company_raw": "FA15-10 Entergy Gulf States Louisiana, LLC",
@@ -12830,6 +13239,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -12838,6 +13248,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-02-21_entergy-arkansas-inc_fa15-11",
     "company": "Entergy Arkansas, Inc.",
     "company_raw": "FA15-11 Entergy Arkansas, Inc.",
@@ -12911,6 +13325,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -12920,6 +13335,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-02-14_american-transmission-company-llc_fa16-1",
     "company": "American Transmission Company, LLC",
     "company_raw": "FA16-1 American Transmission Company, LLC",
@@ -12979,6 +13398,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -12987,6 +13407,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-01-12_plains-pipeline-l-p_fa16-6",
     "company": "Plains Pipeline, L.P.",
     "company_raw": "FA16-6 Plains Pipeline, L.P.",
@@ -13284,6 +13708,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -13297,6 +13722,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-01-12_marathon-pipe-line-llc_fa16-7",
     "company": "Marathon Pipe Line, LLC",
     "company_raw": "FA16-7 Marathon Pipe Line, LLC",
@@ -13436,6 +13865,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -13447,6 +13877,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2018-01-12_explorer-pipeline-company_fa16-5",
     "company": "Explorer Pipeline Company",
     "company_raw": "FA16-5 Explorer Pipeline Company",
@@ -13700,6 +14134,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -13712,6 +14147,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-11-09_chevron-u-s-a-inc_pa16-1",
     "company": "Chevron U.S.A., Inc.",
     "company_raw": "PA16-1 Chevron U.S.A., Inc.",
@@ -13758,12 +14197,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-09-26_mississippi-power-company_fa15-8",
     "company": "Mississippi Power Company",
     "company_raw": "FA15-8 Mississippi Power Company",
@@ -13895,6 +14339,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Depreciation",
@@ -13903,6 +14348,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-09-26_gulf-power-company_fa15-5",
     "company": "Gulf Power Company",
     "company_raw": "FA15-5 Gulf Power Company",
@@ -14035,6 +14484,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Cost of service & rates",
@@ -14044,6 +14494,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-09-26_georgia-power-company_fa15-6",
     "company": "Georgia Power Company",
     "company_raw": "FA15-6 Georgia Power Company",
@@ -14215,6 +14669,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -14226,6 +14681,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-09-26_alabama-power-company_fa15-7",
     "company": "Alabama Power Company",
     "company_raw": "FA15-7 Alabama Power Company",
@@ -14386,6 +14845,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -14396,6 +14856,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-08-29_pacificorp_fa16-4",
     "company": "PacifiCorp",
     "company_raw": "FA16-4 PacifiCorp",
@@ -14422,10 +14886,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-08-21_sesco-enterprises-llc_pa16-3",
     "company": "SESCO Enterprises, LLC",
     "company_raw": "PA16-3 SESCO Enterprises, LLC",
@@ -14449,10 +14918,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-03-15_northwestern-corporation_pa15-1",
     "company": "NorthWestern Corporation",
     "company_raw": "PA15-1 NorthWestern Corporation",
@@ -14536,12 +15010,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2017-02-01_nv-energy-inc_pa15-2",
     "company": "NV Energy, Inc.",
     "company_raw": "PA15-2 NV Energy, Inc.",
@@ -14709,6 +15188,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -14717,6 +15197,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
     "company": "Plantation Pipe Line Company",
     "company_raw": "FA15-12 Plantation Pipe Line Company",
@@ -14920,6 +15404,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -14931,6 +15416,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-12-02_calpine-corporation_pa15-5",
     "company": "Calpine Corporation",
     "company_raw": "PA15-5 Calpine Corporation",
@@ -14985,12 +15474,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-10-14_dynegy-inc_pa15-3",
     "company": "Dynegy, Inc.",
     "company_raw": "PA15-3 Dynegy, Inc.",
@@ -15014,10 +15508,15 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-09-29_westar-energy-inc_fa15-9",
     "company": "Westar Energy, Inc.",
     "company_raw": "FA15-9 Westar Energy, Inc.",
@@ -15193,6 +15692,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -15202,6 +15702,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-09-29_kansas-gas-and-electric-company_fa15-15",
     "company": "Kansas Gas and Electric Company",
     "company_raw": "FA15-15 Kansas Gas and Electric Company",
@@ -15306,6 +15810,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -15315,6 +15820,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-08-16_empire-district-electric-company_pa15-7",
     "company": "Empire District Electric Company",
     "company_raw": "PA15-7 Empire District Electric Company",
@@ -15364,6 +15873,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Affiliate / intercompany transactions",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -15371,6 +15881,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-07-15_southwest-power-pool-inc_pa15-6",
     "company": "Southwest Power Pool, Inc.",
     "company_raw": "PA15-6 Southwest Power Pool, Inc.",
@@ -15444,12 +15958,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-05-09_enbridge-energy-partners-lp_fa15-4",
     "company": "Enbridge Energy Partners, LP",
     "company_raw": "FA15-4 Enbridge Energy Partners, LP",
@@ -15740,6 +16259,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -15751,6 +16271,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-04-19_itc-holdings-corporation_fa15-14",
     "company": "ITC Holdings Corporation",
     "company_raw": "FA15-14 ITC Holdings Corporation",
@@ -15787,10 +16311,15 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-04-19_entergy-services-inc_fa15-13",
     "company": "Entergy Services, Inc.",
     "company_raw": "FA15-13 Entergy Services, Inc.",
@@ -15817,10 +16346,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-04-01_duke-energy-corporation_pa14-2",
     "company": "Duke Energy Corporation",
     "company_raw": "PA14-2 Duke Energy Corporation",
@@ -16243,6 +16777,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -16251,6 +16786,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-03-30_destin-pipeline-company_fa15-1",
     "company": "Destin Pipeline Company",
     "company_raw": "FA15-1 Destin Pipeline Company",
@@ -16369,6 +16908,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
@@ -16378,6 +16918,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2016-01-04_emera-maine_pa15-4",
     "company": "Emera Maine",
     "company_raw": "PA15-4 Emera Maine",
@@ -16442,6 +16986,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification"
@@ -16449,6 +16994,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-10-23_yankee-atomic-energy-company_fa15-3",
     "company": "Yankee Atomic Energy Company",
     "company_raw": "FA15-3 Yankee Atomic Energy Company",
@@ -16474,10 +17023,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-10-23_portland-general-electric-company_fa15-2",
     "company": "Portland General Electric Company",
     "company_raw": "FA15-2 Portland General Electric Company",
@@ -16503,10 +17057,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-07-30_entergy-corporation_fa14-2",
     "company": "Entergy Corporation",
     "company_raw": "FA14-2 Entergy Corporation",
@@ -16542,10 +17101,15 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-07-02_nrg-energy-inc_pa14-1",
     "company": "NRG Energy, Inc.",
     "company_raw": "PA14-1 NRG Energy, Inc.",
@@ -16592,12 +17156,17 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-06-17_enterprise-product-partners_fa14-1",
     "company": "Enterprise Product Partners",
     "company_raw": "FA14-1 Enterprise Product Partners",
@@ -16737,6 +17306,7 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
@@ -16747,6 +17317,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-06-17_conocophillips_fa14-5",
     "company": "ConocoPhillips",
     "company_raw": "FA14-5 ConocoPhillips",
@@ -16794,6 +17368,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Affiliate / intercompany transactions",
       "Form reporting (Form No. 1/2/6, Page 700)"
@@ -16801,6 +17376,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-06-17_colonial-pipeline-company_fa14-4",
     "company": "Colonial Pipeline Company",
     "company_raw": "FA14-4 Colonial Pipeline Company",
@@ -16906,6 +17485,7 @@
         "cost_to_customers": true
       }
     ],
+    "structured": true,
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
@@ -16916,6 +17496,10 @@
     "cost_to_customers": true
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-06-04_kinder-morgan_fa14-10",
     "company": "Kinder Morgan",
     "company_raw": "FA14-10 Kinder Morgan",
@@ -16939,10 +17523,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2015-03-27_kansas-gas-and-electric-company_fa14-3",
     "company": "Kansas Gas and Electric Company",
     "company_raw": "FA14-3 Kansas Gas and Electric Company",
@@ -16987,10 +17576,15 @@
         "cost_to_customers": false
       }
     ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2014-10-24_occidental-energy-marketing-inc_fa14-8",
     "company": "Occidental Energy Marketing, Inc.",
     "company_raw": "FA14-8 Occidental Energy Marketing, Inc.",
@@ -17014,10 +17608,15 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "",
+    "doc_type": null,
     "id": "2014-10-24_cargill_fa14-6",
     "company": "Cargill",
     "company_raw": "FA14-6 Cargill",
@@ -17041,6 +17640,7 @@
     ],
     "finding_count": 0,
     "findings": [],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   }
