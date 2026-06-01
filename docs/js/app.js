@@ -152,6 +152,15 @@ function matches(report) {
 }
 
 /* ---------- top patterns band ---------- */
+/* Bring the (now-filtered) stream into view. JS-driven smooth scroll isn't
+   covered by the reduced-motion CSS rule, so honor the preference here. */
+function scrollToResults() {
+  const main = document.getElementById("main");
+  if (!main) return;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  main.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+}
+
 function renderPatternsBand() {
   const rail = document.getElementById("patterns-rail");
   if (!rail) return;
@@ -178,9 +187,63 @@ function renderPatternsBand() {
         el("span", { class: "pattern-bar", style: `width:${Math.round((t.report_count / max) * 100)}%` }),
       ]),
     ]);
-    card.addEventListener("click", () => toggleFilter("theme", t.theme, card));
+    card.addEventListener("click", () => {
+      toggleFilter("theme", t.theme, card);
+      // Scroll down to the results only when turning the pattern on.
+      if (state.filters.theme.has(t.theme)) scrollToResults();
+    });
     rail.appendChild(el("li", {}, card));
   });
+}
+
+/* ---------- corpus trends (charts over the already-computed aggregates) ---------- */
+/* A vertical column chart — used for the year timeline. */
+function trendColumns(title, unit, entries) {
+  const max = Math.max(1, ...entries.map(([, v]) => v));
+  const cols = entries.map(([label, v]) =>
+    el("div", { class: "trend-col", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
+      el("span", { class: "trend-col-val", text: String(v) }),
+      el("span", { class: "trend-col-bar", style: `height:${v ? Math.max(4, Math.round((v / max) * 80)) : 0}px`, "aria-hidden": "true" }),
+      el("span", { class: "trend-col-yr", text: "’" + String(label).slice(2) }),
+    ])
+  );
+  return el("div", { class: "trend-card" }, [
+    el("h3", { class: "trend-card-title", text: title }),
+    el("div", { class: "trend-cols", role: "list", "aria-label": `${title}, ${unit}` }, cols),
+  ]);
+}
+
+/* A horizontal bar chart — used for the few-category breakdowns. */
+function trendBars(title, unit, entries, note) {
+  const max = Math.max(1, ...entries.map(([, v]) => v));
+  const rows = entries.map(([label, v]) =>
+    el("div", { class: "trend-row", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
+      el("span", { class: "trend-row-label", text: label }),
+      el("span", { class: "trend-track", "aria-hidden": "true" }, [el("span", { class: "trend-bar", style: `width:${Math.round((v / max) * 100)}%` })]),
+      el("span", { class: "trend-row-val", text: String(v) }),
+    ])
+  );
+  return el("div", { class: "trend-card" }, [
+    el("h3", { class: "trend-card-title", text: title }),
+    el("div", { class: "trend-rows", role: "list", "aria-label": `${title}, ${unit}` }, rows),
+    note ? el("p", { class: "trend-note", text: note }) : null,
+  ]);
+}
+
+function renderTrends() {
+  const host = document.getElementById("trends");
+  if (!host) return;
+  const p = state.patterns;
+  // By year & by industry are clean counts (one issued-year / one industry per report).
+  const years = Object.keys(p.by_year).sort();
+  const industries = Object.entries(p.by_industry).sort((a, b) => b[1] - a[1]);
+  // A report can cover several functions, so these bars can sum past the report total.
+  const functions = Object.entries(p.by_function).sort((a, b) => b[1] - a[1]);
+  host.replaceChildren(
+    trendColumns("By year issued", "reports", years.map((y) => [y, p.by_year[y]])),
+    trendBars("By industry", "reports", industries.map(([k, v]) => [cap(k), v])),
+    trendBars("By function", "reports", functions.map(([k, v]) => [cap(k), v]), `A report may cover several functions, so these exceed ${p.report_count}.`)
+  );
 }
 
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
@@ -408,6 +471,7 @@ function wireChrome() {
   renderKPIs();
   renderFilters();
   renderPatternsBand();
+  renderTrends();
   renderFooter();
   applyFilters();
 })();
