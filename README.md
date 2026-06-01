@@ -4,6 +4,14 @@ Static tooling to **download, extract, structure, and visualize FERC audit repor
 
 The first module is the **FERC Audit Explorer** — electric (Form 1), gas (Form 2) and oil (Form 6) audits. The longer-term goal is an *"audit-my-document"* tool that flags likely issues in a filing using patterns mined from historical audits.
 
+The explorer is organized into **three collections, one per tab**, each with its own top stats/patterns:
+
+- **FERC Audits** — the 120-report FERC audit corpus, parsed into findings → recommendations.
+- **Prudence Reviews** — FERC rate-case prudence determinations (formal challenges, fuel/cost prudence, ALJ decisions) from eLibrary.
+- **State PUC Audits** — state PUC/PSC/SCC management & prudence audits (PA, MI, … ).
+
+FERC audits are structured into verbatim findings; prudence orders and state audits are currently **metadata-only** (captured with their source link + full provenance, not machine-parsed into findings — see [DATA_STRUCTURE.md §8](DATA_STRUCTURE.md)).
+
 ## Principles
 
 - **Static-first.** A Python CLI pipeline produces JSON; a vanilla HTML/CSS/JS site (`docs/`) reads it. Hosted on GitHub Pages. No backend, no framework.
@@ -29,6 +37,7 @@ pip install -r requirements.txt          # all deps already present in this env
 
 python -m pipeline.listing                # parse data/listing.json from the live snapshot (71 reports, 2019+)
 python -m pipeline.backfill               # add FY2014-2018 from a Wayback snapshot (+49 -> 120; ferc.gov-only)
+python -m pipeline.sources                # ingest prudence reviews + state PUC audits from data/seeds/*.json (metadata-only)
 python -m pipeline.fetch                  # download report PDFs -> data/raw/ (rate-limited, cached)
 python -m pipeline.classify               # tag each PDF by FERC form -> industry (electric/gas/oil)
 python -m pipeline.extract                # PDF -> per-page text (all reports; --limit N to cap)

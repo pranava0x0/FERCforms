@@ -189,3 +189,27 @@ docs/
 **Classification (`pipeline/classify.py`):** scans the first ~8 pages of each PDF and scores industry from form number + governing statute (FPA→electric, NGA→gas, ICA→oil) + USofA part + tariff/ISO/RTO signals (`pipeline/forms.py`). Statute signals matter because **non-financial (PA) audits often don't cite a form number**. Observed across the snapshot corpus: ~39 electric, ~8 oil, ~4 gas, ~1 unknown.
 
 **Structured (full corpus, all forms + years):** **120 reports** (86 electric, 17 oil, 14 gas, 3 unknown), issued 2014→2025 — all born-digital (0 image-only, no OCR). **94 have findings (599 findings, 1,505 recommendations).** The remaining 26 are either genuine clean audits ("A. Conclusion", no noncompliance) or older FY2014-2018 reports whose layout the 2019+-tuned parser doesn't yet fully read (~9-10 reports — see [ISSUES.md](ISSUES.md) "Known limitations"; the source PDF is linked on every card). Functions: transmission 67, generation 63, distribution 2. Top themes: Form reporting (68 reports), accounting misclassification (67), depreciation (40), below-the-line costs (40), property & plant records (36).
+
+---
+
+## 8. Beyond FERC audits — collections & the generic source path
+
+The explorer now spans **three collections**, one per UI tab, each with its own baked stats/patterns (`docs/data/patterns_by_collection.json`):
+
+| `collection` | Tab | Source | Structured into findings? |
+| --- | --- | --- | --- |
+| `ferc_audit` | **FERC Audits** | `ferc.gov/audits` (the 120-report corpus above) | **Yes** — `pipeline/structure.py` |
+| `prudence_review` | **Prudence Reviews** | FERC eLibrary rate-case orders (formal challenges, fuel/cost prudence, ALJ decisions) | **No** — metadata-only |
+| `state_audit` | **State PUC Audits** | State PUC/PSC/SCC audits (PA, MI, … ) | **No** — metadata-only |
+
+`collection`, `jurisdiction`, `source`, `doc_type`, and `structured` are fields on `AuditReport`, defaulted to the original FERC-audit identity so the 120 committed reports validate unmodified.
+
+**The generic seed (`SourceSeed`, `pipeline/sources.py`).** FERC audits seed from `data/listing.json` + the eLibrary cookie dance. Other regulators publish PDFs at stable URLs, so they seed from a simpler per-source file `data/seeds/<source>.json` — one `SourceSeed` per document: a direct `pdf_url` (or, when `accession` is set, the eLibrary DownloadPDF URL) plus full provenance (`source`, `source_page_url`, `issued_date`, `docket`, `captured_at`, `source_note`). Run `python -m pipeline.sources --seed data/seeds/<file>.json` → fetch (plain GET, or the F5 cookie dance when `accession` is set) → extract → write `data/processed/<id>/report.json`.
+
+**Why metadata-only (`parse=False`, the default).** These documents are captured with their source link and full provenance but **not** machine-extracted into findings. FERC's executive-summary → numbered-noncompliance-findings parser does not fit:
+- **FERC prudence orders** are adversarial legal opinions / ALJ initial decisions / settlements — free-form prose, no "Summary of Noncompliance Findings" list (verified across the seeded examples).
+- **State PUC audits** carry findings either in **multi-column summary tables** (PA focused-audit "Finding / Conclusion / New Recommendation" grids that linearize messily) or **per-chapter prose** — heterogeneous across formats. Emitting garbled text as "verbatim" findings would break the project's [quote discipline](AGENTS.md).
+
+The site renders metadata-only records with an honest **"Listed for reference"** state (`structured=false`) and a link to the source PDF — distinct from a genuinely finding-free audit ("No findings extracted"). A careful findings parser for the clean PA/MI management-audit subset (per-chapter "Findings, Conclusions, and Recommendations" prose + recommendation tables, gated by a no-regression snapshot like the FERC parser) is a [BACKLOG.md](BACKLOG.md) item.
+
+**Seeded so far.** State (PA: 4 PA PUC Bureau of Audits management/focused audits 2022–2025; MI: 4 Liberty Consulting U-21305 distribution audits of Consumers + DTE, 2024). Prudence (FERC eLibrary formal-challenge orders + an ALJ initial decision, 2015–2025). Access notes per regulator (which are scriptable vs. WAF-blocked) live in [ISSUES.md](ISSUES.md).

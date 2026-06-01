@@ -15,6 +15,8 @@ pipeline/            CLI stages (each idempotent, cacheable)
   forms.py           FERC form -> industry + audit-type (FA/PA) detection (shared)
   listing.py         build listing.json from a saved /audits snapshot
   backfill.py        add FY2014-2018 reports from a Wayback /audits snapshot (ferc.gov-only)
+  sources.py         ingest non-FERC-audit docs (prudence reviews / state PUC audits) from
+                     per-source seeds in data/seeds/*.json — metadata-only (no findings parse)
   fetch.py           download report PDFs over plain HTTP (rate-limited, cached)
   classify.py        tag each PDF by form/industry -> classification.json (scoping)
   extract.py         PDF -> text (pdfplumber + PyMuPDF; flags scanned pages)
@@ -24,8 +26,9 @@ pipeline/            CLI stages (each idempotent, cacheable)
   (each stage runs as `python -m pipeline.<stage>`; there is no cli.py wrapper —
    run in order: listing -> backfill -> fetch -> classify -> extract -> structure -> build)
 data/
-  listing.json       browser-captured audit index (the SEED — committed)
-  raw/               downloaded PDFs (gitignored; re-fetchable from listing)
+  listing.json       browser-captured FERC audit index (the SEED — committed)
+  seeds/*.json       per-source seeds for prudence reviews / state PUC audits (committed)
+  raw/               downloaded PDFs (gitignored; re-fetchable from listing/seeds)
   processed/         per-report extracted text + structured JSON
 docs/                GitHub Pages site (vanilla HTML/CSS/JS) + baked data/*.json
 tests/               pytest
@@ -38,6 +41,7 @@ tests/               pytest
 | Install deps | `pip install -r requirements.txt` (all already present) |
 | Build listing from snapshot | `python -m pipeline.listing` |
 | Backfill FY2014-2018 (Wayback) | `python -m pipeline.backfill` |
+| Ingest prudence / state-PUC docs | `python -m pipeline.sources` (add `--seed data/seeds/<file>.json`) |
 | Download PDFs from listing | `python -m pipeline.fetch` (add `--limit N`) |
 | Classify by form/industry | `python -m pipeline.classify` |
 | Extract text | `python -m pipeline.extract` (add `--limit N`) |
@@ -52,6 +56,9 @@ tests/               pytest
 - The audit *listing* cannot be scraped headlessly (Cloudflare). Capture it via a real browser; never add code that "solves" the challenge. See [ISSUES.md](ISSUES.md).
 - `data/listing.json` and any baked `docs/data/*.json` move together with the seed change that produced them — never split across commits ([§ Common tasks](#common-tasks)).
 - The corpus is all FERC utility audits (electric / gas / oil, FA + PA) for every available year. The live /audits page lists 2019+ only; FY2014-2018 are backfilled from a saved Wayback snapshot via `pipeline.backfill` (ferc.gov-origin only). See [ISSUES.md](ISSUES.md).
+- **Three collections, one per UI tab.** Every record carries a `collection` (`ferc_audit` | `prudence_review` | `state_audit`), driving the site's tabs — each tab has its OWN baked stats/patterns (`docs/data/patterns_by_collection.json`). Canonical keys live in `pipeline/build.py` `COLLECTIONS`; the site mirrors them in `docs/js/app.js` (a test asserts parity). FERC audits default to `ferc_audit` (no rewrite of the 120 committed reports).
+- **Prudence reviews + state PUC audits are metadata-only.** They're ingested via `pipeline/sources.py` from `data/seeds/*.json` and captured with their source link + full provenance but **NOT** parsed into findings (`structured=False` → the site's "Listed for reference" state). FERC's executive-summary parser doesn't fit legal orders / testimony / table-driven state audit summaries, and emitting garbled "verbatim" findings would break the quote discipline. A findings parser for the clean PA/MI management-audit subset is a [BACKLOG.md](BACKLOG.md) item — don't bolt findings onto these casually.
+- **Official-government sources ONLY.** Every seed URL must be an official `.gov` host (or the legacy `*.state.xx.us` pattern, e.g. Ohio PUCO). NEVER ingest from third-party mirrors/aggregators (DocumentCloud, SEC EDGAR, news sites) even when they're easier to fetch — pull from the regulator's own site. `pipeline/sources.load_seed` enforces this and **raises** on any non-gov URL (generalizes backfill's "ferc.gov-origin only" rule); a test guards every committed seed.
 - **Not every structured report has findings — don't assume `finding_count > 0`.** ~22% (26/120) parse to 0 findings: partly genuine clean audits, partly a known parser-coverage gap across *both* eras (FY2014-2018 format + ~11 live 2019+ reports). The site renders these with an explicit "No findings extracted" state and a source-PDF link. Recovery is the top [BACKLOG.md](BACKLOG.md) item; details in [ISSUES.md](ISSUES.md).
 
 ---
