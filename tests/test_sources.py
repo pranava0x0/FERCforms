@@ -66,6 +66,38 @@ def test_source_seed_defaults():
     assert s.archived_via is None
 
 
+def test_is_official_gov_accepts_gov_rejects_mirrors():
+    assert sources.is_official_gov("https://www.puc.pa.gov/pcdocs/1.pdf")
+    assert sources.is_official_gov("https://www.michigan.gov/mpsc/x.pdf")
+    assert sources.is_official_gov("https://elibrary.ferc.gov/eLibrary/filelist?x")
+    assert sources.is_official_gov("https://dis.puc.state.oh.us/ViewImage.aspx")  # legacy state gov
+    # Third-party mirrors / aggregators / non-gov sources are rejected.
+    assert not sources.is_official_gov("https://www.documentcloud.org/documents/123")
+    assert not sources.is_official_gov("https://example.com/audit.pdf")
+    assert not sources.is_official_gov("https://notgov.com.evil.io/x")
+    assert not sources.is_official_gov("")
+
+
+def test_load_seed_rejects_non_gov_source(tmp_path):
+    bad = [{
+        "id": "x", "company": "X", "collection": "state_audit", "jurisdiction": "PA",
+        "source": "mirror", "pdf_url": "https://www.documentcloud.org/x.pdf",
+        "source_page_url": "https://www.documentcloud.org/x", "captured_at": "2026-06-01",
+    }]
+    p = tmp_path / "bad.json"
+    p.write_text(json.dumps(bad), encoding="utf-8")
+    with pytest.raises(ValueError, match="official government source"):
+        sources.load_seed(p)
+
+
+def test_committed_seeds_are_all_official_gov():
+    """Every committed seed must source from an official .gov host — no mirrors."""
+    for path in sorted(config.SEEDS_DIR.glob("*.json")):
+        for d in json.loads(path.read_text(encoding="utf-8")):
+            assert sources.is_official_gov(d["pdf_url"]), f"{path.name}: {d['pdf_url']}"
+            assert sources.is_official_gov(d["source_page_url"]), f"{path.name}: {d['source_page_url']}"
+
+
 def test_all_seed_files_validate_and_have_unique_ids():
     """Every committed seed must parse cleanly (each record a valid SourceSeed) and
     use globally-unique ids — the id is also the on-disk processed dir + raw

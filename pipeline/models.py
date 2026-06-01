@@ -57,8 +57,9 @@ class SourceSeed(BaseModel):
     source: str                   # human label, e.g. "PA PUC Bureau of Audits"
     doc_type: Optional[str] = None  # e.g. "management audit", "Commission order"
     industry: Optional[str] = None  # "electric" | "gas" | "oil" | "water" — when known from the source
-    pdf_url: str                  # direct PDF download (stable)
+    pdf_url: str                  # direct PDF download (stable); for eLibrary, the DownloadPDF URL
     source_page_url: str          # human-facing landing/source page
+    accession: Optional[str] = None  # eLibrary accession — when set, fetch via the F5 cookie dance, not a plain GET
     issued_date: Optional[date] = None
     docket: Optional[str] = None  # case/docket number where applicable
     captured_at: date             # when this record was captured

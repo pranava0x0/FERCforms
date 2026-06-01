@@ -6,13 +6,13 @@
   "by_industry_identified": {
     "gas": 15,
     "oil": 17,
-    "electric": 93,
+    "electric": 98,
     "unknown": 3
   },
-  "reports_structured": 128,
+  "reports_structured": 133,
   "by_collection": {
     "ferc_audit": 120,
-    "prudence_review": 0,
+    "prudence_review": 5,
     "state_audit": 8
   },
   "listing_captured_at": "2026-02-03"

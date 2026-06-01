@@ -483,7 +483,7 @@ function cardNode(r) {
   rows.push(...kv("Jurisdiction", r.jurisdiction || "—", !r.jurisdiction));
   if (r.functions && r.functions.length) rows.push(...kv("Function(s)", r.functions.map(cap).join(", "), false));
   if (r.forms && r.forms.length) rows.push(...kv("FERC forms", r.forms.map((f) => "No. " + f).join(", "), false));
-  rows.push(...kv("Pages", String(r.page_count), false));
+  if (r.page_count > 0) rows.push(...kv("Pages", String(r.page_count), false));
   rows.push(...kv("Source", r.source || r.source_note || "Not stated", !(r.source || r.source_note)));
   const root = el("div", { class: "thread-root" }, [el("dl", {}, rows)]);
 

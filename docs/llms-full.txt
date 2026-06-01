@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 128 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 133 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
@@ -232,6 +232,14 @@ PG&E did not properly follow the FERC Form No. 1 instructions and, therefore, di
 Recommendations:
 36. Revise and strengthen policies, procedures, and practices to report correct, accurate, and complete information in the FERC Form No. 1 consistent with the page instructions.
 37. Provide training to relevant staff on policies and procedures implemented in response to Recommendation 36, and repeat such trainings as needed. E.
+
+---
+
+## ISO New England Inc. et al.
+- Docket: ER20-2054 | Audit type: n/a
+- Issued: 2025-09-18 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3062&optimized=false
 
 ---
 
@@ -970,6 +978,14 @@ Recommendations:
 - Issued: 2024-07-11 | Industry: electric | FERC Form: n/a
 - Function(s): n/a
 - Source: https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation
+
+---
+
+## Constellation Mystic Power, LLC
+- Docket: ER18-1639 | Audit type: n/a
+- Issued: 2024-05-23 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240523-3096&optimized=false
 
 ---
 
@@ -3030,6 +3046,14 @@ Recommendations:
 
 ---
 
+## Delmarva Power & Light Company
+- Docket: ER09-1158 | Audit type: n/a
+- Issued: 2020-08-28 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200828-3048&optimized=false
+
+---
+
 ## San Diego Gas & Electric Company
 - Docket: FA19-3-000 | Audit type: financial
 - Issued: 2020-07-30 | Industry: electric | FERC Form: No. 1
@@ -4943,6 +4967,14 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 
 ---
 
+## ITC Midwest LLC
+- Docket: ER15-1250 | Audit type: n/a
+- Issued: 2016-03-11 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160311-3026&optimized=false
+
+---
+
 ## Emera Maine
 - Docket: PA15-4-000 | Audit type: non-financial
 - Issued: 2016-01-04 | Industry: n/a | FERC Form: n/a
@@ -4975,6 +5007,14 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 - Function(s): generation
 - Audit period: January 1, 2012 through July 31, 2015
 - Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20151023-3034&optimized=false
+
+---
+
+## Potomac-Appalachian Transmission Highline, LLC et al.
+- Docket: ER09-1256 | Audit type: n/a
+- Issued: 2015-09-14 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150914-4006&optimized=false
 
 ---
 

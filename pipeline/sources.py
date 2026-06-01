@@ -25,14 +25,16 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import re
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 
-from pipeline import config
+from pipeline import config, fetch
 from pipeline.extract import extract_pages
-from pipeline.models import AuditReport, SourceSeed
+from pipeline.models import AuditReport, ListingEntry, SourceSeed
 
 logger = logging.getLogger(__name__)
 
@@ -42,6 +44,33 @@ _MIN_PDF_BYTES = 1024
 
 class SourceFetchError(Exception):
     """A source document PDF could not be downloaded after retries."""
+
+
+# Only ingest documents from OFFICIAL GOVERNMENT sources — never third-party
+# mirrors or aggregators (DocumentCloud, SEC EDGAR, scribd, news sites, etc.).
+# This generalizes the existing "ferc.gov-origin only" rule (pipeline/backfill.py)
+# to every regulator. Accepted: any `.gov` host (federal + most state/agency
+# domains, e.g. puc.pa.gov, michigan.gov, ferc.gov) and the legacy state-government
+# pattern `*.state.<xx>.us` (e.g. Ohio PUCO's dis.puc.state.oh.us).
+_STATE_LEGACY_GOV_RE = re.compile(r"\.state\.[a-z]{2}\.us$")
+
+
+def is_official_gov(url: str) -> bool:
+    """True if the URL's host is an official government domain (see note above)."""
+    host = (urlparse(url).hostname or "").lower()
+    if not host:
+        return False
+    return host == "gov" or host.endswith(".gov") or bool(_STATE_LEGACY_GOV_RE.search(host))
+
+
+def _assert_official_gov(seed: SourceSeed) -> None:
+    """Reject any seed whose PDF or source-page URL isn't an official .gov host."""
+    for label, url in (("pdf_url", seed.pdf_url), ("source_page_url", seed.source_page_url)):
+        if not is_official_gov(url):
+            raise ValueError(
+                f"{seed.id}: {label} {url!r} is not an official government source "
+                f"— only .gov (and *.state.xx.us) sources are allowed"
+            )
 
 
 def make_session() -> requests.Session:
@@ -100,6 +129,25 @@ def fetch_doc(
     raise SourceFetchError(f"{seed.id}: {last_error}")
 
 
+def _as_listing_entry(seed: SourceSeed) -> ListingEntry:
+    """Adapt an eLibrary-backed seed to a ListingEntry so the FERC fetch path
+    (F5 cookie dance + DownloadPDF) can download it. Used only when seed.accession
+    is set (e.g. FERC prudence orders)."""
+    return ListingEntry(
+        id=seed.id,
+        company=seed.company,
+        company_raw=seed.company,
+        docket=seed.docket,
+        accession_number=seed.accession,  # type: ignore[arg-type]  (guarded by caller)
+        issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url,
+        pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at,
+        source_note=seed.source_note,
+        archived_via=seed.archived_via,
+    )
+
+
 def structure_seed(seed: SourceSeed, page_count: int, scanned_pages: list[int]) -> AuditReport:
     """Build a metadata-only AuditReport from a seed + its extracted page stats.
 
@@ -133,39 +181,95 @@ def structure_seed(seed: SourceSeed, page_count: int, scanned_pages: list[int]) 
     )
 
 
+# Single-attempt timeout for eLibrary DownloadPDF. eLibrary generates the combined
+# PDF server-side; normal orders return in seconds, but huge ALJ decisions can take
+# minutes. For metadata-only records the download is a *bonus* (page count + a local
+# provenance copy) — the verified accession + eLibrary source link is the real
+# provenance — so we try once and fall back to metadata-only rather than retry-storm.
+ELIBRARY_SINGLE_TIMEOUT: int = 90
+
+
+def _fetch_elibrary_once(
+    session: requests.Session, seed: SourceSeed, raw_dir: Path, *, force: bool = False
+) -> Path:
+    """One-shot eLibrary download (F5 cookie dance + DownloadPDF). Raises on miss."""
+    acc = seed.accession
+    dest = raw_dir / f"{acc}.pdf"
+    if not force and dest.exists() and dest.stat().st_size > _MIN_PDF_BYTES:
+        logger.info("cached: %s", dest.name)
+        return dest
+    filelist = f"{config.ELIBRARY_ORIGIN}/eLibrary/filelist?accession_number={acc}&optimized=false"
+    if not session.cookies:  # seed the F5 session cookie once
+        session.get(filelist, timeout=ELIBRARY_SINGLE_TIMEOUT).raise_for_status()
+    time.sleep(config.REQUEST_DELAY_SECONDS)
+    resp = session.post(
+        seed.pdf_url,
+        json={"serverLocation": ""},
+        headers={"Referer": filelist, "Content-Type": "application/json"},
+        timeout=ELIBRARY_SINGLE_TIMEOUT,
+    )
+    if resp.status_code == 200 and resp.content[:5] == _PDF_MAGIC:
+        tmp = dest.with_suffix(".pdf.part")
+        tmp.write_bytes(resp.content)
+        tmp.replace(dest)
+        logger.info("downloaded %s (%d bytes)", dest.name, len(resp.content))
+        return dest
+    raise SourceFetchError(
+        f"{acc}: {resp.status_code} {resp.headers.get('content-type', '')} ({len(resp.content)}b)"
+    )
+
+
 def load_seed(path: Path) -> list[SourceSeed]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
-    return [SourceSeed.model_validate(d) for d in data]
+    seeds = [SourceSeed.model_validate(d) for d in data]
+    for seed in seeds:  # official-government-source guard (fail loud, like backfill's ferc.gov check)
+        _assert_official_gov(seed)
+    return seeds
 
 
 def process_seed(
     path: Path, *, raw_dir: Path, processed_dir: Path, force: bool = False
-) -> tuple[int, list[tuple[str, str]]]:
-    """Fetch + extract + structure every document in one seed file."""
+) -> tuple[int, list[str]]:
+    """Fetch (best-effort) + extract + structure every document in one seed file.
+
+    The download is best-effort for these metadata-only records: if the PDF can't
+    be fetched (eLibrary slow on a huge decision, a transient error), we still
+    write the record from its seed (page_count=0) — the verified source link is
+    the provenance. Returns (#written, [ids written WITHOUT a fetched PDF]).
+    """
     raw_dir.mkdir(parents=True, exist_ok=True)
     session = make_session()
+    elib_session: requests.Session | None = None  # lazily created (shares the F5 cookie)
     seeds = load_seed(path)
     logger.info("processing %d document(s) from %s", len(seeds), path.name)
-    ok = 0
-    failures: list[tuple[str, str]] = []
+    written = 0
+    no_pdf: list[str] = []
     for i, seed in enumerate(seeds, 1):
         logger.info("[%d/%d] %s — %s", i, len(seeds), seed.id, seed.company)
+        page_count, scanned = 0, []  # type: ignore[var-annotated]
         try:
-            pdf_path = fetch_doc(session, seed, raw_dir, force=force)
+            if seed.accession:
+                if elib_session is None:
+                    elib_session = fetch.make_session()
+                pdf_path = _fetch_elibrary_once(elib_session, seed, raw_dir, force=force)
+            else:
+                pdf_path = fetch_doc(session, seed, raw_dir, force=force)
             pages = extract_pages(pdf_path)
+            page_count = len(pages)
             scanned = [p.page for p in pages if p.is_image_only]
-            report = structure_seed(seed, page_count=len(pages), scanned_pages=scanned)
-            out_dir = processed_dir / seed.id
-            out_dir.mkdir(parents=True, exist_ok=True)
-            (out_dir / "report.json").write_text(
-                report.model_dump_json(indent=2), encoding="utf-8"
+        except Exception as exc:  # noqa: BLE001 — fetch is best-effort for metadata-only records
+            logger.warning(
+                "could not fetch/extract %s (%s) — writing metadata-only with no page count",
+                seed.id, exc,
             )
-            logger.info("ingested %s (%d pages, metadata-only)", seed.id, len(pages))
-            ok += 1
-        except Exception as exc:  # noqa: BLE001 — one doc never aborts the batch
-            failures.append((seed.id, str(exc)))
-            logger.error("FAILED %s: %s", seed.id, exc)
-    return ok, failures
+            no_pdf.append(seed.id)
+        report = structure_seed(seed, page_count=page_count, scanned_pages=scanned)
+        out_dir = processed_dir / seed.id
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "report.json").write_text(report.model_dump_json(indent=2), encoding="utf-8")
+        logger.info("ingested %s (%d pages, metadata-only)", seed.id, page_count)
+        written += 1
+    return written, no_pdf
 
 
 def main() -> None:
@@ -185,18 +289,21 @@ def main() -> None:
         logger.warning("no seed files found in %s", config.SEEDS_DIR)
         return
 
-    total_ok = 0
-    total_fail: list[tuple[str, str]] = []
+    total_written = 0
+    total_no_pdf: list[str] = []
     for sp in seed_paths:
-        ok, failures = process_seed(
+        written, no_pdf = process_seed(
             sp, raw_dir=config.RAW_DIR, processed_dir=config.PROCESSED_DIR, force=args.force
         )
-        total_ok += ok
-        total_fail += failures
+        total_written += written
+        total_no_pdf += no_pdf
 
-    logger.info("done: %d ingested, %d failed", total_ok, len(total_fail))
-    for sid, error in total_fail:
-        logger.error("  %s: %s", sid, error)
+    logger.info(
+        "done: %d ingested (%d metadata-only without a fetched PDF)",
+        total_written, len(total_no_pdf),
+    )
+    for sid in total_no_pdf:
+        logger.warning("  no PDF fetched (record still written from seed): %s", sid)
 
 
 if __name__ == "__main__":
