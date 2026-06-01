@@ -194,6 +194,16 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     # (title + inline verbatim summary). Most reports lack it, so fall back to the
     # TOC "Findings and Recommendations" subsection + body-paragraph summaries.
     # Reports whose section is just "A. Conclusion" legitimately have 0 findings.
+    #
+    # KNOWN COVERAGE GAP (audited 2026-05-31): 26/120 reports (22%) yield 0
+    # findings. ~half are genuinely clean small-entity letters; the rest are a
+    # parser miss spanning BOTH eras — the FY2014-2018 combined "Compliance
+    # Findings and Other Matter" header + `(cid:9)` tab leaders, AND ~11 live
+    # 2019+ reports (e.g. SDG&E FA19-3 85pp, WEC FA21-2 65pp) whose section
+    # wording this path doesn't catch. A naive header/leader extension regressed
+    # the validated path (Cleco 12->1, MISO 3->7). Recovery is gated on a
+    # no-regression snapshot of current finding counts — see ISSUES.md and the
+    # top BACKLOG.md item before touching the dispatch below.
     es_block = _section_any(
         full,
         [

@@ -52,6 +52,7 @@ tests/               pytest
 - The audit *listing* cannot be scraped headlessly (Cloudflare). Capture it via a real browser; never add code that "solves" the challenge. See [ISSUES.md](ISSUES.md).
 - `data/listing.json` and any baked `docs/data/*.json` move together with the seed change that produced them — never split across commits ([§ Common tasks](#common-tasks)).
 - The corpus is all FERC utility audits (electric / gas / oil, FA + PA) for every available year. The live /audits page lists 2019+ only; FY2014-2018 are backfilled from a saved Wayback snapshot via `pipeline.backfill` (ferc.gov-origin only). See [ISSUES.md](ISSUES.md).
+- **Not every structured report has findings — don't assume `finding_count > 0`.** ~22% (26/120) parse to 0 findings: partly genuine clean audits, partly a known parser-coverage gap across *both* eras (FY2014-2018 format + ~11 live 2019+ reports). The site renders these with an explicit "No findings extracted" state and a source-PDF link. Recovery is the top [BACKLOG.md](BACKLOG.md) item; details in [ISSUES.md](ISSUES.md).
 
 ---
 
