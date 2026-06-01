@@ -45,7 +45,8 @@ async function load() {
   ]);
   state.meta = meta;
   state.patterns = patterns;
-  state.reports = reports;
+  // Newest first — a feed-like default. Null issued_date sorts last.
+  state.reports = reports.slice().sort((a, b) => (b.issued_date || "").localeCompare(a.issued_date || ""));
 }
 
 /* ---------- KPIs ---------- */
@@ -55,6 +56,8 @@ function renderKPIs() {
   document.getElementById("kpi-findings").textContent = p.finding_count;
   document.getElementById("kpi-recs").textContent = p.recommendation_count;
   document.getElementById("kpi-themes").textContent = p.themes.length;
+  const introCount = document.getElementById("intro-count");
+  if (introCount) introCount.textContent = p.report_count;
 }
 
 /* ---------- filters ---------- */
@@ -100,20 +103,15 @@ function renderFilters() {
 
   const yearBox = document.getElementById("year-options");
   years.forEach((y) => yearBox.appendChild(chip(y, null, "year", y)));
-
-  const themeBox = document.getElementById("theme-options");
-  state.patterns.themes.forEach((t) =>
-    themeBox.appendChild(chip(t.theme, t.report_count, "theme", t.theme))
-  );
 }
 
 function toggleFilter(group, value, btn) {
   const set = state.filters[group];
   if (set.has(value)) set.delete(value);
   else set.add(value);
-  // keep all chips for this group/value in sync (rail + panel)
+  // keep every control for this group/value in sync (filter chips + pattern band)
   document
-    .querySelectorAll(`.filter-chip[data-group="${CSS.escape(group)}"][data-value="${CSS.escape(value)}"]`)
+    .querySelectorAll(`[data-group="${CSS.escape(group)}"][data-value="${CSS.escape(value)}"]`)
     .forEach((c) => c.setAttribute("aria-pressed", set.has(value) ? "true" : "false"));
   applyFilters();
 }
@@ -127,7 +125,7 @@ function resetFilters() {
   state.filters.year.clear();
   state.filters.theme.clear();
   document.getElementById("search").value = "";
-  document.querySelectorAll('.filter-chip[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
+  document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
 }
 
@@ -153,15 +151,77 @@ function matches(report) {
   return true;
 }
 
-/* ---------- patterns rail ---------- */
-function renderThemeRail() {
-  const rail = document.getElementById("theme-rail");
-  const max = Math.max(1, ...state.patterns.themes.map((t) => t.report_count));
-  state.patterns.themes.slice(0, 10).forEach((t) => {
-    const btn = chip(t.theme, t.report_count, "theme", t.theme);
-    btn.appendChild(el("span", { class: "theme-bar", style: `width:${Math.round((t.report_count / max) * 100)}%` }));
-    rail.appendChild(el("li", {}, btn));
+/* ---------- top patterns band ---------- */
+function renderPatternsBand() {
+  const rail = document.getElementById("patterns-rail");
+  if (!rail) return;
+  const total = state.patterns.report_count || state.reports.length || 1;
+  const themes = state.patterns.themes.slice().sort((a, b) => b.report_count - a.report_count);
+  const max = Math.max(1, ...themes.map((t) => t.report_count));
+  themes.forEach((t) => {
+    const pct = Math.round((t.report_count / total) * 100);
+    const card = el("button", {
+      type: "button",
+      class: "pattern-card",
+      "aria-pressed": "false",
+      "data-group": "theme",
+      "data-value": t.theme,
+      title: `${t.report_count} of ${total} reports (${pct}%) · ${t.finding_count} findings — tap to filter`,
+    }, [
+      el("span", { class: "pattern-name", text: t.theme }),
+      el("span", { class: "pattern-stat" }, [
+        el("span", { class: "pattern-count", text: String(t.report_count) }),
+        el("span", { class: "pattern-of", text: ` of ${total} audits · ${pct}%` }),
+      ]),
+      el("span", { class: "pattern-track", "aria-hidden": "true" }, [
+        el("span", { class: "pattern-bar", style: `width:${Math.round((t.report_count / max) * 100)}%` }),
+      ]),
+    ]);
+    card.addEventListener("click", () => toggleFilter("theme", t.theme, card));
+    rail.appendChild(el("li", {}, card));
   });
+}
+
+/* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
+const _GROUP_ORDER = ["industry", "audit_type", "functions", "form", "year", "theme"];
+function activeChipLabel(group, value) {
+  if (group === "audit_type") return _ABBR[value] || value;
+  if (group === "form") return "Form No. " + value;
+  if (group === "industry" || group === "functions") return cap(value);
+  return value; // year, theme
+}
+function removeActiveFilter(group, value) {
+  if (group === "search") {
+    state.filters.search = "";
+    const s = document.getElementById("search");
+    if (s) s.value = "";
+  } else {
+    state.filters[group].delete(value);
+    document
+      .querySelectorAll(`[data-group="${CSS.escape(group)}"][data-value="${CSS.escape(value)}"]`)
+      .forEach((c) => c.setAttribute("aria-pressed", "false"));
+  }
+  applyFilters();
+}
+function activeChip(group, value, label) {
+  const btn = el("button", { type: "button", class: "active-chip", "aria-label": `Remove filter: ${label}` }, [
+    el("span", { text: label }),
+    el("span", { class: "active-chip-x", "aria-hidden": "true", text: "✕" }),
+  ]);
+  btn.addEventListener("click", () => removeActiveFilter(group, value));
+  return btn;
+}
+function renderActiveFilters() {
+  const bar = document.getElementById("active-filters");
+  if (!bar) return;
+  const chips = [];
+  if (state.filters.search) chips.push(activeChip("search", null, `“${state.filters.search}”`));
+  _GROUP_ORDER.forEach((group) => {
+    state.filters[group].forEach((value) => chips.push(activeChip(group, value, activeChipLabel(group, value))));
+  });
+  if (chips.length) chips.push(el("button", { type: "button", class: "active-clear", text: "Clear all", onclick: resetFilters }));
+  bar.replaceChildren(...chips);
+  bar.hidden = chips.length === 0;
 }
 
 /* ---------- card / thread ---------- */
@@ -216,8 +276,10 @@ function cardNode(r) {
     ]),
     el("div", { class: "chips" }, [
       r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
-      el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` }),
-      el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }),
+      r.finding_count > 0
+        ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
+        : el("span", { class: "pill muted", text: "No findings extracted" }),
+      r.finding_count > 0 ? el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }) : null,
       ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
     ]),
   ]);
@@ -233,7 +295,14 @@ function cardNode(r) {
     ]),
   ]);
 
-  const findings = el("div", {}, r.findings.map(findingNode));
+  const findings = r.finding_count > 0
+    ? el("div", {}, r.findings.map(findingNode))
+    : el("div", { class: "no-findings" }, [
+        el("p", {}, [
+          el("strong", { text: "No findings extracted. " }),
+          "This audit may have raised no noncompliance issues, or they aren’t yet machine-readable from the source PDF in this build — read the original via the links below.",
+        ]),
+      ]);
 
   const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });
   copyBtn.addEventListener("click", async () => {
@@ -269,6 +338,11 @@ function applyFilters() {
   document.getElementById("result-count").textContent =
     `${visible.length} report${visible.length === 1 ? "" : "s"} · ${findings} finding${findings === 1 ? "" : "s"}`;
   document.getElementById("empty-state").hidden = visible.length !== 0;
+
+  renderActiveFilters();
+  const activeCount = _GROUP_ORDER.reduce((n, g) => n + state.filters[g].size, 0) + (state.filters.search ? 1 : 0);
+  const ft = document.getElementById("filters-toggle");
+  if (ft) ft.textContent = activeCount ? `Filters · ${activeCount}` : "Filters";
 }
 
 /* ---------- footer ---------- */
@@ -323,7 +397,7 @@ function wireChrome() {
   }
   renderKPIs();
   renderFilters();
-  renderThemeRail();
+  renderPatternsBand();
   renderFooter();
   applyFilters();
 })();

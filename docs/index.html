@@ -48,20 +48,23 @@
     </button>
   </header>
 
-  <!-- How to use -->
-  <section class="how-to" aria-label="How to use this explorer">
-    <details open>
+  <!-- Intro + how to use -->
+  <section class="intro" aria-label="About this explorer">
+    <p class="intro-lead">
+      Findings from <strong><span id="intro-count">—</span> FERC utility audits</strong> — electric, gas &amp; oil.
+      Tap a <strong>pattern</strong> below to see an issue across companies, or open any card to read the findings, quoted verbatim.
+    </p>
+    <details class="how-to">
       <summary>
         <span>How to use this explorer</span>
         <span class="chev" aria-hidden="true">▾</span>
       </summary>
       <div class="how-to-body">
-        <p>A browsable index of <strong>FERC utility audit reports</strong> across the electric, gas, and oil sectors — what FERC's auditors found and recommended. Each card below is one audit.</p>
         <ul>
-          <li><strong>Open a report:</strong> click a card to expand its thread — the findings of noncompliance, each with the staff recommendations nested beneath, quoted verbatim from the report.</li>
-          <li><strong>Filter</strong> (left rail): by <strong>industry</strong> (electric / gas / oil), <strong>FERC form</strong> (No. 1 / 2 / 6 / …), <strong>audit type</strong> (Financial / Non-financial), <strong>function</strong> (generation / transmission / distribution), <strong>year</strong>, or <strong>theme</strong> — or type in <strong>Search</strong>. Selections within a filter are OR; across filters, AND.</li>
-          <li><strong>Common patterns</strong> (right rail): click a theme to narrow the stream to reports with that issue.</li>
-          <li><strong>Trace the source:</strong> each report links to FERC's original PDF via <em>View on eLibrary</em>, and <em>Copy citation</em> grabs a reference.</li>
+          <li><strong>Read a report:</strong> click a card to expand its thread — each finding of noncompliance, with the staff recommendations nested beneath, quoted verbatim.</li>
+          <li><strong>Spot the trends:</strong> the <strong>Top patterns</strong> strip ranks the issues FERC raises most. Tap one to narrow the stream to reports with that issue.</li>
+          <li><strong>Filter &amp; search:</strong> narrow by industry, FERC form, audit type, function, or year — or type a company or keyword in <strong>Search</strong>. Picks within one filter widen the results; picks across different filters narrow them.</li>
+          <li><strong>Trace the source:</strong> every card links to FERC's original PDF via <em>View on eLibrary</em>; <em>Copy citation</em> grabs a reference.</li>
         </ul>
       </div>
     </details>
@@ -73,6 +76,15 @@
     <div class="kpi"><span class="kpi-num" id="kpi-findings">—</span><span class="kpi-label">Findings</span></div>
     <div class="kpi"><span class="kpi-num" id="kpi-recs">—</span><span class="kpi-label">Recommendations</span></div>
     <div class="kpi"><span class="kpi-num" id="kpi-themes">—</span><span class="kpi-label">Themes</span></div>
+  </section>
+
+  <!-- Top patterns band — the headline trends, scannable & clickable -->
+  <section class="patterns-band" aria-labelledby="band-title">
+    <div class="band-head">
+      <h2 class="band-title" id="band-title">Top patterns of noncompliance</h2>
+      <p class="band-note">What FERC's auditors flag most often. Tap one to filter the stream below.</p>
+    </div>
+    <ol id="patterns-rail" class="patterns-rail" aria-label="Top patterns, ranked by number of reports"></ol>
   </section>
 
   <div class="layout">
@@ -103,10 +115,6 @@
           <legend class="field-label">Year</legend>
           <div id="year-options" class="chip-options"></div>
         </fieldset>
-        <fieldset class="field">
-          <legend class="field-label">Theme</legend>
-          <div id="theme-options" class="chip-options theme-list"></div>
-        </fieldset>
         <button type="button" id="reset-filters" class="btn-secondary">Reset filters</button>
       </form>
     </aside>
@@ -117,16 +125,10 @@
         <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
         <span class="result-count" id="result-count" aria-live="polite">Loading…</span>
       </div>
+      <div id="active-filters" class="active-filters" aria-label="Active filters" hidden></div>
       <div id="stream" class="stream"></div>
       <p id="empty-state" class="empty-state" hidden>No reports match these filters. <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>
-
-    <!-- Patterns rail -->
-    <aside class="patterns" aria-label="Common patterns">
-      <h2 class="rail-title">Common patterns</h2>
-      <p class="rail-note">Themes across the structured corpus. Click to filter.</p>
-      <ol id="theme-rail" class="theme-rail"></ol>
-    </aside>
   </div>
 
   <footer class="site-footer" role="contentinfo">
