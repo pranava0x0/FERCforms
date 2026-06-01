@@ -54,8 +54,8 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
         f"As of {meta.get('generated_at')}, {meta.get('reports_structured')} reports are "
         f"structured of {meta.get('reports_total_listed')} listed{_industry_suffix(meta)}. "
         "Findings and recommendations are quoted verbatim from each report's Executive "
-        f"Summary. Primary source: {SOURCE}. Independent public-interest tool, not affiliated "
-        "with FERC. Links below are relative to the site root."
+        f"Summary or findings section. Primary source: {SOURCE}. Independent public-interest "
+        "tool, not affiliated with FERC. Links below are relative to the site root."
     )
     out.append("")
     out.append("## Data (machine-readable)")
@@ -77,7 +77,8 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
     out.append("")
     out.append("## Common themes")
     for t in patterns.themes:
-        out.append(f"- {t.theme}: {t.report_count} report(s), {t.finding_count} finding(s)")
+        desc = f" — {t.description}" if t.description else ""
+        out.append(f"- {t.theme}{desc} ({t.report_count} report(s), {t.finding_count} finding(s))")
     out.append("")
     out.append("## Optional")
     out.append("- [Human-readable explorer](index.html)")
@@ -100,7 +101,8 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
     out.append("")
     out.append(
         f"Primary source: {SOURCE}. Findings and recommendations are quoted verbatim from "
-        "each report's Executive Summary. Generated from the same data as data/reports.json."
+        "each report's Executive Summary or findings section. Generated from the same data as "
+        "data/reports.json."
     )
     for r in reports:
         out.append("")

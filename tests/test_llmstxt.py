@@ -83,6 +83,15 @@ def test_index_is_spec_shaped():
     assert "AFUDC / cost of capital" in s          # themes listed
 
 
+def test_index_renders_theme_descriptions():
+    """Theme descriptions must flow into llms.txt (the site<->llms.txt integration).
+    Guards that editing THEME_DESCRIPTIONS reaches the machine-readable index."""
+    p = _patterns()
+    p.themes[0].description = "Mis-stated AFUDC explanation."
+    s = llmstxt.build_index([_report()], p, _META)
+    assert "Mis-stated AFUDC explanation." in s
+
+
 def test_full_has_verbatim_findings_and_recs():
     s = llmstxt.build_full([_report()], _patterns(), _META)
     assert "## Acme Electric Co" in s

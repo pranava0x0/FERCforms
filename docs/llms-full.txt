@@ -1,8 +1,8 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 120 reports, 599 findings, 1505 recommendations. Generated 2026-05-25.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 120 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
-Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary. Generated from the same data as data/reports.json.
+Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
 ---
 

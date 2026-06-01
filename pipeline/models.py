@@ -123,6 +123,7 @@ class ThemeStat(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     theme: str
+    description: str = ""          # plain-English explanation (THEME_DESCRIPTIONS)
     keywords: list[str]            # the rule's keywords (shown for transparency)
     finding_count: int            # findings matching this theme
     report_count: int             # distinct reports with >=1 matching finding

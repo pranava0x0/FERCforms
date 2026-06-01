@@ -169,6 +169,7 @@ function renderPatternsBand() {
       title: `${t.report_count} of ${total} reports (${pct}%) · ${t.finding_count} findings — tap to filter`,
     }, [
       el("span", { class: "pattern-name", text: t.theme }),
+      t.description ? el("span", { class: "pattern-desc", text: t.description }) : null,
       el("span", { class: "pattern-stat" }, [
         el("span", { class: "pattern-count", text: String(t.report_count) }),
         el("span", { class: "pattern-of", text: ` of ${total} audits · ${pct}%` }),

@@ -31,6 +31,7 @@
   "themes": [
     {
       "theme": "Form reporting (Form No. 1/2/6, Page 700)",
+      "description": "Errors or omissions in the annual FERC forms utilities file.",
       "keywords": [
         "form no.",
         "page 700",
@@ -48,6 +49,7 @@
     },
     {
       "theme": "Accounting misclassification",
+      "description": "Costs or revenues booked to the wrong FERC account.",
       "keywords": [
         "misclassif",
         "incorrectly recorded",
@@ -66,6 +68,7 @@
     },
     {
       "theme": "Depreciation",
+      "description": "Unapproved or incorrect depreciation rates applied to plant.",
       "keywords": [
         "depreciation"
       ],
@@ -80,6 +83,7 @@
     },
     {
       "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+      "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
       "keywords": [
         "lobbying",
         "charitable",
@@ -98,6 +102,7 @@
     },
     {
       "theme": "Property & plant records",
+      "description": "Incomplete or inaccurate utility plant and property records.",
       "keywords": [
         "property unit",
         "carrier property",
@@ -116,6 +121,7 @@
     },
     {
       "theme": "AFUDC / cost of capital",
+      "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
       "keywords": [
         "allowance for funds used during construction",
         "afudc"
@@ -131,6 +137,7 @@
     },
     {
       "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
       "keywords": [
         "affiliate",
         "intercompany",
@@ -147,6 +154,7 @@
     },
     {
       "theme": "Cost of service & rates",
+      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
       "keywords": [
         "cost of service",
         "cost-of-service",
@@ -165,6 +173,7 @@
     },
     {
       "theme": "Capitalization vs. expense",
+      "description": "Costs capitalized that should be expensed, or the reverse.",
       "keywords": [
         "capitaliz"
       ],
@@ -179,6 +188,7 @@
     },
     {
       "theme": "Tariff administration & oversight",
+      "description": "Not following the utility's own FERC-approved tariff.",
       "keywords": [
         "tariff"
       ],
@@ -193,6 +203,7 @@
     },
     {
       "theme": "Membership dues & industry associations",
+      "description": "Trade-association dues (e.g., EEI) improperly charged to ratepayers.",
       "keywords": [
         "membership dues",
         "industry association"
@@ -208,6 +219,7 @@
     },
     {
       "theme": "Informational postings",
+      "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
       "keywords": [
         "informational posting",
         "posting"
@@ -223,6 +235,7 @@
     },
     {
       "theme": "Creditworthiness",
+      "description": "Customer credit standards not applied as the tariff requires.",
       "keywords": [
         "creditworthiness"
       ],
@@ -335,5 +348,5 @@
       "count": 3
     }
   ],
-  "generated_at": "2026-05-25"
+  "generated_at": "2026-06-01"
 }

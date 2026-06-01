@@ -2,7 +2,7 @@
 
 > Machine-readable findings of noncompliance and staff recommendations from FERC's published **utility audit reports** — across the **electric, gas, and oil sectors** (primarily FERC Forms 1, 2, and 6, plus related forms) — issued by the Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report is parsed into findings -> recommendations, and cross-report themes are mined.
 
-Scope: FERC utility audits — electric, gas & oil. As of 2026-05-25, 120 reports are structured of 120 listed (86 electric, 17 oil, 14 gas identified). Findings and recommendations are quoted verbatim from each report's Executive Summary. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
+Scope: FERC utility audits — electric, gas & oil. As of 2026-06-01, 120 reports are structured of 120 listed (86 electric, 17 oil, 14 gas identified). Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 
 ## Data (machine-readable)
 - [Reports](data/reports.json): every structured report with findings, recommendations, and themes
@@ -133,19 +133,19 @@ Scope: FERC utility audits — electric, gas & oil. As of 2026-05-25, 120 report
 - [Cargill](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3019&optimized=false): Docket FA14-6, issued 2014-10-24, financial audit, n/a, 0 finding(s)
 
 ## Common themes
-- Form reporting (Form No. 1/2/6, Page 700): 68 report(s), 183 finding(s)
-- Accounting misclassification: 67 report(s), 191 finding(s)
-- Depreciation: 40 report(s), 62 finding(s)
-- Below-the-line costs (lobbying, charitable, etc.): 40 report(s), 53 finding(s)
-- Property & plant records: 36 report(s), 63 finding(s)
-- AFUDC / cost of capital: 35 report(s), 46 finding(s)
-- Affiliate / intercompany transactions: 24 report(s), 34 finding(s)
-- Cost of service & rates: 23 report(s), 46 finding(s)
-- Capitalization vs. expense: 19 report(s), 20 finding(s)
-- Tariff administration & oversight: 18 report(s), 27 finding(s)
-- Membership dues & industry associations: 11 report(s), 11 finding(s)
-- Informational postings: 9 report(s), 15 finding(s)
-- Creditworthiness: 1 report(s), 1 finding(s)
+- Form reporting (Form No. 1/2/6, Page 700) — Errors or omissions in the annual FERC forms utilities file. (68 report(s), 183 finding(s))
+- Accounting misclassification — Costs or revenues booked to the wrong FERC account. (67 report(s), 191 finding(s))
+- Depreciation — Unapproved or incorrect depreciation rates applied to plant. (40 report(s), 62 finding(s))
+- Below-the-line costs (lobbying, charitable, etc.) — Non-recoverable costs (lobbying, charity, ads) charged to ratepayers. (40 report(s), 53 finding(s))
+- Property & plant records — Incomplete or inaccurate utility plant and property records. (36 report(s), 63 finding(s))
+- AFUDC / cost of capital — Mis-stated AFUDC — the financing cost capitalized during construction. (35 report(s), 46 finding(s))
+- Affiliate / intercompany transactions — Transactions with affiliated companies mis-priced or mis-reported. (24 report(s), 34 finding(s))
+- Cost of service & rates — Errors in rate-base or return inputs to cost-of-service rates. (23 report(s), 46 finding(s))
+- Capitalization vs. expense — Costs capitalized that should be expensed, or the reverse. (19 report(s), 20 finding(s))
+- Tariff administration & oversight — Not following the utility's own FERC-approved tariff. (18 report(s), 27 finding(s))
+- Membership dues & industry associations — Trade-association dues (e.g., EEI) improperly charged to ratepayers. (11 report(s), 11 finding(s))
+- Informational postings — Required public postings (e.g., OASIS) missing, late, or incomplete. (9 report(s), 15 finding(s))
+- Creditworthiness — Customer credit standards not applied as the tariff requires. (1 report(s), 1 finding(s))
 
 ## Optional
 - [Human-readable explorer](index.html)
