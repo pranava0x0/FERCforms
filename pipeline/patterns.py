@@ -62,9 +62,32 @@ THEME_DESCRIPTIONS: dict[str, str] = {
 }
 
 
+# The "ratepayer harm" axis (BACKLOG policy review, 2026-06-01): the subset of
+# themes whose finding type, by its nature, means costs were over-recovered from
+# or wrongly charged to customers. Deliberately CONSERVATIVE — only classes whose
+# *direction* is unambiguous overcharge. Excludes ambiguous-direction themes
+# (capitalization vs expense, generic misclassification) and process / records /
+# reporting / transparency themes. Must stay a subset of THEME_RULES labels (a
+# test enforces this); editing it means re-running `python -m pipeline.build`.
+RATEPAYER_HARM_THEMES: frozenset[str] = frozenset({
+    "Below-the-line costs (lobbying, charitable, etc.)",
+    "Membership dues & industry associations",
+    "Affiliate / intercompany transactions",
+    "Depreciation",
+    "AFUDC / cost of capital",
+    "Cost of service & rates",
+})
+
+
 def _themes_for(text: str) -> list[str]:
     low = text.lower()
     return [theme for theme, kws in THEME_RULES if any(k in low for k in kws)]
+
+
+def is_ratepayer_harm(themes: list[str]) -> bool:
+    """True if any theme is in the curated ratepayer-harm set (over-recovery /
+    costs wrongly charged to customers). See RATEPAYER_HARM_THEMES."""
+    return any(t in RATEPAYER_HARM_THEMES for t in themes)
 
 
 def load_reports(processed_dir: Path) -> list[AuditReport]:

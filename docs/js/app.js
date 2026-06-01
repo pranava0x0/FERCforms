@@ -8,8 +8,13 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
 };
+
+/* The ratepayer-harm axis: finding types that, by their nature, over-recover from
+   or wrongly charge customers. Curated single-source in pipeline/patterns.py. */
+const COST_TIP =
+  "Finding type that over-recovers from or wrongly charges customers — below-the-line costs, membership dues, affiliate transactions, depreciation, AFUDC, or cost-of-service errors.";
 
 /* ---------- tiny DOM helper ---------- */
 function el(tag, props = {}, children = []) {
@@ -88,6 +93,14 @@ function renderFilters() {
   const functions = uniqueSorted(state.reports.flatMap((r) => r.functions || []));
   const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
 
+  const impactBox = document.getElementById("impact-options");
+  if (impactBox) {
+    const harmCount = state.reports.filter((r) => r.cost_to_customers).length;
+    const impactChip = chip("Cost to customers", harmCount, "impact", "cost_to_customers");
+    impactChip.title = COST_TIP;
+    impactBox.appendChild(impactChip);
+  }
+
   const indBox = document.getElementById("industry-options");
   if (indBox) industries.forEach((i) => indBox.appendChild(chip(cap(i), null, "industry", i)));
 
@@ -124,6 +137,7 @@ function resetFilters() {
   state.filters.functions.clear();
   state.filters.year.clear();
   state.filters.theme.clear();
+  state.filters.impact.clear();
   document.getElementById("search").value = "";
   document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
@@ -131,6 +145,7 @@ function resetFilters() {
 
 function matches(report) {
   const f = state.filters;
+  if (f.impact.size && !report.cost_to_customers) return false;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
   if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
@@ -152,6 +167,15 @@ function matches(report) {
 }
 
 /* ---------- top patterns band ---------- */
+/* Bring the (now-filtered) stream into view. JS-driven smooth scroll isn't
+   covered by the reduced-motion CSS rule, so honor the preference here. */
+function scrollToResults() {
+  const main = document.getElementById("main");
+  if (!main) return;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  main.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+}
+
 function renderPatternsBand() {
   const rail = document.getElementById("patterns-rail");
   if (!rail) return;
@@ -178,14 +202,69 @@ function renderPatternsBand() {
         el("span", { class: "pattern-bar", style: `width:${Math.round((t.report_count / max) * 100)}%` }),
       ]),
     ]);
-    card.addEventListener("click", () => toggleFilter("theme", t.theme, card));
+    card.addEventListener("click", () => {
+      toggleFilter("theme", t.theme, card);
+      // Scroll down to the results only when turning the pattern on.
+      if (state.filters.theme.has(t.theme)) scrollToResults();
+    });
     rail.appendChild(el("li", {}, card));
   });
 }
 
+/* ---------- corpus trends (charts over the already-computed aggregates) ---------- */
+/* A vertical column chart — used for the year timeline. */
+function trendColumns(title, unit, entries) {
+  const max = Math.max(1, ...entries.map(([, v]) => v));
+  const cols = entries.map(([label, v]) =>
+    el("div", { class: "trend-col", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
+      el("span", { class: "trend-col-val", text: String(v) }),
+      el("span", { class: "trend-col-bar", style: `height:${v ? Math.max(4, Math.round((v / max) * 80)) : 0}px`, "aria-hidden": "true" }),
+      el("span", { class: "trend-col-yr", text: "’" + String(label).slice(2) }),
+    ])
+  );
+  return el("div", { class: "trend-card" }, [
+    el("h3", { class: "trend-card-title", text: title }),
+    el("div", { class: "trend-cols", role: "list", "aria-label": `${title}, ${unit}` }, cols),
+  ]);
+}
+
+/* A horizontal bar chart — used for the few-category breakdowns. */
+function trendBars(title, unit, entries, note) {
+  const max = Math.max(1, ...entries.map(([, v]) => v));
+  const rows = entries.map(([label, v]) =>
+    el("div", { class: "trend-row", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
+      el("span", { class: "trend-row-label", text: label }),
+      el("span", { class: "trend-track", "aria-hidden": "true" }, [el("span", { class: "trend-bar", style: `width:${Math.round((v / max) * 100)}%` })]),
+      el("span", { class: "trend-row-val", text: String(v) }),
+    ])
+  );
+  return el("div", { class: "trend-card" }, [
+    el("h3", { class: "trend-card-title", text: title }),
+    el("div", { class: "trend-rows", role: "list", "aria-label": `${title}, ${unit}` }, rows),
+    note ? el("p", { class: "trend-note", text: note }) : null,
+  ]);
+}
+
+function renderTrends() {
+  const host = document.getElementById("trends");
+  if (!host) return;
+  const p = state.patterns;
+  // By year & by industry are clean counts (one issued-year / one industry per report).
+  const years = Object.keys(p.by_year).sort();
+  const industries = Object.entries(p.by_industry).sort((a, b) => b[1] - a[1]);
+  // A report can cover several functions, so these bars can sum past the report total.
+  const functions = Object.entries(p.by_function).sort((a, b) => b[1] - a[1]);
+  host.replaceChildren(
+    trendColumns("By year issued", "reports", years.map((y) => [y, p.by_year[y]])),
+    trendBars("By industry", "reports", industries.map(([k, v]) => [cap(k), v])),
+    trendBars("By function", "reports", functions.map(([k, v]) => [cap(k), v]), `A report may cover several functions, so these exceed ${p.report_count}.`)
+  );
+}
+
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
-const _GROUP_ORDER = ["industry", "audit_type", "functions", "form", "year", "theme"];
+const _GROUP_ORDER = ["impact", "industry", "audit_type", "functions", "form", "year", "theme"];
 function activeChipLabel(group, value) {
+  if (group === "impact") return "Cost to customers";
   if (group === "audit_type") return _ABBR[value] || value;
   if (group === "form") return "Form No. " + value;
   if (group === "industry" || group === "functions") return cap(value);
@@ -241,6 +320,12 @@ function findingNode(f) {
   ]);
   const parts = [head];
   if (f.summary) parts.push(el("p", { class: "finding-summary", text: f.summary }));
+  if (f.cost_to_customers || (f.themes && f.themes.length)) {
+    const tags = [];
+    if (f.cost_to_customers) tags.push(el("span", { class: "finding-tag cost-tag", title: COST_TIP, text: "Cost to customers" }));
+    (f.themes || []).forEach((t) => tags.push(el("span", { class: "finding-tag", text: t })));
+    parts.push(el("div", { class: "finding-tags" }, tags));
+  }
   if (f.recommendations && f.recommendations.length) {
     const recs = el("ul", { class: "recs" });
     f.recommendations.forEach((r) =>
@@ -408,6 +493,7 @@ function wireChrome() {
   renderKPIs();
   renderFilters();
   renderPatternsBand();
+  renderTrends();
   renderFooter();
   applyFilters();
 })();

@@ -87,6 +87,15 @@
     <ol id="patterns-rail" class="patterns-rail" aria-label="Top patterns, ranked by number of reports"></ol>
   </section>
 
+  <!-- Corpus trends — where the reports sit across time, sector & function -->
+  <section class="trends-band" aria-labelledby="trends-title">
+    <div class="band-head">
+      <h2 class="band-title" id="trends-title">How the corpus breaks down</h2>
+      <p class="band-note">All reports by the year they were issued, the sector audited, and the function covered.</p>
+    </div>
+    <div id="trends" class="trends-grid"></div>
+  </section>
+
   <div class="layout">
     <!-- Filters -->
     <aside class="filters" id="filters" aria-label="Filters">
@@ -99,6 +108,10 @@
           <label class="field-label" for="search">Search</label>
           <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
         </div>
+        <fieldset class="field">
+          <legend class="field-label">Ratepayer impact</legend>
+          <div id="impact-options" class="chip-options"></div>
+        </fieldset>
         <fieldset class="field">
           <legend class="field-label">Industry</legend>
           <div id="industry-options" class="chip-options"></div>
