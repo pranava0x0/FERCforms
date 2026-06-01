@@ -18,13 +18,36 @@ from pathlib import Path
 
 from pipeline import config, llmstxt
 from pipeline.models import AuditReport
-from pipeline.patterns import _themes_for, load_reports, summarize
+from pipeline.patterns import _themes_for, is_ratepayer_harm, load_reports, summarize
 
 logger = logging.getLogger(__name__)
 
 
 def _write_json(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def bake_report_dicts(reports: list[AuditReport]) -> list[dict]:
+    """Per-report site dicts: model fields plus derived taxonomy tags.
+
+    Every finding is tagged with its `themes` (keyword rules stay single-source in
+    patterns.py) and a `cost_to_customers` flag (the ratepayer-harm axis). Reports
+    carry the union `themes` and `cost_to_customers` = any finding flagged, so the
+    site can facet without re-implementing the rules.
+    """
+    out: list[dict] = []
+    for r in reports:
+        d = json.loads(r.model_dump_json())
+        report_themes: set[str] = set()
+        for fd, f in zip(d["findings"], r.findings):
+            ft = _themes_for(f.title + " " + (f.summary or ""))
+            fd["themes"] = ft
+            fd["cost_to_customers"] = is_ratepayer_harm(ft)
+            report_themes.update(ft)
+        d["themes"] = sorted(report_themes)
+        d["cost_to_customers"] = any(fd["cost_to_customers"] for fd in d["findings"])
+        out.append(d)
+    return out
 
 
 def build_meta(reports: list[AuditReport], listing: list[dict]) -> dict:
@@ -62,16 +85,9 @@ def main() -> None:
 
     args.out.mkdir(parents=True, exist_ok=True)
 
-    # Bake a per-report `themes` array so the site can facet by theme without
-    # re-implementing the keyword rules (they stay single-source in patterns.py).
-    report_dicts = []
-    for r in reports:
-        d = json.loads(r.model_dump_json())
-        themes: set[str] = set()
-        for f in r.findings:
-            themes.update(_themes_for(f.title + " " + (f.summary or "")))
-        d["themes"] = sorted(themes)
-        report_dicts.append(d)
+    # Per-report site dicts with derived taxonomy tags (themes + ratepayer-harm
+    # axis), tagged per finding and per report. Rules stay single-source in patterns.py.
+    report_dicts = bake_report_dicts(reports)
 
     summary = summarize(reports)
     _write_json(args.out / "reports.json", report_dicts)

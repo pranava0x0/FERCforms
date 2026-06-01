@@ -67,6 +67,20 @@ def test_summarize_counts_and_themes():
     assert dep.description  # plain-English explanation is attached
 
 
+def test_ratepayer_harm_themes_are_declared_themes():
+    """The ratepayer-harm axis must be a subset of THEME_RULES labels (single
+    source). Guards against a typo'd or stale entry silently never matching."""
+    labels = {theme for theme, _ in patterns.THEME_RULES}
+    assert patterns.RATEPAYER_HARM_THEMES
+    assert patterns.RATEPAYER_HARM_THEMES <= labels
+
+
+def test_is_ratepayer_harm():
+    assert patterns.is_ratepayer_harm(["Depreciation"]) is True
+    assert patterns.is_ratepayer_harm(["Property & plant records"]) is False
+    assert patterns.is_ratepayer_harm([]) is False
+
+
 def test_every_theme_has_a_description():
     """Each theme rule must carry a plain-English description (shown on the site
     and in llms.txt). Guards against adding a THEME_RULES entry without one."""
