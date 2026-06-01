@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2024-07-11_ppl-electric-utilities_pa-mo-audit",
+  "company": "PPL Electric Utilities Corporation",
+  "company_raw": "PPL Electric Utilities Corporation",
+  "docket": "D-2023-3039488",
+  "docket_full": null,
+  "issued_date": "2024-07-11",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1837310.pdf",
+  "captured_at": "2026-06-01",
+  "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued June 2024'); PUC publication 2024-07-11. PDF: puc.pa.gov/pcdocs/1837310.pdf.",
+  "archived_via": null,
+  "page_count": 93,
+  "scanned_pages": [
+    1,
+    93
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

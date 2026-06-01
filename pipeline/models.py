@@ -37,6 +37,36 @@ class ListingEntry(BaseModel):
     archived_via: Optional[str] = None  # Internet Archive Wayback snapshot URL when not sourced live
 
 
+class SourceSeed(BaseModel):
+    """One non-FERC-audit document to ingest (prudence review / state PUC audit).
+
+    The FERC audit corpus seeds from `ListingEntry` (eLibrary accession + the F5
+    cookie dance). Other sources publish PDFs at stable URLs, so they seed from a
+    simpler record: a direct `pdf_url` plus full provenance. `parse=False` (the
+    default) ingests the document metadata-only — captured with its source link
+    but NOT machine-extracted into findings (legal orders / testimony we honor as
+    such). Per-source seeds live in data/seeds/<source>.json.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
+    id: str                       # stable slug (also the raw-PDF filename + processed dir)
+    company: str                  # audited entity / case caption
+    collection: str               # "state_audit" | "prudence_review"
+    jurisdiction: str             # "PA" | "MI" | "FERC" | ...
+    source: str                   # human label, e.g. "PA PUC Bureau of Audits"
+    doc_type: Optional[str] = None  # e.g. "management audit", "Commission order"
+    industry: Optional[str] = None  # "electric" | "gas" | "oil" | "water" — when known from the source
+    pdf_url: str                  # direct PDF download (stable)
+    source_page_url: str          # human-facing landing/source page
+    issued_date: Optional[date] = None
+    docket: Optional[str] = None  # case/docket number where applicable
+    captured_at: date             # when this record was captured
+    source_note: str = ""         # human-readable provenance
+    archived_via: Optional[str] = None
+    parse: bool = False           # attempt findings extraction (False = metadata-only)
+
+
 class PageText(BaseModel):
     """Extracted text for a single PDF page."""
 

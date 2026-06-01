@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2023-03-02_philadelphia-gas-works_pa-mo-audit",
+  "company": "Philadelphia Gas Works",
+  "company_raw": "Philadelphia Gas Works",
+  "docket": "D-2022-3030321",
+  "docket_full": null,
+  "issued_date": "2023-03-02",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1775875.pdf",
+  "captured_at": "2026-06-01",
+  "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874).",
+  "archived_via": null,
+  "page_count": 95,
+  "scanned_pages": [
+    1,
+    95
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

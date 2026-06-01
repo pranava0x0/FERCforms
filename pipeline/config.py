@@ -13,7 +13,8 @@ ROOT: Path = Path(__file__).resolve().parent.parent
 DATA_DIR: Path = ROOT / "data"
 RAW_DIR: Path = DATA_DIR / "raw"                 # downloaded PDFs (gitignored)
 PROCESSED_DIR: Path = DATA_DIR / "processed"     # per-report extracted+structured
-LISTING_PATH: Path = DATA_DIR / "listing.json"   # scraped audit index (seed)
+LISTING_PATH: Path = DATA_DIR / "listing.json"   # scraped FERC audit index (seed)
+SEEDS_DIR: Path = DATA_DIR / "seeds"             # per-source seeds (prudence / state PUC)
 DOCS_DIR: Path = ROOT / "docs"                   # GitHub Pages site root
 SITE_DATA_DIR: Path = DOCS_DIR / "data"          # baked JSON the site reads
 

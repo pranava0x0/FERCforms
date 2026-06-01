@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2022-06-16_firstenergy-pennsylvania-companies_pa-mo-audit",
+  "company": "FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)",
+  "company_raw": "FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2022-06-16",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1748700.pdf",
+  "captured_at": "2026-06-01",
+  "source_note": "Management & Operations Audit of FirstEnergy's four PA electric distribution companies, issued by the PA PUC Bureau of Audits, published 2022-06-16 (27 recommendations). PDF: puc.pa.gov/pcdocs/1748700.pdf.",
+  "archived_via": null,
+  "page_count": 190,
+  "scanned_pages": [
+    1,
+    190
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

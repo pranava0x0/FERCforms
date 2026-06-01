@@ -344,11 +344,13 @@ function renderTrends() {
   const industries = Object.entries(p.by_industry).sort((a, b) => b[1] - a[1]);
   // A report can cover several functions, so these bars can sum past the report total.
   const functions = Object.entries(p.by_function).sort((a, b) => b[1] - a[1]);
-  host.replaceChildren(
+  const cards = [
     trendColumns("By year issued", "reports", years.map((y) => [y, p.by_year[y]])),
-    trendBars("By industry", "reports", industries.map(([k, v]) => [cap(k), v])),
-    trendBars("By function", "reports", functions.map(([k, v]) => [cap(k), v]), `A report may cover several functions, so these exceed ${p.report_count}.`)
-  );
+    industries.length ? trendBars("By industry", "reports", industries.map(([k, v]) => [cap(k), v])) : null,
+    // The function tagging is FERC-audit-specific; skip the card when a collection has none.
+    functions.length ? trendBars("By function", "reports", functions.map(([k, v]) => [cap(k), v]), `A report may cover several functions, so these exceed ${p.report_count}.`) : null,
+  ].filter(Boolean);
+  host.replaceChildren(...cards);
 }
 
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
@@ -491,7 +493,7 @@ function cardNode(r) {
         r.structured === false
           ? el("p", {}, [
               el("strong", { text: "Listed for reference. " }),
-              "This is a legal order or testimony, captured with its source for the pattern library — it isn’t parsed into findings. Read the full document via the link below.",
+              "This document is captured with its source for the pattern library; in this build it isn’t machine-parsed into individual findings — read the full report via the link below.",
             ])
           : el("p", {}, [
               el("strong", { text: "No findings extracted. " }),

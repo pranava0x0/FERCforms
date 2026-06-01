@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 120 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 124 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
@@ -138,6 +138,14 @@ Medallion did not report complete and accurate information in certain supporting
 Recommendations:
 31. Revise and implement policies and procedures to ensure that Medallion reports complete and accurate information according to the Commission’s FERC Form No. 6 instructions. These revised policies and procedures should address all reporting deficiencies for each page of the FERC Form No. 6 discussed in this finding.
 32. Provide training to relevant staff on policies and procedures implemented in response to Recommendation 31, and repeat such trainings as needed. E.
+
+---
+
+## FirstEnergy Pennsylvania Electric Company
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-09-25 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025
 
 ---
 
@@ -925,6 +933,14 @@ Recommendations:
 
 ---
 
+## PPL Electric Utilities Corporation
+- Docket: D-2023-3039488 | Audit type: n/a
+- Issued: 2024-07-11 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation
+
+---
+
 ## Appalachian Power Company
 - Docket: FA22-1-000 | Audit type: financial
 - Issued: 2024-03-15 | Industry: electric | FERC Form: No. 1, No. 580
@@ -1629,6 +1645,14 @@ Recommendations:
 
 ---
 
+## Philadelphia Gas Works
+- Docket: D-2022-3030321 | Audit type: n/a
+- Issued: 2023-03-02 | Industry: gas | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works
+
+---
+
 ## WEC Business Services LLC
 - Docket: FA21-2 | Audit type: financial
 - Issued: 2023-02-10 | Industry: electric | FERC Form: No. 1, No. 60
@@ -1832,6 +1856,14 @@ DP&L improperly accounted for the purchase of RECs in Account 154, Materials and
 
 ### Finding 1: Offer Capping of Generation Resources
 PJM did not offer cap a self-scheduled generation resource in the Day-ahead energy market for 18 hours on January 21, 2019, despite the fact that its owner had failed the TPS test. The error was caused by operators applying outdated provisions of PJM’s OATT, along with a lack of current written procedures and operator instructions. PJM’s application of the outdated provisions may have resulted in additional self-scheduled resources not being appropriately offer capped since November 1, 2017 when the new OATT provisions went into effect.
+
+---
+
+## FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)
+- Docket: n/a | Audit type: n/a
+- Issued: 2022-06-16 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies
 
 ---
 
