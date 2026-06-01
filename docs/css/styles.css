@@ -499,6 +499,24 @@ a:hover { color: var(--accent-hover); }
 .finding-flag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
 .finding-summary { margin: 6px 0 0; font-size: 13.5px; color: var(--text); }
 
+/* Per-finding taxonomy tags + the ratepayer-harm ("cost to customers") badge. */
+.finding-tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0 0; }
+.finding-tag {
+  font-size: 10.5px;
+  line-height: 1.45;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+.finding-tag.cost-tag {
+  background: transparent;
+  color: var(--status-finding);
+  border-color: var(--status-finding);
+  font-weight: 600;
+}
+
 .recs { margin: 10px 0 0; padding: 0; list-style: none; }
 .rec {
   position: relative;

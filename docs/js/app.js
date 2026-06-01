@@ -8,8 +8,13 @@ const state = {
   reports: [],
   patterns: null,
   meta: null,
-  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set() },
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
 };
+
+/* The ratepayer-harm axis: finding types that, by their nature, over-recover from
+   or wrongly charge customers. Curated single-source in pipeline/patterns.py. */
+const COST_TIP =
+  "Finding type that over-recovers from or wrongly charges customers — below-the-line costs, membership dues, affiliate transactions, depreciation, AFUDC, or cost-of-service errors.";
 
 /* ---------- tiny DOM helper ---------- */
 function el(tag, props = {}, children = []) {
@@ -88,6 +93,14 @@ function renderFilters() {
   const functions = uniqueSorted(state.reports.flatMap((r) => r.functions || []));
   const years = uniqueSorted(state.reports.map((r) => yearOf(r.issued_date))).reverse();
 
+  const impactBox = document.getElementById("impact-options");
+  if (impactBox) {
+    const harmCount = state.reports.filter((r) => r.cost_to_customers).length;
+    const impactChip = chip("Cost to customers", harmCount, "impact", "cost_to_customers");
+    impactChip.title = COST_TIP;
+    impactBox.appendChild(impactChip);
+  }
+
   const indBox = document.getElementById("industry-options");
   if (indBox) industries.forEach((i) => indBox.appendChild(chip(cap(i), null, "industry", i)));
 
@@ -124,6 +137,7 @@ function resetFilters() {
   state.filters.functions.clear();
   state.filters.year.clear();
   state.filters.theme.clear();
+  state.filters.impact.clear();
   document.getElementById("search").value = "";
   document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
@@ -131,6 +145,7 @@ function resetFilters() {
 
 function matches(report) {
   const f = state.filters;
+  if (f.impact.size && !report.cost_to_customers) return false;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
   if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
@@ -247,8 +262,9 @@ function renderTrends() {
 }
 
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
-const _GROUP_ORDER = ["industry", "audit_type", "functions", "form", "year", "theme"];
+const _GROUP_ORDER = ["impact", "industry", "audit_type", "functions", "form", "year", "theme"];
 function activeChipLabel(group, value) {
+  if (group === "impact") return "Cost to customers";
   if (group === "audit_type") return _ABBR[value] || value;
   if (group === "form") return "Form No. " + value;
   if (group === "industry" || group === "functions") return cap(value);
@@ -304,6 +320,12 @@ function findingNode(f) {
   ]);
   const parts = [head];
   if (f.summary) parts.push(el("p", { class: "finding-summary", text: f.summary }));
+  if (f.cost_to_customers || (f.themes && f.themes.length)) {
+    const tags = [];
+    if (f.cost_to_customers) tags.push(el("span", { class: "finding-tag cost-tag", title: COST_TIP, text: "Cost to customers" }));
+    (f.themes || []).forEach((t) => tags.push(el("span", { class: "finding-tag", text: t })));
+    parts.push(el("div", { class: "finding-tags" }, tags));
+  }
   if (f.recommendations && f.recommendations.length) {
     const recs = el("ul", { class: "recs" });
     f.recommendations.forEach((r) =>
