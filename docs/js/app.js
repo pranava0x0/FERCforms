@@ -372,9 +372,18 @@ function wireChrome() {
 
   const fToggle = document.getElementById("filters-toggle");
   const filters = document.getElementById("filters");
-  fToggle.addEventListener("click", () => {
-    const open = filters.classList.toggle("open");
+  const backdrop = document.getElementById("filters-backdrop");
+  const setFilters = (open) => {
+    filters.classList.toggle("open", open);
     fToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    if (backdrop) backdrop.hidden = !open;
+  };
+  fToggle.addEventListener("click", () => setFilters(!filters.classList.contains("open")));
+  if (backdrop) backdrop.addEventListener("click", () => setFilters(false));
+  const sheetClose = document.getElementById("sheet-close");
+  if (sheetClose) sheetClose.addEventListener("click", () => setFilters(false));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && filters.classList.contains("open")) setFilters(false);
   });
 
   document.getElementById("search").addEventListener("input", (e) => {

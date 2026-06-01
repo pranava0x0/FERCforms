@@ -90,6 +90,10 @@
   <div class="layout">
     <!-- Filters -->
     <aside class="filters" id="filters" aria-label="Filters">
+      <div class="sheet-header">
+        <span class="sheet-title">Filters</span>
+        <button type="button" id="sheet-close" class="sheet-close">Done</button>
+      </div>
       <form id="filter-form">
         <div class="field">
           <label class="field-label" for="search">Search</label>
@@ -130,6 +134,9 @@
       <p id="empty-state" class="empty-state" hidden>No reports match these filters. <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>
   </div>
+
+  <!-- Backdrop for the mobile/tablet filter bottom sheet (tap to dismiss) -->
+  <div id="filters-backdrop" class="filters-backdrop" hidden></div>
 
   <footer class="site-footer" role="contentinfo">
     <p id="footer-meta">—</p>
