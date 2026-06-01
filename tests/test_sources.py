@@ -66,13 +66,17 @@ def test_source_seed_defaults():
     assert s.archived_via is None
 
 
-def test_pa_seed_file_validates():
-    """The committed PA seed must parse cleanly (every record a valid SourceSeed),
-    so a typo can't silently drop a document from the corpus."""
-    path = config.SEEDS_DIR / "pa_puc.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    seeds = [SourceSeed.model_validate(d) for d in data]
-    assert len(seeds) >= 3
-    assert all(s.collection == "state_audit" and s.jurisdiction == "PA" for s in seeds)
-    # ids are unique (they're also the on-disk processed dir + raw filename).
-    assert len({s.id for s in seeds}) == len(seeds)
+def test_all_seed_files_validate_and_have_unique_ids():
+    """Every committed seed must parse cleanly (each record a valid SourceSeed) and
+    use globally-unique ids — the id is also the on-disk processed dir + raw
+    filename, so a collision would silently overwrite another document."""
+    seed_paths = sorted(config.SEEDS_DIR.glob("*.json"))
+    assert seed_paths, "no seed files found"
+    all_ids: list[str] = []
+    for path in seed_paths:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        seeds = [SourceSeed.model_validate(d) for d in data]  # raises on any bad record
+        assert seeds, f"{path.name} is empty"
+        assert all(s.collection in {"state_audit", "prudence_review"} for s in seeds)
+        all_ids += [s.id for s in seeds]
+    assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"

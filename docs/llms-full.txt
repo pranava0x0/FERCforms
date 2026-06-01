@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 124 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 128 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
@@ -606,6 +606,38 @@ Audit Staff Finding: SIGECO did not properly follow the FERC Form No. 1 page ins
 Recommendations:
 38. Revise and strengthen policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the page instructions of the form. Include footnotes when software limitations prevent reporting complete information.
 39. Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E.
+
+---
+
+## DTE Electric Company
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+
+---
+
+## DTE Electric Company
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+
+---
+
+## Consumers Energy Company
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+
+---
+
+## Consumers Energy Company
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
 
 ---
 

@@ -364,18 +364,18 @@
     "generated_at": "2026-06-01"
   },
   "state_audit": {
-    "report_count": 4,
+    "report_count": 8,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 3,
+      "electric": 7,
       "gas": 1
     },
     "by_year": {
       "2022": 1,
       "2023": 1,
-      "2024": 1,
+      "2024": 5,
       "2025": 1
     },
     "by_function": {},
