@@ -1,8 +1,24 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 133 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 138 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Docket: PUR-2025-00058 | Audit type: n/a
+- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.scc.virginia.gov/docketsearch
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Docket: PUR-2025-00037 | Audit type: n/a
+- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.scc.virginia.gov/docketsearch
 
 ---
 
@@ -290,6 +306,22 @@ Alabama Power improperly recorded expenses totaling $602,665 in various administ
 
 ### Finding 5: Accounting for Edison Electric Institute Membership Dues
 Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirements calculation and billed to transmission customers taking service under the OATT.
+
+---
+
+## Appalachian Power Company
+- Docket: PUR-2024-00161 | Audit type: n/a
+- Issued: 2025-08-29 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.scc.virginia.gov/docketsearch
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Docket: PUR-2025-00076 | Audit type: n/a
+- Issued: 2025-08-01 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.scc.virginia.gov/docketsearch
 
 ---
 
@@ -646,6 +678,14 @@ Recommendations:
 - Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
 - Function(s): n/a
 - Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Docket: PUR-2024-00137 | Audit type: n/a
+- Issued: 2024-09-04 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.scc.virginia.gov/docketsearch
 
 ---
 
