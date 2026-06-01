@@ -7,7 +7,7 @@ The first module is the **FERC Audit Explorer** — electric (Form 1), gas (Form
 ## Principles
 
 - **Static-first.** A Python CLI pipeline produces JSON; a vanilla HTML/CSS/JS site (`docs/`) reads it. Hosted on GitHub Pages. No backend, no framework.
-- **Source.** FERC publishes final audit reports (FY2015–present) at <https://www.ferc.gov/audits>. Every record carries its source URL and capture date.
+- **Source.** FERC publishes final audit reports at <https://www.ferc.gov/audits>; this corpus covers reports **issued 2014–present**. Every record carries its source URL and capture date.
 
 ## Layout
 
