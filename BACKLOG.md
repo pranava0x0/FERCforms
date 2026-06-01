@@ -2,6 +2,27 @@
 
 Ideas, features, enhancements. Each item: brief description + priority (**low / med / high**). Reprioritize periodically; demote stale "high" items rather than letting them rot.
 
+---
+
+> ## ▶ RESUME HERE — multi-source expansion (paused 2026-06-01)
+>
+> **Goal:** add FERC prudence reviews + state PUC/PSC/SCC audits (VA, OH, MI, IL, TX, SC, PA, NC) as new tabs. Get 3–5 docs/source to validate, then collect all. **Official `.gov` sources ONLY** (user constraint — enforced in `pipeline/sources.load_seed`, raises on non-gov). Non-fitting legal docs are **metadata-only** (source link + provenance, `structured=False` → "Listed for reference"; no findings parse, no LLM).
+>
+> **DONE & committed (phase 1 — 5 commits on this branch):** 3 tabs (FERC Audits / Prudence Reviews / State PUC Audits), each with own baked stats/patterns (`docs/data/patterns_by_collection.json`). Sources: **PA** (4 PA PUC Bureau of Audits), **MI** (4 Liberty Consulting U-21305), **FERC prudence** (5 eLibrary formal-challenge/ALJ orders 2015–2025). Tabs = 120 / 5 / 8. Pipeline: `pipeline/sources.py` ← `data/seeds/*.json`; `python -m pipeline.sources --seed <file>` then `python -m pipeline.build`.
+>
+> **NEXT — phase 2 (VA / IL / SC / TX, metadata-only).** Was mid-VA when paused. These are docket orders/testimony with **opaque doc IDs** — each must be fetched + page-1-read to label company/date/doc_type accurately (the PGW implementation-plan-vs-audit mislabel is why). Verified-resolving candidate URLs (all `.gov`):
+> - **VA SCC** `scc.virginia.gov/docketsearch/DOCS/{code}!.PDF` — codes `89g601, 89g501, 87nd01, 873b01, 816l01` (biennial-review / fuel-factor final orders; verify each before seeding). Codes are opaque → map via the SCC JSON Search API.
+> - **TX PUCT** `interchange.puc.texas.gov/Documents/{control}_{item}_{docid}.PDF` — e.g. `57149_114_1483150` (El Paso Electric fuel reconciliation), `55999_168_1550025`, `58211_13_1526279`. Some scanned → OCR.
+> - **IL ICC** `icc.illinois.gov/docket/P{YYYY}-{NNNN}/documents/{docId}/files/{fileId}.pdf` — e.g. `P2024-0087` (ComEd CFRA).
+> - **SC** `dms.psc.sc.gov/Attachments/Matter/{guid}` + `ors.sc.gov/sites/scors/files/...` (ORS testimony; opaque guids via DMS docket search).
+> Workflow per state: write `data/seeds/<state>.json` (collection `state_audit`) → `python -m pipeline.sources --seed …` → `python -m pipeline.build` → verify tab → **commit per state**.
+>
+> **THEN — phase 3 (OH / NC).** WAF-blocked, need browser-capture/cookie-dance: OH PUCO DIS `dis.puc.state.oh.us` (F5 ASM), NC NCUC `starw1.ncuc.gov` (Cloudflare). OH has the richest consultant audits.
+>
+> **Loose ends:** (1) 4/5 prudence records are **0-page** (eLibrary throttled the ingest run) — re-run `python -m pipeline.sources --seed data/seeds/ferc_prudence.json` when eLibrary is quiet to backfill page counts (idempotent; cached ISO-NE skips). (2) PA/MI **findings parser** for the clean management-audit subset is high-priority below. Full detail in the *Multi-source expansion* section. Access map per regulator in [ISSUES.md](ISSUES.md).
+
+---
+
 > **Policy-analyst review (2026-06-01).** Read through the eyes of a load-growth / data-center / affordability / speed-to-power analyst. Verdict: the corpus answers **affordability only, and only indirectly** — the over-recovery / costs-wrongly-charged-to-ratepayers angle. It is **silent** on load growth, data centers, co-location, and queue/speed (`data center` 0, `queue` 0, `Order 2023` 0 across all 599 findings). Items tagged *(policy 2026-06-01)* below either sharpen the affordability angle the data *can* support, or record the scope gap.
 
 ## Multi-source expansion (prudence reviews + state PUC audits)
