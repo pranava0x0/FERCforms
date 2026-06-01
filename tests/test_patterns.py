@@ -64,6 +64,14 @@ def test_summarize_counts_and_themes():
     dep = next(t for t in s.themes if t.theme == "Depreciation")
     assert dep.report_count == 2 and dep.finding_count == 2
     assert dep.keywords  # keywords are surfaced for transparency
+    assert dep.description  # plain-English explanation is attached
+
+
+def test_every_theme_has_a_description():
+    """Each theme rule must carry a plain-English description (shown on the site
+    and in llms.txt). Guards against adding a THEME_RULES entry without one."""
+    for theme, _kws in patterns.THEME_RULES:
+        assert patterns.THEME_DESCRIPTIONS.get(theme), f"missing description for theme: {theme}"
 
 
 def test_summarize_empty():

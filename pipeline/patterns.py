@@ -39,6 +39,28 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     ("Cost of service & rates", ["cost of service", "cost-of-service", "rate base", "rate of return", "return on equity"]),
 ]
 
+# Plain-English explanation of each theme, shown on the site's pattern cards and
+# in llms.txt. Keep one concise, neutral sentence (≈≤12 words) per theme — a
+# glossary for navigation, NOT a characterization of any report's findings.
+# SINGLE SOURCE OF TRUTH: editing these (or THEME_RULES) means the baked output
+# is stale — re-run `python -m pipeline.build` to refresh docs/data/patterns.json
+# AND docs/llms.txt + llms-full.txt. A test asserts every theme has a description.
+THEME_DESCRIPTIONS: dict[str, str] = {
+    "Accounting misclassification": "Costs or revenues booked to the wrong FERC account.",
+    "AFUDC / cost of capital": "Mis-stated AFUDC — the financing cost capitalized during construction.",
+    "Tariff administration & oversight": "Not following the utility's own FERC-approved tariff.",
+    "Informational postings": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
+    "Depreciation": "Unapproved or incorrect depreciation rates applied to plant.",
+    "Affiliate / intercompany transactions": "Transactions with affiliated companies mis-priced or mis-reported.",
+    "Membership dues & industry associations": "Trade-association dues (e.g., EEI) improperly charged to ratepayers.",
+    "Below-the-line costs (lobbying, charitable, etc.)": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
+    "Form reporting (Form No. 1/2/6, Page 700)": "Errors or omissions in the annual FERC forms utilities file.",
+    "Property & plant records": "Incomplete or inaccurate utility plant and property records.",
+    "Creditworthiness": "Customer credit standards not applied as the tariff requires.",
+    "Capitalization vs. expense": "Costs capitalized that should be expensed, or the reverse.",
+    "Cost of service & rates": "Errors in rate-base or return inputs to cost-of-service rates.",
+}
+
 
 def _themes_for(text: str) -> list[str]:
     low = text.lower()
@@ -88,6 +110,7 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
     themes = [
         ThemeStat(
             theme=theme,
+            description=THEME_DESCRIPTIONS.get(theme, ""),
             keywords=keyword_lookup[theme],
             finding_count=theme_findings[theme],
             report_count=len(theme_reports[theme]),
