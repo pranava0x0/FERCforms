@@ -137,6 +137,22 @@ Each commission's docket system is different. Patterns below are all confirmed b
   testimony panels + 1 intervenor (Georgia Conservation Voters); `data/seeds/ga_psc.json`. Follow-ups:
   GA Power's own direct case + the **July 15, 2025 Commission order** approving the IRP (needs the SPA/browser).
 
+### LA — Louisiana PSC (LPSC portal) · stable `.gov` ViewFile, but hostile metadata
+- **Download (stable GET):** `lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId={token}`
+  (`.gov`; pipeline UA fetches directly). The `fileId` is opaque base64 — **URL-encode `+`→`%2B`, `/`→`%2F`,
+  `=`→`%3D`** in the seed `pdf_url` (the pipeline `requests` GET passes it through; server decodes).
+  Docket landing: `…/portal/PSC/DocketDetails?docketId={internalId}` (server-rendered header — gives the
+  `U-#####` number + title; but the **document-list endpoint 500s/SPAs**, and the internal `docketId` ≠ the
+  `U-` number).
+- **Two metadata traps (verify locally!):** (a) many Entergy filings use a **broken font encoding** that
+  mangles the **docket number** in the text layer (e.g. `U- \/ex/\/ma`) even though captions read fine —
+  leave `docket` null rather than guess; (b) `WebSearch` scatters `ViewFile` tokens across *many* Entergy
+  dockets, so it won't cleanly scope one proceeding. Enumerate a single docket via the browser/SPA.
+- **Shipped:** Entergy Louisiana — U-36959 FRP rate-case **Global Settlement** + the **Lake Charles Power
+  Station construction-management prudence review** (Jones + Dickens testimony, Dec 2021; tied to approval
+  Order U-34283); `data/seeds/la_lpsc.json`. On-theme & prudence-relevant; Grand Gulf/SERI refund + the
+  Meta-data-center infrastructure approval are obvious next LA targets.
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

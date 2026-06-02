@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 173 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 176 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5673,6 +5673,17 @@ Direct Testimony of Roger W. Turner (CICI Exhibit 1.0) on behalf of the Chemical
 
 ---
 
+## Entergy Louisiana, LLC
+- Collection: State PUC Audits | Source: Louisiana Public Service Commission
+- Docket: U-36959 | Audit type: n/a
+- Issued: 2024-07-31 | Industry: electric | FERC Form: n/a
+- Source page: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=31370
+- Status: listed for reference (not machine-parsed into findings)
+
+Global Settlement in Entergy Louisiana, LLC, Ex Parte — In Re: Application for an Increase in Rates, Whether Through a Formula Rate Plan Extension or Rate Review, and Proposed Revisions to Certain Fees Assessed to Customers, before the Louisiana Public Service Commission, Docket No. U-36959 (32 pp). The settlement, joined by LPSC Staff and intervenors (Alliance for Affordable Energy, LEUG, Walmart, DoD/federal agencies, et al.), continues a Formula Rate Plan (Rider FRP) for three years with annual evaluation reports due May 31, 2025 and 2026. Filed 2024. Listed for reference (metadata-only). Source: LPSC public docket portal, file +TYZ0y9CRc0= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D; docket landing: DocketDetails?docketId=31370).
+
+---
+
 ## PPL Electric Utilities Corporation
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2023-3039488 | Audit type: n/a
@@ -5990,6 +6001,28 @@ Recommendations:
 24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture. (source p. 162)
 25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
 26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)
+
+---
+
+## Entergy Louisiana, LLC
+- Collection: State PUC Audits | Source: Louisiana Public Service Commission
+- Docket: n/a | Audit type: n/a
+- Issued: 2021-12-09 | Industry: electric | FERC Form: n/a
+- Source page: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Ryan D. Jones on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, filed December 2021 (received December 9, 2021; public version, 17 pp). The Lake Charles Power Station (an approximately $872 million natural-gas plant; commercial operation March 28, 2020) was approved as prudent in LPSC Order No. U-34283 (July 20, 2017); this proceeding reviews the prudence of the project's construction management. The review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file 3SIDvL86aGQ= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D).
+
+---
+
+## Entergy Louisiana, LLC
+- Collection: State PUC Audits | Source: Louisiana Public Service Commission
+- Docket: n/a | Audit type: n/a
+- Issued: 2021-12-09 | Industry: electric | FERC Form: n/a
+- Source page: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Management, New Generation Program Execution) on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, Public Redacted Version, December 2021 (49 pp). Addresses the owner's oversight during the development, design-engineering, and procurement phases of the project, which began commercial operation March 28, 2020. Related to construction-approval Order No. U-34283 (July 20, 2017); the review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file f1nYMQY9MWc= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D).
 
 ---
 

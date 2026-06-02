@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2024-07-31_entergy-louisiana_la-u-36959-global-settlement",
+    "company": "Entergy Louisiana, LLC",
+    "collection": "state_audit",
+    "jurisdiction": "LA",
+    "source": "Louisiana Public Service Commission",
+    "doc_type": "settlement agreement",
+    "industry": "electric",
+    "pdf_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D",
+    "source_page_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=31370",
+    "issued_date": "2024-07-31",
+    "docket": "U-36959",
+    "captured_at": "2026-06-02",
+    "source_note": "Global Settlement in Entergy Louisiana, LLC, Ex Parte — In Re: Application for an Increase in Rates, Whether Through a Formula Rate Plan Extension or Rate Review, and Proposed Revisions to Certain Fees Assessed to Customers, before the Louisiana Public Service Commission, Docket No. U-36959 (32 pp). The settlement, joined by LPSC Staff and intervenors (Alliance for Affordable Energy, LEUG, Walmart, DoD/federal agencies, et al.), continues a Formula Rate Plan (Rider FRP) for three years with annual evaluation reports due May 31, 2025 and 2026. Filed 2024. Listed for reference (metadata-only). Source: LPSC public docket portal, file +TYZ0y9CRc0= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D; docket landing: DocketDetails?docketId=31370).",
+    "parse": false
+  },
+  {
+    "id": "2021-12-09_entergy-louisiana_la-lake-charles-construction-review-jones",
+    "company": "Entergy Louisiana, LLC",
+    "collection": "state_audit",
+    "jurisdiction": "LA",
+    "source": "Louisiana Public Service Commission",
+    "doc_type": "direct testimony",
+    "industry": "electric",
+    "pdf_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D",
+    "source_page_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D",
+    "issued_date": "2021-12-09",
+    "captured_at": "2026-06-02",
+    "source_note": "Direct Testimony of Ryan D. Jones on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, filed December 2021 (received December 9, 2021; public version, 17 pp). The Lake Charles Power Station (an approximately $872 million natural-gas plant; commercial operation March 28, 2020) was approved as prudent in LPSC Order No. U-34283 (July 20, 2017); this proceeding reviews the prudence of the project's construction management. The review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file 3SIDvL86aGQ= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D).",
+    "parse": false
+  },
+  {
+    "id": "2021-12-09_entergy-louisiana_la-lake-charles-construction-review-dickens",
+    "company": "Entergy Louisiana, LLC",
+    "collection": "state_audit",
+    "jurisdiction": "LA",
+    "source": "Louisiana Public Service Commission",
+    "doc_type": "direct testimony",
+    "industry": "electric",
+    "pdf_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D",
+    "source_page_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D",
+    "issued_date": "2021-12-09",
+    "captured_at": "2026-06-02",
+    "source_note": "Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Management, New Generation Program Execution) on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, Public Redacted Version, December 2021 (49 pp). Addresses the owner's oversight during the development, design-engineering, and procurement phases of the project, which began commercial operation March 28, 2020. Related to construction-approval Order No. U-34283 (July 20, 2017); the review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file f1nYMQY9MWc= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D).",
+    "parse": false
+  }
+]
