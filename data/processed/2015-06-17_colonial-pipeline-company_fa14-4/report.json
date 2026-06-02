@@ -57,11 +57,13 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Record amounts payable for regulatory fees to Federal agencies in Account 52, Accounts Payable, rather than Account 56, Taxes Payable, prospectively."
+          "text": "Record amounts payable for regulatory fees to Federal agencies in Account 52, Accounts Payable, rather than Account 56, Taxes Payable, prospectively.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Record expense amounts paid to DOT for user fees in Account 590, Other Expenses, rather than Account 580, Pipeline Taxes, prospectively."
+          "text": "Record expense amounts paid to DOT for user fees in Account 590, Other Expenses, rather than Account 580, Pipeline Taxes, prospectively.",
+          "source_page": null
         }
       ]
     },
@@ -73,15 +75,18 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Enhance its review procedures to ensure the page 700 prepared by the third- party consultant is accurate and complete."
+          "text": "Enhance its review procedures to ensure the page 700 prepared by the third- party consultant is accurate and complete.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Update its policies and procedures to ensure that intrastate activities are removed from page 700, and only interstate activities are reported."
+          "text": "Update its policies and procedures to ensure that intrastate activities are removed from page 700, and only interstate activities are reported.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Restate 2013 page 700 with the corrected amounts in the 2014 Form 6. E."
+          "text": "Restate 2013 page 700 with the corrected amounts in the 2014 Form 6. E.",
+          "source_page": null
         }
       ]
     }

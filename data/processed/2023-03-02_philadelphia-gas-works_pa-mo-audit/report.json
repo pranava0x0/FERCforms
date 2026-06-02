@@ -35,19 +35,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework."
+          "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.",
+          "source_page": 18
         },
         {
           "number": 2,
-          "text": "Streamline the annual budget approval process."
+          "text": "Streamline the annual budget approval process.",
+          "source_page": 18
         },
         {
           "number": 3,
-          "text": "Establish committee charters for all PFMC board committees."
+          "text": "Establish committee charters for all PFMC board committees.",
+          "source_page": 18
         },
         {
           "number": 4,
-          "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met."
+          "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.",
+          "source_page": 18
         }
       ]
     },
@@ -59,11 +63,13 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions."
+          "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.",
+          "source_page": 26
         },
         {
           "number": 6,
-          "text": "Implement a safety management system and improve safety culture at PGW."
+          "text": "Implement a safety management system and improve safety culture at PGW.",
+          "source_page": 26
         }
       ]
     },
@@ -75,11 +81,13 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Update Internal Audit policies and procedures."
+          "text": "Update Internal Audit policies and procedures.",
+          "source_page": 34
         },
         {
           "number": 8,
-          "text": "Formally document explanations for variances from the capital and operating budgets."
+          "text": "Formally document explanations for variances from the capital and operating budgets.",
+          "source_page": 34
         }
       ]
     },
@@ -91,19 +99,23 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system."
+          "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.",
+          "source_page": 46
         },
         {
           "number": 10,
-          "text": "Accelerate cast iron main replacement."
+          "text": "Accelerate cast iron main replacement.",
+          "source_page": 46
         },
         {
           "number": 11,
-          "text": "Plan and implement a process for gathering equipment and installation data in the GIS database."
+          "text": "Plan and implement a process for gathering equipment and installation data in the GIS database.",
+          "source_page": 46
         },
         {
           "number": 12,
-          "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations."
+          "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.",
+          "source_page": 46
         }
       ]
     },
@@ -115,15 +127,18 @@
       "recommendations": [
         {
           "number": 13,
-          "text": "File Self-Certification forms with the Pennsylvania PUC annually."
+          "text": "File Self-Certification forms with the Pennsylvania PUC annually.",
+          "source_page": 53
         },
         {
           "number": 14,
-          "text": "Correct various deficiencies in physical security."
+          "text": "Correct various deficiencies in physical security.",
+          "source_page": 53
         },
         {
           "number": 15,
-          "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities."
+          "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.",
+          "source_page": 53
         }
       ]
     },
@@ -135,23 +150,28 @@
       "recommendations": [
         {
           "number": 16,
-          "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis."
+          "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis.",
+          "source_page": 53
         },
         {
           "number": 17,
-          "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position."
+          "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.",
+          "source_page": 53
         },
         {
           "number": 18,
-          "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method."
+          "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.",
+          "source_page": 53
         },
         {
           "number": 19,
-          "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels."
+          "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.",
+          "source_page": 53
         },
         {
           "number": 20,
-          "text": "Implement a cybersecurity-focused risk registry."
+          "text": "Implement a cybersecurity-focused risk registry.",
+          "source_page": 53
         }
       ]
     },
@@ -163,11 +183,13 @@
       "recommendations": [
         {
           "number": 21,
-          "text": "Document the policies and procedures of PGW’s cycle counting function."
+          "text": "Document the policies and procedures of PGW’s cycle counting function.",
+          "source_page": 57
         },
         {
           "number": 22,
-          "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use."
+          "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.",
+          "source_page": 57
         }
       ]
     },
@@ -179,23 +201,28 @@
       "recommendations": [
         {
           "number": 23,
-          "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers."
+          "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.",
+          "source_page": 67
         },
         {
           "number": 24,
-          "text": "Improve customer service performance through expanding call center resources."
+          "text": "Improve customer service performance through expanding call center resources.",
+          "source_page": 67
         },
         {
           "number": 25,
-          "text": "Complete implementation of the replacement CIS."
+          "text": "Complete implementation of the replacement CIS.",
+          "source_page": 67
         },
         {
           "number": 26,
-          "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers."
+          "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.",
+          "source_page": 68
         },
         {
           "number": 27,
-          "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers."
+          "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.",
+          "source_page": 68
         }
       ]
     },
@@ -207,11 +234,13 @@
       "recommendations": [
         {
           "number": 28,
-          "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency."
+          "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.",
+          "source_page": 72
         },
         {
           "number": 29,
-          "text": "Leverage and integrate data visualization software consistently across PGW."
+          "text": "Leverage and integrate data visualization software consistently across PGW.",
+          "source_page": 72
         }
       ]
     },
@@ -223,7 +252,8 @@
       "recommendations": [
         {
           "number": 30,
-          "text": "Improve efficiencies within the fleet department."
+          "text": "Improve efficiencies within the fleet department.",
+          "source_page": 77
         }
       ]
     },
@@ -235,11 +265,13 @@
       "recommendations": [
         {
           "number": 31,
-          "text": "Implement strategies for recruitment and retention of “at-risk” positions."
+          "text": "Implement strategies for recruitment and retention of “at-risk” positions.",
+          "source_page": 84
         },
         {
           "number": 32,
-          "text": "Drive safety performance to meet industry standards."
+          "text": "Drive safety performance to meet industry standards.",
+          "source_page": 84
         }
       ]
     }

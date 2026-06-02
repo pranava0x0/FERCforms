@@ -105,14 +105,16 @@ def test_parse_exhibit_i2_chapters_and_verbatim_recs():
     ]
     by_title = dict(chapters)
     assert by_title["Corporate Governance"] == []  # "None" area -> no recs
-    # multi-line rec text joined verbatim; trailing page/timeframe/benefit columns dropped
+    # each rec is (verbatim text, source_page): multi-line text joined verbatim, the
+    # "Page No." column captured, trailing timeframe/benefit columns dropped
     assert by_title["Executive Management and Organizational Structure"] == [
-        "Conduct routine employee surveys to ensure corporate culture aligns with company goals."
+        ("Conduct routine employee surveys to ensure corporate culture aligns with company goals.", 16)
     ]
-    # the page-break header between V-1 and V-2 must not drop V-2
+    # the page-break header between V-1 and V-2 must not drop V-2; both cite page 29
+    # (V-1's "12-24"/"Months" split timeframe must NOT be mistaken for the page no.)
     assert by_title["Cost Allocations and Affiliated Interests"] == [
-        "Compare the internal cost of services to market rates on a periodic basis.",
-        "Develop refresher training to employees.",
+        ("Compare the internal cost of services to market rates on a periodic basis.", 29),
+        ("Develop refresher training to employees.", 29),
     ]
 
 
@@ -128,10 +130,11 @@ def test_structure_mo_audit_maps_findings_and_numbers_recs():
         "Financial Management",
     ]
     # recommendations numbered sequentially across the report, verbatim, no column leakage
-    rec_numbers = [r.number for f in report.findings for r in f.recommendations]
-    assert rec_numbers == [1, 2, 3, 4]
-    all_recs = [r.text for f in report.findings for r in f.recommendations]
-    assert all(t and not re.search(r"^(Low|Medium|High)$|Months$|^\d+$", t) for t in all_recs)
+    recs = [r for f in report.findings for r in f.recommendations]
+    assert [r.number for r in recs] == [1, 2, 3, 4]
+    assert all(r.text and not re.search(r"^(Low|Medium|High)$|Months$|^\d+$", r.text) for r in recs)
+    # the Exhibit I-2 "Page No." column is captured per rec (printed body page)
+    assert [r.source_page for r in recs] == [16, 29, 29, 36]
     assert report.collection == "state_audit" and report.jurisdiction == "PA"
 
 
@@ -161,4 +164,7 @@ def test_real_pa_mo_audits_regression(rid, min_findings, min_recs):
     assert report.finding_count >= min_findings
     assert sum(len(f.recommendations) for f in report.findings) >= min_recs
     assert all(f.title for f in report.findings)                       # every finding titled
-    assert all(r.text for f in report.findings for r in f.recommendations)  # every rec non-empty
+    recs = [r for f in report.findings for r in f.recommendations]
+    assert all(r.text for r in recs)                                   # every rec non-empty
+    # every PA M&O rec carries its Exhibit I-2 "Page No." (a positive printed page)
+    assert all(isinstance(r.source_page, int) and r.source_page > 0 for r in recs)

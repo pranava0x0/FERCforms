@@ -36,27 +36,33 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Implement procedures to ensure that excess and deficient ADIT asset and liability amounts are included in rate base for the computation of the annual transmission revenue requirement."
+          "text": "Implement procedures to ensure that excess and deficient ADIT asset and liability amounts are included in rate base for the computation of the annual transmission revenue requirement.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Revise its accounting policies and procedures to ensure that the effect of changes in tax laws or tax rates are implemented in accordance with the Commission’s accounting guidance in Docket No. AI93-5."
+          "text": "Revise its accounting policies and procedures to ensure that the effect of changes in tax laws or tax rates are implemented in accordance with the Commission’s accounting guidance in Docket No. AI93-5.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Submit correcting journal entries, within 60 days of issuance of this audit report, with proposed accounting entries and supporting documentation to DAA that reflect corrections to recorded excess and deficient ADIT in the appropriate USofA accounts."
+          "text": "Submit correcting journal entries, within 60 days of issuance of this audit report, with proposed accounting entries and supporting documentation to DAA that reflect corrections to recorded excess and deficient ADIT in the appropriate USofA accounts.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess and deficient ADIT asset and liability amounts excluded from the transmission formula rates in 2018, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess and deficient ADIT asset and liability amounts excluded from the transmission formula rates in 2018, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -68,47 +74,58 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Revise and implement procedures to ensure that AFUDC rate calculations are consistent with Order Nos. 561 and 561-A, EPI No. 3(A)(17), and other applicable Commission requirements."
+          "text": "Revise and implement procedures to ensure that AFUDC rate calculations are consistent with Order Nos. 561 and 561-A, EPI No. 3(A)(17), and other applicable Commission requirements.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Revise its procedures to ensure that it includes short-term debt in the computation of the AFUDC rate for its electric utility business."
+          "text": "Revise its procedures to ensure that it includes short-term debt in the computation of the AFUDC rate for its electric utility business.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Revise its procedures to exclude Account 216.1 and Account 219 balances from the equity components used to derive its AFUDC rate."
+          "text": "Revise its procedures to exclude Account 216.1 and Account 219 balances from the equity components used to derive its AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Revise its procedures to ensure that it computes AFUDC rates using the calendar year-end balances reported in its FERC Form No. 1 for common equity, preferred stock, and long-term debt."
+          "text": "Revise its procedures to ensure that it computes AFUDC rates using the calendar year-end balances reported in its FERC Form No. 1 for common equity, preferred stock, and long-term debt.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Provide training to its staff on the revised procedures implemented under Recommendation Nos. 7, 8, 9, and 10. Provide periodic training in these areas as needed."
+          "text": "Provide training to its staff on the revised procedures implemented under Recommendation Nos. 7, 8, 9, and 10. Provide periodic training in these areas as needed.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Recalculate its accrued AFUDC, in a manner consistent with EPI No. 3(A)(17) that corrects for the improper exclusion of short-term debt, improper inclusion of Account 216.1 and 219 balances, and improper use of fiscal year-end book balances for common equity, preferred stock, and long-term debt from 2012 through the date of issuance of the audit report."
+          "text": "Recalculate its accrued AFUDC, in a manner consistent with EPI No. 3(A)(17) that corrects for the improper exclusion of short-term debt, improper inclusion of Account 216.1 and 219 balances, and improper use of fiscal year-end book balances for common equity, preferred stock, and long-term debt from 2012 through the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report."
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC included in the transmission formula rates since 2017, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC included in the transmission formula rates since 2017, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 13 and restate and footnote the FERC Form No. 1 for current and comparative years as necessary."
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 13 and restate and footnote the FERC Form No. 1 for current and comparative years as necessary.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of Commission regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of Commission regulations.",
+          "source_page": null
         }
       ]
     },
@@ -120,23 +137,28 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Revise and implement procedures, policies, and controls to track and review the transmission formula rate inputs and calculations for accuracy, completeness, and compliance with UGIU’s Commission approved formula rate."
+          "text": "Revise and implement procedures, policies, and controls to track and review the transmission formula rate inputs and calculations for accuracy, completeness, and compliance with UGIU’s Commission approved formula rate.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Provide training to staff on the revised wholesale transmission formula rate procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised wholesale transmission formula rate procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Submit a refund analysis to DAA, within 60 days of issuance of this audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the inclusion SFAS 106 amounts plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis to DAA, within 60 days of issuance of this audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the inclusion SFAS 106 amounts plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -148,23 +170,28 @@
       "recommendations": [
         {
           "number": 23,
-          "text": "Develop and implement procedures, policies, and controls to ensure expenses included in the transmission formula rate are not included in multiple areas."
+          "text": "Develop and implement procedures, policies, and controls to ensure expenses included in the transmission formula rate are not included in multiple areas.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Provide training to staff on the revised transmission formula rate procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised transmission formula rate procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 25,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to UGIU’s wholesale transmission customers since 2017, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to UGIU’s wholesale transmission customers since 2017, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -176,27 +203,33 @@
       "recommendations": [
         {
           "number": 28,
-          "text": "Develop and implement procedures and policies to track, report, review, and account for wholesale transmission revenues consistent with Commission accounting and ratemaking requirements."
+          "text": "Develop and implement procedures and policies to track, report, review, and account for wholesale transmission revenues consistent with Commission accounting and ratemaking requirements.",
+          "source_page": null
         },
         {
           "number": 29,
-          "text": "Provide training to staff on the revised accounting and wholesale transmission revenue procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised accounting and wholesale transmission revenue procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "Perform an analysis of rental income accounts to identify revenues that were not properly credited to wholesale transmission customers through UGIU’s transmission formula rates for the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+          "text": "Perform an analysis of rental income accounts to identify revenues that were not properly credited to wholesale transmission customers through UGIU’s transmission formula rates for the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 31,
-          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the exclusion of revenue credits plus interest; (2) determinative components of the refund; (3) refund method; (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the exclusion of revenue credits plus interest; (2) determinative components of the refund; (3) refund method; (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 32,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -208,31 +241,38 @@
       "recommendations": [
         {
           "number": 34,
-          "text": "Revise and implement procedures and policies to track, report, review, and account for UGI Corporation allocated expenses consistent with Commission accounting requirements."
+          "text": "Revise and implement procedures and policies to track, report, review, and account for UGI Corporation allocated expenses consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "Revise and implement procedures, polices and controls to ensure the correct allocation factors are used to calculate and allocate common expenses recorded in the A&G accounts for the electric utility business."
+          "text": "Revise and implement procedures, polices and controls to ensure the correct allocation factors are used to calculate and allocate common expenses recorded in the A&G accounts for the electric utility business.",
+          "source_page": null
         },
         {
           "number": 36,
-          "text": "Train staff on the procedures and policies and provide periodic training, as needed."
+          "text": "Train staff on the procedures and policies and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 37,
-          "text": "Perform an analysis of A&G expense accounts to identify common expenses that were allocated using the incorrect allocation percentages during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+          "text": "Perform an analysis of A&G expense accounts to identify common expenses that were allocated using the incorrect allocation percentages during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 38,
-          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper allocation of common expenses recorded in A&G accounts as identified pursuant to the analysis performed in response to Recommendation No. 43, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper allocation of common expenses recorded in A&G accounts as identified pursuant to the analysis performed in response to Recommendation No. 43, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 39,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 40,
-          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -244,27 +284,33 @@
       "recommendations": [
         {
           "number": 41,
-          "text": "Revise policies and procedures to ensure that UGIU properly accounts for expenditures in its books and records."
+          "text": "Revise policies and procedures to ensure that UGIU properly accounts for expenditures in its books and records.",
+          "source_page": null
         },
         {
           "number": 42,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in UGIU’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in UGIU’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 43,
-          "text": "Perform an analysis of A&G expense accounts to identify expenses that were inappropriately recovered through UGIU’s transmission formula rate and the related customer billings, such as advertising, donations, lobbying, distribution O&M costs, legal costs, and asset insurance improperly charged to accounts included in the transmission formula rate during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+          "text": "Perform an analysis of A&G expense accounts to identify expenses that were inappropriately recovered through UGIU’s transmission formula rate and the related customer billings, such as advertising, donations, lobbying, distribution O&M costs, legal costs, and asset insurance improperly charged to accounts included in the transmission formula rate during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 44,
-          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper accounting for expenses recorded in A&G accounts as identified pursuant to the analysis performed in response to Recommendation No. 43, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made."
+          "text": "Submit a refund analysis to DAA, within 60 days of receiving the audit report, that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the improper accounting for expenses recorded in A&G accounts as identified pursuant to the analysis performed in response to Recommendation No. 43, plus interest; (2) determinative components of the refund; (3) refund method; and (4) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 45,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 46,
-          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -276,11 +322,13 @@
       "recommendations": [
         {
           "number": 47,
-          "text": "Develop and implement processes and procedures to ensure that depreciation rates and related studies are filed with the Commission when depreciation rates are changed."
+          "text": "Develop and implement processes and procedures to ensure that depreciation rates and related studies are filed with the Commission when depreciation rates are changed.",
+          "source_page": null
         },
         {
           "number": 48,
-          "text": "File current depreciation studies with the Commission relating to UGIU’s current annual transmission revenue requirement within 60 days of issuance of this audit report."
+          "text": "File current depreciation studies with the Commission relating to UGIU’s current annual transmission revenue requirement within 60 days of issuance of this audit report.",
+          "source_page": null
         }
       ]
     },
@@ -292,11 +340,13 @@
       "recommendations": [
         {
           "number": 49,
-          "text": "Revise and strengthen documented policies, procedures, and practices to ensure information reported in the FERC Form No. 1 is correct, accurate, and consistent with the instructions of the form."
+          "text": "Revise and strengthen documented policies, procedures, and practices to ensure information reported in the FERC Form No. 1 is correct, accurate, and consistent with the instructions of the form.",
+          "source_page": null
         },
         {
           "number": 50,
-          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E."
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E.",
+          "source_page": null
         }
       ]
     },

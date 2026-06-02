@@ -59,15 +59,18 @@
       "recommendations": [
         {
           "number": 16,
-          "text": "Revise and strengthen documented policies, procedures, and practices to help ensure all schedule instructions are followed and all information is accurately reported in the FERC Form No. 1."
+          "text": "Revise and strengthen documented policies, procedures, and practices to help ensure all schedule instructions are followed and all information is accurately reported in the FERC Form No. 1.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area. Other Matter – Accounting for Plant in Service"
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area. Other Matter – Accounting for Plant in Service",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Revise and strengthen policies and procedures to improve accounting practices for plant in service and ensure that work order expenses associated with projects that have been placed in service are transferred to appropriate plant in service accounts in a timely manner. E."
+          "text": "Revise and strengthen policies and procedures to improve accounting practices for plant in service and ensure that work order expenses associated with projects that have been placed in service are transferred to appropriate plant in service accounts in a timely manner. E.",
+          "source_page": null
         }
       ]
     }

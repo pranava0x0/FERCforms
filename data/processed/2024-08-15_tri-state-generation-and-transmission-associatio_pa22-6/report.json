@@ -37,19 +37,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Develop and implement procedures and controls to ensure that Tri-State is timely posting all required information to OASIS, including posting the required transmission service metrics within 15 days of the end of each calendar quarter."
+          "text": "Develop and implement procedures and controls to ensure that Tri-State is timely posting all required information to OASIS, including posting the required transmission service metrics within 15 days of the end of each calendar quarter.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Develop and implement a process to perform periodic reviews of Tri- State’s OASIS postings to verify that Tri-State is posting all required information, including posting the required transmission service metrics within 15 days of the end of each calendar quarter."
+          "text": "Develop and implement a process to perform periodic reviews of Tri- State’s OASIS postings to verify that Tri-State is posting all required information, including posting the required transmission service metrics within 15 days of the end of each calendar quarter.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Develop and implement quality controls to ensure all posted information is accurate and complete."
+          "text": "Develop and implement quality controls to ensure all posted information is accurate and complete.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Train employees on the review process and quality controls developed under Recommendations 1, 2, and 3, and repeat such training as needed."
+          "text": "Train employees on the review process and quality controls developed under Recommendations 1, 2, and 3, and repeat such training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -61,11 +65,13 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Develop policies and implement a process to ensure that all discount rates are posted on OASIS within the time frames set forth in Tri-State’s OATT and the Commission’s regulations and are made available to all transmission service customers."
+          "text": "Develop policies and implement a process to ensure that all discount rates are posted on OASIS within the time frames set forth in Tri-State’s OATT and the Commission’s regulations and are made available to all transmission service customers.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Train employees on the policies and on the process relating to posting discount information on Tri-State’s OASIS, and repeat and update the training as needed."
+          "text": "Train employees on the policies and on the process relating to posting discount information on Tri-State’s OASIS, and repeat and update the training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -77,11 +83,13 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Develop policies and implement process improvements to ensure that all curtailment postings include a reason why the transaction could not be continued or completed."
+          "text": "Develop policies and implement process improvements to ensure that all curtailment postings include a reason why the transaction could not be continued or completed.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Train employees on the curtailment policies and process improvements developed under Recommendation 7 and repeat and update the training as needed. E."
+          "text": "Train employees on the curtailment policies and process improvements developed under Recommendation 7 and repeat and update the training as needed. E.",
+          "source_page": null
         }
       ]
     }

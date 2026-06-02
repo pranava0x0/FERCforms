@@ -100,6 +100,14 @@ def test_full_has_verbatim_findings_and_recs():
     assert "### Finding 1: AFUDC Error" in s
     assert "Acme overstated AFUDC." in s           # verbatim summary
     assert "1. Recalculate AFUDC." in s            # numbered recommendation
+    assert "(source p." not in s                   # FERC rec has no page -> no citation
+
+
+def test_full_cites_rec_source_page_when_present():
+    r = _report()
+    r.findings[0].recommendations[0].source_page = 29
+    s = llmstxt.build_full([r], _patterns(), _META)
+    assert "1. Recalculate AFUDC. (source p. 29)" in s
 
 
 def test_write_llms_creates_both_files(tmp_path):

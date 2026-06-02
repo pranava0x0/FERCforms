@@ -37,11 +37,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Review system settings for all OASIS posting functions that require user access and develop policies and procedures to ensure that settings are set to provide proper access for OASIS users. Provide a report to audit staff that summarizes the results of this review."
+          "text": "Review system settings for all OASIS posting functions that require user access and develop policies and procedures to ensure that settings are set to provide proper access for OASIS users. Provide a report to audit staff that summarizes the results of this review.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -53,11 +55,13 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Revise policies and procedures to ensure that PGE posts a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months or longer for a given path."
+          "text": "Revise policies and procedures to ensure that PGE posts a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months or longer for a given path.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 3, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 3, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -69,15 +73,18 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Reestablish a policy and procedure to post generator interconnection study timeline deviations on OASIS."
+          "text": "Reestablish a policy and procedure to post generator interconnection study timeline deviations on OASIS.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Establish a policy and procedure to post generator interconnection in-service date deviations on OASIS."
+          "text": "Establish a policy and procedure to post generator interconnection in-service date deviations on OASIS.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 5 and 6, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 5 and 6, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -89,11 +96,13 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Revise policies and procedures to ensure that the active and inactive generator interconnection request lists indicate the availability of any studies relating to a project, including restudies."
+          "text": "Revise policies and procedures to ensure that the active and inactive generator interconnection request lists indicate the availability of any studies relating to a project, including restudies.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 8, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 8, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -105,11 +114,13 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Revise document retention policies and procedures to ensure that PGE properly identifies, indexes, and retains emails that are records in accordance with the Commission’s preservation of records regulations."
+          "text": "Revise document retention policies and procedures to ensure that PGE properly identifies, indexes, and retains emails that are records in accordance with the Commission’s preservation of records regulations.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 10, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 10, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -121,11 +132,13 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Develop a process to perform periodic reviews of PGE’s OASIS interconnection study metrics postings to verify that PGE is posting complete and accurate information."
+          "text": "Develop a process to perform periodic reviews of PGE’s OASIS interconnection study metrics postings to verify that PGE is posting complete and accurate information.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 12, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 12, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -137,15 +150,18 @@
       "recommendations": [
         {
           "number": 14,
-          "text": "Revise policies and procedures to ensure that quarterly transmission service metrics reports are timely uploaded to OASIS."
+          "text": "Revise policies and procedures to ensure that quarterly transmission service metrics reports are timely uploaded to OASIS.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Implement a quality control process to ensure all posted information in quarterly transmission service metrics reports is accurate and complete."
+          "text": "Implement a quality control process to ensure all posted information in quarterly transmission service metrics reports is accurate and complete.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 14 and 15, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 14 and 15, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -157,11 +173,13 @@
       "recommendations": [
         {
           "number": 17,
-          "text": "Revise policies and procedures to ensure that PGE accurately posts transmission service request study information on OASIS and accurately and timely reports this information in its quarterly transmission service request metrics reports."
+          "text": "Revise policies and procedures to ensure that PGE accurately posts transmission service request study information on OASIS and accurately and timely reports this information in its quarterly transmission service request metrics reports.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 17, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 17, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -173,11 +191,13 @@
       "recommendations": [
         {
           "number": 19,
-          "text": "Revise policies and procedures to ensure that all base case data, including short circuit information, is posted on the OASIS or a password-protected website."
+          "text": "Revise policies and procedures to ensure that all base case data, including short circuit information, is posted on the OASIS or a password-protected website.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 19, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 19, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -189,11 +209,13 @@
       "recommendations": [
         {
           "number": 21,
-          "text": "Develop and implement policies, procedures, and review processes to ensure that PGE adheres to Attachment K, Section 3.2, Sequence of Events, and fulfills its responsibilities for each planning quarter, from Quarter 1 (Section 3.2.1) to Quarter 8 (Section 3.2.8)."
+          "text": "Develop and implement policies, procedures, and review processes to ensure that PGE adheres to Attachment K, Section 3.2, Sequence of Events, and fulfills its responsibilities for each planning quarter, from Quarter 1 (Section 3.2.1) to Quarter 8 (Section 3.2.8).",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 21, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 21, and repeat such trainings as needed.",
+          "source_page": null
         }
       ]
     },
@@ -205,19 +227,23 @@
       "recommendations": [
         {
           "number": 23,
-          "text": "Perform a comprehensive review of PGE’s Transmission Planning Business Practice Manual, transmission planning notices, agendas, and meeting minutes posted on OASIS to correct incorrect or broken links, remove outdated materials, or add any missing information."
+          "text": "Perform a comprehensive review of PGE’s Transmission Planning Business Practice Manual, transmission planning notices, agendas, and meeting minutes posted on OASIS to correct incorrect or broken links, remove outdated materials, or add any missing information.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Revise policies and procedures to ensure compliance with the posting requirements, timelines, and relevant specifications set forth in Attachment K, Section 5.2."
+          "text": "Revise policies and procedures to ensure compliance with the posting requirements, timelines, and relevant specifications set forth in Attachment K, Section 5.2.",
+          "source_page": null
         },
         {
           "number": 25,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 24, and repeat such trainings as needed."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 24, and repeat such trainings as needed.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "Perform periodic reviews of PGE’s OASIS postings to verify that PGE is posting all required Attachment K information timely and accurately. E."
+          "text": "Perform periodic reviews of PGE’s OASIS postings to verify that PGE is posting all required Attachment K information timely and accurately. E.",
+          "source_page": null
         }
       ]
     }

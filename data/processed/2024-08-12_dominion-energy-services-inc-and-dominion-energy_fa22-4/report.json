@@ -38,31 +38,38 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Strengthen policies, procedures, and controls to account for all merger-related costs consistent with the Commission’s accounting requirements and Dominion Energy’s hold harmless commitment."
+          "text": "Strengthen policies, procedures, and controls to account for all merger-related costs consistent with the Commission’s accounting requirements and Dominion Energy’s hold harmless commitment.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements."
+          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Perform an analysis to identify the impact of DES VRP costs on rates subject to the Commission’s jurisdiction during the hold harmless commitment period, including costs that were reallocated to jurisdictional utility rates via special purpose entities and other cost-allocating affiliates to which DES VRP costs were initially charged. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis to identify the impact of DES VRP costs on rates subject to the Commission’s jurisdiction during the hold harmless commitment period, including costs that were reallocated to jurisdictional utility rates via special purpose entities and other cost-allocating affiliates to which DES VRP costs were initially charged. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of DES VRP costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of DES VRP costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -74,27 +81,33 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger-related labor and labor-related costs, including incentive compensation costs, from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more timely creation of and notice to relevant employees of merger cost codes during the pre- announcement phase."
+          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger-related labor and labor-related costs, including incentive compensation costs, from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more timely creation of and notice to relevant employees of merger cost codes during the pre- announcement phase.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the hold harmless period to all relevant personnel across all relevant business units."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the hold harmless period to all relevant personnel across all relevant business units.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Perform an analysis of the impact of the $5,176,000 of merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis of the impact of the $5,176,000 of merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related labor and labor-related costs, including incentive compensation costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related labor and labor-related costs, including incentive compensation costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -106,23 +119,28 @@
       "recommendations": [
         {
           "number": 14,
-          "text": "Revise all policies, procedures, and controls for configuring cost accumulation and billing WBS elements that are intended to exclude costs from FERC- jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more thorough review and testing of the billing behavior of all such WBS elements in the test phase and additional review of the billing of and accounting for such costs on the books of any affiliate to which a FERC hold harmless commitment applies."
+          "text": "Revise all policies, procedures, and controls for configuring cost accumulation and billing WBS elements that are intended to exclude costs from FERC- jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include more thorough review and testing of the billing behavior of all such WBS elements in the test phase and additional review of the billing of and accounting for such costs on the books of any affiliate to which a FERC hold harmless commitment applies.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training as needed."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training as needed.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper merger WBS element configuration, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper merger WBS element configuration, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -134,27 +152,33 @@
       "recommendations": [
         {
           "number": 19,
-          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger integration project costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include continued monitoring of merger integration project costs against a budget or other independent authorization, procedures to ensure the completeness of costs tracked in merger WBS elements, and enhanced cost review procedures by managers who themselves are, or who supervise employees who are, responsible for any merger-related projects."
+          "text": "Revise all policies, procedures, and controls for tracking, accounting for, and excluding merger integration project costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include continued monitoring of merger integration project costs against a budget or other independent authorization, procedures to ensure the completeness of costs tracked in merger WBS elements, and enhanced cost review procedures by managers who themselves are, or who supervise employees who are, responsible for any merger-related projects.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the importance in Dominion’s cost accumulation systems of selecting the proper WBS element for a given transaction."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders are provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the importance in Dominion’s cost accumulation systems of selecting the proper WBS element for a given transaction.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Perform an analysis to identify merger integration project costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis to identify merger integration project costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger integration project costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger integration project costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 23,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -166,27 +190,33 @@
       "recommendations": [
         {
           "number": 25,
-          "text": "Revise policies, procedures, and controls for tracking, accounting for, and excluding merger-related financing costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include incremental review of significant, unusual, or non-recurring charges, including financing costs, incurred by entities to which a FERC hold harmless commitment applies."
+          "text": "Revise policies, procedures, and controls for tracking, accounting for, and excluding merger-related financing costs from FERC-jurisdictional rates for any transactions to which a FERC hold harmless commitment applies. Among other things, the revised policies and procedures should include incremental review of significant, unusual, or non-recurring charges, including financing costs, incurred by entities to which a FERC hold harmless commitment applies.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders be provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the possible significant, unusual, or non-recurring charges, including financing costs, that could be merger-related."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and ensure that, for transactions to which a FERC hold harmless commitment applies, recurring training and reminders be provided throughout the entire hold harmless period to all relevant personnel across all relevant business units, including emphasis on the possible significant, unusual, or non-recurring charges, including financing costs, that could be merger-related.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "Perform an analysis to identify merger-related financing costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis to identify merger-related financing costs that were included in FERC-jurisdictional revenue requirements during the hold harmless commitment period. Perform an analysis of the impact of such merger costs on rates subject to the Commission’s jurisdiction. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 28,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related financing costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that includes the amount of inappropriate recoveries that resulted from the improper tracking of merger-related financing costs, plus interest; (2) determinative components of the refund; (3) refund method(s); (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 29,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -198,55 +228,68 @@
       "recommendations": [
         {
           "number": 31,
-          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements."
+          "text": "Strengthen procedures to maintain and retain documentation consistent with Commission record retention requirements.",
+          "source_page": null
         },
         {
           "number": 32,
-          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly exclude from the O&M Method asset impairments, gain/loss on disposals, and other significant nonrecurring transactions."
+          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly exclude from the O&M Method asset impairments, gain/loss on disposals, and other significant nonrecurring transactions.",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly explain the mechanisms by which the Plant Factor and Aviation Factor are calculated."
+          "text": "Amend FERC Form No. 60 and Cost Allocation Manual terminology to clearly explain the mechanisms by which the Plant Factor and Aviation Factor are calculated.",
+          "source_page": null
         },
         {
           "number": 34,
-          "text": "Submit an amended Cost Allocation Manual to DAA for review within 60 days of the issuance of this audit report."
+          "text": "Submit an amended Cost Allocation Manual to DAA for review within 60 days of the issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "Strengthen policies, procedures, and controls to ensure that new allocation WBS elements are reviewed for correlation between the purpose as designed of the allocation WBS elements and the affiliates benefitting from the costs."
+          "text": "Strengthen policies, procedures, and controls to ensure that new allocation WBS elements are reviewed for correlation between the purpose as designed of the allocation WBS elements and the affiliates benefitting from the costs.",
+          "source_page": null
         },
         {
           "number": 36,
-          "text": "Strengthen policies, procedures, and controls to ensure that all costs are charged to the proper WBS element."
+          "text": "Strengthen policies, procedures, and controls to ensure that all costs are charged to the proper WBS element.",
+          "source_page": null
         },
         {
           "number": 37,
-          "text": "Strengthen policies, procedures, and controls to ensure that all supporting calculations for cost allocation methodologies are retained in accordance with the Commission’s records retention policies for centralized service companies."
+          "text": "Strengthen policies, procedures, and controls to ensure that all supporting calculations for cost allocation methodologies are retained in accordance with the Commission’s records retention policies for centralized service companies.",
+          "source_page": null
         },
         {
           "number": 38,
-          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff and supervisory employees on the revised policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 39,
-          "text": "Perform an analysis of cost centers within the service function areas Information Technology, Finance, Business Planning, Human Resources, and Legal to identify any costs that were assigned to incorrect WBS elements during the audit period. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report."
+          "text": "Perform an analysis of cost centers within the service function areas Information Technology, Finance, Business Planning, Human Resources, and Legal to identify any costs that were assigned to incorrect WBS elements during the audit period. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 40,
-          "text": "Perform an analysis of existing allocation WBS elements to ensure that the purpose of the allocation WBS element corresponds to the benefiting affiliates. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report."
+          "text": "Perform an analysis of existing allocation WBS elements to ensure that the purpose of the allocation WBS element corresponds to the benefiting affiliates. Provide the results of the analysis to audit staff within 120 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 41,
-          "text": "Submit a refund analysis for VEPCO and DESC, within 30 days of receiving DAA’s approval of the cost center and WBS element analyses, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from improper or inaccurate allocation methods, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis for VEPCO and DESC, within 30 days of receiving DAA’s approval of the cost center and WBS element analyses, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from improper or inaccurate allocation methods, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 42,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 43,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -258,27 +301,33 @@
       "recommendations": [
         {
           "number": 44,
-          "text": "Strengthen policies, procedures, and controls to account for customer accounts expenses consistent with Commission accounting requirements."
+          "text": "Strengthen policies, procedures, and controls to account for customer accounts expenses consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 45,
-          "text": "Train relevant staff on the methods to account for customer accounts expenses and provide periodic training, as needed."
+          "text": "Train relevant staff on the methods to account for customer accounts expenses and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 46,
-          "text": "Perform an analysis for DES and VEPCO to identify all customer accounts expenses that were improperly recorded in A&G expense accounts during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report."
+          "text": "Perform an analysis for DES and VEPCO to identify all customer accounts expenses that were improperly recorded in A&G expense accounts during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 47,
-          "text": "Submit a refund analysis for VEPCO, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for customer accounts expenses in A&G accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis for VEPCO, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for customer accounts expenses in A&G accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 48,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 49,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -290,27 +339,33 @@
       "recommendations": [
         {
           "number": 50,
-          "text": "Strengthen policies, procedures, and controls to account for membership dues, donations, and customer records and collection expenses consistent with Commission accounting requirements."
+          "text": "Strengthen policies, procedures, and controls to account for membership dues, donations, and customer records and collection expenses consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 51,
-          "text": "Train relevant staff on the methods to account for membership dues, donations, and customer records and collection expenses and provide periodic training, as needed."
+          "text": "Train relevant staff on the methods to account for membership dues, donations, and customer records and collection expenses and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 52,
-          "text": "Perform an analysis to identify other membership dues recorded in Account 921 that were Company memberships that should be recorded in Account 930.2, donations not properly recorded in Account 426.1, and customer records and collection expenses that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis to identify other membership dues recorded in Account 921 that were Company memberships that should be recorded in Account 930.2, donations not properly recorded in Account 426.1, and customer records and collection expenses that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 53,
-          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for membership dues, donations, and customer records and collection expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for membership dues, donations, and customer records and collection expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 54,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 55,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -322,23 +377,28 @@
       "recommendations": [
         {
           "number": 56,
-          "text": "Strengthen policies, procedures, and controls to account for trade association dues and the portions of such dues designated as being for lobbying consistent with Commission accounting requirements."
+          "text": "Strengthen policies, procedures, and controls to account for trade association dues and the portions of such dues designated as being for lobbying consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 57,
-          "text": "Train relevant staff on the revised policies and procedures and provide periodic training, as needed."
+          "text": "Train relevant staff on the revised policies and procedures and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 58,
-          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following for the audit period: (1) calculation of refunds resulting from improper accounting for trade association dues, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis for VEPCO and DESC, within 60 days of receiving the final audit report, to DAA for review that explains and details the following for the audit period: (1) calculation of refunds resulting from improper accounting for trade association dues, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 59,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 60,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -350,19 +410,23 @@
       "recommendations": [
         {
           "number": 61,
-          "text": "Strengthen policies, procedures, and controls to classify service company property costs consistent with Commission regulations."
+          "text": "Strengthen policies, procedures, and controls to classify service company property costs consistent with Commission regulations.",
+          "source_page": null
         },
         {
           "number": 62,
-          "text": "Train relevant staff on the revised plant accounting policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff on the revised plant accounting policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 63,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA to reflect the reclassification of service company property within 60 days of the date of this audit report."
+          "text": "Submit proposed accounting entries and supporting documentation to DAA to reflect the reclassification of service company property within 60 days of the date of this audit report.",
+          "source_page": null
         },
         {
           "number": 64,
-          "text": "Correct the service company property balances after receiving DAA’s assessment of the proposed accounting entries and restate and footnote the balances reported in DES’s most recent FERC Form No. 60 as necessary to reflect and disclose the revisions."
+          "text": "Correct the service company property balances after receiving DAA’s assessment of the proposed accounting entries and restate and footnote the balances reported in DES’s most recent FERC Form No. 60 as necessary to reflect and disclose the revisions.",
+          "source_page": null
         }
       ]
     },
@@ -374,27 +438,33 @@
       "recommendations": [
         {
           "number": 65,
-          "text": "Strengthen policies, procedures, and controls to maintain and retain documentation to support prepayment amounts consistent with Commission record retention requirements."
+          "text": "Strengthen policies, procedures, and controls to maintain and retain documentation to support prepayment amounts consistent with Commission record retention requirements.",
+          "source_page": null
         },
         {
           "number": 66,
-          "text": "Strengthen policies, procedures, and controls to properly account for the write- off of unsupported prepayments in Account 426.5."
+          "text": "Strengthen policies, procedures, and controls to properly account for the write- off of unsupported prepayments in Account 426.5.",
+          "source_page": null
         },
         {
           "number": 67,
-          "text": "Train relevant staff on the revised prepayment policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff on the revised prepayment policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 68,
-          "text": "Submit a refund analysis for VEPCO, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the overstatement of Account 930.2 due to the improper inclusion in Account 930.2 of the write-off of prepayments, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis for VEPCO, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculations of refunds that include the amount of inappropriate recoveries during the audit period that resulted from the overstatement of Account 930.2 due to the improper inclusion in Account 930.2 of the write-off of prepayments, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 69,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 70,
-          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -406,15 +476,18 @@
       "recommendations": [
         {
           "number": 71,
-          "text": "Strengthen policies, procedures, and controls to properly report the functional expense classifications of DES’s affiliate billings in accordance with the Commission’s accounting and reporting regulations."
+          "text": "Strengthen policies, procedures, and controls to properly report the functional expense classifications of DES’s affiliate billings in accordance with the Commission’s accounting and reporting regulations.",
+          "source_page": null
         },
         {
           "number": 72,
-          "text": "Provide training to relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Provide training to relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 73,
-          "text": "Within 120 days of the issuance of this audit report, refile revised DES FERC Forms No. 60 for 2019 and 2020 to accurately report functional expense classification by correcting the errors noted in this finding. E."
+          "text": "Within 120 days of the issuance of this audit report, refile revised DES FERC Forms No. 60 for 2019 and 2020 to accurately report functional expense classification by correcting the errors noted in this finding. E.",
+          "source_page": null
         }
       ]
     }

@@ -5506,53 +5506,53 @@ Direct Testimony of Roger W. Turner (CICI Exhibit 1.0) on behalf of the Chemical
 ### Finding 1: Executive Management and Organizational Structure
 
 Recommendations:
-1. Conduct routine employee surveys to ensure corporate culture aligns with company goals.
-2. Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives.
+1. Conduct routine employee surveys to ensure corporate culture aligns with company goals. (source p. 16)
+2. Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives. (source p. 16)
 
 ### Finding 2: Cost Allocations and Affiliated Interests
 
 Recommendations:
-3. Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM.
-4. Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes.
-5. Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates.
+3. Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM. (source p. 29)
+4. Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes. (source p. 29)
+5. Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates. (source p. 29)
 
 ### Finding 3: Financial Management
 
 Recommendations:
-6. Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income.
+6. Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income. (source p. 36)
 
 ### Finding 4: Electric Operations
 
 Recommendations:
-7. Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability.
-8. Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4.
-9. Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected.
+7. Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability. (source p. 47)
+8. Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4. (source p. 47)
+9. Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected. (source p. 47)
 
 ### Finding 5: Emergency Preparedness
 
 Recommendations:
-10. Address minor security and safety improvements.
-11. Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness.
+10. Address minor security and safety improvements. (source p. 51)
+11. Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness. (source p. 51)
 
 ### Finding 6: Purchasing and Materials Management
 
 Recommendations:
-12. Update outdated policies and procedures.
-13. Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies.
-14. Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments.
+12. Update outdated policies and procedures. (source p. 59)
+13. Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies. (source p. 59)
+14. Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments. (source p. 59)
 
 ### Finding 7: Customer Service
 
 Recommendations:
-15. Improve and strengthen customer service performance to at least pre-pandemic levels.
-16. Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances.
-17. Develop internal controls for source data and reporting systems to ensure accuracy.
+15. Improve and strengthen customer service performance to at least pre-pandemic levels. (source p. 66)
+16. Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances. (source p. 66)
+17. Develop internal controls for source data and reporting systems to ensure accuracy. (source p. 66)
 
 ### Finding 8: Information Technology
 
 Recommendations:
-18. Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances.
-19. Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels.
+18. Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances. (source p. 75)
+19. Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels. (source p. 76)
 
 ---
 
@@ -5609,78 +5609,78 @@ Verified Petition of Commonwealth Edison Company (ComEd) for reconciliation of r
 ### Finding 1: Corporate Governance
 
 Recommendations:
-1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.
-2. Streamline the annual budget approval process.
-3. Establish committee charters for all PFMC board committees.
-4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.
+1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework. (source p. 18)
+2. Streamline the annual budget approval process. (source p. 18)
+3. Establish committee charters for all PFMC board committees. (source p. 18)
+4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met. (source p. 18)
 
 ### Finding 2: Executive Management and Organizational Structure
 
 Recommendations:
-5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.
-6. Implement a safety management system and improve safety culture at PGW.
+5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions. (source p. 26)
+6. Implement a safety management system and improve safety culture at PGW. (source p. 26)
 
 ### Finding 3: Financial Management
 
 Recommendations:
-7. Update Internal Audit policies and procedures.
-8. Formally document explanations for variances from the capital and operating budgets.
+7. Update Internal Audit policies and procedures. (source p. 34)
+8. Formally document explanations for variances from the capital and operating budgets. (source p. 34)
 
 ### Finding 4: Gas Operations
 
 Recommendations:
-9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.
-10. Accelerate cast iron main replacement.
-11. Plan and implement a process for gathering equipment and installation data in the GIS database.
-12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.
+9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system. (source p. 46)
+10. Accelerate cast iron main replacement. (source p. 46)
+11. Plan and implement a process for gathering equipment and installation data in the GIS database. (source p. 46)
+12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations. (source p. 46)
 
 ### Finding 5: Emergency Preparedness
 
 Recommendations:
-13. File Self-Certification forms with the Pennsylvania PUC annually.
-14. Correct various deficiencies in physical security.
-15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.
+13. File Self-Certification forms with the Pennsylvania PUC annually. (source p. 53)
+14. Correct various deficiencies in physical security. (source p. 53)
+15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities. (source p. 53)
 
 ### Finding 6: Emergency Preparedness (continued)
 
 Recommendations:
-16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis.
-17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.
-18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.
-19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.
-20. Implement a cybersecurity-focused risk registry.
+16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis. (source p. 53)
+17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position. (source p. 53)
+18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method. (source p. 53)
+19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels. (source p. 53)
+20. Implement a cybersecurity-focused risk registry. (source p. 53)
 
 ### Finding 7: Materials Management
 
 Recommendations:
-21. Document the policies and procedures of PGW’s cycle counting function.
-22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.
+21. Document the policies and procedures of PGW’s cycle counting function. (source p. 57)
+22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use. (source p. 57)
 
 ### Finding 8: Customer Service
 
 Recommendations:
-23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.
-24. Improve customer service performance through expanding call center resources.
-25. Complete implementation of the replacement CIS.
-26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.
-27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.
+23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers. (source p. 67)
+24. Improve customer service performance through expanding call center resources. (source p. 67)
+25. Complete implementation of the replacement CIS. (source p. 67)
+26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers. (source p. 68)
+27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers. (source p. 68)
 
 ### Finding 9: Information Technology
 
 Recommendations:
-28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.
-29. Leverage and integrate data visualization software consistently across PGW.
+28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency. (source p. 72)
+29. Leverage and integrate data visualization software consistently across PGW. (source p. 72)
 
 ### Finding 10: Fleet Management
 
 Recommendations:
-30. Improve efficiencies within the fleet department.
+30. Improve efficiencies within the fleet department. (source p. 77)
 
 ### Finding 11: Human Resources and Diversity
 
 Recommendations:
-31. Implement strategies for recruitment and retention of “at-risk” positions.
-32. Drive safety performance to meet industry standards.
+31. Implement strategies for recruitment and retention of “at-risk” positions. (source p. 84)
+32. Drive safety performance to meet industry standards. (source p. 84)
 
 ---
 
@@ -5693,69 +5693,69 @@ Recommendations:
 ### Finding 1: Executive Management and Organizational Structure
 
 Recommendations:
-1. Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023.
-2. Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report.
+1. Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023. (source p. 30)
+2. Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report. (source p. 30)
 
 ### Finding 2: Key Audit Matter
 
 Recommendations:
-3. Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom.
-4. Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers.
+3. Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom. (source p. 39)
+4. Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers. (source p. 39)
 
 ### Finding 3: Corporate Governance
 
 Recommendations:
-5. Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting
+5. Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting (source p. 47)
 
 ### Finding 4: Affiliated Interests and Cost Allocations
 
 Recommendations:
-6. Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates.
-7. Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days.
+6. Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates. (source p. 64)
+7. Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days. (source p. 64)
 
 ### Finding 5: Affiliated Interests and Cost Allocations (continued)
 
 Recommendations:
-8. Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies.
-9. Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice.
-10. Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval.
-11. Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding.
+8. Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies. (source p. 64)
+9. Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice. (source p. 64)
+10. Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval. (source p. 65)
+11. Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding. (source p. 65)
 
 ### Finding 6: Financial Management
 
 Recommendations:
-12. Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments.
-13. Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community.
-14. Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness.
+12. Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments. (source p. 75)
+13. Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community. (source p. 75)
+14. Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness. (source p. 75)
 
 ### Finding 7: Electric Operations
 
 Recommendations:
-15. Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible.
+15. Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible. (source p. 103)
 
 ### Finding 8: Electric Operations (continued)
 
 Recommendations:
-16. Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees.
-17. Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts.
-18. Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status.
-19. Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies.
+16. Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees. (source p. 103)
+17. Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts. (source p. 103)
+18. Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status. (source p. 103)
+19. Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies. (source p. 103)
 
 ### Finding 9: Materials Management
 
 Recommendations:
-20. Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals.
+20. Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals. (source p. 114)
 
 ### Finding 10: Customer Service
 
 Recommendations:
-21. Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results.
-22. Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals.
-23. Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative.
+21. Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results. (source p. 131)
+22. Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals. (source p. 131)
+23. Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative. (source p. 131)
 
 ### Finding 11: Human Resources and Diversity
 
 Recommendations:
-24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture.
-25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification.
-26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance.
+24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture. (source p. 162)
+25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
+26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)

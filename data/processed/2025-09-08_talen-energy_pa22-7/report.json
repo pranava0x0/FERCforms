@@ -48,27 +48,33 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Perform a review of all eDART outage and derate data against Talen Energy’s resource offer schedules since January 1, 2023 and submit a report to DAA that includes the following: (a) a list of instances where the eDART data does not match the resource energy offer schedules, (b) an indication as to whether the mismatch resulted in a failure to meet must offer obligations in PJM’s energy markets, (c) the duration and magnitude of any such shortfalls of capacity and any efforts made to procure replacement capacity in the event of a failure to meet a must offer obligation, (d) a list of errors or omissions in PJM eDART submissions that were identified in the review, and (e) a list of errors or omissions in the GADS data that were identified in the review."
+          "text": "Perform a review of all eDART outage and derate data against Talen Energy’s resource offer schedules since January 1, 2023 and submit a report to DAA that includes the following: (a) a list of instances where the eDART data does not match the resource energy offer schedules, (b) an indication as to whether the mismatch resulted in a failure to meet must offer obligations in PJM’s energy markets, (c) the duration and magnitude of any such shortfalls of capacity and any efforts made to procure replacement capacity in the event of a failure to meet a must offer obligation, (d) a list of errors or omissions in PJM eDART submissions that were identified in the review, and (e) a list of errors or omissions in the GADS data that were identified in the review.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Update event reports in the GADS system for the events identified in Recommendation 9."
+          "text": "Update event reports in the GADS system for the events identified in Recommendation 9.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Establish and implement policies and procedures to ensure that all applicable offer data in the day-ahead and real-time markets are consistent with the operational status of the resources at the time of submission and in compliance with must offer obligations."
+          "text": "Establish and implement policies and procedures to ensure that all applicable offer data in the day-ahead and real-time markets are consistent with the operational status of the resources at the time of submission and in compliance with must offer obligations.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Establish and implement policies and procedures to ensure that communications, including communications related to energy and ancillary services market offers, outages, derates, and other operational details, between Talen Energy and its energy managers are timely and effective."
+          "text": "Establish and implement policies and procedures to ensure that communications, including communications related to energy and ancillary services market offers, outages, derates, and other operational details, between Talen Energy and its energy managers are timely and effective.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Establish and implement policies and procedures to perform an after-the-fact review to ensure that energy offer and outage/derate data submitted by Talen Energy and/or its energy managers were accurately recorded and reflected the actual availability of the resource."
+          "text": "Establish and implement policies and procedures to perform an after-the-fact review to ensure that energy offer and outage/derate data submitted by Talen Energy and/or its energy managers were accurately recorded and reflected the actual availability of the resource.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 11, 12, and 13, and repeat such trainings as needed. E."
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 11, 12, and 13, and repeat such trainings as needed. E.",
+          "source_page": null
         }
       ]
     }

@@ -37,15 +37,18 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Develop and implement controls to ensure that Avista neither requests nor approves network transmission service and secondary network transmission service for any purpose other than to serve network customers."
+          "text": "Develop and implement controls to ensure that Avista neither requests nor approves network transmission service and secondary network transmission service for any purpose other than to serve network customers.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Enhance training for its marketing function employees responsible for reserving and/or scheduling secondary network service to ensure that secondary network service is only reserved to serve Avista’s native load customers, unless reserved on behalf of another network customer pursuant to an executed agent agreement."
+          "text": "Enhance training for its marketing function employees responsible for reserving and/or scheduling secondary network service to ensure that secondary network service is only reserved to serve Avista’s native load customers, unless reserved on behalf of another network customer pursuant to an executed agent agreement.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Enhance training for its transmission function employees responsible for approving transmission schedules to ensure network transmission customers, including Avista’s marketing function, properly use secondary network service."
+          "text": "Enhance training for its transmission function employees responsible for approving transmission schedules to ensure network transmission customers, including Avista’s marketing function, properly use secondary network service.",
+          "source_page": null
         }
       ]
     },
@@ -57,27 +60,33 @@
       "recommendations": [
         {
           "number": 4,
-          "text": "Revise and implement procedures to ensure its AFUDC rate calculation is consistent with Electric Plant Instructions No. 3(17), Order Nos. 561 and 561- A, and other applicable Commission accounting regulations."
+          "text": "Revise and implement procedures to ensure its AFUDC rate calculation is consistent with Electric Plant Instructions No. 3(17), Order Nos. 561 and 561- A, and other applicable Commission accounting regulations.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Revise and implement procedures to ensure that Account 216.1 and Account 219 are excluded from the equity components used to derive the AFUDC rate."
+          "text": "Revise and implement procedures to ensure that Account 216.1 and Account 219 are excluded from the equity components used to derive the AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Revise and implement procedures to ensure that the year-end amounts reported on Avista’s FERC Form No. 1 filings are used to compute the AFUDC rate in accordance with the Commission’s accounting regulations."
+          "text": "Revise and implement procedures to ensure that the year-end amounts reported on Avista’s FERC Form No. 1 filings are used to compute the AFUDC rate in accordance with the Commission’s accounting regulations.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Revise and implement procedures to ensure that the AFUDC amount capitalized as a cost of plant is computed in accordance with the Commission’s accounting regulations."
+          "text": "Revise and implement procedures to ensure that the AFUDC amount capitalized as a cost of plant is computed in accordance with the Commission’s accounting regulations.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Provide training to appropriate employees on AFUDC computation in accordance with the Commission’s accounting regulations and Avista’s revised procedures."
+          "text": "Provide training to appropriate employees on AFUDC computation in accordance with the Commission’s accounting regulations and Avista’s revised procedures.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Recalculate AFUDC amounts in accordance with the Commission’s accounting regulations from January 1, 2010 (effective date of current fixed transmission rates) to the present, determine the excess amount capitalized by Avista, determine the impacts on other accounts due to over-capitalization, and submit correcting journal entries to the DAA for review and approval."
+          "text": "Recalculate AFUDC amounts in accordance with the Commission’s accounting regulations from January 1, 2010 (effective date of current fixed transmission rates) to the present, determine the excess amount capitalized by Avista, determine the impacts on other accounts due to over-capitalization, and submit correcting journal entries to the DAA for review and approval.",
+          "source_page": null
         }
       ]
     },
@@ -89,27 +98,33 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Revise and implement Avista’s accounting policies and procedures relating to Deferred Income Taxes to comply with the Commission’s accounting regulations."
+          "text": "Revise and implement Avista’s accounting policies and procedures relating to Deferred Income Taxes to comply with the Commission’s accounting regulations.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Provide training to appropriate employees on accounting procedures related to AFUDC and related income taxes."
+          "text": "Provide training to appropriate employees on accounting procedures related to AFUDC and related income taxes.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Provide the amount of Deferred Income Taxes on the AFUDC Equity Component flowed through since January 1, 2010 (effective date of current fixed transmission rates), and the amount that should have been included in Account 182.3, Other Regulatory Assets, as of December 31, 2017, and submit detailed analyses to the DAA for review and approval."
+          "text": "Provide the amount of Deferred Income Taxes on the AFUDC Equity Component flowed through since January 1, 2010 (effective date of current fixed transmission rates), and the amount that should have been included in Account 182.3, Other Regulatory Assets, as of December 31, 2017, and submit detailed analyses to the DAA for review and approval.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Report the accounting change in 2018 including the impact on annual balances reported on prior Form No. 1 filings as a note on the next Form No. 1."
+          "text": "Report the accounting change in 2018 including the impact on annual balances reported on prior Form No. 1 filings as a note on the next Form No. 1.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Inform DAA about any state rate treatment addressing Avista’s incorrect accounting for Deferred Income Tax Expense prior to January 1, 2018. Provide details of any such state actions with supporting documentation."
+          "text": "Inform DAA about any state rate treatment addressing Avista’s incorrect accounting for Deferred Income Tax Expense prior to January 1, 2018. Provide details of any such state actions with supporting documentation.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Submit journal entries, if appropriate, related to any state commissions’ actions to the DAA for review and approval."
+          "text": "Submit journal entries, if appropriate, related to any state commissions’ actions to the DAA for review and approval.",
+          "source_page": null
         }
       ]
     },
@@ -121,15 +136,18 @@
       "recommendations": [
         {
           "number": 16,
-          "text": "Revise and implement procedures to effect correction of errors including corrections to accounts which require Commission approval."
+          "text": "Revise and implement procedures to effect correction of errors including corrections to accounts which require Commission approval.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Provide enhanced training to appropriate staff on procedures for corrections including requirements to get Commission approval."
+          "text": "Provide enhanced training to appropriate staff on procedures for corrections including requirements to get Commission approval.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Submit journal entries to a) remove the remaining over-capitalized system planning costs from the cost of plant, b) remove appropriate accumulated depreciation from accumulated provision for depreciation, and c) correct related Accumulated Deferred Income Tax Account balances, for DAA review and approval."
+          "text": "Submit journal entries to a) remove the remaining over-capitalized system planning costs from the cost of plant, b) remove appropriate accumulated depreciation from accumulated provision for depreciation, and c) correct related Accumulated Deferred Income Tax Account balances, for DAA review and approval.",
+          "source_page": null
         }
       ]
     },
@@ -141,7 +159,8 @@
       "recommendations": [
         {
           "number": 19,
-          "text": "Revise and implement policies and procedures to ensure Avista properly accounts for ARO-related costs in accordance with the Commission’s accounting regulations."
+          "text": "Revise and implement policies and procedures to ensure Avista properly accounts for ARO-related costs in accordance with the Commission’s accounting regulations.",
+          "source_page": null
         }
       ]
     },
@@ -153,19 +172,23 @@
       "recommendations": [
         {
           "number": 20,
-          "text": "Revise and strengthen documented policies, procedures, and practices to help ensure information in its FERC Form No. 1 submissions is correct, accurate, and consistent with the instructions of the form."
+          "text": "Revise and strengthen documented policies, procedures, and practices to help ensure information in its FERC Form No. 1 submissions is correct, accurate, and consistent with the instructions of the form.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. Use of Transmission Service Numbers"
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. Use of Transmission Service Numbers",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Continue to evaluate and take actions to reduce the use of TSNs."
+          "text": "Continue to evaluate and take actions to reduce the use of TSNs.",
+          "source_page": null
         },
         {
           "number": 23,
-          "text": "Provide training to transmission employees on OATT requirements and implement an ongoing process to ensure that TSNs are used for limited scheduling purposes where a valid adjacent commercial path TSR is not available in OASIS. E."
+          "text": "Provide training to transmission employees on OATT requirements and implement an ongoing process to ensure that TSNs are used for limited scheduling purposes where a valid adjacent commercial path TSR is not available in OASIS. E.",
+          "source_page": null
         }
       ]
     }

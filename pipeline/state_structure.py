@@ -50,8 +50,10 @@ _HDR_START_RE = re.compile(r"^(Exhibit\s+I-2|Page\s+\d+\s+of\s+\d+)$", re.I)
 def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
     """Parse the Exhibit I-2 'Summary of Recommendations' table.
 
-    Returns chapters in document order as (functional_area_title, [verbatim_rec, ...]).
-    Empty list if the exhibit isn't present (not an M&O-format report).
+    Returns chapters in document order as
+    (functional_area_title, [(verbatim_rec, source_page | None), ...]); source_page is
+    the printed body page from the table's "Page No." column. Empty list if the exhibit
+    isn't present (not an M&O-format report).
     """
     m = _TABLE_HEADER_RE.search(full_text)
     if not m:
@@ -61,16 +63,16 @@ def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
     block = rest[: end if end != -1 else 8000]
     lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
 
-    chapters: list[tuple[str, list[str]]] = []
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
     rec_parts: list[str] = []
     collecting = False  # True while accumulating a rec's wrapped text (before the page-no column)
 
-    def flush_rec() -> None:
+    def flush_rec(page: "int | None" = None) -> None:
         nonlocal rec_parts, collecting
         if rec_parts and chapters:
             text = re.sub(r"\s+", " ", " ".join(rec_parts)).strip()
             if text:
-                chapters[-1][1].append(text)
+                chapters[-1][1].append((text, page))
         rec_parts = []
         collecting = False
 
@@ -106,8 +108,8 @@ def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
             continue
 
         if collecting:
-            if _PAGE_NO_RE.match(line):   # page-no column ends the rec text; columns that follow are discarded
-                flush_rec()
+            if _PAGE_NO_RE.match(line):   # the "Page No." column ends the rec text — capture it
+                flush_rec(int(line))      # (timeframe/benefit columns that follow are discarded)
             else:
                 rec_parts.append(line)
             i += 1
@@ -137,9 +139,9 @@ def structure_mo_audit(
     rec_no = 0
     for idx, (title, recs) in enumerate(with_recs, 1):
         rec_models = []
-        for text in recs:
+        for text, page in recs:
             rec_no += 1
-            rec_models.append(Recommendation(number=rec_no, text=text))
+            rec_models.append(Recommendation(number=rec_no, text=text, source_page=page))
         findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
 
     return AuditReport(

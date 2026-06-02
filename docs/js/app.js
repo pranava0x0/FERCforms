@@ -420,11 +420,19 @@ function findingNode(f) {
   }
   if (f.recommendations && f.recommendations.length) {
     const recs = el("ul", { class: "recs" });
-    f.recommendations.forEach((r) =>
-      recs.appendChild(
-        el("li", { class: "rec" }, [el("span", { class: "rec-num", text: `Rec ${r.number}. ` }), r.text])
-      )
-    );
+    f.recommendations.forEach((r) => {
+      const kids = [el("span", { class: "rec-num", text: `Rec ${r.number}. ` }), r.text];
+      // Page in the source document where the rec is discussed (PA M&O Exhibit I-2).
+      if (r.source_page != null)
+        kids.push(
+          el("span", {
+            class: "rec-page",
+            text: ` (p. ${r.source_page})`,
+            title: `Discussed on page ${r.source_page} of the source document`,
+          })
+        );
+      recs.appendChild(el("li", { class: "rec" }, kids));
+    });
     parts.push(recs);
   }
   return el("div", { class: "finding" }, parts);

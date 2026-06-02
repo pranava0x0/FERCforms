@@ -35,23 +35,28 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Perform a review of the automated process to determine why the transfer of load forecast data to OASIS stopped working and make corrections, as needed. Provide a report to audit staff that summarizes the results of this review."
+          "text": "Perform a review of the automated process to determine why the transfer of load forecast data to OASIS stopped working and make corrections, as needed. Provide a report to audit staff that summarizes the results of this review.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Post load forecast data since January 2022 on their respective OASIS sites."
+          "text": "Post load forecast data since January 2022 on their respective OASIS sites.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Develop and implement procedures and controls to ensure that the Black Hills Electric Utilities are timely posting all required information to OASIS, including load forecast data, underlying assumptions, and daily peak loads."
+          "text": "Develop and implement procedures and controls to ensure that the Black Hills Electric Utilities are timely posting all required information to OASIS, including load forecast data, underlying assumptions, and daily peak loads.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Develop and implement policies and procedures for a periodic review of OASIS postings in order to verify that the Black Hills Electric Utilities are posting load forecast data, underlying assumptions, and daily peak loads."
+          "text": "Develop and implement policies and procedures for a periodic review of OASIS postings in order to verify that the Black Hills Electric Utilities are posting load forecast data, underlying assumptions, and daily peak loads.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 3 and 4 with future training as needed."
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 3 and 4 with future training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -63,15 +68,18 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Develop and implement policies and procedures to identify when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path."
+          "text": "Develop and implement policies and procedures to identify when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Develop and implement policies and procedures to post a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path."
+          "text": "Develop and implement policies and procedures to post a narrative explanation of the reasons for the unavailability of ATC when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 6 and 7 with future training as needed."
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 6 and 7 with future training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -83,11 +91,13 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Review system settings for all OASIS posting functions that require public access and develop policies and procedures to ensure that settings are set to provide proper access for public users. Provide a report to audit staff that summarizes the results of this review."
+          "text": "Review system settings for all OASIS posting functions that require public access and develop policies and procedures to ensure that settings are set to provide proper access for public users. Provide a report to audit staff that summarizes the results of this review.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendation 9 with future training as needed. E."
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendation 9 with future training as needed. E.",
+          "source_page": null
         }
       ]
     }

@@ -36,19 +36,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise accounting policies and procedures to account for Gas Control, Right of Way, and Welding and Machining Services labor in accordance with Commission accounting requirements. Also strengthen controls to ensure labor costs are properly recorded for all departments."
+          "text": "Revise accounting policies and procedures to account for Gas Control, Right of Way, and Welding and Machining Services labor in accordance with Commission accounting requirements. Also strengthen controls to ensure labor costs are properly recorded for all departments.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Make correcting entries to reclassify current year costs associated with: (a) Gas Control labor from Account 920 to Account 851; (b) Right of Way Labor from Account 920 to the appropriate operating or maintenance account; (c) labor of machinists in Welding and Machining Services from Account 853 to the appropriate operating or maintenance account; and (d) labor of any other departments the company has identified as incorrectly classified as a result of the audit. Allocation of Costs to Market-Based Rate Storage Facilities"
+          "text": "Make correcting entries to reclassify current year costs associated with: (a) Gas Control labor from Account 920 to Account 851; (b) Right of Way Labor from Account 920 to the appropriate operating or maintenance account; (c) labor of machinists in Welding and Machining Services from Account 853 to the appropriate operating or maintenance account; and (d) labor of any other departments the company has identified as incorrectly classified as a result of the audit. Allocation of Costs to Market-Based Rate Storage Facilities",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Strengthen procedures and controls to ensure percentages used to allocate labor and expenses between market- and cost-based storage facilities are reviewed annually and updated, if needed, and adequate documentation of the reviews is retained."
+          "text": "Strengthen procedures and controls to ensure percentages used to allocate labor and expenses between market- and cost-based storage facilities are reviewed annually and updated, if needed, and adequate documentation of the reviews is retained.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Reinforce procedures and controls to ensure amounts reported on Page 217 of Form No. 2 are accurate and adequately supported."
+          "text": "Reinforce procedures and controls to ensure amounts reported on Page 217 of Form No. 2 are accurate and adequately supported.",
+          "source_page": null
         }
       ]
     },
@@ -67,19 +71,23 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Develop and implement written policies, procedures, and controls governing the annual review and updating of allocation percentages for all cost centers."
+          "text": "Develop and implement written policies, procedures, and controls governing the annual review and updating of allocation percentages for all cost centers.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Revise procedures to require document retention of the annual reviews, including how they take into consideration asset additions and removals, employee changes, and other applicable information."
+          "text": "Revise procedures to require document retention of the annual reviews, including how they take into consideration asset additions and removals, employee changes, and other applicable information.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Prepare the review for the current year and provide a copy for audit staff within 120 days of issuance of the final audit report."
+          "text": "Prepare the review for the current year and provide a copy for audit staff within 120 days of issuance of the final audit report.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Adjust the affected operations and maintenance (O&M) accounts in the general ledger and in the Form No. 2, based on results of the review."
+          "text": "Adjust the affected operations and maintenance (O&M) accounts in the general ledger and in the Form No. 2, based on results of the review.",
+          "source_page": null
         }
       ]
     },
@@ -91,15 +99,18 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Revise procedures and controls for allocating labor supporting construction. The revised procedures and controls should ensure labor costs are allocated to construction overheads based on actual time card distributions or, where impractical, on periodic representative time studies."
+          "text": "Revise procedures and controls for allocating labor supporting construction. The revised procedures and controls should ensure labor costs are allocated to construction overheads based on actual time card distributions or, where impractical, on periodic representative time studies.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Establish procedures and controls to require retention of records supporting the allocation of labor and expenses to construction overheads in accordance with Commission regulations."
+          "text": "Establish procedures and controls to require retention of records supporting the allocation of labor and expenses to construction overheads in accordance with Commission regulations.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Conduct time studies to determine hours spent in support of construction by Accounting, Financial Planning, IT Support, and HR employees for the current year. Based on results, adjust allocation percentages and amounts recorded to construction overheads. Provide study results and correcting entries to DAA within 120 days of the date of the final audit report."
+          "text": "Conduct time studies to determine hours spent in support of construction by Accounting, Financial Planning, IT Support, and HR employees for the current year. Based on results, adjust allocation percentages and amounts recorded to construction overheads. Provide study results and correcting entries to DAA within 120 days of the date of the final audit report.",
+          "source_page": null
         }
       ]
     },
@@ -111,19 +122,23 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Revise accounting policies and procedures to properly account for system gas transactions in accordance with Commission accounting regulations."
+          "text": "Revise accounting policies and procedures to properly account for system gas transactions in accordance with Commission accounting regulations.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Perform a review of its system gas accounting and revise any accounting found to be inconsistent with Commission accounting regulations and Northern Natural’s revised accounting policies. Submit the results for audit staff’s review within 120 days of the issuance of the final audit report."
+          "text": "Perform a review of its system gas accounting and revise any accounting found to be inconsistent with Commission accounting regulations and Northern Natural’s revised accounting policies. Submit the results for audit staff’s review within 120 days of the issuance of the final audit report.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Make corrective entries to reclassify: (a) accounts payable for imbalances from Account 142 to Account 242; (b) operational sales of gas from Account 483 to Account 495; (c) any other transactions the company has identified as incorrectly classified as a result of the audit."
+          "text": "Make corrective entries to reclassify: (a) accounts payable for imbalances from Account 142 to Account 242; (b) operational sales of gas from Account 483 to Account 495; (c) any other transactions the company has identified as incorrectly classified as a result of the audit.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Adjust the comparative financial statements in its next Form No. 2 and disclose the reasons for the changes in the presentation of accounts reclassified. E."
+          "text": "Adjust the comparative financial statements in its next Form No. 2 and disclose the reasons for the changes in the presentation of accounts reclassified. E.",
+          "source_page": null
         }
       ]
     }

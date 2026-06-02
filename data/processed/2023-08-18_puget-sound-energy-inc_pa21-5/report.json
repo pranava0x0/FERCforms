@@ -37,11 +37,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Develop procedures for reviewing and filing transmission service agreements to ensure PSE has the most current and complete agreements on file with the Commission."
+          "text": "Develop procedures for reviewing and filing transmission service agreements to ensure PSE has the most current and complete agreements on file with the Commission.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Train employees on filing procedures developed from Recommendation 1 on an ongoing, as needed basis."
+          "text": "Train employees on filing procedures developed from Recommendation 1 on an ongoing, as needed basis.",
+          "source_page": null
         }
       ]
     },
@@ -53,11 +55,13 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Enhance cross-office coordination practices and develop procedures to ensure timely posting of quarterly transmission service study metrics reports on OASIS."
+          "text": "Enhance cross-office coordination practices and develop procedures to ensure timely posting of quarterly transmission service study metrics reports on OASIS.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Train employees on procedures developed from Recommendation 3 on an ongoing, as needed basis. E."
+          "text": "Train employees on procedures developed from Recommendation 3 on an ongoing, as needed basis. E.",
+          "source_page": null
         }
       ]
     }

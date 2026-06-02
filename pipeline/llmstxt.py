@@ -201,7 +201,8 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
                         out.append("")
                         out.append("Recommendations:")
                         for rec in f.recommendations:
-                            out.append(f"{rec.number}. {rec.text}")
+                            page = f" (source p. {rec.source_page})" if rec.source_page else ""
+                            out.append(f"{rec.number}. {rec.text}{page}")
             else:
                 out.append("- Status: listed for reference (not machine-parsed into findings)")
                 if r.source_note:

@@ -34,23 +34,28 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Strengthen processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6. The policies and procedures should ensure complete and accurate reporting of Page 700 data."
+          "text": "Strengthen processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6. The policies and procedures should ensure complete and accurate reporting of Page 700 data.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Develop and implement review procedures to ensure that personnel are performing thorough reviews of FERC Form No. 6 information, including Page 700, prior to submittal to the Commission."
+          "text": "Develop and implement review procedures to ensure that personnel are performing thorough reviews of FERC Form No. 6 information, including Page 700, prior to submittal to the Commission.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Provide training on updated processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6."
+          "text": "Provide training on updated processes, procedures, and controls surrounding the preparation and review of its FERC Form No. 6.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Provide DAA with an analysis assessing the impact of these reporting errors to the FERC Form No. 6 for 2005-2018."
+          "text": "Provide DAA with an analysis assessing the impact of these reporting errors to the FERC Form No. 6 for 2005-2018.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, 2017, and 2018 that reflects the results of this analysis, including notes that explain the corrections being made."
+          "text": "Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, 2017, and 2018 that reflects the results of this analysis, including notes that explain the corrections being made.",
+          "source_page": null
         }
       ]
     },
@@ -62,19 +67,23 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Revise accounting policies and procedures to ensure all components of carrier property, such as abandoned and inactive assets, are properly accounted for in accordance with Commission requirements. The procedures should include established communications protocols among the accounting staff that are responsible for asset retirements and implementation of a secondary review of all changes to carrier property."
+          "text": "Revise accounting policies and procedures to ensure all components of carrier property, such as abandoned and inactive assets, are properly accounted for in accordance with Commission requirements. The procedures should include established communications protocols among the accounting staff that are responsible for asset retirements and implementation of a secondary review of all changes to carrier property.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Reclassify all inactive carrier property recorded in Account 30 that will not be used in ONEOK NGL’s future pipeline operations to Account 34."
+          "text": "Reclassify all inactive carrier property recorded in Account 30 that will not be used in ONEOK NGL’s future pipeline operations to Account 34.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Reclassify all abandoned pipeline assets recorded in Account 30 to Account 31."
+          "text": "Reclassify all abandoned pipeline assets recorded in Account 30 to Account 31.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other Lines on Page 700, and provide this analysis to DAA staff for further review. 10.Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, and 2017 that reflects the results of this analysis, including notes that explain the corrections being made."
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other Lines on Page 700, and provide this analysis to DAA staff for further review. 10.Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, and 2017 that reflects the results of this analysis, including notes that explain the corrections being made.",
+          "source_page": null
         }
       ]
     },

@@ -37,19 +37,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise and implement accounting policies and procedures to ensure that it properly accounts for environmental cleanup costs consistent with Commission accounting requirements."
+          "text": "Revise and implement accounting policies and procedures to ensure that it properly accounts for environmental cleanup costs consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for environmental cleanup costs in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for environmental cleanup costs in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the environmental cleanup costs improperly accounted for in Account 930.2 and Account 105 within 60 days of the date of the audit report."
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the environmental cleanup costs improperly accounted for in Account 930.2 and Account 105 within 60 days of the date of the audit report.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Revise the cost of the land reported in Account 105, the refunds and expenses recorded in Account 930.2, and entries in other accounts impacted by the improper accounting for the environmental cleanup costs after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 3. Restate and footnote the FERC Form No. 1 for the current year."
+          "text": "Revise the cost of the land reported in Account 105, the refunds and expenses recorded in Account 930.2, and entries in other accounts impacted by the improper accounting for the environmental cleanup costs after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 3. Restate and footnote the FERC Form No. 1 for the current year.",
+          "source_page": null
         }
       ]
     },
@@ -61,11 +65,13 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Revise its accounting policies and procedures to ensure that it properly records all advance payments that are applicable to future periods in accordance with the Commission’s regulations."
+          "text": "Revise its accounting policies and procedures to ensure that it properly records all advance payments that are applicable to future periods in accordance with the Commission’s regulations.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Provide training to staff on the revised prepayment accounting policies and procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised prepayment accounting policies and procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         }
       ]
     },
@@ -77,11 +83,13 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Revise its policies and procedures to ensure that it properly accounts for expenditures consistent with Commission accounting regulations."
+          "text": "Revise its policies and procedures to ensure that it properly accounts for expenditures consistent with Commission accounting regulations.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         }
       ]
     },
@@ -93,11 +101,13 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Revise and strengthen its policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the instructions of each schedule page."
+          "text": "Revise and strengthen its policies, procedures, and practices to report correct, accurate, complete information in the FERC Form No. 1 consistent with the instructions of each schedule page.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas, as needed. E."
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas, as needed. E.",
+          "source_page": null
         }
       ]
     }

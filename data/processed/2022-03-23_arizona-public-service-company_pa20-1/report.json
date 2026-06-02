@@ -37,11 +37,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise processes and procedures related to the posting of transmission line outage information on OASIS and enhance the process to timely and accurately communicate outage information to the Balancing Authority Area (BAA) operators."
+          "text": "Revise processes and procedures related to the posting of transmission line outage information on OASIS and enhance the process to timely and accurately communicate outage information to the Balancing Authority Area (BAA) operators.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Provide training to transmission operators on the new policies, processes, and procedures."
+          "text": "Provide training to transmission operators on the new policies, processes, and procedures.",
+          "source_page": null
         }
       ]
     },
@@ -53,15 +55,18 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Correct OASIS settings to allow short-term non-firm redirect service requests associated with existing long-term firm PTP transmission service."
+          "text": "Correct OASIS settings to allow short-term non-firm redirect service requests associated with existing long-term firm PTP transmission service.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Revise policies and procedures regarding short-term non-firm redirect requests and discontinue the practice of requiring short-term transmission service agreements associated with these redirect requests."
+          "text": "Revise policies and procedures regarding short-term non-firm redirect requests and discontinue the practice of requiring short-term transmission service agreements associated with these redirect requests.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Provide training to transmission personnel regarding the updated policies and procedures. E."
+          "text": "Provide training to transmission personnel regarding the updated policies and procedures. E.",
+          "source_page": null
         }
       ]
     }

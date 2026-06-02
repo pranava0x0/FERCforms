@@ -36,23 +36,28 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Strengthen and revise accounting processes and procedures to ensure that SCE properly records compromise settlement payments related to employment discrimination claims in Account 426.5 as consistent with Accounting Release No. 12."
+          "text": "Strengthen and revise accounting processes and procedures to ensure that SCE properly records compromise settlement payments related to employment discrimination claims in Account 426.5 as consistent with Accounting Release No. 12.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Provide training to staff on the revised accounting for compromise settlement payments resulting from employment discrimination claims in Account 426.5 for regulatory accounting and annual transmission revenue requirement development. Also, develop a training program that supports periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised accounting for compromise settlement payments resulting from employment discrimination claims in Account 426.5 for regulatory accounting and annual transmission revenue requirement development. Also, develop a training program that supports periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to SCE’s wholesale transmission customers since January 1, 2017, plus interest, relating to the inclusion of compromise settlement payments resulting from employment discrimination claims; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds to SCE’s wholesale transmission customers since January 1, 2017, plus interest, relating to the inclusion of compromise settlement payments resulting from employment discrimination claims; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -64,11 +69,13 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Revise policies and procedures to properly account for vendor discounts consistent Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for vendor discounts consistent Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Provide training to staff on the revised procedures for accounting for vendor discounts. Also, develop a training program that supports periodic training in this area, as needed."
+          "text": "Provide training to staff on the revised procedures for accounting for vendor discounts. Also, develop a training program that supports periodic training in this area, as needed.",
+          "source_page": null
         }
       ]
     },
@@ -80,47 +87,58 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction No. 3(A)(17), and other applicable Commission requirements."
+          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction No. 3(A)(17), and other applicable Commission requirements.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Revise procedures to timely cease AFUDC accrual on all suspended or cancelled construction projects, consistent with Commission accounting requirements."
+          "text": "Revise procedures to timely cease AFUDC accrual on all suspended or cancelled construction projects, consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation Nos. 8 and 9. Provide periodic training in these areas as needed."
+          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation Nos. 8 and 9. Provide periodic training in these areas as needed.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Recalculate accrued AFUDC in a manner consistent with Electric Plant Instruction No. 3(A)(17) that corrects the improper exclusion of short-term debt beginning in 2010 to the present and long-term debt amounts only for 2019."
+          "text": "Recalculate accrued AFUDC in a manner consistent with Electric Plant Instruction No. 3(A)(17) that corrects the improper exclusion of short-term debt beginning in 2010 to the present and long-term debt amounts only for 2019.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report."
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC included in the transmission formula rate billing charges since 2017, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of excess AFUDC included in the transmission formula rate billing charges since 2017, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 12, and restate and footnote the FERC Form No. 1 for current and comparative years as necessary."
+          "text": "Revise CWIP, electric plant in service, accumulated depreciation, ADIT, and other accounts impacted by over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries per Recommendation No. 12, and restate and footnote the FERC Form No. 1 for current and comparative years as necessary.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible"
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction 3(A)(17), and other applicable Commission requirements."
+          "text": "Revise and implement procedures to calculate the AFUDC rate consistent with Order Nos. 561 and 561-A, Electric Plant Instruction 3(A)(17), and other applicable Commission requirements.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation 17. Provide periodic training in these areas as needed."
+          "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation 17. Provide periodic training in these areas as needed.",
+          "source_page": null
         }
       ]
     },
@@ -139,11 +157,13 @@
       "recommendations": [
         {
           "number": 19,
-          "text": "Revise policies and procedures to properly account for A&G expenditures consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for A&G expenditures consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Provide training to relevant staff on the revised procedures for properly accounting for A&G expenditures. Also, develop a training program for periodic training in this area, as needed."
+          "text": "Provide training to relevant staff on the revised procedures for properly accounting for A&G expenditures. Also, develop a training program for periodic training in this area, as needed.",
+          "source_page": null
         }
       ]
     },
@@ -155,11 +175,13 @@
       "recommendations": [
         {
           "number": 21,
-          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, and complete information in the FERC Form No. 1, consistent with the page instructions."
+          "text": "Revise and strengthen policies, procedures, and practices to report correct, accurate, and complete information in the FERC Form No. 1, consistent with the page instructions.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports periodic training in this area, as needed. E."
+          "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports periodic training in this area, as needed. E.",
+          "source_page": null
         }
       ]
     }

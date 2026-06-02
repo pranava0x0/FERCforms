@@ -37,27 +37,33 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise policies and procedures to properly account for substation maintenance work orders consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for substation maintenance work orders consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for substation maintenance in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for substation maintenance in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Perform an analysis of costs incurred at substations during the audit period to determine whether distribution-related expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission and distribution expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis of costs incurred at substations during the audit period to determine whether distribution-related expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission and distribution expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for distribution-related O&M expenses in transmission expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for distribution-related O&M expenses in transmission expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -69,27 +75,33 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Revise policies and procedures to properly account for RD&D expenditures consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for RD&D expenditures consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for RD&D expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for RD&D expenditures in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Perform an analysis of costs incurred for RD&D activities, including costs relating to RD&D performed by outside research institutions, during the audit period to determine whether RD&D activities were charged to the correct utility function. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report."
+          "text": "Perform an analysis of costs incurred for RD&D activities, including costs relating to RD&D performed by outside research institutions, during the audit period to determine whether RD&D activities were charged to the correct utility function. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for RD&D expenses in administrative & general expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for RD&D expenses in administrative & general expense accounts, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -101,31 +113,38 @@
       "recommendations": [
         {
           "number": 13,
-          "text": "Revise policies and procedures to properly account for early retirements of significant electric plant facilities consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for early retirements of significant electric plant facilities consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for asset retirements in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for asset retirements in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "File, within 60 days of issuance of this audit report, a request for approval of proposed retirement journal entries to justify its proposed use of Account 182.2 and period of amortization, including a description of the policies and procedures in place to prevent any additional early plant retirement costs from being charged to FERC-jurisdictional customers absent separate Commission approval of changes to its FERC-jurisdictional tariffs."
+          "text": "File, within 60 days of issuance of this audit report, a request for approval of proposed retirement journal entries to justify its proposed use of Account 182.2 and period of amortization, including a description of the policies and procedures in place to prevent any additional early plant retirement costs from being charged to FERC-jurisdictional customers absent separate Commission approval of changes to its FERC-jurisdictional tariffs.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Perform an analysis of costs recorded in Depreciation Expense accounts during the audit period to determine whether early plant retirement costs were recorded in these accounts. Provide the results of the analysis to audit staff within 60 days of the date of the final audit report."
+          "text": "Perform an analysis of costs recorded in Depreciation Expense accounts during the audit period to determine whether early plant retirement costs were recorded in these accounts. Provide the results of the analysis to audit staff within 60 days of the date of the final audit report.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for early plant retirement costs; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for early plant retirement costs; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -137,27 +156,33 @@
       "recommendations": [
         {
           "number": 20,
-          "text": "Strengthen policies, procedures, and controls to account for expenditures associated with compromise settlements consistent with the Commission’s accounting requirements."
+          "text": "Strengthen policies, procedures, and controls to account for expenditures associated with compromise settlements consistent with the Commission’s accounting requirements.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Perform an analysis to identify other expenditures associated with compromise settlements that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report."
+          "text": "Perform an analysis to identify other expenditures associated with compromise settlements that were improperly accounted for during the audit period. Provide the results of the analysis to audit staff within 60 days of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 23,
-          "text": "Submit a refund report, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from improper accounting for expenditures associated with compromise settlements, which impacted inputs to TEP’s transmission formula rate during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive the refunds, and (5) period(s) refunds will be made."
+          "text": "Submit a refund report, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from improper accounting for expenditures associated with compromise settlements, which impacted inputs to TEP’s transmission formula rate during the audit period; (2) determinative components of the refund; (3) refund method; (4) customers to receive the refunds, and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 25,
-          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -169,27 +194,33 @@
       "recommendations": [
         {
           "number": 26,
-          "text": "Revise policies and procedures to properly account for transactions with affiliate companies consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for transactions with affiliate companies consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for affiliate transactions in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for affiliate transactions in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 28,
-          "text": "Perform an analysis of costs incurred in its utility O&M accounts and A&G accounts during the audit period to determine whether expenses were charged to the correct affiliate(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis of costs incurred in its utility O&M accounts and A&G accounts during the audit period to determine whether expenses were charged to the correct affiliate(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 29,
-          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper allocation of costs associated with affiliate transactions, plus interest; (2) determinative components of the refund; (3) refund method; (4) FERC-jurisdictional customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper allocation of costs associated with affiliate transactions, plus interest; (2) determinative components of the refund; (3) refund method; (4) FERC-jurisdictional customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 31,
-          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -201,27 +232,33 @@
       "recommendations": [
         {
           "number": 32,
-          "text": "Revise policies and procedures to properly account for A&G expenses consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for A&G expenses consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for A&G expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for A&G expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 34,
-          "text": "Perform an analysis of costs incurred in A&G accounts during the audit period to determine whether expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis of costs incurred in A&G accounts during the audit period to determine whether expenses were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for lobbying and general advertising expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for lobbying and general advertising expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 36,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 37,
-          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -233,27 +270,33 @@
       "recommendations": [
         {
           "number": 38,
-          "text": "Revise policies and procedures to properly account for O&M expenses consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for O&M expenses consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 39,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for O&M expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for O&M expenses in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 40,
-          "text": "Perform an analysis of costs reported in Transmission O&M accounts during the audit period to determine whether such costs were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report."
+          "text": "Perform an analysis of costs reported in Transmission O&M accounts during the audit period to determine whether such costs were charged to the correct account(s) and that the appropriate allocators were used to charge costs to transmission, distribution, and A&G expense accounts when applicable. Provide the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 41,
-          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for power generation and distribution-related expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of the date of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from improper accounting for power generation and distribution-related expenses, plus interest; (2) determinative components of the refund; (3) refund method; (4) transmission customers to receive refunds; and (5) period(s) refunds will be made.",
+          "source_page": null
         },
         {
           "number": 42,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 43,
-          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -265,15 +308,18 @@
       "recommendations": [
         {
           "number": 44,
-          "text": "Revise policies and procedures to ensure that Commission-approved depreciation rates are used to determine depreciation expense for all classes of property."
+          "text": "Revise policies and procedures to ensure that Commission-approved depreciation rates are used to determine depreciation expense for all classes of property.",
+          "source_page": null
         },
         {
           "number": 45,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for depreciation expense in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for depreciation expense in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 46,
-          "text": "Use Commission-approved depreciation rates to calculate inputs to its formula rate, or timely file a request under FPA section 205 for a change in rates."
+          "text": "Use Commission-approved depreciation rates to calculate inputs to its formula rate, or timely file a request under FPA section 205 for a change in rates.",
+          "source_page": null
         }
       ]
     },
@@ -285,15 +331,18 @@
       "recommendations": [
         {
           "number": 47,
-          "text": "Revise and implement policies, procedures, and controls to ensure TEP properly accounts for ARO-related costs consistent with the Commission’s accounting requirements."
+          "text": "Revise and implement policies, procedures, and controls to ensure TEP properly accounts for ARO-related costs consistent with the Commission’s accounting requirements.",
+          "source_page": null
         },
         {
           "number": 48,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 49,
-          "text": "Within 60 days of issuance of this audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of ARO-related costs improperly recorded in Account 108 to Account 182.3."
+          "text": "Within 60 days of issuance of this audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of ARO-related costs improperly recorded in Account 108 to Account 182.3.",
+          "source_page": null
         }
       ]
     },
@@ -305,11 +354,13 @@
       "recommendations": [
         {
           "number": 50,
-          "text": "Revise policies and procedures to properly account for vendor discounts consistent with Commission accounting requirements."
+          "text": "Revise policies and procedures to properly account for vendor discounts consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 51,
-          "text": "Provide training to its staff on the revised procedures for properly accounting for vendor discounts in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to its staff on the revised procedures for properly accounting for vendor discounts in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         }
       ]
     },
@@ -321,15 +372,18 @@
       "recommendations": [
         {
           "number": 52,
-          "text": "Strengthen policies, procedures, and controls to ensure that all FERC Form No. 1 schedules are completed in accordance with Commission instructions."
+          "text": "Strengthen policies, procedures, and controls to ensure that all FERC Form No. 1 schedules are completed in accordance with Commission instructions.",
+          "source_page": null
         },
         {
           "number": 53,
-          "text": "Strengthen procedures for completing review of the FERC Form No. 1 instructions, prior to submission, to eliminate errors."
+          "text": "Strengthen procedures for completing review of the FERC Form No. 1 instructions, prior to submission, to eliminate errors.",
+          "source_page": null
         },
         {
           "number": 54,
-          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed. E."
+          "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed. E.",
+          "source_page": null
         }
       ]
     }

@@ -36,15 +36,18 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise policies, procedures, and controls to ensure that it allocates capacity based on correct historical capacities and appropriately classifies all shippers, during times of prorationing."
+          "text": "Revise policies, procedures, and controls to ensure that it allocates capacity based on correct historical capacities and appropriately classifies all shippers, during times of prorationing.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Inform relevant staff of the procedural and control changes for prorating pipeline capacity and provide periodic training, as needed."
+          "text": "Inform relevant staff of the procedural and control changes for prorating pipeline capacity and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Implement process improvements available through automated system processes or other means to increase efficiency and accuracy of prorated capacity awarded."
+          "text": "Implement process improvements available through automated system processes or other means to increase efficiency and accuracy of prorated capacity awarded.",
+          "source_page": null
         }
       ]
     },
@@ -56,19 +59,23 @@
       "recommendations": [
         {
           "number": 4,
-          "text": "Strengthen policies, procedures, and controls to ensure that all tariff records are properly filed and available for review in eTariff and monitor eTariff to ensure all tariffs are properly uploaded, removed, and numerically ordered in accordance with Order Nos. 714 and 714-A.2"
+          "text": "Strengthen policies, procedures, and controls to ensure that all tariff records are properly filed and available for review in eTariff and monitor eTariff to ensure all tariffs are properly uploaded, removed, and numerically ordered in accordance with Order Nos. 714 and 714-A.2",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Perform a comprehensive review of all tariffs filed since 2010 to confirm whether tariffs are shown in eTariff as effective. As part of this review determine whether there is a need for Tariff ID 25 or whether it can be withdrawn to avoid possible confusion when filing records in eTariff."
+          "text": "Perform a comprehensive review of all tariffs filed since 2010 to confirm whether tariffs are shown in eTariff as effective. As part of this review determine whether there is a need for Tariff ID 25 or whether it can be withdrawn to avoid possible confusion when filing records in eTariff.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Inform relevant staff of the procedural and control changes for complying with Order Nos. 714 and 714-A and provide periodic training, as needed."
+          "text": "Inform relevant staff of the procedural and control changes for complying with Order Nos. 714 and 714-A and provide periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "File currently effective versions of Tariff Nos. 6.0.0 and 169.0.0 in eTariff, along with any prior versions that were inadvertently omitted from eTariff, so that eTariff includes an accurate record of all Commission-approved versions of these tariffs. Also, correct the collation value(s), so that they 2 Electronic Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified Order No. 714-A, 147 FERC ¶ 61,115 (2014). will provide proper sequencing of Sunoco’s tariff records in eTariff and update all miscoded filings."
+          "text": "File currently effective versions of Tariff Nos. 6.0.0 and 169.0.0 in eTariff, along with any prior versions that were inadvertently omitted from eTariff, so that eTariff includes an accurate record of all Commission-approved versions of these tariffs. Also, correct the collation value(s), so that they 2 Electronic Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified Order No. 714-A, 147 FERC ¶ 61,115 (2014). will provide proper sequencing of Sunoco’s tariff records in eTariff and update all miscoded filings.",
+          "source_page": null
         }
       ]
     },
@@ -80,19 +87,23 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Revise accounting policies, procedures, and controls to ensure that idled and noncarrier assets are accounted for as noncarrier property and all associated expenses and revenues are recorded in Account 620 consistent with the Commission’s accounting requirements."
+          "text": "Revise accounting policies, procedures, and controls to ensure that idled and noncarrier assets are accounted for as noncarrier property and all associated expenses and revenues are recorded in Account 620 consistent with the Commission’s accounting requirements.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Reclassify all idled assets for which no definite plan for future use exists and any other noncarrier assets incorrectly recorded in Account 30 to Account 34, and reclassify the related accrued depreciation from Account 31 to Account 35. Submit accounting entries supporting adjustments within the carrier and noncarrier property accounts to DAA for review within 60 days of issuance of this audit report. Make the accounting entries supporting this adjustment within 60 days of receiving approval from DAA."
+          "text": "Reclassify all idled assets for which no definite plan for future use exists and any other noncarrier assets incorrectly recorded in Account 30 to Account 34, and reclassify the related accrued depreciation from Account 31 to Account 35. Submit accounting entries supporting adjustments within the carrier and noncarrier property accounts to DAA for review within 60 days of issuance of this audit report. Make the accounting entries supporting this adjustment within 60 days of receiving approval from DAA.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Perform an analysis to determine the full scale of Page 700 impacts from improperly accounting for certain noncarrier property as carrier property, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other lines on Page 700, and provide this analysis to DAA staff for review within 60 days of receiving DAA’s approval described in Recommendation No. 9."
+          "text": "Perform an analysis to determine the full scale of Page 700 impacts from improperly accounting for certain noncarrier property as carrier property, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other lines on Page 700, and provide this analysis to DAA staff for review within 60 days of receiving DAA’s approval described in Recommendation No. 9.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "For the next FERC Form No. 6 annual filing ensure that the noncarrier property and related expenses are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing ensure that the noncarrier property and related expenses are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -104,27 +115,33 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Revise and strengthen policies, procedures, and controls to ensure that carrier property, operating expenses, and nonoperating expenses are recorded and reported in accordance with the Commission’s accounting regulations."
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that carrier property, operating expenses, and nonoperating expenses are recorded and reported in accordance with the Commission’s accounting regulations.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Perform an analysis of the current year’s operating expense accounts to ensure that penalties and settlement payments, donations and sponsorships, amortization of acquisition premiums, liability insurance premiums relating to affiliates, and other nonoperating expenses and charges are correctly accounted for and reported in nonoperating expense accounts in the FERC Form No. 6."
+          "text": "Perform an analysis of the current year’s operating expense accounts to ensure that penalties and settlement payments, donations and sponsorships, amortization of acquisition premiums, liability insurance premiums relating to affiliates, and other nonoperating expenses and charges are correctly accounted for and reported in nonoperating expense accounts in the FERC Form No. 6.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Perform an analysis from 2018 through the date of the final audit report to identify nonoperating expenses improperly capitalized in Account 30. Provide the results of the analysis and all applicable work papers supporting the analysis, including factors used to calculate the amount of the error, to DAA within 60 days of receiving the final audit report."
+          "text": "Perform an analysis from 2018 through the date of the final audit report to identify nonoperating expenses improperly capitalized in Account 30. Provide the results of the analysis and all applicable work papers supporting the analysis, including factors used to calculate the amount of the error, to DAA within 60 days of receiving the final audit report.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Submit proposed corrected accounting entries based on the analysis performed per Recommendation No. 14 to DAA, within 90 days of receiving the final audit report, for the removal of the estimated capitalized nonoperating expenses from Account 30, and to remove associated amounts from Account 31 and any other accounts impacted."
+          "text": "Submit proposed corrected accounting entries based on the analysis performed per Recommendation No. 14 to DAA, within 90 days of receiving the final audit report, for the removal of the estimated capitalized nonoperating expenses from Account 30, and to remove associated amounts from Account 31 and any other accounts impacted.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Revise Accounts 30 and 31, and any other accounts impacted by the improperly capitalized nonoperating expenses, after receiving DAA’s assessment of the proposed accounting entries."
+          "text": "Revise Accounts 30 and 31, and any other accounts impacted by the improperly capitalized nonoperating expenses, after receiving DAA’s assessment of the proposed accounting entries.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "For the next FERC Form No. 6 annual filing ensure that the nonoperating expenses and expenses unrelated to Sunoco’s business are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing ensure that the nonoperating expenses and expenses unrelated to Sunoco’s business are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -136,15 +153,18 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Develop and implement policies, procedures, and controls to ensure that it uses Commission-approved depreciation rates for all carrier property assets (or accounts) and that regular studies are conducted to ensure depreciation rates are relevant and do not become outdated."
+          "text": "Develop and implement policies, procedures, and controls to ensure that it uses Commission-approved depreciation rates for all carrier property assets (or accounts) and that regular studies are conducted to ensure depreciation rates are relevant and do not become outdated.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "File a depreciation study with the Commission for all asset groups that do not have an appropriate depreciation rate on file with the Commission to reflect current economic conditions."
+          "text": "File a depreciation study with the Commission for all asset groups that do not have an appropriate depreciation rate on file with the Commission to reflect current economic conditions.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "For the next FERC Form No. 6 annual filing ensure that impacts from the changes in depreciation rates are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing ensure that impacts from the changes in depreciation rates are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -156,15 +176,18 @@
       "recommendations": [
         {
           "number": 21,
-          "text": "Revise and strengthen financial reporting policies, procedures, and controls to ensure that PLA revenues are appropriately tracked and reported as interstate operating revenues on Page 700, Line 10."
+          "text": "Revise and strengthen financial reporting policies, procedures, and controls to ensure that PLA revenues are appropriately tracked and reported as interstate operating revenues on Page 700, Line 10.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Train staff on revised policies, procedures, and controls for reporting interstate operating revenues on Page 700, Line 10, and provide additional periodic training, as needed."
+          "text": "Train staff on revised policies, procedures, and controls for reporting interstate operating revenues on Page 700, Line 10, and provide additional periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 23,
-          "text": "Ensure that all future FERC Form No. 6 submissions reflect Sunoco’s revised PLA procedures. Additionally, for the next FERC Form No. 6 annual filing ensure that PLA is accurately reported in current and comparative years and provide appropriate footnote disclosures."
+          "text": "Ensure that all future FERC Form No. 6 submissions reflect Sunoco’s revised PLA procedures. Additionally, for the next FERC Form No. 6 annual filing ensure that PLA is accurately reported in current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -176,19 +199,23 @@
       "recommendations": [
         {
           "number": 24,
-          "text": "Revise and strengthen policies, procedures, and controls to ensure that IDC is removed from carrier property accounts when calculating cost of service on Page 700 of the FERC Form No. 6."
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that IDC is removed from carrier property accounts when calculating cost of service on Page 700 of the FERC Form No. 6.",
+          "source_page": null
         },
         {
           "number": 25,
-          "text": "Inform staff responsible for preparing Page 700 of this error and provide periodic training, as necessary."
+          "text": "Inform staff responsible for preparing Page 700 of this error and provide periodic training, as necessary.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "Perform an analysis to determine the impact, resulting from the error identified, to Line 3, AFUDC Depreciation; Line 5, Rate Base; Line 7, Return on Rate Base; and Line 9, Total Cost of Service, on Page 700 of the current year FERC Form No. 6 and provide this analysis to DAA within 90 days of this report."
+          "text": "Perform an analysis to determine the impact, resulting from the error identified, to Line 3, AFUDC Depreciation; Line 5, Rate Base; Line 7, Return on Rate Base; and Line 9, Total Cost of Service, on Page 700 of the current year FERC Form No. 6 and provide this analysis to DAA within 90 days of this report.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "For the next FERC Form No. 6 annual filing ensure that the effects of IDC are removed from the AFUDC computation for the current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing ensure that the effects of IDC are removed from the AFUDC computation for the current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -200,19 +227,23 @@
       "recommendations": [
         {
           "number": 28,
-          "text": "Revise and strengthen policies, procedures, and controls to ensure that cost components related to asset retirement obligations are excluded from rate base on Page 700 consistent with 18 C.F.R. § 346.3(a) and the instructions of the FERC Form No. 6."
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that cost components related to asset retirement obligations are excluded from rate base on Page 700 consistent with 18 C.F.R. § 346.3(a) and the instructions of the FERC Form No. 6.",
+          "source_page": null
         },
         {
           "number": 29,
-          "text": "Train staff on avoiding this error and provide periodic training, as necessary, to ensure that rate base on Page 700 is calculated and reported correctly in accordance with Commission regulations."
+          "text": "Train staff on avoiding this error and provide periodic training, as necessary, to ensure that rate base on Page 700 is calculated and reported correctly in accordance with Commission regulations.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "Perform an analysis to determine the impact resulting from the error identified in the prior two Recommendations on rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of issuance of this report."
+          "text": "Perform an analysis to determine the impact resulting from the error identified in the prior two Recommendations on rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of issuance of this report.",
+          "source_page": null
         },
         {
           "number": 31,
-          "text": "For the next FERC Form No. 6 annual filing made by Sunoco, exclude cost components related to asset retirement obligations that would impact the calculation of rate base from the rate base computation for the current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing made by Sunoco, exclude cost components related to asset retirement obligations that would impact the calculation of rate base from the rate base computation for the current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -224,19 +255,23 @@
       "recommendations": [
         {
           "number": 32,
-          "text": "Revise and strengthen policies, procedures, and controls to ensure that Page 700 is prepared correctly, accurately, and consistent with Opinion No. 154- B and the instructions of the FERC Form No. 6."
+          "text": "Revise and strengthen policies, procedures, and controls to ensure that Page 700 is prepared correctly, accurately, and consistent with Opinion No. 154- B and the instructions of the FERC Form No. 6.",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Train staff on avoiding these errors and provide periodic training, as necessary, to ensure that each line item on Page 700 is calculated and reported correctly in accordance with Commission regulations."
+          "text": "Train staff on avoiding these errors and provide periodic training, as necessary, to ensure that each line item on Page 700 is calculated and reported correctly in accordance with Commission regulations.",
+          "source_page": null
         },
         {
           "number": 34,
-          "text": "Perform an analysis to determine the impact resulting from the errors identified to rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of the issuance of this report."
+          "text": "Perform an analysis to determine the impact resulting from the errors identified to rate base and total cost of service on Page 700 for the current year and provide this analysis to DAA within 90 days of the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "For the next FERC Form No. 6 annual filing, correctly include amortization related to a throughput and deficiency (T&D) agreement in the depreciation expense computation and correctly calculate working capital in the rate base computation on Page 700 for the current and comparative years and provide appropriate footnote disclosures."
+          "text": "For the next FERC Form No. 6 annual filing, correctly include amortization related to a throughput and deficiency (T&D) agreement in the depreciation expense computation and correctly calculate working capital in the rate base computation on Page 700 for the current and comparative years and provide appropriate footnote disclosures.",
+          "source_page": null
         }
       ]
     },
@@ -248,11 +283,13 @@
       "recommendations": [
         {
           "number": 36,
-          "text": "Revise policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 6 in accordance with the instructions of the report and the Commission’s accounting instructions."
+          "text": "Revise policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 6 in accordance with the instructions of the report and the Commission’s accounting instructions.",
+          "source_page": null
         },
         {
           "number": 37,
-          "text": "Review the reporting deficiencies with relevant staff to ensure they include on a prospective basis all required information in Sunoco’s FERC Form No. 6 filings. E."
+          "text": "Review the reporting deficiencies with relevant staff to ensure they include on a prospective basis all required information in Sunoco’s FERC Form No. 6 filings. E.",
+          "source_page": null
         }
       ]
     }

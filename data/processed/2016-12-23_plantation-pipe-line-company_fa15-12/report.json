@@ -34,19 +34,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Create procedures and controls to ensure depreciation rates remain relevant and applicable, and to make timely revisions when property accounts become fully accrued."
+          "text": "Create procedures and controls to ensure depreciation rates remain relevant and applicable, and to make timely revisions when property accounts become fully accrued.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Perform a new depreciation study that accounts for changes in assumptions for service lives."
+          "text": "Perform a new depreciation study that accounts for changes in assumptions for service lives.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Submit a copy of this depreciation study to the Commission within 30 days of completion. Plantation should make appropriate changes to its existing depreciation rates pursuant to Commission action."
+          "text": "Submit a copy of this depreciation study to the Commission within 30 days of completion. Plantation should make appropriate changes to its existing depreciation rates pursuant to Commission action.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Submit accounting entries supporting adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error to DAA for review within 30 days of issuance of this final audit report. Upon approval from DAA, make accounting entries supporting this adjustment within 60 days."
+          "text": "Submit accounting entries supporting adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error to DAA for review within 30 days of issuance of this final audit report. Upon approval from DAA, make accounting entries supporting this adjustment within 60 days.",
+          "source_page": null
         }
       ]
     },
@@ -58,15 +62,18 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Modify its accounting policies and procedures to ensure retirements are promptly booked into its accounting systems, which should include establishing communication protocols among the various groups that work on asset retirements."
+          "text": "Modify its accounting policies and procedures to ensure retirements are promptly booked into its accounting systems, which should include establishing communication protocols among the various groups that work on asset retirements.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Update its carrier property records to ensure information used to determine book cost is readily available and assets can be retired in a timely manner."
+          "text": "Update its carrier property records to ensure information used to determine book cost is readily available and assets can be retired in a timely manner.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Make appropriate adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error. Submit accounting entries supporting this adjustment to DAA within 60 days of issuance of this final audit report."
+          "text": "Make appropriate adjustments within the accrued depreciation accounts to reverse accrued depreciation expenses recorded in error. Submit accounting entries supporting this adjustment to DAA within 60 days of issuance of this final audit report.",
+          "source_page": null
         }
       ]
     },
@@ -78,11 +85,13 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Update accounting policies and procedures to ensure fines and penalties are accounted for consistently with Commission requirements."
+          "text": "Update accounting policies and procedures to ensure fines and penalties are accounted for consistently with Commission requirements.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Record fines and penalties in Account 660, instead of Account 570, on a forward going basis. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report."
+          "text": "Record fines and penalties in Account 660, instead of Account 570, on a forward going basis. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report.",
+          "source_page": null
         }
       ]
     },
@@ -94,11 +103,13 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Update its accounting policies and procedures to ensure annual charges, regulatory fees, and industry association dues are accounted for consistently with Commission accounting requirements."
+          "text": "Update its accounting policies and procedures to ensure annual charges, regulatory fees, and industry association dues are accounted for consistently with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Record FERC annual charges in Account 510, and DOT-PHMSA fees, Commonwealth of Virginia fees, and Association of Oil Pipeline (AOPL) dues in Account 590, instead of Account 660. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report."
+          "text": "Record FERC annual charges in Account 510, and DOT-PHMSA fees, Commonwealth of Virginia fees, and Association of Oil Pipeline (AOPL) dues in Account 590, instead of Account 660. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report.",
+          "source_page": null
         }
       ]
     },
@@ -110,15 +121,18 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Review and modify its account mapping for operating expenses to ensure activities recorded in internal cost centers are properly aligned with primary FERC accounts. Submit changes in account mapping to DAA within 60 days of issuance of this final audit report."
+          "text": "Review and modify its account mapping for operating expenses to ensure activities recorded in internal cost centers are properly aligned with primary FERC accounts. Submit changes in account mapping to DAA within 60 days of issuance of this final audit report.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Update accounting policies and procedures to ensure expenses are recorded in the appropriate operating expense account consistent with Commission accounting requirements."
+          "text": "Update accounting policies and procedures to ensure expenses are recorded in the appropriate operating expense account consistent with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Reclassify amounts improperly recorded in Account 310 to Account 320, 390, and 590, to ensure these activities are recorded in the correct operating expense accounts. Review other operating expense accounts to ensure those expenses are mapped to the proper internal cost centers and FERC accounts."
+          "text": "Reclassify amounts improperly recorded in Account 310 to Account 320, 390, and 590, to ensure these activities are recorded in the correct operating expense accounts. Review other operating expense accounts to ensure those expenses are mapped to the proper internal cost centers and FERC accounts.",
+          "source_page": null
         }
       ]
     },
@@ -130,15 +144,18 @@
       "recommendations": [
         {
           "number": 15,
-          "text": "Revise its procedures to ensure current and noncurrent deferred income tax balances are accounted for and reported consistently with Commission accounting requirements."
+          "text": "Revise its procedures to ensure current and noncurrent deferred income tax balances are accounted for and reported consistently with Commission accounting requirements.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Make a correcting entry to adjust balances in Account 19, Account 19-5, Account 64, Account 670, Income Taxes on Income From Continuing Operations, and Account 671, to ensure balances for the current year are correctly stated. Submit correcting entry and support to DAA within 60 days of issuance of this final audit report."
+          "text": "Make a correcting entry to adjust balances in Account 19, Account 19-5, Account 64, Account 670, Income Taxes on Income From Continuing Operations, and Account 671, to ensure balances for the current year are correctly stated. Submit correcting entry and support to DAA within 60 days of issuance of this final audit report.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Include appropriate footnote disclosure in the Form 6 for adjustments made to deferred income taxes that are reported in column (d) of page 230 of the Form 6 on a forward going basis."
+          "text": "Include appropriate footnote disclosure in the Form 6 for adjustments made to deferred income taxes that are reported in column (d) of page 230 of the Form 6 on a forward going basis.",
+          "source_page": null
         }
       ]
     },
@@ -150,15 +167,18 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Strengthen its procedures to ensure the accrual of IDC stops upon completing project construction and placing assets into service."
+          "text": "Strengthen its procedures to ensure the accrual of IDC stops upon completing project construction and placing assets into service.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Strengthen communication between accountants and field engineers to ensure timely closure of project work orders. Reporting of Interstate Volumes"
+          "text": "Strengthen communication between accountants and field engineers to ensure timely closure of project work orders. Reporting of Interstate Volumes",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Strengthen its financial reporting procedures to ensure interstate barrel volumes are properly reported in its Form 6. E."
+          "text": "Strengthen its financial reporting procedures to ensure interstate barrel volumes are properly reported in its Form 6. E.",
+          "source_page": null
         }
       ]
     },

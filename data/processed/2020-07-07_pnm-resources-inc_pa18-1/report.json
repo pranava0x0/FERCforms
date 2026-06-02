@@ -37,19 +37,23 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Enhance Standards of Conduct training for all applicable employees."
+          "text": "Enhance Standards of Conduct training for all applicable employees.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Develop and implement controls to limit, monitor and document non-OASIS communications between PNM’s transmission and WPM functions."
+          "text": "Develop and implement controls to limit, monitor and document non-OASIS communications between PNM’s transmission and WPM functions.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Perform quarterly reviews using controls, monitoring, and documentation developed in response to Recommendation 2 listed above."
+          "text": "Perform quarterly reviews using controls, monitoring, and documentation developed in response to Recommendation 2 listed above.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Provide to DAA a summary of the above-described review in a quarterly compliance report for two consecutive quarters after this audit report is issued."
+          "text": "Provide to DAA a summary of the above-described review in a quarterly compliance report for two consecutive quarters after this audit report is issued.",
+          "source_page": null
         }
       ]
     },
@@ -61,15 +65,18 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Refund the overcharged amount of $121,500 to the affected customer in a timely manner."
+          "text": "Refund the overcharged amount of $121,500 to the affected customer in a timely manner.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Develop and implement procedures for validating cost-based sale prices to ensure that these prices reflect the actual cost of incremental resources including transmission cost."
+          "text": "Develop and implement procedures for validating cost-based sale prices to ensure that these prices reflect the actual cost of incremental resources including transmission cost.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "After the new process is adopted, provide validation results in a quarterly compliance report to DAA for two consecutive quarters after this audit report is issued to demonstrate the new process works consistently."
+          "text": "After the new process is adopted, provide validation results in a quarterly compliance report to DAA for two consecutive quarters after this audit report is issued to demonstrate the new process works consistently.",
+          "source_page": null
         }
       ]
     },
@@ -81,15 +88,18 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Enhance controls to ensure that WPM employees only use secondary network transmission service to serve PNM native load."
+          "text": "Enhance controls to ensure that WPM employees only use secondary network transmission service to serve PNM native load.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Develop and implement processes and procedures to validate secondary network transmission service requests for delivering power to any intermediate points of delivery outside the PNM control area and ensure the requests are ultimately to serve the designated network load prior to confirming the request."
+          "text": "Develop and implement processes and procedures to validate secondary network transmission service requests for delivering power to any intermediate points of delivery outside the PNM control area and ensure the requests are ultimately to serve the designated network load prior to confirming the request.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Develop and implement processes and procedures to review e-tags that have a transmission segment(s) associated with a Network Integration Transmission Service (NITS) request to ensure the proper use of transmission service."
+          "text": "Develop and implement processes and procedures to review e-tags that have a transmission segment(s) associated with a Network Integration Transmission Service (NITS) request to ensure the proper use of transmission service.",
+          "source_page": null
         }
       ]
     },
@@ -101,11 +111,13 @@
       "recommendations": [
         {
           "number": 11,
-          "text": "Develop and implement processes and procedures to ensure use of NITS on OASIS template requirements adopted in Order 676-H."
+          "text": "Develop and implement processes and procedures to ensure use of NITS on OASIS template requirements adopted in Order 676-H.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Provide training with respect to the processes and procedures developed in response to Recommendation 11."
+          "text": "Provide training with respect to the processes and procedures developed in response to Recommendation 11.",
+          "source_page": null
         }
       ]
     },
@@ -117,7 +129,8 @@
       "recommendations": [
         {
           "number": 13,
-          "text": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval."
+          "text": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval.",
+          "source_page": null
         }
       ]
     },
@@ -129,39 +142,48 @@
       "recommendations": [
         {
           "number": 14,
-          "text": "Revise its procedures to ensure that its AFUDC rate calculation is consistent with Electric Plant Instruction No. 3(17), Order Nos. 561 and 561-A, and other applicable Commission accounting regulations."
+          "text": "Revise its procedures to ensure that its AFUDC rate calculation is consistent with Electric Plant Instruction No. 3(17), Order Nos. 561 and 561-A, and other applicable Commission accounting regulations.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Revise its procedures to exclude the underlying “other interest” from the short- term debt rate determination used when calculating its AFUDC rate."
+          "text": "Revise its procedures to exclude the underlying “other interest” from the short- term debt rate determination used when calculating its AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Revise procedures to ensure that Account 216.1, Unappropriated Undistributed Subsidiary Earnings, is excluded from equity components used to derive its AFUDC rate."
+          "text": "Revise procedures to ensure that Account 216.1, Unappropriated Undistributed Subsidiary Earnings, is excluded from equity components used to derive its AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Revise procedures to ensure that the long-term debt data reported by PNM on its FERC Form No. 1 submissions are used to compute the long-term debt rate used by PNM for calculating PNM’s AFUDC rate."
+          "text": "Revise procedures to ensure that the long-term debt data reported by PNM on its FERC Form No. 1 submissions are used to compute the long-term debt rate used by PNM for calculating PNM’s AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Provide training to PNM’s staff on the revised AFUDC accounting and rate calculation method. Also, develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to PNM’s staff on the revised AFUDC accounting and rate calculation method. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Make adjustments within 60 days of receiving the final audit report to all impacted accounts, for the period January 1, 2015 to December 31, 2019, including Account 101, Electric Plant in Service, and the accounts for accumulated depreciation, ADIT, and retained earnings, and submit these adjustments to DAA for review and approval. Also, include in this submission to DAA the impact to PNM’s Annual Transmission Revenue Requirement produced by PNM’s formula rate as a result of changes to these accounts."
+          "text": "Make adjustments within 60 days of receiving the final audit report to all impacted accounts, for the period January 1, 2015 to December 31, 2019, including Account 101, Electric Plant in Service, and the accounts for accumulated depreciation, ADIT, and retained earnings, and submit these adjustments to DAA for review and approval. Also, include in this submission to DAA the impact to PNM’s Annual Transmission Revenue Requirement produced by PNM’s formula rate as a result of changes to these accounts.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds to PNM’s wholesale customers since January 1, 2015, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made."
+          "text": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculation of refunds to PNM’s wholesale customers since January 1, 2015, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis."
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations."
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": null
         }
       ]
     },
@@ -173,11 +195,13 @@
       "recommendations": [
         {
           "number": 23,
-          "text": "Revise its procedures so as to exclude upfront and quarterly commitment fees from the cost of short-term debt when calculating its AFUDC rate."
+          "text": "Revise its procedures so as to exclude upfront and quarterly commitment fees from the cost of short-term debt when calculating its AFUDC rate.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Revise its procedures to record the upfront and quarterly commitment fees excluded from AFUDC rate calculations in Account 930.2, Miscellaneous General Expenses."
+          "text": "Revise its procedures to record the upfront and quarterly commitment fees excluded from AFUDC rate calculations in Account 930.2, Miscellaneous General Expenses.",
+          "source_page": null
         }
       ]
     },
@@ -189,7 +213,8 @@
       "recommendations": [
         {
           "number": 25,
-          "text": "Revise its accounting policies to ensure that production-related remediation expenses are accounted for in production expense accounts, consistent with the Commission’s accounting regulations."
+          "text": "Revise its accounting policies to ensure that production-related remediation expenses are accounted for in production expense accounts, consistent with the Commission’s accounting regulations.",
+          "source_page": null
         }
       ]
     },
@@ -201,7 +226,8 @@
       "recommendations": [
         {
           "number": 26,
-          "text": "Develop and implement processes and procedures to verify schedules against non-OASIS reservations as part of its e-tag validation process to ensure the accuracy of all attributes, including the “Affiliate” flag."
+          "text": "Develop and implement processes and procedures to verify schedules against non-OASIS reservations as part of its e-tag validation process to ensure the accuracy of all attributes, including the “Affiliate” flag.",
+          "source_page": null
         }
       ]
     },
@@ -213,11 +239,13 @@
       "recommendations": [
         {
           "number": 27,
-          "text": "Develop and implement processes and procedures to ensure that transmission service agreements are executed prior to confirming reassignments of transmission capacity."
+          "text": "Develop and implement processes and procedures to ensure that transmission service agreements are executed prior to confirming reassignments of transmission capacity.",
+          "source_page": null
         },
         {
           "number": 28,
-          "text": "Refile the affected EQR filings in coordination with the refilings to be undertaken pursuant to Recommendation 31 in Finding 10 of this audit report."
+          "text": "Refile the affected EQR filings in coordination with the refilings to be undertaken pursuant to Recommendation 31 in Finding 10 of this audit report.",
+          "source_page": null
         }
       ]
     },
@@ -229,31 +257,38 @@
       "recommendations": [
         {
           "number": 29,
-          "text": "Enhance EQR filing procedures to ensure PNM reports data accurately and completely, and consistently complies with Commission EQR filing guidance."
+          "text": "Enhance EQR filing procedures to ensure PNM reports data accurately and completely, and consistently complies with Commission EQR filing guidance.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "Provide training on preparing and submitting EQR filings in accordance with Commission EQR filing guidance to personnel responsible for performing and overseeing these functions."
+          "text": "Provide training on preparing and submitting EQR filings in accordance with Commission EQR filing guidance to personnel responsible for performing and overseeing these functions.",
+          "source_page": null
         },
         {
           "number": 31,
-          "text": "Begin an internal review process to examine all EQR filings made by PNM during the audit period."
+          "text": "Begin an internal review process to examine all EQR filings made by PNM during the audit period.",
+          "source_page": null
         },
         {
           "number": 32,
-          "text": "Correct all the errors identified during the audit as well as those discovered in its subsequent internal review process and refile the amended EQR data in a timely manner. Other Matter – Use of Transmission Service Numbers"
+          "text": "Correct all the errors identified during the audit as well as those discovered in its subsequent internal review process and refile the amended EQR data in a timely manner. Other Matter – Use of Transmission Service Numbers",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Continue to evaluate and take actions to reduce the use of TSNs."
+          "text": "Continue to evaluate and take actions to reduce the use of TSNs.",
+          "source_page": null
         },
         {
           "number": 34,
-          "text": "Post its TSN practices on OASIS and a list of TSNs (active and inactive) along with the intended business purpose. Other Matter – After-the-Fact (ATF) Reservation and Scheduling Practice"
+          "text": "Post its TSN practices on OASIS and a list of TSNs (active and inactive) along with the intended business purpose. Other Matter – After-the-Fact (ATF) Reservation and Scheduling Practice",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "Document its ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review, including PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. E."
+          "text": "Document its ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review, including PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. E.",
+          "source_page": null
         }
       ]
     }

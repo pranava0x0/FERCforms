@@ -45,19 +45,23 @@
       "recommendations": [
         {
           "number": 4,
-          "text": "Revise accounting policies and procedures to properly account for measurement changes related to asset retirement obligations (ARO)."
+          "text": "Revise accounting policies and procedures to properly account for measurement changes related to asset retirement obligations (ARO).",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Perform an evaluation of the ARO-related regulatory assets to determine whether the items continue to meet the criteria for deferral as regulatory assets, and provide the evaluation to DAA within 60 days of receiving the final audit report. Regulatory assets associated with negative ARO assets that are no longer probable for recovery in future rates due to write-downs of the related ARO liabilities and assets should be reduced by the negative ARO asset balance and offset by increasing the ARO asset balance to zero."
+          "text": "Perform an evaluation of the ARO-related regulatory assets to determine whether the items continue to meet the criteria for deferral as regulatory assets, and provide the evaluation to DAA within 60 days of receiving the final audit report. Regulatory assets associated with negative ARO assets that are no longer probable for recovery in future rates due to write-downs of the related ARO liabilities and assets should be reduced by the negative ARO asset balance and offset by increasing the ARO asset balance to zero.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Within 60 days of receiving the final audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the removal of ARO asset- and liability-related depreciation and accretion expense amounts from the regulatory asset accounts no longer probable for recovery in future rates. Also, remove corresponding amounts of the negative ARO asset balances from the plant accounts."
+          "text": "Within 60 days of receiving the final audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the removal of ARO asset- and liability-related depreciation and accretion expense amounts from the regulatory asset accounts no longer probable for recovery in future rates. Also, remove corresponding amounts of the negative ARO asset balances from the plant accounts.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Revise ARO and regulatory asset balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+          "text": "Revise ARO and regulatory asset balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions.",
+          "source_page": null
         }
       ]
     },
@@ -69,15 +73,18 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Establish and implement procedures to account for temporary renewable energy development (TRED) trust fund deposits in accordance with Commission regulations."
+          "text": "Establish and implement procedures to account for temporary renewable energy development (TRED) trust fund deposits in accordance with Commission regulations.",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of the special-purpose TRED funds deposited in the external trust from Account 165, Prepayments, to Account 128, Other Special Funds, for review within 60 days of receiving the final audit report."
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of the special-purpose TRED funds deposited in the external trust from Account 165, Prepayments, to Account 128, Other Special Funds, for review within 60 days of receiving the final audit report.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Revise prepayment and other special-fund balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions."
+          "text": "Revise prepayment and other special-fund balances in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions.",
+          "source_page": null
         }
       ]
     },
@@ -89,31 +96,38 @@
       "recommendations": [
         {
           "number": 11,
-          "text": "Revise policies and procedures, and reconfigure accounting systems used to calculate AFUDC rates consistent with the requirements of Electric Plant Instruction (EPI) No. 3.A.(17), Allowance for Funds Used During Construction. Among other things, the revisions should include processes to prevent inclusion of unpaid contract retention accruals and of goodwill in AFUDC rate calculations."
+          "text": "Revise policies and procedures, and reconfigure accounting systems used to calculate AFUDC rates consistent with the requirements of Electric Plant Instruction (EPI) No. 3.A.(17), Allowance for Funds Used During Construction. Among other things, the revisions should include processes to prevent inclusion of unpaid contract retention accruals and of goodwill in AFUDC rate calculations.",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Implement procedures to monitor differences between the maximum AFUDC rate calculated based on the requirements of EPI No. 3.A.(17) and the AFUDC rate as calculated with the inclusion of customer deposits. When inclusion of customer deposits in the calculation results in an AFUDC rate higher than the maximum allowed, the company must exclude the customer deposit balances from the AFUDC rate applied to construction cost."
+          "text": "Implement procedures to monitor differences between the maximum AFUDC rate calculated based on the requirements of EPI No. 3.A.(17) and the AFUDC rate as calculated with the inclusion of customer deposits. When inclusion of customer deposits in the calculation results in an AFUDC rate higher than the maximum allowed, the company must exclude the customer deposit balances from the AFUDC rate applied to construction cost.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Perform an analysis of construction-related work orders and invoices from 2010 through the date of the final audit report to locate all instances of the inappropriate inclusion of unpaid contract retention accruals for all work orders, and also all errors applying AFUDC to construction costs incurred by Great Basin Transmission, LLC (Great Basin). Provide the results of the analysis to DAA for review."
+          "text": "Perform an analysis of construction-related work orders and invoices from 2010 through the date of the final audit report to locate all instances of the inappropriate inclusion of unpaid contract retention accruals for all work orders, and also all errors applying AFUDC to construction costs incurred by Great Basin Transmission, LLC (Great Basin). Provide the results of the analysis to DAA for review.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Recalculate the AFUDC rate since 2005 in accordance with the requirements of EPI No. 3.A.(17). Include the results of the work order and invoice analysis performed for 2010 through the date of the final audit report for the calculation required by Recommendation No. 13. Based on the calculations, in periods that the AFUDC rate used exceeded the maximum rate allowed pursuant to EPI No. 3.A.(17), submit a yearly estimate, with proposed accounting entries and support documentation to DAA that reflects corrections to remove over- accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and accumulated deferred income taxes in the companies’ respective books of account and systems."
+          "text": "Recalculate the AFUDC rate since 2005 in accordance with the requirements of EPI No. 3.A.(17). Include the results of the work order and invoice analysis performed for 2010 through the date of the final audit report for the calculation required by Recommendation No. 13. Based on the calculations, in periods that the AFUDC rate used exceeded the maximum rate allowed pursuant to EPI No. 3.A.(17), submit a yearly estimate, with proposed accounting entries and support documentation to DAA that reflects corrections to remove over- accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and accumulated deferred income taxes in the companies’ respective books of account and systems.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Revise plant, accumulated depreciation, accumulated deferred income taxes, and other impacted account balances that resulted from the over-accrual of AFUDC in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions. The footnotes should include the adjustments by year with an explanation of the revisions. Accounting for Lobbying Expenses"
+          "text": "Revise plant, accumulated depreciation, accumulated deferred income taxes, and other impacted account balances that resulted from the over-accrual of AFUDC in the companies’ respective books of account and systems after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances reported in the Form No. 1 in the current and comparative years of the report, as necessary to reflect and disclose the revisions. The footnotes should include the adjustments by year with an explanation of the revisions. Accounting for Lobbying Expenses",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Establish and implement written procedures to properly account for, track, report, and review lobbying costs incurred through external party billings."
+          "text": "Establish and implement written procedures to properly account for, track, report, and review lobbying costs incurred through external party billings.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Develop and implement policies, procedures, and controls to ensure proper accounting and reporting of payroll taxes and pension expenses associated with lobbying activities."
+          "text": "Develop and implement policies, procedures, and controls to ensure proper accounting and reporting of payroll taxes and pension expenses associated with lobbying activities.",
+          "source_page": null
         }
       ]
     },
@@ -132,19 +146,23 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Revise and strengthen documented policies, procedures, and controls for timely completion and reporting of the FERC Form No. 580 in accordance with the instructions of the form."
+          "text": "Revise and strengthen documented policies, procedures, and controls for timely completion and reporting of the FERC Form No. 580 in accordance with the instructions of the form.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Develop and implement written policies, procedures, and controls to maintain compliance with regulatory reporting requirements of the Commission."
+          "text": "Develop and implement written policies, procedures, and controls to maintain compliance with regulatory reporting requirements of the Commission.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Establish a documented succession plan that establishes procedures to transfer regulatory compliance responsibilities of departing staff on a timely basis."
+          "text": "Establish a documented succession plan that establishes procedures to transfer regulatory compliance responsibilities of departing staff on a timely basis.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Provide training to staff on the revised policies, procedures, and controls to complete and file timely reports to the Commission. Also, develop a training program that supports the provision of periodic training in this area. E."
+          "text": "Provide training to staff on the revised policies, procedures, and controls to complete and file timely reports to the Commission. Also, develop a training program that supports the provision of periodic training in this area. E.",
+          "source_page": null
         }
       ]
     }

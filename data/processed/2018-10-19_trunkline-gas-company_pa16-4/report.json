@@ -53,11 +53,13 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Revise policies and procedures to ensure it prospectively records short- and long-term cash management and affiliate transactions in the accounts prescribed by the Commission regulations."
+          "text": "Revise policies and procedures to ensure it prospectively records short- and long-term cash management and affiliate transactions in the accounts prescribed by the Commission regulations.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC"
+          "text": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC",
+          "source_page": null
         }
       ]
     },
@@ -69,19 +71,23 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Strengthen procedures to ensure AFUDC rates do not exceed the maximum permitted by the Commission. Include procedures for the treatment of borrowings associated with the cash management program in the development of its AFUDC rates."
+          "text": "Strengthen procedures to ensure AFUDC rates do not exceed the maximum permitted by the Commission. Include procedures for the treatment of borrowings associated with the cash management program in the development of its AFUDC rates.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Evaluate the AFUDC rate applied and the percentage amount that exceeded the maximum rate permitted by the Commission for the periods affected. Also, include in your evaluation how debt borrowings associated with the cash management program factored into its AFUDC calculation and the effect on the derivation of its maximum AFUDC rate. Submit the results to DAA for review within 30 days of completion."
+          "text": "Evaluate the AFUDC rate applied and the percentage amount that exceeded the maximum rate permitted by the Commission for the periods affected. Also, include in your evaluation how debt borrowings associated with the cash management program factored into its AFUDC calculation and the effect on the derivation of its maximum AFUDC rate. Submit the results to DAA for review within 30 days of completion.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Adjust plant in service, accumulated depreciation, and other affected accounts to remove the over accrual of AFUDC for the periods affected."
+          "text": "Adjust plant in service, accumulated depreciation, and other affected accounts to remove the over accrual of AFUDC for the periods affected.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Disclose in the FERC Form 2 that the maximum AFUDC rate cannot exceed its overall rate of return in its recourse rate, when applicable."
+          "text": "Disclose in the FERC Form 2 that the maximum AFUDC rate cannot exceed its overall rate of return in its recourse rate, when applicable.",
+          "source_page": null
         }
       ]
     },
@@ -93,15 +99,18 @@
       "recommendations": [
         {
           "number": 16,
-          "text": "Modify its accounting policies and procedures to ensure expenses associated with system gas control and underground storage are treated as operating expenses consistent with Commission accounting instructions."
+          "text": "Modify its accounting policies and procedures to ensure expenses associated with system gas control and underground storage are treated as operating expenses consistent with Commission accounting instructions.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Reclassify all amounts associated with system gas control currently in Accounts 920 and 921 to Account 851 and amounts associated with technical engineering services of underground storage facilities from Account 850 to Account 814 for the current year."
+          "text": "Reclassify all amounts associated with system gas control currently in Accounts 920 and 921 to Account 851 and amounts associated with technical engineering services of underground storage facilities from Account 850 to Account 814 for the current year.",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Include a footnote disclosure that explains changes in the presentation of system gas control and underground storage costs in its next FERC Form 2."
+          "text": "Include a footnote disclosure that explains changes in the presentation of system gas control and underground storage costs in its next FERC Form 2.",
+          "source_page": null
         }
       ]
     },
@@ -113,27 +122,33 @@
       "recommendations": [
         {
           "number": 19,
-          "text": "Modify accounting policies and procedures for penalty revenues and refunds to ensure consistency with Commission accounting instructions."
+          "text": "Modify accounting policies and procedures for penalty revenues and refunds to ensure consistency with Commission accounting instructions.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Reclassify all amounts associated with penalty revenues and refunds in Accounts 142 and 242 with respective entries to Accounts 495 and 254 for the current year. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC"
+          "text": "Reclassify all amounts associated with penalty revenues and refunds in Accounts 142 and 242 with respective entries to Accounts 495 and 254 for the current year. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Include a footnote disclosure that explains the changes in the presentation of penalty revenues and refunds in its next FERC Form 2. Accounting for Lost and Unaccounted for Gas"
+          "text": "Include a footnote disclosure that explains the changes in the presentation of penalty revenues and refunds in its next FERC Form 2. Accounting for Lost and Unaccounted for Gas",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Modify its accounting policies and procedures for LAUF to ensure consistency with Commission accounting instructions."
+          "text": "Modify its accounting policies and procedures for LAUF to ensure consistency with Commission accounting instructions.",
+          "source_page": null
         },
         {
           "number": 23,
-          "text": "Reclassify all amounts associated with LAUF recorded in Account 854 to Account 813 for the current year."
+          "text": "Reclassify all amounts associated with LAUF recorded in Account 854 to Account 813 for the current year.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Include a footnote disclosure to explain changes in the presentation of LAUF in its next FERC Form 2."
+          "text": "Include a footnote disclosure to explain changes in the presentation of LAUF in its next FERC Form 2.",
+          "source_page": null
         }
       ]
     },
@@ -152,15 +167,18 @@
       "recommendations": [
         {
           "number": 25,
-          "text": "Strengthen processes and procedures to ensure assets and related amounts sold are removed timely from its books."
+          "text": "Strengthen processes and procedures to ensure assets and related amounts sold are removed timely from its books.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "Remove the remaining assets, accumulated provision for depreciation, and ARO regulatory liability associated with the sale to Sea Robin from its books."
+          "text": "Remove the remaining assets, accumulated provision for depreciation, and ARO regulatory liability associated with the sale to Sea Robin from its books.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "Make a correcting entry to reverse the depreciation expense improperly accrued in the periods subsequent to the sale."
+          "text": "Make a correcting entry to reverse the depreciation expense improperly accrued in the periods subsequent to the sale.",
+          "source_page": null
         }
       ]
     },
@@ -172,7 +190,8 @@
       "recommendations": [
         {
           "number": 28,
-          "text": "Enhance procedures to ensure it correctly reports gas storage quantities for injections and withdrawals on Page 512 of the FERC Form 2 and the related amounts recorded in Accounts 808.1 and 808.2. E."
+          "text": "Enhance procedures to ensure it correctly reports gas storage quantities for injections and withdrawals on Page 512 of the FERC Form 2 and the related amounts recorded in Accounts 808.1 and 808.2. E.",
+          "source_page": null
         }
       ]
     }

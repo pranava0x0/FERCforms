@@ -37,35 +37,43 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Revise and strengthen policies and procedures to ensure compliance with its Tariff’s reservation charge crediting calculation methodologies."
+          "text": "Revise and strengthen policies and procedures to ensure compliance with its Tariff’s reservation charge crediting calculation methodologies.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Train staff on the computation, policies, and procedures for calculating Gulf South’s reservation charge credits for force majeure and non-force majeure events. The training should also include discussion of this finding. Provide training periodically as needed."
+          "text": "Train staff on the computation, policies, and procedures for calculating Gulf South’s reservation charge credits for force majeure and non-force majeure events. The training should also include discussion of this finding. Provide training periodically as needed.",
+          "source_page": null
         },
         {
           "number": 3,
-          "text": "Make an informational posting on Gulf South’s Electronic Bulletin Board notifying customers of all reservation charge crediting errors, during the audit period to the present. Allowance For Funds Used During Construction"
+          "text": "Make an informational posting on Gulf South’s Electronic Bulletin Board notifying customers of all reservation charge crediting errors, during the audit period to the present. Allowance For Funds Used During Construction",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Strengthen accounting procedures to ensure Gulf South properly includes all short-term debt in the determination of the maximum AFUDC rate as prescribed in Order Nos. 561 and 561-A and Gas Plant Instruction No. 3(17) (GPI No. 3(17)). This pertains to all outstanding short-term debt secured through an external third-party bank or other financial institution and through internal funding sources, such as borrowings through a cash management arrangement or direct loan from any affiliate or subsidiary company."
+          "text": "Strengthen accounting procedures to ensure Gulf South properly includes all short-term debt in the determination of the maximum AFUDC rate as prescribed in Order Nos. 561 and 561-A and Gas Plant Instruction No. 3(17) (GPI No. 3(17)). This pertains to all outstanding short-term debt secured through an external third-party bank or other financial institution and through internal funding sources, such as borrowings through a cash management arrangement or direct loan from any affiliate or subsidiary company.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Provide training to relevant staff on the revised AFUDC rate calculation procedures and develop a training program that supports the provision of periodic training in this area, as needed."
+          "text": "Provide training to relevant staff on the revised AFUDC rate calculation procedures and develop a training program that supports the provision of periodic training in this area, as needed.",
+          "source_page": null
         },
         {
           "number": 6,
-          "text": "Recalculate AFUDC accrued each year from January 1, 2015 to December 31, 2022, in accordance with the requirements of GPI No. 3(17). Based on the calculations, in years when the AFUDC rate exceeded the maximum rate allowed under GPI No. 3(17), submit a yearly estimate within 90 days of issuance of this audit report, with proposed accounting entries and supporting documentation to DAA that reflects corrections to remove over- accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and Accumulated Deferred Income Taxes (ADIT) in Gulf South’s books and records. If the adjusting entries result in a significant impact to income for the current year, Gulf South may request approval from the Commission to account for the transaction as a correction of a prior period error in Account 439."
+          "text": "Recalculate AFUDC accrued each year from January 1, 2015 to December 31, 2022, in accordance with the requirements of GPI No. 3(17). Based on the calculations, in years when the AFUDC rate exceeded the maximum rate allowed under GPI No. 3(17), submit a yearly estimate within 90 days of issuance of this audit report, with proposed accounting entries and supporting documentation to DAA that reflects corrections to remove over- accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation and Accumulated Deferred Income Taxes (ADIT) in Gulf South’s books and records. If the adjusting entries result in a significant impact to income for the current year, Gulf South may request approval from the Commission to account for the transaction as a correction of a prior period error in Account 439.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Revise Construction Work in Progress (CWIP) and gas plant in service, accumulated depreciation, ADIT, and other account balances impacted by the over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries."
+          "text": "Revise Construction Work in Progress (CWIP) and gas plant in service, accumulated depreciation, ADIT, and other account balances impacted by the over-accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made. Consult with DAA in developing an appropriate footnote disclosure to ensure the necessary transparency of the impacts on all years affected."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made. Consult with DAA in developing an appropriate footnote disclosure to ensure the necessary transparency of the impacts on all years affected.",
+          "source_page": null
         }
       ]
     },
@@ -84,15 +92,18 @@
       "recommendations": [
         {
           "number": 9,
-          "text": "Revise policies and procedures used to track, review, and account for all PS&I associated with proposed capital projects consistent with the Commission’s accounting instructions for Account 183.2."
+          "text": "Revise policies and procedures used to track, review, and account for all PS&I associated with proposed capital projects consistent with the Commission’s accounting instructions for Account 183.2.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Train staff on the updated policies and procedures to account for PS&I and provide periodic training as necessary."
+          "text": "Train staff on the updated policies and procedures to account for PS&I and provide periodic training as necessary.",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Reclassify all PS&I for the current year from operating expense accounts to Account 183.2 and continue accounting for PS&I in this manner prospectively. Provide a journal entry that supports that the corrected accounting entry has been made to DAA within 30 days from the issuance of this report."
+          "text": "Reclassify all PS&I for the current year from operating expense accounts to Account 183.2 and continue accounting for PS&I in this manner prospectively. Provide a journal entry that supports that the corrected accounting entry has been made to DAA within 30 days from the issuance of this report.",
+          "source_page": null
         }
       ]
     },
@@ -104,31 +115,38 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Revise policies and procedures used to track, review, and account for all directly assigned and allocated costs, to ensure that these costs, including operations and maintenance and administrative and general expenses, are recorded in the appropriate expense account based on the nature of the cost as required by General Instruction No. 14. Additionally, communicate these revised policies and procedures to all Gulf South affiliates to ensure they understand the potential accounting impacts and effects on the development of cost-of-service rates. Provide support to DAA that this communication occurred within 90 days from the issuance of this report."
+          "text": "Revise policies and procedures used to track, review, and account for all directly assigned and allocated costs, to ensure that these costs, including operations and maintenance and administrative and general expenses, are recorded in the appropriate expense account based on the nature of the cost as required by General Instruction No. 14. Additionally, communicate these revised policies and procedures to all Gulf South affiliates to ensure they understand the potential accounting impacts and effects on the development of cost-of-service rates. Provide support to DAA that this communication occurred within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Inform and train employees responsible for account coding and assignment to ensure proper classification of operating and nonoperating expenses upon initial entry into the accounting system."
+          "text": "Inform and train employees responsible for account coding and assignment to ensure proper classification of operating and nonoperating expenses upon initial entry into the accounting system.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Retain documentation to support all the charges allocated from associated companies to comply with the requirements of 18 C.F.R. Part 225.2. Specifically, retain documentation, including time studies, that support the percentages and costs Loews allocates to Gulf South."
+          "text": "Retain documentation to support all the charges allocated from associated companies to comply with the requirements of 18 C.F.R. Part 225.2. Specifically, retain documentation, including time studies, that support the percentages and costs Loews allocates to Gulf South.",
+          "source_page": null
         },
         {
           "number": 15,
-          "text": "Perform further analysis of the management fees that Gulf South considered to be outside services for the audit period (i.e., the remaining expenses of approximately $5 million (2019) and $4.5 million (2020) that Gulf South recorded in Account 923). Specifically, the review should identify any other expenses that should be recorded in a nonoperating expense account, rather than treated as an operating expense in Account"
+          "text": "Perform further analysis of the management fees that Gulf South considered to be outside services for the audit period (i.e., the remaining expenses of approximately $5 million (2019) and $4.5 million (2020) that Gulf South recorded in Account 923). Specifically, the review should identify any other expenses that should be recorded in a nonoperating expense account, rather than treated as an operating expense in Account",
+          "source_page": null
         },
         {
           "number": 923,
-          "text": "Further, identify any operating expenses that do not relate to outside services and are more appropriately recorded in an account other than Account 923, based on the Commission’s accounting instructions within the USofA. Provide the results of the analysis along with any correcting entries made within 90 days of the issuance of the audit report."
+          "text": "Further, identify any operating expenses that do not relate to outside services and are more appropriately recorded in an account other than Account 923, based on the Commission’s accounting instructions within the USofA. Provide the results of the analysis along with any correcting entries made within 90 days of the issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 16,
-          "text": "Provide recent journal entries and documentation to support that the accounting misclassifications identified have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting requirements, to DAA within 90 days from the issuance of this report."
+          "text": "Provide recent journal entries and documentation to support that the accounting misclassifications identified have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting requirements, to DAA within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose the revisions made."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose the revisions made.",
+          "source_page": null
         }
       ]
     },
@@ -140,23 +158,28 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Strengthen accounting procedures and controls to ensure that it properly records operating and nonoperating expenses consistent with Commission accounting instructions. These procedures and controls should address the proper accounting treatment for non-lobbying and lobbying expenditures related to industry and trade association membership dues. Further the procedures and controls should ensure that only the representative share of membership dues are allocated, in accordance with the determinations of Boardwalk’s MMF and other allocation methodologies."
+          "text": "Strengthen accounting procedures and controls to ensure that it properly records operating and nonoperating expenses consistent with Commission accounting instructions. These procedures and controls should address the proper accounting treatment for non-lobbying and lobbying expenditures related to industry and trade association membership dues. Further the procedures and controls should ensure that only the representative share of membership dues are allocated, in accordance with the determinations of Boardwalk’s MMF and other allocation methodologies.",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Inform and train employees responsible for account coding and assignment to ensure proper classification of operating and nonoperating expenses upon initial entry into the accounting system."
+          "text": "Inform and train employees responsible for account coding and assignment to ensure proper classification of operating and nonoperating expenses upon initial entry into the accounting system.",
+          "source_page": null
         },
         {
           "number": 20,
-          "text": "Perform an analysis of the current year to ensure that all trade and industry association membership dues are recorded in correct operating and nonoperating expense accounts and continue to apply the accounting prospectively. Provide the results of the analysis along with any correcting entries made within 90 days of the issuance of the audit report."
+          "text": "Perform an analysis of the current year to ensure that all trade and industry association membership dues are recorded in correct operating and nonoperating expense accounts and continue to apply the accounting prospectively. Provide the results of the analysis along with any correcting entries made within 90 days of the issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 21,
-          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications identified in this finding have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting regulations, to DAA within 90 days from the issuance of this report."
+          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications identified in this finding have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting regulations, to DAA within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 22,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made.",
+          "source_page": null
         }
       ]
     },
@@ -168,27 +191,33 @@
       "recommendations": [
         {
           "number": 23,
-          "text": "Strengthen accounting procedures and controls to ensure it properly records nonoperating expenses consistent with Commission accounting instructions. These procedures and controls should address the proper accounting treatment for costs associated with political and lobbying activities, as a nonoperating expense under the USofA."
+          "text": "Strengthen accounting procedures and controls to ensure it properly records nonoperating expenses consistent with Commission accounting instructions. These procedures and controls should address the proper accounting treatment for costs associated with political and lobbying activities, as a nonoperating expense under the USofA.",
+          "source_page": null
         },
         {
           "number": 24,
-          "text": "Inform and train employees responsible for account coding and assignment of political and lobbying activities to ensure proper expense classification upon initial entry into the accounting system."
+          "text": "Inform and train employees responsible for account coding and assignment of political and lobbying activities to ensure proper expense classification upon initial entry into the accounting system.",
+          "source_page": null
         },
         {
           "number": 25,
-          "text": "Communicate and work with external vendors to ensure that Gulf South and its affiliates have procedures to separately track the costs associated with political and lobbying activities. As an example, this tracking was incorporated into Energy Infrastructure Counsel, Texas Pipeline Association, and Gas Processors Association membership dues invoices, where they indicated the percentage attributed to lobbying activities. Further enhance procedures to track the labor hours associated with the employees engaged in the corporate Public Affairs Committee (PAC) affairs. These measures will ensure these costs are readily identifiable and properly recorded."
+          "text": "Communicate and work with external vendors to ensure that Gulf South and its affiliates have procedures to separately track the costs associated with political and lobbying activities. As an example, this tracking was incorporated into Energy Infrastructure Counsel, Texas Pipeline Association, and Gas Processors Association membership dues invoices, where they indicated the percentage attributed to lobbying activities. Further enhance procedures to track the labor hours associated with the employees engaged in the corporate Public Affairs Committee (PAC) affairs. These measures will ensure these costs are readily identifiable and properly recorded.",
+          "source_page": null
         },
         {
           "number": 26,
-          "text": "Review account coding and assignment for the current year to ensure proper expense classification of all costs associated with political and lobbying activities. Besides Ogilvy and Boardwalk PAC, this review should include an analysis of all political and lobbying expenses and any other costs of a similar nature that were improperly coded to an operating expense account. Upon completion of this review, modify the account coding to reflect all political and lobbying expenses as nonoperating expenses in the accounting system. Submit the results of this review to DAA within 90 days from the issuance of this report."
+          "text": "Review account coding and assignment for the current year to ensure proper expense classification of all costs associated with political and lobbying activities. Besides Ogilvy and Boardwalk PAC, this review should include an analysis of all political and lobbying expenses and any other costs of a similar nature that were improperly coded to an operating expense account. Upon completion of this review, modify the account coding to reflect all political and lobbying expenses as nonoperating expenses in the accounting system. Submit the results of this review to DAA within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 27,
-          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications identified in this finding have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting requirements, to DAA within 90 days from the issuance of this report."
+          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications identified in this finding have been corrected, and the related expenses are recorded in accordance with the Commission’s accounting requirements, to DAA within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 28,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made.",
+          "source_page": null
         }
       ]
     },
@@ -200,23 +229,28 @@
       "recommendations": [
         {
           "number": 29,
-          "text": "Revise policies and procedures to ensure that the capitalization of project- related costs is consistent with GPI No. 3, and the Commission’s accounting regulations for Accounts 426.1 through 426.5. These policies and procedures should incorporate the accounting treatment for charitable contributions and other expenditures that foster general community awareness and good working relationships with the community, as a nonoperating expense under the USofA, consistent with instructions in Account 426.1."
+          "text": "Revise policies and procedures to ensure that the capitalization of project- related costs is consistent with GPI No. 3, and the Commission’s accounting regulations for Accounts 426.1 through 426.5. These policies and procedures should incorporate the accounting treatment for charitable contributions and other expenditures that foster general community awareness and good working relationships with the community, as a nonoperating expense under the USofA, consistent with instructions in Account 426.1.",
+          "source_page": null
         },
         {
           "number": 30,
-          "text": "Inform and train employees responsible for account coding and assignment for capital projects to ensure proper expense classification is determined based on the nature of the costs upon initial entry into the accounting system."
+          "text": "Inform and train employees responsible for account coding and assignment for capital projects to ensure proper expense classification is determined based on the nature of the costs upon initial entry into the accounting system.",
+          "source_page": null
         },
         {
           "number": 31,
-          "text": "Perform an analysis for the years during the audit period to identify capital projects that improperly included charitable contributions and other expenditures to foster general community awareness and good working relationships with the community, or for other purposes. Provide the results of the analysis, along with any correcting entries made, to DAA for review within 90 days of the issuance of the audit report."
+          "text": "Perform an analysis for the years during the audit period to identify capital projects that improperly included charitable contributions and other expenditures to foster general community awareness and good working relationships with the community, or for other purposes. Provide the results of the analysis, along with any correcting entries made, to DAA for review within 90 days of the issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 32,
-          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications have been corrected, and the related expenses are recorded in accordance with the Commission’s regulations, to DAA within 90 days from the issuance of this audit report."
+          "text": "Provide recent journal entries and supporting documentation to demonstrate that the accounting misclassifications have been corrected, and the related expenses are recorded in accordance with the Commission’s regulations, to DAA within 90 days from the issuance of this audit report.",
+          "source_page": null
         },
         {
           "number": 33,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made.",
+          "source_page": null
         }
       ]
     },
@@ -228,23 +262,28 @@
       "recommendations": [
         {
           "number": 34,
-          "text": "Strengthen accounting procedures to ensure that it properly records all operating expenses consistent with Commission accounting instructions. These procedures should address proper accounting treatment for informational and promotional costs related to brand and public awareness, advertising, and other similar costs."
+          "text": "Strengthen accounting procedures to ensure that it properly records all operating expenses consistent with Commission accounting instructions. These procedures should address proper accounting treatment for informational and promotional costs related to brand and public awareness, advertising, and other similar costs.",
+          "source_page": null
         },
         {
           "number": 35,
-          "text": "Inform and train employees responsible for account coding and assignment of informational and promotional costs to ensure proper classification of operating expenses upon initial entry into the accounting system."
+          "text": "Inform and train employees responsible for account coding and assignment of informational and promotional costs to ensure proper classification of operating expenses upon initial entry into the accounting system.",
+          "source_page": null
         },
         {
           "number": 36,
-          "text": "Perform an analysis of the current year to ensure that informational and promotional costs are recorded in the correct operating expense accounts. Provide the results of the analysis, along with any correcting entries made, to DAA within 90 days of the issuance of the audit report."
+          "text": "Perform an analysis of the current year to ensure that informational and promotional costs are recorded in the correct operating expense accounts. Provide the results of the analysis, along with any correcting entries made, to DAA within 90 days of the issuance of the audit report.",
+          "source_page": null
         },
         {
           "number": 37,
-          "text": "Provide recent journal entries and supporting documentation to DAA within 90 days from the issuance of this report that demonstrate the accounting misclassifications identified have been corrected, and the related expenses are recorded in accordance with the Commission’s regulations."
+          "text": "Provide recent journal entries and supporting documentation to DAA within 90 days from the issuance of this report that demonstrate the accounting misclassifications identified have been corrected, and the related expenses are recorded in accordance with the Commission’s regulations.",
+          "source_page": null
         },
         {
           "number": 38,
-          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made."
+          "text": "Restate and footnote the comparative year balances reported in the current year FERC Form No. 2, including all schedules affected, to reflect and disclose that these revisions have been made.",
+          "source_page": null
         }
       ]
     },
@@ -256,35 +295,43 @@
       "recommendations": [
         {
           "number": 39,
-          "text": "Revise policies and procedures to ensure that Gulf South correctly applies the Commission’s accounting requirements for operating leases with terms greater than 12 months that are treated as capital leases as identified by audit staff. These policies and procedures must ensure that the actual payments made under the lease arrangement are recognized as lease expenses and that the ROU assets and liabilities are reduced by equal and offsetting amounts for the principal portion of the lease payment over the lease term, or alternatively, be consistent with any determination of the Commission’s Chief Accountant received on this issue."
+          "text": "Revise policies and procedures to ensure that Gulf South correctly applies the Commission’s accounting requirements for operating leases with terms greater than 12 months that are treated as capital leases as identified by audit staff. These policies and procedures must ensure that the actual payments made under the lease arrangement are recognized as lease expenses and that the ROU assets and liabilities are reduced by equal and offsetting amounts for the principal portion of the lease payment over the lease term, or alternatively, be consistent with any determination of the Commission’s Chief Accountant received on this issue.",
+          "source_page": null
         },
         {
           "number": 40,
-          "text": "Inform relevant staff regarding any revised policies and procedures and provide staff periodic training, as needed."
+          "text": "Inform relevant staff regarding any revised policies and procedures and provide staff periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 41,
-          "text": "Make any necessary accounting adjustments to reflect compliance with the Commission’s accounting requirements for recognition of lease expenses on the income statement and ROU assets and liabilities on the balance sheet. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report, or the issuance of any formal approval from the Chief Accountant requested within 90 days from the issuance of this report. Property Unit Listing"
+          "text": "Make any necessary accounting adjustments to reflect compliance with the Commission’s accounting requirements for recognition of lease expenses on the income statement and ROU assets and liabilities on the balance sheet. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report, or the issuance of any formal approval from the Chief Accountant requested within 90 days from the issuance of this report. Property Unit Listing",
+          "source_page": null
         },
         {
           "number": 42,
-          "text": "Revise policies and procedures to ensure that Gulf South consistently maintains and applies its written property units listing pursuant to GPI No."
+          "text": "Revise policies and procedures to ensure that Gulf South consistently maintains and applies its written property units listing pursuant to GPI No.",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Those revised policies and procedures should identify the replacement of engines at compressor stations as retirement units to align with Gulf South’s retirement unit manual or should amend the manual so that engines are no longer considered a retirement unit."
+          "text": "Those revised policies and procedures should identify the replacement of engines at compressor stations as retirement units to align with Gulf South’s retirement unit manual or should amend the manual so that engines are no longer considered a retirement unit.",
+          "source_page": null
         },
         {
           "number": 43,
-          "text": "Inform and train employees on revisions made to the retirement unit manual and internal policies and procedures. This will help employees make consistent decisions for the accounting treatment of costs associated with retirement units and minor units of property."
+          "text": "Inform and train employees on revisions made to the retirement unit manual and internal policies and procedures. This will help employees make consistent decisions for the accounting treatment of costs associated with retirement units and minor units of property.",
+          "source_page": null
         },
         {
           "number": 44,
-          "text": "Review the retirement unit manual and make necessary updates. This should incorporate changes that have resulted due to technological advancements, mergers, and other factors. Provide a copy of the revised retirement unit manual and a summary of the updates made to the manual for review by DAA within 90 days from the issuance of this report."
+          "text": "Review the retirement unit manual and make necessary updates. This should incorporate changes that have resulted due to technological advancements, mergers, and other factors. Provide a copy of the revised retirement unit manual and a summary of the updates made to the manual for review by DAA within 90 days from the issuance of this report.",
+          "source_page": null
         },
         {
           "number": 45,
-          "text": "If necessary following updating of the retirement unit manual, make adjusting entries to reflect the appropriate accounting treatment for the replacement of engines at compressor stations. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report."
+          "text": "If necessary following updating of the retirement unit manual, make adjusting entries to reflect the appropriate accounting treatment for the replacement of engines at compressor stations. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report.",
+          "source_page": null
         }
       ]
     },
@@ -303,19 +350,23 @@
       "recommendations": [
         {
           "number": 46,
-          "text": "Strengthen accounting procedures and controls to ensure that it properly records and classifies abandoned, retired, and idled property consistent with the Commission’s accounting regulations. These procedures and controls should address the timing and proper accounting treatment for gas plant in service, future use property, and nonutility property when such property is abandoned and retired from its books. Further, property not used in gas operations and in a reserve status, pending future needs for several years, should be evaluated for retirement or classification as future use property or nonutility property, rather than keeping property in gas plant in service."
+          "text": "Strengthen accounting procedures and controls to ensure that it properly records and classifies abandoned, retired, and idled property consistent with the Commission’s accounting regulations. These procedures and controls should address the timing and proper accounting treatment for gas plant in service, future use property, and nonutility property when such property is abandoned and retired from its books. Further, property not used in gas operations and in a reserve status, pending future needs for several years, should be evaluated for retirement or classification as future use property or nonutility property, rather than keeping property in gas plant in service.",
+          "source_page": null
         },
         {
           "number": 47,
-          "text": "Inform and train employees responsible for account coding and assignment on timely recording the retirement of property abandoned. This should also cover proper and timely classification of property that is no longer used in gas operations (e.g., idled property) as future use or nonutility property."
+          "text": "Inform and train employees responsible for account coding and assignment on timely recording the retirement of property abandoned. This should also cover proper and timely classification of property that is no longer used in gas operations (e.g., idled property) as future use or nonutility property.",
+          "source_page": null
         },
         {
           "number": 48,
-          "text": "Confirm the retirement of the costs associated with the 2016 abandonment of Bayou Sale from Gulf South’s books. Also, make an adjusting entry to remove the depreciation expense recorded for Bayou Sale since 2016. Provide journal entries and supporting documentation to DAA within 90 days from the issuance of this report"
+          "text": "Confirm the retirement of the costs associated with the 2016 abandonment of Bayou Sale from Gulf South’s books. Also, make an adjusting entry to remove the depreciation expense recorded for Bayou Sale since 2016. Provide journal entries and supporting documentation to DAA within 90 days from the issuance of this report",
+          "source_page": null
         },
         {
           "number": 49,
-          "text": "Evaluate the Mineola, Longview, Sterlington, and Opelousas Compressor Stations to determine the appropriate accounting treatment as future use property or nonutility property. This evaluation should also include other compressor stations that are in the process of abandonment or not used in gas operations and in a reserve status pending future needs. Submit the results of this evaluation and any correcting entries associated with each property to reclassify the costs of the compressor station to DAA within 90 days from the issuance of this report."
+          "text": "Evaluate the Mineola, Longview, Sterlington, and Opelousas Compressor Stations to determine the appropriate accounting treatment as future use property or nonutility property. This evaluation should also include other compressor stations that are in the process of abandonment or not used in gas operations and in a reserve status pending future needs. Submit the results of this evaluation and any correcting entries associated with each property to reclassify the costs of the compressor station to DAA within 90 days from the issuance of this report.",
+          "source_page": null
         }
       ]
     },
@@ -327,15 +378,18 @@
       "recommendations": [
         {
           "number": 50,
-          "text": "Revise policies and procedures to ensure that Gulf South reports complete and accurate information according to the Commission’s regulations and the instructions of the FERC Form No. 2. These policies and procedures should address all reporting deficiencies discussed in this finding."
+          "text": "Revise policies and procedures to ensure that Gulf South reports complete and accurate information according to the Commission’s regulations and the instructions of the FERC Form No. 2. These policies and procedures should address all reporting deficiencies discussed in this finding.",
+          "source_page": null
         },
         {
           "number": 51,
-          "text": "Inform relevant staff regarding these revised policies and procedures and provide staff periodic training, as needed."
+          "text": "Inform relevant staff regarding these revised policies and procedures and provide staff periodic training, as needed.",
+          "source_page": null
         },
         {
           "number": 52,
-          "text": "Review the reporting deficiencies with relevant staff to ensure they include, on a prospective basis, complete and accurate information in the FERC Form No. 2 reports that are filed by Gulf South with the Commission. F."
+          "text": "Review the reporting deficiencies with relevant staff to ensure they include, on a prospective basis, complete and accurate information in the FERC Form No. 2 reports that are filed by Gulf South with the Commission. F.",
+          "source_page": null
         }
       ]
     }

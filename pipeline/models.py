@@ -103,6 +103,11 @@ class Recommendation(BaseModel):
 
     number: int
     text: str
+    # Page in the source document where this recommendation is discussed, as the
+    # audit's own index cites it (printed page number, not the PDF page index).
+    # Populated for PA M&O audits from the Exhibit I-2 "Page No." column; None for
+    # sources without a page-tagged recommendation index (e.g. FERC exec summaries).
+    source_page: Optional[int] = None
 
 
 class Finding(BaseModel):

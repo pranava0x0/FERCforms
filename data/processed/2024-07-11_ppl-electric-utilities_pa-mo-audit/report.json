@@ -35,11 +35,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Conduct routine employee surveys to ensure corporate culture aligns with company goals."
+          "text": "Conduct routine employee surveys to ensure corporate culture aligns with company goals.",
+          "source_page": 16
         },
         {
           "number": 2,
-          "text": "Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives."
+          "text": "Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives.",
+          "source_page": 16
         }
       ]
     },
@@ -51,15 +53,18 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM."
+          "text": "Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM.",
+          "source_page": 29
         },
         {
           "number": 4,
-          "text": "Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes."
+          "text": "Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes.",
+          "source_page": 29
         },
         {
           "number": 5,
-          "text": "Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates."
+          "text": "Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates.",
+          "source_page": 29
         }
       ]
     },
@@ -71,7 +76,8 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income."
+          "text": "Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income.",
+          "source_page": 36
         }
       ]
     },
@@ -83,15 +89,18 @@
       "recommendations": [
         {
           "number": 7,
-          "text": "Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability."
+          "text": "Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability.",
+          "source_page": 47
         },
         {
           "number": 8,
-          "text": "Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4."
+          "text": "Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4.",
+          "source_page": 47
         },
         {
           "number": 9,
-          "text": "Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected."
+          "text": "Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected.",
+          "source_page": 47
         }
       ]
     },
@@ -103,11 +112,13 @@
       "recommendations": [
         {
           "number": 10,
-          "text": "Address minor security and safety improvements."
+          "text": "Address minor security and safety improvements.",
+          "source_page": 51
         },
         {
           "number": 11,
-          "text": "Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness."
+          "text": "Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness.",
+          "source_page": 51
         }
       ]
     },
@@ -119,15 +130,18 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Update outdated policies and procedures."
+          "text": "Update outdated policies and procedures.",
+          "source_page": 59
         },
         {
           "number": 13,
-          "text": "Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies."
+          "text": "Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies.",
+          "source_page": 59
         },
         {
           "number": 14,
-          "text": "Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments."
+          "text": "Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments.",
+          "source_page": 59
         }
       ]
     },
@@ -139,15 +153,18 @@
       "recommendations": [
         {
           "number": 15,
-          "text": "Improve and strengthen customer service performance to at least pre-pandemic levels."
+          "text": "Improve and strengthen customer service performance to at least pre-pandemic levels.",
+          "source_page": 66
         },
         {
           "number": 16,
-          "text": "Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances."
+          "text": "Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances.",
+          "source_page": 66
         },
         {
           "number": 17,
-          "text": "Develop internal controls for source data and reporting systems to ensure accuracy."
+          "text": "Develop internal controls for source data and reporting systems to ensure accuracy.",
+          "source_page": 66
         }
       ]
     },
@@ -159,11 +176,13 @@
       "recommendations": [
         {
           "number": 18,
-          "text": "Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances."
+          "text": "Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances.",
+          "source_page": 75
         },
         {
           "number": 19,
-          "text": "Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels."
+          "text": "Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels.",
+          "source_page": 76
         }
       ]
     }

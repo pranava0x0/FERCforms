@@ -36,11 +36,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Enhance record identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain records across a broad range of media and formats, including documents, laptops, and mobile devices."
+          "text": "Enhance record identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain records across a broad range of media and formats, including documents, laptops, and mobile devices.",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Develop and implement training on enhanced record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed."
+          "text": "Develop and implement training on enhanced record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -52,15 +54,18 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Develop and implement a process to perform periodic reviews of MISO’s website and OASIS postings to verify that MISO is posting all required information, including posting the required interconnection study information within 30 calendar days of the end of the calendar quarter."
+          "text": "Develop and implement a process to perform periodic reviews of MISO’s website and OASIS postings to verify that MISO is posting all required information, including posting the required interconnection study information within 30 calendar days of the end of the calendar quarter.",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Develop and implement quality controls to ensure all posted interconnection study information is accurate and complete. 2 Winter Storm Uri was a severe winter and ice storm that had widespread impacts across the United States, Northern Mexico, and parts of Canada from February 13 to 17, 2021."
+          "text": "Develop and implement quality controls to ensure all posted interconnection study information is accurate and complete. 2 Winter Storm Uri was a severe winter and ice storm that had widespread impacts across the United States, Northern Mexico, and parts of Canada from February 13 to 17, 2021.",
+          "source_page": null
         },
         {
           "number": 5,
-          "text": "Train employees on the review process and quality controls developed under Recommendations 3 and 4, and repeat such training as needed."
+          "text": "Train employees on the review process and quality controls developed under Recommendations 3 and 4, and repeat such training as needed.",
+          "source_page": null
         }
       ]
     },
@@ -72,39 +77,48 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Develop and implement a process to perform periodic reviews of MISO’s OASIS postings to verify that MISO is posting all required information, including posting the required transmission service metrics within 15 days of the end of each calendar quarter."
+          "text": "Develop and implement a process to perform periodic reviews of MISO’s OASIS postings to verify that MISO is posting all required information, including posting the required transmission service metrics within 15 days of the end of each calendar quarter.",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Develop and implement quality controls to ensure all posted transmission service metric information is accurate and complete."
+          "text": "Develop and implement quality controls to ensure all posted transmission service metric information is accurate and complete.",
+          "source_page": null
         },
         {
           "number": 8,
-          "text": "Train employees on the review process and quality controls developed under Recommendations 6 and 7, and repeat such training as needed. Other Matters DAA recommends that MISO consider: Operations Related to Economic Derates"
+          "text": "Train employees on the review process and quality controls developed under Recommendations 6 and 7, and repeat such training as needed. Other Matters DAA recommends that MISO consider: Operations Related to Economic Derates",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Enhancing tools, software, and training to better inform system operators when real-time resources are economically-derated and are capable of performing at a higher level of output above their economically-derated capability, and repeat such training as needed. Real-time Ex-Post Market Clearing Price Transparency"
+          "text": "Enhancing tools, software, and training to better inform system operators when real-time resources are economically-derated and are capable of performing at a higher level of output above their economically-derated capability, and repeat such training as needed. Real-time Ex-Post Market Clearing Price Transparency",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Strengthening policies, procedures, and controls regarding how price corrections are made to its Market Reports to ensure that updated price data is publicly available in a timely manner. Monitoring of Energy Must Offer Compliance"
+          "text": "Strengthening policies, procedures, and controls regarding how price corrections are made to its Market Reports to ensure that updated price data is publicly available in a timely manner. Monitoring of Energy Must Offer Compliance",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Developing processes and procedures to ensure that it fully addresses and resolves all instances when its automated energy must offer compliance reporting system identifies a market participant’s resource for not meeting its daily energy must offer obligation, including considering ways to escalate for potential remediation or enforcement action instances when market participants are not fully responsive to MISO's outreach. Email Retention Processes and Procedures"
+          "text": "Developing processes and procedures to ensure that it fully addresses and resolves all instances when its automated energy must offer compliance reporting system identifies a market participant’s resource for not meeting its daily energy must offer obligation, including considering ways to escalate for potential remediation or enforcement action instances when market participants are not fully responsive to MISO's outreach. Email Retention Processes and Procedures",
+          "source_page": null
         },
         {
           "number": 12,
-          "text": "Enhancing identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain emails that constitute records."
+          "text": "Enhancing identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain emails that constitute records.",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Developing and implementing training on enhanced email record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed."
+          "text": "Developing and implementing training on enhanced email record identification, archiving, indexing, and retrieval policies and procedures, and repeat such training as needed.",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Enhancing policies and procedures to ensure that records retention practices align with internal schedules and requirements. F."
+          "text": "Enhancing policies and procedures to ensure that records retention practices align with internal schedules and requirements. F.",
+          "source_page": null
         }
       ]
     }

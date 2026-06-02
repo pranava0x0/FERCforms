@@ -35,11 +35,13 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023."
+          "text": "Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023.",
+          "source_page": 30
         },
         {
           "number": 2,
-          "text": "Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report."
+          "text": "Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report.",
+          "source_page": 30
         }
       ]
     },
@@ -51,11 +53,13 @@
       "recommendations": [
         {
           "number": 3,
-          "text": "Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom."
+          "text": "Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom.",
+          "source_page": 39
         },
         {
           "number": 4,
-          "text": "Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers."
+          "text": "Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers.",
+          "source_page": 39
         }
       ]
     },
@@ -67,7 +71,8 @@
       "recommendations": [
         {
           "number": 5,
-          "text": "Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting"
+          "text": "Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting",
+          "source_page": 47
         }
       ]
     },
@@ -79,11 +84,13 @@
       "recommendations": [
         {
           "number": 6,
-          "text": "Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates."
+          "text": "Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates.",
+          "source_page": 64
         },
         {
           "number": 7,
-          "text": "Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days."
+          "text": "Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days.",
+          "source_page": 64
         }
       ]
     },
@@ -95,19 +102,23 @@
       "recommendations": [
         {
           "number": 8,
-          "text": "Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies."
+          "text": "Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies.",
+          "source_page": 64
         },
         {
           "number": 9,
-          "text": "Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice."
+          "text": "Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice.",
+          "source_page": 64
         },
         {
           "number": 10,
-          "text": "Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval."
+          "text": "Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval.",
+          "source_page": 65
         },
         {
           "number": 11,
-          "text": "Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding."
+          "text": "Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding.",
+          "source_page": 65
         }
       ]
     },
@@ -119,15 +130,18 @@
       "recommendations": [
         {
           "number": 12,
-          "text": "Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments."
+          "text": "Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments.",
+          "source_page": 75
         },
         {
           "number": 13,
-          "text": "Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community."
+          "text": "Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community.",
+          "source_page": 75
         },
         {
           "number": 14,
-          "text": "Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness."
+          "text": "Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness.",
+          "source_page": 75
         }
       ]
     },
@@ -139,7 +153,8 @@
       "recommendations": [
         {
           "number": 15,
-          "text": "Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible."
+          "text": "Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible.",
+          "source_page": 103
         }
       ]
     },
@@ -151,19 +166,23 @@
       "recommendations": [
         {
           "number": 16,
-          "text": "Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees."
+          "text": "Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees.",
+          "source_page": 103
         },
         {
           "number": 17,
-          "text": "Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts."
+          "text": "Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts.",
+          "source_page": 103
         },
         {
           "number": 18,
-          "text": "Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status."
+          "text": "Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status.",
+          "source_page": 103
         },
         {
           "number": 19,
-          "text": "Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies."
+          "text": "Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies.",
+          "source_page": 103
         }
       ]
     },
@@ -175,7 +194,8 @@
       "recommendations": [
         {
           "number": 20,
-          "text": "Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals."
+          "text": "Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals.",
+          "source_page": 114
         }
       ]
     },
@@ -187,15 +207,18 @@
       "recommendations": [
         {
           "number": 21,
-          "text": "Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results."
+          "text": "Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results.",
+          "source_page": 131
         },
         {
           "number": 22,
-          "text": "Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals."
+          "text": "Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals.",
+          "source_page": 131
         },
         {
           "number": 23,
-          "text": "Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative."
+          "text": "Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative.",
+          "source_page": 131
         }
       ]
     },
@@ -207,15 +230,18 @@
       "recommendations": [
         {
           "number": 24,
-          "text": "Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture."
+          "text": "Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture.",
+          "source_page": 162
         },
         {
           "number": 25,
-          "text": "Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification."
+          "text": "Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification.",
+          "source_page": 162
         },
         {
           "number": 26,
-          "text": "Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance."
+          "text": "Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance.",
+          "source_page": 162
         }
       ]
     }
