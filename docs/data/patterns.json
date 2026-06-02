@@ -1,8 +1,8 @@
 {
   "report_count": 149,
-  "finding_count": 599,
+  "finding_count": 629,
   "other_matter_count": 3,
-  "recommendation_count": 1505,
+  "recommendation_count": 1582,
   "by_industry": {
     "electric": 114,
     "oil": 17,
@@ -143,8 +143,8 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 34,
-      "report_count": 24,
+      "finding_count": 37,
+      "report_count": 26,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Reporting of Transactions with Associated (Affiliated) Companies",
@@ -340,11 +340,11 @@
       "count": 3
     },
     {
-      "title": "Amortization of Retail Regulatory Assets",
+      "title": "Executive Management and Organizational Structure",
       "count": 3
     },
     {
-      "title": "Reservation Charge Credits",
+      "title": "Financial Management",
       "count": 3
     }
   ],

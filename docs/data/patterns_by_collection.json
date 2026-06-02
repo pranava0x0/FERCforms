@@ -373,9 +373,9 @@
   },
   "state_audit": {
     "report_count": 24,
-    "finding_count": 0,
+    "finding_count": 30,
     "other_matter_count": 0,
-    "recommendation_count": 0,
+    "recommendation_count": 77,
     "by_industry": {
       "electric": 23,
       "gas": 1
@@ -387,8 +387,98 @@
       "2025": 9
     },
     "by_function": {},
-    "themes": [],
-    "top_titles": [],
+    "themes": [
+      {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 3,
+        "report_count": 2,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "Affiliated Interests and Cost Allocations",
+          "Affiliated Interests and Cost Allocations (continued)"
+        ]
+      }
+    ],
+    "top_titles": [
+      {
+        "title": "Executive Management and Organizational Structure",
+        "count": 3
+      },
+      {
+        "title": "Financial Management",
+        "count": 3
+      },
+      {
+        "title": "Customer Service",
+        "count": 3
+      },
+      {
+        "title": "Electric Operations",
+        "count": 2
+      },
+      {
+        "title": "Emergency Preparedness",
+        "count": 2
+      },
+      {
+        "title": "Information Technology",
+        "count": 2
+      },
+      {
+        "title": "Corporate Governance",
+        "count": 2
+      },
+      {
+        "title": "Materials Management",
+        "count": 2
+      },
+      {
+        "title": "Human Resources and Diversity",
+        "count": 2
+      },
+      {
+        "title": "Cost Allocations and Affiliated Interests",
+        "count": 1
+      },
+      {
+        "title": "Purchasing and Materials Management",
+        "count": 1
+      },
+      {
+        "title": "Gas Operations",
+        "count": 1
+      },
+      {
+        "title": "Emergency Preparedness (continued)",
+        "count": 1
+      },
+      {
+        "title": "Fleet Management",
+        "count": 1
+      },
+      {
+        "title": "Key Audit Matter",
+        "count": 1
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations",
+        "count": 1
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "count": 1
+      },
+      {
+        "title": "Electric Operations (continued)",
+        "count": 1
+      }
+    ],
     "generated_at": "2026-06-02"
   }
 }

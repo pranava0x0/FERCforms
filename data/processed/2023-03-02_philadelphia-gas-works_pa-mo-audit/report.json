@@ -12,7 +12,7 @@
   "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works",
   "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1775875.pdf",
   "captured_at": "2026-06-01",
-  "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874).",
+  "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874). Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
   "archived_via": null,
   "page_count": 95,
   "scanned_pages": [
@@ -25,7 +25,224 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Corporate Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework."
+        },
+        {
+          "number": 2,
+          "text": "Streamline the annual budget approval process."
+        },
+        {
+          "number": 3,
+          "text": "Establish committee charters for all PFMC board committees."
+        },
+        {
+          "number": 4,
+          "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Executive Management and Organizational Structure",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions."
+        },
+        {
+          "number": 6,
+          "text": "Implement a safety management system and improve safety culture at PGW."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Update Internal Audit policies and procedures."
+        },
+        {
+          "number": 8,
+          "text": "Formally document explanations for variances from the capital and operating budgets."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system."
+        },
+        {
+          "number": 10,
+          "text": "Accelerate cast iron main replacement."
+        },
+        {
+          "number": 11,
+          "text": "Plan and implement a process for gathering equipment and installation data in the GIS database."
+        },
+        {
+          "number": 12,
+          "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations."
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "File Self-Certification forms with the Pennsylvania PUC annually."
+        },
+        {
+          "number": 14,
+          "text": "Correct various deficiencies in physical security."
+        },
+        {
+          "number": 15,
+          "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities."
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Emergency Preparedness (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis."
+        },
+        {
+          "number": 17,
+          "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position."
+        },
+        {
+          "number": 18,
+          "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method."
+        },
+        {
+          "number": 19,
+          "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels."
+        },
+        {
+          "number": 20,
+          "text": "Implement a cybersecurity-focused risk registry."
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Materials Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Document the policies and procedures of PGW’s cycle counting function."
+        },
+        {
+          "number": 22,
+          "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use."
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers."
+        },
+        {
+          "number": 24,
+          "text": "Improve customer service performance through expanding call center resources."
+        },
+        {
+          "number": 25,
+          "text": "Complete implementation of the replacement CIS."
+        },
+        {
+          "number": 26,
+          "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers."
+        },
+        {
+          "number": 27,
+          "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers."
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Information Technology",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency."
+        },
+        {
+          "number": 29,
+          "text": "Leverage and integrate data visualization software consistently across PGW."
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Fleet Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "Improve efficiencies within the fleet department."
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Human Resources and Diversity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Implement strategies for recruitment and retention of “at-risk” positions."
+        },
+        {
+          "number": 32,
+          "text": "Drive safety performance to meet industry standards."
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

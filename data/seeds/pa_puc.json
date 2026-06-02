@@ -12,8 +12,8 @@
     "issued_date": "2024-07-11",
     "docket": "D-2023-3039488",
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued June 2024'); PUC publication 2024-07-11. PDF: puc.pa.gov/pcdocs/1837310.pdf.",
-    "parse": false
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued June 2024'); PUC publication 2024-07-11. PDF: puc.pa.gov/pcdocs/1837310.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
   },
   {
     "id": "2023-03-02_philadelphia-gas-works_pa-mo-audit",
@@ -28,8 +28,8 @@
     "issued_date": "2023-03-02",
     "docket": "D-2022-3030321",
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874).",
-    "parse": false
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874). Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
   },
   {
     "id": "2022-06-16_firstenergy-pennsylvania-companies_pa-mo-audit",
@@ -44,8 +44,8 @@
     "issued_date": "2022-06-16",
     "docket": null,
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit of FirstEnergy's four PA electric distribution companies, issued by the PA PUC Bureau of Audits, published 2022-06-16 (27 recommendations). PDF: puc.pa.gov/pcdocs/1748700.pdf.",
-    "parse": false
+    "source_note": "Management & Operations Audit of FirstEnergy's four PA electric distribution companies, issued by the PA PUC Bureau of Audits, published 2022-06-16. PDF: puc.pa.gov/pcdocs/1748700.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations (26 recommendations).",
+    "parse": true
   },
   {
     "id": "2025-09-25_firstenergy-pennsylvania-electric_pa-mei",

@@ -3676,7 +3676,7 @@
     "source_page_url": "https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation",
     "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1837310.pdf",
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued June 2024'); PUC publication 2024-07-11. PDF: puc.pa.gov/pcdocs/1837310.pdf.",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued June 2024'); PUC publication 2024-07-11. PDF: puc.pa.gov/pcdocs/1837310.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "archived_via": null,
     "page_count": 93,
     "scanned_pages": [
@@ -3689,11 +3689,172 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "finding_count": 8,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Conduct routine employee surveys to ensure corporate culture aligns with company goals."
+          },
+          {
+            "number": 2,
+            "text": "Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Cost Allocations and Affiliated Interests",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM."
+          },
+          {
+            "number": 4,
+            "text": "Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes."
+          },
+          {
+            "number": 5,
+            "text": "Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates."
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 6,
+            "text": "Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 7,
+            "text": "Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability."
+          },
+          {
+            "number": 8,
+            "text": "Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4."
+          },
+          {
+            "number": 9,
+            "text": "Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 10,
+            "text": "Address minor security and safety improvements."
+          },
+          {
+            "number": 11,
+            "text": "Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Purchasing and Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Update outdated policies and procedures."
+          },
+          {
+            "number": 13,
+            "text": "Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies."
+          },
+          {
+            "number": 14,
+            "text": "Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 15,
+            "text": "Improve and strengthen customer service performance to at least pre-pandemic levels."
+          },
+          {
+            "number": 16,
+            "text": "Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances."
+          },
+          {
+            "number": 17,
+            "text": "Develop internal controls for source data and reporting systems to ensure accuracy."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances."
+          },
+          {
+            "number": 19,
+            "text": "Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "prudence_review",
@@ -6249,7 +6410,7 @@
     "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works",
     "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1775875.pdf",
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874).",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874). Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "archived_via": null,
     "page_count": 95,
     "scanned_pages": [
@@ -6262,9 +6423,248 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
+    "finding_count": 11,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework."
+          },
+          {
+            "number": 2,
+            "text": "Streamline the annual budget approval process."
+          },
+          {
+            "number": 3,
+            "text": "Establish committee charters for all PFMC board committees."
+          },
+          {
+            "number": 4,
+            "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 5,
+            "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions."
+          },
+          {
+            "number": 6,
+            "text": "Implement a safety management system and improve safety culture at PGW."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 7,
+            "text": "Update Internal Audit policies and procedures."
+          },
+          {
+            "number": 8,
+            "text": "Formally document explanations for variances from the capital and operating budgets."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 9,
+            "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system."
+          },
+          {
+            "number": 10,
+            "text": "Accelerate cast iron main replacement."
+          },
+          {
+            "number": 11,
+            "text": "Plan and implement a process for gathering equipment and installation data in the GIS database."
+          },
+          {
+            "number": 12,
+            "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 13,
+            "text": "File Self-Certification forms with the Pennsylvania PUC annually."
+          },
+          {
+            "number": 14,
+            "text": "Correct various deficiencies in physical security."
+          },
+          {
+            "number": 15,
+            "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Emergency Preparedness (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis."
+          },
+          {
+            "number": 17,
+            "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position."
+          },
+          {
+            "number": 18,
+            "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method."
+          },
+          {
+            "number": 19,
+            "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels."
+          },
+          {
+            "number": 20,
+            "text": "Implement a cybersecurity-focused risk registry."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Document the policies and procedures of PGW’s cycle counting function."
+          },
+          {
+            "number": 22,
+            "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 23,
+            "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers."
+          },
+          {
+            "number": 24,
+            "text": "Improve customer service performance through expanding call center resources."
+          },
+          {
+            "number": 25,
+            "text": "Complete implementation of the replacement CIS."
+          },
+          {
+            "number": 26,
+            "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers."
+          },
+          {
+            "number": 27,
+            "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 28,
+            "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency."
+          },
+          {
+            "number": 29,
+            "text": "Leverage and integrate data visualization software consistently across PGW."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 30,
+            "text": "Improve efficiencies within the fleet department."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 31,
+            "text": "Implement strategies for recruitment and retention of “at-risk” positions."
+          },
+          {
+            "number": 32,
+            "text": "Drive safety performance to meet industry standards."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
@@ -7020,7 +7420,7 @@
     "source_page_url": "https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies",
     "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1748700.pdf",
     "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit of FirstEnergy's four PA electric distribution companies, issued by the PA PUC Bureau of Audits, published 2022-06-16 (27 recommendations). PDF: puc.pa.gov/pcdocs/1748700.pdf.",
+    "source_note": "Management & Operations Audit of FirstEnergy's four PA electric distribution companies, issued by the PA PUC Bureau of Audits, published 2022-06-16. PDF: puc.pa.gov/pcdocs/1748700.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations (26 recommendations).",
     "archived_via": null,
     "page_count": 190,
     "scanned_pages": [
@@ -7033,11 +7433,232 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "finding_count": 11,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023."
+          },
+          {
+            "number": 2,
+            "text": "Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Key Audit Matter",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom."
+          },
+          {
+            "number": 4,
+            "text": "Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 5,
+            "text": "Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting"
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 6,
+            "text": "Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates."
+          },
+          {
+            "number": 7,
+            "text": "Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days."
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 5,
+        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 8,
+            "text": "Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies."
+          },
+          {
+            "number": 9,
+            "text": "Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice."
+          },
+          {
+            "number": 10,
+            "text": "Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval."
+          },
+          {
+            "number": 11,
+            "text": "Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding."
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 6,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments."
+          },
+          {
+            "number": 13,
+            "text": "Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community."
+          },
+          {
+            "number": 14,
+            "text": "Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 15,
+            "text": "Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Electric Operations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees."
+          },
+          {
+            "number": 17,
+            "text": "Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts."
+          },
+          {
+            "number": 18,
+            "text": "Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status."
+          },
+          {
+            "number": 19,
+            "text": "Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 20,
+            "text": "Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results."
+          },
+          {
+            "number": 22,
+            "text": "Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals."
+          },
+          {
+            "number": 23,
+            "text": "Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 24,
+            "text": "Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture."
+          },
+          {
+            "number": 25,
+            "text": "Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification."
+          },
+          {
+            "number": 26,
+            "text": "Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance."
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "ferc_audit",
