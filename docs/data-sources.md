@@ -119,6 +119,24 @@ Each commission's docket system is different. Patterns below are all confirmed b
   disposition). The annual fuel docket exists for all 3 electric utilities (DESC `2-E`, Duke Carolinas
   `3-E`, Duke Progress `1-E`). Metadata-only.
 
+### GA — Georgia PSC (FACTS) · SPA list, but stable `.gov` download URLs
+- **Download (stable, scriptable GET, no cookie):**
+  `services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/{documentId}/{fileId}` (`.gov`;
+  pipeline UA fetches directly). Per-doc landing: `psc.ga.gov/search/facts-document/?documentId={id}`;
+  docket landing: `psc.ga.gov/search/facts-docket/?docketId={id}`.
+- **Enumerating a docket's docs is the hard part — the docket page is a JS SPA** (WebFetch sees docket
+  metadata but the filings table is "No records found"); the document-list JSON API endpoint isn't the
+  obvious `/Get/Docket/{id}` (404). Two working paths: (a) **browser (Chrome MCP)** to read the rendered
+  list; (b) **`WebSearch` harvests indexed `DownloadFile/{id}/{fileId}` URLs** by docket/company keyword
+  (Google indexes the PDFs' first-page text, so titles are reliable).
+- **Verify trick:** GA PDFs vary — many are **text-based** (WebSearch shows real captions) but some are
+  **scanned/image** (no text layer). `WebFetch` can't render either, **but it saves the PDF locally** to
+  the tool-results dir — extract page 1 with `fitz`/`pdfplumber` to get the verbatim caption before
+  seeding. (Caught a CV and a misc. exhibit mislabeled by search this way.)
+- **Shipped:** Georgia Power 2025 IRP (Docket 56002) — 3 PSC **Public Interest Advocacy Staff (PIAS)**
+  testimony panels + 1 intervenor (Georgia Conservation Voters); `data/seeds/ga_psc.json`. Follow-ups:
+  GA Power's own direct case + the **July 15, 2025 Commission order** approving the IRP (needs the SPA/browser).
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

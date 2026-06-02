@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "GA",
+  "source": "Georgia Public Service Commission",
+  "doc_type": "direct testimony",
+  "id": "2025-05-02_georgia-power-company_ga-56002-gcv-roumpani",
+  "company": "Georgia Power Company",
+  "company_raw": "Georgia Power Company",
+  "docket": "56002",
+  "docket_full": null,
+  "issued_date": "2025-05-02",
+  "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=222501",
+  "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/222501/103611",
+  "captured_at": "2026-06-02",
+  "source_note": "Direct Testimony of Maria Roumpani, PhD on behalf of Georgia Conservation Voters in Georgia Power Company's 2025 Integrated Resource Plan (Docket No. 56002) and 2025 Application for the Certification, Decertification, and Amended Demand-Side Management Plan (Docket No. 56003), filed May 2, 2025 (68 pp). Listed for reference (metadata-only). Source: Georgia PSC FACTS document system, document 222501 (services.psc.ga.gov DownloadFile/222501/103611; landing: psc.ga.gov/search/facts-document/?documentId=222501).",
+  "archived_via": null,
+  "page_count": 68,
+  "scanned_pages": [
+    65
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}
