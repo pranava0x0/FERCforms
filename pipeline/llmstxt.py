@@ -153,12 +153,6 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
     out.append("## Optional")
     out.append("- [Human-readable explorer](index.html)")
     out.append(f"- [FERC audit reports (primary source)]({SOURCE})")
-    out.append(
-        "- [Supplementary research: Clean Water Act enforcement & data centers]"
-        "(cwa-data-center-enforcement.md): energy/utility CWA cases 2015–present + a statutory "
-        "read-across to data centers. **Outside the FERC audit corpus** — web-sourced research "
-        "(EPA/DOJ/CRS), not part of the verbatim audit dataset; nothing here is mined or scored."
-    )
     out.append("")
     return "\n".join(out)
 

@@ -210,4 +210,3 @@ _42 document(s), 2021–2026. jurisdictions: VA (5), PA (4), IL (4), TX (4), MI 
 ## Optional
 - [Human-readable explorer](index.html)
 - [FERC audit reports (primary source)](https://www.ferc.gov/audits)
-- [Supplementary research: Clean Water Act enforcement & data centers](cwa-data-center-enforcement.md): energy/utility CWA cases 2015–present + a statutory read-across to data centers. **Outside the FERC audit corpus** — web-sourced research (EPA/DOJ/CRS), not part of the verbatim audit dataset; nothing here is mined or scored.
