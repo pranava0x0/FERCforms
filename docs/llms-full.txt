@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 178 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 181 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5354,6 +5354,17 @@ Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio'
 
 ---
 
+## Entergy Arkansas, LLC
+- Collection: State PUC Audits | Source: Arkansas Public Service Commission
+- Docket: 16-036-FR | Audit type: n/a
+- Issued: 2025-12-12 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&DocNumVal=1122
+- Status: listed for reference (not machine-parsed into findings)
+
+Order No. 74 of the Arkansas Public Service Commission in the Formula Rate Plan filings of Entergy Arkansas, LLC, Docket No. 16-036-FR — the Commission's disposition of Entergy Arkansas's 2025 Rider FRP rate adjustment (approved December 12, 2025; 11 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1122 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1122_1.pdf).
+
+---
+
 ## Virginia Electric and Power Company (Dominion Energy Virginia)
 - Collection: State PUC Audits | Source: Virginia State Corporation Commission
 - Docket: PUR-2025-00058 | Audit type: n/a
@@ -5450,6 +5461,17 @@ Final Order on Appalachian Power Company's petition to revise its net energy met
 - Status: listed for reference (not machine-parsed into findings)
 
 Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) revised transmission rate adjustment clause Rider T1 under Va. Code § 56-585.1 A 4 (deeming prudent RTO transmission and FERC-approved demand-response costs), Case No. PUR-2025-00076, Virginia State Corporation Commission, entered August 1, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/873b01!.PDF.
+
+---
+
+## Entergy Arkansas, LLC
+- Collection: State PUC Audits | Source: Arkansas Public Service Commission
+- Docket: 16-036-FR | Audit type: n/a
+- Issued: 2025-07-07 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&DocNumVal=1090
+- Status: listed for reference (not machine-parsed into findings)
+
+Entergy Arkansas, LLC's 2025 Rider FRP filing — Application for Approval of a Rate Adjustment and the 2025 Evaluation Report pursuant to Rate Schedule No. 44, Formula Rate Plan Rider (Rider FRP), filed July 7, 2025 with the Arkansas Public Service Commission in Docket No. 16-036-FR (proposing a $92.3 million rate adjustment; 48 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1090 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1090_1.pdf).
 
 ---
 
@@ -6056,3 +6078,14 @@ Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Manage
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
+
+---
+
+## Entergy Arkansas, LLC
+- Collection: State PUC Audits | Source: Arkansas Public Service Commission
+- Docket: 16-036-FR | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&DocNumVal=1107
+- Status: listed for reference (not machine-parsed into findings)
+
+Supporting Testimony of Middleton Ray on the 2025 Evaluation Report in the Formula Rate Plan filings of Entergy Arkansas, LLC, before the Arkansas Public Service Commission, Docket No. 16-036-FR (filed in the 2025 Rider FRP review; 14 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1107 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf).

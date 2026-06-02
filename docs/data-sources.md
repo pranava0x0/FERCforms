@@ -166,6 +166,29 @@ Each commission's docket system is different. Patterns below are all confirmed b
   (browser-capture next): the **Kemper IGCC prudence settlement** (Feb 2018 — Mississippi Power shareholders
   absorbed ~$6B) and the **$300M Entergy Mississippi Grand Gulf settlement** (2022, largest in MPSC history).
 
+### AR — Arkansas PSC (olsv2) · scriptable, stable `.gov` PDF paths
+- **Download (stable GET, no cookie):** `apps.apsc.arkansas.gov/pdf/{NN}/{DOCKET}_{DOCNUM}_{PART}.pdf`
+  where `{NN}` = the docket's leading 2 chars (e.g. `16` for `16-036-FR`). The `viewdoc/pdfview.asp?document=…`
+  link **302-redirects** to that `/pdf/` path; the pipeline UA fetches it (text PDFs, some font mojibake but
+  readable). `apps.apsc.arkansas.gov` ends in `.gov` (`*.arkansas.gov`) → passes the guard. Per-doc landing:
+  `…/olsv2/Docket_Search_Documents.asp?Docket={DOCKET}&DocNumVal={DOCNUM}`.
+- **DO NOT use `apscservices.info`** — the legacy doc store is **`.info` (non-gov)** and is rejected by the
+  guard. Use the current `apps.apsc.arkansas.gov` host only.
+- **Enumerating docs:** `…/olsv2/docket_search_results.asp?CaseNumber={DOCKET}` is server-rendered but the
+  description cells don't expose cleanly to scraping — pull the `DocNumVal` numbers + dates via the browser,
+  then **identify each by fetching its PDF page 1** (the doc number alone is opaque). Continuing dockets like
+  `16-036-FR` (the EAL FRP) span years; the recent annual filing is the high doc-number tail.
+- **Shipped:** Entergy Arkansas 2025 Rider FRP (Docket 16-036-FR) — EAL application (doc 1090) + Staff
+  evaluation-report testimony (1107) + **Order No. 74** (1122, approved Dec 12 2025); `data/seeds/ar_apsc.json`.
+
+### AL — Alabama PSC · WordPress, scanned minutes (deferred)
+- `psc.alabama.gov/wp-content/uploads/{YYYY}/{MM}/{UPPERCASE-MONTH}-{D}-{YYYY}-Commission-Minutes.pdf` —
+  but the minutes are **scanned (no text layer)**, search-indexed paths are **stale** (must scrape the live
+  `?s=Commission+Minutes` list), and no clean per-utility orders are indexed (Alabama Power is the only IOU;
+  its Rate RSE/ECR/CNP actions live inside the scanned monthly minutes). **Deferred** — low value-per-effort;
+  would need OCR + live-index scraping, or the APSC formal-docket system. The Dec 2 2025 rate-freeze / Lindsay
+  Hill (data-center-driven) minutes are the on-theme target if revisited.
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

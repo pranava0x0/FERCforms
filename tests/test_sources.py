@@ -104,6 +104,7 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D")
     assert sources.is_official_gov("https://www.psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf")
     assert sources.is_official_gov("https://www.psc.state.ms.us/InSiteConnect/InSiteView.aspx?docid=402655")  # legacy .state.ms.us
+    assert sources.is_official_gov("https://apps.apsc.arkansas.gov/pdf/16/16-036-FR_1122_1.pdf")  # AR (*.arkansas.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
