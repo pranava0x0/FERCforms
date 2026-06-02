@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 146 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 149 reports, 599 findings, 1505 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
@@ -1085,6 +1085,22 @@ Recommendations:
 
 ---
 
+## Dominion Energy South Carolina, Inc.
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-04-11 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
+
+---
+
+## Dominion Energy South Carolina, Inc.
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-03-28 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
+
+---
+
 ## Appalachian Power Company
 - Docket: FA22-1-000 | Audit type: financial
 - Issued: 2024-03-15 | Industry: electric | FERC Form: No. 1, No. 580
@@ -1182,6 +1198,14 @@ NET Mexico did not submit certain FERC Form No. 549D filings within 60 days afte
 Recommendations:
 26. Strengthen procedures and controls to ensure that the FERC Form No. 549D filings are submitted to the Commission by the filing deadline.
 27. Train relevant staff on the revised FERC Form No. 549D filing procedures and controls and provide periodic training in this area, as needed. E.
+
+---
+
+## Dominion Energy South Carolina, Inc.
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-02-15 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
 
 ---
 
