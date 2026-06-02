@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2024-11-26_potomac-electric-power_dc-fc1176",
+    "company": "Potomac Electric Power Company (Pepco)",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "Public Service Commission of the District of Columbia",
+    "doc_type": "multi-year rate plan order",
+    "industry": "electric",
+    "pdf_url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=214935&guidFileName=ebccb9f7-667d-4758-af81-1489de100f91.pdf",
+    "source_page_url": "https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx",
+    "issued_date": "2024-11-26",
+    "docket": "FC 1176",
+    "captured_at": "2026-06-02",
+    "source_note": "Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).",
+    "parse": false
+  },
+  {
+    "id": "2025-01-28_potomac-electric-power_dc-fc1176-reconsideration",
+    "company": "Potomac Electric Power Company (Pepco)",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "Public Service Commission of the District of Columbia",
+    "doc_type": "order on reconsideration",
+    "industry": "electric",
+    "pdf_url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=217663&guidFileName=0b9bc398-bdee-4dae-b739-98414cf69ba0.pdf",
+    "source_page_url": "https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx",
+    "issued_date": "2025-01-28",
+    "docket": "FC 1176",
+    "captured_at": "2026-06-02",
+    "source_note": "Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).",
+    "parse": false
+  }
+]

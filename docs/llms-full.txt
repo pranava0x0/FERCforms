@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 167 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 169 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5505,6 +5505,28 @@ Order in the electronic examination of the Fuel Adjustment Clause (FAC) of Kentu
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Indiana Utility Regulatory Commission on the verified petition of Northern Indiana Public Service Company LLC (NIPSCO) for approval of a fuel cost adjustment for the February–April 2025 billing cycles under Ind. Code 8-1-2-42, IURC Cause No. 38706 FAC 145, issued January 29, 2025. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
+
+---
+
+## Potomac Electric Power Company (Pepco)
+- Collection: State PUC Audits | Source: Public Service Commission of the District of Columbia
+- Docket: FC 1176 | Audit type: n/a
+- Issued: 2025-01-28 | Industry: electric | FERC Form: n/a
+- Source page: https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx
+- Status: listed for reference (not machine-parsed into findings)
+
+Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
+
+---
+
+## Potomac Electric Power Company (Pepco)
+- Collection: State PUC Audits | Source: Public Service Commission of the District of Columbia
+- Docket: FC 1176 | Audit type: n/a
+- Issued: 2024-11-26 | Industry: electric | FERC Form: n/a
+- Source page: https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx
+- Status: listed for reference (not machine-parsed into findings)
+
+Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).
 
 ---
 

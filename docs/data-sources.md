@@ -180,6 +180,17 @@ WAF — prefer that static order host for `pdf_url`.** And always verify order-v
 - On-theme: APCo/Wheeling Power ENEC (fuel-cost) orders — `23-0377-E-ENEC` (Jan 2024 order **disallowed
   $231.8M** as imprudent coal-stockpiling), `25-0413-E-ENEC`. Metadata-only.
 
+### DC — DC PSC · `.org` host (allowlisted), no WAF
+- **e-Docket** `edocket.dcpsc.org` — Angular SPA search, but PDFs are at stable plain-GET URLs:
+  `edocket.dcpsc.org/apis/api/Filing/download?attachId={id}&guidFileName={guid}.pdf` (no WAF; pipeline
+  UA fetches directly). Per-case human landings at `dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC{n}.aspx`.
+- **Provenance note:** the DC PSC is an official US-government commission but publishes only on **`.org`,
+  not `.gov`** — admitted via the gov-guard's narrow exact-domain allowlist (`_OFFICIAL_GOV_ORG_DOMAINS`;
+  ISSUES.md 2026-06-02). The `attachId`s are harvested from the SPA / `.aspx` landings.
+- On-theme: Pepco Multiyear Rate Plan (`FC 1176`) Order & Opinion + reconsideration. **Gotcha:** the
+  `dcpsc.org/CMSPages/GetFile.aspx?guid=…` "order" we first tried was a **press release** — verify page 1.
+  Metadata-only.
+
 ## WAF-blocked sources — browser-capture + `fetch=false`
 
 Scripts are rejected, so the doc URL is located in a **real browser (Chrome MCP)** and the stable

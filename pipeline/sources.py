@@ -55,13 +55,26 @@ class SourceFetchError(Exception):
 # pattern `*.state.<xx>.us` (e.g. Ohio PUCO's dis.puc.state.oh.us).
 _STATE_LEGACY_GOV_RE = re.compile(r"\.state\.[a-z]{2}\.us$")
 
+# A NARROW, explicit allowlist of official US-government regulatory commissions that
+# publish on a `.org` (not `.gov`) host. Each entry is the commission's OWN domain —
+# a verified government source, not a third-party mirror. Kept as an exact-domain set
+# (matches the domain or any subdomain) so the guard stays tight: a random `.org`
+# (documentcloud.org, a law firm, a news site) is still rejected. Admitting these
+# serves the rule's intent (official government, never third-party) where a commission
+# simply predates/never adopted `.gov`. Decision logged in ISSUES.md (2026-06-02).
+_OFFICIAL_GOV_ORG_DOMAINS = frozenset({
+    "dcpsc.org",  # District of Columbia Public Service Commission (edocket.dcpsc.org, www.dcpsc.org)
+})
+
 
 def is_official_gov(url: str) -> bool:
-    """True if the URL's host is an official government domain (see note above)."""
+    """True if the URL's host is an official government domain (see notes above)."""
     host = (urlparse(url).hostname or "").lower()
     if not host:
         return False
-    return host == "gov" or host.endswith(".gov") or bool(_STATE_LEGACY_GOV_RE.search(host))
+    if host == "gov" or host.endswith(".gov") or _STATE_LEGACY_GOV_RE.search(host):
+        return True
+    return any(host == d or host.endswith("." + d) for d in _OFFICIAL_GOV_ORG_DOMAINS)
 
 
 def _assert_official_gov(seed: SourceSeed) -> None:

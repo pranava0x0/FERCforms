@@ -98,8 +98,14 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://www.michigan.gov/mpsc/x.pdf")
     assert sources.is_official_gov("https://elibrary.ferc.gov/eLibrary/filelist?x")
     assert sources.is_official_gov("https://dis.puc.state.oh.us/ViewImage.aspx")  # legacy state gov
-    # Third-party mirrors / aggregators / non-gov sources are rejected.
+    # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
+    assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
+    assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
+    # Third-party mirrors / aggregators / non-gov sources are rejected — incl. other .org.
     assert not sources.is_official_gov("https://www.documentcloud.org/documents/123")
+    assert not sources.is_official_gov("https://example.org/audit.pdf")
+    assert not sources.is_official_gov("https://notdcpsc.org/x")          # not a dcpsc.org subdomain
+    assert not sources.is_official_gov("https://dcpsc.org.evil.io/x")     # suffix-spoof rejected
     assert not sources.is_official_gov("https://example.com/audit.pdf")
     assert not sources.is_official_gov("https://notgov.com.evil.io/x")
     assert not sources.is_official_gov("")
