@@ -66,6 +66,9 @@ class SourceSeed(BaseModel):
     source_note: str = ""         # human-readable provenance
     archived_via: Optional[str] = None
     parse: bool = False           # attempt findings extraction (False = metadata-only)
+    fetch: bool = True            # False: don't machine-fetch (URL captured out-of-band, e.g.
+    #                               a WAF-blocked source opened in a browser) — write metadata-only
+    #                               from the seed without hitting the blocked endpoint.
 
 
 class PageText(BaseModel):

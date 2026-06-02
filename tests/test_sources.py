@@ -63,7 +63,34 @@ def test_source_seed_forbids_unknown_fields():
 def test_source_seed_defaults():
     s = _seed(doc_type=None, industry=None, docket=None)
     assert s.parse is False           # metadata-only by default
+    assert s.fetch is True            # machine-fetch by default
     assert s.archived_via is None
+
+
+def test_fetch_false_writes_metadata_only_without_network(tmp_path):
+    """A fetch=False seed (browser-captured URL from a WAF-blocked source) writes a
+    metadata-only record straight from the seed — no network, page_count 0."""
+    seed = _seed(
+        id="2026-01-07_x_oh-20-1502",
+        jurisdiction="OH",
+        # a host that would hard-fail if actually fetched — fetch=False must skip it
+        pdf_url="https://dis.puc.state.oh.us/ViewImage.aspx?CMID=ZZZ",
+        source_page_url="https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC",
+        fetch=False,
+    )
+    seed_file = tmp_path / "oh.json"
+    seed_file.write_text(json.dumps([seed.model_dump(mode="json")]), encoding="utf-8")
+
+    written, no_pdf = sources.process_seed(
+        seed_file, raw_dir=tmp_path / "raw", processed_dir=tmp_path / "processed"
+    )
+    assert written == 1
+    assert no_pdf == [seed.id]                       # recorded as written-without-a-fetched-PDF
+    report = json.loads((tmp_path / "processed" / seed.id / "report.json").read_text())
+    assert report["structured"] is False
+    assert report["page_count"] == 0
+    assert report["finding_count"] == 0
+    assert not (tmp_path / "raw" / f"{seed.id}.pdf").exists()  # nothing downloaded
 
 
 def test_is_official_gov_accepts_gov_rejects_mirrors():

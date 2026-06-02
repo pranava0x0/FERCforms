@@ -250,6 +250,10 @@ def process_seed(
         page_count, scanned, pages = 0, [], []  # type: ignore[var-annotated]
         pdf_path = None
         try:
+            if not seed.fetch:
+                # URL captured out-of-band (e.g. a WAF-blocked source opened in a browser).
+                # Don't hit the blocked endpoint — write metadata-only straight from the seed.
+                raise SourceFetchError(f"{seed.id}: fetch disabled (browser-captured URL)")
             if seed.accession:
                 if elib_session is None:
                     elib_session = fetch.make_session()
