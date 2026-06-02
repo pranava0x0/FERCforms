@@ -8,9 +8,9 @@ The explorer is organized into **three collections, one per tab**, each with its
 
 - **FERC Audits** — the 120-report FERC audit corpus, parsed into findings → recommendations.
 - **Prudence Reviews** — FERC rate-case prudence determinations (formal challenges, fuel/cost prudence, ALJ decisions) from eLibrary.
-- **State PUC Audits** — state PUC/PSC/SCC management & prudence audits (PA, MI, … ).
+- **State PUC Audits** — state PUC/PSC/SCC rate, fuel-cost & management audits (VA, TX, IL, SC, OH, PA, MI).
 
-FERC audits are structured into verbatim findings; prudence orders and state audits are currently **metadata-only** (captured with their source link + full provenance, not machine-parsed into findings — see [DATA_STRUCTURE.md §8](DATA_STRUCTURE.md)).
+FERC audits **and** the PA management & operations audits are structured into verbatim findings → recommendations; other prudence orders and state docs (legal orders, testimony, settlements) are **metadata-only** — captured with their source link + full provenance, "Listed for reference" (see [DATA_STRUCTURE.md §8](DATA_STRUCTURE.md); per-source acquisition in [docs/data-sources.md](docs/data-sources.md)).
 
 ## Principles
 

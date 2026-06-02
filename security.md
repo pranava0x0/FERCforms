@@ -6,6 +6,7 @@ Per [CLAUDE.md](CLAUDE.md) → "Check advisories before any package install / up
 
 | Date (UTC) | Source | Result |
 | --- | --- | --- |
+| 2026-06-02 | https://pranava0x0.github.io/vibe-coding-security/llms-ctx.txt | Reviewed (70 KB index, generated 2026-06-01). **No new packages installed this session** (multi-source expansion, parser, docs, and a corpus provenance audit — all on the existing deps). No listed advisory matches this project's dependency set (pdfplumber, PyMuPDF, pydantic, requests, pandas, beautifulsoup4, lxml, pytest). |
 | 2026-05-22 | https://pranava0x0.github.io/vibe-coding-security/llms-ctx.txt | Reviewed (47 KB index). **No new packages installed this session** — every dependency (pdfplumber, PyMuPDF, pydantic, requests, pandas, beautifulsoup4, lxml, pytest) was already present in the environment. No listed advisory matches this project's dependency set. |
 
 **Last updated:** 2026-05-22 — refresh before any `pip install` if older than 7 days.
