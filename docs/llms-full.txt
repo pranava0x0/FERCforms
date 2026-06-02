@@ -1,8 +1,24 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 149 reports, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 151 reports, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
+
+---
+
+## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
+- Docket: 20-1502-EL-UNC | Audit type: n/a
+- Issued: 2026-01-07 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
+
+---
+
+## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
+- Docket: 20-1502-EL-UNC | Audit type: n/a
+- Issued: 2025-12-19 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
 
 ---
 

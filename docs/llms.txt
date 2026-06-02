@@ -2,7 +2,7 @@
 
 > Machine-readable findings of noncompliance and staff recommendations from FERC's published **utility audit reports** — across the **electric, gas, and oil sectors** (primarily FERC Forms 1, 2, and 6, plus related forms) — issued by the Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report is parsed into findings -> recommendations, and cross-report themes are mined.
 
-Scope: FERC utility audits — electric, gas & oil. As of 2026-06-02, 149 reports are structured of 120 listed (114 electric, 17 oil, 15 gas identified). Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
+Scope: FERC utility audits — electric, gas & oil. As of 2026-06-02, 151 reports are structured of 120 listed (116 electric, 17 oil, 15 gas identified). Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Primary source: https://www.ferc.gov/audits. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 
 ## Data (machine-readable)
 - [Reports](data/reports.json): every structured report with findings, recommendations, and themes
@@ -11,6 +11,8 @@ Scope: FERC utility audits — electric, gas & oil. As of 2026-06-02, 149 report
 - [Full corpus text](llms-full.txt): all findings and recommendations in one file (verbatim)
 
 ## Reports
+- [FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)](https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC): Docket 20-1502-EL-UNC, issued 2026-01-07, audit audit, n/a, 0 finding(s)
+- [FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)](https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC): Docket 20-1502-EL-UNC, issued 2025-12-19, audit audit, n/a, 0 finding(s)
 - [Virginia Electric and Power Company (Dominion Energy Virginia)](https://www.scc.virginia.gov/docketsearch): Docket PUR-2025-00058, issued 2025-11-25, audit audit, n/a, 0 finding(s)
 - [Virginia Electric and Power Company (Dominion Energy Virginia)](https://www.scc.virginia.gov/docketsearch): Docket PUR-2025-00037, issued 2025-11-25, audit audit, n/a, 0 finding(s)
 - [Kern River Gas Transmission Company](https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false): Docket FA23-10-000, issued 2025-09-29, financial audit, n/a, 5 finding(s) — findings: Renewable Natural Gas Quality Specifications; Tariff Administration and Oversight; Informational Postings; Allowance for Funds Used During Construction; Annual Membership Dues
