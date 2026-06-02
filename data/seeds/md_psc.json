@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2023-12-14_baltimore-gas-electric_md-9692",
+    "company": "Baltimore Gas and Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "multi-year rate plan order",
+    "industry": "electric",
+    "pdf_url": "https://psc.maryland.gov/wp-content/uploads/Order-No.-90948-BGE-Rate-Order-1-1.pdf",
+    "source_page_url": "https://www.psc.state.md.us/",
+    "issued_date": "2023-12-14",
+    "docket": "9692",
+    "captured_at": "2026-06-02",
+    "source_note": "Order No. 90948 on Baltimore Gas and Electric Company's application for an electric and gas Multi-Year Rate Plan, Maryland PSC Case No. 9692, issued December 14, 2023 (Maillog 306673). Listed for reference (metadata-only). PDF on the Maryland PSC host psc.maryland.gov/wp-content/uploads/ (Cloudflare-fronted but serving); case jacket in the PSC DMS case-search (case 9692).",
+    "parse": false
+  },
+  {
+    "id": "2023-10-18_potomac-edison_md-9695",
+    "company": "The Potomac Edison Company",
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "rate case order",
+    "industry": "electric",
+    "pdf_url": "https://psc.maryland.gov/wp-content/uploads/Order-90847-Order-on-PE-and-OPC-Appeals-2.pdf",
+    "source_page_url": "https://www.psc.state.md.us/",
+    "issued_date": "2023-10-18",
+    "docket": "9695",
+    "captured_at": "2026-06-02",
+    "source_note": "Order No. 90847 (Order on Appeals) on The Potomac Edison Company's application for adjustments to its retail electric distribution rates, Maryland PSC Case No. 9695, issued October 18, 2023. Listed for reference (metadata-only). PDF on the Maryland PSC host psc.maryland.gov/wp-content/uploads/; case jacket in the PSC DMS case-search (case 9695).",
+    "parse": false
+  }
+]

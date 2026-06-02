@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2025-03-19_kentucky-power_ky-2024-00136-fac",
+    "company": "Kentucky Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "KY",
+    "source": "Kentucky Public Service Commission",
+    "doc_type": "fuel adjustment clause order",
+    "industry": "electric",
+    "pdf_url": "https://psc.ky.gov/pscscf/2024%20Cases/2024-00136/20250319_PSC_ORDER.pdf",
+    "source_page_url": "https://psc.ky.gov/Case/ViewCaseFilings/2024-00136",
+    "issued_date": "2025-03-19",
+    "docket": "2024-00136",
+    "captured_at": "2026-06-02",
+    "source_note": "Order in the electronic examination of the Fuel Adjustment Clause (FAC) of Kentucky Power Company (AEP) for November 1, 2022 through April 30, 2023, Kentucky PSC Case No. 2024-00136, issued March 19, 2025. Listed for reference (metadata-only). PDF at the deterministic KY PSC path psc.ky.gov/pscscf/2024 Cases/2024-00136/; case folder psc.ky.gov/Case/ViewCaseFilings/2024-00136.",
+    "parse": false
+  },
+  {
+    "id": "2026-02-16_louisville-gas-electric_ky-2025-00114",
+    "company": "Louisville Gas and Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "KY",
+    "source": "Kentucky Public Service Commission",
+    "doc_type": "base-rate case order",
+    "industry": "electric",
+    "pdf_url": "https://psc.ky.gov/pscscf/2025%20Cases/2025-00114/20260216_PSC_ORDER01.pdf",
+    "source_page_url": "https://psc.ky.gov/Case/ViewCaseFilings/2025-00114",
+    "issued_date": "2026-02-16",
+    "docket": "2025-00114",
+    "captured_at": "2026-06-02",
+    "source_note": "Order on the application of Louisville Gas and Electric Company (LG&E) for an adjustment of its electric and gas base rates (forecasted test year), Kentucky PSC Case No. 2025-00114 (companion to KU Case 2025-00113), electric final order issued February 16, 2026. Listed for reference (metadata-only). PDF at psc.ky.gov/pscscf/2025 Cases/2025-00114/; case folder psc.ky.gov/Case/ViewCaseFilings/2025-00114.",
+    "parse": false
+  },
+  {
+    "id": "2025-10-02_duke-energy-kentucky_ky-2024-00354",
+    "company": "Duke Energy Kentucky, Inc.",
+    "collection": "state_audit",
+    "jurisdiction": "KY",
+    "source": "Kentucky Public Service Commission",
+    "doc_type": "base-rate case order",
+    "industry": "electric",
+    "pdf_url": "https://psc.ky.gov/pscscf/2024%20Cases/2024-00354/20251002_PSC_ORDER.pdf",
+    "source_page_url": "https://psc.ky.gov/Case/ViewCaseFilings/2024-00354",
+    "issued_date": "2025-10-02",
+    "docket": "2024-00354",
+    "captured_at": "2026-06-02",
+    "source_note": "Order on the application of Duke Energy Kentucky, Inc. for an adjustment of its electric rates and approval of new tariffs and accounting treatments, Kentucky PSC Case No. 2024-00354, issued October 2, 2025. Listed for reference (metadata-only). PDF at psc.ky.gov/pscscf/2024 Cases/2024-00354/; case folder psc.ky.gov/Case/ViewCaseFilings/2024-00354.",
+    "parse": false
+  }
+]

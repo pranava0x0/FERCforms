@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2026-04-08_duke-energy-indiana_in-38707-fac147",
+    "company": "Duke Energy Indiana, LLC",
+    "collection": "state_audit",
+    "jurisdiction": "IN",
+    "source": "Indiana Utility Regulatory Commission",
+    "doc_type": "fuel cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://www.in.gov/iurc/files/ord_38707FAC147_040826.pdf",
+    "source_page_url": "https://iurc.portal.in.gov/searchlegalcase/",
+    "issued_date": "2026-04-08",
+    "docket": "38707 FAC 147",
+    "captured_at": "2026-06-02",
+    "source_note": "Order of the Indiana Utility Regulatory Commission on Duke Energy Indiana, LLC's application for a change in its fuel cost adjustment for electric (and high-pressure steam) service under Ind. Code 8-1-2-42, IURC Cause No. 38707 FAC 147, approved April 8, 2026. Listed for reference (metadata-only). PDF at the deterministic IURC order path www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "parse": false
+  },
+  {
+    "id": "2025-01-29_northern-indiana-public-service_in-38706-fac145",
+    "company": "Northern Indiana Public Service Company LLC",
+    "collection": "state_audit",
+    "jurisdiction": "IN",
+    "source": "Indiana Utility Regulatory Commission",
+    "doc_type": "fuel cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://www.in.gov/iurc/files/ord_38706FAC145_012925.pdf",
+    "source_page_url": "https://iurc.portal.in.gov/searchlegalcase/",
+    "issued_date": "2025-01-29",
+    "docket": "38706 FAC 145",
+    "captured_at": "2026-06-02",
+    "source_note": "Order of the Indiana Utility Regulatory Commission on the verified petition of Northern Indiana Public Service Company LLC (NIPSCO) for approval of a fuel cost adjustment for the February–April 2025 billing cycles under Ind. Code 8-1-2-42, IURC Cause No. 38706 FAC 145, issued January 29, 2025. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "parse": false
+  },
+  {
+    "id": "2021-08-25_aes-indiana_in-38703-fac132",
+    "company": "Indianapolis Power & Light Company d/b/a AES Indiana",
+    "collection": "state_audit",
+    "jurisdiction": "IN",
+    "source": "Indiana Utility Regulatory Commission",
+    "doc_type": "fuel cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://www.in.gov/iurc/files/ord_38703-FAC132_082521.pdf",
+    "source_page_url": "https://iurc.portal.in.gov/searchlegalcase/",
+    "issued_date": "2021-08-25",
+    "docket": "38703 FAC 132",
+    "captured_at": "2026-06-02",
+    "source_note": "Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "parse": false
+  }
+]

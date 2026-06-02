@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2024-10-09_public-service-electric-gas_nj-er23120924",
+    "company": "Public Service Electric and Gas Company",
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "New Jersey Board of Public Utilities",
+    "doc_type": "base-rate case order",
+    "industry": "electric",
+    "pdf_url": "https://www.nj.gov/bpu/pdf/boardorders/2024/20241009/2A%20ORDER%20PS%2023%20BRC.pdf",
+    "source_page_url": "https://publicaccess.bpu.state.nj.us/",
+    "issued_date": "2024-10-09",
+    "docket": "ER23120924 / GR23120925",
+    "captured_at": "2026-06-02",
+    "source_note": "Order Adopting Initial Decision and Stipulation in the petition of Public Service Electric and Gas Company (PSE&G) for an increase in electric and gas base rates, NJ BPU Docket Nos. ER23120924 (electric) and GR23120925 (gas) / OAL PUC 00926-24, issued at the October 9, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20241009/; docket system: publicaccess.bpu.state.nj.us (Imperva-protected — the static board-order PDF is the fetched source).",
+    "parse": false
+  },
+  {
+    "id": "2024-02-14_jersey-central-power-light_nj-er23030144",
+    "company": "Jersey Central Power & Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "New Jersey Board of Public Utilities",
+    "doc_type": "base-rate case order",
+    "industry": "electric",
+    "pdf_url": "https://www.nj.gov/bpu/pdf/boardorders/2024/20240214/2B%20ORDER%20JCP&L%20Base%20Rate%20Case.pdf",
+    "source_page_url": "https://publicaccess.bpu.state.nj.us/",
+    "issued_date": "2024-02-14",
+    "docket": "ER23030144",
+    "captured_at": "2026-06-02",
+    "source_note": "Decision and Order Adopting Initial Decision and Stipulation on the verified petition of Jersey Central Power & Light Company (JCP&L) for increases in its electric rates (2023 base-rate filing), NJ BPU Docket No. ER23030144 / OAL PUC 3346-23, issued at the February 14, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20240214/; docket system: publicaccess.bpu.state.nj.us.",
+    "parse": false
+  },
+  {
+    "id": "2025-11-21_nj-electric-distribution-utilities_nj-er25040190",
+    "company": "New Jersey electric distribution utilities (ACE, JCP&L, PSE&G, Rockland Electric)",
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "New Jersey Board of Public Utilities",
+    "doc_type": "basic generation service order",
+    "industry": "electric",
+    "pdf_url": "https://www.nj.gov/bpu/pdf/energy/bgs/ER25040190-%202026%20BGS-%20Order%20Approving%20Auction%20Process.pdf",
+    "source_page_url": "https://publicaccess.bpu.state.nj.us/",
+    "issued_date": "2025-11-21",
+    "docket": "ER25040190",
+    "captured_at": "2026-06-02",
+    "source_note": "Decision and Order approving the auction process for Basic Generation Service (BGS) for the period beginning June 1, 2026 — the statewide descending-clock procurement that sets default-supply prices for Atlantic City Electric, JCP&L, PSE&G, and Rockland Electric customers, NJ BPU Docket No. ER25040190, issued at the November 21, 2025 agenda meeting. Listed for reference (metadata-only). PDF on the BPU energy/BGS host www.nj.gov/bpu/pdf/energy/bgs/; docket system: publicaccess.bpu.state.nj.us.",
+    "parse": false
+  }
+]

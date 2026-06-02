@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "NJ",
+  "source": "New Jersey Board of Public Utilities",
+  "doc_type": "base-rate case order",
+  "id": "2024-10-09_public-service-electric-gas_nj-er23120924",
+  "company": "Public Service Electric and Gas Company",
+  "company_raw": "Public Service Electric and Gas Company",
+  "docket": "ER23120924 / GR23120925",
+  "docket_full": null,
+  "issued_date": "2024-10-09",
+  "source_page_url": "https://publicaccess.bpu.state.nj.us/",
+  "pdf_download_url": "https://www.nj.gov/bpu/pdf/boardorders/2024/20241009/2A%20ORDER%20PS%2023%20BRC.pdf",
+  "captured_at": "2026-06-02",
+  "source_note": "Order Adopting Initial Decision and Stipulation in the petition of Public Service Electric and Gas Company (PSE&G) for an increase in electric and gas base rates, NJ BPU Docket Nos. ER23120924 (electric) and GR23120925 (gas) / OAL PUC 00926-24, issued at the October 9, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20241009/; docket system: publicaccess.bpu.state.nj.us (Imperva-protected — the static board-order PDF is the fetched source).",
+  "archived_via": null,
+  "page_count": 504,
+  "scanned_pages": [
+    17,
+    65,
+    410
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

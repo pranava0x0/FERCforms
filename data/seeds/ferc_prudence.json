@@ -83,5 +83,39 @@
     "captured_at": "2026-06-01",
     "source_note": "FERC ALJ Initial Decision re Potomac-Appalachian Transmission Highline, LLC (PATH) transmission-incentive cost recovery / abandoned-plant prudence, Docket ER09-1256, issued 2015-09-14. Found via eLibrary full-text search; accession 20150914-4006.",
     "parse": false
+  },
+  {
+    "id": "2013-02-28_pepco-delmarva-mapp_er13-607",
+    "company": "Potomac Electric Power Company and Delmarva Power & Light Company (PHI / MAPP)",
+    "collection": "prudence_review",
+    "jurisdiction": "FERC",
+    "source": "FERC (eLibrary)",
+    "doc_type": "Commission order on abandonment cost recovery",
+    "industry": "electric",
+    "accession": "20130228-3064",
+    "pdf_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20130228-3064",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20130228-3064&optimized=false",
+    "issued_date": "2013-02-28",
+    "docket": "ER13-607",
+    "captured_at": "2026-06-02",
+    "source_note": "FERC order on the Mid-Atlantic Power Pathway (MAPP) abandonment cost recovery filing of Potomac Electric Power Company and Delmarva Power & Light Company (PHI), Docket ER13-607, issued February 28, 2013 (142 FERC para. 61,156) — accepting abandonment cost recovery and setting prudent-cost amounts for hearing, but removing the previously-granted ROE incentive adders once the project was abandoned. Found via the eLibrary AdvancedSearch API (searchText=docket); accession 20130228-3064.",
+    "parse": false
+  },
+  {
+    "id": "2017-01-19_potomac-appalachian-transmission-highline_er12-2708-opinion-554",
+    "company": "Potomac-Appalachian Transmission Highline, LLC and PJM Interconnection, L.L.C.",
+    "collection": "prudence_review",
+    "jurisdiction": "FERC",
+    "source": "FERC (eLibrary)",
+    "doc_type": "Commission opinion on initial decision",
+    "industry": "electric",
+    "accession": "20170119-3062",
+    "pdf_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170119-3062",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170119-3062&optimized=false",
+    "issued_date": "2017-01-19",
+    "docket": "ER12-2708",
+    "captured_at": "2026-06-02",
+    "source_note": "FERC Opinion No. 554, Order on Initial Decision, on the prudence of the Potomac-Appalachian Transmission Highline (PATH) project's transmission abandonment cost claim (formal challenges, ROE, and legal/advertising/lobbying costs) — affirming in part and reversing in part the ALJ initial decision. Potomac-Appalachian Transmission Highline, LLC and PJM, Dockets ER12-2708 / ER09-1256, issued January 19, 2017 (158 FERC para. 61,050). Distinct from the 2015 ALJ initial decision already in this collection. Found via the eLibrary AdvancedSearch API; accession 20170119-3062.",
+    "parse": false
   }
 ]
