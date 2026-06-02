@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-11-09_chevron-u-s-a-inc_pa16-1",
   "company": "Chevron U.S.A., Inc.",
   "company_raw": "PA16-1 Chevron U.S.A., Inc.",
@@ -36,5 +40,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

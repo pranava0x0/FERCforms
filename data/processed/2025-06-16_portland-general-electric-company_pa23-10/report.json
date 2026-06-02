@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-06-16_portland-general-electric-company_pa23-10",
   "company": "Portland General Electric Company",
   "company_raw": "Portland General Electric Company (PA23-10)",
@@ -217,5 +221,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-12-14_black-hills-corporation_fa16-3",
   "company": "Black Hills Corporation",
   "company_raw": "FA16-3 Black Hills Corporation",
@@ -167,5 +171,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

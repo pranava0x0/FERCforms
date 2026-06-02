@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
   "company": "Connecticut Light and Power Company",
   "company_raw": "Connecticut Light and Power Company (FA19-8)",
@@ -169,5 +173,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

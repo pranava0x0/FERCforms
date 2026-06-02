@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-08-29_xcel-energy-inc_fa17-4",
   "company": "Xcel Energy Inc.",
   "company_raw": "Xcel Energy Inc. (FA17-4)",
@@ -58,5 +62,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

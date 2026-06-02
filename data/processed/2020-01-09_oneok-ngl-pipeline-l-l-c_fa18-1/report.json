@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
   "company": "ONEOK NGL Pipeline, L.L.C.",
   "company_raw": "ONEOK NGL Pipeline, L.L.C. (FA18-1)",
@@ -102,5 +106,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

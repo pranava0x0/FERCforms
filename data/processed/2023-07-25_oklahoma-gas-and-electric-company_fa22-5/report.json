@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2023-07-25_oklahoma-gas-and-electric-company_fa22-5",
   "company": "Oklahoma Gas and Electric Company",
   "company_raw": "Oklahoma Gas and Electric Company (FA22-5)",
@@ -263,5 +267,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-11-04_tucson-electric-power-company_fa21-3",
   "company": "Tucson Electric Power Company",
   "company_raw": "Tucson Electric Power Company (FA21-3)",
@@ -329,5 +333,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

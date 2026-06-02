@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-10-19_equitrans-l-p_fa17-6",
   "company": "Equitrans, L.P.",
   "company_raw": "FA17-6 Equitrans, L.P.",
@@ -78,5 +82,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

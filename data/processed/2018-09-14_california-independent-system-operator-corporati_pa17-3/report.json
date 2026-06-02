@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
   "company": "California Independent System Operator Corporation",
   "company_raw": "PA17-3 California Independent System Operator Corporation",
@@ -24,5 +28,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

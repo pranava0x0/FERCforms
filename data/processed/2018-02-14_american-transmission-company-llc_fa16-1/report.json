@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-02-14_american-transmission-company-llc_fa16-1",
   "company": "American Transmission Company, LLC",
   "company_raw": "FA16-1 American Transmission Company, LLC",
@@ -45,5 +49,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

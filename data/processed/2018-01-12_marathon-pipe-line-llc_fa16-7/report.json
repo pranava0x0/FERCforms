@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-01-12_marathon-pipe-line-llc_fa16-7",
   "company": "Marathon Pipe Line, LLC",
   "company_raw": "FA16-7 Marathon Pipe Line, LLC",
@@ -94,5 +98,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

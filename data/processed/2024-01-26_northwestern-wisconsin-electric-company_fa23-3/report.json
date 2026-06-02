@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-01-26_northwestern-wisconsin-electric-company_fa23-3",
   "company": "Northwestern Wisconsin Electric Company",
   "company_raw": "Northwestern Wisconsin Electric Company (FA23-3)",
@@ -163,5 +167,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

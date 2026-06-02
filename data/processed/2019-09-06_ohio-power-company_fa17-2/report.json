@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-09-06_ohio-power-company_fa17-2",
   "company": "Ohio Power Company",
   "company_raw": "Ohio Power Company (FA17-2)",
@@ -67,5 +71,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

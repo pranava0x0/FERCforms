@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-09-01_pjm-interconnection-l-l-c_pa19-2",
   "company": "PJM Interconnection, L.L.C.",
   "company_raw": "PJM Interconnection, L.L.C. (PA19-2)",
@@ -30,5 +34,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

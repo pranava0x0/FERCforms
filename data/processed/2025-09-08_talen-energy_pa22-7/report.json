@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-09-08_talen-energy_pa22-7",
   "company": "Talen Energy",
   "company_raw": "Talen Energy (PA22-7)",
@@ -68,5 +72,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

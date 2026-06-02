@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-01-12_plains-pipeline-l-p_fa16-6",
   "company": "Plains Pipeline, L.P.",
   "company_raw": "FA16-6 Plains Pipeline, L.P.",
@@ -238,5 +242,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

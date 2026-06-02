@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-04-19_entergy-services-inc_fa15-13",
   "company": "Entergy Services, Inc.",
   "company_raw": "FA15-13 Entergy Services, Inc.",
@@ -24,5 +28,6 @@
     "65"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

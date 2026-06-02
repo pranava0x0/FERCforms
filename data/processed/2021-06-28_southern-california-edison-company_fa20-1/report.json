@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-06-28_southern-california-edison-company_fa20-1",
   "company": "Southern California Edison Company",
   "company_raw": "Southern California Edison Company (FA20-1)",
@@ -159,5 +163,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

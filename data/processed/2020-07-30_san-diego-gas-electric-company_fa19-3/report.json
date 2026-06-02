@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
   "company": "San Diego Gas & Electric Company",
   "company_raw": "San Diego Gas & Electric Company (FA19-3)",
@@ -23,5 +27,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

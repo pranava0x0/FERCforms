@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-11-15_national-grid-usa_fa16-2",
   "company": "National Grid USA",
   "company_raw": "National Grid USA (FA16-2)",
@@ -23,5 +27,6 @@
     "60"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

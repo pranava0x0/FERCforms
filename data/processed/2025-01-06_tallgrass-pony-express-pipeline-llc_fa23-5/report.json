@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
   "company": "Tallgrass Pony Express Pipeline, LLC",
   "company_raw": "Tallgrass Pony Express Pipeline, LLC (FA23-5)",
@@ -134,5 +138,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

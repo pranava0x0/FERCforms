@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-09-25_medallion-pipeline-company-llc_fa23-9",
   "company": "Medallion Pipeline Company, LLC",
   "company_raw": "Medallion Pipeline Company, LLC (FA23-9)",
@@ -214,5 +218,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

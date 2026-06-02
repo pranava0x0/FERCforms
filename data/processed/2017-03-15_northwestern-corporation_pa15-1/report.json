@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-03-15_northwestern-corporation_pa15-1",
   "company": "NorthWestern Corporation",
   "company_raw": "PA15-1 NorthWestern Corporation",
@@ -65,5 +69,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

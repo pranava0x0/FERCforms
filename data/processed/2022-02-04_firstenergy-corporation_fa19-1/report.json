@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-02-04_firstenergy-corporation_fa19-1",
   "company": "FirstEnergy Corporation",
   "company_raw": "FirstEnergy Corporation (FA19-1)",
@@ -233,5 +237,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

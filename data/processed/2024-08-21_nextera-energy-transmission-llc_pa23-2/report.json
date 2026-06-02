@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
   "company": "NextEra Energy Transmission, LLC",
   "company_raw": "NextEra Energy Transmission, LLC (PA23-2)",
@@ -156,5 +160,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

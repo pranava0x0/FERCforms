@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-08-24_kansas-city-power-light-company_pa17-4",
   "company": "Kansas City Power & Light Company",
   "company_raw": "PA17-4 Kansas City Power & Light Company",
@@ -23,5 +27,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

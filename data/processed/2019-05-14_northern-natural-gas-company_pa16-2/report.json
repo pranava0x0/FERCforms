@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-05-14_northern-natural-gas-company_pa16-2",
   "company": "Northern Natural Gas Company",
   "company_raw": "Northern Natural Gas Company (PA16-2)",
@@ -123,5 +127,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

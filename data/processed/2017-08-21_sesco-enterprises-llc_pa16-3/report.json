@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-08-21_sesco-enterprises-llc_pa16-3",
   "company": "SESCO Enterprises, LLC",
   "company_raw": "PA16-3 SESCO Enterprises, LLC",
@@ -21,5 +25,6 @@
   ],
   "forms": [],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

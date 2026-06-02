@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-02-21_entergy-gulf-states-louisiana-llc_fa15-10",
   "company": "Entergy Gulf States Louisiana, LLC",
   "company_raw": "FA15-10 Entergy Gulf States Louisiana, LLC",
@@ -47,5 +51,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

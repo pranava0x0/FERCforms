@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-07-07_new-york-independent-system-operator-inc_pa19-1",
   "company": "New York Independent System Operator, Inc.",
   "company_raw": "New York Independent System Operator, Inc. (PA19-1)",
@@ -22,5 +26,6 @@
   ],
   "forms": [],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

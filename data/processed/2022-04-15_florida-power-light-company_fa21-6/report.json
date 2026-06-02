@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-04-15_florida-power-light-company_fa21-6",
   "company": "Florida Power & Light Company",
   "company_raw": "Florida Power & Light Company (FA21-6)",
@@ -97,5 +101,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

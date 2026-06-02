@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
   "company": "Bridger Pipeline LLC",
   "company_raw": "Bridger Pipeline LLC (FA19-10)",
@@ -238,5 +242,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

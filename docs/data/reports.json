@@ -122,7 +122,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-09-29_kern-river-gas-transmission-company_fa23-10",
     "company": "Kern River Gas Transmission Company",
@@ -307,7 +307,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-09-25_medallion-pipeline-company-llc_fa23-9",
     "company": "Medallion Pipeline Company, LLC",
@@ -615,7 +615,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-09-18_pacific-gas-and-electric-company_fa23-8",
     "company": "Pacific Gas and Electric Company",
@@ -932,7 +932,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-09-08_talen-energy_pa22-7",
     "company": "Talen Energy",
@@ -1053,7 +1053,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-09-03_alabama-power-company_pa24-5",
     "company": "Alabama Power Company",
@@ -1211,7 +1211,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-07-25_duke-energy-progress-llc_fa23-6",
     "company": "Duke Energy Progress, LLC",
@@ -1371,7 +1371,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-06-16_portland-general-electric-company_pa23-10",
     "company": "Portland General Electric Company",
@@ -1629,7 +1629,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-04-10_midcontinent-independent-system-operator-inc_pa21-2",
     "company": "Midcontinent Independent System Operator, Inc.",
@@ -1850,7 +1850,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
     "company": "Tallgrass Pony Express Pipeline, LLC",
@@ -2030,7 +2030,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-11-27_alliant-energy-corporate-services-inc_fa23-7",
     "company": "Alliant Energy Corporate Services, Inc.",
@@ -2145,7 +2145,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-09-27_southern-indiana-gas-and-electric-company_fa23-4",
     "company": "Southern Indiana Gas and Electric Company",
@@ -2581,7 +2581,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-08-22_black-hills-corporation_pa23-3",
     "company": "Black Hills Corporation",
@@ -2689,7 +2689,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
     "company": "NextEra Energy Transmission, LLC",
@@ -2943,7 +2943,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-08-15_tri-state-generation-and-transmission-associatio_pa22-6",
     "company": "Tri-State Generation and Transmission Association, Inc.",
@@ -3049,7 +3049,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-08-14_enlink-ngl-pipeline-lp_fa22-2",
     "company": "EnLink NGL Pipeline, LP",
@@ -3251,7 +3251,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
     "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
@@ -4009,7 +4009,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-03-15_appalachian-power-company_fa22-1",
     "company": "Appalachian Power Company",
@@ -4091,7 +4091,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-03-07_net-mexico-pipeline-partners-llc_pa23-1",
     "company": "NET Mexico Pipeline Partners, LLC",
@@ -4387,7 +4387,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2024-01-26_northwestern-wisconsin-electric-company_fa23-3",
     "company": "Northwestern Wisconsin Electric Company",
@@ -4585,7 +4585,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-11-21_dte-energy-company_pa20-7",
     "company": "DTE Energy Company",
@@ -4617,7 +4617,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
     "company": "Sunoco Pipeline L.P.",
@@ -4946,7 +4946,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-09-18_gulf-south-pipeline-company-llc_pa21-3",
     "company": "Gulf South Pipeline Company, LLC",
@@ -5358,7 +5358,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-08-18_puget-sound-energy-inc_pa21-5",
     "company": "Puget Sound Energy Inc.",
@@ -5434,7 +5434,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-07-27_commonwealth-edison-company_fa21-5",
     "company": "Commonwealth Edison Company",
@@ -5860,7 +5860,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-07-25_oklahoma-gas-and-electric-company_fa22-5",
     "company": "Oklahoma Gas and Electric Company",
@@ -6173,7 +6173,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-06-29_pacificorp_pa22-2",
     "company": "PacifiCorp",
@@ -6208,7 +6208,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
     "company": "Public Service Company of Colorado",
@@ -6731,7 +6731,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2023-02-10_wec-business-services-llc_fa21-2",
     "company": "WEC Business Services LLC",
@@ -6766,7 +6766,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-11-04_tucson-electric-power-company_fa21-3",
     "company": "Tucson Electric Power Company",
@@ -7158,7 +7158,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-09-28_northern-border-pipeline-company_fa21-1",
     "company": "Northern Border Pipeline Company",
@@ -7305,7 +7305,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-09-15_dayton-power-and-light-company_fa21-4",
     "company": "Dayton Power and Light Company",
@@ -7426,7 +7426,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-09-01_pjm-interconnection-l-l-c_pa19-2",
     "company": "PJM Interconnection, L.L.C.",
@@ -7723,7 +7723,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-06-01_enterprise-crude-pipeline-llc_fa20-5",
     "company": "Enterprise Crude Pipeline LLC",
@@ -7964,7 +7964,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-05-20_northwestern-corporation_fa20-7",
     "company": "NorthWestern Corporation",
@@ -8184,7 +8184,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-04-15_florida-power-light-company_fa21-6",
     "company": "Florida Power & Light Company",
@@ -8314,7 +8314,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-03-31_duke-energy-corporation_pa20-3",
     "company": "Duke Energy Corporation",
@@ -8347,7 +8347,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-03-23_arizona-public-service-company_pa20-1",
     "company": "Arizona Public Service Company",
@@ -8427,7 +8427,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-03-21_tampa-electric-company_pa21-1",
     "company": "Tampa Electric Company",
@@ -8460,7 +8460,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-02-04_firstenergy-corporation_fa19-1",
     "company": "FirstEnergy Corporation",
@@ -8748,7 +8748,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
     "company": "Connecticut Light and Power Company",
@@ -8955,7 +8955,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-11-17_ameren-corporation_fa20-6",
     "company": "Ameren Corporation",
@@ -9292,7 +9292,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-09-27_macquarie-energy-llc_pa19-5",
     "company": "Macquarie Energy LLC",
@@ -9326,7 +9326,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-09-23_centurion-pipeline-l-p_fa19-4",
     "company": "Centurion Pipeline L.P.",
@@ -9496,7 +9496,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
     "company": "Bridger Pipeline LLC",
@@ -9798,7 +9798,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-09-16_versant-power_fa20-9",
     "company": "Versant Power",
@@ -10015,7 +10015,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-07-20_mustang-pipe-line-llc_fa20-4",
     "company": "Mustang Pipe Line LLC",
@@ -10195,7 +10195,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-06-28_southern-california-edison-company_fa20-1",
     "company": "Southern California Edison Company",
@@ -10398,7 +10398,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-04-14_evergy-inc_pa20-2",
     "company": "Evergy, Inc.",
@@ -10456,7 +10456,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-01-28_el-paso-electric-company_pa19-3",
     "company": "El Paso Electric Company",
@@ -10562,7 +10562,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2021-01-14_ugi-utilities-inc_fa20-3",
     "company": "UGI Utilities, Inc.",
@@ -10929,7 +10929,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-12-17_dominion-energy-transmission-inc_fa15-16",
     "company": "Dominion Energy Transmission, Inc.",
@@ -10961,7 +10961,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-12-04_allete-inc_fa20-2",
     "company": "ALLETE, Inc.",
@@ -11236,7 +11236,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
     "company": "Maritimes & Northeast Pipeline, L.L.C.",
@@ -11458,7 +11458,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-10-07_chevron-pipe-line-company_fa19-5",
     "company": "Chevron Pipe Line Company",
@@ -11666,7 +11666,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
     "company": "San Diego Gas & Electric Company",
@@ -11700,7 +11700,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-15_national-fuel-gas-supply-corporation_fa19-6",
     "company": "National Fuel Gas Supply Corporation",
@@ -11882,7 +11882,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-07_pnm-resources-inc_pa18-1",
     "company": "PNM Resources, Inc.",
@@ -12189,7 +12189,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-07_new-york-independent-system-operator-inc_pa19-1",
     "company": "New York Independent System Operator, Inc.",
@@ -12222,7 +12222,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-02_midamerican-energy-company_fa19-2",
     "company": "MidAmerican Energy Company",
@@ -12256,7 +12256,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-07-02_michigan-electric-transmission-company-llc_fa19-7",
     "company": "Michigan Electric Transmission Company, LLC",
@@ -12365,7 +12365,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-02-21_louisville-gas-and-electric-company-and-kentucky_pa19-4",
     "company": "Louisville Gas and Electric Company and Kentucky Utilities Company",
@@ -12400,7 +12400,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
     "company": "ONEOK NGL Pipeline, L.L.C.",
@@ -12553,7 +12553,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-11-21_exelon-corporation_pa18-3",
     "company": "Exelon Corporation",
@@ -12635,7 +12635,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-11-15_national-grid-usa_fa16-2",
     "company": "National Grid USA",
@@ -12669,7 +12669,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-09-27_cleco-power-llc_fa18-3",
     "company": "Cleco Power LLC",
@@ -12845,7 +12845,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-09-19_avista-corporation_pa18-2",
     "company": "Avista Corporation",
@@ -13053,7 +13053,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-09-06_ohio-power-company_fa17-2",
     "company": "Ohio Power Company",
@@ -13148,7 +13148,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-08-29_xcel-energy-inc_fa17-4",
     "company": "Xcel Energy Inc.",
@@ -13237,7 +13237,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-07-31_northern-states-power-company-minnesota_fa17-5",
     "company": "Northern States Power Company (Minnesota)",
@@ -13344,7 +13344,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-06-25_transcontinental-gas-pipe-line-company-llc_fa18-2",
     "company": "Transcontinental Gas Pipe Line Company, LLC",
@@ -13631,7 +13631,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-05-14_northern-natural-gas-company_pa16-2",
     "company": "Northern Natural Gas Company",
@@ -13785,7 +13785,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2019-04-23_american-electric-power-company-inc_fa17-1",
     "company": "American Electric Power Company, Inc.",
@@ -13877,7 +13877,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-12-14_black-hills-corporation_fa16-3",
     "company": "Black Hills Corporation",
@@ -14076,7 +14076,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-10-19_trunkline-gas-company_pa16-4",
     "company": "Trunkline Gas Company",
@@ -14311,7 +14311,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-10-19_equitrans-l-p_fa17-6",
     "company": "Equitrans, L.P.",
@@ -14441,7 +14441,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
     "company": "California Independent System Operator Corporation",
@@ -14476,7 +14476,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-08-24_kansas-city-power-light-company_pa17-4",
     "company": "Kansas City Power & Light Company",
@@ -14510,7 +14510,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-07-05_cms-energy-corporation_pa17-5",
     "company": "CMS Energy Corporation",
@@ -14580,7 +14580,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-06-11_idaho-power-company_pa17-7",
     "company": "Idaho Power Company",
@@ -14613,7 +14613,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-04-18_midcontinent-independent-system-operator-inc_pa16-5",
     "company": "Midcontinent Independent System Operator, Inc.",
@@ -14647,7 +14647,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-04-18_iso-new-england-inc_pa16-6",
     "company": "ISO New England, Inc.",
@@ -14681,7 +14681,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-02-21_entergy-gulf-states-louisiana-llc_fa15-10",
     "company": "Entergy Gulf States Louisiana, LLC",
@@ -14757,7 +14757,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-02-21_entergy-arkansas-inc_fa15-11",
     "company": "Entergy Arkansas, Inc.",
@@ -14844,7 +14844,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-02-14_american-transmission-company-llc_fa16-1",
     "company": "American Transmission Company, LLC",
@@ -14916,7 +14916,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-01-12_plains-pipeline-l-p_fa16-6",
     "company": "Plains Pipeline, L.P.",
@@ -15231,7 +15231,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-01-12_marathon-pipe-line-llc_fa16-7",
     "company": "Marathon Pipe Line, LLC",
@@ -15386,7 +15386,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2018-01-12_explorer-pipeline-company_fa16-5",
     "company": "Explorer Pipeline Company",
@@ -15656,7 +15656,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-11-09_chevron-u-s-a-inc_pa16-1",
     "company": "Chevron U.S.A., Inc.",
@@ -15713,7 +15713,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-09-26_mississippi-power-company_fa15-8",
     "company": "Mississippi Power Company",
@@ -15857,7 +15857,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-09-26_gulf-power-company_fa15-5",
     "company": "Gulf Power Company",
@@ -16003,7 +16003,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-09-26_georgia-power-company_fa15-6",
     "company": "Georgia Power Company",
@@ -16190,7 +16190,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-09-26_alabama-power-company_fa15-7",
     "company": "Alabama Power Company",
@@ -16365,7 +16365,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-08-29_pacificorp_fa16-4",
     "company": "PacifiCorp",
@@ -16400,7 +16400,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-08-21_sesco-enterprises-llc_pa16-3",
     "company": "SESCO Enterprises, LLC",
@@ -16432,7 +16432,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-03-15_northwestern-corporation_pa15-1",
     "company": "NorthWestern Corporation",
@@ -16526,7 +16526,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2017-02-01_nv-energy-inc_pa15-2",
     "company": "NV Energy, Inc.",
@@ -16706,7 +16706,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
     "company": "Plantation Pipe Line Company",
@@ -16925,7 +16925,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-12-02_calpine-corporation_pa15-5",
     "company": "Calpine Corporation",
@@ -16990,7 +16990,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-10-14_dynegy-inc_pa15-3",
     "company": "Dynegy, Inc.",
@@ -17022,7 +17022,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-09-29_westar-energy-inc_fa15-9",
     "company": "Westar Energy, Inc.",
@@ -17211,7 +17211,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-09-29_kansas-gas-and-electric-company_fa15-15",
     "company": "Kansas Gas and Electric Company",
@@ -17329,7 +17329,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-08-16_empire-district-electric-company_pa15-7",
     "company": "Empire District Electric Company",
@@ -17390,7 +17390,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-07-15_southwest-power-pool-inc_pa15-6",
     "company": "Southwest Power Pool, Inc.",
@@ -17474,7 +17474,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-05-09_enbridge-energy-partners-lp_fa15-4",
     "company": "Enbridge Energy Partners, LP",
@@ -17780,7 +17780,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-04-19_itc-holdings-corporation_fa15-14",
     "company": "ITC Holdings Corporation",
@@ -17825,7 +17825,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-04-19_entergy-services-inc_fa15-13",
     "company": "Entergy Services, Inc.",
@@ -17860,7 +17860,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-04-01_duke-energy-corporation_pa14-2",
     "company": "Duke Energy Corporation",
@@ -18295,7 +18295,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-03-30_destin-pipeline-company_fa15-1",
     "company": "Destin Pipeline Company",
@@ -18457,7 +18457,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2016-01-04_emera-maine_pa15-4",
     "company": "Emera Maine",
@@ -18533,7 +18533,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-10-23_yankee-atomic-energy-company_fa15-3",
     "company": "Yankee Atomic Energy Company",
@@ -18567,7 +18567,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-10-23_portland-general-electric-company_fa15-2",
     "company": "Portland General Electric Company",
@@ -18631,7 +18631,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-07-30_entergy-corporation_fa14-2",
     "company": "Entergy Corporation",
@@ -18675,7 +18675,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-07-02_nrg-energy-inc_pa14-1",
     "company": "NRG Energy, Inc.",
@@ -18732,7 +18732,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-06-17_enterprise-product-partners_fa14-1",
     "company": "Enterprise Product Partners",
@@ -18886,7 +18886,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-06-17_conocophillips_fa14-5",
     "company": "ConocoPhillips",
@@ -18945,7 +18945,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-06-17_colonial-pipeline-company_fa14-4",
     "company": "Colonial Pipeline Company",
@@ -19065,7 +19065,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-06-04_kinder-morgan_fa14-10",
     "company": "Kinder Morgan",
@@ -19097,7 +19097,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2015-03-27_kansas-gas-and-electric-company_fa14-3",
     "company": "Kansas Gas and Electric Company",
@@ -19150,7 +19150,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2014-10-24_occidental-energy-marketing-inc_fa14-8",
     "company": "Occidental Energy Marketing, Inc.",
@@ -19182,7 +19182,7 @@
   {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
-    "source": "",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
     "doc_type": null,
     "id": "2014-10-24_cargill_fa14-6",
     "company": "Cargill",

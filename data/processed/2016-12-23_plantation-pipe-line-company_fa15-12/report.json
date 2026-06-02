@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
   "company": "Plantation Pipe Line Company",
   "company_raw": "FA15-12 Plantation Pipe Line Company",
@@ -165,5 +169,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

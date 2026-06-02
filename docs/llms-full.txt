@@ -7,7 +7,7 @@ Primary source: https://www.ferc.gov/audits. Findings and recommendations are qu
 ---
 
 ## Kern River Gas Transmission Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-10-000 | Audit type: financial
 - Issued: 2025-09-29 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Audit period: January 1, 2020 to December 31, 2023
@@ -61,7 +61,7 @@ Recommendations:
 ---
 
 ## Medallion Pipeline Company, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-9-000 | Audit type: financial
 - Issued: 2025-09-25 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2020 to December 31, 2023
@@ -142,7 +142,7 @@ Recommendations:
 ---
 
 ## Pacific Gas and Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-8-000 | Audit type: financial
 - Issued: 2025-09-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission, distribution
@@ -229,7 +229,7 @@ Recommendations:
 ---
 
 ## Talen Energy
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA22-7-000 | Audit type: non-financial
 - Issued: 2025-09-08 | Industry: electric | FERC Form: n/a
 - Function(s): generation
@@ -256,7 +256,7 @@ Recommendations:
 ---
 
 ## Alabama Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA24-5-000 | Audit type: non-financial
 - Issued: 2025-09-03 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -281,7 +281,7 @@ Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) 
 ---
 
 ## Duke Energy Progress, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-6-000 | Audit type: financial
 - Issued: 2025-07-25 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 580
 - Function(s): generation, transmission
@@ -324,7 +324,7 @@ DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, there
 ---
 
 ## Portland General Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA23-10-000 | Audit type: non-financial
 - Issued: 2025-06-16 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -415,7 +415,7 @@ Recommendations:
 ---
 
 ## Midcontinent Independent System Operator, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA21-2-000 | Audit type: non-financial
 - Issued: 2025-04-10 | Industry: electric | FERC Form: No. 714
 - Function(s): generation
@@ -454,7 +454,7 @@ Recommendations:
 ---
 
 ## Tallgrass Pony Express Pipeline, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-5-000 | Audit type: financial
 - Issued: 2025-01-06 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2020 to December 31, 2022
@@ -506,7 +506,7 @@ Recommendations:
 ---
 
 ## Alliant Energy Corporate Services, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-7-000 | Audit type: financial
 - Issued: 2024-11-27 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation
@@ -527,7 +527,7 @@ AECS improperly recorded two donations totaling $10,000 in Account 921, Office S
 ---
 
 ## Southern Indiana Gas and Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-4-000 | Audit type: financial
 - Issued: 2024-09-27 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -610,7 +610,7 @@ Recommendations:
 ---
 
 ## Black Hills Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA23-3-000 | Audit type: non-financial
 - Issued: 2024-08-22 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -645,7 +645,7 @@ Recommendations:
 ---
 
 ## NextEra Energy Transmission, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA23-2-000 | Audit type: non-financial
 - Issued: 2024-08-21 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 60
 - Function(s): generation, transmission, distribution
@@ -702,7 +702,7 @@ Recommendations:
 ---
 
 ## Tri-State Generation and Transmission Association, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA22-6-000 | Audit type: non-financial
 - Issued: 2024-08-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -735,7 +735,7 @@ Recommendations:
 ---
 
 ## EnLink NGL Pipeline, LP
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA22-2-000 | Audit type: financial
 - Issued: 2024-08-14 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2019 to December 31, 2022
@@ -795,7 +795,7 @@ Recommendations:
 ---
 
 ## Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA22-4-000 | Audit type: financial
 - Issued: 2024-08-12 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -938,7 +938,7 @@ Recommendations:
 ---
 
 ## Appalachian Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA22-1-000 | Audit type: financial
 - Issued: 2024-03-15 | Industry: electric | FERC Form: No. 1, No. 580
 - Function(s): generation, transmission
@@ -960,7 +960,7 @@ APCo did not properly follow the FERC Form No. 580 instructions and, therefore, 
 ---
 
 ## NET Mexico Pipeline Partners, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA23-1-000 | Audit type: non-financial
 - Issued: 2024-03-07 | Industry: gas | FERC Form: No. 549
 - Audit period: January 1, 2020 to December 31, 2022
@@ -1039,7 +1039,7 @@ Recommendations:
 ---
 
 ## Northwestern Wisconsin Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA23-3-000 | Audit type: financial
 - Issued: 2024-01-26 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -1100,7 +1100,7 @@ Recommendations:
 ---
 
 ## DTE Energy Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA20-7 | Audit type: non-financial
 - Issued: 2023-11-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation
@@ -1112,7 +1112,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Sunoco Pipeline L.P.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA21-4-000 | Audit type: non-financial
 - Issued: 2023-09-29 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
@@ -1209,7 +1209,7 @@ Recommendations:
 ---
 
 ## Gulf South Pipeline Company, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA21-3-000 | Audit type: non-financial
 - Issued: 2023-09-18 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Function(s): generation
@@ -1329,7 +1329,7 @@ Recommendations:
 ---
 
 ## Puget Sound Energy Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA21-5-000 | Audit type: non-financial
 - Issued: 2023-08-18 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1353,7 +1353,7 @@ Recommendations:
 ---
 
 ## Commonwealth Edison Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-5-000 | Audit type: financial
 - Issued: 2023-07-27 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1479,7 +1479,7 @@ Recommendations:
 ---
 
 ## Oklahoma Gas and Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA22-5-000 | Audit type: financial
 - Issued: 2023-07-25 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -1571,7 +1571,7 @@ Recommendations:
 ---
 
 ## PacifiCorp
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA22-2-000 | Audit type: non-financial
 - Issued: 2023-06-29 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1584,7 +1584,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Public Service Company of Colorado
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA22-3-000 | Audit type: financial
 - Issued: 2023-06-21 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1658,7 +1658,7 @@ Recommendations:
 ---
 
 ## WEC Business Services LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-2 | Audit type: financial
 - Issued: 2023-02-10 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation
@@ -1670,7 +1670,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Tucson Electric Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-3-000 | Audit type: financial
 - Issued: 2022-11-04 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1789,7 +1789,7 @@ Recommendations:
 ---
 
 ## Northern Border Pipeline Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-1-000 | Audit type: financial
 - Issued: 2022-09-28 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Audit period: January 1, 2018 to December 31, 2020
@@ -1831,7 +1831,7 @@ Recommendations:
 ---
 
 ## Dayton Power and Light Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-4 | Audit type: financial
 - Issued: 2022-09-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -1858,7 +1858,7 @@ DP&L improperly accounted for the purchase of RECs in Account 154, Materials and
 ---
 
 ## PJM Interconnection, L.L.C.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA19-2-000 | Audit type: non-financial
 - Issued: 2022-09-01 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -1871,7 +1871,7 @@ PJM did not offer cap a self-scheduled generation resource in the Day-ahead ener
 ---
 
 ## Enterprise Crude Pipeline LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-5-000 | Audit type: financial
 - Issued: 2022-06-01 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2014 to December 31, 2018
@@ -1940,7 +1940,7 @@ Recommendations:
 ---
 
 ## NorthWestern Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-7-000 | Audit type: financial
 - Issued: 2022-05-20 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -2004,7 +2004,7 @@ Recommendations:
 ---
 
 ## Florida Power & Light Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA21-6-000 | Audit type: financial
 - Issued: 2022-04-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -2044,7 +2044,7 @@ Recommendations:
 ---
 
 ## Duke Energy Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA20-3-000 | Audit type: non-financial
 - Issued: 2022-03-31 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -2057,7 +2057,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Arizona Public Service Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA20-1-000 | Audit type: non-financial
 - Issued: 2022-03-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -2082,7 +2082,7 @@ Recommendations:
 ---
 
 ## Tampa Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA21-1-000 | Audit type: non-financial
 - Issued: 2022-03-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -2095,7 +2095,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## FirstEnergy Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-1-000 | Audit type: financial
 - Issued: 2022-02-04 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -2176,7 +2176,7 @@ Recommendations:
 ---
 
 ## Connecticut Light and Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-8-000 | Audit type: financial
 - Issued: 2022-02-04 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
@@ -2237,7 +2237,7 @@ Recommendations:
 ---
 
 ## Ameren Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-6-000 | Audit type: financial
 - Issued: 2021-11-17 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
@@ -2335,7 +2335,7 @@ Recommendations:
 ---
 
 ## Macquarie Energy LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA19-5-000 | Audit type: non-financial
 - Issued: 2021-09-27 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
@@ -2348,7 +2348,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Centurion Pipeline L.P.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-4-000 | Audit type: financial
 - Issued: 2021-09-23 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2014 to December 31, 2018
@@ -2395,7 +2395,7 @@ Recommendations:
 ---
 
 ## Bridger Pipeline LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-10-000 | Audit type: financial
 - Issued: 2021-09-23 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2014 to December 31, 2018
@@ -2485,7 +2485,7 @@ Recommendations:
 ---
 
 ## Versant Power
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-9-000 | Audit type: financial
 - Issued: 2021-09-16 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -2549,7 +2549,7 @@ Versant Power did not properly follow the FERC Form No. 1 instructions and, ther
 ---
 
 ## Mustang Pipe Line LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-4-000 | Audit type: financial
 - Issued: 2021-07-20 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2014 to December 31, 2018
@@ -2602,7 +2602,7 @@ Recommendations:
 ---
 
 ## Southern California Edison Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-1-000 | Audit type: financial
 - Issued: 2021-06-28 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -2662,7 +2662,7 @@ Recommendations:
 ---
 
 ## Evergy, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA20-2 | Audit type: non-financial
 - Issued: 2021-04-14 | Industry: electric | FERC Form: n/a
 - Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210414-3002&optimized=false
@@ -2676,7 +2676,7 @@ Recommendations:
 ---
 
 ## El Paso Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA19-3-000 | Audit type: non-financial
 - Issued: 2021-01-28 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -2709,7 +2709,7 @@ El Paso’s transmission function created TSNs and assigned these TSNs to its me
 ---
 
 ## UGI Utilities, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-3-000 | Audit type: financial
 - Issued: 2021-01-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -2817,7 +2817,7 @@ UGIU did not record or report in its FERC Form No. 1 deferred income taxes assoc
 ---
 
 ## Dominion Energy Transmission, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-16-000 | Audit type: financial
 - Issued: 2020-12-17 | Industry: gas | FERC Form: No. 2
 - Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201217-3130&optimized=false
@@ -2828,7 +2828,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## ALLETE, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA20-2-000 | Audit type: financial
 - Issued: 2020-12-04 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -2909,7 +2909,7 @@ Recommendations:
 ---
 
 ## Maritimes & Northeast Pipeline, L.L.C.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-9-000 | Audit type: financial
 - Issued: 2020-11-12 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Audit period: January 1, 2017 to December 31, 2018
@@ -2976,7 +2976,7 @@ Recommendations:
 ---
 
 ## Chevron Pipe Line Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-5-000 | Audit type: financial
 - Issued: 2020-10-07 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2014 to December 31, 2018
@@ -3028,7 +3028,7 @@ Recommendations:
 ---
 
 ## San Diego Gas & Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-3-000 | Audit type: financial
 - Issued: 2020-07-30 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3041,7 +3041,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## National Fuel Gas Supply Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-6-000 | Audit type: financial
 - Issued: 2020-07-15 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Audit period: January 1, 2015 to December 31, 2018
@@ -3092,7 +3092,7 @@ National Fuel improperly netted shipper imbalance payables and receivables in Ac
 ---
 
 ## PNM Resources, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA18-1-000 | Audit type: non-financial
 - Issued: 2020-07-07 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -3192,7 +3192,7 @@ Recommendations:
 ---
 
 ## New York Independent System Operator, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA19-1-000 | Audit type: non-financial
 - Issued: 2020-07-07 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -3205,7 +3205,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## MidAmerican Energy Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-2-000 | Audit type: financial
 - Issued: 2020-07-02 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3218,7 +3218,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Michigan Electric Transmission Company, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA19-7-000 | Audit type: financial
 - Issued: 2020-07-02 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -3246,7 +3246,7 @@ METC did not properly follow the instructions of the FERC Form No. 1 and therefo
 ---
 
 ## Louisville Gas and Electric Company and Kentucky Utilities Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA19-4-000 | Audit type: non-financial
 - Issued: 2020-02-21 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -3259,7 +3259,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## ONEOK NGL Pipeline, L.L.C.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA18-1-000 | Audit type: financial
 - Issued: 2020-01-09 | Industry: oil | FERC Form: No. 6
 - Audit period: January 1, 2015 to December 31, 2018
@@ -3299,7 +3299,7 @@ ONEOK NGL improperly applied depreciation rates for carrier property assets that
 ---
 
 ## Exelon Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA18-3-000 | Audit type: non-financial
 - Issued: 2019-11-21 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
@@ -3321,7 +3321,7 @@ Exelon’s public utilities improperly recorded the amortization of certain regu
 ---
 
 ## National Grid USA
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-2 | Audit type: financial
 - Issued: 2019-11-15 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 60
 - Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191115-3010&optimized=false
@@ -3332,7 +3332,7 @@ Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 ---
 
 ## Cleco Power LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA18-3-000 | Audit type: financial
 - Issued: 2019-09-27 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -3378,7 +3378,7 @@ Cleco Power did not properly follow the FERC Form No. 1 instructions and, theref
 ---
 
 ## Avista Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA18-2-000 | Audit type: non-financial
 - Issued: 2019-09-19 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -3441,7 +3441,7 @@ Recommendations:
 ---
 
 ## Ohio Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA17-2-000 | Audit type: financial
 - Issued: 2019-09-06 | Industry: electric | FERC Form: No. 1, No. 3
 - Function(s): generation, transmission
@@ -3468,7 +3468,7 @@ Recommendations:
 ---
 
 ## Xcel Energy Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA17-4-000 | Audit type: financial
 - Issued: 2019-08-29 | Industry: electric | FERC Form: No. 1, No. 60
 - Audit period: from January 1, 2014 through December 31, 2018
@@ -3492,7 +3492,7 @@ XES did not disclose all allocation methods used to allocate costs in its FERC F
 ---
 
 ## Northern States Power Company (Minnesota)
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA17-5-000 | Audit type: financial
 - Issued: 2019-07-31 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3519,7 +3519,7 @@ NSPM inconsistently implemented a change to accounting for the retirement of tra
 ---
 
 ## Transcontinental Gas Pipe Line Company, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA18-2-000 | Audit type: financial
 - Issued: 2019-06-25 | Industry: gas | FERC Form: No. 2
 - Audit period: January 1, 2014 through December 28, 2018
@@ -3609,7 +3609,7 @@ Recommendations:
 ---
 
 ## Northern Natural Gas Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-2-000 | Audit type: non-financial
 - Issued: 2019-05-14 | Industry: gas | FERC Form: No. 2
 - Function(s): generation
@@ -3656,7 +3656,7 @@ Recommendations:
 ---
 
 ## American Electric Power Company, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA17-1-000 | Audit type: financial
 - Issued: 2019-04-23 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -3678,7 +3678,7 @@ AEPSC misclassified various administrative and general labor, membership dues, o
 ---
 
 ## Black Hills Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-3-000 | Audit type: financial
 - Issued: 2018-12-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3740,7 +3740,7 @@ Recommendations:
 ---
 
 ## Trunkline Gas Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-4-000 | Audit type: non-financial
 - Issued: 2018-10-19 | Industry: gas | FERC Form: n/a
 - Audit period: from January 1, 2013 to December 31, 2017
@@ -3810,7 +3810,7 @@ Recommendations:
 ---
 
 ## Equitrans, L.P.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA17-6-000 | Audit type: financial
 - Issued: 2018-10-19 | Industry: gas | FERC Form: No. 2
 - Audit period: from January 1, 2013 through April 2, 2018
@@ -3843,7 +3843,7 @@ Equitrans did not report certain information in its FERC Form No. 2 filings as r
 ---
 
 ## California Independent System Operator Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA17-3-000 | Audit type: non-financial
 - Issued: 2018-09-14 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -3856,7 +3856,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Kansas City Power & Light Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA17-4-000 | Audit type: non-financial
 - Issued: 2018-08-24 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
@@ -3869,7 +3869,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## CMS Energy Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA17-5-000 | Audit type: non-financial
 - Issued: 2018-07-05 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
@@ -3887,7 +3887,7 @@ The Hourly Economic Minimum Limits (Ecomin) Energy Resource Management (ERM) off
 ---
 
 ## Idaho Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA17-7-000 | Audit type: non-financial
 - Issued: 2018-06-11 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -3900,7 +3900,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Midcontinent Independent System Operator, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-5-000 | Audit type: non-financial
 - Issued: 2018-04-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3913,7 +3913,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## ISO New England, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-6-000 | Audit type: non-financial
 - Issued: 2018-04-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3926,7 +3926,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Entergy Gulf States Louisiana, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-10-000 | Audit type: financial
 - Issued: 2018-02-21 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 580
 - Function(s): transmission
@@ -3945,7 +3945,7 @@ EGSL incorrectly recorded lobbying costs associated with industry association du
 ---
 
 ## Entergy Arkansas, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-11-000 | Audit type: financial
 - Issued: 2018-02-21 | Industry: electric | FERC Form: No. 1, No. 3-Q
 - Function(s): transmission
@@ -3967,7 +3967,7 @@ EAI incorrectly recorded legal, financing, and audit fees associated with nuclea
 ---
 
 ## American Transmission Company, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-1-000 | Audit type: financial
 - Issued: 2018-02-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -3985,7 +3985,7 @@ ATC did not use Account 102, Electric Plant Purchased or Sold, to record two sal
 ---
 
 ## Plains Pipeline, L.P.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-6-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
 - Audit period: from January 1, 2013 to September 30, 2017
@@ -4084,7 +4084,7 @@ Recommendations:
 ---
 
 ## Marathon Pipe Line, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-7-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
@@ -4124,7 +4124,7 @@ In 2013, Marathon improperly recorded a balance of $9.4 million in Account 705, 
 ---
 
 ## Explorer Pipeline Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-5-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
@@ -4210,7 +4210,7 @@ Recommendations:
 ---
 
 ## Chevron U.S.A., Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-1-000 | Audit type: non-financial
 - Issued: 2017-11-09 | Industry: gas | FERC Form: No. 552
 - Audit period: from January 1, 2014 through August 31, 2017
@@ -4225,7 +4225,7 @@ CUSA improperly reported four transactions on its 2014 Form 552 filing. Also, CU
 ---
 
 ## Mississippi Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-8-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 580, No. 60
 - Function(s): generation, transmission
@@ -4264,7 +4264,7 @@ Mississippi Power incorrectly determined the depreciation component of the estim
 ---
 
 ## Gulf Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-5-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -4303,7 +4303,7 @@ Gulf Power did not properly follow FERC Form No. 1 instructions and, therefore, 
 ---
 
 ## Georgia Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-6-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -4354,7 +4354,7 @@ Georgia Power did not separately account for monies in its nuclear decommissioni
 ---
 
 ## Alabama Power Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-7-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
@@ -4402,7 +4402,7 @@ Alabama Power did not properly follow the instructions of the FERC Form No. 1 an
 ---
 
 ## PacifiCorp
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA16-4-000 | Audit type: financial
 - Issued: 2017-08-29 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
@@ -4415,7 +4415,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## SESCO Enterprises, LLC
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA16-3-000 | Audit type: non-financial
 - Issued: 2017-08-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation
@@ -4427,7 +4427,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## NorthWestern Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-1-000 | Audit type: non-financial
 - Issued: 2017-03-15 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -4455,7 +4455,7 @@ NorthWestern did not file reports of issued securities in a timely and accurate 
 ---
 
 ## NV Energy, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-2-000 | Audit type: non-financial
 - Issued: 2017-02-01 | Industry: electric | FERC Form: No. 1, No. 580
 - Function(s): generation, transmission
@@ -4509,7 +4509,7 @@ Recommendations:
 ---
 
 ## Plantation Pipe Line Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-12-000 | Audit type: financial
 - Issued: 2016-12-23 | Industry: oil | FERC Form: No. 6
 - Audit period: from January 1, 2012 to December 31, 2015
@@ -4576,7 +4576,7 @@ Plantation over-reported interstate barrel volumes it transported under a joint 
 ---
 
 ## Calpine Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-5-000 | Audit type: non-financial
 - Issued: 2016-12-02 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
@@ -4595,7 +4595,7 @@ Calpine made EQR filings containing numerous errors, including: inaccurate uplif
 ---
 
 ## Dynegy, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-03-000 | Audit type: non-financial
 - Issued: 2016-10-14 | Industry: electric | FERC Form: n/a
 - Function(s): generation
@@ -4608,7 +4608,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Westar Energy, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-9-000 | Audit type: financial
 - Issued: 2016-09-29 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -4667,7 +4667,7 @@ Recommendations:
 ---
 
 ## Kansas Gas and Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-15-000 | Audit type: financial
 - Issued: 2016-09-29 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -4698,7 +4698,7 @@ KGE did not transfer the balances to Account 101, Electric Plant in Service, fro
 ---
 
 ## Empire District Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-7-000 | Audit type: non-financial
 - Issued: 2016-08-16 | Industry: electric | FERC Form: No. 1, No. 552
 - Function(s): generation
@@ -4714,7 +4714,7 @@ Empire’s EQRs during the audit period contained various errors in the contract
 ---
 
 ## Southwest Power Pool, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-6-000 | Audit type: non-financial
 - Issued: 2016-07-15 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
@@ -4739,7 +4739,7 @@ The MMU did not limit its participation in SPP RTO tariff formation to the advis
 ---
 
 ## Enbridge Energy Partners, LP
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-4-000 | Audit type: financial
 - Issued: 2016-05-09 | Industry: oil | FERC Form: No. 6
 - Audit period: from January 1, 2011 to December 31, 2015
@@ -4838,7 +4838,7 @@ Recommendations:
 ---
 
 ## ITC Holdings Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-14-000 | Audit type: financial
 - Issued: 2016-04-19 | Industry: electric | FERC Form: No. 1, No. 65
 - Function(s): transmission
@@ -4851,7 +4851,7 @@ The ITC Operating Companies recorded merger-related costs in operating accounts 
 ---
 
 ## Entergy Services, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-13-000 | Audit type: financial
 - Issued: 2016-04-19 | Industry: electric | FERC Form: No. 1, No. 65
 - Function(s): transmission
@@ -4864,7 +4864,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Duke Energy Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA14-2-000 | Audit type: non-financial
 - Issued: 2016-04-01 | Industry: electric | FERC Form: No. 65
 - Function(s): generation, transmission
@@ -4989,7 +4989,7 @@ Recommendations:
 ---
 
 ## Destin Pipeline Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-1-000 | Audit type: financial
 - Issued: 2016-03-30 | Industry: gas | FERC Form: No. 2
 - Audit period: from January 1, 2012 to July 31, 2015
@@ -5025,7 +5025,7 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 ---
 
 ## Emera Maine
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA15-4-000 | Audit type: non-financial
 - Issued: 2016-01-04 | Industry: n/a | FERC Form: n/a
 - Function(s): transmission
@@ -5043,7 +5043,7 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 ---
 
 ## Yankee Atomic Energy Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-3-000 | Audit type: financial
 - Issued: 2015-10-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
@@ -5056,7 +5056,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Portland General Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA15-2-000 | Audit type: financial
 - Issued: 2015-10-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
@@ -5069,7 +5069,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Entergy Corporation
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-2-000 | Audit type: financial
 - Issued: 2015-07-30 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
@@ -5082,7 +5082,7 @@ Entergy filed trust fund financial reports annually with the Commission, but the
 ---
 
 ## NRG Energy, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: PA14-1 | Audit type: non-financial
 - Issued: 2015-07-02 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
@@ -5097,7 +5097,7 @@ NRG reported outage data incorrectly either in the Generator Availability Data S
 ---
 
 ## Enterprise Product Partners
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-1-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: oil | FERC Form: No. 6, No. 6-Q
 - Audit period: from January 1, 2011 to January 30, 2015
@@ -5136,7 +5136,7 @@ MAPL misclassified a prepaid lease asset in its books and records in the amount 
 ---
 
 ## ConocoPhillips
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-5-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
@@ -5152,7 +5152,7 @@ COP aggregated natural gas volumes purchased and sold by affiliate companies on 
 ---
 
 ## Colonial Pipeline Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-4-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
@@ -5185,7 +5185,7 @@ Recommendations:
 ---
 
 ## Kinder Morgan
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-10-000 | Audit type: financial
 - Issued: 2015-06-04 | Industry: gas | FERC Form: No. 2
 - Audit period: of January 1, 2011 through December 2014
@@ -5197,7 +5197,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Kansas Gas and Electric Company
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-3-000 | Audit type: financial
 - Issued: 2015-03-27 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
@@ -5212,7 +5212,7 @@ KGE did not file annual nuclear decommissioning trust fund reports with the Comm
 ---
 
 ## Occidental Energy Marketing, Inc.
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-8 | Audit type: financial
 - Issued: 2014-10-24 | Industry: n/a | FERC Form: No. 552
 - Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3018&optimized=false
@@ -5223,7 +5223,7 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 ---
 
 ## Cargill
-- Collection: FERC Audits | Source: FERC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
 - Docket: FA14-6 | Audit type: financial
 - Issued: 2014-10-24 | Industry: n/a | FERC Form: No. 552
 - Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3019&optimized=false

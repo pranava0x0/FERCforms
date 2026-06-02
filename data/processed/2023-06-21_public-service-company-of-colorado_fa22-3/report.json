@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
   "company": "Public Service Company of Colorado",
   "company_raw": "Public Service Company of Colorado (FA22-3)",
@@ -209,5 +213,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

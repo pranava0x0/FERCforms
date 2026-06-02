@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-03-30_destin-pipeline-company_fa15-1",
   "company": "Destin Pipeline Company",
   "company_raw": "FA15-1 Destin Pipeline Company",
@@ -85,5 +89,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

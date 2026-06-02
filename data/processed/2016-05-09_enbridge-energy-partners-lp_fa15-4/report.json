@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-05-09_enbridge-energy-partners-lp_fa15-4",
   "company": "Enbridge Energy Partners, LP",
   "company_raw": "FA15-4 Enbridge Energy Partners, LP",
@@ -238,5 +242,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

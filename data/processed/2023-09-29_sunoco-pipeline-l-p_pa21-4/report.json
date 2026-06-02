@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
   "company": "Sunoco Pipeline L.P.",
   "company_raw": "Sunoco Pipeline L.P. (PA21-4)",
@@ -252,5 +256,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

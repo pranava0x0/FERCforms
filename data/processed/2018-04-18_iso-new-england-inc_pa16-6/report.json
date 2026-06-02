@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-04-18_iso-new-england-inc_pa16-6",
   "company": "ISO New England, Inc.",
   "company_raw": "PA16-6 ISO New England, Inc.",
@@ -23,5 +27,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

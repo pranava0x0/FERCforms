@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-04-19_itc-holdings-corporation_fa15-14",
   "company": "ITC Holdings Corporation",
   "company_raw": "FA15-14 ITC Holdings Corporation",
@@ -32,5 +36,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

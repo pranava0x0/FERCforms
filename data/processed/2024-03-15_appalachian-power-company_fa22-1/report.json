@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-03-15_appalachian-power-company_fa22-1",
   "company": "Appalachian Power Company",
   "company_raw": "Appalachian Power Company (FA22-1)",
@@ -54,5 +58,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

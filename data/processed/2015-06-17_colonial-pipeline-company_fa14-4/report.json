@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2015-06-17_colonial-pipeline-company_fa14-4",
   "company": "Colonial Pipeline Company",
   "company_raw": "FA14-4 Colonial Pipeline Company",
@@ -81,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

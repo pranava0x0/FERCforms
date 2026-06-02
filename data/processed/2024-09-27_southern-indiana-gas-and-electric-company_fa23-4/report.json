@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-09-27_southern-indiana-gas-and-electric-company_fa23-4",
   "company": "Southern Indiana Gas and Electric Company",
   "company_raw": "Southern Indiana Gas and Electric Company (FA23-4)",
@@ -239,5 +243,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

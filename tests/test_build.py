@@ -103,3 +103,24 @@ def test_industry_counts_nonempty_for_nonempty_corpus():
     meta = build.build_meta([_report("a", "oil")], listing=[])
     assert meta["by_industry_identified"] == {"oil": 1}
     assert meta["listing_captured_at"] is None
+
+
+def test_committed_reports_carry_full_schema_and_named_source():
+    """Every committed report.json must EXPLICITLY carry the provenance fields
+    (collection/jurisdiction/source/structured) on disk — not lean on model
+    defaults — and name a government source. Regression for the 120 FERC
+    report.json that predated the multi-source fields (source was "" and the
+    fields were absent on disk; only materialized by defaults at build time)."""
+    import json
+
+    from pipeline import config
+
+    paths = sorted(config.PROCESSED_DIR.glob("*/report.json"))
+    assert paths, "no processed report.json found"
+    for p in paths:
+        raw = json.loads(p.read_text(encoding="utf-8"))
+        for field in ("collection", "jurisdiction", "source", "structured"):
+            assert field in raw, f"{p.parent.name}: report.json missing {field!r} on disk"
+        assert raw["source"].strip(), f"{p.parent.name}: empty source (issuer not named)"
+        if raw["collection"] == "ferc_audit":
+            assert "FERC" in raw["source"], f"{p.parent.name}: FERC audit source not named"

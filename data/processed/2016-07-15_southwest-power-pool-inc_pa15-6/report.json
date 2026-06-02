@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-07-15_southwest-power-pool-inc_pa15-6",
   "company": "Southwest Power Pool, Inc.",
   "company_raw": "PA15-6 Southwest Power Pool, Inc.",
@@ -59,5 +63,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-09-19_avista-corporation_pa18-2",
   "company": "Avista Corporation",
   "company_raw": "Avista Corporation (PA18-2)",
@@ -165,5 +169,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

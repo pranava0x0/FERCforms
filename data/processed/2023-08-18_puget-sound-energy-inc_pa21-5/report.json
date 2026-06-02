@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2023-08-18_puget-sound-energy-inc_pa21-5",
   "company": "Puget Sound Energy Inc.",
   "company_raw": "Puget Sound Energy Inc. (PA21-5)",
@@ -57,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

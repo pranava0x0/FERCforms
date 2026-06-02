@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-09-26_mississippi-power-company_fa15-8",
   "company": "Mississippi Power Company",
   "company_raw": "FA15-8 Mississippi Power Company",
@@ -97,5 +101,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

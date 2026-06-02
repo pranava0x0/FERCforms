@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-07-07_pnm-resources-inc_pa18-1",
   "company": "PNM Resources, Inc.",
   "company_raw": "PNM Resources, Inc. (PA18-1)",
@@ -253,5 +257,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

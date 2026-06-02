@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-04-23_american-electric-power-company-inc_fa17-1",
   "company": "American Electric Power Company, Inc.",
   "company_raw": "American Electric Power Company, Inc. (FA17-1)",
@@ -54,5 +58,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

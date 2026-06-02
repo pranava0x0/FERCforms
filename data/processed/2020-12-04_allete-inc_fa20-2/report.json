@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-12-04_allete-inc_fa20-2",
   "company": "ALLETE, Inc.",
   "company_raw": "ALLETE, Inc. (FA20-2)",
@@ -224,5 +228,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

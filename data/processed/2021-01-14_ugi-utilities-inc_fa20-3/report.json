@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-01-14_ugi-utilities-inc_fa20-3",
   "company": "UGI Utilities, Inc.",
   "company_raw": "UGI Utilities, Inc. (FA20-3)",
@@ -303,5 +307,6 @@
       "is_other_matter": true,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

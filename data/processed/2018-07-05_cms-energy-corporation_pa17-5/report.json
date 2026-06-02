@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-07-05_cms-energy-corporation_pa17-5",
   "company": "CMS Energy Corporation",
   "company_raw": "PA17-5 CMS Energy Corporation",
@@ -45,5 +49,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

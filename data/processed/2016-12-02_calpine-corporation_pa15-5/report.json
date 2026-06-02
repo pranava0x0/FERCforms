@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-12-02_calpine-corporation_pa15-5",
   "company": "Calpine Corporation",
   "company_raw": "PA15-5 Calpine Corporation",
@@ -44,5 +48,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

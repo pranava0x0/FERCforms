@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2014-10-24_cargill_fa14-6",
   "company": "Cargill",
   "company_raw": "FA14-6 Cargill",
@@ -21,5 +25,6 @@
     "552"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

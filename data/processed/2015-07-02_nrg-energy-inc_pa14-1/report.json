@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2015-07-02_nrg-energy-inc_pa14-1",
   "company": "NRG Energy, Inc.",
   "company_raw": "PA14-1 NRG Energy, Inc.",
@@ -38,5 +42,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

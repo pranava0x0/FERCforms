@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2023-02-10_wec-business-services-llc_fa21-2",
   "company": "WEC Business Services LLC",
   "company_raw": "WEC Business Services LLC (FA21-2)",
@@ -24,5 +28,6 @@
     "60"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-08-16_empire-district-electric-company_pa15-7",
   "company": "Empire District Electric Company",
   "company_raw": "PA15-7 Empire District Electric Company",
@@ -39,5 +43,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

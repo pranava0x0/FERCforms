@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-07-31_northern-states-power-company-minnesota_fa17-5",
   "company": "Northern States Power Company (Minnesota)",
   "company_raw": "Northern States Power Company (Minnesota) (FA17-5)",
@@ -66,5 +70,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

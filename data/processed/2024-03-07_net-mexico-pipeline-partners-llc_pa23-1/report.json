@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-03-07_net-mexico-pipeline-partners-llc_pa23-1",
   "company": "NET Mexico Pipeline Partners, LLC",
   "company_raw": "NET Mexico Pipeline Partners, LLC (PA23-1)",
@@ -201,5 +205,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

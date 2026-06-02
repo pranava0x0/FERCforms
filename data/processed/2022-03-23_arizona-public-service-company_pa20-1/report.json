@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-03-23_arizona-public-service-company_pa20-1",
   "company": "Arizona Public Service Company",
   "company_raw": "Arizona Public Service Company (PA20-1)",
@@ -61,5 +65,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-09-15_dayton-power-and-light-company_fa21-4",
   "company": "Dayton Power and Light Company",
   "company_raw": "Dayton Power and Light Company (FA21-4)",
@@ -81,5 +85,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

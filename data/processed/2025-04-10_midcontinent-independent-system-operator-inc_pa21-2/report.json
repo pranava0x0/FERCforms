@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-04-10_midcontinent-independent-system-operator-inc_pa21-2",
   "company": "Midcontinent Independent System Operator, Inc.",
   "company_raw": "Midcontinent Independent System Operator, Inc. (PA21-2)",
@@ -104,5 +108,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

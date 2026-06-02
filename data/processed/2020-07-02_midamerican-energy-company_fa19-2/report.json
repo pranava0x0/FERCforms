@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-07-02_midamerican-energy-company_fa19-2",
   "company": "MidAmerican Energy Company",
   "company_raw": "MidAmerican Energy Company (FA19-2)",
@@ -23,5 +27,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-09-23_centurion-pipeline-l-p_fa19-4",
   "company": "Centurion Pipeline L.P.",
   "company_raw": "Centurion Pipeline L.P. (FA19-4)",
@@ -121,5 +125,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

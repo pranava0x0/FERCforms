@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2015-06-04_kinder-morgan_fa14-10",
   "company": "Kinder Morgan",
   "company_raw": "FA14-10 Kinder Morgan",
@@ -21,5 +25,6 @@
     "2"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-02-01_nv-energy-inc_pa15-2",
   "company": "NV Energy, Inc.",
   "company_raw": "PA15-2 NV Energy, Inc.",
@@ -144,5 +148,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

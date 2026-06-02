@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-11-17_ameren-corporation_fa20-6",
   "company": "Ameren Corporation",
   "company_raw": "Ameren Corporation (FA20-6)",
@@ -283,5 +287,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

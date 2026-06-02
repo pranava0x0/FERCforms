@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-09-29_westar-energy-inc_fa15-9",
   "company": "Westar Energy, Inc.",
   "company_raw": "FA15-9 Westar Energy, Inc.",
@@ -148,5 +152,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

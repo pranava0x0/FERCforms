@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-04-18_midcontinent-independent-system-operator-inc_pa16-5",
   "company": "Midcontinent Independent System Operator, Inc.",
   "company_raw": "PA16-5 Midcontinent Independent System Operator, Inc.",
@@ -23,5 +27,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

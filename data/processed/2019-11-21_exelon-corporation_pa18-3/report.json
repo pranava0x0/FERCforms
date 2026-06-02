@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-11-21_exelon-corporation_pa18-3",
   "company": "Exelon Corporation",
   "company_raw": "Exelon Corporation (PA18-3)",
@@ -53,5 +57,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

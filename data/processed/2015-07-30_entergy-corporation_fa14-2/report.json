@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2015-07-30_entergy-corporation_fa14-2",
   "company": "Entergy Corporation",
   "company_raw": "FA14-2 Entergy Corporation",
@@ -31,5 +35,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2017-09-26_gulf-power-company_fa15-5",
   "company": "Gulf Power Company",
   "company_raw": "FA15-5 Gulf Power Company",
@@ -96,5 +100,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

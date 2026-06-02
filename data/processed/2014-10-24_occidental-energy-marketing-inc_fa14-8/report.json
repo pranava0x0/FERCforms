@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2014-10-24_occidental-energy-marketing-inc_fa14-8",
   "company": "Occidental Energy Marketing, Inc.",
   "company_raw": "FA14-8 Occidental Energy Marketing, Inc.",
@@ -21,5 +25,6 @@
     "552"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

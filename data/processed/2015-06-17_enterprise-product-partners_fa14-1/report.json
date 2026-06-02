@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2015-06-17_enterprise-product-partners_fa14-1",
   "company": "Enterprise Product Partners",
   "company_raw": "FA14-1 Enterprise Product Partners",
@@ -93,5 +97,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

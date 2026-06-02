@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-10-07_chevron-pipe-line-company_fa19-5",
   "company": "Chevron Pipe Line Company",
   "company_raw": "Chevron Pipe Line Company (FA19-5)",
@@ -134,5 +138,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

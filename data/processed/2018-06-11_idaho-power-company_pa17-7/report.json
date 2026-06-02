@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-06-11_idaho-power-company_pa17-7",
   "company": "Idaho Power Company",
   "company_raw": "PA17-7 Idaho Power Company",
@@ -22,5 +26,6 @@
   ],
   "forms": [],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

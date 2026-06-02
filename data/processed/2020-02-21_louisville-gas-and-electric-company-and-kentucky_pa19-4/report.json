@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-02-21_louisville-gas-and-electric-company-and-kentucky_pa19-4",
   "company": "Louisville Gas and Electric Company and Kentucky Utilities Company",
   "company_raw": "Louisville Gas and Electric Company and Kentucky Utilities Company (PA19-4)",
@@ -24,5 +28,6 @@
     "1"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

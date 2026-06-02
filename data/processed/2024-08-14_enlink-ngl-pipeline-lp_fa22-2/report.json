@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-08-14_enlink-ngl-pipeline-lp_fa22-2",
   "company": "EnLink NGL Pipeline, LP",
   "company_raw": "EnLink NGL Pipeline, LP (FA22-2)",
@@ -154,5 +158,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

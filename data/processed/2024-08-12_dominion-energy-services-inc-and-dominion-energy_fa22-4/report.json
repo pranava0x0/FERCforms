@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
   "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
   "company_raw": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc. (FA22-4)",
@@ -414,5 +418,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

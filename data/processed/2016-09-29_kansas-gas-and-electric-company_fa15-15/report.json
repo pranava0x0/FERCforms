@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2016-09-29_kansas-gas-and-electric-company_fa15-15",
   "company": "Kansas Gas and Electric Company",
   "company_raw": "FA15-15 Kansas Gas and Electric Company",
@@ -73,5 +77,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

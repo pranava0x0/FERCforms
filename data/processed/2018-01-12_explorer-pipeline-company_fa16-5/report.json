@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-01-12_explorer-pipeline-company_fa16-5",
   "company": "Explorer Pipeline Company",
   "company_raw": "FA16-5 Explorer Pipeline Company",
@@ -200,5 +204,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

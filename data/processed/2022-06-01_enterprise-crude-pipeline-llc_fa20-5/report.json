@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-06-01_enterprise-crude-pipeline-llc_fa20-5",
   "company": "Enterprise Crude Pipeline LLC",
   "company_raw": "Enterprise Crude Pipeline LLC (FA20-5)",
@@ -190,5 +194,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2018-02-21_entergy-arkansas-inc_fa15-11",
   "company": "Entergy Arkansas, Inc.",
   "company_raw": "FA15-11 Entergy Arkansas, Inc.",
@@ -53,5 +57,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

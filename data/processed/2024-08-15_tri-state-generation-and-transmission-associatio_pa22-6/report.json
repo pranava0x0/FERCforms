@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2024-08-15_tri-state-generation-and-transmission-associatio_pa22-6",
   "company": "Tri-State Generation and Transmission Association, Inc.",
   "company_raw": "Tri-State Generation and Transmission Association, Inc. (PA22-6)",
@@ -81,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

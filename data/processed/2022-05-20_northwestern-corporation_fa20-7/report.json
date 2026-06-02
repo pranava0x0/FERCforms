@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-05-20_northwestern-corporation_fa20-7",
   "company": "NorthWestern Corporation",
   "company_raw": "NorthWestern Corporation (FA20-7)",
@@ -180,5 +184,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

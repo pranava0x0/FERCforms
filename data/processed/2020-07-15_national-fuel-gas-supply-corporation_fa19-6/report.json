@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-07-15_national-fuel-gas-supply-corporation_fa19-6",
   "company": "National Fuel Gas Supply Corporation",
   "company_raw": "National Fuel Gas Supply Corporation (FA19-6)",
@@ -138,5 +142,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

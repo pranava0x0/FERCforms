@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-09-27_macquarie-energy-llc_pa19-5",
   "company": "Macquarie Energy LLC",
   "company_raw": "Macquarie Energy LLC (PA19-5)",
@@ -23,5 +27,6 @@
     "552"
   ],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }

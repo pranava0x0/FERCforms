@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
   "company": "Maritimes & Northeast Pipeline, L.L.C.",
   "company_raw": "Maritimes & Northeast Pipeline, L.L.C. (FA19-9)",
@@ -171,5 +175,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

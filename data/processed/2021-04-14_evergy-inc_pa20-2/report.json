@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-04-14_evergy-inc_pa20-2",
   "company": "Evergy, Inc.",
   "company_raw": "Evergy, Inc. (PA20-2)",
@@ -41,5 +45,6 @@
       "is_other_matter": false,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

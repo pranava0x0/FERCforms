@@ -23,6 +23,11 @@ from pipeline.models import AuditReport, Finding, ListingEntry, Recommendation, 
 
 logger = logging.getLogger(__name__)
 
+# The government issuer of every FERC audit in this collection. Set explicitly so
+# each record names its source (parity with the state collections, which carry
+# their commission name) rather than leaving AuditReport.source defaulted to "".
+FERC_AUDIT_SOURCE = "FERC Office of Enforcement, Division of Audits & Accounting"
+
 _DOCKET_FULL_RE = re.compile(r"Docket No\.?\s*([A-Z]{2}\d{2}-\d+-\d+)")
 _DATE_LINE_RE = re.compile(r"(?m)^\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*$")
 _AUDIT_PERIOD_RE = re.compile(r"audit covered the period\s+(.+?)\.", re.S)
@@ -238,6 +243,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         )
 
     return AuditReport(
+        source=FERC_AUDIT_SOURCE,
         id=entry.id,
         company=entry.company,
         company_raw=entry.company_raw,

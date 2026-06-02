@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2019-06-25_transcontinental-gas-pipe-line-company-llc_fa18-2",
   "company": "Transcontinental Gas Pipe Line Company, LLC",
   "company_raw": "Transcontinental Gas Pipe Line Company, LLC (FA18-2)",
@@ -226,5 +230,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

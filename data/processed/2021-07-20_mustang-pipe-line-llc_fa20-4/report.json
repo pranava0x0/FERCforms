@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-07-20_mustang-pipe-line-llc_fa20-4",
   "company": "Mustang Pipe Line LLC",
   "company_raw": "Mustang Pipe Line LLC (FA20-4)",
@@ -138,5 +142,6 @@
         }
       ]
     }
-  ]
+  ],
+  "structured": true
 }

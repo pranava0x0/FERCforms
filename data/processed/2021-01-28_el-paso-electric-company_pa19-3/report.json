@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2021-01-28_el-paso-electric-company_pa19-3",
   "company": "El Paso Electric Company",
   "company_raw": "El Paso Electric Company (PA19-3)",
@@ -78,5 +82,6 @@
       "is_other_matter": true,
       "recommendations": []
     }
-  ]
+  ],
+  "structured": true
 }

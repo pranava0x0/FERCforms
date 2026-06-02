@@ -1,4 +1,8 @@
 {
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2022-03-31_duke-energy-corporation_pa20-3",
   "company": "Duke Energy Corporation",
   "company_raw": "Duke Energy Corporation (PA20-3)",
@@ -22,5 +26,6 @@
   ],
   "forms": [],
   "finding_count": 0,
-  "findings": []
+  "findings": [],
+  "structured": true
 }
