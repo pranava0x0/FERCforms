@@ -372,19 +372,19 @@
     "generated_at": "2026-06-01"
   },
   "state_audit": {
-    "report_count": 17,
+    "report_count": 21,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 16,
+      "electric": 20,
       "gas": 1
     },
     "by_year": {
       "2022": 1,
       "2023": 1,
-      "2024": 7,
-      "2025": 8
+      "2024": 10,
+      "2025": 9
     },
     "by_function": {},
     "themes": [],

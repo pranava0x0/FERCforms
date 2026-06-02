@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 142 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
+> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 146 reports, 599 findings, 1505 recommendations. Generated 2026-06-01.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
 
@@ -282,6 +282,14 @@ Recommendations:
 12. Establish and implement policies and procedures to ensure that communications, including communications related to energy and ancillary services market offers, outages, derates, and other operational details, between Talen Energy and its energy managers are timely and effective.
 13. Establish and implement policies and procedures to perform an after-the-fact review to ensure that energy offer and outage/derate data submitted by Talen Energy and/or its energy managers were accurately recorded and reflected the actual availability of the resource.
 14. Provide training to relevant staff on policies and procedures implemented in response to Recommendations 11, 12, and 13, and repeat such trainings as needed. E.
+
+---
+
+## Commonwealth Edison Company
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/370165
 
 ---
 
@@ -811,6 +819,22 @@ Recommendations:
 
 ---
 
+## Commonwealth Edison Company
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/354448
+
+---
+
+## Commonwealth Edison Company
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/354464
+
+---
+
 ## Tri-State Generation and Transmission Association, Inc.
 - Docket: PA22-6-000 | Audit type: non-financial
 - Issued: 2024-08-15 | Industry: electric | FERC Form: No. 1
@@ -1158,6 +1182,14 @@ NET Mexico did not submit certain FERC Form No. 549D filings within 60 days afte
 Recommendations:
 26. Strengthen procedures and controls to ensure that the FERC Form No. 549D filings are submitted to the Commission by the filing deadline.
 27. Train relevant staff on the revised FERC Form No. 549D filing procedures and controls and provide periodic training in this area, as needed. E.
+
+---
+
+## Commonwealth Edison Company
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-02-02 | Industry: electric | FERC Form: n/a
+- Function(s): n/a
+- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/346818
 
 ---
 
