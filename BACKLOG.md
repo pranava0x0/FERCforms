@@ -4,7 +4,24 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ---
 
-> ## ▶ RESUME HERE — multi-source expansion (paused 2026-06-01)
+> ## ▶ RESUME HERE — paused 2026-06-02 (PJM + prudence + queued asks)
+>
+> **Where the corpus is:** 169 records on `main` (multi-agent merge `c53ecbd`) — **120 FERC audits**, **7 prudence reviews**, **42 state PUC audits across 14 jurisdictions** (PA MI VA TX IL SC OH + this session's **NJ MD DE KY IN WV DC**). All gov-sourced (a corpus-wide test guards it); per-finding `source_page` shipped; `llms.txt` grouped by collection w/ grounded insights.
+>
+> **Session learnings already folded in** (see [docs/data-sources.md](docs/data-sources.md) for the per-regulator access map): the **UA no longer carries a `python-requests` token** (WV's IIS filtered it; `config.USER_AGENT`); the **eLibrary AdvancedSearch JSON API is cracked** (docket in `searchText`, accession in the typo'd `acesssionNumber`) — unblocks prudence discovery; the **gov-guard admits a narrow `.org` allowlist** (`_OFFICIAL_GOV_ORG_DOMAINS = {dcpsc.org}`, user-approved). All agent-sourced citations were **verified against the source PDFs** (MAPP ¶61,156 corrected; everything else confirmed).
+>
+> **QUEUED for the next session (user asks, not yet built):**
+> 1. **CSV export** of files + findings → `docs/data/*.csv` (one row per finding/rec w/ provenance), **linked from `llms.txt`**. A `pipeline.build` step; add tests.
+> 2. **Deep South + MISO states** — a few on-theme docs each (rate cases / fuel-cost reviews) for AL, MS, LA, GA, AR + other MISO-footprint states; same verify→seed→ingest→commit-per-state workflow. (MISO ROE complaint dockets also feed the prudence backlog.)
+> 3. **FERC Form 1 raw-data analysis** — the big strategic eval is written up in [docs/form1-analysis-plan.md](docs/form1-analysis-plan.md) (3 asks: time-series of rate inputs; per-field reasoning via the Part-101 USoA; a flag engine validated against our 602 findings). Gated on a Phase-0 download-path check.
+> 4. **NC NCUC** (Cloudflare — browser-capture + `fetch=false`, like OH) and **TN** (mostly TVA/federal — thin, low priority) to finish the PJM set.
+> 5. **Phase 2 — "get all docs across states"**: scale each state from the validation few to full coverage.
+> 6. **3 prudence candidates to pin** (NETO Opinion 531 `EL11-66`, MISO Opinion 569 `EL14-12`, NCEMC `EL18-192`) — consolidated dockets don't resolve cleanly via `searchText`; pin the order accession by date+description or browser, then seed.
+> 7. **[cleanup — misfiled] Move all Clean Water Act content out of this project.** `docs/cwa-data-center-enforcement.md` (and the **"Clean Water Act enforcement & data centers"** link the other worktree added to `llms.txt` via `pipeline/llmstxt.py`) landed here **by mistake** — it arrived via the multi-agent merge from `claude/sharp-euler` (`c53ecbd`). **All CWA / data-center-water-usage material belongs in the separate `datacenterwaterusage` project, not the FERC Audit Explorer.** Action: relocate the doc to that project, then remove it here **and** drop the `llms.txt` link in `llmstxt.py`'s "Optional" section, and rebuild. Coordinate with the other worktree (it may still be editing that file) before deleting.
+>
+> ---
+>
+> ### (historical) multi-source expansion — phase 1–3 (paused 2026-06-01)
 >
 > **Goal:** add FERC prudence reviews + state PUC/PSC/SCC audits (VA, OH, MI, IL, TX, SC, PA, NC) as new tabs. Get 3–5 docs/source to validate, then collect all. **Official `.gov` sources ONLY** (user constraint — enforced in `pipeline/sources.load_seed`, raises on non-gov). Non-fitting legal docs are **metadata-only** (source link + provenance, `structured=False` → "Listed for reference"; no findings parse, no LLM).
 >
