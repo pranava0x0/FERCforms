@@ -57,7 +57,7 @@ tests/               pytest
 - `data/listing.json` and any baked `docs/data/*.json` move together with the seed change that produced them — never split across commits ([§ Common tasks](#common-tasks)).
 - The corpus is all FERC utility audits (electric / gas / oil, FA + PA) for every available year. The live /audits page lists 2019+ only; FY2014-2018 are backfilled from a saved Wayback snapshot via `pipeline.backfill` (ferc.gov-origin only). See [ISSUES.md](ISSUES.md).
 - **Three collections, one per UI tab.** Every record carries a `collection` (`ferc_audit` | `prudence_review` | `state_audit`), driving the site's tabs — each tab has its OWN baked stats/patterns (`docs/data/patterns_by_collection.json`). Canonical keys live in `pipeline/build.py` `COLLECTIONS`; the site mirrors them in `docs/js/app.js` (a test asserts parity). FERC audits default to `ferc_audit` (no rewrite of the 120 committed reports).
-- **Prudence reviews + state PUC audits are metadata-only.** They're ingested via `pipeline/sources.py` from `data/seeds/*.json` and captured with their source link + full provenance but **NOT** parsed into findings (`structured=False` → the site's "Listed for reference" state). FERC's executive-summary parser doesn't fit legal orders / testimony / table-driven state audit summaries, and emitting garbled "verbatim" findings would break the quote discipline. A findings parser for the clean PA/MI management-audit subset is a [BACKLOG.md](BACKLOG.md) item — don't bolt findings onto these casually.
+- **Prudence reviews + state PUC audits are metadata-only by default.** They're ingested via `pipeline/sources.py` from `data/seeds/*.json` and captured with their source link + full provenance but **NOT** parsed into findings (`structured=False` → the site's "Listed for reference" state). FERC's executive-summary parser doesn't fit legal orders / testimony, and emitting garbled "verbatim" findings would break the quote discipline. **Exception (live):** PA PUC **Management & Operations** audits are parsed verbatim from their Exhibit I-2 "Summary of Recommendations" (`pipeline/state_structure.py`, `parse:true`, snapshot-gated). Only flip `parse:true` for a format with a clean enumerable structure + a no-regression test; everything else stays metadata-only. Remaining formats (PA focused/MEI, MI Liberty) are a [BACKLOG.md](BACKLOG.md) item — don't bolt findings onto these casually.
 - **Official-government sources ONLY.** Every seed URL must be an official `.gov` host (or the legacy `*.state.xx.us` pattern, e.g. Ohio PUCO). NEVER ingest from third-party mirrors/aggregators (DocumentCloud, SEC EDGAR, news sites) even when they're easier to fetch — pull from the regulator's own site. `pipeline/sources.load_seed` enforces this and **raises** on any non-gov URL (generalizes backfill's "ferc.gov-origin only" rule); a test guards every committed seed.
 - **Not every structured report has findings — don't assume `finding_count > 0`.** ~22% (26/120) parse to 0 findings: partly genuine clean audits, partly a known parser-coverage gap across *both* eras (FY2014-2018 format + ~11 live 2019+ reports). The site renders these with an explicit "No findings extracted" state and a source-PDF link. Recovery is the top [BACKLOG.md](BACKLOG.md) item; details in [ISSUES.md](ISSUES.md).
 
@@ -135,13 +135,22 @@ This is a schema change. **Don't do this casually.** Steps:
 5. Migrate any existing records that should map to the new entry — or intentionally leave them.
 6. Run the full test suite — drift-safety tests should catch a missed mirror.
 
-### Adding a connector (per-source scraper)
+### Adding a source (per-regulator scraper)
 
-1. Subclass the project's `Connector` base class.
-2. Register in the connector index module.
-3. Implement `fetch_records()` / `normalize()` / `cache_key()`.
-4. Set `run_order` so enrichment connectors run *after* their producers.
-5. Schema-validate emitted records; tests catch any new field that the schema's `extra="forbid"` would reject.
+The full per-regulator access recipes and the step-by-step workflow live in
+**[docs/data-sources.md](docs/data-sources.md)** and the **refresh-ferc-data** skill
+(`.claude/skills/refresh-ferc-data/`). In short:
+
+1. Find the doc + its stable **`.gov`** URL (per-source recipe in the guide).
+2. **Verify before seeding:** fetch + read page 1–2 (skip "Filing Receipt" covers) to label
+   `company`/`issued_date`/`doc_type` accurately; drop off-theme docs.
+3. Write `data/seeds/<source>.json` (`SourceSeed` per doc, `collection:"state_audit"`, full
+   `source_note`, `parse:false`, `fetch:false` only for WAF-blocked browser-captured URLs).
+4. `python -m pipeline.sources --seed data/seeds/<source>.json && python -m pipeline.build`,
+   then `pytest` + preview the tab. Commit seed + processed + baked `docs/data` together.
+
+`SourceSeed`'s `extra="forbid"` + `load_seed`'s `.gov` guard catch bad fields/hosts; a test
+validates every committed seed.
 
 ---
 

@@ -61,4 +61,6 @@ lists 2019+; FY2014-2018 are backfilled from a saved Internet Archive Wayback sn
 - [AGENTS.md](AGENTS.md) — how AI agents work in this repo (file map, commands)
 - [DESIGN.md](DESIGN.md) — visual system (periwinkle + Google+ stream)
 - [DATA_STRUCTURE.md](DATA_STRUCTURE.md) — the document/data model across FERC docs
+- [docs/data-sources.md](docs/data-sources.md) — how every document is acquired, per regulator (scraping guide)
+- To refresh or extend the dataset, use the **refresh-ferc-data** skill (`.claude/skills/refresh-ferc-data/`)
 - [BACKLOG.md](BACKLOG.md) · [ISSUES.md](ISSUES.md) · [security.md](security.md)
