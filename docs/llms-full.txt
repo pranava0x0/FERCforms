@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 176 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 178 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5453,6 +5453,17 @@ Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) 
 
 ---
 
+## Mississippi Public Utilities Staff
+- Collection: State PUC Audits | Source: Mississippi Public Utilities Staff
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-06-30 | Industry: n/a | FERC Form: n/a
+- Source page: https://www.psc.ms.gov/
+- Status: listed for reference (not machine-parsed into findings)
+
+Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
+
+---
+
 ## Georgia Power Company
 - Collection: State PUC Audits | Source: Georgia Public Service Commission
 - Docket: 56002 | Audit type: n/a
@@ -5740,6 +5751,17 @@ Recommendations:
 Recommendations:
 18. Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances. (source p. 75)
 19. Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels. (source p. 76)
+
+---
+
+## Mississippi Public Utilities Staff
+- Collection: State PUC Audits | Source: Mississippi Public Utilities Staff
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-06-30 | Industry: n/a | FERC Form: n/a
+- Source page: https://www.psc.ms.gov/
+- Status: listed for reference (not machine-parsed into findings)
+
+Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).
 
 ---
 

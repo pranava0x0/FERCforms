@@ -153,6 +153,19 @@ Each commission's docket system is different. Patterns below are all confirmed b
   Order U-34283); `data/seeds/la_lpsc.json`. On-theme & prudence-relevant; Grand Gulf/SERI refund + the
   Meta-data-center infrastructure approval are obvious next LA targets.
 
+### MS — Mississippi PSC · two hosts, one cert-broken
+- **Static `.gov` (works):** `www.psc.ms.gov/sites/default/files/{...}.pdf` (Drupal) serves agendas, consent
+  dockets, Commissioner notes, and the **Mississippi Public Utilities Staff (MPUS) annual reports** — the
+  MPUS is the independent staff that runs year-round fuel-adjustment audits (Entergy MS ECR, Mississippi
+  Power FCR); its annual report is the cleanest on-theme MS doc fetchable by script.
+- **Per-utility docket docs (BLOCKED):** the real docket filings/orders live in InSite at
+  `www.psc.state.ms.us/InSiteConnect/InSiteView.aspx?...&docid={N}` (a legacy `.state.ms.us` host — passes
+  the gov-guard) **but it serves a broken TLS chain** ("unable to verify the first certificate") → scripts
+  and the pipeline fetch fail. Treat like OH/NC: **browser-capture the docid URL + seed `fetch=false`**.
+- **Shipped:** MPUS annual reports FY2024 + FY2025; `data/seeds/ms_psc.json`. **High-value InSite targets**
+  (browser-capture next): the **Kemper IGCC prudence settlement** (Feb 2018 — Mississippi Power shareholders
+  absorbed ~$6B) and the **$300M Entergy Mississippi Grand Gulf settlement** (2022, largest in MPSC history).
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

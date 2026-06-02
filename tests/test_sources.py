@@ -98,6 +98,12 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://www.michigan.gov/mpsc/x.pdf")
     assert sources.is_official_gov("https://elibrary.ferc.gov/eLibrary/filelist?x")
     assert sources.is_official_gov("https://dis.puc.state.oh.us/ViewImage.aspx")  # legacy state gov
+    # Deep South state hosts (GA / LA / MS) added in the 2026-06-02 expansion.
+    assert sources.is_official_gov("https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/222513/103670")
+    assert sources.is_official_gov("https://psc.ga.gov/search/facts-document/?documentId=222513")
+    assert sources.is_official_gov("https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D")
+    assert sources.is_official_gov("https://www.psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf")
+    assert sources.is_official_gov("https://www.psc.state.ms.us/InSiteConnect/InSiteView.aspx?docid=402655")  # legacy .state.ms.us
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
