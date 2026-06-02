@@ -211,6 +211,10 @@ Maintain a `backlog.md` for ideas, features, and enhancements.
 - Cache API responses by content hash. Never re-classify identical content.
 - Log cost impact at each optimization layer. Print a cost summary at the end of each run.
 - `--dry-run` and `--fetch-only` modes must work without an API key.
+- **Multi-agent harnesses (deep-research, Workflow fan-outs) are 10–100× a single call — size the tool to the ask.** Measured on this repo (2026-06-02): one `deep-research` run fans out to **up to ~95 subagent calls** (1 scope + 5 search + ≤15 fetch + **≤25 claims × 3 votes = 75 verify** + 1 synth) and burned **~7.7M tokens *before* it even finished**. The cost isn't one big call — it's dozens of small agents each *re-loading* the system prompt + tools + the (long) question + a JSON schema, so `cache_creation` + `cache_read` dominate. The **verify phase is ~80% of the agents** (the 3-vote adversarial pass). Rules:
+    - **Right-size before reaching for the harness.** A bounded factual lookup → a direct `WebSearch` / a few `WebFetch` calls inline (one-to-low-tens of K tokens). Reserve the full fan-out for genuinely deep, multi-source, *fact-checked* reports where adversarial verification earns its cost.
+    - **Don't auto-launch a research/orchestration workflow.** It requires **explicit user opt-in** every time (the `Workflow` tool enforces this; a *skill* that wraps it does not — so confirm cost/scope with the user before invoking). Surface the rough agent count + token order-of-magnitude first.
+    - **If you do run it, turn the knobs down.** The fan-out constants live at the top of the generated script (`MAX_FETCH`, `MAX_VERIFY_CLAIMS`, `VOTES_PER_CLAIM`). Lower `MAX_VERIFY_CLAIMS`, and set `VOTES_PER_CLAIM=1` unless correctness is genuinely safety-critical — 3× verification triples the dominant phase for marginal gain on well-sourced `.gov` facts. Narrow the question so the scope agent picks fewer angles.
 
 ---
 
