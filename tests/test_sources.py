@@ -125,6 +125,21 @@ def test_committed_seeds_are_all_official_gov():
             assert sources.is_official_gov(d["source_page_url"]), f"{path.name}: {d['source_page_url']}"
 
 
+def test_every_committed_report_is_gov_sourced():
+    """Corpus-wide provenance guard: EVERY structured report (FERC audits, prudence
+    reviews, and state audits alike) must carry an official-government source_page_url
+    AND pdf_download_url — not just the seeded ones. Encodes the 2026-06-02 corpus
+    audit so a future non-gov record can never slip in unnoticed. (`archived_via` is
+    exempt: it intentionally points to the Internet Archive snapshot used to recover
+    a ferc.gov listing, while the document itself comes from elibrary.ferc.gov.)"""
+    paths = sorted(config.PROCESSED_DIR.glob("*/report.json"))
+    assert paths, "no processed report.json found"
+    for p in paths:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        assert sources.is_official_gov(d["source_page_url"]), f"{p.parent.name}: {d['source_page_url']}"
+        assert sources.is_official_gov(d["pdf_download_url"]), f"{p.parent.name}: {d['pdf_download_url']}"
+
+
 def test_all_seed_files_validate_and_have_unique_ids():
     """Every committed seed must parse cleanly (each record a valid SourceSeed) and
     use globally-unique ids — the id is also the on-disk processed dir + raw
