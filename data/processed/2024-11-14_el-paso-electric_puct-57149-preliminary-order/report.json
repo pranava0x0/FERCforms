@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "TX",
+  "source": "Public Utility Commission of Texas",
+  "doc_type": "preliminary order",
+  "id": "2024-11-14_el-paso-electric_puct-57149-preliminary-order",
+  "company": "El Paso Electric Company",
+  "company_raw": "El Paso Electric Company",
+  "docket": "57149",
+  "docket_full": null,
+  "issued_date": "2024-11-14",
+  "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=34",
+  "pdf_download_url": "https://interchange.puc.texas.gov/Documents/57149_34_1442512.PDF",
+  "captured_at": "2026-06-01",
+  "source_note": "Preliminary Order of the Public Utility Commission of Texas identifying the issues (including prudence of fuel and purchased-power costs) in El Paso Electric Company's application to reconcile Texas-jurisdictional fuel, fuel-related, and purchased-power expenses for the reconciliation period April 1, 2022 through March 31, 2024. PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed November 14, 2024. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_34_1442512.PDF.",
+  "archived_via": null,
+  "page_count": 11,
+  "scanned_pages": [
+    1
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}
