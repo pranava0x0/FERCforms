@@ -79,6 +79,14 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[med] Ingest the underlying FERC Form 1 financial data (via PUDL).** The audits scrutinize the *numbers* in Form 1/2/6. FERC publishes that data in formats needing special software — Visual FoxPro `.DBF` (1994–2020) and XBRL (2021+) — painful on macOS. Use **PUDL** (catalystcoop, pip-installable, SQLite/Parquet output) to ingest it with **no FERC installer**, then cross-reference audit findings against the reported figures.
 - **[high — large] Second module: forward-looking FERC dockets (not audits).** *(policy 2026-06-01: the audit corpus is **silent** on load growth, data centers, co-location and queue/speed.)* Those decisions live in *proceedings*, not audits — Order 2023 (interconnection queue reform), Order 1920 (long-term transmission planning), large-load / co-location dockets (e.g. the PJM–Susquehanna/AWS ISA proceeding), data-center tariff filings. A **separate** module that ingests those eLibrary dockets, **not** a tweak to the Audit Explorer (the audit pattern-library doesn't transfer). Big scope; fits the multi-module north star.
 
+## External research — Clean Water Act (CWA) enforcement
+
+*Added 2026-06-02. User asked for "every historical example of a CWA investigation since 2020." This is **outside the FERC audit corpus** (CWA = Clean Water Act, an EPA/DOJ statute, not in `reports.json` — confirmed 0 matches) — it's a web-research deliverable from `.gov` / academic / legal-journal sources. **Doing now:** energy/utility sector **+ data centers** (criminal + civil/administrative + notable/landmark, 2020→present). The two below are the deferred slices of that same request.*
+
+- **[med] CWA enforcement — all-sectors sweep (2020→present).** Broaden beyond energy/data-centers to the full sector mix (industrial, agricultural CAFOs, municipal/POTW, construction/stormwater, §404 wetlands). Civil/administrative volume is high (hundreds/yr via EPA) — return major/representative cases per sector, not literally all. Sources: EPA ECHO/enforcement-case database, DOJ ENRD, state agencies, legal journals.
+- **[low] CWA enforcement — region/state breakdown.** Slice the same enforcement set by EPA region or a named state (e.g. ECHO facility/enforcement search filtered by state). Useful only once a target state is chosen.
+- **[note] Ties to existing items:** the data-center water angle reinforces the *policy-analyst scope gap* (line ~27) and the *forward-looking FERC dockets* module (large-load / data-center, line ~80). CWA enforcement is a **separate jurisdiction** from FERC, so this stays research-only unless a "water/environmental compliance" module is ever scoped.
+
 ## Design / UI — theme variants to A/B (user wants to test which sticks)
 
 - **[med] Wave-style threaded theme.** Google Wave inspiration: findings as threaded/conversational items with an inbox-like reading flow. Swappable.
