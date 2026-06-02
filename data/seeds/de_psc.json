@@ -1,0 +1,18 @@
+[
+  {
+    "id": "2024-04-18_delmarva-power-light_de-22-0897",
+    "company": "Delmarva Power & Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "DE",
+    "source": "Delaware Public Service Commission",
+    "doc_type": "base-rate case order",
+    "industry": "electric",
+    "pdf_url": "https://depsc.delaware.gov/wp-content/uploads/sites/54/2024/04/Regular-Item-1f-Docket-22-0897-Order-10395-04-18-2024.pdf",
+    "source_page_url": "https://delafile.delaware.gov/CaseManagement/DocketSheet.aspx?MatterNo=22-0897&Type=Docket&ViewDocketPage=ViewDocketPage",
+    "issued_date": "2024-04-18",
+    "docket": "22-0897",
+    "captured_at": "2026-06-02",
+    "source_note": "Order No. 10395 on the application of Delmarva Power & Light Company for an increase in electric base rates (filed December 15, 2022), Delaware PSC Docket No. 22-0897, entered April 18, 2024. Listed for reference (metadata-only). PDF on the DE PSC host depsc.delaware.gov/wp-content/uploads/; docket sheet in DelaFile (delafile.delaware.gov, MatterNo 22-0897).",
+    "parse": false
+  }
+]

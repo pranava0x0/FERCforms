@@ -112,6 +112,56 @@ Each commission's docket system is different. Patterns below are all confirmed b
   disposition). The annual fuel docket exists for all 3 electric utilities (DESC `2-E`, Duke Carolinas
   `3-E`, Duke Progress `1-E`). Metadata-only.
 
+## PJM-footprint states (rate cases + fuel-cost adjustments)
+
+The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its
+*orders* at a predictable static `.gov` path even when its docket *search* is a JS app or behind a
+WAF — prefer that static order host for `pdf_url`.** And always verify order-vs-**press-release**
+(MD's Pepco "decision" turned out to be a press release — dropped).
+
+### NJ — New Jersey BPU
+- **Docket system:** `publicaccess.bpu.state.nj.us` — ASP.NET WebForms behind an **Imperva/Incapsula
+  WAF** (needs a `visid_incap`/`incap_ses` cookie dance, same shape as eLibrary's F5).
+- **But board orders are WAF-free static PDFs** on `www.nj.gov`:
+  `www.nj.gov/bpu/pdf/boardorders/{year}/{agenda-date}/…pdf` and `…/pdf/energy/bgs/…pdf` — plain GET,
+  pipeline UA, 200. Seed these. (A raw `&` in a filename, e.g. `JCP&L`, fetches fine unencoded.)
+- On-theme: base-rate case orders (PSE&G `ER23120924`, JCP&L `ER23030144`), BGS procurement
+  (`ER25040190`). Metadata-only.
+
+### MD — Maryland PSC
+- **Order PDFs (scriptable):** `psc.maryland.gov/wp-content/uploads/<slug>.pdf` — **Cloudflare-fronted
+  but currently serves the pipeline UA directly (200, no challenge)**; treat as Cloudflare (could
+  harden — capture-date everything). The `www.psc.state.md.us/wp-content/...` host 301-redirects here.
+- **Docket system:** the DMS case-search (`webpscxb.psc.state.md.us/DMS/…`, case numbers are 4-digit
+  no-year e.g. `9692`) renders the per-case doc table **client-side** → browser-capture to enumerate.
+- On-theme: rate / multi-year-plan orders (BGE `9692`, Potomac Edison `9695`, Pepco `9702`). **The
+  old ColdFusion `webapp.psc.state.md.us` host is dead.** Metadata-only.
+
+### DE — Delaware PSC
+- **DelaFile** `delafile.delaware.gov` — IIS/ASP.NET, **no WAF**. Search is a VIEWSTATE form-POST;
+  per-docket sheet works by number: `…/CaseManagement/DocketSheet.aspx?MatterNo={docket}&Type=Docket&ViewDocketPage=ViewDocketPage`;
+  PDFs at `…/ViewFileNetDocument.aspx?Id={guid}` (GUIDs scraped from the docket page).
+- **Also** `depsc.delaware.gov/wp-content/uploads/sites/54/{year}/{mm}/…pdf` serves agenda/order PDFs
+  at static paths (what we seeded for Delmarva `22-0897`). Metadata-only.
+
+### KY — Kentucky PSC · deterministic order paths, no WAF
+- **Order/Commission PDFs (deterministic, plain GET, no cookie):**
+  `psc.ky.gov/pscscf/{YEAR}%20Cases/{CASE}/{YYYYMMDD}_PSC_ORDER.pdf` (also `_ORDER01.pdf`, `_DATA_REQUEST.pdf`).
+- **Party filings:** `psc.ky.gov/pscecf/{CASE}/{filer-email}/{timestamp}/{file}.pdf` (non-guessable
+  segments — harvest from the case folder `psc.ky.gov/Case/ViewCaseFilings/{CASE}`, whose filing table
+  is client-side).
+- On-theme: FAC reviews (Kentucky Power `2024-00136`), base-rate cases (LG&E `2025-00114`, Duke KY
+  `2024-00354`). Metadata-only.
+
+### IN — Indiana IURC · deterministic order paths, no WAF
+- **Commission Orders (deterministic, plain GET):** `www.in.gov/iurc/files/ord_{CAUSE}{SUBDOCKET}_{MMDDYY}.pdf`
+  (e.g. `ord_38707FAC147_040826.pdf`; some have a hyphen `ord_38703-FAC132_…`). Also on `secure.in.gov`.
+- **Filed docs (testimony/exhibits):** Power-Apps portal `iurc.portal.in.gov` SharePoint entity URLs
+  `…/_entity/sharepointdocumentlocation/{recordGuid}/bb9c…?file={name}.pdf` (recordGuid harvested from
+  the server-rendered search; the second GUID is constant).
+- On-theme: fuel-cost-adjustment (FAC) orders — Duke Indiana `38707`, NIPSCO `38706`, AES Indiana
+  `38703` (each quarter is a `FAC NNN` sub-docket). Metadata-only.
+
 ## WAF-blocked sources — browser-capture + `fetch=false`
 
 Scripts are rejected, so the doc URL is located in a **real browser (Chrome MCP)** and the stable
