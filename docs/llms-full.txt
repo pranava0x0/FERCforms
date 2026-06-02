@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 163 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 165 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5398,6 +5398,17 @@ Final Order of the Illinois Commerce Commission in Commonwealth Edison Company's
 
 ---
 
+## Appalachian Power Company and Wheeling Power Company
+- Collection: State PUC Audits | Source: Public Service Commission of West Virginia
+- Docket: 25-0413-E-ENEC | Audit type: n/a
+- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
+- Source page: http://www.psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=84794
+- Status: listed for reference (not machine-parsed into findings)
+
+Commission Order in the annual Expanded Net Energy Cost (ENEC) review of Appalachian Power Company and Wheeling Power Company, West Virginia PSC Case No. 25-0413-E-ENEC, entered September 4, 2025 — continuing the current ENEC rate and deferring treatment of the under-recovery to the securitization case (25-0310-E-PC); the companies had proposed a $71.6 million ENEC increase. Listed for reference (metadata-only). Source: WV PSC WebDocket, document CaseActivityID 648122 (case activities list: psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=84794).
+
+---
+
 ## Appalachian Power Company
 - Collection: State PUC Audits | Source: Virginia State Corporation Commission
 - Docket: PUR-2024-00161 | Audit type: n/a
@@ -5696,6 +5707,17 @@ Decision and Order Adopting Initial Decision and Stipulation on the verified pet
 - Status: listed for reference (not machine-parsed into findings)
 
 Verified Petition of Commonwealth Edison Company (ComEd) for reconciliation of revenues billed under Rider CFRA (Carbon-Free Resource Adjustment) against actual costs associated with carbon-mitigation-credit expenditures, Illinois Commerce Commission Docket 24-0087, filed February 2, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 346818 / file 605464 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/346818).
+
+---
+
+## Appalachian Power Company and Wheeling Power Company
+- Collection: State PUC Audits | Source: Public Service Commission of West Virginia
+- Docket: 23-0377-E-ENEC | Audit type: n/a
+- Issued: 2024-01-09 | Industry: electric | FERC Form: n/a
+- Source page: http://www.psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=82133
+- Status: listed for reference (not machine-parsed into findings)
+
+Commission Order in the annual Expanded Net Energy Cost (ENEC) review of Appalachian Power Company and Wheeling Power Company (AEP), West Virginia PSC Case No. 23-0377-E-ENEC (consolidated with 22-0393-E-ENEC and 21-0339-E-ENEC), entered January 9, 2024 — disallowing $231.8 million of the requested ENEC under-recoveries as imprudent (coal-stockpiling practices) and assessing the remaining ~$321.1 million over a ten-year period with a 4% carrying charge. Listed for reference (metadata-only). Source: WV PSC WebDocket, document CaseActivityID 616349 (case activities list: psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=82133).
 
 ---
 

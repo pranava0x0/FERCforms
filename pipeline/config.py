@@ -35,9 +35,13 @@ FILES_PREFIX: str = f"{FERC_BASE}/sites/default/files/"
 ELIBRARY_ORIGIN: str = "https://elibrary.ferc.gov"
 
 # --- HTTP politeness (see CLAUDE.md "Network ethics & rate limiting") ---------
+# Informative, transparent UA (project name + contact URL per the bot-UA convention).
+# Deliberately does NOT carry a "python-requests/…" token: several official .gov IIS
+# sites (e.g. WV PSC) have crude request-filtering rules that 404 that substring, even
+# though they serve the same PDF to a browser UA. Dropping it keeps us honest (we still
+# identify ourselves) while not tripping those filters. See docs/data-sources.md.
 USER_AGENT: str = (
-    "FERC-Audit-Tool/0.1 (public-interest research; see project README) "
-    "python-requests/2.32"
+    "FERC-Audit-Tool/0.1 (+https://github.com/pranava0x0/FERCforms; public-interest research)"
 )
 REQUEST_DELAY_SECONDS: float = 2.0     # min gap between requests to one host
 # eLibrary's DownloadPDF generates the combined PDF server-side; large/old

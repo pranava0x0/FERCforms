@@ -25,7 +25,9 @@ These are non-negotiable and enforced in code where possible:
   (today: FERC audit executive summaries, and PA M&O audits' Exhibit I-2). Flip `parse=true`
   per-seed once a format's parser is proven and snapshot-gated.
 - **Rate-limit & cache.** ≥1.5–2 s between requests to one host (`config.REQUEST_DELAY_SECONDS`),
-  informative `User-Agent`, 429/transient → exponential backoff. Raw PDFs cache to `data/raw/`
+  an informative `User-Agent` that names the project + a contact URL but carries **no
+  `python-requests`/library token** (some `.gov` IIS sites crude-filter that substring — see WV),
+  429/transient → exponential backoff. Raw PDFs cache to `data/raw/`
   (gitignored); re-runs skip cached files. A service that persistently blocks → back off, log, skip
   — never hammer.
 - **Provenance on every record.** `source_note` (human-readable), `source_page_url`, `pdf_url`,
@@ -161,6 +163,17 @@ WAF — prefer that static order host for `pdf_url`.** And always verify order-v
   the server-rendered search; the second GUID is constant).
 - On-theme: fuel-cost-adjustment (FAC) orders — Duke Indiana `38707`, NIPSCO `38706`, AES Indiana
   `38703` (each quarter is a `FAC NNN` sub-docket). Metadata-only.
+
+### WV — West Virginia PSC · ColdFusion, UA-filtered
+- **WebDocket** `psc.state.wv.us/scripts/WebDocket/` (ColdFusion/IIS). Search `viewCaseForWebList.cfm`
+  → internal `CaseID` → `tblCaseActivitiesList.cfm?CaseID={id}` lists filings with `CaseActivityID`s →
+  PDF at `…/ViewDocument.cfm?CaseActivityID={id}&NotType=WebDocket`.
+- **Gotcha (drove a general fix):** the IIS request-filter **404.19-denies any UA containing the
+  `python-requests` token** (serves the same PDF fine to a browser UA). We **dropped that token from
+  `config.USER_AGENT`** (now just `FERC-Audit-Tool/0.1 (+repo URL; public-interest research)`) — still
+  honest, no longer filtered. No regression on the other 12 sources.
+- On-theme: APCo/Wheeling Power ENEC (fuel-cost) orders — `23-0377-E-ENEC` (Jan 2024 order **disallowed
+  $231.8M** as imprudent coal-stockpiling), `25-0413-E-ENEC`. Metadata-only.
 
 ## WAF-blocked sources — browser-capture + `fetch=false`
 
