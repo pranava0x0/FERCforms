@@ -106,3 +106,44 @@ def test_write_llms_creates_both_files(tmp_path):
     llmstxt.write_llms(tmp_path, [_report()], _patterns(), _META)
     assert (tmp_path / "llms.txt").read_text(encoding="utf-8").startswith("# FERC Audit Explorer")
     assert "full structured corpus" in (tmp_path / "llms-full.txt").read_text(encoding="utf-8")
+
+
+def _metadata_only_state_report() -> AuditReport:
+    return AuditReport(
+        collection="state_audit",
+        jurisdiction="TX",
+        source="Public Utility Commission of Texas",
+        doc_type="direct testimony",
+        id="s1",
+        company="El Paso Electric Company",
+        company_raw="El Paso Electric Company",
+        docket="57149",
+        issued_date=date(2025, 3, 25),
+        source_page_url="https://interchange.puc.texas.gov/x",
+        pdf_download_url="https://interchange.puc.texas.gov/x.pdf",
+        captured_at=date(2026, 6, 1),
+        source_note="Direct Testimony of X on behalf of OPUC in the fuel-cost reconciliation.",
+        page_count=52,
+        industry="electric",
+        finding_count=0,
+        findings=[],
+        structured=False,
+    )
+
+
+def test_index_groups_collections_and_lists_metadata_only_honestly():
+    s = llmstxt.build_index([_report(), _metadata_only_state_report()], _patterns(), _META)
+    assert "## FERC Audits" in s and "## State PUC Audits" in s     # per-collection sections
+    # metadata-only doc: NOT framed as a 0-finding audit — listed with its doc type + jurisdiction
+    assert "TX · direct testimony" in s
+    assert "listed for reference" in s
+    # grounded insight line surfaces jurisdiction counts (mechanical, no editorializing)
+    assert "jurisdictions: TX (1)" in s
+
+
+def test_full_gives_metadata_only_docs_their_source_note():
+    s = llmstxt.build_full([_metadata_only_state_report()], _patterns(), _META)
+    assert "## El Paso Electric Company" in s
+    assert "Collection: State PUC Audits" in s
+    assert "listed for reference (not machine-parsed into findings)" in s
+    assert "Direct Testimony of X on behalf of OPUC" in s          # verbatim source note carried through

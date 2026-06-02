@@ -1,49 +1,17 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured FERC utility audit reports (electric, gas & oil): findings (verbatim) plus staff recommendations. 151 reports, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 151 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
-Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim from each report's Executive Summary or findings section. Generated from the same data as data/reports.json.
-
----
-
-## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
-- Docket: 20-1502-EL-UNC | Audit type: n/a
-- Issued: 2026-01-07 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
-
----
-
-## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
-- Docket: 20-1502-EL-UNC | Audit type: n/a
-- Issued: 2025-12-19 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
-
----
-
-## Virginia Electric and Power Company (Dominion Energy Virginia)
-- Docket: PUR-2025-00058 | Audit type: n/a
-- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.scc.virginia.gov/docketsearch
-
----
-
-## Virginia Electric and Power Company (Dominion Energy Virginia)
-- Docket: PUR-2025-00037 | Audit type: n/a
-- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.scc.virginia.gov/docketsearch
+Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
 ---
 
 ## Kern River Gas Transmission Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-10-000 | Audit type: financial
 - Issued: 2025-09-29 | Industry: gas | FERC Form: No. 2, No. 501-G
-- Function(s): n/a
 - Audit period: January 1, 2020 to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&optimized=false
 
 ### Finding 1: Renewable Natural Gas Quality Specifications
 Kern River posted a Biomethane Operating Policy on its Informational Postings website, which lays out gas quality specifications for Renewable Natural Gas (RNG). However, the gas quality specifications in the Biomethane Operating Policy have not been incorporated into Kern River’s Tariff; thus, consistent with the Gas Quality Policy Statement, they cannot be enforced.
@@ -93,11 +61,11 @@ Recommendations:
 ---
 
 ## Medallion Pipeline Company, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-9-000 | Audit type: financial
 - Issued: 2025-09-25 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2020 to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250925-3005&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250925-3005&optimized=false
 
 ### Finding 1: Annual Cost of Service Based Analysis Schedule
 Medallion’s Page 700, Annual Cost of Service Based Analysis Schedule, in its FERC Form No. 6 submissions, contained input and calculation errors, inconsistencies in the application of Commission regulations, and deficiencies in workpaper support. These errors reduced the overall accuracy and usefulness of Medallion’s Page 700 submissions.
@@ -173,20 +141,13 @@ Recommendations:
 
 ---
 
-## FirstEnergy Pennsylvania Electric Company
-- Docket: n/a | Audit type: n/a
-- Issued: 2025-09-25 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025
-
----
-
 ## Pacific Gas and Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-8-000 | Audit type: financial
 - Issued: 2025-09-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission, distribution
 - Audit period: January 1, 2020 through April 30, 2025
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3011&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3011&optimized=false
 
 ### Finding 1: Allocation of Overhead Costs to CWIP
 PG&E capitalized labor and labor-related overhead costs to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a study of the time actually engaged during a representative period, thereby charging costs to Account 107 that did not have a definite relation to construction. As a result, PG&E may have overstated construction costs recorded in Account 107 and electric plant in service costs recorded in Account 101 or other plant accounts, as well as accumulated depreciation and accumulated deferred income taxes (ADIT), and may have understated operating expenses. Moreover, this accounting may have led PG&E to overstate its wholesale transmission revenue requirement (TRR) and wholesale distribution revenue requirement (DRR) and overbill customers.
@@ -267,20 +228,13 @@ Recommendations:
 
 ---
 
-## ISO New England Inc. et al.
-- Docket: ER20-2054 | Audit type: n/a
-- Issued: 2025-09-18 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3062&optimized=false
-
----
-
 ## Talen Energy
+- Collection: FERC Audits | Source: FERC
 - Docket: PA22-7-000 | Audit type: non-financial
 - Issued: 2025-09-08 | Industry: electric | FERC Form: n/a
 - Function(s): generation
 - Audit period: January 1, 2019 to October 31, 2024
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250908-3009&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250908-3009&optimized=false
 
 ### Finding 1: Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System
 Talen Energy submitted generation outage tickets to PJM’s eDART that were not consistent with the operational status of Talen Energy’s generation resources. Talen Energy’s inconsistent submittals to eDART may have resulted in incorrect assumptions being used during reliability and market studies performed by PJM to operate its day-ahead and real-time energy markets.
@@ -301,20 +255,13 @@ Recommendations:
 
 ---
 
-## Commonwealth Edison Company
-- Docket: 24-0087 | Audit type: n/a
-- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/370165
-
----
-
 ## Alabama Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA24-5-000 | Audit type: non-financial
 - Issued: 2025-09-03 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2019 to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250903-3001&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250903-3001&optimized=false
 
 ### Finding 1: Acquisition-Related Expenses
 Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission- jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.
@@ -333,28 +280,13 @@ Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) 
 
 ---
 
-## Appalachian Power Company
-- Docket: PUR-2024-00161 | Audit type: n/a
-- Issued: 2025-08-29 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.scc.virginia.gov/docketsearch
-
----
-
-## Virginia Electric and Power Company (Dominion Energy Virginia)
-- Docket: PUR-2025-00076 | Audit type: n/a
-- Issued: 2025-08-01 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.scc.virginia.gov/docketsearch
-
----
-
 ## Duke Energy Progress, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-6-000 | Audit type: financial
 - Issued: 2025-07-25 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 580
 - Function(s): generation, transmission
 - Audit period: January 1, 2020 to September 30, 2024
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250725-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250725-3010&optimized=false
 
 ### Finding 1: Recovery of Fuel Contract Buyout Costs
 DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers by approximately $3,500,000 during the audit period.
@@ -392,11 +324,12 @@ DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, there
 ---
 
 ## Portland General Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA23-10-000 | Audit type: non-financial
 - Issued: 2025-06-16 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2021 to October 31, 2024
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250616-3008&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250616-3008&optimized=false
 
 ### Finding 1: Public Access to Monthly and Yearly Capability Information
 PGE’s postings for monthly and yearly capability in the OASIS available transfer capability (ATC)/total transfer capability (TTC) Monitor were not made publicly available.
@@ -482,11 +415,12 @@ Recommendations:
 ---
 
 ## Midcontinent Independent System Operator, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA21-2-000 | Audit type: non-financial
 - Issued: 2025-04-10 | Industry: electric | FERC Form: No. 714
 - Function(s): generation
 - Audit period: January 1, 2018 through April 19, 2024
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250410-3014&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250410-3014&optimized=false
 
 ### Finding 1: Preservation of Records
 MISO did not comply with the Commission’s preservation of records requirements.
@@ -519,36 +453,12 @@ Recommendations:
 
 ---
 
-## El Paso Electric Company
-- Docket: 57149 | Audit type: n/a
-- Issued: 2025-04-01 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=118
-
----
-
-## El Paso Electric Company
-- Docket: 57149 | Audit type: n/a
-- Issued: 2025-03-25 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=113
-
----
-
-## El Paso Electric Company
-- Docket: 57149 | Audit type: n/a
-- Issued: 2025-03-25 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=114
-
----
-
 ## Tallgrass Pony Express Pipeline, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-5-000 | Audit type: financial
 - Issued: 2025-01-06 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2020 to December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250106-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250106-3000&optimized=false
 
 ### Finding 1: Annual Cost of Service Based Analysis Schedule
 PXP’s Annual Cost of Service Based Analysis Schedule reported on Page 700 of its FERC Form No. 6 filings contained input and calculation errors, and inconsistencies with Opinion No. 154-B and other Commission guidance. These errors and inconsistencies affected the accuracy of most inputs on Page 700, which overstated PXP’s rate base and overall cost of service during the audit period.
@@ -596,10 +506,11 @@ Recommendations:
 ---
 
 ## Alliant Energy Corporate Services, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-7-000 | Audit type: financial
 - Issued: 2024-11-27 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20241127-3007&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20241127-3007&optimized=false
 
 ### Finding 1: Service Company Allocation Factors
 AECS improperly allocated costs to both FERC-jurisdictional and non- jurisdictional entities, causing an error in accounting and reporting. As a result, WPL overcharged its wholesale power customers and IPL undercharged its wholesale power customers.
@@ -615,20 +526,13 @@ AECS improperly recorded two donations totaling $10,000 in Account 921, Office S
 
 ---
 
-## El Paso Electric Company
-- Docket: 57149 | Audit type: n/a
-- Issued: 2024-11-14 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=34
-
----
-
 ## Southern Indiana Gas and Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-4-000 | Audit type: financial
 - Issued: 2024-09-27 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2018 through December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240927-3006&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240927-3006&optimized=false
 
 ### Finding 1: Accounting for Merger Costs
 Audit Staff Finding: SIGECO incorrectly included $24.3 million of merger costs in wholesale transmission formula rate service cost determinations, contrary to the directives of the 2018 Merger Order. As a result, SIGECO overstated its wholesale transmission revenue requirement by approximately $2.3 million and overbilled wholesale transmission customers. SIGECO Response: SIGECO accepts the finding and the associated recommendations. Comments on
@@ -705,52 +609,13 @@ Recommendations:
 
 ---
 
-## DTE Electric Company
-- Docket: U-21305 | Audit type: n/a
-- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
-
----
-
-## DTE Electric Company
-- Docket: U-21305 | Audit type: n/a
-- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
-
----
-
-## Consumers Energy Company
-- Docket: U-21305 | Audit type: n/a
-- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
-
----
-
-## Consumers Energy Company
-- Docket: U-21305 | Audit type: n/a
-- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
-
----
-
-## Virginia Electric and Power Company (Dominion Energy Virginia)
-- Docket: PUR-2024-00137 | Audit type: n/a
-- Issued: 2024-09-04 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.scc.virginia.gov/docketsearch
-
----
-
 ## Black Hills Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA23-3-000 | Audit type: non-financial
 - Issued: 2024-08-22 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: January 1, 2020 to November 30, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240822-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240822-3000&optimized=false
 
 ### Finding 1: Load Forecast Data
 The Black Hills Electric Utilities did not post their load forecasts on a daily basis, including underlying assumptions and daily peak load for the prior day. As a result, there was a lack of transparency and information on transmission system conditions, which may have impacted transmission customers and their transmission activities.
@@ -780,11 +645,12 @@ Recommendations:
 ---
 
 ## NextEra Energy Transmission, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: PA23-2-000 | Audit type: non-financial
 - Issued: 2024-08-21 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 60
 - Function(s): generation, transmission, distribution
 - Audit period: January 1, 2018, to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240821-3003&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240821-3003&optimized=false
 
 ### Finding 1: Acquisition Integration Cost Tracking
 NEET incurred $8,801 of acquisition-related costs that it allocated to the GridLiance Transcos, which then recovered these costs through FERC-jurisdictional rates. As a result, the GridLiance Transcos inappropriately billed FERC-jurisdictional customers for acquisition-related costs without Commission approval.
@@ -835,28 +701,13 @@ Recommendations:
 
 ---
 
-## Commonwealth Edison Company
-- Docket: 24-0087 | Audit type: n/a
-- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/354448
-
----
-
-## Commonwealth Edison Company
-- Docket: 24-0087 | Audit type: n/a
-- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/354464
-
----
-
 ## Tri-State Generation and Transmission Association, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA22-6-000 | Audit type: non-financial
 - Issued: 2024-08-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2020 to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240815-3003&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240815-3003&optimized=false
 
 ### Finding 1: Posting of Transmission Service Metrics
 Tri-State did not post quarterly transmission service metrics on its OASIS website within 15 calendar days of the end of the calendar quarter, pursuant to 18 C.F.R. § 37.6(h)(2).
@@ -884,11 +735,11 @@ Recommendations:
 ---
 
 ## EnLink NGL Pipeline, LP
+- Collection: FERC Audits | Source: FERC
 - Docket: FA22-2-000 | Audit type: financial
 - Issued: 2024-08-14 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2019 to December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240814-3002&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240814-3002&optimized=false
 
 ### Finding 1: Recording of Carrier Property
 EnLink NGL did not record the cost of two mainline pipeline segments in its books and records that it had used in carrier service since 2014. The cost of these pipeline segments – $80.9 million – was erroneously recorded in an affiliated company’s books and records, instead of EnLink NGL’s. As a result, EnLink NGL understated carrier property and accrued depreciation–carrier property, and understated depreciation expense and associated operating and maintenance expenses, since 2014. This understatement materially impacted EnLink NGL’s Income Statement and Balance Sheet, along with supporting s
@@ -944,11 +795,12 @@ Recommendations:
 ---
 
 ## Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA22-4-000 | Audit type: financial
 - Issued: 2024-08-12 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
 - Audit period: January 1, 2019 to December 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240812-3031&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240812-3031&optimized=false
 
 ### Finding 1: Merger-Related Voluntary Retirement Program
 DES incurred merger-related VRP costs of approximately $97,872,000 that it allocated to its affiliates, including VEPCO and DESC, which then partially recovered these costs through FERC-jurisdictional rates without the Commission’s approval. DESC also improperly partially recovered an additional $84,000 of its own pre-VRP merger-related severance costs through FERC-jurisdictional rates without Commission approval.
@@ -1085,95 +937,13 @@ Recommendations:
 
 ---
 
-## PPL Electric Utilities Corporation
-- Docket: D-2023-3039488 | Audit type: n/a
-- Issued: 2024-07-11 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation
-
-### Finding 1: Executive Management and Organizational Structure
-
-Recommendations:
-1. Conduct routine employee surveys to ensure corporate culture aligns with company goals.
-2. Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives.
-
-### Finding 2: Cost Allocations and Affiliated Interests
-
-Recommendations:
-3. Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM.
-4. Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes.
-5. Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates.
-
-### Finding 3: Financial Management
-
-Recommendations:
-6. Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income.
-
-### Finding 4: Electric Operations
-
-Recommendations:
-7. Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability.
-8. Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4.
-9. Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected.
-
-### Finding 5: Emergency Preparedness
-
-Recommendations:
-10. Address minor security and safety improvements.
-11. Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness.
-
-### Finding 6: Purchasing and Materials Management
-
-Recommendations:
-12. Update outdated policies and procedures.
-13. Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies.
-14. Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments.
-
-### Finding 7: Customer Service
-
-Recommendations:
-15. Improve and strengthen customer service performance to at least pre-pandemic levels.
-16. Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances.
-17. Develop internal controls for source data and reporting systems to ensure accuracy.
-
-### Finding 8: Information Technology
-
-Recommendations:
-18. Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances.
-19. Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels.
-
----
-
-## Constellation Mystic Power, LLC
-- Docket: ER18-1639 | Audit type: n/a
-- Issued: 2024-05-23 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240523-3096&optimized=false
-
----
-
-## Dominion Energy South Carolina, Inc.
-- Docket: 2024-2-E | Audit type: n/a
-- Issued: 2024-04-11 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
-
----
-
-## Dominion Energy South Carolina, Inc.
-- Docket: 2024-2-E | Audit type: n/a
-- Issued: 2024-03-28 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
-
----
-
 ## Appalachian Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA22-1-000 | Audit type: financial
 - Issued: 2024-03-15 | Industry: electric | FERC Form: No. 1, No. 580
 - Function(s): generation, transmission
 - Audit period: from January 1, 2019 to June 30, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240315-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240315-3000&optimized=false
 
 ### Finding 1: Amortization of Retail Regulatory Assets
 APCo improperly included the amortization of certain regulatory assets arising from state-jurisdictional rate adjustment clauses in Account 501, Fuel Expense, as an input to the Company’s cost-based formula rates without Commission approval.
@@ -1190,11 +960,11 @@ APCo did not properly follow the FERC Form No. 580 instructions and, therefore, 
 ---
 
 ## NET Mexico Pipeline Partners, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: PA23-1-000 | Audit type: non-financial
 - Issued: 2024-03-07 | Industry: gas | FERC Form: No. 549
-- Function(s): n/a
 - Audit period: January 1, 2020 to December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240307-3007&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240307-3007&optimized=false
 
 ### Finding 1: Gas Quality Blending Fees
 NET Mexico charged a shipper a blending fee associated with gas quality specification requirements, without this fee being in its Commission-approved SOC or otherwise authorized by the Commission. As a result, NET Mexico charged that shipper approximately $1.3 million in blending fees that it did not have authority from the Commission to charge.
@@ -1268,28 +1038,13 @@ Recommendations:
 
 ---
 
-## Dominion Energy South Carolina, Inc.
-- Docket: 2024-2-E | Audit type: n/a
-- Issued: 2024-02-15 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
-
----
-
-## Commonwealth Edison Company
-- Docket: 24-0087 | Audit type: n/a
-- Issued: 2024-02-02 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.icc.illinois.gov/docket/P2024-0087/documents/346818
-
----
-
 ## Northwestern Wisconsin Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA23-3-000 | Audit type: financial
 - Issued: 2024-01-26 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2020 through July 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240126-3008&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240126-3008&optimized=false
 
 ### Finding 1: Transmission Revenue Credits
 1. Revise policies and procedures to properly include transmission revenue credit inputs in the ATRR and customer billing charges consistent with the requirements of its transmission rate formula. NWECo will comply with this recommendation. NWECo anticipates completing this task within 60 days of the date of the final audit report. 2. Provide training to relevant staff on the revised policies and procedures, and provide periodic training, as needed. NWECo will comply with this recommendation. NWECo anticipates completing this task within 90 days of the date of the final audit report. 3. Submit
@@ -1345,19 +1100,24 @@ Recommendations:
 ---
 
 ## DTE Energy Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA20-7 | Audit type: non-financial
 - Issued: 2023-11-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20231121-3001&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20231121-3001&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Sunoco Pipeline L.P.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA21-4-000 | Audit type: non-financial
 - Issued: 2023-09-29 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
 - Audit period: January 1, 2018 to December 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230929-3011&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230929-3011&optimized=false
 
 ### Finding 1: Prorating Pipeline Capacity
 Sunoco incorrectly calculated shippers’ historical shipments (shipper history) and improperly classified new shippers as regular shippers, during the audit period. These errors resulted in incorrect allocation percentages that overallocated capacity to some shippers and underallocated capacity to other shippers during the audit period.
@@ -1449,11 +1209,12 @@ Recommendations:
 ---
 
 ## Gulf South Pipeline Company, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: PA21-3-000 | Audit type: non-financial
 - Issued: 2023-09-18 | Industry: gas | FERC Form: No. 2, No. 501-G
 - Function(s): generation
 - Audit period: January 1, 2019 to December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230918-3019&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230918-3019&optimized=false
 
 ### Finding 1: Reservation Charge Credits
 Gulf South incorrectly calculated reservation charge credits for six out of eleven non-force majeure maintenance events declared during the audit period. This resulted in overpayments and underpayments in reservation charge credits to the impacted FTS, NNS, and EFT customers, during the audit period.
@@ -1568,11 +1329,12 @@ Recommendations:
 ---
 
 ## Puget Sound Energy Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA21-5-000 | Audit type: non-financial
 - Issued: 2023-08-18 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2019 to December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230818-3022&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230818-3022&optimized=false
 
 ### Finding 1: Filing of Transmission Service Agreements
 PSE did not file four non-conforming transmission service agreements with the Commission within 30 days after electric service had commenced, as required by 18 C.F.R. §§ 35.1(g) and 35.3(a)(2).
@@ -1591,11 +1353,12 @@ Recommendations:
 ---
 
 ## Commonwealth Edison Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-5-000 | Audit type: financial
 - Issued: 2023-07-27 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2017 through August 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230727-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230727-3010&optimized=false
 
 ### Finding 1: Accounting for Expenditures for Certain Civic, Political, and Related Activities
 ComEd recorded approximately $6.1 million of costs incurred for the purpose of influencing the decisions of public official in various A&G and O&M accounts. As a result, ComEd improperly included costs incurred for the performance of certain political and related activities in the computation of its annual transmission revenue requirements and in billings to wholesale transmission customers.
@@ -1716,11 +1479,12 @@ Recommendations:
 ---
 
 ## Oklahoma Gas and Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA22-5-000 | Audit type: financial
 - Issued: 2023-07-25 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2018 through December 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230725-3008&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230725-3008&optimized=false
 
 ### Finding 1: Amortization of Retail Regulatory Assets
 OG&E included the amortization of certain retail regulatory assets in its wholesale transmission formula rate without Commission approval. As a result, OG&E overstated its ATRR and overbilled its transmission customers.
@@ -1807,20 +1571,25 @@ Recommendations:
 ---
 
 ## PacifiCorp
+- Collection: FERC Audits | Source: FERC
 - Docket: PA22-2-000 | Audit type: non-financial
 - Issued: 2023-06-29 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2018 to October 31, 2022
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230629-3002&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230629-3002&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Public Service Company of Colorado
+- Collection: FERC Audits | Source: FERC
 - Docket: FA22-3-000 | Audit type: financial
 - Issued: 2023-06-21 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2018 through January 31, 2023
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230621-3003&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230621-3003&optimized=false
 
 ### Finding 1: Allocation of Overhead Costs to CWIP
 PSCo capitalized overhead costs to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a study of the time actually engaged during a representative period. This led to PSCo charging costs to Account 107 that did not have a definite relation to construction. As a result, PSCo may have overstated construction costs recorded in Account 107 and electric plant in service costs recorded in Account 101 or other plant accounts, as well as accumulated depreciation and ADIT, a
@@ -1888,104 +1657,25 @@ Recommendations:
 
 ---
 
-## Philadelphia Gas Works
-- Docket: D-2022-3030321 | Audit type: n/a
-- Issued: 2023-03-02 | Industry: gas | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works
-
-### Finding 1: Corporate Governance
-
-Recommendations:
-1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.
-2. Streamline the annual budget approval process.
-3. Establish committee charters for all PFMC board committees.
-4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.
-
-### Finding 2: Executive Management and Organizational Structure
-
-Recommendations:
-5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.
-6. Implement a safety management system and improve safety culture at PGW.
-
-### Finding 3: Financial Management
-
-Recommendations:
-7. Update Internal Audit policies and procedures.
-8. Formally document explanations for variances from the capital and operating budgets.
-
-### Finding 4: Gas Operations
-
-Recommendations:
-9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.
-10. Accelerate cast iron main replacement.
-11. Plan and implement a process for gathering equipment and installation data in the GIS database.
-12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.
-
-### Finding 5: Emergency Preparedness
-
-Recommendations:
-13. File Self-Certification forms with the Pennsylvania PUC annually.
-14. Correct various deficiencies in physical security.
-15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.
-
-### Finding 6: Emergency Preparedness (continued)
-
-Recommendations:
-16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis.
-17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.
-18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.
-19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.
-20. Implement a cybersecurity-focused risk registry.
-
-### Finding 7: Materials Management
-
-Recommendations:
-21. Document the policies and procedures of PGW’s cycle counting function.
-22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.
-
-### Finding 8: Customer Service
-
-Recommendations:
-23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.
-24. Improve customer service performance through expanding call center resources.
-25. Complete implementation of the replacement CIS.
-26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.
-27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.
-
-### Finding 9: Information Technology
-
-Recommendations:
-28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.
-29. Leverage and integrate data visualization software consistently across PGW.
-
-### Finding 10: Fleet Management
-
-Recommendations:
-30. Improve efficiencies within the fleet department.
-
-### Finding 11: Human Resources and Diversity
-
-Recommendations:
-31. Implement strategies for recruitment and retention of “at-risk” positions.
-32. Drive safety performance to meet industry standards.
-
----
-
 ## WEC Business Services LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-2 | Audit type: financial
 - Issued: 2023-02-10 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230210-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230210-3000&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Tucson Electric Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-3-000 | Audit type: financial
 - Issued: 2022-11-04 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2018 to December 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20221104-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20221104-3000&optimized=false
 
 ### Finding 1: Accounting for Electric Distribution Maintenance Expenses
 TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period. TEP’s accounting resulted in distribution-related maintenance expenses being improperly recorded in accounts that were for transmission-related maintenance expenses and that were FERC- jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdi
@@ -2099,11 +1789,11 @@ Recommendations:
 ---
 
 ## Northern Border Pipeline Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-1-000 | Audit type: financial
 - Issued: 2022-09-28 | Industry: gas | FERC Form: No. 2, No. 501-G
-- Function(s): n/a
 - Audit period: January 1, 2018 to December 31, 2020
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220928-3032&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220928-3032&optimized=false
 
 ### Finding 1: Company Use Gas Percentage Filings
 Northern Border did not make required filings to show the inputs and calculations that support the adjustments it made to its Company Use Gas Percentages. Absent making these annual filings there was a lack of transparency and opportunity for interested parties to opine on the changes to the Company Use Gas Percentages in prior years and review the inputs and calculations supporting these percentages.
@@ -2141,10 +1831,11 @@ Recommendations:
 ---
 
 ## Dayton Power and Light Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-4 | Audit type: financial
 - Issued: 2022-09-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220915-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220915-3000&optimized=false
 
 ### Finding 1: AFUDC Rate Inputs
 
@@ -2167,101 +1858,24 @@ DP&L improperly accounted for the purchase of RECs in Account 154, Materials and
 ---
 
 ## PJM Interconnection, L.L.C.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA19-2-000 | Audit type: non-financial
 - Issued: 2022-09-01 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: January 1, 2016 through May 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220901-3021&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220901-3021&optimized=false
 
 ### Finding 1: Offer Capping of Generation Resources
 PJM did not offer cap a self-scheduled generation resource in the Day-ahead energy market for 18 hours on January 21, 2019, despite the fact that its owner had failed the TPS test. The error was caused by operators applying outdated provisions of PJM’s OATT, along with a lack of current written procedures and operator instructions. PJM’s application of the outdated provisions may have resulted in additional self-scheduled resources not being appropriately offer capped since November 1, 2017 when the new OATT provisions went into effect.
 
 ---
 
-## FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)
-- Docket: n/a | Audit type: n/a
-- Issued: 2022-06-16 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies
-
-### Finding 1: Executive Management and Organizational Structure
-
-Recommendations:
-1. Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023.
-2. Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report.
-
-### Finding 2: Key Audit Matter
-
-Recommendations:
-3. Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom.
-4. Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers.
-
-### Finding 3: Corporate Governance
-
-Recommendations:
-5. Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting
-
-### Finding 4: Affiliated Interests and Cost Allocations
-
-Recommendations:
-6. Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates.
-7. Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days.
-
-### Finding 5: Affiliated Interests and Cost Allocations (continued)
-
-Recommendations:
-8. Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies.
-9. Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice.
-10. Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval.
-11. Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding.
-
-### Finding 6: Financial Management
-
-Recommendations:
-12. Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments.
-13. Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community.
-14. Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness.
-
-### Finding 7: Electric Operations
-
-Recommendations:
-15. Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible.
-
-### Finding 8: Electric Operations (continued)
-
-Recommendations:
-16. Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees.
-17. Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts.
-18. Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status.
-19. Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies.
-
-### Finding 9: Materials Management
-
-Recommendations:
-20. Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals.
-
-### Finding 10: Customer Service
-
-Recommendations:
-21. Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results.
-22. Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals.
-23. Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative.
-
-### Finding 11: Human Resources and Diversity
-
-Recommendations:
-24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture.
-25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification.
-26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance.
-
----
-
 ## Enterprise Crude Pipeline LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-5-000 | Audit type: financial
 - Issued: 2022-06-01 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2014 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220601-3039&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220601-3039&optimized=false
 
 ### Finding 1: Interstate Allocation Percentage
 ECPL incorrectly included barrel-miles for intrastate transportation movements, pump-over services, and a pipeline segment it did not own in its interstate allocation percentage. These errors caused ECPL to overstate its total cost of service, barrels, and barrel-miles, reported on Page 700 of its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should have excluded, to the extent practicable, costs associated with its terminal and pipeline system facilities that were used solely to su
@@ -2326,11 +1940,12 @@ Recommendations:
 ---
 
 ## NorthWestern Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-7-000 | Audit type: financial
 - Issued: 2022-05-20 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2018 to October 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220520-3001&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220520-3001&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction
 NorthWestern’s method for calculating its AFUDC rate was inconsistent with the Commission’s accounting regulations. Specifically, NorthWestern inappropriately used prior month balances instead of prior year balances in the long-term debt and equity components for the purpose of computing its AFUDC rate and inappropriately included undistributed subsidiary earnings as a part of the equity component for the purpose of computing its AFUDC rate. Additionally, when applying AFUDC, NorthWestern improperly compounded its AFUDC on a monthly basis rather than compounding on a semi-annual basis and inap
@@ -2389,11 +2004,12 @@ Recommendations:
 ---
 
 ## Florida Power & Light Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA21-6-000 | Audit type: financial
 - Issued: 2022-04-15 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2018 through December 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220415-3012&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220415-3012&optimized=false
 
 ### Finding 1: Environmental Cleanup Costs
 FPL improperly recorded environmental cleanup costs in Account 930.2, Miscellaneous General Expenses, and Account 105, Electric Plant Held for Future Use, instead of in Account 186, Miscellaneous Deferred Debits. As a result of the improper accounting, FPL misstated A&G and Electric Plant Held for Future Use account balances reported in its FERC Form No. 1 filings.
@@ -2428,20 +2044,25 @@ Recommendations:
 ---
 
 ## Duke Energy Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA20-3-000 | Audit type: non-financial
 - Issued: 2022-03-31 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: January 1, 2017 to October 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220331-3004&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220331-3004&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Arizona Public Service Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA20-1-000 | Audit type: non-financial
 - Issued: 2022-03-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2016 to October 30, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220323-3002&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220323-3002&optimized=false
 
 ### Finding 1: Transmission Line Outage Postings
 APS did not timely post transmission line outages on its OASIS on six occasions. As a result, the ATC/TTC values were not updated to reflect these outages, which then led to the curtailment of 16 transmission service schedules.
@@ -2461,20 +2082,25 @@ Recommendations:
 ---
 
 ## Tampa Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA21-1-000 | Audit type: non-financial
 - Issued: 2022-03-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: January 1, 2018 to August 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220321-3011&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220321-3011&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## FirstEnergy Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-1-000 | Audit type: financial
 - Issued: 2022-02-04 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
 - Audit period: January 1, 2015 to September 30, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220204-3012&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220204-3012&optimized=false
 
 ### Finding 1: Allocation of Overhead Costs to CWIP
 FirstEnergy’s subsidiaries capitalized overhead costs to Account 107, Construction Work in Progress-Electric, using an allocation method that was not based on actual time employees were engaged in construction activities based on timecard reports or on a representative time study. This may have led to FirstEnergy’s subsidiaries capitalizing costs to Account 107 that did not have a definite relationship to construction. As a result, the companies may have overstated construction costs recorded in Account 107 and electric plant in service, as well as accumulated depreciation, depreciation expens
@@ -2550,11 +2176,12 @@ Recommendations:
 ---
 
 ## Connecticut Light and Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-8-000 | Audit type: financial
 - Issued: 2022-02-04 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
 - Audit period: January 1, 2015 to December 31, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220204-3014&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20220204-3014&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction
 CL&P improperly included accumulated other comprehensive income and unamortized debt-related balances in long-term debt and equity balances used to compute its AFUDC rates. As a result, CL&P over-accrued AFUDC amounts included in utility plant accounts, which led it to overstate its annual transmission revenue requirement and overbill transmission customers.
@@ -2610,11 +2237,12 @@ Recommendations:
 ---
 
 ## Ameren Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-6-000 | Audit type: financial
 - Issued: 2021-11-17 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
 - Audit period: January 1, 2016 through December 31, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20211117-3000&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20211117-3000&optimized=false
 
 ### Finding 1: Reporting of Materials and Supplies
 Ameren Missouri incorrectly reported M&S assigned to transmission-related construction on line 8 of page 227, Materials and Supplies, of its 2016-2018 FERC Form No. 1 reports, rather than on line 5 of the same page. As a result of overstating line 8, Ameren Missouri incorrectly increased the working capital component of its formula rate mechanism, which led to an overstatement of its wholesale transmission revenue requirement used to determine billings to wholesale transmission customers.
@@ -2707,20 +2335,24 @@ Recommendations:
 ---
 
 ## Macquarie Energy LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: PA19-5-000 | Audit type: non-financial
 - Issued: 2021-09-27 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
 - Audit period: from January 1, 2016 to May 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210927-3001&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210927-3001&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Centurion Pipeline L.P.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-4-000 | Audit type: financial
 - Issued: 2021-09-23 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2014 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210923-3016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210923-3016&optimized=false
 
 ### Finding 1: Idled and Retired Assets
 Centurion’s reporting of idled and retired assets was inconsistent with the Commission’s requirements. Specifically, Centurion did not remove the original cost of idled and retired assets from rate base in its cost of service reported on Page 700, Annual Cost of Service Based Analysis Schedule. Centurion also incorrectly removed retired assets at the book cost (purchase price) rather than original cost from rate base on Page 700. These errors resulted in misstating its cost of service on Page 700 from 2004 to 2018.
@@ -2763,11 +2395,11 @@ Recommendations:
 ---
 
 ## Bridger Pipeline LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-10-000 | Audit type: financial
 - Issued: 2021-09-23 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2014 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210923-3015&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210923-3015&optimized=false
 
 ### Finding 1: Accounting for Idle Property
 Bridger had two pipeline segments on its Poplar System that were inactive: (1) the segment from Raymond to Poplar, and (2) the segment form Poplar to Fisher. The pipeline segment from Raymond to Poplar is comprised of 50.5 miles of 12-inch pipeline and has been inactive since 2006. The pipeline segment from Poplar to Fisher is comprised of 19.8 miles of 10-inch pipeline and has been out-of-service since 2014. Bridger classified both pipeline segments incorrectly as carrier property in Account 30, Carrier Property. This account’s instructions direct companies to record the cost of tangible prop
@@ -2853,11 +2485,12 @@ Recommendations:
 ---
 
 ## Versant Power
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-9-000 | Audit type: financial
 - Issued: 2021-09-16 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2018 through April 30, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210916-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210916-3010&optimized=false
 
 ### Finding 1: Allocation of Overhead Costs to CWIP
 1. Retain an independent third-party entity to conduct a representative labor time study for allocation of overhead costs incurred in 2020 to CWIP, and to assist with the development of procedures Versant Power shall use to periodically determine the allocation of overhead labor and labor-related costs capitalized into the cost of construction after 2020. Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of this audit report, and the developed allocation procedures when complete. At a minimum, the
@@ -2916,11 +2549,11 @@ Versant Power did not properly follow the FERC Form No. 1 instructions and, ther
 ---
 
 ## Mustang Pipe Line LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-4-000 | Audit type: financial
 - Issued: 2021-07-20 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2014 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210720-3012&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210720-3012&optimized=false
 
 ### Finding 1: Depreciation Rates and Expense
 Mustang did not use Commission-approved depreciation rates to calculate depreciation expense for certain carrier property assets. Additionally, Mustang’s depreciation expense accrual started on the date that Mustang transferred project costs from its CWIP account to its carrier property accounts rather than on the date it placed projects into service. These errors caused Mustang to overstate rate base and understate depreciation expense in its cost of service reported on Page 700 during and prior to the audit period.
@@ -2969,11 +2602,12 @@ Recommendations:
 ---
 
 ## Southern California Edison Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-1-000 | Audit type: financial
 - Issued: 2021-06-28 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2017 through March 31, 2021
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210628-3011&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210628-3011&optimized=false
 
 ### Finding 1: Accounting for Compromise Settlements
 SCE improperly recorded approximately $7.3 million of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages. As a result of the improper accounting for compromise settlements, SCE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers. SCE Response: SCE respectfully disagrees with this Draft Audit Report finding for policy and other reasons, which include but are not limited to SCE’s position that costs associated with mere claims and allegations without any actual findings of wrongdoing should
@@ -3028,10 +2662,10 @@ Recommendations:
 ---
 
 ## Evergy, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA20-2 | Audit type: non-financial
 - Issued: 2021-04-14 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210414-3002&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210414-3002&optimized=false
 
 ### Finding 1: Accounting for Merger-Related Costs
 
@@ -3042,11 +2676,12 @@ Recommendations:
 ---
 
 ## El Paso Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA19-3-000 | Audit type: non-financial
 - Issued: 2021-01-28 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: from January 1, 2016 to June 30, 2020
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210128-3015&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210128-3015&optimized=false
 
 ### Finding 1: Posting of Available Transfer Capability/Total Transfer Capability on Interconnection Paths
 El Paso did not post the ATC and TTC for nine control area to control area interconnection paths on its OASIS as required by the Commission’s OASIS posting requirements. This practice may hinder customers from obtaining transmission service on these paths.
@@ -3074,11 +2709,12 @@ El Paso’s transmission function created TSNs and assigned these TSNs to its me
 ---
 
 ## UGI Utilities, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-3-000 | Audit type: financial
 - Issued: 2021-01-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2017 through July 29, 2020
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210114-3022&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20210114-3022&optimized=false
 
 ### Finding 1: Excess Accumulated Deferred Income Tax
 UGIU improperly recorded the excess ADIT related to the 2017 Tax Cuts and Jobs Act in Account 282, Accumulated Deferred Income Taxes – Other Property and Account 190, Accumulated Deferred Income Taxes. In addition, UGIU improperly excluded excess and deficient ADIT, created as a result of the 2017 Tax Cuts and Jobs Act, from its wholesale transmission formula rate computation. As a result, UGIU overstated its annual transmission revenue requirement by approximately $357,476 and overbilled wholesale transmission customers in 2018.
@@ -3181,19 +2817,23 @@ UGIU did not record or report in its FERC Form No. 1 deferred income taxes assoc
 ---
 
 ## Dominion Energy Transmission, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-16-000 | Audit type: financial
 - Issued: 2020-12-17 | Industry: gas | FERC Form: No. 2
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201217-3130&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201217-3130&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20201217-3130 (fileID 14751843).
 
 ---
 
 ## ALLETE, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA20-2-000 | Audit type: financial
 - Issued: 2020-12-04 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: January 1, 2016 through September 3, 2020
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201204-3005&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201204-3005&optimized=false
 
 ### Finding 1: Transmission Incentives
 ALLETE accepts this finding and the related recommendations. 2. Accounting for Environmental Costs It is ALLETE’s position that this finding overlooks important policy considerations that should inform the proper accounting of related expenses. Nonetheless, ALLETE accepts this finding and the related recommendations. 3. Transmission and Distribution Plant Accounting ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this fi
@@ -3269,11 +2909,11 @@ Recommendations:
 ---
 
 ## Maritimes & Northeast Pipeline, L.L.C.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-9-000 | Audit type: financial
 - Issued: 2020-11-12 | Industry: gas | FERC Form: No. 2, No. 501-G
-- Function(s): n/a
 - Audit period: January 1, 2017 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201112-3002&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201112-3002&optimized=false
 
 ### Finding 1: Allocation of Labor Burden and Overhead Costs to Capital Projects
 Maritimes did not record labor burden and overhead costs to capital projects based on actual costs as required by the Commission. Instead, Maritimes used allocation percentages, for which it did not perform timely studies and maintain appropriate records. This prevented audit staff from verifying whether the allocation percentages used to reimburse affiliates were reasonable and representative of actual costs.
@@ -3336,11 +2976,11 @@ Recommendations:
 ---
 
 ## Chevron Pipe Line Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-5-000 | Audit type: financial
 - Issued: 2020-10-07 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2014 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201007-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20201007-3010&optimized=false
 
 ### Finding 1: Depreciation Rates and Reserve Balances
 CPL’s accounting and financial reporting for depreciation included several deficiencies affecting depreciation expense and reserve balances and the accuracy of the Annual Cost of Service Based Analysis Schedule on Page 700 of CPL’s FERC Form No. 6 filings. Specifically, CPL:  Did not use Commission-approved depreciation rates to determine depreciation expense. Instead, CPL used slightly higher depreciation rates than the depreciation rates last approved by the Commission, resulting in increased depreciation expense and depreciation reserve balances.  Incorrectly continued to accrue depreciat
@@ -3387,29 +3027,25 @@ Recommendations:
 
 ---
 
-## Delmarva Power & Light Company
-- Docket: ER09-1158 | Audit type: n/a
-- Issued: 2020-08-28 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200828-3048&optimized=false
-
----
-
 ## San Diego Gas & Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-3-000 | Audit type: financial
 - Issued: 2020-07-30 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2016 through February 4, 2020
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200730-3038&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200730-3038&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## National Fuel Gas Supply Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-6-000 | Audit type: financial
 - Issued: 2020-07-15 | Industry: gas | FERC Form: No. 2, No. 501-G
-- Function(s): n/a
 - Audit period: January 1, 2015 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200715-3008&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200715-3008&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction
 National Fuel did not correctly derive the average daily short-term debt component of its AFUDC rate calculation, as it only considered a portion of the short- term debt borrowed in the month such debt was incurred. National Fuel also incorrectly applied the annual AFUDC rate it calculated to the period March through February of each year, rather than January through December, as specified in the Commission’s regulations. As a result, the AFUDC rates calculated and used exceeded the maximum annual AFUDC rates allowed by the Commission in years when short-term debt was outstanding for the entir
@@ -3456,11 +3092,12 @@ National Fuel improperly netted shipper imbalance payables and receivables in Ac
 ---
 
 ## PNM Resources, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA18-1-000 | Audit type: non-financial
 - Issued: 2020-07-07 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: from January 1, 2015 to December 31, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3025&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3025&optimized=false
 
 ### Finding 1: Independent Functioning of PNM’s Transmission Function
 During the audit period, upon its WPM function’s request, PNM’s transmission function employees procured PTP transmission service on certain paths for WPM function employees, contrary to the Commission’s Independent Functioning Rule. As a result, PNM’s transmission function employees conducted a marketing function and did not function independently of its marketing function employees.
@@ -3555,29 +3192,38 @@ Recommendations:
 ---
 
 ## New York Independent System Operator, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA19-1-000 | Audit type: non-financial
 - Issued: 2020-07-07 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: January 1, 2016 through December 2, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3024&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200707-3024&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## MidAmerican Energy Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-2-000 | Audit type: financial
 - Issued: 2020-07-02 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2016 through December 31, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200702-3005&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200702-3005&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Michigan Electric Transmission Company, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA19-7-000 | Audit type: financial
 - Issued: 2020-07-02 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: from January 1, 2015 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200702-3012&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200702-3012&optimized=false
 
 ### Finding 1: Accounting for Lobbying Costs
 METC recorded lobbying costs associated with pensions in Account 926, Employee Pensions and Benefits, instead of in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. Account 926 is included in METC’s formula rate while Account 426.4 is not. As a result, METC overstated its wholesale transmission revenue requirement used to bill transmission customers.
@@ -3600,20 +3246,24 @@ METC did not properly follow the instructions of the FERC Form No. 1 and therefo
 ---
 
 ## Louisville Gas and Electric Company and Kentucky Utilities Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA19-4-000 | Audit type: non-financial
 - Issued: 2020-02-21 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: from January 1, 2016, through October 31, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200221-3036&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200221-3036&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## ONEOK NGL Pipeline, L.L.C.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA18-1-000 | Audit type: financial
 - Issued: 2020-01-09 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: January 1, 2015 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200109-3025&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200109-3025&optimized=false
 
 ### Finding 1: Page 700 Reporting
 ONEOK NGL improperly reported depreciation expense, AFUDC depreciation, and related rate base balances on its Page 700, Annual Cost-of-Service Based Analysis Schedule. Also, ONEOK NGL improperly included Account 187, Construction Work in Progress (CWIP), balances in the calculation of Rate Base – Original Cost on line 5a.
@@ -3649,11 +3299,12 @@ ONEOK NGL improperly applied depreciation rates for carrier property assets that
 ---
 
 ## Exelon Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA18-3-000 | Audit type: non-financial
 - Issued: 2019-11-21 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): transmission
 - Audit period: from January 1, 2013 through March 26, 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191121-3049&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191121-3049&optimized=false
 
 ### Finding 1: Merger-Related Regulatory Assets
 BG&E improperly included the amortization of merger-related regulatory assets approved by a retail regulator in wholesale transmission formula rates. As a result, BG&E overstated its wholesale transmission revenue requirements and overbilled its wholesale customers by approximately $1.4 million.
@@ -3670,19 +3321,23 @@ Exelon’s public utilities improperly recorded the amortization of certain regu
 ---
 
 ## National Grid USA
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-2 | Audit type: financial
 - Issued: 2019-11-15 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 60
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191115-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20191115-3010&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC https://www.ferc.gov/audits (listing captured 2026-02-03).
 
 ---
 
 ## Cleco Power LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA18-3-000 | Audit type: financial
 - Issued: 2019-09-27 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
 - Audit period: from January 1, 2014 through June 2019
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190927-3042&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190927-3042&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction
 Cleco Power’s method for computing Allowance for Funds Used During Construction (AFUDC) improperly grossed-up the return on equity rate used in computing AFUDC and, improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings (Major only), in the equity component when computing the AFUDC rate. In addition, Cleco Power improperly recorded approximately $24 million of AFUDC debt amounts in Account 182.3, Other Regulatory Assets, instead of Account 101, Electric Plant in Service, and improperly recorded accumulated deferred income tax equity gross-up in Account 282, Accumul
@@ -3723,11 +3378,12 @@ Cleco Power did not properly follow the FERC Form No. 1 instructions and, theref
 ---
 
 ## Avista Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA18-2-000 | Audit type: non-financial
 - Issued: 2019-09-19 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2015 to December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190919-3007&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190919-3007&optimized=false
 
 ### Finding 1: Secondary Network Transmission Service
 Avista improperly reserved hourly secondary network transmission service 61 times, representing 5,233 MWh, to support off-system sales to non-network customers. Of the 61 requests, 34 requests remained confirmed, representing 3,353 MWh, while 27 requests were annulled. Of these 34 requests, 11 were scheduled for energy delivery, representing 1,395 MWh. As a result, Avista’s merchant function was not charged PTP transmission charges and obtained service with a higher service priority.
@@ -3785,11 +3441,12 @@ Recommendations:
 ---
 
 ## Ohio Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA17-2-000 | Audit type: financial
 - Issued: 2019-09-06 | Industry: electric | FERC Form: No. 1, No. 3
 - Function(s): generation, transmission
 - Audit period: from January 1, 2012 through December 31, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190906-3014&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190906-3014&optimized=false
 
 ### Finding 1: Revenue Credits
 Ohio Power understated its revenue credits that are used to reduce the revenue requirement of its transmission formula rate by improperly excluding certain transmission-related revenues – specifically pole attachment revenue, causing an overstatement of its revenue requirement. This overstatement resulted in excess billings to wholesale transmission customers.
@@ -3811,11 +3468,11 @@ Recommendations:
 ---
 
 ## Xcel Energy Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA17-4-000 | Audit type: financial
 - Issued: 2019-08-29 | Industry: electric | FERC Form: No. 1, No. 60
-- Function(s): n/a
 - Audit period: from January 1, 2014 through December 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190829-3023&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190829-3023&optimized=false
 
 ### Finding 1: Capitalized Software Allocation
 XES incorrectly allocated capital costs of corporate software only to the Xcel utilities. Capital costs of software should be allocated to all Xcel companies benefitting from XES’s use of the software. Xcel’s utilities were charged an excessive amount of capital software costs as a result of XES’s improper allocation.
@@ -3835,10 +3492,11 @@ XES did not disclose all allocation methods used to allocate costs in its FERC F
 ---
 
 ## Northern States Power Company (Minnesota)
+- Collection: FERC Audits | Source: FERC
 - Docket: FA17-5-000 | Audit type: financial
 - Issued: 2019-07-31 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190731-3033&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190731-3033&optimized=false
 
 ### Finding 1: Income Tax Receivables
 NSPM incorrectly recorded an income tax receivable that represented a refund for a tax overpayment in Account 165, Prepayments, instead of in Account 143, Other Accounts Receivable. The incorrect accounting led to an overstatement of NSPM’s rate base used in its wholesale transmission formula rate calculations and overbillings to wholesale transmission customers.
@@ -3861,11 +3519,11 @@ NSPM inconsistently implemented a change to accounting for the retirement of tra
 ---
 
 ## Transcontinental Gas Pipe Line Company, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA18-2-000 | Audit type: financial
 - Issued: 2019-06-25 | Industry: gas | FERC Form: No. 2
-- Function(s): n/a
 - Audit period: January 1, 2014 through December 28, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190625-3009&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190625-3009&optimized=false
 
 ### Finding 1: Accounting for Replacement of Minor Items of Property
 Transco improperly accounted for the cost to replace minor items of property. Transco capitalized the cost to utility plant instead of recording it in maintenance accounts as incurred. Transco’s accounting caused utility plant to be overstated and maintenance expenses to be understated.
@@ -3951,10 +3609,11 @@ Recommendations:
 ---
 
 ## Northern Natural Gas Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-2-000 | Audit type: non-financial
 - Issued: 2019-05-14 | Industry: gas | FERC Form: No. 2
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190514-3013&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190514-3013&optimized=false
 
 ### Finding 1: Accounting for Employee Labor Costs
 Northern Natural misclassified labor costs of certain departments in administrative and general expense, and operating and maintenance expense accounts. The misclassifications averaging about $2.6 million per year during the audit period, affected the accuracy of expenses reported on Pages 317-325 of Northern Natural’s Form No. 2.
@@ -3997,11 +3656,12 @@ Recommendations:
 ---
 
 ## American Electric Power Company, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA17-1-000 | Audit type: financial
 - Issued: 2019-04-23 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
 - Audit period: from January 1, 2013 through August 31, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190423-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20190423-3010&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction
 Certain AEP jurisdictional utilities’ method for computing Allowance for Funds Used During Construction (AFUDC) improperly included Account 219, Accumulated Other Comprehensive Income, in the equity component of the formula and improperly determined the AFUDC rate on a monthly basis. As a result, three jurisdictional utilities over accrued AFUDC on transmission plant by approximately $6.1 million from 2012 through 2017. The three jurisdictional utilities overbilled wholesale transmission customers for the excessive AFUDC costs included in utility plant that was included in transmission formula
@@ -4018,11 +3678,12 @@ AEPSC misclassified various administrative and general labor, membership dues, o
 ---
 
 ## Black Hills Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-3-000 | Audit type: financial
 - Issued: 2018-12-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2013 through December 31, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181214-3016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181214-3016&optimized=false
 
 ### Finding 1: Payroll Taxes
 BHP incorrectly accounted for its utility and non-utility operating income payroll taxes. In addition, BHP improperly included payroll taxes in its transmission formula rate calculations. As a result, BHP overstated its transmission formula rate revenue requirement by approximately $862,000 from 2010 to 2015. This resulted in BHP overcharging wholesale transmission customers.
@@ -4079,11 +3740,11 @@ Recommendations:
 ---
 
 ## Trunkline Gas Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-4-000 | Audit type: non-financial
 - Issued: 2018-10-19 | Industry: gas | FERC Form: n/a
-- Function(s): n/a
 - Audit period: from January 1, 2013 to December 31, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181019-3029&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181019-3029&optimized=false
 
 ### Finding 1: Reservation Charge Crediting Tariff Provision
 Trunkline’s tariff did not contain a provision for reservation charge credits to shippers with firm service affected by force majeure and non-force majeure events, as required by Commission policy. As a result, certain shippers with firm service that qualified for full reservation charge credits did not receive any credits following non- force majeure events. Additionally, Trunkline improperly included a reference to maintenance activities in the force majeure definition of its tariff.
@@ -4149,11 +3810,11 @@ Recommendations:
 ---
 
 ## Equitrans, L.P.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA17-6-000 | Audit type: financial
 - Issued: 2018-10-19 | Industry: gas | FERC Form: No. 2
-- Function(s): n/a
 - Audit period: from January 1, 2013 through April 2, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181019-3030&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20181019-3030&optimized=false
 
 ### Finding 1: Allowance for Funds Used During Construction (AFUDC)
 Equitrans inappropriately included unpaid contract retention accruals in the calculation of its AFUDC rate. In addition, the company erroneously excluded certain other cash outlays from the calculation. This led Equitrans to under-accrue AFUDC capitalized into construction work in progress (CWIP) and plant in service of approximately $694,000 on its Ohio Valley Connector (OVC) pipeline system, and over- accrue $127,000 on its Allegheny Valley Connector (AVC) pipeline system, and $49,000 on other Equitrans pipelines.
@@ -4182,28 +3843,37 @@ Equitrans did not report certain information in its FERC Form No. 2 filings as r
 ---
 
 ## California Independent System Operator Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA17-3-000 | Audit type: non-financial
 - Issued: 2018-09-14 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: January 1, 2014 to the March 2, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180914-3005&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180914-3005&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180914-3005 (fileID 15038664).
 
 ---
 
 ## Kansas City Power & Light Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA17-4-000 | Audit type: non-financial
 - Issued: 2018-08-24 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
 - Audit period: from January 1,2014 through December 31, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180824-3012&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180824-3012&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180824-3012 (fileID 15003376).
 
 ---
 
 ## CMS Energy Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA17-5-000 | Audit type: non-financial
 - Issued: 2018-07-05 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180705-3017&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180705-3017&optimized=false
 
 ### Finding 1: Economic Minimum Limits for Consumers’ Coal Units
 The Hourly Economic Minimum Limits (Ecomin) Consumers offered for its coal units in the Midcontinent Independent System Operator, Inc.’s (MISO) real-time energy markets did not reflect the actual known physical capabilities and characteristics of the generating resources, as the MISO Open Access Transmission, Energy and Operating Tariff (MISO Tariff) requires. By preventing MISO from dispatching the units below Ecomin in real-time, the offers denied MISO the flexibility to optimize dispatch to reflect the actual marginal cost of energy, and to manage transmission congestion.
@@ -4217,38 +3887,51 @@ The Hourly Economic Minimum Limits (Ecomin) Energy Resource Management (ERM) off
 ---
 
 ## Idaho Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA17-7-000 | Audit type: non-financial
 - Issued: 2018-06-11 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: from January 1, 2015 through April 30, 2018
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180611-3038&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180611-3038&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180611-3038 (fileID 14943440).
 
 ---
 
 ## Midcontinent Independent System Operator, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-5-000 | Audit type: non-financial
 - Issued: 2018-04-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: June 1, 2013 through August 11, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180418-3060&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180418-3060&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180418-3060 (fileID 14892059).
 
 ---
 
 ## ISO New England, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-6-000 | Audit type: non-financial
 - Issued: 2018-04-18 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: July 10, 2013 through June 30, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180418-3061&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180418-3061&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20180418-3061 (fileID 14892129).
 
 ---
 
 ## Entergy Gulf States Louisiana, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-10-000 | Audit type: financial
 - Issued: 2018-02-21 | Industry: electric | FERC Form: No. 1, No. 3-Q, No. 580
 - Function(s): transmission
 - Audit period: from January 1, 2012 to December 31, 2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3027&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3027&optimized=false
 
 ### Finding 1: Interim Storage of Spent Nuclear Fuel
 EGSL incorrectly recorded the costs to purchase and amortize dry casks used for the interim storage of spent nuclear fuel assemblies. As a result, EGSL overbilled its wholesale customers in FAC billings.
@@ -4262,11 +3945,12 @@ EGSL incorrectly recorded lobbying costs associated with industry association du
 ---
 
 ## Entergy Arkansas, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-11-000 | Audit type: financial
 - Issued: 2018-02-21 | Industry: electric | FERC Form: No. 1, No. 3-Q
 - Function(s): transmission
 - Audit period: January 1, 2012 to December 31, 2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3030&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180221-3030&optimized=false
 
 ### Finding 1: Accounting for Lobbying Expenses
 EAI incorrectly recorded lobbying costs associated with industry association dues in an operating expense account in 2012. This misclassification resulted in improper recovery of lobbying costs through EAI’s transmission formula rate.
@@ -4283,10 +3967,11 @@ EAI incorrectly recorded legal, financing, and audit fees associated with nuclea
 ---
 
 ## American Transmission Company, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-1-000 | Audit type: financial
 - Issued: 2018-02-14 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180214-3031&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180214-3031&optimized=false
 
 ### Finding 1: Inclusion of Construction Work in Progress in Rate Base
 ATC improperly implemented certain aspects of its settlement order involving incentive rate treatment for Construction Work in Progress (CWIP) included in rate base. Specifically, ATC improperly collected an incentive return from its customers for construction projects that were: (1) never submitted by ATC to MISO for inclusion in the MISO Transmission Expansion Plan (MTEP) and (2) submitted but not yet approved by MISO’s Board of Directors in the MTEP. As a result, ATC overbilled its customers an excessive incentive return amounting to approximately $20,000,000.
@@ -4300,11 +3985,11 @@ ATC did not use Account 102, Electric Plant Purchased or Sold, to record two sal
 ---
 
 ## Plains Pipeline, L.P.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-6-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: from January 1, 2013 to September 30, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3041&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3041&optimized=false
 
 ### Finding 1: Accounting for the Line 901 Oil Spill
 Plains improperly recorded expenses related to the Line 901 oil spill in Account 610, Operating Expenses, and Account 660, Miscellaneous Income Charges. Based on Commission accounting regulations, Plains should have considered this spill to be material and infrequent, which would have required it to record the expenses in Account 665, Unusual or Infrequent Items. As a result, Plains overstated operating expenses by $70 million and miscellaneous income charges by $15 million in its 2015 Form No. 6.
@@ -4399,11 +4084,12 @@ Recommendations:
 ---
 
 ## Marathon Pipe Line, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-7-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
 - Audit period: from January 1, 2013 to September 30, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3042&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3042&optimized=false
 
 ### Finding 1: Accounting for Reimbursable Capital Projects
 Marathon did not credit cash received from MPC to the appropriate carrier property account for reimbursable construction projects. Rather, Marathon improperly recorded the cash received from MPC for reimbursable construction projects in Account 640, Miscellaneous Income. As a result, Marathon overstated its carrier property, depreciation, and revenue accounts reported in the Form 6.
@@ -4438,11 +4124,12 @@ In 2013, Marathon improperly recorded a balance of $9.4 million in Account 705, 
 ---
 
 ## Explorer Pipeline Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-5-000 | Audit type: financial
 - Issued: 2018-01-12 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
 - Audit period: January 1, 2013 to December 31, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3040&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180112-3040&optimized=false
 
 ### Finding 1: Shipper Historical Capacity for Prorationing
 Explorer did not correctly calculate shippers’ historical capacity used for prorationing when it included capacity from both the original and revised delivery tickets, rather than the capacity from only the revised ticket, to calculate shippers’ historical capacity. This resulted in incorrect allocation percentages that over allocated capacity to some shippers and under allocated capacity to other shippers during the audit period.
@@ -4523,11 +4210,11 @@ Recommendations:
 ---
 
 ## Chevron U.S.A., Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-1-000 | Audit type: non-financial
 - Issued: 2017-11-09 | Industry: gas | FERC Form: No. 552
-- Function(s): n/a
 - Audit period: from January 1, 2014 through August 31, 2017
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20171109-3042&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20171109-3042&optimized=false
 
 ### Finding 1: Price Index Reporting
 CUSA excluded 27 reportable transactions from its price index reporting submissions during the audit period. The exclusion was an error due to misidentification of reportable and nonreportable transactions.
@@ -4538,10 +4225,11 @@ CUSA improperly reported four transactions on its 2014 Form 552 filing. Also, CU
 ---
 
 ## Mississippi Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-8-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 580, No. 60
 - Function(s): generation, transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3019&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3019&optimized=false
 
 ### Finding 1: Unused Investment Tax Credits
 Mississippi Power only used balance sheet accounts to record unused investment tax credits (ITC) and its related deferred income tax effects instead of using balance sheet and income statement accounts, as required by the Commission’s accounting regulations. Mississippi Power also improperly transferred the debit balance for unused ITCs from Account 236 to Account 165 on December 31st for 2012 through 2014, and incorrectly billed wholesale customers for this misclassified debit balance. Then, Mississippi Power reclassified the debit balance back to Account 236 the following months from 2013 th
@@ -4576,10 +4264,11 @@ Mississippi Power incorrectly determined the depreciation component of the estim
 ---
 
 ## Gulf Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-5-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3016&optimized=false
 
 ### Finding 1: Income Tax Receivables
 issue similar to the findings and recommendations in the draft audit report) x Inception of a rate refund with respect to the Income Tax Receivable issue Based on our understanding of the sequence of the expected events that would occur if the FERC maintains its position regarding the Income Tax Receivables issue, we believe that there is significant risk that the IRS would assert that a deferred tax normalization violation occurs upon issuance of the final audit reports, but we believe that the Southern Operating Companies could credibly assert that the effective date of sanctions for a defer
@@ -4614,10 +4303,11 @@ Gulf Power did not properly follow FERC Form No. 1 instructions and, therefore, 
 ---
 
 ## Georgia Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-6-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3017&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3017&optimized=false
 
 ### Finding 1: Income Tax Receivables
 issue similar to the findings and recommendations in the draft audit report) x Inception of a rate refund with respect to the Income Tax Receivable issue Based on our understanding of the sequence of the expected events that would occur if the FERC maintains its position regarding the Income Tax Receivables issue, we believe that there is significant risk that the IRS would assert that a deferred tax normalization violation occurs upon issuance of the final audit reports, but we believe that the Southern Operating Companies could credibly assert that the effective date of sanctions for a defer
@@ -4664,10 +4354,11 @@ Georgia Power did not separately account for monies in its nuclear decommissioni
 ---
 
 ## Alabama Power Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-7-000 | Audit type: financial
 - Issued: 2017-09-26 | Industry: electric | FERC Form: No. 1, No. 60
 - Function(s): generation, transmission
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3018&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170926-3018&optimized=false
 
 ### Finding 1: Income Tax Receivables
 issue similar to the findings and recommendations in the draft audit report) x Inception of a rate refund with respect to the Income Tax Receivable issue Based on our understanding of the sequence of the expected events that would occur if the FERC maintains its position regarding the Income Tax Receivables issue, we believe that there is significant risk that the IRS would assert that a deferred tax normalization violation occurs upon issuance of the final audit reports, but we believe that the Southern Operating Companies could credibly assert that the effective date of sanctions for a defer
@@ -4711,28 +4402,37 @@ Alabama Power did not properly follow the instructions of the FERC Form No. 1 an
 ---
 
 ## PacifiCorp
+- Collection: FERC Audits | Source: FERC
 - Docket: FA16-4-000 | Audit type: financial
 - Issued: 2017-08-29 | Industry: electric | FERC Form: No. 1
 - Function(s): generation, transmission
 - Audit period: of January 1, 2013 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170829-3016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170829-3016&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170829-3016 (fileID 14668331).
 
 ---
 
 ## SESCO Enterprises, LLC
+- Collection: FERC Audits | Source: FERC
 - Docket: PA16-3-000 | Audit type: non-financial
 - Issued: 2017-08-21 | Industry: electric | FERC Form: n/a
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170821-3003&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170821-3003&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20170821-3003 (fileID 14662548).
 
 ---
 
 ## NorthWestern Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-1-000 | Audit type: non-financial
 - Issued: 2017-03-15 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: from January 1, 2013 through December 31, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170315-4016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170315-4016&optimized=false
 
 ### Finding 1: Assignment of Redirect Priority
 NorthWestern Montana’s transmission function improperly approved 79 nonfirm transmission redirect requests that were assigned a higher priority than was permitted under its OATT. This represented less than 1 percent of the over 33,000 redirect requests that were made during the audit period. Out of these 79 redirect requests, 17 requests, made by NorthWestern’s merchant function, resulted in improperly displacing the service scheduled by other customers when curtailments occurred, which was inconsistent with OATT Section 22.1. This resulted in a total loss of 1,238 MWhs of transmission service
@@ -4755,11 +4455,12 @@ NorthWestern did not file reports of issued securities in a timely and accurate 
 ---
 
 ## NV Energy, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-2-000 | Audit type: non-financial
 - Issued: 2017-02-01 | Industry: electric | FERC Form: No. 1, No. 580
 - Function(s): generation, transmission
 - Audit period: from January 1, 2012 through September 30, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170201-3016&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170201-3016&optimized=false
 
 ### Finding 1: Accounting for Merger Costs
 Nevada Power and Sierra Pacific accounted for merger transaction costs in operating accounts, contrary to the directives of the Merger Order and long-standing Commission policy that such costs be recorded in nonoperating accounts. This accounting resulted in the companies misrepresenting utility operating income and expenses reported in their respective Form No. 1 reports.
@@ -4808,11 +4509,11 @@ Recommendations:
 ---
 
 ## Plantation Pipe Line Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-12-000 | Audit type: financial
 - Issued: 2016-12-23 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: from January 1, 2012 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161223-3023&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161223-3023&optimized=false
 
 ### Finding 1: Carrier Property Depreciation Rates and Accruals
 Plantation did not adjust depreciation rates when they were no longer applicable and continued to accrue depreciation expense on certain carrier property accounts after they became fully depreciated. This resulted in Plantation recording $16.4 million of depreciation expense in excess of the book cost of the assets in these accounts, as of December 31, 2014.
@@ -4875,11 +4576,12 @@ Plantation over-reported interstate barrel volumes it transported under a joint 
 ---
 
 ## Calpine Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-5-000 | Audit type: non-financial
 - Issued: 2016-12-02 | Industry: electric | FERC Form: n/a
 - Function(s): generation, transmission
 - Audit period: from January 1, 2012 through April 30, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161202-3004&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161202-3004&optimized=false
 
 ### Finding 1: Uplift Payments
 Calpine submitted inaccurate data to PJM resulting in overpayments of approximately $1.18 million for Lost Opportunity Cost (LOC) uplift credits as well as-yet undetermined Day-Ahead Scheduling Reserve (DASR) overpayments.
@@ -4893,20 +4595,25 @@ Calpine made EQR filings containing numerous errors, including: inaccurate uplif
 ---
 
 ## Dynegy, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-03-000 | Audit type: non-financial
 - Issued: 2016-10-14 | Industry: electric | FERC Form: n/a
 - Function(s): generation
 - Audit period: from January 1, 2012 through April 30, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161014-3018&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161014-3018&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20161014-3018 (fileID 14376678).
 
 ---
 
 ## Westar Energy, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-9-000 | Audit type: financial
 - Issued: 2016-09-29 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2005 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160929-3027&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160929-3027&optimized=false
 
 ### Finding 1: Classification of Utility Plant
 Westar improperly recorded distribution plant amounts in transmission accounts that are included in the wholesale transmission formula rate. As a result, Westar overstated various transmission accounts and overbilled wholesale transmission customers.
@@ -4960,11 +4667,12 @@ Recommendations:
 ---
 
 ## Kansas Gas and Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-15-000 | Audit type: financial
 - Issued: 2016-09-29 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2005 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160929-3028&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160929-3028&optimized=false
 
 ### Finding 1: Classification of Utility Plant
 KGE improperly recorded distribution plant amounts in transmission accounts that are included in the wholesale transmission formula rate. As a result, KGE overstated various transmission accounts and overbilled wholesale transmission customers.
@@ -4990,11 +4698,12 @@ KGE did not transfer the balances to Account 101, Electric Plant in Service, fro
 ---
 
 ## Empire District Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-7-000 | Audit type: non-financial
 - Issued: 2016-08-16 | Industry: electric | FERC Form: No. 1, No. 552
 - Function(s): generation
 - Audit period: from January 1, 2010 through December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160816-3031&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160816-3031&optimized=false
 
 ### Finding 1: Reporting of Energy and Capacity Sales in the EQR
 Empire did not report its wholesale sales to four municipalities within Empire’s service territory or wholesale sales made from its hydro facility. As a result, Empire under-reported its sales in its EQRs by $121,910,668 and 2,089,983 MWh during the audit period. These omissions hampered the Commission and interested parties’ ability to review and evaluate Empire’s wholesale sales activity.
@@ -5005,11 +4714,12 @@ Empire’s EQRs during the audit period contained various errors in the contract
 ---
 
 ## Southwest Power Pool, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-6-000 | Audit type: non-financial
 - Issued: 2016-07-15 | Industry: electric | FERC Form: No. 1
 - Function(s): transmission
 - Audit period: from January 1, 2012 through June 22, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160715-3007&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160715-3007&optimized=false
 
 ### Finding 1: SPP RTO Involvement with MMU Operations
 SPP RTO executives attended MMU meetings with the Oversight Committee, thereby having inappropriate access to information associated with MMU operations. In addition, SPP RTO executives were inappropriately involved in the performance evaluation of the MMU Director, approval of the MMU budget, and compensation adjustments for MMU staff. SPP RTO executives’ participation in the MMU Oversight Committee meetings and involvement in certain MMU operations resulted in an inadequate separation between the MMU and SPP RTO.
@@ -5029,11 +4739,11 @@ The MMU did not limit its participation in SPP RTO tariff formation to the advis
 ---
 
 ## Enbridge Energy Partners, LP
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-4-000 | Audit type: financial
 - Issued: 2016-05-09 | Industry: oil | FERC Form: No. 6
-- Function(s): n/a
 - Audit period: from January 1, 2011 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160509-3026&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160509-3026&optimized=false
 
 ### Finding 1: Provision of, and Billing for, Service to Intermediate Points
 Between March 2013 and June 2013, NDPL charged shippers rates for service to and from intermediate points on its pipeline system that were not specified in its tariff on file with the Commission. Additionally, NDPL did not make its tariff filing for the new origin/destination points (including the intermediate point paths) within the 30 days after the start of such service, as required by the Commission. As a result, NDPL was out of compliance with Commission regulations and its tariff. These unfiled rates did not cause harm to the shippers, since NDPL ultimately billed them for what would hav
@@ -5128,11 +4838,12 @@ Recommendations:
 ---
 
 ## ITC Holdings Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-14-000 | Audit type: financial
 - Issued: 2016-04-19 | Industry: electric | FERC Form: No. 1, No. 65
 - Function(s): transmission
 - Audit period: from January 1, 2011 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160419-3023&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160419-3023&optimized=false
 
 ### Finding 1: Merger-Related Costs
 The ITC Operating Companies recorded merger-related costs in operating accounts included in the determination of transmission formula rate billings, rather than in Account 426.5, Other Deductions, as required by Commission precedent. The improper accounting led to inappropriate recovery of the merger-related costs in transmission formula rate billings.
@@ -5140,20 +4851,25 @@ The ITC Operating Companies recorded merger-related costs in operating accounts 
 ---
 
 ## Entergy Services, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-13-000 | Audit type: financial
 - Issued: 2016-04-19 | Industry: electric | FERC Form: No. 1, No. 65
 - Function(s): transmission
 - Audit period: from January 1, 2011 to December 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160419-3024&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160419-3024&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20160419-3024 (fileID 14209364).
 
 ---
 
 ## Duke Energy Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: PA14-2-000 | Audit type: non-financial
 - Issued: 2016-04-01 | Industry: electric | FERC Form: No. 65
 - Function(s): generation, transmission
 - Audit period: from January 1, 2011 through January 31, 2016
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160401-3008&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160401-3008&optimized=false
 
 ### Finding 1: Accounting for Merger Transaction Costs
 Duke Companies did not file merger transaction accounting entries with the Commission as required by the Merger Order, and the companies recorded merger transaction costs in operating accounts, contrary to the Commission’s long-standing policy that such costs be recorded in nonoperating accounts. By not filing the accounting entries, Duke Companies prevented Commission review of the merger accounting and correction of any entries that were not in accordance with Commission accounting requirements.
@@ -5273,11 +4989,11 @@ Recommendations:
 ---
 
 ## Destin Pipeline Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-1-000 | Audit type: financial
 - Issued: 2016-03-30 | Industry: gas | FERC Form: No. 2
-- Function(s): n/a
 - Audit period: from January 1, 2012 to July 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160330-3003&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160330-3003&optimized=false
 
 ### Finding 1: Reservation Charge Credits
 Destin’s tariff did not include language consistent with the Commission’s reservation charge crediting policy.
@@ -5308,20 +5024,13 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 
 ---
 
-## ITC Midwest LLC
-- Docket: ER15-1250 | Audit type: n/a
-- Issued: 2016-03-11 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160311-3026&optimized=false
-
----
-
 ## Emera Maine
+- Collection: FERC Audits | Source: FERC
 - Docket: PA15-4-000 | Audit type: non-financial
 - Issued: 2016-01-04 | Industry: n/a | FERC Form: n/a
 - Function(s): transmission
 - Audit period: from January 1, 2013 through December 31, 2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160104-3018&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160104-3018&optimized=false
 
 ### Finding 1: Merger-Related Capital Costs
 
@@ -5334,37 +5043,38 @@ Destin did not properly comply with select filing instructions on pages 508-509 
 ---
 
 ## Yankee Atomic Energy Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-3-000 | Audit type: financial
 - Issued: 2015-10-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
 - Audit period: January 1, 2012 through August 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20151023-3035&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20151023-3035&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20151023-3035 (fileID 14022526).
 
 ---
 
 ## Portland General Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA15-2-000 | Audit type: financial
 - Issued: 2015-10-23 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
 - Audit period: January 1, 2012 through July 31, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20151023-3034&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20151023-3034&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
 
----
-
-## Potomac-Appalachian Transmission Highline, LLC et al.
-- Docket: ER09-1256 | Audit type: n/a
-- Issued: 2015-09-14 | Industry: electric | FERC Form: n/a
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150914-4006&optimized=false
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20151023-3034 (fileID 14022523).
 
 ---
 
 ## Entergy Corporation
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-2-000 | Audit type: financial
 - Issued: 2015-07-30 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
 - Audit period: January 1, 2011 through December 31, 2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150730-3041&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150730-3041&optimized=false
 
 ### Finding 1: Nuclear Decommissioning Trust Fund Reports
 Entergy filed trust fund financial reports annually with the Commission, but the reports did not include some trust funds containing monies collected from wholesale customers. Moreover, for the trust funds reported, the company did not include all required information.
@@ -5372,11 +5082,12 @@ Entergy filed trust fund financial reports annually with the Commission, but the
 ---
 
 ## NRG Energy, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: PA14-1 | Audit type: non-financial
 - Issued: 2015-07-02 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
 - Audit period: from January 1, 2011 to December 31,2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150702-3031&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150702-3031&optimized=false
 
 ### Finding 1: Plant Outage Data
 NRG reported outage data incorrectly either in the Generator Availability Data System (GADS) or when reporting the outage data to the relevant RTO/ISO. Some regions use GADS data to develop reserve requirements for purchasing in the capacity market. Therefore, accurate and complete data must be gathered to understand unit life cycle performance and obtain a complete historical assessment.
@@ -5386,11 +5097,11 @@ NRG reported outage data incorrectly either in the Generator Availability Data S
 ---
 
 ## Enterprise Product Partners
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-1-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: oil | FERC Form: No. 6, No. 6-Q
-- Function(s): n/a
 - Audit period: from January 1, 2011 to January 30, 2015
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3057&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3057&optimized=false
 
 ### Finding 1: Applying Correct Rates to Intermediate Points
 MAPL did not apply correct rates to intermediate points for two series of intermediate price movements involving an affiliate on its system from 2011 to 2012. This resulted in an under recovery of revenues of $1.7 million, which MAPL should have reported as affiliated company transactions on page 200, Receivables from Affiliated Companies. This understatement of revenues impacted the Form No. 6 for 2012, including page 700, and used in the calculation of the five-year indexed adjustment.
@@ -5425,11 +5136,12 @@ MAPL misclassified a prepaid lease asset in its books and records in the amount 
 ---
 
 ## ConocoPhillips
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-5-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: electric | FERC Form: No. 552
 - Function(s): generation
 - Audit period: from January 1, 2011 through present
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3055&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3055&optimized=false
 
 ### Finding 1: Aggregation of Next-Day Gas Deals
 COP did not report some physical next-day gas transactions to price index publishers due to deal entry practices used by COP’s gas traders. These practices were enabled by lapses in internal controls in COP’s deal capture system and processes.
@@ -5440,10 +5152,11 @@ COP aggregated natural gas volumes purchased and sold by affiliate companies on 
 ---
 
 ## Colonial Pipeline Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-4-000 | Audit type: financial
 - Issued: 2015-06-17 | Industry: oil | FERC Form: No. 6
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3056&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150617-3056&optimized=false
 
 ### Finding 1: Consolidated Method of Accounting
 Colonial improperly reported its investment in Colonial Pipeline Company of Pennsylvania, CP Dogwood LLC, and Energy Logistics Solutions LLC under the consolidated method of accounting instead of using the equity method of accounting, as required by the Commission. By consolidating, Colonial’s financial statements did not appropriately reflect its investments in subsidiary companies.
@@ -5472,19 +5185,23 @@ Recommendations:
 ---
 
 ## Kinder Morgan
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-10-000 | Audit type: financial
 - Issued: 2015-06-04 | Industry: gas | FERC Form: No. 2
-- Function(s): n/a
 - Audit period: of January 1, 2011 through December 2014
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150604-3010&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150604-3010&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20150604-3010 (fileID 13895448).
 
 ---
 
 ## Kansas Gas and Electric Company
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-3-000 | Audit type: financial
 - Issued: 2015-03-27 | Industry: electric | FERC Form: No. 1
 - Function(s): generation
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150327-3035&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150327-3035&optimized=false
 
 ### Finding 1: Commission-Jurisdictional Trust Fund Assets
 KGE did not clearly distinguish Commission-jurisdictional assets from non- Commission-jurisdictional assets in the Wolf Creek trust fund. Specifically, KGE: • Did not establish and maintain clearly identifiable accounts within a single trust fund. As a result, KGE could not readily identify the amount of Commission-jurisdictional from non-Commission-jurisdictional assets in the trust fund. • Erroneously directed its trustee to record zero contributions to the Commission-jurisdictional portion of the trust fund since 2010. As a result, KGE understated Commission-jurisdictional contributions by
@@ -5495,15 +5212,550 @@ KGE did not file annual nuclear decommissioning trust fund reports with the Comm
 ---
 
 ## Occidental Energy Marketing, Inc.
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-8 | Audit type: financial
 - Issued: 2014-10-24 | Industry: n/a | FERC Form: No. 552
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3018&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3018&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20141024-3018 (fileID 13666269).
 
 ---
 
 ## Cargill
+- Collection: FERC Audits | Source: FERC
 - Docket: FA14-6 | Audit type: financial
 - Issued: 2014-10-24 | Industry: n/a | FERC Form: No. 552
-- Function(s): n/a
-- Source: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3019&optimized=false
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20141024-3019&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20141024-3019 (fileID 13666270).
+
+---
+
+## ISO New England Inc. et al.
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER20-2054 | Audit type: n/a
+- Issued: 2025-09-18 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3062&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC Commission order on a formal challenge (Rule 206) re ISO New England Inc. et al., Docket ER20-2054, issued 2025-09-18. Found via eLibrary full-text search; accession 20250918-3062.
+
+---
+
+## Constellation Mystic Power, LLC
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER18-1639 | Audit type: n/a
+- Issued: 2024-05-23 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240523-3096&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC Order on Rehearing and Clarification re Constellation Mystic Power, LLC cost-of-service recovery, Docket ER18-1639, issued 2024-05-23. Found via eLibrary full-text search; accession 20240523-3096.
+
+---
+
+## Delmarva Power & Light Company
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER09-1158 | Audit type: n/a
+- Issued: 2020-08-28 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200828-3048&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC order granting in part and denying in part a formal challenge re Delmarva Power & Light Company formula-rate inputs, Docket ER09-1158, issued 2020-08-28. Found via eLibrary full-text search; accession 20200828-3048.
+
+---
+
+## ITC Midwest LLC
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER15-1250 | Audit type: n/a
+- Issued: 2016-03-11 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20160311-3026&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC order on a formal challenge re ITC Midwest LLC transmission formula rate, Docket ER15-1250, issued 2016-03-11. Found via eLibrary full-text search; accession 20160311-3026.
+
+---
+
+## Potomac-Appalachian Transmission Highline, LLC et al.
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER09-1256 | Audit type: n/a
+- Issued: 2015-09-14 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20150914-4006&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC ALJ Initial Decision re Potomac-Appalachian Transmission Highline, LLC (PATH) transmission-incentive cost recovery / abandoned-plant prudence, Docket ER09-1256, issued 2015-09-14. Found via eLibrary full-text search; accession 20150914-4006.
+
+---
+
+## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
+- Collection: State PUC Audits | Source: Public Utilities Commission of Ohio
+- Docket: 20-1502-EL-UNC | Audit type: n/a
+- Issued: 2026-01-07 | Industry: electric | FERC Form: n/a
+- Source page: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
+- Status: listed for reference (not machine-parsed into findings)
+
+Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting the Joint Stipulation and Recommendation that resolves all issues in the review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company, Case No. 20-1502-EL-UNC, entered January 7, 2026 (13 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26A07B55341I00561.
+
+---
+
+## FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
+- Collection: State PUC Audits | Source: Public Utilities Commission of Ohio
+- Docket: 20-1502-EL-UNC | Audit type: n/a
+- Issued: 2025-12-19 | Industry: electric | FERC Form: n/a
+- Source page: https://dis.puc.state.oh.us/CaseRecord.aspx?CaseNo=20-1502-EL-UNC
+- Status: listed for reference (not machine-parsed into findings)
+
+Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio's review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company (FirstEnergy's Ohio electric distribution utilities), Case No. 20-1502-EL-UNC, filed December 19, 2025 (21 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A25L19B41411B02333.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Collection: State PUC Audits | Source: Virginia State Corporation Commission
+- Docket: PUR-2025-00058 | Audit type: n/a
+- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order in the 2025 biennial review of Virginia Electric and Power Company (Dominion Energy Virginia) rates, terms and conditions for generation, distribution and transmission service under Va. Code § 56-585.1 A, Case No. PUR-2025-00058, entered by the Virginia State Corporation Commission at Richmond on November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g601!.PDF.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Collection: State PUC Audits | Source: Virginia State Corporation Commission
+- Docket: PUR-2025-00037 | Audit type: n/a
+- Issued: 2025-11-25 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order granting Virginia Electric and Power Company (Dominion Energy Virginia) a certificate of public convenience and necessity (CPCN) to construct and operate the ~944 MW Chesterfield Energy Reliability Center and related transmission, with Rider CERC cost recovery under Va. Code § 56-585.1 A 6, Case No. PUR-2025-00037, Virginia State Corporation Commission, entered at Richmond November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g501!.PDF.
+
+---
+
+## FirstEnergy Pennsylvania Electric Company
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-09-25 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025
+- Status: listed for reference (not machine-parsed into findings)
+
+Management Efficiency Investigation (follow-up to the 2022 Management & Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf.
+
+---
+
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2024-0087/documents/370165
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order of the Illinois Commerce Commission in Commonwealth Edison Company's reconciliation of Rider CFRA (Carbon-Free Resource Adjustment) revenues against actual carbon-mitigation-credit costs, ICC Docket 24-0087, entered September 4, 2025 (Chairman Douglas P. Scott). Listed for reference (metadata-only). Source: ICC e-Docket, document 370165 / file 648653 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/370165).
+
+---
+
+## Appalachian Power Company
+- Collection: State PUC Audits | Source: Virginia State Corporation Commission
+- Docket: PUR-2024-00161 | Audit type: n/a
+- Issued: 2025-08-29 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order on Appalachian Power Company's petition to revise its net energy metering program under Va. Code § 56-594 E, Case No. PUR-2024-00161, Virginia State Corporation Commission, entered at Richmond August 29, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/87nd01!.PDF.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Collection: State PUC Audits | Source: Virginia State Corporation Commission
+- Docket: PUR-2025-00076 | Audit type: n/a
+- Issued: 2025-08-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) revised transmission rate adjustment clause Rider T1 under Va. Code § 56-585.1 A 4 (deeming prudent RTO transmission and FERC-approved demand-response costs), Case No. PUR-2025-00076, Virginia State Corporation Commission, entered August 1, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/873b01!.PDF.
+
+---
+
+## El Paso Electric Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 57149 | Audit type: n/a
+- Issued: 2025-04-01 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=118
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Commission of Texas (Commission Staff), in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed April 1, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_118_1485108.PDF.
+
+---
+
+## El Paso Electric Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 57149 | Audit type: n/a
+- Issued: 2025-03-25 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=113
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony and Attachments of Evan D. Evans on behalf of the Office of Public Utility Counsel (OPUC, the statutory residential and small-commercial consumer advocate), challenging cost recovery in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed March 25, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_113_1483132.PDF.
+
+---
+
+## El Paso Electric Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 57149 | Audit type: n/a
+- Issued: 2025-03-25 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=114
+- Status: listed for reference (not machine-parsed into findings)
+
+Redacted Direct Testimony and Workpapers of Scott Norwood on behalf of the City of El Paso, addressing re-allocation of purchased-power-agreement energy costs, imputed capacity charge credits, and Newman Unit 6 fuel costs in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed March 25, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_114_1483150.PDF.
+
+---
+
+## El Paso Electric Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 57149 | Audit type: n/a
+- Issued: 2024-11-14 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=34
+- Status: listed for reference (not machine-parsed into findings)
+
+Preliminary Order of the Public Utility Commission of Texas identifying the issues (including prudence of fuel and purchased-power costs) in El Paso Electric Company's application to reconcile Texas-jurisdictional fuel, fuel-related, and purchased-power expenses for the reconciliation period April 1, 2022 through March 31, 2024. PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed November 14, 2024. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_34_1442512.PDF.
+
+---
+
+## DTE Electric Company
+- Collection: State PUC Audits | Source: MI Public Service Commission (Liberty Consulting Group)
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Source page: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Report — Utility Distribution Audit of DTE Energy, Part Two, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
+
+---
+
+## DTE Electric Company
+- Collection: State PUC Audits | Source: MI Public Service Commission (Liberty Consulting Group)
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Source page: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Report — Utility Distribution Audit of DTE Energy, Part One, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
+
+---
+
+## Consumers Energy Company
+- Collection: State PUC Audits | Source: MI Public Service Commission (Liberty Consulting Group)
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Source page: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Report — Utility Distribution Audit of Consumers Energy, Part Two, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
+
+---
+
+## Consumers Energy Company
+- Collection: State PUC Audits | Source: MI Public Service Commission (Liberty Consulting Group)
+- Docket: U-21305 | Audit type: n/a
+- Issued: 2024-09-23 | Industry: electric | FERC Form: n/a
+- Source page: https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Report — Utility Distribution Audit of Consumers Energy, Part One, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Collection: State PUC Audits | Source: Virginia State Corporation Commission
+- Docket: PUR-2024-00137 | Audit type: n/a
+- Issued: 2024-09-04 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Order for Notice and Hearing on Virginia Electric and Power Company's (Dominion Energy Virginia) petition for a new distribution rate adjustment clause Rider DIST (grid-transformation cost recovery) and consolidation of Riders GT and U under Va. Code § 56-585.1 A 6 and A 7, Case No. PUR-2024-00137, Virginia State Corporation Commission, entered September 4, 2024. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/816l01!.PDF.
+
+---
+
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2024-0087/documents/354448
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Kevin Siebert (Staff Exhibit 1.0) on behalf of the Staff of the Illinois Commerce Commission in ComEd's Rider CFRA (Carbon-Free Resource Adjustment) reconciliation, ICC Docket 24-0087, filed August 20, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 354448 / file 620724 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/354448).
+
+---
+
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-08-20 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2024-0087/documents/354464
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Roger W. Turner (CICI Exhibit 1.0) on behalf of the Chemical Industry Council of Illinois (intervenor) in ComEd's Rider CFRA (Carbon-Free Resource Adjustment) reconciliation, ICC Docket 24-0087, filed August 20, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 354464 / file 620780 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/354464).
+
+---
+
+## PPL Electric Utilities Corporation
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2023-3039488 | Audit type: n/a
+- Issued: 2024-07-11 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation
+
+### Finding 1: Executive Management and Organizational Structure
+
+Recommendations:
+1. Conduct routine employee surveys to ensure corporate culture aligns with company goals.
+2. Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives.
+
+### Finding 2: Cost Allocations and Affiliated Interests
+
+Recommendations:
+3. Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM.
+4. Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes.
+5. Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates.
+
+### Finding 3: Financial Management
+
+Recommendations:
+6. Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income.
+
+### Finding 4: Electric Operations
+
+Recommendations:
+7. Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability.
+8. Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4.
+9. Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected.
+
+### Finding 5: Emergency Preparedness
+
+Recommendations:
+10. Address minor security and safety improvements.
+11. Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness.
+
+### Finding 6: Purchasing and Materials Management
+
+Recommendations:
+12. Update outdated policies and procedures.
+13. Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies.
+14. Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments.
+
+### Finding 7: Customer Service
+
+Recommendations:
+15. Improve and strengthen customer service performance to at least pre-pandemic levels.
+16. Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances.
+17. Develop internal controls for source data and reporting systems to ensure accuracy.
+
+### Finding 8: Information Technology
+
+Recommendations:
+18. Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances.
+19. Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels.
+
+---
+
+## Dominion Energy South Carolina, Inc.
+- Collection: State PUC Audits | Source: Public Service Commission of South Carolina
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-04-11 | Industry: electric | FERC Form: n/a
+- Source page: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
+- Status: listed for reference (not machine-parsed into findings)
+
+Joint Proposed Order on the annual review of Dominion Energy South Carolina, Inc.'s fuel purchasing practices and policies and whether any adjustment in the fuel cost recovery factors is reasonable, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed April 11, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 51360053-aa48-4cac-8c1c-ddd6997b76c1 (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+
+---
+
+## Dominion Energy South Carolina, Inc.
+- Collection: State PUC Audits | Source: Public Service Commission of South Carolina
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-03-28 | Industry: electric | FERC Form: n/a
+- Source page: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
+- Status: listed for reference (not machine-parsed into findings)
+
+Corrected Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), Dominion Energy South Carolina, Inc. (DESC), and the South Carolina Energy Users Committee (SCEUC) resolving DESC's 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed March 28, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 63bee92e-ec9c-45c5-bbb3-723f6f840b3e (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+
+---
+
+## Dominion Energy South Carolina, Inc.
+- Collection: State PUC Audits | Source: Public Service Commission of South Carolina
+- Docket: 2024-2-E | Audit type: n/a
+- Issued: 2024-02-15 | Industry: electric | FERC Form: n/a
+- Source page: https://dms.psc.sc.gov/Web/Dockets/Detail/118762
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony and Exhibits of Hua Fang (Managing Director, Black & Veatch Corporation) on behalf of Dominion Energy South Carolina, Inc. in its 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed February 15, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 5fc1fa94-17bc-4d5b-9950-05b8a1f64b84 (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+
+---
+
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 24-0087 | Audit type: n/a
+- Issued: 2024-02-02 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2024-0087/documents/346818
+- Status: listed for reference (not machine-parsed into findings)
+
+Verified Petition of Commonwealth Edison Company (ComEd) for reconciliation of revenues billed under Rider CFRA (Carbon-Free Resource Adjustment) against actual costs associated with carbon-mitigation-credit expenditures, Illinois Commerce Commission Docket 24-0087, filed February 2, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 346818 / file 605464 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/346818).
+
+---
+
+## Philadelphia Gas Works
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2022-3030321 | Audit type: n/a
+- Issued: 2023-03-02 | Industry: gas | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works
+
+### Finding 1: Corporate Governance
+
+Recommendations:
+1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.
+2. Streamline the annual budget approval process.
+3. Establish committee charters for all PFMC board committees.
+4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.
+
+### Finding 2: Executive Management and Organizational Structure
+
+Recommendations:
+5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.
+6. Implement a safety management system and improve safety culture at PGW.
+
+### Finding 3: Financial Management
+
+Recommendations:
+7. Update Internal Audit policies and procedures.
+8. Formally document explanations for variances from the capital and operating budgets.
+
+### Finding 4: Gas Operations
+
+Recommendations:
+9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.
+10. Accelerate cast iron main replacement.
+11. Plan and implement a process for gathering equipment and installation data in the GIS database.
+12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.
+
+### Finding 5: Emergency Preparedness
+
+Recommendations:
+13. File Self-Certification forms with the Pennsylvania PUC annually.
+14. Correct various deficiencies in physical security.
+15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.
+
+### Finding 6: Emergency Preparedness (continued)
+
+Recommendations:
+16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis.
+17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.
+18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.
+19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.
+20. Implement a cybersecurity-focused risk registry.
+
+### Finding 7: Materials Management
+
+Recommendations:
+21. Document the policies and procedures of PGW’s cycle counting function.
+22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.
+
+### Finding 8: Customer Service
+
+Recommendations:
+23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.
+24. Improve customer service performance through expanding call center resources.
+25. Complete implementation of the replacement CIS.
+26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.
+27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.
+
+### Finding 9: Information Technology
+
+Recommendations:
+28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.
+29. Leverage and integrate data visualization software consistently across PGW.
+
+### Finding 10: Fleet Management
+
+Recommendations:
+30. Improve efficiencies within the fleet department.
+
+### Finding 11: Human Resources and Diversity
+
+Recommendations:
+31. Implement strategies for recruitment and retention of “at-risk” positions.
+32. Drive safety performance to meet industry standards.
+
+---
+
+## FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: n/a | Audit type: n/a
+- Issued: 2022-06-16 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies
+
+### Finding 1: Executive Management and Organizational Structure
+
+Recommendations:
+1. Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023.
+2. Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report.
+
+### Finding 2: Key Audit Matter
+
+Recommendations:
+3. Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom.
+4. Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers.
+
+### Finding 3: Corporate Governance
+
+Recommendations:
+5. Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting
+
+### Finding 4: Affiliated Interests and Cost Allocations
+
+Recommendations:
+6. Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates.
+7. Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days.
+
+### Finding 5: Affiliated Interests and Cost Allocations (continued)
+
+Recommendations:
+8. Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies.
+9. Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice.
+10. Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval.
+11. Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding.
+
+### Finding 6: Financial Management
+
+Recommendations:
+12. Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments.
+13. Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community.
+14. Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness.
+
+### Finding 7: Electric Operations
+
+Recommendations:
+15. Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible.
+
+### Finding 8: Electric Operations (continued)
+
+Recommendations:
+16. Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees.
+17. Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts.
+18. Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status.
+19. Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies.
+
+### Finding 9: Materials Management
+
+Recommendations:
+20. Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals.
+
+### Finding 10: Customer Service
+
+Recommendations:
+21. Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results.
+22. Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals.
+23. Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative.
+
+### Finding 11: Human Resources and Diversity
+
+Recommendations:
+24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture.
+25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification.
+26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance.

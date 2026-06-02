@@ -20,6 +20,8 @@ import logging
 from datetime import date
 from pathlib import Path
 
+from collections import Counter
+
 from pipeline import config
 from pipeline.models import AuditReport, PatternsSummary
 from pipeline.patterns import load_reports, summarize
@@ -27,6 +29,14 @@ from pipeline.patterns import load_reports, summarize
 logger = logging.getLogger(__name__)
 
 SOURCE = "https://www.ferc.gov/audits"
+
+# Collections, in tab order, with their llms.txt section labels. Mirrors
+# build.py COLLECTIONS (kept in sync by eye — both small and rarely change).
+_COLLECTIONS: list[tuple[str, str]] = [
+    ("ferc_audit", "FERC Audits"),
+    ("prudence_review", "Prudence Reviews"),
+    ("state_audit", "State PUC Audits"),
+]
 
 
 def _industry_suffix(meta: dict) -> str:
@@ -36,46 +46,106 @@ def _industry_suffix(meta: dict) -> str:
     return f" ({', '.join(parts)} identified)" if parts else ""
 
 
-def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dict) -> str:
-    out: list[str] = []
-    out.append("# FERC Audit Explorer")
-    out.append("")
-    out.append(
-        "> Machine-readable findings of noncompliance and staff recommendations from "
-        "FERC's published **utility audit reports** — across the **electric, gas, and oil "
-        "sectors** (primarily FERC Forms 1, 2, and 6, plus related forms) — issued by the "
-        "Office of Enforcement, Division of Audits & Accounting. Covers both financial (FA) "
-        "and non-financial (PA) audits of utilities, ISOs, RTOs, and pipelines. Each report "
-        "is parsed into findings -> recommendations, and cross-report themes are mined."
-    )
-    out.append("")
-    out.append(
-        f"Scope: {meta.get('scope', 'FERC utility audits — electric, gas & oil')}. "
-        f"As of {meta.get('generated_at')}, {meta.get('reports_structured')} reports are "
-        f"structured of {meta.get('reports_total_listed')} listed{_industry_suffix(meta)}. "
-        "Findings and recommendations are quoted verbatim from each report's Executive "
-        f"Summary or findings section. Primary source: {SOURCE}. Independent public-interest "
-        "tool, not affiliated with FERC. Links below are relative to the site root."
-    )
-    out.append("")
-    out.append("## Data (machine-readable)")
-    out.append("- [Reports](data/reports.json): every structured report with findings, recommendations, and themes")
-    out.append("- [Patterns](data/patterns.json): cross-report themes with counts by industry and year")
-    out.append("- [Meta](data/meta.json): corpus counts and provenance")
-    out.append("- [Full corpus text](llms-full.txt): all findings and recommendations in one file (verbatim)")
-    out.append("")
-    out.append("## Reports")
-    for r in reports:
+def _year_range(reports: list[AuditReport]) -> str:
+    years = sorted({r.issued_date.year for r in reports if r.issued_date})
+    if not years:
+        return "n/a"
+    return str(years[0]) if years[0] == years[-1] else f"{years[0]}–{years[-1]}"
+
+
+def _counts(values) -> str:
+    """'VA (5), TX (4), …' — a grounded Counter rendering for insight lines."""
+    return ", ".join(f"{k} ({v})" for k, v in Counter(values).most_common())
+
+
+def _collection_insight(reports: list[AuditReport], summary: PatternsSummary) -> str:
+    """One grounded, mechanical line of insight for a collection (counts + keyword
+    themes only — no characterization). Surfaces what the parsed findings vs the
+    listed-for-reference documents actually contain."""
+    structured = [r for r in reports if r.structured]
+    bits = [f"{len(reports)} document(s), {_year_range(reports)}"]
+    jur = {r.jurisdiction for r in reports}
+    if jur - {"FERC"}:
+        bits.append(f"jurisdictions: {_counts(r.jurisdiction for r in reports)}")
+    if summary.finding_count:
+        bits.append(
+            f"{summary.finding_count} findings / {summary.recommendation_count} recommendations "
+            f"parsed from {len(structured)} report(s)"
+        )
+    listed = len(reports) - len(structured)
+    if listed:
+        bits.append(f"{listed} listed for reference (orders / testimony / settlements)")
+    if any(r.doc_type for r in reports if not r.structured):
+        bits.append("doc types: " + _counts(r.doc_type or "—" for r in reports if not r.structured))
+    if summary.themes:
+        bits.append("top themes: " + ", ".join(t.theme for t in summary.themes[:4]))
+    return "_" + ". ".join(bits) + "._"
+
+
+def _report_line(r: AuditReport) -> str:
+    """A report's index entry — findings for parsed reports, an honest
+    'listed for reference' line (doc type + jurisdiction) for metadata-only docs."""
+    if r.structured and r.finding_count:
         titles = "; ".join(f.title for f in r.findings if not f.is_other_matter)
         suffix = f" — findings: {titles}" if titles else ""
         fns = "/".join(r.functions) if r.functions else "n/a"
-        out.append(
+        return (
             f"- [{r.company}]({r.source_page_url}): Docket {r.docket_full or r.docket or 'n/a'}, "
             f"issued {r.issued_date or 'n/a'}, {r.audit_type or 'audit'} audit, {fns}, "
             f"{r.finding_count} finding(s){suffix}"
         )
+    label = r.doc_type or "document"
+    juris = f"{r.jurisdiction} · " if r.jurisdiction and r.jurisdiction != "FERC" else ""
+    return (
+        f"- [{r.company}]({r.source_page_url}): {juris}{label}, "
+        f"Docket {r.docket or 'n/a'}, issued {r.issued_date or 'n/a'} — listed for reference"
+    )
+
+
+def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dict) -> str:
+    by_coll = Counter(r.collection for r in reports)
+    out: list[str] = []
+    out.append("# FERC Audit Explorer")
     out.append("")
-    out.append("## Common themes")
+    out.append(
+        "> Machine-readable findings of noncompliance and staff recommendations mined from "
+        "**utility audit and prudence records**, across three collections: **FERC audits** "
+        "(the Office of Enforcement's financial (FA) and non-financial (PA) audits of "
+        "utilities, ISOs/RTOs, and pipelines, electric/gas/oil), **FERC prudence reviews** "
+        "(rate-case cost determinations), and **state PUC/PSC/SCC audits** (rate, fuel-cost, "
+        "and management proceedings from several state commissions). FERC audits and the "
+        "parsed state management audits are broken into findings -> recommendations (verbatim); "
+        "legal orders, testimony, and settlements are listed with their source. Themes are "
+        "mined by transparent keyword tagging, never LLM judgement."
+    )
+    out.append("")
+    out.append(
+        f"Scope: {meta.get('scope', 'FERC utility audits — electric, gas & oil')}, extended to "
+        f"prudence reviews and state audits. As of {meta.get('generated_at')}, the corpus holds "
+        f"{len(reports)} structured records: {by_coll.get('ferc_audit', 0)} FERC audits "
+        f"(of {meta.get('reports_total_listed')} listed at {SOURCE}{_industry_suffix(meta)}), "
+        f"{by_coll.get('prudence_review', 0)} prudence reviews, and {by_coll.get('state_audit', 0)} "
+        "state PUC audits. Findings and recommendations are quoted verbatim. Independent "
+        "public-interest tool, not affiliated with FERC. Links below are relative to the site root."
+    )
+    out.append("")
+    out.append("## Data (machine-readable)")
+    out.append("- [Reports](data/reports.json): every structured record with findings, recommendations, and themes")
+    out.append("- [Patterns](data/patterns.json): cross-report themes with counts by industry and year")
+    out.append("- [Patterns by collection](data/patterns_by_collection.json): the same aggregates, per collection/tab")
+    out.append("- [Meta](data/meta.json): corpus counts and provenance")
+    out.append("- [Full corpus text](llms-full.txt): all findings, recommendations, and source notes in one file (verbatim)")
+    out.append("")
+    for key, label in _COLLECTIONS:
+        rs = [r for r in reports if r.collection == key]
+        if not rs:
+            continue
+        out.append(f"## {label}")
+        out.append(_collection_insight(rs, summarize(rs)))
+        out.append("")
+        out.extend(_report_line(r) for r in rs)
+        out.append("")
+    out.append("## Common themes (from parsed findings)")
     for t in patterns.themes:
         desc = f" — {t.description}" if t.description else ""
         out.append(f"- {t.theme}{desc} ({t.report_count} report(s), {t.finding_count} finding(s))")
@@ -94,39 +164,49 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
     out.append("# FERC Audit Explorer — full structured corpus")
     out.append("")
     out.append(
-        f"> All structured FERC utility audit reports (electric, gas & oil): findings "
-        f"(verbatim) plus staff recommendations. {len(reports)} reports, {total_f} findings, "
+        f"> All structured records across FERC audits, FERC prudence reviews, and state PUC "
+        f"audits: findings (verbatim) plus staff recommendations, with a provenance note for "
+        f"documents listed for reference. {len(reports)} records, {total_f} findings, "
         f"{total_r} recommendations. Generated {meta.get('generated_at')}."
     )
     out.append("")
     out.append(
-        f"Primary source: {SOURCE}. Findings and recommendations are quoted verbatim from "
-        "each report's Executive Summary or findings section. Generated from the same data as "
-        "data/reports.json."
+        f"Primary source: {SOURCE}. Findings and recommendations are quoted verbatim; "
+        "metadata-only documents (legal orders, testimony, settlements) carry their source "
+        "note instead. Generated from the same data as data/reports.json."
     )
-    for r in reports:
-        out.append("")
-        out.append("---")
-        out.append("")
-        out.append(f"## {r.company}")
-        forms = ", ".join(f"No. {f}" for f in r.forms) or "n/a"
-        out.append(f"- Docket: {r.docket_full or r.docket or 'n/a'} | Audit type: {r.audit_type or 'n/a'}")
-        out.append(f"- Issued: {r.issued_date or 'n/a'} | Industry: {r.industry or 'n/a'} | FERC Form: {forms}")
-        out.append(f"- Function(s): {', '.join(r.functions) if r.functions else 'n/a'}")
-        if r.audit_period:
-            out.append(f"- Audit period: {r.audit_period}")
-        out.append(f"- Source: {r.source_page_url}")
-        for f in r.findings:
+    for key, label in _COLLECTIONS:
+        for r in (x for x in reports if x.collection == key):
             out.append("")
-            label = "Other matter" if f.is_other_matter else f"Finding {f.index}"
-            out.append(f"### {label}: {f.title}")
-            if f.summary:
-                out.append(f.summary)
-            if f.recommendations:
-                out.append("")
-                out.append("Recommendations:")
-                for rec in f.recommendations:
-                    out.append(f"{rec.number}. {rec.text}")
+            out.append("---")
+            out.append("")
+            out.append(f"## {r.company}")
+            forms = ", ".join(f"No. {f}" for f in r.forms) or "n/a"
+            out.append(f"- Collection: {label} | Source: {r.source or 'FERC'}")
+            out.append(f"- Docket: {r.docket_full or r.docket or 'n/a'} | Audit type: {r.audit_type or 'n/a'}")
+            out.append(f"- Issued: {r.issued_date or 'n/a'} | Industry: {r.industry or 'n/a'} | FERC Form: {forms}")
+            if r.functions:
+                out.append(f"- Function(s): {', '.join(r.functions)}")
+            if r.audit_period:
+                out.append(f"- Audit period: {r.audit_period}")
+            out.append(f"- Source page: {r.source_page_url}")
+            if r.structured and r.findings:
+                for f in r.findings:
+                    out.append("")
+                    flabel = "Other matter" if f.is_other_matter else f"Finding {f.index}"
+                    out.append(f"### {flabel}: {f.title}")
+                    if f.summary:
+                        out.append(f.summary)
+                    if f.recommendations:
+                        out.append("")
+                        out.append("Recommendations:")
+                        for rec in f.recommendations:
+                            out.append(f"{rec.number}. {rec.text}")
+            else:
+                out.append("- Status: listed for reference (not machine-parsed into findings)")
+                if r.source_note:
+                    out.append("")
+                    out.append(r.source_note)
     out.append("")
     return "\n".join(out)
 
