@@ -1,7 +1,7 @@
 # UAT Baseline — FERC Audit Explorer
 
 _Created: 2026-05-31_
-_Last run: 2026-05-31_
+_Last run: 2026-06-02_
 
 ## Project Info
 - **Stack**: static vanilla HTML/CSS/JS (no framework, no build). Python CLI pipeline bakes `docs/data/*.json`.
@@ -22,12 +22,12 @@ _Last run: 2026-05-31_
 ## Sections & Last Tested
 | Section | Last Tested | Notes |
 |---------|-------------|-------|
-| Desktop (1280) | 2026-05-31 | Stable, light+dark |
+| Desktop (1280) | 2026-06-02 | Stable; load + pattern filter + empty state re-verified |
 | Tablet (768) | 2026-05-31 | Stable; band = horizontal scroll-snap; bottom-sheet filters |
-| Mobile (375) | 2026-05-31 | Stable; no horizontal overflow; sheet dismissal fixed |
-| Top-patterns band | 2026-05-31 | Stable; click→filter sync verified |
-| Filters (rail + sheet) | 2026-05-31 | Sheet close affordances added this run |
-| Theme toggle | 2026-05-31 | Persists |
+| Mobile (375) | 2026-06-02 | Stable; no horizontal overflow at 375px; dark mode renders cleanly |
+| Top-patterns band | 2026-06-02 | Stable; Depreciation→40 reports, aria-pressed sync verified |
+| Filters (rail + sheet) | 2026-06-02 | Empty state ("No reports match… Clear filters") verified |
+| Theme toggle | 2026-06-02 | Persists (`ferc-theme`); light↔dark, `data-theme` flips |
 
 ## Known Stable Areas
 Filter algebra (OR within / AND across), active chips, empty state, zero-finding rendering, default newest-first sort, theme persistence.
@@ -39,3 +39,8 @@ Filter algebra (OR within / AND across), active chips, empty state, zero-finding
 - **FERC-form facet is noisy** — lists incidentally-cited forms (No. 549/552/714…), not just the audited form. Low-pri BACKLOG item, not a UAT bug.
 - The patterns band shows corpus-wide counts (not the filtered subset) by design — it's a global nav, per its heading.
 - Next runs: try keyboard-only nav end-to-end; rapid pattern toggle; very long search strings; `prefers-reduced-motion`.
+
+## Performance (audited 2026-06-02)
+- **7 requests, no third-party/font/framework calls.** Wire payload ≈ **207 KB gzip** (raw ≈ 1.31 MB): `reports.json` 1.23 MB→185 KB, `app.js` 29 KB→8.8 KB, `styles.css` 21 KB→5.2 KB, `index.html` 8.9 KB→3.1 KB, three small JSONs. GitHub Pages serves gzip, so the wire cost is fine for a data-heavy explorer.
+- **`reports.json` preload is correct — do NOT "fix" the `crossorigin`.** Resource Timing confirms it's fetched **once** (`initiatorType: "link"`); `app.js`'s same-origin `fetch()` reuses the preload (no double-download, no "preloaded but not used" warning). A static read of `index.html` makes the `crossorigin="anonymous"` preload look like a CORS mismatch, but the browser reuses it here — verified, leave it.
+- Run perf the same way next time: serve docs, `performance.getEntriesByType('resource')` for fetch counts; `gzip -c <file> | wc -c` for wire sizes.
