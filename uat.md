@@ -41,6 +41,6 @@ Filter algebra (OR within / AND across), active chips, empty state, zero-finding
 - Next runs: try keyboard-only nav end-to-end; rapid pattern toggle; very long search strings; `prefers-reduced-motion`.
 
 ## Performance (audited 2026-06-02)
-- **7 requests, no third-party/font/framework calls.** Wire payload ≈ **207 KB gzip** (raw ≈ 1.31 MB): `reports.json` 1.23 MB→185 KB, `app.js` 29 KB→8.8 KB, `styles.css` 21 KB→5.2 KB, `index.html` 8.9 KB→3.1 KB, three small JSONs. GitHub Pages serves gzip, so the wire cost is fine for a data-heavy explorer.
+- **7 requests, no third-party/font/framework calls.** Wire payload ≈ **208 KB gzip** (raw ≈ 1.34 MB, 167 records): `reports.json` 1.26 MB→191 KB, `app.js` 29 KB→8.8 KB, `styles.css` 21 KB→5.2 KB, `index.html` 8.9 KB→3.1 KB, three small JSONs. GitHub Pages serves gzip, so the wire cost is fine for a data-heavy explorer. (Full repeatable procedure + baseline: the **perf-audit** skill, `.claude/skills/perf-audit/`.)
 - **`reports.json` preload is correct — do NOT "fix" the `crossorigin`.** Resource Timing confirms it's fetched **once** (`initiatorType: "link"`); `app.js`'s same-origin `fetch()` reuses the preload (no double-download, no "preloaded but not used" warning). A static read of `index.html` makes the `crossorigin="anonymous"` preload look like a CORS mismatch, but the browser reuses it here — verified, leave it.
 - Run perf the same way next time: serve docs, `performance.getEntriesByType('resource')` for fetch counts; `gzip -c <file> | wc -c` for wire sizes.
