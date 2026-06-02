@@ -20,7 +20,7 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 >
 > **▶ PHASE 2 COMPLETE (VA + TX + IL + SC).** State PUC Audits tab = **24** (PA 4 + MI 4 + VA 5 + TX 4 + IL 4 + SC 3). **NEXT — phase 3 (OH / NC).** WAF-blocked, need browser-capture/cookie-dance (reuse the FERC eLibrary pattern): OH PUCO DIS `dis.puc.state.oh.us` (F5 ASM), NC NCUC `starw1.ncuc.gov` (Cloudflare). OH has the richest consultant audits. Workflow per state once a doc URL is in hand: write `data/seeds/<state>.json` (collection `state_audit`) → `python -m pipeline.sources --seed …` → `python -m pipeline.build` → verify tab → **commit per state**.
 >
-> **Loose ends:** (1) 4/5 prudence records are **0-page** (eLibrary throttled the ingest run) — re-run `python -m pipeline.sources --seed data/seeds/ferc_prudence.json` when eLibrary is quiet to backfill page counts (idempotent; cached ISO-NE skips). (2) PA/MI **findings parser** for the clean management-audit subset is high-priority below. Full detail in the *Multi-source expansion* section. Access map per regulator in [ISSUES.md](ISSUES.md).
+> **Loose ends:** (1) ~~4/5 prudence records 0-page~~ **DONE** (commit `68b0707`) — re-ran the prudence ingest with eLibrary quiet; all 5 now have page counts (Constellation 60p, Delmarva 25p, ITC Midwest 26p, Potomac-Appalachian 61p, ISO-NE 34p). (2) PA/MI **findings parser** for the clean management-audit subset is high-priority below. Full detail in the *Multi-source expansion* section. Access map per regulator in [ISSUES.md](ISSUES.md).
 
 ---
 
