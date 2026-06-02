@@ -52,11 +52,16 @@ These are non-negotiable and enforced in code where possible:
   (`pipeline/backfill.py`, **ferc.gov-origin only**; records carry `archived_via`).
 - **eLibrary PDFs** — `pipeline/fetch.py` runs the **F5 WAF cookie dance**: GET the `filelist`
   endpoint to seed the session cookie, then POST `DownloadPDF`. Accession-keyed (`YYYYMMDD-####`).
-- **eLibrary discovery (prudence reviews)** — the JSON API **is** scriptable (unlike the `www.ferc.gov`
-  HTML): `POST /eLibraryWebAPI/api/Search/AdvancedSearch` with `searchFullText:true`,
-  `categories:["Issuance"]` returns JSON. Used to hand-curate the prudence seed; PDFs still need the
-  cookie dance. (Automating prudence discovery is a backlog item — a single month of "imprudent"
-  returns ~2,900 mostly-incidental hits.)
+- **eLibrary discovery (prudence reviews)** — `POST /eLibraryWebAPI/api/Search/AdvancedSearch` returns
+  JSON (scriptable, unlike the `www.ferc.gov` HTML). **Working recipe (2026-06-02):** the docket goes
+  in **`searchText`** (NOT a dedicated docket field — `docketNumber`/`dockets` are silently ignored),
+  with `{"searchFullText":false,"categories":["Issuance"]}`. Each hit gives `acesssionNumber` (sic —
+  their typo), `issuedDate`, `description`, `docketNumbers`. Returns **10 hits/page** (`totalHits` shows
+  the full count). **Caveat:** results are relevance-ranked full-text, so a clean single-issue docket
+  (e.g. MAPP `ER13-607` → `20130228-3064`) resolves precisely, but a messy consolidated-complaint docket
+  (the ROE cases `EL11-66`/`EL14-12` with dozens of bundled complaints) pulls in siblings — confirm the
+  exact order by `description`+`issuedDate` (and page-1) before seeding. PDFs still need the F5 cookie
+  dance (above). This cracks the long-standing "automate prudence discovery" blocker.
 - Parsing: FERC audit executive summaries → findings → recommendations (`pipeline/structure.py`,
   snapshot-gated). The prudence orders are metadata-only.
 
