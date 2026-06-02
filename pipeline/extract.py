@@ -34,6 +34,35 @@ def _pymupdf_page_text(pdf_path: Path, page_index: int) -> str:
         return doc[page_index].get_text("text") or ""
 
 
+def pymupdf_pages(pdf_path: Path) -> list[PageText]:
+    """Extract every page via PyMuPDF (fitz) only.
+
+    pdfplumber (the default `extract_pages`) interleaves multi-column tables —
+    e.g. PA Exhibit I-2 puts each rec's label/columns row *inside* its wrapped
+    text. PyMuPDF linearizes those tables cleanly (label, then text lines, then
+    the trailing columns), which is what the PA M&O findings parser expects. Used
+    for `parse=True` source seeds; page counts match pdfplumber for text PDFs.
+    """
+    import fitz  # PyMuPDF
+
+    pages: list[PageText] = []
+    with fitz.open(pdf_path) as doc:
+        for i in range(doc.page_count):
+            text = doc[i].get_text("text") or ""
+            stripped = text.strip()
+            image_only = len(stripped) < config.MIN_TEXT_CHARS_PER_PAGE
+            pages.append(
+                PageText(
+                    page=i + 1,
+                    char_count=len(stripped),
+                    is_image_only=image_only,
+                    extractor="pymupdf" if not image_only else "none",
+                    text=text,
+                )
+            )
+    return pages
+
+
 def extract_pages(pdf_path: Path) -> list[PageText]:
     pages: list[PageText] = []
     with pdfplumber.open(pdf_path) as pdf:

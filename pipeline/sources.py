@@ -33,8 +33,9 @@ from urllib.parse import urlparse
 import requests
 
 from pipeline import config, fetch
-from pipeline.extract import extract_pages
-from pipeline.models import AuditReport, ListingEntry, SourceSeed
+from pipeline.extract import extract_pages, pymupdf_pages
+from pipeline.models import AuditReport, ListingEntry, ReportText, SourceSeed
+from pipeline.state_structure import structure_mo_audit
 
 logger = logging.getLogger(__name__)
 
@@ -246,7 +247,8 @@ def process_seed(
     no_pdf: list[str] = []
     for i, seed in enumerate(seeds, 1):
         logger.info("[%d/%d] %s — %s", i, len(seeds), seed.id, seed.company)
-        page_count, scanned = 0, []  # type: ignore[var-annotated]
+        page_count, scanned, pages = 0, [], []  # type: ignore[var-annotated]
+        pdf_path = None
         try:
             if seed.accession:
                 if elib_session is None:
@@ -263,11 +265,45 @@ def process_seed(
                 seed.id, exc,
             )
             no_pdf.append(seed.id)
-        report = structure_seed(seed, page_count=page_count, scanned_pages=scanned)
+
         out_dir = processed_dir / seed.id
         out_dir.mkdir(parents=True, exist_ok=True)
+
+        # parse=True seeds (currently PA M&O audits) get findings extracted from the
+        # PDF; everything else — and any parse miss — is written metadata-only. The
+        # extracted text is saved (re-runnable + feeds the no-regression test, like
+        # the FERC path); a parser failure never aborts the run.
+        report: AuditReport | None = None
+        if seed.parse and pdf_path is not None:
+            # Re-extract with PyMuPDF (clean table linearization for the parser),
+            # save it as text.json (re-runnable + feeds the no-regression test).
+            parse_pages = pymupdf_pages(pdf_path)
+            (out_dir / "text.json").write_text(
+                ReportText(
+                    id=seed.id, accession_number=seed.accession or seed.id,
+                    page_count=len(parse_pages), ocr_used=False,
+                    scanned_pages=[p.page for p in parse_pages if p.is_image_only],
+                    pages=parse_pages,
+                ).model_dump_json(indent=2),
+                encoding="utf-8",
+            )
+            try:
+                report = structure_mo_audit(seed, parse_pages, scanned)
+            except Exception as exc:  # noqa: BLE001 — parser miss falls back to metadata-only
+                logger.warning("parse failed for %s (%s) — metadata-only", seed.id, exc)
+            if report is None:
+                logger.info("%s: parse yielded no findings — metadata-only", seed.id)
+
+        if report is None:
+            report = structure_seed(seed, page_count=page_count, scanned_pages=scanned)
+            kind = "metadata-only"
+        else:
+            kind = (
+                f"{report.finding_count} findings, "
+                f"{sum(len(f.recommendations) for f in report.findings)} recs"
+            )
         (out_dir / "report.json").write_text(report.model_dump_json(indent=2), encoding="utf-8")
-        logger.info("ingested %s (%d pages, metadata-only)", seed.id, page_count)
+        logger.info("ingested %s (%d pages, %s)", seed.id, page_count, kind)
         written += 1
     return written, no_pdf
 
