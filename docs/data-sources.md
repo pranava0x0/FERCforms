@@ -212,6 +212,16 @@ Each commission's docket system is different. Patterns below are all confirmed b
   the 2023 Annual **Fuel Forecast** (E-002/AA-22-179); `data/seeds/mn_puc.json`. Expand via more `mn.gov/oah` ALJ
   reports (the GR-24-320 electric rate case is the obvious next).
 
+### WI — Public Service Commission of Wisconsin (ERF) · scriptable docid
+- **Download (stable GET):** `apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid={N}` (`.gov`; text PDFs; pipeline UA
+  fetches directly). Docs are named `Direct-{PARTY}-{Witness}-{n}` / `Ex.-{PARTY}-…` (PARTY = utility code or an
+  intervenor like `SC` = Sierra Club). The docket (`{util#}-UR-{nn}`, e.g. `4220-UR-127` NSPW, `3270-UR-125/126` MGE,
+  `5-UR-111` We Energies) is on page 1 of most — but **not all** (intervenor testimony sometimes omits it).
+- **Shipped (utility-diverse sampler, like VA):** Wisconsin Electric (We Energies) **Very Large Customer & Bespoke
+  Resources Tariffs** — Sierra Club's Fisher testimony (574424; the data-center large-load issue) + NSPW 4220-UR-127
+  (539705) + MGE 3270-UR-125 (466619) rate-case testimony; `data/seeds/wi_psc.json`. The We Energies very-large-customer
+  tariff is the on-theme **data-center** docket to expand (the Commission's final decision + WEPCO's own filing).
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

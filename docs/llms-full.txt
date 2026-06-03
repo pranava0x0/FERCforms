@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 186 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 189 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6092,6 +6092,17 @@ Order of the Indiana Utility Regulatory Commission on the application of Indiana
 
 ---
 
+## Wisconsin Electric Power Company (We Energies)
+- Collection: State PUC Audits | Source: Public Service Commission of Wisconsin
+- Docket: n/a | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) — an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).
+
+---
+
 ## Northern States Power Company d/b/a Xcel Energy
 - Collection: State PUC Audits | Source: Minnesota Public Utilities Commission
 - Docket: G002/GR-23-413 | Audit type: n/a
@@ -6111,6 +6122,28 @@ Findings of Fact, Conclusions of Law, and Recommendation of the Administrative L
 - Status: listed for reference (not machine-parsed into findings)
 
 Findings of Fact of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 21-2500-40336) in the matter of Xcel Energy's (Northern States Power Company) Petition for Approval of its 2023 Annual Fuel Forecast and Monthly Fuel Cost Charges, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/AA-22-179 (54 pp) — a review of the utility's fuel-cost recovery. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/21-2500-40336-...fuel-cost-charges_tcm19-731253.pdf).
+
+---
+
+## Northern States Power Company (Wisconsin)
+- Collection: State PUC Audits | Source: Public Service Commission of Wisconsin
+- Docket: 4220-UR-127 | Audit type: n/a
+- Issued: n/a | Industry: n/a | FERC Form: n/a
+- Source page: https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=539705
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of [NSPW witness] Ascheman in the Application of Northern States Power Company, a Wisconsin Corporation (Xcel Energy), for authority to adjust electric and natural gas rates, before the Public Service Commission of Wisconsin, Docket No. 4220-UR-127 (19 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 539705 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=539705).
+
+---
+
+## Madison Gas and Electric Company
+- Collection: State PUC Audits | Source: Public Service Commission of Wisconsin
+- Docket: 3270-UR-125 | Audit type: n/a
+- Issued: n/a | Industry: n/a | FERC Form: n/a
+- Source page: https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of [MGE witness] Penington in the Application of Madison Gas and Electric Company for Authority to Adjust Electric and Natural Gas Rates, before the Public Service Commission of Wisconsin, Docket No. 3270-UR-125 (21 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 466619 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619).
 
 ---
 

@@ -374,13 +374,13 @@
     "generated_at": "2026-06-02"
   },
   "state_audit": {
-    "report_count": 59,
+    "report_count": 62,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 55,
-      "unknown": 2,
+      "electric": 56,
+      "unknown": 4,
       "gas": 2
     },
     "by_year": {
