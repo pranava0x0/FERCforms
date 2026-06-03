@@ -1,0 +1,32 @@
+[
+  {
+    "id": "er-2011-0028_union-electric-ameren-missouri_mo-staff-surrebuttal-fac-sharing-mechanism",
+    "company": "Union Electric Company d/b/a Ameren Missouri",
+    "collection": "state_audit",
+    "jurisdiction": "MO",
+    "source": "Missouri Public Service Commission",
+    "doc_type": "staff testimony",
+    "industry": "electric",
+    "pdf_url": "https://efis.psc.mo.gov/Document/Display/140150",
+    "source_page_url": "https://efis.psc.mo.gov/Document/Display/140150",
+    "docket": "ER-2011-0028",
+    "captured_at": "2026-06-02",
+    "source_note": "Surrebuttal Testimony of Lena M. Mantle on behalf of the Missouri Public Service Commission Staff on the Fuel Adjustment Clause (FAC) Sharing Mechanism, in the matter of Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (137 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 140150 (efis.psc.mo.gov/Document/Display/140150).",
+    "parse": false
+  },
+  {
+    "id": "eo-2022-0027_union-electric-ameren-missouri_mo-commission-order-fac-truup-far",
+    "company": "Union Electric Company d/b/a Ameren Missouri",
+    "collection": "state_audit",
+    "jurisdiction": "MO",
+    "source": "Missouri Public Service Commission",
+    "doc_type": "order",
+    "industry": "electric",
+    "pdf_url": "https://efis.psc.mo.gov/Document/Display/80659",
+    "source_page_url": "https://efis.psc.mo.gov/Document/Display/80659",
+    "docket": "EO-2022-0027",
+    "captured_at": "2026-06-02",
+    "source_note": "Order of the Missouri Public Service Commission (session order) addressing Union Electric Company d/b/a Ameren Missouri's Fuel Adjustment Clause true-up (File No. EO-2022-0027), Fuel Adjustment Rate adjustment (File No. ER-2022-0026), and related rate proceeding (ER-2021-0240) (15 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 80659 (efis.psc.mo.gov/Document/Display/80659).",
+    "parse": false
+  }
+]
