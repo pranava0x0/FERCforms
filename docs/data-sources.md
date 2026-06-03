@@ -189,6 +189,18 @@ Each commission's docket system is different. Patterns below are all confirmed b
   would need OCR + live-index scraping, or the APSC formal-docket system. The Dec 2 2025 rate-freeze / Lindsay
   Hill (data-center-driven) minutes are the on-theme target if revisited.
 
+### MO — Missouri PSC (EFIS) · scriptable, docket-sheet enumerable
+- **Download (stable GET):** `efis.psc.mo.gov/Document/Display/{docId}` (`.gov`; text PDFs; pipeline UA
+  fetches directly). **Docket sheet (authoritative):** `efis.psc.mo.gov/Case/Display/{caseInternalId}` gives
+  the verbatim case caption (which utility) + the full filing list — **use it to confirm the company**, since
+  search engines conflate MO case numbers (caught ER-2024-0261 = *Empire/Liberty*, not Ameren as search claimed;
+  the Ameren 2024 rate case is *ER-2024-0319*). Map a case number → internal id via the EFIS case search.
+- **On-theme gold (future):** MoPSC Staff **Fuel Adjustment Clause (FAC) prudence reviews** of Ameren Missouri
+  (`EO-2013-0407`, `EO-2015-0060`, `EO-2016-0228`, `EO-2018-0067`, `EO-2019-0257`, …) — true prudence dispositions.
+  Also the Ameren large-load / data-center tariff docket (`ET-…`, doc 848430).
+- **Shipped:** Empire District Electric (Liberty) 2024 rate case (ER-2024-0261) — 3 MoPSC **Staff direct testimony**
+  panels (Eubanks T&D, Lange cost-of-service/rate-design, Giacone PISA/wind/property-tax); `data/seeds/mo_psc.json`.
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

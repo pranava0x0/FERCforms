@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 181 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 184 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5398,6 +5398,17 @@ Decision and Order approving the auction process for Basic Generation Service (B
 
 ---
 
+## The Empire District Electric Company d/b/a Liberty
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2024-0261 | Audit type: n/a
+- Issued: 2025-10-24 | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Case/Display/85589
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Claire M. Eubanks, PE, on behalf of the Missouri Public Service Commission Staff (Exhibit No. 106) in the electric rate case of The Empire District Electric Company d/b/a Liberty, File No. ER-2024-0261 (Transmission & Distribution issues; filed/entered October 24, 2025; 16 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 854655 (efis.psc.mo.gov/Document/Display/854655; docket sheet: efis.psc.mo.gov/Case/Display/85589).
+
+---
+
 ## Duke Energy Kentucky, Inc.
 - Collection: State PUC Audits | Source: Kentucky Public Service Commission
 - Docket: 2024-00354 | Audit type: n/a
@@ -6089,3 +6100,25 @@ Order of the Indiana Utility Regulatory Commission on the application of Indiana
 - Status: listed for reference (not machine-parsed into findings)
 
 Supporting Testimony of Middleton Ray on the 2025 Evaluation Report in the Formula Rate Plan filings of Entergy Arkansas, LLC, before the Arkansas Public Service Commission, Docket No. 16-036-FR (filed in the 2025 Rider FRP review; 14 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1107 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf).
+
+---
+
+## The Empire District Electric Company d/b/a Liberty
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2024-0261 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Case/Display/85589
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: Limited Large Customer Service Recommendation, Class Cost of Service, Rate Design; 97 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 840218 (efis.psc.mo.gov/Document/Display/840218; docket sheet: efis.psc.mo.gov/Case/Display/85589).
+
+---
+
+## The Empire District Electric Company d/b/a Liberty
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2024-0261 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Case/Display/85589
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).

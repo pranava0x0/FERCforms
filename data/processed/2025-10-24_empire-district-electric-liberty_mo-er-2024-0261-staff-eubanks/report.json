@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "MO",
+  "source": "Missouri Public Service Commission",
+  "doc_type": "direct testimony",
+  "id": "2025-10-24_empire-district-electric-liberty_mo-er-2024-0261-staff-eubanks",
+  "company": "The Empire District Electric Company d/b/a Liberty",
+  "company_raw": "The Empire District Electric Company d/b/a Liberty",
+  "docket": "ER-2024-0261",
+  "docket_full": null,
+  "issued_date": "2025-10-24",
+  "source_page_url": "https://efis.psc.mo.gov/Case/Display/85589",
+  "pdf_download_url": "https://efis.psc.mo.gov/Document/Display/854655",
+  "captured_at": "2026-06-02",
+  "source_note": "Direct Testimony of Claire M. Eubanks, PE, on behalf of the Missouri Public Service Commission Staff (Exhibit No. 106) in the electric rate case of The Empire District Electric Company d/b/a Liberty, File No. ER-2024-0261 (Transmission & Distribution issues; filed/entered October 24, 2025; 16 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 854655 (efis.psc.mo.gov/Document/Display/854655; docket sheet: efis.psc.mo.gov/Case/Display/85589).",
+  "archived_via": null,
+  "page_count": 16,
+  "scanned_pages": [
+    10
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}
