@@ -229,6 +229,18 @@ Each commission's docket system is different. Patterns below are all confirmed b
   and filing-summary pages are SPAs. **Deferred**: needs browser-capture + `fetch=false` (OH/NC pattern). On-theme
   target: MidAmerican Energy rate case **RPU-2023-0001** (gas) and its successors.
 
+### CO — Colorado PUC (E-Filings) · scriptable docs, 2-level enumeration
+- **Download (stable GET):** `www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id={ID}&p_session_id=`
+  (`.state.co.us` legacy-gov ✓; text PDFs; pipeline UA fetches fine). The `efi_p2_v2_demo.show_document` variant works too.
+- **Enumeration is 2-level (the catch):** the docket page `EFI.Show_Docket?p_session_id=&p_docket_id={PROC}` lists
+  **filings** as `EFI.Show_Filing?p_fil=G_{n}` links (only a few documents inline) — each filing page then exposes the
+  `show_document?p_dms_document_id=` PDFs. So a clean rate-case set (PSCo direct testimony → Staff/OCC answer testimony →
+  Commission decision) needs the docket→filing→document walk; `WebFetch` 400s the `Show_Docket` page (use the pipeline UA).
+  Proceeding numbers: `{YY}AL-{nnnn}E/G` = rate cases (AL = advice letter), `{YY}A-{nnnn}E` = applications.
+- **Shipped (PSCo sampler — deeper testimony sets need the 2-level walk):** PSCo electric rate case advice letter
+  (22AL-0530E) + an electric Commission decision (24AL-0275E, C25-0122-I) + a gas rate-case hearing transcript
+  (22AL-0046G); `data/seeds/co_puc.json`.
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its

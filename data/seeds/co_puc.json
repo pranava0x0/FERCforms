@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2022-11-30_public-service-company-colorado_co-22al-0530e-advice-letter-1906",
+    "company": "Public Service Company of Colorado",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "rate case advice letter",
+    "industry": "electric",
+    "pdf_url": "https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=984848&p_session_id=",
+    "source_page_url": "https://www.dora.state.co.us/pls/efi/EFI.Show_Docket?p_docket_id=22AL-0530E",
+    "issued_date": "2022-11-30",
+    "docket": "22AL-0530E",
+    "captured_at": "2026-06-02",
+    "source_note": "Advice Letter No. 1906 - Electric of Public Service Company of Colorado (Xcel Energy), filed November 30, 2022 with the Colorado Public Utilities Commission, initiating its electric Phase I rate case, Proceeding No. 22AL-0530E (6 pp). Listed for reference (metadata-only). Source: Colorado PUC E-Filings System, document 984848 (dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=984848).",
+    "parse": false
+  },
+  {
+    "id": "public-service-company-colorado_co-24al-0275e-decision-c25-0122-i",
+    "company": "Public Service Company of Colorado",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "decision",
+    "industry": "electric",
+    "pdf_url": "https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=1035954&p_session_id=",
+    "source_page_url": "https://www.dora.state.co.us/pls/efi/EFI.Show_Docket?p_docket_id=24AL-0275E",
+    "docket": "24AL-0275E",
+    "captured_at": "2026-06-02",
+    "source_note": "Decision No. C25-0122-I (Interim) of the Colorado Public Utilities Commission in Proceeding No. 24AL-0275E, in the matter of Public Service Company of Colorado's electric Advice Letter No. 8 (6 pp). Listed for reference (metadata-only). Source: Colorado PUC E-Filings System, document 1035954 (dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=1035954).",
+    "parse": false
+  },
+  {
+    "id": "public-service-company-colorado_co-22al-0046g-evidentiary-hearing-transcript",
+    "company": "Public Service Company of Colorado",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "hearing transcript",
+    "industry": "gas",
+    "pdf_url": "https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=980317&p_session_id=",
+    "source_page_url": "https://www.dora.state.co.us/pls/efi/EFI.Show_Docket?p_docket_id=22AL-0046G",
+    "docket": "22AL-0046G",
+    "captured_at": "2026-06-02",
+    "source_note": "Reporter's Transcript of the evidentiary hearing before the Colorado Public Utilities Commission in Public Service Company of Colorado's natural gas rate case, Proceeding No. 22AL-0046G (79 pp). Listed for reference (metadata-only). Source: Colorado PUC E-Filings System, document 980317 (dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=980317).",
+    "parse": false
+  }
+]

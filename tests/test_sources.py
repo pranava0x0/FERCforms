@@ -108,6 +108,7 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://efis.psc.mo.gov/Document/Display/854655")  # MO EFIS
     assert sources.is_official_gov("https://mn.gov/oah/assets/2500-39704-x_tcm19-650610.pdf")  # MN OAH (mn.gov)
     assert sources.is_official_gov("https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424")  # WI ERF
+    assert sources.is_official_gov("https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=984848")  # CO (.state.co.us)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
