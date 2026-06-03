@@ -195,11 +195,12 @@ Each commission's docket system is different. Patterns below are all confirmed b
   the verbatim case caption (which utility) + the full filing list — **use it to confirm the company**, since
   search engines conflate MO case numbers (caught ER-2024-0261 = *Empire/Liberty*, not Ameren as search claimed;
   the Ameren 2024 rate case is *ER-2024-0319*). Map a case number → internal id via the EFIS case search.
-- **On-theme gold (future):** MoPSC Staff **Fuel Adjustment Clause (FAC) prudence reviews** of Ameren Missouri
-  (`EO-2013-0407`, `EO-2015-0060`, `EO-2016-0228`, `EO-2018-0067`, `EO-2019-0257`, …) — true prudence dispositions.
-  Also the Ameren large-load / data-center tariff docket (`ET-…`, doc 848430).
-- **Shipped:** Empire District Electric (Liberty) 2024 rate case (ER-2024-0261) — 3 MoPSC **Staff direct testimony**
-  panels (Eubanks T&D, Lange cost-of-service/rate-design, Giacone PISA/wind/property-tax); `data/seeds/mo_psc.json`.
+- **Shipped:** (1) Empire District Electric (Liberty) 2024 rate case (ER-2024-0261) — 3 MoPSC **Staff direct testimony**
+  panels (Eubanks T&D, Lange cost-of-service/rate-design, Giacone PISA/wind/property-tax), `data/seeds/mo_psc.json`;
+  (2) **Ameren Missouri Staff prudence reviews** (`data/seeds/mo_ameren_prudence.json`) — the **Tenth FAC Prudence
+  Review** (EO-2024-0053, doc 772394) + the **Taum Sauk construction audit & prudence review** (ER-2011-0028, doc 99523).
+- **More on-theme gold to mine:** earlier Ameren FAC prudence reviews (`EO-2013-0407` … `EO-2019-0257`, and EO-2024-0053's
+  Commission order) + the Ameren large-load / **data-center** tariff docket (`ET-…`, doc 848430).
 
 ### MN — Minnesota PUC · use OAH PDFs (eDockets is WAF-walled)
 - **eDockets is blocked:** `edockets.state.mn.us` / `efiling.web.commerce.state.mn.us` throws a "Security check"
@@ -221,6 +222,12 @@ Each commission's docket system is different. Patterns below are all confirmed b
   Resources Tariffs** — Sierra Club's Fisher testimony (574424; the data-center large-load issue) + NSPW 4220-UR-127
   (539705) + MGE 3270-UR-125 (466619) rate-case testimony; `data/seeds/wi_psc.json`. The We Energies very-large-customer
   tariff is the on-theme **data-center** docket to expand (the Commission's final decision + WEPCO's own filing).
+
+### IA — Iowa Utilities Commission (EFS) · WAF-blocked (deferred)
+- `efs.iowa.gov` GET_FILE downloads (`…/cs/idcplg?IdcService=GET_FILE&dDocName={N}&…`) are real `.gov` PDFs but the
+  host **403s every non-browser client** (pipeline UA *and* WebFetch) — a hard WAF/hotlink block. The filing-search
+  and filing-summary pages are SPAs. **Deferred**: needs browser-capture + `fetch=false` (OH/NC pattern). On-theme
+  target: MidAmerican Energy rate case **RPU-2023-0001** (gas) and its successors.
 
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 

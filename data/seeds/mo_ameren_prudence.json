@@ -1,0 +1,32 @@
+[
+  {
+    "id": "eo-2024-0053_union-electric-ameren-missouri_mo-staff-tenth-fac-prudence-review",
+    "company": "Union Electric Company d/b/a Ameren Missouri",
+    "collection": "state_audit",
+    "jurisdiction": "MO",
+    "source": "Missouri Public Service Commission",
+    "doc_type": "staff prudence review report",
+    "industry": "electric",
+    "pdf_url": "https://efis.psc.mo.gov/Document/Display/772394",
+    "source_page_url": "https://efis.psc.mo.gov/Document/Display/772394",
+    "docket": "EO-2024-0053",
+    "captured_at": "2026-06-02",
+    "source_note": "Missouri Public Service Commission Staff Report — Tenth Prudence Review of Costs Related to the Fuel Adjustment Clause (FAC) for the electric operations of Union Electric Company d/b/a Ameren Missouri, File No. EO-2024-0053 (56 pp; Staff's review of the prudence of fuel and purchased-power costs recovered through Rider FAC). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 772394 (efis.psc.mo.gov/Document/Display/772394).",
+    "parse": false
+  },
+  {
+    "id": "er-2011-0028_union-electric-ameren-missouri_mo-staff-taum-sauk-construction-audit-prudence",
+    "company": "Union Electric Company d/b/a Ameren Missouri",
+    "collection": "state_audit",
+    "jurisdiction": "MO",
+    "source": "Missouri Public Service Commission",
+    "doc_type": "staff prudence review report",
+    "industry": "electric",
+    "pdf_url": "https://efis.psc.mo.gov/Document/Display/99523",
+    "source_page_url": "https://efis.psc.mo.gov/Document/Display/99523",
+    "docket": "ER-2011-0028",
+    "captured_at": "2026-06-02",
+    "source_note": "Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).",
+    "parse": false
+  }
+]

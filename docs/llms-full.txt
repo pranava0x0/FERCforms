@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 189 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 191 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6144,6 +6144,28 @@ Direct Testimony of [NSPW witness] Ascheman in the Application of Northern State
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of [MGE witness] Penington in the Application of Madison Gas and Electric Company for Authority to Adjust Electric and Natural Gas Rates, before the Public Service Commission of Wisconsin, Docket No. 3270-UR-125 (21 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 466619 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619).
+
+---
+
+## Union Electric Company d/b/a Ameren Missouri
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2011-0028 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Document/Display/99523
+- Status: listed for reference (not machine-parsed into findings)
+
+Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).
+
+---
+
+## Union Electric Company d/b/a Ameren Missouri
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: EO-2024-0053 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Document/Display/772394
+- Status: listed for reference (not machine-parsed into findings)
+
+Missouri Public Service Commission Staff Report — Tenth Prudence Review of Costs Related to the Fuel Adjustment Clause (FAC) for the electric operations of Union Electric Company d/b/a Ameren Missouri, File No. EO-2024-0053 (56 pp; Staff's review of the prudence of fuel and purchased-power costs recovered through Rider FAC). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 772394 (efis.psc.mo.gov/Document/Display/772394).
 
 ---
 
