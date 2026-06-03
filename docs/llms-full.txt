@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 184 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 186 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6089,6 +6089,28 @@ Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Manage
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
+
+---
+
+## Northern States Power Company d/b/a Xcel Energy
+- Collection: State PUC Audits | Source: Minnesota Public Utilities Commission
+- Docket: G002/GR-23-413 | Audit type: n/a
+- Issued: n/a | Industry: gas | FERC Form: n/a
+- Source page: https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-gas/
+- Status: listed for reference (not machine-parsed into findings)
+
+Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 23-2500-39704) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase natural gas rates, before the Minnesota Public Utilities Commission, MPUC Docket No. G002/GR-23-413 (30 pp). Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/2500-39704-...puc-report_tcm19-650610.pdf).
+
+---
+
+## Northern States Power Company d/b/a Xcel Energy
+- Collection: State PUC Audits | Source: Minnesota Public Utilities Commission
+- Docket: E-002/AA-22-179 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://mn.gov/oah/assets/21-2500-40336-itm-xcel-energys-petition-for-approval-2023-annual-fuel-forecast-and-monthly-fuel-cost-charges_tcm19-731253.pdf
+- Status: listed for reference (not machine-parsed into findings)
+
+Findings of Fact of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 21-2500-40336) in the matter of Xcel Energy's (Northern States Power Company) Petition for Approval of its 2023 Annual Fuel Forecast and Monthly Fuel Cost Charges, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/AA-22-179 (54 pp) — a review of the utility's fuel-cost recovery. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/21-2500-40336-...fuel-cost-charges_tcm19-731253.pdf).
 
 ---
 

@@ -201,6 +201,17 @@ Each commission's docket system is different. Patterns below are all confirmed b
 - **Shipped:** Empire District Electric (Liberty) 2024 rate case (ER-2024-0261) — 3 MoPSC **Staff direct testimony**
   panels (Eubanks T&D, Lange cost-of-service/rate-design, Giacone PISA/wind/property-tax); `data/seeds/mo_psc.json`.
 
+### MN — Minnesota PUC · use OAH PDFs (eDockets is WAF-walled)
+- **eDockets is blocked:** `edockets.state.mn.us` / `efiling.web.commerce.state.mn.us` throws a "Security check"
+  (WAF) → scripts blocked. **Instead use the MN Office of Administrative Hearings:** `mn.gov/oah/assets/{…}.pdf`
+  serves the ALJ **Findings of Fact / Recommendation** reports for PUC contested cases as direct, text `.gov`
+  PDFs (pipeline UA fetches fine; `mn.gov` ends in `.gov`). Filenames are descriptive (`…xcel-rate-increase-puc-report…`).
+  Verify the **MPUC docket** off page 1 (`G002/GR-23-413` = gas rate case; `E-002/AA-22-179` = electric fuel forecast;
+  `…/GR-24-320` = the 2024 electric rate case).
+- **Shipped:** Northern States Power (Xcel) — ALJ report in the gas rate case (G002/GR-23-413) + ALJ Findings on
+  the 2023 Annual **Fuel Forecast** (E-002/AA-22-179); `data/seeds/mn_puc.json`. Expand via more `mn.gov/oah` ALJ
+  reports (the GR-24-320 electric rate case is the obvious next).
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its
