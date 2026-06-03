@@ -41,6 +41,18 @@ These are non-negotiable and enforced in code where possible:
 | `fetch` | `true`  | `false` ⇒ **don't** machine-fetch — the URL was captured out-of-band (a WAF-blocked source opened in a browser); write metadata-only straight from the seed (page_count 0). |
 | `accession` | `null` | set ⇒ fetch via the FERC eLibrary F5 cookie dance instead of a plain GET. |
 
+### Cross-portal techniques (learned in the 2026-06-02 multi-state expansion — GA/LA/MS/AR/MO/MN/WI/CO)
+
+These generalize across the per-state recipes below. They're the difference between an hour and ten minutes per state.
+
+- **Try clients in tiers; the failure tells you the access mode.** (1) pipeline `requests` UA (`config.USER_AGENT`); (2) `WebFetch` (browser-ish UA); (3) real browser (Chrome MCP). If the pipeline UA **403s** (AL `psc.alabama.gov`, IA `efs.iowa.gov`) the host is WAF/hotlink-walled → it needs **browser-capture + `fetch=false`** (OH/NC pattern). If WebFetch *also* 403s, only the browser works. A broken **TLS chain** (MS InSite `psc.state.ms.us`) blocks scripts *and* WebFetch *and* the browser — effectively unreachable from here.
+- **`WebFetch` can't render a PDF, but it SAVES it.** For binary/scanned/odd-font PDFs WebFetch returns "can't extract" — but it writes the file to the transcript `tool-results/` dir. Extract page 1 locally with PyMuPDF (`fitz`) / pdfplumber to read the verbatim caption. This was the workhorse verify step (GA/LA/MS/MN). Fetch a batch, then one local `fitz` pass identifies them all.
+- **VERIFY the case/company off page 1 (or the docket sheet) — search engines lie.** Caught this session: ER-2024-0261 = *Empire/Liberty*, **not** Ameren (search insisted Ameren; the Ameren case is ER-2024-0319); a résumé and a misc. exhibit mislabeled as IRP filings (GA); Arch Coal dated 2025 when it's 2015. The authoritative source is the **docket sheet** (MO `Case/Display`, CO `EFI.Show_Docket`, AR `docket_search_results`) or page 1 of the PDF — never the search snippet.
+- **Font-mangled docket numbers ⇒ leave `docket` null.** Several portals (LA ViewFile, AR olsv2) have broken text-layer fonts that garble the docket digits (`U- \/ex/\/ma`) even though the caption reads fine. `docket` is optional — omit it and describe the proceeding precisely in `source_note` rather than guessing a number.
+- **Harvest opaque doc IDs via Google, enumerate via the docket sheet.** Two ways to find a portal's stable PDF URLs: (a) `WebSearch site:<host>` — Google indexes the PDFs' first-page text, so titles are reliable (GA FACTS, CO); (b) the docket-sheet page lists filings (sometimes 2-level: docket → filing → document, as in CO). The download URL is then a stable `.gov` GET.
+- **URL-encode opaque tokens in the seed `pdf_url`.** Base64-ish `fileId`s need `+`→`%2B`, `/`→`%2F`, `=`→`%3D` (LA ViewFile); the pipeline `requests` GET passes them through and the server decodes.
+- **Cadence that worked:** one jurisdiction per checkpoint — find→verify→seed `data/seeds/<st>.json`→`pipeline.sources`→`pipeline.build`→`pytest`→commit (seed+baked together)→push. Add a `test_is_official_gov` assertion for each new host and a per-state recipe section below. Everything **inline + bounded** — no agents / deep-research / Workflow fan-outs (see [CLAUDE.md § AI / API cost optimization](../CLAUDE.md)).
+
 ---
 
 ## FERC (the core corpus)
