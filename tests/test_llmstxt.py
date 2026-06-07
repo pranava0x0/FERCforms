@@ -110,10 +110,35 @@ def test_full_cites_rec_source_page_when_present():
     assert "1. Recalculate AFUDC. (source p. 29)" in s
 
 
-def test_write_llms_creates_both_files(tmp_path):
+def test_write_llms_creates_all_three_files(tmp_path):
     llmstxt.write_llms(tmp_path, [_report()], _patterns(), _META)
     assert (tmp_path / "llms.txt").read_text(encoding="utf-8").startswith("# FERC Audit Explorer")
     assert "full structured corpus" in (tmp_path / "llms-full.txt").read_text(encoding="utf-8")
+    ctx = (tmp_path / "llms-ctx.txt").read_text(encoding="utf-8")
+    assert ctx.startswith('<project title="FERC Audit Explorer"')
+
+
+def test_ctx_is_xml_shaped_with_verbatim_docs():
+    s = llmstxt.build_ctx([_report(), _metadata_only_state_report()], _patterns(), _META)
+    # spec shape: a <project> root wrapping <doc> elements inside <docs>
+    assert s.startswith('<project title="FERC Audit Explorer" summary="') and s.rstrip().endswith("</project>")
+    assert "<docs>" in s and "</docs>" in s
+    assert '<doc title="Acme Electric Co"' in s and 'collection="FERC Audits"' in s
+    assert "Finding 1: AFUDC Error" in s and "Acme overstated AFUDC." in s  # verbatim content inlined
+    assert "1. Recalculate AFUDC." in s
+    # metadata-only record carries its source note, not findings
+    assert '<doc title="El Paso Electric Company"' in s
+    assert "Listed for reference" in s and "Direct Testimony of X on behalf of OPUC" in s
+    # llms-ctx.txt omits the Optional section (no inlined external links by default)
+    assert "<optional>" not in s
+
+
+def test_ctx_escapes_xml_special_chars_and_includes_optional_when_asked():
+    r = _report()
+    r.company = "Baltimore Gas & Electric <Co>"
+    s = llmstxt.build_ctx([r], _patterns(), _META, include_optional=True)
+    assert 'title="Baltimore Gas &amp; Electric &lt;Co&gt;"' in s  # attribute escaped, not raw
+    assert "<optional>" in s and 'source="index.html"' in s
 
 
 def _metadata_only_state_report() -> AuditReport:

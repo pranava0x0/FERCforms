@@ -15,6 +15,7 @@ them absolute is a BACKLOG item).
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import logging
 from datetime import date
@@ -135,6 +136,7 @@ def build_index(reports: list[AuditReport], patterns: PatternsSummary, meta: dic
     out.append("- [Patterns by collection](data/patterns_by_collection.json): the same aggregates, per collection/tab")
     out.append("- [Meta](data/meta.json): corpus counts and provenance")
     out.append("- [Full corpus text](llms-full.txt): all findings, recommendations, and source notes in one file (verbatim)")
+    out.append("- [LLM context](llms-ctx.txt): the same corpus in the llms.txt XML context shape (`<project>`/`<doc>`)")
     out.append("")
     for key, label in _COLLECTIONS:
         rs = [r for r in reports if r.collection == key]
@@ -212,10 +214,82 @@ def build_full(reports: list[AuditReport], patterns: PatternsSummary, meta: dict
     return "\n".join(out)
 
 
+def _ctx_doc_body(r: AuditReport) -> str:
+    """The verbatim body of one <doc> — findings + recommendations, or the
+    provenance note for metadata-only records. Mirrors build_full's per-report
+    content so llms-ctx.txt and llms-full.txt never diverge."""
+    body: list[str] = []
+    if r.structured and r.findings:
+        for f in r.findings:
+            flabel = "Other matter" if f.is_other_matter else f"Finding {f.index}"
+            body.append(f"{flabel}: {f.title}")
+            if f.summary:
+                body.append(f.summary)
+            for rec in f.recommendations:
+                page = f" (source p. {rec.source_page})" if rec.source_page else ""
+                body.append(f"{rec.number}. {rec.text}{page}")
+    else:
+        body.append("Listed for reference (not machine-parsed into findings).")
+        if r.source_note:
+            body.append(r.source_note)
+    return "\n".join(body)
+
+
+def build_ctx(
+    reports: list[AuditReport], patterns: PatternsSummary, meta: dict, *, include_optional: bool = False
+) -> str:
+    """The llmstxt.org *context* artifact (the shape `llms_txt2ctx` emits): an XML
+    `<project>` wrapping each record as a `<doc>`. Unlike the stock tool, we inline
+    OUR OWN verbatim content rather than fetching the external `.gov` source PDFs
+    the index links to (those are authoritative sources, not site sub-pages — see
+    docs/data-sources.md). `include_optional=False` ⇒ `llms-ctx.txt` (omits the
+    `## Optional` links, per spec); `True` ⇒ the `-full` variant."""
+    by_coll = Counter(r.collection for r in reports)
+    total_f = sum(r.finding_count for r in reports)
+    summary = (
+        f"{len(reports)} structured records ({by_coll.get('ferc_audit', 0)} FERC audits, "
+        f"{by_coll.get('prudence_review', 0)} prudence reviews, {by_coll.get('state_audit', 0)} "
+        f"state PUC audits); {total_f} verbatim findings of noncompliance + staff recommendations. "
+        "Independent public-interest tool, not affiliated with FERC."
+    )
+    out: list[str] = []
+    out.append(f'<project title="FERC Audit Explorer" summary="{html.escape(summary, quote=True)}">')
+    out.append(
+        f"Machine-readable context generated from the FERC Audit Explorer corpus "
+        f"({meta.get('generated_at')}). Verbatim findings from FERC audits, FERC prudence reviews, "
+        f"and state PUC/PSC/SCC audits. Primary source: {SOURCE}. Themes are transparent keyword "
+        f"tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt."
+    )
+    out.append("<docs>")
+    for key, label in _COLLECTIONS:
+        for r in (x for x in reports if x.collection == key):
+            attrs = (
+                f'title="{html.escape(r.company, quote=True)}" '
+                f'collection="{html.escape(label, quote=True)}" '
+                f'docket="{html.escape(r.docket_full or r.docket or "n/a", quote=True)}" '
+                f'issued="{html.escape(str(r.issued_date or "n/a"), quote=True)}" '
+                f'industry="{html.escape(r.industry or "n/a", quote=True)}" '
+                f'source="{html.escape(r.source_page_url, quote=True)}"'
+            )
+            out.append(f"<doc {attrs}>")
+            out.append(html.escape(_ctx_doc_body(r), quote=False))
+            out.append("</doc>")
+    out.append("</docs>")
+    if include_optional:
+        out.append("<optional>")
+        out.append('<doc title="Human-readable explorer" source="index.html"/>')
+        out.append(f'<doc title="FERC audit reports (primary source)" source="{html.escape(SOURCE, quote=True)}"/>')
+        out.append("</optional>")
+    out.append("</project>")
+    out.append("")
+    return "\n".join(out)
+
+
 def write_llms(out_dir: Path, reports: list[AuditReport], patterns: PatternsSummary, meta: dict) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "llms.txt").write_text(build_index(reports, patterns, meta), encoding="utf-8")
     (out_dir / "llms-full.txt").write_text(build_full(reports, patterns, meta), encoding="utf-8")
+    (out_dir / "llms-ctx.txt").write_text(build_ctx(reports, patterns, meta), encoding="utf-8")
 
 
 def _meta_fallback(reports: list[AuditReport]) -> dict:
@@ -246,7 +320,7 @@ def main() -> None:
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else _meta_fallback(reports)
 
     write_llms(args.out, reports, patterns, meta)
-    logger.info("wrote %s/llms.txt and llms-full.txt (%d reports)", args.out, len(reports))
+    logger.info("wrote %s/llms.txt, llms-full.txt, and llms-ctx.txt (%d reports)", args.out, len(reports))
 
 
 if __name__ == "__main__":

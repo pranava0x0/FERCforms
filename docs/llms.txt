@@ -10,6 +10,7 @@ Scope: FERC utility audits — electric, gas & oil, extended to prudence reviews
 - [Patterns by collection](data/patterns_by_collection.json): the same aggregates, per collection/tab
 - [Meta](data/meta.json): corpus counts and provenance
 - [Full corpus text](llms-full.txt): all findings, recommendations, and source notes in one file (verbatim)
+- [LLM context](llms-ctx.txt): the same corpus in the llms.txt XML context shape (`<project>`/`<doc>`)
 
 ## FERC Audits
 _120 document(s), 2014–2025. 599 findings / 1505 recommendations parsed from 120 report(s). top themes: Form reporting (Form No. 1/2/6, Page 700), Accounting misclassification, Depreciation, Below-the-line costs (lobbying, charitable, etc.)._
