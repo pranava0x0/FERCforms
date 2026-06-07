@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 229 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 232 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6400,6 +6400,17 @@ Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'F
 
 ---
 
+## Pacific Gas and Electric Company
+- Collection: State PUC Audits | Source: California Public Utilities Commission
+- Docket: A.05-02-014 | Audit type: n/a
+- Issued: 2005-11-18 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).
+
+---
+
 ## Wisconsin Electric Power Company (We Energies)
 - Collection: State PUC Audits | Source: Public Service Commission of Wisconsin
 - Docket: n/a | Audit type: n/a
@@ -6617,3 +6628,25 @@ Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commi
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony and Schedules of Nicholas N. Paluck (Exhibit 13) before the North Dakota Public Service Commission in the Application of Northern States Power Company (Xcel Energy) electric rate proceeding, Case No. PU-24-376 (initiated December 2024) (65 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 086-010 (psc.nd.gov/webdocs/case/24-0376/086-010.pdf).
+
+---
+
+## Southern California Edison Company
+- Collection: State PUC Audits | Source: California Public Utilities Commission
+- Docket: D.06-01-007 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision D.06-01-007 (adopted January 2006) — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only; the decision is published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).
+
+---
+
+## San Diego Gas & Electric Company
+- Collection: State PUC Audits | Source: California Public Utilities Commission
+- Docket: A.02-12-028 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision D.03-12-063 (adopted December 2003), Application A.02-12-028 — the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas & Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only; the decision is published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).

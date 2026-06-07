@@ -1,15 +1,16 @@
 {
-  "report_count": 229,
+  "report_count": 232,
   "finding_count": 629,
   "other_matter_count": 3,
   "recommendation_count": 1582,
   "by_industry": {
-    "electric": 187,
+    "electric": 190,
     "oil": 18,
     "gas": 17,
     "unknown": 7
   },
   "by_year": {
+    "2005": 1,
     "2012": 1,
     "2013": 1,
     "2014": 4,

@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="229 structured records (120 FERC audits, 14 prudence reviews, 95 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="232 structured records (120 FERC audits, 14 prudence reviews, 98 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3445,6 +3445,10 @@ Florida PSC Order No. PSC-14-0617-FOF-EI (Final Order Approving...), Docket No. 
 Listed for reference (not machine-parsed into findings).
 Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'Fuel and purchased power cost recovery clause with generating performance incentive factor', issued December 21, 2012 (39 pp) — the Commission's annual review setting fuel/capacity cost-recovery factors and generating-performance incentive rewards/penalties for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 08286-2012 (psc.state.fl.us/library/Orders/2012/08286-2012.pdf).
 </doc>
+<doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="A.05-02-014" issued="2005-11-18" industry="electric" source="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&amp;E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel &amp; purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).
+</doc>
 <doc title="Wisconsin Electric Power Company (We Energies)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) — an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).
@@ -3524,6 +3528,14 @@ Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commi
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="PU-24-376" issued="n/a" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony and Schedules of Nicholas N. Paluck (Exhibit 13) before the North Dakota Public Service Commission in the Application of Northern States Power Company (Xcel Energy) electric rate proceeding, Case No. PU-24-376 (initiated December 2024) (65 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 086-010 (psc.nd.gov/webdocs/case/24-0376/086-010.pdf).
+</doc>
+<doc title="Southern California Edison Company" collection="State PUC Audits" docket="D.06-01-007" issued="n/a" industry="electric" source="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.06-01-007 (adopted January 2006) — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel &amp; purchased-power prudence determination. Listed for reference (metadata-only; the decision is published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).
+</doc>
+<doc title="San Diego Gas &amp; Electric Company" collection="State PUC Audits" docket="A.02-12-028" issued="n/a" industry="electric" source="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.03-12-063 (adopted December 2003), Application A.02-12-028 — the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas &amp; Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel &amp; purchased-power prudence determination. Listed for reference (metadata-only; the decision is published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).
 </doc>
 </docs>
 </project>

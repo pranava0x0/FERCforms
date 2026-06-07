@@ -1,6 +1,6 @@
 # State PUC coverage — completeness audit
 
-State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **31 jurisdictions, 95 documents**,
+State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **32 jurisdictions, 98 documents**,
 all metadata-only ("Listed for reference") **except PA**, the only state with parsed verbatim findings
 (3 Management & Operations audits via `pipeline/state_structure.py`). Access mechanics per state live in
 [data-sources.md](data-sources.md); the expansion roadmap in [../BACKLOG.md](../BACKLOG.md).
@@ -51,12 +51,13 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 | **MT** | WECC/(MISO) | 1 | NorthWestern Energy | general rate-case final order (PCCAM base) | **Thin** | 2024/25 rate case (browser-only eDocket); Montana-Dakota |
 | **NV** | (WECC, non-RTO) | 1 | NV Energy | 2025 GRC notice (25-02016) | **Thin** | the annual **DEAA** order (scanned/opaque — needs OCR or onbase) |
 | **AZ** | (WECC, non-RTO) | 2 | APS + Tucson Electric Power | rate-case orders (TEP Decision 79065) | **Partial** | UNS; APS recent decision; PSA prudence |
+| **CA** | CAISO | 3 | PG&E + SCE + SDG&E | **ERRA** fuel/purchased-power prudence decisions | **Good** | recent ERRA (2020+) as fetchable PDFs; GRCs |
 
 ## Fully missing (no seed yet)
 
 - **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
 - **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** seeded (12 docs — in the table above; WA + OR deepened to 3 IOUs each). **NV** (DEAA is scanned/opaque) and **MT** (2024/25 final order is browser-only eDocket) resist scripted deepening and stay at 1. **NM** is the lone fully-unseeded Southwest state — its PRCe360 portal 302-redirects to a login wall.
-- **Large untapped:** **CA** (CPUC — PG&E/SCE/SDG&E, huge), **NY** (DPS DMM — Con Ed/National Grid), plus KS, OK, NE, MA, CT, TN, AL. The corpus is currently **East / Midwest / South** weighted.
+- **Large untapped:** **NY** (DPS DMM — Con Ed/National Grid; serves PDFs via `ViewDoc.aspx?DocRefId={guid}`), plus **OK** (OCC imaging — ids need harvesting), KS, NE, MA, CT, TN, AL. (**CA** now seeded — 3 ERRA prudence decisions.) The corpus is still **East / Midwest / South** weighted, now with a Western (WECC) + California foothold.
 
 ## Headline reads
 
