@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 232 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 235 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5596,6 +5596,17 @@ Otter Tail Power Company filing (August 19, 2025) before the North Dakota Public
 
 ---
 
+## Niagara Mohawk Power Corporation d/b/a National Grid
+- Collection: State PUC Audits | Source: New York State Department of Public Service
+- Docket: 24-E-0322 | Audit type: n/a
+- Issued: 2025-08-14 | Industry: electric | FERC Form: n/a
+- Source page: https://dps.ny.gov/pending-and-recent-electric-rate-cases
+- Status: listed for reference (not machine-parsed into findings)
+
+New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corporation d/b/a National Grid, Case 24-E-0322 — published under Public Service Law §66(12)(l). The PSC adopted a joint proposal (Aug 14, 2025) granting electric delivery revenue increases of $167.3M / $297.4M / $243.4M over a three-year plan, ~67% below the request. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/08/national-grid-electric-post-order-rate-case-summary_0.pdf).
+
+---
+
 ## Virginia Electric and Power Company (Dominion Energy Virginia)
 - Collection: State PUC Audits | Source: Virginia State Corporation Commission
 - Docket: PUR-2025-00076 | Audit type: n/a
@@ -6617,6 +6628,28 @@ Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Co
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).
+
+---
+
+## New York State Electric & Gas Corporation
+- Collection: State PUC Audits | Source: New York State Department of Public Service
+- Docket: 25-E-0375 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://dps.ny.gov/pending-and-recent-electric-rate-cases
+- Status: listed for reference (not machine-parsed into findings)
+
+New York DPS electric rate-case summary for New York State Electric & Gas Corporation (NYSEG), Case 25-E-0375 — published under Public Service Law §66(12)(l). NYSEG's June 30, 2025 filing requested an increase in annual electric revenues of ~$464.4M (35.0% to delivery revenues) for the rate year ending April 30, 2027. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/07/nyseg-electric-rate-case-25-e-0375.pdf).
+
+---
+
+## Consolidated Edison Company of New York, Inc.
+- Collection: State PUC Audits | Source: New York State Department of Public Service
+- Docket: 25-E-0072 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://dps.ny.gov/pending-and-recent-electric-rate-cases
+- Status: listed for reference (not machine-parsed into findings)
+
+New York DPS electric rate-case summary for Consolidated Edison Company of New York, Inc., Case 25-E-0072 (February 2025) — published under Public Service Law §66(12)(l). Con Edison requested an increase in annual electric delivery revenues of ~$1,612M (18.0%); the PSC ultimately adopted a Joint Proposal (Jan 22, 2026) cutting this by ~87%. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/02/con-ed-electric-rate-case-25-e-0072-february-2025_1.pdf).
 
 ---
 

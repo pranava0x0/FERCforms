@@ -120,6 +120,8 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://docket.images.azcc.gov/0000209684.pdf")  # AZ ACC eDocket image host
     assert sources.is_official_gov("https://www.azcc.gov/divisions/utilities/electric/APS-FinalOrder.pdf")  # AZ ACC main site
     assert sources.is_official_gov("https://docs.cpuc.ca.gov/published/Final_decision/51417.htm")  # CA CPUC (.ca.gov)
+    assert sources.is_official_gov("https://dps.ny.gov/system/files/documents/2025/08/x.pdf")  # NY DPS (.ny.gov)
+    assert sources.is_official_gov("https://estar.kcc.ks.gov/estar/ViewFile.aspx/x.pdf?Id=y")  # KS KCC (.ks.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")

@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="232 structured records (120 FERC audits, 14 prudence reviews, 98 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="235 structured records (120 FERC audits, 14 prudence reviews, 101 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3120,6 +3120,10 @@ Final Order on Appalachian Power Company's petition to revise its net energy met
 Listed for reference (not machine-parsed into findings).
 Otter Tail Power Company filing (August 19, 2025) before the North Dakota Public Service Commission in its Dual Fuel Riders proceeding, Case No. PU-23-342 (10 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 157-010 (psc.nd.gov/webdocs/case/23-0342/157-010.pdf).
 </doc>
+<doc title="Niagara Mohawk Power Corporation d/b/a National Grid" collection="State PUC Audits" docket="24-E-0322" issued="2025-08-14" industry="electric" source="https://dps.ny.gov/pending-and-recent-electric-rate-cases">
+Listed for reference (not machine-parsed into findings).
+New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corporation d/b/a National Grid, Case 24-E-0322 — published under Public Service Law §66(12)(l). The PSC adopted a joint proposal (Aug 14, 2025) granting electric delivery revenue increases of $167.3M / $297.4M / $243.4M over a three-year plan, ~67% below the request. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/08/national-grid-electric-post-order-rate-case-summary_0.pdf).
+</doc>
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="State PUC Audits" docket="PUR-2025-00076" issued="2025-08-01" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) revised transmission rate adjustment clause Rider T1 under Va. Code § 56-585.1 A 4 (deeming prudent RTO transmission and FERC-approved demand-response costs), Case No. PUR-2025-00076, Virginia State Corporation Commission, entered August 1, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/873b01!.PDF.
@@ -3524,6 +3528,14 @@ Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Co
 <doc title="The Empire District Electric Company d/b/a Liberty" collection="State PUC Audits" docket="ER-2024-0261" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Case/Display/85589">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&amp;M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&amp;M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).
+</doc>
+<doc title="New York State Electric &amp; Gas Corporation" collection="State PUC Audits" docket="25-E-0375" issued="n/a" industry="electric" source="https://dps.ny.gov/pending-and-recent-electric-rate-cases">
+Listed for reference (not machine-parsed into findings).
+New York DPS electric rate-case summary for New York State Electric &amp; Gas Corporation (NYSEG), Case 25-E-0375 — published under Public Service Law §66(12)(l). NYSEG's June 30, 2025 filing requested an increase in annual electric revenues of ~$464.4M (35.0% to delivery revenues) for the rate year ending April 30, 2027. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/07/nyseg-electric-rate-case-25-e-0375.pdf).
+</doc>
+<doc title="Consolidated Edison Company of New York, Inc." collection="State PUC Audits" docket="25-E-0072" issued="n/a" industry="electric" source="https://dps.ny.gov/pending-and-recent-electric-rate-cases">
+Listed for reference (not machine-parsed into findings).
+New York DPS electric rate-case summary for Consolidated Edison Company of New York, Inc., Case 25-E-0072 (February 2025) — published under Public Service Law §66(12)(l). Con Edison requested an increase in annual electric delivery revenues of ~$1,612M (18.0%); the PSC ultimately adopted a Joint Proposal (Jan 22, 2026) cutting this by ~87%. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/02/con-ed-electric-rate-case-25-e-0072-february-2025_1.pdf).
 </doc>
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="PU-24-376" issued="n/a" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
