@@ -1,6 +1,6 @@
 # State PUC coverage — completeness audit
 
-State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **33 jurisdictions, 101 documents**,
+State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **34 jurisdictions, 104 documents**,
 all metadata-only ("Listed for reference") **except PA**, the only state with parsed verbatim findings
 (3 Management & Operations audits via `pipeline/state_structure.py`). Access mechanics per state live in
 [data-sources.md](data-sources.md); the expansion roadmap in [../BACKLOG.md](../BACKLOG.md).
@@ -52,13 +52,14 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 | **NV** | (WECC, non-RTO) | 1 | NV Energy | 2025 GRC notice (25-02016) | **Thin** | the annual **DEAA** order (scanned/opaque — needs OCR or onbase) |
 | **AZ** | (WECC, non-RTO) | 2 | APS + Tucson Electric Power | rate-case orders (TEP Decision 79065) | **Partial** | UNS; APS recent decision; PSA prudence |
 | **CA** | CAISO | 3 | PG&E + SCE + SDG&E | **ERRA** fuel/purchased-power prudence decisions | **Good** | recent ERRA (2020+) as fetchable PDFs; GRCs |
-| **NY** | NYISO | 3 | National Grid + Con Ed + NYSEG | §66(12)(l) rate-case summaries | **Good** | real DMM orders; RG&E/O&R/Central Hudson; fuel |
+| **NY** | NYISO | 4 | National Grid + Con Ed + NYSEG | §66(12)(l) summaries + National Grid Joint Proposal (DMM) | **Good** | final adopting orders; RG&E/O&R/Central Hudson; fuel |
+| **KS** | SPP | 2 | Evergy (Kansas Central/South/Metro) | base-rate Order + Winter Storm Uri prudence stipulation | **Partial** | RECA/ACA fuel true-up order; Evergy Metro rate case |
 
 ## Fully missing (no seed yet)
 
 - **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
 - **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** seeded (12 docs — in the table above; WA + OR deepened to 3 IOUs each). **NV** (DEAA is scanned/opaque) and **MT** (2024/25 final order is browser-only eDocket) resist scripted deepening and stay at 1. **NM** is the lone fully-unseeded Southwest state — its PRCe360 portal 302-redirects to a login wall.
-- **Large untapped:** **KS** (KCC `estar` — Evergy RECA; portal works, needs a completed order), **OK** (OCC imaging — ids need harvesting), **MA** (DPU fileroom — SPA, needs API), plus NE, CT, TN, AL. (**CA** + **NY** now seeded.) The corpus spans **East / Midwest / South** plus a Western (WECC) + CA + NY foothold — 33 jurisdictions.
+- **Large untapped:** **OK** (OCC imaging — ids need harvesting), **MA** (DPU fileroom — SPA, needs API), plus NE, CT, TN, AL. (**CA**, **NY**, **KS** now seeded.) The corpus spans **East / Midwest / South** plus a Western (WECC) + CA + NY + KS foothold — 34 jurisdictions.
 
 ## Headline reads
 

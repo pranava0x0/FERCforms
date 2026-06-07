@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="235 structured records (120 FERC audits, 14 prudence reviews, 101 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="238 structured records (120 FERC audits, 14 prudence reviews, 104 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3160,6 +3160,10 @@ Direct Testimony and Exhibits of Jamie Barber, Nick Cooper, and Richard F. Spell
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of Maria Roumpani, PhD on behalf of Georgia Conservation Voters in Georgia Power Company's 2025 Integrated Resource Plan (Docket No. 56002) and 2025 Application for the Certification, Decertification, and Amended Demand-Side Management Plan (Docket No. 56003), filed May 2, 2025 (68 pp). Listed for reference (metadata-only). Source: Georgia PSC FACTS document system, document 222501 (services.psc.ga.gov DownloadFile/222501/103611; landing: psc.ga.gov/search/facts-document/?documentId=222501).
 </doc>
+<doc title="Niagara Mohawk Power Corporation d/b/a National Grid" collection="State PUC Audits" docket="24-E-0322" issued="2025-04-25" industry="electric" source="https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-E-0322">
+Listed for reference (not machine-parsed into findings).
+Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) — the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document &amp; Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).
+</doc>
 <doc title="El Paso Electric Company" collection="State PUC Audits" docket="57149" issued="2025-04-01" industry="electric" source="https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&amp;itemNumber=118">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Commission of Texas (Commission Staff), in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed April 1, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_118_1485108.PDF.
@@ -3413,6 +3417,10 @@ Oregon PUC Order No. 22-191 (entered May 31, 2022), Docket UE 398, in the matter
 Listed for reference (not machine-parsed into findings).
 Idaho PUC Order No. 35421 (Final Order, service date May 31, 2022), Case No. IPC-E-22-11, on Idaho Power Company's annual Power Cost Adjustment (PCA) effective June 1, 2022 through May 31, 2023 — an overall revenue increase of ~$103.4 million (8.27%) (10 pp). Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211/OrdNotc/20220531Final_Order_No_35421.pdf).
 </doc>
+<doc title="Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc." collection="State PUC Audits" docket="21-EKME-329-GIE" issued="2022-04-22" industry="electric" source="https://estar.kcc.ks.gov/">
+Listed for reference (not machine-parsed into findings).
+Joint Motion to Approve Non-Unanimous Stipulation and Agreement (filed April 22, 2022) in the Kansas Corporation Commission's Investigation into Evergy Kansas Metro and Evergy Kansas Central regarding the February 2021 Winter Weather Events (Winter Storm Uri), Docket No. 21-EKME-329-GIE (contemplated by Docket 21-GIMX-303-MIS) — addressing the recovery and prudence of the extraordinary fuel and purchased-power costs Evergy incurred during the storm (21 pp). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id 54e98b5e-d9e2-4627-8355-b0c65b057bd9).
+</doc>
 <doc title="Entergy Louisiana, LLC" collection="State PUC Audits" docket="n/a" issued="2021-12-09" industry="electric" source="https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of Ryan D. Jones on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, filed December 2021 (received December 9, 2021; public version, 17 pp). The Lake Charles Power Station (an approximately $872 million natural-gas plant; commercial operation March 28, 2020) was approved as prudent in LPSC Order No. U-34283 (July 20, 2017); this proceeding reviews the prudence of the project's construction management. The review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file 3SIDvL86aGQ= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=3SIDvL86aGQ%3D).
@@ -3492,6 +3500,10 @@ MidAmerican Energy Company's Application for Approval of its 2024 Reconciliation
 <doc title="Madison Gas and Electric Company" collection="State PUC Audits" docket="3270-UR-125" issued="n/a" industry="n/a" source="https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of [MGE witness] Penington in the Application of Madison Gas and Electric Company for Authority to Adjust Electric and Natural Gas Rates, before the Public Service Commission of Wisconsin, Docket No. 3270-UR-125 (21 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 466619 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619).
+</doc>
+<doc title="Evergy Kansas Central, Inc. and Evergy Kansas South, Inc." collection="State PUC Audits" docket="25-EKCE-294-RTS" issued="n/a" industry="electric" source="https://estar.kcc.ks.gov/">
+Listed for reference (not machine-parsed into findings).
+Kansas Corporation Commission Order approving the unanimous Settlement Agreement in the Evergy Kansas Central, Inc. and Evergy Kansas South, Inc. base-rate case, Docket No. 25-EKCE-294-RTS (88 pp) — the utilities' application sought a net revenue-requirement increase of ~$196.4M (~$192M base, 8.64%). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id a0f02909-3351-4599-8d21-75c879fdd16c).
 </doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/99523">
 Listed for reference (not machine-parsed into findings).

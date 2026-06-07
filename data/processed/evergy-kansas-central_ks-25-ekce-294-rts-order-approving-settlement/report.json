@@ -1,0 +1,33 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "KS",
+  "source": "Kansas Corporation Commission",
+  "doc_type": "rate case order",
+  "id": "evergy-kansas-central_ks-25-ekce-294-rts-order-approving-settlement",
+  "company": "Evergy Kansas Central, Inc. and Evergy Kansas South, Inc.",
+  "company_raw": "Evergy Kansas Central, Inc. and Evergy Kansas South, Inc.",
+  "docket": "25-EKCE-294-RTS",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://estar.kcc.ks.gov/",
+  "pdf_download_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/Noticed_1._25-294_Order_appoving_unanimous_SA_(002).pdf?Id=a0f02909-3351-4599-8d21-75c879fdd16c",
+  "captured_at": "2026-06-07",
+  "source_note": "Kansas Corporation Commission Order approving the unanimous Settlement Agreement in the Evergy Kansas Central, Inc. and Evergy Kansas South, Inc. base-rate case, Docket No. 25-EKCE-294-RTS (88 pp) — the utilities' application sought a net revenue-requirement increase of ~$196.4M (~$192M base, 8.64%). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id a0f02909-3351-4599-8d21-75c879fdd16c).",
+  "archived_via": null,
+  "page_count": 88,
+  "scanned_pages": [
+    36,
+    37,
+    49,
+    51
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

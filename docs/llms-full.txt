@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 235 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 238 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5706,6 +5706,17 @@ Direct Testimony of Maria Roumpani, PhD on behalf of Georgia Conservation Voters
 
 ---
 
+## Niagara Mohawk Power Corporation d/b/a National Grid
+- Collection: State PUC Audits | Source: New York State Department of Public Service
+- Docket: 24-E-0322 | Audit type: n/a
+- Issued: 2025-04-25 | Industry: electric | FERC Form: n/a
+- Source page: https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-E-0322
+- Status: listed for reference (not machine-parsed into findings)
+
+Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) — the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).
+
+---
+
 ## El Paso Electric Company
 - Collection: State PUC Audits | Source: Public Utility Commission of Texas
 - Docket: 57149 | Audit type: n/a
@@ -6312,6 +6323,17 @@ Idaho PUC Order No. 35421 (Final Order, service date May 31, 2022), Case No. IPC
 
 ---
 
+## Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc.
+- Collection: State PUC Audits | Source: Kansas Corporation Commission
+- Docket: 21-EKME-329-GIE | Audit type: n/a
+- Issued: 2022-04-22 | Industry: electric | FERC Form: n/a
+- Source page: https://estar.kcc.ks.gov/
+- Status: listed for reference (not machine-parsed into findings)
+
+Joint Motion to Approve Non-Unanimous Stipulation and Agreement (filed April 22, 2022) in the Kansas Corporation Commission's Investigation into Evergy Kansas Metro and Evergy Kansas Central regarding the February 2021 Winter Weather Events (Winter Storm Uri), Docket No. 21-EKME-329-GIE (contemplated by Docket 21-GIMX-303-MIS) — addressing the recovery and prudence of the extraordinary fuel and purchased-power costs Evergy incurred during the storm (21 pp). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id 54e98b5e-d9e2-4627-8355-b0c65b057bd9).
+
+---
+
 ## Entergy Louisiana, LLC
 - Collection: State PUC Audits | Source: Louisiana Public Service Commission
 - Docket: n/a | Audit type: n/a
@@ -6529,6 +6551,17 @@ MidAmerican Energy Company's Application for Approval of its 2024 Reconciliation
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of [MGE witness] Penington in the Application of Madison Gas and Electric Company for Authority to Adjust Electric and Natural Gas Rates, before the Public Service Commission of Wisconsin, Docket No. 3270-UR-125 (21 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 466619 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619).
+
+---
+
+## Evergy Kansas Central, Inc. and Evergy Kansas South, Inc.
+- Collection: State PUC Audits | Source: Kansas Corporation Commission
+- Docket: 25-EKCE-294-RTS | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://estar.kcc.ks.gov/
+- Status: listed for reference (not machine-parsed into findings)
+
+Kansas Corporation Commission Order approving the unanimous Settlement Agreement in the Evergy Kansas Central, Inc. and Evergy Kansas South, Inc. base-rate case, Docket No. 25-EKCE-294-RTS (88 pp) — the utilities' application sought a net revenue-requirement increase of ~$196.4M (~$192M base, 8.64%). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id a0f02909-3351-4599-8d21-75c879fdd16c).
 
 ---
 

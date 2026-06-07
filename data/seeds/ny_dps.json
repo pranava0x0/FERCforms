@@ -46,5 +46,21 @@
     "captured_at": "2026-06-07",
     "source_note": "New York DPS electric rate-case summary for New York State Electric & Gas Corporation (NYSEG), Case 25-E-0375 — published under Public Service Law §66(12)(l). NYSEG's June 30, 2025 filing requested an increase in annual electric revenues of ~$464.4M (35.0% to delivery revenues) for the rate year ending April 30, 2027. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/07/nyseg-electric-rate-case-25-e-0375.pdf).",
     "parse": false
+  },
+  {
+    "id": "2025-04-25_niagara-mohawk-national-grid_ny-24-e-0322-joint-proposal",
+    "company": "Niagara Mohawk Power Corporation d/b/a National Grid",
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "New York State Department of Public Service",
+    "doc_type": "rate case joint proposal",
+    "industry": "electric",
+    "pdf_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B90E66D96-0000-CA12-A897-0A5E5C2B9F2B%7D",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-E-0322",
+    "issued_date": "2025-04-25",
+    "docket": "24-E-0322",
+    "captured_at": "2026-06-07",
+    "source_note": "Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) — the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).",
+    "parse": false
   }
 ]
