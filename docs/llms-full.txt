@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 196 records, 629 findings, 1582 recommendations. Generated 2026-06-02.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 207 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5244,6 +5244,17 @@ FERC Commission order on a formal challenge (Rule 206) re ISO New England Inc. e
 
 ---
 
+## Basin Electric Power Cooperative
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER20-2441 | Audit type: n/a
+- Issued: 2024-06-11 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20240611-3038&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC ALJ Initial Decision re Basin Electric Power Cooperative wholesale formula-rate / cost-of-service proceeding, Docket ER20-2441 (consolidated with ER20-2442 / ER21-426), issued 2024-06-11. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER20-2441); accession 20240611-3038.
+
+---
+
 ## Constellation Mystic Power, LLC
 - Collection: Prudence Reviews | Source: FERC (eLibrary)
 - Docket: ER18-1639 | Audit type: n/a
@@ -5252,6 +5263,39 @@ FERC Commission order on a formal challenge (Rule 206) re ISO New England Inc. e
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC Order on Rehearing and Clarification re Constellation Mystic Power, LLC cost-of-service recovery, Docket ER18-1639, issued 2024-05-23. Found via eLibrary full-text search; accession 20240523-3096.
+
+---
+
+## Wabash Valley Power Association, Inc.
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER20-1041 | Audit type: n/a
+- Issued: 2023-12-05 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20231205-3095&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC Order Rejecting Wholesale Power Supply Contracts and Notices of Cancellation re Wabash Valley Power Association, Inc., Docket ER20-1041, issued 2023-12-05 — addressing the reasonableness of wholesale power-supply contract terms. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER20-1041); accession 20231205-3095.
+
+---
+
+## CORE Electric Cooperative et al. v. Public Service Company of Colorado
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: EL23-21 | Audit type: n/a
+- Issued: 2023-08-08 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230808-3031&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC Order on Complaint re CORE Electric Cooperative et al. v. Public Service Company of Colorado (Xcel), Docket EL23-21, issued 2023-08-08 — a wholesale rate/cost complaint against Public Service Company of Colorado. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL23-21); accession 20230808-3031.
+
+---
+
+## Louisiana Public Service Commission et al. v. System Energy Resources, Inc.
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: EL20-72 | Audit type: n/a
+- Issued: 2023-05-15 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230515-3006&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC ALJ Initial Decision re Louisiana Public Service Commission et al. v. System Energy Resources, Inc., Docket EL20-72, issued 2023-05-15. The states' complaint challenges the prudence of costs System Energy recovers through the Unit Power Sales Agreement for the Grand Gulf nuclear plant (uprate, sale-leaseback, and related cost recovery). Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL20-72); accession 20230515-3006.
 
 ---
 
@@ -5266,6 +5310,17 @@ FERC order granting in part and denying in part a formal challenge re Delmarva P
 
 ---
 
+## Pacific Gas and Electric Company
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: ER16-2320 | Audit type: n/a
+- Issued: 2018-08-20 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20180820-3055&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC Order on Remand, Granting Motion Consolidating Proceedings, and Establishing Briefing Schedule re Pacific Gas and Electric Company transmission revenue-requirement / return-on-equity proceeding, Docket ER16-2320 (consolidated with ER14-2529), issued 2018-08-20. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER16-2320); accession 20180820-3055.
+
+---
+
 ## Potomac-Appalachian Transmission Highline, LLC and PJM Interconnection, L.L.C.
 - Collection: Prudence Reviews | Source: FERC (eLibrary)
 - Docket: ER12-2708 | Audit type: n/a
@@ -5274,6 +5329,17 @@ FERC order granting in part and denying in part a formal challenge re Delmarva P
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC Opinion No. 554, Order on Initial Decision, on the prudence of the Potomac-Appalachian Transmission Highline (PATH) project's transmission abandonment cost claim (formal challenges, ROE, and legal/advertising/lobbying costs) — affirming in part and reversing in part the ALJ initial decision. Potomac-Appalachian Transmission Highline, LLC and PJM, Dockets ER12-2708 / ER09-1256, issued January 19, 2017 (158 FERC para. 61,050). Distinct from the 2015 ALJ initial decision already in this collection. Found via the eLibrary AdvancedSearch API; accession 20170119-3062.
+
+---
+
+## Louisiana Public Service Commission v. Entergy Services, Inc.
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: EL01-88 | Audit type: n/a
+- Issued: 2016-11-07 | Industry: electric | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20161107-3024&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC ALJ Initial Decision re Louisiana Public Service Commission v. Entergy Services, Inc., Docket EL01-88, issued 2016-11-07 — a long-running challenge to cost allocation and rough-production-cost equalization under the Entergy System Agreement. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL01-88); accession 20161107-3024.
 
 ---
 
@@ -5296,6 +5362,17 @@ FERC order on a formal challenge re ITC Midwest LLC transmission formula rate, D
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC ALJ Initial Decision re Potomac-Appalachian Transmission Highline, LLC (PATH) transmission-incentive cost recovery / abandoned-plant prudence, Docket ER09-1256, issued 2015-09-14. Found via eLibrary full-text search; accession 20150914-4006.
+
+---
+
+## BP Pipelines (Alaska) Inc. et al. (Trans-Alaska Pipeline System)
+- Collection: Prudence Reviews | Source: FERC (eLibrary)
+- Docket: IS09-395 | Audit type: n/a
+- Issued: 2014-02-27 | Industry: oil | FERC Form: n/a
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20140227-3052&optimized=false
+- Status: listed for reference (not machine-parsed into findings)
+
+FERC ALJ Initial Decision re BP Pipelines (Alaska) Inc. et al. interstate oil-pipeline rates for the Trans-Alaska Pipeline System (TAPS), lead Docket IS09-395 (consolidated TAPS Carrier rate cases), issued 2014-02-27. An oil-pipeline cost/rate prudence proceeding (eLibrary mis-tags the library as Gas; the IS docket prefix and TAPS carriers are oil). Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=IS09-395); accession 20140227-3052.
 
 ---
 
@@ -5629,6 +5706,17 @@ Preliminary Order of the Public Utility Commission of Texas identifying the issu
 
 ---
 
+## Florida investor-owned electric utilities (storm protection plan cost recovery)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 20240010-EI | Audit type: n/a
+- Issued: 2024-10-24 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0459-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Order No. PSC-2024-0459-FOF-EI (Final Order), Docket No. 20240010-EI, 'Storm protection plan cost recovery clause', issued October 24, 2024 (16 pp) — the Commission's annual review of storm-protection-plan cost recovery, setting the 2025 storm-protection cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 09666-2024 (psc.state.fl.us/library/Orders/2024/09666-2024.pdf).
+
+---
+
 ## Public Service Electric and Gas Company
 - Collection: State PUC Audits | Source: New Jersey Board of Public Utilities
 - Docket: ER23120924 / GR23120925 | Audit type: n/a
@@ -5886,6 +5974,17 @@ Order No. 90948 on Baltimore Gas and Electric Company's application for an elect
 
 ---
 
+## Florida investor-owned electric utilities (storm protection plan cost recovery)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 20230010-EI | Audit type: n/a
+- Issued: 2023-11-29 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-2023-0364-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Order No. PSC-2023-0364-FOF-EI (Final Order), Docket No. 20230010-EI, 'Storm protection plan cost recovery clause', issued November 29, 2023 (26 pp) — the Commission's annual review of the reasonableness of storm-protection-plan costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06328-2023 (psc.state.fl.us/library/Orders/2023/06328-2023.pdf).
+
+---
+
 ## The Potomac Edison Company
 - Collection: State PUC Audits | Source: Maryland Public Service Commission
 - Docket: 9695 | Audit type: n/a
@@ -6100,6 +6199,28 @@ Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Manage
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
+
+---
+
+## Florida Power & Light Company and Duke Energy Florida (nuclear cost recovery)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 140009-EI | Audit type: n/a
+- Issued: 2014-10-27 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-14-0617-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Order No. PSC-14-0617-FOF-EI (Final Order Approving...), Docket No. 140009-EI, 'Nuclear cost recovery clause', issued October 27, 2014 (49 pp) — the Commission's annual prudence review and true-up of nuclear power-plant project costs recovered by Florida utilities under Section 366.93, Fla. Stat. and Rule 25-6.0423, F.A.C. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06043-2014 (psc.state.fl.us/library/Orders/2014/06043-2014.pdf).
+
+---
+
+## Florida investor-owned electric utilities (FPL, Progress Energy Florida, Tampa Electric, Gulf Power)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 120001-EI | Audit type: n/a
+- Issued: 2012-12-21 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-12-0664-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'Fuel and purchased power cost recovery clause with generating performance incentive factor', issued December 21, 2012 (39 pp) — the Commission's annual review setting fuel/capacity cost-recovery factors and generating-performance incentive rewards/penalties for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 08286-2012 (psc.state.fl.us/library/Orders/2012/08286-2012.pdf).
 
 ---
 

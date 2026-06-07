@@ -325,6 +325,28 @@ WAF — prefer that static order host for `pdf_url`.** And always verify order-v
   `dcpsc.org/CMSPages/GetFile.aspx?guid=…` "order" we first tried was a **press release** — verify page 1.
   Metadata-only.
 
+### FL — Florida PSC · static order PDFs, two hosts (one .gov)
+
+- **Two mirror hosts serve the same files:** `www.floridapsc.com` (**`.com` — rejected by the gov-guard**)
+  and **`www.psc.state.fl.us`** (legacy `.state.fl.us` ✓ — use this one). Both expose identical static
+  paths; always seed the `.state.fl.us` URL.
+- **Order PDFs (stable plain GET, pipeline UA, no WAF):**
+  `www.psc.state.fl.us/library/Orders/{YEAR}/{DOCNUM}-{YEAR}.pdf` (the `{DOCNUM}` is the clerk's
+  sequential **document number**, *not* the `PSC-YYYY-NNNN-FOF-EI` order number). Filings live at
+  `…/library/filings/{YEAR}/{DOCNUM}-{YEAR}/{DOCNUM}-{YEAR}.pdf`.
+- **Human landing:** `www.psc.state.fl.us/document-detail?orderNum={ORDER-NUMBER}` (an Angular SPA —
+  fine as a `source_page_url`, but it renders client-side so you can't scrape the PDF link from it).
+- **Finding the doc number (the catch):** the order#→doc# map isn't on the SPA. Harvest the
+  `library/Orders/{YEAR}/{DOCNUM}.pdf` URL via `WebSearch` restricted to `psc.state.fl.us` (Google
+  indexes the order text), then **verify page 1 locally** — `WebFetch` saves the binary even when it
+  can't render it; one `fitz` pass reads the caption + confirms it's a **FINAL ORDER** (skip the
+  `-PCO-EI` procedural / `-PHO-EI` prehearing / notice docs that share the docket).
+- **On-theme (Florida's signature prudence dockets are the annual cost-recovery *clauses*):** Fuel &
+  purchased-power cost recovery (Docket `{YY}0001-EI`, e.g. `PSC-12-0664-FOF-EI`), Nuclear cost
+  recovery (`{YY}0009-EI`, prudence/true-up of nuclear project costs, e.g. `PSC-14-0617-FOF-EI`), and
+  Storm-protection-plan cost recovery (`{YY}0010-EI`, e.g. `PSC-2023-0364-FOF-EI` / `PSC-2024-0459-FOF-EI`).
+  `data/seeds/fl_psc.json`. Metadata-only.
+
 ## WAF-blocked sources — browser-capture + `fetch=false`
 
 Scripts are rejected, so the doc URL is located in a **real browser (Chrome MCP)** and the stable
