@@ -378,14 +378,14 @@
     "generated_at": "2026-06-07"
   },
   "state_audit": {
-    "report_count": 110,
+    "report_count": 114,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 102,
-      "unknown": 4,
-      "gas": 4
+      "electric": 103,
+      "gas": 7,
+      "unknown": 4
     },
     "by_year": {
       "2005": 1,
@@ -397,7 +397,7 @@
       "2022": 5,
       "2023": 7,
       "2024": 23,
-      "2025": 34,
+      "2025": 35,
       "2026": 4
     },
     "by_function": {},

@@ -102,6 +102,22 @@ These generalize across the per-state recipes below. They're the difference betw
 
 Each commission's docket system is different. Patterns below are all confirmed by live capture.
 
+### Access tiers (the at-a-glance map — learned across the 2026 expansion)
+
+Every commission falls into one of five access tiers. **Tiers 1–2 are scriptable** (plain `requests` GET, the
+default path) and account for all 39 seeded jurisdictions; **tiers 3–5 need a browser** and are the remaining backlog.
+
+| Tier | How docs are served | States | Method |
+|------|---------------------|--------|--------|
+| **1 · Static `.gov` PDF** | predictable URL path on a `.gov`/`*.state.xx.us`/`.org`-allowlisted host | PA MI VA TX IL SC GA LA AR MO MN WI CO ND SD ID OR NV MT FL KS UT CT RI NY(summaries) NE TN + DC | seed `pdf_url` directly; **verify page 1** (filenames lie — caught a DSM order named "…Settlement", an energy-*data* tariff, IRPs, a résumé) |
+| **2 · Scriptable doc-API / valid-cert alias** | a GET endpoint returning the PDF (eLibrary F5 dance; WA `GetDocument`; AZ `docket.images.azcc.gov`; NY DMM `ViewDoc?DocRefId`) | FERC, WA, AZ, NY(orders) | accession/guid/docID harvested from search or a docket page; **AZ gotcha:** use the valid-cert host (`docket.images.azcc.gov`), not the broken-cert `images.edocket.azcc.gov` nor the blank-placeholder `edocket.azcc.gov/docketpdf/` |
+| **3 · HTML-only** | decisions published as HTML, no PDF (`.PDF` 404s) | **CA** (CPUC) | seed `fetch=false` with the `.htm` URL (captured by reference, page_count 0); `WebFetch` reads the HTML to verify |
+| **4 · WAF / TLS-broken** | scripts get 403 / Access-Denied / SSL-mismatch | OH NC IA NH(Akamai) AL · MS(TLS) | browser-capture (Chrome MCP) + `fetch=false` |
+| **5 · DMS/CMS/SPA/login-wall** | doc list is client-side or behind a viewer/login | OK MA WY HI VT ME · NM(login) | reverse-engineer the API or browser-capture the download URL |
+
+**The fetcher (`sources.fetch_doc`) now classifies tier-4 failures** (fail-fast on SSL/403, exponential backoff on
+throttling, warn on placeholder PDFs) — see *Access failure modes* above.
+
 ### PA — Pennsylvania PUC (Bureau of Audits) · `parse=true` for M&O
 - **PDFs:** plain GET `https://www.puc.pa.gov/pcdocs/{id}.pdf` (the pipeline `requests` UA works).
 - **Parsed:** Management & Operations audits carry an **Exhibit I-2 "Summary of Recommendations"** —
@@ -328,8 +344,10 @@ proceeding everywhere out here is the annual **power-cost adjustment** (each sta
 - **HI — PUC · DMS unreachable + static D&Os moved (browser-only).** Hawaiian Electric's **ECRC** (Energy Cost Recovery Clause = fuel/IPP cost) is the signature on-theme proceeding (D&O 40044, June 2023; the 2019–2023 ECRC review pegged oil-volatility costs at ≥$250M). But the DMS viewer `dms.puc.hawaii.gov/dms/DocumentViewer?pid={PID}` **refuses scripted connections (000)**, and the old static `puc.hawaii.gov/wp-content/uploads/{Y}/{M}/DO-No.-{N}.pdf` files now **return the site's HTML 404** (some recent wp-content PDFs — annual reports, summaries — still serve). Browser-capture the DMS PID. `.hawaii.gov` ✓.
 - **VT — PUC (browser-only):** orders are in **ePUC** (`epuc.vermont.gov`) or on the utility site (`greenmountainpower.com`, non-gov); `puc.vermont.gov` static PDFs are only plans/procedures. Harvest from ePUC.
 - **AL — PSC (browser-only):** only `alabamapower.com` (non-gov) copies are indexed; `psc.alabama.gov` is WAF-walled (403 to scripts, scanned minutes). Alabama Power **Rate ECR** (Energy Cost Recovery) + **RSE** (Rate Stabilization & Equalization) are the on-theme mechanisms.
+- **NE — PSC · `nebraska.gov/psc/orders` static PDFs (shipped 2026-06-07).** NE electric is all-public-power, but the PSC **rate-regulates the natural-gas IOUs** (Black Hills, NorthWestern). Orders are static PDFs at `www.nebraska.gov/psc/orders/natgas/NG-{docket}.{seq}.pdf` (plain GET, `nebraska.gov` ✓). Shipped: Black Hills **Cost-of-Service Gas Hedge Agreement** with its affiliate — **DENIED** (`NG-0086`, affiliate gas-cost prudence) + SourceGas **gas-supply contract buyout cost recovery** (`NG-0088`). `data/seeds/ne_psc.json`. On-theme: gas-cost/hedge/affiliate prudence, **Gas Supply Cost Review** (`NG-119`), Choice Gas reviews.
+- **TN — TPUC · `tpucdockets.tn.gov` static archive (shipped 2026-06-07).** Filings/orders are static PDFs at `tpucdockets.tn.gov/archive/filings/{YEAR}/{docnum}{seq}.pdf` (`{docnum}` = docket digits, e.g. `21-00107` → `2100107`; `{seq}` = a letter suffix per filing) — plain GET, `.tn.gov` ✓. Shipped: Kingsport Power (AEP) general rate case (`21-00107`) + the Utilities Division's **Atmos WNA (Weather Normalization Adjustment) audit** (`25-00044`). `data/seeds/tn_tpuc.json`. IOUs are mostly **gas** (Atmos, Piedmont) + small electric (Kingsport/AEP) — most of TN is TVA/munis/coops (not PUC-rate-regulated).
 
-> **Boundary note (2026-06-07):** the plainly-scriptable static-`.gov`-PDF states are now essentially exhausted (37 jurisdictions seeded). Every remaining untapped state — **OK, MA, NH, WY, HI, VT, ME, AL** — sits behind a **DMS/CMS document-viewer, a SPA, a WAF, or a login wall**, so the next expansion is a **browser-capture pass** (Chrome MCP), not more `requests` GETs. Recipes + the exact wall for each are above and in [BACKLOG.md](../BACKLOG.md).
+> **Boundary note (2026-06-07, corrected):** static-`.gov`-PDF states are seeded out to **39 jurisdictions** — including the gas-only-IOU states (NE, TN) that a first pass dismisses. The genuinely walled remainder — **OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA** — each sits behind a **DMS/CMS viewer, a SPA, a WAF, or a login wall**, so *those* need a **browser-capture pass** (Chrome MCP), not more `requests` GETs. Only **AK** (tiny coop/muni IOUs) and US **territories** (PR/USVI/Guam — separate regulators) remain genuinely out of scope. Per-state walls + recipes above and in [BACKLOG.md](../BACKLOG.md).
 
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 

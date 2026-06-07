@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 244 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 248 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5618,6 +5618,17 @@ Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) 
 
 ---
 
+## Atmos Energy Corporation
+- Collection: State PUC Audits | Source: Tennessee Public Utility Commission
+- Docket: 25-00044 | Audit type: n/a
+- Issued: 2025-07-18 | Industry: gas | FERC Form: n/a
+- Source page: https://www.tn.gov/tpuc.html
+- Status: listed for reference (not machine-parsed into findings)
+
+Notice of Filing by the Utilities Division of the Tennessee Public Utility Commission of the Weather Normalization Adjustment (WNA) Audit re Atmos Energy Corporation, Docket No. 25-00044, July 18, 2025 — the Division's audit of Atmos's WNA gas-cost mechanism (20 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf).
+
+---
+
 ## Montana-Dakota Utilities Co.
 - Collection: State PUC Audits | Source: North Dakota Public Service Commission
 - Docket: PU-25-225 | Audit type: n/a
@@ -6499,6 +6510,17 @@ Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra
 
 ---
 
+## SourceGas Distribution LLC (now Black Hills Energy)
+- Collection: State PUC Audits | Source: Nebraska Public Service Commission
+- Docket: NG-0088 | Audit type: n/a
+- Issued: n/a | Industry: gas | FERC Form: n/a
+- Source page: https://psc.nebraska.gov/natural-gas/pending-and-completed-dockets
+- Status: listed for reference (not machine-parsed into findings)
+
+Nebraska PSC Order (Application No. NG-0088) in the matter of SourceGas Distribution LLC seeking approval of the regulatory treatment of the net buyout costs of two gas supply-related contracts — a gas commodity / purchased-gas cost-recovery prudence determination (7 pp). Listed for reference (metadata-only). Source: Nebraska PSC orders repository (nebraska.gov/psc/orders/natgas/NG-0088.9.pdf).
+
+---
+
 ## Public Service Company of Colorado
 - Collection: State PUC Audits | Source: Colorado Public Utilities Commission
 - Docket: 24AL-0275E | Audit type: n/a
@@ -6675,6 +6697,17 @@ Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investig
 
 ---
 
+## Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy
+- Collection: State PUC Audits | Source: Nebraska Public Service Commission
+- Docket: NG-0086 | Audit type: n/a
+- Issued: n/a | Industry: gas | FERC Form: n/a
+- Source page: https://psc.nebraska.gov/natural-gas/pending-and-completed-dockets
+- Status: listed for reference (not machine-parsed into findings)
+
+Nebraska PSC Order (Application No. NG-0086) in the matter of Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy seeking approval of its Cost of Service Gas Hedge Agreement with affiliate Black Hills Utility Holdings, Inc. — the Commission DENIED the agreement (an affiliate gas-cost / prudence matter) (16 pp). Listed for reference (metadata-only). Source: Nebraska PSC orders repository (nebraska.gov/psc/orders/natgas/NG-0086.30.pdf).
+
+---
+
 ## Arizona Public Service Company
 - Collection: State PUC Audits | Source: Arizona Corporation Commission
 - Docket: E-01345A-03-0437 | Audit type: n/a
@@ -6760,6 +6793,17 @@ New York DPS electric rate-case summary for Consolidated Edison Company of New Y
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony and Schedules of Nicholas N. Paluck (Exhibit 13) before the North Dakota Public Service Commission in the Application of Northern States Power Company (Xcel Energy) electric rate proceeding, Case No. PU-24-376 (initiated December 2024) (65 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 086-010 (psc.nd.gov/webdocs/case/24-0376/086-010.pdf).
+
+---
+
+## Kingsport Power Company d/b/a AEP Appalachian Power
+- Collection: State PUC Audits | Source: Tennessee Public Utility Commission
+- Docket: 21-00107 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.tn.gov/tpuc.html
+- Status: listed for reference (not machine-parsed into findings)
+
+Petition of Kingsport Power Company d/b/a AEP Appalachian Power for a general rate case before the Tennessee Public Utility Commission, Docket No. 21-00107 (74 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf).
 
 ---
 

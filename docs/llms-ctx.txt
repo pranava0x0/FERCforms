@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="244 structured records (120 FERC audits, 14 prudence reviews, 110 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="248 structured records (120 FERC audits, 14 prudence reviews, 114 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3128,6 +3128,10 @@ New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corp
 Listed for reference (not machine-parsed into findings).
 Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) revised transmission rate adjustment clause Rider T1 under Va. Code § 56-585.1 A 4 (deeming prudent RTO transmission and FERC-approved demand-response costs), Case No. PUR-2025-00076, Virginia State Corporation Commission, entered August 1, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/873b01!.PDF.
 </doc>
+<doc title="Atmos Energy Corporation" collection="State PUC Audits" docket="25-00044" issued="2025-07-18" industry="gas" source="https://www.tn.gov/tpuc.html">
+Listed for reference (not machine-parsed into findings).
+Notice of Filing by the Utilities Division of the Tennessee Public Utility Commission of the Weather Normalization Adjustment (WNA) Audit re Atmos Energy Corporation, Docket No. 25-00044, July 18, 2025 — the Division's audit of Atmos's WNA gas-cost mechanism (20 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf).
+</doc>
 <doc title="Montana-Dakota Utilities Co." collection="State PUC Audits" docket="PU-25-225" issued="2025-07-15" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).
@@ -3481,6 +3485,10 @@ CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 �
 Listed for reference (not machine-parsed into findings).
 Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) — an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).
 </doc>
+<doc title="SourceGas Distribution LLC (now Black Hills Energy)" collection="State PUC Audits" docket="NG-0088" issued="n/a" industry="gas" source="https://psc.nebraska.gov/natural-gas/pending-and-completed-dockets">
+Listed for reference (not machine-parsed into findings).
+Nebraska PSC Order (Application No. NG-0088) in the matter of SourceGas Distribution LLC seeking approval of the regulatory treatment of the net buyout costs of two gas supply-related contracts — a gas commodity / purchased-gas cost-recovery prudence determination (7 pp). Listed for reference (metadata-only). Source: Nebraska PSC orders repository (nebraska.gov/psc/orders/natgas/NG-0088.9.pdf).
+</doc>
 <doc title="Public Service Company of Colorado" collection="State PUC Audits" docket="24AL-0275E" issued="n/a" industry="electric" source="https://www.dora.state.co.us/pls/efi/EFI.Show_Docket?p_docket_id=24AL-0275E">
 Listed for reference (not machine-parsed into findings).
 Decision No. C25-0122-I (Interim) of the Colorado Public Utilities Commission in Proceeding No. 24AL-0275E, in the matter of Public Service Company of Colorado's electric Advice Letter No. 8 (6 pp). Listed for reference (metadata-only). Source: Colorado PUC E-Filings System, document 1035954 (dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=1035954).
@@ -3545,6 +3553,10 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
 </doc>
+<doc title="Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy" collection="State PUC Audits" docket="NG-0086" issued="n/a" industry="gas" source="https://psc.nebraska.gov/natural-gas/pending-and-completed-dockets">
+Listed for reference (not machine-parsed into findings).
+Nebraska PSC Order (Application No. NG-0086) in the matter of Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy seeking approval of its Cost of Service Gas Hedge Agreement with affiliate Black Hills Utility Holdings, Inc. — the Commission DENIED the agreement (an affiliate gas-cost / prudence matter) (16 pp). Listed for reference (metadata-only). Source: Nebraska PSC orders repository (nebraska.gov/psc/orders/natgas/NG-0086.30.pdf).
+</doc>
 <doc title="Arizona Public Service Company" collection="State PUC Audits" docket="E-01345A-03-0437" issued="n/a" industry="electric" source="https://www.azcc.gov/utilities">
 Listed for reference (not machine-parsed into findings).
 Arizona Corporation Commission order in the Arizona Public Service Company (APS) general rate case, Docket No. E-01345A-03-0437 (178 pp; scanned cover with a born-digital body — the parties/appearances list and findings carry a text layer). Posted on the ACC Utilities Division site as 'APS-FinalOrder.pdf'. Listed for reference (metadata-only). Source: Arizona Corporation Commission (www.azcc.gov/divisions/utilities/electric/APS-FinalOrder.pdf).
@@ -3576,6 +3588,10 @@ New York DPS electric rate-case summary for Consolidated Edison Company of New Y
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="PU-24-376" issued="n/a" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony and Schedules of Nicholas N. Paluck (Exhibit 13) before the North Dakota Public Service Commission in the Application of Northern States Power Company (Xcel Energy) electric rate proceeding, Case No. PU-24-376 (initiated December 2024) (65 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 086-010 (psc.nd.gov/webdocs/case/24-0376/086-010.pdf).
+</doc>
+<doc title="Kingsport Power Company d/b/a AEP Appalachian Power" collection="State PUC Audits" docket="21-00107" issued="n/a" industry="electric" source="https://www.tn.gov/tpuc.html">
+Listed for reference (not machine-parsed into findings).
+Petition of Kingsport Power Company d/b/a AEP Appalachian Power for a general rate case before the Tennessee Public Utility Commission, Docket No. 21-00107 (74 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf).
 </doc>
 <doc title="Southern California Edison Company" collection="State PUC Audits" docket="D.06-01-007" issued="n/a" industry="electric" source="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding">
 Listed for reference (not machine-parsed into findings).

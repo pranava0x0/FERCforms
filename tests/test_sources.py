@@ -125,6 +125,8 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://pscdocs.utah.gov/electric/24docs/2403504/x.pdf")  # UT PSC (.utah.gov)
     assert sources.is_official_gov("https://portal.ct.gov/-/media/pura/electric/x.pdf")  # CT PURA (.ct.gov)
     assert sources.is_official_gov("https://ripuc.ri.gov/sites/g/files/xkgbur841/files/2024-09/x.pdf")  # RI PUC (.ri.gov)
+    assert sources.is_official_gov("https://www.nebraska.gov/psc/orders/natgas/NG-0086.30.pdf")  # NE PSC (nebraska.gov)
+    assert sources.is_official_gov("https://tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf")  # TN TPUC (.tn.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
