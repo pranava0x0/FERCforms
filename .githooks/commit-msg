@@ -6,7 +6,7 @@
 # See CLAUDE.md "Git discipline -> No agent co-authors".
 # Enable once per clone:  git config core.hooksPath .githooks
 msg_file="$1"
-pattern='^[[:space:]]*co-authored-by:.*(claude|anthropic|codex|openai|chatgpt|gpt-[0-9]|gemini|google|bard|copilot|cursor|jules|devin|sourcegraph|tabnine|noreply@(anthropic|openai|google))'
+pattern='^[[:space:]]*co-authored-by:.*(claude|anthropic|codex|openai|chatgpt|gpt-[0-9]|gemini|google|antigravity|bard|copilot|cursor|jules|devin|sourcegraph|tabnine|noreply@(anthropic|openai|google))'
 tmp="$(mktemp)"
 grep -ivE "$pattern" "$msg_file" > "$tmp" 2>/dev/null || true
 # Only replace if filtering left real content (guard against pathological all-match).
