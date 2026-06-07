@@ -30,5 +30,21 @@
     "captured_at": "2026-06-07",
     "source_note": "Oregon PUC Order No. 18-449 (entered November 30, 2018), Docket UE 344, in the matter of PacifiCorp (dba Pacific Power) 2017 Power Cost Adjustment Mechanism (PCAM) (12 pp) — the Commission's review of PacifiCorp's actual vs. forecast net power costs under its PCAM/TAM. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2018ords/18-449.pdf).",
     "parse": false
+  },
+  {
+    "id": "2022-05-31_idaho-power_or-ue-398-order-22-191-apcu",
+    "company": "Idaho Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost update order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2022ords/22-191.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=22-191",
+    "issued_date": "2022-05-31",
+    "docket": "UE-398",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 22-191 (entered May 31, 2022), Docket UE 398, in the matter of Idaho Power Company's 2022 Annual Power Cost Update (APCU) (15 pp) — the Commission's annual update of Idaho Power's Oregon net power supply expense in rates. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2022ords/22-191.pdf).",
+    "parse": false
   }
 ]

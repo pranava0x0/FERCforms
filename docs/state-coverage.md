@@ -1,6 +1,6 @@
 # State PUC coverage — completeness audit
 
-State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **31 jurisdictions, 92 documents**,
+State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **31 jurisdictions, 95 documents**,
 all metadata-only ("Listed for reference") **except PA**, the only state with parsed verbatim findings
 (3 Management & Operations audits via `pipeline/state_structure.py`). Access mechanics per state live in
 [data-sources.md](data-sources.md); the expansion roadmap in [../BACKLOG.md](../BACKLOG.md).
@@ -46,16 +46,16 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 | **DE** | PJM | 1 | Delmarva (main IOU) | one base-rate order | **Thin** | only 1 doc; DP&L gas, more orders |
 | **MS** | MISO/SERC | 2 | — (MPUS *staff annual reports*, not utility-specific) | utilities-staff annual reports | **Thin** | Entergy MS, Mississippi Power proceedings; InSite TLS-broken |
 | **ID** | (WECC, non-RTO) | 2 | Idaho Power | annual **PCA** orders (36618, 35421) | **Partial** | Avista, Rocky Mountain Power PCA |
-| **OR** | (WECC, non-RTO) | 2 | PGE + PacifiCorp | **PCAM** power-cost orders | **Partial** | Idaho Power, Avista; GRCs |
-| **WA** | (WECC, non-RTO) | 1 | Puget Sound Energy | deferred-accounting order (UE-220066) | **Thin** | Avista, PacifiCorp; the actual power-cost order |
-| **MT** | WECC/(MISO) | 1 | NorthWestern Energy | general rate-case final order (PCCAM base) | **Thin** | 2024/25 rate case; Montana-Dakota |
-| **NV** | (WECC, non-RTO) | 1 | NV Energy | 2025 GRC notice (25-02016) | **Thin** | the annual **DEAA** fuel-prudence order (higher value) |
+| **OR** | (WECC, non-RTO) | 3 | PGE + PacifiCorp + Idaho Power | **PCAM** / APCU power-cost orders | **Good** | Avista; GRCs |
+| **WA** | (WECC, non-RTO) | 3 | PSE + Avista + PacifiCorp | deferred-accounting + rate-case orders | **Good** | the explicit power-cost (PCA) order |
+| **MT** | WECC/(MISO) | 1 | NorthWestern Energy | general rate-case final order (PCCAM base) | **Thin** | 2024/25 rate case (browser-only eDocket); Montana-Dakota |
+| **NV** | (WECC, non-RTO) | 1 | NV Energy | 2025 GRC notice (25-02016) | **Thin** | the annual **DEAA** order (scanned/opaque — needs OCR or onbase) |
 | **AZ** | (WECC, non-RTO) | 2 | APS + Tucson Electric Power | rate-case orders (TEP Decision 79065) | **Partial** | UNS; APS recent decision; PSA prudence |
 
 ## Fully missing (no seed yet)
 
 - **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
-- **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** now seeded (9 docs — in the table above); deepen each with its power-cost-adjustment / DEAA / PCA / PCCAM order. **NM** is the lone Southwest holdout — its new PRCe360 portal 302-redirects to a login wall (no anonymous document access).
+- **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** seeded (12 docs — in the table above; WA + OR deepened to 3 IOUs each). **NV** (DEAA is scanned/opaque) and **MT** (2024/25 final order is browser-only eDocket) resist scripted deepening and stay at 1. **NM** is the lone fully-unseeded Southwest state — its PRCe360 portal 302-redirects to a login wall.
 - **Large untapped:** **CA** (CPUC — PG&E/SCE/SDG&E, huge), **NY** (DPS DMM — Con Ed/National Grid), plus KS, OK, NE, MA, CT, TN, AL. The corpus is currently **East / Midwest / South** weighted.
 
 ## Headline reads

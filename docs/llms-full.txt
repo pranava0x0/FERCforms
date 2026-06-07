@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 226 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 229 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5398,6 +5398,17 @@ Order of the Indiana Utility Regulatory Commission on Duke Energy Indiana, LLC's
 
 ---
 
+## PacifiCorp d/b/a Pacific Power & Light Company
+- Collection: State PUC Audits | Source: Washington Utilities and Transportation Commission
+- Docket: UE-230172 | Audit type: n/a
+- Issued: 2026-03-13 | Industry: electric | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/casedocket/2023/230172
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC order (service date March 13, 2026), Washington Utilities and Transportation Commission v. PacifiCorp d/b/a Pacific Power & Light Company, Docket UE-230172 (6 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=5142&year=2023&docketNumber=230172).
+
+---
+
 ## Louisville Gas and Electric Company
 - Collection: State PUC Audits | Source: Kentucky Public Service Commission
 - Docket: 2025-00114 | Audit type: n/a
@@ -5538,6 +5549,17 @@ Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG
 - Status: listed for reference (not machine-parsed into findings)
 
 Final Order of the Illinois Commerce Commission in Commonwealth Edison Company's reconciliation of Rider CFRA (Carbon-Free Resource Adjustment) revenues against actual carbon-mitigation-credit costs, ICC Docket 24-0087, entered September 4, 2025 (Chairman Douglas P. Scott). Listed for reference (metadata-only). Source: ICC e-Docket, document 370165 / file 648653 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/370165).
+
+---
+
+## Avista Corporation d/b/a Avista Utilities
+- Collection: State PUC Audits | Source: Washington Utilities and Transportation Commission
+- Docket: UE-220053 | Audit type: n/a
+- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/casedocket/2022/220053
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC order (service date September 4, 2025), Washington Utilities and Transportation Commission v. Avista Corporation d/b/a Avista Utilities, Dockets UE-220053 / UG-220054 / UE-210854 (Consolidated) — an order in Avista's general rate case proceeding (7 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=1913&year=2022&docketNumber=220053).
 
 ---
 
@@ -6254,6 +6276,17 @@ Recommendations:
 24. Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture. (source p. 162)
 25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
 26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)
+
+---
+
+## Idaho Power Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Oregon
+- Docket: UE-398 | Audit type: n/a
+- Issued: 2022-05-31 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=22-191
+- Status: listed for reference (not machine-parsed into findings)
+
+Oregon PUC Order No. 22-191 (entered May 31, 2022), Docket UE 398, in the matter of Idaho Power Company's 2022 Annual Power Cost Update (APCU) (15 pp) — the Commission's annual update of Idaho Power's Oregon net power supply expense in rates. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2022ords/22-191.pdf).
 
 ---
 
