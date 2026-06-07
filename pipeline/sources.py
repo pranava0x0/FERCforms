@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import random
 import re
 import time
 from pathlib import Path
@@ -41,6 +42,18 @@ logger = logging.getLogger(__name__)
 
 _PDF_MAGIC = b"%PDF-"
 _MIN_PDF_BYTES = 1024
+# A real document PDF is bigger than this; a smaller one that still has the %PDF
+# magic is usually a scanned cover sheet or an eDocket "placeholder" (e.g. AZ's
+# edocket.azcc.gov/docketpdf/ returns blank ~5 KB pages). We still keep it, but
+# log a warning so it surfaces for page-1 verification instead of passing silently.
+_SUSPICIOUS_PDF_BYTES = 3000
+
+
+def _backoff_seconds(attempt: int) -> float:
+    """Exponential backoff with jitter, capped — gives a throttling host time to
+    recover (the failure mode behind transient connection-reset / 000 / 429 seen
+    on puc.idaho.gov, apps.puc.state.or.us, apiproxy.utc.wa.gov under request bursts)."""
+    return min(config.BACKOFF_BASE_SECONDS * (2 ** (attempt - 1)), 90) + random.uniform(0, 3)
 
 
 class SourceFetchError(Exception):
@@ -112,33 +125,63 @@ def fetch_doc(
         time.sleep(config.REQUEST_DELAY_SECONDS)
         try:
             resp = session.get(seed.pdf_url, timeout=config.REQUEST_TIMEOUT_SECONDS)
+        except requests.exceptions.SSLError as exc:
+            # Broken / hostname-mismatched TLS cert (AZ images.edocket.azcc.gov,
+            # MS InSite). Retrying never fixes a cert — fail fast with the fix.
+            raise SourceFetchError(
+                f"{seed.id}: TLS verification failed ({exc.__class__.__name__}) — the host's "
+                f"certificate is invalid or doesn't match the hostname. Look for a valid-cert host "
+                f"alias (e.g. AZ's docket.images.azcc.gov), else browser-capture + seed fetch=false."
+            ) from exc
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as exc:
+            # Connection refused/reset or read timeout — usually host throttling
+            # after a burst. Exponential backoff gives it time to recover.
+            wait = _backoff_seconds(attempt)
+            last_error = f"{exc.__class__.__name__} (connection/timeout — possible throttling)"
+            logger.warning(
+                "attempt %d/%d for %s: %s — backing off %.0fs", attempt, config.MAX_RETRIES, seed.id, last_error, wait
+            )
+            time.sleep(wait)
+            continue
         except requests.RequestException as exc:
             last_error = f"request error: {exc}"
-            time.sleep(config.BACKOFF_BASE_SECONDS)
+            time.sleep(_backoff_seconds(attempt))
             continue
 
         ctype = resp.headers.get("content-type", "")
-        if (
-            resp.status_code == 200
-            and ("application/pdf" in ctype or resp.content[:5] == _PDF_MAGIC)
-            and resp.content[:5] == _PDF_MAGIC
-        ):
+        if resp.status_code == 200 and resp.content[:5] == _PDF_MAGIC:
+            n = len(resp.content)
             tmp = dest.with_suffix(".pdf.part")
             tmp.write_bytes(resp.content)
             tmp.replace(dest)
-            logger.info("downloaded %s (%d bytes)", dest.name, len(resp.content))
+            if n < _SUSPICIOUS_PDF_BYTES:
+                logger.warning(
+                    "downloaded %s but only %d bytes — possible placeholder/cover page; verify page 1",
+                    dest.name, n,
+                )
+            else:
+                logger.info("downloaded %s (%d bytes)", dest.name, n)
             return dest
 
+        if resp.status_code in (401, 403):
+            # WAF / login wall (OH PUCO F5, NC Cloudflare, IA efs.iowa.gov, NM
+            # PRCe360). A plain GET can't pass it — fail fast with the workaround.
+            raise SourceFetchError(
+                f"{seed.id}: HTTP {resp.status_code} ({ctype or 'no content-type'}) — looks like a "
+                f"WAF or login wall. Open in a real browser (Chrome MCP) and seed fetch=false, or "
+                f"find a host that isn't walled."
+            )
+
         if resp.status_code == 429:
-            wait = config.BACKOFF_BASE_SECONDS * attempt
+            wait = _backoff_seconds(attempt)
             last_error = "HTTP 429 (rate limited)"
-            logger.warning("429 for %s; backing off %ss", seed.id, wait)
+            logger.warning("429 for %s; backing off %.0fs", seed.id, wait)
             time.sleep(wait)
             continue
 
         last_error = f"unexpected response: {resp.status_code} {ctype} ({len(resp.content)}b)"
         logger.warning("attempt %d/%d for %s: %s", attempt, config.MAX_RETRIES, seed.id, last_error)
-        time.sleep(config.BACKOFF_BASE_SECONDS)
+        time.sleep(_backoff_seconds(attempt))
 
     raise SourceFetchError(f"{seed.id}: {last_error}")
 

@@ -41,6 +41,27 @@ These are non-negotiable and enforced in code where possible:
 | `fetch` | `true`  | `false` ⇒ **don't** machine-fetch — the URL was captured out-of-band (a WAF-blocked source opened in a browser); write metadata-only straight from the seed (page_count 0). |
 | `accession` | `null` | set ⇒ fetch via the FERC eLibrary F5 cookie dance instead of a plain GET. |
 
+### Access failure modes & how the fetcher handles them
+
+State/territory portals fail in a handful of recurring ways. `pipeline/sources.fetch_doc`
+(the plain-GET path) now classifies each so a run never wastes retries on an unfixable error,
+never silently accepts junk, and always logs the *fix* — and every failure is still **best-effort**
+(`process_seed` writes a metadata-only record on any miss, so one bad doc never aborts a run).
+
+| Failure mode | Symptom | Fetcher behavior | Operator fix |
+|---|---|---|---|
+| **Throttling / connection reset** | `ConnectionError` / read timeout / curl `000` after a burst (seen on `puc.idaho.gov`, `apps.puc.state.or.us`, `apiproxy.utc.wa.gov`) | **exponential backoff + jitter** (`_backoff_seconds`, capped 90s) then retry, up to `MAX_RETRIES` | space out requests; re-run (idempotent). Don't hammer. |
+| **Rate limit** | `HTTP 429` | same exponential backoff + retry | re-run later |
+| **Broken / mismatched TLS** | `SSLError` (hostname mismatch) — AZ `images.edocket.azcc.gov`, MS InSite `psc.state.ms.us` | **fail fast, no retry** (a cert won't fix on retry); error names the fix | use a valid-cert host alias (AZ → `docket.images.azcc.gov`), else browser-capture + `fetch=false` |
+| **WAF / login wall** | `HTTP 401/403` (OH PUCO F5, NC Cloudflare, IA `efs.iowa.gov`, NM PRCe360 `Login.aspx`) | **fail fast, no retry**; error says "open in a browser, seed `fetch=false`" | Chrome MCP capture + `fetch=false`, or a non-walled host |
+| **Blank placeholder PDF** | `200` + `%PDF` magic but tiny (~5 KB), no real content — AZ `edocket.azcc.gov/docketpdf/` | kept, but **logged `WARNING: possible placeholder/cover page`** (`< _SUSPICIOUS_PDF_BYTES`) | page-1-verify; switch to the real-doc host/path |
+| **eLibrary slow on huge decisions** | 90s read timeout on big ALJ orders | `_fetch_elibrary_once` is one-shot, 90s; metadata-only on miss | re-run when eLibrary is quiet (page counts backfill) |
+| **UA-filtered IIS** | `404.19` to any UA containing `python-requests` (WV) | n/a — `config.USER_AGENT` carries **no** library token | — |
+
+**Verify-before-seed still applies on top of all this:** a `200` + `%PDF` only means *a* PDF came back,
+not the *right* one — read page 1 (locally with `fitz`; `WebFetch` saves the binary even when it can't
+render it) before labelling `company` / `issued_date` / `doc_type`.
+
 ### Cross-portal techniques (learned in the 2026-06-02 multi-state expansion — GA/LA/MS/AR/MO/MN/WI/CO)
 
 These generalize across the per-state recipes below. They're the difference between an hour and ten minutes per state.

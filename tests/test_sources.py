@@ -181,3 +181,76 @@ def test_all_seed_files_validate_and_have_unique_ids():
         assert all(s.collection in {"state_audit", "prudence_review"} for s in seeds)
         all_ids += [s.id for s in seeds]
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
+
+
+# --- fetch resilience (timeouts / throttling / broken TLS / WAF / placeholders) ---
+
+import logging  # noqa: E402
+
+import requests as _requests  # noqa: E402
+
+
+class _FakeResp:
+    def __init__(self, status_code, content=b"", content_type=""):
+        self.status_code = status_code
+        self.content = content
+        self.headers = {"content-type": content_type}
+
+
+class _FakeSession:
+    """Yields a queued list of outcomes (a _FakeResp to return, or an Exception
+    to raise); repeats the last outcome once the queue is drained."""
+
+    def __init__(self, *outcomes):
+        self._q = list(outcomes)
+        self.calls = 0
+
+    def get(self, url, timeout=None):
+        self.calls += 1
+        o = self._q.pop(0) if len(self._q) > 1 else self._q[0]
+        if isinstance(o, Exception):
+            raise o
+        return o
+
+
+@pytest.fixture(autouse=True)
+def _no_sleep(monkeypatch):
+    monkeypatch.setattr(sources.time, "sleep", lambda *_: None)
+
+
+def test_fetch_doc_fails_fast_on_broken_tls(tmp_path):
+    s = _FakeSession(_requests.exceptions.SSLError("hostname mismatch"))
+    with pytest.raises(sources.SourceFetchError, match="TLS verification failed"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == 1  # no pointless retries on a broken cert
+
+
+def test_fetch_doc_fails_fast_on_waf_or_login_wall(tmp_path):
+    s = _FakeSession(_FakeResp(403, b"<html>Access Denied</html>", "text/html"))
+    with pytest.raises(sources.SourceFetchError, match="WAF or login wall"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == 1
+
+
+def test_fetch_doc_retries_connection_error_then_succeeds(tmp_path):
+    pdf = b"%PDF-" + b"x" * 4000
+    s = _FakeSession(_requests.exceptions.ConnectionError("reset"), _FakeResp(200, pdf, "application/pdf"))
+    out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists() and out.read_bytes() == pdf
+    assert s.calls == 2  # backed off and retried the throttled connection
+
+
+def test_fetch_doc_warns_on_suspiciously_small_pdf(tmp_path, caplog):
+    tiny = b"%PDF-1.4 blank"  # has the magic but well under _SUSPICIOUS_PDF_BYTES
+    s = _FakeSession(_FakeResp(200, tiny, "application/pdf"))
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists()
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_fetch_doc_exhausts_retries_on_server_error(tmp_path):
+    s = _FakeSession(_FakeResp(500, b"oops", "text/html"))
+    with pytest.raises(sources.SourceFetchError, match="unexpected response: 500"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == config.MAX_RETRIES
