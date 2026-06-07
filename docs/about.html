@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — FERC Audit Explorer</title>
+  <meta name="description" content="Learn about the FERC Audit Explorer, how it works, what it covers, and related projects in regulatory transparency and energy data." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .about-content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .about-content h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .about-content p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .about-content ul, .about-content ol {
+      margin: 1rem 0 1rem 1.5rem;
+      line-height: 1.6;
+    }
+    .about-content li {
+      margin-bottom: 0.5rem;
+    }
+    .about-content strong {
+      font-weight: 600;
+    }
+    .about-content em {
+      font-style: italic;
+    }
+    .about-content code {
+      background: var(--color-bg-alt);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+    .about-content pre {
+      background: var(--color-bg-alt);
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 1rem 0;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .about-content a {
+      color: var(--color-link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--color-link);
+    }
+    .about-content a:hover {
+      text-decoration: underline;
+    }
+    .about-content a[rel="noopener"] {
+      /* External link */
+    }
+    .related-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 1rem 0;
+    }
+    .project-card {
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      background: var(--color-bg-alt);
+    }
+    .project-card h4 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .project-card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+    .project-url {
+      display: block;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.9rem;
+    }
+    .back-link {
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+    .back-link a {
+      color: var(--color-text-muted);
+      border-bottom: none;
+    }
+    .back-link a:hover {
+      color: var(--color-link);
+    }
+  </style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("ferc-theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <g stroke-width="1.2">
+            <path d="M2 16 Q3.5 14 7 12 Q11.5 15.5 16 9 Q20 11 24.5 7 Q27.5 6.5 30 8" />
+            <path d="M2 19 Q3 16.5 3.5 15 Q7 16 10.5 15 Q12 16.5 13 12 Q16 13 19 12 Q21 13 22.3 9.5 Q24.5 10.5 26.7 9.5 Q28.5 9 30 10.5" />
+          </g>
+          <g stroke-width="1.8">
+            <path d="M3 28 7 12M11 28 7 12M3.5 15H10.5" />
+            <path d="M12.5 23 16 9M19.5 23 16 9M13 12H19" />
+            <path d="M22 18 24.5 7M27 18 24.5 7M22.3 9.5H26.7" />
+          </g>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong><a href="index.html" style="color: inherit; border: none; text-decoration: none;">FERC Audit Explorer</a></strong>
+        <span class="brand-sub">Findings from FERC's electric, gas &amp; oil utility audit reports</span>
+      </span>
+    </div>
+    <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <div class="about-content">
+    <div class="back-link">
+      <a href="index.html">← Back to explorer</a>
+    </div>
+
+    <h1>About the FERC Audit Explorer</h1>
+
+    <h2>What is this?</h2>
+    <p>The <strong>FERC Audit Explorer</strong> is a static, public-interest tool that aggregates and analyzes findings from <strong>every published FERC utility audit</strong> — electric (Form 1), gas (Form 2), and oil (Form 6) — issued from 2014 to present. It surfaces <strong>common patterns of noncompliance</strong> and staff recommendations across years, utilities, and sectors, so analysts, journalists, and advocates can spot systemic issues without reading 100+ individual PDFs.</p>
+
+    <h3>Key facts:</h3>
+    <ul>
+      <li><strong>Source:</strong> Audit reports published at <a href="https://www.ferc.gov/audits" rel="noopener">ferc.gov/audits</a> and the FERC eLibrary</li>
+      <li><strong>Coverage:</strong> ~120 FERC audits + ~80 state PUC audit documents + ~5 FERC formal-challenge/prudence reviews (multi-collection since v1.5)</li>
+      <li><strong>Extraction:</strong> Findings and recommendations quoted <strong>verbatim</strong> from each report's Executive Summary or findings section — no paraphrase, no LLM-judged editorial calls</li>
+      <li><strong>Data is the product:</strong> Every finding carries a source URL and capture date; users can trace any claim back to its original PDF</li>
+      <li><strong>Zero backend:</strong> Static baked JSON + vanilla HTML/CSS/JS, hosted on GitHub Pages. No ads, no cookies, no tracking</li>
+      <li><strong>Open:</strong> Codebase at <a href="https://github.com/pranava0x0/FERCforms" rel="noopener">github.com/pranava0x0/FERCforms</a>; data in <code>docs/data/*.json</code> and <code>llms.txt</code></li>
+    </ul>
+
+    <h2>Why does this matter?</h2>
+    <p>FERC audits surface the <strong>operational and financial compliance failures</strong> that affect utility ratepayers — improper cost allocations, missing documentation, policy violations. A single audit finding might note "$X million overcharged to customers" or "failure to implement required tariff." But finding those patterns requires reading hundreds of reports individually.</p>
+
+    <p>This explorer <strong>structures that corpus</strong> so you can ask:</p>
+    <ul>
+      <li><em>What compliance issues recur across utilities?</em></li>
+      <li><em>Which utilities show the most findings?</em></li>
+      <li><em>What themes carry the largest ratepayer impact?</em></li>
+      <li><em>How has noncompliance changed over time?</em></li>
+    </ul>
+
+    <p>The north-star feature (in development): <strong>"audit my filing"</strong> — given a company's Form 1 or other regulatory submission, flag the issues a FERC auditor would likely raise, using the pattern library mined here.</p>
+
+    <h2>How to use this explorer</h2>
+    <p><strong>Read a report:</strong> Click any card to expand its thread — each finding of noncompliance, with the staff recommendations nested beneath, quoted verbatim from the original PDF.</p>
+
+    <p><strong>Spot the trends:</strong> The "Top patterns of noncompliance" strip ranks the issues FERC raises most. Tap one to narrow the stream to reports with that issue.</p>
+
+    <p><strong>Filter &amp; search:</strong> Narrow by industry, FERC form, audit type, function, or year — or type a company or keyword in the Search box. Picks within one filter widen the results; picks across different filters narrow them.</p>
+
+    <p><strong>Trace the source:</strong> Every card links to FERC's original PDF via <em>View on eLibrary</em>. All findings are quoted verbatim with a capture date so you can verify the source.</p>
+
+    <h2>Collections &amp; scope</h2>
+    <p>The explorer now spans <strong>three collections</strong>:</p>
+    <ol>
+      <li><strong>FERC Audits</strong> (~120 reports) — FERC's direct audits of electric, gas, and oil utilities; financial (FA) and non-financial/compliance (PA) types; issued 2014–present.</li>
+      <li><strong>FERC Prudence Reviews</strong> (~5 reports) — Formal-challenge orders and ALJ decisions on fuel-cost and investment prudence, sourced from the FERC eLibrary.</li>
+      <li><strong>State PUC Audits</strong> (~80 reports) — Management audits, rate-case testimony, and fuel-cost reviews from state Public Utility Commissions (electric &amp; gas) across 20+ jurisdictions.</li>
+    </ol>
+
+    <p>Each collection has its own browsable tab and baked statistics; all are metadata-only (findings fully quoted with source links) except FERC audits, which have structured findings extraction.</p>
+
+    <h2>Technical approach</h2>
+    <p><strong>Data pipeline:</strong></p>
+    <ol>
+      <li><strong>Source discovery:</strong> FERC eLibrary AdvancedSearch API + browser-captured docket listings for state PUCs (Cloudflare/WAF-blocked sites use Chrome MCP capture).</li>
+      <li><strong>PDF extraction:</strong> pdfplumber + PyMuPDF for text, OCR fallback (tesseract) for scanned reports.</li>
+      <li><strong>Structure extraction:</strong> Pattern-matched TOC parsing → findings → recommendations; Pydantic validation with no-regression snapshot tests.</li>
+      <li><strong>Pattern mining:</strong> Keyword rules + theme tagging for common noncompliance patterns (below-the-line, affiliate, depreciation, AFUDC, cost-of-service, etc.).</li>
+      <li><strong>Baking:</strong> Static JSON (<code>docs/data/*.json</code>) → vanilla JS renderer. No database, no backend.</li>
+    </ol>
+
+    <p><strong>Code:</strong> All CLI-driven, agent-verifiable. Re-runs are idempotent and cacheable.</p>
+
+    <h2>Limitations &amp; scope</h2>
+    <ul>
+      <li><strong>FERC audits only</strong> — we cover FERC's Form 1/2/6 audits. FERC Enforcement actions (civil penalties, market-manipulation cases) are out of scope (but a planned future module).</li>
+      <li><strong>Historical, not prospective</strong> — we surface <em>past</em> compliance failures, not <em>future</em> regulatory proposals. For pending rules, see LegiScan or the FERC Notice of Proposed Rulemaking.</li>
+      <li><strong>Extracted findings are a subset</strong> — we parse the Executive Summary and findings sections. Detailed Section IV (dollar impacts, regulatory citations, remediation) is part of each PDF but not yet extracted.</li>
+      <li><strong>State coverage is partial</strong> — we've seeded high-value docs from 30+ states but have not exhaustively harvested all state PUC audit libraries.</li>
+      <li><strong>No LLM judgment</strong> — every statement is quoted verbatim. We don't rephrase, score, or invent severity ratings. This trades breadth for trustworthiness.</li>
+    </ul>
+
+    <h2 id="related-projects">Related Projects</h2>
+    <p>The FERC Audit Explorer draws inspiration and lessons from these related tools and initiatives in the public-interest data &amp; regulatory transparency space:</p>
+
+    <h3>Data Integration &amp; Infrastructure</h3>
+    <div class="project-card">
+      <h4><a href="https://pudl.readthedocs.io/" rel="noopener">PUDL (Public Utility Data Liberation Project)</a></h4>
+      <p>Open-source pipeline that aggregates energy data from FERC, EIA, EPA, PHMSA into analysis-ready databases. Covers operational/financial data (capacity, costs, generation).</p>
+      <p><strong>Lesson:</strong> How to unify data from multiple agencies with different schemas and update cycles. If you want to cross-reference our audit findings against the Form 1 numbers being audited, PUDL is the foundational infrastructure.</p>
+      <span class="project-url"><a href="https://github.com/catalyst-cooperative/pudl" rel="noopener">github.com/catalyst-cooperative/pudl</a></span>
+    </div>
+
+    <h3>Official Archives &amp; Raw Data</h3>
+    <div class="project-card">
+      <h4><a href="https://elibrary.ferc.gov/" rel="noopener">FERC eLibrary</a></h4>
+      <p>Official FERC searchable docket repository. The source for all our FERC audit PDFs and prudence reviews. Upstream of this explorer.</p>
+      <p><strong>Lesson:</strong> Official archives need better discoverability and synthesis for end users.</p>
+    </div>
+
+    <div class="project-card">
+      <h4><a href="https://data.ferc.gov/" rel="noopener">data.ferc.gov</a></h4>
+      <p>FERC's open data catalog. Structured datasets (EQRs, annual reports). Complementary to our findings library.</p>
+    </div>
+
+    <h3>Curated Public Datasets &amp; Investigations</h3>
+    <div class="project-card">
+      <h4><a href="https://www.propublica.org/datastore/" rel="noopener">ProPublica Data Store</a></h4>
+      <p>Curated, fact-checked datasets from ProPublica's investigative journalism (e.g., IRS audit rates by county, hospital pricing).</p>
+      <p><strong>Lesson:</strong> How to combine journalism + data to surface patterns. Connect findings to narrative impact, not just metrics.</p>
+    </div>
+
+    <div class="project-card">
+      <h4><a href="https://www.investigatewest.org/" rel="noopener">InvestigateWest</a></h4>
+      <p>Pacific Northwest nonprofit newsroom doing accountability investigations on energy, environment, and public health.</p>
+      <p><strong>Lesson:</strong> Pattern-mining feeds investigative narrative. Help users go from a pattern to deeper investigation.</p>
+    </div>
+
+    <h3>Legislative &amp; Regulatory Tracking</h3>
+    <div class="project-card">
+      <h4><a href="https://legiscan.com/" rel="noopener">LegiScan</a></h4>
+      <p>Tracks bills and legislation across all 50 states + Congress. Full-text search, status tracking, real-time alerts.</p>
+      <p><strong>Lesson:</strong> How to track prospective (future) regulation. Complementary to our retrospective audit findings.</p>
+    </div>
+
+    <div class="project-card">
+      <h4><a href="https://ballotpedia.org/Administrative_State_Index" rel="noopener">Ballotpedia Administrative State Index</a></h4>
+      <p>Reference for state and federal agencies and their audit authorities. Good for understanding <em>which agencies audit</em>; this explorer shows <em>what they found</em>.</p>
+    </div>
+
+    <h3>State-level Filing Centers</h3>
+    <p>State Public Utility Commission dockets (PA PUC, Texas PUCT, Oregon PUC, California CPUC, etc.) — The fragmented filing centers we're systematically harvesting. Each state's system is different, limiting cross-state analysis; that's why we've built unified access.</p>
+
+    <h2>Data &amp; Citation</h2>
+    <p><strong>License:</strong> The extracted findings and patterns are available under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC-BY-4.0</a> (attribute to this explorer). Source documents (PDFs) remain under FERC's and the state PUCs' respective licenses (typically public domain as government works).</p>
+
+    <p><strong>Cite this explorer:</strong></p>
+    <pre>FERC Audit Explorer. (2026). A browsable analysis of FERC utility audit findings, 2014–present.
+Retrieved from https://pranava0x0.github.io/FERCforms/</pre>
+
+    <p><strong>Machine-readable formats:</strong></p>
+    <ul>
+      <li><a href="llms.txt"><strong>llms.txt</strong></a> — Structured plain-text summary of the corpus (OpenAI llms.txt convention)</li>
+      <li><a href="llms-full.txt"><strong>llms-full.txt</strong></a> — Full findings-level corpus in llms.txt format</li>
+      <li><a href="data/reports.json"><strong>reports.json</strong></a> — Raw structured data (reports + findings + patterns)</li>
+    </ul>
+
+    <h2>Contact &amp; Contributing</h2>
+    <p>This is an independent public-interest tool built to serve analysts, journalists, and advocates. For questions, suggestions, or to report a data error:</p>
+    <ul>
+      <li><strong><a href="https://github.com/pranava0x0/FERCforms" rel="noopener">GitHub</a></strong> — issues, discussion</li>
+      <li><strong>Data verification:</strong> Every finding is quoted verbatim with a source PDF link. If you find an inaccuracy, <a href="https://github.com/pranava0x0/FERCforms/issues" rel="noopener">open an issue</a>.</li>
+    </ul>
+
+    <p><strong>Not affiliated with FERC.</strong> This explorer is an independent analysis tool; it is not an official FERC product and does not represent FERC's views.</p>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <p class="footer-source">
+      <a href="index.html">Back to explorer</a> ·
+      Source: <a href="https://www.ferc.gov/audits" rel="noopener">ferc.gov/audits</a> ·
+      Code: <a href="https://github.com/pranava0x0/FERCforms" rel="noopener">github.com/pranava0x0/FERCforms</a>
+    </p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

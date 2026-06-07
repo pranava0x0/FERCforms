@@ -148,6 +148,20 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - **[high] New collection: FERC Office of Enforcement actions (the real "other type of FERC stuff").** *(Q raised 2026-06-07: are there FERC categories beyond electric/gas/oil audits?)* The honest answer to "what else does FERC produce that flags noncompliance" isn't a new *sector* — it's a new *document type*: **OE civil-penalty settlements, Show Cause orders, market-manipulation cases, and self-reports** (the annual *Report on Enforcement* + the underlying eLibrary issuances). This is the most mission-aligned expansion — literally "issues a FERC regulator raised," complementing the audit pattern library — and it's where technology-specific matters (a battery/storage market-manipulation case, a nuclear cost dispute) would actually surface. Fits the existing multi-collection model (a 4th tab, metadata-only "Listed for reference", same `pipeline/sources.py` + eLibrary `AdvancedSearch` discovery). Adjacent but lower-priority cousins: **NERC reliability Notices of Penalty** (NERC-authored, filed at FERC) and **hydropower (Part I) license-compliance** matters (Office of Energy Projects, not DAA audits — niche).
 - **[high — large] Second module: forward-looking FERC dockets (not audits).** *(policy 2026-06-01: the audit corpus is **silent** on load growth, data centers, co-location and queue/speed.)* Those decisions live in *proceedings*, not audits — Order 2023 (interconnection queue reform), Order 1920 (long-term transmission planning), large-load / co-location dockets (e.g. the PJM–Susquehanna/AWS ISA proceeding), data-center tariff filings. A **separate** module that ingests those eLibrary dockets, **not** a tweak to the Audit Explorer (the audit pattern-library doesn't transfer). Big scope; fits the multi-module north star.
 
+## Competitive analysis & improvement themes
+
+- **[med] Learn from similar regulatory/audit document projects.** *(Added 2026-06-07.)* Research identified 8 comparable public-interest tools (see [About — Related Projects](docs/about.md#related-projects)): PUDL (energy data integration), FERC eLibrary (official archive), ProPublica Data Store (curated datasets), LegiScan (legislative tracking), Ballotpedia (agency reference), State PUCs (fragmented filing centers), InvestigateWest (investigative journalism). Key improvement themes to extract:
+    - **Multi-source corpus integration** — PUDL's approach to unifying data from multiple agencies (like our planned FERC + state PUC + prudence expansion) — how they handle schema mismatch, update cycles, deduplication.
+    - **Narrative accessibility** — ProPublica + InvestigateWest's story-first framing (connect findings to impact, not just metrics); apply to our findings summary cards.
+    - **Investigative scaffolding** — how journalism-backed tools guide users from a pattern to deeper investigation (bill tracking, donor links, related cases). Our "audit-my-document" feature needs this.
+    - **API + machine-readability** — PUDL's Python API + llms.txt sufficiency; is there a programmatic access pattern users expect?
+    - **State/regional expansion** — how state PUC centers fragment access; our metadata-only multi-state expansion should learn from their access patterns + pain points.
+    - **Update discipline** — PUDL's quarterly cadence + FERC's real-time + legiScan's live polling. Our refresh strategy (FERC dormant since Sept 2025; state runs ad-hoc) should be documented with expectations.
+    - **Visualization & trends** — how these tools rank/chart (ProPublica's explainers, Ballotpedia's tables). Our trends band is a start; deepen with narrative context.
+- **[low] Cite inspiration in About + footer.** Link [About — Related Projects](docs/about.md#related-projects) from the footer, so users see the ecosystem. Not a competing list, but an honest "if you want more context, also read X."
+
+---
+
 ## Design / UI — theme variants to A/B (user wants to test which sticks)
 
 - **[med] Wave-style threaded theme.** Google Wave inspiration: findings as threaded/conversational items with an inbox-like reading flow. Swappable.
