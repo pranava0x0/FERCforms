@@ -48,8 +48,9 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 
 ## Fully missing (no seed yet)
 
-- **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`) and **MT** (`psc.mt.gov`, partial MISO, unprobed).
-- **Large untapped:** **CA** (CPUC — PG&E/SCE/SDG&E, huge), **NY** (DPS DMM — Con Ed/National Grid), plus KS, OK, NE, MA, CT, AZ, NV, NM, TN, AL, and the Pacific NW. The corpus is currently **East / Midwest / South** weighted.
+- **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
+- **Southwest + Pacific Northwest (investigated 2026-06-07 — recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT** crack cleanly (plain-GET `.gov`, verified live) — ingest-ready, the power-cost-adjustment / DEAA / PCA / PCCAM proceedings are all on-theme. **AZ** (broken TLS on the eDocket image host → browser-capture) and **NM** (new PRCe360 registration wall) are blocked.
+- **Large untapped:** **CA** (CPUC — PG&E/SCE/SDG&E, huge), **NY** (DPS DMM — Con Ed/National Grid), plus KS, OK, NE, MA, CT, TN, AL. The corpus is currently **East / Midwest / South** weighted.
 
 ## Headline reads
 
