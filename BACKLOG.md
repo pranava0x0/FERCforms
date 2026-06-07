@@ -61,6 +61,8 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 *This session added 8 jurisdictions (GA LA MS AR MO MN WI CO) + MO Ameren FAC prudence, all metadata-only, `.gov`, verify-before-seeding, each with an access recipe in [docs/data-sources.md](docs/data-sources.md) and a `test_is_official_gov` assertion. Per-state mechanics + traps live in data-sources.md. Below is what's left.*
 
+**Per-state completeness audit (2026-06-07): [docs/state-coverage.md](docs/state-coverage.md)** — 25 jurisdictions / 83 docs, rated Complete/Good/Partial/Thin with each state's top gap. Use it to pick the next run: single-IOU samplers needing a 2nd IOU (IL+Ameren, LA+SWEPCO, SC+Duke, NJ+ACE, CO+Black Hills) and the thinnest/highest-upside (TX 1-of-7, MS generic, DE 1-doc, MN/OH 1-IOU) are the cheapest wins; CA/NY are the big untapped portals.
+
 - **[high] Expand within the 22 existing jurisdictions** (the cleanest near-term value — portals already cracked, recipes proven). Concrete per-state on-theme targets:
     - **GA** (FACTS, search-harvest): Georgia Power's *own* 2025 IRP direct testimony + the **July 15, 2025 IRP final order** (Docket 56002); the 2025 rate case.
     - **MO** (EFIS, scriptable): more Ameren **FAC prudence reviews** (earlier `EO-2013-0407`…`EO-2019-0257` Staff Reports; the **EO-2024-0053 Commission order** completing the Tenth-review pair) + the **Ameren large-load / data-center tariff docket** (`ET-…`, doc 848430); Evergy/KCP&L FAC (doc 68073).
