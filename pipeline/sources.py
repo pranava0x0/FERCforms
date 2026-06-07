@@ -45,8 +45,23 @@ _MIN_PDF_BYTES = 1024
 # A real document PDF is bigger than this; a smaller one that still has the %PDF
 # magic is usually a scanned cover sheet or an eDocket "placeholder" (e.g. AZ's
 # edocket.azcc.gov/docketpdf/ returns blank ~5 KB pages). We still keep it, but
-# log a warning so it surfaces for page-1 verification instead of passing silently.
-_SUSPICIOUS_PDF_BYTES = 3000
+# log a warning so it surfaces for page-1 verification instead of passing
+# silently. Set above the observed ~5 KB placeholder; the smallest real orders
+# we've ingested are tens of KB, so this won't false-flag legitimate short docs.
+_SUSPICIOUS_PDF_BYTES = 8192
+
+
+def _return_cached(dest: Path) -> Path:
+    """Return an already-downloaded PDF, re-warning if it's suspiciously small —
+    so a previously-cached blank placeholder doesn't go silent on re-runs."""
+    n = dest.stat().st_size
+    if n < _SUSPICIOUS_PDF_BYTES:
+        logger.warning(
+            "cached: %s is only %d bytes — possible placeholder/cover page; verify page 1", dest.name, n
+        )
+    else:
+        logger.info("cached: %s", dest.name)
+    return dest
 
 
 def _backoff_seconds(attempt: int) -> float:
@@ -117,8 +132,7 @@ def fetch_doc(
     """Download one source PDF to raw_dir/<id>.pdf. Raises SourceFetchError."""
     dest = raw_dir / f"{seed.id}.pdf"
     if not force and dest.exists() and dest.stat().st_size > _MIN_PDF_BYTES:
-        logger.info("cached: %s", dest.name)
-        return dest
+        return _return_cached(dest)
 
     last_error: str | None = None
     for attempt in range(1, config.MAX_RETRIES + 1):
@@ -253,8 +267,7 @@ def _fetch_elibrary_once(
     acc = seed.accession
     dest = raw_dir / f"{acc}.pdf"
     if not force and dest.exists() and dest.stat().st_size > _MIN_PDF_BYTES:
-        logger.info("cached: %s", dest.name)
-        return dest
+        return _return_cached(dest)
     filelist = f"{config.ELIBRARY_ORIGIN}/eLibrary/filelist?accession_number={acc}&optimized=false"
     if not session.cookies:  # seed the F5 session cookie once
         session.get(filelist, timeout=ELIBRARY_SINGLE_TIMEOUT).raise_for_status()

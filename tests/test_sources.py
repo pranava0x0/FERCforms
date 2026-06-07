@@ -257,6 +257,40 @@ def test_fetch_doc_warns_on_suspiciously_small_pdf(tmp_path, caplog):
     assert any("possible placeholder" in r.message for r in caplog.records)
 
 
+def test_fetch_doc_warns_on_5kb_placeholder(tmp_path, caplog):
+    # The observed real failure mode: AZ edocket.azcc.gov/docketpdf/ returns a
+    # blank ~5 KB %PDF. The threshold must sit ABOVE this size (it didn't at 3 KB).
+    blank_5kb = b"%PDF-1.4\n" + b"\x00" * 5000  # ~5 KB, valid magic
+    assert len(blank_5kb) > 3000 and len(blank_5kb) < sources._SUSPICIOUS_PDF_BYTES
+    s = _FakeSession(_FakeResp(200, blank_5kb, "application/pdf"))
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists()
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_cached_small_pdf_rewarns_on_rerun(tmp_path, caplog):
+    # A previously-cached blank placeholder must NOT go silent on a re-run.
+    seed = _seed()
+    dest = tmp_path / f"{seed.id}.pdf"
+    dest.write_bytes(b"%PDF-1.4\n" + b"\x00" * 5000)  # ~5 KB cached placeholder
+    s = _FakeSession(_FakeResp(500, b"should-not-be-called"))  # cache hit => no fetch
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, seed, tmp_path)
+    assert out == dest and s.calls == 0  # served from cache, no network
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_cached_full_size_pdf_is_silent(tmp_path, caplog):
+    seed = _seed()
+    dest = tmp_path / f"{seed.id}.pdf"
+    dest.write_bytes(b"%PDF-1.4\n" + b"x" * 20000)  # a normal-size cached doc
+    s = _FakeSession(_FakeResp(500, b"x"))
+    with caplog.at_level(logging.WARNING):
+        sources.fetch_doc(s, seed, tmp_path)
+    assert not any("possible placeholder" in r.message for r in caplog.records)
+
+
 def test_fetch_doc_exhausts_retries_on_server_error(tmp_path):
     s = _FakeSession(_FakeResp(500, b"oops", "text/html"))
     with pytest.raises(sources.SourceFetchError, match="unexpected response: 500"):
