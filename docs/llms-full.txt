@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 217 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 224 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5519,6 +5519,17 @@ Management Efficiency Investigation (follow-up to the 2022 Management & Operatio
 
 ---
 
+## Puget Sound Energy
+- Collection: State PUC Audits | Source: Washington Utilities and Transportation Commission
+- Docket: UE-220066 | Audit type: n/a
+- Issued: 2025-09-04 | Industry: electric | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/casedocket/2022/220066
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG-220067 (Consolidated), Washington Utilities and Transportation Commission v. Puget Sound Energy — on PSE's petition for an order authorizing deferred accounting treatment for PSE's share of certain costs (5 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&year=2022&docketNumber=220066).
+
+---
+
 ## Commonwealth Edison Company
 - Collection: State PUC Audits | Source: Illinois Commerce Commission
 - Docket: 24-0087 | Audit type: n/a
@@ -5604,6 +5615,17 @@ Entergy Arkansas, LLC's 2025 Rider FRP filing — Application for Approval of a 
 - Status: listed for reference (not machine-parsed into findings)
 
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
+
+---
+
+## Idaho Power Company
+- Collection: State PUC Audits | Source: Idaho Public Utilities Commission
+- Docket: IPC-E-25-20 | Audit type: n/a
+- Issued: 2025-05-30 | Industry: electric | FERC Form: n/a
+- Source page: https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520
+- Status: listed for reference (not machine-parsed into findings)
+
+Idaho PUC Order No. 36618 (Final Order, service date May 30, 2025), Case No. IPC-E-25-20, on Idaho Power Company's annual Power Cost Adjustment (PCA) for June 1, 2025 through May 31, 2026 (5 pp). The PCA is Idaho's fuel/purchased-power true-up — a reasonableness review of power-supply costs passed to customers. Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520/OrdNotc/20250530Final_Order_No_36618.pdf).
 
 ---
 
@@ -6029,6 +6051,17 @@ Florida PSC Order No. PSC-2023-0342-FOF-EG (Final Order), Docket No. 20230002-EG
 
 ---
 
+## NorthWestern Energy
+- Collection: State PUC Audits | Source: Montana Public Service Commission
+- Docket: 2022.07.078 | Audit type: n/a
+- Issued: 2023-10-27 | Industry: electric | FERC Form: n/a
+- Source page: https://psc.mt.gov/News/2023/NWERateCaseDecision
+- Status: listed for reference (not machine-parsed into findings)
+
+Montana PSC Final Order No. 7860y (October 27, 2023), Docket 2022.07.078, In re NorthWestern Energy's Application for Authority to Increase Retail Electric and Natural Gas Utility Service Rates — the Commission's order on NorthWestern's combined electric/gas general rate case, including cost of service, rate design, and the Power Costs and Credit Adjustment Mechanism (PCCAM) base (105 pp). Listed for reference (metadata-only). Source: Montana PSC (psc.mt.gov/News/Special/FinalOrder7860y_DOC-26058.pdf).
+
+---
+
 ## The Potomac Edison Company
 - Collection: State PUC Audits | Source: Maryland Public Service Commission
 - Docket: 9695 | Audit type: n/a
@@ -6213,6 +6246,17 @@ Recommendations:
 
 ---
 
+## Idaho Power Company
+- Collection: State PUC Audits | Source: Idaho Public Utilities Commission
+- Docket: IPC-E-22-11 | Audit type: n/a
+- Issued: 2022-05-31 | Industry: electric | FERC Form: n/a
+- Source page: https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211
+- Status: listed for reference (not machine-parsed into findings)
+
+Idaho PUC Order No. 35421 (Final Order, service date May 31, 2022), Case No. IPC-E-22-11, on Idaho Power Company's annual Power Cost Adjustment (PCA) effective June 1, 2022 through May 31, 2023 — an overall revenue increase of ~$103.4 million (8.27%) (10 pp). Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211/OrdNotc/20220531Final_Order_No_35421.pdf).
+
+---
+
 ## Entergy Louisiana, LLC
 - Collection: State PUC Audits | Source: Louisiana Public Service Commission
 - Docket: n/a | Audit type: n/a
@@ -6232,6 +6276,17 @@ Direct Testimony of Ryan D. Jones on behalf of Entergy Louisiana, LLC, in Enterg
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Management, New Generation Program Execution) on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, Public Redacted Version, December 2021 (49 pp). Addresses the owner's oversight during the development, design-engineering, and procurement phases of the project, which began commercial operation March 28, 2020. Related to construction-approval Order No. U-34283 (July 20, 2017); the review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file f1nYMQY9MWc= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D).
+
+---
+
+## Portland General Electric Company
+- Collection: State PUC Audits | Source: Public Utility Commission of Oregon
+- Docket: UE-380 | Audit type: n/a
+- Issued: 2021-12-07 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=21-457
+- Status: listed for reference (not machine-parsed into findings)
+
+Oregon PUC Order No. 21-457 (entered December 7, 2021) in the matter of Portland General Electric Company's 2020 Annual Power Cost Variance / Power Cost Adjustment Mechanism (PCAM) (9 pp) — the Commission's review of the difference between PGE's actual and forecast net variable power costs. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2021ords/21-457.pdf).
 
 ---
 
@@ -6265,6 +6320,17 @@ Florida PSC Order No. PSC-2019-0504-FOF-EG (Final Order), Docket No. 20190002-EG
 - Status: listed for reference (not machine-parsed into findings)
 
 Florida PSC Order No. PSC-2019-0500-FOF-EI (Final Order), Docket No. 20190007-EI, 'Environmental cost recovery clause', issued November 22, 2019 (11 pp) — the Commission's annual review of the reasonableness of environmental-compliance project costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities (Section 366.8255, Fla. Stat.). Listed for reference (metadata-only). Source: Florida PSC document clerk, document 11080-2019 (psc.state.fl.us/library/Orders/2019/11080-2019.pdf).
+
+---
+
+## PacifiCorp d/b/a Pacific Power
+- Collection: State PUC Audits | Source: Public Utility Commission of Oregon
+- Docket: UE-344 | Audit type: n/a
+- Issued: 2018-11-30 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=18-449
+- Status: listed for reference (not machine-parsed into findings)
+
+Oregon PUC Order No. 18-449 (entered November 30, 2018), Docket UE 344, in the matter of PacifiCorp (dba Pacific Power) 2017 Power Cost Adjustment Mechanism (PCAM) (12 pp) — the Commission's review of PacifiCorp's actual vs. forecast net power costs under its PCAM/TAM. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2018ords/18-449.pdf).
 
 ---
 
@@ -6441,6 +6507,17 @@ Missouri Public Service Commission Staff Report — Tenth Prudence Review of Cos
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Missouri Public Service Commission (session order) addressing Union Electric Company d/b/a Ameren Missouri's Fuel Adjustment Clause true-up (File No. EO-2022-0027), Fuel Adjustment Rate adjustment (File No. ER-2022-0026), and related rate proceeding (ER-2021-0240) (15 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 80659 (efis.psc.mo.gov/Document/Display/80659).
+
+---
+
+## Nevada Power Company d/b/a NV Energy
+- Collection: State PUC Audits | Source: Public Utilities Commission of Nevada
+- Docket: 25-02016 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://pucweb1.state.nv.us/PUC2/Dktinfo.aspx?Util=Electric
+- Status: listed for reference (not machine-parsed into findings)
+
+Public Utilities Commission of Nevada filing in Docket No. 25-02016 — Application of Nevada Power Company d/b/a NV Energy for authority to adjust its annual revenue requirement for general rates charged to all classes of electric customers (NV Energy 2025 general rate case) (3 pp). Listed for reference (metadata-only). Source: PUCN document store (pucweb1.state.nv.us/pdf/CS27269.pdf).
 
 ---
 

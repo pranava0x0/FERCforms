@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2025-05-30_idaho-power_id-ipc-e-25-20-order-36618-pca",
+    "company": "Idaho Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "ID",
+    "source": "Idaho Public Utilities Commission",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520/OrdNotc/20250530Final_Order_No_36618.pdf",
+    "source_page_url": "https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520",
+    "issued_date": "2025-05-30",
+    "docket": "IPC-E-25-20",
+    "captured_at": "2026-06-07",
+    "source_note": "Idaho PUC Order No. 36618 (Final Order, service date May 30, 2025), Case No. IPC-E-25-20, on Idaho Power Company's annual Power Cost Adjustment (PCA) for June 1, 2025 through May 31, 2026 (5 pp). The PCA is Idaho's fuel/purchased-power true-up — a reasonableness review of power-supply costs passed to customers. Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520/OrdNotc/20250530Final_Order_No_36618.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2022-05-31_idaho-power_id-ipc-e-22-11-order-35421-pca",
+    "company": "Idaho Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "ID",
+    "source": "Idaho Public Utilities Commission",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211/OrdNotc/20220531Final_Order_No_35421.pdf",
+    "source_page_url": "https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211",
+    "issued_date": "2022-05-31",
+    "docket": "IPC-E-22-11",
+    "captured_at": "2026-06-07",
+    "source_note": "Idaho PUC Order No. 35421 (Final Order, service date May 31, 2022), Case No. IPC-E-22-11, on Idaho Power Company's annual Power Cost Adjustment (PCA) effective June 1, 2022 through May 31, 2023 — an overall revenue increase of ~$103.4 million (8.27%) (10 pp). Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2211/OrdNotc/20220531Final_Order_No_35421.pdf).",
+    "parse": false
+  }
+]

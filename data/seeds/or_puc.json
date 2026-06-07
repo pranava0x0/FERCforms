@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2021-12-07_portland-general-electric_or-ue-380-order-21-457-pcam",
+    "company": "Portland General Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2021ords/21-457.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=21-457",
+    "issued_date": "2021-12-07",
+    "docket": "UE-380",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 21-457 (entered December 7, 2021) in the matter of Portland General Electric Company's 2020 Annual Power Cost Variance / Power Cost Adjustment Mechanism (PCAM) (9 pp) — the Commission's review of the difference between PGE's actual and forecast net variable power costs. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2021ords/21-457.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2018-11-30_pacificorp_or-ue-344-order-18-449-pcam",
+    "company": "PacifiCorp d/b/a Pacific Power",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2018ords/18-449.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=18-449",
+    "issued_date": "2018-11-30",
+    "docket": "UE-344",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 18-449 (entered November 30, 2018), Docket UE 344, in the matter of PacifiCorp (dba Pacific Power) 2017 Power Cost Adjustment Mechanism (PCAM) (12 pp) — the Commission's review of PacifiCorp's actual vs. forecast net power costs under its PCAM/TAM. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2018ords/18-449.pdf).",
+    "parse": false
+  }
+]

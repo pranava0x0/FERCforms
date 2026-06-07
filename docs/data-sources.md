@@ -280,10 +280,11 @@ Each commission's docket system is different. Patterns below are all confirmed b
 - **MISO gap note:** ND + SD close two of the four missing MISO-footprint states; **IA** (`efs.iowa.gov`) is WAF-blocked
   (browser-capture + `fetch=false`, OH/NC pattern) and **MT** (`psc.mt.gov`) is cracked — see the Western section below.
 
-## Southwest & Pacific Northwest states (investigated 2026-06-07, not yet seeded)
+## Southwest & Pacific Northwest states (5 shipped 2026-06-07; AZ + NM blocked)
 
-The Western Interconnection PUCs. **Five crack cleanly** (plain GET, pipeline UA, no WAF, `.gov`, verified live —
-HTTP 200 + born-digital `%PDF`); **two are blocked** (AZ broken TLS, NM registration wall). Signature on-theme
+The Western Interconnection PUCs. **Five crack cleanly and are seeded** (plain GET, pipeline UA, no WAF, `.gov`,
+verified live — HTTP 200 + born-digital `%PDF`): `data/seeds/{wa_utc,or_puc,id_puc,mt_psc,nv_pucn}.json`, each with a
+`test_is_official_gov` assertion. **Two are blocked** (AZ broken TLS, NM registration wall). Signature on-theme
 proceeding everywhere out here is the annual **power-cost adjustment** (each state's fuel-equivalent: PCA / PCAM / PCCAM / DEAA).
 
 - **WA — Washington UTC** ✅ `utc.wa.gov`. Clean document API: `https://apiproxy.utc.wa.gov/cases/GetDocument?docID={ID}&year={YEAR}&docketNumber={DOCKET}` (verified 200, 0.9 MB PDF). Human docket pages list docs/orders: `utc.wa.gov/casedocket/{YEAR}/{DOCKET}/docsets` and `…/orders` (harvest the `docID`s there). IOUs: **Puget Sound Energy**, **Avista**, **PacifiCorp**. On-theme: GRCs, power-cost / multiyear rate plans, refunds.
