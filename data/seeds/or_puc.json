@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2021-12-07_portland-general-electric_or-ue-380-order-21-457-pcam",
+    "company": "Portland General Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2021ords/21-457.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=21-457",
+    "issued_date": "2021-12-07",
+    "docket": "UE-380",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 21-457 (entered December 7, 2021) in the matter of Portland General Electric Company's 2020 Annual Power Cost Variance / Power Cost Adjustment Mechanism (PCAM) (9 pp) — the Commission's review of the difference between PGE's actual and forecast net variable power costs. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2021ords/21-457.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2018-11-30_pacificorp_or-ue-344-order-18-449-pcam",
+    "company": "PacifiCorp d/b/a Pacific Power",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost adjustment order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2018ords/18-449.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=18-449",
+    "issued_date": "2018-11-30",
+    "docket": "UE-344",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 18-449 (entered November 30, 2018), Docket UE 344, in the matter of PacifiCorp (dba Pacific Power) 2017 Power Cost Adjustment Mechanism (PCAM) (12 pp) — the Commission's review of PacifiCorp's actual vs. forecast net power costs under its PCAM/TAM. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2018ords/18-449.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2022-05-31_idaho-power_or-ue-398-order-22-191-apcu",
+    "company": "Idaho Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "OR",
+    "source": "Public Utility Commission of Oregon",
+    "doc_type": "power cost update order",
+    "industry": "electric",
+    "pdf_url": "https://apps.puc.state.or.us/orders/2022ords/22-191.pdf",
+    "source_page_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=22-191",
+    "issued_date": "2022-05-31",
+    "docket": "UE-398",
+    "captured_at": "2026-06-07",
+    "source_note": "Oregon PUC Order No. 22-191 (entered May 31, 2022), Docket UE 398, in the matter of Idaho Power Company's 2022 Annual Power Cost Update (APCU) (15 pp) — the Commission's annual update of Idaho Power's Oregon net power supply expense in rates. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2022ords/22-191.pdf).",
+    "parse": false
+  }
+]

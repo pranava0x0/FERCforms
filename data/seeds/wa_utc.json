@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2025-09-04_puget-sound-energy_wa-ue-220066-order-38",
+    "company": "Puget Sound Energy",
+    "collection": "state_audit",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "deferred accounting order",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&year=2022&docketNumber=220066",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2022/220066",
+    "issued_date": "2025-09-04",
+    "docket": "UE-220066",
+    "captured_at": "2026-06-07",
+    "source_note": "Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG-220067 (Consolidated), Washington Utilities and Transportation Commission v. Puget Sound Energy — on PSE's petition for an order authorizing deferred accounting treatment for PSE's share of certain costs (5 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&year=2022&docketNumber=220066).",
+    "parse": false
+  },
+  {
+    "id": "2025-09-04_avista_wa-ue-220053-order",
+    "company": "Avista Corporation d/b/a Avista Utilities",
+    "collection": "state_audit",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "commission order",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=1913&year=2022&docketNumber=220053",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2022/220053",
+    "issued_date": "2025-09-04",
+    "docket": "UE-220053",
+    "captured_at": "2026-06-07",
+    "source_note": "Washington UTC order (service date September 4, 2025), Washington Utilities and Transportation Commission v. Avista Corporation d/b/a Avista Utilities, Dockets UE-220053 / UG-220054 / UE-210854 (Consolidated) — an order in Avista's general rate case proceeding (7 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=1913&year=2022&docketNumber=220053).",
+    "parse": false
+  },
+  {
+    "id": "2026-03-13_pacificorp_wa-ue-230172-order",
+    "company": "PacifiCorp d/b/a Pacific Power & Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "commission order",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=5142&year=2023&docketNumber=230172",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2023/230172",
+    "issued_date": "2026-03-13",
+    "docket": "UE-230172",
+    "captured_at": "2026-06-07",
+    "source_note": "Washington UTC order (service date March 13, 2026), Washington Utilities and Transportation Commission v. PacifiCorp d/b/a Pacific Power & Light Company, Docket UE-230172 (6 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=5142&year=2023&docketNumber=230172).",
+    "parse": false
+  }
+]

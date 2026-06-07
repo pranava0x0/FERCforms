@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2025-04-25_rocky-mountain-power_ut-24-035-04-rate-case-order",
+    "company": "Rocky Mountain Power (PacifiCorp)",
+    "collection": "state_audit",
+    "jurisdiction": "UT",
+    "source": "Public Service Commission of Utah",
+    "doc_type": "rate case report and order",
+    "industry": "electric",
+    "pdf_url": "https://pscdocs.utah.gov/electric/24docs/2403504/3395032403504,2303540,and2303544o4-25-2025.pdf",
+    "source_page_url": "https://psc.utah.gov/electric/orders-notices/electric-2025/",
+    "issued_date": "2025-04-25",
+    "docket": "24-035-04",
+    "captured_at": "2026-06-07",
+    "source_note": "Report and Order of the Public Service Commission of Utah (April 25, 2025) on the Application of Rocky Mountain Power (PacifiCorp) for Authority to Increase its Retail Electric Utility Service Rates in Utah, Docket No. 24-035-04 (consolidated 23-035-40, 23-035-44) — a base-rate case (~$382.1M requested increase) (196 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403504/).",
+    "parse": false
+  },
+  {
+    "id": "2024-11-05_rocky-mountain-power_ut-24-035-01-eba-audit-cy2023",
+    "company": "Rocky Mountain Power (PacifiCorp)",
+    "collection": "state_audit",
+    "jurisdiction": "UT",
+    "source": "Public Service Commission of Utah",
+    "doc_type": "energy balancing account audit report",
+    "industry": "electric",
+    "pdf_url": "https://pscdocs.utah.gov/electric/24docs/2403501/336428DPUExhbt2.2DirEBAAdtRprtCY202311-5-2024.pdf",
+    "source_page_url": "https://psc.utah.gov/electric/orders-notices/electric-2025/",
+    "issued_date": "2024-11-05",
+    "docket": "24-035-01",
+    "captured_at": "2026-06-07",
+    "source_note": "Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel & purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).",
+    "parse": false
+  }
+]

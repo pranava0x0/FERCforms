@@ -1,0 +1,18 @@
+[
+  {
+    "id": "2025_nevada-power_nv-25-02016-grc-notice",
+    "company": "Nevada Power Company d/b/a NV Energy",
+    "collection": "state_audit",
+    "jurisdiction": "NV",
+    "source": "Public Utilities Commission of Nevada",
+    "doc_type": "rate case notice",
+    "industry": "electric",
+    "pdf_url": "https://pucweb1.state.nv.us/pdf/CS27269.pdf",
+    "source_page_url": "https://pucweb1.state.nv.us/PUC2/Dktinfo.aspx?Util=Electric",
+    "issued_date": null,
+    "docket": "25-02016",
+    "captured_at": "2026-06-07",
+    "source_note": "Public Utilities Commission of Nevada filing in Docket No. 25-02016 — Application of Nevada Power Company d/b/a NV Energy for authority to adjust its annual revenue requirement for general rates charged to all classes of electric customers (NV Energy 2025 general rate case) (3 pp). Listed for reference (metadata-only). Source: PUCN document store (pucweb1.state.nv.us/pdf/CS27269.pdf).",
+    "parse": false
+  }
+]

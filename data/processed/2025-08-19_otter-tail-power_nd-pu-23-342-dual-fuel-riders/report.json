@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "ND",
+  "source": "North Dakota Public Service Commission",
+  "doc_type": "fuel rider filing",
+  "id": "2025-08-19_otter-tail-power_nd-pu-23-342-dual-fuel-riders",
+  "company": "Otter Tail Power Company",
+  "company_raw": "Otter Tail Power Company",
+  "docket": "PU-23-342",
+  "docket_full": null,
+  "issued_date": "2025-08-19",
+  "source_page_url": "https://www.psc.nd.gov/public/cases/",
+  "pdf_download_url": "https://www.psc.nd.gov/webdocs/case/23-0342/157-010.pdf",
+  "captured_at": "2026-06-07",
+  "source_note": "Otter Tail Power Company filing (August 19, 2025) before the North Dakota Public Service Commission in its Dual Fuel Riders proceeding, Case No. PU-23-342 (10 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 157-010 (psc.nd.gov/webdocs/case/23-0342/157-010.pdf).",
+  "archived_via": null,
+  "page_count": 10,
+  "scanned_pages": [
+    5,
+    6,
+    10
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

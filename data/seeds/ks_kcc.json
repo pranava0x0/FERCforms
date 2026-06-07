@@ -1,0 +1,34 @@
+[
+  {
+    "id": "evergy-kansas-central_ks-25-ekce-294-rts-order-approving-settlement",
+    "company": "Evergy Kansas Central, Inc. and Evergy Kansas South, Inc.",
+    "collection": "state_audit",
+    "jurisdiction": "KS",
+    "source": "Kansas Corporation Commission",
+    "doc_type": "rate case order",
+    "industry": "electric",
+    "pdf_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/Noticed_1._25-294_Order_appoving_unanimous_SA_(002).pdf?Id=a0f02909-3351-4599-8d21-75c879fdd16c",
+    "source_page_url": "https://estar.kcc.ks.gov/",
+    "issued_date": null,
+    "docket": "25-EKCE-294-RTS",
+    "captured_at": "2026-06-07",
+    "source_note": "Kansas Corporation Commission Order approving the unanimous Settlement Agreement in the Evergy Kansas Central, Inc. and Evergy Kansas South, Inc. base-rate case, Docket No. 25-EKCE-294-RTS (88 pp) — the utilities' application sought a net revenue-requirement increase of ~$196.4M (~$192M base, 8.64%). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id a0f02909-3351-4599-8d21-75c879fdd16c).",
+    "parse": false
+  },
+  {
+    "id": "2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation",
+    "company": "Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc.",
+    "collection": "state_audit",
+    "jurisdiction": "KS",
+    "source": "Kansas Corporation Commission",
+    "doc_type": "winter-storm cost investigation stipulation",
+    "industry": "electric",
+    "pdf_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/S202204221602125925.pdf?Id=54e98b5e-d9e2-4627-8355-b0c65b057bd9",
+    "source_page_url": "https://estar.kcc.ks.gov/",
+    "issued_date": "2022-04-22",
+    "docket": "21-EKME-329-GIE",
+    "captured_at": "2026-06-07",
+    "source_note": "Joint Motion to Approve Non-Unanimous Stipulation and Agreement (filed April 22, 2022) in the Kansas Corporation Commission's Investigation into Evergy Kansas Metro and Evergy Kansas Central regarding the February 2021 Winter Weather Events (Winter Storm Uri), Docket No. 21-EKME-329-GIE (contemplated by Docket 21-GIMX-303-MIS) — addressing the recovery and prudence of the extraordinary fuel and purchased-power costs Evergy incurred during the storm (21 pp). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id 54e98b5e-d9e2-4627-8355-b0c65b057bd9).",
+    "parse": false
+  }
+]

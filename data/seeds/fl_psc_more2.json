@@ -1,0 +1,18 @@
+[
+  {
+    "id": "2019-11-25_florida-iou_fl-20190002-eg-psc-2019-0504-fof-eg",
+    "company": "Florida investor-owned utilities (energy conservation cost recovery)",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "final order on conservation cost recovery",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/library/Orders/2019/11112-2019.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/document-detail?orderNum=PSC-2019-0504-FOF-EG",
+    "issued_date": "2019-11-25",
+    "docket": "20190002-EG",
+    "captured_at": "2026-06-07",
+    "source_note": "Florida PSC Order No. PSC-2019-0504-FOF-EG (Final Order), Docket No. 20190002-EG, 'Energy conservation cost recovery clause', issued November 25, 2019 (11 pp) — the Commission's annual review of energy-conservation / demand-side-management program cost recovery, approving the conservation cost-recovery amounts, tariffs, and factors for 2020 for Florida's investor-owned utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 11112-2019 (psc.state.fl.us/library/Orders/2019/11112-2019.pdf).",
+    "parse": false
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "ND",
+  "source": "North Dakota Public Service Commission",
+  "doc_type": "rider update application",
+  "id": "2025-07-15_montana-dakota-utilities_nd-pu-25-225-tca",
+  "company": "Montana-Dakota Utilities Co.",
+  "company_raw": "Montana-Dakota Utilities Co.",
+  "docket": "PU-25-225",
+  "docket_full": null,
+  "issued_date": "2025-07-15",
+  "source_page_url": "https://www.psc.nd.gov/public/cases/",
+  "pdf_download_url": "https://www.psc.nd.gov/webdocs/case/25-0225/001-010.pdf",
+  "captured_at": "2026-06-07",
+  "source_note": "Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).",
+  "archived_via": null,
+  "page_count": 55,
+  "scanned_pages": [
+    14,
+    17,
+    19
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

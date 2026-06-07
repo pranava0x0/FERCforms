@@ -41,6 +41,27 @@ These are non-negotiable and enforced in code where possible:
 | `fetch` | `true`  | `false` ⇒ **don't** machine-fetch — the URL was captured out-of-band (a WAF-blocked source opened in a browser); write metadata-only straight from the seed (page_count 0). |
 | `accession` | `null` | set ⇒ fetch via the FERC eLibrary F5 cookie dance instead of a plain GET. |
 
+### Access failure modes & how the fetcher handles them
+
+State/territory portals fail in a handful of recurring ways. `pipeline/sources.fetch_doc`
+(the plain-GET path) now classifies each so a run never wastes retries on an unfixable error,
+never silently accepts junk, and always logs the *fix* — and every failure is still **best-effort**
+(`process_seed` writes a metadata-only record on any miss, so one bad doc never aborts a run).
+
+| Failure mode | Symptom | Fetcher behavior | Operator fix |
+|---|---|---|---|
+| **Throttling / connection reset** | `ConnectionError` / read timeout / curl `000` after a burst (seen on `puc.idaho.gov`, `apps.puc.state.or.us`, `apiproxy.utc.wa.gov`) | **exponential backoff + jitter** (`_backoff_seconds`, capped 90s) then retry, up to `MAX_RETRIES` | space out requests; re-run (idempotent). Don't hammer. |
+| **Rate limit** | `HTTP 429` | same exponential backoff + retry | re-run later |
+| **Broken / mismatched TLS** | `SSLError` (hostname mismatch) — AZ `images.edocket.azcc.gov`, MS InSite `psc.state.ms.us` | **fail fast, no retry** (a cert won't fix on retry); error names the fix | use a valid-cert host alias (AZ → `docket.images.azcc.gov`), else browser-capture + `fetch=false` |
+| **WAF / login wall** | `HTTP 401/403` (OH PUCO F5, NC Cloudflare, IA `efs.iowa.gov`, NM PRCe360 `Login.aspx`) | **fail fast, no retry**; error says "open in a browser, seed `fetch=false`" | Chrome MCP capture + `fetch=false`, or a non-walled host |
+| **Blank placeholder PDF** | `200` + `%PDF` magic but tiny (~5 KB), no real content — AZ `edocket.azcc.gov/docketpdf/` | kept, but **logged `WARNING: possible placeholder/cover page`** (`< _SUSPICIOUS_PDF_BYTES`) | page-1-verify; switch to the real-doc host/path |
+| **eLibrary slow on huge decisions** | 90s read timeout on big ALJ orders | `_fetch_elibrary_once` is one-shot, 90s; metadata-only on miss | re-run when eLibrary is quiet (page counts backfill) |
+| **UA-filtered IIS** | `404.19` to any UA containing `python-requests` (WV) | n/a — `config.USER_AGENT` carries **no** library token | — |
+
+**Verify-before-seed still applies on top of all this:** a `200` + `%PDF` only means *a* PDF came back,
+not the *right* one — read page 1 (locally with `fitz`; `WebFetch` saves the binary even when it can't
+render it) before labelling `company` / `issued_date` / `doc_type`.
+
 ### Cross-portal techniques (learned in the 2026-06-02 multi-state expansion — GA/LA/MS/AR/MO/MN/WI/CO)
 
 These generalize across the per-state recipes below. They're the difference between an hour and ten minutes per state.
@@ -80,6 +101,22 @@ These generalize across the per-state recipes below. They're the difference betw
 ## State PUC / PSC / SCC sources
 
 Each commission's docket system is different. Patterns below are all confirmed by live capture.
+
+### Access tiers (the at-a-glance map — learned across the 2026 expansion)
+
+Every commission falls into one of five access tiers. **Tiers 1–2 are scriptable** (plain `requests` GET, the
+default path) and account for all 39 seeded jurisdictions; **tiers 3–5 need a browser** and are the remaining backlog.
+
+| Tier | How docs are served | States | Method |
+|------|---------------------|--------|--------|
+| **1 · Static `.gov` PDF** | predictable URL path on a `.gov`/`*.state.xx.us`/`.org`-allowlisted host | PA MI VA TX IL SC GA LA AR MO MN WI CO ND SD ID OR NV MT FL KS UT CT RI NY(summaries) NE TN + DC | seed `pdf_url` directly; **verify page 1** (filenames lie — caught a DSM order named "…Settlement", an energy-*data* tariff, IRPs, a résumé) |
+| **2 · Scriptable doc-API / valid-cert alias** | a GET endpoint returning the PDF (eLibrary F5 dance; WA `GetDocument`; AZ `docket.images.azcc.gov`; NY DMM `ViewDoc?DocRefId`) | FERC, WA, AZ, NY(orders) | accession/guid/docID harvested from search or a docket page; **AZ gotcha:** use the valid-cert host (`docket.images.azcc.gov`), not the broken-cert `images.edocket.azcc.gov` nor the blank-placeholder `edocket.azcc.gov/docketpdf/` |
+| **3 · HTML-only** | decisions published as HTML, no PDF (`.PDF` 404s) | **CA** (CPUC) | seed `fetch=false` with the `.htm` URL (captured by reference, page_count 0); `WebFetch` reads the HTML to verify |
+| **4 · WAF / TLS-broken** | scripts get 403 / Access-Denied / SSL-mismatch | OH NC IA NH(Akamai) AL · MS(TLS) | browser-capture (Chrome MCP) + `fetch=false` |
+| **5 · DMS/CMS/SPA/login-wall** | doc list is client-side or behind a viewer/login | OK MA WY HI VT ME · NM(login) | reverse-engineer the API or browser-capture the download URL |
+
+**The fetcher (`sources.fetch_doc`) now classifies tier-4 failures** (fail-fast on SSL/403, exponential backoff on
+throttling, warn on placeholder PDFs) — see *Access failure modes* above.
 
 ### PA — Pennsylvania PUC (Bureau of Audits) · `parse=true` for M&O
 - **PDFs:** plain GET `https://www.puc.pa.gov/pcdocs/{id}.pdf` (the pipeline `requests` UA works).
@@ -253,6 +290,65 @@ Each commission's docket system is different. Patterns below are all confirmed b
   (22AL-0530E) + an electric Commission decision (24AL-0275E, C25-0122-I) + a gas rate-case hearing transcript
   (22AL-0046G); `data/seeds/co_puc.json`.
 
+### ND — North Dakota PSC · `webdocs` static path (shipped 2026-06-07)
+
+- **PDFs at a fully predictable static path:** `https://www.psc.nd.gov/webdocs/case/{CASE}/{NNN-010}.pdf`
+  (`{CASE}` = `YY-NNNN`, e.g. `23-0342`; `{NNN}` = the per-case **sequential document number**, e.g. `157`).
+  Plain GET, **pipeline UA, no WAF** — verified live (HTTP 200, born-digital `%PDF`, 1.4 MB). `is_official_gov` ✓ (`.gov`).
+- **Enumerate** the doc numbers from the case page (the `psc.nd.gov` site lists each case's filings). Three IOUs:
+  **Montana-Dakota Utilities**, **Northern States Power / Xcel**, **Otter Tail Power**.
+- **Shipped** (`data/seeds/nd_psc.json`, all 3 IOUs): NSP/Xcel rate-case direct testimony (`PU-24-376`), Otter Tail
+  **Dual Fuel Riders** (`PU-23-342`), Montana-Dakota **RRCA** (`PU-25-279`) + **Transmission Cost Adjustment**
+  (`PU-25-225`). The `source_page_url` is the generic `psc.nd.gov/public/cases/` landing (per-case pages aren't
+  cleanly deep-linkable); the `pdf_url` is doc-specific. Metadata-only.
+
+### SD — South Dakota PUC · `commission/dockets` static path (shipped 2026-06-07)
+
+- **Per-year docket index** `puc.sd.gov/Dockets/Electric/{YEAR}/default.aspx` → docket page `…/{DOCKET}.aspx`
+  (docket = `EL{YY}-{NNN}`) → document **PDFs at** `puc.sd.gov/commission/dockets/electric/{YEAR}/{DOCKET}/…pdf`
+  (filenames are descriptive, e.g. `attachment1.pdf`, `LTR060425.pdf` — harvest them from the docket page).
+  Plain GET, **pipeline UA, no WAF** — verified live (HTTP 200, `%PDF`). `is_official_gov` ✓ (`.gov`).
+- IOUs: **NSP/Xcel**, **MidAmerican**, **Otter Tail**, **Black Hills**, **NorthWestern**, **Montana-Dakota**. On-theme:
+  fuel-clause riders, transmission-cost-recovery (TCR) reconciliations, energy-adjustment riders. **Shipped**
+  (`data/seeds/sd_puc.json`): Otter Tail Phase-In Rider petition (`EL25-026`), MidAmerican TCR reconciliation
+  (`EL25-004`), Montana-Dakota TCR annual update (`EL25-006`). **Note:** the per-year index lists dockets as
+  `EL{YY}-{NNN}.aspx`; many are routine (welcome brochures, economic-development reports) — read the docket title
+  + page 1 to keep only cost-recovery/rate matters. Metadata-only.
+- **MISO gap note:** ND + SD close two of the four missing MISO-footprint states; **IA** (`efs.iowa.gov`) is WAF-blocked
+  (browser-capture + `fetch=false`, OH/NC pattern) and **MT** (`psc.mt.gov`) is cracked — see the Western section below.
+
+## Southwest & Pacific Northwest states (6 shipped 2026-06-07; NM blocked)
+
+The Western Interconnection PUCs. **Five crack cleanly and are seeded** (plain GET, pipeline UA, no WAF, `.gov`,
+verified live — HTTP 200 + born-digital `%PDF`): `data/seeds/{wa_utc,or_puc,id_puc,mt_psc,nv_pucn}.json`, each with a
+`test_is_official_gov` assertion. **Two are blocked** (AZ broken TLS, NM registration wall). Signature on-theme
+proceeding everywhere out here is the annual **power-cost adjustment** (each state's fuel-equivalent: PCA / PCAM / PCCAM / DEAA).
+
+- **WA — Washington UTC** ✅ `utc.wa.gov`. Clean document API: `https://apiproxy.utc.wa.gov/cases/GetDocument?docID={ID}&year={YEAR}&docketNumber={DOCKET}` (verified 200, 0.9 MB PDF). Human docket pages list docs/orders: `utc.wa.gov/casedocket/{YEAR}/{DOCKET}/docsets` and `…/orders` (harvest the `docID`s there). IOUs: **Puget Sound Energy**, **Avista**, **PacifiCorp**. On-theme: GRCs, power-cost / multiyear rate plans, refunds.
+- **OR — Oregon PUC** ✅ `apps.puc.state.or.us` / `edocs.puc.state.or.us` (legacy `.state.or.us`). **Two stable paths:** Commission orders at `apps.puc.state.or.us/orders/{YEAR}ords/{ORDER}.pdf` (e.g. `2008ords/08-261.pdf`, fully predictable by order number) and docketed filings at `edocs.puc.state.or.us/efdocs/{TYPE}/{slug}.pdf` (both verified 200). IOUs: **PGE**, **PacifiCorp (Pacific Power)**, **Idaho Power**, **Avista**. On-theme: PCAM/TAM power-cost mechanisms, GRCs.
+- **ID — Idaho PUC** ✅ `puc.idaho.gov`. Beautifully predictable **fileroom** path: `puc.idaho.gov/Fileroom/PublicFiles/ELEC/{UTIL}/{CASE}/{OrdNotc|Company|Staff}/{YYYYMMDD}{file}.pdf` — **final orders live in `/OrdNotc/`** (e.g. `…/ELEC/IPC/IPCE2211/OrdNotc/20220531Final_Order_No_35421.pdf`, verified 200). `{UTIL}` = `IPC` (Idaho Power) / `AVU` (Avista) / `PAC` (Rocky Mountain Power). On-theme: annual **PCA** (power cost adjustment).
+- **NV — PUCN** ✅ `pucweb1.state.nv.us` (legacy `.state.nv.us`). Direct PDF pattern `pucweb1.state.nv.us/pdf/CS{NNNNN}.pdf` (e.g. `CS27269.pdf`, verified 200) — the `CS` doc id is harvested from the docket page `pucweb1.state.nv.us/puc2/DktDetail.aspx` (search type "PUC - Public Search - Dockets"). Post-Oct-2023 docs are on the newer `puc-onbase.nv.gov` (OnBase). IOU: **NV Energy** (Nevada Power / Sierra Pacific). On-theme: annual **DEAA** (Deferred Energy Accounting Adjustment) — an explicit fuel/purchased-power *prudence* review (NRS 704.187).
+- **MT — Montana PSC** ✅ `psc.mt.gov`. Static order/doc PDFs at predictable paths: `psc.mt.gov/News/Special/{slug}_DOC-{id}.pdf` (e.g. `FinalOrder7860y_DOC-26058.pdf`, verified 200, 0.8 MB) and `psc.mt.gov/_docs/Energy/pdf/…pdf`. The full docket document-search (`DOC-{id}` ids) is browser-driven; the static News/Special order PDFs are the quick win. IOU: **NorthWestern Energy** (also Montana-Dakota). On-theme: **PCCAM** (Power Costs & Credits Adjustment Mechanism), GRCs.
+- **AZ — Arizona Corporation Commission · CRACKED (use the valid-cert host alias).** The eDocket image host has **three aliases for the same files**; pick the one with a valid cert: **`docket.images.azcc.gov/{DOCID}.pdf`** ✅ (valid cert, `ssl_verify=0`, 200, real born-digital docs — e.g. TEP Decision No. 79065 = `0000209684.pdf`, 189 pp) and **`edocket.azcc.gov/docketpdf/{DOCID}.pdf`** ✅ (valid cert too, **but** that `/docketpdf/` path returns a **blank 1-page placeholder** anonymously — avoid it). The original **`images.edocket.azcc.gov/docketpdf/…`** has a **broken cert** (hostname mismatch) — don't use. So: seed `docket.images.azcc.gov/{DOCID}.pdf` (path WITHOUT `/docketpdf/`). The `{DOCID}` is harvested from the docket-search item-detail pages or via `WebSearch site:images.edocket.azcc.gov/docketpdf` (Google indexes them; swap the host). The **main-site** `www.azcc.gov/divisions/utilities/electric/…pdf` also serves born-digital orders (e.g. `APS-FinalOrder.pdf`). **Shipped** (`az_acc.json`): APS rate-case order (E-01345A-03-0437) + TEP Decision 79065 (E-01933A-22-0107). IOUs: **APS**, **Tucson Electric Power**, **UNS**. On-theme: **PSA** (Power Supply Adjustor) prudence, rate cases. Metadata-only.
+- **NM — Public Regulation Commission · BLOCKED (login wall; old host dead).** NMPRC migrated to **PRCe360** (live 2026-01-26). The **old `edocket.nmprc.state.nm.us` is now dead** (connection refused), and the new **`edocket.prc.nm.gov` 302-redirects to `Login.aspx?ReturnUrl=%2f`** — confirmed registration/login wall, no anonymous document access. `prc.nm.gov` ✓ gov but only hosts site pages + `wp-content` instruction PDFs, not case documents. To seed: create a Public Guest Account and drive the new portal in a browser (then `fetch=false`), or wait for a public document URL pattern to surface. IOUs: **PNM**, **El Paso Electric**, **SPS (Xcel)**. On-theme: **FPPCAC** (fuel & purchased-power cost adjustment) — a prudence review.
+- **CA — CPUC · HTML-only decisions, seeded `fetch=false` (shipped 2026-06-07).** California's signature on-theme doc is the **ERRA (Energy Resource Recovery Account) reasonableness review** — the annual fuel & purchased-power *prudence* determination for PG&E / SCE / SDG&E (e.g. D.06-01-007 rejected a $16.36M disallowance against SCE). **Access caveat:** CPUC publishes decisions as **HTML**, not PDF — `docs.cpuc.ca.gov/published/Final_decision/{id}.htm` (the `.PDF` variant 404s), so the PDF pipeline can't extract them. Seed them **`fetch=false`** with the `.htm` URL as `pdf_url` (captured by reference, page_count 0) — `docs.cpuc.ca.gov` is `.ca.gov` ✓. `WebFetch` reads the HTML to verify decision#/date/holding. `data/seeds/ca_cpuc.json`. *Deepen:* recent (2020+) ERRA decisions live as real PDFs under the opaque `docs.cpuc.ca.gov/PublishedDocs/Published/G000/M.../K.../{id}.PDF` paths — harvest those for fetchable records.
+- **NY — Department of Public Service · two clean paths (shipped 2026-06-07).** **Easiest:** the DPS publishes statutorily-required (Public Service Law §66(12)(l)) **rate-case summaries** as static PDFs at `dps.ny.gov/system/files/documents/{YYYY}/{MM}/{slug}.pdf` (plain GET, pipeline UA, `.ny.gov` ✓) — on-theme and reliable. **Also:** the DMM serves the actual Commission **orders** as fetchable PDFs at `documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B{GUID}%7D` (the `{}` braces URL-encode to `%7B…%7D`; verified a real 17-pp PSC order) — but the `DocRefId` must be harvested from the matter's document list, and many guids are testimony/press-releases (**verify the caption**, not the title). Shipped 3 §66(12)(l) summaries (National Grid 24-E-0322, Con Ed 25-E-0072, NYSEG 25-E-0375) + the **National Grid rate-case Joint Proposal** (149 pp, harvested from the DMM via guid `90E66D96`); `data/seeds/ny_dps.json`. **DMM caption-verify:** the guids Google indexes for a case are mostly off-theme (securities-issuance orders, transmission-siting Article VII orders, grid-of-the-future, testimony, press releases) — read page 1 before seeding; the substantive rate documents (Joint Proposal, Order Adopting It) are buried among them and the full doc list is only on the SPA `MatterManagement/CaseMaster.aspx?MatterCaseNo={case}`. IOUs: Con Ed, National Grid (Niagara Mohawk), NYSEG, RG&E, O&R, Central Hudson. *Deepen:* the final "Order Adopting Terms of Joint Proposal" guids (browser-harvest from the matter master); fuel.
+- **KS — Kansas Corporation Commission · `estar` ViewFile PDFs (shipped 2026-06-07).** Direct fetchable PDFs at `estar.kcc.ks.gov/estar/ViewFile.aspx/{filename}.pdf?Id={guid}` (plain GET, pipeline UA, `.ks.gov` ✓; the `{guid}` is the stable key — filenames carry spaces/parens/apostrophes and are passed through fine). Shipped: the **25-EKCE-294-RTS** base-rate Order approving the unanimous settlement (88 pp) + the **Winter Storm Uri** cost investigation stipulation (`21-EKME-329-GIE` / `21-GIMX-303-MIS`, Feb-2021 extraordinary fuel-cost prudence). `data/seeds/ks_kcc.json`. **Caption-verify is essential here:** filenames mislead — `Order_on_Evergy's_App._and_Settlement_Agreements.pdf` is a *DSM/KEEIA* order (off-theme), and several "Order…" hits are the parties' *applications/motions*, not Commission orders. On-theme: Evergy **RECA** (Retail Energy Cost Adjustment = fuel) + **ACA** (annual true-up). *Deepen:* a RECA/ACA fuel-true-up order.
+- **OK — Oklahoma Corporation Commission · imaging URLs need harvesting (deferred).** OCC case files are PDFs at `imaging.occ.ok.gov/AP/CaseFiles/occ{NNNNNNNN}.pdf` (`.ok.gov` ✓), but the doc-id form indexed by search **404s** (stale ids / the imaging app rewrites them) — the live ids must be harvested from the OCC case-search (PUD/cause lookup) before seeding. On-theme: OG&E / PSO **Fuel Cost Adjustment** + the **2021 Winter Storm Uri** securitization/prudence causes.
+- **MA — DPU · fileroom is a SPA (API needed).** `eeaonline.eea.state.ma.us/DPU/Fileroom/dockets/bynumber/{docket}` (`.state.ma.us` ✓) renders the document list **client-side** — a plain GET returns only the shell, no PDF links. Reverse-engineer the fileroom's download API (or browser-capture) before seeding. On-theme dockets: `{YY}-OGAF-…` / `{YY}-PGAF-…` (gas adjustment factors = fuel-equivalent), base-rate cases.
+- **UT — PSC · `pscdocs` static repository (shipped 2026-06-07).** Cleanest western portal: every filing is a static PDF at `pscdocs.utah.gov/electric/{YY}docs/{docketnodash}/{docid}{TitleAbbrev}{date}.pdf` (plain GET, pipeline UA, `.utah.gov` ✓; commas in the filename pass through fine). Docket folder = the docket number with dashes removed (`24-035-04` → `2403504`). Per-year order index at `psc.utah.gov/electric/orders-notices/electric-{YEAR}/`. Shipped: Rocky Mountain Power (PacifiCorp) base-rate Report & Order (`24-035-04`, $382.1M) + the **EBA (Energy Balancing Account) audit** for CY2023 (`24-035-01`, Daymark's independent audit of RMP's net-power/fuel-cost prudence — the Feb-2025 order disallowed ~$19.4M). `data/seeds/ut_psc.json`. On-theme: **ECAM/EBA** (energy-cost/balancing = fuel prudence), rate cases.
+- **CT — PURA · `portal.ct.gov/-/media` static PDFs (shipped 2026-06-07).** PURA decisions are static PDFs at `portal.ct.gov/-/media/pura/{...}/{slug}.pdf` and `portal.ct.gov/-/media/PURA/{slug}.pdf` (plain GET, `.ct.gov` ✓). Shipped two PURA Final Decisions: the **Tropical Storm Isaias** EDC preparation/response investigation (`20-08-03`, 139 pp, civil penalties on Eversource/UI — a management-performance prudence matter) + a distribution rate-design decision (`17-12-03RE011`). `data/seeds/ct_pura.json`. EDCs: CL&P d/b/a Eversource, United Illuminating. *Deepen:* Eversource base-rate (e.g. `22-08-01`) + RAM (Rate Adjustment Mechanism = cost recovery) final decisions — slugs harvested from the PURA docket pages / press releases.
+- **NH — PUC · Akamai WAF (deferred).** `puc.nh.gov/VirtualFileRoom/ShowDocument.aspx?DocumentId={guid}` (`.nh.gov` ✓) is **Akamai-fronted** and returns "Access Denied" (`errors.edgesuite.net`) to scripts/WebFetch — browser-capture + `fetch=false` (OH/NC/IA pattern). On-theme: Eversource Energy Service (default-service power supply = fuel) `DE 24-046`, distribution rate case `DE 24-070`. **ME — PUC (browser-only):** the CMS at `mpuc-cms.maine.gov/CQM.Public.WebUI/Common/ViewDoc.aspx?DocRefId=%7B{guid}%7D&DocExt=pdf` (`.maine.gov` ✓) **returns an HTML "Message" page to a plain GET** — the viewer needs a session/JS (browser-capture). Case master: `…/CaseMaster.aspx?CaseNumber={YYYY-NNNNN}`. On-theme: CMP rate case `2025-00218`, Versant 2023 rate case, the CMP/Versant service-quality investigation `2022-00279`.
+- **RI — PUC · `ripuc.ri.gov` static PDFs (shipped 2026-06-07).** Filings/orders at `ripuc.ri.gov/sites/g/files/xkgbur841/files/{YYYY-MM}/{docket}%20{desc}.pdf` (plain GET, `.ri.gov` ✓; spaces `%20`-encoded). Per-docket landing `ripuc.ri.gov/Docket-{docket}`; orders index `ripuc.ri.gov/events-and-actions/decisions-and-orders/{natural-gas|electric}`. Shipped RI Energy (Narragansett Electric) **2024 Gas Cost Recovery** (`24-29-NG`, the GCR clause = gas fuel-cost recovery) + PUC Order 25247 (`24-38-GE`). `data/seeds/ri_puc.json`. On-theme: **GCR** (gas cost recovery), base-rate cases (Report & Order No. 23823, docket 4770). *Deepen:* a GCR Report & Order; the 25-45-GE base-rate case once decided.
+- **WY — PSC · DMS portal, no `.gov` static PDFs (browser-only).** `psc.wyo.gov`'s orders link out to the **`dms.wyo.gov/external/publicusers.aspx`** Docket Management System (a search portal); no static `.gov` PDF path is exposed, and the only indexed RMP filing PDFs are on `rockymountainpower.net` (non-gov, rejected). On-theme: Rocky Mountain Power **ECAM** (Schedule 95 = fuel), Docket `20000-671-ER-24`. Harvest the DMS download URL in a browser before seeding.
+- **HI — PUC · DMS unreachable + static D&Os moved (browser-only).** Hawaiian Electric's **ECRC** (Energy Cost Recovery Clause = fuel/IPP cost) is the signature on-theme proceeding (D&O 40044, June 2023; the 2019–2023 ECRC review pegged oil-volatility costs at ≥$250M). But the DMS viewer `dms.puc.hawaii.gov/dms/DocumentViewer?pid={PID}` **refuses scripted connections (000)**, and the old static `puc.hawaii.gov/wp-content/uploads/{Y}/{M}/DO-No.-{N}.pdf` files now **return the site's HTML 404** (some recent wp-content PDFs — annual reports, summaries — still serve). Browser-capture the DMS PID. `.hawaii.gov` ✓.
+- **VT — PUC (browser-only):** orders are in **ePUC** (`epuc.vermont.gov`) or on the utility site (`greenmountainpower.com`, non-gov); `puc.vermont.gov` static PDFs are only plans/procedures. Harvest from ePUC.
+- **AL — PSC (browser-only):** only `alabamapower.com` (non-gov) copies are indexed; `psc.alabama.gov` is WAF-walled (403 to scripts, scanned minutes). Alabama Power **Rate ECR** (Energy Cost Recovery) + **RSE** (Rate Stabilization & Equalization) are the on-theme mechanisms.
+- **NE — PSC · `nebraska.gov/psc/orders` static PDFs (shipped 2026-06-07).** NE electric is all-public-power, but the PSC **rate-regulates the natural-gas IOUs** (Black Hills, NorthWestern). Orders are static PDFs at `www.nebraska.gov/psc/orders/natgas/NG-{docket}.{seq}.pdf` (plain GET, `nebraska.gov` ✓). Shipped: Black Hills **Cost-of-Service Gas Hedge Agreement** with its affiliate — **DENIED** (`NG-0086`, affiliate gas-cost prudence) + SourceGas **gas-supply contract buyout cost recovery** (`NG-0088`). `data/seeds/ne_psc.json`. On-theme: gas-cost/hedge/affiliate prudence, **Gas Supply Cost Review** (`NG-119`), Choice Gas reviews.
+- **TN — TPUC · `tpucdockets.tn.gov` static archive (shipped 2026-06-07).** Filings/orders are static PDFs at `tpucdockets.tn.gov/archive/filings/{YEAR}/{docnum}{seq}.pdf` (`{docnum}` = docket digits, e.g. `21-00107` → `2100107`; `{seq}` = a letter suffix per filing) — plain GET, `.tn.gov` ✓. Shipped: Kingsport Power (AEP) general rate case (`21-00107`) + the Utilities Division's **Atmos WNA (Weather Normalization Adjustment) audit** (`25-00044`). `data/seeds/tn_tpuc.json`. IOUs are mostly **gas** (Atmos, Piedmont) + small electric (Kingsport/AEP) — most of TN is TVA/munis/coops (not PUC-rate-regulated).
+
+> **Boundary note (2026-06-07, corrected):** static-`.gov`-PDF states are seeded out to **39 jurisdictions** — including the gas-only-IOU states (NE, TN) that a first pass dismisses. The genuinely walled remainder — **OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA** — each sits behind a **DMS/CMS viewer, a SPA, a WAF, or a login wall**, so *those* need a **browser-capture pass** (Chrome MCP), not more `requests` GETs. Only **AK** (tiny coop/muni IOUs) and US **territories** (PR/USVI/Guam — separate regulators) remain genuinely out of scope. Per-state walls + recipes above and in [BACKLOG.md](../BACKLOG.md).
+
 ## PJM-footprint states (rate cases + fuel-cost adjustments)
 
 The PJM expansion. **Best-practice learned across all five: a state PUC often publishes its
@@ -324,6 +420,28 @@ WAF — prefer that static order host for `pdf_url`.** And always verify order-v
 - On-theme: Pepco Multiyear Rate Plan (`FC 1176`) Order & Opinion + reconsideration. **Gotcha:** the
   `dcpsc.org/CMSPages/GetFile.aspx?guid=…` "order" we first tried was a **press release** — verify page 1.
   Metadata-only.
+
+### FL — Florida PSC · static order PDFs, two hosts (one .gov)
+
+- **Two mirror hosts serve the same files:** `www.floridapsc.com` (**`.com` — rejected by the gov-guard**)
+  and **`www.psc.state.fl.us`** (legacy `.state.fl.us` ✓ — use this one). Both expose identical static
+  paths; always seed the `.state.fl.us` URL.
+- **Order PDFs (stable plain GET, pipeline UA, no WAF):**
+  `www.psc.state.fl.us/library/Orders/{YEAR}/{DOCNUM}-{YEAR}.pdf` (the `{DOCNUM}` is the clerk's
+  sequential **document number**, *not* the `PSC-YYYY-NNNN-FOF-EI` order number). Filings live at
+  `…/library/filings/{YEAR}/{DOCNUM}-{YEAR}/{DOCNUM}-{YEAR}.pdf`.
+- **Human landing:** `www.psc.state.fl.us/document-detail?orderNum={ORDER-NUMBER}` (an Angular SPA —
+  fine as a `source_page_url`, but it renders client-side so you can't scrape the PDF link from it).
+- **Finding the doc number (the catch):** the order#→doc# map isn't on the SPA. Harvest the
+  `library/Orders/{YEAR}/{DOCNUM}.pdf` URL via `WebSearch` restricted to `psc.state.fl.us` (Google
+  indexes the order text), then **verify page 1 locally** — `WebFetch` saves the binary even when it
+  can't render it; one `fitz` pass reads the caption + confirms it's a **FINAL ORDER** (skip the
+  `-PCO-EI` procedural / `-PHO-EI` prehearing / notice docs that share the docket).
+- **On-theme (Florida's signature prudence dockets are the annual cost-recovery *clauses*):** Fuel &
+  purchased-power cost recovery (Docket `{YY}0001-EI`, e.g. `PSC-12-0664-FOF-EI`), Nuclear cost
+  recovery (`{YY}0009-EI`, prudence/true-up of nuclear project costs, e.g. `PSC-14-0617-FOF-EI`), and
+  Storm-protection-plan cost recovery (`{YY}0010-EI`, e.g. `PSC-2023-0364-FOF-EI` / `PSC-2024-0459-FOF-EI`).
+  `data/seeds/fl_psc.json`. Metadata-only.
 
 ## WAF-blocked sources — browser-capture + `fetch=false`
 

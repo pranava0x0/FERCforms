@@ -109,6 +109,24 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://mn.gov/oah/assets/2500-39704-x_tcm19-650610.pdf")  # MN OAH (mn.gov)
     assert sources.is_official_gov("https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424")  # WI ERF
     assert sources.is_official_gov("https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=984848")  # CO (.state.co.us)
+    assert sources.is_official_gov("https://www.psc.state.fl.us/library/Orders/2024/09666-2024.pdf")  # FL PSC (legacy .state.fl.us)
+    assert sources.is_official_gov("https://www.psc.nd.gov/webdocs/case/24-0376/086-010.pdf")  # ND PSC (psc.nd.gov)
+    assert sources.is_official_gov("https://puc.sd.gov/commission/dockets/electric/2025/EL25-004/Application.pdf")  # SD PUC (puc.sd.gov)
+    assert sources.is_official_gov("https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520/OrdNotc/x.pdf")  # ID PUC (puc.idaho.gov)
+    assert sources.is_official_gov("https://apps.puc.state.or.us/orders/2021ords/21-457.pdf")  # OR PUC (legacy .state.or.us)
+    assert sources.is_official_gov("https://apiproxy.utc.wa.gov/cases/GetDocument?docID=4536")  # WA UTC (utc.wa.gov)
+    assert sources.is_official_gov("https://psc.mt.gov/News/Special/FinalOrder7860y_DOC-26058.pdf")  # MT PSC (psc.mt.gov)
+    assert sources.is_official_gov("https://pucweb1.state.nv.us/pdf/CS27269.pdf")  # NV PUCN (legacy .state.nv.us)
+    assert sources.is_official_gov("https://docket.images.azcc.gov/0000209684.pdf")  # AZ ACC eDocket image host
+    assert sources.is_official_gov("https://www.azcc.gov/divisions/utilities/electric/APS-FinalOrder.pdf")  # AZ ACC main site
+    assert sources.is_official_gov("https://docs.cpuc.ca.gov/published/Final_decision/51417.htm")  # CA CPUC (.ca.gov)
+    assert sources.is_official_gov("https://dps.ny.gov/system/files/documents/2025/08/x.pdf")  # NY DPS (.ny.gov)
+    assert sources.is_official_gov("https://estar.kcc.ks.gov/estar/ViewFile.aspx/x.pdf?Id=y")  # KS KCC (.ks.gov)
+    assert sources.is_official_gov("https://pscdocs.utah.gov/electric/24docs/2403504/x.pdf")  # UT PSC (.utah.gov)
+    assert sources.is_official_gov("https://portal.ct.gov/-/media/pura/electric/x.pdf")  # CT PURA (.ct.gov)
+    assert sources.is_official_gov("https://ripuc.ri.gov/sites/g/files/xkgbur841/files/2024-09/x.pdf")  # RI PUC (.ri.gov)
+    assert sources.is_official_gov("https://www.nebraska.gov/psc/orders/natgas/NG-0086.30.pdf")  # NE PSC (nebraska.gov)
+    assert sources.is_official_gov("https://tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf")  # TN TPUC (.tn.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
@@ -171,3 +189,110 @@ def test_all_seed_files_validate_and_have_unique_ids():
         assert all(s.collection in {"state_audit", "prudence_review"} for s in seeds)
         all_ids += [s.id for s in seeds]
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
+
+
+# --- fetch resilience (timeouts / throttling / broken TLS / WAF / placeholders) ---
+
+import logging  # noqa: E402
+
+import requests as _requests  # noqa: E402
+
+
+class _FakeResp:
+    def __init__(self, status_code, content=b"", content_type=""):
+        self.status_code = status_code
+        self.content = content
+        self.headers = {"content-type": content_type}
+
+
+class _FakeSession:
+    """Yields a queued list of outcomes (a _FakeResp to return, or an Exception
+    to raise); repeats the last outcome once the queue is drained."""
+
+    def __init__(self, *outcomes):
+        self._q = list(outcomes)
+        self.calls = 0
+
+    def get(self, url, timeout=None):
+        self.calls += 1
+        o = self._q.pop(0) if len(self._q) > 1 else self._q[0]
+        if isinstance(o, Exception):
+            raise o
+        return o
+
+
+@pytest.fixture(autouse=True)
+def _no_sleep(monkeypatch):
+    monkeypatch.setattr(sources.time, "sleep", lambda *_: None)
+
+
+def test_fetch_doc_fails_fast_on_broken_tls(tmp_path):
+    s = _FakeSession(_requests.exceptions.SSLError("hostname mismatch"))
+    with pytest.raises(sources.SourceFetchError, match="TLS verification failed"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == 1  # no pointless retries on a broken cert
+
+
+def test_fetch_doc_fails_fast_on_waf_or_login_wall(tmp_path):
+    s = _FakeSession(_FakeResp(403, b"<html>Access Denied</html>", "text/html"))
+    with pytest.raises(sources.SourceFetchError, match="WAF or login wall"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == 1
+
+
+def test_fetch_doc_retries_connection_error_then_succeeds(tmp_path):
+    pdf = b"%PDF-" + b"x" * 4000
+    s = _FakeSession(_requests.exceptions.ConnectionError("reset"), _FakeResp(200, pdf, "application/pdf"))
+    out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists() and out.read_bytes() == pdf
+    assert s.calls == 2  # backed off and retried the throttled connection
+
+
+def test_fetch_doc_warns_on_suspiciously_small_pdf(tmp_path, caplog):
+    tiny = b"%PDF-1.4 blank"  # has the magic but well under _SUSPICIOUS_PDF_BYTES
+    s = _FakeSession(_FakeResp(200, tiny, "application/pdf"))
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists()
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_fetch_doc_warns_on_5kb_placeholder(tmp_path, caplog):
+    # The observed real failure mode: AZ edocket.azcc.gov/docketpdf/ returns a
+    # blank ~5 KB %PDF. The threshold must sit ABOVE this size (it didn't at 3 KB).
+    blank_5kb = b"%PDF-1.4\n" + b"\x00" * 5000  # ~5 KB, valid magic
+    assert len(blank_5kb) > 3000 and len(blank_5kb) < sources._SUSPICIOUS_PDF_BYTES
+    s = _FakeSession(_FakeResp(200, blank_5kb, "application/pdf"))
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.exists()
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_cached_small_pdf_rewarns_on_rerun(tmp_path, caplog):
+    # A previously-cached blank placeholder must NOT go silent on a re-run.
+    seed = _seed()
+    dest = tmp_path / f"{seed.id}.pdf"
+    dest.write_bytes(b"%PDF-1.4\n" + b"\x00" * 5000)  # ~5 KB cached placeholder
+    s = _FakeSession(_FakeResp(500, b"should-not-be-called"))  # cache hit => no fetch
+    with caplog.at_level(logging.WARNING):
+        out = sources.fetch_doc(s, seed, tmp_path)
+    assert out == dest and s.calls == 0  # served from cache, no network
+    assert any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_cached_full_size_pdf_is_silent(tmp_path, caplog):
+    seed = _seed()
+    dest = tmp_path / f"{seed.id}.pdf"
+    dest.write_bytes(b"%PDF-1.4\n" + b"x" * 20000)  # a normal-size cached doc
+    s = _FakeSession(_FakeResp(500, b"x"))
+    with caplog.at_level(logging.WARNING):
+        sources.fetch_doc(s, seed, tmp_path)
+    assert not any("possible placeholder" in r.message for r in caplog.records)
+
+
+def test_fetch_doc_exhausts_retries_on_server_error(tmp_path):
+    s = _FakeSession(_FakeResp(500, b"oops", "text/html"))
+    with pytest.raises(sources.SourceFetchError, match="unexpected response: 500"):
+        sources.fetch_doc(s, _seed(), tmp_path)
+    assert s.calls == config.MAX_RETRIES

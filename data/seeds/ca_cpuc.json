@@ -1,0 +1,53 @@
+[
+  {
+    "id": "2005-11-18_pacific-gas-and-electric_ca-a05-02-014-d05-11-007-erra",
+    "company": "Pacific Gas and Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA reasonableness/prudence decision",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/published/Final_decision/51417.htm",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding",
+    "issued_date": "2005-11-18",
+    "docket": "A.05-02-014",
+    "captured_at": "2026-06-07",
+    "source_note": "CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).",
+    "parse": false,
+    "fetch": false
+  },
+  {
+    "id": "2006-01_southern-california-edison_ca-d06-01-007-erra",
+    "company": "Southern California Edison Company",
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA reasonableness/prudence decision",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/published/Final_decision/52767-03.htm",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding",
+    "issued_date": null,
+    "docket": "D.06-01-007",
+    "captured_at": "2026-06-07",
+    "source_note": "CPUC Decision D.06-01-007 — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Adopted January 2006 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).",
+    "parse": false,
+    "fetch": false
+  },
+  {
+    "id": "2003-12_san-diego-gas-and-electric_ca-a02-12-028-d03-12-063-erra",
+    "company": "San Diego Gas & Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA reasonableness/prudence decision",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/published/Final_decision/32806-01.htm",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding",
+    "issued_date": null,
+    "docket": "A.02-12-028",
+    "captured_at": "2026-06-07",
+    "source_note": "CPUC Decision D.03-12-063, Application A.02-12-028 — the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas & Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel & purchased-power prudence determination. Adopted December 2003 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).",
+    "parse": false,
+    "fetch": false
+  }
+]

@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-02",
+  "generated_at": "2026-06-07",
   "source": "https://www.ferc.gov/audits",
   "scope": "FERC utility audits — electric, gas & oil",
   "reports_total_listed": 120,
   "by_industry_identified": {
-    "electric": 155,
-    "gas": 17,
-    "oil": 17,
+    "electric": 202,
+    "gas": 21,
+    "oil": 18,
     "unknown": 7
   },
-  "reports_structured": 196,
+  "reports_structured": 248,
   "by_collection": {
     "ferc_audit": 120,
-    "prudence_review": 7,
-    "state_audit": 69
+    "prudence_review": 14,
+    "state_audit": 114
   },
   "listing_captured_at": "2026-02-03"
 }
