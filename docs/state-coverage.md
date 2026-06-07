@@ -1,6 +1,6 @@
 # State PUC coverage — completeness audit
 
-State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **36 jurisdictions, 108 documents**,
+State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **37 jurisdictions, 110 documents**,
 all metadata-only ("Listed for reference") **except PA**, the only state with parsed verbatim findings
 (3 Management & Operations audits via `pipeline/state_structure.py`). Access mechanics per state live in
 [data-sources.md](data-sources.md); the expansion roadmap in [../BACKLOG.md](../BACKLOG.md).
@@ -56,12 +56,13 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 | **KS** | SPP | 2 | Evergy (Kansas Central/South/Metro) | base-rate Order + Winter Storm Uri prudence stipulation | **Partial** | RECA/ACA fuel true-up order; Evergy Metro rate case |
 | **UT** | (WECC, non-RTO) | 2 | Rocky Mountain Power | rate-case Order + **EBA fuel-cost audit** | **Good** | recent ECAM/EBA orders; gas (Dominion) |
 | **CT** | ISO-NE | 2 | Eversource (CL&P) + United Illuminating | storm-response (Isaias) + rate-design decisions | **Partial** | Eversource base-rate (22-08-01) + RAM cost-recovery decisions |
+| **RI** | ISO-NE | 2 | Rhode Island Energy (Narragansett) | **gas cost recovery** filing + PUC order | **Partial** | GCR Report & Order; base-rate case (25-45-GE) |
 
 ## Fully missing (no seed yet)
 
 - **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
 - **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** seeded (12 docs — in the table above; WA + OR deepened to 3 IOUs each). **NV** (DEAA is scanned/opaque) and **MT** (2024/25 final order is browser-only eDocket) resist scripted deepening and stay at 1. **NM** is the lone fully-unseeded Southwest state — its PRCe360 portal 302-redirects to a login wall.
-- **Remaining:** **OK** (OCC imaging — ids need harvesting), **MA** (DPU fileroom — SPA, needs API), **NH** (PUC — Akamai WAF, browser-capture), **ME** (CMS — no clean static PDFs found), plus NE, TN, AL. (**CA**, **NY**, **KS**, **UT**, **CT** now seeded.) The corpus spans **East / Midwest / South** plus a full Western (WECC) + CA + NY + KS foothold — **36 jurisdictions**.
+- **Remaining:** **OK** (OCC imaging — ids need harvesting), **MA** (DPU fileroom — SPA, needs API), **NH** (Akamai WAF), **WY**/**HI** (DMS portals — need the download-URL pattern), **VT** (ePUC / utility-hosted), **ME** (CMS — no clean static PDFs), plus NE, TN, AL. (**CA**, **NY**, **KS**, **UT**, **CT**, **RI** now seeded.) Coast-to-coast across **37 jurisdictions**.
 
 ## Headline reads
 

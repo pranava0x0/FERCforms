@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="242 structured records (120 FERC audits, 14 prudence reviews, 108 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="244 structured records (120 FERC audits, 14 prudence reviews, 110 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3192,6 +3192,10 @@ Order of the Indiana Utility Regulatory Commission on the verified petition of N
 Listed for reference (not machine-parsed into findings).
 Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
 </doc>
+<doc title="The Narragansett Electric Company d/b/a Rhode Island Energy" collection="State PUC Audits" docket="24-38-GE" issued="2025-01-01" industry="electric" source="https://ripuc.ri.gov/utility-information/electric">
+Listed for reference (not machine-parsed into findings).
+Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The Narragansett Electric Company d/b/a Rhode Island Energy's tariff advice filing to amend its electric and gas tariffs (Advanced Metering Functionality opt-out charges) (8 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2025-01/).
+</doc>
 <doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="FC 1176" issued="2024-11-26" industry="electric" source="https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx">
 Listed for reference (not machine-parsed into findings).
 Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).
@@ -3231,6 +3235,10 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part One, by Th
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="State PUC Audits" docket="PUR-2024-00137" issued="2024-09-04" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Order for Notice and Hearing on Virginia Electric and Power Company's (Dominion Energy Virginia) petition for a new distribution rate adjustment clause Rider DIST (grid-transformation cost recovery) and consolidation of Riders GT and U under Va. Code § 56-585.1 A 6 and A 7, Case No. PUR-2024-00137, Virginia State Corporation Commission, entered September 4, 2024. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/816l01!.PDF.
+</doc>
+<doc title="The Narragansett Electric Company d/b/a Rhode Island Energy" collection="State PUC Audits" docket="24-29-NG" issued="2024-09-01" industry="gas" source="https://ripuc.ri.gov/events-and-actions/decisions-and-orders/natural-gas">
+Listed for reference (not machine-parsed into findings).
+The Narragansett Electric Company d/b/a Rhode Island Energy 2024 Gas Cost Recovery (GCR) filing (Book 1: Pre-Filed Direct Testimony and Attachments), Docket No. 24-29-NG, filed Sept 1, 2024 — the annual reconciliation/recovery of projected gas commodity costs under the Gas Cost Recovery Clause (RIPUC RIE-GAS No. 101) for the period beginning Nov 1, 2024 (177 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2024-09/).
 </doc>
 <doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="24-0087" issued="2024-08-20" industry="electric" source="https://www.icc.illinois.gov/docket/P2024-0087/documents/354448">
 Listed for reference (not machine-parsed into findings).

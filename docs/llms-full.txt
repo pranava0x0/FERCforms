@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 242 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 244 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5794,6 +5794,17 @@ Order of the Public Service Commission of the District of Columbia on applicatio
 
 ---
 
+## The Narragansett Electric Company d/b/a Rhode Island Energy
+- Collection: State PUC Audits | Source: Rhode Island Public Utilities Commission
+- Docket: 24-38-GE | Audit type: n/a
+- Issued: 2025-01-01 | Industry: electric | FERC Form: n/a
+- Source page: https://ripuc.ri.gov/utility-information/electric
+- Status: listed for reference (not machine-parsed into findings)
+
+Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The Narragansett Electric Company d/b/a Rhode Island Energy's tariff advice filing to amend its electric and gas tariffs (Advanced Metering Functionality opt-out charges) (8 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2025-01/).
+
+---
+
 ## Potomac Electric Power Company (Pepco)
 - Collection: State PUC Audits | Source: Public Service Commission of the District of Columbia
 - Docket: FC 1176 | Audit type: n/a
@@ -5901,6 +5912,17 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part One, by Th
 - Status: listed for reference (not machine-parsed into findings)
 
 Order for Notice and Hearing on Virginia Electric and Power Company's (Dominion Energy Virginia) petition for a new distribution rate adjustment clause Rider DIST (grid-transformation cost recovery) and consolidation of Riders GT and U under Va. Code § 56-585.1 A 6 and A 7, Case No. PUR-2024-00137, Virginia State Corporation Commission, entered September 4, 2024. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/816l01!.PDF.
+
+---
+
+## The Narragansett Electric Company d/b/a Rhode Island Energy
+- Collection: State PUC Audits | Source: Rhode Island Public Utilities Commission
+- Docket: 24-29-NG | Audit type: n/a
+- Issued: 2024-09-01 | Industry: gas | FERC Form: n/a
+- Source page: https://ripuc.ri.gov/events-and-actions/decisions-and-orders/natural-gas
+- Status: listed for reference (not machine-parsed into findings)
+
+The Narragansett Electric Company d/b/a Rhode Island Energy 2024 Gas Cost Recovery (GCR) filing (Book 1: Pre-Filed Direct Testimony and Attachments), Docket No. 24-29-NG, filed Sept 1, 2024 — the annual reconciliation/recovery of projected gas commodity costs under the Gas Cost Recovery Clause (RIPUC RIE-GAS No. 101) for the period beginning Nov 1, 2024 (177 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2024-09/).
 
 ---
 
