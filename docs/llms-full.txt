@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 210 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 217 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5475,6 +5475,17 @@ Decision and Order approving the auction process for Basic Generation Service (B
 
 ---
 
+## Montana-Dakota Utilities Co.
+- Collection: State PUC Audits | Source: North Dakota Public Service Commission
+- Docket: PU-25-279 | Audit type: n/a
+- Issued: 2025-10-31 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.nd.gov/public/cases/
+- Status: listed for reference (not machine-parsed into findings)
+
+Montana-Dakota Utilities Co. application (October 31, 2025) before the North Dakota Public Service Commission for the Annual Update to the Renewable Resource Cost Adjustment (RRCA) Rate 55 tariff, Case No. PU-25-279 (34 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0279/001-010.pdf).
+
+---
+
 ## The Empire District Electric Company d/b/a Liberty
 - Collection: State PUC Audits | Source: Missouri Public Service Commission
 - Docket: ER-2024-0261 | Audit type: n/a
@@ -5541,6 +5552,17 @@ Final Order on Appalachian Power Company's petition to revise its net energy met
 
 ---
 
+## Otter Tail Power Company
+- Collection: State PUC Audits | Source: North Dakota Public Service Commission
+- Docket: PU-23-342 | Audit type: n/a
+- Issued: 2025-08-19 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.nd.gov/public/cases/
+- Status: listed for reference (not machine-parsed into findings)
+
+Otter Tail Power Company filing (August 19, 2025) before the North Dakota Public Service Commission in its Dual Fuel Riders proceeding, Case No. PU-23-342 (10 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 157-010 (psc.nd.gov/webdocs/case/23-0342/157-010.pdf).
+
+---
+
 ## Virginia Electric and Power Company (Dominion Energy Virginia)
 - Collection: State PUC Audits | Source: Virginia State Corporation Commission
 - Docket: PUR-2025-00076 | Audit type: n/a
@@ -5549,6 +5571,17 @@ Final Order on Appalachian Power Company's petition to revise its net energy met
 - Status: listed for reference (not machine-parsed into findings)
 
 Final Order on Virginia Electric and Power Company's (Dominion Energy Virginia) revised transmission rate adjustment clause Rider T1 under Va. Code § 56-585.1 A 4 (deeming prudent RTO transmission and FERC-approved demand-response costs), Case No. PUR-2025-00076, Virginia State Corporation Commission, entered August 1, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/873b01!.PDF.
+
+---
+
+## Montana-Dakota Utilities Co.
+- Collection: State PUC Audits | Source: North Dakota Public Service Commission
+- Docket: PU-25-225 | Audit type: n/a
+- Issued: 2025-07-15 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.nd.gov/public/cases/
+- Status: listed for reference (not machine-parsed into findings)
+
+Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).
 
 ---
 
@@ -6290,6 +6323,17 @@ Reporter's Transcript of the evidentiary hearing before the Colorado Public Util
 
 ---
 
+## Otter Tail Power Company
+- Collection: State PUC Audits | Source: South Dakota Public Utilities Commission
+- Docket: EL25-026 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://puc.sd.gov/Dockets/Electric/2025/EL25-026.aspx
+- Status: listed for reference (not machine-parsed into findings)
+
+Otter Tail Power Company's Petition for Approval of Rate Schedule, Section 13.09, Phase-In Rider (Exhibit B), before the South Dakota Public Utilities Commission, Docket No. EL25-026 (21 pp). Listed for reference (metadata-only). Source: SD PUC electronic docket, EL25-026 (puc.sd.gov/commission/dockets/electric/2025/EL25-026/ExhB.pdf).
+
+---
+
 ## Northern States Power Company d/b/a Xcel Energy
 - Collection: State PUC Audits | Source: Minnesota Public Utilities Commission
 - Docket: G002/GR-23-413 | Audit type: n/a
@@ -6320,6 +6364,28 @@ Findings of Fact of the Administrative Law Judge (Minnesota Office of Administra
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of [NSPW witness] Ascheman in the Application of Northern States Power Company, a Wisconsin Corporation (Xcel Energy), for authority to adjust electric and natural gas rates, before the Public Service Commission of Wisconsin, Docket No. 4220-UR-127 (19 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 539705 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=539705).
+
+---
+
+## Montana-Dakota Utilities Co.
+- Collection: State PUC Audits | Source: South Dakota Public Utilities Commission
+- Docket: EL25-006 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://puc.sd.gov/Dockets/Electric/2025/EL25-006.aspx
+- Status: listed for reference (not machine-parsed into findings)
+
+Montana-Dakota Utilities Co. filing for Approval of the Annual Update to its Transmission Cost Recovery (TCR), before the South Dakota Public Utilities Commission, Docket No. EL25-006 (2 pp). Listed for reference (metadata-only). Source: SD PUC electronic docket, EL25-006 (puc.sd.gov/commission/dockets/electric/2025/EL25-006/EL25-006TCR.pdf).
+
+---
+
+## MidAmerican Energy Company
+- Collection: State PUC Audits | Source: South Dakota Public Utilities Commission
+- Docket: EL25-004 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://puc.sd.gov/Dockets/Electric/2025/EL25-004.aspx
+- Status: listed for reference (not machine-parsed into findings)
+
+MidAmerican Energy Company's Application for Approval of its 2024 Reconciliation and 2025 Transmission Cost Recovery (TCR), before the South Dakota Public Utilities Commission, Docket No. EL25-004 (7 pp). Listed for reference (metadata-only). Source: SD PUC electronic docket, EL25-004 (puc.sd.gov/commission/dockets/electric/2025/EL25-004/Application.pdf).
 
 ---
 
@@ -6408,3 +6474,14 @@ Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Co
 - Status: listed for reference (not machine-parsed into findings)
 
 Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).
+
+---
+
+## Northern States Power Company d/b/a Xcel Energy
+- Collection: State PUC Audits | Source: North Dakota Public Service Commission
+- Docket: PU-24-376 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.nd.gov/public/cases/
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony and Schedules of Nicholas N. Paluck (Exhibit 13) before the North Dakota Public Service Commission in the Application of Northern States Power Company (Xcel Energy) electric rate proceeding, Case No. PU-24-376 (initiated December 2024) (65 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 086-010 (psc.nd.gov/webdocs/case/24-0376/086-010.pdf).

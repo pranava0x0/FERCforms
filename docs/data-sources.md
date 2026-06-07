@@ -253,24 +253,30 @@ Each commission's docket system is different. Patterns below are all confirmed b
   (22AL-0530E) + an electric Commission decision (24AL-0275E, C25-0122-I) + a gas rate-case hearing transcript
   (22AL-0046G); `data/seeds/co_puc.json`.
 
-### ND — North Dakota PSC · `webdocs` static path (cracked 2026-06-07, not yet seeded)
+### ND — North Dakota PSC · `webdocs` static path (shipped 2026-06-07)
 
 - **PDFs at a fully predictable static path:** `https://www.psc.nd.gov/webdocs/case/{CASE}/{NNN-010}.pdf`
   (`{CASE}` = `YY-NNNN`, e.g. `23-0342`; `{NNN}` = the per-case **sequential document number**, e.g. `157`).
   Plain GET, **pipeline UA, no WAF** — verified live (HTTP 200, born-digital `%PDF`, 1.4 MB). `is_official_gov` ✓ (`.gov`).
 - **Enumerate** the doc numbers from the case page (the `psc.nd.gov` site lists each case's filings). Three IOUs:
   **Montana-Dakota Utilities**, **Northern States Power / Xcel**, **Otter Tail Power**.
-- On-theme (fuel/rider cost recovery): Otter Tail **Dual Fuel Riders** (`PU-23-342`), NSP **fuel cost rider** (`PU-24-376`),
-  Montana-Dakota **RRCA** (`PU-25-279`) / **Transmission Cost Adjustment** (`PU-25-225`). Metadata-only.
+- **Shipped** (`data/seeds/nd_psc.json`, all 3 IOUs): NSP/Xcel rate-case direct testimony (`PU-24-376`), Otter Tail
+  **Dual Fuel Riders** (`PU-23-342`), Montana-Dakota **RRCA** (`PU-25-279`) + **Transmission Cost Adjustment**
+  (`PU-25-225`). The `source_page_url` is the generic `psc.nd.gov/public/cases/` landing (per-case pages aren't
+  cleanly deep-linkable); the `pdf_url` is doc-specific. Metadata-only.
 
-### SD — South Dakota PUC · `commission/dockets` static path (cracked 2026-06-07, not yet seeded)
+### SD — South Dakota PUC · `commission/dockets` static path (shipped 2026-06-07)
 
 - **Per-year docket index** `puc.sd.gov/Dockets/Electric/{YEAR}/default.aspx` → docket page `…/{DOCKET}.aspx`
   (docket = `EL{YY}-{NNN}`) → document **PDFs at** `puc.sd.gov/commission/dockets/electric/{YEAR}/{DOCKET}/…pdf`
   (filenames are descriptive, e.g. `attachment1.pdf`, `LTR060425.pdf` — harvest them from the docket page).
   Plain GET, **pipeline UA, no WAF** — verified live (HTTP 200, `%PDF`). `is_official_gov` ✓ (`.gov`).
 - IOUs: **NSP/Xcel**, **MidAmerican**, **Otter Tail**, **Black Hills**, **NorthWestern**, **Montana-Dakota**. On-theme:
-  fuel-clause riders, transmission-cost-recovery (TCR) reconciliations, energy-adjustment riders. Metadata-only.
+  fuel-clause riders, transmission-cost-recovery (TCR) reconciliations, energy-adjustment riders. **Shipped**
+  (`data/seeds/sd_puc.json`): Otter Tail Phase-In Rider petition (`EL25-026`), MidAmerican TCR reconciliation
+  (`EL25-004`), Montana-Dakota TCR annual update (`EL25-006`). **Note:** the per-year index lists dockets as
+  `EL{YY}-{NNN}.aspx`; many are routine (welcome brochures, economic-development reports) — read the docket title
+  + page 1 to keep only cost-recovery/rate matters. Metadata-only.
 - **MISO gap note:** ND + SD close two of the four missing MISO-footprint states; **IA** (`efs.iowa.gov`) is WAF-blocked
   (browser-capture + `fetch=false`, OH/NC pattern) and **MT** (`psc.mt.gov`, partial MISO) is unprobed.
 

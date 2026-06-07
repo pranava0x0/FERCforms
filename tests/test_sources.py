@@ -110,6 +110,8 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424")  # WI ERF
     assert sources.is_official_gov("https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=984848")  # CO (.state.co.us)
     assert sources.is_official_gov("https://www.psc.state.fl.us/library/Orders/2024/09666-2024.pdf")  # FL PSC (legacy .state.fl.us)
+    assert sources.is_official_gov("https://www.psc.nd.gov/webdocs/case/24-0376/086-010.pdf")  # ND PSC (psc.nd.gov)
+    assert sources.is_official_gov("https://puc.sd.gov/commission/dockets/electric/2025/EL25-004/Application.pdf")  # SD PUC (puc.sd.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")
