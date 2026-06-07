@@ -1,0 +1,14 @@
+#!/bin/sh
+# Strip AI-agent co-author trailers from every commit message.
+# Commits are owned by the human who reviews and ships the work; no AI coding
+# agent (Claude, Codex/OpenAI, Gemini/Google, Copilot, Cursor, etc.) is ever a
+# co-author. Tool-agnostic backstop to `git config claude.coauthor false`.
+# See CLAUDE.md "Git discipline -> No agent co-authors".
+# Enable once per clone:  git config core.hooksPath .githooks
+msg_file="$1"
+pattern='^[[:space:]]*co-authored-by:.*(claude|anthropic|codex|openai|chatgpt|gpt-[0-9]|gemini|google|bard|copilot|cursor|jules|devin|sourcegraph|tabnine|noreply@(anthropic|openai|google))'
+tmp="$(mktemp)"
+grep -ivE "$pattern" "$msg_file" > "$tmp" 2>/dev/null || true
+# Only replace if filtering left real content (guard against pathological all-match).
+if [ -s "$tmp" ]; then mv "$tmp" "$msg_file"; else rm -f "$tmp"; fi
+exit 0
