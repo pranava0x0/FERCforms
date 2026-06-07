@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2019-11-22_florida-iou_fl-20190007-ei-psc-2019-0500-fof-ei",
+    "company": "Florida investor-owned electric utilities (environmental cost recovery)",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "final order on environmental cost recovery",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/library/Orders/2019/11080-2019.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/document-detail?orderNum=PSC-2019-0500-FOF-EI",
+    "issued_date": "2019-11-22",
+    "docket": "20190007-EI",
+    "captured_at": "2026-06-07",
+    "source_note": "Florida PSC Order No. PSC-2019-0500-FOF-EI (Final Order), Docket No. 20190007-EI, 'Environmental cost recovery clause', issued November 22, 2019 (11 pp) — the Commission's annual review of the reasonableness of environmental-compliance project costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities (Section 366.8255, Fla. Stat.). Listed for reference (metadata-only). Source: Florida PSC document clerk, document 11080-2019 (psc.state.fl.us/library/Orders/2019/11080-2019.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2023-11-16_florida-iou_fl-20230002-eg-psc-2023-0342-fof-eg",
+    "company": "Florida investor-owned utilities (energy conservation cost recovery)",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "final order on conservation cost recovery",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/library/Orders/2023/06084-2023.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/document-detail?orderNum=PSC-2023-0342-FOF-EG",
+    "issued_date": "2023-11-16",
+    "docket": "20230002-EG",
+    "captured_at": "2026-06-07",
+    "source_note": "Florida PSC Order No. PSC-2023-0342-FOF-EG (Final Order), Docket No. 20230002-EG, 'Energy conservation cost recovery clause', issued November 16, 2023 (9 pp) — the Commission's annual review of energy-conservation / demand-side-management program cost recovery, approving the conservation cost-recovery amounts, tariffs, and factors for January–December 2024 for Florida's investor-owned utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06084-2023 (psc.state.fl.us/library/Orders/2023/06084-2023.pdf).",
+    "parse": false
+  }
+]
