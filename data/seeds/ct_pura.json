@@ -1,0 +1,34 @@
+[
+  {
+    "id": "connecticut-edcs_ct-20-08-03-tropical-storm-isaias-decision",
+    "company": "The Connecticut Light and Power Company (Eversource) and United Illuminating Company",
+    "collection": "state_audit",
+    "jurisdiction": "CT",
+    "source": "Connecticut Public Utilities Regulatory Authority",
+    "doc_type": "performance investigation final decision",
+    "industry": "electric",
+    "pdf_url": "https://portal.ct.gov/-/media/PURA/1-Final-Decision--PURA-Issues-Ruling-on-Utilities-Preparation-for-Response-to-Tropical-Storm-Isaias.pdf",
+    "source_page_url": "https://portal.ct.gov/pura/industries/rate-case-information",
+    "issued_date": null,
+    "docket": "20-08-03",
+    "captured_at": "2026-06-07",
+    "source_note": "Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).",
+    "parse": false
+  },
+  {
+    "id": "connecticut-edcs_ct-17-12-03re011-rate-design-decision-phase-1a",
+    "company": "Connecticut electric distribution companies (Eversource / United Illuminating)",
+    "collection": "state_audit",
+    "jurisdiction": "CT",
+    "source": "Connecticut Public Utilities Regulatory Authority",
+    "doc_type": "rate design investigation decision",
+    "industry": "electric",
+    "pdf_url": "https://portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf",
+    "source_page_url": "https://portal.ct.gov/pura/industries/rate-case-information",
+    "issued_date": null,
+    "docket": "17-12-03RE011",
+    "captured_at": "2026-06-07",
+    "source_note": "Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).",
+    "parse": false
+  }
+]

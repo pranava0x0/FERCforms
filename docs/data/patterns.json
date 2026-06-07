@@ -1,10 +1,10 @@
 {
-  "report_count": 238,
+  "report_count": 242,
   "finding_count": 629,
   "other_matter_count": 3,
   "recommendation_count": 1582,
   "by_industry": {
-    "electric": 196,
+    "electric": 200,
     "oil": 18,
     "gas": 17,
     "unknown": 7
@@ -23,8 +23,8 @@
     "2021": 14,
     "2022": 17,
     "2023": 19,
-    "2024": 33,
-    "2025": 42,
+    "2024": 34,
+    "2025": 43,
     "2026": 4
   },
   "by_function": {

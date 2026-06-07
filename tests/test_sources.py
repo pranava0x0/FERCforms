@@ -122,6 +122,8 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://docs.cpuc.ca.gov/published/Final_decision/51417.htm")  # CA CPUC (.ca.gov)
     assert sources.is_official_gov("https://dps.ny.gov/system/files/documents/2025/08/x.pdf")  # NY DPS (.ny.gov)
     assert sources.is_official_gov("https://estar.kcc.ks.gov/estar/ViewFile.aspx/x.pdf?Id=y")  # KS KCC (.ks.gov)
+    assert sources.is_official_gov("https://pscdocs.utah.gov/electric/24docs/2403504/x.pdf")  # UT PSC (.utah.gov)
+    assert sources.is_official_gov("https://portal.ct.gov/-/media/pura/electric/x.pdf")  # CT PURA (.ct.gov)
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")

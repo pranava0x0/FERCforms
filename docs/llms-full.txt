@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 238 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 242 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5706,6 +5706,17 @@ Direct Testimony of Maria Roumpani, PhD on behalf of Georgia Conservation Voters
 
 ---
 
+## Rocky Mountain Power (PacifiCorp)
+- Collection: State PUC Audits | Source: Public Service Commission of Utah
+- Docket: 24-035-04 | Audit type: n/a
+- Issued: 2025-04-25 | Industry: electric | FERC Form: n/a
+- Source page: https://psc.utah.gov/electric/orders-notices/electric-2025/
+- Status: listed for reference (not machine-parsed into findings)
+
+Report and Order of the Public Service Commission of Utah (April 25, 2025) on the Application of Rocky Mountain Power (PacifiCorp) for Authority to Increase its Retail Electric Utility Service Rates in Utah, Docket No. 24-035-04 (consolidated 23-035-40, 23-035-44) — a base-rate case (~$382.1M requested increase) (196 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403504/).
+
+---
+
 ## Niagara Mohawk Power Corporation d/b/a National Grid
 - Collection: State PUC Audits | Source: New York State Department of Public Service
 - Docket: 24-E-0322 | Audit type: n/a
@@ -5802,6 +5813,17 @@ Order and Opinion of the Public Service Commission of the District of Columbia i
 - Status: listed for reference (not machine-parsed into findings)
 
 Preliminary Order of the Public Utility Commission of Texas identifying the issues (including prudence of fuel and purchased-power costs) in El Paso Electric Company's application to reconcile Texas-jurisdictional fuel, fuel-related, and purchased-power expenses for the reconciliation period April 1, 2022 through March 31, 2024. PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed November 14, 2024. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_34_1442512.PDF.
+
+---
+
+## Rocky Mountain Power (PacifiCorp)
+- Collection: State PUC Audits | Source: Public Service Commission of Utah
+- Docket: 24-035-01 | Audit type: n/a
+- Issued: 2024-11-05 | Industry: electric | FERC Form: n/a
+- Source page: https://psc.utah.gov/electric/orders-notices/electric-2025/
+- Status: listed for reference (not machine-parsed into findings)
+
+Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel & purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).
 
 ---
 
@@ -6606,6 +6628,28 @@ Missouri Public Service Commission Staff Report — Tenth Prudence Review of Cos
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Missouri Public Service Commission (session order) addressing Union Electric Company d/b/a Ameren Missouri's Fuel Adjustment Clause true-up (File No. EO-2022-0027), Fuel Adjustment Rate adjustment (File No. ER-2022-0026), and related rate proceeding (ER-2021-0240) (15 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 80659 (efis.psc.mo.gov/Document/Display/80659).
+
+---
+
+## The Connecticut Light and Power Company (Eversource) and United Illuminating Company
+- Collection: State PUC Audits | Source: Connecticut Public Utilities Regulatory Authority
+- Docket: 20-08-03 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://portal.ct.gov/pura/industries/rate-case-information
+- Status: listed for reference (not machine-parsed into findings)
+
+Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).
+
+---
+
+## Connecticut electric distribution companies (Eversource / United Illuminating)
+- Collection: State PUC Audits | Source: Connecticut Public Utilities Regulatory Authority
+- Docket: 17-12-03RE011 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://portal.ct.gov/pura/industries/rate-case-information
+- Status: listed for reference (not machine-parsed into findings)
+
+Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
 
 ---
 
