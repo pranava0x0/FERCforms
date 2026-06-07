@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 224 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 226 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6073,6 +6073,17 @@ Order No. 90847 (Order on Appeals) on The Potomac Edison Company's application f
 
 ---
 
+## Tucson Electric Power Company
+- Collection: State PUC Audits | Source: Arizona Corporation Commission
+- Docket: E-01933A-22-0107 | Audit type: n/a
+- Issued: 2023-08-25 | Industry: electric | FERC Form: n/a
+- Source page: https://edocket.azcc.gov/search/docket-search
+- Status: listed for reference (not machine-parsed into findings)
+
+Arizona Corporation Commission Decision No. 79065 (docketed August 25, 2023), Docket No. E-01933A-22-0107, in the matter of the application of Tucson Electric Power Company (TEP) for a rate increase — approving a revenue increase of $100,130,000 (8.93%) with a 9.55% return on equity, rates effective September 1, 2023 (189 pp, born-digital). Listed for reference (metadata-only). Source: ACC eDocket image store (docket.images.azcc.gov/0000209684.pdf).
+
+---
+
 ## Philadelphia Gas Works
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2022-3030321 | Audit type: n/a
@@ -6507,6 +6518,17 @@ Missouri Public Service Commission Staff Report — Tenth Prudence Review of Cos
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Missouri Public Service Commission (session order) addressing Union Electric Company d/b/a Ameren Missouri's Fuel Adjustment Clause true-up (File No. EO-2022-0027), Fuel Adjustment Rate adjustment (File No. ER-2022-0026), and related rate proceeding (ER-2021-0240) (15 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 80659 (efis.psc.mo.gov/Document/Display/80659).
+
+---
+
+## Arizona Public Service Company
+- Collection: State PUC Audits | Source: Arizona Corporation Commission
+- Docket: E-01345A-03-0437 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.azcc.gov/utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Arizona Corporation Commission order in the Arizona Public Service Company (APS) general rate case, Docket No. E-01345A-03-0437 (178 pp; scanned cover with a born-digital body — the parties/appearances list and findings carry a text layer). Posted on the ACC Utilities Division site as 'APS-FinalOrder.pdf'. Listed for reference (metadata-only). Source: Arizona Corporation Commission (www.azcc.gov/divisions/utilities/electric/APS-FinalOrder.pdf).
 
 ---
 

@@ -117,6 +117,8 @@ def test_is_official_gov_accepts_gov_rejects_mirrors():
     assert sources.is_official_gov("https://apiproxy.utc.wa.gov/cases/GetDocument?docID=4536")  # WA UTC (utc.wa.gov)
     assert sources.is_official_gov("https://psc.mt.gov/News/Special/FinalOrder7860y_DOC-26058.pdf")  # MT PSC (psc.mt.gov)
     assert sources.is_official_gov("https://pucweb1.state.nv.us/pdf/CS27269.pdf")  # NV PUCN (legacy .state.nv.us)
+    assert sources.is_official_gov("https://docket.images.azcc.gov/0000209684.pdf")  # AZ ACC eDocket image host
+    assert sources.is_official_gov("https://www.azcc.gov/divisions/utilities/electric/APS-FinalOrder.pdf")  # AZ ACC main site
     # Narrow .org allowlist: the DC PSC's own domain (it never adopted .gov).
     assert sources.is_official_gov("https://edocket.dcpsc.org/apis/api/Filing/download?attachId=1")
     assert sources.is_official_gov("https://dcpsc.org/CMSPages/GetFile.aspx?guid=x")

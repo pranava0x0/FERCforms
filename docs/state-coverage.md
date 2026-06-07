@@ -1,6 +1,6 @@
 # State PUC coverage — completeness audit
 
-State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **30 jurisdictions, 90 documents**,
+State of the **State PUC Audits** collection as of 2026-06-07. Snapshot: **31 jurisdictions, 92 documents**,
 all metadata-only ("Listed for reference") **except PA**, the only state with parsed verbatim findings
 (3 Management & Operations audits via `pipeline/state_structure.py`). Access mechanics per state live in
 [data-sources.md](data-sources.md); the expansion roadmap in [../BACKLOG.md](../BACKLOG.md).
@@ -50,11 +50,12 @@ cover the state's **major investor-owned utilities (IOUs)** and its **signature 
 | **WA** | (WECC, non-RTO) | 1 | Puget Sound Energy | deferred-accounting order (UE-220066) | **Thin** | Avista, PacifiCorp; the actual power-cost order |
 | **MT** | WECC/(MISO) | 1 | NorthWestern Energy | general rate-case final order (PCCAM base) | **Thin** | 2024/25 rate case; Montana-Dakota |
 | **NV** | (WECC, non-RTO) | 1 | NV Energy | 2025 GRC notice (25-02016) | **Thin** | the annual **DEAA** fuel-prudence order (higher value) |
+| **AZ** | (WECC, non-RTO) | 2 | APS + Tucson Electric Power | rate-case orders (TEP Decision 79065) | **Partial** | UNS; APS recent decision; PSA prudence |
 
 ## Fully missing (no seed yet)
 
 - **MISO gaps:** **IA** (`efs.iowa.gov`, WAF → browser-capture + `fetch=false`); **MT** now cracked (see below).
-- **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT** now seeded (7 docs — in the table above); deepen each with its power-cost-adjustment / DEAA / PCA / PCCAM order. **AZ** (broken TLS on the eDocket image host → browser-capture) and **NM** (new PRCe360 registration wall) remain blocked.
+- **Southwest + Pacific Northwest (recipes in [data-sources.md](data-sources.md)):** **WA, OR, ID, NV, MT, AZ** now seeded (9 docs — in the table above); deepen each with its power-cost-adjustment / DEAA / PCA / PCCAM order. **NM** is the lone Southwest holdout — its new PRCe360 portal 302-redirects to a login wall (no anonymous document access).
 - **Large untapped:** **CA** (CPUC — PG&E/SCE/SDG&E, huge), **NY** (DPS DMM — Con Ed/National Grid), plus KS, OK, NE, MA, CT, TN, AL. The corpus is currently **East / Midwest / South** weighted.
 
 ## Headline reads
