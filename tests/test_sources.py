@@ -271,8 +271,9 @@ class _FakeSession:
         self._q = list(outcomes)
         self.calls = 0
 
-    def get(self, url, timeout=None):
+    def get(self, url, timeout=None, headers=None):
         self.calls += 1
+        self.last_headers = headers
         o = self._q.pop(0) if len(self._q) > 1 else self._q[0]
         if isinstance(o, Exception):
             raise o
@@ -291,11 +292,25 @@ def test_fetch_doc_fails_fast_on_broken_tls(tmp_path):
     assert s.calls == 1  # no pointless retries on a broken cert
 
 
-def test_fetch_doc_fails_fast_on_waf_or_login_wall(tmp_path):
+def test_fetch_doc_fails_on_waf_after_browser_ua_fallback(tmp_path):
+    """A 403 triggers ONE honest-first browser-UA retry; if that is ALSO blocked,
+    fetch fails with the WAF guidance. Two calls total (informative UA, then browser UA)."""
     s = _FakeSession(_FakeResp(403, b"<html>Access Denied</html>", "text/html"))
-    with pytest.raises(sources.SourceFetchError, match="WAF or login wall"):
+    with pytest.raises(sources.SourceFetchError, match="browser-UA fallback also failed"):
         sources.fetch_doc(s, _seed(), tmp_path)
-    assert s.calls == 1
+    assert s.calls == 2
+
+
+def test_fetch_doc_browser_ua_fallback_succeeds(tmp_path):
+    """The michigan.gov MPSC case: our informative UA gets 403, but the same public
+    PDF is served to a browser UA. The 403→browser-UA retry downloads it."""
+    pdf = b"%PDF-" + b"y" * 20000
+    s = _FakeSession(_FakeResp(403, b"<html>Access Denied</html>", "text/html"),
+                     _FakeResp(200, pdf, "application/pdf"))
+    out = sources.fetch_doc(s, _seed(), tmp_path)
+    assert out.read_bytes() == pdf
+    assert s.calls == 2
+    assert s.last_headers["User-Agent"] == config.BROWSER_USER_AGENT  # retry used the browser UA
 
 
 def test_fetch_doc_retries_connection_error_then_succeeds(tmp_path):

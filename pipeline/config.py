@@ -43,6 +43,17 @@ ELIBRARY_ORIGIN: str = "https://elibrary.ferc.gov"
 USER_AGENT: str = (
     "FERC-Audit-Tool/0.1 (+https://github.com/pranava0x0/FERCforms; public-interest research)"
 )
+# Honest-first fallback UA. Some official .gov hosts (e.g. michigan.gov's MPSC
+# reports) front *public* PDFs with a Cloudflare/WAF bot-check that 403s any
+# non-browser UA — including our informative one — while serving the exact same
+# document to a real browser. We try USER_AGENT first ALWAYS; only on a 401/403
+# do we retry once with this browser UA, and only to fetch already-public
+# government documents (never to defeat a login/paywall). Verified 2026-06-08:
+# michigan.gov 403s USER_AGENT, returns the real 4 MB PDF to this UA.
+BROWSER_USER_AGENT: str = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
 REQUEST_DELAY_SECONDS: float = 2.0     # min gap between requests to one host
 # eLibrary's DownloadPDF generates the combined PDF server-side; large/old
 # accessions can take >60s, so allow generous headroom (some 2019 reports

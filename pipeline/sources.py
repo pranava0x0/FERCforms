@@ -134,7 +134,22 @@ def fetch_doc(
     if not force and dest.exists() and dest.stat().st_size > _MIN_PDF_BYTES:
         return _return_cached(dest)
 
+    def _save(content: bytes) -> Path:
+        n = len(content)
+        tmp = dest.with_suffix(".pdf.part")
+        tmp.write_bytes(content)
+        tmp.replace(dest)
+        if n < _SUSPICIOUS_PDF_BYTES:
+            logger.warning(
+                "downloaded %s but only %d bytes — possible placeholder/cover page; verify page 1",
+                dest.name, n,
+            )
+        else:
+            logger.info("downloaded %s (%d bytes)", dest.name, n)
+        return dest
+
     last_error: str | None = None
+    browser_ua_tried = False  # honest-first: only fall back to a browser UA after a 401/403
     for attempt in range(1, config.MAX_RETRIES + 1):
         time.sleep(config.REQUEST_DELAY_SECONDS)
         try:
@@ -164,26 +179,40 @@ def fetch_doc(
 
         ctype = resp.headers.get("content-type", "")
         if resp.status_code == 200 and resp.content[:5] == _PDF_MAGIC:
-            n = len(resp.content)
-            tmp = dest.with_suffix(".pdf.part")
-            tmp.write_bytes(resp.content)
-            tmp.replace(dest)
-            if n < _SUSPICIOUS_PDF_BYTES:
-                logger.warning(
-                    "downloaded %s but only %d bytes — possible placeholder/cover page; verify page 1",
-                    dest.name, n,
-                )
-            else:
-                logger.info("downloaded %s (%d bytes)", dest.name, n)
-            return dest
+            return _save(resp.content)
 
         if resp.status_code in (401, 403):
-            # WAF / login wall (OH PUCO F5, NC Cloudflare, IA efs.iowa.gov, NM
-            # PRCe360). A plain GET can't pass it — fail fast with the workaround.
+            # WAF / bot-check (OH PUCO F5, NC Cloudflare, michigan.gov MPSC, IA
+            # efs.iowa.gov, NM PRCe360). Honest-first fallback: several of these
+            # front *public* gov PDFs and 403 only our non-browser UA while serving
+            # the same document to a real browser (verified: michigan.gov MPSC).
+            # Retry ONCE with a browser UA before giving up — only to fetch already-
+            # public government documents, never to defeat a login/paywall.
+            if not browser_ua_tried:
+                browser_ua_tried = True
+                logger.info(
+                    "%s: HTTP %d with informative UA — retrying once with browser UA",
+                    seed.id, resp.status_code,
+                )
+                time.sleep(config.REQUEST_DELAY_SECONDS)
+                try:
+                    resp = session.get(
+                        seed.pdf_url,
+                        timeout=config.REQUEST_TIMEOUT_SECONDS,
+                        headers={"User-Agent": config.BROWSER_USER_AGENT},
+                    )
+                except requests.RequestException as exc:
+                    last_error = f"browser-UA retry error: {exc}"
+                    logger.warning("attempt %d/%d for %s: %s", attempt, config.MAX_RETRIES, seed.id, last_error)
+                    time.sleep(_backoff_seconds(attempt))
+                    continue
+                if resp.status_code == 200 and resp.content[:5] == _PDF_MAGIC:
+                    logger.info("%s: browser-UA fallback succeeded", seed.id)
+                    return _save(resp.content)
             raise SourceFetchError(
                 f"{seed.id}: HTTP {resp.status_code} ({ctype or 'no content-type'}) — looks like a "
-                f"WAF or login wall. Open in a real browser (Chrome MCP) and seed fetch=false, or "
-                f"find a host that isn't walled."
+                f"WAF or login wall (browser-UA fallback also failed). Open in a real browser "
+                f"(Chrome MCP) and seed fetch=false, or find a host that isn't walled."
             )
 
         if resp.status_code == 429:
