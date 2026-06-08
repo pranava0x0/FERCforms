@@ -190,13 +190,16 @@ def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional
 
 
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
-    # State audit dispatch
+    # State document dispatch
     if entry.collection == "state_audit":
         if entry.doc_type and "management" in entry.doc_type.lower():
             return structure_state_pa_audit(entry, text)
         # TODO: Add other state audit parsers here (service quality, compliance, etc.)
         # For now, return minimal report for unsupported state audit types
         logger.debug("no parser for state audit type: %s", entry.doc_type)
+
+    if entry.collection == "state_rate_case":
+        return structure_state_rate_case(entry, text)
 
     # FERC audit extraction (original)
     page1 = text.pages[0].text if text.pages else ""
@@ -274,6 +277,87 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         functions=forms.detect_functions(full_raw),
         forms=meta["forms"],
         finding_count=sum(1 for f in findings if not f.is_other_matter),
+        findings=findings,
+    )
+
+
+def _extract_rate_case_findings(full_text: str, doc_type: str) -> list[Finding]:
+    """Extract key regulatory decisions from rate-case documents.
+
+    Looks for:
+    - Disallowances: "$X cost request denied for [reason]"
+    - Approvals: "$X recovery approved [with conditions]"
+    - Settlements: "Parties agree to [outcome]"
+
+    Returns minimal findings for rate cases (different from audit "findings").
+    """
+    findings: list[Finding] = []
+
+    # Keywords that indicate key decisions
+    decision_patterns = [
+        (r"(?i)(\$[\d.,]+\s*(?:million|M)?)\s+.*?(?:disallow|deny|reject)", "Disallowance"),
+        (r"(?i)(?:approve|grant|allow).*?(\$[\d.,]+\s*(?:million|M)?)", "Approval"),
+        (r"(?i)settlement.*?(agreement|terms)", "Settlement"),
+    ]
+
+    for pattern, category in decision_patterns:
+        matches = re.finditer(pattern, full_text)
+        for m in matches:
+            # Extract context around match
+            start = max(0, m.start() - 100)
+            end = min(len(full_text), m.end() + 150)
+            context = full_text[start:end]
+            context = re.sub(r"\s+", " ", context).strip()
+
+            if len(context) > 20:  # Only add substantial findings
+                findings.append(
+                    Finding(
+                        index=len(findings) + 1,
+                        title=f"{category}: {m.group(1) if m.groups() else 'Regulatory decision'}",
+                        summary=context[:300],
+                        is_other_matter=False,
+                        recommendations=[]
+                    )
+                )
+
+    return findings
+
+
+def structure_state_rate_case(entry: ListingEntry, text: ReportText) -> AuditReport:
+    """Parse state regulatory rate-case orders and decisions.
+
+    Rate cases document regulatory decisions on cost recovery, rate design,
+    and settlement terms. Unlike audits (which flag operational issues),
+    rate cases show what costs the commission approved/denied and why.
+
+    Extraction: Key regulatory decisions (disallowances, approvals, settlements)
+    as minimal findings.
+    """
+    full_raw = "\n".join(p.text for p in text.pages)
+    findings = _extract_rate_case_findings(full_raw, entry.doc_type or "")
+
+    return AuditReport(
+        source=entry.source,  # Use original source (state PUC, etc.)
+        id=entry.id,
+        company=entry.company,
+        company_raw=entry.company_raw,
+        docket=entry.docket,
+        docket_full=None,
+        issued_date=entry.issued_date,
+        source_page_url=entry.source_page_url,
+        pdf_download_url=entry.pdf_download_url,
+        captured_at=entry.captured_at,
+        source_note=entry.source_note,
+        archived_via=entry.archived_via,
+        page_count=text.page_count,
+        scanned_pages=text.scanned_pages,
+        ocr_used=text.ocr_used,
+        audit_period=None,
+        industry=entry.industry or "electric",
+        audit_type=None,
+        functions=[],
+        forms=[],
+        finding_count=len([f for f in findings if not f.is_other_matter]),
         findings=findings,
     )
 
