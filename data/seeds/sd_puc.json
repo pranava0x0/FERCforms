@@ -2,7 +2,7 @@
   {
     "id": "otter-tail-power_sd-el25-026-phase-in-rider-petition",
     "company": "Otter Tail Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SD",
     "source": "South Dakota Public Utilities Commission",
     "doc_type": "rider petition",
@@ -18,7 +18,7 @@
   {
     "id": "midamerican-energy_sd-el25-004-tcr-reconciliation",
     "company": "MidAmerican Energy Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SD",
     "source": "South Dakota Public Utilities Commission",
     "doc_type": "cost-recovery application",
@@ -34,7 +34,7 @@
   {
     "id": "montana-dakota-utilities_sd-el25-006-tcr-annual-update",
     "company": "Montana-Dakota Utilities Co.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SD",
     "source": "South Dakota Public Utilities Commission",
     "doc_type": "cost-recovery application",

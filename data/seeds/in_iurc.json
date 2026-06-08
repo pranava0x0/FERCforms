@@ -2,7 +2,7 @@
   {
     "id": "2026-04-08_duke-energy-indiana_in-38707-fac147",
     "company": "Duke Energy Indiana, LLC",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IN",
     "source": "Indiana Utility Regulatory Commission",
     "doc_type": "fuel cost adjustment order",
@@ -18,7 +18,7 @@
   {
     "id": "2025-01-29_northern-indiana-public-service_in-38706-fac145",
     "company": "Northern Indiana Public Service Company LLC",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IN",
     "source": "Indiana Utility Regulatory Commission",
     "doc_type": "fuel cost adjustment order",
@@ -34,7 +34,7 @@
   {
     "id": "2021-08-25_aes-indiana_in-38703-fac132",
     "company": "Indianapolis Power & Light Company d/b/a AES Indiana",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IN",
     "source": "Indiana Utility Regulatory Commission",
     "doc_type": "fuel cost adjustment order",

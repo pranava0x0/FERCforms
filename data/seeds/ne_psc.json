@@ -2,7 +2,7 @@
   {
     "id": "black-hills-nebraska-gas_ne-ng-0086-cost-of-service-gas-hedge-denied",
     "company": "Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NE",
     "source": "Nebraska Public Service Commission",
     "doc_type": "order on gas cost hedge agreement (denied)",
@@ -18,7 +18,7 @@
   {
     "id": "sourcegas-black-hills_ne-ng-0088-gas-supply-contract-buyout-costs",
     "company": "SourceGas Distribution LLC (now Black Hills Energy)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NE",
     "source": "Nebraska Public Service Commission",
     "doc_type": "order on gas supply contract buyout cost recovery",

@@ -2,7 +2,7 @@
   {
     "id": "2005-11-18_pacific-gas-and-electric_ca-a05-02-014-d05-11-007-erra",
     "company": "Pacific Gas and Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CA",
     "source": "California Public Utilities Commission",
     "doc_type": "ERRA reasonableness/prudence decision",
@@ -19,7 +19,7 @@
   {
     "id": "2006-01_southern-california-edison_ca-d06-01-007-erra",
     "company": "Southern California Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CA",
     "source": "California Public Utilities Commission",
     "doc_type": "ERRA reasonableness/prudence decision",
@@ -36,7 +36,7 @@
   {
     "id": "2003-12_san-diego-gas-and-electric_ca-a02-12-028-d03-12-063-erra",
     "company": "San Diego Gas & Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CA",
     "source": "California Public Utilities Commission",
     "doc_type": "ERRA reasonableness/prudence decision",

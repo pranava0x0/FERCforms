@@ -2,7 +2,7 @@
   {
     "id": "2024-09_rhode-island-energy_ri-24-29-ng-gas-cost-recovery",
     "company": "The Narragansett Electric Company d/b/a Rhode Island Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "RI",
     "source": "Rhode Island Public Utilities Commission",
     "doc_type": "gas cost recovery filing",
@@ -18,7 +18,7 @@
   {
     "id": "2025-01_rhode-island-energy_ri-24-38-ge-order-25247",
     "company": "The Narragansett Electric Company d/b/a Rhode Island Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "RI",
     "source": "Rhode Island Public Utilities Commission",
     "doc_type": "commission order",

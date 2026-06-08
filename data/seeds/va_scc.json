@@ -2,7 +2,7 @@
   {
     "id": "2025-11-25_virginia-electric-power_pur-2025-00058",
     "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "VA",
     "source": "Virginia State Corporation Commission",
     "doc_type": "biennial review order",
@@ -18,7 +18,7 @@
   {
     "id": "2025-11-25_virginia-electric-power_pur-2025-00037",
     "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "VA",
     "source": "Virginia State Corporation Commission",
     "doc_type": "CPCN order",
@@ -34,7 +34,7 @@
   {
     "id": "2025-08-29_appalachian-power_pur-2024-00161",
     "company": "Appalachian Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "VA",
     "source": "Virginia State Corporation Commission",
     "doc_type": "net metering order",
@@ -50,7 +50,7 @@
   {
     "id": "2025-08-01_virginia-electric-power_pur-2025-00076",
     "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "VA",
     "source": "Virginia State Corporation Commission",
     "doc_type": "rate adjustment clause order",
@@ -66,7 +66,7 @@
   {
     "id": "2024-09-04_virginia-electric-power_pur-2024-00137",
     "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "VA",
     "source": "Virginia State Corporation Commission",
     "doc_type": "rate adjustment clause order",

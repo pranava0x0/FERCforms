@@ -2,7 +2,7 @@
   {
     "id": "2025-03-19_kentucky-power_ky-2024-00136-fac",
     "company": "Kentucky Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "KY",
     "source": "Kentucky Public Service Commission",
     "doc_type": "fuel adjustment clause order",
@@ -18,7 +18,7 @@
   {
     "id": "2026-02-16_louisville-gas-electric_ky-2025-00114",
     "company": "Louisville Gas and Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "KY",
     "source": "Kentucky Public Service Commission",
     "doc_type": "base-rate case order",
@@ -34,7 +34,7 @@
   {
     "id": "2025-10-02_duke-energy-kentucky_ky-2024-00354",
     "company": "Duke Energy Kentucky, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "KY",
     "source": "Kentucky Public Service Commission",
     "doc_type": "base-rate case order",

@@ -2,7 +2,7 @@
   {
     "id": "wisconsin-electric-power_wi-very-large-customer-bespoke-tariffs-sc-fisher",
     "company": "Wisconsin Electric Power Company (We Energies)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WI",
     "source": "Public Service Commission of Wisconsin",
     "doc_type": "direct testimony",
@@ -10,13 +10,13 @@
     "pdf_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424",
     "source_page_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424",
     "captured_at": "2026-06-02",
-    "source_note": "Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) — an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).",
+    "source_note": "Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) \u2014 an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).",
     "parse": false
   },
   {
     "id": "northern-states-power-wisconsin_wi-4220-ur-127-direct-ascheman",
     "company": "Northern States Power Company (Wisconsin)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WI",
     "source": "Public Service Commission of Wisconsin",
     "doc_type": "direct testimony",
@@ -30,7 +30,7 @@
   {
     "id": "madison-gas-electric_wi-3270-ur-125-direct-penington",
     "company": "Madison Gas and Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WI",
     "source": "Public Service Commission of Wisconsin",
     "doc_type": "direct testimony",

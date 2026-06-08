@@ -2,7 +2,7 @@
   {
     "id": "arizona-public-service_az-e-01345a-03-0437-rate-case-order",
     "company": "Arizona Public Service Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "AZ",
     "source": "Arizona Corporation Commission",
     "doc_type": "rate case order",
@@ -18,7 +18,7 @@
   {
     "id": "2023-08-25_tucson-electric-power_az-e-01933a-22-0107-decision-79065",
     "company": "Tucson Electric Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "AZ",
     "source": "Arizona Corporation Commission",
     "doc_type": "rate case decision",

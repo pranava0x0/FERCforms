@@ -2,7 +2,7 @@
   {
     "id": "2024-04-18_delmarva-power-light_de-22-0897",
     "company": "Delmarva Power & Light Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "DE",
     "source": "Delaware Public Service Commission",
     "doc_type": "base-rate case order",

@@ -2,7 +2,7 @@
   {
     "id": "2024-11-26_potomac-electric-power_dc-fc1176",
     "company": "Potomac Electric Power Company (Pepco)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "DC",
     "source": "Public Service Commission of the District of Columbia",
     "doc_type": "multi-year rate plan order",
@@ -12,13 +12,13 @@
     "issued_date": "2024-11-26",
     "docket": "FC 1176",
     "captured_at": "2026-06-02",
-    "source_note": "Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).",
+    "source_note": "Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist \u2014 see ISSUES.md).",
     "parse": false
   },
   {
     "id": "2025-01-28_potomac-electric-power_dc-fc1176-reconsideration",
     "company": "Potomac Electric Power Company (Pepco)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "DC",
     "source": "Public Service Commission of the District of Columbia",
     "doc_type": "order on reconsideration",

@@ -2,7 +2,7 @@
   {
     "id": "evergy-kansas-central_ks-25-ekce-294-rts-order-approving-settlement",
     "company": "Evergy Kansas Central, Inc. and Evergy Kansas South, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "KS",
     "source": "Kansas Corporation Commission",
     "doc_type": "rate case order",
@@ -18,7 +18,7 @@
   {
     "id": "2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation",
     "company": "Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "KS",
     "source": "Kansas Corporation Commission",
     "doc_type": "winter-storm cost investigation stipulation",

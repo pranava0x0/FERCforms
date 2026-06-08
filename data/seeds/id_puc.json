@@ -2,7 +2,7 @@
   {
     "id": "2025-05-30_idaho-power_id-ipc-e-25-20-order-36618-pca",
     "company": "Idaho Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ID",
     "source": "Idaho Public Utilities Commission",
     "doc_type": "power cost adjustment order",
@@ -18,7 +18,7 @@
   {
     "id": "2022-05-31_idaho-power_id-ipc-e-22-11-order-35421-pca",
     "company": "Idaho Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ID",
     "source": "Idaho Public Utilities Commission",
     "doc_type": "power cost adjustment order",

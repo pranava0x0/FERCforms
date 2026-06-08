@@ -2,7 +2,7 @@
   {
     "id": "2025-08_niagara-mohawk-national-grid_ny-24-e-0322-rate-case-summary",
     "company": "Niagara Mohawk Power Corporation d/b/a National Grid",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NY",
     "source": "New York State Department of Public Service",
     "doc_type": "rate case summary",
@@ -18,7 +18,7 @@
   {
     "id": "2025-02_consolidated-edison_ny-25-e-0072-rate-case-summary",
     "company": "Consolidated Edison Company of New York, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NY",
     "source": "New York State Department of Public Service",
     "doc_type": "rate case summary",
@@ -34,7 +34,7 @@
   {
     "id": "2025-07_nyseg_ny-25-e-0375-rate-case-summary",
     "company": "New York State Electric & Gas Corporation",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NY",
     "source": "New York State Department of Public Service",
     "doc_type": "rate case summary",
@@ -50,7 +50,7 @@
   {
     "id": "2025-04-25_niagara-mohawk-national-grid_ny-24-e-0322-joint-proposal",
     "company": "Niagara Mohawk Power Corporation d/b/a National Grid",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "NY",
     "source": "New York State Department of Public Service",
     "doc_type": "rate case joint proposal",

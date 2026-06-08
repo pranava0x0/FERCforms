@@ -2,7 +2,7 @@
   {
     "id": "2025-09-04_puget-sound-energy_wa-ue-220066-order-38",
     "company": "Puget Sound Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WA",
     "source": "Washington Utilities and Transportation Commission",
     "doc_type": "deferred accounting order",
@@ -18,7 +18,7 @@
   {
     "id": "2025-09-04_avista_wa-ue-220053-order",
     "company": "Avista Corporation d/b/a Avista Utilities",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WA",
     "source": "Washington Utilities and Transportation Commission",
     "doc_type": "commission order",
@@ -34,7 +34,7 @@
   {
     "id": "2026-03-13_pacificorp_wa-ue-230172-order",
     "company": "PacifiCorp d/b/a Pacific Power & Light Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WA",
     "source": "Washington Utilities and Transportation Commission",
     "doc_type": "commission order",

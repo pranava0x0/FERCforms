@@ -2,7 +2,7 @@
   {
     "id": "2025-05-05_georgia-power-company_ga-56002-pias-smith-forsythe",
     "company": "Georgia Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "GA",
     "source": "Georgia Public Service Commission",
     "doc_type": "direct testimony",
@@ -18,7 +18,7 @@
   {
     "id": "2025-05-05_georgia-power-company_ga-56002-pias-barber-cooper-spellman",
     "company": "Georgia Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "GA",
     "source": "Georgia Public Service Commission",
     "doc_type": "direct testimony",
@@ -34,7 +34,7 @@
   {
     "id": "2025-05-05_georgia-power-company_ga-56002-pias-smith-kannan",
     "company": "Georgia Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "GA",
     "source": "Georgia Public Service Commission",
     "doc_type": "direct testimony",
@@ -50,7 +50,7 @@
   {
     "id": "2025-05-02_georgia-power-company_ga-56002-gcv-roumpani",
     "company": "Georgia Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "GA",
     "source": "Georgia Public Service Commission",
     "doc_type": "direct testimony",

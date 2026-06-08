@@ -2,7 +2,7 @@
   {
     "id": "2024_northern-states-power_nd-pu-24-376-direct-testimony",
     "company": "Northern States Power Company d/b/a Xcel Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ND",
     "source": "North Dakota Public Service Commission",
     "doc_type": "direct testimony",
@@ -18,7 +18,7 @@
   {
     "id": "2025-08-19_otter-tail-power_nd-pu-23-342-dual-fuel-riders",
     "company": "Otter Tail Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ND",
     "source": "North Dakota Public Service Commission",
     "doc_type": "fuel rider filing",
@@ -34,7 +34,7 @@
   {
     "id": "2025-10-31_montana-dakota-utilities_nd-pu-25-279-rrca",
     "company": "Montana-Dakota Utilities Co.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ND",
     "source": "North Dakota Public Service Commission",
     "doc_type": "rider update application",
@@ -50,7 +50,7 @@
   {
     "id": "2025-07-15_montana-dakota-utilities_nd-pu-25-225-tca",
     "company": "Montana-Dakota Utilities Co.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "ND",
     "source": "North Dakota Public Service Commission",
     "doc_type": "rider update application",

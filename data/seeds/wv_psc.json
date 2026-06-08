@@ -2,7 +2,7 @@
   {
     "id": "2024-01-09_appalachian-wheeling-power_wv-23-0377-e-enec",
     "company": "Appalachian Power Company and Wheeling Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WV",
     "source": "Public Service Commission of West Virginia",
     "doc_type": "fuel cost review order",
@@ -18,7 +18,7 @@
   {
     "id": "2025-09-04_appalachian-wheeling-power_wv-25-0413-e-enec",
     "company": "Appalachian Power Company and Wheeling Power Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "WV",
     "source": "Public Service Commission of West Virginia",
     "doc_type": "fuel cost review order",

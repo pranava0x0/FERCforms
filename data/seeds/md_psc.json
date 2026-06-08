@@ -2,7 +2,7 @@
   {
     "id": "2023-12-14_baltimore-gas-electric_md-9692",
     "company": "Baltimore Gas and Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MD",
     "source": "Maryland Public Service Commission",
     "doc_type": "multi-year rate plan order",
@@ -18,7 +18,7 @@
   {
     "id": "2023-10-18_potomac-edison_md-9695",
     "company": "The Potomac Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MD",
     "source": "Maryland Public Service Commission",
     "doc_type": "rate case order",
