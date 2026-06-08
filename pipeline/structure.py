@@ -647,7 +647,7 @@ def main() -> None:
                 accession_number=rid,
                 source_page_url="",
                 pdf_download_url="",
-                captured_at=text.pages[0] if text.pages else None,  # Fallback; seed docs have this in report.json
+                captured_at=None,
                 source_note="",
             )
             report = structure_report(entry, text)
