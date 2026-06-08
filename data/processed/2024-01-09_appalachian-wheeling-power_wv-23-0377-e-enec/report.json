@@ -27,7 +27,99 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 13,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Disallowance: $82.6 million",
+      "summary": "at least one year; (2) a freeze on filing a full Base Rate case until April 2025; and (3) a minimum $82.6 million disallowance. Given those conditions, WVEUG preferred the securitization proposal. Staff, through the testimony and evidence of Critical Technologies Consulti",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Disallowance: $231,769,431.",
+      "summary": "prudent decisions, actions, and inactions, and have, therefore, quantified a disallowance amount of $231,769,431. We have also fully considered the disallowances recommended by other parties. The methodologies for calculating those disallowances will not be adopted by the Commission. Instead, we use",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Approval: $231.8 million",
+      "summary": "ly the Companies) net Expanded Net Energy Cost (ENEC) costs and under-recoveries. The Commission disallows $231.8 million of requested ENEC under-recoveries. The remaining balance of the requested under-recoveries, which is currently $321.1 million, will not be allowed i",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Approval: $552.9 ",
+      "summary": "that the Commission disallow the entire under-recovery. Alternatively, to the extent the Commission allows any portion of the $552.9 accumulated under-recovery in rates, the CAD recommended that the amount allowed be amortized over no less than five years with no carrying charge. Th",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Approval: $82.6 million",
+      "summary": "lowed be amortized over no less than five years with no carrying charge. The WVEUG recommended a disallowance of $82.6 million before any consideration of amortization or securitization. WVEUG further recommended that any balance recoverable in rates be allowed a carrying cha",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Approval: $257,993,417 ",
+      "summary": "nsulting (CTC), recommended that the Commission find imprudence on the part of the Companies and disallow $257,993,417 of the under-recovery. 2023 ENEC, Tr. Sept. 7, 2023 at 408. Q. If the Companies could have, based on the market conditions that we've talked about, th",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Approval: $231,769,431.\n",
+      "summary": "and the result of imprudent decisions, actions, and inactions, and have, therefore, quantified a disallowance amount of $231,769,431. We have also fully considered the disallowances recommended by other parties. The methodologies for calculating those disallowances will not be adopte",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Approval: $231,769,431 ",
+      "summary": "costs and the prudence or imprudence of the Companies' actions or inactions. Our calculation and disallowance of $231,769,431 does not take into consideration that the power plants were offline and unavailable for generation at times when market prices were very high and ther",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Approval: $231.8 million",
+      "summary": "mber 1, 2024. Accordingly, the requested under-recovery balance of $552.9 million will not be fully allowed for recovery in rates. Instead, $231.8 million will be specifically disallowed for reasons explained herein. The remaining balance, currently $321 .I million, will continue to be deferred unti",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Approval: $321 ",
+      "summary": "on will not be fully allowed for recovery in rates. Instead, $231.8 million will be specifically disallowed for reasons explained herein. The remaining balance, currently $321 .I million, will continue to be deferred until September 1, 2024, at which time we will allow amortization through rates ove",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 11,
+      "title": "Approval: $231.8 million",
+      "summary": "curitized under-recovery and deferred costs. Admittedly, there is a price tag of the decision to disallow $231.8 million of the under-recovery and allow the balance of $321.1 million to be recovered over ten years beginning September 2024. With the four percent carrying",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 12,
+      "title": "Approval: $321.1 million",
+      "summary": "mittedly, there is a price tag of the decision to disallow $231.8 million of the under-recovery and allow the balance of $321.1 million to be recovered over ten years beginning September 2024. With the four percent carrying charge authorized in this Order, the allowable under-recovery",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 13,
+      "title": "Approval: $321 ",
+      "summary": "Commission disallows $231,769,431 of the under-recovery requested by the Companies. The Commission approves the remaining approximately $321 .Im illion under-recovery to be recovered through an ENEC rate increment designed to recover that amount over ten years, including a 4 percent per yea",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

@@ -22,7 +22,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Settlement: Agreement",
+      "summary": "any to Amend its Distribution Cost Recovery Factor Testimony in Support ofUnopposed Stipulation and Settlement Agreement filed June 2023 Docket No. 54634 Application of Southwestern Public Service Company for Authority to Change Rates Testimony on Rate-Case Expenses fil",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

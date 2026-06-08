@@ -1,1 +1,36 @@
-{"collection": "state_rate_case", "jurisdiction": "AR", "source": "Arkansas Public Service Commission", "doc_type": "direct testimony", "id": "2025_entergy-arkansas_ar-16-036-fr-evaluation-report-testimony", "company": "Entergy Arkansas, LLC", "company_raw": "Entergy Arkansas, LLC", "docket": "16-036-FR", "docket_full": null, "issued_date": null, "source_page_url": "https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&DocNumVal=1107", "pdf_download_url": "https://apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf", "captured_at": "2026-06-02", "source_note": "Supporting Testimony of Middleton Ray on the 2025 Evaluation Report in the Formula Rate Plan filings of Entergy Arkansas, LLC, before the Arkansas Public Service Commission, Docket No. 16-036-FR (filed in the 2025 Rider FRP review; 14 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1107 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf).", "archived_via": null, "page_count": 14, "scanned_pages": [], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "AR",
+  "source": "Arkansas Public Service Commission",
+  "doc_type": "direct testimony",
+  "id": "2025_entergy-arkansas_ar-16-036-fr-evaluation-report-testimony",
+  "company": "Entergy Arkansas, LLC",
+  "company_raw": "Entergy Arkansas, LLC",
+  "docket": "16-036-FR",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&DocNumVal=1107",
+  "pdf_download_url": "https://apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf",
+  "captured_at": "2026-06-02",
+  "source_note": "Supporting Testimony of Middleton Ray on the 2025 Evaluation Report in the Formula Rate Plan filings of Entergy Arkansas, LLC, before the Arkansas Public Service Commission, Docket No. 16-036-FR (filed in the 2025 Rider FRP review; 14 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1107 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf).",
+  "archived_via": null,
+  "page_count": 14,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $1,671,378.\n",
+      "summary": "filing 3 to $97,325,308 in Staff’s Attachment A.2. This has the effect of increasing the 4 maximum allowed increase in revenues (A.2 L6) by $1,671,378. 5 MODIFIED BALANCE SHEET APPROACH 6 Q. What is the methodology used to determine Working Capital Assets 7 (“WCA”) and Current, Accrued, and Other Li",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
+  "structured": false
+}
