@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="249 structured records (120 FERC audits, 14 prudence reviews, 115 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="250 structured records (120 FERC audits, 14 prudence reviews, 116 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3508,6 +3508,10 @@ Otter Tail Power Company's Petition for Approval of Rate Schedule, Section 13.09
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="G002/GR-23-413" issued="n/a" industry="gas" source="https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-gas/">
 Listed for reference (not machine-parsed into findings).
 Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 23-2500-39704) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase natural gas rates, before the Minnesota Public Utilities Commission, MPUC Docket No. G002/GR-23-413 (30 pp). Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/2500-39704-...puc-report_tcm19-650610.pdf).
+</doc>
+<doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="E-002/GR-24-320" issued="n/a" industry="electric" source="https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-electric/">
+Listed for reference (not machine-parsed into findings).
+Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 22-2500-41045) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase electric rates, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/GR-24-320. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/22-2500-41045-...puc-report_tcm19-900123.pdf).
 </doc>
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="E-002/AA-22-179" issued="n/a" industry="electric" source="https://mn.gov/oah/assets/21-2500-40336-itm-xcel-energys-petition-for-approval-2023-annual-fuel-forecast-and-monthly-fuel-cost-charges_tcm19-731253.pdf">
 Listed for reference (not machine-parsed into findings).
