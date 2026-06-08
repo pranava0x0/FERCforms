@@ -1,1 +1,78 @@
-{"collection": "state_rate_case", "jurisdiction": "AZ", "source": "Arizona Corporation Commission", "doc_type": "rate case decision", "id": "2023-08-25_tucson-electric-power_az-e-01933a-22-0107-decision-79065", "company": "Tucson Electric Power Company", "company_raw": "Tucson Electric Power Company", "docket": "E-01933A-22-0107", "docket_full": null, "issued_date": "2023-08-25", "source_page_url": "https://edocket.azcc.gov/search/docket-search", "pdf_download_url": "https://docket.images.azcc.gov/0000209684.pdf", "captured_at": "2026-06-07", "source_note": "Arizona Corporation Commission Decision No. 79065 (docketed August 25, 2023), Docket No. E-01933A-22-0107, in the matter of the application of Tucson Electric Power Company (TEP) for a rate increase \u2014 approving a revenue increase of $100,130,000 (8.93%) with a 9.55% return on equity, rates effective September 1, 2023 (189 pp, born-digital). Listed for reference (metadata-only). Source: ACC eDocket image store (docket.images.azcc.gov/0000209684.pdf).", "archived_via": null, "page_count": 189, "scanned_pages": [], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "AZ",
+  "source": "Arizona Corporation Commission",
+  "doc_type": "rate case decision",
+  "id": "2023-08-25_tucson-electric-power_az-e-01933a-22-0107-decision-79065",
+  "company": "Tucson Electric Power Company",
+  "company_raw": "Tucson Electric Power Company",
+  "docket": "E-01933A-22-0107",
+  "docket_full": null,
+  "issued_date": "2023-08-25",
+  "source_page_url": "https://edocket.azcc.gov/search/docket-search",
+  "pdf_download_url": "https://docket.images.azcc.gov/0000209684.pdf",
+  "captured_at": "2026-06-07",
+  "source_note": "Arizona Corporation Commission Decision No. 79065 (docketed August 25, 2023), Docket No. E-01933A-22-0107, in the matter of the application of Tucson Electric Power Company (TEP) for a rate increase — approving a revenue increase of $100,130,000 (8.93%) with a 9.55% return on equity, rates effective September 1, 2023 (189 pp, born-digital). Listed for reference (metadata-only). Source: ACC eDocket image store (docket.images.azcc.gov/0000209684.pdf).",
+  "archived_via": null,
+  "page_count": 189,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $483,000 ",
+      "summary": "se as a regulatory asset would allow the Company 13 to earn a return on the plant at the Commission-approved WACC.34 TEP also included $483,000 of 14 ADIT as an offset to the M&S regulatory asset.35 15 Staff and RUCO 16 Staff objects to TEP's proposal to include the SJGS M&S because the relate",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $712,273 ",
+      "summary": "all expenses associated with the Board of Directors should be borne by shareholders. 24 We will disallow the Board of Directors fees of $712,273 in this case, therefore, these fees shall notbe 25 26 190Ex. RUCO-3 (Michlik Surrebuttal), p. 3, Decision No. 74689 (August 12, 2014). l°1 Ex. RUCO-3",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Approval: $9.94.3",
+      "summary": "his case. Further, based on SWEEP and WRA's BCM 18 calculations, they recommend that the Commission approve a BSC of$9.94.3\"1 19 Resolution 20 The MSM and BCM are both reasonable cost allocation methodologies. But cost allocations 21 are imperfect as they result from dispu",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Approval: $10 million",
+      "summary": "d its Decision in the 2019 APS Rate Case on November 9, 2021. In that 5 Decision,513 the Commission approved the use of $10 million of ratepayer funds for CCT programs, 6 rejecting the terms of a proposed non-binding memorandum of understanding (\"MOU\") negotiated 7 between APS and",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Settlement: agreement",
+      "summary": "12 First, we note that the treatment ofSJGSUnit 2 M&S in Decision No. 75975 was the result of 13 a settlement agreement among the parties, and thus, while that Decision may inform, it has no 14 precedential value in this matter. We also agree withStaff and RUCO that no",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Settlement: agreement",
+      "summary": "out that the Decision cited by TEP to support inclusion of l 00 percent of the Fees 25 is part of a settlement agreement, which does not address how Board of Directors Fees should be 26 186 TEP Opening Brief, p. 50. 27 187 Ex. RUCO-1 (Michlik Direct). p. 16. 188 Ex. RUC",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Settlement: terms",
+      "summary": "the result of negotiations solely between APS and the Nation. APS does not have the 17 power to set settlement terms on TEP'sbehalf. Second, the findings in rate cases are limited to the facts 18 and circumstances present in each record. The Commission may refer to",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
+  "structured": false
+}

@@ -22,7 +22,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $189.7 ",
+      "summary": "te Drivers Inc/(Dec) Delivery Rev Total Rev Primary Drivers ($ M) Change (%) Change (%) Major Storm Allowance $189.7 14.5% 7.6% Capital Investments $189.0 14.5% 7.6% Labor & Benefits $55.6 4.3% 2.2% Net Operating Loss Deferred Tax Asset $34.5 2.6% 1.4% Vegetation Man",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

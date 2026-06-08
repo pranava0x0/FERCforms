@@ -22,7 +22,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Settlement: Agreement",
+      "summary": "tlement Stipulation, beginning on page 14. 4 additional components. The Phase-In description of the Settlement Agreement reads as follows: The Parties agree that OTP may file for the establishment of a phase-in rate plan under SDCL 49-34A-73 through 78, seeking recovery",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }
