@@ -8,18 +8,18 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 **Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
-**Latest work (extraction pipeline fixes + partial extraction):**
-- ✓ Fixed `pipeline.extract` to load seed documents from processed directory (rate cases + state audits)
-- ✓ Fixed `pipeline.structure` to structure seed documents (172 vs 120 reports)
-- ✓ Chunked extraction approach validates: extracted 6 rate cases, found 25 with findings
-- ✓ Rate case parser working: finding titles + regulatory decisions extracted
-- ⚠ **Memory blocker:** Full corpus extraction (322 docs) = 800GB+ swap/OOM.
+**Latest work (extraction pipeline overhaul):**
+- ✓ Fixed `pipeline.extract` PDF lookup: try {id}.pdf before {accession_number}.pdf
+- ✓ Fixed `pipeline.structure` seed document processing (172 docs structured)
+- ✓ Fixed `pipeline.extract` to load 322 documents from processed/ directory
+- ✓ Chunked extraction strategy working (avoids memory spike)
+- ⚠ **In progress:** Batch extraction of remaining 48 documents (rate cases + state audits)
+- ⚠ **Known issue:** Load from processed directory not fully integrated into extract main loop
 
-**Next steps (backlog):**
-1. **[high]** Complete extraction via chunked runs: `extract --limit 50` batches (99/115 rate cases need extraction)
-2. **[high]** Validate findings in UI (State Rate Cases tab)
-3. **[med]** Refactor extractors to stream pages instead of loading full PDFs into RAM
-4. **[med]** State audit parser for non-PA formats (MI Liberty, CT orders)
+**Next (immediate):**
+1. Complete batch extraction of remaining state documents
+2. Run structure + build to populate findings
+3. Validate findings appear in UI
 
 ---
 
