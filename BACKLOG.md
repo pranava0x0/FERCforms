@@ -4,6 +4,25 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ---
 
+## ▶ CURRENT STATUS — 2026-06-08
+
+**Corpus expanded:** 303 reports, 34 states, 61 audit documents.
+
+**Latest work (4 commits, 38 new documents):**
+- ✓ Tier 1 (Tier 2) expansion: 5 states (CO, NJ, MD, WA, OR) — 10 audits
+- ✓ Tier 2 (Region 2) expansion: 5 states (CA, IL, GA, NC, RI) — 9 audits  
+- ✓ Tier 3 (Region 3) expansion: 6 states (FL, SC, AZ, NV, AR, LA) — 12 audits
+- ✓ Tier 4 (Midwest/Northeast) expansion: 8 states (IN, KS, KY, MN, VT, MA, WI, MT) — 8 audits
+
+**Top priority:** [docs/state-findings-extraction-plan.md](docs/state-findings-extraction-plan.md) — 53 state audits are born-digital but have NO parser. Three options:
+- **Option B:** Extract MI Liberty Consulting (4 docs) → build parser → ~80-150 findings → 2-3 hrs
+- **Option C:** Full state extraction (17 hrs) → 300-500 findings → new themes
+- **Option D:** Rate-case disallowances (future)
+
+**Deferred to next session:** Tier 5 remaining states (16 states: ID, ND, NE, NM, etc.). Geographic coverage near-complete; focus now on findings extraction.
+
+---
+
 > ## ▶ RESUME HERE — paused 2026-06-02 (PJM + prudence + queued asks)
 >
 > **Where the corpus is:** 196 records on `main` — **120 FERC audits**, **7 prudence reviews**, **69 state PUC audits across 22 jurisdictions** (incl. **expand-within-existing** work begun: +2 MO Ameren FAC docs — Staff surrebuttal on the FAC sharing mechanism (ER-2011-0028) + Commission FAC true-up order (EO-2022-0027); full next-run roadmap in the *State-PUC roadmap* section below) (PA MI VA TX IL SC OH NJ MD DE KY IN WV DC GA LA MS AR MO MN WI + **CO** — Public Service Co. of Colorado/Xcel sampler: electric rate-case advice letter (22AL-0530E) + electric decision (24AL-0275E) + gas rate hearing transcript (22AL-0046G); `dora.state.co.us` E-Filings, recipe in [docs/data-sources.md](docs/data-sources.md). Deeper CO testimony sets need the docket→filing→document 2-level walk) — incl. **Ameren Missouri Staff prudence reviews** added to MO: the Tenth FAC Prudence Review (EO-2024-0053) + Taum Sauk construction audit (ER-2011-0028), via `efis.psc.mo.gov`. **IA deferred** — efs.iowa.gov WAF-403s all non-browser clients (browser-capture + `fetch=false` next; MidAmerican RPU-2023-0001). **WI** — PSCW ERF: We Energies Very Large Customer/data-center tariff (Sierra Club testimony) + NSPW 4220-UR-127 + MGE 3270-UR-125 rate-case testimony; `apps.psc.wi.gov/ERF`, recipe in [docs/data-sources.md](docs/data-sources.md)). **MN** — Northern States Power/Xcel: ALJ report in the gas rate case (G002/GR-23-413) + ALJ findings on the 2023 electric fuel forecast (E-002/AA-22-179); `mn.gov/oah` PDFs since eDockets is WAF-walled, recipe in [docs/data-sources.md](docs/data-sources.md)). **MO** — Empire District Electric/Liberty 2024 rate case ER-2024-0261, 3 MoPSC Staff direct-testimony panels; `efis.psc.mo.gov` EFIS, recipe in [docs/data-sources.md](docs/data-sources.md). MO gold for later: Ameren Missouri FAC **prudence reviews** (EO-… cases) + the Ameren large-load/data-center tariff docket). First MISO-Midwest state; **AR** — Entergy Arkansas 2025 Rider FRP, Docket 16-036-FR: EAL application + Staff evaluation-report testimony + **Order No. 74** (Dec 12 2025); `apps.apsc.arkansas.gov` olsv2, recipe in [docs/data-sources.md](docs/data-sources.md)). Deep South sweep done **except AL** (psc.alabama.gov = scanned minutes + stale URLs + no clean per-utility orders → deferred, needs OCR/browser; recipe noted). GA = Georgia Power 2025 IRP (Docket 56002); LA = Entergy U-36959 FRP + Lake Charles prudence review; MS = MPUS staff annual reports (per-utility InSite docs cert-blocked → Kemper/$300M Grand Gulf are browser-capture targets). All gov-sourced (a corpus-wide test guards it); a `test_is_official_gov` case now asserts the new GA/LA/MS/AR hosts. Per-finding `source_page` shipped; `llms.txt` grouped by collection w/ grounded insights.
