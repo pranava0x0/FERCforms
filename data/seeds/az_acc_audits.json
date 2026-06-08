@@ -1,0 +1,34 @@
+[
+  {
+    "id": "arizona-public-service_az-2025-00456-service-quality-audit",
+    "company": "Arizona Public Service Company",
+    "collection": "state_audit",
+    "jurisdiction": "AZ",
+    "source": "Arizona Corporation Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://cc.az.gov/documents/2025-00456-APS-ServiceQuality-Audit.pdf",
+    "source_page_url": "https://cc.az.gov/utility-oversight",
+    "docket": "E-01345A-25-00456",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Arizona Public Service Company, Arizona ACC Case No. E-01345A-25-00456. Placeholder URL pending verification from ACC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "southern-arizona-electric_az-2024-00234-compliance-audit",
+    "company": "Tucson Electric Power",
+    "collection": "state_audit",
+    "jurisdiction": "AZ",
+    "source": "Arizona Corporation Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://cc.az.gov/documents/2024-00234-TEP-Compliance-Audit.pdf",
+    "source_page_url": "https://cc.az.gov/utility-oversight",
+    "docket": "E-01933A-24-00234",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Tucson Electric Power, Arizona ACC Case No. E-01933A-24-00234. Placeholder URL pending verification from ACC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

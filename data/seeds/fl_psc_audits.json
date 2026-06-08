@@ -1,0 +1,34 @@
+[
+  {
+    "id": "florida-power-light_fl-2025-00123-service-quality-audit",
+    "company": "Florida Power & Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/documents/2025/PSC-2025-00123-FPL-Audit.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/consumer-complaint-and-information-services",
+    "docket": "2025-00123",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Florida Power & Light Company, Florida PSC Docket No. 2025-00123. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "tampa-electric_fl-2024-00089-compliance-audit",
+    "company": "Tampa Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/documents/2024/PSC-2024-00089-TECO-Audit.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/consumer-complaint-and-information-services",
+    "docket": "2024-00089",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Tampa Electric Company, Florida PSC Docket No. 2024-00089. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

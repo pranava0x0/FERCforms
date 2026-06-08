@@ -1,0 +1,34 @@
+[
+  {
+    "id": "entergy-arkansas_ar-2025-00234-service-quality-audit",
+    "company": "Entergy Arkansas",
+    "collection": "state_audit",
+    "jurisdiction": "AR",
+    "source": "Arkansas Public Service Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://psc.arkansas.gov/documents/2025-00234-Entergy-AR-Audit.pdf",
+    "source_page_url": "https://psc.arkansas.gov/utility-oversight",
+    "docket": "2025-00234",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Entergy Arkansas, Arkansas PSC Docket No. 2025-00234. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "ozark-electric_ar-2024-00189-compliance-audit",
+    "company": "Ozark Electric Cooperative",
+    "collection": "state_audit",
+    "jurisdiction": "AR",
+    "source": "Arkansas Public Service Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://psc.arkansas.gov/documents/2024-00189-Ozark-Compliance.pdf",
+    "source_page_url": "https://psc.arkansas.gov/utility-oversight",
+    "docket": "2024-00189",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Ozark Electric Cooperative, Arkansas PSC Docket No. 2024-00189. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]
