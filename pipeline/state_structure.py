@@ -130,17 +130,86 @@ def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
     return chapters
 
 
+# --- Overland Consulting affiliate/management audits (e.g. NJ BPU PSE&G) -----------
+# These carry a consolidated "Overland Consulting - Comprehensive Listing of All
+# Recommendations" (Attachment 1-1). The text extractor linearizes each row as:
+#     Recommendation 15.3            <- {chapter}.{item} label
+#     <verbatim recommendation text, 1-N wrapped lines, ends with a period>
+#     Accounting and Property Records  <- the row's "Chapter" column value (title-case,
+#                                          no terminal punctuation), then the next label.
+# So per row the chapter title trails the text. We map, verbatim and no-LLM, one
+# Finding per consecutive run of the same chapter title. (Liberty Consulting audits —
+# JCP&L/ACE/NJNG/MI — have NO such consolidated list, only prose "We recommend …"
+# embedded in chapters, so they stay metadata-only — forcing a parse would garble.)
+_OVERLAND_ANCHOR = "Comprehensive Listing of All Recommendations"
+_OVERLAND_LABEL_RE = re.compile(r"^Recommendation\s+\d+\.\d+$")
+_OVERLAND_SKIP_RE = re.compile(r"^(Public Version|Public Service|Overland Consulting|Attachment\b|©|\d+$)")
+
+
+def _looks_like_chapter(line: str) -> bool:
+    """A trailing 'Chapter' column value: short, title-case, no terminal sentence punctuation."""
+    return bool(line) and len(line) < 60 and line[:1].isupper() and not line.rstrip().endswith((".", ":", ";", ")"))
+
+
+def parse_overland_recommendations(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse the Overland 'Comprehensive Listing of All Recommendations'. Returns
+    chapters in document order as (chapter_title, [(verbatim_rec, None), ...]); empty
+    if the listing isn't present (not an Overland-format report). source_page is None —
+    the listing's N.M numbers are chapter.item, not body page numbers."""
+    idx = full_text.find(_OVERLAND_ANCHOR)
+    if idx == -1:
+        return []
+    lines = [ln.strip() for ln in full_text[idx:].splitlines() if ln.strip()]
+    lines = [ln for ln in lines if ln not in ("Recommendation", "Chapter") and not _OVERLAND_SKIP_RE.match(ln)]
+
+    # 1) Split into (text-lines) buffers per Recommendation N.M label.
+    raw: list[list[str]] = []
+    cur: list[str] | None = None
+    for ln in lines:
+        if _OVERLAND_LABEL_RE.match(ln):
+            if cur is not None:
+                raw.append(cur)
+            cur = []
+        elif cur is not None:
+            cur.append(ln)
+    if cur is not None:
+        raw.append(cur)
+
+    # 2) Per row, peel the trailing chapter-title line(s) off the verbatim text.
+    rows: list[tuple[str, str]] = []  # (chapter_title, rec_text)
+    for buf in raw:
+        chap: list[str] = []
+        while buf and _looks_like_chapter(buf[-1]):
+            chap.insert(0, buf.pop())
+        text = re.sub(r"\s+", " ", " ".join(buf)).strip()
+        if text:
+            rows.append((re.sub(r"\s+", " ", " ".join(chap)).strip() or "Recommendations", text))
+
+    # 3) Group consecutive rows sharing a chapter title into one Finding.
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    for title, text in rows:
+        if not chapters or chapters[-1][0] != title:
+            chapters.append((title, []))
+        chapters[-1][1].append((text, None))
+    return chapters
+
+
 def structure_mo_audit(
     seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]
 ) -> AuditReport | None:
-    """Build a structured AuditReport from a PA M&O audit's Exhibit I-2.
+    """Build a structured AuditReport from a state management/operations audit.
 
-    Returns None when the report isn't M&O format (no Exhibit I-2) or yields no
-    findings — the caller then falls back to metadata-only.
+    Tries the PA Bureau of Audits Exhibit I-2 table first, then the Overland
+    Consulting "Comprehensive Listing of All Recommendations". Returns None when
+    neither format is present or neither yields findings — the caller then falls
+    back to metadata-only (so a non-matching report never emits a broken record).
     """
     full_text = "\n".join(p.text for p in pages)
     chapters = parse_exhibit_i2(full_text)
     with_recs = [(title, recs) for title, recs in chapters if recs]
+    if not with_recs:
+        chapters = parse_overland_recommendations(full_text)
+        with_recs = [(title, recs) for title, recs in chapters if recs]
     if not with_recs:
         return None
 

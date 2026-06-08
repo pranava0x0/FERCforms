@@ -35,7 +35,7 @@ Rules for adding a record (enforced by tests + `pipeline.verify_sources`):
 |--------------------------------|-------|-------|
 | FERC Audits (`ferc_audit`)     | 120   | Form 1/2/6, every available year; traced to `data/listing.json` |
 | Prudence Reviews (`prudence_review`) | 26 | FERC eLibrary orders + CA ERRA + WA/IN/WI/GA/VA/IL fuel & construction prudence (8 jurisdictions) |
-| State PUC Audits (`state_audit`)     | 35 | 13 jurisdictions: PA MI CT MO MS TN UT NY NJ CA OH MD + **IL** (9 with parsed findings) |
+| State PUC Audits (`state_audit`)     | 35 | 13 jurisdictions: PA MI CT MO MS TN UT NY NJ CA OH MD IL (10 with parsed findings) |
 | State Rate Cases (`state_rate_case`) | 109 | Reference metadata across ~37 jurisdictions (+VA biennial, +MN ALJ) |
 
 **State PUC Audits — 33 across 12 jurisdictions, 8 with parsed findings (~122 recommendations):**

@@ -187,6 +187,48 @@ def test_parse_handles_nfg_variant_nodash_chapters_and_endash_labels():
     ]
 
 
+# Overland Consulting "Comprehensive Listing of All Recommendations" (NJ PSE&G format):
+# each row is "Recommendation {chap}.{item}" + verbatim text, then the row's Chapter
+# column value (title-case, no terminal period) before the next label.
+_EXHIBIT_OVERLAND = """Overland Consulting - Comprehensive Listing of All Recommendations
+Attachment 1-1
+Recommendation
+Chapter
+Recommendation 2.1
+We recommend PSEG explore development of transaction-type-based budgets for large,
+recurring intercompany transactions.
+Non-Power Affiliate Relationships and Transactions
+Recommendation 2.2
+We recommend PSEG clarify its position regarding compliance with New Jersey Affiliate
+Standards in its Annual Compliance Plan.
+Non-Power Affiliate Relationships and Transactions
+Recommendation 3.1
+The Cost Allocation Manual should be updated to describe how costs are allocated.
+Cost Allocation Methods and Procedures
+"""
+
+
+def test_parse_overland_recommendations():
+    """The NJ PSE&G (Overland) consolidated listing parses into chapter-grouped,
+    verbatim recommendations with the trailing Chapter column peeled off the text."""
+    chapters = state_structure.parse_overland_recommendations(_EXHIBIT_OVERLAND)
+    by_title = dict(chapters)
+    assert "Non-Power Affiliate Relationships and Transactions" in by_title
+    assert len(by_title["Non-Power Affiliate Relationships and Transactions"]) == 2
+    txt, page = by_title["Non-Power Affiliate Relationships and Transactions"][0]
+    assert txt.startswith("We recommend PSEG explore development")
+    assert txt.endswith("intercompany transactions.")   # chapter column NOT appended
+    assert "Non-Power" not in txt                        # chapter title peeled off
+    assert page is None                                  # listing carries no body page no.
+    assert by_title["Cost Allocation Methods and Procedures"][0][0].endswith("how costs are allocated.")
+
+
+def test_overland_parser_ignores_non_overland_text():
+    """A document without the Overland listing anchor yields nothing (so PA Exhibit-I-2
+    audits and unrelated docs never get mis-parsed by the Overland path)."""
+    assert state_structure.parse_overland_recommendations("A PA audit with Exhibit I-2 and no listing") == []
+
+
 def test_non_mo_format_returns_none():
     """A document without an Exhibit I-2 yields None (caller falls back to metadata-only)."""
     pages = [PageText(page=1, char_count=20, is_image_only=False, extractor="pymupdf", text="A legal order, no table.")]

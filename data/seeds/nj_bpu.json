@@ -74,9 +74,9 @@
     "source_page_url": "https://www.nj.gov/bpu/about/divisions/audits/auditreports.html",
     "issued_date": null,
     "docket": null,
-    "source_note": "NJ BPU audit (Overland Consulting): Audit of Affiliated Transactions between PSE&G, PSEG and affiliates, plus a Management Audit of PSE&G. 868 pp (public redacted). Title page prints 'December 2022' (month only) -> issued_date null. Page 1 verified.",
+    "source_note": "NJ BPU audit (Overland Consulting): Audit of Affiliated Transactions between PSE&G, PSEG and affiliates, plus a Management Audit of PSE&G. 868 pp (public redacted). Title page prints 'December 2022' (month only) -> issued_date null. Page 1 verified. Findings parsed verbatim from the Overland Consulting Comprehensive Listing of All Recommendations (Attachment 1-1).",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2023-02-07_jcpl_nj-ea20110733-affiliate-management-audit-phase2",

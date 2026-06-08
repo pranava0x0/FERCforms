@@ -1,8 +1,8 @@
 {
   "report_count": 290,
-  "finding_count": 1217,
+  "finding_count": 1234,
   "other_matter_count": 10,
-  "recommendation_count": 1669,
+  "recommendation_count": 1730,
   "by_industry": {
     "electric": 229,
     "gas": 36,
@@ -60,8 +60,8 @@
         "page 700",
         "annual report"
       ],
-      "finding_count": 152,
-      "report_count": 57,
+      "finding_count": 153,
+      "report_count": 58,
       "example_titles": [
         "Annual Cost of Service Based Analysis Schedule",
         "Nonoperating and Operating Expenses",
@@ -80,8 +80,8 @@
         "meter reading",
         "customer experience"
       ],
-      "finding_count": 83,
-      "report_count": 48,
+      "finding_count": 86,
+      "report_count": 49,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
@@ -95,8 +95,8 @@
       "keywords": [
         "depreciation"
       ],
-      "finding_count": 65,
-      "report_count": 45,
+      "finding_count": 66,
+      "report_count": 46,
       "example_titles": [
         "Allowance for Funds Used During Construction",
         "Depreciation Rates and Study",
@@ -114,8 +114,8 @@
         "nonoperating",
         "non-operating"
       ],
-      "finding_count": 49,
-      "report_count": 39,
+      "finding_count": 50,
+      "report_count": 40,
       "example_titles": [
         "Annual Membership Dues",
         "Nonoperating and Operating Expenses",
@@ -133,8 +133,8 @@
         "plant in service",
         "property record"
       ],
-      "finding_count": 67,
-      "report_count": 38,
+      "finding_count": 69,
+      "report_count": 39,
       "example_titles": [
         "Allowance for Funds Used During Construction",
         "Noncarrier Property Revenue, Expenses, and Net Income",
@@ -168,8 +168,8 @@
         "rate of return",
         "return on equity"
       ],
-      "finding_count": 72,
-      "report_count": 34,
+      "finding_count": 73,
+      "report_count": 35,
       "example_titles": [
         "Approval: $1,277,051,206. ",
         "Annual Membership Dues",
@@ -185,8 +185,8 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 50,
-      "report_count": 34,
+      "finding_count": 53,
+      "report_count": 35,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Settlement: agreement",
@@ -200,8 +200,8 @@
       "keywords": [
         "tariff"
       ],
-      "finding_count": 48,
-      "report_count": 28,
+      "finding_count": 49,
+      "report_count": 29,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -215,8 +215,8 @@
       "keywords": [
         "capitaliz"
       ],
-      "finding_count": 20,
-      "report_count": 19,
+      "finding_count": 21,
+      "report_count": 20,
       "example_titles": [
         "Property Unit Listing",
         "Allocation of Overhead Costs to CWIP",
@@ -234,13 +234,66 @@
         "caidi",
         "outage"
       ],
-      "finding_count": 24,
-      "report_count": 18,
+      "finding_count": 26,
+      "report_count": 19,
       "example_titles": [
         "Settlement: terms",
         "Settlement: Agreement",
         "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System",
         "Generation Outage Reporting in Generating Availability Data System (GADS)"
+      ]
+    },
+    {
+      "theme": "Internal audit & internal controls",
+      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+      "keywords": [
+        "internal audit",
+        "internal control",
+        "delegation of authority",
+        "code of business conduct",
+        "compliance program"
+      ],
+      "finding_count": 24,
+      "report_count": 11,
+      "example_titles": [
+        "Corporate Governance",
+        "Affiliated Interests and Cost Allocations",
+        "Customer Service",
+        "Financial Management"
+      ]
+    },
+    {
+      "theme": "Inventory, materials & fleet",
+      "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
+      "keywords": [
+        "inventory",
+        "materials management",
+        "fleet management",
+        "vehicle replacement"
+      ],
+      "finding_count": 18,
+      "report_count": 11,
+      "example_titles": [
+        "Auxiliary Fuel Costs in Nuclear Power Generation",
+        "Purchasing and Materials Management",
+        "Accounting for Materials and Supplies",
+        "Materials Management"
+      ]
+    },
+    {
+      "theme": "Informational postings",
+      "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
+      "keywords": [
+        "informational posting",
+        "posting"
+      ],
+      "finding_count": 17,
+      "report_count": 11,
+      "example_titles": [
+        "Renewable Natural Gas Quality Specifications",
+        "Informational Postings",
+        "Public Access to Monthly and Yearly Capability Information",
+        "Posting of Short Circuit Information"
       ]
     },
     {
@@ -260,59 +313,6 @@
       ]
     },
     {
-      "theme": "Internal audit & internal controls",
-      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-      "keywords": [
-        "internal audit",
-        "internal control",
-        "delegation of authority",
-        "code of business conduct",
-        "compliance program"
-      ],
-      "finding_count": 18,
-      "report_count": 10,
-      "example_titles": [
-        "Corporate Governance",
-        "Affiliated Interests and Cost Allocations",
-        "Customer Service",
-        "Financial Management"
-      ]
-    },
-    {
-      "theme": "Informational postings",
-      "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
-      "keywords": [
-        "informational posting",
-        "posting"
-      ],
-      "finding_count": 16,
-      "report_count": 10,
-      "example_titles": [
-        "Renewable Natural Gas Quality Specifications",
-        "Informational Postings",
-        "Public Access to Monthly and Yearly Capability Information",
-        "Posting of Short Circuit Information"
-      ]
-    },
-    {
-      "theme": "Inventory, materials & fleet",
-      "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
-      "keywords": [
-        "inventory",
-        "materials management",
-        "fleet management",
-        "vehicle replacement"
-      ],
-      "finding_count": 15,
-      "report_count": 10,
-      "example_titles": [
-        "Auxiliary Fuel Costs in Nuclear Power Generation",
-        "Purchasing and Materials Management",
-        "Accounting for Materials and Supplies",
-        "Materials Management"
-      ]
-    },
-    {
       "theme": "Workforce, training & succession planning",
       "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
       "keywords": [
@@ -323,8 +323,8 @@
         "workforce plan",
         "learning management"
       ],
-      "finding_count": 19,
-      "report_count": 8,
+      "finding_count": 22,
+      "report_count": 9,
       "example_titles": [
         "Human Resources and Diversity (continued)",
         "Cost Allocations and Affiliated Interests",
@@ -343,8 +343,8 @@
         "it backlog",
         "it governance"
       ],
-      "finding_count": 9,
-      "report_count": 8,
+      "finding_count": 10,
+      "report_count": 9,
       "example_titles": [
         "Approval: $156.9 million",
         "Information Technology",
@@ -362,11 +362,12 @@
         "emergency management",
         "mutual assist"
       ],
-      "finding_count": 7,
-      "report_count": 6,
+      "finding_count": 8,
+      "report_count": 7,
       "example_titles": [
         "Emergency Preparedness",
-        "Emergency Preparedness (continued)"
+        "Emergency Preparedness (continued)",
+        "Page 2 of 2"
       ]
     },
     {
@@ -375,11 +376,12 @@
       "keywords": [
         "dividend"
       ],
-      "finding_count": 5,
-      "report_count": 5,
+      "finding_count": 6,
+      "report_count": 6,
       "example_titles": [
         "Financial Management",
-        "Allowance for Funds Used During Construction"
+        "Allowance for Funds Used During Construction",
+        "Page 2 of 2"
       ]
     },
     {
@@ -389,25 +391,13 @@
         "cyber",
         "physical security"
       ],
-      "finding_count": 6,
-      "report_count": 4,
+      "finding_count": 8,
+      "report_count": 5,
       "example_titles": [
         "Emergency Preparedness",
         "Emergency Preparedness (continued)",
-        "Information Technology"
-      ]
-    },
-    {
-      "theme": "Creditworthiness",
-      "description": "Customer credit standards not applied as the tariff requires.",
-      "keywords": [
-        "creditworthiness"
-      ],
-      "finding_count": 2,
-      "report_count": 2,
-      "example_titles": [
-        "Creditworthiness Standards",
-        "Settlement: Agreement"
+        "Cybersecurity",
+        "Page 2 of 2"
       ]
     },
     {
@@ -422,10 +412,26 @@
         "pipeline integrity",
         "leak management"
       ],
-      "finding_count": 2,
-      "report_count": 2,
+      "finding_count": 4,
+      "report_count": 3,
       "example_titles": [
-        "Gas Operations"
+        "Gas Operations",
+        "Contractor Performance",
+        "Page 2 of 2"
+      ]
+    },
+    {
+      "theme": "Creditworthiness",
+      "description": "Customer credit standards not applied as the tariff requires.",
+      "keywords": [
+        "creditworthiness"
+      ],
+      "finding_count": 3,
+      "report_count": 3,
+      "example_titles": [
+        "Creditworthiness Standards",
+        "Settlement: Agreement",
+        "Page 2 of 2"
       ]
     }
   ],
@@ -455,12 +461,12 @@
       "count": 12
     },
     {
-      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "title": "Customer Service",
       "count": 10
     },
     {
-      "title": "Customer Service",
-      "count": 9
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "count": 10
     },
     {
       "title": "Financial Management",
