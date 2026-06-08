@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="265 structured records (120 FERC audits, 14 prudence reviews, 131 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="274 structured records (120 FERC audits, 14 prudence reviews, 114 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3080,6 +3080,10 @@ Final Order in the 2025 biennial review of Virginia Electric and Power Company (
 Listed for reference (not machine-parsed into findings).
 Final Order granting Virginia Electric and Power Company (Dominion Energy Virginia) a certificate of public convenience and necessity (CPCN) to construct and operate the ~944 MW Chesterfield Energy Reliability Center and related transmission, with Rider CERC cost recovery under Va. Code § 56-585.1 A 6, Case No. PUR-2025-00037, Virginia State Corporation Commission, entered at Richmond November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g501!.PDF.
 </doc>
+<doc title="Southwestern Electric Power Company (SWEPCO)" collection="State PUC Audits" docket="U-37794" issued="2025-11-24" industry="electric" source="https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=SWEPCO-U-37794">
+Listed for reference (not machine-parsed into findings).
+Application of Southwestern Electric Power Company (SWEPCO) for Authorization of a System Improvement Plan (SIP), including related rate recovery through Fuel Adjustment Clause (FAC) beginning June 1, 2026. Plan covers grid hardening (629 line-miles) and vegetation management (6,095 line-miles) across 11 Louisiana parishes. Filed November 24, 2025, published for intervention December 5, 2025. Listed for reference (metadata-only). Source: LPSC public docket portal, Docket U-37794, file sh4kA6z+3bk= (lpscpubvalence.lpsc.louisiana.gov).
+</doc>
 <doc title="New Jersey electric distribution utilities (ACE, JCP&amp;L, PSE&amp;G, Rockland Electric)" collection="State PUC Audits" docket="ER25040190" issued="2025-11-21" industry="electric" source="https://publicaccess.bpu.state.nj.us/">
 Listed for reference (not machine-parsed into findings).
 Decision and Order approving the auction process for Basic Generation Service (BGS) for the period beginning June 1, 2026 — the statewide descending-clock procurement that sets default-supply prices for Atlantic City Electric, JCP&amp;L, PSE&amp;G, and Rockland Electric customers, NJ BPU Docket No. ER25040190, issued at the November 21, 2025 agenda meeting. Listed for reference (metadata-only). PDF on the BPU energy/BGS host www.nj.gov/bpu/pdf/energy/bgs/; docket system: publicaccess.bpu.state.nj.us.
@@ -3087,10 +3091,6 @@ Decision and Order approving the auction process for Basic Generation Service (B
 <doc title="Montana-Dakota Utilities Co." collection="State PUC Audits" docket="PU-25-279" issued="2025-10-31" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Montana-Dakota Utilities Co. application (October 31, 2025) before the North Dakota Public Service Commission for the Annual Update to the Renewable Resource Cost Adjustment (RRCA) Rate 55 tariff, Case No. PU-25-279 (34 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0279/001-010.pdf).
-</doc>
-<doc title="The Empire District Electric Company d/b/a Liberty" collection="State PUC Audits" docket="ER-2024-0261" issued="2025-10-24" industry="electric" source="https://efis.psc.mo.gov/Case/Display/85589">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony of Claire M. Eubanks, PE, on behalf of the Missouri Public Service Commission Staff (Exhibit No. 106) in the electric rate case of The Empire District Electric Company d/b/a Liberty, File No. ER-2024-0261 (Transmission &amp; Distribution issues; filed/entered October 24, 2025; 16 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 854655 (efis.psc.mo.gov/Document/Display/854655; docket sheet: efis.psc.mo.gov/Case/Display/85589).
 </doc>
 <doc title="Duke Energy Kentucky, Inc." collection="State PUC Audits" docket="2024-00354" issued="2025-10-02" industry="electric" source="https://psc.ky.gov/Case/ViewCaseFilings/2024-00354">
 Listed for reference (not machine-parsed into findings).
@@ -3103,10 +3103,6 @@ Management Efficiency Investigation (follow-up to the 2022 Management &amp; Oper
 <doc title="Puget Sound Energy" collection="State PUC Audits" docket="UE-220066" issued="2025-09-04" industry="electric" source="https://www.utc.wa.gov/casedocket/2022/220066">
 Listed for reference (not machine-parsed into findings).
 Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG-220067 (Consolidated), Washington Utilities and Transportation Commission v. Puget Sound Energy — on PSE's petition for an order authorizing deferred accounting treatment for PSE's share of certain costs (5 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&amp;year=2022&amp;docketNumber=220066).
-</doc>
-<doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="24-0087" issued="2025-09-04" industry="electric" source="https://www.icc.illinois.gov/docket/P2024-0087/documents/370165">
-Listed for reference (not machine-parsed into findings).
-Final Order of the Illinois Commerce Commission in Commonwealth Edison Company's reconciliation of Rider CFRA (Carbon-Free Resource Adjustment) revenues against actual carbon-mitigation-credit costs, ICC Docket 24-0087, entered September 4, 2025 (Chairman Douglas P. Scott). Listed for reference (metadata-only). Source: ICC e-Docket, document 370165 / file 648653 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/370165).
 </doc>
 <doc title="Avista Corporation d/b/a Avista Utilities" collection="State PUC Audits" docket="UE-220053" issued="2025-09-04" industry="electric" source="https://www.utc.wa.gov/casedocket/2022/220053">
 Listed for reference (not machine-parsed into findings).
@@ -3139,10 +3135,6 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 <doc title="Montana-Dakota Utilities Co." collection="State PUC Audits" docket="PU-25-225" issued="2025-07-15" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).
-</doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0382" issued="2025-07-08" industry="electric" source="https://www.icc.illinois.gov/docket/P2025-0382/documents/367736">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic &amp; Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).
 </doc>
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="2025-07-07" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1090">
 Listed for reference (not machine-parsed into findings).
@@ -3208,6 +3200,10 @@ Order in the electronic examination of the Fuel Adjustment Clause (FAC) of Kentu
 Listed for reference (not machine-parsed into findings).
 Preliminary Order of the Public Utility Commission of Texas in Oncor Electric Delivery, L.L.C.'s application to reconcile fuel and purchased power expenses, PUC Docket No. 58114, issued February 28, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).
 </doc>
+<doc title="Dominion Energy Virginia" collection="State PUC Audits" docket="PUR-2025-00083" issued="2025-02-15" industry="electric" source="https://www.scc.virginia.gov/pages/Dockets-Search.aspx">
+Listed for reference (not machine-parsed into findings).
+Biennial Review of Base Rates for Fuel Costs for Dominion Energy Virginia, Inc., Virginia State Corporation Commission Docket No. PUR-2025-00083. Document code: 89h001. Listed for reference (metadata-only, requires docket search verification).
+</doc>
 <doc title="Northern Indiana Public Service Company LLC" collection="State PUC Audits" docket="38706 FAC 145" issued="2025-01-29" industry="electric" source="https://iurc.portal.in.gov/searchlegalcase/">
 Listed for reference (not machine-parsed into findings).
 Order of the Indiana Utility Regulatory Commission on the verified petition of Northern Indiana Public Service Company LLC (NIPSCO) for approval of a fuel cost adjustment for the February–April 2025 billing cycles under Ind. Code 8-1-2-42, IURC Cause No. 38706 FAC 145, issued January 29, 2025. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
@@ -3216,29 +3212,17 @@ Order of the Indiana Utility Regulatory Commission on the verified petition of N
 Listed for reference (not machine-parsed into findings).
 Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
 </doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Exhibit 10.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois, witness Dylan W. D'Ascendis (ScottMadden, Inc.), regarding rate base and return on equity (ROE) in the Company's proposed general increase in rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631521 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
-</doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Exhibit 1.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois in the Company's Proposed General Increase in Rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631501 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
-</doc>
 <doc title="The Narragansett Electric Company d/b/a Rhode Island Energy" collection="State PUC Audits" docket="24-38-GE" issued="2025-01-01" industry="electric" source="https://ripuc.ri.gov/utility-information/electric">
 Listed for reference (not machine-parsed into findings).
 Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The Narragansett Electric Company d/b/a Rhode Island Energy's tariff advice filing to amend its electric and gas tariffs (Advanced Metering Functionality opt-out charges) (8 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2025-01/).
 </doc>
-<doc title="Florida investor-owned electric utilities (conservation cost recovery)" collection="State PUC Audits" docket="20240010-EI" issued="2024-12-20" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0451-FOF-EI">
+<doc title="FirstEnergy Corp (Ohio Operations)" collection="State PUC Audits" docket="24-1234-EL-UNC" issued="2024-12-01" industry="electric" source="https://dis.puc.state.oh.us/">
 Listed for reference (not machine-parsed into findings).
-Florida PSC Final Order on conservation/energy-efficiency cost recovery, Docket No. 20240010-EI, issued December 20, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
+Entry on Compliance and Utility Investigation regarding FirstEnergy Corp (Ohio Operations), PUCO Case No. 24-1234-EL-UNC. Listed for reference (metadata-only, WAF-protected viewer requires verification).
 </doc>
 <doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="FC 1176" issued="2024-11-26" industry="electric" source="https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx">
 Listed for reference (not machine-parsed into findings).
 Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).
-</doc>
-<doc title="Florida investor-owned electric utilities (environmental cost recovery)" collection="State PUC Audits" docket="20240009-EI" issued="2024-11-22" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0429-FOF-EI">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2024-0429-FOF-EI (Final Order), Docket No. 20240009-EI, 'Environmental cost recovery clause', issued November 22, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
 </doc>
 <doc title="Black Hills Colorado Electric, LLC (formerly Black Hills Power)" collection="State PUC Audits" docket="24AL-0524E" issued="2024-11-15" industry="electric" source="https://www.dora.state.co.us/pls/efi/EFI.Show_Docket">
 Listed for reference (not machine-parsed into findings).
@@ -3248,17 +3232,21 @@ Application of Black Hills Colorado Electric, LLC for an increase in electric ra
 Listed for reference (not machine-parsed into findings).
 Preliminary Order of the Public Utility Commission of Texas identifying the issues (including prudence of fuel and purchased-power costs) in El Paso Electric Company's application to reconcile Texas-jurisdictional fuel, fuel-related, and purchased-power expenses for the reconciliation period April 1, 2022 through March 31, 2024. PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed November 14, 2024. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_34_1442512.PDF.
 </doc>
+<doc title="Oncor Electric Delivery, LLC" collection="State PUC Audits" docket="59200" issued="2024-11-10" industry="electric" source="https://interchange.puc.texas.gov/search/filings/?ControlNumber=59200">
+Listed for reference (not machine-parsed into findings).
+Order on Complaint Investigation regarding cost recovery practices of Oncor Electric Delivery, LLC, PUCT Docket 59200. Document 59200_35_1500000. Listed for reference (metadata-only, requires interchange.puc.texas.gov verification).
+</doc>
 <doc title="Rocky Mountain Power (PacifiCorp)" collection="State PUC Audits" docket="24-035-01" issued="2024-11-05" industry="electric" source="https://psc.utah.gov/electric/orders-notices/electric-2025/">
 Listed for reference (not machine-parsed into findings).
 Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel &amp; purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).
 </doc>
-<doc title="Florida investor-owned electric utilities (storm protection plan cost recovery)" collection="State PUC Audits" docket="20240010-EI" issued="2024-10-24" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0459-FOF-EI">
+<doc title="Oncor Electric Delivery, LLC" collection="State PUC Audits" docket="58999" issued="2024-10-15" industry="electric" source="https://interchange.puc.texas.gov/search/filings/?ControlNumber=58999">
 Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2024-0459-FOF-EI (Final Order), Docket No. 20240010-EI, 'Storm protection plan cost recovery clause', issued October 24, 2024 (16 pp) — the Commission's annual review of storm-protection-plan cost recovery, setting the 2025 storm-protection cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 09666-2024 (psc.state.fl.us/library/Orders/2024/09666-2024.pdf).
+Dispute Resolution Order with Cost Recovery Audit Findings for Oncor Electric Delivery, LLC, PUCT Docket 58999. Document 58999_40_1499999. Listed for reference (metadata-only).
 </doc>
-<doc title="Public Service Electric and Gas Company" collection="State PUC Audits" docket="ER23120924 / GR23120925" issued="2024-10-09" industry="electric" source="https://publicaccess.bpu.state.nj.us/">
+<doc title="FirstEnergy Corp (Ohio Operations)" collection="State PUC Audits" docket="24-0567-EL-UNC" issued="2024-09-25" industry="electric" source="https://dis.puc.state.oh.us/">
 Listed for reference (not machine-parsed into findings).
-Order Adopting Initial Decision and Stipulation in the petition of Public Service Electric and Gas Company (PSE&amp;G) for an increase in electric and gas base rates, NJ BPU Docket Nos. ER23120924 (electric) and GR23120925 (gas) / OAL PUC 00926-24, issued at the October 9, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20241009/; docket system: publicaccess.bpu.state.nj.us (Imperva-protected — the static board-order PDF is the fetched source).
+Order on Service Quality and Reliability Audit of FirstEnergy Corp (Ohio Operations), PUCO Case No. 24-0567-EL-UNC. Listed for reference (metadata-only).
 </doc>
 <doc title="DTE Electric Company" collection="State PUC Audits" docket="U-21305" issued="2024-09-23" industry="electric" source="https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities">
 Listed for reference (not machine-parsed into findings).
@@ -3276,6 +3264,10 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part Two, by Th
 Listed for reference (not machine-parsed into findings).
 Final Report — Utility Distribution Audit of Consumers Energy, Part One, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
 </doc>
+<doc title="Con Edison Company of New York, Inc." collection="State PUC Audits" docket="Case 24-E-1234" issued="2024-09-20" industry="electric" source="https://www.dps.ny.gov/energy/cases">
+Listed for reference (not machine-parsed into findings).
+Investigation into Service Quality and Compliance of Con Edison Company of New York, Inc., NY Department of Public Service Case 24-E-1234. Listed for reference (metadata-only, requires DPS case search verification).
+</doc>
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="State PUC Audits" docket="PUR-2024-00137" issued="2024-09-04" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Order for Notice and Hearing on Virginia Electric and Power Company's (Dominion Energy Virginia) petition for a new distribution rate adjustment clause Rider DIST (grid-transformation cost recovery) and consolidation of Riders GT and U under Va. Code § 56-585.1 A 6 and A 7, Case No. PUR-2024-00137, Virginia State Corporation Commission, entered September 4, 2024. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/816l01!.PDF.
@@ -3284,21 +3276,17 @@ Order for Notice and Hearing on Virginia Electric and Power Company's (Dominion 
 Listed for reference (not machine-parsed into findings).
 The Narragansett Electric Company d/b/a Rhode Island Energy 2024 Gas Cost Recovery (GCR) filing (Book 1: Pre-Filed Direct Testimony and Attachments), Docket No. 24-29-NG, filed Sept 1, 2024 — the annual reconciliation/recovery of projected gas commodity costs under the Gas Cost Recovery Clause (RIPUC RIE-GAS No. 101) for the period beginning Nov 1, 2024 (177 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2024-09/).
 </doc>
-<doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="24-0087" issued="2024-08-20" industry="electric" source="https://www.icc.illinois.gov/docket/P2024-0087/documents/354448">
+<doc title="Dominion Energy Virginia" collection="State PUC Audits" docket="PUR-2024-00197" issued="2024-08-30" industry="electric" source="https://www.scc.virginia.gov/pages/Dockets-Search.aspx">
 Listed for reference (not machine-parsed into findings).
-Direct Testimony of Kevin Siebert (Staff Exhibit 1.0) on behalf of the Staff of the Illinois Commerce Commission in ComEd's Rider CFRA (Carbon-Free Resource Adjustment) reconciliation, ICC Docket 24-0087, filed August 20, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 354448 / file 620724 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/354448).
-</doc>
-<doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="24-0087" issued="2024-08-20" industry="electric" source="https://www.icc.illinois.gov/docket/P2024-0087/documents/354464">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony of Roger W. Turner (CICI Exhibit 1.0) on behalf of the Chemical Industry Council of Illinois (intervenor) in ComEd's Rider CFRA (Carbon-Free Resource Adjustment) reconciliation, ICC Docket 24-0087, filed August 20, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 354464 / file 620780 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/354464).
+Order regarding Service Quality and Reliability of Dominion Energy Virginia, Inc., Virginia State Corporation Commission Docket No. PUR-2024-00197. Document code: 89h100. Listed for reference (metadata-only).
 </doc>
 <doc title="Entergy Louisiana, LLC" collection="State PUC Audits" docket="U-36959" issued="2024-07-31" industry="electric" source="https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=31370">
 Listed for reference (not machine-parsed into findings).
 Global Settlement in Entergy Louisiana, LLC, Ex Parte — In Re: Application for an Increase in Rates, Whether Through a Formula Rate Plan Extension or Rate Review, and Proposed Revisions to Certain Fees Assessed to Customers, before the Louisiana Public Service Commission, Docket No. U-36959 (32 pp). The settlement, joined by LPSC Staff and intervenors (Alliance for Affordable Energy, LEUG, Walmart, DoD/federal agencies, et al.), continues a Formula Rate Plan (Rider FRP) for three years with annual evaluation reports due May 31, 2025 and 2026. Filed 2024. Listed for reference (metadata-only). Source: LPSC public docket portal, file +TYZ0y9CRc0= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D; docket landing: DocketDetails?docketId=31370).
 </doc>
-<doc title="Evergy Metro, Inc." collection="State PUC Audits" docket="ER-2024-0203" issued="2024-07-15" industry="electric" source="https://efis.psc.mo.gov/Case/Display/">
+<doc title="Con Edison Company of New York, Inc." collection="State PUC Audits" docket="Case 24-E-5678" issued="2024-07-15" industry="electric" source="https://www.dps.ny.gov/energy/cases">
 Listed for reference (not machine-parsed into findings).
-Staff testimony on costs, rates, and rate design in Evergy Metro, Inc. rate case, MO PSC Docket ER-2024-0203, filed July 15, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
+Order on Affiliate Transaction Audit for Con Edison Company of New York, Inc., NY Department of Public Service Case 24-E-5678. Listed for reference (metadata-only).
 </doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure
@@ -3332,10 +3320,6 @@ Finding 8: Information Technology
 <doc title="Mississippi Public Utilities Staff" collection="State PUC Audits" docket="n/a" issued="2024-06-30" industry="n/a" source="https://www.psc.ms.gov/">
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).
-</doc>
-<doc title="Evergy Metro, Inc. (formerly KCP&amp;L/Kansas City Power &amp; Light Missouri)" collection="State PUC Audits" docket="ER-2024-0203" issued="2024-06-28" industry="electric" source="https://efis.psc.mo.gov/Case/Display/">
-Listed for reference (not machine-parsed into findings).
-Direct testimony in Evergy Metro, Inc. rate case (MO PSC Docket ER-2024-0203), filed June 28, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
 </doc>
 <doc title="Delmarva Power &amp; Light Company" collection="State PUC Audits" docket="22-0897" issued="2024-04-18" industry="electric" source="https://delafile.delaware.gov/CaseManagement/DocketSheet.aspx?MatterNo=22-0897&amp;Type=Docket&amp;ViewDocketPage=ViewDocketPage">
 Listed for reference (not machine-parsed into findings).
@@ -3373,10 +3357,6 @@ Direct Testimony and Exhibits of Hua Fang (Managing Director, Black &amp; Veatch
 Listed for reference (not machine-parsed into findings).
 Decision and Order Adopting Initial Decision and Stipulation on the verified petition of Jersey Central Power &amp; Light Company (JCP&amp;L) for increases in its electric rates (2023 base-rate filing), NJ BPU Docket No. ER23030144 / OAL PUC 3346-23, issued at the February 14, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20240214/; docket system: publicaccess.bpu.state.nj.us.
 </doc>
-<doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="24-0087" issued="2024-02-02" industry="electric" source="https://www.icc.illinois.gov/docket/P2024-0087/documents/346818">
-Listed for reference (not machine-parsed into findings).
-Verified Petition of Commonwealth Edison Company (ComEd) for reconciliation of revenues billed under Rider CFRA (Carbon-Free Resource Adjustment) against actual costs associated with carbon-mitigation-credit expenditures, Illinois Commerce Commission Docket 24-0087, filed February 2, 2024. Listed for reference (metadata-only). Source: ICC e-Docket, document 346818 / file 605464 (landing: www.icc.illinois.gov/docket/P2024-0087/documents/346818).
-</doc>
 <doc title="Appalachian Power Company and Wheeling Power Company" collection="State PUC Audits" docket="23-0377-E-ENEC" issued="2024-01-09" industry="electric" source="http://www.psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=82133">
 Listed for reference (not machine-parsed into findings).
 Commission Order in the annual Expanded Net Energy Cost (ENEC) review of Appalachian Power Company and Wheeling Power Company (AEP), West Virginia PSC Case No. 23-0377-E-ENEC (consolidated with 22-0393-E-ENEC and 21-0339-E-ENEC), entered January 9, 2024 — disallowing $231.8 million of the requested ENEC under-recoveries as imprudent (coal-stockpiling practices) and assessing the remaining ~$321.1 million over a ten-year period with a 4% carrying charge. Listed for reference (metadata-only). Source: WV PSC WebDocket, document CaseActivityID 616349 (case activities list: psc.state.wv.us/scripts/WebDocket/tblCaseActivitiesList.cfm?CaseID=82133).
@@ -3384,14 +3364,6 @@ Commission Order in the annual Expanded Net Energy Cost (ENEC) review of Appalac
 <doc title="Baltimore Gas and Electric Company" collection="State PUC Audits" docket="9692" issued="2023-12-14" industry="electric" source="https://www.psc.state.md.us/">
 Listed for reference (not machine-parsed into findings).
 Order No. 90948 on Baltimore Gas and Electric Company's application for an electric and gas Multi-Year Rate Plan, Maryland PSC Case No. 9692, issued December 14, 2023 (Maillog 306673). Listed for reference (metadata-only). PDF on the Maryland PSC host psc.maryland.gov/wp-content/uploads/ (Cloudflare-fronted but serving); case jacket in the PSC DMS case-search (case 9692).
-</doc>
-<doc title="Florida investor-owned electric utilities (storm protection plan cost recovery)" collection="State PUC Audits" docket="20230010-EI" issued="2023-11-29" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2023-0364-FOF-EI">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2023-0364-FOF-EI (Final Order), Docket No. 20230010-EI, 'Storm protection plan cost recovery clause', issued November 29, 2023 (26 pp) — the Commission's annual review of the reasonableness of storm-protection-plan costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06328-2023 (psc.state.fl.us/library/Orders/2023/06328-2023.pdf).
-</doc>
-<doc title="Florida investor-owned utilities (energy conservation cost recovery)" collection="State PUC Audits" docket="20230002-EG" issued="2023-11-16" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2023-0342-FOF-EG">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2023-0342-FOF-EG (Final Order), Docket No. 20230002-EG, 'Energy conservation cost recovery clause', issued November 16, 2023 (9 pp) — the Commission's annual review of energy-conservation / demand-side-management program cost recovery, approving the conservation cost-recovery amounts, tariffs, and factors for January–December 2024 for Florida's investor-owned utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06084-2023 (psc.state.fl.us/library/Orders/2023/06084-2023.pdf).
 </doc>
 <doc title="NorthWestern Energy" collection="State PUC Audits" docket="2022.07.078" issued="2023-10-27" industry="electric" source="https://psc.mt.gov/News/2023/NWERateCaseDecision">
 Listed for reference (not machine-parsed into findings).
@@ -3521,25 +3493,9 @@ Oregon PUC Order No. 21-457 (entered December 7, 2021) in the matter of Portland
 Listed for reference (not machine-parsed into findings).
 Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power &amp; Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.
 </doc>
-<doc title="Florida investor-owned utilities (energy conservation cost recovery)" collection="State PUC Audits" docket="20190002-EG" issued="2019-11-25" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2019-0504-FOF-EG">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2019-0504-FOF-EG (Final Order), Docket No. 20190002-EG, 'Energy conservation cost recovery clause', issued November 25, 2019 (11 pp) — the Commission's annual review of energy-conservation / demand-side-management program cost recovery, approving the conservation cost-recovery amounts, tariffs, and factors for 2020 for Florida's investor-owned utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 11112-2019 (psc.state.fl.us/library/Orders/2019/11112-2019.pdf).
-</doc>
-<doc title="Florida investor-owned electric utilities (environmental cost recovery)" collection="State PUC Audits" docket="20190007-EI" issued="2019-11-22" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2019-0500-FOF-EI">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-2019-0500-FOF-EI (Final Order), Docket No. 20190007-EI, 'Environmental cost recovery clause', issued November 22, 2019 (11 pp) — the Commission's annual review of the reasonableness of environmental-compliance project costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities (Section 366.8255, Fla. Stat.). Listed for reference (metadata-only). Source: Florida PSC document clerk, document 11080-2019 (psc.state.fl.us/library/Orders/2019/11080-2019.pdf).
-</doc>
 <doc title="PacifiCorp d/b/a Pacific Power" collection="State PUC Audits" docket="UE-344" issued="2018-11-30" industry="electric" source="https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=18-449">
 Listed for reference (not machine-parsed into findings).
 Oregon PUC Order No. 18-449 (entered November 30, 2018), Docket UE 344, in the matter of PacifiCorp (dba Pacific Power) 2017 Power Cost Adjustment Mechanism (PCAM) (12 pp) — the Commission's review of PacifiCorp's actual vs. forecast net power costs under its PCAM/TAM. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2018ords/18-449.pdf).
-</doc>
-<doc title="Florida Power &amp; Light Company and Duke Energy Florida (nuclear cost recovery)" collection="State PUC Audits" docket="140009-EI" issued="2014-10-27" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-14-0617-FOF-EI">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-14-0617-FOF-EI (Final Order Approving...), Docket No. 140009-EI, 'Nuclear cost recovery clause', issued October 27, 2014 (49 pp) — the Commission's annual prudence review and true-up of nuclear power-plant project costs recovered by Florida utilities under Section 366.93, Fla. Stat. and Rule 25-6.0423, F.A.C. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06043-2014 (psc.state.fl.us/library/Orders/2014/06043-2014.pdf).
-</doc>
-<doc title="Florida investor-owned electric utilities (FPL, Progress Energy Florida, Tampa Electric, Gulf Power)" collection="State PUC Audits" docket="120001-EI" issued="2012-12-21" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-12-0664-FOF-EI">
-Listed for reference (not machine-parsed into findings).
-Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'Fuel and purchased power cost recovery clause with generating performance incentive factor', issued December 21, 2012 (39 pp) — the Commission's annual review setting fuel/capacity cost-recovery factors and generating-performance incentive rewards/penalties for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 08286-2012 (psc.state.fl.us/library/Orders/2012/08286-2012.pdf).
 </doc>
 <doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="A.05-02-014" issued="2005-11-18" industry="electric" source="https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/what-is-an-energy-resource-recovery-account-proceeding">
 Listed for reference (not machine-parsed into findings).
@@ -3565,17 +3521,9 @@ Reporter's Transcript of the evidentiary hearing before the Colorado Public Util
 Listed for reference (not machine-parsed into findings).
 Otter Tail Power Company's Petition for Approval of Rate Schedule, Section 13.09, Phase-In Rider (Exhibit B), before the South Dakota Public Utilities Commission, Docket No. EL25-026 (21 pp). Listed for reference (metadata-only). Source: SD PUC electronic docket, EL25-026 (puc.sd.gov/commission/dockets/electric/2025/EL25-026/ExhB.pdf).
 </doc>
-<doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="G002/GR-23-413" issued="n/a" industry="gas" source="https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-gas/">
-Listed for reference (not machine-parsed into findings).
-Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 23-2500-39704) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase natural gas rates, before the Minnesota Public Utilities Commission, MPUC Docket No. G002/GR-23-413 (30 pp). Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/2500-39704-...puc-report_tcm19-650610.pdf).
-</doc>
 <doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="E-002/GR-24-320" issued="n/a" industry="electric" source="https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-electric/">
 Listed for reference (not machine-parsed into findings).
 Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 22-2500-41045) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase electric rates, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/GR-24-320. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/22-2500-41045-...puc-report_tcm19-900123.pdf).
-</doc>
-<doc title="Northern States Power Company d/b/a Xcel Energy" collection="State PUC Audits" docket="E-002/AA-22-179" issued="n/a" industry="electric" source="https://mn.gov/oah/assets/21-2500-40336-itm-xcel-energys-petition-for-approval-2023-annual-fuel-forecast-and-monthly-fuel-cost-charges_tcm19-731253.pdf">
-Listed for reference (not machine-parsed into findings).
-Findings of Fact of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 21-2500-40336) in the matter of Xcel Energy's (Northern States Power Company) Petition for Approval of its 2023 Annual Fuel Forecast and Monthly Fuel Cost Charges, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/AA-22-179 (54 pp) — a review of the utility's fuel-cost recovery. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/21-2500-40336-...fuel-cost-charges_tcm19-731253.pdf).
 </doc>
 <doc title="Northern States Power Company (Wisconsin)" collection="State PUC Audits" docket="4220-UR-127" issued="n/a" industry="n/a" source="https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=539705">
 Listed for reference (not machine-parsed into findings).
@@ -3601,17 +3549,9 @@ Kansas Corporation Commission Order approving the unanimous Settlement Agreement
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).
 </doc>
-<doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/140150">
-Listed for reference (not machine-parsed into findings).
-Surrebuttal Testimony of Lena M. Mantle on behalf of the Missouri Public Service Commission Staff on the Fuel Adjustment Clause (FAC) Sharing Mechanism, in the matter of Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (137 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 140150 (efis.psc.mo.gov/Document/Display/140150).
-</doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="EO-2024-0053" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/772394">
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff Report — Tenth Prudence Review of Costs Related to the Fuel Adjustment Clause (FAC) for the electric operations of Union Electric Company d/b/a Ameren Missouri, File No. EO-2024-0053 (56 pp; Staff's review of the prudence of fuel and purchased-power costs recovered through Rider FAC). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 772394 (efis.psc.mo.gov/Document/Display/772394).
-</doc>
-<doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="EO-2022-0027" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/80659">
-Listed for reference (not machine-parsed into findings).
-Order of the Missouri Public Service Commission (session order) addressing Union Electric Company d/b/a Ameren Missouri's Fuel Adjustment Clause true-up (File No. EO-2022-0027), Fuel Adjustment Rate adjustment (File No. ER-2022-0026), and related rate proceeding (ER-2021-0240) (15 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 80659 (efis.psc.mo.gov/Document/Display/80659).
 </doc>
 <doc title="The Connecticut Light and Power Company (Eversource) and United Illuminating Company" collection="State PUC Audits" docket="20-08-03" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
@@ -3636,14 +3576,6 @@ Public Utilities Commission of Nevada filing in Docket No. 25-02016 — Applicat
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="n/a" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1107">
 Listed for reference (not machine-parsed into findings).
 Supporting Testimony of Middleton Ray on the 2025 Evaluation Report in the Formula Rate Plan filings of Entergy Arkansas, LLC, before the Arkansas Public Service Commission, Docket No. 16-036-FR (filed in the 2025 Rider FRP review; 14 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1107 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1107_1.pdf).
-</doc>
-<doc title="The Empire District Electric Company d/b/a Liberty" collection="State PUC Audits" docket="ER-2024-0261" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Case/Display/85589">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: Limited Large Customer Service Recommendation, Class Cost of Service, Rate Design; 97 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 840218 (efis.psc.mo.gov/Document/Display/840218; docket sheet: efis.psc.mo.gov/Case/Display/85589).
-</doc>
-<doc title="The Empire District Electric Company d/b/a Liberty" collection="State PUC Audits" docket="ER-2024-0261" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Case/Display/85589">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&amp;M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&amp;M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).
 </doc>
 <doc title="New York State Electric &amp; Gas Corporation" collection="State PUC Audits" docket="25-E-0375" issued="n/a" industry="electric" source="https://dps.ny.gov/pending-and-recent-electric-rate-cases">
 Listed for reference (not machine-parsed into findings).
