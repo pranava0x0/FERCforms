@@ -8,16 +8,17 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 **Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
-**Latest work (extraction pipeline fix):**
-- ✓ Fixed `pipeline.extract` to load from `reports.json` (all docs) instead of just `listing.json` (FERC only)
-- ✓ 115 rate-case documents now eligible for text extraction
-- ✓ Added `test_extract.py` regression test; all 91 tests passing
+**Latest work (extraction pipeline + chunking approach):**
+- ✓ Fixed `pipeline.extract` to load seed documents from processed directory (rate cases + state audits)
+- ✓ Fixed `pipeline.structure` to structure seed documents (not just FERC)
+- ✓ Added tests for extraction completeness; all 91 tests passing
+- ⚠ **Memory blocker:** Full corpus extraction (322 docs) = 800GB+ swap/OOM. Rate cases still need extraction.
 
 **Next steps (backlog):**
-1. **[high]** Run extraction/structure/build pipeline on rate-case documents → populate findings
-2. **[high]** Validate rate-case findings appear in UI (State Rate Cases tab)
-3. **[med]** State audit parser for non-PA formats (MI Liberty, CT orders, etc.)
-4. **[med]** Deferred: Tier 5 states (ID, ND, NE, NM, OK, etc.) — ~16 remaining
+1. **[high]** Extract rate cases via chunked runs: `extract --limit 50` per batch → avoids memory spike
+2. **[high]** Once extracted: run `structure` + `build` → populate findings in UI
+3. **[med]** Refactor extractors to stream pages instead of loading full PDFs into RAM
+4. **[med]** State audit parser for non-PA formats (MI Liberty, CT orders)
 
 ---
 
