@@ -2,7 +2,7 @@
   {
     "id": "2022-11-30_public-service-company-colorado_co-22al-0530e-advice-letter-1906",
     "company": "Public Service Company of Colorado",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CO",
     "source": "Colorado Public Utilities Commission",
     "doc_type": "rate case advice letter",
@@ -18,7 +18,7 @@
   {
     "id": "public-service-company-colorado_co-24al-0275e-decision-c25-0122-i",
     "company": "Public Service Company of Colorado",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CO",
     "source": "Colorado Public Utilities Commission",
     "doc_type": "decision",
@@ -33,7 +33,7 @@
   {
     "id": "public-service-company-colorado_co-22al-0046g-evidentiary-hearing-transcript",
     "company": "Public Service Company of Colorado",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CO",
     "source": "Colorado Public Utilities Commission",
     "doc_type": "hearing transcript",
@@ -48,7 +48,7 @@
   {
     "id": "2024-11-15_black-hills-energy-colorado_co-24al-0524g-rate-case-application",
     "company": "Black Hills Colorado Electric, LLC (formerly Black Hills Power)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "CO",
     "source": "Colorado Public Utilities Commission",
     "doc_type": "rate case application",

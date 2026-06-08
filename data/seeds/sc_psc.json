@@ -2,7 +2,7 @@
   {
     "id": "2024-02-15_dominion-energy-south-carolina_sc-2024-2-e-fuel-testimony",
     "company": "Dominion Energy South Carolina, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "direct testimony",
@@ -18,7 +18,7 @@
   {
     "id": "2024-03-28_dominion-energy-south-carolina_sc-2024-2-e-settlement",
     "company": "Dominion Energy South Carolina, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "settlement agreement",
@@ -34,7 +34,7 @@
   {
     "id": "2024-04-11_dominion-energy-south-carolina_sc-2024-2-e-proposed-order",
     "company": "Dominion Energy South Carolina, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "proposed order",
@@ -50,7 +50,7 @@
   {
     "id": "2024-02-20_duke-energy-carolinas_sc-2024-3-e-direct-testimony",
     "company": "Duke Energy Carolinas, LLC",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "direct testimony",
@@ -67,7 +67,7 @@
   {
     "id": "2024-03-28_duke-energy-carolinas_sc-2024-3-e-settlement",
     "company": "Duke Energy Carolinas, LLC",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "settlement agreement",
@@ -84,7 +84,7 @@
   {
     "id": "2024-04-11_duke-energy-carolinas_sc-2024-3-e-proposed-order",
     "company": "Duke Energy Carolinas, LLC",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "SC",
     "source": "Public Service Commission of South Carolina",
     "doc_type": "proposed order",

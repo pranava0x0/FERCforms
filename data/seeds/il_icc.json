@@ -2,7 +2,7 @@
   {
     "id": "2024-02-02_commonwealth-edison_icc-24-0087-cfra-petition",
     "company": "Commonwealth Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "reconciliation petition",
@@ -18,7 +18,7 @@
   {
     "id": "2024-08-20_commonwealth-edison_icc-24-0087-staff-testimony",
     "company": "Commonwealth Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "direct testimony",
@@ -34,7 +34,7 @@
   {
     "id": "2024-08-20_commonwealth-edison_icc-24-0087-cici-testimony",
     "company": "Commonwealth Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "direct testimony",
@@ -50,7 +50,7 @@
   {
     "id": "2025-09-04_commonwealth-edison_icc-24-0087-final-order",
     "company": "Commonwealth Edison Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "final order",
@@ -66,7 +66,7 @@
   {
     "id": "2025-01-08_ameren-illinois_icc-25-0084-application",
     "company": "Ameren Illinois Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "rate case application",
@@ -82,7 +82,7 @@
   {
     "id": "2025-01-08_ameren-illinois_icc-25-0084-rate-base",
     "company": "Ameren Illinois Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "rate case testimony",
@@ -98,7 +98,7 @@
   {
     "id": "2025-07-08_ameren-illinois_icc-25-0382-staff-testimony",
     "company": "Ameren Illinois Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "rate case testimony",
@@ -114,7 +114,7 @@
   {
     "id": "2025-12-18_ameren-illinois_icc-25-0382-final-order",
     "company": "Ameren Illinois Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
     "doc_type": "final order",

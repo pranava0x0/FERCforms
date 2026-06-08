@@ -2,7 +2,7 @@
   {
     "id": "2024-11-14_el-paso-electric_puct-57149-preliminary-order",
     "company": "El Paso Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "preliminary order",
@@ -18,7 +18,7 @@
   {
     "id": "2025-03-25_el-paso-electric_puct-57149-opuc-testimony",
     "company": "El Paso Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "direct testimony",
@@ -34,7 +34,7 @@
   {
     "id": "2025-03-25_el-paso-electric_puct-57149-city-testimony",
     "company": "El Paso Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "direct testimony",
@@ -50,7 +50,7 @@
   {
     "id": "2025-04-01_el-paso-electric_puct-57149-staff-testimony",
     "company": "El Paso Electric Company",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "direct testimony",
@@ -66,7 +66,7 @@
   {
     "id": "2025-02-28_oncor-electric-delivery_tx-puct-58114-fuel-preliminary-order",
     "company": "Oncor Electric Delivery, L.L.C. (also d/b/a AEP Texas Transmission)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "preliminary order",
@@ -83,7 +83,7 @@
   {
     "id": "2025-03-31_oncor-electric-delivery_tx-puct-58114-fuel-staff-testimony",
     "company": "Oncor Electric Delivery, L.L.C.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "TX",
     "source": "Public Utility Commission of Texas",
     "doc_type": "direct testimony",

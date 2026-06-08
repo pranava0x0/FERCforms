@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 261 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 265 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5442,6 +5442,17 @@ Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio'
 
 ---
 
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0382 | Audit type: n/a
+- Issued: 2025-12-18 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0382/documents/374217
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).
+
+---
+
 ## Entergy Arkansas, LLC
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission
 - Docket: 16-036-FR | Audit type: n/a
@@ -5640,6 +5651,17 @@ Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota
 
 ---
 
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0382 | Audit type: n/a
+- Issued: 2025-07-08 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0382/documents/367736
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic & Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).
+
+---
+
 ## Entergy Arkansas, LLC
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission
 - Docket: 16-036-FR | Audit type: n/a
@@ -5835,6 +5857,28 @@ Order of the Indiana Utility Regulatory Commission on the verified petition of N
 - Status: listed for reference (not machine-parsed into findings)
 
 Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
+
+---
+
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0084 | Audit type: n/a
+- Issued: 2025-01-08 | Industry: gas | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0084/documents/360541
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony (Exhibit 10.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois, witness Dylan W. D'Ascendis (ScottMadden, Inc.), regarding rate base and return on equity (ROE) in the Company's proposed general increase in rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631521 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
+
+---
+
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0084 | Audit type: n/a
+- Issued: 2025-01-08 | Industry: gas | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0084/documents/360541
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony (Exhibit 1.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois in the Company's Proposed General Increase in Rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631501 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
 
 ---
 

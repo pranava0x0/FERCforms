@@ -2,7 +2,7 @@
   {
     "id": "2025-10-24_empire-district-electric-liberty_mo-er-2024-0261-staff-eubanks",
     "company": "The Empire District Electric Company d/b/a Liberty",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "direct testimony",
@@ -18,7 +18,7 @@
   {
     "id": "2025_empire-district-electric-liberty_mo-er-2024-0261-staff-lange",
     "company": "The Empire District Electric Company d/b/a Liberty",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "direct testimony",
@@ -33,7 +33,7 @@
   {
     "id": "2025_empire-district-electric-liberty_mo-er-2024-0261-staff-giacone",
     "company": "The Empire District Electric Company d/b/a Liberty",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "direct testimony",
@@ -48,7 +48,7 @@
   {
     "id": "2024-06-28_evergy-metro-inc_mo-er-2024-0203-rate-case",
     "company": "Evergy Metro, Inc. (formerly KCP&L/Kansas City Power & Light Missouri)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "rate case testimony",
@@ -65,7 +65,7 @@
   {
     "id": "2024-07-15_evergy-metro-inc_mo-er-2024-0203-staff-testimony",
     "company": "Evergy Metro, Inc.",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "staff testimony",

@@ -2,7 +2,7 @@
   {
     "id": "er-2011-0028_union-electric-ameren-missouri_mo-staff-surrebuttal-fac-sharing-mechanism",
     "company": "Union Electric Company d/b/a Ameren Missouri",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "staff testimony",
@@ -17,7 +17,7 @@
   {
     "id": "eo-2022-0027_union-electric-ameren-missouri_mo-commission-order-fac-truup-far",
     "company": "Union Electric Company d/b/a Ameren Missouri",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
     "doc_type": "order",

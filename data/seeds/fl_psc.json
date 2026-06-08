@@ -2,7 +2,7 @@
   {
     "id": "2012-12-21_florida-iou_fl-120001-ei-psc-12-0664-fof-ei",
     "company": "Florida investor-owned electric utilities (FPL, Progress Energy Florida, Tampa Electric, Gulf Power)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on fuel cost recovery",
@@ -18,7 +18,7 @@
   {
     "id": "2014-10-27_florida-nuclear_fl-140009-ei-psc-14-0617-fof-ei",
     "company": "Florida Power & Light Company and Duke Energy Florida (nuclear cost recovery)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on nuclear cost recovery",
@@ -34,7 +34,7 @@
   {
     "id": "2023-11-29_florida-iou_fl-20230010-ei-psc-2023-0364-fof-ei",
     "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on storm cost recovery",
@@ -50,7 +50,7 @@
   {
     "id": "2024-10-24_florida-iou_fl-20240010-ei-psc-2024-0459-fof-ei",
     "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on storm cost recovery",
@@ -66,7 +66,7 @@
   {
     "id": "2024-11-22_florida-iou_fl-20240009-ei-psc-2024-0429-fof-ei",
     "company": "Florida investor-owned electric utilities (environmental cost recovery)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on environmental cost recovery",
@@ -83,7 +83,7 @@
   {
     "id": "2024-12-20_florida-iou_fl-20240010-ei-conservation-cost",
     "company": "Florida investor-owned electric utilities (conservation cost recovery)",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on conservation cost recovery",

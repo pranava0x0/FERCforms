@@ -2,7 +2,7 @@
   {
     "id": "northern-states-power_mn-g002-gr-23-413-alj-report",
     "company": "Northern States Power Company d/b/a Xcel Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MN",
     "source": "Minnesota Public Utilities Commission",
     "doc_type": "administrative law judge report",
@@ -17,7 +17,7 @@
   {
     "id": "northern-states-power_mn-e002-aa-22-179-fuel-forecast-alj",
     "company": "Northern States Power Company d/b/a Xcel Energy",
-    "collection": "state_audit",
+    "collection": "state_rate_case",
     "jurisdiction": "MN",
     "source": "Minnesota Public Utilities Commission",
     "doc_type": "administrative law judge report",
@@ -26,7 +26,7 @@
     "source_page_url": "https://mn.gov/oah/assets/21-2500-40336-itm-xcel-energys-petition-for-approval-2023-annual-fuel-forecast-and-monthly-fuel-cost-charges_tcm19-731253.pdf",
     "docket": "E-002/AA-22-179",
     "captured_at": "2026-06-02",
-    "source_note": "Findings of Fact of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 21-2500-40336) in the matter of Xcel Energy's (Northern States Power Company) Petition for Approval of its 2023 Annual Fuel Forecast and Monthly Fuel Cost Charges, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/AA-22-179 (54 pp) — a review of the utility's fuel-cost recovery. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/21-2500-40336-...fuel-cost-charges_tcm19-731253.pdf).",
+    "source_note": "Findings of Fact of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 21-2500-40336) in the matter of Xcel Energy's (Northern States Power Company) Petition for Approval of its 2023 Annual Fuel Forecast and Monthly Fuel Cost Charges, before the Minnesota Public Utilities Commission, MPUC Docket No. E-002/AA-22-179 (54 pp) \u2014 a review of the utility's fuel-cost recovery. Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/21-2500-40336-...fuel-cost-charges_tcm19-731253.pdf).",
     "parse": false
   }
 ]
