@@ -154,6 +154,74 @@ validates every committed seed.
 
 ---
 
+## Agent checkpointing & failure logging (multi-step ingest tasks)
+
+When spinning off agents for data ingest, processing loops, or state-backfill work, the agent MUST implement:
+
+**1. Incremental saves.** After processing each logical unit (one seed doc, one state, one utility), immediately:
+   - Write the `data/processed/<id>/report.json` record
+   - Update the seed file (mark as `fetched=true`, add `captured_at`, update `page_count`)
+   - Commit or checkpoint the working directory
+
+   **Why:** If the agent times out, hits a rate limit, or encounters an error midway, all work after the last checkpoint is lost. Incremental saves let the next run resume from the last successful checkpoint without redoing work.
+
+**2. Failure logging.** Write all failures (HTTP errors, auth walls, parsing failures, timeouts) to a **`data/ingest_log.jsonl`** file with one JSON record per line:
+   ```json
+   {"timestamp": "2026-06-07T20:18:00Z", "doc_id": "swepco-la-u37794", "status": "failed", "error": "HTTP 502", "reason": "LPSC portal temporarily down", "retryable": true, "url": "https://...", "next_steps": "Retry on next refresh when portal is available"}
+   ```
+   
+   **Why:** Failures that aren't logged become "ghost issues" — the same doc fails silently on every refresh, consuming time and giving no hint why. A detailed log identifies which failures are retryable, which need a URL pivot, which need browser capture, and which are terminal (so the human doesn't waste time re-trying them).
+
+**3. Exit status report.** Agent's final message MUST include:
+   ```
+   ✓ Ingested: 3 docs (IL Ameren ×2, LA SWEPCO ×1)
+   ✗ Failed: 1 doc (SWEPCO, HTTP 502 — retryable, LPSC portal recovering)
+   → Next: Re-run SWEPCO on next refresh; move to TX/CO on new session
+   ```
+   
+   This tells the human (or the next agent) what succeeded, what failed and why, and the resume point.
+
+**Example workflow:**
+```python
+for doc_id, seed in seeds.items():
+    try:
+        pdf = fetch_pdf(seed['url'])
+        record = process_pdf(pdf)
+        write_json(f"data/processed/{doc_id}/report.json", record)
+        seed['fetched'] = True
+        seed['page_count'] = len(record['pages'])
+        seed['captured_at'] = today_iso()
+    except HTTPError as e:
+        log_failure(doc_id, error=str(e), retryable=(e.status == 429 or e.status == 502))
+        seed['last_error'] = str(e)
+        seed['last_error_time'] = today_iso()
+    # commit after each doc or every N docs
+    if doc_count % 5 == 0:
+        write_seed_file(seed_path, seeds)
+        git_commit(f"data: ingest {seed['company']} ({doc_id}) — {doc_count}/{len(seeds)}")
+```
+
+---
+
+## Tracking state/jurisdiction refresh progress
+
+To avoid re-scanning the same state unnecessarily and to resume quickly after interruptions, maintain a **`data/ingest_manifest.jsonl`** file (one record per state/jurisdiction touched):
+
+```json
+{"jurisdiction": "IL", "utility": "Ameren Illinois", "docket": "25-0084", "last_run": "2026-06-07T20:11:00Z", "docs_ingested": 2, "stopping_point": "completed; move to next state", "next_target": "TX Oncor"}
+{"jurisdiction": "LA", "utility": "SWEPCO", "docket": "U-37794", "last_run": "2026-06-07T20:18:00Z", "docs_ingested": 1, "stopping_point": "portal 502 error; retry on next refresh", "next_target": "LA Cleco OR move to CO"}
+```
+
+**When starting a new session:**
+1. Check `data/ingest_manifest.jsonl` for recent runs (last 7 days)
+2. Pick a jurisdiction NOT in the manifest (cold start), or one with `stopping_point: "completed"` (move to next tier)
+3. Avoid starting TX if LA is still pending (dependencies)
+4. Update the manifest after each jurisdiction is done
+
+**Why:** Without this, the human has to re-read BACKLOG.md and state-coverage.md every session, re-figure out which states are thin, and might start duplicate work on a state that just failed.
+
+---
+
 ## What NOT to do
 
 - **Don't paraphrase quoted content.** Quote verbatim into the `statement` / `quote` / `body` field. Tests catch obvious markers ("they claim that…").
