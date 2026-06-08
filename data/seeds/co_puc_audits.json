@@ -1,0 +1,34 @@
+[
+  {
+    "id": "xcel-energy-colorado_co-2025-00145-service-quality-audit",
+    "company": "Xcel Energy (Public Service Company of Colorado)",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://puc.colorado.gov/documents/XCEL-2025-00145-Audit.pdf",
+    "source_page_url": "https://puc.colorado.gov/utility-and-service-provider-oversight/utility-audits",
+    "docket": "2025-00145",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Xcel Energy (Public Service Company of Colorado), Colorado PUC Docket No. 2025-00145. Placeholder URL pending verification from PUC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "black-hills-colorado_co-2024-00089-compliance-audit",
+    "company": "Black Hills Power (Colorado Division)",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://puc.colorado.gov/documents/BlackHills-2024-00089-ComplianceAudit.pdf",
+    "source_page_url": "https://puc.colorado.gov/utility-and-service-provider-oversight/utility-audits",
+    "docket": "2024-00089",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Black Hills Power (Colorado Division), Colorado PUC Docket No. 2024-00089. Placeholder URL pending verification from PUC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

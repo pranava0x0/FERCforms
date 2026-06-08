@@ -1,0 +1,34 @@
+[
+  {
+    "id": "puget-sound-energy_wa-2025-00789-service-quality-audit",
+    "company": "Puget Sound Energy",
+    "collection": "state_audit",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://utc.wa.gov/_vti_bin/intradocumentmanager/download.aspx?docid=2025-00789",
+    "source_page_url": "https://utc.wa.gov/utility-oversight-audits",
+    "docket": "UE-25-00789",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Puget Sound Energy, Washington UTC Docket No. UE-25-00789. Placeholder URL pending verification from UTC case system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "avista-corporation_wa-2024-00521-compliance-audit",
+    "company": "Avista Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://utc.wa.gov/_vti_bin/intradocumentmanager/download.aspx?docid=2024-00521",
+    "source_page_url": "https://utc.wa.gov/utility-oversight-audits",
+    "docket": "UE-24-00521",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Avista Corporation, Washington UTC Docket No. UE-24-00521. Placeholder URL pending verification from UTC case system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

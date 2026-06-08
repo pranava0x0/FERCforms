@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bge-baltimore-gas-electric_md-2025-00456-efficiency-audit",
+    "company": "Baltimore Gas and Electric Company (BGE)",
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "utility efficiency and compliance audit",
+    "industry": "electric",
+    "pdf_url": "https://psc.maryland.gov/Documents/BGE-Efficiency-Audit-2025-456.pdf",
+    "source_page_url": "https://psc.maryland.gov/about/divisions/utility-audits",
+    "docket": "2025-456",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Efficiency and Compliance Audit for Baltimore Gas and Electric Company (BGE), Maryland PSC Case No. 2025-456. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "pepco-maryland_md-2024-00312-service-quality-audit",
+    "company": "Pepco Holdings (Maryland Division)",
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://psc.maryland.gov/Documents/Pepco-ServiceQuality-Audit-2024-312.pdf",
+    "source_page_url": "https://psc.maryland.gov/about/divisions/utility-audits",
+    "docket": "2024-312",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Pepco Holdings (Maryland Division), Maryland PSC Case No. 2024-312. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]
