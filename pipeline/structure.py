@@ -427,7 +427,7 @@ def structure_state_rate_case(entry: ListingEntry, text: ReportText, existing_re
     # Preserve metadata from existing report if available
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k != "findings"},  # Copy all fields except findings
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
             findings=findings,
             finding_count=len([f for f in findings if not f.is_other_matter]),
         )
@@ -639,17 +639,26 @@ def main() -> None:
             continue
         try:
             text = ReportText.model_validate_json(text_path.read_text(encoding="utf-8"))
-            # For seed documents not in listing, create minimal ListingEntry
-            entry = listing.get(rid) or ListingEntry(
-                id=rid,
-                company="",
-                company_raw="",
-                accession_number=rid,
-                source_page_url="",
-                pdf_download_url="",
-                captured_at=None,
-                source_note="",
-            )
+            # For seed documents not in listing, load from their report.json
+            entry = listing.get(rid)
+            if not entry:
+                report_path = config.PROCESSED_DIR / rid / "report.json"
+                if report_path.exists():
+                    report_json = json.loads(report_path.read_text(encoding="utf-8"))
+                    # Create entry from report fields
+                    entry = ListingEntry(
+                        id=rid,
+                        company=report_json.get("company", ""),
+                        company_raw=report_json.get("company_raw", ""),
+                        accession_number=rid,
+                        docket=report_json.get("docket"),
+                        source_page_url=report_json.get("source_page_url", ""),
+                        pdf_download_url=report_json.get("pdf_download_url", ""),
+                        captured_at=report_json.get("captured_at", "2026-06-07"),
+                        source_note=report_json.get("source_note", ""),
+                    )
+                else:
+                    continue
             report = structure_report(entry, text)
             (config.PROCESSED_DIR / rid / "report.json").write_text(
                 report.model_dump_json(indent=2), encoding="utf-8"
