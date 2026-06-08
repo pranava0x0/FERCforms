@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="250 structured records (120 FERC audits, 14 prudence reviews, 116 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="253 structured records (120 FERC audits, 14 prudence reviews, 119 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3297,13 +3297,25 @@ Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June
 Listed for reference (not machine-parsed into findings).
 Order No. 10395 on the application of Delmarva Power &amp; Light Company for an increase in electric base rates (filed December 15, 2022), Delaware PSC Docket No. 22-0897, entered April 18, 2024. Listed for reference (metadata-only). PDF on the DE PSC host depsc.delaware.gov/wp-content/uploads/; docket sheet in DelaFile (delafile.delaware.gov, MatterNo 22-0897).
 </doc>
+<doc title="Duke Energy Carolinas, LLC" collection="State PUC Audits" docket="2024-3-E" issued="2024-04-11" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E">
+Listed for reference (not machine-parsed into findings).
+Joint Proposed Order on Duke Energy Carolinas, LLC's 2024 Annual Review of Base Rates for Fuel Costs and the utility's fuel purchasing practices and policies, before the Public Service Commission of South Carolina, Docket No. 2024-3-E, filed April 11, 2024. Listed for reference (metadata-only, URL needs verification). Source: SC PSC Document Management System (dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E).
+</doc>
 <doc title="Dominion Energy South Carolina, Inc." collection="State PUC Audits" docket="2024-2-E" issued="2024-04-11" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/118762">
 Listed for reference (not machine-parsed into findings).
 Joint Proposed Order on the annual review of Dominion Energy South Carolina, Inc.'s fuel purchasing practices and policies and whether any adjustment in the fuel cost recovery factors is reasonable, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed April 11, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 51360053-aa48-4cac-8c1c-ddd6997b76c1 (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
 </doc>
+<doc title="Duke Energy Carolinas, LLC" collection="State PUC Audits" docket="2024-3-E" issued="2024-03-28" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E">
+Listed for reference (not machine-parsed into findings).
+Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), Duke Energy Carolinas, LLC, and intervenors resolving Duke Energy Carolinas' 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-3-E, filed March 28, 2024. Listed for reference (metadata-only, URL needs verification). Source: SC PSC Document Management System (dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E).
+</doc>
 <doc title="Dominion Energy South Carolina, Inc." collection="State PUC Audits" docket="2024-2-E" issued="2024-03-28" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/118762">
 Listed for reference (not machine-parsed into findings).
 Corrected Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), Dominion Energy South Carolina, Inc. (DESC), and the South Carolina Energy Users Committee (SCEUC) resolving DESC's 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed March 28, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 63bee92e-ec9c-45c5-bbb3-723f6f840b3e (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+</doc>
+<doc title="Duke Energy Carolinas, LLC" collection="State PUC Audits" docket="2024-3-E" issued="2024-02-20" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E">
+Listed for reference (not machine-parsed into findings).
+Direct Testimony of Duke Energy Carolinas, LLC in its 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-3-E, filed February 20, 2024. Listed for reference (metadata-only, URL needs verification). Source: SC PSC Document Management System (dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E).
 </doc>
 <doc title="Dominion Energy South Carolina, Inc." collection="State PUC Audits" docket="2024-2-E" issued="2024-02-15" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/118762">
 Listed for reference (not machine-parsed into findings).
