@@ -607,7 +607,17 @@ def main() -> None:
     args = ap.parse_args()
 
     listing = load_listing(args.listing)
-    ids = list(listing.keys())  # listing.json is newest-first
+    listing_ids = set(listing.keys())
+
+    # Also include seed documents from processed directory (state audits, rate cases, etc.)
+    # These have text.json but aren't in listing.json
+    all_ids = set(listing_ids)
+    for text_path in config.PROCESSED_DIR.glob("*/text.json"):
+        rid = text_path.parent.name
+        if rid not in listing_ids:
+            all_ids.add(rid)
+
+    ids = sorted(all_ids, reverse=True)  # Sort for consistent processing
 
     if args.electric_only:
         classification_path = config.PROCESSED_DIR / "classification.json"
@@ -629,7 +639,18 @@ def main() -> None:
             continue
         try:
             text = ReportText.model_validate_json(text_path.read_text(encoding="utf-8"))
-            report = structure_report(listing[rid], text)
+            # For seed documents not in listing, create minimal ListingEntry
+            entry = listing.get(rid) or ListingEntry(
+                id=rid,
+                company="",
+                company_raw="",
+                accession_number=rid,
+                source_page_url="",
+                pdf_download_url="",
+                captured_at=text.pages[0] if text.pages else None,  # Fallback; seed docs have this in report.json
+                source_note="",
+            )
+            report = structure_report(entry, text)
             (config.PROCESSED_DIR / rid / "report.json").write_text(
                 report.model_dump_json(indent=2), encoding="utf-8"
             )

@@ -177,6 +177,27 @@ def main() -> None:
     # Load from reports.json to include seed documents (state audits, rate cases)
     # Falls back to listing.json if reports.json doesn't exist
     entries = load_from_reports(args.listing)
+    entry_by_id = {e.id: e for e in entries}
+
+    # Also include seed documents from processed directory (added by sources.py)
+    # These have report.json but aren't in listing.json
+    for report_path in config.PROCESSED_DIR.glob("*/report.json"):
+        rid = report_path.parent.name
+        if rid not in entry_by_id:
+            # Create minimal entry for seed documents
+            report_data = json.loads(report_path.read_text(encoding="utf-8"))
+            entry_by_id[rid] = ListingEntry(
+                id=rid,
+                company=report_data.get("company", ""),
+                company_raw=report_data.get("company_raw", ""),
+                accession_number=rid,
+                source_page_url=report_data.get("source_page_url", ""),
+                pdf_download_url=report_data.get("pdf_download_url", ""),
+                captured_at=report_data.get("captured_at"),
+                source_note=report_data.get("source_note", ""),
+            )
+
+    entries = list(entry_by_id.values())
 
     if args.electric_only:
         classification_path = config.PROCESSED_DIR / "classification.json"
