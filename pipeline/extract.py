@@ -97,9 +97,12 @@ def extract_pages(pdf_path: Path) -> list[PageText]:
 
 
 def extract_report(entry: ListingEntry, raw_dir: Path, out_dir: Path) -> ReportText:
-    pdf_path = raw_dir / f"{entry.accession_number}.pdf"
+    # Try ID first (seed documents), then accession_number (FERC audits)
+    pdf_path = raw_dir / f"{entry.id}.pdf"
     if not pdf_path.exists():
-        raise FileNotFoundError(f"missing PDF for {entry.accession_number}: {pdf_path}")
+        pdf_path = raw_dir / f"{entry.accession_number}.pdf"
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"missing PDF for {entry.id} / {entry.accession_number}")
 
     pages = extract_pages(pdf_path)
     scanned = [p.page for p in pages if p.is_image_only]
