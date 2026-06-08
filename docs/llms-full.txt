@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 251 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 254 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5442,6 +5442,17 @@ Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio'
 
 ---
 
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0382 | Audit type: n/a
+- Issued: 2025-12-18 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0382/documents/374217
+- Status: listed for reference (not machine-parsed into findings)
+
+Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).
+
+---
+
 ## Entergy Arkansas, LLC
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission
 - Docket: 16-036-FR | Audit type: n/a
@@ -5651,6 +5662,17 @@ Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota
 
 ---
 
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 25-0382 | Audit type: n/a
+- Issued: 2025-07-08 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2025-0382/documents/367736
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic & Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).
+
+---
+
 ## Entergy Arkansas, LLC
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission
 - Docket: 16-036-FR | Audit type: n/a
@@ -5670,6 +5692,17 @@ Entergy Arkansas, LLC's 2025 Rider FRP filing — Application for Approval of a 
 - Status: listed for reference (not machine-parsed into findings)
 
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
+
+---
+
+## Atlantic City Electric Company
+- Collection: State PUC Audits | Source: New Jersey Board of Public Utilities
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-06-18 | Industry: electric | FERC Form: n/a
+- Source page: https://publicaccess.bpu.state.nj.us/
+- Status: listed for reference (not machine-parsed into findings)
+
+Order on Rate Mitigation Filing of Atlantic City Electric Company (ACE / Exelon), issued at the June 18, 2025 agenda meeting. Rate mitigation filing in response to elevated wholesale electricity costs from PJM markets following July 2024 auctions. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2025/20250618/; docket system: publicaccess.bpu.state.nj.us.
 
 ---
 

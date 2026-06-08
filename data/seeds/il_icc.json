@@ -94,5 +94,37 @@
     "captured_at": "2026-06-07",
     "source_note": "Direct Testimony (Exhibit 10.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois, witness Dylan W. D'Ascendis (ScottMadden, Inc.), regarding rate base and return on equity (ROE) in the Company's proposed general increase in rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631521 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).",
     "parse": false
+  },
+  {
+    "id": "2025-07-08_ameren-illinois_icc-25-0382-staff-testimony",
+    "company": "Ameren Illinois Company",
+    "collection": "state_audit",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "rate case testimony",
+    "industry": "electric",
+    "pdf_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/367736/files/644187.pdf",
+    "source_page_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/367736",
+    "issued_date": "2025-07-08",
+    "docket": "25-0382",
+    "captured_at": "2026-06-07",
+    "source_note": "Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic & Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).",
+    "parse": false
+  },
+  {
+    "id": "2025-12-18_ameren-illinois_icc-25-0382-final-order",
+    "company": "Ameren Illinois Company",
+    "collection": "state_audit",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "final order",
+    "industry": "electric",
+    "pdf_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/374217/files/655909.pdf",
+    "source_page_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/374217",
+    "issued_date": "2025-12-18",
+    "docket": "25-0382",
+    "captured_at": "2026-06-07",
+    "source_note": "Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).",
+    "parse": false
   }
 ]

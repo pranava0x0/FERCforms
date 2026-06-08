@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="251 structured records (120 FERC audits, 14 prudence reviews, 117 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="254 structured records (120 FERC audits, 14 prudence reviews, 120 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3064,6 +3064,10 @@ Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting th
 Listed for reference (not machine-parsed into findings).
 Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio's review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company (FirstEnergy's Ohio electric distribution utilities), Case No. 20-1502-EL-UNC, filed December 19, 2025 (21 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A25L19B41411B02333.
 </doc>
+<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0382" issued="2025-12-18" industry="electric" source="https://www.icc.illinois.gov/docket/P2025-0382/documents/374217">
+Listed for reference (not machine-parsed into findings).
+Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).
+</doc>
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="2025-12-12" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1122">
 Listed for reference (not machine-parsed into findings).
 Order No. 74 of the Arkansas Public Service Commission in the Formula Rate Plan filings of Entergy Arkansas, LLC, Docket No. 16-036-FR — the Commission's disposition of Entergy Arkansas's 2025 Rider FRP rate adjustment (approved December 12, 2025; 11 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1122 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1122_1.pdf).
@@ -3140,6 +3144,10 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 Listed for reference (not machine-parsed into findings).
 Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).
 </doc>
+<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0382" issued="2025-07-08" industry="electric" source="https://www.icc.illinois.gov/docket/P2025-0382/documents/367736">
+Listed for reference (not machine-parsed into findings).
+Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic &amp; Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).
+</doc>
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="2025-07-07" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1090">
 Listed for reference (not machine-parsed into findings).
 Entergy Arkansas, LLC's 2025 Rider FRP filing — Application for Approval of a Rate Adjustment and the 2025 Evaluation Report pursuant to Rate Schedule No. 44, Formula Rate Plan Rider (Rider FRP), filed July 7, 2025 with the Arkansas Public Service Commission in Docket No. 16-036-FR (proposing a $92.3 million rate adjustment; 48 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1090 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1090_1.pdf).
@@ -3147,6 +3155,10 @@ Entergy Arkansas, LLC's 2025 Rider FRP filing — Application for Approval of a 
 <doc title="Mississippi Public Utilities Staff" collection="State PUC Audits" docket="n/a" issued="2025-06-30" industry="n/a" source="https://www.psc.ms.gov/">
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
+</doc>
+<doc title="Atlantic City Electric Company" collection="State PUC Audits" docket="n/a" issued="2025-06-18" industry="electric" source="https://publicaccess.bpu.state.nj.us/">
+Listed for reference (not machine-parsed into findings).
+Order on Rate Mitigation Filing of Atlantic City Electric Company (ACE / Exelon), issued at the June 18, 2025 agenda meeting. Rate mitigation filing in response to elevated wholesale electricity costs from PJM markets following July 2024 auctions. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2025/20250618/; docket system: publicaccess.bpu.state.nj.us.
 </doc>
 <doc title="Idaho Power Company" collection="State PUC Audits" docket="IPC-E-25-20" issued="2025-05-30" industry="electric" source="https://puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520">
 Listed for reference (not machine-parsed into findings).
