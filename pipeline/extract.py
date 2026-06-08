@@ -211,13 +211,14 @@ def main() -> None:
         electric = {rid for rid, c in classification.items() if c.get("industry") == "electric"}
         entries = [e for e in entries if e.id in electric]
 
-    if args.limit is not None:
-        entries = entries[: args.limit]
-
-    # Only extract documents that have PDF files and don't already have text.json
+    # Filter to only documents that have PDF files and don't already have text.json
+    # Do this BEFORE applying limit so --limit N gets N documents that actually need work
     entries_to_extract = []
     for entry in entries:
         pdf_path = config.RAW_DIR / f"{entry.id}.pdf"
+        if not pdf_path.exists():
+            pdf_path = config.RAW_DIR / f"{entry.accession_number}.pdf"
+
         text_path = config.PROCESSED_DIR / entry.id / "text.json"
 
         if not pdf_path.exists():
@@ -229,6 +230,10 @@ def main() -> None:
             continue
 
         entries_to_extract.append(entry)
+
+    # Apply limit to documents that need extraction (not the full list)
+    if args.limit is not None:
+        entries_to_extract = entries_to_extract[: args.limit]
 
     logger.info(
         "extracting %d/%d documents (skipped %d with missing PDFs or existing text.json)",
