@@ -32,7 +32,7 @@
     {
       "index": 1,
       "title": "Allocation of Overhead Costs to CWIP",
-      "summary": "PSCo capitalized overhead costs to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a study of the time actually engaged during a representative period. This led to PSCo charging costs to Account 107 that did not have a definite relation to construction. As a result, PSCo may have overstated construction costs recorded in Account 107 and electric plant in service costs recorded in Account 101 or other plant accounts, as well as accumulated depreciation and ADIT, a",
+      "summary": "PSCo capitalized overhead costs to Account 107, Construction Work in Progress (CWIP) – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a study of the time actually engaged during a representative period. This led to PSCo charging costs to Account 107 that did not have a definite relation to construction. As a result, PSCo may have overstated construction costs recorded in Account 107 and electric plant in service costs recorded in Account 101 or other plant accounts, as well as accumulated depreciation and accumulated deferred income tax (ADIT), and may have understated operating expenses. Moreover, this accounting may have led PSCo to overstate its annual transmission revenue requirement (ATRR) and annual production revenue requirement (APRR) and overbill customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -85,7 +85,7 @@
     {
       "index": 2,
       "title": "Accounting for Joint Owner Billing",
-      "summary": "PSCo did not functionalize portions of third-party billings characterized as A&G expenses for the operation and maintenance of the Craig Generating Station. As a result, PSCo overstated A&G expenses and understated expenses recorded in the production O&M expense accounts. Moreover, this accounting error led PSCo to overstate its ATRR and overbill transmission customers.",
+      "summary": "PSCo did not functionalize portions of third- party billings characterized as administrative and general (A&G) expenses for the operation and maintenance of the Craig Generating Station. As a result, PSCo overstated A&G expenses and understated expenses recorded in the production operation and maintenance (O&M) expense accounts. Moreover, this accounting error led PSCo to overstate its ATRR and overbill transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -214,17 +214,9 @@
         },
         {
           "number": 30,
-          "text": "Refund amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of Commission regulations.",
+          "text": "Refund amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of Commission regulations. Allowance for Funds Used During Construction",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 6,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "PSCo’s method for computing and accounting for its AFUDC rate was deficient. Specifically, PSCo improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component of its AFUDC rate. Also, PSCo improperly recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 31,
           "text": "Revise policies and procedures to calculate and account for AFUDC and equity ADIT consistent with Commission accounting regulations.",
@@ -246,6 +238,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 6,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "PSCo’s method for computing and accounting for its AFUDC rate was deficient. Specifically, PSCo improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component of its AFUDC rate. Also, PSCo improperly recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. D.",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

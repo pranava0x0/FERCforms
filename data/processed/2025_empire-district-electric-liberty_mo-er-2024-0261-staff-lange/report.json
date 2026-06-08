@@ -1,1 +1,31 @@
-{"collection": "state_rate_case", "jurisdiction": "MO", "source": "Missouri Public Service Commission", "doc_type": "direct testimony", "id": "2025_empire-district-electric-liberty_mo-er-2024-0261-staff-lange", "company": "The Empire District Electric Company d/b/a Liberty", "company_raw": "The Empire District Electric Company d/b/a Liberty", "docket": "ER-2024-0261", "docket_full": null, "issued_date": null, "source_page_url": "https://efis.psc.mo.gov/Case/Display/85589", "pdf_download_url": "https://efis.psc.mo.gov/Document/Display/840218", "captured_at": "2026-06-02", "source_note": "Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: Limited Large Customer Service Recommendation, Class Cost of Service, Rate Design; 97 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 840218 (efis.psc.mo.gov/Document/Display/840218; docket sheet: efis.psc.mo.gov/Case/Display/85589).", "archived_via": null, "page_count": 97, "scanned_pages": [81, 96], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "MO",
+  "source": "Missouri Public Service Commission",
+  "doc_type": "direct testimony",
+  "id": "2025_empire-district-electric-liberty_mo-er-2024-0261-staff-lange",
+  "company": "The Empire District Electric Company d/b/a Liberty",
+  "company_raw": "The Empire District Electric Company d/b/a Liberty",
+  "docket": "ER-2024-0261",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://efis.psc.mo.gov/Case/Display/85589",
+  "pdf_download_url": "https://efis.psc.mo.gov/Document/Display/840218",
+  "captured_at": "2026-06-02",
+  "source_note": "Direct Testimony of Sarah L.K. Lange on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: Limited Large Customer Service Recommendation, Class Cost of Service, Rate Design; 97 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 840218 (efis.psc.mo.gov/Document/Display/840218; docket sheet: efis.psc.mo.gov/Case/Display/85589).",
+  "archived_via": null,
+  "page_count": 97,
+  "scanned_pages": [
+    81,
+    96
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

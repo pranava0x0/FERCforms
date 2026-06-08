@@ -30,8 +30,36 @@
     {
       "index": 1,
       "title": "Offer Capping of Generation Resources",
-      "summary": "PJM did not offer cap a self-scheduled generation resource in the Day-ahead energy market for 18 hours on January 21, 2019, despite the fact that its owner had failed the TPS test. The error was caused by operators applying outdated provisions of PJM’s OATT, along with a lack of current written procedures and operator instructions. PJM’s application of the outdated provisions may have resulted in additional self-scheduled resources not being appropriately offer capped since November 1, 2017 when the new OATT provisions went into effect.",
+      "summary": "PJM did not offer cap a self- scheduled generation resource in the Day-ahead energy market for 18 hours on January 21, 2019 despite the fact that its owner had failed the Three Pivotal Supplier (TPS) test. The error was caused by operators applying outdated provisions of PJM’s OATT and not applying the updated offer capping provisions in effect since November 1, 2017, along with a lack of written procedures and operator instructions. PJM’s application of the outdated provisions may have resulted in additional self-scheduled resources not being appropriately offer capped since November 1, 2017 when the new OATT provisions went into effect. D.",
       "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Order No. 760 Reporting",
+      "summary": "PJM should consider improving its data reporting under Order No. 760 by strengthening policies and procedures, devoting additional resources, and enhancing its internal data gathering and reporting processes.",
+      "is_other_matter": true,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Day-ahead Resource Commitment",
+      "summary": "PJM should consider increasing transparency, regarding whether Day-ahead resource commitments minimize overall system production costs as required by OATT Attachment K-Appendix, Section 6.4.",
+      "is_other_matter": true,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Incentives to Follow Dispatch",
+      "summary": "PJM should consider strengthening internal procedures to encourage generation resources to follow dispatch instructions.",
+      "is_other_matter": true,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Software Issues",
+      "summary": "PJM should consider improving limitations in certain software applications to ensure accuracy of results.",
+      "is_other_matter": true,
       "recommendations": []
     }
   ],

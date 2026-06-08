@@ -27,50 +27,14 @@
     "1",
     "60"
   ],
-  "finding_count": 5,
+  "finding_count": 6,
   "findings": [
     {
       "index": 1,
-      "title": "Allowance for Funds Used During Construction",
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
       "summary": "CL&P improperly included accumulated other comprehensive income and unamortized debt-related balances in long-term debt and equity balances used to compute its AFUDC rates. As a result, CL&P over-accrued AFUDC amounts included in utility plant accounts, which led it to overstate its annual transmission revenue requirement and overbill transmission customers.",
       "is_other_matter": false,
-      "recommendations": [
-        {
-          "number": 1,
-          "text": "Revise and implement procedures to ensure that AFUDC rate calculations are consistent with Commission accounting requirements.",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Provide training to relevant staff on the revised AFUDC rate calculation procedures. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Recalculate AFUDC for capital work orders, in a manner consistent with Electric Plant Instruction (EPI) No. 3(A)(17) that corrects the improper inclusion of accumulated other comprehensive income and unamortized debt-related balances in AFUDC rate calculations during the audit period.",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of the Construction Work In Progress-Electric (CWIP), electric plant in service, accumulated depreciation, Accumulated Deferred Income Taxes (ADIT), and other accounts impacted by over-accrual of AFUDC within 60 days of issuance of the audit report.",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Submit a refund analysis, within 60 days of issuance of the audit report, to DAA for review that explains and details the following: (1) calculation of refunds resulting from correction of excess AFUDC in plant included in transmission formula rate annual transmission revenue requirement determinations during the audit period, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) refunds will be made.",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
-          "source_page": null
-        }
-      ]
+      "recommendations": []
     },
     {
       "index": 2,
@@ -179,7 +143,7 @@
     {
       "index": 5,
       "title": "Application of Nonapproved Depreciation Rates",
-      "summary": "CL&P used a depreciation rate for accounting and transmission ratemaking purposes that was not filed with, and approved by, the Commission. As a result, the Commission was not afforded an opportunity to review or decide on the appropriateness of the inclusion of the depreciation rate in the transmission service rate determination.",
+      "summary": "CL&P used a depreciation rate for accounting and transmission ratemaking purposes that was not filed with, and approved by, the Commission. As a result, the Commission was not afforded an opportunity to review or decide on the appropriateness of the inclusion of the depreciation rate in the transmission service rate determination. D. Other Matter",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -198,6 +162,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 6,
+      "title": "Transparency of the Derivation of Service Company Capital Costs in Jurisdictional Rates",
+      "summary": "CL&P included capital cost charges from its service company, Eversource Energy Service Company (EESCO), in jurisdictional rate determinations. CL&P is encouraged to disclose the EESCO cost components and attributes that are considered in the derivation of the capital cost charges and included in CL&P’s transmission rates in its future transmission formula rate annual informational updates and true-up filings. Such disclosure will ensure the filings include information useful in determining how service company capital costs are derived that are included in CL&P’s jurisdictional rates and recovered from its transmission customers. E. List of",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

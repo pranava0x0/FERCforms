@@ -1,1 +1,33 @@
-{"collection": "state_rate_case", "jurisdiction": "NY", "source": "New York State Department of Public Service", "doc_type": "rate case joint proposal", "id": "2025-04-25_niagara-mohawk-national-grid_ny-24-e-0322-joint-proposal", "company": "Niagara Mohawk Power Corporation d/b/a National Grid", "company_raw": "Niagara Mohawk Power Corporation d/b/a National Grid", "docket": "24-E-0322", "docket_full": null, "issued_date": "2025-04-25", "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-E-0322", "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B90E66D96-0000-CA12-A897-0A5E5C2B9F2B%7D", "captured_at": "2026-06-07", "source_note": "Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) \u2014 the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).", "archived_via": null, "page_count": 149, "scanned_pages": [137, 142, 145, 148], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "NY",
+  "source": "New York State Department of Public Service",
+  "doc_type": "rate case joint proposal",
+  "id": "2025-04-25_niagara-mohawk-national-grid_ny-24-e-0322-joint-proposal",
+  "company": "Niagara Mohawk Power Corporation d/b/a National Grid",
+  "company_raw": "Niagara Mohawk Power Corporation d/b/a National Grid",
+  "docket": "24-E-0322",
+  "docket_full": null,
+  "issued_date": "2025-04-25",
+  "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-E-0322",
+  "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B90E66D96-0000-CA12-A897-0A5E5C2B9F2B%7D",
+  "captured_at": "2026-06-07",
+  "source_note": "Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) — the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).",
+  "archived_via": null,
+  "page_count": 149,
+  "scanned_pages": [
+    137,
+    142,
+    145,
+    148
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

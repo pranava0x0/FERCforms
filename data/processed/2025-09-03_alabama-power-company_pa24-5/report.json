@@ -31,8 +31,8 @@
   "findings": [
     {
       "index": 1,
-      "title": "Acquisition-Related Expenses",
-      "summary": "Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission- jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
+      "title": "Acquisition-Related Costs",
+      "summary": "Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
       "is_other_matter": false,
       "recommendations": []
     },
@@ -60,7 +60,7 @@
     {
       "index": 5,
       "title": "Accounting for Edison Electric Institute Membership Dues",
-      "summary": "Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirements calculation and billed to transmission customers taking service under the OATT.",
+      "summary": "Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirements calculation and billed to transmission customers taking service under the OATT. D.",
       "is_other_matter": false,
       "recommendations": []
     }

@@ -29,7 +29,7 @@
     {
       "index": 1,
       "title": "Depreciation Rates and Reserve Balances",
-      "summary": "CPL’s accounting and financial reporting for depreciation included several deficiencies affecting depreciation expense and reserve balances and the accuracy of the Annual Cost of Service Based Analysis Schedule on Page 700 of CPL’s FERC Form No. 6 filings. Specifically, CPL:  Did not use Commission-approved depreciation rates to determine depreciation expense. Instead, CPL used slightly higher depreciation rates than the depreciation rates last approved by the Commission, resulting in increased depreciation expense and depreciation reserve balances.  Incorrectly continued to accrue depreciat",
+      "summary": "CPL’s accounting and financial reporting for depreciation included several deficiencies affecting depreciation expense and reserve balances and the accuracy of the Annual Cost of Service Based Analysis Schedule on Page 700 (Page 700) of CPL’s FERC Form No. 6 filings. Specifically, CPL:  Did not use Commission-approved depreciation rates to determine depreciation expense. Instead, CPL used slightly higher depreciation rates than the depreciation rates last approved by the Commission, resulting in increased depreciation expense and depreciation reserve balances.  Incorrectly continued to accrue depreciation expense on five carrier property asset accounts after the underlying asset accounts had been fully depreciated. This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.  Maintained two carrier property asset accounts with negative depreciation reserve balances. This resulted in an inflated net book value for these two accounts that exceeded the original cost of the assets by $8.2 million as of December 31, 2018.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -87,17 +87,9 @@
         },
         {
           "number": 10,
-          "text": "Upon receiving DAA staff’s review and response, restate and footnote the balances reported in the FERC Form No. 6 in the current and comparative years of the report, including all schedules affected, to reflect and disclose the revisions made.",
+          "text": "Upon receiving DAA staff’s review and response, restate and footnote the balances reported in the FERC Form No. 6 in the current and comparative years of the report, including all schedules affected, to reflect and disclose the revisions made. Noncarrier Property Revenues, Expenses, and Net Income",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 3,
-      "title": "Noncarrier Property Revenues, Expenses, and Net Income",
-      "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 11,
           "text": "Establish policies and procedures to ensure that revenues, expenses, and net income associated with noncarrier property are accounted for and reported in accordance with the Commission’s accounting regulations.",
@@ -121,6 +113,13 @@
       ]
     },
     {
+      "index": 3,
+      "title": "Noncarrier Property Revenues and Expenses",
+      "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
       "index": 4,
       "title": "Accounting for Legal Settlements and Regulatory Fees",
       "summary": "CPL improperly accounted for legal settlements relating to employment discrimination claims as an operating rather than nonoperating expense. CPL also improperly accounted for regulatory fees paid to a federal agency in the wrong operating expense account. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
@@ -141,7 +140,7 @@
     {
       "index": 5,
       "title": "Reporting of Interstate Operating Revenues",
-      "summary": "CPL omitted reporting some jurisdictional interstate operating revenues on Page 700 of its 2017 FERC Form No. 6.",
+      "summary": "CPL omitted reporting some jurisdictional interstate operating revenues on Page 700 of its 2017 FERC Form No. 6. D.",
       "is_other_matter": false,
       "recommendations": [
         {

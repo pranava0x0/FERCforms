@@ -31,7 +31,7 @@
     {
       "index": 1,
       "title": "Prorating Pipeline Capacity",
-      "summary": "Sunoco incorrectly calculated shippers’ historical shipments (shipper history) and improperly classified new shippers as regular shippers, during the audit period. These errors resulted in incorrect allocation percentages that overallocated capacity to some shippers and underallocated capacity to other shippers during the audit period.",
+      "summary": "Sunoco incorrectly calculated shippers’ historical shipments (shipper history) and improperly classified new shippers as regular shippers, during the audit period. These errors resulted in incorrect allocation percentages that overallocated capacity to some shippers and underallocated capacity to other shippers, during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -110,7 +110,7 @@
     {
       "index": 4,
       "title": "Nonoperating and Unrelated Expenses",
-      "summary": "Sunoco improperly recorded certain nonoperating expenses – including costs for penalties and settlements resulting from violations of laws and regulations, costs for donations and sponsorships, and amortization of acquisition premiums – in operating expense and carrier property accounts. Sunoco also improperly recorded on its books costs for services performed for an affiliate that were unrelated to Sunoco’s business. The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, r",
+      "summary": "Sunoco improperly recorded certain nonoperating expenses – including costs for penalties and settlements resulting from violations of laws and regulations, costs for donations and sponsorships, and amortization of acquisition premiums – in operating expense and carrier property accounts. Sunoco also improperly recorded on its books costs for services performed for an affiliate that were unrelated to Sunoco’s business. The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, ranging between $562,806 to $1,828,678, during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -148,7 +148,7 @@
     {
       "index": 5,
       "title": "Depreciation Rates and Studies",
-      "summary": "Sunoco did not use Commission-approved depreciation rates and did not depreciate one of its primary property accounts. The application of unapproved rates to depreciate its assets and significant changes in Sunoco’s pipeline system caused Sunoco’s depreciation study and rates to become no longer relevant and outdated. These errors also caused Sunoco to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in Sunoco including incorrect amounts in its cost of service on Page 700 since 2003.",
+      "summary": "Sunoco did not use Commission- approved depreciation rates and did not depreciate one of its primary property accounts. The application of unapproved rates to depreciate its assets and significant changes in Sunoco’s pipeline system caused Sunoco’s depreciation study and rates to become no longer relevant and outdated. These errors also caused Sunoco to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in Sunoco including incorrect amounts in its cost of service on Page 700 since 2003.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -194,7 +194,7 @@
     {
       "index": 7,
       "title": "Capitalized Interest Expense",
-      "summary": "Sunoco included capitalized interest twice by including both IDC and AFUDC in the determination of its cost of service on Page 700 of its FERC Form No. 6 filings. Consequently, Sunoco overstated its total cost of service on Page 700 by $1,706,995 and $1,986,041 in 2019 and 2020, respectively. Sunoco further compounded this overstatement by calculating AFUDC on the IDC amounts.",
+      "summary": "Sunoco included capitalized interest twice by including both interest during construction (IDC) and allowance for funds used during construction (AFUDC) in the determination of its cost of service on Page 700 of its FERC Form No. 6 filings. Consequently, Sunoco overstated its total cost of service on Page 700 by $1,706,995 and $1,986,041 in 2019 and 2020, respectively. Sunoco further compounded this overstatement by calculating AFUDC on the IDC amounts.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -222,7 +222,7 @@
     {
       "index": 8,
       "title": "Asset Retirement Costs",
-      "summary": "Sunoco improperly included Asset Retirement Costs in rate base on Page 700 of its FERC Form No. 6 filings. This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
+      "summary": "Sunoco improperly included Asset Retirement Costs (ARC) in rate base on Page 700 of its FERC Form No. 6 filings. This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -278,7 +278,7 @@
     {
       "index": 10,
       "title": "FERC Form No. 6 Reporting and Accounting",
-      "summary": "Sunoco did not report complete information in certain supporting schedules of its FERC Form No. 6 filings. Sunoco also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While these oversights did not impact the determination of cost of service on Page 700, they did reduce the accuracy and usefulness of the information reported in Sunoco’s FERC Form No. 6 filings.",
+      "summary": "Sunoco did not report complete information in certain supporting schedules of its FERC Form No. 6 filings. Sunoco also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While these oversights did not impact the determination of cost of service on Page 700, they did reduce the accuracy and usefulness of the information reported in Sunoco’s FERC Form No. 6 filings. D.",
       "is_other_matter": false,
       "recommendations": [
         {

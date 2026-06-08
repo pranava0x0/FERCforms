@@ -29,7 +29,7 @@
     {
       "index": 1,
       "title": "Recording of Carrier Property",
-      "summary": "EnLink NGL did not record the cost of two mainline pipeline segments in its books and records that it had used in carrier service since 2014. The cost of these pipeline segments – $80.9 million – was erroneously recorded in an affiliated company’s books and records, instead of EnLink NGL’s. As a result, EnLink NGL understated carrier property and accrued depreciation–carrier property, and understated depreciation expense and associated operating and maintenance expenses, since 2014. This understatement materially impacted EnLink NGL’s Income Statement and Balance Sheet, along with supporting s",
+      "summary": "EnLink NGL did not record the cost of two mainline pipeline segments in its books and records that it had used in carrier service since 2014. The cost of these pipeline segments – $80.9 million – was erroneously recorded in an affiliated company’s books and records, instead of EnLink NGL’s. As a result, EnLink NGL understated carrier property and accrued depreciation–carrier property, and understated depreciation expense and associated operating and maintenance expenses, since 2014. This understatement materially impacted EnLink NGL’s Income Statement and Balance Sheet, along with supporting schedules, and Page 700 of the FERC Form No. 6 each year.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -85,7 +85,7 @@
     {
       "index": 3,
       "title": "Recognition of Intrastate Transportation Movements",
-      "summary": "EnLink NGL improperly classified certain intrastate movements of liquids as interstate movements. This misclassification of intrastate movements overstated the cost of service and the interstate barrel-miles on Page 700 of the FERC Form No. 6 as this schedule should only include interstate data.",
+      "summary": "EnLink NGL improperly classified certain intrastate movements of liquids as interstate movements. This misclassification of intrastate movements overstated the cost of service and the interstate barrel-miles on Page 700 of the FERC Form No. 6 as this schedule should only include interstate data. This also understated total barrels, by the volume of intrastate barrels transported, reported on Page 600 of the FERC Form No. 6.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -164,7 +164,7 @@
     {
       "index": 6,
       "title": "Written Shipper Nominations",
-      "summary": "EnLink NGL improperly accepted nominations for transportation of liquids that were not submitted in the written form required by its FERC tariff. While this did not impact financial statements or operations, this was a violation of its tariff.",
+      "summary": "EnLink NGL improperly accepted nominations for transportation of liquids that were not submitted in the written form required by its FERC tariff. While this did not impact financial statements or operations, this was a violation of its tariff. D.",
       "is_other_matter": false,
       "recommendations": [
         {

@@ -49,9 +49,17 @@
         },
         {
           "number": 4,
-          "text": "Upon DAA staff’s review and response to Centurion’s analysis, restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions. Pipeline Loss Allowance and Gravity Shrinkage",
+          "text": "Upon DAA staff’s review and response to Centurion’s analysis, restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Pipeline Loss Allowance and Gravity Shrinkage",
+      "summary": "Centurion incorrectly accounted for and reported certain activities associated with pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD).  Centurion incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. Centurion understated its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. As a representative example for the audit period, Centurion understated oil losses in Line 1 by $6.1 million in 2018.  Centurion incorrectly omitted PLA and GSD revenues reported in Account 230 on Page 301 of its FERC Form No. 6 as a jurisdictional operating revenue on Page 700, Line 10. This resulted in Centurion understating its annual interstate operating revenues on Line 10. As a representative example for the audit period, Centurion understated Line 10 by $21 million in 2018.",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 5,
           "text": "Update accounting policies and procedures to ensure that operating oil losses during transportation are recorded in the appropriate operating expense account consistent with Commission accounting requirements.",
@@ -80,16 +88,9 @@
       ]
     },
     {
-      "index": 2,
-      "title": "Pipeline Loss Allowance and Gravity Shrinkage Deduction",
-      "summary": "Centurion incorrectly accounted for and reported certain activities associated with its pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD).  Centurion incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. Centurion understated its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. As a representative example for the audit period, Centurion understated oil losses in Line 1 by $6.1 million in 2018.  Centurion incorrectly omitted",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
       "index": 3,
       "title": "Sale of Carrier Property",
-      "summary": "Centurion improperly recorded the cash proceeds for sales of carrier property as incidental revenue rather than as a charge to the carrier property accrued depreciation account. Centurion also did not retire the carrier property from its books when sold. This resulted in Centurion overstating carrier property, revenue, and net income in its financial statements and the rate base and depreciation expense components of its cost of service schedule in its FERC Form No. 6 filings.",
+      "summary": "Centurion improperly recorded the cash proceeds for sales of carrier property as incidental revenue rather than as a charge to the carrier property accrued depreciation account. Centurion also did not retire the carrier property from its books when sold. This resulted in Centurion overstating carrier property, revenue, and net income in its financial statements and the rate base and depreciation expense components of its cost of service schedule in its FERC Form No. 6.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -130,7 +131,7 @@
     {
       "index": 5,
       "title": "FERC Form No. 6 Report",
-      "summary": "Centurion did not provide complete and accurate information required on certain supporting schedules of its FERC Form No. 6. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 6, during the audit period.",
+      "summary": "Centurion did not provide complete and accurate information required on certain supporting schedules of its FERC Form No. 6. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 6, during the audit period. D.",
       "is_other_matter": false,
       "recommendations": [
         {

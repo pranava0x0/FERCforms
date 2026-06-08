@@ -32,7 +32,7 @@
     {
       "index": 1,
       "title": "Environmental Cleanup Costs",
-      "summary": "FPL improperly recorded environmental cleanup costs in Account 930.2, Miscellaneous General Expenses, and Account 105, Electric Plant Held for Future Use, instead of in Account 186, Miscellaneous Deferred Debits. As a result of the improper accounting, FPL misstated A&G and Electric Plant Held for Future Use account balances reported in its FERC Form No. 1 filings.",
+      "summary": "FPL improperly recorded environmental cleanup costs in Account 930.2, Miscellaneous General Expenses, and Account 105, Electric Plant Held for Future Use, instead of in Account 186, Miscellaneous Deferred Debits. As a result of the improper accounting, FPL misstated administrative and general (A&G) and Electric Plant Held for Future Use account balances reported in its FERC Form No. 1 filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -60,7 +60,7 @@
     {
       "index": 2,
       "title": "Prepayments",
-      "summary": "FPL improperly recorded certain advance payments that were applicable to future accounting periods in A&G and O&M accounts, instead of in Account 165, Prepayments. As a result, FPL did not accurately recognize certain expenses in the accounting period in which they were incurred, leading to the misstatement of A&G, O&M, and balance sheet account balances reported on its FERC Form No. 1 filings.",
+      "summary": "FPL improperly recorded certain advance payments that were applicable to future accounting periods in A&G and Operations and Maintenance (O&M) accounts, instead of in Account 165, Prepayments. As a result, FPL did not accurately recognize certain expenses in the accounting period in which they were incurred, leading to the misstatement of A&G, O&M, and balance sheet account balances reported on its FERC Form No. 1 filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -96,7 +96,7 @@
     {
       "index": 4,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "FPL did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "summary": "FPL did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports. D. List of",
       "is_other_matter": false,
       "recommendations": [
         {

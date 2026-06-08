@@ -25,7 +25,7 @@
     "2",
     "501-G"
   ],
-  "finding_count": 4,
+  "finding_count": 5,
   "findings": [
     {
       "index": 1,
@@ -58,7 +58,7 @@
     {
       "index": 2,
       "title": "Shared Services and Nonoperating Expenses",
-      "summary": "Northern Border recorded all shared services costs in Account 923, Outside Services, rather than recording these costs to the appropriate operations and maintenance (O&M) and administrative and general (A&G) accounts based on the nature of each cost. Northern Border also improperly recorded nonoperating expenses allocated to it in Accounts 853, Compressor Station Labor and Expenses; 923, Outside Services; and 930.2, Miscellaneous General Expenses instead of the appropriate accounts. Absent proper procedural safeguards, these misclassifications could affect Northern Border’s cost-of- service ra",
+      "summary": "Northern Border recorded all shared services costs in Account 923, Outside Services, rather than recording these costs to the appropriate operations and maintenance (O&M) and administrative and general (A&G) accounts based on the nature of each cost. Northern Border also improperly recorded nonoperating expenses allocated to it in Accounts 853, Compressor Station Labor and Expenses; 923, Outside Services; and 930.2, Miscellaneous General Expenses instead of the appropriate accounts. Absent proper procedural safeguards, these misclassifications could affect Northern Border’s cost-of-service rate development and result in improper functionalization of costs and rate recovery of nonoperating expenses. Furthermore, reporting all costs in the appropriate accounts, based on the nature of the activity associated with the costs, will ensure that Northern Border is submitting FERC Form No. 2 reports that are comparable with those of other natural gas pipelines that follow the USofA.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -113,7 +113,7 @@
     {
       "index": 4,
       "title": "FERC Form No. 2 Reporting",
-      "summary": "Northern Border did not report complete and accurate information in certain supporting schedules of its FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information in the FERC Form No. 2.",
+      "summary": "Northern Border did not report complete and accurate information in certain supporting schedules of its FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information in the FERC Form No. 2. D. Other Matter Audit staff identified one other matter, which is summarized below. Section V of this report contains a detailed discussion of this other matter.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -132,6 +132,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 5,
+      "title": "Company Use Gas Percentage Methodology",
+      "summary": "Northern Border’s Tariff did not include a detailed explanation of the methodology used to adjust its monthly Company Use Gas Percentage as directed by the Commission in Order No. 582. Absent this detailed explanation there was a lack of transparency regarding Northern Border’s Company Use Gas Percentage in Part 6 of the general terms and conditions of its FERC NGA Tariff. E.",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

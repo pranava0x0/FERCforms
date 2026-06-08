@@ -80,7 +80,7 @@
     {
       "index": 3,
       "title": "Commodity Only Firm Transportation Service",
-      "summary": "NET Mexico entered into two commodity only firm transportation service (COFTS) agreements, contrary to the terms of its SOC, which did not provide for COFTS. These service agreements did not include a reservation rate for firm service, and the firm usage (i.e., commodity) rate was higher than the maximum allowed firm usage rate stated in the SOC. Due to these inconsistencies and there being no COFTS rates explicitly stated in the SOC, other shippers may have been unaware of the availability of this type of firm transportation service. Irrespective of the foregoing, audit staff confirmed that t",
+      "summary": "NET Mexico entered into two commodity only firm transportation service (COFTS) agreements, contrary to the terms of its SOC, which did not provide for COFTS. These service agreements did not include a reservation rate for firm service, and the firm usage (i.e., commodity) rate was higher than the maximum allowed firm usage rate stated in the SOC. Due to these inconsistencies and there being no COFTS rates explicitly stated in the SOC, other shippers may have been unaware of the availability of this type of firm transportation service. Irrespective of the foregoing, audit staff confirmed that there were no instances, during the audit period, when customers with COFTS received priority service over other shippers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -130,7 +130,7 @@
     {
       "index": 5,
       "title": "Nomination Cycles and Deadlines",
-      "summary": "NET Mexico’s nomination cycles and deadlines used in operations did not align with the provisions of its SOC. Although NET Mexico’s nomination procedures followed the NAESB standards, NET Mexico should ensure that the nomination cycles and deadlines specified in its SOC and the operations of its pipeline system are aligned with each other.",
+      "summary": "NET Mexico’s nomination cycles and deadlines used in operations did not align with the provisions of its SOC. Although NET Mexico’s nomination procedures followed the North American Energy Standards Board (NAESB) standards, NET Mexico should ensure that the nomination cycles and deadlines specified in its SOC and the operations of its pipeline system are aligned with each other.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -153,7 +153,7 @@
     {
       "index": 6,
       "title": "Operational Flow Order Penalty Calculation",
-      "summary": "NET Mexico’s procedure for calculating OFO penalties did not align with the provisions of its SOC. Rather than using the pricing point closest to the applicable receipt or delivery point as required by its SOC, NET Mexico’s procedure was to calculate OFO penalties using the HSC index. Although NET Mexico did not assess any OFO penalties during the audit period, NET Mexico should nevertheless ensure that the provisions of its SOC and procedures for calculating OFO penalties are aligned with each other.",
+      "summary": "NET Mexico’s procedure for calculating Operational Flow Order (OFO) penalties did not align with the provisions of its SOC. Rather than using the pricing point closest to the applicable receipt or delivery point as required by its SOC, NET Mexico’s procedure was to calculate OFO penalties using the Houston Ship Channel index pricing point (HSC index). Although NET Mexico did not assess any OFO penalties during the audit period, NET Mexico should nevertheless ensure that the provisions of its SOC and procedures for calculating OFO penalties are aligned with each other.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -217,7 +217,7 @@
     {
       "index": 9,
       "title": "FERC Form No. 549D Filing Deadlines",
-      "summary": "NET Mexico did not submit certain FERC Form No. 549D filings within 60 days after each respective quarter as required by Commission regulations. Timely reporting is essential to ensure users of the FERC Form No. 549D can collect information and make informed decisions in a timely manner.",
+      "summary": "NET Mexico did not submit certain FERC Form No. 549D filings within 60 days after each respective quarter as required by Commission regulations. Timely reporting is essential to ensure users of the FERC Form No. 549D can collect information and make informed decisions in a timely manner. D.",
       "is_other_matter": false,
       "recommendations": [
         {

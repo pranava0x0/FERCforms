@@ -27,12 +27,12 @@
     "2",
     "501-G"
   ],
-  "finding_count": 12,
+  "finding_count": 14,
   "findings": [
     {
       "index": 1,
       "title": "Reservation Charge Credits",
-      "summary": "Gulf South incorrectly calculated reservation charge credits for six out of eleven non-force majeure maintenance events declared during the audit period. This resulted in overpayments and underpayments in reservation charge credits to the impacted FTS, NNS, and EFT customers, during the audit period.",
+      "summary": "Gulf South incorrectly calculated reservation charge credits for six out of eleven non-force majeure maintenance events declared during the audit period. This resulted in overpayments and underpayments in reservation charge credits to the impacted Firm Transmission Service (FTS), No-Notice Service (NNS), and Enhanced Firm Transmission (EFT) customers, during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -80,14 +80,14 @@
     {
       "index": 2,
       "title": "Allowance for Funds Used During Construction",
-      "summary": ", also clarified that certain conditions are necessary to prepare a construction project for its intended use. Activities occurring prior to meeting these conditions are considered preliminary in nature for determining the feasibility of projects under contemplation and should be recorded in Account 183.2.51 Regulated entities should be aware of FERC and GAAP accounting differences, and the Commission’s requirements to maintain accounts in accordance with the USofA. Hence, these differences should not be considered to support accounting for PS&I in a manner contrary to the Commission’s account",
+      "summary": "Gulf South did not include the cost rates and balances associated with short-term debt borrowings from its cash management program in the computation of its maximum allowance for funds used during construction (AFUDC) rate. Instead, Gulf South included only the cost rates and balances for the long- term debt and equity components, which resulted in Gulf South applying AFUDC rates that exceeded the Commission’s maximum allowable rate by approximately 7.43 percent and 9.25 percent in 2019 and 2020, respectively. As a result, Gulf South over accrued the AFUDC on capital projects by approximately $12.4 million in these two years. Although the over-accrual only pertained to these two years, Gulf South confirmed that it has not considered internal short-term debt borrowings in its AFUDC rate calculations since the inception of its cash management program.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 3,
       "title": "Preliminary Survey and Investigation Charges",
-      "summary": "Gulf South improperly recorded PS&I as an operating expense in each accounting period these costs were incurred, rather than recording these costs in Account 183.2, Other Preliminary Survey and Investigation Charges. This resulted in Gulf South misclassifying and overstating its monthly operating expenses. Gulf South’s accounting practice also reduced the transparency and comparability of PS&I reported in Gulf South’s FERC Form No. 2 reports and could impact the accuracy of Gulf South’s future cost-of-service rates.",
+      "summary": "Gulf South improperly recorded Preliminary Survey and Investigation charges (PS&I) as an operating expense in each accounting period these costs were incurred, rather than recording these costs in Account 183.2, Other Preliminary Survey and Investigation Charges. This resulted in Gulf South misclassifying and overstating its monthly operating expenses. Gulf South’s accounting practice also reduced the transparency and comparability of PS&I reported in Gulf South’s FERC Form No. 2 reports and could impact the accuracy of Gulf South’s future cost-of-service rates.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -109,8 +109,8 @@
     },
     {
       "index": 4,
-      "title": "Corporate Management Fees",
-      "summary": "Gulf South improperly classified certain costs allocated from its parent companies in the form of a management fee in Account 923, Outside Services, rather than recording these costs in the appropriate operating and nonoperating expense accounts and administrative and general expense accounts based on the nature of each cost. These misclassifications affected the accuracy and usefulness of the information reported in Gulf South’s FERC Form No. 2 reports. Gulf South also did not keep adequate records and documentation to support the allocation percentage used by its parent company for certain l",
+      "title": "Corporate Management Fee",
+      "summary": "Gulf South improperly classified certain costs allocated from its parent companies in the form of a management fee in Account 923, Outside Services, rather than recording these costs in the appropriate operating and nonoperating expense accounts and administrative and general expense accounts based on the nature of each cost. These misclassifications affected the accuracy and usefulness of the information reported in Gulf South’s FERC Form No. 2 reports. Gulf South also did not keep adequate records and documentation to support the allocation percentage used by its parent company for certain labor charges that were allocated based on a time study. The lack of records and documents limited audit staff’s ability to evaluate the accuracy and reasonableness of the allocation percentage used to assign these labor charges to Gulf South.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -186,7 +186,7 @@
     {
       "index": 6,
       "title": "Political and Lobbying Expenditures",
-      "summary": "Gulf South improperly accounted for certain political and lobbying expenses in operating expense accounts, rather than nonoperating expense accounts. These misclassifications could result in Gulf South inappropriately recovering nonoperating expenses in its cost-of-service rate determinations, absent having other procedures and controls in place. The misclassification of these nonoperating expenses also reduced the transparency and comparability of the reporting of nonoperating expenses in Gulf South’s FERC Form No. 2 reports. Additionally, incorrect allocation percentages were applied in assi",
+      "summary": "Gulf South improperly accounted for certain political and lobbying expenses in operating expense accounts, rather than nonoperating expense accounts. These misclassifications could result in Gulf South inappropriately recovering nonoperating expenses in its cost-of-service rate determinations, absent having other procedures and controls in place. The misclassification of these nonoperating expenses also reduced the transparency and comparability of the reporting of nonoperating expenses in Gulf South’s FERC Form No. 2 reports. Additionally, incorrect allocation percentages were applied in assigning outside service costs under the Modified Massachusetts Formula (MMF).",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -257,7 +257,7 @@
     {
       "index": 8,
       "title": "Informational and Promotional Costs",
-      "summary": "Description Costs Account(s) Used Correct Account Brand Awareness $9,150 921 930.1 Informational and $287,037 814, 850, 853, 856 909 Instructional Advertising As reflected in the table above, Gulf South recorded informational and promotional costs in various 800 series Accounts and in Account 921, rather than Accounts 909, Informational and Instructional Advertising Expenses, and 930.1, General Advertising Expenses. Instructions to Account 909 direct natural gas pipelines to record costs incurred to convey information or instruct customers on how to use their gas service to protect health and",
+      "summary": "Gulf South improperly accounted for certain informational and promotional costs in incorrect operating expense accounts. These misclassifications reduced the transparency and comparability of the reporting of these operating expenses in Gulf South’s FERC Form No. 2 reports. Further, these misclassifications could lead to improper functionalization of costs in rate design for different customer classes.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -290,7 +290,7 @@
     {
       "index": 9,
       "title": "Operating Lease Accounting",
-      "summary": "Gulf South has operating leases, which contain rent abatement or changes in the rental rate during the lease term. For those operating leases, Gulf South recognized the lease expense using a straight-line method over the lease term rather than recognizing the lease expense based on actual lease payments. For those leases, Gulf South also did not record equal offsetting amounts for the principal portion of the lease payments to reduce its right of use (ROU) assets and related lease liabilities, as required by the Commission. This accounting reduced the transparency and comparability of this inf",
+      "summary": "Gulf South has operating leases, which contain rent abatement or changes in the rental rate during the lease term. For those operating leases, Gulf South recognized the lease expense using a straight-line method over the lease term rather than recognizing the lease expense based on actual lease payments. For those leases, Gulf South also did not record equal offsetting amounts for the principal portion of the lease payments to reduce its right of use (ROU) assets and related lease liabilities, as required by the Commission. This accounting reduced the transparency and comparability of this information reported in the FERC Form No. 2.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -305,9 +305,17 @@
         },
         {
           "number": 41,
-          "text": "Make any necessary accounting adjustments to reflect compliance with the Commission’s accounting requirements for recognition of lease expenses on the income statement and ROU assets and liabilities on the balance sheet. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report, or the issuance of any formal approval from the Chief Accountant requested within 90 days from the issuance of this report. Property Unit Listing",
+          "text": "Make any necessary accounting adjustments to reflect compliance with the Commission’s accounting requirements for recognition of lease expenses on the income statement and ROU assets and liabilities on the balance sheet. Provide a copy of the accounting adjustments made to DAA for review within 90 days from the issuance of this report, or the issuance of any formal approval from the Chief Accountant requested within 90 days from the issuance of this report.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Property Unit Listing",
+      "summary": "Gulf South did not consistently apply its property units listing for the replacement of a retirement unit. Gulf South instead applied its capitalization policy, which contradicted its property units listing. As a result, Gulf South treated the replacement of a retirement unit as a replacement of a minor unit of property, and expensed the costs, rather than capitalizing the costs associated with the retirement unit replaced.",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 42,
           "text": "Revise policies and procedures to ensure that Gulf South consistently maintains and applies its written property units listing pursuant to GPI No.",
@@ -336,16 +344,9 @@
       ]
     },
     {
-      "index": 10,
-      "title": "Property Units Listing",
-      "summary": "Gulf South did not consistently apply its property units listing for the replacement of a retirement unit. Gulf South instead applied its capitalization policy, which contradicted its property units listing. As a result, Gulf South treated the replacement of a retirement unit as a replacement of a minor unit of property, and expensed the costs, rather than capitalizing the costs associated with the retirement unit replaced.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
       "index": 11,
       "title": "Gas Compressor Stations",
-      "summary": "Gulf South filed with the Commission to abandon its Napoleonville Compressor Station (Napoleonville) and Bayou Sale Compressor Station (Bayou Sale) in 2016. Upon receiving the Commission’s approval to abandon the stations, Gulf South timely retired and removed the costs associated with Napoleonville from its books. However, Gulf South did not timely cease depreciation of and remove Bayou Sale’s costs from its books, upon receiving Commission approval to abandon this compressor station. Additionally, Gulf South had other compressor stations declared as either abandoned, idled, or in a reserve s",
+      "summary": "Gulf South filed with the Commission to abandon its Napoleonville Compressor Station (Napoleonville) and Bayou Sale Compressor Station (Bayou Sale) in 2016. Upon receiving the Commission’s approval to abandon the stations, Gulf South timely retired and removed the costs associated with Napoleonville from its books. However, Gulf South did not timely cease depreciation of and remove Bayou Sale’s costs from its books, upon receiving Commission approval to abandon this compressor station. Additionally, Gulf South had other compressor stations declared as either abandoned, idled, or in a reserve status for several years, which were not used in operations. Gulf South continued to classify these compressor stations as gas plant in service, rather than transferring them to future use property or nonutility property. As a result of these accounting errors, Gulf South’s gas plant in service has been overstated for several years, which has also impacted the accuracy of other account balances.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -373,7 +374,7 @@
     {
       "index": 12,
       "title": "FERC Form No. 2 Reporting",
-      "summary": "Gulf South did not report complete and accurate information on certain supporting schedules of its FERC Form No. 2 reports. These reporting deficiencies reduced the overall accuracy and usefulness of the information in the FERC Form No. 2.",
+      "summary": "Gulf South did not report complete and accurate information on certain supporting schedules of its FERC Form No. 2 reports. These reporting deficiencies reduced the overall accuracy and usefulness of the information in the FERC Form No. 2. D. Other Matters Audit staff identified one other matter, which is summarized below. Section V of this report contains a detailed discussion of this other matter.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -392,6 +393,20 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 13,
+      "title": "Commission Accounting Filings",
+      "summary": "Gulf South requested and received Commission approval to abandon by sale or acquisition certain properties in three certificated project (CP) proceedings during the audit period. Gulf South filed proposed journal entries for the sale and acquisition of these properties within six months of the date each transaction was consummated, as instructed by the Commission. However, for the transaction involving a merger of two existing affiliated companies, Gulf South combined the account balances of these companies without receiving acknowledgement of approval from the Commission. Besides the merger transaction, Gulf South filed the proposed accounting entries for two other abandonment transactions in the CP docketed proceedings, rather than in an accounting (AC) docketed proceeding.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 14,
+      "title": "Unauthorized Gas Deliveries",
+      "summary": "Some customers took gas off Gulf South’s pipeline system without making a nomination or providing any other notification to Gulf South. This occurred on multiple occasions with customers that contracted for firm and interruptible transportation service for gas used at their Liquified Natural Gas (LNG) and power generating plants. As provided in Gulf South’s Tariff, these customers could have contracted for NNS and Alternative No Notice Service (NNS-A), as these transportation services do not require a nomination. However, Gulf South indicated that these customers did not contract for NNS or NNS-A. Accordingly, Gulf South should consider modifying its tariff to incorporate procedures that clarify this operational practice, offer additional transportation services, or require customers to contract for existing tariff services. Effectuating one or more of these options will provide the same flexibility to all similarly situated customers to meet their operational needs. E.",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

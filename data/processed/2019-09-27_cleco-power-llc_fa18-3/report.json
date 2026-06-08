@@ -28,89 +28,12 @@
     "1",
     "60"
   ],
-  "finding_count": 12,
+  "finding_count": 1,
   "findings": [
     {
       "index": 1,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "Cleco Power’s method for computing Allowance for Funds Used During Construction (AFUDC) improperly grossed-up the return on equity rate used in computing AFUDC and, improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings (Major only), in the equity component when computing the AFUDC rate. In addition, Cleco Power improperly recorded approximately $24 million of AFUDC debt amounts in Account 182.3, Other Regulatory Assets, instead of Account 101, Electric Plant in Service, and improperly recorded accumulated deferred income tax equity gross-up in Account 282, Accumul",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Excess Accumulated Deferred Income Tax Labilities",
-      "summary": "Cleco Power improperly excluded excess and deficient Accumulated Deferred Income Tax (ADIT), created as a result of the 2017 Tax Cut and Jobs Act, in its wholesale transmission formula rate computation. As a result, Cleco Power overstated its wholesale transmission revenue requirement by approximately $9.6 million and overbilled wholesale transmission customers during 2018 and 2019 rate years.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Merger Costs",
-      "summary": "Cleco Power improperly included approximately $9.1 million of merger-related internal labor costs and debt cancellation cost in its wholesale transmission formula rate cost determinations without first submitting a section 205 filing with the Commission. As a result, Cleco Power overstated its wholesale transmission revenue requirement by approximately $389,000 and overbilled wholesale transmission customers from 2015 to 2018.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 4,
-      "title": "Merger Accumulated Deferred Income Taxes",
-      "summary": "Cleco Power improperly included accumulated deferred income taxes related to merger commitment costs in its wholesale transmission formula rates. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $133,000 and overbilled its wholesale transmission customers from 2017 to 2018.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 5,
-      "title": "Transmission Revenue Credits",
-      "summary": "Cleco Power improperly recorded rental revenue from its affiliate in Account 455, Interdepartmental Rents, instead of in Account 454, Rent from Electric Property. As a result, Cleco Power understated the revenue credits included in its wholesale transmission formula rates, which led to an overstatement of its wholesale transmission revenue requirements by approximately $100,000 and overbilled its wholesale transmission customers from 2016 to 2018.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 6,
-      "title": "Accounting for Electric Generation Renewable Expenses",
-      "summary": "Cleco Power improperly recorded operating and maintenance costs associated with an electric generation renewable plant in Account 923, Outside Services Employed, instead of in Account 553, Maintenance of Generating and Electric Equipment (Major Only). Cleco Power improperly included the operating and maintenance costs associated with the electric generation renewable plant in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $124,000 and ov",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 7,
-      "title": "Accounting for Jointly Owned Assets",
-      "summary": "Cleco Power improperly recorded the cost of a transmission asset it did not own in Account 353, Station Equipment, and improperly included the cost of the transmission asset it did not own in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $89,000 and overbilled wholesale transmission customers from 2014 to 2016.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 8,
-      "title": "Accounting for Legal Settlements",
-      "summary": "Cleco Power improperly recorded $100,000 for compromised settlement payments it made for a discriminatory employment practice suit in Account 921, Office Supplies and Expenses, instead of Account 426.5, Other Deductions. As a result, Cleco Power overstated its wholesale transmission revenue requirements and overbilled its wholesale transmission customers for that amount.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 9,
-      "title": "Electric Plant Held for Future Use",
-      "summary": "Cleco Power improperly recovered the cost of generation, distribution and gas pipeline assets recorded in Account 105, Electric Plant Held for Future Use, through its wholesale transmission formula rates. As a result, Cleco Power overstated its wholesale transmission revenue requirement by approximately $158,000 and overbilled wholesale transmission customers from 2014 to 2018.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 10,
-      "title": "Other Accounting Misclassifications",
-      "summary": "Cleco Power improperly accounted for various expenses totaling approximately $481,000 in its books and records from 2014 to 2018. These expenses were included in wholesale transmission formula rate determinations. As a result, Cleco Power overstated its wholesale transmission revenue requirement and overbilled wholesale transmission customers.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 11,
-      "title": "Accounting for Regulatory Assets",
-      "summary": "Cleco Power improperly recorded regulatory assets approved by the LPSC in Account 182.1, Extraordinary Property Losses, without Commission approval.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 12,
-      "title": "FERC Form No. 1 Reporting",
-      "summary": "Cleco Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings.",
+      "title": "• Transmission Revenue Credits",
+      "summary": "Cleco Power improperly recorded rental revenue from its affiliate in Account 455, Interdepartmental Rents, instead of in Account 454, Rent from Electric Property. As a result, Cleco Power understated the revenue credits included in its wholesale transmission formula rates, which led to an overstatement of its wholesale transmission revenue requirements by approximately $100,000 and overbilled its wholesale transmission customers from 2016 to 2018. • Accounting for Electric Generation Renewable Expenses – Cleco Power improperly recorded operating and maintenance costs associated with an electric generation renewable plant in Account 923, Outside Services Employed, instead of in Account 553, Maintenance of Generating and Electric Equipment (Major Only). Cleco Power improperly included the operating and maintenance costs associated with the electric generation renewable plant in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $124,000 and overbilled wholesale transmission customers from 2015 to 2018. • Accounting for Jointly Owned Assets – Cleco Power improperly recorded the cost of a transmission asset it did not own in Account 353, Station Equipment, and improperly included the cost of the transmission asset it did not own in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $89,000 and overbilled wholesale transmission customers from 2014 to 2016. • Accounting for Legal Settlements – Cleco Power improperly recorded $100,000 for compromised settlement payments it made for a discriminatory employment practice suit in Account 921, Office Supplies and Expenses, instead of Account 426.5, Other Deductions. As a result, Cleco Power overstated its wholesale transmission revenue requirements and overbilled its wholesale transmission customers for that amount. • Electric Plant Held for Future Use – Cleco Power improperly recovered the cost of generation, distribution and gas pipeline assets recorded in Account 105, Electric Plant Held for Future Use, through its wholesale transmission formula rates. As a result, Cleco Power overstated its wholesale transmission revenue requirement by approximately $158,000 and overbilled wholesale transmission customers from 2014 to 2018. • Other Accounting Misclassifications – Cleco Power improperly accounted for various expenses totaling approximately $481,000 in its books and records from 2014 to 2018. These expenses were included in wholesale transmission formula rate determinations. As a result, Cleco Power overstated its wholesale transmission revenue requirement and overbilled wholesale transmission customers. • Accounting for Regulatory Assets – Cleco Power improperly recorded regulatory assets approved by the Louisiana Public Service Commission (LPSC) in Account 182.1, Extraordinary Property Losses, without Commission approval. • FERC Form No. 1 Reporting – Cleco Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. D. Summary of",
       "is_other_matter": false,
       "recommendations": []
     }

@@ -27,28 +27,28 @@
     {
       "index": 1,
       "title": "Reservation Charge Crediting Tariff Provision",
-      "summary": "Trunkline’s tariff did not contain a provision for reservation charge credits to shippers with firm service affected by force majeure and non-force majeure events, as required by Commission policy. As a result, certain shippers with firm service that qualified for full reservation charge credits did not receive any credits following non- force majeure events. Additionally, Trunkline improperly included a reference to maintenance activities in the force majeure definition of its tariff.",
+      "summary": "Trunkline’s tariff did not contain a provision for reservation charge credits to shippers with firm service affected by non-force and force majeure events, as required by Commission policy. As a result, certain shippers with firm service that qualified for full reservation charge credits did not receive any credits following non-force majeure events. Additionally, Trunkline improperly included a reference to maintenance activities in the force majeure definition of its tariff.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 2,
-      "title": "Operational Balancing Agreement",
-      "summary": "s, Docket No. RP16-1253-000, (October 19, 2016). Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC 3. Reporting of Gas Equivalents in the Fuel Reimbursement Filing Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing.",
+      "title": "Operational Balancing Agreements",
+      "summary": "Trunkline’s tariff contained language that was inconsistent with the Commission’s requirement that all interconnecting pipelines enter into Operating Balancing Agreements (OBAs). Audit staff also identified inconsistencies with Trunkline’s administration and management of imbalances in accordance with the terms of its tariff and standard OBA.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 3,
       "title": "Reporting of Gas Equivalents in the Fuel Reimbursement Filing",
-      "summary": "Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing.",
+      "summary": "Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing. Accounting and Reporting",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 4,
       "title": "Cash Management and Affiliate Transactions",
-      "summary": "Trunkline incorrectly recorded cash management and affiliate transactions that it carried for less than a year as long-term investments or cash advances rather than as short-term receivables or payables. As a result, Trunkline incorrectly reported short-term receivables, short-term payables, long-term investments, and long-term cash advances in its FERC Form 2.",
+      "summary": "Trunkline incorrectly recorded cash management and affiliate transactions that it carried for less than a year as long-term investments or cash advances rather than as short- term receivables or payables. As a result, Trunkline incorrectly reported short-term receivables, short-term payables, long-term investments, and long- term cash advances in its FERC Form 2.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -58,17 +58,9 @@
         },
         {
           "number": 11,
-          "text": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC",
+          "text": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC Allowance for Funds Used During Construction (AFUDC)",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 5,
-      "title": "Allowance for Funds Used During Construction (AFUDC)",
-      "summary": "Trunkline applied AFUDC rates that exceeded the maximum rate permitted by the Commission to calculate interest costs on construction. While the Commission requires natural gas companies to develop AFUDC rates based on the Commission’s prescribed formula, it restricts the maximum rate to the overall rate of return in its recourse rates. In using rates that exceeded the maximum, Trunkline over accrued AFUDC by approximately $342,823 from 2013 to 2016. Additionally, Trunkline did not consider the effects of the cash management program in its AFUDC rate calculation, which may have resulted in a ra",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 12,
           "text": "Strengthen procedures to ensure AFUDC rates do not exceed the maximum permitted by the Commission. Include procedures for the treatment of borrowings associated with the cash management program in the development of its AFUDC rates.",
@@ -90,6 +82,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used during Construction (AFUDC)",
+      "summary": "Trunkline applied AFUDC rates that exceeded the maximum rate permitted by the Commission to calculate interest costs on construction. While the Commission requires natural gas companies to develop AFUDC rates based on the Commission’s prescribed formula, it restricts the maximum rate to the overall rate of return in its recourse rates. In using rates that exceeded the maximum, Trunkline over accrued AFUDC by approximately $342,823 from 2013 to 2016. Additionally, Trunkline did not consider the effects of the cash management program in its AFUDC rate calculation, which may have resulted in a rate lower than its overall rate of return of its recourse rate. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC",
+      "is_other_matter": false,
+      "recommendations": []
     },
     {
       "index": 6,
@@ -154,7 +153,7 @@
     },
     {
       "index": 8,
-      "title": "Accounting for Lost and Unaccounted-for Gas (LAUF)",
+      "title": "Accounting for Loss and Unaccounted for Gas (LAUF)",
       "summary": "Trunkline incorrectly accounted for LAUF as compressor fuel rather than in accounts designated for system gas losses. This accounting reduced the transparency of LAUF for financial reporting and fuel reimbursement purposes.",
       "is_other_matter": false,
       "recommendations": []
@@ -185,7 +184,7 @@
     {
       "index": 10,
       "title": "Reporting of Volumes for Gas Storage Projects",
-      "summary": "Trunkline incorrectly reported volumetric data for its gas storage facility in the FERC Form 2. The error affected the accuracy of the amounts recorded in Account 808.1, Gas Withdrawn from Storage-Debit, and Account 808.2, Gas Injected into Storage-Credit.",
+      "summary": "Trunkline incorrectly reported volumetric data for its gas storage facility in the FERC Form 2. The error affected the accuracy of the amounts recorded in Account 808.1, Gas Withdrawn from Storage-Debit, and Account 808.2, Gas Injected into Storage-Credit. D. Summary of",
       "is_other_matter": false,
       "recommendations": [
         {

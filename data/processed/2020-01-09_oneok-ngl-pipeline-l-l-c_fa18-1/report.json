@@ -24,12 +24,12 @@
   "forms": [
     "6"
   ],
-  "finding_count": 6,
+  "finding_count": 7,
   "findings": [
     {
       "index": 1,
       "title": "Page 700 Reporting",
-      "summary": "ONEOK NGL improperly reported depreciation expense, AFUDC depreciation, and related rate base balances on its Page 700, Annual Cost-of-Service Based Analysis Schedule. Also, ONEOK NGL improperly included Account 187, Construction Work in Progress (CWIP), balances in the calculation of Rate Base – Original Cost on line 5a.",
+      "summary": "ONEOK NGL improperly reported depreciation expense, AFUDC depreciation, and related rate base balances on its Page 700, Annual Cost- of-Service Based Analysis Schedule. Also, ONEOK NGL improperly included Account 187, Construction Work in Progress (CWIP), balances in the calculation of Rate Base – Original Cost on line 5a.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -97,21 +97,28 @@
     {
       "index": 4,
       "title": "Incorrect Tariff Rate Charge",
-      "summary": "ONEOK NGL improperly accounted for interstate transportation revenues on its North Line pipeline by incorrectly charging an interstate rate, instead of an intrastate rate, from January 2016 to April 2017. As the interstate rate was higher than the intrastate rate, ONEOK NGL overcharged for these deliveries and overstated interstate transportation revenues.",
+      "summary": "ONEOK NGL improperly accounted for interstate transportation revenues on its North Line pipeline when ONEOK NGL incorrectly charged an interstate rate, instead of an intrastate rate, from January 2016 to April",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 5,
+      "title": "As the interstate rate was higher than the intrastate rate, ONEOK NGL overcharged for these deliveries and overstated interstate transportation revenues.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
       "title": "Accounting for Pipeline Leases",
       "summary": "ONEOK NGL improperly recorded revenue for the lease of a pipeline asset owned by its affiliate as rental revenue in Account 250, Rental Revenue. The error resulted in overstatements in Account 250 of $3.1 million, $4.2 million, and $4.3 million in 2015, 2016, and 2017, respectively.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 6,
+      "index": 7,
       "title": "Use of Incorrect Depreciation Rates",
-      "summary": "ONEOK NGL improperly applied depreciation rates for carrier property assets that were not approved by and on file with the Commission. As a result, ONEOK NGL overstated depreciation expense and misreported amounts on its Page 700 from 2015- 2017.",
+      "summary": "ONEOK NGL improperly applied depreciation rates for carrier property assets that were not approved by and on file with the Commission. As a result, ONEOK NGL overstated depreciation expense and misreported amounts on its Page 700 from 2015-2017. D. Summary of",
       "is_other_matter": false,
       "recommendations": []
     }

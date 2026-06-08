@@ -80,7 +80,7 @@
     {
       "index": 3,
       "title": "Accounting for Non-Operating Expenses",
-      "summary": "Transco improperly accounted for allocated direct and indirect overhead non- operating expenses in utility plant and operating expense accounts, resulting in misstated utility plant and operating expense balances reported in its FERC Form No. 2.",
+      "summary": "Transco improperly accounted for allocated direct and indirect overhead non-operating expenses in utility plant and operating expense accounts, resulting in misstated utility plant and operating expense balances reported in its FERC Form No. 2.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -133,17 +133,9 @@
         },
         {
           "number": 16,
-          "text": "Revise balances in Accounts 106, 107, and 154 after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances in the FERC Form No. 2 in the current and comparative years of the report.",
+          "text": "Revise balances in Accounts 106, 107, and 154 after receiving DAA’s assessment of the proposed accounting entries, and restate and footnote the balances in the FERC Form No. 2 in the current and comparative years of the report. Allowance for Funds Used During Construction",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 5,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "Transco improperly included undistributed subsidiary earnings, accumulated other comprehensive income, and unamortized discounts on long-term debt in debt and equity for the purposes of computing AFUDC rates. As a result, Transco over-accrued AFUDC, which led it to overstate its CWIP and plant in service balances.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 17,
           "text": "Revise policies and procedures for calculating AFUDC rates consistent with Gas Plant Instruction (GPI) No. 3(A)(17) and other applicable Commission requirements. Revisions should include processes to prevent inclusion of balances in Accounts 216.1, 219, and 226 in the AFUDC rate calculations.",
@@ -165,6 +157,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "Transco improperly included undistributed subsidiary earnings, accumulated other 1 Transcontinental Gas Pipe Line Co., LLC, 145 FERC ¶ 61,205 (2013). 2 Transcontinental Gas Pipe Line Co., LLC, 164 FERC ¶ 61,236 (2018). comprehensive income, and unamortized discounts on long-term debt in debt and equity for the purposes of computing AFUDC rates. As a result, Transco over-accrued AFUDC, which led it to overstate its construction work in progress (CWIP) and plant in service balances.",
+      "is_other_matter": false,
+      "recommendations": []
     },
     {
       "index": 6,
@@ -246,7 +245,7 @@
     {
       "index": 10,
       "title": "Reservation Charge Credits",
-      "summary": "Transco had three firm storage rate schedules in its FERC NGA Gas Tariff that did not contain a provision for reservation charge credits to shippers with firm service affected by non-force majeure and force majeure events, as required by Commission policy.",
+      "summary": "Transco had three firm storage rate schedules in its FERC NGA Gas Tariff that did not contain a provision for reservation charge credits to shippers with firm service affected by non-force majeure and force majeure events, as required by Commission policy. D. Summary of",
       "is_other_matter": false,
       "recommendations": [
         {

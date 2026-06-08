@@ -1,1 +1,32 @@
-{"collection": "state_rate_case", "jurisdiction": "TN", "source": "Tennessee Public Utility Commission", "doc_type": "general rate case filing", "id": "2022_kingsport-power-aep_tn-21-00107-general-rate-case", "company": "Kingsport Power Company d/b/a AEP Appalachian Power", "company_raw": "Kingsport Power Company d/b/a AEP Appalachian Power", "docket": "21-00107", "docket_full": null, "issued_date": null, "source_page_url": "https://www.tn.gov/tpuc.html", "pdf_download_url": "https://tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf", "captured_at": "2026-06-07", "source_note": "Petition of Kingsport Power Company d/b/a AEP Appalachian Power for a general rate case before the Tennessee Public Utility Commission, Docket No. 21-00107 (74 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf).", "archived_via": null, "page_count": 74, "scanned_pages": [44, 45, 59], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "TN",
+  "source": "Tennessee Public Utility Commission",
+  "doc_type": "general rate case filing",
+  "id": "2022_kingsport-power-aep_tn-21-00107-general-rate-case",
+  "company": "Kingsport Power Company d/b/a AEP Appalachian Power",
+  "company_raw": "Kingsport Power Company d/b/a AEP Appalachian Power",
+  "docket": "21-00107",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.tn.gov/tpuc.html",
+  "pdf_download_url": "https://tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf",
+  "captured_at": "2026-06-07",
+  "source_note": "Petition of Kingsport Power Company d/b/a AEP Appalachian Power for a general rate case before the Tennessee Public Utility Commission, Docket No. 21-00107 (74 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2021/2100107bd.pdf).",
+  "archived_via": null,
+  "page_count": 74,
+  "scanned_pages": [
+    44,
+    45,
+    59
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

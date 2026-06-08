@@ -25,7 +25,7 @@
     "2",
     "501-G"
   ],
-  "finding_count": 7,
+  "finding_count": 8,
   "findings": [
     {
       "index": 1,
@@ -58,7 +58,7 @@
     {
       "index": 2,
       "title": "Reporting of O&M Expenses for Incremental Rate Projects",
-      "summary": "Maritimes did not perform a study to support the allocation percentage used to assign O&M expenses to its incremental rate projects. Absent a study, audit staff could not determine whether this allocation percentage was reasonable and representative of the actual O&M expenses assigned to incremental rate projects. Maritimes also improperly aggregated maintenance expenses with operating expenses, rather than separately reporting these expenses for its incremental rate projects in its FERC Form No. 2. This reduced the accuracy and completeness of these expenses reported for Maritimes’ incrementa",
+      "summary": "Maritimes did not perform a study to support the allocation percentage used to assign operations and maintenance (O&M) expenses to its incremental rate projects. Absent a study, audit staff could not determine whether this allocation percentage was reasonable and representative of the actual O&M expenses assigned to incremental rate projects. Maritimes also improperly aggregated maintenance expenses with operating expenses, rather than separately reporting these expenses for its incremental rate projects in its FERC Form No. 2. This reduced the accuracy and completeness of these expenses reported for Maritimes’ incremental rate projects.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -109,7 +109,7 @@
     {
       "index": 4,
       "title": "Accounting for Operating Expenses",
-      "summary": "Maritimes improperly accounted for certain operating expenses, such as transmission operating expenses, regulatory activities, and legal fees, in a manner inconsistent with Commission’s accounting regulations. While these accounting misclassifications had no impact on total operating expenses, the misclassifications nevertheless reduced the accuracy and transparency of operating expenses as reported in Maritimes’ FERC Form No. 2 filings.",
+      "summary": "Maritimes improperly accounted for certain operating expenses, such as transmission operating expenses, regulatory activities, and legal fees, in a manner inconsistent with the Commission’s accounting regulations. While these accounting misclassifications had no impact on total operating expenses, the misclassifications nevertheless reduced the accuracy and transparency of operating expenses as reported in Maritimes’ FERC Form No. 2 filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -132,7 +132,7 @@
     {
       "index": 5,
       "title": "FERC Form No. 2 Reporting",
-      "summary": "Maritimes did not report complete information as required in certain supporting schedules of its 2017 and 2018 FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 2.",
+      "summary": "Maritimes did not report complete information as required in certain supporting schedules of its 2017 and 2018 FERC Form No. 2 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 2. FERC Tariff and Rates",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -150,7 +150,7 @@
     {
       "index": 6,
       "title": "Fuel Retainage Quantity Filings",
-      "summary": "Maritimes misreported the deferred fuel balance and negative LAUF in its annual Fuel Retainage Quantity filings. Maritimes also did not separately break out its deferred fuel balance from other activities reported on Page 268, Miscellaneous Current and Accrued Liabilities, in its FERC Form No. 2 reports. These oversights reduced the accuracy and the usefulness of Maritimes’ Fuel Retainage Quantity filings and FERC Form No. 2 reports for shippers and other stakeholders during the audit period.",
+      "summary": "Maritimes misreported the deferred fuel balance and negative lost and unaccounted for gas (LAUF) in its annual Fuel Retainage Quantity filings. Maritimes also did not separately break out its deferred fuel balance from other activities reported on Page 268, Miscellaneous Current and Accrued Liabilities, in its FERC Form No. 2 reports. These oversights reduced the accuracy and the usefulness of Maritimes’ Fuel Retainage Quantity filings and FERC Form No. 2 reports for shippers and other stakeholders during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -178,7 +178,7 @@
     {
       "index": 7,
       "title": "Reservation Charge Crediting",
-      "summary": "Section 8 of Maritimes’ Tariff contained general terms and conditions that were inconsistent with the Commission’s reservation charge crediting policy. Maritimes also improperly included references to maintenance activities in the force majeure definition in section 26 of its Tariff. Making these tariff terms and conditions consistent with the Commission’s policy will ensure that shippers are properly credited reservation charges for force majeure and non-force majeure events.",
+      "summary": "Section 8 of Maritimes’ Tariff contained general terms and conditions that were inconsistent with the Commission’s reservation charge crediting policy. Maritimes also improperly included references to maintenance activities in the force majeure definition in section 26 of its Tariff. Making these tariff terms and conditions consistent with the Commission’s policy will ensure that shippers are properly credited reservation charges for force majeure and non-force majeure events. D. Other Matter Audit staff identified one other matter, which is summarized below. Section V of this report contains a detailed discussion of this other matter.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -197,6 +197,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 8,
+      "title": "Tariff Penalty Crediting Provisions",
+      "summary": "Maritimes’ tariff provisions for scheduling penalties and park and loan penalties contain some inconsistencies with Commission policy. Although these provisions are in Maritimes’ approved Tariff, updating these provisions will better align them with Commission policy, and provide the appropriate outcomes for assessing penalties to offending shippers and crediting back penalty revenues to non-offending shippers. E.",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true
