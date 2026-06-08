@@ -378,12 +378,12 @@
     "generated_at": "2026-06-07"
   },
   "state_audit": {
-    "report_count": 116,
+    "report_count": 117,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 103,
+      "electric": 104,
       "gas": 9,
       "unknown": 4
     },
@@ -397,7 +397,7 @@
       "2022": 5,
       "2023": 7,
       "2024": 23,
-      "2025": 37,
+      "2025": 38,
       "2026": 4
     },
     "by_function": {},

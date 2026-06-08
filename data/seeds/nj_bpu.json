@@ -46,5 +46,20 @@
     "captured_at": "2026-06-02",
     "source_note": "Decision and Order approving the auction process for Basic Generation Service (BGS) for the period beginning June 1, 2026 — the statewide descending-clock procurement that sets default-supply prices for Atlantic City Electric, JCP&L, PSE&G, and Rockland Electric customers, NJ BPU Docket No. ER25040190, issued at the November 21, 2025 agenda meeting. Listed for reference (metadata-only). PDF on the BPU energy/BGS host www.nj.gov/bpu/pdf/energy/bgs/; docket system: publicaccess.bpu.state.nj.us.",
     "parse": false
+  },
+  {
+    "id": "2025-06-18_atlantic-city-electric_nj-rate-mitigation",
+    "company": "Atlantic City Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "New Jersey Board of Public Utilities",
+    "doc_type": "rate mitigation order",
+    "industry": "electric",
+    "pdf_url": "https://www.nj.gov/bpu/pdf/boardorders/2025/20250618/2E%20ORDER%20ACE%20Rate%20Mitigation%20Filing.pdf",
+    "source_page_url": "https://publicaccess.bpu.state.nj.us/",
+    "issued_date": "2025-06-18",
+    "captured_at": "2026-06-07",
+    "source_note": "Order on Rate Mitigation Filing of Atlantic City Electric Company (ACE / Exelon), issued at the June 18, 2025 agenda meeting. Rate mitigation filing in response to elevated wholesale electricity costs from PJM markets following July 2024 auctions. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2025/20250618/; docket system: publicaccess.bpu.state.nj.us.",
+    "parse": false
   }
 ]

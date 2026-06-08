@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="250 structured records (120 FERC audits, 14 prudence reviews, 116 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="251 structured records (120 FERC audits, 14 prudence reviews, 117 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3075,6 +3075,10 @@ Final Order in the 2025 biennial review of Virginia Electric and Power Company (
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="State PUC Audits" docket="PUR-2025-00037" issued="2025-11-25" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Final Order granting Virginia Electric and Power Company (Dominion Energy Virginia) a certificate of public convenience and necessity (CPCN) to construct and operate the ~944 MW Chesterfield Energy Reliability Center and related transmission, with Rider CERC cost recovery under Va. Code § 56-585.1 A 6, Case No. PUR-2025-00037, Virginia State Corporation Commission, entered at Richmond November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g501!.PDF.
+</doc>
+<doc title="Southwestern Electric Power Company (SWEPCO)" collection="State PUC Audits" docket="U-37794" issued="2025-11-24" industry="electric" source="https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=SWEPCO-U-37794">
+Listed for reference (not machine-parsed into findings).
+Application of Southwestern Electric Power Company (SWEPCO) for Authorization of a System Improvement Plan (SIP), including related rate recovery through Fuel Adjustment Clause (FAC) beginning June 1, 2026. Plan covers grid hardening (629 line-miles) and vegetation management (6,095 line-miles) across 11 Louisiana parishes. Filed November 24, 2025, published for intervention December 5, 2025. Listed for reference (metadata-only). Source: LPSC public docket portal, Docket U-37794, file sh4kA6z+3bk= (lpscpubvalence.lpsc.louisiana.gov).
 </doc>
 <doc title="New Jersey electric distribution utilities (ACE, JCP&amp;L, PSE&amp;G, Rockland Electric)" collection="State PUC Audits" docket="ER25040190" issued="2025-11-21" industry="electric" source="https://publicaccess.bpu.state.nj.us/">
 Listed for reference (not machine-parsed into findings).

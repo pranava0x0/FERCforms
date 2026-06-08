@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 250 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 251 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5472,6 +5472,17 @@ Final Order in the 2025 biennial review of Virginia Electric and Power Company (
 - Status: listed for reference (not machine-parsed into findings)
 
 Final Order granting Virginia Electric and Power Company (Dominion Energy Virginia) a certificate of public convenience and necessity (CPCN) to construct and operate the ~944 MW Chesterfield Energy Reliability Center and related transmission, with Rider CERC cost recovery under Va. Code § 56-585.1 A 6, Case No. PUR-2025-00037, Virginia State Corporation Commission, entered at Richmond November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g501!.PDF.
+
+---
+
+## Southwestern Electric Power Company (SWEPCO)
+- Collection: State PUC Audits | Source: Louisiana Public Service Commission
+- Docket: U-37794 | Audit type: n/a
+- Issued: 2025-11-24 | Industry: electric | FERC Form: n/a
+- Source page: https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=SWEPCO-U-37794
+- Status: listed for reference (not machine-parsed into findings)
+
+Application of Southwestern Electric Power Company (SWEPCO) for Authorization of a System Improvement Plan (SIP), including related rate recovery through Fuel Adjustment Clause (FAC) beginning June 1, 2026. Plan covers grid hardening (629 line-miles) and vegetation management (6,095 line-miles) across 11 Louisiana parishes. Filed November 24, 2025, published for intervention December 5, 2025. Listed for reference (metadata-only). Source: LPSC public docket portal, Docket U-37794, file sh4kA6z+3bk= (lpscpubvalence.lpsc.louisiana.gov).
 
 ---
 
