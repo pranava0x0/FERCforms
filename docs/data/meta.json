@@ -13,7 +13,8 @@
   "by_collection": {
     "ferc_audit": 120,
     "prudence_review": 14,
-    "state_audit": 61
+    "state_audit": 61,
+    "state_rate_case": 108
   },
   "listing_captured_at": "2026-02-03"
 }

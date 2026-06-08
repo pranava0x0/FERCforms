@@ -487,5 +487,33 @@
       }
     ],
     "generated_at": "2026-06-07"
+  },
+  "state_rate_case": {
+    "report_count": 108,
+    "finding_count": 0,
+    "other_matter_count": 0,
+    "recommendation_count": 0,
+    "by_industry": {
+      "electric": 99,
+      "gas": 7,
+      "unknown": 2
+    },
+    "by_year": {
+      "2005": 1,
+      "2012": 1,
+      "2014": 1,
+      "2018": 1,
+      "2019": 2,
+      "2021": 4,
+      "2022": 4,
+      "2023": 6,
+      "2024": 21,
+      "2025": 37,
+      "2026": 4
+    },
+    "by_function": {},
+    "themes": [],
+    "top_titles": [],
+    "generated_at": "2026-06-07"
   }
 }
