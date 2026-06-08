@@ -6,16 +6,21 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## ▶ CURRENT STATUS — 2026-06-08
 
-**Corpus (verified real, post-fabrication-cleanup):** 254 documents — 120 FERC audits + 14 prudence reviews + 16 state PUC audits + 104 state rate cases. 1155 findings. Source of truth: `docs/data/meta.json`.
+**Corpus (verified real):** 256 documents — 120 FERC audits + 14 prudence reviews + 18 state PUC audits + 104 state rate cases. 1173 findings. Source of truth: `docs/data/meta.json`.
 
 > **⚠️ 2026-06-08 — removed 70 FABRICATED records** (invented dockets + guessed URLs, `fetch=false`, never verified). They had inflated the count to a phantom 322. See ISSUES.md + AUDIT_STATUS.md. The old "322 / 73 state audits" numbers below are pre-cleanup and wrong.
 
+**Done this session (real-expansion, all verified):**
+- ✅ **MI Liberty distribution audits (4)** now fetched — added an honest-first browser-UA fallback to `fetch_doc` (informative UA first, browser UA only on 401/403). Consumers/DTE part1+2, 487 pp total, fully text-extractable. (was 0-page stubs)
+- ✅ **PA M&O audits +2 with findings** — PECO Energy (7 findings/22 recs) + National Fuel Gas Distribution (11/23). Generalized the Exhibit-I-2 parser to handle NFG's "III Title"/"IV – 1"/Exhibit-I-3 variant without regressing the 4 existing.
+- ✅ **Real rate cases restored** — IL ComEd P2024-0087 + Ameren, LA SWEPCO, NJ ACE (all fetch=true, real page counts).
+- ✅ **Fabrication + phantom guards** — `pipeline.verify_sources` live sweep; offline tests for placeholder/future-date, FERC-listing trace, and **git-tracked report.json** (the gitignore-phantom trap).
+
 **Remaining real-expansion work (only REAL, verified docs — never fabricate; run `python -m pipeline.verify_sources` before committing):**
-- **[high] Grow the State PUC Audits tab (16 real) with REAL audits.** Cleanest = more PA Bureau of Audits M&O audits (parseable, findings) at `puc.pa.gov/pcdocs/{id}.pdf`. Then NY DPS focused-operations audits (DMM guids + caption verify).
-- **[high] MI Liberty distribution audits (4) are real but `fetch=false`/0-page** — Cloudflare blocks scripted fetch, but a browser UA gets 200+PDF (verified live this session). Try a browser-like UA in `pipeline.fetch`/`sources` to actually download+extract them; else Chrome-MCP capture.
-- **[med] Restore real rate cases dropped as phantoms** that need a working fetch: `il_icc` ComEd P2024-0087 set + Ameren extras, `la_lpsc` SWEPCO (icc.illinois.gov 307-redirects + slow; la host slow). Re-add via `fetch=true` with verified URLs.
-- **[med] Browser-capture genuinely-walled states** (no real data at all now): OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA — per-state walls in docs/data-sources.md.
-- **[done 2026-06-08] Fabrication guards:** offline test + `pipeline.verify_sources` live sweep (DEAD/NON_PDF detection). 2 OH FirstEnergy 20-1502 records are real but WAF-blocks script re-verification — browser-confirm if ever in doubt.
+- **[high] More PA Bureau of Audits M&O audits** — the parser now handles both layouts, so each new one is cheap findings. Energy-scope only (skip water cos). Find via the PUC press-release archive → `pcdocs/{id}.pdf`. NY DPS focused-operations audits next (DMM guids + caption verify).
+- **[med] MI Liberty findings parser** — the 4 MI audits are text-extractable (0 scanned pp) but metadata-only; their consultant format differs from PA Exhibit-I-2. A dedicated parser would add findings.
+- **[med] Browser-capture genuinely-walled states** (no real data at all now): OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA — per-state walls in docs/data-sources.md. The new browser-UA fallback may unblock some (try first).
+- **[low] Browser-confirm 2 OH FirstEnergy 20-1502 records** — real but the F5 WAF blocks script re-verification (CMIDs authentic, provenance documented).
 
 ---
 
