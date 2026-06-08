@@ -1,6 +1,6 @@
 {
   "report_count": 322,
-  "finding_count": 1096,
+  "finding_count": 1187,
   "other_matter_count": 10,
   "recommendation_count": 1496,
   "by_industry": {
@@ -166,13 +166,13 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 40,
-      "report_count": 27,
+      "finding_count": 43,
+      "report_count": 29,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
+        "Settlement: agreement",
         "Reporting of Transactions with Associated (Affiliated) Companies",
-        "Recording of Carrier Property",
-        "Recording of Noncarrier Property"
+        "Recording of Carrier Property"
       ]
     },
     {
@@ -181,8 +181,8 @@
       "keywords": [
         "tariff"
       ],
-      "finding_count": 46,
-      "report_count": 26,
+      "finding_count": 47,
+      "report_count": 27,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -254,11 +254,11 @@
   "top_titles": [
     {
       "title": "Settlement: Agreement",
-      "count": 278
+      "count": 338
     },
     {
       "title": "Settlement: agreement",
-      "count": 33
+      "count": 40
     },
     {
       "title": "FERC Form No. 1 Reporting",
@@ -266,7 +266,7 @@
     },
     {
       "title": "Settlement: terms",
-      "count": 14
+      "count": 15
     },
     {
       "title": "Settlement: AGREEMENT",
@@ -303,6 +303,14 @@
     {
       "title": "Income Tax Receivables",
       "count": 6
+    },
+    {
+      "title": "Approval: $5,475 ",
+      "count": 5
+    },
+    {
+      "title": "Approval: $43,409 ",
+      "count": 5
     },
     {
       "title": "FERC Form No. 2 Reporting",
@@ -342,14 +350,6 @@
     },
     {
       "title": "Wholesale Storm Damage Revenues",
-      "count": 4
-    },
-    {
-      "title": "Commitment Fees",
-      "count": 4
-    },
-    {
-      "title": "Formula Rate Errors",
       "count": 4
     }
   ],

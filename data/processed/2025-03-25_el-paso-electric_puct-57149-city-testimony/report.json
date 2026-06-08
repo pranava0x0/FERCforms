@@ -22,7 +22,36 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $225,000\n",
+      "summary": "nse incurred during the Reconciliation Period to the Texas 11 jurisdiction, and that the Company be allowed to carry forward the estimated $225,000 12 impact ofthis proposal for final review in EPE's next fuel reconciliation case at which time 13 a final determination of whether Newman 6 should be",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $225,000 ",
+      "summary": "nse incurred during the Reconciliation Period to the Texas jurisdiction, 22 and that the Company be allowed to carry forward the estimated $225,000 impact of this 25 See the Direct Testimony of EPE witness Julissa Reza, page 27, lines 17-31 and Exhibit JIR-3. SOAH Docket NO. 473-25-05084 DIRECT TE",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Settlement: agreement",
+      "summary": "and presented testimony regarding the prudence of a $1.7 billion coal-fired power plant and related settlement agreements with Sierra Club. New ForkPublic Service Commission - Conducted inter-company statistical benchmarking analysis of Consolidated Edison Company to pr",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Settlement: agreement",
+      "summary": "s decision to retire the Welsh Unit 2 coal- fired generating unit in conjunction with a litigation settlement agreement with Sierra Club. Georgia Public Service Commission - Presented testimony before the Georgia Public Service Commission in Docket 3840-U, providing re",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

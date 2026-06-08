@@ -763,10 +763,33 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $9.98 ",
+        "summary": "d by the Commission, the new rates will not be effective until Commission action has been taken. If approved, a typical residential customer using 800 Kwh will see an increase of $9.98 per month, or $119.76 annually. The RRCA is shown as a separate line item on your bill. Residential & Small General",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Settlement: Agreement",
+        "summary": "d near Hettinger, North Dakota in Case No. PU-15-703. On January 5, 2016, the Commission approved a Settlement Agreement between Montana-Dakota and the Commission Advocacy Staff thereby authorizing the Company’s RRCA Rate 55 tariff effective with service rendered on and",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2523,8 +2546,36 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 3,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $3,614,892\n",
+        "summary": "00,597) Revenue Requirement - 2026 $741,412 $740,196 $739,032 $737,918 $736,857 $735,849 $4,431,264 Approved Projects - July - December 2025 Revenue Requirement: $3,614,892 Proposed Projects - 2025 Revenue Requirement: $583,875 Total Projected Revenue Requirement: $8,630,031 Projected Revenue Requir",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $3,614,892\n",
+        "summary": "tal Projected Revenue Requirement: $8,630,031 Projected Revenue Requirement from Approved Projects: Approved Projects - July - December 2025 Revenue Requirement: $3,614,892 Approved Projects - January - June 2026 Revenue Requirement: 3,566,978 $7,181,870 Projected Revenue Requirement from Proposed P",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $3.13 ",
+        "summary": "d by the Commission, the new rates will not be effective until Commission action has been taken. If approved, a residential customer using 800 kWh will see an increase of $3.13 per month or an increase of $37.56 annually. The TCA is shown as a separate line item on your bill. Residential & Small Gen",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -3786,11 +3837,52 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 4,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $225,000\n",
+        "summary": "nse incurred during the Reconciliation Period to the Texas 11 jurisdiction, and that the Company be allowed to carry forward the estimated $225,000 12 impact ofthis proposal for final review in EPE's next fuel reconciliation case at which time 13 a final determination of whether Newman 6 should be",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $225,000 ",
+        "summary": "nse incurred during the Reconciliation Period to the Texas jurisdiction, 22 and that the Company be allowed to carry forward the estimated $225,000 impact of this 25 See the Direct Testimony of EPE witness Julissa Reza, page 27, lines 17-31 and Exhibit JIR-3. SOAH Docket NO. 473-25-05084 DIRECT TE",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Settlement: agreement",
+        "summary": "and presented testimony regarding the prudence of a $1.7 billion coal-fired power plant and related settlement agreements with Sierra Club. New ForkPublic Service Commission - Conducted inter-company statistical benchmarking analysis of Consolidated Edison Company to pr",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Settlement: agreement",
+        "summary": "s decision to retire the Welsh Unit 2 coal- fired generating unit in conjunction with a litigation settlement agreement with Sierra Club. Georgia Public Service Commission - Presented testimony before the Georgia Public Service Commission in Docket 3840-U, providing re",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -8136,8 +8228,315 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 34,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $5,475 ",
+        "summary": "\"DERP\"), as approved in Commission OrderNo. 2015-512. U CI c. DESC agrees to a one-time proposed disallowance of $5,475 from the Company's I O 0 expense for lime at Williams Station. DESC further agrees to a one-time proposed ci disallowance of $43,409 from the Company'",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $43,409 ",
+        "summary": "pany's I O 0 expense for lime at Williams Station. DESC further agrees to a one-time proposed ci disallowance of $43,409 from the Company's DERP incremental costs. Neither of C) these removals will be treated as precedential by the Parties. m d. The cumulative balances o",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $43,409 ",
+        "summary": "rate distributed energy component ofthe overall fuel factor. m O I 14. DESC agreed to a one-time disallowance of $43,409 from the Company's DERP C hD ) incremental costs, which will not be treated as precedentialbythe Settling Parties. 15. DESC agreed to a one-time disal",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $5,475 ",
+        "summary": ", which will not be treated as precedentialbythe Settling Parties. 15. DESC agreed to a one-time disallowance of $5,475 from the Company's expense for lime at Williams Station, which will not be treated as precedential by the Settling Parties. Ol Ol 0 16. The Settlement",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $43,409 ",
+        "summary": "approve the DER Incremental Costs, which included an expense from 2019, and reject the proposed disallowance of $43,409 to the Incremental Costs whichwould result in calculations in Corrected ExhibitNo. (JTF-IO). (FarleyRebuttal at 8:3-5). Witness Farleytestifiedthe $43",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Approval: $43,409. ",
+        "summary": "related to DER Incremental Costs, DESC signed the Settlement Ol Ol 0 Agreement and accepted the disallowance of $43,409. With this acceptance, the Company and I O ORS agreed the monthly per account DER Incremental Costs would be: Residential $1.00, U CI Small/Medium Gene",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Approval: $43,409 ",
+        "summary": "$7.64, and Large General Service $100. I O 0 Commission Conclusion ci The Commissionagreesto the disallowance of $43,409 ofIncremental Costswhichresults C) in the following monthly per account DER Incremental Costs amounts: Residential $1.00, m Small/Medium General Servi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Approval: $5,475 ",
+        "summary": "ebuttal 6:15-21). In resolving this issue, DESC signed the Settlement Agreement and accepted the disallowance of $5,475 of these environmental costs. Ol Ol 0 Commission Conclusion I The Commission agrees to the disallowance of $5,475 of expenses for lime at Williams O U",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Approval: $5,475 ",
+        "summary": "5,475 of these environmental costs. Ol Ol 0 Commission Conclusion I The Commission agrees to the disallowance of $5,475 of expenses for lime at Williams O U CI Station. The Settlement Parties negotiated earnestly in good faith and agreed to the terms within I O 0 the Se",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Settlement: Agreement",
+        "summary": "ntto S.C. CodeAnn. 58-4-10(B). t) m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE 3 Z'. CI C. SettlementAgreement On March 26, 2024, the Company, ORS, and SCEUC (\"the Settlement Parties\" ) entered into a SettlementAgreement, acopyofwhichis attached as OrderExhibi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Settlement: Agreement",
+        "summary": "Agreement On March 26, 2024, the Company, ORS, and SCEUC (\"the Settlement Parties\" ) entered into a SettlementAgreement, acopyofwhichis attached as OrderExhibit 1.2 Among otherthings, m O I the SettlementParties agreedthe followingpre-filedtestimonieswouldbe admitted i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Settlement: Agreement",
+        "summary": "e Hyatt (Direct) 4. Omari R. Thompson (Direct). The SettlementParties also agreed as follows: i The Settlement Parties discovered a scrivener's error in the filed Settlement Agreement, and on March 28, 2024, ORS filed a Corrected SettlementAgreementwith the Commission. The Corrected SettlementAgreem",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Settlement: Agreement",
+        "summary": "a scrivener's error in the filed Settlement Agreement, and on March 28, 2024, ORS filed a Corrected SettlementAgreementwith the Commission. The Corrected SettlementAgreement is the one referencedthroughoutthis Orderas OrderExhibit I. m m DOCKETNO. 2024-2-E—ORDERNO. CI",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "Settlement: Agreement",
+        "summary": "and on March 28, 2024, ORS filed a Corrected SettlementAgreementwith the Commission. The Corrected SettlementAgreement is the one referencedthroughoutthis Orderas OrderExhibit I. m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE4 Z'. a. DESC's calculation of the N",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "Settlement: Agreement",
+        "summary": "815. The Settlement Parties agree the appropriate fuel factors for DESC to charge 1. pursuanttothis SettlementAgreementfortheperiodbeginningwiththefirstbilling m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE 7 Z'. CI cycle ofMay 2024 and extending through the las",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "Settlement: Agreement",
+        "summary": "tness testimony. No otherparty filed testimony. As a preliminary matter, the Parties introduced the Settlement Agreement, which was identified and received into evidence as Hearing Exhibit No. I. Upon agreement between all parties, the Chair held Hearing Exhibit 7 open",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 17,
+        "title": "Settlement: Agreement",
+        "summary": "2025.t Additionally, Witness Farley presented his rebuttal testimony and testified in support ofthe Settlement Agreement on behalfofthe Company. Witness Fang's exhibitswere acceptedinto evidenceascomposite HearingExhibit 5. 'itness Farley's exhibitswere acceptedinto evi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 18,
+        "title": "Settlement: Agreement",
+        "summary": "nation and review ofthe Company's power plant operations.\" All ORS Witnesses spoke in support ofthe Settlement Agreement. Witness Roland'sexhibitswere acceptedinto evidence ascompositeHearingExhibit9. sWitness Gordon's exhibitwas acceptedinto evidenceatHearingExhibit 8.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 19,
+        "title": "Settlement: Agreement",
+        "summary": "edrates to recover fuel costs incurred during the Review Period. 111. FINDINGS OF FACT Based on the Settlement Agreement, the testimony and exhibits received into evidence at the hearing, and the entire record of these proceedings, the Commission makes the following fin",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 20,
+        "title": "Settlement: Agreement",
+        "summary": "Facilities and Third Net Energy Metering for Renewable U CI Energy Facilities, were attached to the Settlement Agreement as Attachments A and B, including I O 0 0 the rates, terms and conditions forthe periodbeginning withthe firstbilling cycle ofMay 2024. 8. DESC propo",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 21,
+        "title": "Settlement: Agreement",
+        "summary": "Nos. 1-6 The evidence for these findings is contained in the Notice and is supported by the Ol Ol 0 Settlement Agreement; the testimony and exhibits presented by DESC and ORS; and is I uncontrovertedbythe Parties. O U DESC's witnesses, RobertL. Justice, Jr., andHenryE.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 22,
+        "title": "Settlement: Agreement",
+        "summary": "4-2-E—ORDERNO. CI APRIL, 2024 0 PAGE22 Z'. CI units at the Parr site in accordance with the Partial Settlement Agreement entered in Docket No. 2021-93-E andapprovedbyCommissionOrderNo. 2022-27. (DelkDirect 3:18-21). WitnessDelk informedthe Commission about the ongoing c",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 23,
+        "title": "Settlement: Agreement",
+        "summary": "Evidence and Conclusions for Findings ofFact No. 14 The evidence forthis finding is supportedbythe SettlementAgreement; the testimony and exhibits presentedby DESC and ORS; and is uncontroverted by the Parties. In Company Witness Farley's Rebuttal, the Company request",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 24,
+        "title": "Settlement: Agreement",
+        "summary": "$100. The Settlement Parties negotiated earnestly in good faith and agreed to the terms within the Settlement Agreement, and the Commission finds this disallowance to be just and reasonable and that this term of the Settlement Agreement will notbe treated as precedenti",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 25,
+        "title": "Settlement: Agreement",
+        "summary": "ent, and the Commission finds this disallowance to be just and reasonable and that this term of the Settlement Agreement will notbe treated as precedential. Evidence and Conclusion for Finding ofFactNo. 15 Witness Hyatt testified, during ORS's review ofthe Company's env",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 26,
+        "title": "Settlement: Agreement",
+        "summary": "orded or paid until March 2023. (Farley Rebuttal 6:15-21). In resolving this issue, DESC signed the Settlement Agreement and accepted the disallowance of $5,475 of these environmental costs. Ol Ol 0 Commission Conclusion I The Commission agrees to the disallowance of $5",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 27,
+        "title": "Settlement: terms",
+        "summary": "ommission agrees to the disallowance of $5,475 of expenses for lime at Williams O U CI Station. The Settlement Parties negotiated earnestly in good faith and agreed to the terms within I O 0 the Settlement Agreement, and the Commission finds this disallowance to bejust and reasonable ci and that thi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 28,
+        "title": "Settlement: Agreement",
+        "summary": "The Settlement Parties negotiated earnestly in good faith and agreed to the terms within I O 0 the Settlement Agreement, and the Commission finds this disallowance to bejust and reasonable ci and that this term ofthe SettlementAgreement will notbe treated as precedenti",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 29,
+        "title": "Settlement: Agreement",
+        "summary": "nt, and the Commission finds this disallowance to bejust and reasonable ci and that this term ofthe SettlementAgreement will notbe treated as precedential. C) Evidence and Conclusions for Findings ofFact No. 16-17 m Witness Roland testifiedto examiningthe books andreco",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 30,
+        "title": "Settlement: Agreement",
+        "summary": "2:4-10, 13:4-9, 14:4-8, and 15:3-12 and Exhibits 3, 5-7). Pursuant to the Page 6, Section B.4 ofthe Settlement Agreement, the Settlement Parties agree to the amounts in ORS Witness Roland's Direct Testimony and Exhibits for the Fuel Adjustment Clause forthe Actual Perio",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 31,
+        "title": "Settlement: Agreement",
+        "summary": "d based upon the entire record of these ci proceedings, the Commission finds and concludes that the Settlement Agreement is just, C) reasonable, and in the public interest. m Evidence and Conclusions for Findings ofFactNos. 22 and 23 Dr. Fang prepared a report on behalf",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 32,
+        "title": "Settlement: Agreement",
+        "summary": "-210. Afterhearingandevaluatingthetestimonyofthewitnesses andbasedonthe Commission's m review ofthe SettlementAgreement, the testimony and exhibits submitted during the hearing, and the findings set forth herein, the Commission adopts as just and reasonable and in the",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 33,
+        "title": "Settlement: Agreement",
+        "summary": "Commission adopts as just and reasonable and in the public interest all terms and provisions ofthe SettlementAgreement as a comprehensive resolution ofall issues in this docket. IT IS THEREFORE ORDERED THAT: 1. The SettlementAgreement, incorporated herein and attached",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 34,
+        "title": "Settlement: Agreement",
+        "summary": "ent as a comprehensive resolution ofall issues in this docket. IT IS THEREFORE ORDERED THAT: 1. The SettlementAgreement, incorporated herein and attached as Order Exhibit 1, is a reasonable resolution to the issues in this docket and is in the public interest and is he",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -8196,11 +8595,324 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 34,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $5,475 ",
+        "summary": "ram (\"DERP\"), as approved in Commission OrderNo. 2015-512. c. DESC agrees to a one-time proposed disallowance of $5,475 from the Company's expense forlime at Williams Stations. DESC furtheragrees to a one-time proposed disallowance of $43,409 fromthe Company's DERP incr",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $43,409 ",
+        "summary": "om the Company's expense forlime at Williams Stations. DESC furtheragrees to a one-time proposed disallowance of $43,409 fromthe Company's DERP incremental costs. Neitherof these removals will be treated as precedential by the Parties. d. The cumulative balances ofthe Co",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Settlement: Agreement",
+        "summary": "Costs ) 4& forDominion Energy South Carolina, Inc. ) CORRECTED SETTLEMKNT Ol AGREEMENT ) 0 ) I This Settlement Agreement is made by and between the South Carolina Office of Ci 0 Regulatory Staff(\"ORS\"), Dominion Energy South Carolina, Inc. (\"DESC\" or \"Company\" ), and Ci",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Settlement: Agreement",
+        "summary": "n\" ) pursuant to the procedure established in S.C. m Code Ann. ) 58-27-865, and the Parties to this Settlement Agreement are parties ofrecord in the above-captioned docket; WHEREAS, the actual period under review in this docket is January I, 2023, through December 31, 2",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Settlement: Agreement",
+        "summary": "ionthis Settlement O I io Agreement. C) 2. The Parties agree to those items set out below, and this Settlement Agreement is ia ci hereby adopted, accepted, and acknowledged as the agreement ofthe Parties. co 4& A. STIPULATIONS WITH RESPECT TO TESTIMONY AND CROSS- Ol EXA",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Settlement: Agreement",
+        "summary": "\"Stipulated ci Testimony\" ). to C) a. DESC witnesses: i. Johnathan T. Farley m With respect to this Settlement Agreement, Company Witness Farley and ORS Witness Hyatt are the witnesses designated to be primarily responsible for providing support for the SettlementAgreem",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Settlement: Agreement",
+        "summary": "itness Hyatt are the witnesses designated to be primarily responsible for providing support for the SettlementAgreementat the hearing scheduled inthis case. The Parties to the Settlementagree to offer no other evidence in the proceeding other than the Stipulated Testim",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Settlement: Agreement",
+        "summary": "offer no other evidence in the proceeding other than the Stipulated Testimony and Exhibits and this SettlementAgreement with the exception ofchanges to thatwhich would be presented via an erratasheet orthrough awitnessnoting a correctionorclarification, consists ofawit",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Settlement: Agreement",
+        "summary": "rs m B.5. The Parties agree the appropriate fuel factors for DESC to charge pursuant to this O I io Settlement Agreement for the period beginning with the first billing cycle of May 2024 and C) extending through the lastbilling cycle ofApril 2025 are listedbelow. in O c",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Settlement: Agreement",
+        "summary": "me ofthis filing. O I O 0 C. RKMAINING SKTTLKMKNT TERMS AND CONDITIONS ci C. The Parties agree this SettlementAgreement is reasonable, is inthe public interest, 1 to C) is inaccordancewithlawandregulatorypolicy, andagreeto supporttheresolutionofissuesagreed to herein i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Settlement: Agreement",
+        "summary": "reed to herein in this proceeding and not to undertake any action to undermine that support. This m SettlementAgreementin no wayconstitutes awaiveror acceptance ofthe position ofanyParty or its affiliates in any current orfutureproceeding in South Carolina oranyotherju",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 12,
+        "title": "Settlement: Agreement",
+        "summary": "uth Carolina oranyotherjurisdiction. Except as specificallyprovided otherwisepreviouslyherein, this SettlementAgreementdoes not establish any precedent with respect to the issues resolved herein and in no way precludes any Party from advocating an alternative position",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Settlement: Agreement",
+        "summary": "ative position in any current or future proceeding in South Carolina or any otherjurisdiction. This Settlement Agreement in no way constitutes a waiveroracceptance ofthe position ofany Party concerning the requirements ofS.C. Code Ann. ) 58—27—865 in any future proceedi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "Settlement: Agreement",
+        "summary": "ty facilities so as to provide reliable and high I hD qualityutility services. C) ORS believes this Settlement Agreement reached among the Parties serves the public iii ci interest as defined above. CO 4& C.3. TheParties agree this SettlementAgreementmustbereadandconstr",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "Settlement: Agreement",
+        "summary": "ng the Parties serves the public iii ci interest as defined above. CO 4& C.3. TheParties agree this SettlementAgreementmustbereadandconstruedas awhole Ol 0 and to cooperate in good faith with one another in recommending to the Commission that this I Settlement Agreemen",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "Settlement: Agreement",
+        "summary": "Ol 0 and to cooperate in good faith with one another in recommending to the Commission that this I Settlement Agreement be accepted and approved by the Commission in its entirety as a fair, Ci 0 reasonable and full resolution ofthe issues set forth in the Company's App",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 17,
+        "title": "Settlement: Agreement",
+        "summary": "reviewingcourtintheeventofappeal ci to defend and support any Commission order issued approvingthis Settlement Agreement and the hD C) terms and conditions contained herein. C.4. The Parties offer this Settlement Agreement to the Commission in its entirety as a m 0 comp",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 18,
+        "title": "Settlement: Agreement",
+        "summary": "ttlement Agreement and the hD C) terms and conditions contained herein. C.4. The Parties offer this Settlement Agreement to the Commission in its entirety as a m 0 comprehensive settlement which is the product ofintensive and extensive negotiations between iu Ccl ni the",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 19,
+        "title": "Settlement: Agreement",
+        "summary": "roduct ofintensive and extensive negotiations between iu Ccl ni the Parties. The Parties agree this Settlement Agreement confers benefits to Parties in exchange C) 0 for concessions by Parties. As such, the Parties ask the Commission to approve this Settlement Ol Agreem",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 20,
+        "title": "Settlement: Agreement",
+        "summary": "ir attorneys, hired consultants, and any independent contractors) agree they have entered into this SettlementAgreement freely andvoluntarily andnone ofthemhave beenpressured orunduly encouraged to enter into this Settlement Agreement. Page 10 m m O 0 C.6. Except as sp",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 21,
+        "title": "Settlement: Agreement",
+        "summary": "ement freely andvoluntarily andnone ofthemhave beenpressured orunduly encouraged to enter into this Settlement Agreement. Page 10 m m O 0 C.6. Except as specifically provided otherwise previously herein or as necessary to Z'. O effectuate the terms ofthis Settlement Agr",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 22,
+        "title": "Settlement: Agreement",
+        "summary": "cifically provided otherwise previously herein or as necessary to Z'. O effectuate the terms ofthis Settlement Agreement, the Parties agree that signing this Settlement Agreement (a) will not constrain, inhibit, impair, or prejudice them or their affiliates'rguments m o",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 23,
+        "title": "Settlement: Agreement",
+        "summary": "tanyPartymay seekoradvocate forinanyfutureproceeding. Ifthe Commission R O declines to approve this Settlement Agreement in its entirety and without modification, then any CO 4& Party may withdraw from the Settlement Agreementwithout penalty or further obligation. Ol 0",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 24,
+        "title": "Settlement: Agreement",
+        "summary": "ment Agreement in its entirety and without modification, then any CO 4& Party may withdraw from the Settlement Agreementwithout penalty or further obligation. Ol 0 C.7. This Settlement Agreement shall be interpreted according to South Carolina law. I C.8. This Settlemen",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 25,
+        "title": "Settlement: Agreement",
+        "summary": "rty may withdraw from the Settlement Agreementwithout penalty or further obligation. Ol 0 C.7. This Settlement Agreement shall be interpreted according to South Carolina law. I C.8. This Settlement Agreement contains the final and complete agreement of the O 0 O Parties",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 26,
+        "title": "Settlement: Agreement",
+        "summary": "0 C.7. This Settlement Agreement shall be interpreted according to South Carolina law. I C.8. This Settlement Agreement contains the final and complete agreement of the O 0 O Parties. There are no otherterms or conditions to which the Parties have agreed. I O 0 C.9. Th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 27,
+        "title": "Settlement: Agreement",
+        "summary": "conditions to which the Parties have agreed. I O 0 C.9. The Parties represent that the terms ofthis Settlement Agreement are based upon O full and accurate informationknown as ofthe date this SettlementAgreement is executed. If, after hD C) execution, but prior to a Com",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 28,
+        "title": "Settlement: Agreement",
+        "summary": "ofthis Settlement Agreement are based upon O full and accurate informationknown as ofthe date this SettlementAgreement is executed. If, after hD C) execution, but prior to a Commission decision on the merits ofthis proceeding, a Party is made aware of information that",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 29,
+        "title": "Settlement: Agreement",
+        "summary": "t conflicts, nullifies, or is otherwise materially different than the m information upon which this Settlement Agreement is based, that Party may withdraw from the Settlement Agreement with written notice to every otherParty. C.IO. This Settlement Agreement shall bind a",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 30,
+        "title": "Settlement: Agreement",
+        "summary": "n the m information upon which this Settlement Agreement is based, that Party may withdraw from the Settlement Agreement with written notice to every otherParty. C.IO. This Settlement Agreement shall bind and inure to the benefit of each of the signatories hereto and th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 31,
+        "title": "Settlement: Agreement",
+        "summary": "arty may withdraw from the Settlement Agreement with written notice to every otherParty. C.IO. This Settlement Agreement shall bind and inure to the benefit of each of the signatories hereto and their representatives, predecessors, successors, assigns, agents, sharehold",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 32,
+        "title": "Settlement: Agreement",
+        "summary": "greement ofthe Parties hereto. Therefore, each Party acknowledges its consent and agreement to this Settlement Agreement, by Page 11 m m O 0 affixing its signature or by authorizing its counsel to affix his or her signature to this document Z'. O where indicated below.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 33,
+        "title": "Settlement: Agreement",
+        "summary": "ture represents his or her representation that his or her client has authorized the execution ofthe Settlement Agreement. Facsimile signatures and e-mail m signatures shall be as effective as original signatures to bind any Party. This document may be O I hD signed in c",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 34,
+        "title": "Settlement: Agreement",
+        "summary": "re pages combined with the body ofthe document C) constituting an original and provable copy ofthis Settlement Agreement. ia ci [SIGNATURES ON THE FOLLOWING PAGES] co 4& Ol 0 I O 0 O I O 0 ci to C) m Page 12 m m O 0 Z'. WEAGREE: O Representing the South Carolina Office",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "ferc_audit",
@@ -9338,8 +10050,126 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 13,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $1,307,293,308 ",
+        "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,307,293,308 as FPL’s reasonably estimated 2023 costs and an under-recovery amount of $14,860,970 as FPL’s jurisdictional cost recovery true-up amount, including i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $212,589,753 ",
+        "summary": "d 2022 Storm Protection Plan filed in Docket No. 20220048-EI. Based on our review of the record, we approve $212,589,753 as TECO’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $90,584,791 for the period January 2024 through December 2024. 2",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $783,792,564 ",
+        "summary": "ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 17 Based on our review of the record, we approve $783,792,564 as DEF’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $201,370,792 for the period January 2024 through December 2024. 3",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $13,620,916 ",
+        "summary": "proved Storm Protection Plan filed in Docket No. 20220049-EI. Based on our review of the record, we approve $13,620,916 as FPUC’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $2,448,891 for the period January 2024 through December 2024. 4.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $1,389,706,289 ",
+        "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,389,706,289 as FPL’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $513,855,741 for the period January 2024 through December 2024. S",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Settlement: agreement",
+        "summary": "-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 3 Florida, LLC (DEF) in 2020. All of the utilities reached settlement agreements with various intervenors regarding the SPPs prior to final hearing. We approved these settlement agreements on August 28, 2020.1 On March 9, 2022, p",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Settlement: agreement",
+        "summary": "nt agreements with various intervenors regarding the SPPs prior to final hearing. We approved these settlement agreements on August 28, 2020.1 On March 9, 2022, pursuant to Sections 366.96(5) and 366.96(6), F.S., and consistent with the terms of the above-referenced set",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Settlement: agreement",
+        "summary": "nt to Sections 366.96(5) and 366.96(6), F.S., and consistent with the terms of the above-referenced settlement agreements,2 FPL, TECO, and DEF filed their first updated SPPs for our review.3 On that same date, Florida Public Utilities Company (FPUC) submitted its initia",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Settlement: agreement",
+        "summary": "da Power & Light Company; and 20200092-EI, In re: Storm Protection Plan cost recovery clause. 2 The settlement agreements required these utilities to file updated plans in 2022, consistent with the requirement in section 396.96(6), F.S., that we are to review utility SP",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Settlement: Agreement",
+        "summary": "o the facts in the record related to actual costs incurred in 2022. A. TECO, DEF & FPL Based on the Settlement Agreements we approved in Order No. PSC-2020-0293-AS-EI,10 OPC takes no position on the factors only for TECO, DEF, and FPL. The remaining intervenors concur w",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Settlement: Agreement",
+        "summary": "PP and SPPCRC dockets for TECO, DEF, and FPL/Gulf Power Company. FPUC was not a party to any of the Settlement Agreements approved in that Order. ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 7 1. TECO In support of TECO’s 2022 true-up recovery amount, TECO",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Settlement: Agreement",
+        "summary": "ng interest, for the period January 2022 through December 2022. B. FPUC FPUC was not a party to the Settlement Agreements we approved in Order No. PSC- 2020-0293-AS-EI, and submitted its initial SPP later than the other utilities.11 Because of these distinctions and the",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Settlement: agreement",
+        "summary": "Nos. 20190110-EI, 20190222-EI & 20210016-EI, In re: Petition for limited proceeding to approve 2021 settlement agreement, including general base rate increases, by Duke Energy Florida, LLC. ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 20 3. FPUC FPUC shall",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -9460,8 +10290,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $31,435,485",
+        "summary": "ly 18, 19, 20, 21 and 28, 2023. The PULJ issued a Proposed Order on September 6, 2023,1 authorizing $31,435,485 of the Company’s request, and denying approval of the remaining request. Additionally, on May 31, 2023, the Maryland Office of People’s Counsel (“OPC”) and Potomac Edison, with the sup",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false

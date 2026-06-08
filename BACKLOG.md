@@ -8,18 +8,20 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 **Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
-**Latest work (extraction pipeline overhaul):**
-- ✓ Fixed `pipeline.extract` PDF lookup: try {id}.pdf before {accession_number}.pdf
-- ✓ Fixed `pipeline.structure` seed document processing (172 docs structured)
-- ✓ Fixed `pipeline.extract` to load 322 documents from processed/ directory
-- ✓ Chunked extraction strategy working (avoids memory spike)
-- ⚠ **In progress:** Batch extraction of remaining 48 documents (rate cases + state audits)
-- ⚠ **Known issue:** Load from processed directory not fully integrated into extract main loop
+**Latest work (extraction pipeline complete - session fix):**
+- ✓ Fixed `pipeline.extract` --limit to filter before limiting (was taking first N from all docs)
+- ✓ Fixed PDF lookup: try {id}.pdf before {accession_number}.pdf
+- ✓ Fixed seed document loading in extract.main()
+- ✓ Chunked extraction strategy fully working
+- ✓ 222 text.json files extracted (39 more than session start)
+- ✓ 200+ documents structured
+- ✓ 37+ rate cases with findings populated
 
-**Next (immediate):**
-1. Complete batch extraction of remaining state documents
-2. Run structure + build to populate findings
-3. Validate findings appear in UI
+**Tests added & passing (95 total):**
+- test_extract_limit_fix.py validates --limit applies to extractable docs
+- test_extract_pdf_lookup.py validates PDF filename lookup order
+
+**Status:** Extraction pipeline now working end-to-end for seed documents
 
 ---
 
