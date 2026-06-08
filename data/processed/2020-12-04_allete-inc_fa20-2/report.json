@@ -31,7 +31,7 @@
     {
       "index": 1,
       "title": "Transmission Incentives",
-      "summary": "ALLETE accepts this finding and the related recommendations. 2. Accounting for Environmental Costs It is ALLETE’s position that this finding overlooks important policy considerations that should inform the proper accounting of related expenses. Nonetheless, ALLETE accepts this finding and the related recommendations. 3. Transmission and Distribution Plant Accounting ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this fi",
+      "summary": "ALLETE’s method for computing Pre-funded Allowance for Funds Used During Construction (AFUDC) for its transmission incentive projects was contrary to the Commission’s orders. As a result, ALLETE overstated the transmission plant balances used to compute its annual transmission revenue requirements, which led to overbillings to wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -69,7 +69,7 @@
     {
       "index": 2,
       "title": "Accounting for Environmental Costs",
-      "summary": "It is ALLETE’s position that this finding overlooks important policy considerations that should inform the proper accounting of related expenses. Nonetheless, ALLETE accepts this finding and the related recommendations. 3. Transmission and Distribution Plant Accounting ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE acce",
+      "summary": "ALLETE improperly recorded environmental mitigation project costs of $4.2 million in Account 930.2, Miscellaneous General Expenses. As a result, ALLETE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -102,7 +102,7 @@
     {
       "index": 3,
       "title": "Transmission and Distribution Plant Accounting",
-      "summary": "ALLETE accepts this finding and the related recommendations. 4. Accounting for Long-Term Debt and Interest Expense ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE",
+      "summary": "ALLETE improperly recorded distribution assets in transmission plant accounts and transmission assets in distribution plant accounts. As a result of the transmission and distribution asset misclassification, ALLETE overstated its annual transmission revenue requirement which led to overbillings to wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -135,7 +135,7 @@
     {
       "index": 4,
       "title": "Accounting for Long-Term Debt and Interest Expense",
-      "summary": "ALLETE accepts this finding and the related recommendations. 5. Accounting Misclassifications ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendat",
+      "summary": "ALLETE improperly recorded proceeds from long-term debt instruments in Account 186, Miscellaneous Deferred Debits. In addition, ALLETE improperly recorded interest expense associated with the debt instruments in Account 920, Administrative and General Salaries. As a result, ALLETE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -173,7 +173,7 @@
     {
       "index": 5,
       "title": "Accounting Misclassifications",
-      "summary": "ALLETE accepts this finding and the related recommendations. 6. Application of Nonapproved Depreciation Rates ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective ac",
+      "summary": "ALLETE improperly recorded various administrative and general (A&G) expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting for certain A&G expenses, ALLETE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -211,7 +211,7 @@
     {
       "index": 6,
       "title": "Application of Nonapproved Depreciation Rates",
-      "summary": "ALLETE accepts this finding and the related recommendations and will be submitting the required application to FERC under Section 205. 7. FERC Form No. 1 Reporting ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective action, and ALLETE will provide copies of any written policies and procedures developed in response to the recom",
+      "summary": "ALLETE applied state- approved depreciation rates to assets included in its wholesale transmission formula rate determination but had not previously filed these depreciation rates with the Commission and obtained Commission approval. In addition, ALLETE improperly recorded depreciation expenses associated with plant held for future use in Account 403, Depreciation Expense, instead of Account 421, Miscellaneous Nonoperating Income. As a result of ALLETE’s improper accounting for depreciation expenses associated with plant held for future use, ALLETE overstated its annual transmission revenue requirement which led to overbillings to wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -249,7 +249,7 @@
     {
       "index": 7,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "ALLETE accepts this finding and the related recommendations. As requested at page 7 of the Draft Audit Report, ALLETE will submit within 30 days of the issuance of the final audit report a plan for implementing the audit recommendations. ALLETE will also make quarterly reports of its progress in completing each corrective action, and ALLETE will provide copies of any written policies and procedures developed in response to the recommendations. If you have any questions regarding this filing, please contact me at (218) 723- 3963 or dmoeller@allete.com. Yours truly, David R. Moeller Senior Attor",
+      "summary": "ALLETE did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. D.",
       "is_other_matter": false,
       "recommendations": [
         {

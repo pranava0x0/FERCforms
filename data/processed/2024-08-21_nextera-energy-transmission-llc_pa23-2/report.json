@@ -30,12 +30,12 @@
     "3-Q",
     "60"
   ],
-  "finding_count": 5,
+  "finding_count": 6,
   "findings": [
     {
       "index": 1,
       "title": "Acquisition Integration Cost Tracking",
-      "summary": "NEET incurred $8,801 of acquisition-related costs that it allocated to the GridLiance Transcos, which then recovered these costs through FERC-jurisdictional rates. As a result, the GridLiance Transcos inappropriately billed FERC-jurisdictional customers for acquisition-related costs without Commission approval.",
+      "summary": "NEET incurred $8,801 of acquisition-related costs that it allocated to the GridLiance Transcos, which 4 These sales are limited to customers located: (i) in the balancing area authorities operated by Florida Power Corporation (d/b/a Duke Energy Florida, LLC), JEA, Seminole Electric Cooperative, Tampa Electric Company, and City of Tallahassee; and, (ii) outside of Peninsular Florida. See Florida Power & Light Company, Market-Based Rate Tariff, Volume No. 7, § 8 Limitations and Exemptions Regarding Market-Based Rate Authority (1.0.0). 5 After the consolidation of Gulf Power’s OATT into the FPL OATT, see supra n.3, FPL’s peninsular and panhandle transmission systems both served customers under the FPL OATT, with separate billing determined by the OATT’s Attachment H-1, Peninsular Florida System Network Transmission Service Rate, and the Attachment H-2, NWFL System Formula Rate (for panhandle service). 6 See Open Access and Priority Rights on Interconnection Customer’s Interconnection Facilities, Order No. 807, 150 FERC ¶ 61,211, at P 89 (2015) (discussing interconnection facility owner’s eligibility for the blanket waiver granted by Order No. 807). then recovered these costs through FERC-jurisdictional rates. As a result, the GridLiance Transcos inappropriately billed FERC-jurisdictional customers for acquisition-related costs without Commission approval.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -73,7 +73,7 @@
     {
       "index": 2,
       "title": "Accounting for Lobbying Expenses",
-      "summary": "NEET improperly recorded $139,385 of lobbying expenses on the books of the GridLiance Transcos in Account 561.5, Reliability, Planning, and Standards Development, a transmission function account, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political, and Related Activities. This resulted in the GridLiance Transcos inappropriately including these costs in their FERC- jurisdictional rates. As a result, FERC-jurisdictional customers were improperly billed for lobbying expenses by the GridLiance Transcos.",
+      "summary": "NEET improperly recorded $139,385 of lobbying expenses on the books of the GridLiance Transcos in Account 561.5, Reliability Planning and Standards Development, a transmission function account, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political, and Related Activities. This resulted in the GridLiance Transcos inappropriately including these costs in their FERC-jurisdictional rates. As a result, FERC-jurisdictional customers were improperly billed for lobbying expenses by the GridLiance Transcos.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -167,7 +167,7 @@
     {
       "index": 5,
       "title": "Reporting of Transactions with Associated (Affiliated) Companies",
-      "summary": "The FERC Form No. 1 filings of Trans Bay Cable and the GridLiance Transcos reported transactions with affiliated companies in a manner that lacked transparency and was inconsistent with Commission reporting requirements.",
+      "summary": "The FERC Form No. 1 filings of Trans Bay Cable and the GridLiance Transcos reported transactions with affiliated companies in a manner that lacked transparency and was inconsistent with Commission reporting requirements. Other Matter:",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -181,6 +181,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 6,
+      "title": "Acquisition-Related Employee Incentive Costs",
+      "summary": "NEET and Trans Bay Cable incurred $257,000 of employee retention expenses related to the Trans Bay Cable acquisition but did not track these costs as acquisition- related. NEET is encouraged to clarify its internal policies regarding merger and acquisition costs to ensure transparent and accurate cost tracking for future merger- and acquisition-related costs. D. List of",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

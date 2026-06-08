@@ -29,31 +29,10 @@
   "findings": [
     {
       "index": 1,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "National Fuel did not correctly derive the average daily short-term debt component of its AFUDC rate calculation, as it only considered a portion of the short- term debt borrowed in the month such debt was incurred. National Fuel also incorrectly applied the annual AFUDC rate it calculated to the period March through February of each year, rather than January through December, as specified in the Commission’s regulations. As a result, the AFUDC rates calculated and used exceeded the maximum annual AFUDC rates allowed by the Commission in years when short-term debt was outstanding for the entir",
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "National Fuel did not correctly derive the average daily short-term debt component of its AFUDC rate calculation, as it only considered a portion of the short-term debt borrowed in the month such debt was incurred. National Fuel also incorrectly applied the annual AFUDC rate it calculated to the period March through February of each year, rather than January through December, as specified in the Commission’s regulations. As a result, the AFUDC rates calculated and used exceeded the maximum annual AFUDC rates allowed by the Commission in years when short-term debt was outstanding for the entire year. For those years, this resulted in an over- accrual of AFUDC, which overstated gas plant in service and associated amounts for depreciation and accumulated deferred income taxes.",
       "is_other_matter": false,
-      "recommendations": [
-        {
-          "number": 1,
-          "text": "Revise accounting policies and procedures to ensure it includes construction work in progress (CWIP), equity, and debt balances in its AFUDC rate calculations in accordance with the requirements of Gas Plant Instruction (GPI) No. 3(17).",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Provide training to relevant staff on the revised AFUDC rate calculation procedures and develop a training program that supports the provision of periodic training in this area, as needed.",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Based on the calculations, in periods that the AFUDC rate used exceeded the maximum rate allowed pursuant to GPI No. 3(17), submit proposed accounting entries and supporting documentation to DAA that reflects corrections to remove over-accrued AFUDC balances from plant and associated accounts, such as accumulated depreciation, deferred taxes, and depreciation expense, in National Fuel’s books and records. Submit entries and documentation within 60 days from the issuance of this audit report.",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Revise gas plant in service and other account balances impacted by over- accrual of AFUDC after receiving DAA’s assessment of the proposed accounting entries. Restate and footnote the balances reported in the FERC Form No. 2 in the current and comparative years of the report, as necessary to reflect and disclose the revisions.",
-          "source_page": null
-        }
-      ]
+      "recommendations": []
     },
     {
       "index": 2,
@@ -78,17 +57,9 @@
         },
         {
           "number": 8,
-          "text": "After receiving from DAA the results from its review of the proposed accounting entries and supporting documentation, adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of nonoperating costs and affiliate transactions in National Fuel’s next FERC Form No. 2.",
+          "text": "After receiving from DAA the results from its review of the proposed accounting entries and supporting documentation, adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of nonoperating costs and affiliate transactions in National Fuel’s next FERC Form No. 2. Valuation Method Used for System Gas Activities",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 3,
-      "title": "Valuation Method Used for System Gas Activities",
-      "summary": "National Fuel improperly valued certain system gas activities at 90 percent of the Cash-Out Index Price, rather than 100 percent of the Cash-Out Index. As a result, National Fuel understated the balances in Account 117.4, Gas Owed to System Gas, and various operating expense accounts used to record system gas activities under the fixed asset method. National Fuel also improperly calculated the October 2018 production Monthly Index Price, which resulted in it using a higher index price and overpaying a non-affiliated shipper when cashing out its imbalance.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 9,
           "text": "Revise accounting policies and procedures to ensure it values system gas at the current market price consistent with its Tariff and the fixed asset method of accounting.",
@@ -107,9 +78,16 @@
       ]
     },
     {
+      "index": 3,
+      "title": "Valuation Method Use for System Gas Activities",
+      "summary": "National Fuel improperly valued certain system gas activities at 90 percent of the Cash- Out Index Price, rather than 100 percent of the Cash-Out Index. As a result, National Fuel understated the balances in Account 117.4, Gas Owed to System Gas, and various operating expense accounts used to record system gas activities under the fixed asset method. National Fuel also improperly calculated the October 2018 production Monthly Index Price, which resulted in it using a higher index price and overpaying a non-affiliated shipper when cashing out its imbalance.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
       "index": 4,
       "title": "Accounting for Fuel and Lost and Unaccounted for Gas",
-      "summary": "National Fuel improperly recorded amounts for LAUF and gas used for underground storage compressor stations in a transmission expense account rather than in production and gas storage expense accounts. Additionally, National Fuel recorded the cost of gas purchased to replace system gas encroachments in the incorrect production gas supply expense account. National Fuel’s improper account classifications reduced the transparency of these gas activities reported in the FERC Form No. 2.",
+      "summary": "National Fuel improperly recorded amounts for lost and unaccounted for gas (LAUF) and gas used for underground storage compressor stations in a transmission expense account rather than in production and gas storage expense accounts. Additionally, National Fuel recorded the cost of gas purchased to replace system gas encroachments in the incorrect production gas supply expense account. National Fuel’s improper account classifications reduced the transparency of these gas activities reported in the FERC Form No. 2.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -129,9 +107,17 @@
         },
         {
           "number": 15,
-          "text": "Include a footnote disclosure to explain changes in the presentation of imbalances in its next annual FERC Form No. 2 filing. Accounting for Shipper Imbalances and Cash Outs",
+          "text": "Include a footnote disclosure to explain changes in the presentation of imbalances in its next annual FERC Form No. 2 filing.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Shipper Imbalances and Cash Outs",
+      "summary": "National Fuel improperly netted shipper imbalance payables and receivables in Account 174, Miscellaneous Current and Accrued Assets. National Fuel also improperly netted imbalance cash-out settlement losses and gains in Account 495, Other Gas Revenues and Account 182.3, Other Regulatory Assets. National Fuel’s netting reduced the transparency of these gas activities reported in the FERC Form No. 2. D. Summary of",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 16,
           "text": "Revise its accounting policies and procedures for imbalances and cash-outs to ensure consistency with Commission requirements.",
@@ -153,13 +139,6 @@
           "source_page": null
         }
       ]
-    },
-    {
-      "index": 5,
-      "title": "Accounting for Shipper Imbalances and Cash-Outs",
-      "summary": "National Fuel improperly netted shipper imbalance payables and receivables in Account 174, Miscellaneous Current and Accrued Assets. National Fuel also improperly netted imbalance cash-out settlement losses and gains in Account 495, Other Gas Revenues and Account 182.3, Other Regulatory Assets. National Fuel’s netting reduced the transparency of these gas activities reported in the FERC Form No. 2.",
-      "is_other_matter": false,
-      "recommendations": []
     }
   ],
   "structured": true

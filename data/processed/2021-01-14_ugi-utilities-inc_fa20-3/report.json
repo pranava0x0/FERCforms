@@ -26,12 +26,12 @@
   "forms": [
     "1"
   ],
-  "finding_count": 9,
+  "finding_count": 10,
   "findings": [
     {
       "index": 1,
       "title": "Excess Accumulated Deferred Income Tax",
-      "summary": "UGIU improperly recorded the excess ADIT related to the 2017 Tax Cuts and Jobs Act in Account 282, Accumulated Deferred Income Taxes – Other Property and Account 190, Accumulated Deferred Income Taxes. In addition, UGIU improperly excluded excess and deficient ADIT, created as a result of the 2017 Tax Cuts and Jobs Act, from its wholesale transmission formula rate computation. As a result, UGIU overstated its annual transmission revenue requirement by approximately $357,476 and overbilled wholesale transmission customers in 2018.",
+      "summary": "UGIU improperly recorded the excess Accumulated Deferred Income Taxes (ADIT) related to the 2017 Tax Cuts and Jobs Act in Account 282, Accumulated Deferred Income Taxes – Other Property and Account 190, Accumulated Deferred Income Taxes. In addition, UGIU improperly excluded excess and deficient ADIT, created as a result of the 2017 Tax Cuts and Jobs Act, from its wholesale transmission formula rate computation. As a result, UGIU overstated its annual transmission revenue requirement by approximately $357,476 and overbilled wholesale transmission customers in 2018.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -69,7 +69,7 @@
     {
       "index": 2,
       "title": "Allowance for Funds Used During Construction",
-      "summary": "UGIU’s method for computing its AFUDC rate was deficient. Specifically, UGIU improperly excluded short-term debt, as the first source of financing construction, in calculating its AFUDC rate. In addition, UGIU improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in the equity component to compute its AFUDC rate. Also, UGIU improperly used its fiscal year-end book balance for long-term debt and common equity amounts when computing its AFUDC rate rather than the calendar year- end balances reported in its FE",
+      "summary": "UGIU’s method for computing its AFUDC rate was deficient. Specifically, UGIU improperly excluded short- term debt, as the first source of financing construction, in calculating its AFUDC rate. In addition, UGIU improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in the equity component to compute its AFUDC rate. Also, UGIU improperly used its fiscal year-end book balance for long-term debt and common equity amounts when computing its AFUDC rate rather than the calendar year-end balances reported in its FERC Form No. 1 during the audit period. As a result, UGIU overaccrued AFUDC amounts included in utility plant accounts by approximately $436,000 from 2017 to 2019 and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -132,7 +132,7 @@
     {
       "index": 3,
       "title": "Postretirement Benefits Other Than Pensions",
-      "summary": ", as an input to its wholesale transmission formula rate contrary to the directives of its tariff. As a result, UGIU overstated the ADIT balances included in its wholesale transmission formula rate, which led to overstating its annual transmission revenue requirements and overbilling its wholesale transmission customers.",
+      "summary": "UGIU improperly included ADIT related to SFAS 106, Employers’ Accounting for Postretirement Benefits Other Than Pensions, as an input to its wholesale transmission formula rate contrary to the directives of its tariff. As a result, UGIU overstated the ADIT balances included in its wholesale transmission formula rate, which led to overstating its annual transmission revenue requirements and overbilling its wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -198,7 +198,7 @@
     {
       "index": 5,
       "title": "Transmission Revenue Credits",
-      "summary": "UGIU understated its revenue credits that were used to reduce the annual transmission revenue requirements calculated by its wholesale transmission formula rate by improperly excluding certain transmission-related revenues recorded in Account 454, Rent from Electric Property. Additionally, UGIU improperly accounted for rental revenue associated with third parties’ usage of its utility assets by recording such revenue in Account 418, Nonoperating Rental Income. As a result, UGIU understated the revenue credits includible in its wholesale transmission formula rate, which led to an overstatement",
+      "summary": "UGIU understated its revenue credits that were used to reduce the annual transmission revenue requirements calculated by its wholesale transmission formula rate by improperly excluding certain transmission- related revenues recorded in Account 454, Rent from Electric Property. Additionally, UGIU improperly accounted for rental revenue associated with third parties’ usage of its utility assets by recording such revenue in Account 418, Nonoperating Rental Income. As a result, UGIU understated the revenue credits includible in its wholesale transmission formula rate, which led to an overstatement of its annual transmission revenue requirements.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -335,7 +335,7 @@
     {
       "index": 9,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "UGIU did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings.",
+      "summary": "UGIU did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. Other Matter",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -353,8 +353,8 @@
     {
       "index": 10,
       "title": "Accounting for AFUDC ADIT",
-      "summary": "UGIU did not record or report in its FERC Form No. 1 deferred income taxes associated with debt and equity AFUDC. UGIU did not record deferred income taxes consistent with the Internal Revenue Service (IRS) uniform capitalization rule for tax purposes regarding AFUDC, which resulted in the same amount of debt and equity AFUDC reported on UGIU’s accounting books and Federal tax returns. Had UGIU filed its federal income tax returns in a manner consistent with the IRS’s uniform capitalization rule, the resulting deferred income taxes associated with AFUDC debt and equity may have affected UGIU’s",
-      "is_other_matter": true,
+      "summary": "UGIU did not record or report in its FERC Form No. 1 deferred income taxes associated with debt and equity AFUDC. UGIU did not record deferred income taxes consistent with the Internal Revenue Service (IRS) uniform capitalization rule for tax purposes regarding AFUDC, which resulted in the same amount of debt and equity AFUDC reported on UGIU’s accounting books and Federal tax returns. Had UGIU filed its federal income tax returns in a manner consistent with the IRS’s uniform capitalization rule, the resulting deferred income taxes associated with AFUDC debt and equity may have affected UGIU’s wholesale transmission formula rate computation. D.",
+      "is_other_matter": false,
       "recommendations": []
     }
   ],

@@ -41,9 +41,17 @@
         },
         {
           "number": 2,
-          "text": "Make correcting entries to reclassify current year costs associated with: (a) Gas Control labor from Account 920 to Account 851; (b) Right of Way Labor from Account 920 to the appropriate operating or maintenance account; (c) labor of machinists in Welding and Machining Services from Account 853 to the appropriate operating or maintenance account; and (d) labor of any other departments the company has identified as incorrectly classified as a result of the audit. Allocation of Costs to Market-Based Rate Storage Facilities",
+          "text": "Make correcting entries to reclassify current year costs associated with: (a) Gas Control labor from Account 920 to Account 851; (b) Right of Way Labor from Account 920 to the appropriate operating or maintenance account; (c) labor of machinists in Welding and Machining Services from Account 853 to the appropriate operating or maintenance account; and (d) labor of any other departments the company has identified as incorrectly classified as a result of the audit.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Allocation of Costs to Market-Based Rate Storage Facilities",
+      "summary": "Northern Natural inaccurately allocated payroll costs and never assigned compressor electricity costs to Redfield market-based storage facilities. As a result, Northern Natural overstated market-based storage operating and maintenance expenses reported on Page 217 of Form No. 2 by about $740,000 for the period reviewed.",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 3,
           "text": "Strengthen procedures and controls to ensure percentages used to allocate labor and expenses between market- and cost-based storage facilities are reviewed annually and updated, if needed, and adequate documentation of the reviews is retained.",
@@ -55,13 +63,6 @@
           "source_page": null
         }
       ]
-    },
-    {
-      "index": 2,
-      "title": "Allocation of Costs to Market-Based Storage Facilities",
-      "summary": "Northern Natural inaccurately allocated payroll costs and never assigned compressor electricity costs to Redfield market-based storage facilities. As a result, Northern Natural overstated market-based storage operating and maintenance expenses reported on Page 217 of Form No. 2 by about $740,000 for the period reviewed.",
-      "is_other_matter": false,
-      "recommendations": []
     },
     {
       "index": 3,
@@ -117,7 +118,7 @@
     {
       "index": 5,
       "title": "Accounting for Operational Gas Sales",
-      "summary": "Northern Natural’s accounting for operational gas sales was inconsistent with Commission regulations governing system gas accounting. Due to the inconsistencies, Northern Natural incorrectly reported the transactions in the Form No. 2.",
+      "summary": "Northern Natural’s accounting for operational gas sales was inconsistent with Commission regulations governing system gas accounting. Due to the inconsistencies, Northern Natural incorrectly reported the transactions in the Form No. 2. D. Summary of",
       "is_other_matter": false,
       "recommendations": [
         {

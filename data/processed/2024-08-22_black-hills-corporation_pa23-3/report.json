@@ -55,17 +55,9 @@
         },
         {
           "number": 5,
-          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 3 and 4 with future training as needed.",
+          "text": "Provide training to staff on the policies and procedures developed and implemented in response to Recommendations 3 and 4 with future training as needed. Narrative Explanation for ATC Unavailability DAA recommends that Black Hills Power:",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 2,
-      "title": "Narrative Explanation for ATC Unavailability",
-      "summary": "Black Hills Power did not post narrative explanations of the reasons for the unavailability of ATC when the monthly and yearly capability remained unchanged at a value of zero for a period of six months or longer for several transmission paths. As a result, there was a lack of transparency and information available to transmission customers regarding ATC availability and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 6,
           "text": "Develop and implement policies and procedures to identify when monthly and yearly ATC will remain unchanged at a value of zero for a period of six months for a given path.",
@@ -84,9 +76,16 @@
       ]
     },
     {
+      "index": 2,
+      "title": "Narrative Explanation for Available Transfer Capability (ATC) Unavailability",
+      "summary": "Black Hills Power did not post narrative explanations of the reasons for the unavailability of ATC when the monthly and yearly capability remained unchanged at a value of zero for a period of six months or longer for several transmission paths. As a result, there was a lack of transparency and information available to transmission customers regarding ATC availability and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
       "index": 3,
       "title": "Public Access for Monthly and Yearly Capability Information",
-      "summary": "The Black Hills Electric Utilities’ postings for monthly and yearly capability, along with a narrative explanation, for instances in which TTC changed by more than 10 percent were not made publicly available. As a result, there was a lack of transparency and information available to transmission customers regarding TTC and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities.",
+      "summary": "The Black Hills Electric Utilities’ postings for monthly and yearly capability, along with a narrative explanation, for instances in which Total Transfer Capability (TTC) changed by more than 10 percent were not made publicly available. As a result, there was a lack of transparency and information available to transmission customers regarding TTC and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities. D.",
       "is_other_matter": false,
       "recommendations": [
         {

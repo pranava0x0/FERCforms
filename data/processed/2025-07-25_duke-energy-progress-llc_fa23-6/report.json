@@ -34,14 +34,14 @@
     {
       "index": 1,
       "title": "Recovery of Fuel Contract Buyout Costs",
-      "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers by approximately $3,500,000 during the audit period.",
+      "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers by approximately $3,500,000 during the audit period.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 2,
       "title": "Accounting for Fuel Storage and Handling",
-      "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers.",
+      "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": []
     },
@@ -55,21 +55,21 @@
     {
       "index": 4,
       "title": "Auxiliary Fuel Costs in Nuclear Power Generation",
-      "summary": "DEP misstated Account 518, Nuclear Fuel Expense, due to an incorrect application of its inventory accounting procedures for auxiliary fuel. Various other misclassifications and clerical errors caused DEP to incorrectly account for additional auxiliary fuel expense in other nuclear operations and maintenance (O&M) accounts. These errors improperly increased DEP’s wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
+      "summary": "DEP misstated Account 518, Nuclear Fuel Expense, due to an incorrect application of its inventory accounting procedures for auxiliary fuel. Various other misclassifications and clerical errors caused DEP to incorrectly account for additional auxiliary fuel expense in other nuclear operations and maintenance (O&M) accounts. These errors improperly increased DEP’s wholesale cost-based revenue requirements and resulting billings to FERC- jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 5,
       "title": "Allowance for Funds Used During Construction",
-      "summary": "DEP improperly accrued AFUDC on ineligible projects that were completed or ready to be placed into service. As a result, DEP over-accrued AFUDC and overstated plant in service during the audit period.",
+      "summary": "DEP improperly accrued Allowance for Funds Used During Construction (AFUDC) on ineligible projects that were completed or ready to be placed into service. As a result, DEP over-accrued AFUDC and overstated plant in service during the audit period.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 6,
       "title": "Accounting for Distribution and Meter-Related Costs",
-      "summary": "DEP recorded affiliate charges for distribution and customer-related IT systems in Administrative and General (A&G) expense accounts. This accounting was not consistent with the functional character of these charges, which should have instead been recorded in the relevant distribution and customer-related functional O&M expense accounts. As a result, inputs to FERC-jurisdictional formula rates and resulting wholesale customer billings were overstated.",
+      "summary": "DEP recorded affiliate charges for distribution and customer-related IT systems in Administrative and General (A&G) expense accounts. This accounting was not consistent with the functional character of these charges, which should have instead been recorded in the relevant distribution and customer-related functional O&M expense accounts. As a result, inputs to FERC- jurisdictional formula rates and resulting wholesale customer billings were overstated.",
       "is_other_matter": false,
       "recommendations": []
     },
@@ -104,7 +104,7 @@
     {
       "index": 11,
       "title": "FERC Form Nos. 1 and 3-Q Reporting",
-      "summary": "DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions affected the transparency, accuracy, and usefulness of certain information in the reports.",
+      "summary": "DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions affected the transparency, accuracy, and usefulness of certain information in the reports. D.",
       "is_other_matter": false,
       "recommendations": []
     }

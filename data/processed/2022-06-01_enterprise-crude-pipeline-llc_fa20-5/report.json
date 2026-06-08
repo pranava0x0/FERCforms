@@ -29,7 +29,7 @@
     {
       "index": 1,
       "title": "Interstate Allocation Percentage",
-      "summary": "ECPL incorrectly included barrel-miles for intrastate transportation movements, pump-over services, and a pipeline segment it did not own in its interstate allocation percentage. These errors caused ECPL to overstate its total cost of service, barrels, and barrel-miles, reported on Page 700 of its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should have excluded, to the extent practicable, costs associated with its terminal and pipeline system facilities that were used solely to su",
+      "summary": "ECPL incorrectly included barrel-miles for intrastate transportation movements, pump-over services, and a pipeline segment it did not own in its interstate allocation percentage. These errors caused ECPL to overstate its total cost of service, barrels, and barrel-miles, reported on Page 700 of its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should have excluded, to the extent practicable, costs associated with its terminal and pipeline system facilities that were used solely to support intrastate transportation service and other FERC non-jurisdictional services, before applying the interstate allocation percentage.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -62,7 +62,7 @@
     {
       "index": 2,
       "title": "Pipeline Loss Allowance and Gravity Shrinkage Revenues",
-      "summary": "ECPL incorrectly omitted PLA and GSD revenues recorded in Account 230, Allowance Oil Revenues, from Page 700, Line 10, Interstate Operating Revenues. This resulted in ECPL understating its annual interstate operating revenues on Page 700. The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
+      "summary": "ECPL incorrectly omitted pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD) revenues recorded in Account 230, Allowance Oil Revenues, from Page 700, Line 10, Interstate Operating Revenues. This resulted in ECPL understating its annual interstate operating revenues on Page 700. The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -85,7 +85,7 @@
     {
       "index": 3,
       "title": "Accounting for Idled Pipeline Segments",
-      "summary": "ECPL represented that it classified the majority of the assets associated with its pipeline segments in Account 30, Carrier Property, except for a few assets, which ECPL recorded in Account 34, Noncarrier Property. ECPL explained that it transferred these assets from Account 30 to Account 34 because there was no definite plan in place to support the future use of these assets in carrier operations. However, upon further review, audit staff determined ECPL misclassified other idled pipeline segments that did not have a definite plan for future carrier service in Account 30, as summarized below.",
+      "summary": "ECPL incorrectly accounted for and reported idled property as carrier, which affected the accuracy of the balances reported in ECPL’s FERC Form No. 6 reports, including the balances on Page 700. This resulted in ECPL overstating it cost of service on Page 700 by $57,242 to $2,706,526 during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -118,7 +118,7 @@
     {
       "index": 4,
       "title": "Accounting and Reporting of Depreciation",
-      "summary": "ECPL did not use Commission approved depreciation rates, incorrectly applied the group method to calculate depreciation expense, over accrued depreciation reserve balances for some accounts, and incorrectly derived depreciation expense. These errors caused ECPL to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in ECPL including incorrect amounts in its cost of service reported on Page 700 since 2010.",
+      "summary": "ECPL did not use Commission approved depreciation rates, incorrectly applied the composite method to calculate depreciation expense, over accrued depreciation reserve balances for some accounts, and incorrectly derived depreciation expense. These errors caused ECPL to improperly calculate depreciation expense and accumulated depreciation reserve balances for carrier property assets and resulted in ECPL including incorrect amounts in its cost of service reported on Page 700 since 2010.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -199,7 +199,7 @@
     {
       "index": 6,
       "title": "FERC Form No. 6 Reporting",
-      "summary": "ECPL incorrectly reported and calculated the AFUDC input on Page 700 and misreported barrels and barrel-miles for one pipeline segment on Pages 600-603. These errors reduced the accuracy, transparency, and usefulness of ECPL’s FERC Form No. 6 submissions.",
+      "summary": "ECPL incorrectly reported and calculated the Allowance for Funds Used During Construction (AFUDC) input on Page 700 and misreported barrels and barrel-miles for one pipeline segment on Pages 600-603. These errors reduced the accuracy, transparency, and usefulness of ECPL’s FERC Form No. 6 submissions. D. List of",
       "is_other_matter": false,
       "recommendations": [
         {

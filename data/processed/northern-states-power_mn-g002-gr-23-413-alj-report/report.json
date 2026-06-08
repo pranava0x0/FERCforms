@@ -1,1 +1,30 @@
-{"collection": "state_rate_case", "jurisdiction": "MN", "source": "Minnesota Public Utilities Commission", "doc_type": "administrative law judge report", "id": "northern-states-power_mn-g002-gr-23-413-alj-report", "company": "Northern States Power Company d/b/a Xcel Energy", "company_raw": "Northern States Power Company d/b/a Xcel Energy", "docket": "G002/GR-23-413", "docket_full": null, "issued_date": null, "source_page_url": "https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-gas/", "pdf_download_url": "https://mn.gov/oah/assets/2500-39704-northern-states-power-company-xcel-rate-increase-puc-report_tcm19-650610.pdf", "captured_at": "2026-06-02", "source_note": "Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 23-2500-39704) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase natural gas rates, before the Minnesota Public Utilities Commission, MPUC Docket No. G002/GR-23-413 (30 pp). Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/2500-39704-...puc-report_tcm19-650610.pdf).", "archived_via": null, "page_count": 30, "scanned_pages": [23], "ocr_used": false, "audit_period": null, "industry": "gas", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "MN",
+  "source": "Minnesota Public Utilities Commission",
+  "doc_type": "administrative law judge report",
+  "id": "northern-states-power_mn-g002-gr-23-413-alj-report",
+  "company": "Northern States Power Company d/b/a Xcel Energy",
+  "company_raw": "Northern States Power Company d/b/a Xcel Energy",
+  "docket": "G002/GR-23-413",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://mn.gov/puc/activities/financial-analysis/general-rate-case/xcel-gas/",
+  "pdf_download_url": "https://mn.gov/oah/assets/2500-39704-northern-states-power-company-xcel-rate-increase-puc-report_tcm19-650610.pdf",
+  "captured_at": "2026-06-02",
+  "source_note": "Findings of Fact, Conclusions of Law, and Recommendation of the Administrative Law Judge (Minnesota Office of Administrative Hearings, OAH 23-2500-39704) in the matter of the Application of Northern States Power Company d/b/a Xcel Energy for authority to increase natural gas rates, before the Minnesota Public Utilities Commission, MPUC Docket No. G002/GR-23-413 (30 pp). Listed for reference (metadata-only). Source: Minnesota OAH (mn.gov/oah/assets/2500-39704-...puc-report_tcm19-650610.pdf).",
+  "archived_via": null,
+  "page_count": 30,
+  "scanned_pages": [
+    23
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

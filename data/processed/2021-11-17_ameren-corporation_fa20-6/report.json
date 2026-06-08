@@ -32,7 +32,7 @@
     {
       "index": 1,
       "title": "Reporting of Materials and Supplies",
-      "summary": "Ameren Missouri incorrectly reported M&S assigned to transmission-related construction on line 8 of page 227, Materials and Supplies, of its 2016-2018 FERC Form No. 1 reports, rather than on line 5 of the same page. As a result of overstating line 8, Ameren Missouri incorrectly increased the working capital component of its formula rate mechanism, which led to an overstatement of its wholesale transmission revenue requirement used to determine billings to wholesale transmission customers.",
+      "summary": "Ameren Missouri incorrectly reported materials and supplies (M&S) assigned to transmission-related construction on line 8 of page 227, Materials and Supplies, of its 2016-2018 FERC Form No. 1 reports, rather than on line 5 of the same page. As a result of overstating line 8, Ameren Missouri incorrectly increased the working capital component of its formula rate mechanism, which led to an overstatement of its wholesale transmission revenue requirement used to determine billings to wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -104,14 +104,14 @@
     },
     {
       "index": 2,
-      "title": "Remeasurement of Accumulated Deferred Income Taxes Resulting from the Tax Cuts and Jobs Act",
-      "summary": "AMS overstated its ADIT balance on its books when it made adjustments in response to the TCJA. AMS could not provide documentation to support an expense totaling $1,197,220 that was included as part of the remeasurement of its ADIT. This unsupported cost was allocated to the Ameren public utilities and incorrectly included in an account that is a wholesale transmission formula rate input. This led the Ameren public utilities to overstate their wholesale transmission revenue requirements and overcharge wholesale transmission customers.",
+      "title": "Remeasurement of Accumulated Deferred Income Taxes Resulting from the Tax Cuts and Jobs Act of 2017",
+      "summary": "AMS overstated its accumulated deferred income tax (ADIT) balance on its books when it made adjustments in response to the Tax Cuts and Jobs Act of 2017 (TCJA). AMS could not provide documentation to support an expense totaling $1,197,220 that was included as part of the remeasurement of its ADIT. This unsupported cost was allocated to the Ameren public utilities and incorrectly included in an account that is a wholesale transmission formula rate input. This led the Ameren public utilities to overstate their wholesale transmission revenue requirements and overcharge wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 3,
-      "title": "Accounting for Service Company’s Depreciation, Amortization, Tax, and Interest Expenses",
+      "title": "Accounting for Service Company’s Depreciation, Amortization, Taxes, and Interest Expenses",
       "summary": "The Ameren public utilities improperly accounted for AMS’s allocated depreciation, amortization, tax, and interest expenses in Account 923, Outside Services Employed, instead of Account 930.2, Miscellaneous General Expenses. As a result, the Ameren public utilities overstated Account 923 and understated Account 930.2. This improper accounting had no impact on the Ameren public utilities’ wholesale transmission revenue requirements.",
       "is_other_matter": false,
       "recommendations": []
@@ -119,7 +119,7 @@
     {
       "index": 4,
       "title": "Accounting for Non-Power Goods and Services Provided to Affiliates",
-      "summary": "The Ameren public utilities improperly recorded the costs of providing non-power goods and services to their associated companies in Account 921, Office Supplies and Expenses, rather than recording them in the appropriate accounts for transactions of the same nature. As a result of the misclassifications, the Ameren public utilities overstated their annual transmission revenue requirements, which led to overbillings to wholesale transmission customers.",
+      "summary": "The Ameren public utilities improperly recorded the costs of providing non- power goods and services to their associated companies in Account 921, Office Supplies and Expenses, rather than recording them in the appropriate accounts for transactions of the same nature. As a result of the misclassifications, the Ameren public utilities overstated their annual transmission revenue requirements, which led to overbillings to wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -195,7 +195,7 @@
     {
       "index": 6,
       "title": "Allocation of Overhead Labor Costs to Construction Work In Progress",
-      "summary": "Ameren’s subsidiaries capitalized overhead labor to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This led Ameren’s subsidiaries to charge costs to Account 107 that may not have a definite relationship to construction. As a result, the Ameren public utilities may have overstated construction costs recorded in Account 107 and electric plant in service, as well as ADIT balances, and may have understated operating expenses. Moreover, t",
+      "summary": "Ameren’s subsidiaries capitalized overhead labor to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This led Ameren’s subsidiaries to charge costs to Account 107 that may not have a definite relationship to construction. As a result, the Ameren public utilities may have overstated construction costs recorded in Account 107 and electric plant in service, as well as Accumulated Deferred Income Tax (ADIT) account balances, and may have understated operating expenses. Moreover, this accounting may have led Ameren public utilities to overstate their respective wholesale annual transmission revenue requirements and overcharge wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -291,7 +291,7 @@
     {
       "index": 8,
       "title": "FERC-61 Filings",
-      "summary": "Ameren did not submit the FERC-61, Narrative Description of Service Company Functions, filings for STARS Alliance during the audit period, and did not timely submit the 2016 and 2017 FERC-61 filings for Fuelco as required by Commission regulations.",
+      "summary": "Ameren did not submit the FERC-61, Narrative Description of Service Company Functions, filings for STARS Alliance, LLC (STARS Alliance) during the audit period, and did not timely submit the 2016 and 2017 FERC-61 filings for Fuelco, LLC (Fuelco) as required by Commission regulations.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -314,7 +314,7 @@
     {
       "index": 9,
       "title": "Reporting of Premature Loss of Records",
-      "summary": "Ameren did not notify the Commission as required when the company discovered certain records were prematurely destroyed or lost.",
+      "summary": "Ameren did not notify the Commission as required when the company discovered certain records were prematurely destroyed or lost. D. List of",
       "is_other_matter": false,
       "recommendations": [
         {

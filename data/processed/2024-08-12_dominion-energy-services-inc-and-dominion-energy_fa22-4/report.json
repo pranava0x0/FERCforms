@@ -28,12 +28,12 @@
     "1",
     "60"
   ],
-  "finding_count": 12,
+  "finding_count": 13,
   "findings": [
     {
       "index": 1,
       "title": "Merger-Related Voluntary Retirement Program",
-      "summary": "DES incurred merger-related VRP costs of approximately $97,872,000 that it allocated to its affiliates, including VEPCO and DESC, which then partially recovered these costs through FERC-jurisdictional rates without the Commission’s approval. DESC also improperly partially recovered an additional $84,000 of its own pre-VRP merger-related severance costs through FERC-jurisdictional rates without Commission approval.",
+      "summary": "DES incurred merger-related voluntary retirement program (VRP) costs of approximately $97,872,000 that it allocated to its affiliates, including VEPCO and DESC, which then partially recovered these costs through FERC-jurisdictional rates without the Commission’s approval. DESC also improperly partially recovered an additional $84,000 of its own pre-VRP merger-related severance costs through FERC-jurisdictional rates without Commission approval.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -76,7 +76,7 @@
     {
       "index": 2,
       "title": "Merger Compensation",
-      "summary": "DES, VEPCO, and DESC incurred merger labor and labor-related costs, including incentive compensation, of approximately $5,176,000 that it did not track as merger- related. As a result, a portion of these costs was included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC-jurisdictional customers.",
+      "summary": "DES, VEPCO, and DESC incurred merger labor and labor- related costs, including incentive compensation, of approximately $5,176,000 that it did not track as merger-related. As a result, a portion of these costs was included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC-jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -114,7 +114,7 @@
     {
       "index": 3,
       "title": "Merger Project Configuration",
-      "summary": "DES misconfigured certain merger-related billing Work Breakdown Structure (WBS) elements within its cost accumulation system, causing it to inadvertently bill approximately $4,599,000 of merger costs to VEPCO and DESC. As a result, portions of these costs were included in FERC-jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC- jurisdictional customers.",
+      "summary": "DES misconfigured certain merger-related billing Work Breakdown Structure (WBS) elements within its cost accumulation system, causing it to inadvertently bill approximately $4,599,000 of merger costs to VEPCO and DESC. As a result, portions of these costs were included in FERC- jurisdictional revenue requirements without the Commission’s approval, causing VEPCO and DESC to overcharge their FERC-jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -185,7 +185,7 @@
     {
       "index": 5,
       "title": "Merger Financing Costs",
-      "summary": "DESC incurred merger-related refinancing costs of $2,552,000 but did not exclude them from FERC-jurisdictional revenue requirements. As a result, a portion of these costs were recovered from FERC-jurisdictional customers without the Commission’s approval.",
+      "summary": "DESC incurred merger-related refinancing costs of 6 See Dominion Energy’s SEC Form 10-K, p. 105 at Note 1 “Nature of Operations,” as filed February 23, 2024. $2,552,000 but did not exclude them from FERC-jurisdictional revenue requirements. As a result, a portion of these costs were recovered from FERC- jurisdictional customers without the Commission’s approval.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -296,7 +296,7 @@
     {
       "index": 7,
       "title": "Accounting for Customer Accounts Expenses",
-      "summary": "VEPCO and DESC improperly accounted for consultant fees related to customer accounts expenses that were allocated from DES. VEPCO’s accounting resulted in Account 923, Outside Services Employed, being overstated and Account 901, Supervision, being understated, while DESC’s accounting resulted in Account 905, Miscellaneous Customer Accounts Expenses, being overstated and Account 901 being understated. Because Account 923 is an input to VEPCO’s FERC-jurisdictional rates, VEPCO’s improper accounting also caused VEPCO to overstate its FERC-jurisdictional revenue requirements and overcharge its FER",
+      "summary": "VEPCO and DESC improperly accounted for consultant fees related to customer accounts expenses that were allocated from DES. VEPCO’s accounting resulted in Account 923, Outside Services Employed, being overstated and Account 901, Supervision, being understated, while DESC’s accounting resulted in Account 905, Miscellaneous Customer Accounts Expenses, being overstated and Account 901 being understated. Because Account 923 is an input to VEPCO’s FERC-jurisdictional rates, VEPCO’s improper accounting also caused VEPCO to overstate its FERC- jurisdictional revenue requirements and overcharge its FERC-jurisdictional customers. DESC’s improper accounting did not have any impact on its jurisdictional revenue requirements.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -372,7 +372,7 @@
     {
       "index": 9,
       "title": "Accounting for EEI Annual Membership Dues",
-      "summary": "DES misclassified Edison Electric Institute (EEI) annual membership dues designated as being for lobbying in Account 930.2, Miscellaneous General Expenses, rather than recording them in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. DES’s improper accounting resulted in such expenses being incorrectly recorded on the books of VEPCO and DESC and included as an input to FERC-jurisdictional rates. This caused VEPCO and DESC to overstate their FERC- jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
+      "summary": "DES misclassified EEI annual membership dues designated as being for lobbying in Account 930.2, Miscellaneous General Expenses, rather than recording them in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. DES’s improper accounting resulted in such expenses being incorrectly included in an account that is an input to FERC-jurisdictional rates. This caused VEPCO and DESC to overstate their FERC-jurisdictional revenue requirements and overcharge FERC- jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -433,7 +433,7 @@
     {
       "index": 11,
       "title": "Accounting for Prepayments",
-      "summary": "DES reclassified certain prepaid expense balances from Account 165, Prepayments, to Account 930.2, Miscellaneous General Expenses, because it lacked supporting documentation for such balances. DES’s accounting resulted in unsupported amounts being incorrectly included in an operating expense account, in conflict with the Commission’s accounting regulations. Because Account 930.2 is an input to FERC- jurisdictional rates, this caused VEPCO to overstate its FERC-jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
+      "summary": "DES reclassified certain prepaid expense balances from Account 165, Prepayments, to Account 930.2, Miscellaneous General Expenses, because it lacked supporting documentation for such balances. DES’s accounting resulted in unsupported amounts being incorrectly included in an operating expense account, in conflict with the Commission’s accounting regulations. Because Account 930.2 is an input to FERC-jurisdictional rates, this caused VEPCO to overstate its FERC-jurisdictional revenue requirements and overcharge FERC-jurisdictional customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -471,7 +471,7 @@
     {
       "index": 12,
       "title": "FERC Form No. 60 Reporting",
-      "summary": "DES and legacy DESS did not accurately disclose in their FERC Forms No. 60 the functional classification of expenses between capital, utility O&M, customer accounts expense, and A&G accounts in 2019 and 2020. This caused their FERC Forms No. 60 to overstate various A&G and capital accounts and understate various O&M, customer accounts expense, and non-operating accounts on the FERC Form No. 60. This affected the transparency, accuracy, and usefulness of certain sections of these financial disclosures.",
+      "summary": "DES and legacy DESS did not accurately disclose in their FERC Forms No. 60 the functional classification of expenses between capital, utility operations & maintenance (O&M), customer accounts expense, and A&G accounts in 2019 and 2020. This caused their FERC Forms No. 60 to overstate various A&G and capital accounts and understate various O&M, customer accounts expense, and non-operating accounts on the FERC Form No.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -490,6 +490,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 13,
+      "title": "This affected the transparency, accuracy, and usefulness of certain sections of these financial disclosures. D. List of",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

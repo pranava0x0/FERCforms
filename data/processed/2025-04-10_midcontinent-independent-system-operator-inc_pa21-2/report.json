@@ -72,7 +72,7 @@
     {
       "index": 3,
       "title": "Posting of Transmission Service Metrics",
-      "summary": "MISO did not post quarterly transmission service metrics on its OASIS website within 15 calendar days of the end of the calendar quarter for multiple quarters during the audit period.",
+      "summary": "MISO did not post quarterly transmission service metrics on its Open Access Same-Time Information System (OASIS) website within 15 calendar days of the end of the calendar quarter for multiple quarters during the audit period. D.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -87,24 +87,56 @@
         },
         {
           "number": 8,
-          "text": "Train employees on the review process and quality controls developed under Recommendations 6 and 7, and repeat such training as needed. Other Matters DAA recommends that MISO consider: Operations Related to Economic Derates",
+          "text": "Train employees on the review process and quality controls developed under Recommendations 6 and 7, and repeat such training as needed. Other Matters DAA recommends that MISO consider:",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Operations Related to Economic Derates",
+      "summary": "MISO approved fuel mix derates for generation resources that a market participant categorized as planned and forced in MISO’s outage coordination system known as CROW, despite those outage submissions not meeting the MISO Tariff or business practice manual (BPM) definitions of either a planned or forced outage, because the outages were economic in nature and not due to physical impairments of the resources. In addition, MISO’s internal tools and software did not provide its operators sufficient visibility to readily identify MISO market generation resources that were derated for economic reasons but capable of operating at a higher level of output. As a result, MISO was effectively unable to call upon such resources to increase their output above their economically-derated capability when needed.",
+      "is_other_matter": true,
+      "recommendations": [
         {
           "number": 9,
-          "text": "Enhancing tools, software, and training to better inform system operators when real-time resources are economically-derated and are capable of performing at a higher level of output above their economically-derated capability, and repeat such training as needed. Real-time Ex-Post Market Clearing Price Transparency",
+          "text": "Enhancing tools, software, and training to better inform system operators when real-time resources are economically-derated and are capable of performing at a higher level of output above their economically-derated capability, and repeat such training as needed.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Real-time Ex-Post Market Clearing Price Transparency",
+      "summary": "MISO did not update its Market Reports following the implementation of Value of Lost Load (VOLL) pricing for eight five-minute periods falling within the time frame of 8:05 p.m. to 9:00 p.m. during Winter Storm Uri on February 16, 2021.2",
+      "is_other_matter": true,
+      "recommendations": [
         {
           "number": 10,
-          "text": "Strengthening policies, procedures, and controls regarding how price corrections are made to its Market Reports to ensure that updated price data is publicly available in a timely manner. Monitoring of Energy Must Offer Compliance",
+          "text": "Strengthening policies, procedures, and controls regarding how price corrections are made to its Market Reports to ensure that updated price data is publicly available in a timely manner.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Monitoring of Energy Must Offer Compliance",
+      "summary": "MISO did not resolve certain instances when its automated energy must offer compliance reporting system identified a market participant’s resource as not meeting its daily energy must offer obligation.",
+      "is_other_matter": true,
+      "recommendations": [
         {
           "number": 11,
-          "text": "Developing processes and procedures to ensure that it fully addresses and resolves all instances when its automated energy must offer compliance reporting system identifies a market participant’s resource for not meeting its daily energy must offer obligation, including considering ways to escalate for potential remediation or enforcement action instances when market participants are not fully responsive to MISO's outreach. Email Retention Processes and Procedures",
+          "text": "Developing processes and procedures to ensure that it fully addresses and resolves all instances when its automated energy must offer compliance reporting system identifies a market participant’s resource for not meeting its daily energy must offer obligation, including considering ways to escalate for potential remediation or enforcement action instances when market participants are not fully responsive to MISO's outreach.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Email Retention Processes and Procedures",
+      "summary": "MISO’s preservation of records practices do not ensure emails that constitute records are properly identified, archived, indexed, and retrievable as required by the Commission. E.",
+      "is_other_matter": true,
+      "recommendations": [
         {
           "number": 12,
           "text": "Enhancing identification, archiving, indexing, and retrieval policies and procedures to properly retain and maintain emails that constitute records.",

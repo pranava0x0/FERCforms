@@ -29,7 +29,7 @@
     {
       "index": 1,
       "title": "Accounting for Idle Property",
-      "summary": "Bridger had two pipeline segments on its Poplar System that were inactive: (1) the segment from Raymond to Poplar, and (2) the segment form Poplar to Fisher. The pipeline segment from Raymond to Poplar is comprised of 50.5 miles of 12-inch pipeline and has been inactive since 2006. The pipeline segment from Poplar to Fisher is comprised of 19.8 miles of 10-inch pipeline and has been out-of-service since 2014. Bridger classified both pipeline segments incorrectly as carrier property in Account 30, Carrier Property. This account’s instructions direct companies to record the cost of tangible prop",
+      "summary": "Bridger improperly accounted for idle property as carrier property, rather than noncarrier property, which affected the accuracy of the balances reported in the FERC Form No. 6. This resulted in Bridger incorrectly reporting several line inputs used to derive cost of service on Page 700, which caused Bridger to overstate its total cost of service by between $739,763 to $930,355 during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -57,7 +57,7 @@
     {
       "index": 2,
       "title": "Accounting for Investments in Affiliated Companies",
-      "summary": "Bridger improperly reported certain financial statement activities for its investments in Butte Pipeline Company (Butte) and Sakakawea Area Spill Response, LLC (Sakakawea) and did not establish and maintain memorandum or worksheet entries for these investments. Bridger also improperly reported its investment in Sakakawea as a miscellaneous asset, rather than as an investment in an affiliated company. As a result, Bridger incorrectly reported investment activities in its FERC Form No. 6 filings since the initial investment in these companies.",
+      "summary": "Bridger improperly reported certain financial statement activities for its investments in Butte Pipeline Company (Butte) and Sakakawea Area Spill Response, LLC (Sakakawea), and did not establish and maintain memorandum or worksheet entries for these investments. Bridger also improperly reported its investment in Sakakawea as a miscellaneous asset, rather than as an investment in an affiliated company. As a result, Bridger incorrectly reported investment activities in its FERC Form No. 6 filings since the initial investments in these companies.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -85,7 +85,7 @@
     {
       "index": 3,
       "title": "Accounting for Nonoperating and Operating Expenses",
-      "summary": "Bridger misclassified costs incurred for fines and penalties, lobbying activities, and charitable contributions, as operating expenses rather than nonoperating expenses. While this did not affect net income, it did result in Bridger overstating operating and maintenance expenses in its annual cost-of-service schedule on Page 700 of the FERC Form No. 6. Additionally, Bridger misclassified association dues in an incorrect operating expense account, which did not impact Page 700.",
+      "summary": "Bridger misclassified costs incurred for fines and penalties, lobbying activities, and charitable contributions as operating expenses rather than nonoperating expenses. While this did not affect net income, it did result in Bridger overstating operating and maintenance expenses in its annual cost-of- service schedule on Page 700 of the FERC Form No. 6. Additionally, Bridger misclassified association dues in an incorrect operating expense account, which did not impact Page 700.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -136,7 +136,7 @@
     {
       "index": 5,
       "title": "Pipeline Loss Allowance and Gravity Shrinkage Deduction Revenues",
-      "summary": "Bridger incorrectly accounted for and reported certain activities associated with its pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD). Specifically:  Bridger incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. This resulted in Bridger understating its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. Bridger also did not track the costs or keep records to identify the amount of oil lost in transportation that should have b",
+      "summary": "Bridger incorrectly accounted for and reported on certain activities associated with its pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD). Specifically:  Bridger incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. This resulted in Bridger understating its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. Bridger also did not track the costs or keep records to identify the amount of oil lost in transportation that should have been recorded in Account 340.  Bridger incorrectly omitted PLA and GSD revenues reported in Account 230 on Page 301 of its FERC Form No. 6, when it reported jurisdictional operating revenue on Page 700, Line 10. This resulted in Bridger understating its annual interstate operating revenues on Line 10. The annual interstate portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -258,7 +258,7 @@
     {
       "index": 9,
       "title": "FERC Form No. 6 Reporting",
-      "summary": "Bridger did not report complete information as required in certain supporting schedules of its FERC Form No. 6 reports, during the audit period. Bridger also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While Bridger’s incomplete reporting and inaccurate accounting did not impact Page 700; it did reduce the overall accuracy and usefulness of the information reported in Bridger’s FERC Form No. 6 filings.",
+      "summary": "Bridger did not report complete information as required in certain supporting schedules of its FERC Form No. 6 reports, during the audit period. Bridger also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While Bridger’s incomplete reporting and inaccurate accounting did not impact Page 700; it did reduce the overall accuracy and usefulness of the information reported in Bridger’s FERC Form No. 6 filings. D.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -277,6 +277,13 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 10,
+      "title": "Method to Derive Return on Equity",
+      "summary": "Bridger derived its return on equity (ROE) using a combination of the Discounted Cash Flow (DCF) Model, Capital Asset Pricing Model (CAPM), and Risk Premium Model for Page 700, during the audit period. This did not fully align with the Commission’s previous and current policy statements on determining ROE for oil pipelines. Bridger’s ROE derivation is an important part of ensuring cost- of-service information is not misleading and enables shippers and other interested parties to make informed decisions related to Page 700. Prospectively, Bridger should consider developing its ROE for Page 700 using a method consistent with Commission policy. E.",
+      "is_other_matter": true,
+      "recommendations": []
     }
   ],
   "structured": true

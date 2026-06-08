@@ -27,12 +27,12 @@
   "forms": [
     "1"
   ],
-  "finding_count": 6,
+  "finding_count": 7,
   "findings": [
     {
       "index": 1,
       "title": "Secondary Network Transmission Service",
-      "summary": "Avista improperly reserved hourly secondary network transmission service 61 times, representing 5,233 MWh, to support off-system sales to non-network customers. Of the 61 requests, 34 requests remained confirmed, representing 3,353 MWh, while 27 requests were annulled. Of these 34 requests, 11 were scheduled for energy delivery, representing 1,395 MWh. As a result, Avista’s merchant function was not charged PTP transmission charges and obtained service with a higher service priority.",
+      "summary": "Avista improperly reserved hourly secondary network transmission service 61 times, representing 5,233 MWh, to support off-system sales to non-network customers. Of the 61 requests, 34 requests remained confirmed, representing 3,353 MWh, while 27 requests were annulled. Of these 34 requests, 11 were scheduled for energy delivery, representing 1,395 MWh. As a result, Avista’s merchant function was not charged point-to-point (PTP) transmission charges and obtained service with a higher service priority.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -55,7 +55,7 @@
     {
       "index": 2,
       "title": "Allowance for Funds Used During Construction",
-      "summary": "Avista’s methods for calculating and accounting for its AFUDC rate were deficient and caused Avista’s AFUDC to exceed the maximum AFUDC permitted Avista by the Commission’s regulations, as follows: • Avista included revolving credit facility commitment fees (up-front and quarterly) as part of short-term debt interest expense to compute its AFUDC rate. Avista did not have Commission approval, required by Order No. 561-A, to include revolving credit facility commitment fees in the calculation of its AFUDC rate. • Avista incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary",
+      "summary": "Avista’s methods for calculating and accounting for its AFUDC rate were deficient and caused Avista’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • Avista included revolving credit facility commitment fees (up-front and quarterly) as part of short-term debt interest expense to compute its AFUDC rate. Avista did not have Commission approval, required by Order No. 561-A, to include revolving credit facility commitment fees in the calculation of its AFUDC rate. • Avista incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • Avista incorrectly included Account 219, Accumulated Other Comprehensive Income (AOCI), as part of the equity component for the purpose of computing its AFUDC rate. • Avista used monthly Equity and Long-Term Debt balances in AFUDC rate development instead of the using the balances for Equity and Long-Term Debt existing at the end of the prior year. • Avista excluded Account 234, Notes Payable to Associated Companies, in the computation of its AFUDC rate instead of including Account 234 as a short-term financing source – i.e., in the short-term debt component for purposes of calculating its AFUDC rate. • Avista accounted for the excess arising from higher state-approved AFUDC over AFUDC as computed in accordance with the Commission’s accounting regulations as a cost of plant in Account 101, Electric Plant in Service, through Account 107, Construction Work In Progress, instead of recording the excess in Account 182.3, Other Regulatory Assets. As a result of these methods, Avista overstated AFUDC by approximately $19.7 million for the period 2015 through 2017.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -92,8 +92,8 @@
     },
     {
       "index": 3,
-      "title": "Accounting for Deferred Income Taxes - AFUDC",
-      "summary": "Avista’s methods for accounting for Deferred Income Taxes related to the equity component of the AFUDC rate were deficient as follows: • Avista incorrectly recorded a debit in Account 410.1, Provision for Deferred Income Taxes, based on the amount of the equity component of AFUDC included in income Account 419.1, Allowance for Other Funds Used During Construction, and credited Account 282, Accumulated Deferred Income Taxes – Other Property. Avista should have recorded the deferred tax debit amount in Account 182.3, Other Regulatory Assets. • Avista should have recorded a gross up for the incom",
+      "title": "Accounting for Deferred Income Taxes",
+      "summary": "AFUDC – Avista’s methods for accounting for Deferred Income Taxes related to the equity component of the AFUDC rate were deficient as follows: • Avista incorrectly recorded a debit in Account 410.1, Provision for Deferred Income Taxes, based on the amount of the equity component of AFUDC included in income Account 419.1, Allowance for Other Funds Used During Construction, and credited Account 282, Accumulated Deferred Income Taxes – Other Property. Avista should have recorded the deferred tax debit amount in Account 182.3, Other Regulatory Assets. • Avista should have recorded a gross up for the income taxes related to the equity component of AFUDC in Account 182.3, Other Regulatory Assets, and a related offset as a deferred income tax liability in Account 283, Accumulated Deferred Income Taxes – Other. As a result of the foregoing improper accounting, Avista overstated the Deferred Income Tax expense included in its Income Statement for 2015 through 2017 by approximately $8.4 million.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -167,7 +167,7 @@
     {
       "index": 6,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "Avista did not comply with the instructions on page 398, Purchase and Sale of Ancillary Services, on its FERC Form No. 1 filings. This deficient reporting affected the reliability of information reported in Avista’s FERC Form No. 1 submissions.",
+      "summary": "Avista did not comply with the instructions on page 398, Purchase and Sale of Ancillary Services, on its FERC Form No. 1 filings. This deficient reporting affected the reliability of information reported in Avista’s FERC Form No. 1 submissions. The Other Matter",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -177,9 +177,17 @@
         },
         {
           "number": 21,
-          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. Use of Transmission Service Numbers",
+          "text": "Provide training to staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Use of Transmission Service Numbers",
+      "summary": "Avista used Transmission Service Numbers (TSN), in addition to Transmission Service Requests (TSR) created in OASIS, to facilitate scheduling of transmission service under certain circumstances. TSRs created in OASIS provide more transparency than TSNs, which are created outside of OASIS. During the audit, Avista significantly reduced the number of active TSNs, and Avista should continue to evaluate TSN use and reduce the use of TSNs when possible. D. Summary of",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 22,
           "text": "Continue to evaluate and take actions to reduce the use of TSNs.",

@@ -32,7 +32,7 @@
     {
       "index": 1,
       "title": "Transmission Line Outage Postings",
-      "summary": "APS did not timely post transmission line outages on its OASIS on six occasions. As a result, the ATC/TTC values were not updated to reflect these outages, which then led to the curtailment of 16 transmission service schedules.",
+      "summary": "APS did not timely post transmission line outages on its OASIS on six occasions. As a result, the Available Transfer Capability (ATC)/Total Transfer Capability (TTC) values were not updated to reflect these outages, which then led to the curtailment of 16 transmission service schedules.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -50,7 +50,7 @@
     {
       "index": 2,
       "title": "Non-Firm Redirect Service Requests",
-      "summary": "APS transmission staff improperly directed existing long-term firm PTP customers to execute a short-term transmission service agreement when requesting non-firm redirect service. This process was implemented because an OASIS configuration error prevented existing long-term firm PTP customers from requesting non-firm redirect service on APS’s OASIS, and instead required customers to manually request redirect service. Not only was the process involving these short-term agreements inconsistent with APS’s OATT, the process also improperly enabled customers to manually select a higher priority for",
+      "summary": "APS transmission staff improperly directed existing long-term firm Point-to-Point (PTP) customers to execute a short-term transmission service agreement when requesting non-firm redirect service. This process was implemented because an OASIS configuration error prevented existing long-term firm PTP customers from requesting non-firm redirect service on APS’s OASIS and, instead, required customers to manually request redirect service. Not only was the process involving these short-term agreements inconsistent with APS’s OATT, the process also improperly enabled customers to manually select a higher priority for this redirect service request than they otherwise should have received. D. List of",
       "is_other_matter": false,
       "recommendations": [
         {

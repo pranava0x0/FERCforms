@@ -57,7 +57,7 @@
     {
       "index": 2,
       "title": "Depreciation Rates and Dismantlement Charge",
-      "summary": "PXP did not file and receive Commission approval for depreciation rates it used for calculating depreciation expense for some of its carrier property accounts. PXP also did not seek approval from the Commission to include a dismantlement charge, for decommissioning assets, in several carrier property accounts. PXP has applied these unapproved depreciation rates and the dismantlement charge to calculate depreciation expense since 2014. As a result, PXP was not in compliance with the Commission’s requirement to file for approval of these rates and charges within six months of acquiring property",
+      "summary": "PXP did not file and receive Commission approval for depreciation rates it used for calculating depreciation expense for some of its carrier property accounts. PXP also did not seek approval from the Commission to include a dismantlement charge, for decommissioning assets, in several carrier property accounts. PXP has applied these unapproved depreciation rates and the dismantlement charge to calculate depreciation expense since 2014. As a result, PXP was not in compliance with the Commission’s requirement to file for approval of these rates and charges within six months of acquiring property and to use only Commission-approved rates and charges to calculate depreciation expense.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -113,7 +113,7 @@
     {
       "index": 4,
       "title": "Industry Trade Association Dues",
-      "summary": "PXP incorrectly recorded membership dues paid to the Liquid Energy Pipeline Association (LEPA) in an operating and maintenance (O&M) expense account, rather than in a general expense account, in 2020 and 2021. Further, for those same years, PXP improperly recorded the lobbying portion of membership dues paid to both LEPA and the American Petroleum Institute (API) in operating expense accounts rather than in a nonoperating expense account. Conversely, in 2022, PXP incorrectly recorded the full amount of membership dues paid to LEPA in a nonoperating expense account, rather than recording the lo",
+      "summary": "PXP incorrectly recorded membership dues paid to the Liquid Energy Pipeline Association (LEPA) in an operating and maintenance (O&M) expense account, rather than in a general expense account, in 2020 and 2021. Further, for those same years, PXP improperly recorded the lobbying portion of membership dues paid to both LEPA and the American Petroleum Institute (API) in operating expense accounts rather than in a nonoperating expense account. Conversely, in 2022, PXP incorrectly recorded the full amount of membership dues paid to LEPA in a nonoperating expense account, rather than recording the lobbying portion in a nonoperating expense account and the remaining non-lobbying portion in a general expense account. Collectively, these errors resulted in PXP misstating the operating Tallgrass Pony Express Pipeline, LLC Docket No. PA23-5-000 expenses reported on Page 700, Line 1, and reduced the overall accuracy of the account information reported in PXP’s FERC Form No. 6 filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -136,7 +136,7 @@
     {
       "index": 5,
       "title": "Accounting Misclassifications and Reporting",
-      "summary": "PXP did not correctly account for certain costs on its books, which reduced the overall accuracy of the accounting and reporting of these items in PXP’s FERC Form No. 6 reports.",
+      "summary": "PXP did not correctly account for certain costs on its books, which reduced the overall accuracy of the accounting and reporting of these items in PXP’s FERC Form No. 6 reports. D.",
       "is_other_matter": false,
       "recommendations": [
         {

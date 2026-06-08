@@ -29,7 +29,7 @@
     {
       "index": 1,
       "title": "Depreciation Rates and Expense",
-      "summary": "Mustang did not use Commission-approved depreciation rates to calculate depreciation expense for certain carrier property assets. Additionally, Mustang’s depreciation expense accrual started on the date that Mustang transferred project costs from its CWIP account to its carrier property accounts rather than on the date it placed projects into service. These errors caused Mustang to overstate rate base and understate depreciation expense in its cost of service reported on Page 700 during and prior to the audit period.",
+      "summary": "Mustang did not use Commission- approved depreciation rates to calculate depreciation expense for certain carrier property assets. Additionally, Mustang’s depreciation expense accrual started on the date that Mustang transferred project costs from its Construction Work in Progress (CWIP) account to its carrier property accounts rather than on the date it placed projects into service. These errors caused Mustang to overstate rate base and understate depreciation expense in its cost of service reported on Page 700 during and prior to the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -62,7 +62,7 @@
     {
       "index": 2,
       "title": "Return on Equity and Capital Structure",
-      "summary": "Mustang used the ROE rate developed by its indirect parent, Mobil, and Plantation, an affiliate, and relied on the capital structure of one of its ultimate parent companies, ExxonMobil, to determine the weighted cost of capital on Page 700. The percentages Mustang used for its ROE and capital structure were unsupported and there was no analysis to support certain inputs of its weighted cost of capital determination. Mustang should have supported its ROE figures with analysis based on a proxy group consisting of pipelines with comparable risks used in a discounted cash flow or similar analysis",
+      "summary": "Mustang used the ROE rate developed by its indirect parent, Mobil, and Plantation, an affiliate, and relied on the capital structure of one of its ultimate parent companies, ExxonMobil, to determine the weighted cost of capital on Page 700. The percentages Mustang used for its ROE and capital structure were unsupported and there was no analysis to support certain inputs of its weighted cost of capital determination. Mustang should have supported its ROE figures with analysis based on a proxy group consisting of pipelines with comparable risks used in a discounted cash flow or similar analysis to support the ROE and capital structure percentages. As a result, audit staff could not validate the accuracy of the ROE and capital structure Mustang used to determine its overall cost of service reported on Page 700 during the audit period.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -95,7 +95,7 @@
     {
       "index": 3,
       "title": "Cost of Service Based Analysis Schedule",
-      "summary": "reported on Page 700 and reduced the overall usefulness and transparency of the FERC Form No. 6, during the audit period.",
+      "summary": "Mustang incorrectly calculated certain inputs for its Annual Cost of Service Based Analysis Schedule reported on Page 700. These errors included several inconsistencies in Mustang’s Allowance for Funds Used During Construction (AFUDC) calculation during the audit period. Mustang also included an income tax allowance in its cost of service but did not reduce its rate base by Accumulated Deferred Income Tax (ADIT) in 2014. Collectively, these errors reduced the accuracy, transparency, and usefulness of Page 700.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -141,7 +141,7 @@
     {
       "index": 5,
       "title": "Cash Management Agreement Filings",
-      "summary": "Mustang did not file its initial and amended cash management agreements with the Commission, which impaired the Commission’s knowledge of Mustang’s cash management program and limited the Commission’s ability to monitor the program.",
+      "summary": "Mustang did not file its initial and amended cash management agreements with the Commission, which impaired the Commission’s knowledge of Mustang’s cash management program and limited the Commission’s ability to monitor the program. D.",
       "is_other_matter": false,
       "recommendations": [
         {

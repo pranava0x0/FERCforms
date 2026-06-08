@@ -31,14 +31,14 @@
   "findings": [
     {
       "index": 1,
-      "title": "Posting of Available Transfer Capability/Total Transfer Capability on Interconnection Paths",
-      "summary": "El Paso did not post the ATC and TTC for nine control area to control area interconnection paths on its OASIS as required by the Commission’s OASIS posting requirements. This practice may hinder customers from obtaining transmission service on these paths.",
+      "title": "Posting of Available Transfer Capability (ATC)/Total Transfer Capability (TTC) on Interconnection Paths",
+      "summary": "El Paso did not post the ATC and TTC for nine control area to control area interconnection paths on its OASIS as required by the Commission’s OASIS posting requirements. This practice may potentially hinder customers from obtaining transmission service on these paths.",
       "is_other_matter": false,
       "recommendations": []
     },
     {
       "index": 2,
-      "title": "Use of Designated Network Resource to Make Firm Off-System Sales",
+      "title": "Use of Designated Network Resource (DNR) to Make Firm Off-System Sales",
       "summary": "El Paso incorrectly used a DNR to make firm off-system sales, which was inconsistent with its OATT requirements.",
       "is_other_matter": false,
       "recommendations": []
@@ -46,7 +46,7 @@
     {
       "index": 3,
       "title": "Accounting for Joint Owner Billing",
-      "summary": "El Paso did not functionalize portions of third-party billings characterized as A&G expenses for the operation and maintenance of the Palo Verde Generating Station, the Four Corners Generating Station, and the Palo Verde Transmission Switchyard. As a result, El Paso overstated A&G expenses and understated expenses in the generating and transmission O&M accounts.",
+      "summary": "El Paso did not functionalize portions of third-party billings characterized as administrative and general (A&G) expenses for the operation and maintenance of the Palo Verde Generating Station, the Four Corners Generating Station, and the Palo Verde Transmission Switchyard. As a result, El Paso overstated A&G expenses and understated expenses in the generating and transmission operation and maintenance (O&M) accounts.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -64,7 +64,7 @@
     {
       "index": 4,
       "title": "Application of Nonapproved Depreciation Rates",
-      "summary": "El Paso applied state-approved depreciation rates to assets included in its wholesale production formula rate from 2016 through 2018, but did not file these updated depreciation rates with the Commission and obtain Commission approval prior to using them in wholesale formula rate determinations.",
+      "summary": "El Paso applied state- approved depreciation rates to assets included in its wholesale production formula rate from 2016 through 2018, but did not file these updated depreciation rates with the Commission and obtain Commission approval prior to using them in wholesale formula rate determinations. Other Matter El Paso’s transmission function created Transmission Service Numbers (TSN) and assigned these TSNs to its merchant function to facilitate scheduling of transmission service, which is less transparent than assigning Transmission Service Requests (TSR) created in OASIS because TSNs are manually created outside of OASIS. D. Summary of",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -78,13 +78,6 @@
           "source_page": null
         }
       ]
-    },
-    {
-      "index": 5,
-      "title": "Use of Transmission Service Numbers",
-      "summary": "El Paso’s transmission function created TSNs and assigned these TSNs to its merchant function to facilitate scheduling of transmission service, which is less transparent than assigning TSRs created in OASIS because TSNs are manually created outside of OASIS.",
-      "is_other_matter": true,
-      "recommendations": []
     }
   ],
   "structured": true

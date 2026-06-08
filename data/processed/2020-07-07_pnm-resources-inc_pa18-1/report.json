@@ -27,12 +27,12 @@
   "forms": [
     "1"
   ],
-  "finding_count": 11,
+  "finding_count": 13,
   "findings": [
     {
       "index": 1,
       "title": "Independent Functioning of PNM’s Transmission Function",
-      "summary": "During the audit period, upon its WPM function’s request, PNM’s transmission function employees procured PTP transmission service on certain paths for WPM function employees, contrary to the Commission’s Independent Functioning Rule. As a result, PNM’s transmission function employees conducted a marketing function and did not function independently of its marketing function employees.",
+      "summary": "During the audit period, upon its Wholesale Power Merchant (WPM) function’s request, PNM’s transmission function employees procured Point-to-Point (PTP) transmission service on certain paths for WPM function employees, contrary to the Commission’s Independent Functioning Rule. As a result, PNM’s transmission function employees conducted a marketing function and did not function independently of its marketing function employees.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -106,7 +106,7 @@
     {
       "index": 4,
       "title": "Termination of Network Resources",
-      "summary": "PNM did not fully implement Commission-approved North American Energy Standards Board (NAESB) standards that require network customers to submit terminations (temporary and indefinite) of network resources through OASIS in a timely manner. As a result, PNM allowed its network customers to submit terminations of network resources outside of OASIS for more than two years after the Order No. 676-H compliance deadline of March 1, 2017.",
+      "summary": "PNM did not fully implement Commission-approved North American Energy Standards Board standards that require network customers to submit terminations (temporary and indefinite) of network resources through OASIS in a timely manner. Instead, PNM continued to allow its network customers to submit terminations of network resources outside of OASIS for more than two years after the Order No. 676-H deadline of March 1, 2017.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -116,30 +116,14 @@
         },
         {
           "number": 12,
-          "text": "Provide training with respect to the processes and procedures developed in response to Recommendation 11.",
+          "text": "Provide training with respect to the processes and procedures developed in response to Recommendation 11. Asset Retirement Obligations",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 5,
-      "title": "Asset Retirement Obligations",
-      "summary": "PNM did not obtain Commission approval in advance of recovering asset retirement obligation costs in its transmission formula rate calculations. Also, PNM did not file its accounting entries with the Commission to reclassify approximately $37 million from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only) to Account 435, Extraordinary Deductions.",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 13,
-          "text": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval.",
+          "text": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval. Allowance for Funds Used During Construction",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 6,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "PNM’s methods for calculating and accounting for its AFUDC rate were deficient and caused PNM’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • PNM improperly included in its short-term debt rate an amount labeled “other interest,” which represented the interest recorded against transmission and interconnection study advances paid to PNM. • PNM incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • PNM combined the costs of all debt issuances,",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 14,
           "text": "Revise its procedures to ensure that its AFUDC rate calculation is consistent with Electric Plant Instruction No. 3(17), Order Nos. 561 and 561-A, and other applicable Commission accounting regulations.",
@@ -188,6 +172,20 @@
       ]
     },
     {
+      "index": 5,
+      "title": "Asset Retirement Obligations (ARO)",
+      "summary": "PNM did not obtain Commission approval in advance of recovering asset retirement obligation costs in its transmission formula rate calculations. Also, PNM did not file its accounting entries with the Commission to reclassify approximately $37 million from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only) to Account 435, Extraordinary Deductions.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "PNM’s methods for calculating and accounting for its AFUDC rate were deficient and caused PNM’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • PNM improperly included in its short-term debt rate an amount labeled “other interest,” which represented the interest recorded against transmission and interconnection study advances paid to PNM. • PNM incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • PNM combined the costs of all debt issuances, rather than individually computing the costs of each debt issuance, to determine the weighted cost of long-term debt. As a result of these methods, PNM overstated AFUDC by approximately $443,000 for 2015 and approximately $1,151,000 for 2016.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
       "index": 7,
       "title": "Accounting for Commitment Fees",
       "summary": "PNM improperly accounted for upfront and quarterly commitment fees that it paid for a credit facility, in Accounts 428, Amortization of Debt Discount and Expense, and 431, Other Interest Expense, respectively, and included these items in its calculation of short-term debt interest expense used to compute its AFUDC rate.",
@@ -234,7 +232,7 @@
     {
       "index": 10,
       "title": "Short-Term Transmission Capacity Reassignments",
-      "summary": "PNM did not execute transmission service agreements governing 15 non- affiliated transmission capacity reassignments prior to commencing the reassigned transmission service. Also, PNM did not report these reassignments in its EQR filings.",
+      "summary": "PNM did not execute transmission service agreements governing 15 non-affiliated transmission capacity reassignments prior to commencing the reassigned transmission service. Also, PNM did not report these reassignments in its Electric Quarterly Report (EQR) filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -252,7 +250,7 @@
     {
       "index": 11,
       "title": "EQR Filing Requirements",
-      "summary": "PNM’s EQR filings contained reporting errors including the improper reporting of cost-based power sales and unreported capacity reassignments.",
+      "summary": "PNM’s EQR filings contained numerous reporting errors including the improper reporting of cost-based power sales and unreported capacity reassignments. Other Matters",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -291,6 +289,20 @@
           "source_page": null
         }
       ]
+    },
+    {
+      "index": 12,
+      "title": "Use of non-OASIS Reservations",
+      "summary": "PNM’s transmission function created Transmission Service Numbers (TSN), a subset of non-OASIS reservations, and assigned TSNs to WPM in order to facilitate scheduling of transmission service. Since TSNs are created outside of OASIS, PNM’s scheduling of transmission service using the TSNs was less transparent than typical Transmission Service Requests (TSR) created in OASIS.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 13,
+      "title": "After-the-Fact Reservation and Scheduling Practice",
+      "summary": "PNM performs an “after-the-fact” (ATF) review to determine overuse of transmission service by its transmission customers. However, this ATF review is not documented as a formal business practice and posted on OASIS. Audit staff encourages PNM to document this ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review. The formal business practice should include PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. D. Summary of",
+      "is_other_matter": false,
+      "recommendations": []
     }
   ],
   "structured": true

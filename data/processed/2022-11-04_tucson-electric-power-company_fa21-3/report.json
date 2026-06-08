@@ -32,7 +32,7 @@
     {
       "index": 1,
       "title": "Accounting for Electric Distribution Maintenance Expenses",
-      "summary": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period. TEP’s accounting resulted in distribution-related maintenance expenses being improperly recorded in accounts that were for transmission-related maintenance expenses and that were FERC- jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdi",
+      "summary": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period. TEP’s accounting resulted in distribution-related maintenance expenses being improperly recorded in accounts that were for transmission-related maintenance expenses and that were FERC-jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $3.66 million.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -70,7 +70,7 @@
     {
       "index": 2,
       "title": "Accounting for Research, Development, and Demonstration Expenses",
-      "summary": "TEP improperly accounted for and reported $667,500 of Research, Development, and Demonstration (RD&D) expenses associated with renewable power generation in Account 909, Informational and Instructional Advertising Expenses (Major Only), and Account 923, Outside Services Employed, instead of in Account 549, Miscellaneous Other Power Generation Expenses (Major Only). TEP’s accounting resulted in expenses being improperly included in accounts that were FERC-jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requir",
+      "summary": "TEP improperly accounted for and reported $667,500 of Research, Development, and Demonstration (RD&D) expenses associated with renewable power generation in Account 909, Informational and Instructional Advertising Expenses (Major Only), and Account 923, Outside Services Employed, instead of in Account 549, Miscellaneous Other Power Generation Expenses (Major Only). TEP’s accounting resulted in expenses being improperly included in accounts that were FERC-jurisdictional transmission formula rate inputs. This led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $50,000.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -108,7 +108,7 @@
     {
       "index": 3,
       "title": "Unrecovered Costs of Plant Facilities",
-      "summary": "TEP accounted for and reported approximately $29 million of unrecovered plant on its books when it retired, prior to the end of their useful life, certain generating assets during the audit period. However, TEP did not record the unrecovered plant balance in Account 182.2, Unrecovered Plant and Regulatory Study Costs, nor seek authorization from the Commission for its proposed accounting entries for this early retirement of the generating assets. TEP also misclassified the amortization of the unrecovered plant balance to Account 403, Depreciation Expense, rather than recording the amortization",
+      "summary": "TEP accounted for and reported approximately $29 million of unrecovered plant on its books when it retired, prior to the end of their useful life, certain generating assets during the audit period. However, TEP did not record the unrecovered plant balance in Account 182.2, Elec. Power Co., Docket No. ER22-1212-000 (May 4, 2022) (delegated order accepting revised tariff provisions authorizing TEP to participate in CAISO’s Energy Imbalance Market). Unrecovered Plant and Regulatory Study Costs, nor seek authorization from the Commission for its proposed accounting entries for this early retirement of the generating assets. TEP also misclassified the amortization of the unrecovered plant balance to Account 403, Depreciation Expense, rather than recording the amortization in Account 407, Amortization of Property Losses, Unrecovered Plant, and Regulatory Study Costs. As a result, TEP did not complete an important step in enabling the Commission to exercise its regulatory accounting oversight (i.e., submitting accounting entries regarding unrecovered plant balances to the Commission for review and authorization) and did not adequately distinguish the balance of assets and other debits reported in its FERC Form No. 1. In addition, the foregoing errors led TEP to overstate its annual transmission revenue requirement by approximately $11,500 during the audit period and over collect from FERC-jurisdictional transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -189,7 +189,7 @@
     {
       "index": 5,
       "title": "Accounting for Payments on Behalf of Affiliates",
-      "summary": "TEP improperly accounted for and reported $211,000 in its A&G and Operational and Maintenance (O&M) Expense accounts that should have been allocated to one or more of its affiliates. TEP overstated certain A&G and O&M expense accounts, which led to utility customers improperly subsidizing non-regulated operations. This also led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $19,300.",
+      "summary": "TEP improperly accounted for and reported $211,000 in its A&G and operations and maintenance (O&M) accounts that should have been allocated to one or more of its affiliates. TEP overstated certain A&G and O&M expense accounts, which led to utility customers improperly subsidizing non-regulated operations. This also led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $19,300.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -326,7 +326,7 @@
     {
       "index": 9,
       "title": "Asset Retirement Obligations",
-      "summary": ", and an ARO asset in the electric utility or nonutility plant account, as appropriate, that is associated with the ARO liability. Audit staff analyzed the accounting that TEP used to initially record AROs. Audit staff also examined the methods the company used to account for depreciation, accretion, and measurement changes on AROs, and evaluated supporting documentation associated with these transactions. TEP recorded ARO liabilities in Account 230 at the present value of future cash flows the company estimated would be required to settle the obligations and recorded an ARO asset in the plant",
+      "summary": "TEP improperly accounted for and reported the accretion and depreciation expense associated with its Asset Retirement Obligations (AROs) in Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only), instead of correctly recording such expenses in Account 182.3, Other Regulatory Assets.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -367,7 +367,7 @@
     {
       "index": 11,
       "title": "FERC Form No. 1 Reporting Schedules",
-      "summary": "TEP did not report complete and accurate information as required in certain supporting schedules of its 2018, 2019, 2020, and 2021 FERC Form No. 1 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 1.",
+      "summary": "TEP did not report complete and accurate information as required in certain supporting schedules of its 2018, 2019, 2020, and 2021 FERC Form No. 1 reports. This reduced the overall accuracy and usefulness of the information reported in the FERC Form No. 1. D. List of",
       "is_other_matter": false,
       "recommendations": [
         {

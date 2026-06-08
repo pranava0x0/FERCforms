@@ -31,7 +31,7 @@
     {
       "index": 1,
       "title": "Accounting for Compromise Settlements",
-      "summary": "SCE improperly recorded approximately $7.3 million of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages. As a result of the improper accounting for compromise settlements, SCE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers. SCE Response: SCE respectfully disagrees with this Draft Audit Report finding for policy and other reasons, which include but are not limited to SCE’s position that costs associated with mere claims and allegations without any actual findings of wrongdoing should",
+      "summary": "SCE improperly recorded approximately $7.3 million of compromise settlement payments related, at least in part, to alleged employment discrimination in Account 925, Injuries and Damages. As a result of the improper accounting for compromise settlements, SCE overstated its annual transmission revenue requirement and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -64,7 +64,7 @@
     {
       "index": 2,
       "title": "Accounting for Vendor Discounts",
-      "summary": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Miscellaneous General Expenses. As a result of the improper accounting for vendor discounts, SCE understated A&G expense and overstated various Operating and Maintenance as well as Electric Plant in Service accounts.",
+      "summary": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Miscellaneous General Expenses. As a result of the improper accounting for vendor discounts, SCE understated Administrative and General (A&G) expense and overstated various Operating and Maintenance as well as Electric Plant in Service accounts.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -81,8 +81,15 @@
     },
     {
       "index": 3,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "SCE’s method for computing and applying its AFUDC rate to construction projects was deficient. Specifically, SCE improperly excluded short-term debt related to energy procurement margin and collateral postings, and improperly excluded $100 million of long-term debt related to nuclear fuel procurement from its AFUDC rate calculation. In addition, SCE improperly accrued $182,586 of AFUDC on a suspended construction project during the audit period. As a result, SCE overaccrued AFUDC included in utility plant accounts and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
       "title": "Allowance for Funds Used During Construction",
-      "summary": "Equity Component The equity component of SCE’s method for computing the AFUDC rate was deficient. Specifically, SCE improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component used to compute its AFUDC rate.",
+      "summary": "Equity Component – The equity component of SCE’s method for computing the AFUDC rate was deficient. Specifically, SCE improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component used to compute its AFUDC rate.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -143,16 +150,9 @@
       ]
     },
     {
-      "index": 4,
-      "title": "Allowance for Funds Used During Construction – Equity Component",
-      "summary": "The equity component of SCE’s method for computing the AFUDC rate was deficient. Specifically, SCE improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component used to compute its AFUDC rate.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
       "index": 5,
       "title": "Accounting for Administrative and General Expenses",
-      "summary": "SCE improperly recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, SCE misrepresented A&G expense account balances reported in its FERC Form No. 1 filings.",
+      "summary": "SCE improperly recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, SCE misrepresented A&G expense account balances reported in its FERC Form No. 1 filings. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -170,7 +170,7 @@
     {
       "index": 6,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "SCE did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "summary": "SCE did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports. D.",
       "is_other_matter": false,
       "recommendations": [
         {

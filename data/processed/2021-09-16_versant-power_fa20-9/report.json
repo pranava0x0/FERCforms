@@ -31,7 +31,7 @@
     {
       "index": 1,
       "title": "Allocation of Overhead Costs to CWIP",
-      "summary": "1. Retain an independent third-party entity to conduct a representative labor time study for allocation of overhead costs incurred in 2020 to CWIP, and to assist with the development of procedures Versant Power shall use to periodically determine the allocation of overhead labor and labor-related costs capitalized into the cost of construction after 2020. Report the progress of the study within 120 days and provide the time study results to DAA for review and consideration within 180 days of the date of this audit report, and the developed allocation procedures when complete. At a minimum, the",
+      "summary": "Versant Power capitalized overhead costs to Account 107, Construction Work in Progress (CWIP) – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This led to Versant Power charging costs to Account 107 that did not have a definite relationship to construction. As a result, Versant Power may have overstated construction costs recorded in Account 107 and electric plant in service, as well as accumulated depreciation and accumulated deferred income tax, and may have understated operating expenses. Moreover, this accounting may have led Versant Power to overstate its wholesale transmission revenue requirement and overbill wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -76,17 +76,9 @@
         },
         {
           "number": 9,
-          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Allowance for Funds Used During Construction",
           "source_page": null
-        }
-      ]
-    },
-    {
-      "index": 2,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "10. Revise and implement procedures to calculate the AFUDC rate consistent with, EPI No. 3(A)(17), and other applicable Commission requirements. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 11. Provide training to relevant staff on the revised procedures implemented under",
-      "is_other_matter": false,
-      "recommendations": [
+        },
         {
           "number": 10,
           "text": "Revise and implement procedures to calculate the AFUDC rate consistent with, EPI No. 3(A)(17), and other applicable Commission requirements.",
@@ -130,9 +122,16 @@
       ]
     },
     {
+      "index": 2,
+      "title": "Allowance for Funds Used During Construction (AFUDC)",
+      "summary": "Versant Power improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, in the equity component when it computed its AFUDC rate. As a result, Versant Power over accrued AFUDC included in utility plant accounts, and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
       "index": 3,
       "title": "Income Tax Receivables",
-      "summary": "18. Revise accounting policies and procedures to properly account for income tax refund receivables consistent with the Commission accounting requirements. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 19. Provide training to relevant staff on the revised procedures for properly accounting for income tax refund receivables. Provide periodic training in these areas as needed. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 90 days o",
+      "summary": "Versant Power improperly recorded income tax receivables that represented refunds for income tax overpayments in Account 165, Prepayments, instead of in Account 143, Other Accounts Receivable. As a result, Versant Power overstated its transmission rate base used in its wholesale transmission formula rate calculation, and overbilled wholesale transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -182,7 +181,7 @@
     {
       "index": 5,
       "title": "Excess Accumulated Deferred Income Tax",
-      "summary": "25. Revise accounting policies and procedures to properly record and report the effect of changes in tax laws or tax rates consistent with the Commission’s accounting guidance in Docket No. AI93-5. Versant Power will comply with this recommendation. Versant Power anticipates completing this task within 60 days of the date of the final audit report. 26. Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates. Provide periodic training in these areas as needed. Versant Power will comply with this recomme",
+      "summary": "Versant Power improperly netted the excess and deficient Accumulated Deferred Income Tax (ADIT) related to the 2017 Tax Cuts and Jobs Act (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the amounts reported in Versant Power’s FERC Form No. 1 filings.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -210,7 +209,7 @@
     {
       "index": 6,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "Versant Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "summary": "Versant Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports. D.",
       "is_other_matter": false,
       "recommendations": []
     }

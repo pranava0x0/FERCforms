@@ -1,1 +1,30 @@
-{"collection": "state_rate_case", "jurisdiction": "TX", "source": "Public Utility Commission of Texas", "doc_type": "direct testimony", "id": "2025-03-25_el-paso-electric_puct-57149-opuc-testimony", "company": "El Paso Electric Company", "company_raw": "El Paso Electric Company", "docket": "57149", "docket_full": null, "issued_date": "2025-03-25", "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=113", "pdf_download_url": "https://interchange.puc.texas.gov/Documents/57149_113_1483132.PDF", "captured_at": "2026-06-01", "source_note": "Direct Testimony and Attachments of Evan D. Evans on behalf of the Office of Public Utility Counsel (OPUC, the statutory residential and small-commercial consumer advocate), challenging cost recovery in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed March 25, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_113_1483132.PDF.", "archived_via": null, "page_count": 52, "scanned_pages": [26], "ocr_used": false, "audit_period": null, "industry": "electric", "audit_type": null, "functions": [], "forms": [], "finding_count": 0, "findings": [], "structured": false}
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "TX",
+  "source": "Public Utility Commission of Texas",
+  "doc_type": "direct testimony",
+  "id": "2025-03-25_el-paso-electric_puct-57149-opuc-testimony",
+  "company": "El Paso Electric Company",
+  "company_raw": "El Paso Electric Company",
+  "docket": "57149",
+  "docket_full": null,
+  "issued_date": "2025-03-25",
+  "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&itemNumber=113",
+  "pdf_download_url": "https://interchange.puc.texas.gov/Documents/57149_113_1483132.PDF",
+  "captured_at": "2026-06-01",
+  "source_note": "Direct Testimony and Attachments of Evan D. Evans on behalf of the Office of Public Utility Counsel (OPUC, the statutory residential and small-commercial consumer advocate), challenging cost recovery in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed March 25, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_113_1483132.PDF.",
+  "archived_via": null,
+  "page_count": 52,
+  "scanned_pages": [
+    26
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

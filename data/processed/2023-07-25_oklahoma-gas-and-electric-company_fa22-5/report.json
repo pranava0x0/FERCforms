@@ -31,7 +31,7 @@
     {
       "index": 1,
       "title": "Amortization of Retail Regulatory Assets",
-      "summary": "OG&E included the amortization of certain retail regulatory assets in its wholesale transmission formula rate without Commission approval. As a result, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "summary": "OG&E included the amortization of certain retail regulatory assets in its wholesale transmission formula rate without Commission approval. As a result, OG&E overstated its annual transmission revenue requirement (ATRR) and overbilled its transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -64,7 +64,7 @@
     {
       "index": 2,
       "title": "Transmission Incentives",
-      "summary": "OG&E improperly included the amortization of AFUDC associated with transmission incentive projects as inputs to its transmission formula rate. The Commission had already authorized these projects for CWIP in rate base treatment. As a result, OG&E overstated its ATRR by approximately $1.8 million and overbilled its transmission customers.",
+      "summary": "OG&E improperly included the amortization of Allowance for Funds Used During Construction (AFUDC) associated with transmission incentive projects as inputs to its transmission formula rate. The Commission had already authorized these projects for Construction Work in Progress (CWIP) in rate base treatment. As a result, OG&E overstated its ATRR by approximately $1.8 million and overbilled its transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -97,7 +97,7 @@
     {
       "index": 3,
       "title": "Asset Retirement Obligations",
-      "summary": "The $2.5 million represented accumulated depreciation amounts associated with OG&E’s obligation to remove long-lived assets after their useful life. The $2.5 million had already been collected by OG&E from its customers through rates charged. Per Order No. 631, OG&E’s accounting for AROs should have had no impact on utility service rate determinations unless the company sought and received Commission approval. Audit staff reviewed OG&E’s transmission formula rate inputs and supporting worksheets and found that the accumulated depreciation of approximately $2.5 million removed from Account 108",
+      "summary": "OG&E’s accounting and rate treatment of asset retirement obligations (AROs) and asset retirement costs (ARCs) were contrary to Commission regulations. Specifically, OG&E made the following errors: (1) removed accumulated depreciation amounts from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only), without Commission approval, resulting in excluding some of the removed accumulated depreciation amounts from the calculation of OG&E’s transmission formula rate ATRR calculations, thereby overstating the ATRR and transmission customer billings; and (2) included ARCs recorded in Electric Plant in Service balances in the transmission formula rate base without Commission approval. As a result, OG&E may have overstated its ATRR and overbilled its transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -122,9 +122,17 @@
         },
         {
           "number": 15,
-          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Allowance for Funds Using During Construction",
+          "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
-        },
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Allowance for Funds Using During Construction",
+      "summary": "OG&E improperly calculated its AFUDC rate. Specifically, OG&E incorrectly: (1) calculated its short-term debt cost rate; (2) included Account 226, Unamortized Discount on Long-Term Debt, in long-term debt balances; and (3) recorded Accumulated Deferred Income Tax (ADIT) amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. As a result, OG&E over accrued AFUDC included in utility plant accounts and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 16,
           "text": "Revise and implement policies and procedures to calculate the AFUDC rate consistent with Electric Plant Instruction No. 3(A)(17), and other applicable Commission regulations and orders.",
@@ -168,16 +176,9 @@
       ]
     },
     {
-      "index": 4,
-      "title": "Allowance for Funds Used During Construction",
-      "summary": "OG&E improperly calculated its AFUDC rate. Specifically, OG&E incorrectly: (1) calculated its short-term debt cost rate; (2) included Account 226, Unamortized Discount on Long-Term Debt, in long-term debt balances; and (3) recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. As a result, OG&E over accrued AFUDC included in utility plant accounts and overbilled its transmission customers.",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
       "index": 5,
       "title": "Accounting Misclassifications",
-      "summary": "OG&E recorded various O&M and A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, OG&E overstated its ATRR and overbilled its transmission customers.",
+      "summary": "OG&E recorded various operation and maintenance (O&M) and administrative and general (A&G) expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, OG&E overstated its ATRR and overbilled its transmission customers.",
       "is_other_matter": false,
       "recommendations": [
         {
@@ -296,7 +297,7 @@
     {
       "index": 8,
       "title": "FERC Form No. 1 Reporting",
-      "summary": "OG&E did not properly follow the FERC Form No. 1 reporting instructions and, therefore, did not accurately report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports.",
+      "summary": "OG&E did not properly follow the FERC Form No. 1 reporting instructions and, therefore, did not accurately report all required information in its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the reports. D.",
       "is_other_matter": false,
       "recommendations": [
         {
