@@ -126,6 +126,17 @@ def verify(seed_filter: str | None = None) -> dict[str, list[str]]:
         if seed.get("fetch", True) and r.get("page_count", 0) > 0:
             verdicts["PROVEN"].append(rid)
             continue
+        # eLibrary accession-backed records (e.g. FERC prudence orders) are verified
+        # by their accession — DownloadPDF needs the F5 cookie+POST, so a plain GET
+        # returns HTML. A plain-GET "non-PDF" here is NOT a fabrication signal; the
+        # accession is the provenance. (byte-fetch happens via fetch.py's cookie dance.)
+        if seed.get("accession"):
+            verdicts["CHECK"].append(f"{rid} [eLibrary accession {seed['accession']} — cookie-dance to byte-verify]")
+            continue
+        # fetch=false (browser-captured) records are STILL probed: a hard 404/410 means
+        # the captured URL is wrong/invented (the real fabrication catch), while a WAF
+        # wall (403 / connection-reset) or an HTML page is EXPECTED for them and routes
+        # to CHECK — see the verdict logic below, which keys on the fetch flag.
         work.append((rid, seed["pdf_url"]))
 
     def _run(item: tuple[str, str]) -> tuple[str, int, str, bool]:
@@ -136,16 +147,25 @@ def verify(seed_filter: str | None = None) -> dict[str, list[str]]:
     with ThreadPoolExecutor(max_workers=12) as ex:
         for rid, code, ctype, is_pdf in ex.map(_run, work):
             seed = seeds[rid]
+            browser_captured = not seed.get("fetch", True)
             is_html_source = seed["pdf_url"].lower().endswith((".htm", ".html")) or "viewimage" in seed["pdf_url"].lower()
-            if code in (0, 404, 410):
+            if code in (404, 410):
+                # a 404 is suspicious for ANYONE — even a browser-captured URL should exist.
                 verdicts["DEAD"].append(f"{rid} [{code}] {seed['pdf_url']}")
             elif code in (401, 403):
                 verdicts["WALLED"].append(f"{rid} [{code}]")
+            elif code == 0:
+                # connection error/timeout: a hard failure for a script-fetchable URL,
+                # but EXPECTED for a WAF-walled browser-captured one.
+                (verdicts["CHECK"] if browser_captured else verdicts["DEAD"]).append(
+                    f"{rid} [conn-error]{' browser-captured' if browser_captured else ''} {seed['pdf_url']}")
             elif is_pdf:
                 verdicts["OK"].append(f"{rid} [{code}]")
-            elif is_html_source:
-                verdicts["CHECK"].append(f"{rid} [{code}] HTML source — verify content match")
+            elif browser_captured or is_html_source:
+                # HTML where a captured/HTML source is expected — content match needs a human.
+                verdicts["CHECK"].append(f"{rid} [{code}] HTML/browser-captured — verify content match")
             else:
+                # fetch=true expected a real PDF but got non-PDF — the fabrication signal.
                 verdicts["NON_PDF"].append(f"{rid} [{code} {ctype}] expected PDF, got non-PDF: {seed['pdf_url']}")
     return verdicts
 

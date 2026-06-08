@@ -411,33 +411,46 @@ from pipeline import verify_sources  # noqa: E402
 
 
 def test_verify_sources_classifies_dead_nonpdf_and_proven(monkeypatch):
-    """The fabrication catcher must flag the two network-only failure modes the
-    2026-06-07 incident proved: a 404 (TX `…_1234567.PDF`) → DEAD, and a 200 that
-    returns non-PDF where a PDF was claimed (FL `06790-2024.pdf` HTML) → NON_PDF.
-    A real fetched record (page_count>0) is PROVEN without any network call."""
+    """The fabrication catcher's classification rules:
+      - fetch=true that 404s (TX `…_1234567.PDF`) → DEAD.
+      - fetch=true that 200s with non-PDF (FL `06790-2024.pdf` HTML) → NON_PDF.
+      - page_count>0 fetched record → PROVEN (no network call).
+      - a 404 on a BROWSER-CAPTURED (fetch=false) URL is still DEAD (the captured URL
+        is wrong/invented) — but a WAF/HTML response on one is CHECK, not a failure.
+      - eLibrary accession-backed records (FERC prudence) → CHECK (need the cookie
+        dance, not a plain GET) — never a false NON_PDF.
+    Regression for the 2026-06-08 verifier false-positive fix."""
     seeds = {
-        "fake-404": {"id": "fake-404", "pdf_url": "https://x.gov/a.PDF", "fetch": False, "_file": "x.json"},
-        "fake-html": {"id": "fake-html", "pdf_url": "https://x.gov/b.pdf", "fetch": False, "_file": "x.json"},
+        "fetch-true-404": {"id": "fetch-true-404", "pdf_url": "https://x.gov/a.PDF", "fetch": True, "_file": "x.json"},
+        "fetch-true-html": {"id": "fetch-true-html", "pdf_url": "https://x.gov/b.pdf", "fetch": True, "_file": "x.json"},
         "real-fetched": {"id": "real-fetched", "pdf_url": "https://x.gov/c.pdf", "fetch": True, "_file": "x.json"},
-        "real-html-src": {"id": "real-html-src", "pdf_url": "https://x.gov/d.htm", "fetch": False, "_file": "x.json"},
+        "captured-html": {"id": "captured-html", "pdf_url": "https://x.gov/d.htm", "fetch": False, "_file": "x.json"},
+        "captured-404": {"id": "captured-404", "pdf_url": "https://x.gov/e", "fetch": False, "_file": "x.json"},
+        "elibrary-acc": {"id": "elibrary-acc", "pdf_url": "https://elibrary.ferc.gov/...DownloadPDF", "fetch": True, "accession": "20230515-3006", "_file": "ferc_prudence.json"},
     }
     reports = {
-        "fake-404": {"id": "fake-404", "collection": "state_audit", "page_count": 0},
-        "fake-html": {"id": "fake-html", "collection": "state_audit", "page_count": 0},
+        "fetch-true-404": {"id": "fetch-true-404", "collection": "state_audit", "page_count": 0},
+        "fetch-true-html": {"id": "fetch-true-html", "collection": "state_audit", "page_count": 0},
         "real-fetched": {"id": "real-fetched", "collection": "state_rate_case", "page_count": 42},
-        "real-html-src": {"id": "real-html-src", "collection": "state_audit", "page_count": 0},
+        "captured-html": {"id": "captured-html", "collection": "state_audit", "page_count": 0},
+        "captured-404": {"id": "captured-404", "collection": "state_audit", "page_count": 0},
+        "elibrary-acc": {"id": "elibrary-acc", "collection": "prudence_review", "page_count": 0},
     }
     probes = {
         "https://x.gov/a.PDF": (404, "text/html", False),
         "https://x.gov/b.pdf": (200, "text/html", False),   # resolves, but NOT a pdf
-        "https://x.gov/d.htm": (200, "text/html", False),   # HTML source — CHECK, not fail
+        "https://x.gov/d.htm": (200, "text/html", False),   # browser-captured HTML — CHECK
+        "https://x.gov/e": (404, "text/html", False),       # captured URL that 404s — DEAD
     }
     monkeypatch.setattr(verify_sources, "_load_seeds", lambda: seeds)
     monkeypatch.setattr(verify_sources, "_load_reports", lambda: reports)
     monkeypatch.setattr(verify_sources, "probe", lambda url, timeout=25: probes[url])
 
     v = verify_sources.verify()
-    assert any("fake-404" in s for s in v["DEAD"])
-    assert any("fake-html" in s for s in v["NON_PDF"])
+    assert any("fetch-true-404" in s for s in v["DEAD"])
+    assert any("fetch-true-html" in s for s in v["NON_PDF"])
     assert "real-fetched" in v["PROVEN"]
-    assert any("real-html-src" in s for s in v["CHECK"])
+    assert any("captured-html" in s for s in v["CHECK"])
+    assert any("captured-404" in s for s in v["DEAD"])        # 404 is suspicious even when browser-captured
+    assert any("elibrary-acc" in s for s in v["CHECK"])       # accession-backed -> CHECK, not NON_PDF
+    assert not any("elibrary-acc" in s for s in v["NON_PDF"])
