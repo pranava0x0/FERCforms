@@ -232,19 +232,19 @@ _73 document(s), 2022–2025. jurisdictions: PA (4), MI (4), MS (2), VA (2), OH 
 - [Ameren Illinois](https://www.icc.illinois.gov/documents): IL · utility compliance and performance audit, Docket Docket 2024-00167, issued n/a — listed for reference
 
 ## Common themes (from parsed findings)
-- Form reporting (Form No. 1/2/6, Page 700) — Errors or omissions in the annual FERC forms utilities file. (69 report(s), 182 finding(s))
+- Form reporting (Form No. 1/2/6, Page 700) — Errors or omissions in the annual FERC forms utilities file. (71 report(s), 184 finding(s))
 - Accounting misclassification — Costs or revenues booked to the wrong FERC account. (67 report(s), 180 finding(s))
-- Depreciation — Unapproved or incorrect depreciation rates applied to plant. (41 report(s), 58 finding(s))
+- Depreciation — Unapproved or incorrect depreciation rates applied to plant. (43 report(s), 63 finding(s))
 - Below-the-line costs (lobbying, charitable, etc.) — Non-recoverable costs (lobbying, charity, ads) charged to ratepayers. (39 report(s), 49 finding(s))
 - Property & plant records — Incomplete or inaccurate utility plant and property records. (38 report(s), 67 finding(s))
-- AFUDC / cost of capital — Mis-stated AFUDC — the financing cost capitalized during construction. (36 report(s), 46 finding(s))
-- Affiliate / intercompany transactions — Transactions with affiliated companies mis-priced or mis-reported. (26 report(s), 37 finding(s))
-- Cost of service & rates — Errors in rate-base or return inputs to cost-of-service rates. (24 report(s), 50 finding(s))
-- Tariff administration & oversight — Not following the utility's own FERC-approved tariff. (22 report(s), 35 finding(s))
+- AFUDC / cost of capital — Mis-stated AFUDC — the financing cost capitalized during construction. (37 report(s), 47 finding(s))
+- Cost of service & rates — Errors in rate-base or return inputs to cost-of-service rates. (30 report(s), 67 finding(s))
+- Affiliate / intercompany transactions — Transactions with affiliated companies mis-priced or mis-reported. (27 report(s), 40 finding(s))
+- Tariff administration & oversight — Not following the utility's own FERC-approved tariff. (25 report(s), 45 finding(s))
 - Capitalization vs. expense — Costs capitalized that should be expensed, or the reverse. (19 report(s), 20 finding(s))
 - Membership dues & industry associations — Trade-association dues (e.g., EEI) improperly charged to ratepayers. (11 report(s), 11 finding(s))
 - Informational postings — Required public postings (e.g., OASIS) missing, late, or incomplete. (10 report(s), 16 finding(s))
-- Creditworthiness — Customer credit standards not applied as the tariff requires. (1 report(s), 1 finding(s))
+- Creditworthiness — Customer credit standards not applied as the tariff requires. (2 report(s), 2 finding(s))
 
 ## Optional
 - [Human-readable explorer](index.html)

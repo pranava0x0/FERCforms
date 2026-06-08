@@ -27,7 +27,50 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $78 million",
+      "summary": ", in aggregate, in the Company’s service territory for a given storm event. The Major Storm revenue allowance reflected in rates will be $78 million. The treatment of Major Storm costs is more fully described in Appendix 13 and Appendix 5, Schedule 16. 40 Case 24-E-0322 Case 24-G-0323 Joint Propos",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $85.7 million",
+      "summary": "Lining Storm deferral will dissolve and there will be no minor storm deferral. The minor storm rate allowance will remain at $85.7 million for Rate Year Two and $87.6 million for Rate Year Three with no deferral for any expenditures for the remainder of the rate plan. 6.5. Pre-Staging St",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Approval: $61.775 million",
+      "summary": "r component is reflected through the revenue allocation and rate design process. The EAP Total Rate Allowances are $61.775 million in Rate Year One, $87.575 million 24 The cash shortfall is equal to the difference between the negative expense levels reflected in the revenue requi",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Approval: $1 million",
+      "summary": "cy economic assistance or other incremental economic development programs. The Economic Development Grant Program for gas will be funded by amortizing up to $1 million of the existing economic development programs gas deferral balance in each Rate Year. An example of the reconciliation is provided i",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Approval: $17.404 million",
+      "summary": "ric and Gas) Each Rate Year, the Company will fully reconcile actual SIR expense to the annual rate allowance of $17.404 million for electric and $3.071 million for gas in Rate Year One and $17.357 65 Case 24-E-0322 Case 24-G-0323 Joint Proposal million for electric and $3.063",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Approval: $25,000 ",
+      "summary": "n a grant program; and increases to maximum grant funding provided that the increase in the maximum grant amount does not exceed $25,000 and increase the maximum grant amount by more than 25 percent. Commission approval will continue to be required for other program adjustments, includi",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

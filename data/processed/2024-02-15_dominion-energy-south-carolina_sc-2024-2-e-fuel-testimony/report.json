@@ -22,7 +22,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $12 million",
+      "summary": "Black 8 Veatch's expert report and recommendations were accepted in its entirety bythe I Board that allowed NSPI to recover $12 million offuel cost incurred during the 2010-2011 winter. O 0 OGBE Gas Transportation and Storage Contracts Review; Oklahoma; 2011-2012 I O Project Lead — Bl",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

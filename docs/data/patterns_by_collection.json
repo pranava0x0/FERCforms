@@ -490,7 +490,7 @@
   },
   "state_rate_case": {
     "report_count": 115,
-    "finding_count": 0,
+    "finding_count": 392,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -512,8 +512,209 @@
       "2026": 4
     },
     "by_function": {},
-    "themes": [],
-    "top_titles": [],
+    "themes": [
+      {
+        "theme": "Cost of service & rates",
+        "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+        "keywords": [
+          "cost of service",
+          "cost-of-service",
+          "rate base",
+          "rate of return",
+          "return on equity"
+        ],
+        "finding_count": 17,
+        "report_count": 6,
+        "example_titles": [
+          "Approval: $1,277,051,206. ",
+          "Approval: $55.4\nmillion",
+          "Settlement: agreement",
+          "Settlement: Agreement"
+        ]
+      },
+      {
+        "theme": "Tariff administration & oversight",
+        "description": "Not following the utility's own FERC-approved tariff.",
+        "keywords": [
+          "tariff"
+        ],
+        "finding_count": 10,
+        "report_count": 3,
+        "example_titles": [
+          "Settlement: Agreement",
+          "Approval: $5 million"
+        ]
+      },
+      {
+        "theme": "Depreciation",
+        "description": "Unapproved or incorrect depreciation rates applied to plant.",
+        "keywords": [
+          "depreciation"
+        ],
+        "finding_count": 5,
+        "report_count": 2,
+        "example_titles": [
+          "Approval: $149.1 million",
+          "Settlement: Agreement"
+        ]
+      },
+      {
+        "theme": "Form reporting (Form No. 1/2/6, Page 700)",
+        "description": "Errors or omissions in the annual FERC forms utilities file.",
+        "keywords": [
+          "form no.",
+          "page 700",
+          "annual report",
+          "reporting"
+        ],
+        "finding_count": 2,
+        "report_count": 2,
+        "example_titles": [
+          "Settlement: Agreement"
+        ]
+      },
+      {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 3,
+        "report_count": 1,
+        "example_titles": [
+          "Settlement: Agreement"
+        ]
+      },
+      {
+        "theme": "AFUDC / cost of capital",
+        "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
+        "keywords": [
+          "allowance for funds used during construction",
+          "afudc"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Settlement: Agreement"
+        ]
+      },
+      {
+        "theme": "Creditworthiness",
+        "description": "Customer credit standards not applied as the tariff requires.",
+        "keywords": [
+          "creditworthiness"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Settlement: Agreement"
+        ]
+      }
+    ],
+    "top_titles": [
+      {
+        "title": "Settlement: Agreement",
+        "count": 266
+      },
+      {
+        "title": "Settlement: agreement",
+        "count": 14
+      },
+      {
+        "title": "Settlement: AGREEMENT",
+        "count": 13
+      },
+      {
+        "title": "Settlement: terms",
+        "count": 12
+      },
+      {
+        "title": "Approval: $5 million",
+        "count": 3
+      },
+      {
+        "title": "Approval: $100 million",
+        "count": 3
+      },
+      {
+        "title": "Disallowance: $175 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $175 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $156.9 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $51,223,778 ",
+        "count": 2
+      },
+      {
+        "title": "Approval: $4.2 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $900,000 ",
+        "count": 2
+      },
+      {
+        "title": "Approval: $1,277,051,206. ",
+        "count": 1
+      },
+      {
+        "title": "Approval: $58,668,766, ",
+        "count": 1
+      },
+      {
+        "title": "Approval: $117.7\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $1,671,378.\n",
+        "count": 1
+      },
+      {
+        "title": "Approval: $35.7 million",
+        "count": 1
+      },
+      {
+        "title": "Disallowance: $330,788.",
+        "count": 1
+      },
+      {
+        "title": "Approval: $175\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $55.4 million",
+        "count": 1
+      },
+      {
+        "title": "Approval: $55.4\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $69.8 million",
+        "count": 1
+      },
+      {
+        "title": "Approval: $68.9 million",
+        "count": 1
+      },
+      {
+        "title": "Disallowance: $534,482.",
+        "count": 1
+      },
+      {
+        "title": "Approval: $87.2\nmillion",
+        "count": 1
+      }
+    ],
     "generated_at": "2026-06-07"
   }
 }

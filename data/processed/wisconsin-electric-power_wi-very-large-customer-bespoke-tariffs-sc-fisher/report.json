@@ -26,7 +26,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Settlement: Agreement",
+      "summary": "with either BBB- or liquidity at 10x collateral)). See also Joint Motion for Approval of Unanimous Settlement Agreement and Amendment of the Procedural Schedule , In the Matter of the Application of Evergy Metro Inc. for Approval of Large Load Power Service Rate Plan a",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

@@ -22,7 +22,57 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Disallowance: $175 million",
+      "summary": "and prudent.”) (emphasis added). According to ComEd, there is no basis in fact for CICI’s proposed $175 million disallowance of CMC costs. The costs ComEd incurred and that ComEd is reconciling in this proceeding are the costs of the CMCs ComEd was statutorily required",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Disallowance: $175 million",
+      "summary": "(as adjusted by agreement between ComEd and Staff). There is thus no basis in the record for CICI’s $175 million disallowance. ComEd further argues that there is no basis in law for such an extraordinary and unprecedented penalty. There is nothing in the record, the Act,",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Approval: $175 million",
+      "summary": "the under-recovery could have been reduced if ComEd had acted prudently and is a sound basis for disallowance of $175 million. CICI Ex. 1.0 at 16. CICI contends that a minimum of $175 million of the under-recovery was not prudently incurred costs and should be disallowed by",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Approval: $175\nmillion",
+      "summary": "epancy was imprudent and created a regulatory asset for ComEd. CICI argues the Commission should disallow $175 million of the under-recovery plus the associated interest amount. The Commission agrees ComEd has failed to demonstrate the reasonableness of its actions bu",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Approval: $55.4 million",
+      "summary": "n on ComEd’s customers without providing them with any benefit. Therefore, the Commission should disallow the $55.4 million in compounded interest charges as well as the conservative disallowance of $175 million of the under-recovery discussed supra. Lastly, CICI contends",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Approval: $175 million",
+      "summary": "ion should disallow the $55.4 million in compounded interest charges as well as the conservative disallowance of $175 million of the under-recovery discussed supra. Lastly, CICI contends that the sections of the Act authorizing the CMC program do not authorize ComEd to charg",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Approval: $55.4\nmillion",
+      "summary": "f Rider CFRA. ComEd Ex. 4.0 at 7-8. ComEd states that CICI’s argument that the Commission should disallow the $55.4 million in interest charges because it is an operating expense on which the Commission should not allow ComEd to earn a rate of return (see CICI IB at 12-14)",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

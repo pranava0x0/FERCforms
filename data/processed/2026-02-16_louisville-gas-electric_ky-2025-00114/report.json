@@ -40,7 +40,50 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $1,277,051,206. ",
+      "summary": "ctric revenue requirement down from $1,323,417,452 in its original application287 to the Commission-approved overall revenue requirement of $1,277,051,206. As a result of adjusting LG&E’s electric rate base and cost of capital, the Commission finds that LG&E’s income tax expense should be recalculat",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $58,668,766, ",
+      "summary": "uld be applied to the Commission’s revenue requirement increase allocation. Based on the Commission-approved revenue requirement increase of $58,668,766, the Commission finds that the revenue requirement increase should be allocated as follows: LG&E Rate Class Commission Commission Increase ($) Incr",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Settlement: agreement",
+      "summary": "estimony, LG&E argued there are no changed circumstances that justify re-trading the 2014 rate case settlement agreement that both the AG and KIUC signed, just as there is no justification for the Attorney General/KIUC’s expert to change the 90 percent-10 percent sharin",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Settlement: agreement",
+      "summary": "ation to the KBCA, the Kentucky Cable Telecommunications Association (KCTA), was a signatory to the settlement agreement.873 In 2016, the Commission approved the combined pole attachment rate.874 However, the Companies did provide the rate calculation as separate entiti",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Settlement: Agreement",
+      "summary": "er, Appendix A. The testimony, Hornung Rebuttal Testimony at 19 also cited to Case No. 2014- 00371, Settlement Testimony of Kent W. Blake Exhibit 1, Settlement Agreement, Settlement Exhibit 4, KU Tariff, Kentucky Utilities Company P.S.C. No. 17, Original Sheet No. 40 (filed Apr. 20, 2015) (showing K",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Settlement: Agreement",
+      "summary": "d the settled rate of $7.25); Case No. 2014-00372, Settlement Testimony of Kent W. Blake Exhibit 1, Settlement Agreement, Settlement Exhibit 5, LG&E Electric Tariff, Louisville Gas and Electric Company P.S.C. Electric No. 10, Original Sheet No. 40 (filed Apr. 20, 2015)",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }
