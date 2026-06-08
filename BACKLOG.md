@@ -6,20 +6,18 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## ▶ CURRENT STATUS — 2026-06-08
 
-**Corpus expanded:** 303 reports, 34 states, 61 audit documents.
+**Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
-**Latest work (4 commits, 38 new documents):**
-- ✓ Tier 1 (Tier 2) expansion: 5 states (CO, NJ, MD, WA, OR) — 10 audits
-- ✓ Tier 2 (Region 2) expansion: 5 states (CA, IL, GA, NC, RI) — 9 audits  
-- ✓ Tier 3 (Region 3) expansion: 6 states (FL, SC, AZ, NV, AR, LA) — 12 audits
-- ✓ Tier 4 (Midwest/Northeast) expansion: 8 states (IN, KS, KY, MN, VT, MA, WI, MT) — 8 audits
+**Latest work (extraction pipeline fix):**
+- ✓ Fixed `pipeline.extract` to load from `reports.json` (all docs) instead of just `listing.json` (FERC only)
+- ✓ 115 rate-case documents now eligible for text extraction
+- ✓ Added `test_extract.py` regression test; all 91 tests passing
 
-**Top priority:** [docs/state-findings-extraction-plan.md](docs/state-findings-extraction-plan.md) — 53 state audits are born-digital but have NO parser. Three options:
-- **Option B:** Extract MI Liberty Consulting (4 docs) → build parser → ~80-150 findings → 2-3 hrs
-- **Option C:** Full state extraction (17 hrs) → 300-500 findings → new themes
-- **Option D:** Rate-case disallowances (future)
-
-**Deferred to next session:** Tier 5 remaining states (16 states: ID, ND, NE, NM, etc.). Geographic coverage near-complete; focus now on findings extraction.
+**Next steps (backlog):**
+1. **[high]** Run extraction/structure/build pipeline on rate-case documents → populate findings
+2. **[high]** Validate rate-case findings appear in UI (State Rate Cases tab)
+3. **[med]** State audit parser for non-PA formats (MI Liberty, CT orders, etc.)
+4. **[med]** Deferred: Tier 5 states (ID, ND, NE, NM, OK, etc.) — ~16 remaining
 
 ---
 
