@@ -139,9 +139,11 @@ def load_from_reports(path: Path) -> list[ListingEntry]:
     (rate cases, state audits) never got queued for text extraction. This function
     fixes that by loading from reports.json which includes everything.
     """
-    reports_path = path.parent / "data" / "reports.json"
+    # listing.json is at data/listing.json, so reports.json is also at data/reports.json
+    reports_path = path.parent / "reports.json"
+    logger.debug(f"looking for reports.json at {reports_path} (exists: {reports_path.exists()})")
     if not reports_path.exists():
-        logger.warning("reports.json not found; falling back to listing.json only")
+        logger.warning("reports.json not found at %s; falling back to listing.json only", reports_path)
         return load_listing(path)
 
     try:

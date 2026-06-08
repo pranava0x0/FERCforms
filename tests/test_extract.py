@@ -15,7 +15,7 @@ class TestExtractCoversSeedDocuments:
 
     def test_extract_processes_documents_with_pdfs(self, tmp_path, monkeypatch):
         """
-        Extract should process ALL documents that have PDFs, not just those in listing.json.
+        Extract should process ALL documents that have PDFs, including seed docs.
 
         Scenario:
         - listing.json has 3 documents (A, B, C)
@@ -26,14 +26,17 @@ class TestExtractCoversSeedDocuments:
         This test validates the fix for the issue: "pipeline.extract --limit processes
         listing order, not by collection".
         """
-        # Setup temp directories
+        # Setup directory structure: listing.json and reports.json are in same dir
+        data_dir = tmp_path / "data"
+        data_dir.mkdir()
+
         raw_dir = tmp_path / "raw"
         processed_dir = tmp_path / "processed"
         raw_dir.mkdir()
         processed_dir.mkdir()
 
         # Create minimal listing.json with 3 docs
-        listing_file = tmp_path / "listing.json"
+        listing_file = data_dir / "listing.json"
         listing = [
             {
                 "id": "doc-a",
@@ -72,7 +75,7 @@ class TestExtractCoversSeedDocuments:
         listing_file.write_text(json.dumps(listing), encoding="utf-8")
 
         # Create reports.json with 5 docs (includes seed docs D and E)
-        reports_file = tmp_path / "reports.json"
+        reports_file = data_dir / "reports.json"
         reports = listing + [
             {
                 "id": "doc-d",
@@ -112,7 +115,6 @@ class TestExtractCoversSeedDocuments:
 
         # Mock extract_report to track calls
         extracted_ids = []
-        original_extract = extract.extract_report
 
         def mock_extract(entry, raw, processed):
             extracted_ids.append(entry.id)
@@ -122,31 +124,21 @@ class TestExtractCoversSeedDocuments:
                 encoding="utf-8",
             )
 
-        # Patch the functions
-        monkeypatch.setattr(extract, "load_listing", lambda path: extract.load_listing.__wrapped__(listing_file))
+        # Patch config and extract
         monkeypatch.setattr(extract, "extract_report", mock_extract)
-
-        # Also patch config to use our temp dirs
         monkeypatch.setattr(config, "LISTING_PATH", listing_file)
         monkeypatch.setattr(config, "RAW_DIR", raw_dir)
         monkeypatch.setattr(config, "PROCESSED_DIR", processed_dir)
 
-        # Run extract.main() - should process only the 3 from listing.json (current behavior)
-        # After the fix, it should process all 5
+        # Run extract.main() — should process all 5 docs (after the fix)
         import sys
         sys.argv = ["extract.py"]
 
-        # This test currently documents the BUG: only 3 docs processed, not 5
-        # After the fix, this should assert all 5 are processed
-        with pytest.raises(SystemExit, match="0"):
-            extract.main()
-
-        # CURRENT BEHAVIOR: only processes docs in listing.json
-        assert len(extracted_ids) == 3, f"Expected 3 extractions (bug: seeds not included), got {len(extracted_ids)}: {extracted_ids}"
+        extract.main()
 
         # EXPECTED BEHAVIOR AFTER FIX: should process all docs with PDFs
-        # assert len(extracted_ids) == 5, f"Expected 5 extractions (all docs with PDFs), got {len(extracted_ids)}: {extracted_ids}"
-        # assert set(extracted_ids) == {"doc-a", "doc-b", "doc-c", "doc-d", "doc-e"}
+        assert len(extracted_ids) == 5, f"Expected 5 extractions (all docs with PDFs), got {len(extracted_ids)}: {extracted_ids}"
+        assert set(extracted_ids) == {"doc-a", "doc-b", "doc-c", "doc-d", "doc-e"}
 
     def test_extract_processes_all_documents_with_pdfs_after_fix(self, tmp_path, monkeypatch):
         """
