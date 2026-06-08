@@ -6,7 +6,20 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## ▶ CURRENT STATUS — 2026-06-08
 
-**Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
+**Corpus (verified real, post-fabrication-cleanup):** 254 documents — 120 FERC audits + 14 prudence reviews + 16 state PUC audits + 104 state rate cases. 1155 findings. Source of truth: `docs/data/meta.json`.
+
+> **⚠️ 2026-06-08 — removed 70 FABRICATED records** (invented dockets + guessed URLs, `fetch=false`, never verified). They had inflated the count to a phantom 322. See ISSUES.md + AUDIT_STATUS.md. The old "322 / 73 state audits" numbers below are pre-cleanup and wrong.
+
+**Remaining real-expansion work (only REAL, verified docs — never fabricate; run `python -m pipeline.verify_sources` before committing):**
+- **[high] Grow the State PUC Audits tab (16 real) with REAL audits.** Cleanest = more PA Bureau of Audits M&O audits (parseable, findings) at `puc.pa.gov/pcdocs/{id}.pdf`. Then NY DPS focused-operations audits (DMM guids + caption verify).
+- **[high] MI Liberty distribution audits (4) are real but `fetch=false`/0-page** — Cloudflare blocks scripted fetch, but a browser UA gets 200+PDF (verified live this session). Try a browser-like UA in `pipeline.fetch`/`sources` to actually download+extract them; else Chrome-MCP capture.
+- **[med] Restore real rate cases dropped as phantoms** that need a working fetch: `il_icc` ComEd P2024-0087 set + Ameren extras, `la_lpsc` SWEPCO (icc.illinois.gov 307-redirects + slow; la host slow). Re-add via `fetch=true` with verified URLs.
+- **[med] Browser-capture genuinely-walled states** (no real data at all now): OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA — per-state walls in docs/data-sources.md.
+- **[done 2026-06-08] Fabrication guards:** offline test + `pipeline.verify_sources` live sweep (DEAD/NON_PDF detection). 2 OH FirstEnergy 20-1502 records are real but WAF-blocks script re-verification — browser-confirm if ever in doubt.
+
+---
+
+**[STALE — pre-2026-06-08-cleanup, kept for history]** Corpus: 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
 **Latest work (extraction pipeline complete - session fix):**
 - ✓ Fixed `pipeline.extract` --limit to filter before limiting (was taking first N from all docs) — commit 47fc000
