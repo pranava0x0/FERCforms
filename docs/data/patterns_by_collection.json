@@ -378,12 +378,12 @@
     "generated_at": "2026-06-07"
   },
   "state_audit": {
-    "report_count": 61,
+    "report_count": 73,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 57,
+      "electric": 69,
       "gas": 2,
       "unknown": 2
     },
@@ -489,12 +489,12 @@
     "generated_at": "2026-06-07"
   },
   "state_rate_case": {
-    "report_count": 108,
+    "report_count": 110,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 99,
+      "electric": 101,
       "gas": 7,
       "unknown": 2
     },
@@ -507,8 +507,8 @@
       "2021": 4,
       "2022": 4,
       "2023": 6,
-      "2024": 21,
-      "2025": 37,
+      "2024": 22,
+      "2025": 38,
       "2026": 4
     },
     "by_function": {},

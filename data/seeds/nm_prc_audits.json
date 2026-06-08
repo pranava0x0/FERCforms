@@ -1,0 +1,18 @@
+[
+  {
+    "id": "public-service-company-nm_nm-2025-00145-audit",
+    "company": "Public Service Company of New Mexico",
+    "collection": "state_audit",
+    "jurisdiction": "NM",
+    "source": "New Mexico Public Regulation Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://prc.nm.gov/documents/2025-00145-PNM-Audit.pdf",
+    "source_page_url": "https://prc.nm.gov/utility-oversight",
+    "docket": "2025-00145",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Public Service Company of New Mexico, New Mexico PRC Docket No. 2025-00145. Placeholder URL pending verification from PRC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

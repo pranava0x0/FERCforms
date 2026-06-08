@@ -1,0 +1,18 @@
+[
+  {
+    "id": "virgin-islands-water-power_vi-2025-00089-audit",
+    "company": "Virgin Islands Water and Power Authority",
+    "collection": "state_audit",
+    "jurisdiction": "VI",
+    "source": "US Virgin Islands Public Utilities Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://puc.vi.gov/documents/2025-00089-VIWAPA-Audit.pdf",
+    "source_page_url": "https://puc.vi.gov/utility-oversight",
+    "docket": "2025-00089",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Virgin Islands Water and Power Authority, US Virgin Islands PUC Docket No. 2025-00089. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

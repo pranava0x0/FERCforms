@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pepco-dc_dc-2025-00089-service-quality-audit",
+    "company": "Potomac Electric Power Company (Pepco)",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "DC Public Service Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://dcpsc.org/documents/2025-00089-Pepco-ServiceQuality.pdf",
+    "source_page_url": "https://dcpsc.org/utility-oversight",
+    "docket": "2025-00089",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Potomac Electric Power Company (Pepco), DC PSC Docket No. 2025-00089. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

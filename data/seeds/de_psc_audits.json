@@ -1,0 +1,18 @@
+[
+  {
+    "id": "delmarva-power-light_de-2025-00145-audit",
+    "company": "Delmarva Power & Light",
+    "collection": "state_audit",
+    "jurisdiction": "DE",
+    "source": "Delaware Public Service Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://dnrec.delaware.gov/air/permitting/documents/2025-00145-Delmarva-Audit.pdf",
+    "source_page_url": "https://dnrec.delaware.gov/energy/regulatory/utility-oversight",
+    "docket": "2025-00145",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Delmarva Power & Light, Delaware PSC Docket No. 2025-00145. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

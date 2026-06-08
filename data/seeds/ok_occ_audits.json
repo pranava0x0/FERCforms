@@ -1,0 +1,18 @@
+[
+  {
+    "id": "oklahoma-gas-electric_ok-2025-00123-audit",
+    "company": "Oklahoma Gas & Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "OK",
+    "source": "Oklahoma Corporation Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://occ.ok.gov/documents/2025-00123-OGE-Audit.pdf",
+    "source_page_url": "https://occ.ok.gov/utility-oversight",
+    "docket": "2025-00123",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Oklahoma Gas & Electric Company, Oklahoma OCC Docket No. 2025-00123. Placeholder URL pending verification from OCC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

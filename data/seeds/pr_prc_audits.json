@@ -1,0 +1,18 @@
+[
+  {
+    "id": "puerto-rico-electric-power_pr-2025-00078-audit",
+    "company": "Puerto Rico Electric Power Authority",
+    "collection": "state_audit",
+    "jurisdiction": "PR",
+    "source": "Puerto Rico Energy Bureau",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://energia.pr.gov/documents/2025-00078-PREPA-Audit.pdf",
+    "source_page_url": "https://energia.pr.gov/utility-oversight",
+    "docket": "2025-00078",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Puerto Rico Electric Power Authority, Puerto Rico Energy Bureau Docket No. 2025-00078. Placeholder URL pending verification from Energy Bureau document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]
