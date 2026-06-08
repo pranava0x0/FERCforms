@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="254 structured records (120 FERC audits, 14 prudence reviews, 120 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="249 structured records (120 FERC audits, 14 prudence reviews, 115 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3064,10 +3064,6 @@ Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting th
 Listed for reference (not machine-parsed into findings).
 Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio's review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company (FirstEnergy's Ohio electric distribution utilities), Case No. 20-1502-EL-UNC, filed December 19, 2025 (21 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A25L19B41411B02333.
 </doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0382" issued="2025-12-18" industry="electric" source="https://www.icc.illinois.gov/docket/P2025-0382/documents/374217">
-Listed for reference (not machine-parsed into findings).
-Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).
-</doc>
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="2025-12-12" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1122">
 Listed for reference (not machine-parsed into findings).
 Order No. 74 of the Arkansas Public Service Commission in the Formula Rate Plan filings of Entergy Arkansas, LLC, Docket No. 16-036-FR — the Commission's disposition of Entergy Arkansas's 2025 Rider FRP rate adjustment (approved December 12, 2025; 11 pp). Listed for reference (metadata-only). Source: APSC Online Services, document 16-036-FR_1122 (apps.apsc.arkansas.gov/pdf/16/16-036-FR_1122_1.pdf).
@@ -3079,10 +3075,6 @@ Final Order in the 2025 biennial review of Virginia Electric and Power Company (
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="State PUC Audits" docket="PUR-2025-00037" issued="2025-11-25" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Final Order granting Virginia Electric and Power Company (Dominion Energy Virginia) a certificate of public convenience and necessity (CPCN) to construct and operate the ~944 MW Chesterfield Energy Reliability Center and related transmission, with Rider CERC cost recovery under Va. Code § 56-585.1 A 6, Case No. PUR-2025-00037, Virginia State Corporation Commission, entered at Richmond November 25, 2025. Listed for reference (metadata-only). Source: SCC DocketSearch, document www.scc.virginia.gov/docketsearch/DOCS/89g501!.PDF.
-</doc>
-<doc title="Southwestern Electric Power Company (SWEPCO)" collection="State PUC Audits" docket="U-37794" issued="2025-11-24" industry="electric" source="https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=SWEPCO-U-37794">
-Listed for reference (not machine-parsed into findings).
-Application of Southwestern Electric Power Company (SWEPCO) for Authorization of a System Improvement Plan (SIP), including related rate recovery through Fuel Adjustment Clause (FAC) beginning June 1, 2026. Plan covers grid hardening (629 line-miles) and vegetation management (6,095 line-miles) across 11 Louisiana parishes. Filed November 24, 2025, published for intervention December 5, 2025. Listed for reference (metadata-only). Source: LPSC public docket portal, Docket U-37794, file sh4kA6z+3bk= (lpscpubvalence.lpsc.louisiana.gov).
 </doc>
 <doc title="New Jersey electric distribution utilities (ACE, JCP&amp;L, PSE&amp;G, Rockland Electric)" collection="State PUC Audits" docket="ER25040190" issued="2025-11-21" industry="electric" source="https://publicaccess.bpu.state.nj.us/">
 Listed for reference (not machine-parsed into findings).
@@ -3143,10 +3135,6 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 <doc title="Montana-Dakota Utilities Co." collection="State PUC Audits" docket="PU-25-225" issued="2025-07-15" industry="electric" source="https://www.psc.nd.gov/public/cases/">
 Listed for reference (not machine-parsed into findings).
 Montana-Dakota Utilities Co. application (July 15, 2025) before the North Dakota Public Service Commission to update the Transmission Cost Adjustment (TCA) Rate 59 tariff, Case No. PU-25-225 (55 pp). Listed for reference (metadata-only). Source: ND PSC public case records, document 001-010 (psc.nd.gov/webdocs/case/25-0225/001-010.pdf).
-</doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0382" issued="2025-07-08" industry="electric" source="https://www.icc.illinois.gov/docket/P2025-0382/documents/367736">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Staff Exhibit 1.0) of Kevin Siebert (Economic &amp; Financial Analysis Section) on behalf of the Staff of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, filed July 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 367736 / file 644187 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/367736).
 </doc>
 <doc title="Entergy Arkansas, LLC" collection="State PUC Audits" docket="16-036-FR" issued="2025-07-07" industry="electric" source="https://apps.apsc.arkansas.gov/olsv2/Docket_Search_Documents.asp?Docket=16-036-FR&amp;DocNumVal=1090">
 Listed for reference (not machine-parsed into findings).
@@ -3211,14 +3199,6 @@ Order of the Indiana Utility Regulatory Commission on the verified petition of N
 <doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="FC 1176" issued="2025-01-28" industry="electric" source="https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx">
 Listed for reference (not machine-parsed into findings).
 Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
-</doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Exhibit 10.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois, witness Dylan W. D'Ascendis (ScottMadden, Inc.), regarding rate base and return on equity (ROE) in the Company's proposed general increase in rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631521 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
-</doc>
-<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
-Listed for reference (not machine-parsed into findings).
-Direct Testimony (Exhibit 1.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois in the Company's Proposed General Increase in Rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631501 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
 </doc>
 <doc title="The Narragansett Electric Company d/b/a Rhode Island Energy" collection="State PUC Audits" docket="24-38-GE" issued="2025-01-01" industry="electric" source="https://ripuc.ri.gov/utility-information/electric">
 Listed for reference (not machine-parsed into findings).
