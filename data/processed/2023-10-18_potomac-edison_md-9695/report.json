@@ -22,7 +22,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Disallowance: $31,435,485",
+      "summary": "ly 18, 19, 20, 21 and 28, 2023. The PULJ issued a Proposed Order on September 6, 2023,1 authorizing $31,435,485 of the Company’s request, and denying approval of the remaining request. Additionally, on May 31, 2023, the Maryland Office of People’s Counsel (“OPC”) and Potomac Edison, with the sup",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

@@ -25,7 +25,22 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $9.98 ",
+      "summary": "d by the Commission, the new rates will not be effective until Commission action has been taken. If approved, a typical residential customer using 800 Kwh will see an increase of $9.98 per month, or $119.76 annually. The RRCA is shown as a separate line item on your bill. Residential & Small General",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Settlement: Agreement",
+      "summary": "d near Hettinger, North Dakota in Case No. PU-15-703. On January 5, 2016, the Commission approved a Settlement Agreement between Montana-Dakota and the Commission Advocacy Staff thereby authorizing the Company’s RRCA Rate 55 tariff effective with service rendered on and",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

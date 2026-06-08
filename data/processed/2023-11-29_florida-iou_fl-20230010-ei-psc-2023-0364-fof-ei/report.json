@@ -22,7 +22,99 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 13,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Approval: $1,307,293,308 ",
+      "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,307,293,308 as FPL’s reasonably estimated 2023 costs and an under-recovery amount of $14,860,970 as FPL’s jurisdictional cost recovery true-up amount, including i",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $212,589,753 ",
+      "summary": "d 2022 Storm Protection Plan filed in Docket No. 20220048-EI. Based on our review of the record, we approve $212,589,753 as TECO’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $90,584,791 for the period January 2024 through December 2024. 2",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Approval: $783,792,564 ",
+      "summary": "ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 17 Based on our review of the record, we approve $783,792,564 as DEF’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $201,370,792 for the period January 2024 through December 2024. 3",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Approval: $13,620,916 ",
+      "summary": "proved Storm Protection Plan filed in Docket No. 20220049-EI. Based on our review of the record, we approve $13,620,916 as FPUC’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $2,448,891 for the period January 2024 through December 2024. 4.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Approval: $1,389,706,289 ",
+      "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,389,706,289 as FPL’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $513,855,741 for the period January 2024 through December 2024. S",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Settlement: agreement",
+      "summary": "-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 3 Florida, LLC (DEF) in 2020. All of the utilities reached settlement agreements with various intervenors regarding the SPPs prior to final hearing. We approved these settlement agreements on August 28, 2020.1 On March 9, 2022, p",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Settlement: agreement",
+      "summary": "nt agreements with various intervenors regarding the SPPs prior to final hearing. We approved these settlement agreements on August 28, 2020.1 On March 9, 2022, pursuant to Sections 366.96(5) and 366.96(6), F.S., and consistent with the terms of the above-referenced set",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Settlement: agreement",
+      "summary": "nt to Sections 366.96(5) and 366.96(6), F.S., and consistent with the terms of the above-referenced settlement agreements,2 FPL, TECO, and DEF filed their first updated SPPs for our review.3 On that same date, Florida Public Utilities Company (FPUC) submitted its initia",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Settlement: agreement",
+      "summary": "da Power & Light Company; and 20200092-EI, In re: Storm Protection Plan cost recovery clause. 2 The settlement agreements required these utilities to file updated plans in 2022, consistent with the requirement in section 396.96(6), F.S., that we are to review utility SP",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Settlement: Agreement",
+      "summary": "o the facts in the record related to actual costs incurred in 2022. A. TECO, DEF & FPL Based on the Settlement Agreements we approved in Order No. PSC-2020-0293-AS-EI,10 OPC takes no position on the factors only for TECO, DEF, and FPL. The remaining intervenors concur w",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 11,
+      "title": "Settlement: Agreement",
+      "summary": "PP and SPPCRC dockets for TECO, DEF, and FPL/Gulf Power Company. FPUC was not a party to any of the Settlement Agreements approved in that Order. ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 7 1. TECO In support of TECO’s 2022 true-up recovery amount, TECO",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 12,
+      "title": "Settlement: Agreement",
+      "summary": "ng interest, for the period January 2022 through December 2022. B. FPUC FPUC was not a party to the Settlement Agreements we approved in Order No. PSC- 2020-0293-AS-EI, and submitted its initial SPP later than the other utilities.11 Because of these distinctions and the",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 13,
+      "title": "Settlement: agreement",
+      "summary": "Nos. 20190110-EI, 20190222-EI & 20210016-EI, In re: Petition for limited proceeding to approve 2021 settlement agreement, including general base rate increases, by Duke Energy Florida, LLC. ORDER NO. PSC-2023-0364-FOF-EI DOCKET NO. 20230010-EI PAGE 20 3. FPUC FPUC shall",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

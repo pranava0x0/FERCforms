@@ -490,7 +490,7 @@
   },
   "state_rate_case": {
     "report_count": 115,
-    "finding_count": 482,
+    "finding_count": 573,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -538,8 +538,8 @@
         "keywords": [
           "tariff"
         ],
-        "finding_count": 11,
-        "report_count": 4,
+        "finding_count": 12,
+        "report_count": 5,
         "example_titles": [
           "Settlement: Agreement",
           "Approval: $5 million",
@@ -561,6 +561,21 @@
         ]
       },
       {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 6,
+        "report_count": 3,
+        "example_titles": [
+          "Settlement: agreement",
+          "Settlement: Agreement"
+        ]
+      },
+      {
         "theme": "Form reporting (Form No. 1/2/6, Page 700)",
         "description": "Errors or omissions in the annual FERC forms utilities file.",
         "keywords": [
@@ -571,20 +586,6 @@
         ],
         "finding_count": 2,
         "report_count": 2,
-        "example_titles": [
-          "Settlement: Agreement"
-        ]
-      },
-      {
-        "theme": "Affiliate / intercompany transactions",
-        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-        "keywords": [
-          "affiliate",
-          "intercompany",
-          "inter-company"
-        ],
-        "finding_count": 3,
-        "report_count": 1,
         "example_titles": [
           "Settlement: Agreement"
         ]
@@ -618,15 +619,15 @@
     "top_titles": [
       {
         "title": "Settlement: Agreement",
-        "count": 278
+        "count": 338
       },
       {
         "title": "Settlement: agreement",
-        "count": 33
+        "count": 40
       },
       {
         "title": "Settlement: terms",
-        "count": 14
+        "count": 15
       },
       {
         "title": "Settlement: AGREEMENT",
@@ -635,6 +636,14 @@
       {
         "title": "Approval: $200,000 ",
         "count": 6
+      },
+      {
+        "title": "Approval: $5,475 ",
+        "count": 5
+      },
+      {
+        "title": "Approval: $43,409 ",
+        "count": 5
       },
       {
         "title": "Approval: $5 million",
@@ -673,6 +682,10 @@
         "count": 2
       },
       {
+        "title": "Approval: $3,614,892\n",
+        "count": 2
+      },
+      {
         "title": "Approval: $156.9 million",
         "count": 2
       },
@@ -702,18 +715,6 @@
       },
       {
         "title": "Disallowance: $167,272",
-        "count": 1
-      },
-      {
-        "title": "Disallowance: $14,547",
-        "count": 1
-      },
-      {
-        "title": "Disallowance: $25,565",
-        "count": 1
-      },
-      {
-        "title": "Disallowance: $162,272",
         "count": 1
       }
     ],
