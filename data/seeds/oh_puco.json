@@ -12,7 +12,7 @@
     "issued_date": "2025-12-19",
     "docket": "20-1502-EL-UNC",
     "captured_at": "2026-06-02",
-    "source_note": "Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio's review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company (FirstEnergy's Ohio electric distribution utilities), Case No. 20-1502-EL-UNC, filed December 19, 2025 (21 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests \u2014 so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A25L19B41411B02333.",
+    "source_note": "Joint Stipulation and Recommendation in the Public Utilities Commission of Ohio's review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company (FirstEnergy's Ohio electric distribution utilities), Case No. 20-1502-EL-UNC, filed December 19, 2025 (21 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A25L19B41411B02333.",
     "parse": false,
     "fetch": false
   },
@@ -29,25 +29,8 @@
     "issued_date": "2026-01-07",
     "docket": "20-1502-EL-UNC",
     "captured_at": "2026-06-02",
-    "source_note": "Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting the Joint Stipulation and Recommendation that resolves all issues in the review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company, Case No. 20-1502-EL-UNC, entered January 7, 2026 (13 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests \u2014 so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26A07B55341I00561.",
+    "source_note": "Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting the Joint Stipulation and Recommendation that resolves all issues in the review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company, Case No. 20-1502-EL-UNC, entered January 7, 2026 (13 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26A07B55341I00561.",
     "parse": false,
     "fetch": false
-  },
-  {
-    "id": "2024-03-15_aep-ohio_oh-case-20-1504-el-unc-political-spending",
-    "company": "American Electric Power Company, Inc. (AEP Ohio)",
-    "collection": "state_rate_case",
-    "jurisdiction": "OH",
-    "source": "Public Utilities Commission of Ohio",
-    "doc_type": "order on political/charitable spending",
-    "industry": "electric",
-    "pdf_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=placeholder-aep",
-    "source_page_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=placeholder-aep",
-    "issued_date": "2024-03-15",
-    "docket": "20-1504-EL-UNC",
-    "captured_at": "2026-06-07",
-    "fetch": false,
-    "source_note": "Order regarding political and charitable spending by American Electric Power Company, Inc. (AEP Ohio), PUCO Case No. 20-1504-EL-UNC, issued March 15, 2024. Listed for reference (metadata-only, WAF-protected DIS viewer \u2014 URL requires browser capture). Source: PUCO Docket Information System (dis.puc.state.oh.us).",
-    "parse": false
   }
 ]

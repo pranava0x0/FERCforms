@@ -62,39 +62,5 @@
     "captured_at": "2026-06-01",
     "source_note": "Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Commission of Texas (Commission Staff), in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed April 1, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_118_1485108.PDF.",
     "parse": false
-  },
-  {
-    "id": "2025-02-28_oncor-electric-delivery_tx-puct-58114-fuel-preliminary-order",
-    "company": "Oncor Electric Delivery, L.L.C. (also d/b/a AEP Texas Transmission)",
-    "collection": "state_rate_case",
-    "jurisdiction": "TX",
-    "source": "Public Utility Commission of Texas",
-    "doc_type": "preliminary order",
-    "industry": "electric",
-    "pdf_url": "https://interchange.puc.texas.gov/Documents/58114_35_1234567.PDF",
-    "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&itemNumber=35",
-    "issued_date": "2025-02-28",
-    "docket": "58114",
-    "captured_at": "2026-06-07",
-    "fetch": false,
-    "source_note": "Preliminary Order of the Public Utility Commission of Texas in Oncor Electric Delivery, L.L.C.'s application to reconcile fuel and purchased power expenses, PUC Docket No. 58114, issued February 28, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).",
-    "parse": false
-  },
-  {
-    "id": "2025-03-31_oncor-electric-delivery_tx-puct-58114-fuel-staff-testimony",
-    "company": "Oncor Electric Delivery, L.L.C.",
-    "collection": "state_rate_case",
-    "jurisdiction": "TX",
-    "source": "Public Utility Commission of Texas",
-    "doc_type": "direct testimony",
-    "industry": "electric",
-    "pdf_url": "https://interchange.puc.texas.gov/Documents/58114_118_1234568.PDF",
-    "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&itemNumber=118",
-    "issued_date": "2025-03-31",
-    "docket": "58114",
-    "captured_at": "2026-06-07",
-    "fetch": false,
-    "source_note": "Direct Testimony of Commission Staff addressing fuel and purchased power cost recovery in Oncor Electric Delivery, L.L.C.'s rate reconciliation, PUC Docket No. 58114, filed March 31, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).",
-    "parse": false
   }
 ]

@@ -44,39 +44,5 @@
     "captured_at": "2026-06-02",
     "source_note": "Direct Testimony of Jared Giacone on behalf of the Missouri Public Service Commission Staff in the electric rate case of The Empire District Electric Company d/b/a Liberty, Case No. ER-2024-0261 (issues: PISA, property tax, Riverton 12 O&M tracker, severance, solar rebates, VOLL study costs, wind farm construction, wind O&M and non-FAC wind project expense, PAYGO tracker; 52 pp). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 838475 (efis.psc.mo.gov/Document/Display/838475; docket sheet: efis.psc.mo.gov/Case/Display/85589).",
     "parse": false
-  },
-  {
-    "id": "2024-06-28_evergy-metro-inc_mo-er-2024-0203-rate-case",
-    "company": "Evergy Metro, Inc. (formerly KCP&L/Kansas City Power & Light Missouri)",
-    "collection": "state_rate_case",
-    "jurisdiction": "MO",
-    "source": "Missouri Public Service Commission",
-    "doc_type": "rate case testimony",
-    "industry": "electric",
-    "pdf_url": "https://efis.psc.mo.gov/Document/Display/placeholder-id",
-    "source_page_url": "https://efis.psc.mo.gov/Case/Display/",
-    "issued_date": "2024-06-28",
-    "docket": "ER-2024-0203",
-    "captured_at": "2026-06-07",
-    "fetch": false,
-    "source_note": "Direct testimony in Evergy Metro, Inc. rate case (MO PSC Docket ER-2024-0203), filed June 28, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).",
-    "parse": false
-  },
-  {
-    "id": "2024-07-15_evergy-metro-inc_mo-er-2024-0203-staff-testimony",
-    "company": "Evergy Metro, Inc.",
-    "collection": "state_rate_case",
-    "jurisdiction": "MO",
-    "source": "Missouri Public Service Commission",
-    "doc_type": "staff testimony",
-    "industry": "electric",
-    "pdf_url": "https://efis.psc.mo.gov/Document/Display/placeholder-id-2",
-    "source_page_url": "https://efis.psc.mo.gov/Case/Display/",
-    "issued_date": "2024-07-15",
-    "docket": "ER-2024-0203",
-    "captured_at": "2026-06-07",
-    "fetch": false,
-    "source_note": "Staff testimony on costs, rates, and rate design in Evergy Metro, Inc. rate case, MO PSC Docket ER-2024-0203, filed July 15, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).",
-    "parse": false
   }
 ]

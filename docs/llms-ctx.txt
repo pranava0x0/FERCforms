@@ -1,5 +1,5 @@
-<project title="FERC Audit Explorer" summary="322 structured records (120 FERC audits, 14 prudence reviews, 73 state PUC audits); 1187 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="254 structured records (120 FERC audits, 14 prudence reviews, 16 state PUC audits); 1155 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-08). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
 Finding 1: Renewable Natural Gas Quality Specifications
@@ -2951,29 +2951,9 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
 </doc>
-<doc title="Dominion Energy Virginia" collection="State PUC Audits" docket="PUR-2025-00083" issued="2025-02-15" industry="electric" source="https://www.scc.virginia.gov/pages/Dockets-Search.aspx">
-Listed for reference (not machine-parsed into findings).
-Biennial Review of Base Rates for Fuel Costs for Dominion Energy Virginia, Inc., Virginia State Corporation Commission Docket No. PUR-2025-00083. Document code: 89h001. Listed for reference (metadata-only, requires docket search verification).
-</doc>
-<doc title="FirstEnergy Corp (Ohio Operations)" collection="State PUC Audits" docket="24-1234-EL-UNC" issued="2024-12-01" industry="electric" source="https://dis.puc.state.oh.us/">
-Listed for reference (not machine-parsed into findings).
-Entry on Compliance and Utility Investigation regarding FirstEnergy Corp (Ohio Operations), PUCO Case No. 24-1234-EL-UNC. Listed for reference (metadata-only, WAF-protected viewer requires verification).
-</doc>
-<doc title="Oncor Electric Delivery, LLC" collection="State PUC Audits" docket="59200" issued="2024-11-10" industry="electric" source="https://interchange.puc.texas.gov/search/filings/?ControlNumber=59200">
-Listed for reference (not machine-parsed into findings).
-Order on Complaint Investigation regarding cost recovery practices of Oncor Electric Delivery, LLC, PUCT Docket 59200. Document 59200_35_1500000. Listed for reference (metadata-only, requires interchange.puc.texas.gov verification).
-</doc>
 <doc title="Rocky Mountain Power (PacifiCorp)" collection="State PUC Audits" docket="24-035-01" issued="2024-11-05" industry="electric" source="https://psc.utah.gov/electric/orders-notices/electric-2025/">
 Listed for reference (not machine-parsed into findings).
 Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel &amp; purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).
-</doc>
-<doc title="Oncor Electric Delivery, LLC" collection="State PUC Audits" docket="58999" issued="2024-10-15" industry="electric" source="https://interchange.puc.texas.gov/search/filings/?ControlNumber=58999">
-Listed for reference (not machine-parsed into findings).
-Dispute Resolution Order with Cost Recovery Audit Findings for Oncor Electric Delivery, LLC, PUCT Docket 58999. Document 58999_40_1499999. Listed for reference (metadata-only).
-</doc>
-<doc title="FirstEnergy Corp (Ohio Operations)" collection="State PUC Audits" docket="24-0567-EL-UNC" issued="2024-09-25" industry="electric" source="https://dis.puc.state.oh.us/">
-Listed for reference (not machine-parsed into findings).
-Order on Service Quality and Reliability Audit of FirstEnergy Corp (Ohio Operations), PUCO Case No. 24-0567-EL-UNC. Listed for reference (metadata-only).
 </doc>
 <doc title="DTE Electric Company" collection="State PUC Audits" docket="U-21305" issued="2024-09-23" industry="electric" source="https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities">
 Listed for reference (not machine-parsed into findings).
@@ -2990,18 +2970,6 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part Two, by Th
 <doc title="Consumers Energy Company" collection="State PUC Audits" docket="U-21305" issued="2024-09-23" industry="electric" source="https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities">
 Listed for reference (not machine-parsed into findings).
 Final Report — Utility Distribution Audit of Consumers Energy, Part One, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
-</doc>
-<doc title="Con Edison Company of New York, Inc." collection="State PUC Audits" docket="Case 24-E-1234" issued="2024-09-20" industry="electric" source="https://www.dps.ny.gov/energy/cases">
-Listed for reference (not machine-parsed into findings).
-Investigation into Service Quality and Compliance of Con Edison Company of New York, Inc., NY Department of Public Service Case 24-E-1234. Listed for reference (metadata-only, requires DPS case search verification).
-</doc>
-<doc title="Dominion Energy Virginia" collection="State PUC Audits" docket="PUR-2024-00197" issued="2024-08-30" industry="electric" source="https://www.scc.virginia.gov/pages/Dockets-Search.aspx">
-Listed for reference (not machine-parsed into findings).
-Order regarding Service Quality and Reliability of Dominion Energy Virginia, Inc., Virginia State Corporation Commission Docket No. PUR-2024-00197. Document code: 89h100. Listed for reference (metadata-only).
-</doc>
-<doc title="Con Edison Company of New York, Inc." collection="State PUC Audits" docket="Case 24-E-5678" issued="2024-07-15" industry="electric" source="https://www.dps.ny.gov/energy/cases">
-Listed for reference (not machine-parsed into findings).
-Order on Affiliate Transaction Audit for Con Edison Company of New York, Inc., NY Department of Public Service Case 24-E-5678. Listed for reference (metadata-only).
 </doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure
@@ -3120,142 +3088,6 @@ Finding 11: Human Resources and Diversity
 25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
 26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)
 </doc>
-<doc title="Xcel Energy (Wisconsin Division)" collection="State PUC Audits" docket="2025-00123" issued="n/a" industry="electric" source="https://psc.wi.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Xcel Energy (Wisconsin Division), Wisconsin PSC Docket No. 2025-00123. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Xcel Energy (Minnesota Division)" collection="State PUC Audits" docket="E002/2025-00145" issued="n/a" industry="electric" source="https://mn.gov/puc/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Xcel Energy (Minnesota Division), Minnesota PUC Docket No. E002/2025-00145. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Xcel Energy (Public Service Company of Colorado)" collection="State PUC Audits" docket="2025-00145" issued="n/a" industry="electric" source="https://puc.colorado.gov/utility-and-service-provider-oversight/utility-audits">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Xcel Energy (Public Service Company of Colorado), Colorado PUC Docket No. 2025-00145. Placeholder URL pending verification from PUC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Virgin Islands Water and Power Authority" collection="State PUC Audits" docket="2025-00089" issued="n/a" industry="electric" source="https://puc.vi.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Virgin Islands Water and Power Authority, US Virgin Islands PUC Docket No. 2025-00089. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Tampa Electric Company" collection="State PUC Audits" docket="2024-00089" issued="n/a" industry="electric" source="https://www.psc.state.fl.us/consumer-complaint-and-information-services">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Tampa Electric Company, Florida PSC Docket No. 2024-00089. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Southwestern Electric Power Company (SWEPCO)" collection="State PUC Audits" docket="U-2024-00089" issued="n/a" industry="electric" source="https://lpsc.louisiana.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Southwestern Electric Power Company (SWEPCO), Louisiana PSC Docket No. U-2024-00089. Placeholder URL pending verification from LPSC document portal. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Southern Company (Georgia Division)" collection="State PUC Audits" docket="2024-00045" issued="n/a" industry="electric" source="https://psc.ga.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Efficiency and Compliance Audit for Southern Company (Georgia Division), Georgia PSC Docket No. 2024-00045. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Southern California Edison Company" collection="State PUC Audits" docket="A.24-00089" issued="n/a" industry="electric" source="https://www.cpuc.ca.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Safety Audit for Southern California Edison Company, California CPUC Application No. A.24-00089. Placeholder URL pending verification from CPUC e-filing system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Tucson Electric Power" collection="State PUC Audits" docket="E-01933A-24-00234" issued="n/a" industry="electric" source="https://cc.az.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Tucson Electric Power, Arizona ACC Case No. E-01933A-24-00234. Placeholder URL pending verification from ACC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Sierra Pacific Power Company" collection="State PUC Audits" docket="24-02145" issued="n/a" industry="electric" source="https://pucn.nv.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Sierra Pacific Power Company, Nevada PUC Docket No. 24-02145. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Rocky Mountain Power (PacifiCorp)" collection="State PUC Audits" docket="2025-00078" issued="n/a" industry="electric" source="https://psc.wyo.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Rocky Mountain Power (PacifiCorp), Wyoming PSC Docket No. 2025-00078. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Rhode Island Energy" collection="State PUC Audits" docket="2025-00123" issued="n/a" industry="electric" source="https://dem.ri.gov/documents/puc">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Rhode Island Energy, Rhode Island PUC Docket No. 2025-00123. Placeholder URL pending verification from PUC document portal. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Puget Sound Energy" collection="State PUC Audits" docket="UE-25-00789" issued="n/a" industry="electric" source="https://utc.wa.gov/utility-oversight-audits">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Puget Sound Energy, Washington UTC Docket No. UE-25-00789. Placeholder URL pending verification from UTC case system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Puerto Rico Electric Power Authority" collection="State PUC Audits" docket="2025-00078" issued="n/a" industry="electric" source="https://energia.pr.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Puerto Rico Electric Power Authority, Puerto Rico Energy Bureau Docket No. 2025-00078. Placeholder URL pending verification from Energy Bureau document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Public Service Company of New Mexico" collection="State PUC Audits" docket="2025-00145" issued="n/a" industry="electric" source="https://prc.nm.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Public Service Company of New Mexico, New Mexico PRC Docket No. 2025-00145. Placeholder URL pending verification from PRC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Public Service Electric and Gas Company (PSE&amp;G)" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://nj.gov/bpu/pages/audits.html">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Public Service Electric and Gas Company (PSE&amp;G), NJ BPU Docket No. 2025-00234. Placeholder URL pending verification from BPU audit portal. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Portland General Electric Company" collection="State PUC Audits" docket="UE-26-00334" issued="n/a" industry="electric" source="https://puc.oregon.gov/regulated-entities/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Portland General Electric Company, Oregon PUC Docket No. UE-26-00334. Placeholder URL pending verification from PUC e-filing system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Pepco Holdings (Maryland Division)" collection="State PUC Audits" docket="2024-312" issued="n/a" industry="electric" source="https://psc.maryland.gov/about/divisions/utility-audits">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Pepco Holdings (Maryland Division), Maryland PSC Case No. 2024-312. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="2025-00089" issued="n/a" industry="electric" source="https://dcpsc.org/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Potomac Electric Power Company (Pepco), DC PSC Docket No. 2025-00089. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="PacifiCorp (Oregon Division)" collection="State PUC Audits" docket="UE-25-00198" issued="n/a" industry="electric" source="https://puc.oregon.gov/regulated-entities/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for PacifiCorp (Oregon Division), Oregon PUC Docket No. UE-25-00198. Placeholder URL pending verification from PUC e-filing system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Pacific Gas and Electric Company (PG&amp;E)" collection="State PUC Audits" docket="A.25-00156" issued="n/a" industry="electric" source="https://www.cpuc.ca.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Pacific Gas and Electric Company (PG&amp;E), California CPUC Application No. A.25-00156. Placeholder URL pending verification from CPUC e-filing system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Ozark Electric Cooperative" collection="State PUC Audits" docket="2024-00189" issued="n/a" industry="electric" source="https://psc.arkansas.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Ozark Electric Cooperative, Arkansas PSC Docket No. 2024-00189. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Oklahoma Gas &amp; Electric Company" collection="State PUC Audits" docket="2025-00123" issued="n/a" industry="electric" source="https://occ.ok.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Oklahoma Gas &amp; Electric Company, Oklahoma OCC Docket No. 2025-00123. Placeholder URL pending verification from OCC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="NorthWestern Energy" collection="State PUC Audits" docket="2025-00078" issued="n/a" industry="electric" source="https://psc.mt.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for NorthWestern Energy, Montana PSC Docket No. 2025-00078. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Nevada Power Company" collection="State PUC Audits" docket="25-02178" issued="n/a" industry="electric" source="https://pucn.nv.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Nevada Power Company, Nevada PUC Docket No. 25-02178. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Louisville Gas and Electric Company" collection="State PUC Audits" docket="2025-00178" issued="n/a" industry="electric" source="https://psc.ky.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Louisville Gas and Electric Company, Kentucky PSC Docket No. 2025-00178. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Idaho Power Company" collection="State PUC Audits" docket="2025-00123" issued="n/a" industry="electric" source="https://puc.idaho.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Idaho Power Company, Idaho PUC Docket No. 2025-00123. Placeholder URL pending verification from PUC filing system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Hawaiian Electric Company" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://puc.hawaii.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Hawaiian Electric Company, Hawaii PUC Docket No. 2025-00234. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Green Mountain Power Corporation" collection="State PUC Audits" docket="2025-00089" issued="n/a" industry="electric" source="https://puc.vermont.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Green Mountain Power Corporation, Vermont PUC Docket No. 2025-00089. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Georgia Power Company" collection="State PUC Audits" docket="2025-00078" issued="n/a" industry="electric" source="https://psc.ga.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Georgia Power Company, Georgia PSC Docket No. 2025-00078. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Florida Power &amp; Light Company" collection="State PUC Audits" docket="2025-00123" issued="n/a" industry="electric" source="https://www.psc.state.fl.us/consumer-complaint-and-information-services">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Florida Power &amp; Light Company, Florida PSC Docket No. 2025-00123. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Eversource Energy (New Hampshire Division)" collection="State PUC Audits" docket="2025-00089" issued="n/a" industry="electric" source="https://puc.nh.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Eversource Energy (New Hampshire Division), New Hampshire PUC Docket No. 2025-00089. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Eversource Energy (Massachusetts Division)" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://mass.gov/dpu/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Eversource Energy (Massachusetts Division), Massachusetts DPU Docket No. 2025-00234. Placeholder URL pending verification from DPU document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Evergy Kansas" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://kcc.ks.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Evergy Kansas, Kansas KCC Docket No. 2025-00234. Placeholder URL pending verification from KCC document system. Listed for metadata collection (fetch=false).
-</doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/99523">
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).
@@ -3264,30 +3096,6 @@ Missouri Public Service Commission Staff's Construction Audit and Prudence Revie
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff Report — Tenth Prudence Review of Costs Related to the Fuel Adjustment Clause (FAC) for the electric operations of Union Electric Company d/b/a Ameren Missouri, File No. EO-2024-0053 (56 pp; Staff's review of the prudence of fuel and purchased-power costs recovered through Rider FAC). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 772394 (efis.psc.mo.gov/Document/Display/772394).
 </doc>
-<doc title="Entergy Louisiana" collection="State PUC Audits" docket="U-2025-00145" issued="n/a" industry="electric" source="https://lpsc.louisiana.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Entergy Louisiana, Louisiana PSC Docket No. U-2025-00145. Placeholder URL pending verification from LPSC document portal. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Entergy Arkansas" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://psc.arkansas.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Entergy Arkansas, Arkansas PSC Docket No. 2025-00234. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Duke Energy South Carolina" collection="State PUC Audits" docket="2025-00234" issued="n/a" industry="electric" source="https://www.psc.sc.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Duke Energy South Carolina, South Carolina PSC Docket No. 2025-00234. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Duke Energy Indiana" collection="State PUC Audits" docket="2025-00456" issued="n/a" industry="electric" source="https://www.in.gov/iurc/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Duke Energy Indiana, Indiana IURC Docket No. 2025-00456. Placeholder URL pending verification from IURC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Dominion Energy South Carolina" collection="State PUC Audits" docket="2024-00167" issued="n/a" industry="electric" source="https://www.psc.sc.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Dominion Energy South Carolina, South Carolina PSC Docket No. 2024-00167. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Delmarva Power &amp; Light" collection="State PUC Audits" docket="2025-00145" issued="n/a" industry="electric" source="https://dnrec.delaware.gov/energy/regulatory/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Delmarva Power &amp; Light, Delaware PSC Docket No. 2025-00145. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
 <doc title="The Connecticut Light and Power Company (Eversource) and United Illuminating Company" collection="State PUC Audits" docket="20-08-03" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).
@@ -3295,42 +3103,6 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 <doc title="Connecticut electric distribution companies (Eversource / United Illuminating)" collection="State PUC Audits" docket="17-12-03RE011" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
-</doc>
-<doc title="Commonwealth Edison Company" collection="State PUC Audits" docket="Docket 2025-00245" issued="n/a" industry="electric" source="https://www.icc.illinois.gov/documents">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Commonwealth Edison Company, Illinois ICC Docket No. 2025-00245. Placeholder URL pending verification from ICC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Central Maine Power Company" collection="State PUC Audits" docket="2025-00156" issued="n/a" industry="electric" source="https://maine.gov/mpuc/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Central Maine Power Company, Maine PUC Docket No. 2025-00156. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Black Hills Power (Colorado Division)" collection="State PUC Audits" docket="2024-00089" issued="n/a" industry="electric" source="https://puc.colorado.gov/utility-and-service-provider-oversight/utility-audits">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Black Hills Power (Colorado Division), Colorado PUC Docket No. 2024-00089. Placeholder URL pending verification from PUC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Baltimore Gas and Electric Company (BGE)" collection="State PUC Audits" docket="2025-456" issued="n/a" industry="electric" source="https://psc.maryland.gov/about/divisions/utility-audits">
-Listed for reference (not machine-parsed into findings).
-Utility Efficiency and Compliance Audit for Baltimore Gas and Electric Company (BGE), Maryland PSC Case No. 2025-456. Placeholder URL pending verification from PSC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Avista Corporation" collection="State PUC Audits" docket="UE-24-00521" issued="n/a" industry="electric" source="https://utc.wa.gov/utility-oversight-audits">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Avista Corporation, Washington UTC Docket No. UE-24-00521. Placeholder URL pending verification from UTC case system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Atlantic City Electric Company" collection="State PUC Audits" docket="2024-00178" issued="n/a" industry="electric" source="https://nj.gov/bpu/pages/audits.html">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Atlantic City Electric Company, NJ BPU Docket No. 2024-00178. Placeholder URL pending verification from BPU audit portal. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Arizona Public Service Company" collection="State PUC Audits" docket="E-01345A-25-00456" issued="n/a" industry="electric" source="https://cc.az.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Service Quality and Reliability Audit for Arizona Public Service Company, Arizona ACC Case No. E-01345A-25-00456. Placeholder URL pending verification from ACC docket system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Appalachian Power Company (AEP)" collection="State PUC Audits" docket="2025-00089" issued="n/a" industry="electric" source="https://psc.wv.gov/utility-oversight">
-Listed for reference (not machine-parsed into findings).
-Utility Audit and Compliance Review for Appalachian Power Company (AEP), West Virginia PSC Docket No. 2025-00089. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).
-</doc>
-<doc title="Ameren Illinois" collection="State PUC Audits" docket="Docket 2024-00167" issued="n/a" industry="electric" source="https://www.icc.illinois.gov/documents">
-Listed for reference (not machine-parsed into findings).
-Utility Compliance and Performance Audit for Ameren Illinois, Illinois ICC Docket No. 2024-00167. Placeholder URL pending verification from ICC docket system. Listed for metadata collection (fetch=false).
 </doc>
 </docs>
 </project>

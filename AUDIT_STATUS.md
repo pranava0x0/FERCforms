@@ -1,52 +1,65 @@
 # AUDIT-FOCUSED CORPUS STATUS
 
-## Current Audit Documents: 18 (across 8 states)
+> **Counts as of 2026-06-08.** Source of truth is `docs/data/meta.json` (regenerated
+> by `python -m pipeline.build`). This file is a human-readable summary — if it
+> disagrees with `meta.json`, `meta.json` wins.
 
-### States with Audit Documents ✓
-1. **PA (4)** - PA PUC Bureau of Audits management audits
-2. **MI (4)** - Liberty Consulting distribution reliability audits  
-3. **MO (2)** - Staff prudence review reports
-4. **CA (3)** - CPUC ERRA reasonableness/prudence decisions
-5. **CT (2)** - Performance/rate design investigations
-6. **UT (1)** - Energy balancing account audit
-7. **TN (1)** - Weather normalization audit
-8. **KS (1)** - Winter storm cost investigation
+## ⚠️ READ THIS BEFORE ADDING ANY RECORD — no fabricated documents, ever
 
-## Major Gaps: States with Audit Programs but NO Audit Docs
+The corpus's entire value is that **every record is a real document at a real,
+verified government URL** (see CLAUDE.md "Data is the product"). On 2026-06-07 a
+prior session, trying to "fill the gaps" listed in an older version of this file,
+**fabricated ~70 fake records** — invented docket numbers, guessed PDF URLs, and
+`fetch=false` so the fetcher would never test them. They shipped to the live site.
+All 70 were removed on 2026-06-08 (see ISSUES.md). **Do not repeat this.**
 
-### TIER 1 - Largest utilities, known audit programs
-- **VA**: SCC biennial reviews, affiliate/compliance audits → TARGET: Dominion/Appalachian investigations
-- **NY**: DPS utility investigations, rate/cost audits → TARGET: Major utility compliance audits
-- **TX**: PUCT complaint/dispute investigations → TARGET: Complaint case summaries
-- **OH**: PUCO compliance audits, service quality reviews → TARGET: AEP/FirstEnergy compliance
+Rules for adding a record (enforced by tests + `pipeline.verify_sources`):
 
-### TIER 2 - Regional audit programs
-- **CO**: PUC compliance/rate audits
-- **NJ**: BPU utility audits
-- **MD**: PSC audit programs
-- **WA**: UTC utility audits
-- **OR**: PUC compliance audits
+1. **Never invent a docket, accession, document number, or URL.** If you can't find
+   the real one, the record does not get added. A gap is honest; a fake is poison.
+2. **Prefer `fetch=true`.** A machine-fetched PDF (page_count>0) is self-proving.
+   `fetch=false` is ONLY for genuinely WAF-walled sources whose URL you captured in
+   a real browser (Chrome MCP) — and the URL must resolve to the *correct* document.
+3. **A `200` is not proof.** A guessed URL can resolve to the *wrong* real document
+   (this happened: a guessed FL order number returned a real PDF of a different
+   docket). Verify the page-1 caption matches the claimed company/docket/date.
+4. **Run `python -m pipeline.verify_sources` before committing** new seeds — it
+   flags DEAD (404) and NON_PDF (resolves-but-not-a-pdf) URLs. CHECK/WALLED entries
+   need a human/browser spot-check.
+5. The offline test `test_committed_seeds_have_no_fabrication_markers` blocks any
+   seed with a `placeholder` URL or a future `captured_at`.
 
-## Current Non-Audit Documents: 107 (should move to backlog)
-Rate cases, cost recovery orders, rate case testimony (metadata-only reference, not audit-based)
+## Current corpus: 254 structured records
 
-## Action Items for Next Session
+| Collection (UI tab)            | Count | Notes |
+|--------------------------------|-------|-------|
+| FERC Audits (`ferc_audit`)     | 120   | Form 1/2/6, every available year; traced to `data/listing.json` |
+| Prudence Reviews (`prudence_review`) | 14 | FERC eLibrary orders (accession-verified) |
+| State PUC Audits (`state_audit`)     | 16 | PA M&O audits (with findings), CT, MO, MS, TN, UT, MI (Liberty, WAF-blocked) |
+| State Rate Cases (`state_rate_case`) | 104 | Reference metadata across ~35 jurisdictions |
 
-1. **Find real audit dockets** for TIER 1 states (VA, NY, TX, OH)
-   - Search each state portal for "audit", "investigation", "compliance review" dockets
-   - Get specific docket numbers and document IDs
-   - Add ONLY verified audit documents
+State PUC Audits is the **thinnest real tab (16)** and the highest-value place to
+grow — but only with *real, verified* audits. See BACKLOG.md for the per-state
+recipes and the genuinely-walled states that still need browser-capture.
 
-2. **Document audit sources** in data-sources.md
-   - Similar to how PA Bureau of Audits is documented
+## Where the real audit gaps are (verified-source targets, NOT placeholders)
 
-3. **Create a "Rate Case Reference" collection** for non-audit documents
-   - Lower priority than audits
-   - Keep for context but separate from audit-focused work
+The honest version of the old "TIER 1 gaps" list. Each needs a *real docket*,
+found by searching the state portal — never a guessed number:
+
+- **PA Bureau of Audits** — already the gold standard (3 parsed M&O audits with
+  findings). PA publishes many more management & operations audits; the cleanest
+  expansion is more of these (real `puc.pa.gov/pcdocs/{id}.pdf`).
+- **NY DPS** — focused operations / management audits under PSL §66; real orders at
+  `documents.dps.ny.gov` (DMM) need guid harvesting + caption verification.
+- **MI MPSC** — the 4 Liberty Consulting distribution audits are real but
+  Cloudflare-blocks scripted fetch; browser-capture is the unblock (URLs verified
+  live, return real PDFs).
+- **Genuinely walled states** (need Chrome-MCP browser-capture, per BACKLOG):
+  OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA.
 
 ## Rationale
 
-The project's core value is audit findings (compliance issues, recommended actions, cost impacts). Rate cases show policy/regulatory decisions but don't provide audit-based compliance findings.
-
-Focus: FERC Form 1/2/6 audits (120) + State regulatory audits (targeting 30+)
-Reference: Rate case documents (107) - lower priority
+Audit findings (compliance issues, recommended actions, cost impacts) are the
+project's core value; rate cases are kept as lower-priority reference context in
+their own tab. Both tabs are wanted — but every record in either must be real.

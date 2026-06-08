@@ -1,10 +1,10 @@
 {
-  "report_count": 322,
-  "finding_count": 1187,
+  "report_count": 254,
+  "finding_count": 1155,
   "other_matter_count": 10,
   "recommendation_count": 1496,
   "by_industry": {
-    "electric": 274,
+    "electric": 206,
     "gas": 23,
     "oil": 18,
     "unknown": 7
@@ -23,8 +23,8 @@
     "2021": 14,
     "2022": 17,
     "2023": 19,
-    "2024": 51,
-    "2025": 54,
+    "2024": 35,
+    "2025": 51,
     "2026": 4
   },
   "by_function": {
@@ -285,10 +285,6 @@
       "count": 8
     },
     {
-      "title": "Approval: $200,000 ",
-      "count": 6
-    },
-    {
       "title": "Accounting for Compromise Settlements",
       "count": 6
     },
@@ -351,7 +347,11 @@
     {
       "title": "Wholesale Storm Damage Revenues",
       "count": 4
+    },
+    {
+      "title": "Commitment Fees",
+      "count": 4
     }
   ],
-  "generated_at": "2026-06-07"
+  "generated_at": "2026-06-08"
 }

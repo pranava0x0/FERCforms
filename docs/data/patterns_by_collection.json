@@ -349,7 +349,7 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-06-07"
+    "generated_at": "2026-06-08"
   },
   "prudence_review": {
     "report_count": 14,
@@ -375,23 +375,23 @@
     "by_function": {},
     "themes": [],
     "top_titles": [],
-    "generated_at": "2026-06-07"
+    "generated_at": "2026-06-08"
   },
   "state_audit": {
-    "report_count": 73,
+    "report_count": 16,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 69,
+      "electric": 12,
       "gas": 2,
       "unknown": 2
     },
     "by_year": {
       "2022": 1,
       "2023": 1,
-      "2024": 14,
-      "2025": 4
+      "2024": 7,
+      "2025": 3
     },
     "by_function": {},
     "themes": [
@@ -486,15 +486,15 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-07"
+    "generated_at": "2026-06-08"
   },
   "state_rate_case": {
-    "report_count": 115,
-    "finding_count": 573,
+    "report_count": 104,
+    "finding_count": 541,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 106,
+      "electric": 95,
       "gas": 7,
       "unknown": 2
     },
@@ -507,8 +507,8 @@
       "2021": 4,
       "2022": 4,
       "2023": 6,
-      "2024": 25,
-      "2025": 40,
+      "2024": 16,
+      "2025": 38,
       "2026": 4
     },
     "by_function": {},
@@ -634,10 +634,6 @@
         "count": 14
       },
       {
-        "title": "Approval: $200,000 ",
-        "count": 6
-      },
-      {
         "title": "Approval: $5,475 ",
         "count": 5
       },
@@ -656,18 +652,6 @@
       {
         "title": "Approval: $100 million",
         "count": 3
-      },
-      {
-        "title": "Approval: $267,572 ",
-        "count": 2
-      },
-      {
-        "title": "Approval: $1 million",
-        "count": 2
-      },
-      {
-        "title": "Approval: $1,266,284,000. ",
-        "count": 2
       },
       {
         "title": "Approval: $1,671,378.\n",
@@ -714,10 +698,26 @@
         "count": 1
       },
       {
-        "title": "Disallowance: $167,272",
+        "title": "Approval: $117.7\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $35.7 million",
+        "count": 1
+      },
+      {
+        "title": "Approval: $500",
+        "count": 1
+      },
+      {
+        "title": "Approval: $9.98 ",
+        "count": 1
+      },
+      {
+        "title": "Disallowance: $330,788.",
         "count": 1
       }
     ],
-    "generated_at": "2026-06-07"
+    "generated_at": "2026-06-08"
   }
 }
