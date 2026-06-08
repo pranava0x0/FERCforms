@@ -823,7 +823,7 @@
   },
   "state_rate_case": {
     "report_count": 105,
-    "finding_count": 505,
+    "finding_count": 541,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -856,8 +856,8 @@
           "rate of return",
           "return on equity"
         ],
-        "finding_count": 18,
-        "report_count": 6,
+        "finding_count": 19,
+        "report_count": 7,
         "example_titles": [
           "Approval: $1,277,051,206. ",
           "Approval: $55.4\nmillion",
@@ -871,10 +871,11 @@
         "keywords": [
           "tariff"
         ],
-        "finding_count": 9,
-        "report_count": 4,
+        "finding_count": 12,
+        "report_count": 5,
         "example_titles": [
           "Settlement: Agreement",
+          "Approval: $5 million",
           "Settlement: agreement"
         ]
       },
@@ -888,12 +889,27 @@
           "caidi",
           "outage"
         ],
-        "finding_count": 7,
-        "report_count": 4,
+        "finding_count": 8,
+        "report_count": 5,
         "example_titles": [
           "Settlement: terms",
           "Settlement: Agreement",
-          "Settlement: agreement"
+          "Settlement: agreement",
+          "Approval: $189.7 "
+        ]
+      },
+      {
+        "theme": "Depreciation",
+        "description": "Unapproved or incorrect depreciation rates applied to plant.",
+        "keywords": [
+          "depreciation"
+        ],
+        "finding_count": 7,
+        "report_count": 4,
+        "example_titles": [
+          "Settlement: agreement",
+          "Settlement: Agreement",
+          "Approval: $149.1 million"
         ]
       },
       {
@@ -912,19 +928,6 @@
         "example_titles": [
           "Settlement: Agreement",
           "Settlement: agreement"
-        ]
-      },
-      {
-        "theme": "Depreciation",
-        "description": "Unapproved or incorrect depreciation rates applied to plant.",
-        "keywords": [
-          "depreciation"
-        ],
-        "finding_count": 6,
-        "report_count": 3,
-        "example_titles": [
-          "Settlement: agreement",
-          "Settlement: Agreement"
         ]
       },
       {
@@ -992,15 +995,15 @@
       },
       {
         "title": "Settlement: agreement",
-        "count": 39
+        "count": 40
+      },
+      {
+        "title": "Settlement: terms",
+        "count": 15
       },
       {
         "title": "Settlement: AGREEMENT",
         "count": 14
-      },
-      {
-        "title": "Settlement: terms",
-        "count": 10
       },
       {
         "title": "Approval: $5,475 ",
@@ -1009,6 +1012,10 @@
       {
         "title": "Approval: $43,409 ",
         "count": 5
+      },
+      {
+        "title": "Approval: $5 million",
+        "count": 3
       },
       {
         "title": "Approval: $231.8 million",
@@ -1047,6 +1054,14 @@
         "count": 2
       },
       {
+        "title": "Approval: $4.2 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $900,000 ",
+        "count": 2
+      },
+      {
         "title": "Approval: $1,277,051,206. ",
         "count": 1
       },
@@ -1063,27 +1078,15 @@
         "count": 1
       },
       {
+        "title": "Approval: $500",
+        "count": 1
+      },
+      {
         "title": "Approval: $9.98 ",
         "count": 1
       },
       {
         "title": "Disallowance: $330,788.",
-        "count": 1
-      },
-      {
-        "title": "Approval: $175\nmillion",
-        "count": 1
-      },
-      {
-        "title": "Approval: $55.4 million",
-        "count": 1
-      },
-      {
-        "title": "Approval: $55.4\nmillion",
-        "count": 1
-      },
-      {
-        "title": "Approval: $69.8 million",
         "count": 1
       }
     ],

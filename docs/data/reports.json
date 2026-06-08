@@ -499,8 +499,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $500",
+        "summary": "he EDCs stated that they would need to become adhering parties to the US Stay Protocol if the Board approves MSCGI’s proposal. Further, a one (1)-time fee ($500) is required to be paid to the ISDA to become an adhering party to the US Stay Protocol. The EDCs requested that if the Board directs the E",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -1689,8 +1699,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $88 million",
+        "summary": "o be known and measurable, used and useful, and prudent. 3 Staff explains that PSE pursued multiple grant opportunities in excess of $88 million and that of the 19 grant applications submitted, eight were successful. However, Staff notes that not all the grants had a monetary component, and th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -1817,8 +1837,27 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Settlement: terms",
+        "summary": "he settlement was lawful, supported by the record, and consistent with the public interest.4 11 The settlement terms addressing the annual capital projects review process extended the company’s initial proposal for the review period from three to four months “to all",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Settlement: terms",
+        "summary": "settlement in the general rate proceeding for Northwest Natural Gas in Docket UG-200994, et al. The settlement terms on the capital projects review were included to provide assurance that the provisional capital included prior to the rate effective period (for 2022",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -3279,8 +3318,63 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 6,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $78 million",
+        "summary": ", in aggregate, in the Company’s service territory for a given storm event. The Major Storm revenue allowance reflected in rates will be $78 million. The treatment of Major Storm costs is more fully described in Appendix 13 and Appendix 5, Schedule 16. 40 Case 24-E-0322 Case 24-G-0323 Joint Propos",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $85.7 million",
+        "summary": "Lining Storm deferral will dissolve and there will be no minor storm deferral. The minor storm rate allowance will remain at $85.7 million for Rate Year Two and $87.6 million for Rate Year Three with no deferral for any expenditures for the remainder of the rate plan. 6.5. Pre-Staging St",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $61.775 million",
+        "summary": "r component is reflected through the revenue allocation and rate design process. The EAP Total Rate Allowances are $61.775 million in Rate Year One, $87.575 million 24 The cash shortfall is equal to the difference between the negative expense levels reflected in the revenue requi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $1 million",
+        "summary": "cy economic assistance or other incremental economic development programs. The Economic Development Grant Program for gas will be funded by amortizing up to $1 million of the existing economic development programs gas deferral balance in each Rate Year. An example of the reconciliation is provided i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $17.404 million",
+        "summary": "ric and Gas) Each Rate Year, the Company will fully reconcile actual SIR expense to the annual rate allowance of $17.404 million for electric and $3.071 million for gas in Rate Year One and $17.357 65 Case 24-E-0322 Case 24-G-0323 Joint Proposal million for electric and $3.063",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Approval: $25,000 ",
+        "summary": "n a grant program; and increases to maximum grant funding provided that the increase in the maximum grant amount does not exceed $25,000 and increase the maximum grant amount by more than 25 percent. Commission approval will continue to be required for other program adjustments, includi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -4683,10 +4777,82 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 7,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $5 million",
+        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (l-1) To qualify for the Deman",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $5 million",
+        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (l-1) To qualify for the Deman",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $5 million",
+        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (i-1) To qualify for the Deman",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Settlement: agreement",
+        "summary": "sy between the parties and is consistent with the law. 3 OAL DKT. NO. PUC 00926-24 I ORDER that the settlement agreement is APPROVED, that its terms are INCORPORATED into this decision, and that this case is CONCLUDED. I FILE my decision with the BOARD OF PUBLIC UTILITI",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Settlement: terms",
+        "summary": "tition in this docket, and to request that: (1) Your Honor issue an Initial Decision approving this Settlement in its entirety in accordance with the terms contained herein, and (2) the New Jersey Board of Public Utilities (“Board” or “BPU”) approve this Settlement, in its entirety in accordance wit",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Settlement: terms",
+        "summary": "ocket Nos. GR17070776 and GR23030102, Order dated October 11, 2023 at 11 (Stipulation ¶ 39). - 31 - Settlement is in no way binding upon them in any other proceeding, except to enforce the terms of this Settlement. WHEREFORE, the undersigned parties respectfully submit this Settlement to Your Honor ",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Settlement: terms",
+        "summary": "___________ Dated: __________________________ ________________________________________________ -31- Settlement is in no way binding upon them in any other proceeding, except to enforce the terms of this Settlement. WHEREFORE, the undersigned parties respectfully submit this Settlement to Your Honor ",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -9313,11 +9479,172 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 17,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $27.8 million",
+        "summary": "PC witnesses Alvarez and Stephens argued that BGE’s capital spend for system performance in 2022 by $27.8 million (27.2%) over budget should be disallowed because “system performance spending is discretionary as to timing and extent…”747 OPC argued that by the time a second major storm hit the BGE t",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $149.1 million",
+        "summary": "his case, the Commission will apply the Present Value Method to BGE’s service lives. The Commission approves a depreciation expense of $149.1 million for BGE’s electric plant, as recommended by Staff. The Commission further approves BGE’s proposed net salvage rates, calculated under the Maryland Pr",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Depreciation"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Approval: $38.2 million",
+        "summary": "GE’s proposed accelerated cable replacement schedule and recommended instead that the Commission disallow the $38.2 million that the accelerated schedule would cost. OPC witness Stephens testified that BGE has proposed to spend $89.6 million replacing underground cable in",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $4.2 million",
+        "summary": "MYP period.299 For the same reasons articulated by Mr. Clementson, Mr. Austin recommended a full disallowance of the $4.2 million that BGE is proposing to spend on the electric side 295 The Commission also assessed a civil penalty against BGE in the amount of $437,294. Order No.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $000,000",
+        "summary": "llowance for electric costs should be revised as follows. Table 3 BGE proposed revision to Staff Disallowance ($000,000) 2021 2022 2023 2024 2025 2026 Electric Project $7.0 $1.2 $0.3 $0.3 $0.3 $0.3 68155 In his surrebuttal testimony, Mr. Clementson reversed his recomme",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Approval: $7 million",
+        "summary": "commendation to reflect BGE witness Frain’s revised estimation of costs in rebuttal testimony to disallow $7 million in 2021 and $1.2 million in 2022.314 In his surrebuttal testimony, Mr. Austin also changed his recommendation from his direct testimony. After review",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Approval: $4.2 million",
+        "summary": "tated that he accepted the Company’s analysis and rescinded his previous recommendation to fully disallow the $4.2 million BGE proposed to spend on the common trench program in this MYP period.315 Therefore, Mr. Austin recommended that BGE be disallowed only $900,000 of t",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Approval: $900,000 ",
+        "summary": "n the common trench program in this MYP period.315 Therefore, Mr. Austin recommended that BGE be disallowed only $900,000 of the $4.2 million it initially proposed to spend on its CTES – Electric program for the MYP 2 period. Commission Decision The Commission accepts Sta",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Approval: $900,000 ",
+        "summary": "BGE sought $4.2 million for the CTES- Electric program, Mr. Austin revised his recommendation to disallow only $900,000 of the $4.2 million originally requested for the MYP 2 period. The Commission accepts Staff’s recommendation. Finally, the Commission observes that th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Approval: $17.5 million",
+        "summary": "buttal at 14. 90 reduce the 2021-2023 revenue requirements accordingly. The Commission will also disallow recovery for the $17.5 million BGE requested in its MYP application. Nevertheless, the Commission finds that BGE raises a fair point about adjusting the 2021 reconciliation under-r",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Approval: $120 million",
+        "summary": "ed to the condition of the conduit.418 Accordingly, Mr. Stephens recommended that the Commission disallow the entire $120 million in the conduit system, as it is not in the best interest of ratepayers.419 In his rebuttal testimony, Mr. Vahos testified that a change in Baltimore",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Approval: $30\nmillion",
+        "summary": "466 Similarly, OPC witness Stephens did not change his recommendation. Despite the lure of the IIJA grant, he argued that “misspending $30 million to capture such savings does not constitute a bargain for customers.”467 Commission Decision The Commission will grant in part Staff’s proposal by de",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Approval: $30.8 million",
+        "summary": "communities in central Maryland, and BGE was awarded that grant on June 16, 2023.473 As part of the grant requirements, BGE must spend more than $30.8 million by the end of June 2027 in order to receive the full $15 million that the NTIA authorized.474 The Commission supports BGE’s Middle Mile Proje",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "Approval: $3.38\nmillion",
+        "summary": "ter planning.525 Instead, Dr. Hopkins recommended that for this first MYP period, the Commission disallow a portion of BGE’s capital spending on mains and services – amounting to $3.38 million.526 He argued that the Commission should send a message that if BGE’s planning does not improve, the Commis",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "Approval: $27.8\nmillion",
+        "summary": "ould be deemed imprudent. Based on the foregoing, the Commission rejects OPC’s recommendation to disallow the Company’s request for $27.8 million for its system performance work. This decision does not abrogate BGE’s duty to carefully consider if spends should be deferred into future years if c",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "Approval: $4.1 million",
+        "summary": "ed future clean-up costs that may or may not be recoverable in rate base.873 He also recommended disallowance of the $4.1 million that would be required for the accelerated distribution substation oil circuit breaker replacement program, with any significant variance of expendit",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 17,
+        "title": "Approval: $200,000 ",
+        "summary": "was also well-argued in Case No. 9645, where the Commission found Schedule T to be over-earning and approved a $200,000 reduction from Schedule T revenues as a part of Step-One of the 1193 Id. at 18. 259 revenue allocation methodology. The Commission now directs BGE to",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Cost of service & rates",
+      "Depreciation"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "prudence_review",
@@ -9613,8 +9940,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $31,435,485",
+        "summary": "ly 18, 19, 20, 21 and 28, 2023. The PULJ issued a Proposed Order on September 6, 2023,1 authorizing $31,435,485 of the Company’s request, and denying approval of the remaining request. Additionally, on May 31, 2023, the Maryland Office of People’s Counsel (“OPC”) and Potomac Edison, with the sup",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -29502,10 +29839,24 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $189.7 ",
+        "summary": "te Drivers Inc/(Dec) Delivery Rev Total Rev Primary Drivers ($ M) Change (%) Change (%) Major Storm Allowance $189.7 14.5% 7.6% Capital Investments $189.0 14.5% 7.6% Labor & Benefits $55.6 4.3% 2.2% Net Operating Loss Deferred Tax Asset $34.5 2.6% 1.4% Vegetation Man",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Service reliability & vegetation management"
+    ],
     "cost_to_customers": false
   },
   {

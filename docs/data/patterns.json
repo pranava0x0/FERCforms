@@ -1,6 +1,6 @@
 {
   "report_count": 276,
-  "finding_count": 1168,
+  "finding_count": 1204,
   "other_matter_count": 10,
   "recommendation_count": 1622,
   "by_industry": {
@@ -95,8 +95,8 @@
       "keywords": [
         "depreciation"
       ],
-      "finding_count": 64,
-      "report_count": 44,
+      "finding_count": 65,
+      "report_count": 45,
       "example_titles": [
         "Allowance for Funds Used During Construction",
         "Depreciation Rates and Study",
@@ -168,8 +168,8 @@
         "rate of return",
         "return on equity"
       ],
-      "finding_count": 71,
-      "report_count": 33,
+      "finding_count": 72,
+      "report_count": 34,
       "example_titles": [
         "Approval: $1,277,051,206. ",
         "Annual Membership Dues",
@@ -200,8 +200,8 @@
       "keywords": [
         "tariff"
       ],
-      "finding_count": 45,
-      "report_count": 27,
+      "finding_count": 48,
+      "report_count": 28,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -234,8 +234,8 @@
         "caidi",
         "outage"
       ],
-      "finding_count": 23,
-      "report_count": 17,
+      "finding_count": 24,
+      "report_count": 18,
       "example_titles": [
         "Settlement: terms",
         "Settlement: Agreement",
@@ -436,11 +436,15 @@
     },
     {
       "title": "Settlement: agreement",
-      "count": 39
+      "count": 40
     },
     {
       "title": "FERC Form No. 1 Reporting",
       "count": 17
+    },
+    {
+      "title": "Settlement: terms",
+      "count": 15
     },
     {
       "title": "Settlement: AGREEMENT",
@@ -449,10 +453,6 @@
     {
       "title": "Allowance for Funds Used During Construction",
       "count": 12
-    },
-    {
-      "title": "Settlement: terms",
-      "count": 10
     },
     {
       "title": "Allowance for Funds Used During Construction (AFUDC)",

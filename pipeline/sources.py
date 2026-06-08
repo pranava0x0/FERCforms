@@ -404,7 +404,26 @@ def process_seed(
                 f"{report.finding_count} findings, "
                 f"{sum(len(f.recommendations) for f in report.findings)} recs"
             )
-        (out_dir / "report.json").write_text(report.model_dump_json(indent=2), encoding="utf-8")
+        # NO-CLOBBER GUARD (regression: re-running sources on a seed file whose records
+        # were already structured by pipeline.structure repeatedly wiped their findings,
+        # writing metadata-only over a richer report — clobbered ComEd, BGE (17 findings),
+        # PSE&G, etc.). If THIS run produced no findings but an existing report.json has
+        # some, the existing one was structured by another stage — preserve it.
+        existing = out_dir / "report.json"
+        if report.finding_count == 0 and existing.exists():
+            try:
+                prior = json.loads(existing.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001 — unreadable prior: fall through and overwrite
+                prior = {}
+            if prior.get("finding_count", 0) > 0:
+                logger.warning(
+                    "%s: keeping existing %d-finding report.json — this metadata-only "
+                    "pass would have clobbered findings structured by another stage",
+                    seed.id, prior["finding_count"],
+                )
+                written += 1
+                continue
+        existing.write_text(report.model_dump_json(indent=2), encoding="utf-8")
         logger.info("ingested %s (%d pages, %s)", seed.id, page_count, kind)
         written += 1
     return written, no_pdf

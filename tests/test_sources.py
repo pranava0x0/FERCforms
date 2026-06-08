@@ -454,3 +454,27 @@ def test_verify_sources_classifies_dead_nonpdf_and_proven(monkeypatch):
     assert any("captured-404" in s for s in v["DEAD"])        # 404 is suspicious even when browser-captured
     assert any("elibrary-acc" in s for s in v["CHECK"])       # accession-backed -> CHECK, not NON_PDF
     assert not any("elibrary-acc" in s for s in v["NON_PDF"])
+
+
+def test_process_seed_does_not_clobber_existing_findings(tmp_path):
+    """No-clobber guard (regression for the recurring 2026-06-08 footgun): re-running
+    pipeline.sources on a seed whose record was already structured by pipeline.structure
+    must NOT overwrite its findings with a metadata-only record. Repeatedly wiped ComEd,
+    BGE (17 findings), PSE&G, etc. when a seed file mixed structured + new records."""
+    seed = _seed(id="2024-01-01_x_state-rate-case", collection="state_rate_case", parse=False, fetch=False)
+    processed = tmp_path / "processed"
+    out = processed / seed.id
+    out.mkdir(parents=True)
+    # An existing report.json with findings (as pipeline.structure would have written).
+    structured = {"id": seed.id, "collection": "state_rate_case", "finding_count": 17,
+                  "findings": [{"index": 1, "title": "t", "summary": None, "recommendations": []}],
+                  "structured": True}
+    (out / "report.json").write_text(json.dumps(structured), encoding="utf-8")
+
+    seed_file = tmp_path / "s.json"
+    seed_file.write_text(json.dumps([seed.model_dump(mode="json")]), encoding="utf-8")
+    sources.process_seed(seed_file, raw_dir=tmp_path / "raw", processed_dir=processed)
+
+    after = json.loads((out / "report.json").read_text())
+    assert after["finding_count"] == 17        # findings preserved, not clobbered
+    assert after["structured"] is True
