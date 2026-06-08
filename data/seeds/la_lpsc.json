@@ -44,5 +44,21 @@
     "captured_at": "2026-06-02",
     "source_note": "Direct Testimony of Gary C. Dickens (Vice President, Project/Construction Management, New Generation Program Execution) on behalf of Entergy Louisiana, LLC, in Entergy Louisiana's Application for Review of the Management of the Construction of Lake Charles Power Station, before the Louisiana Public Service Commission, Public Redacted Version, December 2021 (49 pp). Addresses the owner's oversight during the development, design-engineering, and procurement phases of the project, which began commercial operation March 28, 2020. Related to construction-approval Order No. U-34283 (July 20, 2017); the review-proceeding docket number is obscured in the public-redacted filing. Listed for reference (metadata-only). Source: LPSC public docket portal, file f1nYMQY9MWc= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=f1nYMQY9MWc%3D).",
     "parse": false
+  },
+  {
+    "id": "2025-11-24_swepco_la-u-37794-application",
+    "company": "Southwestern Electric Power Company (SWEPCO)",
+    "collection": "state_audit",
+    "jurisdiction": "LA",
+    "source": "Louisiana Public Service Commission",
+    "doc_type": "rate case application",
+    "industry": "electric",
+    "pdf_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=sh4kA6z%2B3bk%3D",
+    "source_page_url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/DocketDetails?docketId=SWEPCO-U-37794",
+    "issued_date": "2025-11-24",
+    "docket": "U-37794",
+    "captured_at": "2026-06-07",
+    "source_note": "Application of Southwestern Electric Power Company (SWEPCO) for Authorization of a System Improvement Plan (SIP), including related rate recovery through Fuel Adjustment Clause (FAC) beginning June 1, 2026. Plan covers grid hardening (629 line-miles) and vegetation management (6,095 line-miles) across 11 Louisiana parishes. Filed November 24, 2025, published for intervention December 5, 2025. Listed for reference (metadata-only). Source: LPSC public docket portal, Docket U-37794, file sh4kA6z+3bk= (lpscpubvalence.lpsc.louisiana.gov).",
+    "parse": false
   }
 ]

@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="248 structured records (120 FERC audits, 14 prudence reviews, 114 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="250 structured records (120 FERC audits, 14 prudence reviews, 116 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3195,6 +3195,14 @@ Order of the Indiana Utility Regulatory Commission on the verified petition of N
 <doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="FC 1176" issued="2025-01-28" industry="electric" source="https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx">
 Listed for reference (not machine-parsed into findings).
 Order of the Public Service Commission of the District of Columbia on applications for reconsideration of its Multiyear Rate Plan decision for Potomac Electric Power Company (Pepco), Formal Case No. 1176, issued January 28, 2025. Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 217663). DC PSC publishes on dcpsc.org (official US-government commission on .org, not .gov; admitted via the gov-guard's narrow .org allowlist).
+</doc>
+<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
+Listed for reference (not machine-parsed into findings).
+Direct Testimony (Exhibit 10.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois, witness Dylan W. D'Ascendis (ScottMadden, Inc.), regarding rate base and return on equity (ROE) in the Company's proposed general increase in rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631521 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
+</doc>
+<doc title="Ameren Illinois Company" collection="State PUC Audits" docket="25-0084" issued="2025-01-08" industry="gas" source="https://www.icc.illinois.gov/docket/P2025-0084/documents/360541">
+Listed for reference (not machine-parsed into findings).
+Direct Testimony (Exhibit 1.0) on behalf of Ameren Illinois Company d/b/a Ameren Illinois in the Company's Proposed General Increase in Rates for natural gas delivery service, ICC Docket 25-0084, filed January 8, 2025. Listed for reference (metadata-only). Source: ICC e-Docket, document 360541 / file 631501 (landing: www.icc.illinois.gov/docket/P2025-0084/documents/360541).
 </doc>
 <doc title="The Narragansett Electric Company d/b/a Rhode Island Energy" collection="State PUC Audits" docket="24-38-GE" issued="2025-01-01" industry="electric" source="https://ripuc.ri.gov/utility-information/electric">
 Listed for reference (not machine-parsed into findings).
