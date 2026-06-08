@@ -29,14 +29,14 @@ Rules for adding a record (enforced by tests + `pipeline.verify_sources`):
 5. The offline test `test_committed_seeds_have_no_fabrication_markers` blocks any
    seed with a `placeholder` URL or a future `captured_at`.
 
-## Current corpus: 276 structured records (as of 2026-06-08)
+## Current corpus: 290 structured records (as of 2026-06-08)
 
 | Collection (UI tab)            | Count | Notes |
 |--------------------------------|-------|-------|
 | FERC Audits (`ferc_audit`)     | 120   | Form 1/2/6, every available year; traced to `data/listing.json` |
-| Prudence Reviews (`prudence_review`) | 18 | FERC eLibrary orders (accession-verified) + CA ERRA + WA power-cost/hedging |
-| State PUC Audits (`state_audit`)     | 33 | 12 jurisdictions: PA MI CT MO MS TN UT + **NY NJ CA OH MD** (added 2026-06-08) |
-| State Rate Cases (`state_rate_case`) | 105 | Reference metadata across ~35 jurisdictions |
+| Prudence Reviews (`prudence_review`) | 26 | FERC eLibrary orders + CA ERRA + WA/IN/WI/GA/VA/IL fuel & construction prudence (8 jurisdictions) |
+| State PUC Audits (`state_audit`)     | 35 | 13 jurisdictions: PA MI CT MO MS TN UT NY NJ CA OH MD + **IL** (9 with parsed findings) |
+| State Rate Cases (`state_rate_case`) | 109 | Reference metadata across ~37 jurisdictions (+VA biennial, +MN ALJ) |
 
 **State PUC Audits — 33 across 12 jurisdictions, 8 with parsed findings (~122 recommendations):**
 - **PA (8, parsed):** Bureau of Audits M&O audits — PPL, PGW, FirstEnergy, PECO, NFG, Duquesne, UGI, Columbia Gas (Exhibit I-2 → findings).

@@ -1,0 +1,371 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2021-05-06_peoples-natural-gas_pa-mo-audit",
+  "company": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+  "company_raw": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+  "docket": "D-2020-3018773",
+  "docket_full": null,
+  "issued_date": "2021-05-06",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2021/puc-issues-aquapeoples-gas-audit-report-implementation-plan",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1702687.pdf",
+  "captured_at": "2026-06-08",
+  "source_note": "Management & Operations Audit of Aqua Pennsylvania, Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC (joint), PA PUC Bureau of Audits; PUC publication 2021-05-06, Dockets D-2020-3018771/3018773/3018774; 47 recommendations (combined). Seeded for the Peoples gas companies (industry=gas); Aqua is water and out of scope but the audit is published as one report. Findings parsed verbatim from the Exhibit I-2 Summary of Recommendations. PDF: puc.pa.gov/pcdocs/1702687.pdf.",
+  "archived_via": null,
+  "page_count": 195,
+  "scanned_pages": [
+    1,
+    195
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 13,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Executive Management and Organizational Structure",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Periodically review spans of control for management positions, document justification for supervisory position ratios with narrow or wide spans of control and adjust reporting relationships as appropriate.",
+          "source_page": 32
+        },
+        {
+          "number": 2,
+          "text": "Establish a single repository for all policies and procedures across the Essential Utilities organization and establish a coordinated procedures review process.",
+          "source_page": 32
+        },
+        {
+          "number": 3,
+          "text": "Reduce or eliminate manual processes within the payroll function.",
+          "source_page": 32
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Corporate Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Periodically seek competitive bids for external audit services.",
+          "source_page": 40
+        },
+        {
+          "number": 5,
+          "text": "Organize the Internal Audit function to report administratively to the CEO, another non-financial senior officer, or directly to the Board of Directors",
+          "source_page": 40
+        },
+        {
+          "number": 6,
+          "text": "Establish a foundational understanding of internal audit needs as a result of the Peoples Companies’ acquisition, then resource and staff accordingly.",
+          "source_page": 40
+        },
+        {
+          "number": 7,
+          "text": "Conduct a review of completed internal audits to ensure previous recommendations are being properly implemented at the Peoples Companies.",
+          "source_page": 40
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Affiliated Interests and Cost Allocations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Improve internal controls and other practices related to affiliate transactions and cost allocation to ensure the company is following best practices and Commission guidelines. Further, the Peoples Companies should consult with the PUC’s Bureau of Technical Utility Services to perform a thorough review of the current AIAs on file to determine if changes to the AIAs are needed and/or if new AIAs need to be filed to ensure compliance with Title 66 Chapter 21.",
+          "source_page": 63
+        },
+        {
+          "number": 9,
+          "text": "Document all lease agreements between Aqua PA and its affiliates and submit them to the Commission for approval.",
+          "source_page": 63
+        },
+        {
+          "number": 10,
+          "text": "Implement a policy or procedure that requires the approval of Peoples Companies employees’ timesheets similar to what exists for Aqua Services employees.",
+          "source_page": 64
+        },
+        {
+          "number": 11,
+          "text": "Expand Essential’s corporate charges allocation manual to include all transactions between affiliates.",
+          "source_page": 64
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Affiliated Interests and Cost Allocations (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Conduct periodic market studies to confirm that goods and services provided by affiliates to the utilities are at the lower of cost or market, and goods and services provided by the utilities to affiliates are at the higher of cost or market.",
+          "source_page": 64
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Perform a cost/benefit analysis to determine the feasibility of implementing an Essential Utilities money pool.",
+          "source_page": 82
+        },
+        {
+          "number": 14,
+          "text": "Reduce or eliminate manual processes within the accounts payable function at Aqua PA.",
+          "source_page": 82
+        },
+        {
+          "number": 15,
+          "text": "Develop and implement capital and operations and maintenance (O&M) budget manuals/policies that include requirements for detailed written explanations of budget variances in excess of 10% for the Peoples Companies.",
+          "source_page": 82
+        },
+        {
+          "number": 16,
+          "text": "Develop and implement new accounting/finance policies and procedures at the Peoples Companies where appropriate and ensure the policies have all the key elements, including accountability and a regular review schedule to remain timely.",
+          "source_page": 82
+        },
+        {
+          "number": 17,
+          "text": "Update Aqua PA’s dividend policy.",
+          "source_page": 82
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Water Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Implement a full-scale valve inspection and exercise program designed to identify what valves have not been operated or inspected in the last ten years.",
+          "source_page": 94
+        },
+        {
+          "number": 19,
+          "text": "Update all drought contingency plans annually.",
+          "source_page": 94
+        },
+        {
+          "number": 20,
+          "text": "Implement measures to reduce company-at-fault hits.",
+          "source_page": 94
+        },
+        {
+          "number": 21,
+          "text": "Increase testing and replacement of meters to improve accuracy rates.",
+          "source_page": 94
+        },
+        {
+          "number": 22,
+          "text": "Focus efforts on reducing NRW at the Roaring Creek system.",
+          "source_page": 94
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Expedite bare steel replacement efforts in the companies’ distribution systems, and conduct ongoing staffing analyses to support any decision- making to fully staff, train, and monitor the workforce needs for all of the engineering, construction, and field operations positions and support positions needed to maintain future accelerated main replacement rates.",
+          "source_page": 108
+        },
+        {
+          "number": 24,
+          "text": "Effectively modify, track, and enforce the damage prevention program and initiate preventative solutions to minimize second- and third-party damages in significant construction areas.",
+          "source_page": 108
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Establish a standard frequency for AED inspections across Aqua PA and require inspections to be tracked for all AEDs.",
+          "source_page": 116
+        },
+        {
+          "number": 26,
+          "text": "Establish a unified Emergency Response Plan for Aqua PA and ensure that localized conditions are captured for individual facilities.",
+          "source_page": 116
+        },
+        {
+          "number": 27,
+          "text": "Establish a unified control room security standard for Aqua PA, and upgrade existing facilities to adhere to it.",
+          "source_page": 116
+        },
+        {
+          "number": 28,
+          "text": "Establish a tiered physical security standard for Aqua PA based on criticality of company facilities.",
+          "source_page": 116
+        },
+        {
+          "number": 29,
+          "text": "Correct minor deficiencies in physical security and safety at Aqua PA.",
+          "source_page": 116
+        },
+        {
+          "number": 30,
+          "text": "Designate responsible parties, review existing security protocols and measures, and address deficiencies with the physical security needs of IT components at Aqua PA and Essential Utilities.",
+          "source_page": 116
+        },
+        {
+          "number": 31,
+          "text": "Perform a physical security drill and/or tabletop exercise annually at Aqua PA.",
+          "source_page": 116
+        },
+        {
+          "number": 32,
+          "text": "Supply rescue hooks at all locations with open topped aerated basins and tanks deep enough to submerge employees at Aqua PA.",
+          "source_page": 116
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Materials Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 33,
+          "text": "Fully develop and standardize all policies and procedures at Aqua PA.",
+          "source_page": 125
+        },
+        {
+          "number": 34,
+          "text": "Incorporate inventory accuracy into key performance indicators at the Peoples Companies and improve accuracy in all storerooms.",
+          "source_page": 125
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Continue outreach efforts to engage payment troubled customers, leverage low-income resources, grants, and programs to mitigate the overall level of unpaid customer balances, and accelerate first contact with customers who miss a payment.",
+          "source_page": 146
+        },
+        {
+          "number": 36,
+          "text": "Develop periodic refresher training, including documentation of instances of theft of service, meter tampering, unauthorized tie-ins, etc. to ensure new and existing staff are kept apprised of recent cases, investigation outcomes, and safety precautions for Aqua PA.",
+          "source_page": 146
+        },
+        {
+          "number": 37,
+          "text": "Improve the functionality and workflow progression provided by Aqua Services’ customer information system.",
+          "source_page": 146
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Customer Service (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "Benchmark with similar utilities to set separate net collection goals for primary and secondary collection agencies at the Peoples Companies and measure each collection agency to the respective collection goal.",
+          "source_page": 146
+        },
+        {
+          "number": 39,
+          "text": "Establish goals to achieve for customer satisfaction performance at the Peoples Companies and complete an analysis at the end of 2021 to evaluate the effectiveness of the IVR redesign, including Chat Bot, in improving customer satisfaction metrics.",
+          "source_page": 146
+        },
+        {
+          "number": 40,
+          "text": "Perform an analysis of source data being gathered for arrearage level reports and remove any adjustments or inactive accounts that would adversely affect the integrity of arrearage data for the Peoples Companies.",
+          "source_page": 146
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Fleet Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 41,
+          "text": "Perform a periodic vehicle lease vs. buy analysis at Aqua Pennsylvania and the Peoples Companies, to ensure Pennsylvania operations is utilizing the least cost option for acquiring vehicles and equipment.",
+          "source_page": 160
+        },
+        {
+          "number": 42,
+          "text": "Implement Dossier as PNG Companies’ fleet management system.",
+          "source_page": 160
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "Human Resources and Diversity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "Establish an internal OSHA recordable rate goal for the Peoples Companies based upon industry performance and align safety programs to achieve the OSHA goal(s).",
+          "source_page": 176
+        },
+        {
+          "number": 44,
+          "text": "Measure employee engagement on a regular basis for the Peoples Companies in order to trend employee enthusiasm and motivation and reveal opportunities for improvement.",
+          "source_page": 176
+        },
+        {
+          "number": 45,
+          "text": "Implement a safety management system at the Peoples Companies.",
+          "source_page": 176
+        },
+        {
+          "number": 46,
+          "text": "Expedite the succession planning process, alongside with Essential Utilities, to ensure the Peoples Companies develop and recruit key positions.",
+          "source_page": 176
+        },
+        {
+          "number": 47,
+          "text": "Update all job descriptions for the Peoples Companies.",
+          "source_page": 176
+        }
+      ]
+    }
+  ],
+  "structured": true
+}

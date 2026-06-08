@@ -453,13 +453,13 @@
     "generated_at": "2026-06-08"
   },
   "prudence_review": {
-    "report_count": 18,
+    "report_count": 26,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 16,
-      "gas": 1,
+      "electric": 22,
+      "gas": 3,
       "oil": 1
     },
     "by_year": {
@@ -468,11 +468,11 @@
       "2015": 1,
       "2016": 2,
       "2017": 2,
-      "2018": 1,
+      "2018": 2,
       "2020": 1,
       "2023": 3,
       "2024": 2,
-      "2025": 3
+      "2025": 7
     },
     "by_function": {},
     "themes": [],
@@ -480,20 +480,21 @@
     "generated_at": "2026-06-08"
   },
   "state_audit": {
-    "report_count": 33,
-    "finding_count": 79,
+    "report_count": 35,
+    "finding_count": 92,
     "other_matter_count": 0,
-    "recommendation_count": 203,
+    "recommendation_count": 250,
     "by_industry": {
       "electric": 23,
-      "gas": 8,
+      "gas": 10,
       "unknown": 2
     },
     "by_year": {
       "2017": 1,
+      "2018": 1,
       "2019": 1,
       "2020": 2,
-      "2021": 1,
+      "2021": 2,
       "2022": 3,
       "2023": 2,
       "2024": 9,
@@ -512,12 +513,13 @@
           "meter reading",
           "customer experience"
         ],
-        "finding_count": 10,
-        "report_count": 8,
+        "finding_count": 12,
+        "report_count": 9,
         "example_titles": [
           "Financial Management",
           "Customer Service",
-          "Affiliated Interests and Cost Allocations"
+          "Affiliated Interests and Cost Allocations",
+          "Customer Service (continued)"
         ]
       },
       {
@@ -531,8 +533,8 @@
           "workforce plan",
           "learning management"
         ],
-        "finding_count": 16,
-        "report_count": 7,
+        "finding_count": 19,
+        "report_count": 8,
         "example_titles": [
           "Human Resources and Diversity (continued)",
           "Cost Allocations and Affiliated Interests",
@@ -550,8 +552,8 @@
           "code of business conduct",
           "compliance program"
         ],
-        "finding_count": 13,
-        "report_count": 7,
+        "finding_count": 15,
+        "report_count": 8,
         "example_titles": [
           "Corporate Governance",
           "Affiliated Interests and Cost Allocations",
@@ -568,8 +570,8 @@
           "fleet management",
           "vehicle replacement"
         ],
-        "finding_count": 11,
-        "report_count": 7,
+        "finding_count": 13,
+        "report_count": 8,
         "example_titles": [
           "Purchasing and Materials Management",
           "Materials Management",
@@ -585,8 +587,8 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 8,
-        "report_count": 6,
+        "finding_count": 10,
+        "report_count": 7,
         "example_titles": [
           "Affiliated Interests and Cost Allocations",
           "Cost Allocations and Affiliated Interests",
@@ -604,8 +606,8 @@
           "emergency management",
           "mutual assist"
         ],
-        "finding_count": 6,
-        "report_count": 5,
+        "finding_count": 7,
+        "report_count": 6,
         "example_titles": [
           "Emergency Preparedness",
           "Emergency Preparedness (continued)"
@@ -622,8 +624,8 @@
           "it backlog",
           "it governance"
         ],
-        "finding_count": 6,
-        "report_count": 5,
+        "finding_count": 7,
+        "report_count": 6,
         "example_titles": [
           "Information Technology",
           "Customer Service"
@@ -653,12 +655,24 @@
           "cyber",
           "physical security"
         ],
-        "finding_count": 5,
-        "report_count": 3,
+        "finding_count": 6,
+        "report_count": 4,
         "example_titles": [
           "Emergency Preparedness",
           "Emergency Preparedness (continued)",
           "Information Technology"
+        ]
+      },
+      {
+        "theme": "Dividend policy & capital management",
+        "description": "Dividend-policy or capital-management practices flagged by auditors.",
+        "keywords": [
+          "dividend"
+        ],
+        "finding_count": 4,
+        "report_count": 4,
+        "example_titles": [
+          "Financial Management"
         ]
       },
       {
@@ -679,15 +693,21 @@
         ]
       },
       {
-        "theme": "Dividend policy & capital management",
-        "description": "Dividend-policy or capital-management practices flagged by auditors.",
+        "theme": "Gas safety & pipeline integrity",
+        "description": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
         "keywords": [
-          "dividend"
+          "class a leak",
+          "main leak",
+          "cathodic",
+          "corros",
+          "damage prevention",
+          "pipeline integrity",
+          "leak management"
         ],
-        "finding_count": 3,
-        "report_count": 3,
+        "finding_count": 2,
+        "report_count": 2,
         "example_titles": [
-          "Financial Management"
+          "Gas Operations"
         ]
       },
       {
@@ -701,45 +721,39 @@
         "example_titles": [
           "Customer Service"
         ]
-      },
-      {
-        "theme": "Gas safety & pipeline integrity",
-        "description": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
-        "keywords": [
-          "class a leak",
-          "main leak",
-          "cathodic",
-          "corros",
-          "damage prevention",
-          "pipeline integrity",
-          "leak management"
-        ],
-        "finding_count": 1,
-        "report_count": 1,
-        "example_titles": [
-          "Gas Operations"
-        ]
       }
     ],
     "top_titles": [
       {
         "title": "Customer Service",
-        "count": 8
+        "count": 9
       },
       {
         "title": "Financial Management",
-        "count": 7
+        "count": 8
       },
       {
         "title": "Corporate Governance",
-        "count": 6
+        "count": 7
       },
       {
         "title": "Affiliated Interests and Cost Allocations",
-        "count": 5
+        "count": 6
       },
       {
         "title": "Emergency Preparedness",
+        "count": 6
+      },
+      {
+        "title": "Executive Management and Organizational Structure",
+        "count": 6
+      },
+      {
+        "title": "Gas Operations",
+        "count": 5
+      },
+      {
+        "title": "Human Resources and Diversity",
         "count": 5
       },
       {
@@ -747,23 +761,15 @@
         "count": 5
       },
       {
-        "title": "Executive Management and Organizational Structure",
-        "count": 5
-      },
-      {
         "title": "Electric Operations",
         "count": 5
       },
       {
-        "title": "Gas Operations",
-        "count": 4
-      },
-      {
-        "title": "Human Resources and Diversity",
-        "count": 4
-      },
-      {
         "title": "Fleet Management",
+        "count": 5
+      },
+      {
+        "title": "Materials Management",
         "count": 4
       },
       {
@@ -775,8 +781,8 @@
         "count": 3
       },
       {
-        "title": "Materials Management",
-        "count": 3
+        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "count": 2
       },
       {
         "title": "Electric Operations (continued)",
@@ -803,7 +809,11 @@
         "count": 1
       },
       {
-        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "title": "Water Operations",
+        "count": 1
+      },
+      {
+        "title": "Customer Service (continued)",
         "count": 1
       },
       {
@@ -813,22 +823,18 @@
       {
         "title": "Human Resources/Diversity",
         "count": 1
-      },
-      {
-        "title": "Executive Management",
-        "count": 1
       }
     ],
     "generated_at": "2026-06-08"
   },
   "state_rate_case": {
-    "report_count": 105,
+    "report_count": 109,
     "finding_count": 541,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 96,
-      "gas": 7,
+      "electric": 98,
+      "gas": 9,
       "unknown": 2
     },
     "by_year": {
@@ -837,10 +843,11 @@
       "2014": 1,
       "2018": 1,
       "2019": 2,
+      "2020": 1,
       "2021": 4,
       "2022": 5,
       "2023": 6,
-      "2024": 16,
+      "2024": 19,
       "2025": 38,
       "2026": 4
     },

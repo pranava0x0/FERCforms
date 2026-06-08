@@ -245,6 +245,23 @@ def test_every_committed_report_is_gov_sourced():
         assert sources.is_official_gov(d["pdf_download_url"]), f"{p.parent.name}: {d['pdf_download_url']}"
 
 
+def test_committed_seeds_have_unique_pdf_urls():
+    """No two seeds may point at the same PDF URL — that's the same document seeded
+    twice (regression for the 2026-06-08 wave-2 dedup: parallel research agents
+    re-found records already in the corpus). Distinct documents within one docket
+    (testimony panels, audit parts) legitimately share a docket but NOT a pdf_url."""
+    seen: dict[str, str] = {}
+    dupes: list[str] = []
+    for path in sorted(config.SEEDS_DIR.glob("*.json")):
+        for d in json.loads(path.read_text(encoding="utf-8")):
+            url = d["pdf_url"]
+            if url in seen:
+                dupes.append(f"{d['id']} == {seen[url]} (same pdf_url {url})")
+            else:
+                seen[url] = d["id"]
+    assert not dupes, "duplicate pdf_url across seeds:\n" + "\n".join(dupes)
+
+
 def test_ferc_audits_trace_to_listing():
     """Provenance guard for the FERC-audit corpus: every structured `ferc_audit`
     report must trace back to a record in the browser-captured `data/listing.json`

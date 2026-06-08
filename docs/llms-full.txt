@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 276 records, 1204 findings, 1622 recommendations. Generated 2026-06-08.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 290 records, 1217 findings, 1669 recommendations. Generated 2026-06-08.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5111,6 +5111,17 @@ WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docke
 
 ---
 
+## Southern Indiana Gas and Electric Company d/b/a CenterPoint Energy Indiana South
+- Collection: Prudence Reviews | Source: Indiana Utility Regulatory Commission
+- Docket: Cause No. 37366 GCA 168 | Audit type: n/a
+- Issued: 2025-10-29 | Industry: gas | FERC Form: n/a
+- Source page: https://www.in.gov/oucc/natural-gas/tips-and-publications/gas-cost-adjustments/
+- Status: listed for reference (not machine-parsed into findings)
+
+Indiana URC order on CenterPoint Energy Indiana South (SIGECO) gas cost adjustment, Cause No. 37366 GCA 168, issued 2025-10-29 (I.C. 8-1-2-42(g)/42.3). PDF: in.gov/iurc/files/ord_37366GCA168_102925.pdf.
+
+---
+
 ## Puget Sound Energy
 - Collection: Prudence Reviews | Source: Washington Utilities and Transportation Commission
 - Docket: UE-250318 | Audit type: n/a
@@ -5130,6 +5141,39 @@ WA UTC order on PSE's 2024 Power Cost Adjustment (PCA) Mechanism Report, Docket 
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC Commission order on a formal challenge (Rule 206) re ISO New England Inc. et al., Docket ER20-2054, issued 2025-09-18. Found via eLibrary full-text search; accession 20250918-3062.
+
+---
+
+## Wisconsin Power and Light Company (Alliant Energy)
+- Collection: Prudence Reviews | Source: Public Service Commission of Wisconsin
+- Docket: 6680-FR-2024 | Audit type: n/a
+- Issued: 2025-08-28 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=559688
+- Status: listed for reference (not machine-parsed into findings)
+
+PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/WP&L) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6680-FR-2024, issued 2025-08-28 (PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=559688.
+
+---
+
+## Wisconsin Electric Power Company (We Energies)
+- Collection: Prudence Reviews | Source: Public Service Commission of Wisconsin
+- Docket: 6630-FR-2024 | Audit type: n/a
+- Issued: 2025-08-12 | Industry: electric | FERC Form: n/a
+- Source page: https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=557994
+- Status: listed for reference (not machine-parsed into findings)
+
+PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.
+
+---
+
+## Virginia Electric and Power Company (Dominion Energy Virginia)
+- Collection: Prudence Reviews | Source: Virginia State Corporation Commission
+- Docket: PUR-2025-00059 | Audit type: n/a
+- Issued: 2025-05-12 | Industry: electric | FERC Form: n/a
+- Source page: https://www.scc.virginia.gov/docketsearch
+- Status: listed for reference (not machine-parsed into findings)
+
+Virginia SCC Order establishing the 2025-2026 fuel factor for Dominion Energy Virginia, Case No. PUR-2025-00059, issued 2025-05-12 (§56-249.6 fuel-cost recovery/prudence). PDF: scc.virginia.gov/docketsearch/DOCS/85$601!.PDF.
 
 ---
 
@@ -5210,6 +5254,17 @@ FERC Order on Remand, Granting Motion Consolidating Proceedings, and Establishin
 
 ---
 
+## Northern Illinois Gas Company d/b/a Nicor Gas Company
+- Collection: Prudence Reviews | Source: Illinois Commerce Commission
+- Docket: 15-0519 | Audit type: n/a
+- Issued: 2018-05-17 | Industry: gas | FERC Form: n/a
+- Source page: https://icc.illinois.gov/docket/P2015-0519/documents/271451
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission Final Order reconciling Nicor Gas revenues collected under Rider 6 (Gas Supply Cost / PGA) with actual costs prudently incurred for the year ended Dec 31 2015, Docket 15-0519, issued 2018-05-17 (§9-220). PDF: icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf.
+
+---
+
 ## Washington natural-gas LDCs (PSE, Avista, Cascade, NW Natural)
 - Collection: Prudence Reviews | Source: Washington Utilities and Transportation Commission
 - Docket: UG-132019 | Audit type: n/a
@@ -5284,6 +5339,39 @@ FERC ALJ Initial Decision re BP Pipelines (Alaska) Inc. et al. interstate oil-pi
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC order on the Mid-Atlantic Power Pathway (MAPP) abandonment cost recovery filing of Potomac Electric Power Company and Delmarva Power & Light Company (PHI), Docket ER13-607, issued February 28, 2013 (142 FERC para. 61,156) — accepting abandonment cost recovery and setting prudent-cost amounts for hearing, but removing the previously-granted ROE incentive adders once the project was abandoned. Found via the eLibrary AdvancedSearch API (searchText=docket); accession 20130228-3064.
+
+---
+
+## Georgia Power Company
+- Collection: Prudence Reviews | Source: Georgia Public Service Commission
+- Docket: 29849 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://psc.ga.gov/search/facts-docket/?docketId=29849
+- Status: listed for reference (not machine-parsed into findings)
+
+Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2024' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/217538/98678.
+
+---
+
+## Georgia Power Company
+- Collection: Prudence Reviews | Source: Georgia Public Service Commission
+- Docket: 29849 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://psc.ga.gov/search/facts-docket/?docketId=29849
+- Status: listed for reference (not machine-parsed into findings)
+
+Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2023' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.
+
+---
+
+## Georgia Power Company
+- Collection: Prudence Reviews | Source: Georgia Public Service Commission
+- Docket: 29849 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://psc.ga.gov/search/facts-docket/?docketId=29849
+- Status: listed for reference (not machine-parsed into findings)
+
+Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D. Roetger; William R. Jacobs, Jr., PhD) on Georgia Power’s Twenty-second Semi-annual Vogtle Construction Monitoring Report, Docket 29849 (Vogtle construction prudence). Page 1 carries no date -> issued_date null. PDF: services.psc.ga.gov/.../DownloadFile/181460/63470.
 
 ---
 
@@ -5817,6 +5905,113 @@ PUCO-ordered independent audit (Blue Ridge Consulting), Case 20-1629-EL-RDR — 
 
 ---
 
+## Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2020-3018773 | Audit type: n/a
+- Issued: 2021-05-06 | Industry: gas | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2021/puc-issues-aquapeoples-gas-audit-report-implementation-plan
+
+### Finding 1: Executive Management and Organizational Structure
+
+Recommendations:
+1. Periodically review spans of control for management positions, document justification for supervisory position ratios with narrow or wide spans of control and adjust reporting relationships as appropriate. (source p. 32)
+2. Establish a single repository for all policies and procedures across the Essential Utilities organization and establish a coordinated procedures review process. (source p. 32)
+3. Reduce or eliminate manual processes within the payroll function. (source p. 32)
+
+### Finding 2: Corporate Governance
+
+Recommendations:
+4. Periodically seek competitive bids for external audit services. (source p. 40)
+5. Organize the Internal Audit function to report administratively to the CEO, another non-financial senior officer, or directly to the Board of Directors (source p. 40)
+6. Establish a foundational understanding of internal audit needs as a result of the Peoples Companies’ acquisition, then resource and staff accordingly. (source p. 40)
+7. Conduct a review of completed internal audits to ensure previous recommendations are being properly implemented at the Peoples Companies. (source p. 40)
+
+### Finding 3: Affiliated Interests and Cost Allocations
+
+Recommendations:
+8. Improve internal controls and other practices related to affiliate transactions and cost allocation to ensure the company is following best practices and Commission guidelines. Further, the Peoples Companies should consult with the PUC’s Bureau of Technical Utility Services to perform a thorough review of the current AIAs on file to determine if changes to the AIAs are needed and/or if new AIAs need to be filed to ensure compliance with Title 66 Chapter 21. (source p. 63)
+9. Document all lease agreements between Aqua PA and its affiliates and submit them to the Commission for approval. (source p. 63)
+10. Implement a policy or procedure that requires the approval of Peoples Companies employees’ timesheets similar to what exists for Aqua Services employees. (source p. 64)
+11. Expand Essential’s corporate charges allocation manual to include all transactions between affiliates. (source p. 64)
+
+### Finding 4: Affiliated Interests and Cost Allocations (continued)
+
+Recommendations:
+12. Conduct periodic market studies to confirm that goods and services provided by affiliates to the utilities are at the lower of cost or market, and goods and services provided by the utilities to affiliates are at the higher of cost or market. (source p. 64)
+
+### Finding 5: Financial Management
+
+Recommendations:
+13. Perform a cost/benefit analysis to determine the feasibility of implementing an Essential Utilities money pool. (source p. 82)
+14. Reduce or eliminate manual processes within the accounts payable function at Aqua PA. (source p. 82)
+15. Develop and implement capital and operations and maintenance (O&M) budget manuals/policies that include requirements for detailed written explanations of budget variances in excess of 10% for the Peoples Companies. (source p. 82)
+16. Develop and implement new accounting/finance policies and procedures at the Peoples Companies where appropriate and ensure the policies have all the key elements, including accountability and a regular review schedule to remain timely. (source p. 82)
+17. Update Aqua PA’s dividend policy. (source p. 82)
+
+### Finding 6: Water Operations
+
+Recommendations:
+18. Implement a full-scale valve inspection and exercise program designed to identify what valves have not been operated or inspected in the last ten years. (source p. 94)
+19. Update all drought contingency plans annually. (source p. 94)
+20. Implement measures to reduce company-at-fault hits. (source p. 94)
+21. Increase testing and replacement of meters to improve accuracy rates. (source p. 94)
+22. Focus efforts on reducing NRW at the Roaring Creek system. (source p. 94)
+
+### Finding 7: Gas Operations
+
+Recommendations:
+23. Expedite bare steel replacement efforts in the companies’ distribution systems, and conduct ongoing staffing analyses to support any decision- making to fully staff, train, and monitor the workforce needs for all of the engineering, construction, and field operations positions and support positions needed to maintain future accelerated main replacement rates. (source p. 108)
+24. Effectively modify, track, and enforce the damage prevention program and initiate preventative solutions to minimize second- and third-party damages in significant construction areas. (source p. 108)
+
+### Finding 8: Emergency Preparedness
+
+Recommendations:
+25. Establish a standard frequency for AED inspections across Aqua PA and require inspections to be tracked for all AEDs. (source p. 116)
+26. Establish a unified Emergency Response Plan for Aqua PA and ensure that localized conditions are captured for individual facilities. (source p. 116)
+27. Establish a unified control room security standard for Aqua PA, and upgrade existing facilities to adhere to it. (source p. 116)
+28. Establish a tiered physical security standard for Aqua PA based on criticality of company facilities. (source p. 116)
+29. Correct minor deficiencies in physical security and safety at Aqua PA. (source p. 116)
+30. Designate responsible parties, review existing security protocols and measures, and address deficiencies with the physical security needs of IT components at Aqua PA and Essential Utilities. (source p. 116)
+31. Perform a physical security drill and/or tabletop exercise annually at Aqua PA. (source p. 116)
+32. Supply rescue hooks at all locations with open topped aerated basins and tanks deep enough to submerge employees at Aqua PA. (source p. 116)
+
+### Finding 9: Materials Management
+
+Recommendations:
+33. Fully develop and standardize all policies and procedures at Aqua PA. (source p. 125)
+34. Incorporate inventory accuracy into key performance indicators at the Peoples Companies and improve accuracy in all storerooms. (source p. 125)
+
+### Finding 10: Customer Service
+
+Recommendations:
+35. Continue outreach efforts to engage payment troubled customers, leverage low-income resources, grants, and programs to mitigate the overall level of unpaid customer balances, and accelerate first contact with customers who miss a payment. (source p. 146)
+36. Develop periodic refresher training, including documentation of instances of theft of service, meter tampering, unauthorized tie-ins, etc. to ensure new and existing staff are kept apprised of recent cases, investigation outcomes, and safety precautions for Aqua PA. (source p. 146)
+37. Improve the functionality and workflow progression provided by Aqua Services’ customer information system. (source p. 146)
+
+### Finding 11: Customer Service (continued)
+
+Recommendations:
+38. Benchmark with similar utilities to set separate net collection goals for primary and secondary collection agencies at the Peoples Companies and measure each collection agency to the respective collection goal. (source p. 146)
+39. Establish goals to achieve for customer satisfaction performance at the Peoples Companies and complete an analysis at the end of 2021 to evaluate the effectiveness of the IVR redesign, including Chat Bot, in improving customer satisfaction metrics. (source p. 146)
+40. Perform an analysis of source data being gathered for arrearage level reports and remove any adjustments or inactive accounts that would adversely affect the integrity of arrearage data for the Peoples Companies. (source p. 146)
+
+### Finding 12: Fleet Management
+
+Recommendations:
+41. Perform a periodic vehicle lease vs. buy analysis at Aqua Pennsylvania and the Peoples Companies, to ensure Pennsylvania operations is utilizing the least cost option for acquiring vehicles and equipment. (source p. 160)
+42. Implement Dossier as PNG Companies’ fleet management system. (source p. 160)
+
+### Finding 13: Human Resources and Diversity
+
+Recommendations:
+43. Establish an internal OSHA recordable rate goal for the Peoples Companies based upon industry performance and align safety programs to achieve the OSHA goal(s). (source p. 176)
+44. Measure employee engagement on a regular basis for the Peoples Companies in order to trend employee enthusiasm and motivation and reveal opportunities for improvement. (source p. 176)
+45. Implement a safety management system at the Peoples Companies. (source p. 176)
+46. Expedite the succession planning process, alongside with Essential Utilities, to ensure the Peoples Companies develop and recruit key positions. (source p. 176)
+47. Update all job descriptions for the Peoples Companies. (source p. 176)
+
+---
+
 ## Columbia Gas of Pennsylvania, Inc.
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2019-3011582 | Audit type: n/a
@@ -5894,6 +6089,17 @@ NJ BPU audit (Liberty Consulting Group): Audit of Affiliated Transactions and Op
 - Status: listed for reference (not machine-parsed into findings)
 
 NY PSC Order Releasing Audit Report, Case 16-M-0610 — Comprehensive Management and Operations Audits of NYSEG and RG&E (PSL 66(19)). Issued & effective Feb 7, 2019. Page 1 verified.
+
+---
+
+## The Peoples Gas Light and Coke Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission
+- Docket: 16-0376 | Audit type: n/a
+- Issued: 2018-01-10 | Industry: gas | FERC Form: n/a
+- Source page: https://icc.illinois.gov/docket/P2016-0376/documents/262806
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission Final Order (215 pp) in the §8-501/10-101 investigation of Peoples Gas's natural-gas System Modernization Program (formerly Accelerated Main Replacement), issued 2018-01-10; incorporates the Liberty Consulting management-audit findings (~95 recommendations). Listed for reference (metadata-only; ICC order format, not the Exhibit I-2 parser). PDF: icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf.
 
 ---
 

@@ -1,0 +1,30 @@
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "MN",
+  "source": "Minnesota Office of Administrative Hearings",
+  "doc_type": "ALJ findings of fact, conclusions of law & recommendation (gas rate case)",
+  "id": "2020-06-30_great-plains-natural-gas_mn-g-004-gr-19-511-alj-report",
+  "company": "Great Plains Natural Gas Co. (Division of Montana-Dakota Utilities Co.)",
+  "company_raw": "Great Plains Natural Gas Co. (Division of Montana-Dakota Utilities Co.)",
+  "docket": "OAH 65-2500-36528 / MPUC G-004/GR-19-511",
+  "docket_full": null,
+  "issued_date": "2020-06-30",
+  "source_page_url": "https://mn.gov/oah/lawyers-and-litigants/administrative-law/opinion-archive.jsp",
+  "pdf_download_url": "https://mn.gov/oah/assets/2500-36528-great-plains-puc-rate-increase-report_tcm19-439099.pdf",
+  "captured_at": "2026-06-08",
+  "source_note": "Minnesota OAH ALJ report in Great Plains Natural Gas (Montana-Dakota Utilities division) rate case, MPUC G-004/GR-19-511 (OAH 65-2500-36528), dated 2020-06-30. PDF: mn.gov/oah/assets/2500-36528-...pdf.",
+  "archived_via": null,
+  "page_count": 104,
+  "scanned_pages": [
+    84
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

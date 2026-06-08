@@ -142,5 +142,21 @@
     "captured_at": "2026-06-08",
     "source_note": "Management & Operations Audit of Columbia Gas of Pennsylvania, Inc., PA PUC Bureau of Audits; PUC publication 2020-07-16, Docket No. D-2019-3011582; 18 recommendations. PDF: puc.pa.gov/pcdocs/1670369.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "parse": true
+  },
+  {
+    "id": "2021-05-06_peoples-natural-gas_pa-mo-audit",
+    "company": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "doc_type": "management & operations audit",
+    "industry": "gas",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1702687.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2021/puc-issues-aquapeoples-gas-audit-report-implementation-plan",
+    "docket": "D-2020-3018773",
+    "issued_date": "2021-05-06",
+    "parse": true,
+    "source_note": "Management & Operations Audit of Aqua Pennsylvania, Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC (joint), PA PUC Bureau of Audits; PUC publication 2021-05-06, Dockets D-2020-3018771/3018773/3018774; 47 recommendations (combined). Seeded for the Peoples gas companies (industry=gas); Aqua is water and out of scope but the audit is published as one report. Findings parsed verbatim from the Exhibit I-2 Summary of Recommendations. PDF: puc.pa.gov/pcdocs/1702687.pdf.",
+    "source": "PA PUC Bureau of Audits",
+    "captured_at": "2026-06-08"
   }
 ]

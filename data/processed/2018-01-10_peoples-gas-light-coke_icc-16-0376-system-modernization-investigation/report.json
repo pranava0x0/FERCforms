@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "IL",
+  "source": "Illinois Commerce Commission",
+  "doc_type": "ICC investigation order incorporating Liberty management audit (gas System Modernization Program)",
+  "id": "2018-01-10_peoples-gas-light-coke_icc-16-0376-system-modernization-investigation",
+  "company": "The Peoples Gas Light and Coke Company",
+  "company_raw": "The Peoples Gas Light and Coke Company",
+  "docket": "16-0376",
+  "docket_full": null,
+  "issued_date": "2018-01-10",
+  "source_page_url": "https://icc.illinois.gov/docket/P2016-0376/documents/262806",
+  "pdf_download_url": "https://icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf",
+  "captured_at": "2026-06-08",
+  "source_note": "Illinois Commerce Commission Final Order (215 pp) in the §8-501/10-101 investigation of Peoples Gas's natural-gas System Modernization Program (formerly Accelerated Main Replacement), issued 2018-01-10; incorporates the Liberty Consulting management-audit findings (~95 recommendations). Listed for reference (metadata-only; ICC order format, not the Exhibit I-2 parser). PDF: icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf.",
+  "archived_via": null,
+  "page_count": 215,
+  "scanned_pages": [
+    2,
+    4
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

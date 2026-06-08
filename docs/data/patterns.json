@@ -1,11 +1,11 @@
 {
-  "report_count": 276,
-  "finding_count": 1204,
+  "report_count": 290,
+  "finding_count": 1217,
   "other_matter_count": 10,
-  "recommendation_count": 1622,
+  "recommendation_count": 1669,
   "by_industry": {
-    "electric": 221,
-    "gas": 30,
+    "electric": 229,
+    "gas": 36,
     "oil": 18,
     "unknown": 7
   },
@@ -17,14 +17,14 @@
     "2015": 10,
     "2016": 15,
     "2017": 12,
-    "2018": 17,
+    "2018": 19,
     "2019": 13,
-    "2020": 15,
-    "2021": 15,
+    "2020": 16,
+    "2021": 16,
     "2022": 20,
     "2023": 20,
-    "2024": 37,
-    "2025": 55,
+    "2024": 40,
+    "2025": 59,
     "2026": 4
   },
   "by_function": {
@@ -80,8 +80,8 @@
         "meter reading",
         "customer experience"
       ],
-      "finding_count": 81,
-      "report_count": 47,
+      "finding_count": 83,
+      "report_count": 48,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
@@ -185,8 +185,8 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 48,
-      "report_count": 33,
+      "finding_count": 50,
+      "report_count": 34,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Settlement: agreement",
@@ -260,6 +260,25 @@
       ]
     },
     {
+      "theme": "Internal audit & internal controls",
+      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+      "keywords": [
+        "internal audit",
+        "internal control",
+        "delegation of authority",
+        "code of business conduct",
+        "compliance program"
+      ],
+      "finding_count": 18,
+      "report_count": 10,
+      "example_titles": [
+        "Corporate Governance",
+        "Affiliated Interests and Cost Allocations",
+        "Customer Service",
+        "Financial Management"
+      ]
+    },
+    {
       "theme": "Informational postings",
       "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
       "keywords": [
@@ -276,25 +295,6 @@
       ]
     },
     {
-      "theme": "Internal audit & internal controls",
-      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-      "keywords": [
-        "internal audit",
-        "internal control",
-        "delegation of authority",
-        "code of business conduct",
-        "compliance program"
-      ],
-      "finding_count": 16,
-      "report_count": 9,
-      "example_titles": [
-        "Corporate Governance",
-        "Affiliated Interests and Cost Allocations",
-        "Customer Service",
-        "Financial Management"
-      ]
-    },
-    {
       "theme": "Inventory, materials & fleet",
       "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
       "keywords": [
@@ -303,8 +303,8 @@
         "fleet management",
         "vehicle replacement"
       ],
-      "finding_count": 13,
-      "report_count": 9,
+      "finding_count": 15,
+      "report_count": 10,
       "example_titles": [
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Purchasing and Materials Management",
@@ -323,8 +323,8 @@
         "workforce plan",
         "learning management"
       ],
-      "finding_count": 16,
-      "report_count": 7,
+      "finding_count": 19,
+      "report_count": 8,
       "example_titles": [
         "Human Resources and Diversity (continued)",
         "Cost Allocations and Affiliated Interests",
@@ -343,13 +343,13 @@
         "it backlog",
         "it governance"
       ],
-      "finding_count": 8,
-      "report_count": 7,
+      "finding_count": 9,
+      "report_count": 8,
       "example_titles": [
         "Approval: $156.9 million",
         "Information Technology",
-        "Allocation of Information Technology Costs",
-        "Customer Service"
+        "Customer Service",
+        "Allocation of Information Technology Costs"
       ]
     },
     {
@@ -362,8 +362,8 @@
         "emergency management",
         "mutual assist"
       ],
-      "finding_count": 6,
-      "report_count": 5,
+      "finding_count": 7,
+      "report_count": 6,
       "example_titles": [
         "Emergency Preparedness",
         "Emergency Preparedness (continued)"
@@ -375,8 +375,8 @@
       "keywords": [
         "dividend"
       ],
-      "finding_count": 4,
-      "report_count": 4,
+      "finding_count": 5,
+      "report_count": 5,
       "example_titles": [
         "Financial Management",
         "Allowance for Funds Used During Construction"
@@ -389,8 +389,8 @@
         "cyber",
         "physical security"
       ],
-      "finding_count": 5,
-      "report_count": 3,
+      "finding_count": 6,
+      "report_count": 4,
       "example_titles": [
         "Emergency Preparedness",
         "Emergency Preparedness (continued)",
@@ -422,8 +422,8 @@
         "pipeline integrity",
         "leak management"
       ],
-      "finding_count": 1,
-      "report_count": 1,
+      "finding_count": 2,
+      "report_count": 2,
       "example_titles": [
         "Gas Operations"
       ]
@@ -460,6 +460,10 @@
     },
     {
       "title": "Customer Service",
+      "count": 9
+    },
+    {
+      "title": "Financial Management",
       "count": 8
     },
     {
@@ -467,7 +471,7 @@
       "count": 8
     },
     {
-      "title": "Financial Management",
+      "title": "Corporate Governance",
       "count": 7
     },
     {
@@ -479,7 +483,15 @@
       "count": 6
     },
     {
-      "title": "Corporate Governance",
+      "title": "Affiliated Interests and Cost Allocations",
+      "count": 6
+    },
+    {
+      "title": "Emergency Preparedness",
+      "count": 6
+    },
+    {
+      "title": "Executive Management and Organizational Structure",
       "count": 6
     },
     {
@@ -491,19 +503,15 @@
       "count": 6
     },
     {
-      "title": "Affiliated Interests and Cost Allocations",
+      "title": "Gas Operations",
       "count": 5
     },
     {
-      "title": "Emergency Preparedness",
+      "title": "Human Resources and Diversity",
       "count": 5
     },
     {
       "title": "Information Technology",
-      "count": 5
-    },
-    {
-      "title": "Executive Management and Organizational Structure",
       "count": 5
     },
     {
@@ -521,14 +529,6 @@
     {
       "title": "FERC Form No. 2 Reporting",
       "count": 5
-    },
-    {
-      "title": "Annual Cost of Service Based Analysis Schedule",
-      "count": 4
-    },
-    {
-      "title": "FERC Form No. 6 Reporting",
-      "count": 4
     }
   ],
   "generated_at": "2026-06-08"

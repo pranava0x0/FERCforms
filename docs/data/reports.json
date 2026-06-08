@@ -572,6 +572,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "IN",
+    "source": "Indiana Utility Regulatory Commission",
+    "doc_type": "gas cost adjustment (GCA) order — gas-cost prudence/recovery review",
+    "id": "2025-10-29_centerpoint-indiana-south_in-cause-37366-gca-168",
+    "company": "Southern Indiana Gas and Electric Company d/b/a CenterPoint Energy Indiana South",
+    "company_raw": "Southern Indiana Gas and Electric Company d/b/a CenterPoint Energy Indiana South",
+    "docket": "Cause No. 37366 GCA 168",
+    "docket_full": null,
+    "issued_date": "2025-10-29",
+    "source_page_url": "https://www.in.gov/oucc/natural-gas/tips-and-publications/gas-cost-adjustments/",
+    "pdf_download_url": "https://www.in.gov/iurc/files/ord_37366GCA168_102925.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Indiana URC order on CenterPoint Energy Indiana South (SIGECO) gas cost adjustment, Cause No. 37366 GCA 168, issued 2025-10-29 (I.C. 8-1-2-42(g)/42.3). PDF: in.gov/iurc/files/ord_37366GCA168_102925.pdf.",
+    "archived_via": null,
+    "page_count": 5,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "MO",
     "source": "Missouri Public Service Commission",
@@ -2040,6 +2070,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "WI",
+    "source": "Public Service Commission of Wisconsin",
+    "doc_type": "fuel cost reconciliation prudence review — Final Decision",
+    "id": "2025-08-28_wisconsin-power-light_wi-6680-fr-2024-fuel-reconciliation",
+    "company": "Wisconsin Power and Light Company (Alliant Energy)",
+    "company_raw": "Wisconsin Power and Light Company (Alliant Energy)",
+    "docket": "6680-FR-2024",
+    "docket_full": null,
+    "issued_date": "2025-08-28",
+    "source_page_url": "https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=559688",
+    "pdf_download_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=559688",
+    "captured_at": "2026-06-08",
+    "source_note": "PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/WP&L) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6680-FR-2024, issued 2025-08-28 (PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=559688.",
+    "archived_via": null,
+    "page_count": 13,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "ND",
     "source": "North Dakota Public Service Commission",
@@ -2090,6 +2150,36 @@
     "source_note": "New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corporation d/b/a National Grid, Case 24-E-0322 — published under Public Service Law §66(12)(l). The PSC adopted a joint proposal (Aug 14, 2025) granting electric delivery revenue increases of $167.3M / $297.4M / $243.4M over a three-year plan, ~67% below the request. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/08/national-grid-electric-post-order-rate-case-summary_0.pdf).",
     "archived_via": null,
     "page_count": 1,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "WI",
+    "source": "Public Service Commission of Wisconsin",
+    "doc_type": "fuel cost reconciliation prudence review — Final Decision",
+    "id": "2025-08-12_wisconsin-electric_wi-6630-fr-2024-fuel-reconciliation",
+    "company": "Wisconsin Electric Power Company (We Energies)",
+    "company_raw": "Wisconsin Electric Power Company (We Energies)",
+    "docket": "6630-FR-2024",
+    "docket_full": null,
+    "issued_date": "2025-08-12",
+    "source_page_url": "https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=557994",
+    "pdf_download_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994",
+    "captured_at": "2026-06-08",
+    "source_note": "PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.",
+    "archived_via": null,
+    "page_count": 10,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -2827,6 +2917,36 @@
     "source_note": "Idaho PUC Order No. 36618 (Final Order, service date May 30, 2025), Case No. IPC-E-25-20, on Idaho Power Company's annual Power Cost Adjustment (PCA) for June 1, 2025 through May 31, 2026 (5 pp). The PCA is Idaho's fuel/purchased-power true-up — a reasonableness review of power-supply costs passed to customers. Listed for reference (metadata-only). Source: Idaho PUC fileroom (puc.idaho.gov/Fileroom/PublicFiles/ELEC/IPC/IPCE2520/OrdNotc/20250530Final_Order_No_36618.pdf).",
     "archived_via": null,
     "page_count": 5,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "VA",
+    "source": "Virginia State Corporation Commission",
+    "doc_type": "fuel factor order (fuel-cost recovery review)",
+    "id": "2025-05-12_dominion-energy-virginia_va-pur-2025-00059-fuel-factor",
+    "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
+    "company_raw": "Virginia Electric and Power Company (Dominion Energy Virginia)",
+    "docket": "PUR-2025-00059",
+    "docket_full": null,
+    "issued_date": "2025-05-12",
+    "source_page_url": "https://www.scc.virginia.gov/docketsearch",
+    "pdf_download_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85$601!.PDF",
+    "captured_at": "2026-06-08",
+    "source_note": "Virginia SCC Order establishing the 2025-2026 fuel factor for Dominion Energy Virginia, Case No. PUR-2025-00059, issued 2025-05-12 (§56-249.6 fuel-cost recovery/prudence). PDF: scc.virginia.gov/docketsearch/DOCS/85$601!.PDF.",
+    "archived_via": null,
+    "page_count": 15,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -4368,6 +4488,36 @@
       "Depreciation"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "VA",
+    "source": "Virginia State Corporation Commission",
+    "doc_type": "biennial review final order (earnings test / cost disallowance findings)",
+    "id": "2024-11-20_appalachian-power_va-pur-2024-00024-biennial-review",
+    "company": "Appalachian Power Company",
+    "company_raw": "Appalachian Power Company",
+    "docket": "PUR-2024-00024",
+    "docket_full": null,
+    "issued_date": "2024-11-20",
+    "source_page_url": "https://www.scc.virginia.gov/docketsearch",
+    "pdf_download_url": "https://www.scc.virginia.gov/docketsearch/DOCS/82my01!.PDF",
+    "captured_at": "2026-06-08",
+    "source_note": "Virginia SCC Final Order in the first biennial review of Appalachian Power Company, Case No. PUR-2024-00024, issued 2024-11-20 (§56-585.8). Found actual ROE below authorized. PDF: scc.virginia.gov/docketsearch/DOCS/82my01!.PDF. Source: SCC DocketSearch portal.",
+    "archived_via": null,
+    "page_count": 22,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_rate_case",
@@ -5933,6 +6083,36 @@
     "themes": [
       "Informational postings"
     ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "MN",
+    "source": "Minnesota Office of Administrative Hearings",
+    "doc_type": "ALJ findings of fact, conclusions of law & recommendation (electric rate case)",
+    "id": "2024-08-15_minnesota-power_mn-e-015-gre-23-155-alj-report",
+    "company": "Minnesota Power (Allete)",
+    "company_raw": "Minnesota Power (Allete)",
+    "docket": "OAH 21-2500-39686 / MPUC E-015/GRE-23-155",
+    "docket_full": null,
+    "issued_date": "2024-08-15",
+    "source_page_url": "https://mn.gov/oah/lawyers-and-litigants/administrative-law/opinion-archive.jsp",
+    "pdf_download_url": "https://mn.gov/oah/assets/2500-39686-minnesota-power-puc-rate-increase-report_tcm19-641662.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Minnesota OAH ALJ report (Findings of Fact, Conclusions of Law, and Recommendation) in Minnesota Power general electric rate case, MPUC E-015/GRE-23-155 (OAH 21-2500-39686), dated 2024-08-15. PDF: mn.gov/oah/assets/2500-39686-...pdf.",
+    "archived_via": null,
+    "page_count": 23,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -9035,6 +9215,36 @@
     "ocr_used": false,
     "audit_period": null,
     "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "MN",
+    "source": "Minnesota Office of Administrative Hearings",
+    "doc_type": "ALJ findings & recommendation re settlement (gas rate case)",
+    "id": "2024-02-13_centerpoint-minnesota-gas_mn-g-008-gr-23-173-alj-report",
+    "company": "CenterPoint Energy Resources Corp. (CenterPoint Energy Minnesota Gas)",
+    "company_raw": "CenterPoint Energy Resources Corp. (CenterPoint Energy Minnesota Gas)",
+    "docket": "OAH 65-2500-39699 / MPUC G-008/GR-23-173",
+    "docket_full": null,
+    "issued_date": "2024-02-13",
+    "source_page_url": "https://mn.gov/oah/lawyers-and-litigants/administrative-law/opinion-archive.jsp",
+    "pdf_download_url": "https://mn.gov/oah/assets/2500-39699-centerpoint-rate-increase-report_tcm19-669397.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Minnesota OAH ALJ report re parties settlement in CenterPoint Energy Minnesota Gas rate case, MPUC G-008/GR-23-173 (OAH 65-2500-39699), dated 2024-02-13. PDF: mn.gov/oah/assets/2500-39699-...pdf.",
+    "archived_via": null,
+    "page_count": 22,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
     "audit_type": null,
     "functions": [],
     "forms": [],
@@ -17336,6 +17546,444 @@
     "cost_to_customers": true
   },
   {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2021-05-06_peoples-natural-gas_pa-mo-audit",
+    "company": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+    "company_raw": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+    "docket": "D-2020-3018773",
+    "docket_full": null,
+    "issued_date": "2021-05-06",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2021/puc-issues-aquapeoples-gas-audit-report-implementation-plan",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1702687.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit of Aqua Pennsylvania, Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC (joint), PA PUC Bureau of Audits; PUC publication 2021-05-06, Dockets D-2020-3018771/3018773/3018774; 47 recommendations (combined). Seeded for the Peoples gas companies (industry=gas); Aqua is water and out of scope but the audit is published as one report. Findings parsed verbatim from the Exhibit I-2 Summary of Recommendations. PDF: puc.pa.gov/pcdocs/1702687.pdf.",
+    "archived_via": null,
+    "page_count": 195,
+    "scanned_pages": [
+      1,
+      195
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 13,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Periodically review spans of control for management positions, document justification for supervisory position ratios with narrow or wide spans of control and adjust reporting relationships as appropriate.",
+            "source_page": 32
+          },
+          {
+            "number": 2,
+            "text": "Establish a single repository for all policies and procedures across the Essential Utilities organization and establish a coordinated procedures review process.",
+            "source_page": 32
+          },
+          {
+            "number": 3,
+            "text": "Reduce or eliminate manual processes within the payroll function.",
+            "source_page": 32
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Periodically seek competitive bids for external audit services.",
+            "source_page": 40
+          },
+          {
+            "number": 5,
+            "text": "Organize the Internal Audit function to report administratively to the CEO, another non-financial senior officer, or directly to the Board of Directors",
+            "source_page": 40
+          },
+          {
+            "number": 6,
+            "text": "Establish a foundational understanding of internal audit needs as a result of the Peoples Companies’ acquisition, then resource and staff accordingly.",
+            "source_page": 40
+          },
+          {
+            "number": 7,
+            "text": "Conduct a review of completed internal audits to ensure previous recommendations are being properly implemented at the Peoples Companies.",
+            "source_page": 40
+          }
+        ],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 8,
+            "text": "Improve internal controls and other practices related to affiliate transactions and cost allocation to ensure the company is following best practices and Commission guidelines. Further, the Peoples Companies should consult with the PUC’s Bureau of Technical Utility Services to perform a thorough review of the current AIAs on file to determine if changes to the AIAs are needed and/or if new AIAs need to be filed to ensure compliance with Title 66 Chapter 21.",
+            "source_page": 63
+          },
+          {
+            "number": 9,
+            "text": "Document all lease agreements between Aqua PA and its affiliates and submit them to the Commission for approval.",
+            "source_page": 63
+          },
+          {
+            "number": 10,
+            "text": "Implement a policy or procedure that requires the approval of Peoples Companies employees’ timesheets similar to what exists for Aqua Services employees.",
+            "source_page": 64
+          },
+          {
+            "number": 11,
+            "text": "Expand Essential’s corporate charges allocation manual to include all transactions between affiliates.",
+            "source_page": 64
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions",
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Conduct periodic market studies to confirm that goods and services provided by affiliates to the utilities are at the lower of cost or market, and goods and services provided by the utilities to affiliates are at the higher of cost or market.",
+            "source_page": 64
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 5,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 13,
+            "text": "Perform a cost/benefit analysis to determine the feasibility of implementing an Essential Utilities money pool.",
+            "source_page": 82
+          },
+          {
+            "number": 14,
+            "text": "Reduce or eliminate manual processes within the accounts payable function at Aqua PA.",
+            "source_page": 82
+          },
+          {
+            "number": 15,
+            "text": "Develop and implement capital and operations and maintenance (O&M) budget manuals/policies that include requirements for detailed written explanations of budget variances in excess of 10% for the Peoples Companies.",
+            "source_page": 82
+          },
+          {
+            "number": 16,
+            "text": "Develop and implement new accounting/finance policies and procedures at the Peoples Companies where appropriate and ensure the policies have all the key elements, including accountability and a regular review schedule to remain timely.",
+            "source_page": 82
+          },
+          {
+            "number": 17,
+            "text": "Update Aqua PA’s dividend policy.",
+            "source_page": 82
+          }
+        ],
+        "themes": [
+          "Dividend policy & capital management"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Water Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Implement a full-scale valve inspection and exercise program designed to identify what valves have not been operated or inspected in the last ten years.",
+            "source_page": 94
+          },
+          {
+            "number": 19,
+            "text": "Update all drought contingency plans annually.",
+            "source_page": 94
+          },
+          {
+            "number": 20,
+            "text": "Implement measures to reduce company-at-fault hits.",
+            "source_page": 94
+          },
+          {
+            "number": 21,
+            "text": "Increase testing and replacement of meters to improve accuracy rates.",
+            "source_page": 94
+          },
+          {
+            "number": 22,
+            "text": "Focus efforts on reducing NRW at the Roaring Creek system.",
+            "source_page": 94
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 23,
+            "text": "Expedite bare steel replacement efforts in the companies’ distribution systems, and conduct ongoing staffing analyses to support any decision- making to fully staff, train, and monitor the workforce needs for all of the engineering, construction, and field operations positions and support positions needed to maintain future accelerated main replacement rates.",
+            "source_page": 108
+          },
+          {
+            "number": 24,
+            "text": "Effectively modify, track, and enforce the damage prevention program and initiate preventative solutions to minimize second- and third-party damages in significant construction areas.",
+            "source_page": 108
+          }
+        ],
+        "themes": [
+          "Gas safety & pipeline integrity"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 25,
+            "text": "Establish a standard frequency for AED inspections across Aqua PA and require inspections to be tracked for all AEDs.",
+            "source_page": 116
+          },
+          {
+            "number": 26,
+            "text": "Establish a unified Emergency Response Plan for Aqua PA and ensure that localized conditions are captured for individual facilities.",
+            "source_page": 116
+          },
+          {
+            "number": 27,
+            "text": "Establish a unified control room security standard for Aqua PA, and upgrade existing facilities to adhere to it.",
+            "source_page": 116
+          },
+          {
+            "number": 28,
+            "text": "Establish a tiered physical security standard for Aqua PA based on criticality of company facilities.",
+            "source_page": 116
+          },
+          {
+            "number": 29,
+            "text": "Correct minor deficiencies in physical security and safety at Aqua PA.",
+            "source_page": 116
+          },
+          {
+            "number": 30,
+            "text": "Designate responsible parties, review existing security protocols and measures, and address deficiencies with the physical security needs of IT components at Aqua PA and Essential Utilities.",
+            "source_page": 116
+          },
+          {
+            "number": 31,
+            "text": "Perform a physical security drill and/or tabletop exercise annually at Aqua PA.",
+            "source_page": 116
+          },
+          {
+            "number": 32,
+            "text": "Supply rescue hooks at all locations with open topped aerated basins and tanks deep enough to submerge employees at Aqua PA.",
+            "source_page": 116
+          }
+        ],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 33,
+            "text": "Fully develop and standardize all policies and procedures at Aqua PA.",
+            "source_page": 125
+          },
+          {
+            "number": 34,
+            "text": "Incorporate inventory accuracy into key performance indicators at the Peoples Companies and improve accuracy in all storerooms.",
+            "source_page": 125
+          }
+        ],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 35,
+            "text": "Continue outreach efforts to engage payment troubled customers, leverage low-income resources, grants, and programs to mitigate the overall level of unpaid customer balances, and accelerate first contact with customers who miss a payment.",
+            "source_page": 146
+          },
+          {
+            "number": 36,
+            "text": "Develop periodic refresher training, including documentation of instances of theft of service, meter tampering, unauthorized tie-ins, etc. to ensure new and existing staff are kept apprised of recent cases, investigation outcomes, and safety precautions for Aqua PA.",
+            "source_page": 146
+          },
+          {
+            "number": 37,
+            "text": "Improve the functionality and workflow progression provided by Aqua Services’ customer information system.",
+            "source_page": 146
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning",
+          "Information technology & systems",
+          "Customer service & billing"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Customer Service (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 38,
+            "text": "Benchmark with similar utilities to set separate net collection goals for primary and secondary collection agencies at the Peoples Companies and measure each collection agency to the respective collection goal.",
+            "source_page": 146
+          },
+          {
+            "number": 39,
+            "text": "Establish goals to achieve for customer satisfaction performance at the Peoples Companies and complete an analysis at the end of 2021 to evaluate the effectiveness of the IVR redesign, including Chat Bot, in improving customer satisfaction metrics.",
+            "source_page": 146
+          },
+          {
+            "number": 40,
+            "text": "Perform an analysis of source data being gathered for arrearage level reports and remove any adjustments or inactive accounts that would adversely affect the integrity of arrearage data for the Peoples Companies.",
+            "source_page": 146
+          }
+        ],
+        "themes": [
+          "Customer service & billing"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 41,
+            "text": "Perform a periodic vehicle lease vs. buy analysis at Aqua Pennsylvania and the Peoples Companies, to ensure Pennsylvania operations is utilizing the least cost option for acquiring vehicles and equipment.",
+            "source_page": 160
+          },
+          {
+            "number": 42,
+            "text": "Implement Dossier as PNG Companies’ fleet management system.",
+            "source_page": 160
+          }
+        ],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 43,
+            "text": "Establish an internal OSHA recordable rate goal for the Peoples Companies based upon industry performance and align safety programs to achieve the OSHA goal(s).",
+            "source_page": 176
+          },
+          {
+            "number": 44,
+            "text": "Measure employee engagement on a regular basis for the Peoples Companies in order to trend employee enthusiasm and motivation and reveal opportunities for improvement.",
+            "source_page": 176
+          },
+          {
+            "number": 45,
+            "text": "Implement a safety management system at the Peoples Companies.",
+            "source_page": 176
+          },
+          {
+            "number": 46,
+            "text": "Expedite the succession planning process, alongside with Essential Utilities, to ensure the Peoples Companies develop and recruit key positions.",
+            "source_page": 176
+          },
+          {
+            "number": 47,
+            "text": "Update all job descriptions for the Peoples Companies.",
+            "source_page": 176
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions",
+      "Customer service & billing",
+      "Cybersecurity & physical security",
+      "Dividend policy & capital management",
+      "Emergency preparedness & business continuity",
+      "Gas safety & pipeline integrity",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Workforce, training & succession planning"
+    ],
+    "cost_to_customers": true
+  },
+  {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
     "source": "FERC Office of Enforcement, Division of Audits & Accounting",
@@ -19719,6 +20367,38 @@
       "Property & plant records"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "MN",
+    "source": "Minnesota Office of Administrative Hearings",
+    "doc_type": "ALJ findings of fact, conclusions of law & recommendation (gas rate case)",
+    "id": "2020-06-30_great-plains-natural-gas_mn-g-004-gr-19-511-alj-report",
+    "company": "Great Plains Natural Gas Co. (Division of Montana-Dakota Utilities Co.)",
+    "company_raw": "Great Plains Natural Gas Co. (Division of Montana-Dakota Utilities Co.)",
+    "docket": "OAH 65-2500-36528 / MPUC G-004/GR-19-511",
+    "docket_full": null,
+    "issued_date": "2020-06-30",
+    "source_page_url": "https://mn.gov/oah/lawyers-and-litigants/administrative-law/opinion-archive.jsp",
+    "pdf_download_url": "https://mn.gov/oah/assets/2500-36528-great-plains-puc-rate-increase-report_tcm19-439099.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Minnesota OAH ALJ report in Great Plains Natural Gas (Montana-Dakota Utilities division) rate case, MPUC G-004/GR-19-511 (OAH 65-2500-36528), dated 2020-06-30. PDF: mn.gov/oah/assets/2500-36528-...pdf.",
+    "archived_via": null,
+    "page_count": 104,
+    "scanned_pages": [
+      84
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_audit",
@@ -22190,6 +22870,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "PGA / gas-adjustment-charge reconciliation prudence order (§9-220)",
+    "id": "2018-05-17_nicor-gas_icc-15-0519-pga-reconciliation",
+    "company": "Northern Illinois Gas Company d/b/a Nicor Gas Company",
+    "company_raw": "Northern Illinois Gas Company d/b/a Nicor Gas Company",
+    "docket": "15-0519",
+    "docket_full": null,
+    "issued_date": "2018-05-17",
+    "source_page_url": "https://icc.illinois.gov/docket/P2015-0519/documents/271451",
+    "pdf_download_url": "https://icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Illinois Commerce Commission Final Order reconciling Nicor Gas revenues collected under Rider 6 (Gas Supply Cost / PGA) with actual costs prudently incurred for the year ended Dec 31 2015, Docket 15-0519, issued 2018-05-17 (§9-220). PDF: icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf.",
+    "archived_via": null,
+    "page_count": 6,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
     "source": "FERC Office of Enforcement, Division of Audits & Accounting",
@@ -23284,6 +23994,39 @@
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "ICC investigation order incorporating Liberty management audit (gas System Modernization Program)",
+    "id": "2018-01-10_peoples-gas-light-coke_icc-16-0376-system-modernization-investigation",
+    "company": "The Peoples Gas Light and Coke Company",
+    "company_raw": "The Peoples Gas Light and Coke Company",
+    "docket": "16-0376",
+    "docket_full": null,
+    "issued_date": "2018-01-10",
+    "source_page_url": "https://icc.illinois.gov/docket/P2016-0376/documents/262806",
+    "pdf_download_url": "https://icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Illinois Commerce Commission Final Order (215 pp) in the §8-501/10-101 investigation of Peoples Gas's natural-gas System Modernization Program (formerly Accelerated Main Replacement), issued 2018-01-10; incorporates the Liberty Consulting management-audit findings (~95 recommendations). Listed for reference (metadata-only; ICC order format, not the Exhibit I-2 parser). PDF: icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf.",
+    "archived_via": null,
+    "page_count": 215,
+    "scanned_pages": [
+      2,
+      4
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "ferc_audit",
@@ -29920,6 +30663,72 @@
     "cost_to_customers": false
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "source": "Georgia Public Service Commission",
+    "doc_type": "Vogtle construction-monitoring report (semi-annual cost/schedule prudence monitoring)",
+    "id": "2024-02_georgia-power_ga-29849-vogtle-30th-vcm-report",
+    "company": "Georgia Power Company",
+    "company_raw": "Georgia Power Company",
+    "docket": "29849",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/217538/98678",
+    "captured_at": "2026-06-08",
+    "source_note": "Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2024' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/217538/98678.",
+    "archived_via": null,
+    "page_count": 17,
+    "scanned_pages": [
+      1,
+      16
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "source": "Georgia Public Service Commission",
+    "doc_type": "Vogtle construction-monitoring report (semi-annual cost/schedule prudence monitoring)",
+    "id": "2023-02_georgia-power_ga-29849-vogtle-28th-vcm-report",
+    "company": "Georgia Power Company",
+    "company_raw": "Georgia Power Company",
+    "docket": "29849",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/193355/74970",
+    "captured_at": "2026-06-08",
+    "source_note": "Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2023' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.",
+    "archived_via": null,
+    "page_count": 32,
+    "scanned_pages": [
+      1,
+      31
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "TN",
     "source": "Tennessee Public Utility Commission",
@@ -29959,6 +30768,36 @@
         "cost_to_customers": false
       }
     ],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "source": "Georgia Public Service Commission",
+    "doc_type": "PSC Staff & Independent Construction Monitor prudence testimony (Vogtle 22nd VCM report)",
+    "id": "2022_georgia-power_ga-29849-vogtle-22nd-staff-icm-testimony",
+    "company": "Georgia Power Company",
+    "company_raw": "Georgia Power Company",
+    "docket": "29849",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/181460/63470",
+    "captured_at": "2026-06-08",
+    "source_note": "Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D. Roetger; William R. Jacobs, Jr., PhD) on Georgia Power’s Twenty-second Semi-annual Vogtle Construction Monitoring Report, Docket 29849 (Vogtle construction prudence). Page 1 carries no date -> issued_date null. PDF: services.psc.ga.gov/.../DownloadFile/181460/63470.",
+    "archived_via": null,
+    "page_count": 52,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false

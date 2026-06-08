@@ -10,7 +10,7 @@
     "pdf_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424",
     "source_page_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424",
     "captured_at": "2026-06-02",
-    "source_note": "Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) \u2014 an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).",
+    "source_note": "Direct Testimony (Public-Redacted) of Jeremy I. Fisher, PhD, on behalf of Sierra Club, in the Application of Wisconsin Electric Power Company (We Energies) for Approval of its Very Large Customer and Bespoke Resources Tariffs, before the Public Service Commission of Wisconsin (52 pp) — an intervenor's review of the utility's proposed tariffs for very-large (e.g., data-center) loads. Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 574424 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=574424).",
     "parse": false
   },
   {
@@ -39,6 +39,38 @@
     "docket": "3270-UR-125",
     "captured_at": "2026-06-02",
     "source_note": "Direct Testimony of [MGE witness] Penington in the Application of Madison Gas and Electric Company for Authority to Adjust Electric and Natural Gas Rates, before the Public Service Commission of Wisconsin, Docket No. 3270-UR-125 (21 pp). Listed for reference (metadata-only). Source: PSC of Wisconsin Electronic Records Filing, document 466619 (apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=466619).",
+    "parse": false
+  },
+  {
+    "id": "2025-08-12_wisconsin-electric_wi-6630-fr-2024-fuel-reconciliation",
+    "company": "Wisconsin Electric Power Company (We Energies)",
+    "collection": "prudence_review",
+    "jurisdiction": "WI",
+    "doc_type": "fuel cost reconciliation prudence review — Final Decision",
+    "industry": "electric",
+    "pdf_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994",
+    "source_page_url": "https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=557994",
+    "docket": "6630-FR-2024",
+    "issued_date": "2025-08-12",
+    "source_note": "PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.",
+    "source": "Public Service Commission of Wisconsin",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2025-08-28_wisconsin-power-light_wi-6680-fr-2024-fuel-reconciliation",
+    "company": "Wisconsin Power and Light Company (Alliant Energy)",
+    "collection": "prudence_review",
+    "jurisdiction": "WI",
+    "doc_type": "fuel cost reconciliation prudence review — Final Decision",
+    "industry": "electric",
+    "pdf_url": "https://apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=559688",
+    "source_page_url": "https://apps.psc.wi.gov/ERF/ERFsearch/content/documentInfo.aspx?docid=559688",
+    "docket": "6680-FR-2024",
+    "issued_date": "2025-08-28",
+    "source_note": "PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/WP&L) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6680-FR-2024, issued 2025-08-28 (PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=559688.",
+    "source": "Public Service Commission of Wisconsin",
+    "captured_at": "2026-06-08",
     "parse": false
   }
 ]

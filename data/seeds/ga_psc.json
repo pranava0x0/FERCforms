@@ -62,5 +62,53 @@
     "captured_at": "2026-06-02",
     "source_note": "Direct Testimony of Maria Roumpani, PhD on behalf of Georgia Conservation Voters in Georgia Power Company's 2025 Integrated Resource Plan (Docket No. 56002) and 2025 Application for the Certification, Decertification, and Amended Demand-Side Management Plan (Docket No. 56003), filed May 2, 2025 (68 pp). Listed for reference (metadata-only). Source: Georgia PSC FACTS document system, document 222501 (services.psc.ga.gov DownloadFile/222501/103611; landing: psc.ga.gov/search/facts-document/?documentId=222501).",
     "parse": false
+  },
+  {
+    "id": "2024-02_georgia-power_ga-29849-vogtle-30th-vcm-report",
+    "company": "Georgia Power Company",
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "doc_type": "Vogtle construction-monitoring report (semi-annual cost/schedule prudence monitoring)",
+    "industry": "electric",
+    "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/217538/98678",
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "docket": "29849",
+    "issued_date": null,
+    "source_note": "Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2024' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/217538/98678.",
+    "source": "Georgia Public Service Commission",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2023-02_georgia-power_ga-29849-vogtle-28th-vcm-report",
+    "company": "Georgia Power Company",
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "doc_type": "Vogtle construction-monitoring report (semi-annual cost/schedule prudence monitoring)",
+    "industry": "electric",
+    "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/193355/74970",
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "docket": "29849",
+    "issued_date": null,
+    "source_note": "Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2023' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.",
+    "source": "Georgia Public Service Commission",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2022_georgia-power_ga-29849-vogtle-22nd-staff-icm-testimony",
+    "company": "Georgia Power Company",
+    "collection": "prudence_review",
+    "jurisdiction": "GA",
+    "doc_type": "PSC Staff & Independent Construction Monitor prudence testimony (Vogtle 22nd VCM report)",
+    "industry": "electric",
+    "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/181460/63470",
+    "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+    "docket": "29849",
+    "issued_date": null,
+    "source_note": "Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D. Roetger; William R. Jacobs, Jr., PhD) on Georgia Power’s Twenty-second Semi-annual Vogtle Construction Monitoring Report, Docket 29849 (Vogtle construction prudence). Page 1 carries no date -> issued_date null. PDF: services.psc.ga.gov/.../DownloadFile/181460/63470.",
+    "source": "Georgia Public Service Commission",
+    "captured_at": "2026-06-08",
+    "parse": false
   }
 ]

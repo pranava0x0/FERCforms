@@ -28,7 +28,7 @@
     "issued_date": "2025-01-29",
     "docket": "38706 FAC 145",
     "captured_at": "2026-06-02",
-    "source_note": "Order of the Indiana Utility Regulatory Commission on the verified petition of Northern Indiana Public Service Company LLC (NIPSCO) for approval of a fuel cost adjustment for the February\u2013April 2025 billing cycles under Ind. Code 8-1-2-42, IURC Cause No. 38706 FAC 145, issued January 29, 2025. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "source_note": "Order of the Indiana Utility Regulatory Commission on the verified petition of Northern Indiana Public Service Company LLC (NIPSCO) for approval of a fuel cost adjustment for the February–April 2025 billing cycles under Ind. Code 8-1-2-42, IURC Cause No. 38706 FAC 145, issued January 29, 2025. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
     "parse": false
   },
   {
@@ -44,7 +44,23 @@
     "issued_date": "2021-08-25",
     "docket": "38703 FAC 132",
     "captured_at": "2026-06-02",
-    "source_note": "Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September\u2013November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "source_note": "Order of the Indiana Utility Regulatory Commission on the application of Indianapolis Power & Light Company d/b/a AES Indiana for approval of a fuel cost factor for the September–November 2021 billing months under I.C. 8-1-2-42, IURC Cause No. 38703 FAC 132, issued August 25, 2021. Listed for reference (metadata-only). PDF at www.in.gov/iurc/files/; case search iurc.portal.in.gov.",
+    "parse": false
+  },
+  {
+    "id": "2025-10-29_centerpoint-indiana-south_in-cause-37366-gca-168",
+    "company": "Southern Indiana Gas and Electric Company d/b/a CenterPoint Energy Indiana South",
+    "collection": "prudence_review",
+    "jurisdiction": "IN",
+    "doc_type": "gas cost adjustment (GCA) order — gas-cost prudence/recovery review",
+    "industry": "gas",
+    "pdf_url": "https://www.in.gov/iurc/files/ord_37366GCA168_102925.pdf",
+    "source_page_url": "https://www.in.gov/oucc/natural-gas/tips-and-publications/gas-cost-adjustments/",
+    "docket": "Cause No. 37366 GCA 168",
+    "issued_date": "2025-10-29",
+    "source_note": "Indiana URC order on CenterPoint Energy Indiana South (SIGECO) gas cost adjustment, Cause No. 37366 GCA 168, issued 2025-10-29 (I.C. 8-1-2-42(g)/42.3). PDF: in.gov/iurc/files/ord_37366GCA168_102925.pdf.",
+    "source": "Indiana Utility Regulatory Commission",
+    "captured_at": "2026-06-08",
     "parse": false
   }
 ]

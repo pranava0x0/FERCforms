@@ -1,0 +1,31 @@
+{
+  "collection": "prudence_review",
+  "jurisdiction": "GA",
+  "source": "Georgia Public Service Commission",
+  "doc_type": "Vogtle construction-monitoring report (semi-annual cost/schedule prudence monitoring)",
+  "id": "2023-02_georgia-power_ga-29849-vogtle-28th-vcm-report",
+  "company": "Georgia Power Company",
+  "company_raw": "Georgia Power Company",
+  "docket": "29849",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://psc.ga.gov/search/facts-docket/?docketId=29849",
+  "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/193355/74970",
+  "captured_at": "2026-06-08",
+  "source_note": "Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 & 4), Docket 29849; cover 'February 2023' (month-only -> issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.",
+  "archived_via": null,
+  "page_count": 32,
+  "scanned_pages": [
+    1,
+    31
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}
