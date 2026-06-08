@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 258 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 261 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -6036,6 +6036,17 @@ Global Settlement in Entergy Louisiana, LLC, Ex Parte — In Re: Application for
 
 ---
 
+## Evergy Metro, Inc.
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2024-0203 | Audit type: n/a
+- Issued: 2024-07-15 | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Case/Display/
+- Status: listed for reference (not machine-parsed into findings)
+
+Staff testimony on costs, rates, and rate design in Evergy Metro, Inc. rate case, MO PSC Docket ER-2024-0203, filed July 15, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
+
+---
+
 ## PPL Electric Utilities Corporation
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2023-3039488 | Audit type: n/a
@@ -6106,6 +6117,17 @@ Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June
 
 ---
 
+## Evergy Metro, Inc. (formerly KCP&L/Kansas City Power & Light Missouri)
+- Collection: State PUC Audits | Source: Missouri Public Service Commission
+- Docket: ER-2024-0203 | Audit type: n/a
+- Issued: 2024-06-28 | Industry: electric | FERC Form: n/a
+- Source page: https://efis.psc.mo.gov/Case/Display/
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct testimony in Evergy Metro, Inc. rate case (MO PSC Docket ER-2024-0203), filed June 28, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
+
+---
+
 ## Delmarva Power & Light Company
 - Collection: State PUC Audits | Source: Delaware Public Service Commission
 - Docket: 22-0897 | Audit type: n/a
@@ -6158,6 +6180,17 @@ Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), 
 - Status: listed for reference (not machine-parsed into findings)
 
 Corrected Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), Dominion Energy South Carolina, Inc. (DESC), and the South Carolina Energy Users Committee (SCEUC) resolving DESC's 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed March 28, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 63bee92e-ec9c-45c5-bbb3-723f6f840b3e (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+
+---
+
+## American Electric Power Company, Inc. (AEP Ohio)
+- Collection: State PUC Audits | Source: Public Utilities Commission of Ohio
+- Docket: 20-1504-EL-UNC | Audit type: n/a
+- Issued: 2024-03-15 | Industry: electric | FERC Form: n/a
+- Source page: https://dis.puc.state.oh.us/ViewImage.aspx?CMID=placeholder-aep
+- Status: listed for reference (not machine-parsed into findings)
+
+Order regarding political and charitable spending by American Electric Power Company, Inc. (AEP Ohio), PUCO Case No. 20-1504-EL-UNC, issued March 15, 2024. Listed for reference (metadata-only, WAF-protected DIS viewer — URL requires browser capture). Source: PUCO Docket Information System (dis.puc.state.oh.us).
 
 ---
 

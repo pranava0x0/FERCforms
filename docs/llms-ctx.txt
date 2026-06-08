@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="258 structured records (120 FERC audits, 14 prudence reviews, 124 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="261 structured records (120 FERC audits, 14 prudence reviews, 127 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3280,6 +3280,10 @@ Direct Testimony of Roger W. Turner (CICI Exhibit 1.0) on behalf of the Chemical
 Listed for reference (not machine-parsed into findings).
 Global Settlement in Entergy Louisiana, LLC, Ex Parte — In Re: Application for an Increase in Rates, Whether Through a Formula Rate Plan Extension or Rate Review, and Proposed Revisions to Certain Fees Assessed to Customers, before the Louisiana Public Service Commission, Docket No. U-36959 (32 pp). The settlement, joined by LPSC Staff and intervenors (Alliance for Affordable Energy, LEUG, Walmart, DoD/federal agencies, et al.), continues a Formula Rate Plan (Rider FRP) for three years with annual evaluation reports due May 31, 2025 and 2026. Filed 2024. Listed for reference (metadata-only). Source: LPSC public docket portal, file +TYZ0y9CRc0= (lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=%2BTYZ0y9CRc0%3D; docket landing: DocketDetails?docketId=31370).
 </doc>
+<doc title="Evergy Metro, Inc." collection="State PUC Audits" docket="ER-2024-0203" issued="2024-07-15" industry="electric" source="https://efis.psc.mo.gov/Case/Display/">
+Listed for reference (not machine-parsed into findings).
+Staff testimony on costs, rates, and rate design in Evergy Metro, Inc. rate case, MO PSC Docket ER-2024-0203, filed July 15, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
+</doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure
 1. Conduct routine employee surveys to ensure corporate culture aligns with company goals. (source p. 16)
@@ -3313,6 +3317,10 @@ Finding 8: Information Technology
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).
 </doc>
+<doc title="Evergy Metro, Inc. (formerly KCP&amp;L/Kansas City Power &amp; Light Missouri)" collection="State PUC Audits" docket="ER-2024-0203" issued="2024-06-28" industry="electric" source="https://efis.psc.mo.gov/Case/Display/">
+Listed for reference (not machine-parsed into findings).
+Direct testimony in Evergy Metro, Inc. rate case (MO PSC Docket ER-2024-0203), filed June 28, 2024. Listed for reference (metadata-only, EFIS document ID requires verification). Source: Missouri PSC EFIS (efis.psc.mo.gov).
+</doc>
 <doc title="Delmarva Power &amp; Light Company" collection="State PUC Audits" docket="22-0897" issued="2024-04-18" industry="electric" source="https://delafile.delaware.gov/CaseManagement/DocketSheet.aspx?MatterNo=22-0897&amp;Type=Docket&amp;ViewDocketPage=ViewDocketPage">
 Listed for reference (not machine-parsed into findings).
 Order No. 10395 on the application of Delmarva Power &amp; Light Company for an increase in electric base rates (filed December 15, 2022), Delaware PSC Docket No. 22-0897, entered April 18, 2024. Listed for reference (metadata-only). PDF on the DE PSC host depsc.delaware.gov/wp-content/uploads/; docket sheet in DelaFile (delafile.delaware.gov, MatterNo 22-0897).
@@ -3332,6 +3340,10 @@ Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), 
 <doc title="Dominion Energy South Carolina, Inc." collection="State PUC Audits" docket="2024-2-E" issued="2024-03-28" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/118762">
 Listed for reference (not machine-parsed into findings).
 Corrected Settlement Agreement among the South Carolina Office of Regulatory Staff (ORS), Dominion Energy South Carolina, Inc. (DESC), and the South Carolina Energy Users Committee (SCEUC) resolving DESC's 2024 Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-2-E, filed March 28, 2024. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 63bee92e-ec9c-45c5-bbb3-723f6f840b3e (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118762).
+</doc>
+<doc title="American Electric Power Company, Inc. (AEP Ohio)" collection="State PUC Audits" docket="20-1504-EL-UNC" issued="2024-03-15" industry="electric" source="https://dis.puc.state.oh.us/ViewImage.aspx?CMID=placeholder-aep">
+Listed for reference (not machine-parsed into findings).
+Order regarding political and charitable spending by American Electric Power Company, Inc. (AEP Ohio), PUCO Case No. 20-1504-EL-UNC, issued March 15, 2024. Listed for reference (metadata-only, WAF-protected DIS viewer — URL requires browser capture). Source: PUCO Docket Information System (dis.puc.state.oh.us).
 </doc>
 <doc title="Duke Energy Carolinas, LLC" collection="State PUC Audits" docket="2024-3-E" issued="2024-02-20" industry="electric" source="https://dms.psc.sc.gov/Web/Dockets/Detail/2024-3-E">
 Listed for reference (not machine-parsed into findings).
