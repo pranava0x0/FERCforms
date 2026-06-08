@@ -190,6 +190,15 @@ def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional
 
 
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
+    # State audit dispatch
+    if entry.collection == "state_audit":
+        if entry.doc_type and "management" in entry.doc_type.lower():
+            return structure_state_pa_audit(entry, text)
+        # TODO: Add other state audit parsers here (service quality, compliance, etc.)
+        # For now, return minimal report for unsupported state audit types
+        logger.debug("no parser for state audit type: %s", entry.doc_type)
+
+    # FERC audit extraction (original)
     page1 = text.pages[0].text if text.pages else ""
     full_raw = "\n".join(p.text for p in text.pages)
     meta = _metadata(page1, full_raw)
@@ -265,6 +274,119 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         functions=forms.detect_functions(full_raw),
         forms=meta["forms"],
         finding_count=sum(1 for f in findings if not f.is_other_matter),
+        findings=findings,
+    )
+
+
+def structure_state_pa_audit(entry: ListingEntry, text: ReportText) -> AuditReport:
+    """Parse PA Public Utility Commission management & operations audits.
+
+    PA audits structure findings as:
+      I. Executive Summary
+        - Functional Area Rating Summary (exhibit)
+        - Summary of Recommendations (exhibit showing functional area -> recommendations)
+      II-XIV. Detailed Sections (one per functional area)
+        - Each section headed by functional area name
+        - Numbered recommendations within each section
+
+    This parser extracts functional areas as Finding titles and numbered
+    recommendations as Recommendation objects, matching the FERC structure.
+    """
+    full_raw = "\n".join(p.text for p in text.pages)
+    full = _clean(full_raw, None)
+
+    # Extract all functional area headings and their numbered recommendations
+    # PA audits have sections like "III-1 Executive Management", "IV-1 Financial", etc.
+    findings: list[Finding] = []
+
+    # Pattern: "III. Section Title" or "III-1 Functional Area" followed by numbered items
+    section_pattern = re.compile(
+        r"(?m)^(?:(?:[IVX]{1,4}\.|-\d+)\s+)?([A-Z][A-Za-z\s&]+?)\s*(?:\n|$)",
+        re.MULTILINE
+    )
+
+    # Find all numbered recommendations in the document
+    # Format: "1. Recommendation text" or "1. Title - Text"
+    rec_pattern = re.compile(r"(?m)^\s*(\d+)\.\s+(.+?)(?=^\s*\d+\.\s|^[A-Z]{2,}|$)", re.MULTILINE)
+
+    # Extract functional area titles (appears in the summary of recommendations)
+    # Look for patterns like "Executive Management and Organizational Structure"
+    functional_areas = [
+        "Executive Management and Organizational Structure",
+        "Key Audit Matter",
+        "Corporate Governance",
+        "Affiliated Interests and Cost Allocations",
+        "Financial Management",
+        "Electric Operations",
+        "Emergency Preparedness",
+        "Materials Management",
+        "Customer Service",
+        "Information Technology",
+        "Fleet Management",
+        "Human Resources and Diversity",
+        "Staff Prudence Review",
+        "Utility Efficiency and Compliance",
+    ]
+
+    idx = 1
+    for area_title in functional_areas:
+        # Find this functional area in the text
+        if area_title in full:
+            # Find the section that belongs to this area
+            area_pattern = re.compile(
+                r"\b" + re.escape(area_title) + r"\b.*?(?=^[A-Z]{2,}|^\w+\s*(?:\n|$)|\Z)",
+                re.IGNORECASE | re.DOTALL | re.MULTILINE
+            )
+            match = area_pattern.search(full)
+            if match:
+                area_section = match.group(0)
+                # Find all numbered recommendations in this section
+                recs = []
+                for rec_match in rec_pattern.finditer(area_section):
+                    num = int(rec_match.group(1))
+                    text_body = rec_match.group(2).strip()
+                    # Clean up whitespace
+                    text_body = re.sub(r"\s+", " ", text_body)
+                    recs.append(Recommendation(number=num, text=text_body))
+
+                if recs:  # Only add if there are recommendations
+                    findings.append(
+                        Finding(
+                            index=idx,
+                            title=area_title,
+                            summary=None,
+                            is_other_matter=False,
+                            recommendations=recs
+                        )
+                    )
+                    idx += 1
+
+    # If no findings found with the pattern, return empty report
+    if not findings:
+        logger.warning("no PA audit findings extracted for %s", entry.id)
+
+    return AuditReport(
+        source="PA PUC Bureau of Audits",
+        id=entry.id,
+        company=entry.company,
+        company_raw=entry.company_raw,
+        docket=entry.docket,
+        docket_full=None,
+        issued_date=entry.issued_date,
+        source_page_url=entry.source_page_url,
+        pdf_download_url=entry.pdf_download_url,
+        captured_at=entry.captured_at,
+        source_note=entry.source_note,
+        archived_via=entry.archived_via,
+        page_count=text.page_count,
+        scanned_pages=text.scanned_pages,
+        ocr_used=text.ocr_used,
+        audit_period=None,
+        industry="electric",
+        audit_type=None,
+        functions=[],
+        forms=[],
+        finding_count=len(findings),
         findings=findings,
     )
 
