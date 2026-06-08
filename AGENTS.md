@@ -151,6 +151,32 @@ The full per-regulator access recipes and the step-by-step workflow live in
 
 `SourceSeed`'s `extra="forbid"` + `load_seed`'s `.gov` guard catch bad fields/hosts; a test
 validates every committed seed.
+### Extracting text from seed documents (rate cases, state audits, etc.)
+
+The extraction pipeline works across both FERC audits (from listing.json) and seed documents (from reports.json):
+
+1. **Seed documents are loaded alongside FERC audits.** `pipeline/extract.py` calls both `load_from_reports()` (which reads reports.json — containing all documents including seeds) and loads FERC documents from listing.json.
+
+2. **PDF lookup tries multiple filenames.** `extract_report()` tries `{id}.pdf` first (seed documents use this naming) and falls back to `{accession_number}.pdf` (FERC audits). This dual lookup ensures both naming conventions work.
+
+3. **Chunked extraction with --limit.** For large batches, use `python -m pipeline.extract --limit N` to extract N documents. The limit is applied *after* filtering to documents that have PDFs but no text.json, so `--limit 20` extracts 20 documents that actually need work, not the first 20 from the full list.
+
+4. **Batch strategy.** Memory constraints on full-corpus extraction require batching. ~20-30 documents per batch works well; chain multiple `--limit` runs and re-run structure + build on the accumulated text.json files.
+
+**Examples:**
+```bash
+# Extract first 20 documents (from any collection) that need work
+python -m pipeline.extract --limit 20
+
+# After extraction batches, structure all documents
+python -m pipeline.structure --limit 100
+
+# Regenerate patterns and baked JSON
+python -m pipeline.patterns && python -m pipeline.build
+```
+
+Key insight: seed documents are identified by their presence in reports.json with `collection:state_rate_case` or `collection:state_audit`, not by any special path convention. The extraction pipeline treats all documents uniformly once loaded.
+
 
 ---
 
