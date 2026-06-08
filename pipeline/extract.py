@@ -128,6 +128,38 @@ def load_listing(path: Path) -> list[ListingEntry]:
     return [ListingEntry.model_validate(d) for d in data]
 
 
+def load_from_reports(path: Path) -> list[ListingEntry]:
+    """Load all documents from reports.json (including seed documents).
+
+    Unlike load_listing(), this includes all documents (FERC + state audits +
+    rate cases), not just the ones from the audit listing page. This ensures
+    that seed documents get extracted too.
+
+    Issue: extract only processed documents from listing.json, so seed documents
+    (rate cases, state audits) never got queued for text extraction. This function
+    fixes that by loading from reports.json which includes everything.
+    """
+    reports_path = path.parent / "data" / "reports.json"
+    if not reports_path.exists():
+        logger.warning("reports.json not found; falling back to listing.json only")
+        return load_listing(path)
+
+    try:
+        data = json.loads(reports_path.read_text(encoding="utf-8"))
+        # Convert report dicts to ListingEntry (only required fields)
+        entries = []
+        for d in data:
+            try:
+                entries.append(ListingEntry.model_validate(d))
+            except Exception as e:
+                logger.debug("skipping report %s: %s", d.get("id"), e)
+        logger.info("loaded %d documents from reports.json (includes seeds)", len(entries))
+        return entries
+    except Exception as e:
+        logger.warning("failed to load reports.json: %s; falling back to listing.json", e)
+        return load_listing(path)
+
+
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     ap = argparse.ArgumentParser(description="Extract per-page text from report PDFs")
@@ -140,7 +172,10 @@ def main() -> None:
     )
     args = ap.parse_args()
 
-    entries = load_listing(args.listing)
+    # Load from reports.json to include seed documents (state audits, rate cases)
+    # Falls back to listing.json if reports.json doesn't exist
+    entries = load_from_reports(args.listing)
+
     if args.electric_only:
         classification_path = config.PROCESSED_DIR / "classification.json"
         if not classification_path.exists():
@@ -149,17 +184,41 @@ def main() -> None:
         classification = json.loads(classification_path.read_text(encoding="utf-8"))
         electric = {rid for rid, c in classification.items() if c.get("industry") == "electric"}
         entries = [e for e in entries if e.id in electric]
+
     if args.limit is not None:
         entries = entries[: args.limit]
 
-    ok = 0
+    # Only extract documents that have PDF files and don't already have text.json
+    entries_to_extract = []
     for entry in entries:
+        pdf_path = config.RAW_DIR / f"{entry.id}.pdf"
+        text_path = config.PROCESSED_DIR / entry.id / "text.json"
+
+        if not pdf_path.exists():
+            logger.debug("skipping %s: no PDF in raw/", entry.id)
+            continue
+
+        if text_path.exists():
+            logger.debug("skipping %s: text.json already exists", entry.id)
+            continue
+
+        entries_to_extract.append(entry)
+
+    logger.info(
+        "extracting %d/%d documents (skipped %d with missing PDFs or existing text.json)",
+        len(entries_to_extract),
+        len(entries),
+        len(entries) - len(entries_to_extract),
+    )
+
+    ok = 0
+    for entry in entries_to_extract:
         try:
             extract_report(entry, config.RAW_DIR, config.PROCESSED_DIR)
             ok += 1
         except (FileNotFoundError, Exception) as exc:  # noqa: BLE001
             logger.error("extract failed for %s: %s", entry.id, exc)
-    logger.info("extracted %d/%d reports", ok, len(entries))
+    logger.info("extracted %d/%d reports", ok, len(entries_to_extract))
 
 
 if __name__ == "__main__":
