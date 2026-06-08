@@ -44,5 +44,22 @@
     "captured_at": "2026-06-02",
     "source_note": "Reporter's Transcript of the evidentiary hearing before the Colorado Public Utilities Commission in Public Service Company of Colorado's natural gas rate case, Proceeding No. 22AL-0046G (79 pp). Listed for reference (metadata-only). Source: Colorado PUC E-Filings System, document 980317 (dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=980317).",
     "parse": false
+  },
+  {
+    "id": "2024-11-15_black-hills-energy-colorado_co-24al-0524g-rate-case-application",
+    "company": "Black Hills Colorado Electric, LLC (formerly Black Hills Power)",
+    "collection": "state_audit",
+    "jurisdiction": "CO",
+    "source": "Colorado Public Utilities Commission",
+    "doc_type": "rate case application",
+    "industry": "electric",
+    "pdf_url": "https://www.dora.state.co.us/pls/efi/efi.show_document?p_dms_document_id=placeholder",
+    "source_page_url": "https://www.dora.state.co.us/pls/efi/EFI.Show_Docket",
+    "issued_date": "2024-11-15",
+    "docket": "24AL-0524E",
+    "captured_at": "2026-06-07",
+    "fetch": false,
+    "source_note": "Application of Black Hills Colorado Electric, LLC for an increase in electric rates and a Certificate of Public Convenience and Necessity for construction projects, Colorado Public Utilities Commission, Docket No. 24AL-0524E, filed November 15, 2024. Listed for reference (metadata-only, E-Filings document ID requires verification). Source: Colorado Public Utilities Commission E-Filings (www.dora.state.co.us/pls/efi/).",
+    "parse": false
   }
 ]

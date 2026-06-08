@@ -12,7 +12,7 @@
     "issued_date": "2012-12-21",
     "docket": "120001-EI",
     "captured_at": "2026-06-07",
-    "source_note": "Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'Fuel and purchased power cost recovery clause with generating performance incentive factor', issued December 21, 2012 (39 pp) — the Commission's annual review setting fuel/capacity cost-recovery factors and generating-performance incentive rewards/penalties for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 08286-2012 (psc.state.fl.us/library/Orders/2012/08286-2012.pdf).",
+    "source_note": "Florida PSC Order No. PSC-12-0664-FOF-EI (Final Order), Docket No. 120001-EI, 'Fuel and purchased power cost recovery clause with generating performance incentive factor', issued December 21, 2012 (39 pp) \u2014 the Commission's annual review setting fuel/capacity cost-recovery factors and generating-performance incentive rewards/penalties for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 08286-2012 (psc.state.fl.us/library/Orders/2012/08286-2012.pdf).",
     "parse": false
   },
   {
@@ -28,7 +28,7 @@
     "issued_date": "2014-10-27",
     "docket": "140009-EI",
     "captured_at": "2026-06-07",
-    "source_note": "Florida PSC Order No. PSC-14-0617-FOF-EI (Final Order Approving...), Docket No. 140009-EI, 'Nuclear cost recovery clause', issued October 27, 2014 (49 pp) — the Commission's annual prudence review and true-up of nuclear power-plant project costs recovered by Florida utilities under Section 366.93, Fla. Stat. and Rule 25-6.0423, F.A.C. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06043-2014 (psc.state.fl.us/library/Orders/2014/06043-2014.pdf).",
+    "source_note": "Florida PSC Order No. PSC-14-0617-FOF-EI (Final Order Approving...), Docket No. 140009-EI, 'Nuclear cost recovery clause', issued October 27, 2014 (49 pp) \u2014 the Commission's annual prudence review and true-up of nuclear power-plant project costs recovered by Florida utilities under Section 366.93, Fla. Stat. and Rule 25-6.0423, F.A.C. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06043-2014 (psc.state.fl.us/library/Orders/2014/06043-2014.pdf).",
     "parse": false
   },
   {
@@ -44,7 +44,7 @@
     "issued_date": "2023-11-29",
     "docket": "20230010-EI",
     "captured_at": "2026-06-07",
-    "source_note": "Florida PSC Order No. PSC-2023-0364-FOF-EI (Final Order), Docket No. 20230010-EI, 'Storm protection plan cost recovery clause', issued November 29, 2023 (26 pp) — the Commission's annual review of the reasonableness of storm-protection-plan costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06328-2023 (psc.state.fl.us/library/Orders/2023/06328-2023.pdf).",
+    "source_note": "Florida PSC Order No. PSC-2023-0364-FOF-EI (Final Order), Docket No. 20230010-EI, 'Storm protection plan cost recovery clause', issued November 29, 2023 (26 pp) \u2014 the Commission's annual review of the reasonableness of storm-protection-plan costs and the resulting cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 06328-2023 (psc.state.fl.us/library/Orders/2023/06328-2023.pdf).",
     "parse": false
   },
   {
@@ -60,7 +60,41 @@
     "issued_date": "2024-10-24",
     "docket": "20240010-EI",
     "captured_at": "2026-06-07",
-    "source_note": "Florida PSC Order No. PSC-2024-0459-FOF-EI (Final Order), Docket No. 20240010-EI, 'Storm protection plan cost recovery clause', issued October 24, 2024 (16 pp) — the Commission's annual review of storm-protection-plan cost recovery, setting the 2025 storm-protection cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 09666-2024 (psc.state.fl.us/library/Orders/2024/09666-2024.pdf).",
+    "source_note": "Florida PSC Order No. PSC-2024-0459-FOF-EI (Final Order), Docket No. 20240010-EI, 'Storm protection plan cost recovery clause', issued October 24, 2024 (16 pp) \u2014 the Commission's annual review of storm-protection-plan cost recovery, setting the 2025 storm-protection cost-recovery factors for Florida's investor-owned electric utilities. Listed for reference (metadata-only). Source: Florida PSC document clerk, document 09666-2024 (psc.state.fl.us/library/Orders/2024/09666-2024.pdf).",
+    "parse": false
+  },
+  {
+    "id": "2024-11-22_florida-iou_fl-20240009-ei-psc-2024-0429-fof-ei",
+    "company": "Florida investor-owned electric utilities (environmental cost recovery)",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "final order on environmental cost recovery",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/library/Orders/2024/06789-2024.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0429-FOF-EI",
+    "issued_date": "2024-11-22",
+    "docket": "20240009-EI",
+    "captured_at": "2026-06-07",
+    "fetch": false,
+    "source_note": "Florida PSC Order No. PSC-2024-0429-FOF-EI (Final Order), Docket No. 20240009-EI, 'Environmental cost recovery clause', issued November 22, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).",
+    "parse": false
+  },
+  {
+    "id": "2024-12-20_florida-iou_fl-20240010-ei-conservation-cost",
+    "company": "Florida investor-owned electric utilities (conservation cost recovery)",
+    "collection": "state_audit",
+    "jurisdiction": "FL",
+    "source": "Florida Public Service Commission",
+    "doc_type": "final order on conservation cost recovery",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.state.fl.us/library/Orders/2024/06790-2024.pdf",
+    "source_page_url": "https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0451-FOF-EI",
+    "issued_date": "2024-12-20",
+    "docket": "20240010-EI",
+    "captured_at": "2026-06-07",
+    "fetch": false,
+    "source_note": "Florida PSC Final Order on conservation/energy-efficiency cost recovery, Docket No. 20240010-EI, issued December 20, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).",
     "parse": false
   }
 ]

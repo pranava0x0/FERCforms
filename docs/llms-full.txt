@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 253 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 258 records, 629 findings, 1582 recommendations. Generated 2026-06-07.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5761,6 +5761,17 @@ Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Co
 
 ---
 
+## Oncor Electric Delivery, L.L.C.
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 58114 | Audit type: n/a
+- Issued: 2025-03-31 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&itemNumber=118
+- Status: listed for reference (not machine-parsed into findings)
+
+Direct Testimony of Commission Staff addressing fuel and purchased power cost recovery in Oncor Electric Delivery, L.L.C.'s rate reconciliation, PUC Docket No. 58114, filed March 31, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).
+
+---
+
 ## El Paso Electric Company
 - Collection: State PUC Audits | Source: Public Utility Commission of Texas
 - Docket: 57149 | Audit type: n/a
@@ -5791,6 +5802,17 @@ Redacted Direct Testimony and Workpapers of Scott Norwood on behalf of the City 
 - Status: listed for reference (not machine-parsed into findings)
 
 Order in the electronic examination of the Fuel Adjustment Clause (FAC) of Kentucky Power Company (AEP) for November 1, 2022 through April 30, 2023, Kentucky PSC Case No. 2024-00136, issued March 19, 2025. Listed for reference (metadata-only). PDF at the deterministic KY PSC path psc.ky.gov/pscscf/2024 Cases/2024-00136/; case folder psc.ky.gov/Case/ViewCaseFilings/2024-00136.
+
+---
+
+## Oncor Electric Delivery, L.L.C. (also d/b/a AEP Texas Transmission)
+- Collection: State PUC Audits | Source: Public Utility Commission of Texas
+- Docket: 58114 | Audit type: n/a
+- Issued: 2025-02-28 | Industry: electric | FERC Form: n/a
+- Source page: https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&itemNumber=35
+- Status: listed for reference (not machine-parsed into findings)
+
+Preliminary Order of the Public Utility Commission of Texas in Oncor Electric Delivery, L.L.C.'s application to reconcile fuel and purchased power expenses, PUC Docket No. 58114, issued February 28, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).
 
 ---
 
@@ -5827,6 +5849,17 @@ Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The 
 
 ---
 
+## Florida investor-owned electric utilities (conservation cost recovery)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 20240010-EI | Audit type: n/a
+- Issued: 2024-12-20 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0451-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Final Order on conservation/energy-efficiency cost recovery, Docket No. 20240010-EI, issued December 20, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
+
+---
+
 ## Potomac Electric Power Company (Pepco)
 - Collection: State PUC Audits | Source: Public Service Commission of the District of Columbia
 - Docket: FC 1176 | Audit type: n/a
@@ -5835,6 +5868,28 @@ Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The 
 - Status: listed for reference (not machine-parsed into findings)
 
 Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).
+
+---
+
+## Florida investor-owned electric utilities (environmental cost recovery)
+- Collection: State PUC Audits | Source: Florida Public Service Commission
+- Docket: 20240009-EI | Audit type: n/a
+- Issued: 2024-11-22 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0429-FOF-EI
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Order No. PSC-2024-0429-FOF-EI (Final Order), Docket No. 20240009-EI, 'Environmental cost recovery clause', issued November 22, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
+
+---
+
+## Black Hills Colorado Electric, LLC (formerly Black Hills Power)
+- Collection: State PUC Audits | Source: Colorado Public Utilities Commission
+- Docket: 24AL-0524E | Audit type: n/a
+- Issued: 2024-11-15 | Industry: electric | FERC Form: n/a
+- Source page: https://www.dora.state.co.us/pls/efi/EFI.Show_Docket
+- Status: listed for reference (not machine-parsed into findings)
+
+Application of Black Hills Colorado Electric, LLC for an increase in electric rates and a Certificate of Public Convenience and Necessity for construction projects, Colorado Public Utilities Commission, Docket No. 24AL-0524E, filed November 15, 2024. Listed for reference (metadata-only, E-Filings document ID requires verification). Source: Colorado Public Utilities Commission E-Filings (www.dora.state.co.us/pls/efi/).
 
 ---
 

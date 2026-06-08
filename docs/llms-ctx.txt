@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="253 structured records (120 FERC audits, 14 prudence reviews, 119 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="258 structured records (120 FERC audits, 14 prudence reviews, 124 state PUC audits); 629 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-07). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3180,6 +3180,10 @@ Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b
 Listed for reference (not machine-parsed into findings).
 Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Commission of Texas (Commission Staff), in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed April 1, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_118_1485108.PDF.
 </doc>
+<doc title="Oncor Electric Delivery, L.L.C." collection="State PUC Audits" docket="58114" issued="2025-03-31" industry="electric" source="https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&amp;itemNumber=118">
+Listed for reference (not machine-parsed into findings).
+Direct Testimony of Commission Staff addressing fuel and purchased power cost recovery in Oncor Electric Delivery, L.L.C.'s rate reconciliation, PUC Docket No. 58114, filed March 31, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).
+</doc>
 <doc title="El Paso Electric Company" collection="State PUC Audits" docket="57149" issued="2025-03-25" industry="electric" source="https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&amp;itemNumber=113">
 Listed for reference (not machine-parsed into findings).
 Direct Testimony and Attachments of Evan D. Evans on behalf of the Office of Public Utility Counsel (OPUC, the statutory residential and small-commercial consumer advocate), challenging cost recovery in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed March 25, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_113_1483132.PDF.
@@ -3191,6 +3195,10 @@ Redacted Direct Testimony and Workpapers of Scott Norwood on behalf of the City 
 <doc title="Kentucky Power Company" collection="State PUC Audits" docket="2024-00136" issued="2025-03-19" industry="electric" source="https://psc.ky.gov/Case/ViewCaseFilings/2024-00136">
 Listed for reference (not machine-parsed into findings).
 Order in the electronic examination of the Fuel Adjustment Clause (FAC) of Kentucky Power Company (AEP) for November 1, 2022 through April 30, 2023, Kentucky PSC Case No. 2024-00136, issued March 19, 2025. Listed for reference (metadata-only). PDF at the deterministic KY PSC path psc.ky.gov/pscscf/2024 Cases/2024-00136/; case folder psc.ky.gov/Case/ViewCaseFilings/2024-00136.
+</doc>
+<doc title="Oncor Electric Delivery, L.L.C. (also d/b/a AEP Texas Transmission)" collection="State PUC Audits" docket="58114" issued="2025-02-28" industry="electric" source="https://interchange.puc.texas.gov/search/documents/?controlNumber=58114&amp;itemNumber=35">
+Listed for reference (not machine-parsed into findings).
+Preliminary Order of the Public Utility Commission of Texas in Oncor Electric Delivery, L.L.C.'s application to reconcile fuel and purchased power expenses, PUC Docket No. 58114, issued February 28, 2025. Listed for reference (metadata-only, PUCT Interchange document ID requires verification). Source: PUCT Interchange (interchange.puc.texas.gov).
 </doc>
 <doc title="Northern Indiana Public Service Company LLC" collection="State PUC Audits" docket="38706 FAC 145" issued="2025-01-29" industry="electric" source="https://iurc.portal.in.gov/searchlegalcase/">
 Listed for reference (not machine-parsed into findings).
@@ -3204,9 +3212,21 @@ Order of the Public Service Commission of the District of Columbia on applicatio
 Listed for reference (not machine-parsed into findings).
 Rhode Island PUC Order No. 25247 (January 2025), Docket No. 24-38-GE — on The Narragansett Electric Company d/b/a Rhode Island Energy's tariff advice filing to amend its electric and gas tariffs (Advanced Metering Functionality opt-out charges) (8 pp). Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2025-01/).
 </doc>
+<doc title="Florida investor-owned electric utilities (conservation cost recovery)" collection="State PUC Audits" docket="20240010-EI" issued="2024-12-20" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0451-FOF-EI">
+Listed for reference (not machine-parsed into findings).
+Florida PSC Final Order on conservation/energy-efficiency cost recovery, Docket No. 20240010-EI, issued December 20, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
+</doc>
 <doc title="Potomac Electric Power Company (Pepco)" collection="State PUC Audits" docket="FC 1176" issued="2024-11-26" industry="electric" source="https://dcpsc.org/Newsroom/HotTopics/Rate-Case-Applications/FC1176.aspx">
 Listed for reference (not machine-parsed into findings).
 Order and Opinion of the Public Service Commission of the District of Columbia in the application of Potomac Electric Power Company (Pepco) for authority to implement a Multiyear Rate Plan for electric distribution service, Formal Case No. 1176, issued November 26, 2024 (approved a modified plan well below the ~$190.7M request; later vacated/remanded by the DC Court of Appeals). Listed for reference (metadata-only). Source: DC PSC e-Docket, edocket.dcpsc.org (attachId 214935). The DC PSC publishes on dcpsc.org (an official US-government commission that uses .org, not .gov; admitted via the gov-guard's narrow .org allowlist — see ISSUES.md).
+</doc>
+<doc title="Florida investor-owned electric utilities (environmental cost recovery)" collection="State PUC Audits" docket="20240009-EI" issued="2024-11-22" industry="electric" source="https://www.psc.state.fl.us/document-detail?orderNum=PSC-2024-0429-FOF-EI">
+Listed for reference (not machine-parsed into findings).
+Florida PSC Order No. PSC-2024-0429-FOF-EI (Final Order), Docket No. 20240009-EI, 'Environmental cost recovery clause', issued November 22, 2024. Listed for reference (metadata-only, PSC document ID requires verification). Source: Florida PSC document clerk (psc.state.fl.us/library/Orders/).
+</doc>
+<doc title="Black Hills Colorado Electric, LLC (formerly Black Hills Power)" collection="State PUC Audits" docket="24AL-0524E" issued="2024-11-15" industry="electric" source="https://www.dora.state.co.us/pls/efi/EFI.Show_Docket">
+Listed for reference (not machine-parsed into findings).
+Application of Black Hills Colorado Electric, LLC for an increase in electric rates and a Certificate of Public Convenience and Necessity for construction projects, Colorado Public Utilities Commission, Docket No. 24AL-0524E, filed November 15, 2024. Listed for reference (metadata-only, E-Filings document ID requires verification). Source: Colorado Public Utilities Commission E-Filings (www.dora.state.co.us/pls/efi/).
 </doc>
 <doc title="El Paso Electric Company" collection="State PUC Audits" docket="57149" issued="2024-11-14" industry="electric" source="https://interchange.puc.texas.gov/search/documents/?controlNumber=57149&amp;itemNumber=34">
 Listed for reference (not machine-parsed into findings).
