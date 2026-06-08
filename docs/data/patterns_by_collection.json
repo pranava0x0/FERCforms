@@ -490,7 +490,7 @@
   },
   "state_rate_case": {
     "report_count": 115,
-    "finding_count": 392,
+    "finding_count": 482,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -523,13 +523,13 @@
           "rate of return",
           "return on equity"
         ],
-        "finding_count": 17,
-        "report_count": 6,
+        "finding_count": 19,
+        "report_count": 7,
         "example_titles": [
           "Approval: $1,277,051,206. ",
           "Approval: $55.4\nmillion",
-          "Settlement: agreement",
-          "Settlement: Agreement"
+          "Disallowance: $848,000.463",
+          "Approval: $3,228.6 million"
         ]
       },
       {
@@ -538,11 +538,12 @@
         "keywords": [
           "tariff"
         ],
-        "finding_count": 10,
-        "report_count": 3,
+        "finding_count": 11,
+        "report_count": 4,
         "example_titles": [
           "Settlement: Agreement",
-          "Approval: $5 million"
+          "Approval: $5 million",
+          "Settlement: agreement"
         ]
       },
       {
@@ -551,11 +552,12 @@
         "keywords": [
           "depreciation"
         ],
-        "finding_count": 5,
-        "report_count": 2,
+        "finding_count": 7,
+        "report_count": 4,
         "example_titles": [
-          "Approval: $149.1 million",
-          "Settlement: Agreement"
+          "Settlement: agreement",
+          "Settlement: Agreement",
+          "Approval: $149.1 million"
         ]
       },
       {
@@ -616,27 +618,51 @@
     "top_titles": [
       {
         "title": "Settlement: Agreement",
-        "count": 266
+        "count": 278
       },
       {
         "title": "Settlement: agreement",
+        "count": 33
+      },
+      {
+        "title": "Settlement: terms",
         "count": 14
       },
       {
         "title": "Settlement: AGREEMENT",
-        "count": 13
+        "count": 14
       },
       {
-        "title": "Settlement: terms",
-        "count": 12
+        "title": "Approval: $200,000 ",
+        "count": 6
       },
       {
         "title": "Approval: $5 million",
         "count": 3
       },
       {
+        "title": "Approval: $231.8 million",
+        "count": 3
+      },
+      {
         "title": "Approval: $100 million",
         "count": 3
+      },
+      {
+        "title": "Approval: $267,572 ",
+        "count": 2
+      },
+      {
+        "title": "Approval: $1 million",
+        "count": 2
+      },
+      {
+        "title": "Approval: $1,266,284,000. ",
+        "count": 2
+      },
+      {
+        "title": "Approval: $1,671,378.\n",
+        "count": 2
       },
       {
         "title": "Disallowance: $175 million",
@@ -652,6 +678,10 @@
       },
       {
         "title": "Approval: $51,223,778 ",
+        "count": 2
+      },
+      {
+        "title": "Approval: $321 ",
         "count": 2
       },
       {
@@ -671,47 +701,19 @@
         "count": 1
       },
       {
-        "title": "Approval: $117.7\nmillion",
+        "title": "Disallowance: $167,272",
         "count": 1
       },
       {
-        "title": "Approval: $1,671,378.\n",
+        "title": "Disallowance: $14,547",
         "count": 1
       },
       {
-        "title": "Approval: $35.7 million",
+        "title": "Disallowance: $25,565",
         "count": 1
       },
       {
-        "title": "Disallowance: $330,788.",
-        "count": 1
-      },
-      {
-        "title": "Approval: $175\nmillion",
-        "count": 1
-      },
-      {
-        "title": "Approval: $55.4 million",
-        "count": 1
-      },
-      {
-        "title": "Approval: $55.4\nmillion",
-        "count": 1
-      },
-      {
-        "title": "Approval: $69.8 million",
-        "count": 1
-      },
-      {
-        "title": "Approval: $68.9 million",
-        "count": 1
-      },
-      {
-        "title": "Disallowance: $534,482.",
-        "count": 1
-      },
-      {
-        "title": "Approval: $87.2\nmillion",
+        "title": "Disallowance: $162,272",
         "count": 1
       }
     ],

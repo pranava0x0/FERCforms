@@ -257,8 +257,261 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 28,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $167,272",
+        "summary": "s by the Concentric employee on invoices not previously approved by the Commission and recommends a $167,272 disallowance of rate case expense. AG Ex. 2.0 at 11; Ameren Ex. 22.0 at 9. The Company contends that the Commission should reject Ms. Selvaggio’s recommendati",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Disallowance: $14,547",
+        "summary": "on to reach a different and inexplicable result here. First, Ameren notes, Ms. Selvaggio proposes a $14,547 disallowance of Concentric-related rate case expenses incurred for services performed between October and December 2023 in connection with Docket No. 23-0320.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Disallowance: $25,565",
+        "summary": "for the same consultant’s services on the same case. Second, Ameren notes, Ms. Selvaggio proposes a $25,565 disallowance of Concentric-related rate case expenses incurred for services performed in connection with the Rate Plan proceedings. AG Ex. 2.02, lines 1-4. Bu",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Disallowance: $162,272",
+        "summary": "work he is doing. AG Ex. 2.00 at 10-11. (3) Commission Analysis and Conclusion The AG recommends a $162,272 disallowance for the hours charged by Mr. Weiss, VP of Concentric, who provided support with Ameren’s MFRs, pre-and post-filing support, and assistance with d",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $2,034,764 ",
+        "summary": "6. No other party contested these actual costs. Therefore, Ameren maintains, the Commission should approve $2,034,764 in 2024 associated with Project AIC10288. The Commission finds this reasonable, and it is approved. 4. Plant Additions Section 16-108.18(f)(6) of the",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Approval: $2,140,711 ",
+        "summary": "tes that in testimony, IIEC-CUB witness Fitzhenry also initially recommended that the Commission disallow $2,140,711 of plant additions for projects J0MHH and J0MHJ. However, as discussed in the surrebuttal testimony of Ameren witness Lavin, Mr. Fitzhenry withdrew hi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Approval: $267,572 ",
+        "summary": "volved the installation of Smart underground switches to improve reliability on two feeders with an approved budget of $267,572 and actual 2024 incurred costs of $741,545. Ameren Ex. 13.0 at 8. The Company notes that 7 25-0382 IIEC-CUB witness Fitzhenry and Staff witness Maurer",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Approval: $493 million",
+        "summary": "Position As background, IIEC-CUB state that in Ameren’s MYRP proceeding, the total plant additions approved were $493 million while the total 2024 actual plant additions sought in this case exceed $515 million. IIEC-CUB Ex. 1.0 at 16. IIEC-CUB note those figures include thir",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Approval: $473,973 ",
+        "summary": "bstantiate imprudence, according to IIEC-CUB. For these reasons, IIEC-CUB urge the Commission to disallow the $473,973 cost variance associated with this project. Id. at 20. (4) Commission Analysis and Conclusion During reconciliation review, “each project is subject t",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Approval: $267,572 ",
+        "summary": "rudence. Id.; Ameren Ill. Co, Docket 25-0084, Order at 129 (Nov. 19, 2025). In 2024, the Commission approved a budget of $267,572 for project category J1203. The Company now seeks an additional $473,973 for a total categorical spend of $741,545. See Ameren IB at 10. The initial s",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Approval: $157,000 ",
+        "summary": "of additional costs incurred were prudent and disallows it. 11 25-0382 Accordingly, the Commission approves $157,000 associated with cable replacement but adopts the remainder of IIEC-CUB’s proposed disallowance, totaling $316,973. b) Project C3178 (“Substation Resil",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Approval: $744,647 ",
+        "summary": "lity and resiliency of the electric system. It has a budget of $1,017,421 in plant additions in the approved Rate Plan and a variance of $744,647 in additional 2024 actual costs above that approved budget. In its initial filing, discovery, and testimony, the Company notes that it provided additi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Approval: $744,647",
+        "summary": "ere, IIEC-CUB relay that Ameren seeks to recover an increase of 76.1% more than what the Commission approved (or $744,647). IIEC-CUB point out that the Company asserts much of this excess was related to external labor costs. Id. at 21. IIEC- CUB argue that rather than de",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "Approval: $774,647 ",
+        "summary": "ult, IIEC-CUB ask the Commission to adopt their recommendation with respect to Project C3178 and disallow the $774,647 cost variance associated with this project so that customers are not made to bear the cost burden of Ameren’s poor project management decisions, accor",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "Approval: $52 million",
+        "summary": "ued pursuit of an additional $10.7 million increase in this case – when it has already exceeded its approved revenue requirement by $52 million – is notable and would have a meaningful impact on customers’ rates. IIEC-CUB state this 26 25-0382 is especially true when the Commission has alread",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "Approval: $1 million",
+        "summary": "at 5. Staff used a threshold variance (difference or deviation in actual costs compared to amounts approved in the MYRP) of 10% and $1 million for analyzing O&M FERC accounts versus the 30% threshold and $1 million used for analyzing capital projects in Ameren Exhibit 4.1 due to the number o",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 17,
+        "title": "Approval: $7.672 million",
+        "summary": "amortize its additional rate expenses over a four-year period. In the initial MYRP, the Commission approved a rate case expense of $7.672 million. Refiling Order at 259. In this Annual Adjustment proceeding, the Company requests an additional $3.501 million over the amount the Commission approv",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 18,
+        "title": "Approval: $4,868,863 ",
+        "summary": "spread the recovery of rate case expenses out over the entire four-year MYRP period. This is why it approved a total of $4,868,863 in rate case expense and ordered that it be recovered in one-fourth increments of $1,217,216 for each year of the MYRP. December 2023 Order at 262. Th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 19,
+        "title": "Approval: $200,000 ",
+        "summary": "ren states that IIEC-CUB witness Fitzhenry is the only witness in this proceeding to recommend a disallowance of the $200,000 in actual meter reading expense. Mr. Fitzhenry argued that “there is no reasonable explanation” for Ameren’s meter reading expense in 2024 and that he",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 20,
+        "title": "Approval: $200,000 ",
+        "summary": "recorded to Account 902 in 2024 was prudent and reasonable and should reject IIEC-CUB’s proposed disallowance of $200,000 in 2024 actual meter reading expense. b) Staff’s Position Staff explains that FERC Account 902 - Meter Reading Expenses are “the costs associated with",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 21,
+        "title": "Approval: $200,000 ",
+        "summary": "the reduction in the non-communicating meter population.” Staff Ex. 20.12. IIEC-CUB recommend a disallowance of $200,000 associated with the meter reading program. IIEC-CUB Ex. 1.0 at 28. In support of this disallowance, IIEC-CUB stated that “the number of meters in oper",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 22,
+        "title": "Approval: $200,000 ",
+        "summary": "finding that Ameren has imprudently managed its meter reading program and the Commission should disallow $200,000 in meter reading expense. A prudently-managed program should incur less expense as the amount of labor required to execute the program declines. In re",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 23,
+        "title": "Approval: $200,000. ",
+        "summary": "iliation. 57 25-0382 IIEC-CUB acknowledge that Staff originally supported IIEC-CUB’s recommended disallowance of $200,000. IIEC-CUB state Staff now agrees with the Company’s position, because the Company provided information pertaining to the troubleshooting work, and adde",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 24,
+        "title": "Approval: $200,000 ",
+        "summary": "cation between the two FERC accounts. d) Commission Analysis and Conclusion IIEC-CUB recommend a disallowance of $200,000 associated with the meter reading program. Ameren states the $200,000 is associated with manual meter reading required for non-communicating AMI meter",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 25,
+        "title": "Approval: $1,266,284,000. ",
+        "summary": "er 2024 in the First Plan Dockets. That amount is multiplied by 105% to derive a 77 25-0382 105% of approved revenue requirement amount of $1,266,284,000. The Actual Revenue Requirement is $1,221,140,000. After adjusting for the required exclusion of the variable items, the Adjusted Revenue Requirem",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 26,
+        "title": "Approval: $1,266,284,000. ",
+        "summary": "the variable items, the Adjusted Revenue Requirement is $1,174,730,000, which is below the 105% of approved revenue requirement amount of $1,266,284,000. Ameren Exs. 1.0 at 11; 21.1 at 5. To maintain a complete picture of the 105% calculation, the Company recommends that the Commission’s Final Order",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 27,
+        "title": "Approval: $1,206,000,000. ",
+        "summary": "revenue requirement of $1,112,335,000 in its calculation and asserts the correct value is the 2024 approved revenue requirement of $1,206,000,000. Id. A comparison of the Company’s cited approved revenue requirement with the actual revenue requirement results in a variance of only 2.9%. Id. Staff",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 28,
+        "title": "Approval: $59,952,000\n",
+        "summary": "tomers’ annual consumption amounts. The forecasted 2025 and 2026 revenues and usage are the amounts approved in the Order on Refiling. Mr. Fitzhenry then added the $59,952,000 AAA to the forecasted revenue to account for the increase the Company is requesting in this proceeding. Id. at 7. IIEC-CUB c",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -467,8 +720,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $500",
+        "summary": "he EDCs stated that they would need to become adhering parties to the US Stay Protocol if the Board approves MSCGI’s proposal. Further, a one (1)-time fee ($500) is required to be paid to the ISDA to become an adhering party to the US Stay Protocol. The EDCs requested that if the Board directs the E",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -1602,8 +1865,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $88 million",
+        "summary": "o be known and measurable, used and useful, and prudent. 3 Staff explains that PSE pursued multiple grant opportunities in excess of $88 million and that of the 19 grant applications submitted, eight were successful. However, Staff notes that not all the grants had a monetary component, and th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -3411,8 +3684,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Settlement: Agreement",
+        "summary": "any to Amend its Distribution Cost Recovery Factor Testimony in Support ofUnopposed Stipulation and Settlement Agreement filed June 2023 Docket No. 54634 Application of Southwestern Public Service Company for Authority to Change Rates Testimony on Rate-Case Expenses fil",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -3623,8 +3906,27 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $7,862,875 ",
+        "summary": "is is $35,292,236 more than NIPSCO’s authorized amount of $407,403,229, which includes $399,540,354 approved in the applicable rate case, plus $7,862,875 of actual TDSIC operating income during the 12 months ended September 30, 2024. Since the Petitioner’s actual return exceeds the amount authorized",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $0.69 ",
+        "summary": "will pay $201.92 (excluding taxes), which consists of $180.24 in base charges set in NIPSCO’s last approved rate case (Cause No. 45772), $0.69 in a fuel adjustment clause credit, and $20.99 in non-FAC trackers. 12. Fuel Cost Adjustment Factor. OUCC witness Eckert recommended the Commission ap",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -4180,11 +4482,102 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 9,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $18 million",
+        "summary": "ny’s proposed revenue requirement.426 218. In its Rebuttal Testimony, Pepco opposes AOBA’s proposed $18 million disallowance of projected CapEx from the revenue requirement in 2023 through 2026 for ITN 420 See generally, Pepco (H)-2 (Cantler Direct Exhibit). 421 AOBA (A",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Disallowance: $848,000.463",
+        "summary": "of rate base. The adjustment reduces rate base by $5.3 million and increases operating expenses by $848,000.463 233. The Commission agrees with OPC’s position to deny Pepco RMA-15. Pepco does not raise any new arguments that persuade the Commission to change the basis for its prior decision in Forma",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Approval: $167.3 million",
+        "summary": "pend would ultimately be allocated to Pepco’s DC distribution rates.425 As such, AOBA’s proposed disallowance of $167.3 million is flawed for multiple reasons, not least because a large portion of the proposed disallowed costs are not even included in the Company’s proposed re",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $77\nmillion",
+        "summary": "period by approximately $211 million (28%). This reduction is achieved by reducing plant additions approved for recover in this Order by $77 million in 2025 and by $134 million in 2026. This adjustment results in an overall reduction in rate 544 All Commission adopted RMA’s are formatted “RMA-(#)”",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $3,228.6 million",
+        "summary": "proposed rate base adjustments, no party contests the methodology. Based on the Commission’s final approved rate base of $3,228.6 million, and $3,302.7 million, and 5.02% and 5.04% approved cost of debt for 2025 and 2026, respectively. RMA 28 reduces revenue requirement by $43 million i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 6,
+        "title": "Settlement: Agreement",
+        "summary": "ted recovery period. 223. RMA Pepco-12 Reflection of Benning Insurance Proceeds. As outlined in the Settlement Agreement in Formal Case Nos. 1150 and 1151, Pepco has been pursuing recovery of insurance proceeds and agreed to return these funds to customers through rates",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Settlement: Agreement",
+        "summary": "ng to return to customers. Pepco determined that $0.785 million was charged through rates after the Settlement Agreement until the time that regulatory asset amortization was paused upon the Commission’s approval of the Formal Case No. 1156 Modified 436 Pepco (B) (Lemin",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Settlement: agreement",
+        "summary": "pco (3B) (Leming Rebuttal) at 25:16-18. Order No. 22328 Page 81 The Company’s reference to the EDIT Settlement agreement is misplaced. The NP EDIT agreed to in Formal Case No. 1150 did not address the PHISCO deferred income tax balances; it only addressed the Pepco bala",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Settlement: agreement",
+        "summary": "dy was filed in 2017 in Formal Case No. 1139, and the current depreciation rates were approved in a settlement agreement in that case.620 354. Pepco proposes to follow recent Commission precedent and adopt the Financial Accounting Standards No. 143 method of calculating",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Depreciation"
+        ],
+        "cost_to_customers": true
+      }
+    ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Cost of service & rates",
+      "Depreciation"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -5063,8 +5456,54 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 5,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $91,260,074\n",
+        "summary": "$0 $0 $0 $0 $0 $0 (5) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (6) Allowable Working Capital Costs $91,260,074 (7) Number of Days Lag 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 (8) Working Capital Requirement (9) Weighted Average Co",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $9,002,911 ",
+        "summary": "$0 $0 $0 $0 $0 (21) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (22) Allowable Working Capital Costs $9,002,911 $17,740,363 $23,348,504 $19,187,157 $14,298,113 $5,801,939 $3,365,355 $2,249,232 $1,905,760 $1,982,445 $1,989,370 $3,622,063 $104,493,212 (23) Number",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $23,806,638\n",
+        "summary": "$0 $0 $0 $0 $0 (36) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (37) Allowable Working Capital Costs $23,806,638 (38) Number of Days Lag 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 (39) Working Capital Requirement (40) Weighted Average",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $1,089,461 ",
+        "summary": "72,885) ($174,431) ($787,885) ($3,328,078) ($8,360,951) ($7,653,525) ($4,156,160) ($25,707,398) (5) Allowable Working Capital Costs $1,089,461 $5,193,444 $5,634,365 $5,400,060 $5,517,845 $5,668,654 $6,059,056 $6,262,313 $6,371,400 $6,299,336 $6,087,882 $6,230,292 $65,814,108 (6) Number of Day",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $5,606,412 ",
+        "summary": "0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (19)Total Adjustments $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (20)Allowable Working Capital Costs $5,606,412 $3,486,113 $3,238,095 $2,661,004 $2,716,763 $2,677,824 $3,383,133 $9,959,991 $11,721,411 $23,053,617 $14,391,166 $11,932,267 $94,827,797 (21)Number of",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -6422,11 +6861,43 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 3,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Settlement: AGREEMENT",
+        "summary": "PLAN EXTENSION OR RATE REVIEW, AND PROPOSED REVISIONS TO CERTAIN FEES ASSESSED TO CUSTOMERS GLOBAL SETTLEMENT STIPULATION AGREEMENT This Stipulation Term Sheet (“Stipulation”) is entered into by and among the Louisiana Public Service Commission (“LPSC” or “Commission”) Staff (“Sta",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Settlement: terms",
+        "summary": "ation as indicated by the signatures affixed hereto. Accordingly, the Parties propose the following settlement terms to the Commission: I. Conditions Precedent A. This Stipulation reflects a compromise, settlement, and accommodation among the Parties and the terms a",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Settlement: Agreement",
+        "summary": "s described above in paragraphs II.B, II.C, II.D, and II.E.; b) $5.8 million credit provided in the Settlement Agreement approved in LPSC Order No. U-34951; and c) $15 million increase in nuclear depreciation expense, further discussed in Section III.C.4 below. 3. The f",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Depreciation"
+        ],
+        "cost_to_customers": true
+      }
+    ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Depreciation"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_audit",
@@ -8498,8 +8969,126 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 13,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $82.6 million",
+        "summary": "at least one year; (2) a freeze on filing a full Base Rate case until April 2025; and (3) a minimum $82.6 million disallowance. Given those conditions, WVEUG preferred the securitization proposal. Staff, through the testimony and evidence of Critical Technologies Consulti",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Disallowance: $231,769,431.",
+        "summary": "prudent decisions, actions, and inactions, and have, therefore, quantified a disallowance amount of $231,769,431. We have also fully considered the disallowances recommended by other parties. The methodologies for calculating those disallowances will not be adopted by the Commission. Instead, we use",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Approval: $231.8 million",
+        "summary": "ly the Companies) net Expanded Net Energy Cost (ENEC) costs and under-recoveries. The Commission disallows $231.8 million of requested ENEC under-recoveries. The remaining balance of the requested under-recoveries, which is currently $321.1 million, will not be allowed i",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Approval: $552.9 ",
+        "summary": "that the Commission disallow the entire under-recovery. Alternatively, to the extent the Commission allows any portion of the $552.9 accumulated under-recovery in rates, the CAD recommended that the amount allowed be amortized over no less than five years with no carrying charge. Th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Approval: $82.6 million",
+        "summary": "lowed be amortized over no less than five years with no carrying charge. The WVEUG recommended a disallowance of $82.6 million before any consideration of amortization or securitization. WVEUG further recommended that any balance recoverable in rates be allowed a carrying cha",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Approval: $257,993,417 ",
+        "summary": "nsulting (CTC), recommended that the Commission find imprudence on the part of the Companies and disallow $257,993,417 of the under-recovery. 2023 ENEC, Tr. Sept. 7, 2023 at 408. Q. If the Companies could have, based on the market conditions that we've talked about, th",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Approval: $231,769,431.\n",
+        "summary": "and the result of imprudent decisions, actions, and inactions, and have, therefore, quantified a disallowance amount of $231,769,431. We have also fully considered the disallowances recommended by other parties. The methodologies for calculating those disallowances will not be adopte",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Approval: $231,769,431 ",
+        "summary": "costs and the prudence or imprudence of the Companies' actions or inactions. Our calculation and disallowance of $231,769,431 does not take into consideration that the power plants were offline and unavailable for generation at times when market prices were very high and ther",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Approval: $231.8 million",
+        "summary": "mber 1, 2024. Accordingly, the requested under-recovery balance of $552.9 million will not be fully allowed for recovery in rates. Instead, $231.8 million will be specifically disallowed for reasons explained herein. The remaining balance, currently $321 .I million, will continue to be deferred unti",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Approval: $321 ",
+        "summary": "on will not be fully allowed for recovery in rates. Instead, $231.8 million will be specifically disallowed for reasons explained herein. The remaining balance, currently $321 .I million, will continue to be deferred until September 1, 2024, at which time we will allow amortization through rates ove",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Approval: $231.8 million",
+        "summary": "curitized under-recovery and deferred costs. Admittedly, there is a price tag of the decision to disallow $231.8 million of the under-recovery and allow the balance of $321.1 million to be recovered over ten years beginning September 2024. With the four percent carrying",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Approval: $321.1 million",
+        "summary": "mittedly, there is a price tag of the decision to disallow $231.8 million of the under-recovery and allow the balance of $321.1 million to be recovered over ten years beginning September 2024. With the four percent carrying charge authorized in this Order, the allowable under-recovery",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Approval: $321 ",
+        "summary": "Commission disallows $231,769,431 of the under-recovery requested by the Companies. The Commission approves the remaining approximately $321 .Im illion under-recovery to be recovered through an ENEC rate increment designed to recover that amount over ten years, including a 4 percent per yea",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -12914,8 +13503,27 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Settlement: terms",
+        "summary": "inistrative and General (\"OHAG\") expenses in accordance with the terms 20 of the 2016 and 2017 APCU settlement stipulations. 7 Per the terms of the 2016 APCU 2 See Idaho Power/100-110. 3 Idaho Power/100, Brady/5. 4 See Idaho Power/100, Brady/15. 5 Idaho Power/100, Brady/5. 6 Idaho Power/10",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Settlement: Agreement",
+        "summary": "pulating Parties resolved all the issues in this case through these 8 conferences, resulting in the settlement stipulation as described in this Agreement. 9 AGREEMENT 10 23. The Stipulating Parties agree to a revenue requirement increase of $3.98 million 11 or 6.97 percent overall. The Stipulating P",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -25129,10 +25737,231 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 24,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Settlement: agreement",
+        "summary": "the evidentiary hearing in Docket No. 120015-EI, FPL, FIPUG, FEA, and SFHHA entered into a proposed settlement agreement which they presented to us as a proposed settlement of all issues in Docket No. 120015-EI. The RTR-l rider is also included in the proposed settlemen",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Settlement: agreement",
+        "summary": "settlement of all issues in Docket No. 120015-EI. The RTR-l rider is also included in the proposed settlement agreement between FPL, FEA, FIPUG and SFHHA as Tariff Sheet 8.203. We have not reached a decision and issued a final order in Docket No. 120015-EI prior to our",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Settlement: agreement",
+        "summary": "5-EI prior to our decision in this Docket No. 120001-EI. However, both the stipulation and proposed settlement agreement contemplate that the RTR-l rider will become effective after FPL's billing system has been modified to accommodate the rider, which FPL ORDER NO. PSC",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Settlement: agreement",
+        "summary": "ice under that rider. It is acknowledged that the OPC, FRF and others have objected to the proposed settlement agreement signed by FPL, FIPUG, SFHHA and FEA in Docket No. 120015­ EI and that agreement to the stipulation language on this issue does not constitute waiver",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Settlement: agreement",
+        "summary": "issue does not constitute waiver by OPC, FRF, or other parties of their objections to the proposed settlement agreement and to any orders impacted by our consideration of the proposed settlement agreement in Docket No. 120015-EI. Progress Energy Florida. Inc. Hedging A",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Settlement: agreement",
+        "summary": "o the proposed settlement agreement and to any orders impacted by our consideration of the proposed settlement agreement in Docket No. 120015-EI. Progress Energy Florida. Inc. Hedging Activities for August 2011 through July 2012 We reviewed PEF's hedging activities for",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Settlement: Agreement",
+        "summary": "Hedging Guidelines. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 5 Refund Pursuant to the Settlement Agreement The parties raised an issue of whether PEF correctly reflected the $129 million refund pursuant to the Settlement Agreement approved in Order No. PSC",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Settlement: Agreement",
+        "summary": "parties raised an issue of whether PEF correctly reflected the $129 million refund pursuant to the Settlement Agreement approved in Order No. PSC-12-0104-FOF-EI in the calculation of the 2013 factor. Testimony and evidence was entered into the record. Upon the conclusi",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Settlement: Agreement",
+        "summary": "alculation and will reduce 2013 fuel factors. 2 See also Paragraphs 9 and 10 in the Stipulation and Settlement Agreement approved by Order No. PSC-12-0104­ FOF-EI, issued March 8, 2012, in Docket No. 120022-EI, In re: Petition for limited proceeding to approve stipulati",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Settlement: agreement",
+        "summary": "8, 2012, in Docket No. 120022-EI, In re: Petition for limited proceeding to approve stipulation and settlement agreement by Progress Energy Florida, Inc. 3 See page 4 of Order No. PSC-II-0579-FOF-EI, issued December 16,2011, in Docket No. IIOOOI-EI, In re: Fuel and purc",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Settlement: agreement",
+        "summary": ". 4Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 6 In January 2012, PEF entered into a settlement agreement with OPC, FIPUG, FRF, PCS, and FEA.5 This agreement addressed issues involving nuclear cost recovery, base rates, the CR3 outage, fuel cost recovery",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Settlement: Agreement",
+        "summary": "Docket 120001-EI, incremental security rates shall be treated per the terms of the Stipulation and Settlement Agreement approved in the prior FPL rate case, Docket No. 080677-EI. Once we have made our decision in Docket No. 12001S-EI or in the event FPL implements a ba",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Settlement: agreement",
+        "summary": "id-course correction. It is acknowledged that the OPC, FRF and others have objected to the proposed settlement agreement signed by FPL, FIPUG, SFHHA and FEA in Docket No. 120015-EI, and that agreement to the stipulation language on this issue does not constitute waiver",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "Settlement: agreement",
+        "summary": "anguage on this issue does not constitute waiver by OPC and FRF of those objections to the proposed settlement agreement or orders impacted by our consideration of the proposed settlement agreement. West County Energy Center Unit 3 Cost Recovery FPL, the parties, and ou",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "Settlement: agreement",
+        "summary": "ctions to the proposed settlement agreement or orders impacted by our consideration of the proposed settlement agreement. West County Energy Center Unit 3 Cost Recovery FPL, the parties, and our staff raised the issue of what amount should be included in the capacity co",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "Settlement: Agreement",
+        "summary": "ation and Settlement approved in Docket No. 080677-EI, the prior FPL rate case. The Stipulation and Settlement Agreement approved in Docket No. 080677-EI contemplated the cost recovery of the revenue requirements associated 15 We approved the Proposed Settlement Agreeme",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 17,
+        "title": "Settlement: Agreement",
+        "summary": "I contemplated the cost recovery of the revenue requirements associated 15 We approved the Proposed Settlement Agreement, as modified, in Docket 12001S-EI on December 13,2012. However, we have not issued an Order. I6 Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 18,
+        "title": "Settlement: agreement",
+        "summary": "id-course correction. It is acknowledged that the OPC, FRF and others have objected to the proposed settlement agreement signed by FPL, FIPUG, SFHHA and FEA in Docket No. 12001S-EI and that agreement to the stipulation language on this issue does not constitute waiver b",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 19,
+        "title": "Settlement: agreement",
+        "summary": "anguage on this issue does not constitute waiver by OPC and FRF of those objections to the proposed settlement agreement or orders impacted by the our consideration of the proposed settlement agreement. Canaveral Modernization Project FPL, the parties, and our staff rai",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 20,
+        "title": "Settlement: agreement",
+        "summary": "ns to the proposed settlement agreement or orders impacted by the our consideration of the proposed settlement agreement. Canaveral Modernization Project FPL, the parties, and our staff raised the issue of what amount should be included in the capacity cost recovery cla",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 21,
+        "title": "Settlement: Agreement",
+        "summary": "Case Settlement Agreement that was filed in Docket No. 12001S-EI on August IS, 2012 (the \"Proposed Settlement Agreement\"), should we approve FPL's proposed GBRA factor of 3.527 percent for the Canaveral Modernization Project. The parties briefed the issue. Subsequent t",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 22,
+        "title": "Settlement: agreement",
+        "summary": "Docket No. 12001S-EI. It is acknowledged that the OPC, FRF and others have objected to the proposed settlement agreement signed by FPL, FIPUG, SFHHA and FEA in Docket No. 12001S-EI, and that agreement to the stipUlation language on this issue does not constitute waiver",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 23,
+        "title": "Settlement: agreement",
+        "summary": "anguage on this issue does not constitute waiver by OPC and FRF of those objections to the proposed settlement agreement or orders impacted by our consideration of the proposed settlement agreement. 17 Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 32 GENERI",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 24,
+        "title": "Settlement: agreement",
+        "summary": "ctions to the proposed settlement agreement or orders impacted by our consideration of the proposed settlement agreement. 17 Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 32 GENERIC CAPACITY COST RECOVERY FACTOR ISSUES Based on the testimony and exhibits in",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -29063,8 +29892,18 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Approval: $1,671,378.\n",
+        "summary": "filing 3 to $97,325,308 in Staff’s Attachment A.2. This has the effect of increasing the 4 maximum allowed increase in revenues (A.2 L6) by $1,671,378. 5 MODIFIED BALANCE SHEET APPROACH 6 Q. What is the methodology used to determine Working Capital Assets 7 (“WCA”) and Current, Accrued, and Other Li",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
