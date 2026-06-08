@@ -190,16 +190,25 @@ def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional
 
 
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
-    # State document dispatch
-    if entry.collection == "state_audit":
-        if entry.doc_type and "management" in entry.doc_type.lower():
-            return structure_state_pa_audit(entry, text)
+    # Read existing report to get collection/doc_type (set by sources.py)
+    existing_report_path = config.PROCESSED_DIR / entry.id / "report.json"
+    existing_report = None
+    if existing_report_path.exists():
+        existing_report = json.loads(existing_report_path.read_text(encoding="utf-8"))
+
+    collection = existing_report.get("collection") if existing_report else None
+    doc_type = existing_report.get("doc_type") if existing_report else None
+
+    # State document dispatch based on collection
+    if collection == "state_audit":
+        if doc_type and "management" in doc_type.lower():
+            return structure_state_pa_audit(entry, text, existing_report)
         # TODO: Add other state audit parsers here (service quality, compliance, etc.)
         # For now, return minimal report for unsupported state audit types
-        logger.debug("no parser for state audit type: %s", entry.doc_type)
+        logger.debug("no parser for state audit type: %s", doc_type)
 
-    if entry.collection == "state_rate_case":
-        return structure_state_rate_case(entry, text)
+    if collection == "state_rate_case":
+        return structure_state_rate_case(entry, text, existing_report)
 
     # FERC audit extraction (original)
     page1 = text.pages[0].text if text.pages else ""
@@ -323,7 +332,7 @@ def _extract_rate_case_findings(full_text: str, doc_type: str) -> list[Finding]:
     return findings
 
 
-def structure_state_rate_case(entry: ListingEntry, text: ReportText) -> AuditReport:
+def structure_state_rate_case(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
     """Parse state regulatory rate-case orders and decisions.
 
     Rate cases document regulatory decisions on cost recovery, rate design,
@@ -334,10 +343,20 @@ def structure_state_rate_case(entry: ListingEntry, text: ReportText) -> AuditRep
     as minimal findings.
     """
     full_raw = "\n".join(p.text for p in text.pages)
-    findings = _extract_rate_case_findings(full_raw, entry.doc_type or "")
+    doc_type = existing_report.get("doc_type") if existing_report else ""
+    findings = _extract_rate_case_findings(full_raw, doc_type)
 
+    # Preserve metadata from existing report if available
+    if existing_report:
+        return AuditReport(
+            **{k: v for k, v in existing_report.items() if k != "findings"},  # Copy all fields except findings
+            findings=findings,
+            finding_count=len([f for f in findings if not f.is_other_matter]),
+        )
+
+    # Fallback if no existing report
     return AuditReport(
-        source=entry.source,  # Use original source (state PUC, etc.)
+        source="State Regulatory Commission",
         id=entry.id,
         company=entry.company,
         company_raw=entry.company_raw,
@@ -353,102 +372,118 @@ def structure_state_rate_case(entry: ListingEntry, text: ReportText) -> AuditRep
         scanned_pages=text.scanned_pages,
         ocr_used=text.ocr_used,
         audit_period=None,
-        industry=entry.industry or "electric",
+        industry="electric",
         audit_type=None,
         functions=[],
         forms=[],
+        collection="state_rate_case",
         finding_count=len([f for f in findings if not f.is_other_matter]),
         findings=findings,
     )
 
 
-def structure_state_pa_audit(entry: ListingEntry, text: ReportText) -> AuditReport:
+def structure_state_pa_audit(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
     """Parse PA Public Utility Commission management & operations audits.
 
-    PA audits structure findings as:
-      I. Executive Summary
-        - Functional Area Rating Summary (exhibit)
-        - Summary of Recommendations (exhibit showing functional area -> recommendations)
-      II-XIV. Detailed Sections (one per functional area)
-        - Each section headed by functional area name
-        - Numbered recommendations within each section
+    PA audits structure findings via Exhibit I-3 (Summary of Recommendations):
+      - Format: Chapter heading (functional area)
+        followed by numbered recommendations with page/timeframe/benefits
+      - Example: "III-1 Complete and retain documentation..."
+                 "VI-3 Begin tracking pole attachment..."
 
-    This parser extracts functional areas as Finding titles and numbered
-    recommendations as Recommendation objects, matching the FERC structure.
+    This parser extracts:
+    - Functional areas from chapter headings as Finding titles
+    - Recommendations with their number and text
     """
     full_raw = "\n".join(p.text for p in text.pages)
     full = _clean(full_raw, None)
 
-    # Extract all functional area headings and their numbered recommendations
-    # PA audits have sections like "III-1 Executive Management", "IV-1 Financial", etc.
     findings: list[Finding] = []
 
-    # Pattern: "III. Section Title" or "III-1 Functional Area" followed by numbered items
-    section_pattern = re.compile(
-        r"(?m)^(?:(?:[IVX]{1,4}\.|-\d+)\s+)?([A-Z][A-Za-z\s&]+?)\s*(?:\n|$)",
-        re.MULTILINE
+    # Pattern to extract chapter headings: "Chapter VI – Affiliated Interests..."
+    chapter_pattern = re.compile(
+        r"Chapter\s+[A-Z]{1,3}\s+(?:–|—|-)\s+([^(\n]+)",
+        re.IGNORECASE
     )
 
-    # Find all numbered recommendations in the document
-    # Format: "1. Recommendation text" or "1. Title - Text"
-    rec_pattern = re.compile(r"(?m)^\s*(\d+)\.\s+(.+?)(?=^\s*\d+\.\s|^[A-Z]{2,}|$)", re.MULTILINE)
+    # Pattern to extract recommendation entries
+    # Format: "III-1 Recommendation text... PageNum TimeFrame BenefitLevel"
+    rec_pattern = re.compile(
+        r"^([A-Z]{1,3})-(\d+)\s+(.+?)(?=^[A-Z]{1,3}-\d+\s|^Chapter\s|^Exhibit|Exhibit\s|$)",
+        re.MULTILINE | re.DOTALL
+    )
 
-    # Extract functional area titles (appears in the summary of recommendations)
-    # Look for patterns like "Executive Management and Organizational Structure"
-    functional_areas = [
-        "Executive Management and Organizational Structure",
-        "Key Audit Matter",
-        "Corporate Governance",
-        "Affiliated Interests and Cost Allocations",
-        "Financial Management",
-        "Electric Operations",
-        "Emergency Preparedness",
-        "Materials Management",
-        "Customer Service",
-        "Information Technology",
-        "Fleet Management",
-        "Human Resources and Diversity",
-        "Staff Prudence Review",
-        "Utility Efficiency and Compliance",
-    ]
+    # Find all chapters and their recommendations
+    current_chapter = None
+    chapter_findings = {}
 
+    for m in chapter_pattern.finditer(full):
+        current_chapter = m.group(1).strip()
+        chapter_findings[current_chapter] = []
+
+    # Extract all recommendation entries
+    for m in rec_pattern.finditer(full):
+        rec_code = f"{m.group(1)}-{m.group(2)}"  # e.g., "III-1"
+        rec_text = m.group(3).strip()
+
+        # Clean up the text: remove page numbers, timeframes, benefits
+        # Keep only the recommendation itself
+        # Pattern: text until we hit "Page" or digits or timeframe keywords
+        rec_text = re.sub(r"\d+\s+(?:Month|Year|Months|Years)", "", rec_text)
+        rec_text = re.sub(r"(?:Low|Medium|High)\s+(?:Benefits?|Savings?)?.*", "", rec_text)
+        rec_text = re.sub(r"\$[\d,]+.*", "", rec_text)
+        rec_text = re.sub(r"\s+", " ", rec_text).strip()
+
+        # Filter out entries that are just page numbers or metadata
+        if len(rec_text) > 10 and not rec_text[0].isdigit():
+            # Try to assign to the correct chapter
+            chapter_letter = m.group(1)  # e.g., "VI"
+
+            # Find matching chapter
+            matched_chapter = None
+            for ch in chapter_findings.keys():
+                if chapter_letter in ch or chapter_letter in str(full[max(0, m.start() - 500):m.start()]):
+                    matched_chapter = ch
+                    break
+
+            if matched_chapter:
+                chapter_findings[matched_chapter].append({
+                    "number": int(m.group(2)),
+                    "text": rec_text,
+                    "code": rec_code
+                })
+
+    # Create Finding objects from chapters
     idx = 1
-    for area_title in functional_areas:
-        # Find this functional area in the text
-        if area_title in full:
-            # Find the section that belongs to this area
-            area_pattern = re.compile(
-                r"\b" + re.escape(area_title) + r"\b.*?(?=^[A-Z]{2,}|^\w+\s*(?:\n|$)|\Z)",
-                re.IGNORECASE | re.DOTALL | re.MULTILINE
+    for chapter_title, recs in chapter_findings.items():
+        if recs:
+            recommendations = [
+                Recommendation(number=r["number"], text=r["text"])
+                for r in sorted(recs, key=lambda x: x["number"])
+            ]
+            findings.append(
+                Finding(
+                    index=idx,
+                    title=chapter_title,
+                    summary=None,
+                    is_other_matter=False,
+                    recommendations=recommendations
+                )
             )
-            match = area_pattern.search(full)
-            if match:
-                area_section = match.group(0)
-                # Find all numbered recommendations in this section
-                recs = []
-                for rec_match in rec_pattern.finditer(area_section):
-                    num = int(rec_match.group(1))
-                    text_body = rec_match.group(2).strip()
-                    # Clean up whitespace
-                    text_body = re.sub(r"\s+", " ", text_body)
-                    recs.append(Recommendation(number=num, text=text_body))
+            idx += 1
 
-                if recs:  # Only add if there are recommendations
-                    findings.append(
-                        Finding(
-                            index=idx,
-                            title=area_title,
-                            summary=None,
-                            is_other_matter=False,
-                            recommendations=recs
-                        )
-                    )
-                    idx += 1
-
-    # If no findings found with the pattern, return empty report
     if not findings:
-        logger.warning("no PA audit findings extracted for %s", entry.id)
+        logger.warning("no PA audit findings extracted for %s; falling back to minimal report", entry.id)
 
+    # Preserve metadata from existing report if available
+    if existing_report:
+        return AuditReport(
+            **{k: v for k, v in existing_report.items() if k != "findings"},  # Copy all fields except findings
+            findings=findings,
+            finding_count=len(findings),
+        )
+
+    # Fallback if no existing report
     return AuditReport(
         source="PA PUC Bureau of Audits",
         id=entry.id,
@@ -470,6 +505,7 @@ def structure_state_pa_audit(entry: ListingEntry, text: ReportText) -> AuditRepo
         audit_type=None,
         functions=[],
         forms=[],
+        collection="state_audit",
         finding_count=len(findings),
         findings=findings,
     )
