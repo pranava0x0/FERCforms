@@ -177,6 +177,18 @@ python -m pipeline.patterns && python -m pipeline.build
 
 Key insight: seed documents are identified by their presence in reports.json with `collection:state_rate_case` or `collection:state_audit`, not by any special path convention. The extraction pipeline treats all documents uniformly once loaded.
 
+### Running long pipeline commands (fetch/extract) in the background — DO NOT hand-roll waiters
+
+`pipeline.sources` / `pipeline.extract` runs can take many minutes (large PDFs, F5/Cloudflare backoff). Hard-won rules from the 2026-06-08 session (these failures cost real time):
+
+- **Launch with `run_in_background: true` and wait for the completion notification.** The harness notifies you when the process exits — that IS your signal. Do other independent work meanwhile, or end the turn. **Do not write a `while pgrep …; do sleep N; done` waiter** to block on it.
+- **`pgrep -f "pipeline.sources"` matches the waiter shell itself** (the loop's own command line contains that string) → the loop never exits and spins forever; you'll have to `pkill -f "while pgrep"` it. If you *must* poll a process, match the real invocation: `pgrep -f "python.* -m pipeline.sources"`, never the bare module string. To wait on a condition, use the **Monitor** tool, not inline `sleep`.
+- **`sleep N; <cmd>` chains are blocked by the harness** — don't chain a sleep before reading output.
+- **Never run two instances of the same stage on overlapping seeds concurrently** — they write the same `data/processed/<id>/` and race. Finish one, then start the next.
+- **Before declaring done**, run `pgrep -fl "<project-path>"` and `pkill`/`kill` any lingering waiter shells.
+- **Don't gate a commit on a piped filter:** `pytest … | grep passed && git commit …` silently skips the commit when `grep` finds nothing on the piped line. Run tests, read the summary, then commit as a separate step.
+- **Committing a NEW processed record?** `data/processed/*/report.json` is gitignored by default — a plain `git add data/processed` skips new records (baked-but-uncommitted = phantom). Use `git add -f data/processed/<id>/report.json`; the test `test_every_processed_report_is_git_tracked` enforces committed == baked.
+
 
 ---
 
