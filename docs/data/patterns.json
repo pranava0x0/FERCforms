@@ -1,11 +1,11 @@
 {
-  "report_count": 254,
-  "finding_count": 1155,
+  "report_count": 256,
+  "finding_count": 1173,
   "other_matter_count": 10,
-  "recommendation_count": 1496,
+  "recommendation_count": 1541,
   "by_industry": {
-    "electric": 206,
-    "gas": 23,
+    "electric": 207,
+    "gas": 24,
     "oil": 18,
     "unknown": 7
   },
@@ -21,9 +21,9 @@
     "2019": 12,
     "2020": 13,
     "2021": 14,
-    "2022": 17,
+    "2022": 18,
     "2023": 19,
-    "2024": 35,
+    "2024": 36,
     "2025": 51,
     "2026": 4
   },
@@ -166,13 +166,13 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 43,
-      "report_count": 29,
+      "finding_count": 45,
+      "report_count": 31,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Settlement: agreement",
-        "Reporting of Transactions with Associated (Affiliated) Companies",
-        "Recording of Carrier Property"
+        "Affiliated Interests and Cost Allocations",
+        "Reporting of Transactions with Associated (Affiliated) Companies"
       ]
     },
     {
@@ -301,6 +301,10 @@
       "count": 6
     },
     {
+      "title": "Customer Service",
+      "count": 5
+    },
+    {
       "title": "Approval: $5,475 ",
       "count": 5
     },
@@ -329,27 +333,23 @@
       "count": 4
     },
     {
+      "title": "Financial Management",
+      "count": 4
+    },
+    {
+      "title": "Emergency Preparedness",
+      "count": 4
+    },
+    {
+      "title": "Human Resources and Diversity",
+      "count": 4
+    },
+    {
       "title": "Excess Accumulated Deferred Income Tax",
       "count": 4
     },
     {
       "title": "Application of Nonapproved Depreciation Rates",
-      "count": 4
-    },
-    {
-      "title": "Accounting for Asset Retirement Obligations",
-      "count": 4
-    },
-    {
-      "title": "Accounting for Nonoperating Expenses",
-      "count": 4
-    },
-    {
-      "title": "Wholesale Storm Damage Revenues",
-      "count": 4
-    },
-    {
-      "title": "Commitment Fees",
       "count": 4
     }
   ],

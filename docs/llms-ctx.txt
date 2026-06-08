@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="254 structured records (120 FERC audits, 14 prudence reviews, 16 state PUC audits); 1155 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="256 structured records (120 FERC audits, 14 prudence reviews, 18 state PUC audits); 1173 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-08). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -2951,6 +2951,42 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
 </doc>
+<doc title="National Fuel Gas Distribution Corporation" collection="State PUC Audits" docket="D-2023-3040107" issued="2024-11-07" industry="gas" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-national-fuel-gas-distribution-corporation-11-07-2024">
+Finding 1: Corporate Governance
+1. Expand NFG Co.’s Board of Directors’ expertise in key skills and a variety of strategic priorities outside the natural gas industry. (source p. 22)
+2. Implement a requirement that NFG Co.’s directors must formally submit signed acknowledgements of the Code of Business Conduct and Ethics, Statements of Disclosure, and Insider Trading Policy, annually. (source p. 22)
+Finding 2: Affiliated Interests and Cost Allocations
+3. Update the appropriate affiliated interest agreement(s) to include a description of the emergency transfer of trucks and/or equipment during the normal course of business; however, non-emergency transfers of trucks and/or equipment, in excess of $10,000, require advance approval by the PA PUC. (source p. 29)
+4. Conduct periodic market studies to support reasonableness of transactions with affiliates. (source p. 31)
+5. Develop and implement a routine internal audit schedule that provides ongoing review of every department using indirect/common cost allocation and consider a periodic third-party consultant study of the entire indirect/common cost allocation process for optimal control. (source p. 32)
+6. Revise the Service Agreement and Cost Allocation Manual with consistent terms and detail and then submit to the PA PUC for approval. (source p. 33)
+Finding 3: Financial Management
+7. Revise the Dividend Policy to include advance notification to the PA PUC for any dividend payments by NFGDC-PA which would exceed 85% of net income. (source p. 40)
+8. Analyze and improve the billing process to reduce billing lag and decrease associated interest expense. (source p. 42)
+Finding 4: Gas Operations
+9. Modernize the geographic information system and optimize the mapping tool interface and proactively verify historical infrastructure records to improve mapping accuracy. (source p. 49)
+Finding 5: Gas Operations (continued)
+10. Acquire and implement automated metering technology. (source p. 51)
+11. Discontinue collecting physical forms of payment on customers’ premises. (source p. 53)
+Finding 6: Customer Service
+12. Track billing adjustments by reason to identify potential process improvements to decrease the number of billing adjustments. (source p. 59)
+13. Submit a supplement to revise tariff language regarding residential security deposits to ensure ample information is available for customers and applicants. (source p. 60)
+14. Evaluate the effectiveness of current, while researching additional, outreach efforts to focus on the most effective outreach strategies and rigorously evaluate vendor performance to ensure optimal support. (source p. 61)
+Finding 7: Purchasing and Materials Management
+15. Develop and implement procedures to control rolling stock to ensure accuracy of work order accounting and mapping records and to impede theft and/or material misuse. (source p. 66)
+16. Develop and implement a quantitative goal for annual diverse spend considering a component of year-over-year improvement. (source p. 68)
+Finding 8: Emergency Preparedness
+17. Designate an individual or group to provide oversight over and develop a centralized emergency response guiding document repository. (source p. 72)
+18. Identify safety and/or security measures needed at each NFGDC-PA facility and install the appropriate equipment. (source p. 73)
+Finding 9: Human Resources and Diversity
+19. Conduct periodic salary surveys for all hourly positions to ensure offering competitive compensation to attract and retain this workforce segment. (source p. 80)
+20. Reduce chronic absenteeism through the enhancement and consistent enforcement of sick leave policies and identify union contract terms that are incompatible with these policies to revise during the next contract renegotiation. (source p. 82)
+Finding 10: Human Resources and Diversity (continued)
+21. Analyze safety incident root cause data to identify areas of improvement for training and safety programs and enhance enforcement procedures to appropriately motivate employee compliance. (source p. 85)
+Finding 11: Information Technology
+22. Conduct information technology focused end-user surveys to gauge satisfaction and collect feedback to determine potential areas of improvement. (source p. 93)
+23. Implement the information technology improvement strategy to improve NFG Co.’s performance on future routine third-party maturity assessments. (source p. 94)
+</doc>
 <doc title="Rocky Mountain Power (PacifiCorp)" collection="State PUC Audits" docket="24-035-01" issued="2024-11-05" industry="electric" source="https://psc.utah.gov/electric/orders-notices/electric-2025/">
 Listed for reference (not machine-parsed into findings).
 Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel &amp; purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).
@@ -3048,6 +3084,37 @@ Finding 10: Fleet Management
 Finding 11: Human Resources and Diversity
 31. Implement strategies for recruitment and retention of “at-risk” positions. (source p. 84)
 32. Drive safety performance to meet industry standards. (source p. 84)
+</doc>
+<doc title="PECO Energy Company" collection="State PUC Audits" docket="D-2021-3023906" issued="2022-08-25" industry="electric" source="https://www.puc.pa.gov/press-release/2022/puc-issues-management-and-operations-audit-and-implementation-plan-for-peco-energy-company">
+Finding 1: Affiliated Interests and Cost Allocations
+1. Submit a detailed proposal to the Commission for the appropriate crediting of ratepayers due to PECO’s corrected billings for the use of PECO’s fiber network. (source p. 30)
+2. Document PECO’s annual process and continue to perform detailed reviews of all allocation factors, including utility-owned project allocation rates, to ensure costs are distributed in accordance with approved agreements. (source p. 30)
+3. File PECO’s money pool agreement for approval with the PUC. (source p. 30)
+Finding 2: Electric Operations
+4. Reduce Electric Operations staff overtime to 15% overtime hours per normal hours worked or less. (source p. 55)
+5. Improve SAIDI and CAIDI to at or below the PUC Benchmarks. (source p. 55)
+6. Reduce the number of customers experiencing multiple interruptions and strive to have zero CEMI 10+. (source p. 55)
+7. Reduce outages caused by broken/uprooted vegetation to the 2015-2018 average levels (source p. 55)
+8. Reduce interruptions caused by equipment failures. (source p. 55)
+Finding 3: Gas Operations
+9. Reduce company-at-fault hits on gas infrastructure. (source p. 73)
+10. Study and then identify ways to reduce plastic pipe main and service damages with a focus on line hits. (source p. 73)
+Finding 4: Gas Operations (continued)
+11. Reduce Gas Operations staff overtime to 15% overtime hours per normal hours worked or less. (source p. 73)
+12. Accelerate the rate of GPS location for key gas infrastructure. (source p. 73)
+Finding 5: Emergency Preparedness
+13. Correct minor deficiencies in physical security. (source p. 78)
+14. Ensure that all fire extinguishers and first aid kits are being inspected and tagged monthly. (source p. 78)
+15. Add an update and accountability section to the Safety Rulebook, move the table of contents closer to the beginning, and add chapter tabs or margin labels to encourage ease of navigation. (source p. 78)
+16. Develop a lifecycle tracking and replacement program for security equipment. (source p. 78)
+Finding 6: Customer Service
+17. Continue outreach efforts to engage payment troubled customers, leverage pandemic and low- income resources to help reduce the overall level of outstanding customer balances. (source p. 93)
+18. Refocus efforts on customer experiences to drive customer service satisfaction through active listening and first call resolution. (source p. 93)
+19. Complete implementation of the replacement CIS. (source p. 93)
+20. Identify and address the root cause of CSR separations. (source p. 93)
+Finding 7: Human Resources and Diversity
+21. Improve Safety Performance. (source p. 108)
+22. Reduce the rate of all motor vehicle accidents. (source p. 108)
 </doc>
 <doc title="FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)" collection="State PUC Audits" docket="n/a" issued="2022-06-16" industry="electric" source="https://www.puc.pa.gov/press-release/2022/puc-issues-management-audit-and-implementation-plan-for-firstenergy-pennsylvania-companies">
 Finding 1: Executive Management and Organizational Structure

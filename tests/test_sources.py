@@ -196,6 +196,40 @@ def test_committed_seeds_have_no_fabrication_markers():
     assert not offenders, "fabricated/unverified seeds present:\n" + "\n".join(offenders)
 
 
+def test_every_processed_report_is_git_tracked():
+    """Phantom-record guard (regression for the 2026-06-08 gitignore trap). `.gitignore`
+    ignores `data/processed/*/report.json` by default — committed records are force-added
+    (`git add -f`), and git keeps honoring updates to already-tracked files. The trap: a
+    NEW record written by the pipeline is silently skipped by a plain `git add data/processed`,
+    so the baked docs/data/reports.json references a record whose report.json was never
+    committed — exactly the phantom the corpus had (322 baked / 248 real). Every report.json
+    on disk must be git-tracked (or staged) so the committed corpus == the baked corpus."""
+    import subprocess
+
+    try:
+        tracked = set(subprocess.check_output(
+            ["git", "ls-files", "data/processed/*/report.json"],
+            cwd=config.ROOT, text=True,
+        ).split())
+        staged = set(subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only", "--", "data/processed"],
+            cwd=config.ROOT, text=True,
+        ).split())
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pytest.skip("not a git checkout")
+    committed = tracked | {s for s in staged if s.endswith("report.json")}
+
+    on_disk = {
+        p.relative_to(config.ROOT).as_posix()
+        for p in config.PROCESSED_DIR.glob("*/report.json")
+    }
+    untracked = sorted(on_disk - committed)
+    assert not untracked, (
+        "report.json on disk but NOT git-tracked (gitignore phantom — force-add with "
+        "`git add -f`):\n" + "\n".join(untracked)
+    )
+
+
 def test_every_committed_report_is_gov_sourced():
     """Corpus-wide provenance guard: EVERY structured report (FERC audits, prudence
     reviews, and state audits alike) must carry an official-government source_page_url

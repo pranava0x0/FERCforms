@@ -62,5 +62,37 @@
     "captured_at": "2026-06-01",
     "source_note": "Management Efficiency Investigation (follow-up to the 2022 Management & Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf.",
     "parse": false
+  },
+  {
+    "id": "2022-08-25_peco-energy_pa-mo-audit",
+    "company": "PECO Energy Company",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1756720.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2022/puc-issues-management-and-operations-audit-and-implementation-plan-for-peco-energy-company",
+    "issued_date": "2022-08-25",
+    "docket": "D-2021-3023906",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued July 2022'); PUC publication 2022-08-25; 22 recommendations. PDF: puc.pa.gov/pcdocs/1756720.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
+  },
+  {
+    "id": "2024-11-07_national-fuel-gas-distribution_pa-mo-audit",
+    "company": "National Fuel Gas Distribution Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "gas",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1855524.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-national-fuel-gas-distribution-corporation-11-07-2024",
+    "issued_date": "2024-11-07",
+    "docket": "D-2023-3040107",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued October 2024'); PUC publication 2024-11-07; 23 recommendations. PDF: puc.pa.gov/pcdocs/1855524.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
   }
 ]

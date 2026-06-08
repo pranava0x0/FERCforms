@@ -138,6 +138,55 @@ def test_structure_mo_audit_maps_findings_and_numbers_recs():
     assert report.collection == "state_audit" and report.jurisdiction == "PA"
 
 
+# National Fuel Gas variant: chapters as "III Title" (no "Chapter", no dash) and rec
+# labels as "IV – 1" (spaces + en-dash). Same table, different typographic convention.
+_EXHIBIT_NFG_VARIANT = """Exhibit I-3
+Summary of Recommendations
+Rec.
+No.
+Recommendation
+Page
+No.
+Initiation
+Time Frame
+Benefits
+III Executive Management and Organizational Structure
+None
+IV Corporate Governance
+IV – 1
+Expand the Board of Directors' expertise in key
+skills outside the natural gas industry.
+22
+12 – 18 Months
+Medium
+V Affiliated Interests and Cost Allocations
+V – 1
+Update the affiliated interest agreement(s) to
+include a description of emergency transfers.
+29
+6 – 9 Months
+Low
+II.
+BACKGROUND
+"""
+
+
+def test_parse_handles_nfg_variant_nodash_chapters_and_endash_labels():
+    """National Fuel Gas's M&O audit uses 'III Title' chapters (no 'Chapter'/dash) and
+    'IV – 1' rec labels (spaced en-dash), and puts the Summary in Exhibit I-3 (its I-2
+    is Quantifiable Savings). The parser must handle this without a 'Chapter' prefix."""
+    chapters = state_structure.parse_exhibit_i2(_EXHIBIT_NFG_VARIANT)
+    by_title = dict(chapters)
+    assert "Executive Management and Organizational Structure" in by_title
+    assert by_title["Executive Management and Organizational Structure"] == []  # "None"
+    assert by_title["Corporate Governance"] == [
+        ("Expand the Board of Directors' expertise in key skills outside the natural gas industry.", 22)
+    ]
+    assert by_title["Affiliated Interests and Cost Allocations"] == [
+        ("Update the affiliated interest agreement(s) to include a description of emergency transfers.", 29)
+    ]
+
+
 def test_non_mo_format_returns_none():
     """A document without an Exhibit I-2 yields None (caller falls back to metadata-only)."""
     pages = [PageText(page=1, char_count=20, is_image_only=False, extractor="pymupdf", text="A legal order, no table.")]
@@ -151,6 +200,8 @@ def test_non_mo_format_returns_none():
         ("2024-07-11_ppl-electric-utilities_pa-mo-audit", 8, 19),
         ("2022-06-16_firstenergy-pennsylvania-companies_pa-mo-audit", 11, 26),
         ("2023-03-02_philadelphia-gas-works_pa-mo-audit", 11, 32),
+        ("2022-08-25_peco-energy_pa-mo-audit", 7, 22),
+        ("2024-11-07_national-fuel-gas-distribution_pa-mo-audit", 11, 23),
     ],
 )
 def test_real_pa_mo_audits_regression(rid, min_findings, min_recs):

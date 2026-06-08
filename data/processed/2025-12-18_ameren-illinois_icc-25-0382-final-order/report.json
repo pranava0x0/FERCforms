@@ -1,0 +1,30 @@
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "IL",
+  "source": "Illinois Commerce Commission",
+  "doc_type": "final order",
+  "id": "2025-12-18_ameren-illinois_icc-25-0382-final-order",
+  "company": "Ameren Illinois Company",
+  "company_raw": "Ameren Illinois Company",
+  "docket": "25-0382",
+  "docket_full": null,
+  "issued_date": "2025-12-18",
+  "source_page_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/374217",
+  "pdf_download_url": "https://www.icc.illinois.gov/docket/P2025-0382/documents/374217/files/655909.pdf",
+  "captured_at": "2026-06-07",
+  "source_note": "Final Order of the Illinois Commerce Commission in Ameren Illinois Company's electric rate reconciliation case, ICC Docket 25-0382, issued December 18, 2025. Approved $48M rate increase (reconciliation case). Listed for reference (metadata-only). Source: ICC e-Docket, document 374217 / file 655909 (landing: www.icc.illinois.gov/docket/P2025-0382/documents/374217).",
+  "archived_via": null,
+  "page_count": 112,
+  "scanned_pages": [
+    2
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

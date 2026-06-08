@@ -4265,6 +4265,269 @@
   },
   {
     "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2024-11-07_national-fuel-gas-distribution_pa-mo-audit",
+    "company": "National Fuel Gas Distribution Corporation",
+    "company_raw": "National Fuel Gas Distribution Corporation",
+    "docket": "D-2023-3040107",
+    "docket_full": null,
+    "issued_date": "2024-11-07",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-national-fuel-gas-distribution-corporation-11-07-2024",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1855524.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued October 2024'); PUC publication 2024-11-07; 23 recommendations. PDF: puc.pa.gov/pcdocs/1855524.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 106,
+    "scanned_pages": [
+      1,
+      106
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 11,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Expand NFG Co.’s Board of Directors’ expertise in key skills and a variety of strategic priorities outside the natural gas industry.",
+            "source_page": 22
+          },
+          {
+            "number": 2,
+            "text": "Implement a requirement that NFG Co.’s directors must formally submit signed acknowledgements of the Code of Business Conduct and Ethics, Statements of Disclosure, and Insider Trading Policy, annually.",
+            "source_page": 22
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Update the appropriate affiliated interest agreement(s) to include a description of the emergency transfer of trucks and/or equipment during the normal course of business; however, non-emergency transfers of trucks and/or equipment, in excess of $10,000, require advance approval by the PA PUC.",
+            "source_page": 29
+          },
+          {
+            "number": 4,
+            "text": "Conduct periodic market studies to support reasonableness of transactions with affiliates.",
+            "source_page": 31
+          },
+          {
+            "number": 5,
+            "text": "Develop and implement a routine internal audit schedule that provides ongoing review of every department using indirect/common cost allocation and consider a periodic third-party consultant study of the entire indirect/common cost allocation process for optimal control.",
+            "source_page": 32
+          },
+          {
+            "number": 6,
+            "text": "Revise the Service Agreement and Cost Allocation Manual with consistent terms and detail and then submit to the PA PUC for approval.",
+            "source_page": 33
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 7,
+            "text": "Revise the Dividend Policy to include advance notification to the PA PUC for any dividend payments by NFGDC-PA which would exceed 85% of net income.",
+            "source_page": 40
+          },
+          {
+            "number": 8,
+            "text": "Analyze and improve the billing process to reduce billing lag and decrease associated interest expense.",
+            "source_page": 42
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 9,
+            "text": "Modernize the geographic information system and optimize the mapping tool interface and proactively verify historical infrastructure records to improve mapping accuracy.",
+            "source_page": 49
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Gas Operations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 10,
+            "text": "Acquire and implement automated metering technology.",
+            "source_page": 51
+          },
+          {
+            "number": 11,
+            "text": "Discontinue collecting physical forms of payment on customers’ premises.",
+            "source_page": 53
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Track billing adjustments by reason to identify potential process improvements to decrease the number of billing adjustments.",
+            "source_page": 59
+          },
+          {
+            "number": 13,
+            "text": "Submit a supplement to revise tariff language regarding residential security deposits to ensure ample information is available for customers and applicants.",
+            "source_page": 60
+          },
+          {
+            "number": 14,
+            "text": "Evaluate the effectiveness of current, while researching additional, outreach efforts to focus on the most effective outreach strategies and rigorously evaluate vendor performance to ensure optimal support.",
+            "source_page": 61
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Purchasing and Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 15,
+            "text": "Develop and implement procedures to control rolling stock to ensure accuracy of work order accounting and mapping records and to impede theft and/or material misuse.",
+            "source_page": 66
+          },
+          {
+            "number": 16,
+            "text": "Develop and implement a quantitative goal for annual diverse spend considering a component of year-over-year improvement.",
+            "source_page": 68
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 17,
+            "text": "Designate an individual or group to provide oversight over and develop a centralized emergency response guiding document repository.",
+            "source_page": 72
+          },
+          {
+            "number": 18,
+            "text": "Identify safety and/or security measures needed at each NFGDC-PA facility and install the appropriate equipment.",
+            "source_page": 73
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 19,
+            "text": "Conduct periodic salary surveys for all hourly positions to ensure offering competitive compensation to attract and retain this workforce segment.",
+            "source_page": 80
+          },
+          {
+            "number": 20,
+            "text": "Reduce chronic absenteeism through the enhancement and consistent enforcement of sick leave policies and identify union contract terms that are incompatible with these policies to revise during the next contract renegotiation.",
+            "source_page": 82
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Human Resources and Diversity (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Analyze safety incident root cause data to identify areas of improvement for training and safety programs and enhance enforcement procedures to appropriately motivate employee compliance.",
+            "source_page": 85
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 22,
+            "text": "Conduct information technology focused end-user surveys to gauge satisfaction and collect feedback to determine potential areas of improvement.",
+            "source_page": 93
+          },
+          {
+            "number": 23,
+            "text": "Implement the information technology improvement strategy to improve NFG Co.’s performance on future routine third-party maturity assessments.",
+            "source_page": 94
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
     "jurisdiction": "UT",
     "source": "Public Service Commission of Utah",
     "doc_type": "energy balancing account audit report",
@@ -12907,6 +13170,223 @@
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2022-08-25_peco-energy_pa-mo-audit",
+    "company": "PECO Energy Company",
+    "company_raw": "PECO Energy Company",
+    "docket": "D-2021-3023906",
+    "docket_full": null,
+    "issued_date": "2022-08-25",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2022/puc-issues-management-and-operations-audit-and-implementation-plan-for-peco-energy-company",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1756720.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued July 2022'); PUC publication 2022-08-25; 22 recommendations. PDF: puc.pa.gov/pcdocs/1756720.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 126,
+    "scanned_pages": [
+      126
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 7,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Submit a detailed proposal to the Commission for the appropriate crediting of ratepayers due to PECO’s corrected billings for the use of PECO’s fiber network.",
+            "source_page": 30
+          },
+          {
+            "number": 2,
+            "text": "Document PECO’s annual process and continue to perform detailed reviews of all allocation factors, including utility-owned project allocation rates, to ensure costs are distributed in accordance with approved agreements.",
+            "source_page": 30
+          },
+          {
+            "number": 3,
+            "text": "File PECO’s money pool agreement for approval with the PUC.",
+            "source_page": 30
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 2,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Reduce Electric Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+            "source_page": 55
+          },
+          {
+            "number": 5,
+            "text": "Improve SAIDI and CAIDI to at or below the PUC Benchmarks.",
+            "source_page": 55
+          },
+          {
+            "number": 6,
+            "text": "Reduce the number of customers experiencing multiple interruptions and strive to have zero CEMI 10+.",
+            "source_page": 55
+          },
+          {
+            "number": 7,
+            "text": "Reduce outages caused by broken/uprooted vegetation to the 2015-2018 average levels",
+            "source_page": 55
+          },
+          {
+            "number": 8,
+            "text": "Reduce interruptions caused by equipment failures.",
+            "source_page": 55
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 9,
+            "text": "Reduce company-at-fault hits on gas infrastructure.",
+            "source_page": 73
+          },
+          {
+            "number": 10,
+            "text": "Study and then identify ways to reduce plastic pipe main and service damages with a focus on line hits.",
+            "source_page": 73
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Gas Operations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 11,
+            "text": "Reduce Gas Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+            "source_page": 73
+          },
+          {
+            "number": 12,
+            "text": "Accelerate the rate of GPS location for key gas infrastructure.",
+            "source_page": 73
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 13,
+            "text": "Correct minor deficiencies in physical security.",
+            "source_page": 78
+          },
+          {
+            "number": 14,
+            "text": "Ensure that all fire extinguishers and first aid kits are being inspected and tagged monthly.",
+            "source_page": 78
+          },
+          {
+            "number": 15,
+            "text": "Add an update and accountability section to the Safety Rulebook, move the table of contents closer to the beginning, and add chapter tabs or margin labels to encourage ease of navigation.",
+            "source_page": 78
+          },
+          {
+            "number": 16,
+            "text": "Develop a lifecycle tracking and replacement program for security equipment.",
+            "source_page": 78
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 17,
+            "text": "Continue outreach efforts to engage payment troubled customers, leverage pandemic and low- income resources to help reduce the overall level of outstanding customer balances.",
+            "source_page": 93
+          },
+          {
+            "number": 18,
+            "text": "Refocus efforts on customer experiences to drive customer service satisfaction through active listening and first call resolution.",
+            "source_page": 93
+          },
+          {
+            "number": 19,
+            "text": "Complete implementation of the replacement CIS.",
+            "source_page": 93
+          },
+          {
+            "number": 20,
+            "text": "Identify and address the root cause of CSR separations.",
+            "source_page": 93
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Improve Safety Performance.",
+            "source_page": 108
+          },
+          {
+            "number": 22,
+            "text": "Reduce the rate of all motor vehicle accidents.",
+            "source_page": 108
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_audit",

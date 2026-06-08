@@ -40,11 +40,20 @@ logger = logging.getLogger(__name__)
 # prose "E. Recommendation Summary" mentions "INITIATION TIME FRAME"/"BENEFITS"
 # inline, so anchoring on the two as *consecutive* lines hits the real table.
 _TABLE_HEADER_RE = re.compile(r"Time\s*Frame\s*\n\s*Benefits\s*\n")
+# Functional-area / chapter heading. Two real PA M&O layouts:
+#   "Chapter III – Executive Management…"  (PPL/PGW/FirstEnergy/PECO), and
+#   "III Executive Management…"            (National Fuel Gas — no "Chapter", no dash).
+# The second form requires a capital-letter title start so it can't match a rec
+# label ("IV – 1" → after the Roman comes "– 1", not a letter) or stray numerics.
 _CHAPTER_RE = re.compile(r"^Chapter\s+[IVXLCM]+\s*[–—-]\s*(.+)$")
-_REC_LABEL_RE = re.compile(r"^[IVXLCM]+-\d+[A-Za-z]?$")
+_CHAPTER_NODASH_RE = re.compile(r"^[IVXLCM]+\s+([A-Z][A-Za-z].+)$")
+# Recommendation label: "IV-1" (PECO etc.) or "IV – 1" (NFG — spaces + en/em dash).
+_REC_LABEL_RE = re.compile(r"^[IVXLCM]+\s*[–—-]\s*\d+[A-Za-z]?$|^[IVXLCM]+-\d+[A-Za-z]?$")
 _PAGE_NO_RE = re.compile(r"^\d{1,4}$")
 _PAGE_MARK_RE = re.compile(r"^-?\s*\d{1,4}\s*-?$")           # "- 8 -" footer marker
-_HDR_START_RE = re.compile(r"^(Exhibit\s+I-2|Page\s+\d+\s+of\s+\d+)$", re.I)
+# Page-break header to skip mid-table. The exhibit number varies by report (I-2 for
+# PECO, I-3 for NFG whose I-2 is the Quantifiable Savings Summary), so match any I-N.
+_HDR_START_RE = re.compile(r"^(Exhibit\s+I-\d+|Page\s+\d+\s+of\s+\d+)$", re.I)
 
 
 def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
@@ -89,7 +98,7 @@ def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
             i += 1  # step past "Benefits"
             continue
 
-        ch = _CHAPTER_RE.match(line)
+        ch = _CHAPTER_RE.match(line) or _CHAPTER_NODASH_RE.match(line)
         if ch:
             flush_rec()
             chapters.append((re.sub(r"\s+", " ", ch.group(1)).strip(), []))

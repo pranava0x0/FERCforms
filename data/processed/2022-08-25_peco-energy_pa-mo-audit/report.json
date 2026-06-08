@@ -1,0 +1,197 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2022-08-25_peco-energy_pa-mo-audit",
+  "company": "PECO Energy Company",
+  "company_raw": "PECO Energy Company",
+  "docket": "D-2021-3023906",
+  "docket_full": null,
+  "issued_date": "2022-08-25",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2022/puc-issues-management-and-operations-audit-and-implementation-plan-for-peco-energy-company",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1756720.pdf",
+  "captured_at": "2026-06-08",
+  "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued July 2022'); PUC publication 2022-08-25; 22 recommendations. PDF: puc.pa.gov/pcdocs/1756720.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+  "archived_via": null,
+  "page_count": 126,
+  "scanned_pages": [
+    126
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Affiliated Interests and Cost Allocations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Submit a detailed proposal to the Commission for the appropriate crediting of ratepayers due to PECO’s corrected billings for the use of PECO’s fiber network.",
+          "source_page": 30
+        },
+        {
+          "number": 2,
+          "text": "Document PECO’s annual process and continue to perform detailed reviews of all allocation factors, including utility-owned project allocation rates, to ensure costs are distributed in accordance with approved agreements.",
+          "source_page": 30
+        },
+        {
+          "number": 3,
+          "text": "File PECO’s money pool agreement for approval with the PUC.",
+          "source_page": 30
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Reduce Electric Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+          "source_page": 55
+        },
+        {
+          "number": 5,
+          "text": "Improve SAIDI and CAIDI to at or below the PUC Benchmarks.",
+          "source_page": 55
+        },
+        {
+          "number": 6,
+          "text": "Reduce the number of customers experiencing multiple interruptions and strive to have zero CEMI 10+.",
+          "source_page": 55
+        },
+        {
+          "number": 7,
+          "text": "Reduce outages caused by broken/uprooted vegetation to the 2015-2018 average levels",
+          "source_page": 55
+        },
+        {
+          "number": 8,
+          "text": "Reduce interruptions caused by equipment failures.",
+          "source_page": 55
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Reduce company-at-fault hits on gas infrastructure.",
+          "source_page": 73
+        },
+        {
+          "number": 10,
+          "text": "Study and then identify ways to reduce plastic pipe main and service damages with a focus on line hits.",
+          "source_page": 73
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Gas Operations (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Reduce Gas Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+          "source_page": 73
+        },
+        {
+          "number": 12,
+          "text": "Accelerate the rate of GPS location for key gas infrastructure.",
+          "source_page": 73
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Correct minor deficiencies in physical security.",
+          "source_page": 78
+        },
+        {
+          "number": 14,
+          "text": "Ensure that all fire extinguishers and first aid kits are being inspected and tagged monthly.",
+          "source_page": 78
+        },
+        {
+          "number": 15,
+          "text": "Add an update and accountability section to the Safety Rulebook, move the table of contents closer to the beginning, and add chapter tabs or margin labels to encourage ease of navigation.",
+          "source_page": 78
+        },
+        {
+          "number": 16,
+          "text": "Develop a lifecycle tracking and replacement program for security equipment.",
+          "source_page": 78
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Continue outreach efforts to engage payment troubled customers, leverage pandemic and low- income resources to help reduce the overall level of outstanding customer balances.",
+          "source_page": 93
+        },
+        {
+          "number": 18,
+          "text": "Refocus efforts on customer experiences to drive customer service satisfaction through active listening and first call resolution.",
+          "source_page": 93
+        },
+        {
+          "number": 19,
+          "text": "Complete implementation of the replacement CIS.",
+          "source_page": 93
+        },
+        {
+          "number": 20,
+          "text": "Identify and address the root cause of CSR separations.",
+          "source_page": 93
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Human Resources and Diversity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Improve Safety Performance.",
+          "source_page": 108
+        },
+        {
+          "number": 22,
+          "text": "Reduce the rate of all motor vehicle accidents.",
+          "source_page": 108
+        }
+      ]
+    }
+  ],
+  "structured": true
+}

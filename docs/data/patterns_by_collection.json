@@ -378,19 +378,19 @@
     "generated_at": "2026-06-08"
   },
   "state_audit": {
-    "report_count": 16,
-    "finding_count": 30,
+    "report_count": 18,
+    "finding_count": 48,
     "other_matter_count": 0,
-    "recommendation_count": 77,
+    "recommendation_count": 122,
     "by_industry": {
-      "electric": 12,
-      "gas": 2,
+      "electric": 13,
+      "gas": 3,
       "unknown": 2
     },
     "by_year": {
-      "2022": 1,
+      "2022": 2,
       "2023": 1,
-      "2024": 7,
+      "2024": 8,
       "2025": 3
     },
     "by_function": {},
@@ -403,42 +403,62 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 3,
-        "report_count": 2,
+        "finding_count": 5,
+        "report_count": 4,
         "example_titles": [
-          "Cost Allocations and Affiliated Interests",
           "Affiliated Interests and Cost Allocations",
+          "Cost Allocations and Affiliated Interests",
           "Affiliated Interests and Cost Allocations (continued)"
         ]
       }
     ],
     "top_titles": [
       {
+        "title": "Customer Service",
+        "count": 5
+      },
+      {
+        "title": "Financial Management",
+        "count": 4
+      },
+      {
+        "title": "Emergency Preparedness",
+        "count": 4
+      },
+      {
+        "title": "Human Resources and Diversity",
+        "count": 4
+      },
+      {
+        "title": "Corporate Governance",
+        "count": 3
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations",
+        "count": 3
+      },
+      {
+        "title": "Gas Operations",
+        "count": 3
+      },
+      {
+        "title": "Information Technology",
+        "count": 3
+      },
+      {
         "title": "Executive Management and Organizational Structure",
         "count": 3
       },
       {
-        "title": "Financial Management",
-        "count": 3
-      },
-      {
-        "title": "Customer Service",
-        "count": 3
-      },
-      {
         "title": "Electric Operations",
+        "count": 3
+      },
+      {
+        "title": "Gas Operations (continued)",
         "count": 2
       },
       {
-        "title": "Emergency Preparedness",
-        "count": 2
-      },
-      {
-        "title": "Information Technology",
-        "count": 2
-      },
-      {
-        "title": "Corporate Governance",
+        "title": "Purchasing and Materials Management",
         "count": 2
       },
       {
@@ -446,19 +466,11 @@
         "count": 2
       },
       {
-        "title": "Human Resources and Diversity",
-        "count": 2
+        "title": "Human Resources and Diversity (continued)",
+        "count": 1
       },
       {
         "title": "Cost Allocations and Affiliated Interests",
-        "count": 1
-      },
-      {
-        "title": "Purchasing and Materials Management",
-        "count": 1
-      },
-      {
-        "title": "Gas Operations",
         "count": 1
       },
       {
@@ -471,10 +483,6 @@
       },
       {
         "title": "Key Audit Matter",
-        "count": 1
-      },
-      {
-        "title": "Affiliated Interests and Cost Allocations",
         "count": 1
       },
       {
