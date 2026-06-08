@@ -1,0 +1,18 @@
+[
+  {
+    "id": "green-mountain-power_vt-2025-00089-audit",
+    "company": "Green Mountain Power Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "VT",
+    "source": "Vermont Public Utility Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://puc.vermont.gov/documents/2025-00089-GMP-Audit.pdf",
+    "source_page_url": "https://puc.vermont.gov/utility-oversight",
+    "docket": "2025-00089",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Green Mountain Power Corporation, Vermont PUC Docket No. 2025-00089. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

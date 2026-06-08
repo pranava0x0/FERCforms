@@ -1,0 +1,18 @@
+[
+  {
+    "id": "duke-energy-indiana_in-2025-00456-audit",
+    "company": "Duke Energy Indiana",
+    "collection": "state_audit",
+    "jurisdiction": "IN",
+    "source": "Indiana Utility Regulatory Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://www.in.gov/iurc/files/2025-00456-Duke-Indiana-Audit.pdf",
+    "source_page_url": "https://www.in.gov/iurc/utility-oversight",
+    "docket": "2025-00456",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Duke Energy Indiana, Indiana IURC Docket No. 2025-00456. Placeholder URL pending verification from IURC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

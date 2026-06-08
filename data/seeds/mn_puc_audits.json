@@ -1,0 +1,18 @@
+[
+  {
+    "id": "xcel-energy-minnesota_mn-2025-00145-audit",
+    "company": "Xcel Energy (Minnesota Division)",
+    "collection": "state_audit",
+    "jurisdiction": "MN",
+    "source": "Minnesota Public Utilities Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://mn.gov/puc/documents/2025-00145-Xcel-MN-Audit.pdf",
+    "source_page_url": "https://mn.gov/puc/utility-oversight",
+    "docket": "E002/2025-00145",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Xcel Energy (Minnesota Division), Minnesota PUC Docket No. E002/2025-00145. Placeholder URL pending verification from PUC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

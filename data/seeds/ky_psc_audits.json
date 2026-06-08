@@ -1,0 +1,18 @@
+[
+  {
+    "id": "louisville-gas-electric_ky-2025-00178-audit",
+    "company": "Louisville Gas and Electric Company",
+    "collection": "state_audit",
+    "jurisdiction": "KY",
+    "source": "Kentucky Public Service Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://psc.ky.gov/documents/2025-00178-LG&E-Audit.pdf",
+    "source_page_url": "https://psc.ky.gov/utility-oversight",
+    "docket": "2025-00178",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Louisville Gas and Electric Company, Kentucky PSC Docket No. 2025-00178. Placeholder URL pending verification from PSC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

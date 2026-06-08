@@ -1,0 +1,18 @@
+[
+  {
+    "id": "evergy-kansas_ks-2025-00234-service-quality-audit",
+    "company": "Evergy Kansas",
+    "collection": "state_audit",
+    "jurisdiction": "KS",
+    "source": "Kansas Corporation Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://kcc.ks.gov/documents/2025-00234-Evergy-KS-Audit.pdf",
+    "source_page_url": "https://kcc.ks.gov/utility-oversight",
+    "docket": "2025-00234",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Evergy Kansas, Kansas KCC Docket No. 2025-00234. Placeholder URL pending verification from KCC document system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

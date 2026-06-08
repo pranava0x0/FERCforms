@@ -378,12 +378,12 @@
     "generated_at": "2026-06-07"
   },
   "state_audit": {
-    "report_count": 53,
+    "report_count": 61,
     "finding_count": 30,
     "other_matter_count": 0,
     "recommendation_count": 77,
     "by_industry": {
-      "electric": 49,
+      "electric": 57,
       "gas": 2,
       "unknown": 2
     },
