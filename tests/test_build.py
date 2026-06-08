@@ -49,7 +49,12 @@ def test_meta_by_collection_counts_every_canonical_collection():
     reports = [_report("a", "electric"), _report("b", "gas", collection="state_audit")]
     meta = build.build_meta(reports, listing=[])
     # Every canonical collection present (even at 0) so no tab is missing.
-    assert meta["by_collection"] == {"ferc_audit": 1, "prudence_review": 0, "state_audit": 1}
+    assert meta["by_collection"] == {
+        "ferc_audit": 1,
+        "prudence_review": 0,
+        "state_audit": 1,
+        "state_rate_case": 0,
+    }
     assert set(meta["by_collection"]) == set(build.COLLECTION_KEYS)
 
 

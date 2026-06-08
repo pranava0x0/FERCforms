@@ -18,9 +18,13 @@ class ListingEntry(BaseModel):
 
     Each report links to eLibrary by `accession_number`; the report's issue
     date is embedded in that accession (YYYYMMDD-####).
+
+    Note: when loading from reports.json (which includes seed documents), entries
+    may have additional fields like `collection`, `doc_type`, `jurisdiction`, etc.
+    These are used by structure.py to route documents to the correct parser.
     """
 
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="allow")
 
     id: str                       # readable stable slug (date_company_docket)
     company: str                  # display name (anchor text, sans docket)

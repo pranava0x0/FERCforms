@@ -186,7 +186,7 @@ def test_all_seed_files_validate_and_have_unique_ids():
         data = json.loads(path.read_text(encoding="utf-8"))
         seeds = [SourceSeed.model_validate(d) for d in data]  # raises on any bad record
         assert seeds, f"{path.name} is empty"
-        assert all(s.collection in {"state_audit", "prudence_review"} for s in seeds)
+        assert all(s.collection in {"state_audit", "prudence_review", "state_rate_case"} for s in seeds)
         all_ids += [s.id for s in seeds]
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
 
