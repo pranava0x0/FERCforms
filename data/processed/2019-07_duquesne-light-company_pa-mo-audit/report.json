@@ -1,0 +1,202 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2019-07_duquesne-light-company_pa-mo-audit",
+  "company": "Duquesne Light Company",
+  "company_raw": "Duquesne Light Company",
+  "docket": "D-2018-3000838",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1630850.pdf",
+  "captured_at": "2026-06-08",
+  "source_note": "Management & Operations Audit, PA PUC Bureau of Audits — cover 'Issued July 2019', Docket No. D-2018-3000838; 18 recommendations. PDF: puc.pa.gov/pcdocs/1630850.pdf. The cover prints only the month, so issued_date is left null to avoid false precision (cf. CPUC month-only precedent). The original 2019 announcement is not in the current PUC press-release archive; source_page_url is the 2023 Management Efficiency Investigation follow-up, which documents this audit by name. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+  "archived_via": null,
+  "page_count": 96,
+  "scanned_pages": [
+    1,
+    96
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Executive Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Establish an annual management committee self- evaluation and/or survey to assess the efficiency and effectiveness of each management committee.",
+          "source_page": 23
+        },
+        {
+          "number": 2,
+          "text": "Perform a follow-up to the Span of Control Assessment after completing the current reorganization.",
+          "source_page": 23
+        },
+        {
+          "number": 3,
+          "text": "Establish individual goals for the CEO that are specific, measurable, attainable, relevant and time- based, and linked specifically to corporate goals and objectives similar to what existed in 2014.",
+          "source_page": 23
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Corporate Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Include within the profile currently being developed to hire an independent director the consideration criterion that a candidate may qualify as an SEC-defined AC financial expert.",
+          "source_page": 28
+        },
+        {
+          "number": 5,
+          "text": "Implement a quality assurance and improvement program that meets IIA Standard 1300 and its subcategories as well as prepare written policies and procedures for the IAD that provide guidance on internal audit activity that meets IIA Standard 2040.",
+          "source_page": 28
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Conduct a review of all finance and accounting policies and procedures to ensure administrative controls are standardized and applied uniformly.",
+          "source_page": 47
+        },
+        {
+          "number": 7,
+          "text": "Create a formal variance policy that includes a threshold (percentage and/or amount) for variances to be tracked and explained through documentation.",
+          "source_page": 47
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Establish overtime level goals for each functional group with a goal not to exceed 20% and develop craftworker staffing levels and contractor resources to address the future workload, including work related to the Long-Term Infrastructure Improvement Plan.",
+          "source_page": 58
+        },
+        {
+          "number": 9,
+          "text": "Monitor and control individual employee overtime levels by using overtime exception reports to actively review employees incurring excessive amounts of overtime.",
+          "source_page": 58
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Electric Operations (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Include additional descriptors to outage causes and report tree-related causes as being either Vegetation Inside ROW or Vegetation Outside ROW for a more effective analysis of possible remedial actions to outage causes in future Annual and Quarterly Electric Reliability Reports to the PUC.",
+          "source_page": 58
+        },
+        {
+          "number": 11,
+          "text": "Create a summary report of annual transmission and distribution line repairs to trend inspection and maintenance activities.",
+          "source_page": 58
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Implement the extensive testing phase and training phase currently planned to prepare for the December 2019 customer care system update.",
+          "source_page": 65
+        },
+        {
+          "number": 13,
+          "text": "Establish, implement, and monitor key performance indicators of third-party collection agency net recovery performance goals.",
+          "source_page": 65
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Purchasing and Materials Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Implement Maximo for enhanced inventory tracking and reporting, and establish inventory turnover goals based on optimal usage patterns.",
+          "source_page": 68
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Human Resources",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise written documents used to engage contractors to include consistent language requiring contractors to comply with all OSHA standards and to remove any language directing contractors to comply with undefined safety directives of representatives of DLC.",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Fleet Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Create an action plan to identify and resolve root causes of erroneous data to ensure fleet utilization reports are accurate.",
+          "source_page": 81
+        },
+        {
+          "number": 17,
+          "text": "Establish a formal procedure for the disposal, retirement and transfer of Duquesne Light Company fleet vehicles.",
+          "source_page": 81
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Information Technology",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Continue to improve the information technology score via enhanced information technology capabilities, internal controls and governance, and coordination with internal business partners; furthermore, periodically reevaluate the information technology maturity rating.",
+          "source_page": 84
+        }
+      ]
+    }
+  ],
+  "structured": true
+}

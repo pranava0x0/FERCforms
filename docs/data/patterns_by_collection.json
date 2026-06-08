@@ -378,16 +378,17 @@
     "generated_at": "2026-06-08"
   },
   "state_audit": {
-    "report_count": 18,
-    "finding_count": 48,
+    "report_count": 21,
+    "finding_count": 79,
     "other_matter_count": 0,
-    "recommendation_count": 122,
+    "recommendation_count": 203,
     "by_industry": {
-      "electric": 13,
-      "gas": 3,
+      "electric": 14,
+      "gas": 5,
       "unknown": 2
     },
     "by_year": {
+      "2020": 1,
       "2022": 2,
       "2023": 1,
       "2024": 8,
@@ -403,8 +404,8 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 5,
-        "report_count": 4,
+        "finding_count": 7,
+        "report_count": 6,
         "example_titles": [
           "Affiliated Interests and Cost Allocations",
           "Cost Allocations and Affiliated Interests",
@@ -415,14 +416,38 @@
     "top_titles": [
       {
         "title": "Customer Service",
-        "count": 5
+        "count": 8
       },
       {
         "title": "Financial Management",
-        "count": 4
+        "count": 7
+      },
+      {
+        "title": "Corporate Governance",
+        "count": 6
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations",
+        "count": 5
       },
       {
         "title": "Emergency Preparedness",
+        "count": 5
+      },
+      {
+        "title": "Information Technology",
+        "count": 5
+      },
+      {
+        "title": "Executive Management and Organizational Structure",
+        "count": 5
+      },
+      {
+        "title": "Electric Operations",
+        "count": 5
+      },
+      {
+        "title": "Gas Operations",
         "count": 4
       },
       {
@@ -430,39 +455,27 @@
         "count": 4
       },
       {
-        "title": "Corporate Governance",
-        "count": 3
-      },
-      {
-        "title": "Affiliated Interests and Cost Allocations",
-        "count": 3
-      },
-      {
-        "title": "Gas Operations",
-        "count": 3
-      },
-      {
-        "title": "Information Technology",
-        "count": 3
-      },
-      {
-        "title": "Executive Management and Organizational Structure",
-        "count": 3
-      },
-      {
-        "title": "Electric Operations",
-        "count": 3
+        "title": "Fleet Management",
+        "count": 4
       },
       {
         "title": "Gas Operations (continued)",
-        "count": 2
+        "count": 3
       },
       {
         "title": "Purchasing and Materials Management",
-        "count": 2
+        "count": 3
       },
       {
         "title": "Materials Management",
+        "count": 3
+      },
+      {
+        "title": "Electric Operations (continued)",
+        "count": 2
+      },
+      {
+        "title": "Human Resources",
         "count": 2
       },
       {
@@ -478,10 +491,6 @@
         "count": 1
       },
       {
-        "title": "Fleet Management",
-        "count": 1
-      },
-      {
         "title": "Key Audit Matter",
         "count": 1
       },
@@ -490,7 +499,15 @@
         "count": 1
       },
       {
-        "title": "Electric Operations (continued)",
+        "title": "Financial Management (Continued)",
+        "count": 1
+      },
+      {
+        "title": "Human Resources/Diversity",
+        "count": 1
+      },
+      {
+        "title": "Executive Management",
         "count": 1
       }
     ],

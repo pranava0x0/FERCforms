@@ -18321,6 +18321,214 @@
     "cost_to_customers": false
   },
   {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2020-07-16_columbia-gas-of-pennsylvania_pa-mo-audit",
+    "company": "Columbia Gas of Pennsylvania, Inc.",
+    "company_raw": "Columbia Gas of Pennsylvania, Inc.",
+    "docket": "D-2019-3011582",
+    "docket_full": null,
+    "issued_date": "2020-07-16",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2020/puc-releases-columbia-gas-audit-report-and-implementation-plan/",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1670369.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit of Columbia Gas of Pennsylvania, Inc., PA PUC Bureau of Audits; PUC publication 2020-07-16, Docket No. D-2019-3011582; 18 recommendations. PDF: puc.pa.gov/pcdocs/1670369.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 92,
+    "scanned_pages": [
+      1,
+      92
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 8,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Perform and retain documentation of span of control analysis upon completion of the reorganization at year-end 2020.",
+            "source_page": 16
+          },
+          {
+            "number": 2,
+            "text": "Analyze processes where data is being reported on by a different group than those responsible for the business activities to ensure that appropriate levels of communication and review are maintained.",
+            "source_page": 16
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Formally record and retain minutes of all NGD and CPA management committee meetings during which corporate governance activities are performed. Alternatively, establish an Executive Committee for the NGD and CPA Boards of Directors, respectively, which would record and retain meeting minutes.",
+            "source_page": 20
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Develop and implement controls to ensure that borrowing activities comply with regulatory approvals and notification requirements.",
+            "source_page": 28
+          },
+          {
+            "number": 5,
+            "text": "Develop and implement a review schedule to regularly update the NCSC CAM consulting the NARUC Guidelines for Cost Allocations and Affiliate Transactions.",
+            "source_page": 28
+          },
+          {
+            "number": 6,
+            "text": "Review and strengthen internal control subsequent to the NCSC accounting function reorganization.",
+            "source_page": 28
+          },
+          {
+            "number": 7,
+            "text": "Develop and implement cost allocation training for employees subsequent to the review and update of the CAM.",
+            "source_page": 28
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 8,
+            "text": "Revise the Dividend Policy to provide advance notice, including explanation of rationale, to the Commission whenever a dividend payment would exceed 85% of net income.",
+            "source_page": 38
+          },
+          {
+            "number": 9,
+            "text": "Include an O&M budget variance section that requires documented explanations when budget variances fall outside of defined variance tolerance levels in the O&M Policy.",
+            "source_page": 38
+          },
+          {
+            "number": 10,
+            "text": "Update the delegation of authority table to include approval levels for internal transactions.",
+            "source_page": 39
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Financial Management (Continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 11,
+            "text": "Revise the Treasury Operations Payment Guidelines, the O&M Policy, the Delegation of Authority Table, and Cash Collections Policy to include a responsibility and scope section.",
+            "source_page": 39
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Develop and implement a review schedule to ensure the metering and billing policies and procedures are kept current.",
+            "source_page": 59
+          },
+          {
+            "number": 13,
+            "text": "Implement various strategies to reduce arrearage levels such as increasing CAP enrollment and effective calculation of internal arrearage data to appropriately monitor and manage arrearage performance.",
+            "source_page": 59
+          },
+          {
+            "number": 14,
+            "text": "Develop and implement net collection goals with which to manage third-party collection efforts by benchmarking with similar utilities.",
+            "source_page": 59
+          },
+          {
+            "number": 15,
+            "text": "Develop and implement a documented TOS program.",
+            "source_page": 59
+          },
+          {
+            "number": 16,
+            "text": "Complete an analysis of the third-party retention application to evaluate program efficacy in reducing CSR turnover rates by December 31, 2020.",
+            "source_page": 59
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Human Resources",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 17,
+            "text": "Analyze influencing factors when developing future safety performance targets to ensure goals are set at challenging, attainable levels while continuing to prioritize the safety culture to bolster continuous improvement toward long-term safety performance goals.",
+            "source_page": 73
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Develop and regularly review a historical summary report of annual vehicle utilization data to ensure optimal fleet efficiency.",
+            "source_page": 76
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
+  },
+  {
     "collection": "ferc_audit",
     "jurisdiction": "FERC",
     "source": "FERC Office of Enforcement, Division of Audits & Accounting",
@@ -29105,6 +29313,623 @@
       }
     ],
     "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2019-10_ugi-utilities_pa-mo-audit",
+    "company": "UGI Utilities, Inc.",
+    "company_raw": "UGI Utilities, Inc.",
+    "docket": "D-2018-3002234",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1644014.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit of UGI Utilities, Inc. (incl. UGI Central Penn Gas and UGI Penn Natural Gas), PA PUC Bureau of Audits — cover 'Issued October 2019', Docket Nos. D-2018-3002234, D-2018-3002235, D-2018-3002236; 45 recommendations across the Exhibit I-2 table (the 2023 MEI follow-up tracked a 23-rec significant subset). PDF: puc.pa.gov/pcdocs/1644014.pdf. Cover prints only the month, so issued_date is left null. source_page_url is the 2023 MEI follow-up (the original 2019 announcement is not in the current archive). Findings parsed verbatim from Exhibit I-2.",
+    "archived_via": null,
+    "page_count": 127,
+    "scanned_pages": [
+      1,
+      127
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 13,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Improve the maintenance and tracking of safety training through automation.",
+            "source_page": 18
+          },
+          {
+            "number": 2,
+            "text": "Periodically review spans of control for UGI Utilities’ management positions and document justification for supervisory position ratios with narrow or wide spans of control and adjust reporting relationships as appropriate.",
+            "source_page": 18
+          },
+          {
+            "number": 3,
+            "text": "Centralize policy management and establish requirements to periodically review and update them.",
+            "source_page": 18
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Organize the Internal Audit function to report administratively to the UGI Corp. CEO, another non- financial senior officer of UGI Corp., or directly to the Board of Directors.",
+            "source_page": 23
+          },
+          {
+            "number": 5,
+            "text": "Revise UGI Utilities’ delegation of authority policy to strengthen governance controls for the new EVP Natural Gas position.",
+            "source_page": 23
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Affiliated Interests and Cost Allocations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 6,
+            "text": "Create a periodic, recurring process to compare the internal cost of services provided between UGI Utilities and its affiliates to market rates.",
+            "source_page": 31
+          },
+          {
+            "number": 7,
+            "text": "Update UGI Corp.’s Cost Allocation Manual.",
+            "source_page": 31
+          },
+          {
+            "number": 8,
+            "text": "Work with UGI Corp. to improve the level of detail provided in intercompany invoices and reports.",
+            "source_page": 31
+          },
+          {
+            "number": 9,
+            "text": "Develop time entry training to address direct charging of labor for intercompany services.",
+            "source_page": 31
+          },
+          {
+            "number": 10,
+            "text": "Amend or file new affiliated interest agreements to more accurately detail services provided.",
+            "source_page": 31
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 11,
+            "text": "Conduct periodic internal audits of affiliate transactions and shared service costs.",
+            "source_page": 37
+          },
+          {
+            "number": 12,
+            "text": "Document or update existing policies or procedures to reflect actual practices.",
+            "source_page": 37
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 13,
+            "text": "Continue to reduce the number of third-party damages and increase the damage collection rate at UGI North.",
+            "source_page": 57
+          },
+          {
+            "number": 14,
+            "text": "Decrease the inventory of outstanding Class A leaks and continue to reduce the number of main leaks at UGI North.",
+            "source_page": 57
+          },
+          {
+            "number": 15,
+            "text": "Maintain focus on safety with the objective of meeting or exceeding safety KPI goals.",
+            "source_page": 57
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Gas Operations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Continue accelerated efforts to identify and safely remove and dispose of all mercury regulators in UGI South’s service territory.",
+            "source_page": 57
+          },
+          {
+            "number": 17,
+            "text": "Follow through on plans to develop a centralized training facility to aid in OQ training",
+            "source_page": 57
+          },
+          {
+            "number": 18,
+            "text": "Consider redefining emergent and non-emergent work and train supervisors on the usage of overtime and continue to work to reduce overtime that is not related to an emergency.",
+            "source_page": 57
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 19,
+            "text": "Establish and track response times by subcategories and take corrective action to continue improving response times for emergency outage calls.",
+            "source_page": 63
+          },
+          {
+            "number": 20,
+            "text": "Investigate the costs and related benefits of implementing some EMS features into the existing SCADA system.",
+            "source_page": 63
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Install sprinkler systems at all regularly occupied facilities, where feasible.",
+            "source_page": 74
+          },
+          {
+            "number": 22,
+            "text": "Establish physical security standards that apply at company facilities and devote resources to adequately maintain oversight.",
+            "source_page": 74
+          },
+          {
+            "number": 23,
+            "text": "Update the PSP to include relevant physical security efforts and review, update, and test it annually.",
+            "source_page": 74
+          },
+          {
+            "number": 24,
+            "text": "Establish a clear chain of command for physical security by placing the Director of Physical Security in charge of all physical security at UGI Utilities.",
+            "source_page": 74
+          },
+          {
+            "number": 25,
+            "text": "Perform penetration tests, risk analysis, and vulnerability assessments of physical security routinely, and periodically utilize external/independent resources.",
+            "source_page": 74
+          },
+          {
+            "number": 26,
+            "text": "Improve the CSP and relevant procedures, secure all PII, and consider formalizing policies at the UGI Corporation level.",
+            "source_page": 74
+          },
+          {
+            "number": 27,
+            "text": "Complete the gas SCADA communication upgrade.",
+            "source_page": 74
+          },
+          {
+            "number": 28,
+            "text": "Review and adjust resources to address the business continuity program’s deficiencies.",
+            "source_page": 74
+          },
+          {
+            "number": 29,
+            "text": "Continue improvement of the ERP, and address deficiencies in associated training.",
+            "source_page": 74
+          },
+          {
+            "number": 30,
+            "text": "Maintain up to date printed copies of SDS near where chemicals are stored or in a relevant control center.",
+            "source_page": 74
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 31,
+            "text": "Improve company-wide inventory turnover and exclude emergency stock from inventory turnover calculations.",
+            "source_page": 82
+          },
+          {
+            "number": 32,
+            "text": "Automate the materials management function.",
+            "source_page": 82
+          },
+          {
+            "number": 33,
+            "text": "Develop a detailed material procurement manual and track vendor performance.",
+            "source_page": 82
+          },
+          {
+            "number": 34,
+            "text": "Improve cycle count accuracy rates at warehouses in the UGI Central division.",
+            "source_page": 82
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 35,
+            "text": "Ensure forward-looking goals and objectives are fully defined within the IT Strategic Plan.",
+            "source_page": 87
+          },
+          {
+            "number": 36,
+            "text": "Expand the required IT certifications to drive wanted skill competencies.",
+            "source_page": 87
+          },
+          {
+            "number": 37,
+            "text": "Integrate the IT Department as part of the procurement process to review and evaluate cybersecurity issues for communications-capable operations equipment.",
+            "source_page": 87
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 38,
+            "text": "Reduce long-term accounts receivable balances.",
+            "source_page": 96
+          },
+          {
+            "number": 39,
+            "text": "Resolve integration issues between the new customer information system and program used to support billing and collections processes for UGI Utilities’ Customer Assistance Program.",
+            "source_page": 96
+          },
+          {
+            "number": 40,
+            "text": "Improve customer service performance metrics.",
+            "source_page": 96
+          },
+          {
+            "number": 41,
+            "text": "Improve the retention of Customer Care Representatives within the Customer Information Center.",
+            "source_page": 96
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 42,
+            "text": "Determine optimal vehicle and equipment replacement strategy and update vehicle replacement guidelines.",
+            "source_page": 100
+          },
+          {
+            "number": 43,
+            "text": "Develop key performance indicators tailored to effectively manage UGI Utilities’ fleet, reduce costs, and drive efficiency.",
+            "source_page": 100
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "Human Resources/Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 44,
+            "text": "All documentation provided to new hires should be reviewed periodically and updated as necessary.",
+            "source_page": 107
+          },
+          {
+            "number": 45,
+            "text": "Prepare and file annual diversity reports in accordance with Commission guidelines for annual PUC diversity filing.",
+            "source_page": 107
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
+    "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2019-07_duquesne-light-company_pa-mo-audit",
+    "company": "Duquesne Light Company",
+    "company_raw": "Duquesne Light Company",
+    "docket": "D-2018-3000838",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1630850.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit, PA PUC Bureau of Audits — cover 'Issued July 2019', Docket No. D-2018-3000838; 18 recommendations. PDF: puc.pa.gov/pcdocs/1630850.pdf. The cover prints only the month, so issued_date is left null to avoid false precision (cf. CPUC month-only precedent). The original 2019 announcement is not in the current PUC press-release archive; source_page_url is the 2023 Management Efficiency Investigation follow-up, which documents this audit by name. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 96,
+    "scanned_pages": [
+      1,
+      96
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 10,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Establish an annual management committee self- evaluation and/or survey to assess the efficiency and effectiveness of each management committee.",
+            "source_page": 23
+          },
+          {
+            "number": 2,
+            "text": "Perform a follow-up to the Span of Control Assessment after completing the current reorganization.",
+            "source_page": 23
+          },
+          {
+            "number": 3,
+            "text": "Establish individual goals for the CEO that are specific, measurable, attainable, relevant and time- based, and linked specifically to corporate goals and objectives similar to what existed in 2014.",
+            "source_page": 23
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Include within the profile currently being developed to hire an independent director the consideration criterion that a candidate may qualify as an SEC-defined AC financial expert.",
+            "source_page": 28
+          },
+          {
+            "number": 5,
+            "text": "Implement a quality assurance and improvement program that meets IIA Standard 1300 and its subcategories as well as prepare written policies and procedures for the IAD that provide guidance on internal audit activity that meets IIA Standard 2040.",
+            "source_page": 28
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 6,
+            "text": "Conduct a review of all finance and accounting policies and procedures to ensure administrative controls are standardized and applied uniformly.",
+            "source_page": 47
+          },
+          {
+            "number": 7,
+            "text": "Create a formal variance policy that includes a threshold (percentage and/or amount) for variances to be tracked and explained through documentation.",
+            "source_page": 47
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 8,
+            "text": "Establish overtime level goals for each functional group with a goal not to exceed 20% and develop craftworker staffing levels and contractor resources to address the future workload, including work related to the Long-Term Infrastructure Improvement Plan.",
+            "source_page": 58
+          },
+          {
+            "number": 9,
+            "text": "Monitor and control individual employee overtime levels by using overtime exception reports to actively review employees incurring excessive amounts of overtime.",
+            "source_page": 58
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Electric Operations (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 10,
+            "text": "Include additional descriptors to outage causes and report tree-related causes as being either Vegetation Inside ROW or Vegetation Outside ROW for a more effective analysis of possible remedial actions to outage causes in future Annual and Quarterly Electric Reliability Reports to the PUC.",
+            "source_page": 58
+          },
+          {
+            "number": 11,
+            "text": "Create a summary report of annual transmission and distribution line repairs to trend inspection and maintenance activities.",
+            "source_page": 58
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Implement the extensive testing phase and training phase currently planned to prepare for the December 2019 customer care system update.",
+            "source_page": 65
+          },
+          {
+            "number": 13,
+            "text": "Establish, implement, and monitor key performance indicators of third-party collection agency net recovery performance goals.",
+            "source_page": 65
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Purchasing and Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 14,
+            "text": "Implement Maximo for enhanced inventory tracking and reporting, and establish inventory turnover goals based on optimal usage patterns.",
+            "source_page": 68
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Human Resources",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 15,
+            "text": "Revise written documents used to engage contractors to include consistent language requiring contractors to comply with all OSHA standards and to remove any language directing contractors to comply with undefined safety directives of representatives of DLC.",
+            "source_page": 77
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Create an action plan to identify and resolve root causes of erroneous data to ensure fleet utilization reports are accurate.",
+            "source_page": 81
+          },
+          {
+            "number": 17,
+            "text": "Establish a formal procedure for the disposal, retirement and transfer of Duquesne Light Company fleet vehicles.",
+            "source_page": 81
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Continue to improve the information technology score via enhanced information technology capabilities, internal controls and governance, and coordination with internal business partners; furthermore, periodically reevaluate the information technology maturity rating.",
+            "source_page": 84
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },

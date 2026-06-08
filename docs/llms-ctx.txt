@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="256 structured records (120 FERC audits, 14 prudence reviews, 18 state PUC audits); 1173 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="259 structured records (120 FERC audits, 14 prudence reviews, 21 state PUC audits); 1204 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-08). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -3155,6 +3155,34 @@ Finding 11: Human Resources and Diversity
 25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
 26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)
 </doc>
+<doc title="Columbia Gas of Pennsylvania, Inc." collection="State PUC Audits" docket="D-2019-3011582" issued="2020-07-16" industry="gas" source="https://www.puc.pa.gov/press-release/2020/puc-releases-columbia-gas-audit-report-and-implementation-plan/">
+Finding 1: Executive Management and Organizational Structure
+1. Perform and retain documentation of span of control analysis upon completion of the reorganization at year-end 2020. (source p. 16)
+2. Analyze processes where data is being reported on by a different group than those responsible for the business activities to ensure that appropriate levels of communication and review are maintained. (source p. 16)
+Finding 2: Corporate Governance
+3. Formally record and retain minutes of all NGD and CPA management committee meetings during which corporate governance activities are performed. Alternatively, establish an Executive Committee for the NGD and CPA Boards of Directors, respectively, which would record and retain meeting minutes. (source p. 20)
+Finding 3: Affiliated Interests and Cost Allocations
+4. Develop and implement controls to ensure that borrowing activities comply with regulatory approvals and notification requirements. (source p. 28)
+5. Develop and implement a review schedule to regularly update the NCSC CAM consulting the NARUC Guidelines for Cost Allocations and Affiliate Transactions. (source p. 28)
+6. Review and strengthen internal control subsequent to the NCSC accounting function reorganization. (source p. 28)
+7. Develop and implement cost allocation training for employees subsequent to the review and update of the CAM. (source p. 28)
+Finding 4: Financial Management
+8. Revise the Dividend Policy to provide advance notice, including explanation of rationale, to the Commission whenever a dividend payment would exceed 85% of net income. (source p. 38)
+9. Include an O&amp;M budget variance section that requires documented explanations when budget variances fall outside of defined variance tolerance levels in the O&amp;M Policy. (source p. 38)
+10. Update the delegation of authority table to include approval levels for internal transactions. (source p. 39)
+Finding 5: Financial Management (Continued)
+11. Revise the Treasury Operations Payment Guidelines, the O&amp;M Policy, the Delegation of Authority Table, and Cash Collections Policy to include a responsibility and scope section. (source p. 39)
+Finding 6: Customer Service
+12. Develop and implement a review schedule to ensure the metering and billing policies and procedures are kept current. (source p. 59)
+13. Implement various strategies to reduce arrearage levels such as increasing CAP enrollment and effective calculation of internal arrearage data to appropriately monitor and manage arrearage performance. (source p. 59)
+14. Develop and implement net collection goals with which to manage third-party collection efforts by benchmarking with similar utilities. (source p. 59)
+15. Develop and implement a documented TOS program. (source p. 59)
+16. Complete an analysis of the third-party retention application to evaluate program efficacy in reducing CSR turnover rates by December 31, 2020. (source p. 59)
+Finding 7: Human Resources
+17. Analyze influencing factors when developing future safety performance targets to ensure goals are set at challenging, attainable levels while continuing to prioritize the safety culture to bolster continuous improvement toward long-term safety performance goals. (source p. 73)
+Finding 8: Fleet Management
+18. Develop and regularly review a historical summary report of annual vehicle utilization data to ensure optimal fleet efficiency. (source p. 76)
+</doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/99523">
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).
@@ -3170,6 +3198,96 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 <doc title="Connecticut electric distribution companies (Eversource / United Illuminating)" collection="State PUC Audits" docket="17-12-03RE011" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
+</doc>
+<doc title="UGI Utilities, Inc." collection="State PUC Audits" docket="D-2018-3002234" issued="n/a" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities">
+Finding 1: Executive Management and Organizational Structure
+1. Improve the maintenance and tracking of safety training through automation. (source p. 18)
+2. Periodically review spans of control for UGI Utilities’ management positions and document justification for supervisory position ratios with narrow or wide spans of control and adjust reporting relationships as appropriate. (source p. 18)
+3. Centralize policy management and establish requirements to periodically review and update them. (source p. 18)
+Finding 2: Corporate Governance
+4. Organize the Internal Audit function to report administratively to the UGI Corp. CEO, another non- financial senior officer of UGI Corp., or directly to the Board of Directors. (source p. 23)
+5. Revise UGI Utilities’ delegation of authority policy to strengthen governance controls for the new EVP Natural Gas position. (source p. 23)
+Finding 3: Affiliated Interests and Cost Allocations
+6. Create a periodic, recurring process to compare the internal cost of services provided between UGI Utilities and its affiliates to market rates. (source p. 31)
+7. Update UGI Corp.’s Cost Allocation Manual. (source p. 31)
+8. Work with UGI Corp. to improve the level of detail provided in intercompany invoices and reports. (source p. 31)
+9. Develop time entry training to address direct charging of labor for intercompany services. (source p. 31)
+10. Amend or file new affiliated interest agreements to more accurately detail services provided. (source p. 31)
+Finding 4: Financial Management
+11. Conduct periodic internal audits of affiliate transactions and shared service costs. (source p. 37)
+12. Document or update existing policies or procedures to reflect actual practices. (source p. 37)
+Finding 5: Gas Operations
+13. Continue to reduce the number of third-party damages and increase the damage collection rate at UGI North. (source p. 57)
+14. Decrease the inventory of outstanding Class A leaks and continue to reduce the number of main leaks at UGI North. (source p. 57)
+15. Maintain focus on safety with the objective of meeting or exceeding safety KPI goals. (source p. 57)
+Finding 6: Gas Operations (continued)
+16. Continue accelerated efforts to identify and safely remove and dispose of all mercury regulators in UGI South’s service territory. (source p. 57)
+17. Follow through on plans to develop a centralized training facility to aid in OQ training (source p. 57)
+18. Consider redefining emergent and non-emergent work and train supervisors on the usage of overtime and continue to work to reduce overtime that is not related to an emergency. (source p. 57)
+Finding 7: Electric Operations
+19. Establish and track response times by subcategories and take corrective action to continue improving response times for emergency outage calls. (source p. 63)
+20. Investigate the costs and related benefits of implementing some EMS features into the existing SCADA system. (source p. 63)
+Finding 8: Emergency Preparedness
+21. Install sprinkler systems at all regularly occupied facilities, where feasible. (source p. 74)
+22. Establish physical security standards that apply at company facilities and devote resources to adequately maintain oversight. (source p. 74)
+23. Update the PSP to include relevant physical security efforts and review, update, and test it annually. (source p. 74)
+24. Establish a clear chain of command for physical security by placing the Director of Physical Security in charge of all physical security at UGI Utilities. (source p. 74)
+25. Perform penetration tests, risk analysis, and vulnerability assessments of physical security routinely, and periodically utilize external/independent resources. (source p. 74)
+26. Improve the CSP and relevant procedures, secure all PII, and consider formalizing policies at the UGI Corporation level. (source p. 74)
+27. Complete the gas SCADA communication upgrade. (source p. 74)
+28. Review and adjust resources to address the business continuity program’s deficiencies. (source p. 74)
+29. Continue improvement of the ERP, and address deficiencies in associated training. (source p. 74)
+30. Maintain up to date printed copies of SDS near where chemicals are stored or in a relevant control center. (source p. 74)
+Finding 9: Materials Management
+31. Improve company-wide inventory turnover and exclude emergency stock from inventory turnover calculations. (source p. 82)
+32. Automate the materials management function. (source p. 82)
+33. Develop a detailed material procurement manual and track vendor performance. (source p. 82)
+34. Improve cycle count accuracy rates at warehouses in the UGI Central division. (source p. 82)
+Finding 10: Information Technology
+35. Ensure forward-looking goals and objectives are fully defined within the IT Strategic Plan. (source p. 87)
+36. Expand the required IT certifications to drive wanted skill competencies. (source p. 87)
+37. Integrate the IT Department as part of the procurement process to review and evaluate cybersecurity issues for communications-capable operations equipment. (source p. 87)
+Finding 11: Customer Service
+38. Reduce long-term accounts receivable balances. (source p. 96)
+39. Resolve integration issues between the new customer information system and program used to support billing and collections processes for UGI Utilities’ Customer Assistance Program. (source p. 96)
+40. Improve customer service performance metrics. (source p. 96)
+41. Improve the retention of Customer Care Representatives within the Customer Information Center. (source p. 96)
+Finding 12: Fleet Management
+42. Determine optimal vehicle and equipment replacement strategy and update vehicle replacement guidelines. (source p. 100)
+43. Develop key performance indicators tailored to effectively manage UGI Utilities’ fleet, reduce costs, and drive efficiency. (source p. 100)
+Finding 13: Human Resources/Diversity
+44. All documentation provided to new hires should be reviewed periodically and updated as necessary. (source p. 107)
+45. Prepare and file annual diversity reports in accordance with Commission guidelines for annual PUC diversity filing. (source p. 107)
+</doc>
+<doc title="Duquesne Light Company" collection="State PUC Audits" docket="D-2018-3000838" issued="n/a" industry="electric" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light">
+Finding 1: Executive Management
+1. Establish an annual management committee self- evaluation and/or survey to assess the efficiency and effectiveness of each management committee. (source p. 23)
+2. Perform a follow-up to the Span of Control Assessment after completing the current reorganization. (source p. 23)
+3. Establish individual goals for the CEO that are specific, measurable, attainable, relevant and time- based, and linked specifically to corporate goals and objectives similar to what existed in 2014. (source p. 23)
+Finding 2: Corporate Governance
+4. Include within the profile currently being developed to hire an independent director the consideration criterion that a candidate may qualify as an SEC-defined AC financial expert. (source p. 28)
+5. Implement a quality assurance and improvement program that meets IIA Standard 1300 and its subcategories as well as prepare written policies and procedures for the IAD that provide guidance on internal audit activity that meets IIA Standard 2040. (source p. 28)
+Finding 3: Financial Management
+6. Conduct a review of all finance and accounting policies and procedures to ensure administrative controls are standardized and applied uniformly. (source p. 47)
+7. Create a formal variance policy that includes a threshold (percentage and/or amount) for variances to be tracked and explained through documentation. (source p. 47)
+Finding 4: Electric Operations
+8. Establish overtime level goals for each functional group with a goal not to exceed 20% and develop craftworker staffing levels and contractor resources to address the future workload, including work related to the Long-Term Infrastructure Improvement Plan. (source p. 58)
+9. Monitor and control individual employee overtime levels by using overtime exception reports to actively review employees incurring excessive amounts of overtime. (source p. 58)
+Finding 5: Electric Operations (continued)
+10. Include additional descriptors to outage causes and report tree-related causes as being either Vegetation Inside ROW or Vegetation Outside ROW for a more effective analysis of possible remedial actions to outage causes in future Annual and Quarterly Electric Reliability Reports to the PUC. (source p. 58)
+11. Create a summary report of annual transmission and distribution line repairs to trend inspection and maintenance activities. (source p. 58)
+Finding 6: Customer Service
+12. Implement the extensive testing phase and training phase currently planned to prepare for the December 2019 customer care system update. (source p. 65)
+13. Establish, implement, and monitor key performance indicators of third-party collection agency net recovery performance goals. (source p. 65)
+Finding 7: Purchasing and Materials Management
+14. Implement Maximo for enhanced inventory tracking and reporting, and establish inventory turnover goals based on optimal usage patterns. (source p. 68)
+Finding 8: Human Resources
+15. Revise written documents used to engage contractors to include consistent language requiring contractors to comply with all OSHA standards and to remove any language directing contractors to comply with undefined safety directives of representatives of DLC. (source p. 77)
+Finding 9: Fleet Management
+16. Create an action plan to identify and resolve root causes of erroneous data to ensure fleet utilization reports are accurate. (source p. 81)
+17. Establish a formal procedure for the disposal, retirement and transfer of Duquesne Light Company fleet vehicles. (source p. 81)
+Finding 10: Information Technology
+18. Continue to improve the information technology score via enhanced information technology capabilities, internal controls and governance, and coordination with internal business partners; furthermore, periodically reevaluate the information technology maturity rating. (source p. 84)
 </doc>
 </docs>
 </project>

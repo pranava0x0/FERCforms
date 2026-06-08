@@ -94,5 +94,53 @@
     "captured_at": "2026-06-08",
     "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits (cover: 'Issued October 2024'); PUC publication 2024-11-07; 23 recommendations. PDF: puc.pa.gov/pcdocs/1855524.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "parse": true
+  },
+  {
+    "id": "2019-07_duquesne-light-company_pa-mo-audit",
+    "company": "Duquesne Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1630850.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light",
+    "issued_date": null,
+    "docket": "D-2018-3000838",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit, PA PUC Bureau of Audits — cover 'Issued July 2019', Docket No. D-2018-3000838; 18 recommendations. PDF: puc.pa.gov/pcdocs/1630850.pdf. The cover prints only the month, so issued_date is left null to avoid false precision (cf. CPUC month-only precedent). The original 2019 announcement is not in the current PUC press-release archive; source_page_url is the 2023 Management Efficiency Investigation follow-up, which documents this audit by name. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
+  },
+  {
+    "id": "2019-10_ugi-utilities_pa-mo-audit",
+    "company": "UGI Utilities, Inc.",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "gas",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1644014.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities",
+    "issued_date": null,
+    "docket": "D-2018-3002234",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit of UGI Utilities, Inc. (incl. UGI Central Penn Gas and UGI Penn Natural Gas), PA PUC Bureau of Audits — cover 'Issued October 2019', Docket Nos. D-2018-3002234, D-2018-3002235, D-2018-3002236; 45 recommendations across the Exhibit I-2 table (the 2023 MEI follow-up tracked a 23-rec significant subset). PDF: puc.pa.gov/pcdocs/1644014.pdf. Cover prints only the month, so issued_date is left null. source_page_url is the 2023 MEI follow-up (the original 2019 announcement is not in the current archive). Findings parsed verbatim from Exhibit I-2.",
+    "parse": true
+  },
+  {
+    "id": "2020-07-16_columbia-gas-of-pennsylvania_pa-mo-audit",
+    "company": "Columbia Gas of Pennsylvania, Inc.",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "gas",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1670369.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2020/puc-releases-columbia-gas-audit-report-and-implementation-plan/",
+    "issued_date": "2020-07-16",
+    "docket": "D-2019-3011582",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit of Columbia Gas of Pennsylvania, Inc., PA PUC Bureau of Audits; PUC publication 2020-07-16, Docket No. D-2019-3011582; 18 recommendations. PDF: puc.pa.gov/pcdocs/1670369.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
   }
 ]

@@ -202,6 +202,9 @@ def test_non_mo_format_returns_none():
         ("2023-03-02_philadelphia-gas-works_pa-mo-audit", 11, 32),
         ("2022-08-25_peco-energy_pa-mo-audit", 7, 22),
         ("2024-11-07_national-fuel-gas-distribution_pa-mo-audit", 11, 23),
+        ("2019-07_duquesne-light-company_pa-mo-audit", 10, 18),
+        ("2019-10_ugi-utilities_pa-mo-audit", 13, 45),
+        ("2020-07-16_columbia-gas-of-pennsylvania_pa-mo-audit", 8, 18),
     ],
 )
 def test_real_pa_mo_audits_regression(rid, min_findings, min_recs):
