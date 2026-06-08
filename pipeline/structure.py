@@ -189,6 +189,76 @@ def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional
     return chunk[:600].strip() or None
 
 
+def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
+    """Parse regulatory orders and decisions (CT, other state PUC orders).
+
+    These documents contain regulatory determinations, not audit findings.
+    Extract key order language as minimal findings.
+    """
+    full_raw = "\n".join(p.text for p in text.pages)
+
+    # Look for numbered findings or key decision language
+    findings: list[Finding] = []
+
+    # Pattern: "Finding 1:", "The Commission finds:", "It is ordered:"
+    decision_patterns = [
+        r"(?i)(?:finding|conclusion|determination|order|decision)\s+(\d+)[:\.]?\s+(.+?)(?=(?:Finding|Conclusion|Order|Decision)\s+\d+|$)",
+        r"(?i)(?:the commission|we)\s+(?:find|order|determine)s?\s+(.+?)(?=\n\n|\nFinding|\nConclusion|\nOrder|$)",
+    ]
+
+    for pattern in decision_patterns:
+        matches = re.finditer(pattern, full_raw, re.DOTALL)
+        for m in matches:
+            # Extract the decision text
+            decision_text = m.group(1) if len(m.groups()) == 1 else m.group(2)
+            decision_text = re.sub(r"\s+", " ", decision_text).strip()[:500]
+
+            if len(decision_text) > 20:
+                findings.append(
+                    Finding(
+                        index=len(findings) + 1,
+                        title="Regulatory Determination",
+                        summary=decision_text,
+                        is_other_matter=False,
+                        recommendations=[]
+                    )
+                )
+
+    # Preserve metadata from existing report
+    if existing_report:
+        return AuditReport(
+            **{k: v for k, v in existing_report.items() if k != "findings"},
+            findings=findings,
+            finding_count=len(findings),
+        )
+
+    return AuditReport(
+        source="State Regulatory Commission",
+        id=entry.id,
+        company=entry.company,
+        company_raw=entry.company_raw,
+        docket=entry.docket,
+        docket_full=None,
+        issued_date=entry.issued_date,
+        source_page_url=entry.source_page_url,
+        pdf_download_url=entry.pdf_download_url,
+        captured_at=entry.captured_at,
+        source_note=entry.source_note,
+        archived_via=entry.archived_via,
+        page_count=text.page_count,
+        scanned_pages=text.scanned_pages,
+        ocr_used=text.ocr_used,
+        audit_period=None,
+        industry="electric",
+        audit_type=None,
+        functions=[],
+        forms=[],
+        collection="state_audit",
+        finding_count=len(findings),
+        findings=findings,
+    )
+
+
 def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     # Read existing report to get collection/doc_type (set by sources.py)
     existing_report_path = config.PROCESSED_DIR / entry.id / "report.json"
@@ -201,11 +271,19 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
 
     # State document dispatch based on collection
     if collection == "state_audit":
-        if doc_type and "management" in doc_type.lower():
-            return structure_state_pa_audit(entry, text, existing_report)
-        # TODO: Add other state audit parsers here (service quality, compliance, etc.)
-        # For now, return minimal report for unsupported state audit types
-        logger.debug("no parser for state audit type: %s", doc_type)
+        if doc_type:
+            # PA management audits
+            if "management" in doc_type.lower():
+                return structure_state_pa_audit(entry, text, existing_report)
+            # Regulatory orders/decisions (CT, other PUC decisions)
+            elif any(word in doc_type.lower() for word in ["investigation", "decision", "order"]):
+                return structure_regulatory_order(entry, text, existing_report)
+            # Default: try regulatory parser for unknown formats
+            else:
+                logger.debug("no parser for state audit type: %s; trying regulatory order parser", doc_type)
+                return structure_regulatory_order(entry, text, existing_report)
+        # Fallback
+        logger.debug("no doc_type for state audit: %s", entry.id)
 
     if collection == "state_rate_case":
         return structure_state_rate_case(entry, text, existing_report)
