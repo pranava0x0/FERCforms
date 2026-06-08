@@ -1,0 +1,49 @@
+#!/bin/sh
+# Pre-commit hook: prevent committing secrets (tokens, API keys, credentials).
+# Scans staged files for common secret patterns and blocks commit if found.
+# See CLAUDE.md "Security & credential handling".
+
+# Colors for output
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+echo "Scanning for secrets..."
+
+# Check staged files for secret patterns
+# Skip config/docs/test files that document patterns: .gitignore, .githooks/*, *.md, *.json, etc.
+suspicious_files=""
+
+for file in $(git diff --cached --name-only); do
+    # Skip configuration and documentation files
+    if echo "$file" | grep -qE '(^\.gitignore$|\.githooks|\.md$|\.txt$|example|config|test|spec|docs/)'; then
+        continue
+    fi
+
+    # Check for real secret tokens (with enough entropy/length to be real)
+    # GitHub: ghp_[36 alphanumeric]
+    # Stripe: sk_live/test_[20+ chars], pk_live/test_[20+ chars]
+    # Generic: actual token/key patterns with realistic length
+    if git show ":$file" 2>/dev/null | grep -E '(ghp_[a-zA-Z0-9]{36}|sk_(live|test)_[a-zA-Z0-9]{20,}|pk_(live|test)_[a-zA-Z0-9]{20,})' > /dev/null; then
+        suspicious_files="$suspicious_files $file"
+    fi
+done
+
+if [ -n "$suspicious_files" ]; then
+    echo ""
+    echo "${RED}❌ SECURITY ERROR: Potential secrets detected in staged files:${NC}"
+    for file in $suspicious_files; do
+        echo "   - $file"
+    done
+    echo ""
+    echo "${YELLOW}Action required:${NC}"
+    echo "  1. Remove the secret from the file (do NOT stage again)"
+    echo "  2. Use 'git reset' to unstage the file"
+    echo "  3. Consider rotating the exposed credential immediately"
+    echo ""
+    echo "For more details, see: CLAUDE.md → Security & credential handling"
+    exit 1
+fi
+
+echo "✓ No obvious secrets detected."
+exit 0

@@ -26,8 +26,23 @@ data/processed/classification.json
 # Secrets (none used today, but never commit these)
 .env
 .env.local
+.env.*
 credentials.json
 secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+api_keys.json
+config.local.json
+.aws/
+.ssh/
+oauth*.json
+*_token*
+*_secret*
+*_password*
+.vault-token
 
 # OS
 .DS_Store
