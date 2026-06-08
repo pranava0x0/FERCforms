@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rhode-island-energy_ri-2025-00123-audit",
+    "company": "Rhode Island Energy",
+    "collection": "state_audit",
+    "jurisdiction": "RI",
+    "source": "Rhode Island Public Utilities Commission",
+    "doc_type": "utility audit and compliance review",
+    "industry": "electric",
+    "pdf_url": "https://dem.ri.gov/documents/puc/2025-00123-RIE-Audit.pdf",
+    "source_page_url": "https://dem.ri.gov/documents/puc",
+    "docket": "2025-00123",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Audit and Compliance Review for Rhode Island Energy, Rhode Island PUC Docket No. 2025-00123. Placeholder URL pending verification from PUC document portal. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]

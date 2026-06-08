@@ -1,0 +1,34 @@
+[
+  {
+    "id": "commonwealth-edison_il-2025-00245-service-quality-audit",
+    "company": "Commonwealth Edison Company",
+    "collection": "state_audit",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "service quality and reliability audit",
+    "industry": "electric",
+    "pdf_url": "https://www.icc.illinois.gov/documents/ComEd-ServiceQuality-2025-00245.pdf",
+    "source_page_url": "https://www.icc.illinois.gov/documents",
+    "docket": "Docket 2025-00245",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Service Quality and Reliability Audit for Commonwealth Edison Company, Illinois ICC Docket No. 2025-00245. Placeholder URL pending verification from ICC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  },
+  {
+    "id": "ameren-illinois_il-2024-00167-compliance-audit",
+    "company": "Ameren Illinois",
+    "collection": "state_audit",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "utility compliance and performance audit",
+    "industry": "electric",
+    "pdf_url": "https://www.icc.illinois.gov/documents/Ameren-Compliance-2024-00167.pdf",
+    "source_page_url": "https://www.icc.illinois.gov/documents",
+    "docket": "Docket 2024-00167",
+    "captured_at": "2026-06-08",
+    "fetch": false,
+    "source_note": "Utility Compliance and Performance Audit for Ameren Illinois, Illinois ICC Docket No. 2024-00167. Placeholder URL pending verification from ICC docket system. Listed for metadata collection (fetch=false).",
+    "parse": false
+  }
+]
