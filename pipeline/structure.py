@@ -156,7 +156,7 @@ def _metadata(page1: str, full: str) -> dict:
 _TOC_FR_RE = re.compile(r"Findings and Recommendations\s*\.{2,}\s*\d+")
 _TOC_OM_RE = re.compile(r"Other Matter[s]?\s*\.{2,}\s*\d+")
 _TOC_END_RE = re.compile(r"(?m)^\s*(?:[IVX]{1,4}\.\s|Other Matter|Appendix|Acronyms)")
-_TOC_ITEM_RE = re.compile(r"(\d+)\.\s+(.+?)\s*\.{3,}\s*\d+")
+_TOC_ITEM_RE = re.compile(r"(\d+)\.\s+(.+?)\s*(?:\.{3,}|\(cid:9\))\s*\d+")  # dotted leaders or tab chars (cid:9)
 
 
 def _toc_titles(full: str, start_re) -> list[str]:
@@ -214,6 +214,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         [
             "Summary of Noncompliance Findings",
             "Summary of Findings of Noncompliance",
+            "Summary of Compliance Findings",  # FY2014-2018 backfill reports use this wording
             "Summary of Findings",
         ],
         ["Summary of Other Matter", "Recommendations", "II. Background"],
