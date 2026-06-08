@@ -18,7 +18,7 @@ from pathlib import Path
 
 from pipeline import config, llmstxt
 from pipeline.models import AuditReport
-from pipeline.patterns import _themes_for, is_ratepayer_harm, load_reports, summarize
+from pipeline.patterns import _themes_for, finding_theme_text, is_ratepayer_harm, load_reports, summarize
 
 logger = logging.getLogger(__name__)
 
@@ -50,7 +50,7 @@ def bake_report_dicts(reports: list[AuditReport]) -> list[dict]:
         d = json.loads(r.model_dump_json())
         report_themes: set[str] = set()
         for fd, f in zip(d["findings"], r.findings):
-            ft = _themes_for(f.title + " " + (f.summary or ""))
+            ft = _themes_for(finding_theme_text(f, include_recs=r.collection != "ferc_audit"))
             fd["themes"] = ft
             fd["cost_to_customers"] = is_ratepayer_harm(ft)
             report_themes.update(ft)

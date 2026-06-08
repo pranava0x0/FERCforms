@@ -32,5 +32,41 @@
     "source_note": "Second Entry on Rehearing of the Public Utilities Commission of Ohio adopting the Joint Stipulation and Recommendation that resolves all issues in the review of the political and charitable spending by Ohio Edison Company, The Cleveland Electric Illuminating Company, and The Toledo Edison Company, Case No. 20-1502-EL-UNC, entered January 7, 2026 (13 pages per the DIS docket). Listed for reference (metadata-only). Captured via browser from the PUCO Docketing Information System, which is F5-WAF-protected and rejects scripted requests — so this record is not machine-fetched. Document: dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26A07B55341I00561.",
     "parse": false,
     "fetch": false
+  },
+  {
+    "id": "2021-11-19_firstenergy-ohio_puco-20-1629-el-rdr-browns-stadium-investigation",
+    "company": "FirstEnergy Corp. (Ohio electric distribution utilities)",
+    "collection": "state_audit",
+    "jurisdiction": "OH",
+    "source": "Public Utilities Commission of Ohio",
+    "doc_type": "independent investigative audit (Blue Ridge Consulting, PUCO-ordered)",
+    "industry": "electric",
+    "pdf_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A21K19B14331F02084",
+    "source_page_url": "https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations",
+    "issued_date": "2021-11-19",
+    "docket": "20-1629-EL-RDR",
+    "fetch": false,
+    "archived_via": "http://web.archive.org/web/20220521222115if_/https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A21K19B14331F02084",
+    "source_note": "PUCO-ordered independent audit (Blue Ridge Consulting), Case 20-1629-EL-RDR — Investigation into Ohio ratepayer funding of FirstEnergy's Cleveland Browns Stadium renaming. 9 pp. Live host dis.puc.state.oh.us is F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'Case No. 20-1629-EL-RDR ... November 19, 2021 ... Blue Ridge Consulting Services'.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2022-01-14_firstenergy-ohio_puco-17-2474-el-rdr-rider-dmr-audit",
+    "company": "FirstEnergy 'Ohio Companies' (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)",
+    "collection": "state_audit",
+    "jurisdiction": "OH",
+    "source": "Public Utilities Commission of Ohio",
+    "doc_type": "rider audit report (Daymark Energy Advisors, PUCO third-party audit of Rider DMR)",
+    "industry": "electric",
+    "pdf_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A22A14B01753C02696",
+    "source_page_url": "https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations",
+    "issued_date": "2022-01-14",
+    "docket": "17-2474-EL-RDR",
+    "fetch": false,
+    "archived_via": "http://web.archive.org/web/20220114184543if_/https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A22A14B01753C02696",
+    "source_note": "PUCO third-party audit (Daymark Energy Advisors), Case 17-2474-EL-RDR — Audit of the FirstEnergy Ohio Companies' Rider DMR. 137 pp. Live host F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'DAYMARK ENERGY ADVISORS ... AN AUDIT REPORT OF THE OHIO COMPANIES' RIDER DMR JANUARY 14, 2022'.",
+    "captured_at": "2026-06-08",
+    "parse": false
   }
 ]

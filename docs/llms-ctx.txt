@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="259 structured records (120 FERC audits, 14 prudence reviews, 21 state PUC audits); 1204 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="276 structured records (120 FERC audits, 18 prudence reviews, 33 state PUC audits); 1168 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-08). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -2883,6 +2883,14 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 Listed for reference (not machine-parsed into findings).
 Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20141024-3019 (fileID 13666270).
 </doc>
+<doc title="Puget Sound Energy" collection="Prudence Reviews" docket="UE-250747" issued="2025-12-24" industry="electric" source="https://www.utc.wa.gov/casedocket/2025/250747/docsets">
+Listed for reference (not machine-parsed into findings).
+WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docket UE-250747, service date Dec 24, 2025. 9 pp. Page 1 verified.
+</doc>
+<doc title="Puget Sound Energy" collection="Prudence Reviews" docket="UE-250318" issued="2025-09-29" industry="electric" source="https://www.utc.wa.gov/casedocket/2025/250318/docsets">
+Listed for reference (not machine-parsed into findings).
+WA UTC order on PSE's 2024 Power Cost Adjustment (PCA) Mechanism Report, Docket UE-250318, service date Sept 29, 2025. 10 pp. Page 1 verified.
+</doc>
 <doc title="ISO New England Inc. et al." collection="Prudence Reviews" docket="ER20-2054" issued="2025-09-18" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250918-3062&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC Commission order on a formal challenge (Rule 206) re ISO New England Inc. et al., Docket ER20-2054, issued 2025-09-18. Found via eLibrary full-text search; accession 20250918-3062.
@@ -2915,6 +2923,10 @@ FERC order granting in part and denying in part a formal challenge re Delmarva P
 Listed for reference (not machine-parsed into findings).
 FERC Order on Remand, Granting Motion Consolidating Proceedings, and Establishing Briefing Schedule re Pacific Gas and Electric Company transmission revenue-requirement / return-on-equity proceeding, Docket ER16-2320 (consolidated with ER14-2529), issued 2018-08-20. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER16-2320); accession 20180820-3055.
 </doc>
+<doc title="Washington natural-gas LDCs (PSE, Avista, Cascade, NW Natural)" collection="Prudence Reviews" docket="UG-132019" issued="2017-03-13" industry="gas" source="https://www.utc.wa.gov/casedocket/2013/132019/docsets">
+Listed for reference (not machine-parsed into findings).
+WA UTC Policy and Interpretive Statement on Local Distribution Companies' Natural Gas Hedging Practices, Docket UG-132019, service date March 13, 2017. 16 pp. Page 1 verified.
+</doc>
 <doc title="Potomac-Appalachian Transmission Highline, LLC and PJM Interconnection, L.L.C." collection="Prudence Reviews" docket="ER12-2708" issued="2017-01-19" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20170119-3062&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC Opinion No. 554, Order on Initial Decision, on the prudence of the Potomac-Appalachian Transmission Highline (PATH) project's transmission abandonment cost claim (formal challenges, ROE, and legal/advertising/lobbying costs) — affirming in part and reversing in part the ALJ initial decision. Potomac-Appalachian Transmission Highline, LLC and PJM, Dockets ER12-2708 / ER09-1256, issued January 19, 2017 (158 FERC para. 61,050). Distinct from the 2015 ALJ initial decision already in this collection. Found via the eLibrary AdvancedSearch API; accession 20170119-3062.
@@ -2939,6 +2951,10 @@ FERC ALJ Initial Decision re BP Pipelines (Alaska) Inc. et al. interstate oil-pi
 Listed for reference (not machine-parsed into findings).
 FERC order on the Mid-Atlantic Power Pathway (MAPP) abandonment cost recovery filing of Potomac Electric Power Company and Delmarva Power &amp; Light Company (PHI), Docket ER13-607, issued February 28, 2013 (142 FERC para. 61,156) — accepting abandonment cost recovery and setting prudent-cost amounts for hearing, but removing the previously-granted ROE incentive adders once the project was abandoned. Found via the eLibrary AdvancedSearch API (searchText=docket); accession 20130228-3064.
 </doc>
+<doc title="Southern California Edison Company" collection="Prudence Reviews" docket="A.09-04-002" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
+</doc>
 <doc title="FirstEnergy Pennsylvania Electric Company" collection="State PUC Audits" docket="n/a" issued="2025-09-25" industry="electric" source="https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025">
 Listed for reference (not machine-parsed into findings).
 Management Efficiency Investigation (follow-up to the 2022 Management &amp; Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf.
@@ -2950,6 +2966,14 @@ Notice of Filing by the Utilities Division of the Tennessee Public Utility Commi
 <doc title="Mississippi Public Utilities Staff" collection="State PUC Audits" docket="n/a" issued="2025-06-30" industry="n/a" source="https://www.psc.ms.gov/">
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).
+</doc>
+<doc title="Baltimore Gas and Electric Company (BGE)" collection="State PUC Audits" docket="Case No. 9791 (Order No. 91643)" issued="2025-05-08" industry="gas" source="https://psc.maryland.gov/order-initiating-bge-gas-system-case-no-9791/">
+Listed for reference (not machine-parsed into findings).
+MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an investigation into BGE gas-system inspection issues, documenting the PSC Engineering Division (PSCED) Investigation Report findings/recommendations (falsified-records pattern, QA/compliance-oversight gaps). 9 pp. Page 1 verified.
+</doc>
+<doc title="Southern California Gas Company" collection="State PUC Audits" docket="n/a" issued="2025-02-19" industry="gas" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.
 </doc>
 <doc title="National Fuel Gas Distribution Corporation" collection="State PUC Audits" docket="D-2023-3040107" issued="2024-11-07" industry="gas" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-national-fuel-gas-distribution-corporation-11-07-2024">
 Finding 1: Corporate Governance
@@ -3006,6 +3030,10 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part Two, by Th
 <doc title="Consumers Energy Company" collection="State PUC Audits" docket="U-21305" issued="2024-09-23" industry="electric" source="https://www.michigan.gov/mpsc/commission/news-releases/2024/09/23/mpsc-releases-utility-audit-results-of-states-two-largest-electric-utilities">
 Listed for reference (not machine-parsed into findings).
 Final Report — Utility Distribution Audit of Consumers Energy, Part One, by The Liberty Consulting Group for the Michigan PSC (Case U-21305); results released 2024-09-23.
+</doc>
+<doc title="Southern California Edison Company" collection="State PUC Audits" docket="n/a" issued="2024-07-23" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.
 </doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure
@@ -3085,6 +3113,10 @@ Finding 11: Human Resources and Diversity
 31. Implement strategies for recruitment and retention of “at-risk” positions. (source p. 84)
 32. Drive safety performance to meet industry standards. (source p. 84)
 </doc>
+<doc title="Jersey Central Power &amp; Light Company (JCP&amp;L)" collection="State PUC Audits" docket="EA20110733" issued="2023-02-07" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
+Listed for reference (not machine-parsed into findings).
+NJ BPU audit (Liberty Consulting Group): Phase Two of an Audit of the Affiliated Transactions and a Management Audit of JCP&amp;L. Docket EA20110733, dated Feb 7, 2023. 601 pp. Page 1 verified.
+</doc>
 <doc title="PECO Energy Company" collection="State PUC Audits" docket="D-2021-3023906" issued="2022-08-25" industry="electric" source="https://www.puc.pa.gov/press-release/2022/puc-issues-management-and-operations-audit-and-implementation-plan-for-peco-energy-company">
 Finding 1: Affiliated Interests and Cost Allocations
 1. Submit a detailed proposal to the Commission for the appropriate crediting of ratepayers due to PECO’s corrected billings for the use of PECO’s fiber network. (source p. 30)
@@ -3155,6 +3187,14 @@ Finding 11: Human Resources and Diversity
 25. Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification. (source p. 162)
 26. Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance. (source p. 162)
 </doc>
+<doc title="FirstEnergy &#x27;Ohio Companies&#x27; (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)" collection="State PUC Audits" docket="17-2474-EL-RDR" issued="2022-01-14" industry="electric" source="https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations">
+Listed for reference (not machine-parsed into findings).
+PUCO third-party audit (Daymark Energy Advisors), Case 17-2474-EL-RDR — Audit of the FirstEnergy Ohio Companies' Rider DMR. 137 pp. Live host F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'DAYMARK ENERGY ADVISORS ... AN AUDIT REPORT OF THE OHIO COMPANIES' RIDER DMR JANUARY 14, 2022'.
+</doc>
+<doc title="FirstEnergy Corp. (Ohio electric distribution utilities)" collection="State PUC Audits" docket="20-1629-EL-RDR" issued="2021-11-19" industry="electric" source="https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations">
+Listed for reference (not machine-parsed into findings).
+PUCO-ordered independent audit (Blue Ridge Consulting), Case 20-1629-EL-RDR — Investigation into Ohio ratepayer funding of FirstEnergy's Cleveland Browns Stadium renaming. 9 pp. Live host dis.puc.state.oh.us is F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'Case No. 20-1629-EL-RDR ... November 19, 2021 ... Blue Ridge Consulting Services'.
+</doc>
 <doc title="Columbia Gas of Pennsylvania, Inc." collection="State PUC Audits" docket="D-2019-3011582" issued="2020-07-16" industry="gas" source="https://www.puc.pa.gov/press-release/2020/puc-releases-columbia-gas-audit-report-and-implementation-plan/">
 Finding 1: Executive Management and Organizational Structure
 1. Perform and retain documentation of span of control analysis upon completion of the reorganization at year-end 2020. (source p. 16)
@@ -3183,6 +3223,18 @@ Finding 7: Human Resources
 Finding 8: Fleet Management
 18. Develop and regularly review a historical summary report of annual vehicle utilization data to ensure optimal fleet efficiency. (source p. 76)
 </doc>
+<doc title="Atlantic City Electric Company" collection="State PUC Audits" docket="n/a" issued="2020-03-11" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
+Listed for reference (not machine-parsed into findings).
+NJ BPU audit (Liberty Consulting Group): Audit of Affiliated Transactions and Operational and Financial Performance and a Management Audit of Atlantic City Electric. Dated March 11, 2020. 705 pp. Page 1 verified.
+</doc>
+<doc title="New York State Electric &amp; Gas Corporation and Rochester Gas and Electric Corporation" collection="State PUC Audits" docket="16-M-0610" issued="2019-02-07" industry="electric" source="https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0610">
+Listed for reference (not machine-parsed into findings).
+NY PSC Order Releasing Audit Report, Case 16-M-0610 — Comprehensive Management and Operations Audits of NYSEG and RG&amp;E (PSL 66(19)). Issued &amp; effective Feb 7, 2019. Page 1 verified.
+</doc>
+<doc title="Central Hudson Gas &amp; Electric Corporation" collection="State PUC Audits" docket="16-M-0001" issued="2017-10-24" industry="electric" source="https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0001">
+Listed for reference (not machine-parsed into findings).
+NY PSC Order Releasing Audit Report, Case 16-M-0001 — Comprehensive Management and Operations Audit of Central Hudson (PSL 66(19)). Issued &amp; effective Oct 24, 2017. Page 1 verified.
+</doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/99523">
 Listed for reference (not machine-parsed into findings).
 Missouri Public Service Commission Staff's Construction Audit and Prudence Review of the Taum Sauk Project for costs reported as of October 31, 2010, for Union Electric Company d/b/a Ameren Missouri, Case No. ER-2011-0028 (34 pp; Staff's audit/prudence review of the rebuilt Taum Sauk pumped-storage hydroelectric plant). Listed for reference (metadata-only). Source: Missouri PSC EFIS, document 99523 (efis.psc.mo.gov/Document/Display/99523).
@@ -3198,6 +3250,14 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 <doc title="Connecticut electric distribution companies (Eversource / United Illuminating)" collection="State PUC Audits" docket="17-12-03RE011" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
+</doc>
+<doc title="Public Service Electric and Gas Company (PSE&amp;G)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
+Listed for reference (not machine-parsed into findings).
+NJ BPU audit (Overland Consulting): Audit of Affiliated Transactions between PSE&amp;G, PSEG and affiliates, plus a Management Audit of PSE&amp;G. 868 pp (public redacted). Title page prints 'December 2022' (month only) -&gt; issued_date null. Page 1 verified.
+</doc>
+<doc title="Central Hudson Gas &amp; Electric Corporation" collection="State PUC Audits" docket="22-M-0645" issued="n/a" industry="electric" source="https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=22-M-0645">
+Listed for reference (not machine-parsed into findings).
+NY DPS Office of Investigations and Enforcement Investigation Report (Dec 2022), Case 22-M-0645 — investigation into Central Hudson's customer information/billing system and billing-accuracy impacts. 62 pp. Cover prints month only (December 2022) -&gt; issued_date null. Page 1 verified: 'OFFICE OF INVESTIGATIONS AND ENFORCEMENT ... INVESTIGATION REPORT DECEMBER 2022 CASE 22-M-0645'.
 </doc>
 <doc title="UGI Utilities, Inc." collection="State PUC Audits" docket="D-2018-3002234" issued="n/a" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities">
 Finding 1: Executive Management and Organizational Structure
@@ -3288,6 +3348,10 @@ Finding 9: Fleet Management
 17. Establish a formal procedure for the disposal, retirement and transfer of Duquesne Light Company fleet vehicles. (source p. 81)
 Finding 10: Information Technology
 18. Continue to improve the information technology score via enhanced information technology capabilities, internal controls and governance, and coordination with internal business partners; furthermore, periodically reevaluate the information technology maturity rating. (source p. 84)
+</doc>
+<doc title="New Jersey Natural Gas Company" collection="State PUC Audits" docket="GA13010008" issued="n/a" industry="gas" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
+Listed for reference (not machine-parsed into findings).
+NJ BPU audit: Audit of Affiliated Transactions between NJNG and New Jersey Resources and affiliates (N.J.S.A. 48:3-49) plus a Comprehensive Management Audit of NJNG. Docket GA13010008. 326 pp. Title page does not print a day -&gt; issued_date null (filed 2014). Page 1 verified.
 </doc>
 </docs>
 </project>

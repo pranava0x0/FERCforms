@@ -29,18 +29,26 @@ Rules for adding a record (enforced by tests + `pipeline.verify_sources`):
 5. The offline test `test_committed_seeds_have_no_fabrication_markers` blocks any
    seed with a `placeholder` URL or a future `captured_at`.
 
-## Current corpus: 254 structured records
+## Current corpus: 276 structured records (as of 2026-06-08)
 
 | Collection (UI tab)            | Count | Notes |
 |--------------------------------|-------|-------|
 | FERC Audits (`ferc_audit`)     | 120   | Form 1/2/6, every available year; traced to `data/listing.json` |
-| Prudence Reviews (`prudence_review`) | 14 | FERC eLibrary orders (accession-verified) |
-| State PUC Audits (`state_audit`)     | 16 | PA M&O audits (with findings), CT, MO, MS, TN, UT, MI (Liberty, WAF-blocked) |
-| State Rate Cases (`state_rate_case`) | 104 | Reference metadata across ~35 jurisdictions |
+| Prudence Reviews (`prudence_review`) | 18 | FERC eLibrary orders (accession-verified) + CA ERRA + WA power-cost/hedging |
+| State PUC Audits (`state_audit`)     | 33 | 12 jurisdictions: PA MI CT MO MS TN UT + **NY NJ CA OH MD** (added 2026-06-08) |
+| State Rate Cases (`state_rate_case`) | 105 | Reference metadata across ~35 jurisdictions |
 
-State PUC Audits is the **thinnest real tab (16)** and the highest-value place to
-grow — but only with *real, verified* audits. See BACKLOG.md for the per-state
-recipes and the genuinely-walled states that still need browser-capture.
+**State PUC Audits — 33 across 12 jurisdictions, 8 with parsed findings (~122 recommendations):**
+- **PA (8, parsed):** Bureau of Audits M&O audits — PPL, PGW, FirstEnergy, PECO, NFG, Duquesne, UGI, Columbia Gas (Exhibit I-2 → findings).
+- **NJ (4):** BPU affiliate + management audits (Overland/Liberty) — PSE&G, JCP&L, ACE, NJNG (326–868 pp).
+- **NY (3):** DPS/PSC comprehensive M&O audit orders (NYSEG/RG&E, Central Hudson) + Central Hudson billing investigation.
+- **CA (2):** CPUC Utility Audits Branch Balancing-Account performance audits (SCE, SoCalGas).
+- **OH (4):** PUCO third-party audits (Daymark Rider DMR, Blue Ridge Browns-Stadium) + FirstEnergy 20-1502 — `fetch=false`, F5-WAF-blocked, verified via Wayback.
+- **MD (1):** PSC BGE gas-system safety investigation order. **MI (4):** Liberty distribution audits. **CT/MO/MS/TN/UT (7).**
+
+**Patterns of noncompliance (State PUC Audits tab): 13 themes** mined from the parsed M&O-audit recommendations (workforce/training, internal controls, customer service & billing, inventory/fleet, emergency preparedness, cybersecurity & physical security, IT, reliability/vegetation, affiliate transactions, dividends, gas safety, etc.). See `pipeline/patterns.py` THEME_RULES; the matcher scans recommendation text for state audits (their finding titles are generic functional areas).
+
+Keep growing **only with real, verified audits** (run `python -m pipeline.verify_sources`). See BACKLOG.md for per-state recipes and the genuinely-walled states still needing browser-capture.
 
 ## Where the real audit gaps are (verified-source targets, NOT placeholders)
 

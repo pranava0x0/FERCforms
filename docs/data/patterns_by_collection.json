@@ -31,24 +31,6 @@
     },
     "themes": [
       {
-        "theme": "Form reporting (Form No. 1/2/6, Page 700)",
-        "description": "Errors or omissions in the annual FERC forms utilities file.",
-        "keywords": [
-          "form no.",
-          "page 700",
-          "annual report",
-          "reporting"
-        ],
-        "finding_count": 182,
-        "report_count": 69,
-        "example_titles": [
-          "Annual Cost of Service Based Analysis Schedule",
-          "Nonoperating and Operating Expenses",
-          "Noncarrier Property Revenue, Expenses, and Net Income",
-          "Crude Oil Accounting Misclassifications"
-        ]
-      },
-      {
         "theme": "Accounting misclassification",
         "description": "Costs or revenues booked to the wrong FERC account.",
         "keywords": [
@@ -65,6 +47,23 @@
           "Annual Membership Dues",
           "Nonoperating and Operating Expenses",
           "Noncarrier Property Revenue, Expenses, and Net Income"
+        ]
+      },
+      {
+        "theme": "Form reporting (Form No. 1/2/6, Page 700)",
+        "description": "Errors or omissions in the annual FERC forms utilities file.",
+        "keywords": [
+          "form no.",
+          "page 700",
+          "annual report"
+        ],
+        "finding_count": 152,
+        "report_count": 57,
+        "example_titles": [
+          "Annual Cost of Service Based Analysis Schedule",
+          "Nonoperating and Operating Expenses",
+          "Noncarrier Property Revenue, Expenses, and Net Income",
+          "Crude Oil Accounting Misclassifications"
         ]
       },
       {
@@ -134,6 +133,26 @@
           "Capitalized Interest Expense",
           "Transmission Incentives",
           "Allowance for Funds Using During Construction"
+        ]
+      },
+      {
+        "theme": "Customer service & billing",
+        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "keywords": [
+          "customer service",
+          "billing",
+          "accounts receivable",
+          "call center",
+          "meter reading",
+          "customer experience"
+        ],
+        "finding_count": 66,
+        "report_count": 35,
+        "example_titles": [
+          "Recovery of Fuel Contract Buyout Costs",
+          "Accounting for Fuel Storage and Handling",
+          "Wholesale Revenue Credits",
+          "Auxiliary Fuel Costs in Nuclear Power Generation"
         ]
       },
       {
@@ -235,6 +254,59 @@
         ]
       },
       {
+        "theme": "Service reliability & vegetation management",
+        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
+        "keywords": [
+          "vegetation",
+          "reliability",
+          "saidi",
+          "caidi",
+          "outage"
+        ],
+        "finding_count": 11,
+        "report_count": 8,
+        "example_titles": [
+          "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System",
+          "Generation Outage Reporting in Generating Availability Data System (GADS)",
+          "Discrepancies between Reported Generator Outages and Offer Schedules",
+          "Operations Related to Economic Derates"
+        ]
+      },
+      {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 3,
+        "report_count": 2,
+        "example_titles": [
+          "Filing of Cash Management Agreements",
+          "Treatment of Confidential Pipeline Shipper Information",
+          "Aggregation of Next-Day Gas Deals"
+        ]
+      },
+      {
+        "theme": "Inventory, materials & fleet",
+        "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
+        "keywords": [
+          "inventory",
+          "materials management",
+          "fleet management",
+          "vehicle replacement"
+        ],
+        "finding_count": 2,
+        "report_count": 2,
+        "example_titles": [
+          "Auxiliary Fuel Costs in Nuclear Power Generation",
+          "Accounting for Materials and Supplies"
+        ]
+      },
+      {
         "theme": "Creditworthiness",
         "description": "Customer credit standards not applied as the tariff requires.",
         "keywords": [
@@ -244,6 +316,35 @@
         "report_count": 1,
         "example_titles": [
           "Creditworthiness Standards"
+        ]
+      },
+      {
+        "theme": "Information technology & systems",
+        "description": "IT governance, systems, budgets, or project-management deficiencies.",
+        "keywords": [
+          "information technology",
+          "customer information system",
+          "it budget",
+          "it project",
+          "it backlog",
+          "it governance"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Allocation of Information Technology Costs"
+        ]
+      },
+      {
+        "theme": "Dividend policy & capital management",
+        "description": "Dividend-policy or capital-management practices flagged by auditors.",
+        "keywords": [
+          "dividend"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Allowance for Funds Used During Construction"
         ]
       }
     ],
@@ -352,12 +453,13 @@
     "generated_at": "2026-06-08"
   },
   "prudence_review": {
-    "report_count": 14,
+    "report_count": 18,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 13,
+      "electric": 16,
+      "gas": 1,
       "oil": 1
     },
     "by_year": {
@@ -365,12 +467,12 @@
       "2014": 1,
       "2015": 1,
       "2016": 2,
-      "2017": 1,
+      "2017": 2,
       "2018": 1,
       "2020": 1,
       "2023": 3,
       "2024": 2,
-      "2025": 1
+      "2025": 3
     },
     "by_function": {},
     "themes": [],
@@ -378,24 +480,103 @@
     "generated_at": "2026-06-08"
   },
   "state_audit": {
-    "report_count": 21,
+    "report_count": 33,
     "finding_count": 79,
     "other_matter_count": 0,
     "recommendation_count": 203,
     "by_industry": {
-      "electric": 14,
-      "gas": 5,
+      "electric": 23,
+      "gas": 8,
       "unknown": 2
     },
     "by_year": {
-      "2020": 1,
-      "2022": 2,
-      "2023": 1,
-      "2024": 8,
-      "2025": 3
+      "2017": 1,
+      "2019": 1,
+      "2020": 2,
+      "2021": 1,
+      "2022": 3,
+      "2023": 2,
+      "2024": 9,
+      "2025": 5
     },
     "by_function": {},
     "themes": [
+      {
+        "theme": "Customer service & billing",
+        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "keywords": [
+          "customer service",
+          "billing",
+          "accounts receivable",
+          "call center",
+          "meter reading",
+          "customer experience"
+        ],
+        "finding_count": 10,
+        "report_count": 8,
+        "example_titles": [
+          "Financial Management",
+          "Customer Service",
+          "Affiliated Interests and Cost Allocations"
+        ]
+      },
+      {
+        "theme": "Workforce, training & succession planning",
+        "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+        "keywords": [
+          "succession",
+          "span of control",
+          "spans of control",
+          "training",
+          "workforce plan",
+          "learning management"
+        ],
+        "finding_count": 16,
+        "report_count": 7,
+        "example_titles": [
+          "Human Resources and Diversity (continued)",
+          "Cost Allocations and Affiliated Interests",
+          "Purchasing and Materials Management",
+          "Executive Management and Organizational Structure"
+        ]
+      },
+      {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 13,
+        "report_count": 7,
+        "example_titles": [
+          "Corporate Governance",
+          "Affiliated Interests and Cost Allocations",
+          "Customer Service",
+          "Financial Management"
+        ]
+      },
+      {
+        "theme": "Inventory, materials & fleet",
+        "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
+        "keywords": [
+          "inventory",
+          "materials management",
+          "fleet management",
+          "vehicle replacement"
+        ],
+        "finding_count": 11,
+        "report_count": 7,
+        "example_titles": [
+          "Purchasing and Materials Management",
+          "Materials Management",
+          "Fleet Management",
+          "Gas Operations"
+        ]
+      },
       {
         "theme": "Affiliate / intercompany transactions",
         "description": "Transactions with affiliated companies mis-priced or mis-reported.",
@@ -404,12 +585,139 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 7,
+        "finding_count": 8,
         "report_count": 6,
         "example_titles": [
           "Affiliated Interests and Cost Allocations",
           "Cost Allocations and Affiliated Interests",
-          "Affiliated Interests and Cost Allocations (continued)"
+          "Affiliated Interests and Cost Allocations (continued)",
+          "Financial Management"
+        ]
+      },
+      {
+        "theme": "Emergency preparedness & business continuity",
+        "description": "Weak emergency response, storm readiness, or business-continuity planning.",
+        "keywords": [
+          "emergency prepared",
+          "business continu",
+          "emergency response",
+          "emergency management",
+          "mutual assist"
+        ],
+        "finding_count": 6,
+        "report_count": 5,
+        "example_titles": [
+          "Emergency Preparedness",
+          "Emergency Preparedness (continued)"
+        ]
+      },
+      {
+        "theme": "Information technology & systems",
+        "description": "IT governance, systems, budgets, or project-management deficiencies.",
+        "keywords": [
+          "information technology",
+          "customer information system",
+          "it budget",
+          "it project",
+          "it backlog",
+          "it governance"
+        ],
+        "finding_count": 6,
+        "report_count": 5,
+        "example_titles": [
+          "Information Technology",
+          "Customer Service"
+        ]
+      },
+      {
+        "theme": "Service reliability & vegetation management",
+        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
+        "keywords": [
+          "vegetation",
+          "reliability",
+          "saidi",
+          "caidi",
+          "outage"
+        ],
+        "finding_count": 5,
+        "report_count": 5,
+        "example_titles": [
+          "Electric Operations",
+          "Electric Operations (continued)"
+        ]
+      },
+      {
+        "theme": "Cybersecurity & physical security",
+        "description": "Gaps in cyber defenses or physical security of facilities and systems.",
+        "keywords": [
+          "cyber",
+          "physical security"
+        ],
+        "finding_count": 5,
+        "report_count": 3,
+        "example_titles": [
+          "Emergency Preparedness",
+          "Emergency Preparedness (continued)",
+          "Information Technology"
+        ]
+      },
+      {
+        "theme": "Cost of service & rates",
+        "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+        "keywords": [
+          "cost of service",
+          "cost-of-service",
+          "rate base",
+          "rate of return",
+          "return on equity"
+        ],
+        "finding_count": 3,
+        "report_count": 3,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "Affiliated Interests and Cost Allocations"
+        ]
+      },
+      {
+        "theme": "Dividend policy & capital management",
+        "description": "Dividend-policy or capital-management practices flagged by auditors.",
+        "keywords": [
+          "dividend"
+        ],
+        "finding_count": 3,
+        "report_count": 3,
+        "example_titles": [
+          "Financial Management"
+        ]
+      },
+      {
+        "theme": "Tariff administration & oversight",
+        "description": "Not following the utility's own FERC-approved tariff.",
+        "keywords": [
+          "tariff"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Customer Service"
+        ]
+      },
+      {
+        "theme": "Gas safety & pipeline integrity",
+        "description": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
+        "keywords": [
+          "class a leak",
+          "main leak",
+          "cathodic",
+          "corros",
+          "damage prevention",
+          "pipeline integrity",
+          "leak management"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Gas Operations"
         ]
       }
     ],
@@ -514,12 +822,12 @@
     "generated_at": "2026-06-08"
   },
   "state_rate_case": {
-    "report_count": 104,
-    "finding_count": 541,
+    "report_count": 105,
+    "finding_count": 505,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 95,
+      "electric": 96,
       "gas": 7,
       "unknown": 2
     },
@@ -530,7 +838,7 @@
       "2018": 1,
       "2019": 2,
       "2021": 4,
-      "2022": 4,
+      "2022": 5,
       "2023": 6,
       "2024": 16,
       "2025": 38,
@@ -548,8 +856,8 @@
           "rate of return",
           "return on equity"
         ],
-        "finding_count": 19,
-        "report_count": 7,
+        "finding_count": 18,
+        "report_count": 6,
         "example_titles": [
           "Approval: $1,277,051,206. ",
           "Approval: $55.4\nmillion",
@@ -563,11 +871,46 @@
         "keywords": [
           "tariff"
         ],
-        "finding_count": 12,
-        "report_count": 5,
+        "finding_count": 9,
+        "report_count": 4,
         "example_titles": [
           "Settlement: Agreement",
-          "Approval: $5 million",
+          "Settlement: agreement"
+        ]
+      },
+      {
+        "theme": "Service reliability & vegetation management",
+        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
+        "keywords": [
+          "vegetation",
+          "reliability",
+          "saidi",
+          "caidi",
+          "outage"
+        ],
+        "finding_count": 7,
+        "report_count": 4,
+        "example_titles": [
+          "Settlement: terms",
+          "Settlement: Agreement",
+          "Settlement: agreement"
+        ]
+      },
+      {
+        "theme": "Customer service & billing",
+        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "keywords": [
+          "customer service",
+          "billing",
+          "accounts receivable",
+          "call center",
+          "meter reading",
+          "customer experience"
+        ],
+        "finding_count": 5,
+        "report_count": 4,
+        "example_titles": [
+          "Settlement: Agreement",
           "Settlement: agreement"
         ]
       },
@@ -577,12 +920,11 @@
         "keywords": [
           "depreciation"
         ],
-        "finding_count": 7,
-        "report_count": 4,
+        "finding_count": 6,
+        "report_count": 3,
         "example_titles": [
           "Settlement: agreement",
-          "Settlement: Agreement",
-          "Approval: $149.1 million"
+          "Settlement: Agreement"
         ]
       },
       {
@@ -597,21 +939,6 @@
         "report_count": 3,
         "example_titles": [
           "Settlement: agreement",
-          "Settlement: Agreement"
-        ]
-      },
-      {
-        "theme": "Form reporting (Form No. 1/2/6, Page 700)",
-        "description": "Errors or omissions in the annual FERC forms utilities file.",
-        "keywords": [
-          "form no.",
-          "page 700",
-          "annual report",
-          "reporting"
-        ],
-        "finding_count": 2,
-        "report_count": 2,
-        "example_titles": [
           "Settlement: Agreement"
         ]
       },
@@ -639,6 +966,23 @@
         "example_titles": [
           "Settlement: Agreement"
         ]
+      },
+      {
+        "theme": "Information technology & systems",
+        "description": "IT governance, systems, budgets, or project-management deficiencies.",
+        "keywords": [
+          "information technology",
+          "customer information system",
+          "it budget",
+          "it project",
+          "it backlog",
+          "it governance"
+        ],
+        "finding_count": 1,
+        "report_count": 1,
+        "example_titles": [
+          "Approval: $156.9 million"
+        ]
       }
     ],
     "top_titles": [
@@ -648,15 +992,15 @@
       },
       {
         "title": "Settlement: agreement",
-        "count": 40
-      },
-      {
-        "title": "Settlement: terms",
-        "count": 15
+        "count": 39
       },
       {
         "title": "Settlement: AGREEMENT",
         "count": 14
+      },
+      {
+        "title": "Settlement: terms",
+        "count": 10
       },
       {
         "title": "Approval: $5,475 ",
@@ -665,10 +1009,6 @@
       {
         "title": "Approval: $43,409 ",
         "count": 5
-      },
-      {
-        "title": "Approval: $5 million",
-        "count": 3
       },
       {
         "title": "Approval: $231.8 million",
@@ -707,14 +1047,6 @@
         "count": 2
       },
       {
-        "title": "Approval: $4.2 million",
-        "count": 2
-      },
-      {
-        "title": "Approval: $900,000 ",
-        "count": 2
-      },
-      {
         "title": "Approval: $1,277,051,206. ",
         "count": 1
       },
@@ -731,15 +1063,27 @@
         "count": 1
       },
       {
-        "title": "Approval: $500",
-        "count": 1
-      },
-      {
         "title": "Approval: $9.98 ",
         "count": 1
       },
       {
         "title": "Disallowance: $330,788.",
+        "count": 1
+      },
+      {
+        "title": "Approval: $175\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $55.4 million",
+        "count": 1
+      },
+      {
+        "title": "Approval: $55.4\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $69.8 million",
         "count": 1
       }
     ],

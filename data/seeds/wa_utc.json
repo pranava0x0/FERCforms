@@ -12,7 +12,7 @@
     "issued_date": "2025-09-04",
     "docket": "UE-220066",
     "captured_at": "2026-06-07",
-    "source_note": "Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG-220067 (Consolidated), Washington Utilities and Transportation Commission v. Puget Sound Energy \u2014 on PSE's petition for an order authorizing deferred accounting treatment for PSE's share of certain costs (5 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&year=2022&docketNumber=220066).",
+    "source_note": "Washington UTC Order 38 (service date September 4, 2025), Dockets UE-220066 / UG-220067 (Consolidated), Washington Utilities and Transportation Commission v. Puget Sound Energy — on PSE's petition for an order authorizing deferred accounting treatment for PSE's share of certain costs (5 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=4536&year=2022&docketNumber=220066).",
     "parse": false
   },
   {
@@ -28,7 +28,7 @@
     "issued_date": "2025-09-04",
     "docket": "UE-220053",
     "captured_at": "2026-06-07",
-    "source_note": "Washington UTC order (service date September 4, 2025), Washington Utilities and Transportation Commission v. Avista Corporation d/b/a Avista Utilities, Dockets UE-220053 / UG-220054 / UE-210854 (Consolidated) \u2014 an order in Avista's general rate case proceeding (7 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=1913&year=2022&docketNumber=220053).",
+    "source_note": "Washington UTC order (service date September 4, 2025), Washington Utilities and Transportation Commission v. Avista Corporation d/b/a Avista Utilities, Dockets UE-220053 / UG-220054 / UE-210854 (Consolidated) — an order in Avista's general rate case proceeding (7 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=1913&year=2022&docketNumber=220053).",
     "parse": false
   },
   {
@@ -45,6 +45,70 @@
     "docket": "UE-230172",
     "captured_at": "2026-06-07",
     "source_note": "Washington UTC order (service date March 13, 2026), Washington Utilities and Transportation Commission v. PacifiCorp d/b/a Pacific Power & Light Company, Docket UE-230172 (6 pp). Listed for reference (metadata-only). Source: WA UTC document API (apiproxy.utc.wa.gov/cases/GetDocument?docID=5142&year=2023&docketNumber=230172).",
+    "parse": false
+  },
+  {
+    "id": "2017-03-13_wa-gas-ldcs_wa-ug-132019-hedging-policy-statement",
+    "company": "Washington natural-gas LDCs (PSE, Avista, Cascade, NW Natural)",
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "policy & interpretive statement on LDC natural-gas hedging practices (compliance/prudence review)",
+    "industry": "gas",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=79&year=2013&docketNumber=132019",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2013/132019/docsets",
+    "issued_date": "2017-03-13",
+    "docket": "UG-132019",
+    "source_note": "WA UTC Policy and Interpretive Statement on Local Distribution Companies' Natural Gas Hedging Practices, Docket UG-132019, service date March 13, 2017. 16 pp. Page 1 verified.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2025-09-29_puget-sound-energy_wa-ue-250318-pca-prudence-order",
+    "company": "Puget Sound Energy",
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "power cost adjustment (PCA) prudence-review order",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=323&year=2025&docketNumber=250318",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2025/250318/docsets",
+    "issued_date": "2025-09-29",
+    "docket": "UE-250318",
+    "source_note": "WA UTC order on PSE's 2024 Power Cost Adjustment (PCA) Mechanism Report, Docket UE-250318, service date Sept 29, 2025. 10 pp. Page 1 verified.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2025-12-24_puget-sound-energy_wa-ue-250747-schedule-95-pca-order",
+    "company": "Puget Sound Energy",
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "order on Schedule 95 Power Cost Adjustment Clause revisions (power-cost prudence/rate order)",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=124&year=2025&docketNumber=250747",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2025/250747/docsets",
+    "issued_date": "2025-12-24",
+    "docket": "UE-250747",
+    "source_note": "WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docket UE-250747, service date Dec 24, 2025. 9 pp. Page 1 verified.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2022-12-22_puget-sound-energy_wa-ue-220066-final-order-24",
+    "company": "Puget Sound Energy",
+    "collection": "state_rate_case",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "general rate case Final Order 24 (deferred-accounting / cost-recovery prudence determinations)",
+    "industry": "electric",
+    "pdf_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=3215&year=2022&docketNumber=220066",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2022/220066/docsets",
+    "issued_date": "2022-12-22",
+    "docket": "UE-220066/UG-220067",
+    "source_note": "WA UTC Final Order 24 in the consolidated PSE general rate case, Dockets UE-220066/UG-220067, service date Dec 22, 2022. 144 pp. Page 1 verified.",
+    "captured_at": "2026-06-08",
     "parse": false
   }
 ]

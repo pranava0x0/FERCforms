@@ -12,7 +12,7 @@
     "issued_date": "2025-08-14",
     "docket": "24-E-0322",
     "captured_at": "2026-06-07",
-    "source_note": "New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corporation d/b/a National Grid, Case 24-E-0322 \u2014 published under Public Service Law \u00a766(12)(l). The PSC adopted a joint proposal (Aug 14, 2025) granting electric delivery revenue increases of $167.3M / $297.4M / $243.4M over a three-year plan, ~67% below the request. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/08/national-grid-electric-post-order-rate-case-summary_0.pdf).",
+    "source_note": "New York DPS post-order electric rate-case summary for Niagara Mohawk Power Corporation d/b/a National Grid, Case 24-E-0322 — published under Public Service Law §66(12)(l). The PSC adopted a joint proposal (Aug 14, 2025) granting electric delivery revenue increases of $167.3M / $297.4M / $243.4M over a three-year plan, ~67% below the request. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/08/national-grid-electric-post-order-rate-case-summary_0.pdf).",
     "parse": false
   },
   {
@@ -28,7 +28,7 @@
     "issued_date": null,
     "docket": "25-E-0072",
     "captured_at": "2026-06-07",
-    "source_note": "New York DPS electric rate-case summary for Consolidated Edison Company of New York, Inc., Case 25-E-0072 (February 2025) \u2014 published under Public Service Law \u00a766(12)(l). Con Edison requested an increase in annual electric delivery revenues of ~$1,612M (18.0%); the PSC ultimately adopted a Joint Proposal (Jan 22, 2026) cutting this by ~87%. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/02/con-ed-electric-rate-case-25-e-0072-february-2025_1.pdf).",
+    "source_note": "New York DPS electric rate-case summary for Consolidated Edison Company of New York, Inc., Case 25-E-0072 (February 2025) — published under Public Service Law §66(12)(l). Con Edison requested an increase in annual electric delivery revenues of ~$1,612M (18.0%); the PSC ultimately adopted a Joint Proposal (Jan 22, 2026) cutting this by ~87%. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/02/con-ed-electric-rate-case-25-e-0072-february-2025_1.pdf).",
     "parse": false
   },
   {
@@ -44,7 +44,7 @@
     "issued_date": null,
     "docket": "25-E-0375",
     "captured_at": "2026-06-07",
-    "source_note": "New York DPS electric rate-case summary for New York State Electric & Gas Corporation (NYSEG), Case 25-E-0375 \u2014 published under Public Service Law \u00a766(12)(l). NYSEG's June 30, 2025 filing requested an increase in annual electric revenues of ~$464.4M (35.0% to delivery revenues) for the rate year ending April 30, 2027. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/07/nyseg-electric-rate-case-25-e-0375.pdf).",
+    "source_note": "New York DPS electric rate-case summary for New York State Electric & Gas Corporation (NYSEG), Case 25-E-0375 — published under Public Service Law §66(12)(l). NYSEG's June 30, 2025 filing requested an increase in annual electric revenues of ~$464.4M (35.0% to delivery revenues) for the rate year ending April 30, 2027. Listed for reference (metadata-only). Source: NY DPS (dps.ny.gov/system/files/documents/2025/07/nyseg-electric-rate-case-25-e-0375.pdf).",
     "parse": false
   },
   {
@@ -60,7 +60,55 @@
     "issued_date": "2025-04-25",
     "docket": "24-E-0322",
     "captured_at": "2026-06-07",
-    "source_note": "Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) \u2014 the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).",
+    "source_note": "Joint Proposal (filed April 25, 2025) among Niagara Mohawk Power Corporation d/b/a National Grid, NY Department of Public Service Staff, and multiple parties, in the National Grid electric and gas rate cases, Cases 24-E-0322 (electric) and 24-G-0323 (gas) — the negotiated three-year rate-plan settlement the Public Service Commission adopted by order issued/effective August 14, 2025 (149 pp). Harvested from the NY DPS Document & Matter Management (DMM) system via ViewDoc. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={90E66D96-0000-CA12-A897-0A5E5C2B9F2B}).",
+    "parse": false
+  },
+  {
+    "id": "2022-12_central-hudson_ny-22-m-0645-billing-investigation",
+    "company": "Central Hudson Gas & Electric Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Department of Public Service",
+    "doc_type": "DPS Office of Investigations & Enforcement investigation report (customer billing system)",
+    "industry": "electric",
+    "pdf_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B7410F817-B458-4232-9522-BF3FB9BAB451%7D",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=22-M-0645",
+    "issued_date": null,
+    "docket": "22-M-0645",
+    "source_note": "NY DPS Office of Investigations and Enforcement Investigation Report (Dec 2022), Case 22-M-0645 — investigation into Central Hudson's customer information/billing system and billing-accuracy impacts. 62 pp. Cover prints month only (December 2022) -> issued_date null. Page 1 verified: 'OFFICE OF INVESTIGATIONS AND ENFORCEMENT ... INVESTIGATION REPORT DECEMBER 2022 CASE 22-M-0645'.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2019-02-07_nyseg-rge_ny-16-m-0610-mo-audit-order",
+    "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Public Service Commission",
+    "doc_type": "comprehensive management & operations audit (PSC order releasing audit report, PSL 66(19))",
+    "industry": "electric",
+    "pdf_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B4F8D1569-9E69-4DB7-85DA-23BDCED680B7%7D&DocTitle=Order+Releasing+Audit+Report",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0610",
+    "issued_date": "2019-02-07",
+    "docket": "16-M-0610",
+    "source_note": "NY PSC Order Releasing Audit Report, Case 16-M-0610 — Comprehensive Management and Operations Audits of NYSEG and RG&E (PSL 66(19)). Issued & effective Feb 7, 2019. Page 1 verified.",
+    "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2017-10-24_central-hudson_ny-16-m-0001-mo-audit-order",
+    "company": "Central Hudson Gas & Electric Corporation",
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Public Service Commission",
+    "doc_type": "comprehensive management & operations audit (PSC order releasing audit report, PSL 66(19))",
+    "industry": "electric",
+    "pdf_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B70EE0090-9CDA-450B-9614-71C4BEB734BF%7D",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0001",
+    "issued_date": "2017-10-24",
+    "docket": "16-M-0001",
+    "source_note": "NY PSC Order Releasing Audit Report, Case 16-M-0001 — Comprehensive Management and Operations Audit of Central Hudson (PSL 66(19)). Issued & effective Oct 24, 2017. Page 1 verified.",
+    "captured_at": "2026-06-08",
     "parse": false
   }
 ]

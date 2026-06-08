@@ -202,6 +202,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "order on Schedule 95 Power Cost Adjustment Clause revisions (power-cost prudence/rate order)",
+    "id": "2025-12-24_puget-sound-energy_wa-ue-250747-schedule-95-pca-order",
+    "company": "Puget Sound Energy",
+    "company_raw": "Puget Sound Energy",
+    "docket": "UE-250747",
+    "docket_full": null,
+    "issued_date": "2025-12-24",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2025/250747/docsets",
+    "pdf_download_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=124&year=2025&docketNumber=250747",
+    "captured_at": "2026-06-08",
+    "source_note": "WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docket UE-250747, service date Dec 24, 2025. 9 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 9,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "OH",
     "source": "Public Utilities Commission of Ohio",
@@ -313,7 +343,9 @@
         "summary": "oberts presents the results of his review of the information EAL provided in response to the agreed settlement terms as approved by the Commission in Order Nos. 10 and 14 with respect to reliability metrics and vegetation management. He also presents the results of",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -322,9 +354,7 @@
         "summary": "ults of his review of the information EAL provided pursuant to the 2021 Evaluation Report Rider FRP Settlement Agreement with respect to the Feeder Level Investment Plan (FLIP) and integration of the Quality of Service reporting of the Worst-of-the-Worst into EAL’s FOCU",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -333,13 +363,15 @@
         "summary": "14, and updated cost information and reliability metrics for the FLIP feeders pursuant to the 2021 Settlement Agreement. Mr. Roberts testifies that Staff is monitoring the reliability metrics for certain feeders, and Staff did not identify any feeders that met the elig",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": false,
     "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": false
   },
@@ -467,18 +499,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 1,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Approval: $500",
-        "summary": "he EDCs stated that they would need to become adhering parties to the US Stay Protocol if the Board approves MSCGI’s proposal. Further, a one (1)-time fee ($500) is required to be paid to the ISDA to become an adhering party to the US Stay Protocol. The EDCs requested that if the Board directs the E",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -616,6 +638,36 @@
         "cost_to_customers": false
       }
     ],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "power cost adjustment (PCA) prudence-review order",
+    "id": "2025-09-29_puget-sound-energy_wa-ue-250318-pca-prudence-order",
+    "company": "Puget Sound Energy",
+    "company_raw": "Puget Sound Energy",
+    "docket": "UE-250318",
+    "docket_full": null,
+    "issued_date": "2025-09-29",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2025/250318/docsets",
+    "pdf_download_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=323&year=2025&docketNumber=250318",
+    "captured_at": "2026-06-08",
+    "source_note": "WA UTC order on PSE's 2024 Power Cost Adjustment (PCA) Mechanism Report, Docket UE-250318, service date Sept 29, 2025. 10 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 10,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -1549,7 +1601,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -1560,7 +1612,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -1601,13 +1653,15 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
     "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": false
   },
@@ -1635,18 +1689,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 1,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Approval: $88 million",
-        "summary": "o be known and measurable, used and useful, and prudent. 3 Staff explains that PSE pursued multiple grant opportunities in excess of $88 million and that of the 19 grant applications submitted, eight were successful. However, Staff notes that not all the grants had a monetary component, and th",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -1773,27 +1817,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 2,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Settlement: terms",
-        "summary": "he settlement was lawful, supported by the record, and consistent with the public interest.4 11 The settlement terms addressing the annual capital projects review process extended the company’s initial proposal for the review period from three to four months “to all",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "Settlement: terms",
-        "summary": "settlement in the general rate proceeding for Northwest Natural Gas in Docket UG-200994, et al. The settlement terms on the capital projects review were included to provide assurance that the provisional capital included prior to the rate effective period (for 2022",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -2108,7 +2133,9 @@
         "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers by approximately $3,500,000 during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2117,7 +2144,9 @@
         "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2126,7 +2155,9 @@
         "summary": "DEP improperly allocated power production revenue credits to multiple functions, instead of assigning 100% of these revenue credits to the power production function. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2136,7 +2167,9 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing",
+          "Inventory, materials & fleet"
         ],
         "cost_to_customers": false
       },
@@ -2159,7 +2192,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -2169,7 +2203,9 @@
         "summary": "DEP improperly charged labor costs of a registered lobbyist engaged in political activities to Account 920, Administrative and General Salaries, rather than to Account 426.4, Expenditures for Certain Civic, Political and Related Activities. By improperly including these amounts in Account 920, DEP overstated FERC-jurisdictional formula rate inputs, revenue requirements, and customer billings.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2179,7 +2215,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -2190,7 +2227,6 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
           "Capitalization vs. expense"
         ],
         "cost_to_customers": false
@@ -2212,9 +2248,7 @@
         "summary": "DEP did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions affected the transparency, accuracy, and usefulness of certain information in the reports. D.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
@@ -2224,7 +2258,9 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Inventory, materials & fleet",
       "Property & plant records"
     ],
     "cost_to_customers": true
@@ -2766,6 +2802,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "order initiating gas-system safety-inspection investigation (documents PSC Engineering Division audit findings)",
+    "id": "2025-05-08_baltimore-gas-electric_md-9791-gas-safety-investigation",
+    "company": "Baltimore Gas and Electric Company (BGE)",
+    "company_raw": "Baltimore Gas and Electric Company (BGE)",
+    "docket": "Case No. 9791 (Order No. 91643)",
+    "docket_full": null,
+    "issued_date": "2025-05-08",
+    "source_page_url": "https://psc.maryland.gov/order-initiating-bge-gas-system-case-no-9791/",
+    "pdf_download_url": "https://psc.maryland.gov/wp-content/uploads/Order-No.-91643-Initiating-a-Proceeding-_BGEGasSystemSafety-Insp.-9791.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an investigation into BGE gas-system inspection issues, documenting the PSC Engineering Division (PSCED) Investigation Report findings/recommendations (falsified-records pattern, QA/compliance-oversight gaps). 9 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 9,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "GA",
     "source": "Georgia Public Service Commission",
@@ -3046,7 +3112,9 @@
         "summary": "’ Recommended Adjustments After accepting an adjustment to its initial request, RMP asks the PSC to approve $156.9 million in capital expenditures and $24.9 million in O&M expenses that it projects incurring in the Test Year to implement its 2023 Plan. DPU and OCS both ad",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       },
       {
@@ -3177,7 +3245,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Information technology & systems"
+    ],
     "cost_to_customers": false
   },
   {
@@ -3209,63 +3279,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 6,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Approval: $78 million",
-        "summary": ", in aggregate, in the Company’s service territory for a given storm event. The Major Storm revenue allowance reflected in rates will be $78 million. The treatment of Major Storm costs is more fully described in Appendix 13 and Appendix 5, Schedule 16. 40 Case 24-E-0322 Case 24-G-0323 Joint Propos",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "Approval: $85.7 million",
-        "summary": "Lining Storm deferral will dissolve and there will be no minor storm deferral. The minor storm rate allowance will remain at $85.7 million for Rate Year Two and $87.6 million for Rate Year Three with no deferral for any expenditures for the remainder of the rate plan. 6.5. Pre-Staging St",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 3,
-        "title": "Approval: $61.775 million",
-        "summary": "r component is reflected through the revenue allocation and rate design process. The EAP Total Rate Allowances are $61.775 million in Rate Year One, $87.575 million 24 The cash shortfall is equal to the difference between the negative expense levels reflected in the revenue requi",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 4,
-        "title": "Approval: $1 million",
-        "summary": "cy economic assistance or other incremental economic development programs. The Economic Development Grant Program for gas will be funded by amortizing up to $1 million of the existing economic development programs gas deferral balance in each Rate Year. An example of the reconciliation is provided i",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 5,
-        "title": "Approval: $17.404 million",
-        "summary": "ric and Gas) Each Rate Year, the Company will fully reconcile actual SIR expense to the annual rate allowance of $17.404 million for electric and $3.071 million for gas in Rate Year One and $17.357 65 Case 24-E-0322 Case 24-G-0323 Joint Proposal million for electric and $3.063",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 6,
-        "title": "Approval: $25,000 ",
-        "summary": "n a grant program; and increases to maximum grant funding provided that the increase in the maximum grant amount does not exceed $25,000 and increase the maximum grant amount by more than 25 percent. Commission approval will continue to be required for other program adjustments, includi",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -3388,7 +3403,8 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -3419,9 +3435,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -3452,8 +3466,8 @@
     ],
     "structured": true,
     "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)",
       "Informational postings",
+      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
@@ -3622,6 +3636,36 @@
     "ocr_used": false,
     "audit_period": null,
     "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "CPUC Utility Audits, Risk and Compliance Division",
+    "doc_type": "balancing accounts performance audit (Utility Audits Branch)",
+    "id": "2025-02-19_southern-california-gas_ca-balancing-accounts-audit",
+    "company": "Southern California Gas Company",
+    "company_raw": "Southern California Gas Company",
+    "docket": null,
+    "docket_full": null,
+    "issued_date": "2025-02-19",
+    "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+    "pdf_download_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2025/energy_2025-02-19_scg_ba.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.",
+    "archived_via": null,
+    "page_count": 15,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
     "audit_type": null,
     "functions": [],
     "forms": [],
@@ -4064,9 +4108,7 @@
         "summary": "AECS improperly allocated costs to both FERC-jurisdictional and non-jurisdictional entities, causing an error in accounting and reporting. As a result, WPL overcharged its wholesale power customers and IPL undercharged its wholesale power customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -4087,7 +4129,9 @@
         "summary": "WPL incorrectly recovered a portion of the cost of distribution-related Electric Vehicle (EV) charging stations through its wholesale power formula rates. As a result, WPL overstated its wholesale power revenue requirements, which led to overbillings to wholesale power customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4106,7 +4150,7 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Customer service & billing"
     ],
     "cost_to_customers": true
   },
@@ -4309,7 +4353,9 @@
             "source_page": 22
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4340,7 +4386,8 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Internal audit & internal controls"
         ],
         "cost_to_customers": true
       },
@@ -4361,7 +4408,10 @@
             "source_page": 42
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing",
+          "Dividend policy & capital management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4421,7 +4471,10 @@
             "source_page": 61
           }
         ],
-        "themes": [],
+        "themes": [
+          "Tariff administration & oversight",
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4441,7 +4494,9 @@
             "source_page": 68
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4461,7 +4516,9 @@
             "source_page": 73
           }
         ],
-        "themes": [],
+        "themes": [
+          "Emergency preparedness & business continuity"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4496,7 +4553,9 @@
             "source_page": 85
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -4516,13 +4575,23 @@
             "source_page": 94
           }
         ],
-        "themes": [],
+        "themes": [
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Customer service & billing",
+      "Dividend policy & capital management",
+      "Emergency preparedness & business continuity",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Tariff administration & oversight",
+      "Workforce, training & succession planning"
     ],
     "cost_to_customers": true
   },
@@ -4614,82 +4683,10 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 7,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Approval: $5 million",
-        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (l-1) To qualify for the Deman",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [
-          "Tariff administration & oversight"
-        ],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "Approval: $5 million",
-        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (l-1) To qualify for the Deman",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [
-          "Tariff administration & oversight"
-        ],
-        "cost_to_customers": false
-      },
-      {
-        "index": 3,
-        "title": "Approval: $5 million",
-        "summary": "lify for a Distribution Demand Charge Rebate. This rebate will remain in effect until the N.J.B.P.U approved $5 million program total has been reached or an electric vehicle specific tariff rate is established in a future rate proceeding. (i-1) To qualify for the Deman",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [
-          "Tariff administration & oversight"
-        ],
-        "cost_to_customers": false
-      },
-      {
-        "index": 4,
-        "title": "Settlement: agreement",
-        "summary": "sy between the parties and is consistent with the law. 3 OAL DKT. NO. PUC 00926-24 I ORDER that the settlement agreement is APPROVED, that its terms are INCORPORATED into this decision, and that this case is CONCLUDED. I FILE my decision with the BOARD OF PUBLIC UTILITI",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 5,
-        "title": "Settlement: terms",
-        "summary": "tition in this docket, and to request that: (1) Your Honor issue an Initial Decision approving this Settlement in its entirety in accordance with the terms contained herein, and (2) the New Jersey Board of Public Utilities (“Board” or “BPU”) approve this Settlement, in its entirety in accordance wit",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 6,
-        "title": "Settlement: terms",
-        "summary": "ocket Nos. GR17070776 and GR23030102, Order dated October 11, 2023 at 11 (Stipulation ¶ 39). - 31 - Settlement is in no way binding upon them in any other proceeding, except to enforce the terms of this Settlement. WHEREFORE, the undersigned parties respectfully submit this Settlement to Your Honor ",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 7,
-        "title": "Settlement: terms",
-        "summary": "___________ Dated: __________________________ ________________________________________________ -31- Settlement is in no way binding upon them in any other proceeding, except to enforce the terms of this Settlement. WHEREFORE, the undersigned parties respectfully submit this Settlement to Your Honor ",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
-    "themes": [
-      "Tariff administration & oversight"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -4818,7 +4815,8 @@
         ],
         "themes": [
           "AFUDC / cost of capital",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Dividend policy & capital management"
         ],
         "cost_to_customers": true
       },
@@ -4895,7 +4893,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -4907,7 +4906,8 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)"
+          "Below-the-line costs (lobbying, charitable, etc.)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -4954,7 +4954,8 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -5013,6 +5014,8 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
+      "Dividend policy & capital management",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -5432,7 +5435,8 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -5475,7 +5479,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)"
+          "Below-the-line costs (lobbying, charitable, etc.)",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": true
       },
@@ -5583,7 +5588,9 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -6137,7 +6144,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6537,6 +6546,7 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
@@ -6603,6 +6613,36 @@
       "Depreciation"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "CPUC Utility Audits, Risk and Compliance Division",
+    "doc_type": "balancing accounts performance audit (Utility Audits Branch)",
+    "id": "2024-07-23_southern-california-edison_ca-balancing-accounts-audit",
+    "company": "Southern California Edison Company",
+    "company_raw": "Southern California Edison Company",
+    "docket": null,
+    "docket_full": null,
+    "issued_date": "2024-07-23",
+    "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+    "pdf_download_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2024/energy_2024-07-23_sce_ba.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.",
+    "archived_via": null,
+    "page_count": 16,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_audit",
@@ -6676,7 +6716,9 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Cost of service & rates",
+          "Workforce, training & succession planning"
         ],
         "cost_to_customers": true
       },
@@ -6692,7 +6734,9 @@
             "source_page": 36
           }
         ],
-        "themes": [],
+        "themes": [
+          "Dividend policy & capital management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6717,7 +6761,9 @@
             "source_page": 47
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6737,7 +6783,9 @@
             "source_page": 51
           }
         ],
-        "themes": [],
+        "themes": [
+          "Emergency preparedness & business continuity"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6762,7 +6810,10 @@
             "source_page": 59
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning",
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6787,7 +6838,10 @@
             "source_page": 66
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls",
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -6807,13 +6861,24 @@
             "source_page": 76
           }
         ],
-        "themes": [],
+        "themes": [
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Cost of service & rates",
+      "Customer service & billing",
+      "Dividend policy & capital management",
+      "Emergency preparedness & business continuity",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Service reliability & vegetation management",
+      "Workforce, training & succession planning"
     ],
     "cost_to_customers": true
   },
@@ -7570,7 +7635,9 @@
         "summary": "e benefits of the audit to the ratepayers would greatly outweigh the cost of the audit. 157. In the Settlement Agreement, the Settlement Parties-and Staff agrees, also clarified the Company’s and the customers’ responsibilities regarding Tree Trimming and Vegetation Man",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -7693,7 +7760,8 @@
     ],
     "structured": false,
     "themes": [
-      "Cost of service & rates"
+      "Cost of service & rates",
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": true
   },
@@ -7855,7 +7923,9 @@
         "summary": "815. The Settlement Parties agree the appropriate fuel factors for DESC to charge 1. pursuanttothis SettlementAgreementfortheperiodbeginningwiththefirstbilling m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE 7 Z'. CI cycle ofMay 2024 and extending through the las",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -7900,7 +7970,9 @@
         "summary": "Facilities and Third Net Energy Metering for Renewable U CI Energy Facilities, were attached to the Settlement Agreement as Attachments A and B, including I O 0 0 the rates, terms and conditions forthe periodbeginning withthe firstbilling cycle ofMay 2024. 8. DESC propo",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8031,7 +8103,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Customer service & billing"
+    ],
     "cost_to_customers": false
   },
   {
@@ -8138,7 +8212,9 @@
         "summary": "rs m B.5. The Parties agree the appropriate fuel factors for DESC to charge pursuant to this O I io Settlement Agreement for the period beginning with the first billing cycle of May 2024 and C) extending through the lastbilling cycle ofApril 2025 are listedbelow. in O c",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8373,7 +8449,8 @@
     ],
     "structured": false,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Customer service & billing"
     ],
     "cost_to_customers": true
   },
@@ -8893,7 +8970,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8929,7 +9008,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -9050,6 +9130,7 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -9232,172 +9313,11 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 17,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Disallowance: $27.8 million",
-        "summary": "PC witnesses Alvarez and Stephens argued that BGE’s capital spend for system performance in 2022 by $27.8 million (27.2%) over budget should be disallowed because “system performance spending is discretionary as to timing and extent…”747 OPC argued that by the time a second major storm hit the BGE t",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "Approval: $149.1 million",
-        "summary": "his case, the Commission will apply the Present Value Method to BGE’s service lives. The Commission approves a depreciation expense of $149.1 million for BGE’s electric plant, as recommended by Staff. The Commission further approves BGE’s proposed net salvage rates, calculated under the Maryland Pr",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [
-          "Depreciation"
-        ],
-        "cost_to_customers": true
-      },
-      {
-        "index": 3,
-        "title": "Approval: $38.2 million",
-        "summary": "GE’s proposed accelerated cable replacement schedule and recommended instead that the Commission disallow the $38.2 million that the accelerated schedule would cost. OPC witness Stephens testified that BGE has proposed to spend $89.6 million replacing underground cable in",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 4,
-        "title": "Approval: $4.2 million",
-        "summary": "MYP period.299 For the same reasons articulated by Mr. Clementson, Mr. Austin recommended a full disallowance of the $4.2 million that BGE is proposing to spend on the electric side 295 The Commission also assessed a civil penalty against BGE in the amount of $437,294. Order No.",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 5,
-        "title": "Approval: $000,000",
-        "summary": "llowance for electric costs should be revised as follows. Table 3 BGE proposed revision to Staff Disallowance ($000,000) 2021 2022 2023 2024 2025 2026 Electric Project $7.0 $1.2 $0.3 $0.3 $0.3 $0.3 68155 In his surrebuttal testimony, Mr. Clementson reversed his recomme",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 6,
-        "title": "Approval: $7 million",
-        "summary": "commendation to reflect BGE witness Frain’s revised estimation of costs in rebuttal testimony to disallow $7 million in 2021 and $1.2 million in 2022.314 In his surrebuttal testimony, Mr. Austin also changed his recommendation from his direct testimony. After review",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 7,
-        "title": "Approval: $4.2 million",
-        "summary": "tated that he accepted the Company’s analysis and rescinded his previous recommendation to fully disallow the $4.2 million BGE proposed to spend on the common trench program in this MYP period.315 Therefore, Mr. Austin recommended that BGE be disallowed only $900,000 of t",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 8,
-        "title": "Approval: $900,000 ",
-        "summary": "n the common trench program in this MYP period.315 Therefore, Mr. Austin recommended that BGE be disallowed only $900,000 of the $4.2 million it initially proposed to spend on its CTES – Electric program for the MYP 2 period. Commission Decision The Commission accepts Sta",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 9,
-        "title": "Approval: $900,000 ",
-        "summary": "BGE sought $4.2 million for the CTES- Electric program, Mr. Austin revised his recommendation to disallow only $900,000 of the $4.2 million originally requested for the MYP 2 period. The Commission accepts Staff’s recommendation. Finally, the Commission observes that th",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 10,
-        "title": "Approval: $17.5 million",
-        "summary": "buttal at 14. 90 reduce the 2021-2023 revenue requirements accordingly. The Commission will also disallow recovery for the $17.5 million BGE requested in its MYP application. Nevertheless, the Commission finds that BGE raises a fair point about adjusting the 2021 reconciliation under-r",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 11,
-        "title": "Approval: $120 million",
-        "summary": "ed to the condition of the conduit.418 Accordingly, Mr. Stephens recommended that the Commission disallow the entire $120 million in the conduit system, as it is not in the best interest of ratepayers.419 In his rebuttal testimony, Mr. Vahos testified that a change in Baltimore",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 12,
-        "title": "Approval: $30\nmillion",
-        "summary": "466 Similarly, OPC witness Stephens did not change his recommendation. Despite the lure of the IIJA grant, he argued that “misspending $30 million to capture such savings does not constitute a bargain for customers.”467 Commission Decision The Commission will grant in part Staff’s proposal by de",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 13,
-        "title": "Approval: $30.8 million",
-        "summary": "communities in central Maryland, and BGE was awarded that grant on June 16, 2023.473 As part of the grant requirements, BGE must spend more than $30.8 million by the end of June 2027 in order to receive the full $15 million that the NTIA authorized.474 The Commission supports BGE’s Middle Mile Proje",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 14,
-        "title": "Approval: $3.38\nmillion",
-        "summary": "ter planning.525 Instead, Dr. Hopkins recommended that for this first MYP period, the Commission disallow a portion of BGE’s capital spending on mains and services – amounting to $3.38 million.526 He argued that the Commission should send a message that if BGE’s planning does not improve, the Commis",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 15,
-        "title": "Approval: $27.8\nmillion",
-        "summary": "ould be deemed imprudent. Based on the foregoing, the Commission rejects OPC’s recommendation to disallow the Company’s request for $27.8 million for its system performance work. This decision does not abrogate BGE’s duty to carefully consider if spends should be deferred into future years if c",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 16,
-        "title": "Approval: $4.1 million",
-        "summary": "ed future clean-up costs that may or may not be recoverable in rate base.873 He also recommended disallowance of the $4.1 million that would be required for the accelerated distribution substation oil circuit breaker replacement program, with any significant variance of expendit",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [
-          "Cost of service & rates"
-        ],
-        "cost_to_customers": true
-      },
-      {
-        "index": 17,
-        "title": "Approval: $200,000 ",
-        "summary": "was also well-argued in Case No. 9645, where the Commission found Schedule T to be over-earning and approved a $200,000 reduction from Schedule T revenues as a part of Step-One of the 1193 Id. at 18. 259 revenue allocation methodology. The Commission now directs BGE to",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
-    "themes": [
-      "Cost of service & rates",
-      "Depreciation"
-    ],
-    "cost_to_customers": true
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "prudence_review",
@@ -9693,18 +9613,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 1,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Disallowance: $31,435,485",
-        "summary": "ly 18, 19, 20, 21 and 28, 2023. The PULJ issued a Proposed Order on September 6, 2023,1 authorizing $31,435,485 of the Company’s request, and denying approval of the remaining request. Additionally, on May 31, 2023, the Maryland Office of People’s Counsel (“OPC”) and Potomac Edison, with the sup",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -10840,7 +10750,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -11006,7 +10917,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Inventory, materials & fleet"
         ],
         "cost_to_customers": false
       },
@@ -11256,8 +11168,10 @@
       "Accounting misclassification",
       "Capitalization vs. expense",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Inventory, materials & fleet",
       "Property & plant records"
     ],
     "cost_to_customers": true
@@ -11401,7 +11315,8 @@
         "themes": [
           "Depreciation",
           "Property & plant records",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -11617,6 +11532,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -11780,7 +11696,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -11937,6 +11855,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Depreciation",
       "Property & plant records"
     ],
@@ -12048,7 +11967,9 @@
             "source_page": 26
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12068,7 +11989,9 @@
             "source_page": 34
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12123,7 +12046,10 @@
             "source_page": 53
           }
         ],
-        "themes": [],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12158,7 +12084,11 @@
             "source_page": 53
           }
         ],
-        "themes": [],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity",
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12178,7 +12108,9 @@
             "source_page": 57
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12213,7 +12145,9 @@
             "source_page": 68
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12233,7 +12167,9 @@
             "source_page": 72
           }
         ],
-        "themes": [],
+        "themes": [
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12248,7 +12184,9 @@
             "source_page": 77
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -12273,7 +12211,15 @@
       }
     ],
     "structured": true,
-    "themes": [],
+    "themes": [
+      "Customer service & billing",
+      "Cybersecurity & physical security",
+      "Emergency preparedness & business continuity",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Workforce, training & succession planning"
+    ],
     "cost_to_customers": false
   },
   {
@@ -12308,6 +12254,66 @@
     "finding_count": 0,
     "findings": [],
     "structured": true,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "NJ Board of Public Utilities",
+    "doc_type": "affiliate-transactions audit & management audit, Phase Two (Liberty Consulting)",
+    "id": "2023-02-07_jcpl_nj-ea20110733-affiliate-management-audit-phase2",
+    "company": "Jersey Central Power & Light Company (JCP&L)",
+    "company_raw": "Jersey Central Power & Light Company (JCP&L)",
+    "docket": "EA20110733",
+    "docket_full": null,
+    "issued_date": "2023-02-07",
+    "source_page_url": "https://www.nj.gov/bpu/about/divisions/audits/auditreports.html",
+    "pdf_download_url": "https://www.nj.gov/bpu/pdf/auditpdfs/2023%20JCPL%20Final%20Audit%20Report%20-%20Phase%202.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "NJ BPU audit (Liberty Consulting Group): Phase Two of an Audit of the Affiliated Transactions and a Management Audit of JCP&L. Docket EA20110733, dated Feb 7, 2023. 601 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 601,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "general rate case Final Order 24 (deferred-accounting / cost-recovery prudence determinations)",
+    "id": "2022-12-22_puget-sound-energy_wa-ue-220066-final-order-24",
+    "company": "Puget Sound Energy",
+    "company_raw": "Puget Sound Energy",
+    "docket": "UE-220066/UG-220067",
+    "docket_full": null,
+    "issued_date": "2022-12-22",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2022/220066/docsets",
+    "pdf_download_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=3215&year=2022&docketNumber=220066",
+    "captured_at": "2026-06-08",
+    "source_note": "WA UTC Final Order 24 in the consolidated PSE general rate case, Dockets UE-220066/UG-220067, service date Dec 22, 2022. 144 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 144,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
     "themes": [],
     "cost_to_customers": false
   },
@@ -13132,9 +13138,7 @@
         "summary": "PJM should consider improving its data reporting under Order No. 760 by strengthening policies and procedures, devoting additional resources, and enhancing its internal data gathering and reporting processes.",
         "is_other_matter": true,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -13166,9 +13170,7 @@
       }
     ],
     "structured": true,
-    "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -13222,7 +13224,8 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -13258,7 +13261,9 @@
             "source_page": 55
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13328,7 +13333,10 @@
             "source_page": 78
           }
         ],
-        "themes": [],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13358,7 +13366,9 @@
             "source_page": 93
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13384,7 +13394,11 @@
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Customer service & billing",
+      "Cybersecurity & physical security",
+      "Emergency preparedness & business continuity",
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": true
   },
@@ -13434,7 +13448,9 @@
             "source_page": 30
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13469,7 +13485,9 @@
             "source_page": 47
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13490,7 +13508,8 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -13548,7 +13567,9 @@
             "source_page": 75
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13563,7 +13584,9 @@
             "source_page": 103
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13593,7 +13616,9 @@
             "source_page": 103
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13608,7 +13633,9 @@
             "source_page": 114
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13633,7 +13660,9 @@
             "source_page": 131
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -13658,13 +13687,21 @@
             "source_page": 162
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Cost of service & rates",
+      "Customer service & billing",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Service reliability & vegetation management",
+      "Workforce, training & succession planning"
     ],
     "cost_to_customers": true
   },
@@ -14252,7 +14289,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       }
@@ -14262,6 +14300,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
@@ -14519,7 +14558,8 @@
           }
         ],
         "themes": [
-          "Informational postings"
+          "Informational postings",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -14551,7 +14591,8 @@
     ],
     "structured": true,
     "themes": [
-      "Informational postings"
+      "Informational postings",
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": false
   },
@@ -14719,7 +14760,8 @@
         "themes": [
           "Depreciation",
           "Property & plant records",
-          "Capitalization vs. expense"
+          "Capitalization vs. expense",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": true
       },
@@ -14786,7 +14828,7 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -14844,7 +14886,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -14907,9 +14950,11 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
+      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -15031,7 +15076,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -15116,9 +15162,40 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "OH",
+    "source": "Public Utilities Commission of Ohio",
+    "doc_type": "rider audit report (Daymark Energy Advisors, PUCO third-party audit of Rider DMR)",
+    "id": "2022-01-14_firstenergy-ohio_puco-17-2474-el-rdr-rider-dmr-audit",
+    "company": "FirstEnergy 'Ohio Companies' (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)",
+    "company_raw": "FirstEnergy 'Ohio Companies' (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)",
+    "docket": "17-2474-EL-RDR",
+    "docket_full": null,
+    "issued_date": "2022-01-14",
+    "source_page_url": "https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations",
+    "pdf_download_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A22A14B01753C02696",
+    "captured_at": "2026-06-08",
+    "source_note": "PUCO third-party audit (Daymark Energy Advisors), Case 17-2474-EL-RDR — Audit of the FirstEnergy Ohio Companies' Rider DMR. 137 pp. Live host F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'DAYMARK ENERGY ADVISORS ... AN AUDIT REPORT OF THE OHIO COMPANIES' RIDER DMR JANUARY 14, 2022'.",
+    "archived_via": "http://web.archive.org/web/20220114184543if_/https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A22A14B01753C02696",
+    "page_count": 0,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_rate_case",
@@ -15197,6 +15274,36 @@
     "source_note": "Oregon PUC Order No. 21-457 (entered December 7, 2021) in the matter of Portland General Electric Company's 2020 Annual Power Cost Variance / Power Cost Adjustment Mechanism (PCAM) (9 pp) — the Commission's review of the difference between PGE's actual and forecast net variable power costs. Listed for reference (metadata-only). Source: Oregon PUC orders archive (apps.puc.state.or.us/orders/2021ords/21-457.pdf).",
     "archived_via": null,
     "page_count": 9,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "OH",
+    "source": "Public Utilities Commission of Ohio",
+    "doc_type": "independent investigative audit (Blue Ridge Consulting, PUCO-ordered)",
+    "id": "2021-11-19_firstenergy-ohio_puco-20-1629-el-rdr-browns-stadium-investigation",
+    "company": "FirstEnergy Corp. (Ohio electric distribution utilities)",
+    "company_raw": "FirstEnergy Corp. (Ohio electric distribution utilities)",
+    "docket": "20-1629-EL-RDR",
+    "docket_full": null,
+    "issued_date": "2021-11-19",
+    "source_page_url": "https://puco.ohio.gov/utilities/electricity/resources/hb-6-related-investigations",
+    "pdf_download_url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A21K19B14331F02084",
+    "captured_at": "2026-06-08",
+    "source_note": "PUCO-ordered independent audit (Blue Ridge Consulting), Case 20-1629-EL-RDR — Investigation into Ohio ratepayer funding of FirstEnergy's Cleveland Browns Stadium renaming. 9 pp. Live host dis.puc.state.oh.us is F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'Case No. 20-1629-EL-RDR ... November 19, 2021 ... Blue Ridge Consulting Services'.",
+    "archived_via": "http://web.archive.org/web/20220521222115if_/https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A21K19B14331F02084",
+    "page_count": 0,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -15314,7 +15421,8 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -15379,7 +15487,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -15577,9 +15686,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
@@ -15588,6 +15695,7 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -16350,7 +16458,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -16360,7 +16469,9 @@
         "summary": "Versant Power included an incorrect amount for transmission rental revenues in its wholesale transmission formula rate for the BHD. As a result, Versant Power overstated the revenue credits included in its wholesale transmission formula rate calculations for the BHD, which led to understatement of its wholesale transmission revenue requirements and billings to its wholesale transmission customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -16413,6 +16524,7 @@
       "Accounting misclassification",
       "Capitalization vs. expense",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -17012,7 +17124,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -17040,6 +17154,7 @@
     ],
     "structured": true,
     "themes": [
+      "Customer service & billing",
       "Depreciation",
       "Informational postings"
     ],
@@ -17220,7 +17335,8 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -17458,6 +17574,7 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Tariff administration & oversight"
@@ -17564,7 +17681,8 @@
           }
         ],
         "themes": [
-          "AFUDC / cost of capital"
+          "AFUDC / cost of capital",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -17638,7 +17756,8 @@
           }
         ],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -17766,7 +17885,8 @@
         "themes": [
           "Accounting misclassification",
           "Depreciation",
-          "Below-the-line costs (lobbying, charitable, etc.)"
+          "Below-the-line costs (lobbying, charitable, etc.)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -17798,6 +17918,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -18366,7 +18487,9 @@
             "source_page": 16
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -18412,7 +18535,9 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Workforce, training & succession planning",
+          "Internal audit & internal controls"
         ],
         "cost_to_customers": true
       },
@@ -18438,7 +18563,10 @@
             "source_page": 39
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls",
+          "Dividend policy & capital management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -18453,7 +18581,9 @@
             "source_page": 39
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -18488,7 +18618,9 @@
             "source_page": 59
           }
         ],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -18518,13 +18650,20 @@
             "source_page": 76
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Customer service & billing",
+      "Dividend policy & capital management",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Workforce, training & succession planning"
     ],
     "cost_to_customers": true
   },
@@ -19034,9 +19173,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -19064,7 +19201,6 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)",
       "Informational postings"
     ],
     "cost_to_customers": true
@@ -19209,7 +19345,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -19240,10 +19377,41 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "NJ Board of Public Utilities",
+    "doc_type": "affiliate-transactions, operational/financial performance & management audit (Liberty Consulting)",
+    "id": "2020-03-11_atlantic-city-electric_nj-affiliate-management-audit",
+    "company": "Atlantic City Electric Company",
+    "company_raw": "Atlantic City Electric Company",
+    "docket": null,
+    "docket_full": null,
+    "issued_date": "2020-03-11",
+    "source_page_url": "https://www.nj.gov/bpu/about/divisions/audits/auditreports.html",
+    "pdf_download_url": "https://www.nj.gov/bpu/pdf/auditpdfs/2020%20ACE%20Final%20Audit%20Report.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "NJ BPU audit (Liberty Consulting Group): Audit of Affiliated Transactions and Operational and Financial Performance and a Management Audit of Atlantic City Electric. Dated March 11, 2020. 705 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 705,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "ferc_audit",
@@ -19560,7 +19728,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -19571,7 +19740,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -19589,7 +19759,8 @@
     ],
     "structured": true,
     "themes": [
-      "Accounting misclassification"
+      "Accounting misclassification",
+      "Customer service & billing"
     ],
     "cost_to_customers": false
   },
@@ -19668,7 +19839,8 @@
         "themes": [
           "Accounting misclassification",
           "Affiliate / intercompany transactions",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       }
@@ -19677,6 +19849,7 @@
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -19888,7 +20061,8 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -19920,7 +20094,8 @@
       "Capitalization vs. expense",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
-      "Property & plant records"
+      "Property & plant records",
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": true
   },
@@ -19962,7 +20137,9 @@
         "summary": "Ohio Power understated its revenue credits that are used to reduce the revenue requirement of its transmission formula rate by improperly excluding certain transmission-related revenues – specifically pole attachment revenue, causing an overstatement of its revenue requirement. This overstatement resulted in excess billings to wholesale transmission customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -19982,7 +20159,8 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)"
+          "Below-the-line costs (lobbying, charitable, etc.)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -20018,6 +20196,7 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -20068,7 +20247,10 @@
         "summary": "XES used an improper allocation methodology to assign shared costs for operation, maintenance, and management of the company’s information technology network in 2016 and 2017. Use of this allocation methodology led XES to improperly charge administrative and general costs to Xcel’s utilities and led to improper billings to Xcel’s wholesale transmission customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Information technology & systems",
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -20107,7 +20289,9 @@
     "themes": [
       "Accounting misclassification",
       "Capitalization vs. expense",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Customer service & billing",
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Information technology & systems"
     ],
     "cost_to_customers": false
   },
@@ -20149,7 +20333,8 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -20161,7 +20346,8 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -20172,7 +20358,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -20204,7 +20391,8 @@
         "recommendations": [],
         "themes": [
           "Depreciation",
-          "Property & plant records"
+          "Property & plant records",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       }
@@ -20213,6 +20401,7 @@
     "themes": [
       "Accounting misclassification",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Property & plant records"
     ],
@@ -20782,7 +20971,8 @@
         "themes": [
           "Accounting misclassification",
           "Membership dues & industry associations",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       }
@@ -20792,10 +20982,41 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Public Service Commission",
+    "doc_type": "comprehensive management & operations audit (PSC order releasing audit report, PSL 66(19))",
+    "id": "2019-02-07_nyseg-rge_ny-16-m-0610-mo-audit-order",
+    "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+    "company_raw": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+    "docket": "16-M-0610",
+    "docket_full": null,
+    "issued_date": "2019-02-07",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0610",
+    "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B4F8D1569-9E69-4DB7-85DA-23BDCED680B7%7D&DocTitle=Order+Releasing+Audit+Report",
+    "captured_at": "2026-06-08",
+    "source_note": "NY PSC Order Releasing Audit Report, Case 16-M-0610 — Comprehensive Management and Operations Audits of NYSEG and RG&E (PSL 66(19)). Issued & effective Feb 7, 2019. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 15,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "ferc_audit",
@@ -21107,9 +21328,7 @@
         "summary": "Trunkline misreported gas equivalents in its annual fuel reimbursement filings. While this did not impact the accuracy of the fuel reimbursement rate charged to shippers, it reduced the transparency of the gas equivalents reported in the deferred fuel reimbursement account component schedule of the filing. Accounting and Reporting",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -21231,9 +21450,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -21242,9 +21459,7 @@
         "summary": "Trunkline incorrectly accounted for LAUF as compressor fuel rather than in accounts designated for system gas losses. This accounting reduced the transparency of LAUF for financial reporting and fuel reimbursement purposes.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -21287,9 +21502,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
@@ -21300,7 +21513,6 @@
       "Affiliate / intercompany transactions",
       "Cost of service & rates",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -21364,7 +21576,9 @@
         "summary": "Equitrans improperly accounted for an income tax receivable that represented a refund for an overpayment in Account 165, Prepayments, instead of in Account 146, Accounts Receivable from Associated Companies.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -21429,6 +21643,7 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
+      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
       "Tariff administration & oversight"
@@ -21744,7 +21959,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -21777,6 +21993,7 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Membership dues & industry associations"
     ],
     "cost_to_customers": true
@@ -22217,7 +22434,8 @@
         "themes": [
           "Depreciation",
           "Property & plant records",
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -22278,6 +22496,7 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -22401,7 +22620,6 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
           "Property & plant records"
         ],
         "cost_to_customers": false
@@ -22510,7 +22728,7 @@
         "themes": [
           "Tariff administration & oversight",
           "Affiliate / intercompany transactions",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -22722,6 +22940,7 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -22763,9 +22982,7 @@
         "summary": "CUSA excluded 27 reportable transactions from its price index reporting submissions during the audit period. The exclusion was an error due to misidentification of reportable and nonreportable transactions.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -22774,16 +22991,42 @@
         "summary": "CUSA improperly reported four transactions on its 2014 Form 552 filing. Also, CUSA improperly applied a reporting threshold used to exclude individual transactions from Form 552 reporting when the volume of the transaction was smaller than 0.05 TBtu per year (or 137 MMBtu per day). E. Summary of",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
-    ],
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Public Service Commission",
+    "doc_type": "comprehensive management & operations audit (PSC order releasing audit report, PSL 66(19))",
+    "id": "2017-10-24_central-hudson_ny-16-m-0001-mo-audit-order",
+    "company": "Central Hudson Gas & Electric Corporation",
+    "company_raw": "Central Hudson Gas & Electric Corporation",
+    "docket": "16-M-0001",
+    "docket_full": null,
+    "issued_date": "2017-10-24",
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0001",
+    "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B70EE0090-9CDA-450B-9614-71C4BEB734BF%7D",
+    "captured_at": "2026-06-08",
+    "source_note": "NY PSC Order Releasing Audit Report, Case 16-M-0001 — Comprehensive Management and Operations Audit of Central Hudson (PSL 66(19)). Issued & effective Oct 24, 2017. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 16,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -22866,7 +23109,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation"
+          "Depreciation",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -22876,7 +23120,9 @@
         "summary": "Mississippi Power made several errors in determining formula rate billings to wholesale customers. This occurred because Mississippi Power’s formula rate true-up filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Mississippi Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -22886,7 +23132,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -22925,6 +23172,7 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -22997,7 +23245,9 @@
         "summary": "Gulf Power improperly accounted for upfront bank fees paid associated with revolving lines of credit agreements in Account 165, Prepayments, and improperly amortized the fees to Account 930.2, Miscellaneous General Expenses, over the term of the line of credit agreements. In addition, Gulf Power improperly accounted for the related quarterly commitment fees in Account 930.2. As a result of these errors, Gulf Power overstated its revenue requirement and increased billings to wholesale customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -23007,7 +23257,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation"
+          "Depreciation",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23031,7 +23282,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23042,7 +23294,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -23071,6 +23324,7 @@
     "themes": [
       "AFUDC / cost of capital",
       "Cost of service & rates",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -23133,7 +23387,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -23144,7 +23399,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation"
+          "Depreciation",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23154,7 +23410,9 @@
         "summary": "Georgia Power made several errors in determining billings to wholesale transmission customers. This occurred because Georgia Power’s wholesale formula rate filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Georgia Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -23164,7 +23422,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23195,7 +23454,8 @@
         "themes": [
           "Accounting misclassification",
           "AFUDC / cost of capital",
-          "Property & plant records"
+          "Property & plant records",
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": true
       },
@@ -23218,7 +23478,8 @@
         "recommendations": [],
         "themes": [
           "Depreciation",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23257,9 +23518,11 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
-      "Property & plant records"
+      "Property & plant records",
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": true
   },
@@ -23332,7 +23595,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation"
+          "Depreciation",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23342,7 +23606,9 @@
         "summary": "Alabama Power made several errors in determining formula rate billings to wholesale customers. This occurred because Alabama Power’s wholesale formula rate true-up filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Alabama Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -23352,7 +23618,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Customer service & billing"
         ],
         "cost_to_customers": true
       },
@@ -23403,7 +23670,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -23433,6 +23701,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -23576,9 +23845,7 @@
         "summary": "NorthWestern did not file 15 large generator interconnection agreements (LGIAs) containing nonconforming terms and conditions with the Commission prior to commencing service and receiving customer payments under those agreements, as required by Commission regulations. NorthWestern also did not report four service agreements, including three interconnection agreements and one network operating service agreement, in its Electric Quarterly Report filing.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -23587,16 +23854,42 @@
         "summary": "NorthWestern did not file reports of issued securities in a timely and accurate manner. These filing errors were caused by several issues, including a lack of controls to monitor and ensure timely and accurate reporting of security and debt issuances and a lack of administrative oversight.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
-    ],
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "WA",
+    "source": "Washington Utilities and Transportation Commission",
+    "doc_type": "policy & interpretive statement on LDC natural-gas hedging practices (compliance/prudence review)",
+    "id": "2017-03-13_wa-gas-ldcs_wa-ug-132019-hedging-policy-statement",
+    "company": "Washington natural-gas LDCs (PSE, Avista, Cascade, NW Natural)",
+    "company_raw": "Washington natural-gas LDCs (PSE, Avista, Cascade, NW Natural)",
+    "docket": "UG-132019",
+    "docket_full": null,
+    "issued_date": "2017-03-13",
+    "source_page_url": "https://www.utc.wa.gov/casedocket/2013/132019/docsets",
+    "pdf_download_url": "https://apiproxy.utc.wa.gov/cases/GetDocument?docID=79&year=2013&docketNumber=132019",
+    "captured_at": "2026-06-08",
+    "source_note": "WA UTC Policy and Interpretive Statement on Local Distribution Companies' Natural Gas Hedging Practices, Docket UG-132019, service date March 13, 2017. 16 pp. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 16,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -23982,9 +24275,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24010,8 +24301,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -24119,16 +24409,12 @@
         "summary": "Calpine made EQR filings containing numerous errors, including: inaccurate uplift payment reporting, missing transactions, and improper class names for the increment denominated “peaking.” These errors inhibit the ability of the Commission and other interested parties to monitor wholesale electricity market activities.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -24556,9 +24842,7 @@
         "summary": "Empire did not report its wholesale sales to four municipalities within Empire’s service territory or wholesale sales made from its hydro facility. As a result, Empire under-reported its sales in its EQRs by $121,910,668 and 2,089,983 MWh during the audit period. These omissions hampered the Commission and interested parties’ ability to review and evaluate Empire’s wholesale sales activity.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24575,8 +24859,7 @@
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Affiliate / intercompany transactions"
     ],
     "cost_to_customers": true
   },
@@ -24715,7 +24998,8 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -24737,7 +25021,8 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -24899,8 +25184,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Depreciation",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Depreciation"
         ],
         "cost_to_customers": true
       },
@@ -24965,7 +25249,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24985,7 +25271,9 @@
             "source_page": null
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       }
     ],
@@ -24993,8 +25281,10 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Internal audit & internal controls",
       "Property & plant records",
       "Tariff administration & oversight"
     ],
@@ -25037,12 +25327,16 @@
         "summary": "The ITC Operating Companies recorded merger-related costs in operating accounts included in the determination of transmission formula rate billings, rather than in Account 426.5, Other Deductions, as required by Commission precedent. The improper accounting led to inappropriate recovery of the merger-related costs in transmission formula rate billings.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [],
+    "themes": [
+      "Customer service & billing"
+    ],
     "cost_to_customers": false
   },
   {
@@ -25199,8 +25493,7 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "AFUDC / cost of capital",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "AFUDC / cost of capital"
         ],
         "cost_to_customers": true
       },
@@ -25210,9 +25503,7 @@
         "summary": "Destin recorded accrued income taxes in Account 236, Taxes Accrued, but did not record any offsetting entries to reflect income taxes paid by its member companies.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -25222,8 +25513,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -25233,7 +25523,9 @@
         "summary": "Destin did not recognize an accounts receivable or prepayment at the time it overpaid for services related to a management agreement between it and BP Pipelines (North America), Inc.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -25242,9 +25534,7 @@
         "summary": "Destin did not properly comply with select filing instructions on pages 508-509 and 520 of its Form 2.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
@@ -25252,7 +25542,7 @@
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
-      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Customer service & billing",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -25542,7 +25832,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Service reliability & vegetation management"
         ],
         "cost_to_customers": false
       },
@@ -25558,7 +25848,7 @@
     ],
     "structured": true,
     "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Service reliability & vegetation management"
     ],
     "cost_to_customers": false
   },
@@ -25647,7 +25937,9 @@
         "summary": "COP did not report some physical next-day gas transactions to price index publishers due to deal entry practices used by COP’s gas traders. These practices were enabled by lapses in internal controls in COP’s deal capture system and processes.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -25666,7 +25958,8 @@
     "structured": true,
     "themes": [
       "Affiliate / intercompany transactions",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Internal audit & internal controls"
     ],
     "cost_to_customers": true
   },
@@ -26433,7 +26726,9 @@
         "summary": "5-EI prior to our decision in this Docket No. 120001-EI. However, both the stipulation and proposed settlement agreement contemplate that the RTR-l rider will become effective after FPL's billing system has been modified to accommodate the rider, which FPL ORDER NO. PSC",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -26505,7 +26800,9 @@
         "summary": ". 4Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 6 In January 2012, PEF entered into a settlement agreement with OPC, FIPUG, FRF, PCS, and FEA.5 This agreement addressed issues involving nuclear cost recovery, base rates, the CR3 outage, fuel cost recovery",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -26628,6 +26925,8 @@
     ],
     "structured": false,
     "themes": [
+      "Customer service & billing",
+      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
@@ -27335,7 +27634,9 @@
         "summary": "in just and reasonable rates, and is in the public interest. The Commission approves the Unanimous Settlement Agreement in its entirety. 30. The new rates will take effect based on the customer’s billing cycle date beginning October 1, 2025.60 THEREFORE, THE COMMISSION",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -27487,7 +27788,8 @@
     ],
     "structured": false,
     "themes": [
-      "Cost of service & rates"
+      "Cost of service & rates",
+      "Customer service & billing"
     ],
     "cost_to_customers": true
   },
@@ -28387,9 +28689,7 @@
         "summary": "energy 2 consumption (kWh) in a cost-effective manner.”21 3 DSM is addressed in three areas of the Settlement Agreement: in the funding, programs, 4 plans and reporting provisions; in the study of rate design modifications; and in the competitive 5 procurement process.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -28589,7 +28889,9 @@
         "summary": "a generating unit from any 19 merchant or utility generator. Consistent with the definition in the Settlement Agreement, “self- 20 build” will not include the acquisition of temporary generation needed for system reliability, 21 distributed generation of less than fift",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -28802,7 +29104,9 @@
         "summary": "d in 33 DECISION NO. _____________ DOCKET NO. E-01345A-03-0437 1 accordance with Section XXI of the Settlement Agreement by a Commission Decision that is final 2 and no longer subject to judicial review. 3 The Commission is also concerned that service reliability on rur",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -28811,7 +29115,9 @@
         "summary": "participate 7 in any future dockets related to enhancing reliability statewide. 8 v. Summary 9 This Settlement Agreement resolves numerous significant, complex, and conflicting issues 10 affecting many parties with very different perspectives and interests. As with ever",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29029,7 +29335,7 @@
       "Cost of service & rates",
       "Creditworthiness",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -29196,18 +29502,8 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 1,
-    "findings": [
-      {
-        "index": 1,
-        "title": "Approval: $189.7 ",
-        "summary": "te Drivers Inc/(Dec) Delivery Rev Total Rev Primary Drivers ($ M) Change (%) Change (%) Major Storm Allowance $189.7 14.5% 7.6% Capital Investments $189.0 14.5% 7.6% Labor & Benefits $55.6 4.3% 2.2% Net Operating Loss Deferred Tax Asset $34.5 2.6% 1.4% Vegetation Man",
-        "is_other_matter": false,
-        "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [],
     "cost_to_customers": false
@@ -29318,6 +29614,66 @@
   },
   {
     "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "NJ Board of Public Utilities",
+    "doc_type": "affiliate-transactions audit & management audit (Overland Consulting)",
+    "id": "2022-12_pseg_nj-affiliate-management-audit",
+    "company": "Public Service Electric and Gas Company (PSE&G)",
+    "company_raw": "Public Service Electric and Gas Company (PSE&G)",
+    "docket": null,
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://www.nj.gov/bpu/about/divisions/audits/auditreports.html",
+    "pdf_download_url": "https://www.nj.gov/bpu/pdf/auditpdfs/2023%20PSEG%20Final%20Audit%20Report.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "NJ BPU audit (Overland Consulting): Audit of Affiliated Transactions between PSE&G, PSEG and affiliates, plus a Management Audit of PSE&G. 868 pp (public redacted). Title page prints 'December 2022' (month only) -> issued_date null. Page 1 verified.",
+    "archived_via": null,
+    "page_count": 868,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NY",
+    "source": "NY Department of Public Service",
+    "doc_type": "DPS Office of Investigations & Enforcement investigation report (customer billing system)",
+    "id": "2022-12_central-hudson_ny-22-m-0645-billing-investigation",
+    "company": "Central Hudson Gas & Electric Corporation",
+    "company_raw": "Central Hudson Gas & Electric Corporation",
+    "docket": "22-M-0645",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=22-M-0645",
+    "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B7410F817-B458-4232-9522-BF3FB9BAB451%7D",
+    "captured_at": "2026-06-08",
+    "source_note": "NY DPS Office of Investigations and Enforcement Investigation Report (Dec 2022), Case 22-M-0645 — investigation into Central Hudson's customer information/billing system and billing-accuracy impacts. 62 pp. Cover prints month only (December 2022) -> issued_date null. Page 1 verified: 'OFFICE OF INVESTIGATIONS AND ENFORCEMENT ... INVESTIGATION REPORT DECEMBER 2022 CASE 22-M-0645'.",
+    "archived_via": null,
+    "page_count": 62,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
     "jurisdiction": "PA",
     "source": "PA PUC Bureau of Audits",
     "doc_type": "management & operations audit",
@@ -29367,7 +29723,9 @@
             "source_page": 18
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29387,7 +29745,9 @@
             "source_page": 23
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29423,7 +29783,9 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions"
+          "Affiliate / intercompany transactions",
+          "Cost of service & rates",
+          "Workforce, training & succession planning"
         ],
         "cost_to_customers": true
       },
@@ -29444,8 +29806,11 @@
             "source_page": 37
           }
         ],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Affiliate / intercompany transactions",
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 5,
@@ -29469,7 +29834,10 @@
             "source_page": 57
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet",
+          "Gas safety & pipeline integrity"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29494,7 +29862,9 @@
             "source_page": 57
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29514,7 +29884,9 @@
             "source_page": 63
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29574,7 +29946,11 @@
             "source_page": 74
           }
         ],
-        "themes": [],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity",
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29604,7 +29980,9 @@
             "source_page": 82
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29629,7 +30007,10 @@
             "source_page": 87
           }
         ],
-        "themes": [],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29659,7 +30040,10 @@
             "source_page": 96
           }
         ],
-        "themes": [],
+        "themes": [
+          "Information technology & systems",
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29679,7 +30063,9 @@
             "source_page": 100
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29705,7 +30091,17 @@
     ],
     "structured": true,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Cost of service & rates",
+      "Customer service & billing",
+      "Cybersecurity & physical security",
+      "Emergency preparedness & business continuity",
+      "Gas safety & pipeline integrity",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Service reliability & vegetation management",
+      "Workforce, training & succession planning"
     ],
     "cost_to_customers": true
   },
@@ -29760,7 +30156,9 @@
             "source_page": 23
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29780,7 +30178,9 @@
             "source_page": 28
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29840,7 +30240,9 @@
             "source_page": 58
           }
         ],
-        "themes": [],
+        "themes": [
+          "Service reliability & vegetation management"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29860,7 +30262,10 @@
             "source_page": 65
           }
         ],
-        "themes": [],
+        "themes": [
+          "Workforce, training & succession planning",
+          "Customer service & billing"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29875,7 +30280,9 @@
             "source_page": 68
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29910,7 +30317,9 @@
             "source_page": 81
           }
         ],
-        "themes": [],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29925,11 +30334,93 @@
             "source_page": 84
           }
         ],
-        "themes": [],
+        "themes": [
+          "Internal audit & internal controls",
+          "Information technology & systems"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": true,
+    "themes": [
+      "Customer service & billing",
+      "Information technology & systems",
+      "Internal audit & internal controls",
+      "Inventory, materials & fleet",
+      "Service reliability & vegetation management",
+      "Workforce, training & succession planning"
+    ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "NJ",
+    "source": "NJ Board of Public Utilities",
+    "doc_type": "affiliate-transactions audit & comprehensive management audit",
+    "id": "2014_njng_nj-ga13010008-affiliate-management-audit",
+    "company": "New Jersey Natural Gas Company",
+    "company_raw": "New Jersey Natural Gas Company",
+    "docket": "GA13010008",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://www.nj.gov/bpu/about/divisions/audits/auditreports.html",
+    "pdf_download_url": "https://www.nj.gov/bpu/pdf/auditpdfs/2014%20NJNG%20Final%20Audit%20Report.pdf",
+    "captured_at": "2026-06-08",
+    "source_note": "NJ BPU audit: Audit of Affiliated Transactions between NJNG and New Jersey Resources and affiliates (N.J.S.A. 48:3-49) plus a Comprehensive Management Audit of NJNG. Docket GA13010008. 326 pp. Title page does not print a day -> issued_date null (filed 2014). Page 1 verified.",
+    "archived_via": null,
+    "page_count": 326,
+    "scanned_pages": [
+      2,
+      6,
+      34,
+      50,
+      62,
+      76,
+      102,
+      140,
+      204,
+      276,
+      298
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA compliance & reasonableness review decision",
+    "id": "2010_southern-california-edison_ca-a09-04-002-d10-07-049-erra",
+    "company": "Southern California Edison Company",
+    "company_raw": "Southern California Edison Company",
+    "docket": "A.09-04-002",
+    "docket_full": null,
+    "issued_date": null,
+    "source_page_url": "https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm",
+    "pdf_download_url": "https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm",
+    "captured_at": "2026-06-08",
+    "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
+    "archived_via": null,
+    "page_count": 0,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
     "themes": [],
     "cost_to_customers": false
   },

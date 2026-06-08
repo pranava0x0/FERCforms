@@ -6,7 +6,9 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ## ▶ CURRENT STATUS — 2026-06-08
 
-**Corpus (verified real):** 256 documents — 120 FERC audits + 14 prudence reviews + 18 state PUC audits + 104 state rate cases. 1173 findings. Source of truth: `docs/data/meta.json`.
+**Corpus (verified real):** 276 documents — 120 FERC audits + 18 prudence reviews + 33 state PUC audits + 105 state rate cases. ~1168 findings. State PUC Audits span **12 jurisdictions** (PA NJ NY CA OH MD MI CT MO MS TN UT) and the tab now surfaces **13 patterns of noncompliance** (was 1) mined from the parsed M&O-audit recommendations. Source of truth: `docs/data/meta.json`.
+
+**Done this session (multi-state expansion, all verified):** +17 real state audits/prudence orders via parallel research agents (each candidate independently re-fetched + page-1-caption-verified before seeding): NY DPS M&O orders + Central Hudson billing investigation (3); NJ BPU affiliate+management audits PSE&G/JCP&L/ACE/NJNG (4, 326–868 pp); CA CPUC Balancing-Account audits + ERRA decision (3); OH PUCO Daymark/Blue Ridge audits (2, `fetch=false`/Wayback-verified); MD BGE gas-safety order (1); WA UTC power-cost/hedging prudence orders (4). Pattern mining expanded to scan recommendation text (state M&O audits have generic functional-area titles) + 10 new THEME_RULES; `verify_sources` false-positives fixed (accession + browser-captured → CHECK, not DEAD/NON_PDF).
 
 > **⚠️ 2026-06-08 — removed 70 FABRICATED records** (invented dockets + guessed URLs, `fetch=false`, never verified). They had inflated the count to a phantom 322. See ISSUES.md + AUDIT_STATUS.md. The old "322 / 73 state audits" numbers below are pre-cleanup and wrong.
 

@@ -67,6 +67,31 @@ def test_summarize_counts_and_themes():
     assert dep.description  # plain-English explanation is attached
 
 
+def test_finding_theme_text_scans_recommendations():
+    """State M&O audit findings have generic functional-area titles (e.g. 'Gas
+    Operations') with the real pattern in the recommendation text. finding_theme_text
+    must include the recs so those patterns surface — regression for the 'only 1
+    theme on the State PUC Audits tab' fix (2026-06-08)."""
+    f = Finding(
+        index=1,
+        title="Gas Operations",  # generic title — matches no theme on its own
+        summary=None,
+        recommendations=[
+            Recommendation(number=1, text="Decrease the inventory of outstanding Class A leaks and reduce corrosion."),
+            Recommendation(number=2, text="Establish physical security standards at company facilities."),
+        ],
+    )
+    assert patterns._themes_for("Gas Operations") == []  # title alone -> nothing
+    themes = patterns._themes_for(patterns.finding_theme_text(f, include_recs=True))
+    assert "Gas safety & pipeline integrity" in themes   # from "Class A leak"/"corros"
+    assert "Cybersecurity & physical security" in themes  # from "physical security"
+    assert "Inventory, materials & fleet" in themes       # from "inventory"
+    # FERC mode (include_recs=False): rec text is NOT scanned, so a generic title
+    # yields no theme — this is what keeps FERC findings from picking up incidental
+    # rec words (e.g. 'train staff') as workforce/operations patterns.
+    assert patterns._themes_for(patterns.finding_theme_text(f, include_recs=False)) == []
+
+
 def test_ratepayer_harm_themes_are_declared_themes():
     """The ratepayer-harm axis must be a subset of THEME_RULES labels (single
     source). Guards against a typo'd or stale entry silently never matching."""

@@ -30,5 +30,21 @@
     "captured_at": "2026-06-02",
     "source_note": "Order No. 90847 (Order on Appeals) on The Potomac Edison Company's application for adjustments to its retail electric distribution rates, Maryland PSC Case No. 9695, issued October 18, 2023. Listed for reference (metadata-only). PDF on the Maryland PSC host psc.maryland.gov/wp-content/uploads/; case jacket in the PSC DMS case-search (case 9695).",
     "parse": false
+  },
+  {
+    "id": "2025-05-08_baltimore-gas-electric_md-9791-gas-safety-investigation",
+    "company": "Baltimore Gas and Electric Company (BGE)",
+    "collection": "state_audit",
+    "jurisdiction": "MD",
+    "source": "Maryland Public Service Commission",
+    "doc_type": "order initiating gas-system safety-inspection investigation (documents PSC Engineering Division audit findings)",
+    "industry": "gas",
+    "pdf_url": "https://psc.maryland.gov/wp-content/uploads/Order-No.-91643-Initiating-a-Proceeding-_BGEGasSystemSafety-Insp.-9791.pdf",
+    "source_page_url": "https://psc.maryland.gov/order-initiating-bge-gas-system-case-no-9791/",
+    "issued_date": "2025-05-08",
+    "docket": "Case No. 9791 (Order No. 91643)",
+    "source_note": "MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an investigation into BGE gas-system inspection issues, documenting the PSC Engineering Division (PSCED) Investigation Report findings/recommendations (falsified-records pattern, QA/compliance-oversight gaps). 9 pp. Page 1 verified.",
+    "captured_at": "2026-06-08",
+    "parse": false
   }
 ]

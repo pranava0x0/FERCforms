@@ -32,11 +32,29 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     ("Affiliate / intercompany transactions", ["affiliate", "intercompany", "inter-company"]),
     ("Membership dues & industry associations", ["membership dues", "industry association"]),
     ("Below-the-line costs (lobbying, charitable, etc.)", ["lobbying", "charitable", "below-the-line", "nonoperating", "non-operating"]),
-    ("Form reporting (Form No. 1/2/6, Page 700)", ["form no.", "page 700", "annual report", "reporting"]),
+    # NOTE: bare "reporting" was removed 2026-06-08 — once recommendation text is
+    # scanned it over-matched state-audit "financial reporting"/"reporting systems"
+    # language and mislabeled them as FERC Form-1 issues. Keep FERC-specific anchors.
+    ("Form reporting (Form No. 1/2/6, Page 700)", ["form no.", "page 700", "annual report"]),
     ("Property & plant records", ["property unit", "carrier property", "noncarrier property", "plant in service", "property record"]),
     ("Creditworthiness", ["creditworthiness"]),
     ("Capitalization vs. expense", ["capitaliz"]),
     ("Cost of service & rates", ["cost of service", "cost-of-service", "rate base", "rate of return", "return on equity"]),
+    # --- State management & operations audit themes (PA Bureau of Audits, NY/NJ
+    # focused & management audits, etc.). These audits carry generic functional-area
+    # finding titles ("Gas Operations") with the substance in the recommendation
+    # text, so theme-matching scans recommendations too (see finding_theme_text).
+    # Keyword sets calibrated by eye against the real recommendation corpus.
+    ("Cybersecurity & physical security", ["cyber", "physical security"]),
+    ("Emergency preparedness & business continuity", ["emergency prepared", "business continu", "emergency response", "emergency management", "mutual assist"]),
+    ("Workforce, training & succession planning", ["succession", "span of control", "spans of control", "training", "workforce plan", "learning management"]),
+    ("Internal audit & internal controls", ["internal audit", "internal control", "delegation of authority", "code of business conduct", "compliance program"]),
+    ("Information technology & systems", ["information technology", "customer information system", "it budget", "it project", "it backlog", "it governance"]),
+    ("Customer service & billing", ["customer service", "billing", "accounts receivable", "call center", "meter reading", "customer experience"]),
+    ("Inventory, materials & fleet", ["inventory", "materials management", "fleet management", "vehicle replacement"]),
+    ("Service reliability & vegetation management", ["vegetation", "reliability", "saidi", "caidi", "outage"]),
+    ("Gas safety & pipeline integrity", ["class a leak", "main leak", "cathodic", "corros", "damage prevention", "pipeline integrity", "leak management"]),
+    ("Dividend policy & capital management", ["dividend"]),
 ]
 
 # Plain-English explanation of each theme, shown on the site's pattern cards and
@@ -59,6 +77,16 @@ THEME_DESCRIPTIONS: dict[str, str] = {
     "Creditworthiness": "Customer credit standards not applied as the tariff requires.",
     "Capitalization vs. expense": "Costs capitalized that should be expensed, or the reverse.",
     "Cost of service & rates": "Errors in rate-base or return inputs to cost-of-service rates.",
+    "Cybersecurity & physical security": "Gaps in cyber defenses or physical security of facilities and systems.",
+    "Emergency preparedness & business continuity": "Weak emergency response, storm readiness, or business-continuity planning.",
+    "Workforce, training & succession planning": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+    "Internal audit & internal controls": "Weak internal controls, compliance programs, or internal-audit coverage.",
+    "Information technology & systems": "IT governance, systems, budgets, or project-management deficiencies.",
+    "Customer service & billing": "Customer-service performance, billing accuracy, or call-center issues.",
+    "Inventory, materials & fleet": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
+    "Service reliability & vegetation management": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
+    "Gas safety & pipeline integrity": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
+    "Dividend policy & capital management": "Dividend-policy or capital-management practices flagged by auditors.",
 }
 
 
@@ -82,6 +110,26 @@ RATEPAYER_HARM_THEMES: frozenset[str] = frozenset({
 def _themes_for(text: str) -> list[str]:
     low = text.lower()
     return [theme for theme, kws in THEME_RULES if any(k in low for k in kws)]
+
+
+def finding_theme_text(finding, *, include_recs: bool = True) -> str:
+    """The text a finding is theme-matched against. Single source of truth — used by
+    both summarize() and pipeline.build's per-finding tagging so the corpus stats and
+    the per-record tags can never drift apart.
+
+    `include_recs` is collection-dependent (callers pass `r.collection != "ferc_audit"`):
+      - State management & operations audits carry GENERIC functional-area titles
+        ('Gas Operations', 'Customer Service') with the substance in the recs, so the
+        recommendation text MUST be scanned for their patterns to surface at all.
+      - FERC audit findings already have descriptive titles/summaries; scanning their
+        recs adds noise — e.g. an accounting-misclassification finding whose rec says
+        'train staff on proper classification' would wrongly tag as a workforce/training
+        pattern. So for FERC we match title+summary only (verified 2026-06-08: scanning
+        FERC recs inflated 'Workforce, training' from a handful to 227 findings)."""
+    parts = [finding.title, finding.summary or ""]
+    if include_recs:
+        parts += [r.text for r in finding.recommendations]
+    return " ".join(parts)
 
 
 def is_ratepayer_harm(themes: list[str]) -> bool:
@@ -124,7 +172,7 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             else:
                 finding_count += 1
                 title_counts[f.title] += 1
-            for theme in _themes_for(f.title + " " + (f.summary or "")):
+            for theme in _themes_for(finding_theme_text(f, include_recs=r.collection != "ferc_audit")):
                 theme_findings[theme] += 1
                 theme_reports[theme].add(r.id)
                 if f.title not in theme_examples[theme] and len(theme_examples[theme]) < 4:
