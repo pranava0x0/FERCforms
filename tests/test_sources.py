@@ -160,6 +160,42 @@ def test_committed_seeds_are_all_official_gov():
             assert sources.is_official_gov(d["source_page_url"]), f"{path.name}: {d['source_page_url']}"
 
 
+def test_committed_seeds_have_no_fabrication_markers():
+    """Provenance integrity guard (regression for the 2026-06-07 fabricated-seed
+    cleanup). A prior session generated ~59 fake `*_audits.json` "audit" records
+    across ~40 states with invented docket numbers and guessed PDF URLs, marked
+    `fetch=false` so they'd never be tested against a real source, and shipped them
+    to the live site — a direct violation of the project's verbatim/real-source
+    discipline. The two telltale signatures of that batch:
+
+      1. a `source_note` admitting the URL is a guess ("placeholder",
+         "pending verification"), and
+      2. a `captured_at` in the FUTURE (they were stamped 2026-06-08 the day before).
+
+    A second base-file batch (2026-06-07) leaked the same fakes into existing seed
+    files (sc_psc/tx_puct/co_puc/mo_psc/oh_puco/fl_psc) with `placeholder` literally
+    embedded in the PDF URL (`…/Attachments/Matter/placeholder-dec-order`,
+    `…?p_dms_document_id=placeholder`). So the "placeholder"/"pending verification"
+    scan runs over the URLs too, not just the note.
+
+    No legitimate seed has any of these. This test fails loud if such a record reappears.
+    (Sequential guessed doc-numbers like TX `…_1234567.PDF` slip past a pure-string
+    check — those are caught by the live-URL verifier `pipeline.verify_sources`.)"""
+    today = date.today()
+    bad_phrases = ("placeholder", "pending verification")
+    scanned_fields = ("source_note", "pdf_url", "source_page_url", "docket", "id")
+    offenders: list[str] = []
+    for path in sorted(config.SEEDS_DIR.glob("*.json")):
+        for d in json.loads(path.read_text(encoding="utf-8")):
+            blob = " ".join(str(d.get(f) or "") for f in scanned_fields).lower()
+            if any(p in blob for p in bad_phrases):
+                offenders.append(f"{path.name}:{d['id']} — fabrication marker (placeholder/unverified)")
+            cap = d.get("captured_at")
+            if cap and date.fromisoformat(cap) > today:
+                offenders.append(f"{path.name}:{d['id']} — captured_at {cap} is in the future")
+    assert not offenders, "fabricated/unverified seeds present:\n" + "\n".join(offenders)
+
+
 def test_every_committed_report_is_gov_sourced():
     """Corpus-wide provenance guard: EVERY structured report (FERC audits, prudence
     reviews, and state audits alike) must carry an official-government source_page_url
@@ -173,6 +209,28 @@ def test_every_committed_report_is_gov_sourced():
         d = json.loads(p.read_text(encoding="utf-8"))
         assert sources.is_official_gov(d["source_page_url"]), f"{p.parent.name}: {d['source_page_url']}"
         assert sources.is_official_gov(d["pdf_download_url"]), f"{p.parent.name}: {d['pdf_download_url']}"
+
+
+def test_ferc_audits_trace_to_listing():
+    """Provenance guard for the FERC-audit corpus: every structured `ferc_audit`
+    report must trace back to a record in the browser-captured `data/listing.json`
+    (by accession number or id). The listing IS the official ferc.gov/audits index,
+    so a `ferc_audit` report that isn't in it would be an invented document — the
+    same fabrication failure mode caught for seed-backed records, on the FERC side."""
+    listing = json.loads(config.LISTING_PATH.read_text(encoding="utf-8"))
+    listing_acc = {e.get("accession_number") for e in listing}
+    listing_ids = {e.get("id") for e in listing}
+    untraceable: list[str] = []
+    n = 0
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("collection") != "ferc_audit":
+            continue
+        n += 1
+        if d.get("accession_number") not in listing_acc and d["id"] not in listing_ids:
+            untraceable.append(f"{d['id']} (acc={d.get('accession_number')})")
+    assert n > 0, "no ferc_audit reports found"
+    assert not untraceable, "ferc_audit reports not traceable to listing.json:\n" + "\n".join(untraceable)
 
 
 def test_all_seed_files_validate_and_have_unique_ids():
@@ -296,3 +354,41 @@ def test_fetch_doc_exhausts_retries_on_server_error(tmp_path):
     with pytest.raises(sources.SourceFetchError, match="unexpected response: 500"):
         sources.fetch_doc(s, _seed(), tmp_path)
     assert s.calls == config.MAX_RETRIES
+
+
+# --- live source verifier (pipeline.verify_sources) classification logic ---
+
+from pipeline import verify_sources  # noqa: E402
+
+
+def test_verify_sources_classifies_dead_nonpdf_and_proven(monkeypatch):
+    """The fabrication catcher must flag the two network-only failure modes the
+    2026-06-07 incident proved: a 404 (TX `…_1234567.PDF`) → DEAD, and a 200 that
+    returns non-PDF where a PDF was claimed (FL `06790-2024.pdf` HTML) → NON_PDF.
+    A real fetched record (page_count>0) is PROVEN without any network call."""
+    seeds = {
+        "fake-404": {"id": "fake-404", "pdf_url": "https://x.gov/a.PDF", "fetch": False, "_file": "x.json"},
+        "fake-html": {"id": "fake-html", "pdf_url": "https://x.gov/b.pdf", "fetch": False, "_file": "x.json"},
+        "real-fetched": {"id": "real-fetched", "pdf_url": "https://x.gov/c.pdf", "fetch": True, "_file": "x.json"},
+        "real-html-src": {"id": "real-html-src", "pdf_url": "https://x.gov/d.htm", "fetch": False, "_file": "x.json"},
+    }
+    reports = {
+        "fake-404": {"id": "fake-404", "collection": "state_audit", "page_count": 0},
+        "fake-html": {"id": "fake-html", "collection": "state_audit", "page_count": 0},
+        "real-fetched": {"id": "real-fetched", "collection": "state_rate_case", "page_count": 42},
+        "real-html-src": {"id": "real-html-src", "collection": "state_audit", "page_count": 0},
+    }
+    probes = {
+        "https://x.gov/a.PDF": (404, "text/html", False),
+        "https://x.gov/b.pdf": (200, "text/html", False),   # resolves, but NOT a pdf
+        "https://x.gov/d.htm": (200, "text/html", False),   # HTML source — CHECK, not fail
+    }
+    monkeypatch.setattr(verify_sources, "_load_seeds", lambda: seeds)
+    monkeypatch.setattr(verify_sources, "_load_reports", lambda: reports)
+    monkeypatch.setattr(verify_sources, "probe", lambda url, timeout=25: probes[url])
+
+    v = verify_sources.verify()
+    assert any("fake-404" in s for s in v["DEAD"])
+    assert any("fake-html" in s for s in v["NON_PDF"])
+    assert "real-fetched" in v["PROVEN"]
+    assert any("real-html-src" in s for s in v["CHECK"])
