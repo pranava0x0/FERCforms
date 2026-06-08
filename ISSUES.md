@@ -2,6 +2,13 @@
 
 Living audit trail. Each bug: date · area · description · root cause (**code bug** vs **test bug** vs **environmental**) · status. On resolution: the fix + the commit that resolved it.
 
+## Resolved (this session)
+
+- **2026-06-08 · extraction · extract --limit processes documents in wrong order.** `pipeline.extract --limit N` was applying the limit to the full 322-document list from listing.json before filtering, which meant it would grab the first N documents (all FERC audits with existing text.json), skipping seed documents (rate cases, state audits) entirely. **Root cause:** code logic bug in extract.main() — the PDF-present and text-missing checks were applied *after* the limit slice. **Fix:** reordered to filter documents first (PDF exists AND text.json missing), THEN apply limit, so --limit N returns N documents that actually need extraction. Validated with test_extract_limit_fix.py. Status: **Fixed** (commit 47fc000).
+
+- **2026-06-08 · extraction · extract_report PDF filename lookup incomplete.** `extract_report()` only looked for `{accession_number}.pdf`, which worked for FERC audits but failed for seed documents using `{id}.pdf` naming (rate cases, state audits). **Root cause:** code bug in PDF path construction — didn't try the id-based filename. **Fix:** try `{id}.pdf` first (seed docs), fall back to `{accession_number}.pdf` (FERC audits); added fallback logic and regression test test_extract_pdf_lookup.py. Status: **Fixed** (commit 57aa78c).
+
+
 ## Open
 
 - **2026-06-07 · extraction · state audit PDF URLs blocked by Cloudflare (MI Liberty Consulting).**  MI Public Service Commission released the 2024 Liberty Consulting distribution reliability audits for Consumers Energy and DTE Electric (4 documents, verified with real PDF download URLs); all 4 report PDFs at `michigan.gov/mpsc/-/media/Project/Websites/mpsc/regulatory/reports/3rdparty/{name}` return **403 Forbidden** to scripts (Cloudflare "Just a moment" challenge). The URLs are valid (Chrome/real browser downloads work), but scripted fetch is blocked. **Workaround:** `fetch=false`, browser-capture the PDFs, then run text extraction. **Impact:** MI Liberty audits are the cleanest, most-structured state audit format (2-part report with consistent structure); they were identified in [state-findings-extraction-plan.md](docs/state-findings-extraction-plan.md) as the pilot for Option B extraction, but the pipeline block pushes them to manual extraction. **Note:** other state URLs (PA, CT, FL, etc.) work fine; this is MI-specific. Status: **Open (blocked on browser-capture workaround).**

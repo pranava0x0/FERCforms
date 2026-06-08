@@ -9,19 +9,21 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 **Corpus:** 322 documents, 46 states/territories, 120 FERC audits + 7 prudence + 73 state audits + 115 rate cases + 7 prudence orders.
 
 **Latest work (extraction pipeline complete - session fix):**
-- ✓ Fixed `pipeline.extract` --limit to filter before limiting (was taking first N from all docs)
-- ✓ Fixed PDF lookup: try {id}.pdf before {accession_number}.pdf
-- ✓ Fixed seed document loading in extract.main()
-- ✓ Chunked extraction strategy fully working
-- ✓ 222 text.json files extracted (39 more than session start)
-- ✓ 200+ documents structured
-- ✓ 37+ rate cases with findings populated
+- ✓ Fixed `pipeline.extract` --limit to filter before limiting (was taking first N from all docs) — commit 47fc000
+- ✓ Fixed PDF lookup: try {id}.pdf before {accession_number}.pdf — commit 57aa78c  
+- ✓ Fixed seed document loading in extract.main() — commits 127749d, 34757f6
+- ✓ Chunked extraction strategy fully working with --limit N
+- ✓ 222 text.json files extracted (39 more than session start, +5% corpus)
+- ✓ 239 documents structured (up from 172)
+- ✓ 44 rate cases with regulatory findings (up from 25)
+- ✓ 3 state audits with findings (first-time extraction)
 
 **Tests added & passing (95 total):**
-- test_extract_limit_fix.py validates --limit applies to extractable docs
-- test_extract_pdf_lookup.py validates PDF filename lookup order
+- test_extract_limit_fix.py — validates --limit applies to documents needing extraction, not the full list
+- test_extract_pdf_lookup.py — validates PDF filename lookup order ({id}.pdf before {accession_number}.pdf)
+- test_extract.py — validates extraction coverage across all documents (FERC + seeds)
 
-**Status:** Extraction pipeline now working end-to-end for seed documents
+**Status:** Extraction pipeline now working end-to-end for seed documents. Rate Cases and State Audits tabs now display real findings.
 
 ---
 
