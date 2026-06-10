@@ -1,5 +1,5 @@
-<project title="FERC Audit Explorer" summary="290 structured records (120 FERC audits, 26 prudence reviews, 35 state PUC audits); 1234 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-08). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="294 structured records (120 FERC audits, 27 prudence reviews, 36 state PUC audits); 1234 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-10). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
 Finding 1: Renewable Natural Gas Quality Specifications
@@ -2907,6 +2907,10 @@ PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/W
 Listed for reference (not machine-parsed into findings).
 PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.
 </doc>
+<doc title="Pacific Gas and Electric Company" collection="Prudence Reviews" docket="A.24-02-012" issued="2025-06-12" industry="electric" source="https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&amp;E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
+</doc>
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="Prudence Reviews" docket="PUR-2025-00059" issued="2025-05-12" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Virginia SCC Order establishing the 2025-2026 fuel factor for Dominion Energy Virginia, Case No. PUR-2025-00059, issued 2025-05-12 (§56-249.6 fuel-cost recovery/prudence). PDF: scc.virginia.gov/docketsearch/DOCS/85$601!.PDF.
@@ -3099,6 +3103,10 @@ Finding 8: Information Technology
 <doc title="Mississippi Public Utilities Staff" collection="State PUC Audits" docket="n/a" issued="2024-06-30" industry="n/a" source="https://www.psc.ms.gov/">
 Listed for reference (not machine-parsed into findings).
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).
+</doc>
+<doc title="Rocky Mountain Power (PacifiCorp)" collection="State PUC Audits" docket="23-035-01" issued="2023-11-07" industry="electric" source="https://psc.utah.gov/electric/orders-notices/electric-2023/">
+Listed for reference (not machine-parsed into findings).
+Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2022 by Daymark Energy Advisors — Public Executive Summary (filed Nov 7, 2023 as a Utah Division of Public Utilities exhibit), Docket No. 23-035-01 — the independent audit of the prudence/recovery of RMP's net power (fuel &amp; purchased-power) costs trued up through the EBA for CY2022: RMP requested recovery of ~$175 million in deferred EBA costs; Daymark found outages at 4 units 'demonstrated sufficient imprudence that we recommend reducing EBA' (8 pp). Predecessor-year companion to the seeded CY2023 EBA audit (24-035-01). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/23docs/2303501/). Page-1 verified 2026-06-10.
 </doc>
 <doc title="Philadelphia Gas Works" collection="State PUC Audits" docket="D-2022-3030321" issued="2023-03-02" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works">
 Finding 1: Corporate Governance

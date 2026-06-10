@@ -12,7 +12,7 @@
     "issued_date": "2025-04-25",
     "docket": "24-035-04",
     "captured_at": "2026-06-07",
-    "source_note": "Report and Order of the Public Service Commission of Utah (April 25, 2025) on the Application of Rocky Mountain Power (PacifiCorp) for Authority to Increase its Retail Electric Utility Service Rates in Utah, Docket No. 24-035-04 (consolidated 23-035-40, 23-035-44) \u2014 a base-rate case (~$382.1M requested increase) (196 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403504/).",
+    "source_note": "Report and Order of the Public Service Commission of Utah (April 25, 2025) on the Application of Rocky Mountain Power (PacifiCorp) for Authority to Increase its Retail Electric Utility Service Rates in Utah, Docket No. 24-035-04 (consolidated 23-035-40, 23-035-44) — a base-rate case (~$382.1M requested increase) (196 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403504/).",
     "parse": false
   },
   {
@@ -28,7 +28,23 @@
     "issued_date": "2024-11-05",
     "docket": "24-035-01",
     "captured_at": "2026-06-07",
-    "source_note": "Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 \u2014 an independent audit of the prudence/recovery of RMP's net power (fuel & purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).",
+    "source_note": "Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2023 by Daymark Energy Advisors (filed Nov 5, 2024 as a Utah Division of Public Utilities exhibit), Docket No. 24-035-01 — an independent audit of the prudence/recovery of RMP's net power (fuel & purchased-power) costs trued up through the EBA; the Commission's Feb 25, 2025 order in this docket disallowed ~$19.4M (Washington Climate Commitment Act compliance costs) (8 pp). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/24docs/2403501/).",
+    "parse": false
+  },
+  {
+    "id": "2023-11-07_rocky-mountain-power_ut-23-035-01-eba-audit-cy2022",
+    "company": "Rocky Mountain Power (PacifiCorp)",
+    "collection": "state_audit",
+    "jurisdiction": "UT",
+    "source": "Public Service Commission of Utah",
+    "doc_type": "energy balancing account audit report",
+    "industry": "electric",
+    "pdf_url": "https://pscdocs.utah.gov/electric/23docs/2303501/330672DPUExhbt2.2DaymarkAdtRprtCY202211-7-2023.pdf",
+    "source_page_url": "https://psc.utah.gov/electric/orders-notices/electric-2023/",
+    "issued_date": "2023-11-07",
+    "docket": "23-035-01",
+    "captured_at": "2026-06-10",
+    "source_note": "Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2022 by Daymark Energy Advisors — Public Executive Summary (filed Nov 7, 2023 as a Utah Division of Public Utilities exhibit), Docket No. 23-035-01 — the independent audit of the prudence/recovery of RMP's net power (fuel & purchased-power) costs trued up through the EBA for CY2022: RMP requested recovery of ~$175 million in deferred EBA costs; Daymark found outages at 4 units 'demonstrated sufficient imprudence that we recommend reducing EBA' (8 pp). Predecessor-year companion to the seeded CY2023 EBA audit (24-035-01). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/23docs/2303501/). Page-1 verified 2026-06-10.",
     "parse": false
   }
 ]

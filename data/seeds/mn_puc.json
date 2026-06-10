@@ -76,5 +76,21 @@
     "source": "Minnesota Office of Administrative Hearings",
     "captured_at": "2026-06-08",
     "parse": false
+  },
+  {
+    "id": "2026-04-29_xcel-energy_mn-e-002-gr-24-320-alj-report",
+    "company": "Northern States Power Company d/b/a Xcel Energy",
+    "collection": "state_rate_case",
+    "jurisdiction": "MN",
+    "source": "Minnesota Office of Administrative Hearings",
+    "doc_type": "ALJ findings of fact, conclusions of law & recommendation (electric rate case)",
+    "industry": "electric",
+    "pdf_url": "https://mn.gov/oah/assets/2500-37994-xcel-energy-puc-rate-increase-report_tcm19-745010.pdf",
+    "source_page_url": "https://mn.gov/oah/lawyers-and-litigants/administrative-law/opinion-archive.jsp",
+    "issued_date": "2026-04-29",
+    "docket": "CAH 28-2500-40515 / MPUC E-002/GR-24-320",
+    "captured_at": "2026-06-10",
+    "source_note": "Minnesota Court of Administrative Hearings (the renamed OAH) ALJ report — Findings of Fact, Conclusions of Law, and Recommendation — in the application of Xcel Energy (Northern States Power) for authority to increase rates for electric service in Minnesota, MPUC E-002/GR-24-320 and E-002/GS-24-321 (CAH 28-2500-40515), dated April 29, 2026 (213 pp). PDF: mn.gov/oah/assets/2500-37994-xcel-energy-puc-rate-increase-report. Page-1 + 'Dated' page verified 2026-06-10.",
+    "parse": false
   }
 ]

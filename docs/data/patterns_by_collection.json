@@ -450,15 +450,15 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-06-08"
+    "generated_at": "2026-06-10"
   },
   "prudence_review": {
-    "report_count": 26,
+    "report_count": 27,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 22,
+      "electric": 23,
       "gas": 3,
       "oil": 1
     },
@@ -472,20 +472,20 @@
       "2020": 1,
       "2023": 3,
       "2024": 2,
-      "2025": 7
+      "2025": 8
     },
     "by_function": {},
     "themes": [],
     "top_titles": [],
-    "generated_at": "2026-06-08"
+    "generated_at": "2026-06-10"
   },
   "state_audit": {
-    "report_count": 35,
+    "report_count": 36,
     "finding_count": 109,
     "other_matter_count": 0,
     "recommendation_count": 311,
     "by_industry": {
-      "electric": 23,
+      "electric": 24,
       "gas": 10,
       "unknown": 2
     },
@@ -496,7 +496,7 @@
       "2020": 2,
       "2021": 2,
       "2022": 3,
-      "2023": 2,
+      "2023": 3,
       "2024": 9,
       "2025": 5
     },
@@ -931,15 +931,15 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-08"
+    "generated_at": "2026-06-10"
   },
   "state_rate_case": {
-    "report_count": 109,
+    "report_count": 111,
     "finding_count": 541,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 98,
+      "electric": 100,
       "gas": 9,
       "unknown": 2
     },
@@ -954,8 +954,8 @@
       "2022": 5,
       "2023": 6,
       "2024": 19,
-      "2025": 38,
-      "2026": 4
+      "2025": 39,
+      "2026": 5
     },
     "by_function": {},
     "themes": [
@@ -1203,6 +1203,6 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-08"
+    "generated_at": "2026-06-10"
   }
 }
