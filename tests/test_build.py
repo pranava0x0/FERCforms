@@ -101,6 +101,26 @@ def test_bake_no_findings_is_not_ratepayer_harm():
     assert d["themes"] == []
 
 
+def test_bake_reference_record_gets_descriptor_themes_but_no_harm_flag():
+    """Reference records (structured=False) bake report-level themes from their
+    displayed descriptors (doc_type + source_note) so the Prudence Reviews /
+    State Rate Cases tabs can facet — but a descriptor tag must never set the
+    ratepayer-harm badge (that stays finding-derived)."""
+    r = _report("ref", "electric", findings=[], collection="prudence_review").model_copy(
+        update={
+            "structured": False,
+            "doc_type": "affiliate-transactions audit & fuel adjustment clause order",
+            "source_note": "Order in the FAC fuel cost review.",
+        }
+    )
+    [d] = build.bake_report_dicts([r])
+    assert "Fuel & purchased-power cost recovery" in d["themes"]
+    # "affiliate" is a RATEPAYER_HARM theme — present as a descriptor tag, but the
+    # harm flag must stay off without a flagged finding.
+    assert "Affiliate / intercompany transactions" in d["themes"]
+    assert d["cost_to_customers"] is False
+
+
 def test_industry_counts_nonempty_for_nonempty_corpus():
     # The bug Codex caught: a clean build (no classification.json) must not write
     # empty industry counts. build_meta never reads that file, so a non-empty

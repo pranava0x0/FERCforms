@@ -131,6 +131,46 @@ def test_theme_rules_reject_known_false_positive_contexts():
         "misreported amounts in its FERC Form No. 1")
 
 
+def test_rate_case_prudence_theme_rules():
+    """The 2026-06-10 fuel/storm themes: rate-case & prudence vocabulary must tag,
+    and the known near-miss contexts must not."""
+    fuel = "Fuel & purchased-power cost recovery"
+    storm = "Storm cost recovery & securitization"
+    assert fuel in patterns._themes_for("examination of the fuel adjustment clause of Kentucky Utilities")
+    assert fuel in patterns._themes_for("Classification of Purchased Power Costs")
+    assert fuel in patterns._themes_for("energy balancing account audit for Rocky Mountain Power")
+    assert fuel in patterns._themes_for("ERRA compliance review of utility-owned generation operations")
+    # "erra" must never match bare — "Sierra" contains the substring
+    assert fuel not in patterns._themes_for("Sierra Pacific Resources settlement terms")
+    assert storm in patterns._themes_for("storm protection plan cost recovery clause")
+    assert storm in patterns._themes_for("normalize storm damage expenses and securitization charges")
+    # an incidental weather mention is NOT a storm-cost matter
+    assert storm not in patterns._themes_for("winter storm uri was a severe winter and ice storm")
+
+
+def test_descriptor_themes_reference_records_only():
+    """Reference records (structured=False) are theme-tagged from doc_type +
+    source_note; machine-parsed reports are not (a FERC audit with 0 parsed
+    findings must stay untagged). summarize() counts descriptor tags toward a
+    theme's report_count but never its finding_count."""
+    base = dict(
+        id="ref", company="Co", company_raw="Co", issued_date=date(2025, 1, 1),
+        source_page_url="u", pdf_download_url="u", captured_at=date(2026, 1, 1),
+        page_count=0, industry="electric", finding_count=0, findings=[],
+        doc_type="fuel adjustment clause order",
+        source_note="Final order in the FAC examination.",
+    )
+    ref = AuditReport(**base, collection="state_rate_case", structured=False)
+    parsed = AuditReport(**{**base, "id": "ferc"}, collection="ferc_audit", structured=True)
+    fuel = "Fuel & purchased-power cost recovery"
+    assert patterns.descriptor_themes(ref) == [fuel]
+    assert patterns.descriptor_themes(parsed) == []
+
+    s = patterns.summarize([ref, parsed])
+    stat = next(t for t in s.themes if t.theme == fuel)
+    assert stat.report_count == 1 and stat.finding_count == 0
+
+
 def test_ratepayer_harm_themes_are_declared_themes():
     """The ratepayer-harm axis must be a subset of THEME_RULES labels (single
     source). Guards against a typo'd or stale entry silently never matching."""

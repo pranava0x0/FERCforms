@@ -18,7 +18,14 @@ from pathlib import Path
 
 from pipeline import config, llmstxt
 from pipeline.models import AuditReport
-from pipeline.patterns import _themes_for, finding_theme_text, is_ratepayer_harm, load_reports, summarize
+from pipeline.patterns import (
+    _themes_for,
+    descriptor_themes,
+    finding_theme_text,
+    is_ratepayer_harm,
+    load_reports,
+    summarize,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +61,12 @@ def bake_report_dicts(reports: list[AuditReport]) -> list[dict]:
             fd["themes"] = ft
             fd["cost_to_customers"] = is_ratepayer_harm(ft)
             report_themes.update(ft)
+        # Reference records (structured=False) are additionally tagged from their
+        # displayed descriptors (doc_type + source_note) — see patterns.descriptor_themes.
+        report_themes.update(descriptor_themes(r))
         d["themes"] = sorted(report_themes)
+        # The ratepayer-harm flag stays finding-derived only — a descriptor tag
+        # (e.g. an affiliate-audit doc_type) must never set the harm badge.
         d["cost_to_customers"] = any(fd["cost_to_customers"] for fd in d["findings"])
         out.append(d)
     return out

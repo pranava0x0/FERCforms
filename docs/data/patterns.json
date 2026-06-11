@@ -69,6 +69,69 @@
       ]
     },
     {
+      "theme": "Fuel & purchased-power cost recovery",
+      "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+      "keywords": [
+        "fuel cost",
+        "fuel adjustment",
+        "fuel factor",
+        "fuel clause",
+        "fuel reconciliation",
+        "fuel expense",
+        "fuel recovery",
+        "fuel procurement",
+        "fuel rider",
+        "fuel forecast",
+        "fuel contract",
+        "fuel storage",
+        "fuel retention",
+        "fuel retainage",
+        "fuel mechanism",
+        "auxiliary fuel",
+        "purchased power",
+        "purchased-power",
+        "power cost adjustment",
+        "power cost update",
+        "net power cost",
+        "deferred energy",
+        "energy balancing account",
+        "energy resource recovery account",
+        "erra compliance",
+        "erra reasonableness",
+        "gas cost recovery",
+        "gas cost adjustment",
+        "energy cost recovery"
+      ],
+      "finding_count": 29,
+      "report_count": 50,
+      "example_titles": [
+        "Recovery of Fuel Contract Buyout Costs",
+        "Accounting for Fuel Storage and Handling",
+        "Auxiliary Fuel Costs in Nuclear Power Generation",
+        "Approval: $225,000\n"
+      ]
+    },
+    {
+      "theme": "Cost of service & rates",
+      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+      "keywords": [
+        "cost of service",
+        "cost-of-service",
+        "rate base",
+        "rate of return",
+        "return on equity",
+        "rate design"
+      ],
+      "finding_count": 84,
+      "report_count": 46,
+      "example_titles": [
+        "Approval: $1,277,051,206. ",
+        "Approval: $35.7 million",
+        "Annual Membership Dues",
+        "Annual Cost of Service Based Analysis Schedule"
+      ]
+    },
+    {
       "theme": "Depreciation",
       "description": "Unapproved or incorrect depreciation rates applied to plant.",
       "keywords": [
@@ -94,7 +157,7 @@
         "non-operating"
       ],
       "finding_count": 50,
-      "report_count": 40,
+      "report_count": 43,
       "example_titles": [
         "Annual Membership Dues",
         "Nonoperating and Operating Expenses",
@@ -122,6 +185,23 @@
       ]
     },
     {
+      "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 53,
+      "report_count": 39,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Settlement: agreement",
+        "Affiliated Interests and Cost Allocations",
+        "Reporting of Transactions with Associated (Affiliated) Companies"
+      ]
+    },
+    {
       "theme": "AFUDC / cost of capital",
       "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
       "keywords": [
@@ -138,49 +218,13 @@
       ]
     },
     {
-      "theme": "Cost of service & rates",
-      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
-      "keywords": [
-        "cost of service",
-        "cost-of-service",
-        "rate base",
-        "rate of return",
-        "return on equity"
-      ],
-      "finding_count": 73,
-      "report_count": 35,
-      "example_titles": [
-        "Approval: $1,277,051,206. ",
-        "Annual Membership Dues",
-        "Annual Cost of Service Based Analysis Schedule",
-        "Nonoperating and Operating Expenses"
-      ]
-    },
-    {
-      "theme": "Affiliate / intercompany transactions",
-      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-      "keywords": [
-        "affiliate",
-        "intercompany",
-        "inter-company"
-      ],
-      "finding_count": 53,
-      "report_count": 35,
-      "example_titles": [
-        "Accounting for Distribution and Meter-Related Costs",
-        "Settlement: agreement",
-        "Affiliated Interests and Cost Allocations",
-        "Reporting of Transactions with Associated (Affiliated) Companies"
-      ]
-    },
-    {
       "theme": "Tariff administration & oversight",
       "description": "Not following the utility's own FERC-approved tariff.",
       "keywords": [
         "tariff"
       ],
       "finding_count": 49,
-      "report_count": 29,
+      "report_count": 35,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -223,12 +267,37 @@
         "outage response"
       ],
       "finding_count": 14,
-      "report_count": 12,
+      "report_count": 13,
       "example_titles": [
         "Settlement: terms",
         "Settlement: Agreement",
         "Electric Operations",
         "Accounting for Vegetation Management Costs"
+      ]
+    },
+    {
+      "theme": "Storm cost recovery & securitization",
+      "description": "Storm restoration costs, storm riders/reserves, or securitization.",
+      "keywords": [
+        "storm cost",
+        "storm protection plan",
+        "storm restoration",
+        "storm damage",
+        "storm rider",
+        "storm expense",
+        "storm recovery",
+        "storm deferral",
+        "storm revenue",
+        "storm reserve",
+        "securitization"
+      ],
+      "finding_count": 23,
+      "report_count": 12,
+      "example_titles": [
+        "Approval: $69.8 million",
+        "Approval: $78 million",
+        "Approval: $85.7 million",
+        "Settlement: AGREEMENT"
       ]
     },
     {
@@ -277,22 +346,6 @@
       ]
     },
     {
-      "theme": "Membership dues & industry associations",
-      "description": "Trade-association dues (e.g., EEI) improperly charged to ratepayers.",
-      "keywords": [
-        "membership dues",
-        "industry association"
-      ],
-      "finding_count": 11,
-      "report_count": 11,
-      "example_titles": [
-        "Annual Membership Dues",
-        "Accounting for Edison Electric Institute Membership Dues",
-        "Industry Trade Association Dues",
-        "Accounting for EEI Annual Membership Dues"
-      ]
-    },
-    {
       "theme": "Customer service & billing",
       "description": "Customer-service performance, billing accuracy, or call-center issues.",
       "keywords": [
@@ -308,12 +361,28 @@
         "customer experience"
       ],
       "finding_count": 14,
-      "report_count": 10,
+      "report_count": 11,
       "example_titles": [
         "Financial Management",
         "Customer Service",
         "Customer Service (continued)",
         "Gas Delivery"
+      ]
+    },
+    {
+      "theme": "Membership dues & industry associations",
+      "description": "Trade-association dues (e.g., EEI) improperly charged to ratepayers.",
+      "keywords": [
+        "membership dues",
+        "industry association"
+      ],
+      "finding_count": 11,
+      "report_count": 11,
+      "example_titles": [
+        "Annual Membership Dues",
+        "Accounting for Edison Electric Institute Membership Dues",
+        "Industry Trade Association Dues",
+        "Accounting for EEI Annual Membership Dues"
       ]
     },
     {
@@ -385,7 +454,7 @@
         "mutual assist"
       ],
       "finding_count": 8,
-      "report_count": 7,
+      "report_count": 8,
       "example_titles": [
         "Emergency Preparedness",
         "Emergency Preparedness (continued)",

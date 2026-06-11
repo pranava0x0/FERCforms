@@ -56,7 +56,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -228,7 +230,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Below-the-line costs (lobbying, charitable, etc.)"
+    ],
     "cost_to_customers": false
   },
   {
@@ -258,7 +262,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -288,7 +294,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Below-the-line costs (lobbying, charitable, etc.)"
+    ],
     "cost_to_customers": false
   },
   {
@@ -467,13 +475,17 @@
         "summary": "illion.87 Accordingly, we find (i) that the Company’s proposed rate design for Rider CERC should be approved, and (ii) that a Rate Year revenue requirement of $35.7 million is appropriate and should be approved. 84 Staff s Post-Hearing Brief at 10. Sierra Club’s Post-Hearing Brief at 1-2. Post-Heari",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       }
     ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Cost of service & rates"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -502,7 +514,10 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery",
+      "Service reliability & vegetation management"
+    ],
     "cost_to_customers": false
   },
   {
@@ -628,7 +643,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -709,7 +726,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -739,7 +758,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -1946,7 +1967,9 @@
         "summary": "erefore, will accept its adjustments to the ENEC proposed revenue increase. The Companies should be allowed an annual ENEC increase of $69.8 million. As we explained in the Order issued in Case No. 24-0854-E-42T, we are approving the Companies’ proceeding with securitization. We anticipate that th",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -1960,7 +1983,10 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery",
+      "Storm cost recovery & securitization"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2118,7 +2144,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2152,7 +2180,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2212,7 +2242,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2284,7 +2316,9 @@
         "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers by approximately $3,500,000 during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2293,7 +2327,9 @@
         "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -2313,7 +2349,8 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Inventory, materials & fleet"
+          "Inventory, materials & fleet",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -2399,6 +2436,7 @@
       "Affiliate / intercompany transactions",
       "Capitalization vs. expense",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery",
       "Inventory, materials & fleet",
       "Property & plant records"
     ],
@@ -2499,7 +2537,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2937,7 +2977,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2967,7 +3009,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -2997,7 +3041,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -3439,15 +3485,18 @@
         "summary": "ENT SPREAD, AND RATE DESIGN – DISCUSSION, FINDINGS, AND CONCLUSIONS A. The PSC Adjusts the Phase II Settlement Agreement to Increase the Low- Income Lifeline Credit to $18.00 per Month RMP administers a Low-Income Lifeline Program, consistent with Utah Code § 54-7-13.6,",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       }
     ],
     "structured": false,
     "themes": [
+      "Cost of service & rates",
       "Information technology & systems"
     ],
-    "cost_to_customers": false
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -3486,7 +3535,9 @@
         "summary": ", in aggregate, in the Company’s service territory for a given storm event. The Major Storm revenue allowance reflected in rates will be $78 million. The treatment of Major Storm costs is more fully described in Appendix 13 and Appendix 5, Schedule 16. 40 Case 24-E-0322 Case 24-G-0323 Joint Propos",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -3495,7 +3546,9 @@
         "summary": "Lining Storm deferral will dissolve and there will be no minor storm deferral. The minor storm rate allowance will remain at $85.7 million for Rate Year Two and $87.6 million for Rate Year Three with no deferral for any expenditures for the remainder of the rate plan. 6.5. Pre-Staging St",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -3504,8 +3557,10 @@
         "summary": "r component is reflected through the revenue allocation and rate design process. The EAP Total Rate Allowances are $61.775 million in Rate Year One, $87.575 million 24 The cash shortfall is equal to the difference between the negative expense levels reflected in the revenue requi",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 4,
@@ -3536,8 +3591,11 @@
       }
     ],
     "structured": false,
-    "themes": [],
-    "cost_to_customers": false
+    "themes": [
+      "Cost of service & rates",
+      "Storm cost recovery & securitization"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "ferc_audit",
@@ -3828,7 +3886,9 @@
         "summary": "nse incurred during the Reconciliation Period to the Texas 11 jurisdiction, and that the Company be allowed to carry forward the estimated $225,000 12 impact ofthis proposal for final review in EPE's next fuel reconciliation case at which time 13 a final determination of whether Newman 6 should be",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -3863,7 +3923,8 @@
     ],
     "structured": false,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": true
   },
@@ -3894,7 +3955,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -3924,7 +3987,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -3998,12 +4063,16 @@
         "summary": "will pay $201.92 (excluding taxes), which consists of $180.24 in base charges set in NIPSCO’s last approved rate case (Cause No. 45772), $0.69 in a fuel adjustment clause credit, and $20.99 in non-FAC trackers. 12. Fuel Cost Adjustment Factor. OUCC witness Eckert recommended the Commission ap",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -4091,7 +4160,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -4350,7 +4421,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -4613,7 +4686,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -4931,7 +5006,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -4961,7 +5038,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Storm cost recovery & securitization"
+    ],
     "cost_to_customers": false
   },
   {
@@ -5618,7 +5697,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -7313,7 +7394,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -7343,7 +7426,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -7373,7 +7458,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -7757,7 +7844,9 @@
         "summary": "SPENDING…………………………………………………….……....……...60 VIII. OTHER SIGNIFICANT CONTESTED ADJUSTMENTS SETTLED BY SETTLEMENT AGREEMENT AND COST OF CAPITAL…………………….…....65 1. Storm Restoration Expense (Adj. No. 17) and Significant Storm Expense Rider.........66 2. Covid-19 Regulatory",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -7939,8 +8028,10 @@
         "summary": "Tr.-212. 150 Tr.-213. 151 Id. 152 Id. 153 Tr.-214. 154 Id. Please see Paragraph 43 of the proposed Settlement Agreement (Exh. A hereto) as to the Electric Vehicle rate design issue. The Settling parties are awaiting initial action by the Governor’s Energy Advisory Coun",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 60,
@@ -7968,7 +8059,9 @@
         "summary": "witness Pfaff, the resulting revenue increase is substantially less than the $42.25 million in the Settlement Agreement.”188 106. As to the proposed Significant Storm Expense Rider (SSER), Witness Bowman testified that it is Staff’s position that Delmarva “needs to mak",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8053,7 +8146,9 @@
         "summary": "40 169. I recommend that the Commission follow the parties’ Significant Storm Rider in the proposed Settlement Agreement. One important factor to me is Delmarva’s witness Perry testifying that Delmarva will be filing “Alternative Rate Making no later than June 2024.”241",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8089,8 +8184,10 @@
         "summary": "in accordance with IEEE Std TM1366-2012. VIII. OTHER SIGNIFICANT CONTESTED ADJUSTMENTS SETTTLED BY SETTLEMENT AGREEMENT AND COST OF CAPITAL 183. The following significant adjustments, Cost of Capital and Rate Design are contested being settled by the Settlement Agreeme",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 76,
@@ -8098,8 +8195,11 @@
         "summary": "llowing significant adjustments, Cost of Capital and Rate Design are contested being settled by the Settlement Agreement: - 65 - 1. Storm Restoration Expense (Adj. No. 17) and Significant Storm Expense Rate Rider 2. Covid-19 Regulatory Asset (Adj. No. 28) 3. Excess Defe",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates",
+          "Storm cost recovery & securitization"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 77,
@@ -8107,7 +8207,9 @@
         "summary": "(Adj. No. 17) and Proposed Significant Damage Expense Rate Rider (“SSER”) 184. Before the parties’ Settlement Agreement, the parties’ respective positions were as described below. The Company first proposed to normalize storm damage expenses based on the most recent th",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8159,7 +8261,8 @@
     "structured": false,
     "themes": [
       "Cost of service & rates",
-      "Service reliability & vegetation management"
+      "Service reliability & vegetation management",
+      "Storm cost recovery & securitization"
     ],
     "cost_to_customers": true
   },
@@ -8213,7 +8316,9 @@
         "summary": "rate distributed energy component ofthe overall fuel factor. m O I 14. DESC agreed to a one-time disallowance of $43,409 from the Company's DERP C hD ) incremental costs, which will not be treated as precedentialbythe Settling Parties. 15. DESC agreed to a one-time disal",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8321,7 +8426,9 @@
         "summary": "815. The Settlement Parties agree the appropriate fuel factors for DESC to charge 1. pursuanttothis SettlementAgreementfortheperiodbeginningwiththefirstbilling m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE 7 Z'. CI cycle ofMay 2024 and extending through the las",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8357,7 +8464,9 @@
         "summary": "edrates to recover fuel costs incurred during the Review Period. 111. FINDINGS OF FACT Based on the Settlement Agreement, the testimony and exhibits received into evidence at the hearing, and the entire record of these proceedings, the Commission makes the following fin",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8456,7 +8565,9 @@
         "summary": "2:4-10, 13:4-9, 14:4-8, and 15:3-12 and Exhibits 3, 5-7). Pursuant to the Page 6, Section B.4 ofthe Settlement Agreement, the Settlement Parties agree to the amounts in ORS Witness Roland's Direct Testimony and Exhibits for the Fuel Adjustment Clause forthe Actual Perio",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8497,7 +8608,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -8604,7 +8717,9 @@
         "summary": "rs m B.5. The Parties agree the appropriate fuel factors for DESC to charge pursuant to this O I io Settlement Agreement for the period beginning with the first billing cycle of May 2024 and C) extending through the lastbilling cycle ofApril 2025 are listedbelow. in O c",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8839,7 +8954,8 @@
     ],
     "structured": false,
     "themes": [
-      "Affiliate / intercompany transactions"
+      "Affiliate / intercompany transactions",
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": true
   },
@@ -8882,7 +8998,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -8893,7 +9010,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -8903,7 +9021,9 @@
         "summary": "APCo did not exclude the expenses incurred in connection with fly ash sales for beneficial reuse from its wholesale cost-based fuel recovery formulas. By not excluding fly ash sales-related costs as required by its wholesale Requirements Service formulas, APCo overstated its revenue requirement by approximately $178,000.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -8921,7 +9041,8 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
   },
@@ -9059,7 +9180,9 @@
         "summary": "NET Mexico did not retain natural gas from quantities received from shippers used to operate compressor stations on its system, as prescribed by its SOC. Rather than obtaining all of the fuel used at compressor stations in volumes (i.e., in-kind) from its shippers, NET Mexico charged shippers in dollars a pro-rata share of the actual fuel costs incurred to operate its natural gas compressor stations.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9184,7 +9307,8 @@
     ],
     "structured": true,
     "themes": [
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
   },
@@ -9220,12 +9344,16 @@
         "summary": "Black 8 Veatch's expert report and recommendations were accepted in its entirety bythe I Board that allowed NSPI to recover $12 million offuel cost incurred during the 2010-2011 winter. O 0 OGBE Gas Transportation and Storage Contracts Review; Oklahoma; 2011-2012 I O Project Lead — Bl",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -9588,7 +9716,9 @@
         "summary": "at least one year; (2) a freeze on filing a full Base Rate case until April 2025; and (3) a minimum $82.6 million disallowance. Given those conditions, WVEUG preferred the securitization proposal. Staff, through the testimony and evidence of Critical Technologies Consulti",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9624,7 +9754,9 @@
         "summary": "lowed be amortized over no less than five years with no carrying charge. The WVEUG recommended a disallowance of $82.6 million before any consideration of amortization or securitization. WVEUG further recommended that any balance recoverable in rates be allowed a carrying cha",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9701,7 +9833,10 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery",
+      "Storm cost recovery & securitization"
+    ],
     "cost_to_customers": false
   },
   {
@@ -9957,7 +10092,9 @@
         "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,307,293,308 as FPL’s reasonably estimated 2023 costs and an under-recovery amount of $14,860,970 as FPL’s jurisdictional cost recovery true-up amount, including i",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9966,7 +10103,9 @@
         "summary": "d 2022 Storm Protection Plan filed in Docket No. 20220048-EI. Based on our review of the record, we approve $212,589,753 as TECO’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $90,584,791 for the period January 2024 through December 2024. 2",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9984,7 +10123,9 @@
         "summary": "proved Storm Protection Plan filed in Docket No. 20220049-EI. Based on our review of the record, we approve $13,620,916 as FPUC’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $2,448,891 for the period January 2024 through December 2024. 4.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -9993,7 +10134,9 @@
         "summary": "3-2032 Storm Protection Plan filed in Docket No. 20220051-EI. Based on our review of the record, we approve $1,389,706,289 as FPL’s reasonably projected 2024 costs and a jurisdictional revenue requirement of $513,855,741 for the period January 2024 through December 2024. S",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -10029,7 +10172,9 @@
         "summary": "da Power & Light Company; and 20200092-EI, In re: Storm Protection Plan cost recovery clause. 2 The settlement agreements required these utilities to file updated plans in 2022, consistent with the requirement in section 396.96(6), F.S., that we are to review utility SP",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -10070,7 +10215,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Storm cost recovery & securitization"
+    ],
     "cost_to_customers": false
   },
   {
@@ -10132,7 +10279,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -10164,7 +10313,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -10194,7 +10345,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -10932,9 +11085,10 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Cost of service & rates"
         ],
-        "cost_to_customers": false
+        "cost_to_customers": true
       },
       {
         "index": 9,
@@ -11191,7 +11345,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -12895,7 +13051,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
     "cost_to_customers": false
   },
   {
@@ -14632,7 +14790,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -14662,7 +14822,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -14941,7 +15103,10 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery",
+      "Storm cost recovery & securitization"
+    ],
     "cost_to_customers": false
   },
   {
@@ -15544,7 +15709,8 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       }
@@ -15557,6 +15723,7 @@
       "Capitalization vs. expense",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery",
       "Property & plant records",
       "Service reliability & vegetation management",
       "Tariff administration & oversight"
@@ -15886,7 +16053,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -17158,12 +17327,16 @@
         "summary": "y for the purchased power costs that exceeded the Benchmark and the OUCC agreed Applicant should be allowed to recover $548,548 in purchased power costs that exceeded the Benchmark. Accordingly, the Commission finds Applicant’s request for recovery of its purchased power over t",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -17464,7 +17637,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "AFUDC / cost of capital"
+          "AFUDC / cost of capital",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": true
       },
@@ -17587,6 +17761,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery",
       "Property & plant records"
     ],
     "cost_to_customers": true
@@ -19148,7 +19323,8 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)"
+          "Form reporting (Form No. 1/2/6, Page 700)",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -19199,6 +19375,7 @@
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
       "Form reporting (Form No. 1/2/6, Page 700)",
+      "Fuel & purchased-power cost recovery",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -20462,7 +20639,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
     "cost_to_customers": false
   },
   {
@@ -20698,7 +20877,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -22302,7 +22483,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -23029,7 +23212,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -23051,6 +23235,7 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Fuel & purchased-power cost recovery",
       "Membership dues & industry associations"
     ],
     "cost_to_customers": true
@@ -23128,7 +23313,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification"
+          "Accounting misclassification",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       }
@@ -23138,6 +23324,7 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
+      "Fuel & purchased-power cost recovery",
       "Membership dues & industry associations"
     ],
     "cost_to_customers": true
@@ -24174,7 +24361,9 @@
         "summary": "From 2012 through 2014, Mississippi Power did not retain $199,775 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations. Also, Mississippi Power did not provide its wholesale customers with the time value of money associated with excessive storm damage revenues.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24255,7 +24444,8 @@
     "themes": [
       "Accounting misclassification",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Storm cost recovery & securitization"
     ],
     "cost_to_customers": true
   },
@@ -24306,7 +24496,9 @@
         "summary": "From 2012 through 2014, Gulf Power did not retain $138,245 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations. Also, Gulf Power did not provide its wholesale customers with the time value of money associated with excessive storm damage revenues.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24316,7 +24508,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Storm cost recovery & securitization"
         ],
         "cost_to_customers": true
       },
@@ -24401,7 +24594,8 @@
       "AFUDC / cost of capital",
       "Cost of service & rates",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Storm cost recovery & securitization"
     ],
     "cost_to_customers": true
   },
@@ -24452,7 +24646,9 @@
         "summary": "From 2012 through 2014, Georgia Power did not retain $1,061,285 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations. Also, Georgia Power did not provide its wholesale customers with the time value of money associated with excessive storm damage revenues.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24503,7 +24699,9 @@
         "summary": "Georgia Power inappropriately included regulatory assets associated with retail- related storm damage costs and unpaid vacation pay in wholesale formula rate determinations without specific Commission authorization. As a result, Georgia Power improperly billed its wholesale customers a return on the regulatory asset for: (1) storm damage costs that were not incurred to repair or restore transmission facilities and (2) unpaid vacation pay that resulted in no outlay of cash.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24590,7 +24788,8 @@
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
-      "Service reliability & vegetation management"
+      "Service reliability & vegetation management",
+      "Storm cost recovery & securitization"
     ],
     "cost_to_customers": true
   },
@@ -24641,7 +24840,9 @@
         "summary": "From 2012 through 2014, Alabama Power did not retain $40,204 in excessive storm damage revenues collected from its wholesale customers in the appropriate liability account in accordance with the Commission accounting regulations.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Storm cost recovery & securitization"
+        ],
         "cost_to_customers": false
       },
       {
@@ -24765,7 +24966,8 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Depreciation",
-      "Form reporting (Form No. 1/2/6, Page 700)"
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Storm cost recovery & securitization"
     ],
     "cost_to_customers": true
   },
@@ -25179,7 +25381,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Below-the-line costs (lobbying, charitable, etc.)"
+    ],
     "cost_to_customers": false
   },
   {
@@ -27828,7 +28032,9 @@
         "summary": "alculation and will reduce 2013 fuel factors. 2 See also Paragraphs 9 and 10 in the Stipulation and Settlement Agreement approved by Order No. PSC-12-0104­ FOF-EI, issued March 8, 2012, in Docket No. 120022-EI, In re: Petition for limited proceeding to approve stipulati",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -27846,7 +28052,9 @@
         "summary": ". 4Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 6 In January 2012, PEF entered into a settlement agreement with OPC, FIPUG, FRF, PCS, and FEA.5 This agreement addressed issues involving nuclear cost recovery, base rates, the CR3 outage, fuel cost recovery",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -27969,6 +28177,7 @@
     ],
     "structured": false,
     "themes": [
+      "Fuel & purchased-power cost recovery",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
@@ -28000,7 +28209,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28044,7 +28255,9 @@
       }
     ],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Tariff administration & oversight"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28273,7 +28486,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28902,7 +29117,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28935,7 +29152,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28965,7 +29184,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -28995,7 +29216,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Emergency preparedness & business continuity"
+    ],
     "cost_to_customers": false
   },
   {
@@ -29025,7 +29248,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -29055,7 +29280,10 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Affiliate / intercompany transactions",
+      "Cost of service & rates"
+    ],
     "cost_to_customers": false
   },
   {
@@ -29469,7 +29697,9 @@
         "summary": "APS agreed to file a request for FERC approval within 30 days of the Commission’s 8 approval of the Settlement Agreement, and the parties have agreed not to oppose the FERC 9 application. The Settlement Agreement provides for a bridge purchased power agreement (“Bridge",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29478,7 +29708,9 @@
         "summary": "of the Settlement Agreement, and the parties have agreed not to oppose the FERC 9 application. The Settlement Agreement provides for a bridge purchased power agreement (“Bridge 10 PPA”) to be implemented once new rates are put in place, until the actual date of the tra",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29488,7 +29720,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Cost of service & rates"
+          "Cost of service & rates",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": true
       },
@@ -29595,7 +29828,8 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Tariff administration & oversight"
+          "Tariff administration & oversight",
+          "Fuel & purchased-power cost recovery"
         ],
         "cost_to_customers": false
       },
@@ -29641,7 +29875,9 @@
         "summary": "s the shifting of the risk that fuel costs will increase above the base rates established in the 26 Settlement Agreement. Currently, if fuel costs or any other costs rise above the level embedded in 27 28 14 Tr. p. 1249. 15 DECISION NO. _____________ DOCKET NO. E-01345A",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
+        "themes": [
+          "Fuel & purchased-power cost recovery"
+        ],
         "cost_to_customers": false
       },
       {
@@ -29728,8 +29964,10 @@
         "summary": "energy 2 consumption (kWh) in a cost-effective manner.”21 3 DSM is addressed in three areas of the Settlement Agreement: in the funding, programs, 4 plans and reporting provisions; in the study of rate design modifications; and in the competitive 5 procurement process.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 55,
@@ -30067,8 +30305,10 @@
         "summary": "ts, and will 15 determine the appropriate amortization period. 16 t. Rate Design 17 Attached to the Settlement Agreement is Appendix J, which sets forth the rates adopted in the 18 Settlement Agreement. The rates are designed to permit APS to recover an additional $67.5",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 92,
@@ -30112,8 +30352,10 @@
         "summary": "hree tiers with break-over points at 400 kWh per month and 800 6 kWh per month. Paragraph 57 of the Settlement Agreement requires APS to conduct a rate design 7 study analyzing rate design modifications to promote energy efficiency, conservation, and reduce 8 peak deman",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 97,
@@ -30268,8 +30510,10 @@
         "summary": "hree tiers with break-over points at 400 kWh per month 7 and 800 kWh per month. Paragraph 57 of the Settlement Agreement requires APS to conduct a rate 8 design study analyzing rate design modifications to promote energy efficiency, conservation, and 9 reduce peak deman",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [],
-        "cost_to_customers": false
+        "themes": [
+          "Cost of service & rates"
+        ],
+        "cost_to_customers": true
       },
       {
         "index": 113,
@@ -30370,6 +30614,7 @@
       "Cost of service & rates",
       "Creditworthiness",
       "Depreciation",
+      "Fuel & purchased-power cost recovery",
       "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
@@ -30477,7 +30722,10 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Cost of service & rates",
+      "Customer service & billing"
+    ],
     "cost_to_customers": false
   },
   {
@@ -30947,7 +31195,8 @@
           }
         ],
         "themes": [
-          "Internal audit & internal controls"
+          "Internal audit & internal controls",
+          "Storm cost recovery & securitization"
         ],
         "cost_to_customers": false
       },
@@ -31299,7 +31548,9 @@
           "Inventory, materials & fleet",
           "Service reliability & vegetation management",
           "Gas safety & pipeline integrity",
-          "Dividend policy & capital management"
+          "Dividend policy & capital management",
+          "Fuel & purchased-power cost recovery",
+          "Storm cost recovery & securitization"
         ],
         "cost_to_customers": true
       }
@@ -31316,12 +31567,14 @@
       "Depreciation",
       "Dividend policy & capital management",
       "Emergency preparedness & business continuity",
+      "Fuel & purchased-power cost recovery",
       "Gas safety & pipeline integrity",
       "Information technology & systems",
       "Internal audit & internal controls",
       "Inventory, materials & fleet",
       "Property & plant records",
       "Service reliability & vegetation management",
+      "Storm cost recovery & securitization",
       "Tariff administration & oversight",
       "Workforce, training & succession planning"
     ],
@@ -32075,7 +32328,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Affiliate / intercompany transactions"
+    ],
     "cost_to_customers": false
   },
   {
@@ -32105,7 +32360,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -32135,7 +32392,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -32165,7 +32424,9 @@
     "finding_count": 0,
     "findings": [],
     "structured": false,
-    "themes": [],
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   }
 ]

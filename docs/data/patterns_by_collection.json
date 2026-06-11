@@ -142,9 +142,10 @@
           "cost-of-service",
           "rate base",
           "rate of return",
-          "return on equity"
+          "return on equity",
+          "rate design"
         ],
-        "finding_count": 50,
+        "finding_count": 51,
         "report_count": 24,
         "example_titles": [
           "Annual Membership Dues",
@@ -232,6 +233,73 @@
           "Informational Postings",
           "Public Access to Monthly and Yearly Capability Information",
           "Posting of Short Circuit Information"
+        ]
+      },
+      {
+        "theme": "Fuel & purchased-power cost recovery",
+        "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+        "keywords": [
+          "fuel cost",
+          "fuel adjustment",
+          "fuel factor",
+          "fuel clause",
+          "fuel reconciliation",
+          "fuel expense",
+          "fuel recovery",
+          "fuel procurement",
+          "fuel rider",
+          "fuel forecast",
+          "fuel contract",
+          "fuel storage",
+          "fuel retention",
+          "fuel retainage",
+          "fuel mechanism",
+          "auxiliary fuel",
+          "purchased power",
+          "purchased-power",
+          "power cost adjustment",
+          "power cost update",
+          "net power cost",
+          "deferred energy",
+          "energy balancing account",
+          "energy resource recovery account",
+          "erra compliance",
+          "erra reasonableness",
+          "gas cost recovery",
+          "gas cost adjustment",
+          "energy cost recovery"
+        ],
+        "finding_count": 12,
+        "report_count": 8,
+        "example_titles": [
+          "Recovery of Fuel Contract Buyout Costs",
+          "Accounting for Fuel Storage and Handling",
+          "Auxiliary Fuel Costs in Nuclear Power Generation",
+          "Amortization of Retail Regulatory Assets"
+        ]
+      },
+      {
+        "theme": "Storm cost recovery & securitization",
+        "description": "Storm restoration costs, storm riders/reserves, or securitization.",
+        "keywords": [
+          "storm cost",
+          "storm protection plan",
+          "storm restoration",
+          "storm damage",
+          "storm rider",
+          "storm expense",
+          "storm recovery",
+          "storm deferral",
+          "storm revenue",
+          "storm reserve",
+          "securitization"
+        ],
+        "finding_count": 6,
+        "report_count": 4,
+        "example_titles": [
+          "Wholesale Storm Damage Revenues",
+          "Other Special Funds Related To Storm Damages",
+          "Regulatory Assets"
         ]
       },
       {
@@ -460,7 +528,75 @@
       "2025": 8
     },
     "by_function": {},
-    "themes": [],
+    "themes": [
+      {
+        "theme": "Fuel & purchased-power cost recovery",
+        "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+        "keywords": [
+          "fuel cost",
+          "fuel adjustment",
+          "fuel factor",
+          "fuel clause",
+          "fuel reconciliation",
+          "fuel expense",
+          "fuel recovery",
+          "fuel procurement",
+          "fuel rider",
+          "fuel forecast",
+          "fuel contract",
+          "fuel storage",
+          "fuel retention",
+          "fuel retainage",
+          "fuel mechanism",
+          "auxiliary fuel",
+          "purchased power",
+          "purchased-power",
+          "power cost adjustment",
+          "power cost update",
+          "net power cost",
+          "deferred energy",
+          "energy balancing account",
+          "energy resource recovery account",
+          "erra compliance",
+          "erra reasonableness",
+          "gas cost recovery",
+          "gas cost adjustment",
+          "energy cost recovery"
+        ],
+        "finding_count": 0,
+        "report_count": 8,
+        "example_titles": []
+      },
+      {
+        "theme": "Cost of service & rates",
+        "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+        "keywords": [
+          "cost of service",
+          "cost-of-service",
+          "rate base",
+          "rate of return",
+          "return on equity",
+          "rate design"
+        ],
+        "finding_count": 0,
+        "report_count": 2,
+        "example_titles": []
+      },
+      {
+        "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+        "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
+        "keywords": [
+          "lobbying",
+          "charitable",
+          "below-the-line",
+          "nonoperating",
+          "non-operating"
+        ],
+        "finding_count": 0,
+        "report_count": 1,
+        "example_titles": []
+      }
+    ],
     "top_titles": [],
     "generated_at": "2026-06-10"
   },
@@ -487,6 +623,23 @@
     },
     "by_function": {},
     "themes": [
+      {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 13,
+        "report_count": 11,
+        "example_titles": [
+          "Affiliated Interests and Cost Allocations",
+          "Cost Allocations and Affiliated Interests",
+          "Affiliated Interests and Cost Allocations (continued)",
+          "Non-Power Affiliate Relationships and Transactions"
+        ]
+      },
       {
         "theme": "Customer service & billing",
         "description": "Customer-service performance, billing accuracy, or call-center issues.",
@@ -577,23 +730,6 @@
         ]
       },
       {
-        "theme": "Affiliate / intercompany transactions",
-        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-        "keywords": [
-          "affiliate",
-          "intercompany",
-          "inter-company"
-        ],
-        "finding_count": 13,
-        "report_count": 8,
-        "example_titles": [
-          "Affiliated Interests and Cost Allocations",
-          "Cost Allocations and Affiliated Interests",
-          "Affiliated Interests and Cost Allocations (continued)",
-          "Non-Power Affiliate Relationships and Transactions"
-        ]
-      },
-      {
         "theme": "Emergency preparedness & business continuity",
         "description": "Weak emergency response, storm readiness, or business-continuity planning.",
         "keywords": [
@@ -604,7 +740,7 @@
           "mutual assist"
         ],
         "finding_count": 8,
-        "report_count": 7,
+        "report_count": 8,
         "example_titles": [
           "Emergency Preparedness",
           "Emergency Preparedness (continued)",
@@ -696,13 +832,54 @@
           "cost-of-service",
           "rate base",
           "rate of return",
-          "return on equity"
+          "return on equity",
+          "rate design"
         ],
         "finding_count": 4,
-        "report_count": 4,
+        "report_count": 5,
         "example_titles": [
           "Cost Allocations and Affiliated Interests",
           "Affiliated Interests and Cost Allocations",
+          "Page 2 of 2"
+        ]
+      },
+      {
+        "theme": "Fuel & purchased-power cost recovery",
+        "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+        "keywords": [
+          "fuel cost",
+          "fuel adjustment",
+          "fuel factor",
+          "fuel clause",
+          "fuel reconciliation",
+          "fuel expense",
+          "fuel recovery",
+          "fuel procurement",
+          "fuel rider",
+          "fuel forecast",
+          "fuel contract",
+          "fuel storage",
+          "fuel retention",
+          "fuel retainage",
+          "fuel mechanism",
+          "auxiliary fuel",
+          "purchased power",
+          "purchased-power",
+          "power cost adjustment",
+          "power cost update",
+          "net power cost",
+          "deferred energy",
+          "energy balancing account",
+          "energy resource recovery account",
+          "erra compliance",
+          "erra reasonableness",
+          "gas cost recovery",
+          "gas cost adjustment",
+          "energy cost recovery"
+        ],
+        "finding_count": 1,
+        "report_count": 5,
+        "example_titles": [
           "Page 2 of 2"
         ]
       },
@@ -753,6 +930,29 @@
         "report_count": 1,
         "example_titles": [
           "Accounting and Property Records",
+          "Page 2 of 2"
+        ]
+      },
+      {
+        "theme": "Storm cost recovery & securitization",
+        "description": "Storm restoration costs, storm riders/reserves, or securitization.",
+        "keywords": [
+          "storm cost",
+          "storm protection plan",
+          "storm restoration",
+          "storm damage",
+          "storm rider",
+          "storm expense",
+          "storm recovery",
+          "storm deferral",
+          "storm revenue",
+          "storm reserve",
+          "securitization"
+        ],
+        "finding_count": 2,
+        "report_count": 1,
+        "example_titles": [
+          "Deferral of Costs",
           "Page 2 of 2"
         ]
       },
@@ -940,6 +1140,49 @@
     "by_function": {},
     "themes": [
       {
+        "theme": "Fuel & purchased-power cost recovery",
+        "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+        "keywords": [
+          "fuel cost",
+          "fuel adjustment",
+          "fuel factor",
+          "fuel clause",
+          "fuel reconciliation",
+          "fuel expense",
+          "fuel recovery",
+          "fuel procurement",
+          "fuel rider",
+          "fuel forecast",
+          "fuel contract",
+          "fuel storage",
+          "fuel retention",
+          "fuel retainage",
+          "fuel mechanism",
+          "auxiliary fuel",
+          "purchased power",
+          "purchased-power",
+          "power cost adjustment",
+          "power cost update",
+          "net power cost",
+          "deferred energy",
+          "energy balancing account",
+          "energy resource recovery account",
+          "erra compliance",
+          "erra reasonableness",
+          "gas cost recovery",
+          "gas cost adjustment",
+          "energy cost recovery"
+        ],
+        "finding_count": 16,
+        "report_count": 29,
+        "example_titles": [
+          "Approval: $225,000\n",
+          "Approval: $0.69 ",
+          "Approval: $43,409 ",
+          "Settlement: Agreement"
+        ]
+      },
+      {
         "theme": "Cost of service & rates",
         "description": "Errors in rate-base or return inputs to cost-of-service rates.",
         "keywords": [
@@ -947,15 +1190,16 @@
           "cost-of-service",
           "rate base",
           "rate of return",
-          "return on equity"
+          "return on equity",
+          "rate design"
         ],
-        "finding_count": 19,
-        "report_count": 7,
+        "finding_count": 29,
+        "report_count": 15,
         "example_titles": [
           "Approval: $1,277,051,206. ",
+          "Approval: $35.7 million",
           "Approval: $55.4\nmillion",
-          "Disallowance: $848,000.463",
-          "Approval: $3,228.6 million"
+          "Settlement: Agreement"
         ]
       },
       {
@@ -965,7 +1209,7 @@
           "tariff"
         ],
         "finding_count": 12,
-        "report_count": 5,
+        "report_count": 11,
         "example_titles": [
           "Settlement: Agreement",
           "Approval: $5 million",
@@ -973,17 +1217,28 @@
         ]
       },
       {
-        "theme": "Depreciation",
-        "description": "Unapproved or incorrect depreciation rates applied to plant.",
+        "theme": "Storm cost recovery & securitization",
+        "description": "Storm restoration costs, storm riders/reserves, or securitization.",
         "keywords": [
-          "depreciation"
+          "storm cost",
+          "storm protection plan",
+          "storm restoration",
+          "storm damage",
+          "storm rider",
+          "storm expense",
+          "storm recovery",
+          "storm deferral",
+          "storm revenue",
+          "storm reserve",
+          "securitization"
         ],
-        "finding_count": 7,
-        "report_count": 4,
+        "finding_count": 15,
+        "report_count": 7,
         "example_titles": [
-          "Settlement: agreement",
-          "Settlement: Agreement",
-          "Approval: $149.1 million"
+          "Approval: $69.8 million",
+          "Approval: $78 million",
+          "Approval: $85.7 million",
+          "Settlement: AGREEMENT"
         ]
       },
       {
@@ -1006,11 +1261,25 @@
           "outage response"
         ],
         "finding_count": 5,
-        "report_count": 4,
+        "report_count": 5,
         "example_titles": [
           "Settlement: terms",
           "Settlement: Agreement",
           "Approval: $189.7 "
+        ]
+      },
+      {
+        "theme": "Depreciation",
+        "description": "Unapproved or incorrect depreciation rates applied to plant.",
+        "keywords": [
+          "depreciation"
+        ],
+        "finding_count": 7,
+        "report_count": 4,
+        "example_titles": [
+          "Settlement: agreement",
+          "Settlement: Agreement",
+          "Approval: $149.1 million"
         ]
       },
       {
@@ -1022,11 +1291,25 @@
           "inter-company"
         ],
         "finding_count": 6,
-        "report_count": 3,
+        "report_count": 4,
         "example_titles": [
           "Settlement: agreement",
           "Settlement: Agreement"
         ]
+      },
+      {
+        "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+        "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
+        "keywords": [
+          "lobbying",
+          "charitable",
+          "below-the-line",
+          "nonoperating",
+          "non-operating"
+        ],
+        "finding_count": 0,
+        "report_count": 2,
+        "example_titles": []
       },
       {
         "theme": "AFUDC / cost of capital",
@@ -1069,6 +1352,25 @@
         "example_titles": [
           "Approval: $156.9 million"
         ]
+      },
+      {
+        "theme": "Customer service & billing",
+        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "keywords": [
+          "customer service",
+          "billing and collections",
+          "metering and billing",
+          "billing process",
+          "billing adjustment",
+          "billing accuracy",
+          "billing lag",
+          "call center",
+          "meter reading",
+          "customer experience"
+        ],
+        "finding_count": 0,
+        "report_count": 1,
+        "example_titles": []
       }
     ],
     "top_titles": [

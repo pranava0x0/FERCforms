@@ -283,7 +283,7 @@ function renderPatternsBand() {
       "aria-pressed": "false",
       "data-group": "theme",
       "data-value": t.theme,
-      title: `${t.report_count} of ${total} reports (${pct}%) · ${t.finding_count} findings — tap to filter`,
+      title: `${t.report_count} of ${total} reports (${pct}%)${t.finding_count ? ` · ${t.finding_count} findings` : ""} — tap to filter`,
     }, [
       el("span", { class: "pattern-name", text: t.theme }),
       t.description ? el("span", { class: "pattern-desc", text: t.description }) : null,
@@ -513,6 +513,11 @@ function cardNode(r) {
               el("strong", { text: "No findings extracted. " }),
               "This audit may have raised no noncompliance issues, or they aren’t yet machine-readable from the source PDF in this build — read the original via the links below.",
             ]),
+        // Reference records carry descriptor-derived theme tags (from the document
+        // type + source note shown on this card) — surface them like finding tags.
+        r.themes && r.themes.length
+          ? el("div", { class: "finding-tags" }, r.themes.map((t) => el("span", { class: "finding-tag", text: t })))
+          : null,
       ]);
 
   const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });

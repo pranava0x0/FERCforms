@@ -45,7 +45,7 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     ("Property & plant records", ["property unit", "carrier property", "noncarrier property", "plant in service", "property record"]),
     ("Creditworthiness", ["creditworthiness"]),
     ("Capitalization vs. expense", ["capitaliz"]),
-    ("Cost of service & rates", ["cost of service", "cost-of-service", "rate base", "rate of return", "return on equity"]),
+    ("Cost of service & rates", ["cost of service", "cost-of-service", "rate base", "rate of return", "return on equity", "rate design"]),
     # --- State management & operations audit themes (PA Bureau of Audits, NY/NJ
     # focused & management audits, etc.). These audits carry generic functional-area
     # finding titles ("Gas Operations") with the substance in the recommendation
@@ -77,6 +77,25 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     # NOTE: bare "dividend" tightened 2026-06-10 — it matched the FERC account *name*
     # "419, interest and dividend income" in AFUDC-misclassification findings.
     ("Dividend policy & capital management", ["dividend policy", "dividend payment", "dividend payout"]),
+    # --- Rate-case / prudence-review themes (added 2026-06-10). Those collections
+    # are dominated by fuel/purchased-power and storm cost-recovery vocabulary the
+    # audit-centric rules above never matched — the Prudence Reviews tab showed 0
+    # themes. Compounds calibrated against every corpus hit; "erra" is never used
+    # bare ("Sierra" contains the substring).
+    ("Fuel & purchased-power cost recovery", [
+        "fuel cost", "fuel adjustment", "fuel factor", "fuel clause", "fuel reconciliation",
+        "fuel expense", "fuel recovery", "fuel procurement", "fuel rider", "fuel forecast",
+        "fuel contract", "fuel storage", "fuel retention", "fuel retainage", "fuel mechanism",
+        "auxiliary fuel", "purchased power", "purchased-power", "power cost adjustment",
+        "power cost update", "net power cost", "deferred energy", "energy balancing account",
+        "energy resource recovery account", "erra compliance", "erra reasonableness",
+        "gas cost recovery", "gas cost adjustment", "energy cost recovery",
+    ]),
+    ("Storm cost recovery & securitization", [
+        "storm cost", "storm protection plan", "storm restoration", "storm damage",
+        "storm rider", "storm expense", "storm recovery", "storm deferral", "storm revenue",
+        "storm reserve", "securitization",
+    ]),
 ]
 
 # Plain-English explanation of each theme, shown on the site's pattern cards and
@@ -109,6 +128,8 @@ THEME_DESCRIPTIONS: dict[str, str] = {
     "Service reliability & vegetation management": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
     "Gas safety & pipeline integrity": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
     "Dividend policy & capital management": "Dividend-policy or capital-management practices flagged by auditors.",
+    "Fuel & purchased-power cost recovery": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
+    "Storm cost recovery & securitization": "Storm restoration costs, storm riders/reserves, or securitization.",
 }
 
 
@@ -152,6 +173,20 @@ def finding_theme_text(finding, *, include_recs: bool = True) -> str:
     if include_recs:
         parts += [r.text for r in finding.recommendations]
     return " ".join(parts)
+
+
+def descriptor_themes(report: "AuditReport") -> list[str]:
+    """Theme tags for *reference* records (structured=False) derived from their
+    displayed descriptors — `doc_type` + `source_note` (both rendered on the card,
+    so every tag stays auditable by eye). Reference records carry no machine-parsed
+    findings, so without this the Prudence Reviews / State Rate Cases tabs surfaced
+    no themes at all (added 2026-06-10). Machine-parsed reports (structured=True)
+    return [] — their themes come from finding text only, and a FERC audit whose
+    parser found 0 findings stays untagged rather than themed from our own prose.
+    Never feeds the ratepayer-harm flag — that stays finding-derived."""
+    if report.structured:
+        return []
+    return _themes_for(" ".join(filter(None, [report.doc_type or "", report.source_note or ""])))
 
 
 def is_ratepayer_harm(themes: list[str]) -> bool:
@@ -199,6 +234,10 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
                 theme_reports[theme].add(r.id)
                 if f.title not in theme_examples[theme] and len(theme_examples[theme]) < 4:
                     theme_examples[theme].append(f.title)
+        # Reference records (structured=False) also count toward a theme's report
+        # tally via their displayed descriptors — finding_count stays finding-only.
+        for theme in descriptor_themes(r):
+            theme_reports[theme].add(r.id)
 
     themes = [
         ThemeStat(
@@ -210,7 +249,7 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             example_titles=theme_examples[theme],
         )
         for theme, _ in THEME_RULES
-        if theme_findings[theme] > 0
+        if theme_findings[theme] > 0 or theme_reports[theme]
     ]
     themes.sort(key=lambda t: (t.report_count, t.finding_count), reverse=True)
 
