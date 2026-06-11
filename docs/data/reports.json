@@ -1670,9 +1670,7 @@
         "summary": "Talen Energy submitted generation outage tickets to PJM’s eDART that were not consistent with the operational status of Talen Energy’s generation resources. Talen Energy’s inconsistent submittals to eDART may have resulted in incorrect assumptions being used during reliability and market studies performed by PJM to operate its day-ahead and real-time energy markets.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -1681,9 +1679,7 @@
         "summary": "Talen Energy did not properly report the operational status of certain generation resources in NERC’s GADS. Specifically, Talen Energy submitted maintenance outage events to GADS that should have been categorized as unplanned outages. Talen Energy’s improper reporting to NERC’s GADS resulted in a more favorable outage rate for subsequent accreditation in PJM’s capacity auctions.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -1723,16 +1719,12 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [
-      "Service reliability & vegetation management"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -2292,9 +2284,7 @@
         "summary": "DEP included buyout costs of $12,510,674 in accounts that are inputs to DEP’s wholesale cost-based formula rates without Commission approval. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers by approximately $3,500,000 during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -2303,9 +2293,7 @@
         "summary": "DEP recorded $4,190,000 of fuel handling costs, including storage costs, in Account 151, Fuel Stock, rather than separately recording such costs in either Account 152, Fuel Stock Expenses Undistributed, or Account 501, Fuel. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -2314,9 +2302,7 @@
         "summary": "DEP improperly allocated power production revenue credits to multiple functions, instead of assigning 100% of these revenue credits to the power production function. As a result, DEP overstated its wholesale cost-based revenue requirements and resulting billings to FERC-jurisdictional customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -2327,7 +2313,6 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Customer service & billing",
           "Inventory, materials & fleet"
         ],
         "cost_to_customers": false
@@ -2351,8 +2336,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -2362,9 +2346,7 @@
         "summary": "DEP improperly charged labor costs of a registered lobbyist engaged in political activities to Account 920, Administrative and General Salaries, rather than to Account 426.4, Expenditures for Certain Civic, Political and Related Activities. By improperly including these amounts in Account 920, DEP overstated FERC-jurisdictional formula rate inputs, revenue requirements, and customer billings.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -2374,8 +2356,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -2417,7 +2398,6 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Inventory, materials & fleet",
       "Property & plant records"
@@ -3677,8 +3657,7 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight",
-          "Service reliability & vegetation management"
+          "Tariff administration & oversight"
         ],
         "cost_to_customers": false
       },
@@ -3741,7 +3720,6 @@
     "structured": true,
     "themes": [
       "Informational postings",
-      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
@@ -4433,9 +4411,7 @@
         "summary": "WPL incorrectly recovered a portion of the cost of distribution-related Electric Vehicle (EV) charging stations through its wholesale power formula rates. As a result, WPL overstated its wholesale power revenue requirements, which led to overbillings to wholesale power customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -4453,8 +4429,7 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
-      "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing"
+      "Below-the-line costs (lobbying, charitable, etc.)"
     ],
     "cost_to_customers": true
   },
@@ -5221,8 +5196,7 @@
         ],
         "themes": [
           "AFUDC / cost of capital",
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Dividend policy & capital management"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": true
       },
@@ -5299,8 +5273,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -5312,8 +5285,7 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)",
-          "Customer service & billing"
+          "Below-the-line costs (lobbying, charitable, etc.)"
         ],
         "cost_to_customers": true
       },
@@ -5360,8 +5332,7 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -5420,8 +5391,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
-      "Dividend policy & capital management",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -5841,8 +5810,7 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight",
-          "Customer service & billing"
+          "Tariff administration & oversight"
         ],
         "cost_to_customers": false
       },
@@ -5885,8 +5853,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)",
-          "Service reliability & vegetation management"
+          "Below-the-line costs (lobbying, charitable, etc.)"
         ],
         "cost_to_customers": true
       },
@@ -5994,9 +5961,7 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
-      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -6580,9 +6545,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -6982,7 +6945,6 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
@@ -8359,9 +8321,7 @@
         "summary": "815. The Settlement Parties agree the appropriate fuel factors for DESC to charge 1. pursuanttothis SettlementAgreementfortheperiodbeginningwiththefirstbilling m m DOCKETNO. 2024-2-E—ORDERNO. CI APRIL, 2024 0 PAGE 7 Z'. CI cycle ofMay 2024 and extending through the las",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -8406,9 +8366,7 @@
         "summary": "Facilities and Third Net Energy Metering for Renewable U CI Energy Facilities, were attached to the Settlement Agreement as Attachments A and B, including I O 0 0 the rates, terms and conditions forthe periodbeginning withthe firstbilling cycle ofMay 2024. 8. DESC propo",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -8539,9 +8497,7 @@
       }
     ],
     "structured": false,
-    "themes": [
-      "Customer service & billing"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -8648,9 +8604,7 @@
         "summary": "rs m B.5. The Parties agree the appropriate fuel factors for DESC to charge pursuant to this O I io Settlement Agreement for the period beginning with the first billing cycle of May 2024 and C) extending through the lastbilling cycle ofApril 2025 are listedbelow. in O c",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -8885,8 +8839,7 @@
     ],
     "structured": false,
     "themes": [
-      "Affiliate / intercompany transactions",
-      "Customer service & billing"
+      "Affiliate / intercompany transactions"
     ],
     "cost_to_customers": true
   },
@@ -9436,9 +9389,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -9474,8 +9425,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -9596,7 +9546,6 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -11419,8 +11368,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -11837,7 +11785,6 @@
       "Accounting misclassification",
       "Capitalization vs. expense",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Inventory, materials & fleet",
@@ -11984,8 +11931,7 @@
         "themes": [
           "Depreciation",
           "Property & plant records",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -12201,7 +12147,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -12365,9 +12310,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -12524,7 +12467,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Depreciation",
       "Property & plant records"
     ],
@@ -13893,8 +13835,7 @@
           }
         ],
         "themes": [
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -14958,8 +14899,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       }
@@ -14969,7 +14909,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
@@ -15227,8 +15166,7 @@
           }
         ],
         "themes": [
-          "Informational postings",
-          "Service reliability & vegetation management"
+          "Informational postings"
         ],
         "cost_to_customers": false
       },
@@ -15260,8 +15198,7 @@
     ],
     "structured": true,
     "themes": [
-      "Informational postings",
-      "Service reliability & vegetation management"
+      "Informational postings"
     ],
     "cost_to_customers": false
   },
@@ -15555,8 +15492,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -15619,7 +15555,6 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -15745,8 +15680,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -15831,7 +15765,6 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation"
     ],
     "cost_to_customers": true
@@ -16090,8 +16023,7 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -16156,8 +16088,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -16364,7 +16295,6 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -17127,8 +17057,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -17138,9 +17067,7 @@
         "summary": "Versant Power included an incorrect amount for transmission rental revenues in its wholesale transmission formula rate for the BHD. As a result, Versant Power overstated the revenue credits included in its wholesale transmission formula rate calculations for the BHD, which led to understatement of its wholesale transmission revenue requirements and billings to its wholesale transmission customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -17193,7 +17120,6 @@
       "Accounting misclassification",
       "Capitalization vs. expense",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
@@ -17538,8 +17464,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "AFUDC / cost of capital",
-          "Informational postings"
+          "AFUDC / cost of capital"
         ],
         "cost_to_customers": true
       },
@@ -17662,7 +17587,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Form reporting (Form No. 1/2/6, Page 700)",
-      "Informational postings",
       "Property & plant records"
     ],
     "cost_to_customers": true
@@ -18231,9 +18155,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -18261,7 +18183,6 @@
     ],
     "structured": true,
     "themes": [
-      "Customer service & billing",
       "Depreciation",
       "Informational postings"
     ],
@@ -18442,8 +18363,7 @@
         ],
         "themes": [
           "Accounting misclassification",
-          "Tariff administration & oversight",
-          "Customer service & billing"
+          "Tariff administration & oversight"
         ],
         "cost_to_customers": false
       },
@@ -18681,7 +18601,6 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Tariff administration & oversight"
@@ -18788,8 +18707,7 @@
           }
         ],
         "themes": [
-          "AFUDC / cost of capital",
-          "Customer service & billing"
+          "AFUDC / cost of capital"
         ],
         "cost_to_customers": true
       },
@@ -18863,8 +18781,7 @@
           }
         ],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -18992,8 +18909,7 @@
         "themes": [
           "Accounting misclassification",
           "Depreciation",
-          "Below-the-line costs (lobbying, charitable, etc.)",
-          "Customer service & billing"
+          "Below-the-line costs (lobbying, charitable, etc.)"
         ],
         "cost_to_customers": true
       },
@@ -19025,7 +18941,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -20452,8 +20367,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -20484,7 +20398,6 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records"
     ],
@@ -20867,8 +20780,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -20879,8 +20791,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -20898,8 +20809,7 @@
     ],
     "structured": true,
     "themes": [
-      "Accounting misclassification",
-      "Customer service & billing"
+      "Accounting misclassification"
     ],
     "cost_to_customers": false
   },
@@ -20978,8 +20888,7 @@
         "themes": [
           "Accounting misclassification",
           "Affiliate / intercompany transactions",
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": true
       }
@@ -20988,7 +20897,6 @@
     "themes": [
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -21200,8 +21108,7 @@
           }
         ],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Service reliability & vegetation management"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -21233,8 +21140,7 @@
       "Capitalization vs. expense",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
-      "Property & plant records",
-      "Service reliability & vegetation management"
+      "Property & plant records"
     ],
     "cost_to_customers": true
   },
@@ -21276,9 +21182,7 @@
         "summary": "Ohio Power understated its revenue credits that are used to reduce the revenue requirement of its transmission formula rate by improperly excluding certain transmission-related revenues – specifically pole attachment revenue, causing an overstatement of its revenue requirement. This overstatement resulted in excess billings to wholesale transmission customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -21298,8 +21202,7 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Below-the-line costs (lobbying, charitable, etc.)",
-          "Customer service & billing"
+          "Below-the-line costs (lobbying, charitable, etc.)"
         ],
         "cost_to_customers": true
       },
@@ -21335,7 +21238,6 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
     "cost_to_customers": true
@@ -21387,8 +21289,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Information technology & systems",
-          "Customer service & billing"
+          "Information technology & systems"
         ],
         "cost_to_customers": false
       },
@@ -21428,7 +21329,6 @@
     "themes": [
       "Accounting misclassification",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Information technology & systems"
     ],
@@ -21472,8 +21372,7 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -21485,8 +21384,7 @@
         "recommendations": [],
         "themes": [
           "Accounting misclassification",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -21497,8 +21395,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -21530,8 +21427,7 @@
         "recommendations": [],
         "themes": [
           "Depreciation",
-          "Property & plant records",
-          "Customer service & billing"
+          "Property & plant records"
         ],
         "cost_to_customers": true
       }
@@ -21540,7 +21436,6 @@
     "themes": [
       "Accounting misclassification",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Property & plant records"
     ],
@@ -22110,8 +22005,7 @@
         "themes": [
           "Accounting misclassification",
           "Membership dues & industry associations",
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": true
       }
@@ -22121,7 +22015,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Membership dues & industry associations"
     ],
@@ -22715,9 +22608,7 @@
         "summary": "Equitrans improperly accounted for an income tax receivable that represented a refund for an overpayment in Account 165, Prepayments, instead of in Account 146, Accounts Receivable from Associated Companies.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -22782,7 +22673,6 @@
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Capitalization vs. expense",
-      "Customer service & billing",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
       "Tariff administration & oversight"
@@ -23128,8 +23018,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -23162,7 +23051,6 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Membership dues & industry associations"
     ],
     "cost_to_customers": true
@@ -23603,8 +23491,7 @@
         "themes": [
           "Depreciation",
           "Property & plant records",
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -23665,7 +23552,6 @@
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -23896,8 +23782,7 @@
         "recommendations": [],
         "themes": [
           "Tariff administration & oversight",
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -24109,7 +23994,6 @@
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -24311,8 +24195,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation",
-          "Customer service & billing"
+          "Depreciation"
         ],
         "cost_to_customers": true
       },
@@ -24322,9 +24205,7 @@
         "summary": "Mississippi Power made several errors in determining formula rate billings to wholesale customers. This occurred because Mississippi Power’s formula rate true-up filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Mississippi Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24334,8 +24215,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -24374,7 +24254,6 @@
     "structured": true,
     "themes": [
       "Accounting misclassification",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -24447,9 +24326,7 @@
         "summary": "Gulf Power improperly accounted for upfront bank fees paid associated with revolving lines of credit agreements in Account 165, Prepayments, and improperly amortized the fees to Account 930.2, Miscellaneous General Expenses, over the term of the line of credit agreements. In addition, Gulf Power improperly accounted for the related quarterly commitment fees in Account 930.2. As a result of these errors, Gulf Power overstated its revenue requirement and increased billings to wholesale customers.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24459,8 +24336,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation",
-          "Customer service & billing"
+          "Depreciation"
         ],
         "cost_to_customers": true
       },
@@ -24484,8 +24360,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Cost of service & rates",
-          "Customer service & billing"
+          "Cost of service & rates"
         ],
         "cost_to_customers": true
       },
@@ -24496,8 +24371,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -24526,7 +24400,6 @@
     "themes": [
       "AFUDC / cost of capital",
       "Cost of service & rates",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -24589,8 +24462,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Accounting misclassification",
-          "Customer service & billing"
+          "Accounting misclassification"
         ],
         "cost_to_customers": false
       },
@@ -24601,8 +24473,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation",
-          "Customer service & billing"
+          "Depreciation"
         ],
         "cost_to_customers": true
       },
@@ -24612,9 +24483,7 @@
         "summary": "Georgia Power made several errors in determining billings to wholesale transmission customers. This occurred because Georgia Power’s wholesale formula rate filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Georgia Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24624,8 +24493,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -24680,8 +24548,7 @@
         "recommendations": [],
         "themes": [
           "Depreciation",
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": true
       },
@@ -24720,7 +24587,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Property & plant records",
@@ -24797,8 +24663,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Depreciation",
-          "Customer service & billing"
+          "Depreciation"
         ],
         "cost_to_customers": true
       },
@@ -24808,9 +24673,7 @@
         "summary": "Alabama Power made several errors in determining formula rate billings to wholesale customers. This occurred because Alabama Power’s wholesale formula rate true-up filings inappropriately contained data inputs and calculations not provided for by its formula rate recovery mechanism. As a result of these errors, Alabama Power overbilled its wholesale customers during the audit period.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -24820,8 +24683,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Affiliate / intercompany transactions",
-          "Customer service & billing"
+          "Affiliate / intercompany transactions"
         ],
         "cost_to_customers": true
       },
@@ -24872,8 +24734,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "themes": [
-          "Form reporting (Form No. 1/2/6, Page 700)",
-          "Customer service & billing"
+          "Form reporting (Form No. 1/2/6, Page 700)"
         ],
         "cost_to_customers": false
       },
@@ -24903,7 +24764,6 @@
       "AFUDC / cost of capital",
       "Accounting misclassification",
       "Affiliate / intercompany transactions",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)"
     ],
@@ -26200,8 +26060,7 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight",
-          "Customer service & billing"
+          "Tariff administration & oversight"
         ],
         "cost_to_customers": false
       },
@@ -26223,8 +26082,7 @@
           }
         ],
         "themes": [
-          "Tariff administration & oversight",
-          "Customer service & billing"
+          "Tariff administration & oversight"
         ],
         "cost_to_customers": false
       },
@@ -26483,7 +26341,6 @@
     "themes": [
       "Accounting misclassification",
       "Below-the-line costs (lobbying, charitable, etc.)",
-      "Customer service & billing",
       "Depreciation",
       "Form reporting (Form No. 1/2/6, Page 700)",
       "Internal audit & internal controls",
@@ -26529,16 +26386,12 @@
         "summary": "The ITC Operating Companies recorded merger-related costs in operating accounts included in the determination of transmission formula rate billings, rather than in Account 426.5, Other Deductions, as required by Commission precedent. The improper accounting led to inappropriate recovery of the merger-related costs in transmission formula rate billings.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
     "structured": true,
-    "themes": [
-      "Customer service & billing"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -26725,9 +26578,7 @@
         "summary": "Destin did not recognize an accounts receivable or prepayment at the time it overpaid for services related to a management agreement between it and BP Pipelines (North America), Inc.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -26744,7 +26595,6 @@
     "themes": [
       "AFUDC / cost of capital",
       "Accounting misclassification",
-      "Customer service & billing",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
@@ -27033,9 +26883,7 @@
         "summary": "NRG reported outage data incorrectly either in the Generator Availability Data System (GADS) or when reporting the outage data to the relevant RTO/ISO. Some regions use GADS data to develop reserve requirements for purchasing in the capacity market. Therefore, accurate and complete data must be gathered to understand unit life cycle performance and obtain a complete historical assessment.",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -27049,9 +26897,7 @@
       }
     ],
     "structured": true,
-    "themes": [
-      "Service reliability & vegetation management"
-    ],
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -27928,9 +27774,7 @@
         "summary": "5-EI prior to our decision in this Docket No. 120001-EI. However, both the stipulation and proposed settlement agreement contemplate that the RTR-l rider will become effective after FPL's billing system has been modified to accommodate the rider, which FPL ORDER NO. PSC",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -28002,9 +27846,7 @@
         "summary": ". 4Id. ORDER NO. PSC-12-0664-FOF-EI DOCKET NO. 120001-EI PAGE 6 In January 2012, PEF entered into a settlement agreement with OPC, FIPUG, FRF, PCS, and FEA.5 This agreement addressed issues involving nuclear cost recovery, base rates, the CR3 outage, fuel cost recovery",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -28127,8 +27969,6 @@
     ],
     "structured": false,
     "themes": [
-      "Customer service & billing",
-      "Service reliability & vegetation management",
       "Tariff administration & oversight"
     ],
     "cost_to_customers": false
@@ -28836,9 +28676,7 @@
         "summary": "in just and reasonable rates, and is in the public interest. The Commission approves the Unanimous Settlement Agreement in its entirety. 30. The new rates will take effect based on the customer’s billing cycle date beginning October 1, 2025.60 THEREFORE, THE COMMISSION",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Customer service & billing"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -28990,8 +28828,7 @@
     ],
     "structured": false,
     "themes": [
-      "Cost of service & rates",
-      "Customer service & billing"
+      "Cost of service & rates"
     ],
     "cost_to_customers": true
   },
@@ -30091,9 +29928,7 @@
         "summary": "a generating unit from any 19 merchant or utility generator. Consistent with the definition in the Settlement Agreement, “self- 20 build” will not include the acquisition of temporary generation needed for system reliability, 21 distributed generation of less than fift",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -30317,9 +30152,7 @@
         "summary": "participate 7 in any future dockets related to enhancing reliability statewide. 8 v. Summary 9 This Settlement Agreement resolves numerous significant, complex, and conflicting issues 10 affecting many parties with very different perspectives and interests. As with ever",
         "is_other_matter": false,
         "recommendations": [],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -31148,9 +30981,7 @@
             "source_page": null
           }
         ],
-        "themes": [
-          "Service reliability & vegetation management"
-        ],
+        "themes": [],
         "cost_to_customers": false
       },
       {
@@ -31337,8 +31168,7 @@
         ],
         "themes": [
           "Workforce, training & succession planning",
-          "Customer service & billing",
-          "Inventory, materials & fleet"
+          "Customer service & billing"
         ],
         "cost_to_customers": false
       },
@@ -31453,11 +31283,9 @@
         ],
         "themes": [
           "Tariff administration & oversight",
-          "Informational postings",
           "Depreciation",
           "Affiliate / intercompany transactions",
           "Below-the-line costs (lobbying, charitable, etc.)",
-          "Form reporting (Form No. 1/2/6, Page 700)",
           "Property & plant records",
           "Creditworthiness",
           "Capitalization vs. expense",
@@ -31488,10 +31316,8 @@
       "Depreciation",
       "Dividend policy & capital management",
       "Emergency preparedness & business continuity",
-      "Form reporting (Form No. 1/2/6, Page 700)",
       "Gas safety & pipeline integrity",
       "Information technology & systems",
-      "Informational postings",
       "Internal audit & internal controls",
       "Inventory, materials & fleet",
       "Property & plant records",
@@ -31694,7 +31520,6 @@
           }
         ],
         "themes": [
-          "Inventory, materials & fleet",
           "Gas safety & pipeline integrity"
         ],
         "cost_to_customers": false

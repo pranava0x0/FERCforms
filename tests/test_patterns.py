@@ -85,11 +85,50 @@ def test_finding_theme_text_scans_recommendations():
     themes = patterns._themes_for(patterns.finding_theme_text(f, include_recs=True))
     assert "Gas safety & pipeline integrity" in themes   # from "Class A leak"/"corros"
     assert "Cybersecurity & physical security" in themes  # from "physical security"
-    assert "Inventory, materials & fleet" in themes       # from "inventory"
+    # an "inventory of … leaks" is a leak backlog, NOT materials inventory —
+    # regression for the 2026-06-10 keyword calibration (bare "inventory" removed)
+    assert "Inventory, materials & fleet" not in themes
     # FERC mode (include_recs=False): rec text is NOT scanned, so a generic title
     # yields no theme — this is what keeps FERC findings from picking up incidental
     # rec words (e.g. 'train staff') as workforce/operations patterns.
     assert patterns._themes_for(patterns.finding_theme_text(f, include_recs=False)) == []
+
+
+def test_theme_rules_reject_known_false_positive_contexts():
+    """Regression for the 2026-06-10 keyword calibration (validated against every
+    keyword hit in the 294-report corpus). Each pair: a context that previously
+    mis-tagged the theme must stay untagged; a real finding phrase must still match."""
+    # FERC wholesale formula-rate billing / tax-receivable account names are NOT
+    # retail customer service ("billing" matched ~50 wholesale findings).
+    assert "Customer service & billing" not in patterns._themes_for(
+        "several errors led to overbillings to wholesale transmission customers")
+    assert "Customer service & billing" not in patterns._themes_for(
+        "recorded income tax receivables in account 143, other accounts receivable")
+    assert "Customer service & billing" in patterns._themes_for(
+        "analyze and improve the billing process to reduce billing lag")
+    # Financial collateral postings are NOT OASIS/informational postings.
+    assert "Informational postings" not in patterns._themes_for(
+        "long-term debt related to energy procurement margin and collateral postings")
+    assert "Informational postings" in patterns._themes_for(
+        "Posting of Transmission Service Metrics")
+    # "Reliability of information" and the account name "561.5, reliability planning"
+    # are NOT service reliability; generation-outage reporting to PJM isn't either.
+    assert "Service reliability & vegetation management" not in patterns._themes_for(
+        "deficient reporting affected the reliability of information in the Form No. 1"
+    ) and "Service reliability & vegetation management" not in patterns._themes_for(
+        "account 561.5, reliability planning and standards development")
+    assert "Service reliability & vegetation management" in patterns._themes_for(
+        "improve electric reliability performance by addressing the top outage causes")
+    # The FERC account name "419, interest and dividend income" is NOT dividend policy.
+    assert "Dividend policy & capital management" not in patterns._themes_for(
+        "recorded equity AFUDC in account 419, interest and dividend income")
+    assert "Dividend policy & capital management" in patterns._themes_for(
+        "revise the dividend policy to provide advance notice to the commission")
+    # A utility's own (company/BPU) annual report citation is NOT FERC form reporting.
+    assert "Form reporting (Form No. 1/2/6, Page 700)" not in patterns._themes_for(
+        "response to OC-0255: 2020 PSEG BPU annual report, page 4")
+    assert "Form reporting (Form No. 1/2/6, Page 700)" in patterns._themes_for(
+        "misreported amounts in its FERC Form No. 1")
 
 
 def test_ratepayer_harm_themes_are_declared_themes():

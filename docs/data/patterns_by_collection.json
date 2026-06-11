@@ -54,8 +54,7 @@
         "description": "Errors or omissions in the annual FERC forms utilities file.",
         "keywords": [
           "form no.",
-          "page 700",
-          "annual report"
+          "page 700"
         ],
         "finding_count": 152,
         "report_count": 57,
@@ -133,26 +132,6 @@
           "Capitalized Interest Expense",
           "Transmission Incentives",
           "Allowance for Funds Using During Construction"
-        ]
-      },
-      {
-        "theme": "Customer service & billing",
-        "description": "Customer-service performance, billing accuracy, or call-center issues.",
-        "keywords": [
-          "customer service",
-          "billing",
-          "accounts receivable",
-          "call center",
-          "meter reading",
-          "customer experience"
-        ],
-        "finding_count": 66,
-        "report_count": 35,
-        "example_titles": [
-          "Recovery of Fuel Contract Buyout Costs",
-          "Accounting for Fuel Storage and Handling",
-          "Wholesale Revenue Credits",
-          "Auxiliary Fuel Costs in Nuclear Power Generation"
         ]
       },
       {
@@ -242,34 +221,17 @@
         "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
         "keywords": [
           "informational posting",
-          "posting"
+          "posting of",
+          "outage postings",
+          "postings for monthly"
         ],
-        "finding_count": 16,
-        "report_count": 10,
+        "finding_count": 15,
+        "report_count": 9,
         "example_titles": [
           "Renewable Natural Gas Quality Specifications",
           "Informational Postings",
           "Public Access to Monthly and Yearly Capability Information",
           "Posting of Short Circuit Information"
-        ]
-      },
-      {
-        "theme": "Service reliability & vegetation management",
-        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
-        "keywords": [
-          "vegetation",
-          "reliability",
-          "saidi",
-          "caidi",
-          "outage"
-        ],
-        "finding_count": 11,
-        "report_count": 8,
-        "example_titles": [
-          "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System",
-          "Generation Outage Reporting in Generating Availability Data System (GADS)",
-          "Discrepancies between Reported Generator Outages and Offer Schedules",
-          "Operations Related to Economic Derates"
         ]
       },
       {
@@ -291,10 +253,45 @@
         ]
       },
       {
+        "theme": "Service reliability & vegetation management",
+        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
+        "keywords": [
+          "vegetation",
+          "electric reliability",
+          "service reliability",
+          "reliability performance",
+          "reliability metric",
+          "reliability program",
+          "reliability report",
+          "saidi",
+          "caidi",
+          "outage cause",
+          "outages caused",
+          "emergency outage",
+          "outage management",
+          "outage response"
+        ],
+        "finding_count": 3,
+        "report_count": 2,
+        "example_titles": [
+          "Accounting for Vegetation Management Costs",
+          "Accounting for Amortization of Regulatory Assets",
+          "Construction Work in Progress"
+        ]
+      },
+      {
         "theme": "Inventory, materials & fleet",
         "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
         "keywords": [
-          "inventory",
+          "inventory accuracy",
+          "inventory turnover",
+          "inventory tracking",
+          "inventory balance",
+          "physical inventory",
+          "inventory optimization",
+          "inventory accounting",
+          "inventory count",
+          "supplies inventory",
           "materials management",
           "fleet management",
           "vehicle replacement"
@@ -333,18 +330,6 @@
         "report_count": 1,
         "example_titles": [
           "Allocation of Information Technology Costs"
-        ]
-      },
-      {
-        "theme": "Dividend policy & capital management",
-        "description": "Dividend-policy or capital-management practices flagged by auditors.",
-        "keywords": [
-          "dividend"
-        ],
-        "finding_count": 1,
-        "report_count": 1,
-        "example_titles": [
-          "Allowance for Funds Used During Construction"
         ]
       }
     ],
@@ -507,19 +492,23 @@
         "description": "Customer-service performance, billing accuracy, or call-center issues.",
         "keywords": [
           "customer service",
-          "billing",
-          "accounts receivable",
+          "billing and collections",
+          "metering and billing",
+          "billing process",
+          "billing adjustment",
+          "billing accuracy",
+          "billing lag",
           "call center",
           "meter reading",
           "customer experience"
         ],
-        "finding_count": 15,
+        "finding_count": 14,
         "report_count": 10,
         "example_titles": [
           "Financial Management",
           "Customer Service",
-          "Affiliated Interests and Cost Allocations",
-          "Customer Service (continued)"
+          "Customer Service (continued)",
+          "Gas Delivery"
         ]
       },
       {
@@ -565,18 +554,26 @@
         "theme": "Inventory, materials & fleet",
         "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
         "keywords": [
-          "inventory",
+          "inventory accuracy",
+          "inventory turnover",
+          "inventory tracking",
+          "inventory balance",
+          "physical inventory",
+          "inventory optimization",
+          "inventory accounting",
+          "inventory count",
+          "supplies inventory",
           "materials management",
           "fleet management",
           "vehicle replacement"
         ],
-        "finding_count": 16,
+        "finding_count": 14,
         "report_count": 9,
         "example_titles": [
           "Purchasing and Materials Management",
           "Materials Management",
           "Fleet Management",
-          "Gas Delivery"
+          "Support Services"
         ]
       },
       {
@@ -638,16 +635,24 @@
         "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
         "keywords": [
           "vegetation",
-          "reliability",
+          "electric reliability",
+          "service reliability",
+          "reliability performance",
+          "reliability metric",
+          "reliability program",
+          "reliability report",
           "saidi",
           "caidi",
-          "outage"
+          "outage cause",
+          "outages caused",
+          "emergency outage",
+          "outage management",
+          "outage response"
         ],
-        "finding_count": 7,
+        "finding_count": 6,
         "report_count": 6,
         "example_titles": [
           "Electric Operations",
-          "Strategic Planning",
           "Page 2 of 2",
           "Electric Operations (continued)"
         ]
@@ -672,7 +677,9 @@
         "theme": "Dividend policy & capital management",
         "description": "Dividend-policy or capital-management practices flagged by auditors.",
         "keywords": [
-          "dividend"
+          "dividend policy",
+          "dividend payment",
+          "dividend payout"
         ],
         "finding_count": 5,
         "report_count": 5,
@@ -750,19 +757,6 @@
         ]
       },
       {
-        "theme": "Informational postings",
-        "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
-        "keywords": [
-          "informational posting",
-          "posting"
-        ],
-        "finding_count": 1,
-        "report_count": 1,
-        "example_titles": [
-          "Page 2 of 2"
-        ]
-      },
-      {
         "theme": "Depreciation",
         "description": "Unapproved or incorrect depreciation rates applied to plant.",
         "keywords": [
@@ -783,20 +777,6 @@
           "below-the-line",
           "nonoperating",
           "non-operating"
-        ],
-        "finding_count": 1,
-        "report_count": 1,
-        "example_titles": [
-          "Page 2 of 2"
-        ]
-      },
-      {
-        "theme": "Form reporting (Form No. 1/2/6, Page 700)",
-        "description": "Errors or omissions in the annual FERC forms utilities file.",
-        "keywords": [
-          "form no.",
-          "page 700",
-          "annual report"
         ],
         "finding_count": 1,
         "report_count": 1,
@@ -993,25 +973,6 @@
         ]
       },
       {
-        "theme": "Service reliability & vegetation management",
-        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
-        "keywords": [
-          "vegetation",
-          "reliability",
-          "saidi",
-          "caidi",
-          "outage"
-        ],
-        "finding_count": 8,
-        "report_count": 5,
-        "example_titles": [
-          "Settlement: terms",
-          "Settlement: Agreement",
-          "Settlement: agreement",
-          "Approval: $189.7 "
-        ]
-      },
-      {
         "theme": "Depreciation",
         "description": "Unapproved or incorrect depreciation rates applied to plant.",
         "keywords": [
@@ -1026,21 +987,30 @@
         ]
       },
       {
-        "theme": "Customer service & billing",
-        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "theme": "Service reliability & vegetation management",
+        "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
         "keywords": [
-          "customer service",
-          "billing",
-          "accounts receivable",
-          "call center",
-          "meter reading",
-          "customer experience"
+          "vegetation",
+          "electric reliability",
+          "service reliability",
+          "reliability performance",
+          "reliability metric",
+          "reliability program",
+          "reliability report",
+          "saidi",
+          "caidi",
+          "outage cause",
+          "outages caused",
+          "emergency outage",
+          "outage management",
+          "outage response"
         ],
         "finding_count": 5,
         "report_count": 4,
         "example_titles": [
+          "Settlement: terms",
           "Settlement: Agreement",
-          "Settlement: agreement"
+          "Approval: $189.7 "
         ]
       },
       {

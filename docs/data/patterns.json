@@ -57,36 +57,15 @@
       "description": "Errors or omissions in the annual FERC forms utilities file.",
       "keywords": [
         "form no.",
-        "page 700",
-        "annual report"
+        "page 700"
       ],
-      "finding_count": 153,
-      "report_count": 58,
+      "finding_count": 152,
+      "report_count": 57,
       "example_titles": [
         "Annual Cost of Service Based Analysis Schedule",
         "Nonoperating and Operating Expenses",
         "Noncarrier Property Revenue, Expenses, and Net Income",
         "Crude Oil Accounting Misclassifications"
-      ]
-    },
-    {
-      "theme": "Customer service & billing",
-      "description": "Customer-service performance, billing accuracy, or call-center issues.",
-      "keywords": [
-        "customer service",
-        "billing",
-        "accounts receivable",
-        "call center",
-        "meter reading",
-        "customer experience"
-      ],
-      "finding_count": 86,
-      "report_count": 49,
-      "example_titles": [
-        "Recovery of Fuel Contract Buyout Costs",
-        "Accounting for Fuel Storage and Handling",
-        "Wholesale Revenue Credits",
-        "Auxiliary Fuel Costs in Nuclear Power Generation"
       ]
     },
     {
@@ -229,18 +208,27 @@
       "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
       "keywords": [
         "vegetation",
-        "reliability",
+        "electric reliability",
+        "service reliability",
+        "reliability performance",
+        "reliability metric",
+        "reliability program",
+        "reliability report",
         "saidi",
         "caidi",
-        "outage"
+        "outage cause",
+        "outages caused",
+        "emergency outage",
+        "outage management",
+        "outage response"
       ],
-      "finding_count": 26,
-      "report_count": 19,
+      "finding_count": 14,
+      "report_count": 12,
       "example_titles": [
         "Settlement: terms",
         "Settlement: Agreement",
-        "Generation Outage Requests Submitted to PJM’s electronic Dispatcher Application Reporting Tool (eDART) System",
-        "Generation Outage Reporting in Generating Availability Data System (GADS)"
+        "Electric Operations",
+        "Accounting for Vegetation Management Costs"
       ]
     },
     {
@@ -266,34 +254,26 @@
       "theme": "Inventory, materials & fleet",
       "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
       "keywords": [
-        "inventory",
+        "inventory accuracy",
+        "inventory turnover",
+        "inventory tracking",
+        "inventory balance",
+        "physical inventory",
+        "inventory optimization",
+        "inventory accounting",
+        "inventory count",
+        "supplies inventory",
         "materials management",
         "fleet management",
         "vehicle replacement"
       ],
-      "finding_count": 18,
+      "finding_count": 16,
       "report_count": 11,
       "example_titles": [
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Purchasing and Materials Management",
         "Accounting for Materials and Supplies",
         "Materials Management"
-      ]
-    },
-    {
-      "theme": "Informational postings",
-      "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
-      "keywords": [
-        "informational posting",
-        "posting"
-      ],
-      "finding_count": 17,
-      "report_count": 11,
-      "example_titles": [
-        "Renewable Natural Gas Quality Specifications",
-        "Informational Postings",
-        "Public Access to Monthly and Yearly Capability Information",
-        "Posting of Short Circuit Information"
       ]
     },
     {
@@ -310,6 +290,30 @@
         "Accounting for Edison Electric Institute Membership Dues",
         "Industry Trade Association Dues",
         "Accounting for EEI Annual Membership Dues"
+      ]
+    },
+    {
+      "theme": "Customer service & billing",
+      "description": "Customer-service performance, billing accuracy, or call-center issues.",
+      "keywords": [
+        "customer service",
+        "billing and collections",
+        "metering and billing",
+        "billing process",
+        "billing adjustment",
+        "billing accuracy",
+        "billing lag",
+        "call center",
+        "meter reading",
+        "customer experience"
+      ],
+      "finding_count": 14,
+      "report_count": 10,
+      "example_titles": [
+        "Financial Management",
+        "Customer Service",
+        "Customer Service (continued)",
+        "Gas Delivery"
       ]
     },
     {
@@ -330,6 +334,24 @@
         "Cost Allocations and Affiliated Interests",
         "Purchasing and Materials Management",
         "Executive Management and Organizational Structure"
+      ]
+    },
+    {
+      "theme": "Informational postings",
+      "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
+      "keywords": [
+        "informational posting",
+        "posting of",
+        "outage postings",
+        "postings for monthly"
+      ],
+      "finding_count": 15,
+      "report_count": 9,
+      "example_titles": [
+        "Renewable Natural Gas Quality Specifications",
+        "Informational Postings",
+        "Public Access to Monthly and Yearly Capability Information",
+        "Posting of Short Circuit Information"
       ]
     },
     {
@@ -371,20 +393,6 @@
       ]
     },
     {
-      "theme": "Dividend policy & capital management",
-      "description": "Dividend-policy or capital-management practices flagged by auditors.",
-      "keywords": [
-        "dividend"
-      ],
-      "finding_count": 6,
-      "report_count": 6,
-      "example_titles": [
-        "Financial Management",
-        "Allowance for Funds Used During Construction",
-        "Page 2 of 2"
-      ]
-    },
-    {
       "theme": "Cybersecurity & physical security",
       "description": "Gaps in cyber defenses or physical security of facilities and systems.",
       "keywords": [
@@ -397,6 +405,21 @@
         "Emergency Preparedness",
         "Emergency Preparedness (continued)",
         "Cybersecurity",
+        "Page 2 of 2"
+      ]
+    },
+    {
+      "theme": "Dividend policy & capital management",
+      "description": "Dividend-policy or capital-management practices flagged by auditors.",
+      "keywords": [
+        "dividend policy",
+        "dividend payment",
+        "dividend payout"
+      ],
+      "finding_count": 5,
+      "report_count": 5,
+      "example_titles": [
+        "Financial Management",
         "Page 2 of 2"
       ]
     },

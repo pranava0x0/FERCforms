@@ -27,7 +27,11 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     ("Accounting misclassification", ["misclassif", "incorrectly recorded", "improperly recorded", "improperly included", "incorrectly included"]),
     ("AFUDC / cost of capital", ["allowance for funds used during construction", "afudc"]),
     ("Tariff administration & oversight", ["tariff"]),
-    ("Informational postings", ["informational posting", "posting"]),
+    # NOTE: bare "posting" was tightened 2026-06-10 — it matched financial
+    # "collateral postings" (an SCE AFUDC finding) and an SAP "reconciliation
+    # posting" (PSE&G audit). The compounds below cover every real OASIS/
+    # informational-posting finding in the corpus.
+    ("Informational postings", ["informational posting", "posting of", "outage postings", "postings for monthly"]),
     ("Depreciation", ["depreciation"]),
     ("Affiliate / intercompany transactions", ["affiliate", "intercompany", "inter-company"]),
     ("Membership dues & industry associations", ["membership dues", "industry association"]),
@@ -35,7 +39,9 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     # NOTE: bare "reporting" was removed 2026-06-08 — once recommendation text is
     # scanned it over-matched state-audit "financial reporting"/"reporting systems"
     # language and mislabeled them as FERC Form-1 issues. Keep FERC-specific anchors.
-    ("Form reporting (Form No. 1/2/6, Page 700)", ["form no.", "page 700", "annual report"]),
+    # "annual report" removed 2026-06-10: its only corpus hit was a PSE&G footnote
+    # citing the company's BPU annual report — FERC contexts are covered by "form no.".
+    ("Form reporting (Form No. 1/2/6, Page 700)", ["form no.", "page 700"]),
     ("Property & plant records", ["property unit", "carrier property", "noncarrier property", "plant in service", "property record"]),
     ("Creditworthiness", ["creditworthiness"]),
     ("Capitalization vs. expense", ["capitaliz"]),
@@ -50,11 +56,27 @@ THEME_RULES: list[tuple[str, list[str]]] = [
     ("Workforce, training & succession planning", ["succession", "span of control", "spans of control", "training", "workforce plan", "learning management"]),
     ("Internal audit & internal controls", ["internal audit", "internal control", "delegation of authority", "code of business conduct", "compliance program"]),
     ("Information technology & systems", ["information technology", "customer information system", "it budget", "it project", "it backlog", "it governance"]),
-    ("Customer service & billing", ["customer service", "billing", "accounts receivable", "call center", "meter reading", "customer experience"]),
-    ("Inventory, materials & fleet", ["inventory", "materials management", "fleet management", "vehicle replacement"]),
-    ("Service reliability & vegetation management", ["vegetation", "reliability", "saidi", "caidi", "outage"]),
+    # NOTE: bare "billing" was tightened 2026-06-10 — ~50 of its 72 corpus hits were
+    # FERC *wholesale formula-rate* language ("overbillings to wholesale transmission
+    # customers", "joint owner billing"), not retail customer service. The compounds
+    # below keep every real retail billing finding (M&O audit recs say "billing and
+    # collections", "billing process", "billing adjustments", "metering and billing").
+    # "accounts receivable" also removed: it matched FERC *tax*-receivable findings
+    # via the account names (143, other accounts receivable) — never retail service.
+    ("Customer service & billing", ["customer service", "billing and collections", "metering and billing", "billing process", "billing adjustment", "billing accuracy", "billing lag", "call center", "meter reading", "customer experience"]),
+    # NOTE: bare "inventory" tightened 2026-06-10 — it matched metaphorical backlogs
+    # ("inventory of outstanding Class A leaks", a gas-safety matter). Compounds keep
+    # all real materials/fuel inventory findings.
+    ("Inventory, materials & fleet", ["inventory accuracy", "inventory turnover", "inventory tracking", "inventory balance", "physical inventory", "inventory optimization", "inventory accounting", "inventory count", "supplies inventory", "materials management", "fleet management", "vehicle replacement"]),
+    # NOTE: bare "reliability"/"outage" tightened 2026-06-10 — they matched
+    # "reliability of information reported" (a Form-1 finding), the FERC account name
+    # "561.5, reliability planning", and PJM *generation outage reporting* findings;
+    # this theme is distribution/service reliability (SAIDI/CAIDI, storm, vegetation).
+    ("Service reliability & vegetation management", ["vegetation", "electric reliability", "service reliability", "reliability performance", "reliability metric", "reliability program", "reliability report", "saidi", "caidi", "outage cause", "outages caused", "emergency outage", "outage management", "outage response"]),
     ("Gas safety & pipeline integrity", ["class a leak", "main leak", "cathodic", "corros", "damage prevention", "pipeline integrity", "leak management"]),
-    ("Dividend policy & capital management", ["dividend"]),
+    # NOTE: bare "dividend" tightened 2026-06-10 — it matched the FERC account *name*
+    # "419, interest and dividend income" in AFUDC-misclassification findings.
+    ("Dividend policy & capital management", ["dividend policy", "dividend payment", "dividend payout"]),
 ]
 
 # Plain-English explanation of each theme, shown on the site's pattern cards and
