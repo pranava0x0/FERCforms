@@ -1,14 +1,14 @@
 {
-  "collection": "prudence_review",
-  "jurisdiction": "CA",
-  "source": "California Public Utilities Commission",
-  "doc_type": "ERRA compliance & reasonableness review decision",
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
   "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
   "company": "Pacific Gas and Electric Company",
   "company_raw": "Pacific Gas and Electric Company",
   "docket": "A.24-02-012",
   "docket_full": null,
-  "issued_date": "2025-06-12",
+  "issued_date": null,
   "source_page_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
   "pdf_download_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
   "captured_at": "2026-06-10",
@@ -20,9 +20,11 @@
   "audit_period": null,
   "industry": "electric",
   "audit_type": null,
-  "functions": [],
+  "functions": [
+    "generation"
+  ],
   "forms": [],
   "finding_count": 0,
   "findings": [],
-  "structured": false
+  "structured": true
 }

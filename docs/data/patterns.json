@@ -1,8 +1,8 @@
 {
   "report_count": 294,
-  "finding_count": 1234,
+  "finding_count": 1163,
   "other_matter_count": 10,
-  "recommendation_count": 1730,
+  "recommendation_count": 2553,
   "by_industry": {
     "electric": 233,
     "gas": 36,
@@ -24,12 +24,12 @@
     "2022": 20,
     "2023": 21,
     "2024": 40,
-    "2025": 61,
+    "2025": 60,
     "2026": 5
   },
   "by_function": {
     "transmission": 67,
-    "generation": 63,
+    "generation": 64,
     "distribution": 2
   },
   "themes": [
@@ -102,13 +102,28 @@
         "gas cost adjustment",
         "energy cost recovery"
       ],
-      "finding_count": 29,
-      "report_count": 50,
+      "finding_count": 28,
+      "report_count": 48,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Approval: $225,000\n"
+      ]
+    },
+    {
+      "theme": "Depreciation",
+      "description": "Unapproved or incorrect depreciation rates applied to plant.",
+      "keywords": [
+        "depreciation"
+      ],
+      "finding_count": 65,
+      "report_count": 45,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Depreciation Rates and Study",
+        "Allocation of Overhead Costs to CWIP",
+        "Depreciation Rates and Dismantlement Charge"
       ]
     },
     {
@@ -122,28 +137,13 @@
         "return on equity",
         "rate design"
       ],
-      "finding_count": 84,
-      "report_count": 46,
+      "finding_count": 81,
+      "report_count": 43,
       "example_titles": [
         "Approval: $1,277,051,206. ",
         "Approval: $35.7 million",
         "Annual Membership Dues",
         "Annual Cost of Service Based Analysis Schedule"
-      ]
-    },
-    {
-      "theme": "Depreciation",
-      "description": "Unapproved or incorrect depreciation rates applied to plant.",
-      "keywords": [
-        "depreciation"
-      ],
-      "finding_count": 66,
-      "report_count": 46,
-      "example_titles": [
-        "Allowance for Funds Used During Construction",
-        "Depreciation Rates and Study",
-        "Allocation of Overhead Costs to CWIP",
-        "Depreciation Rates and Dismantlement Charge"
       ]
     },
     {
@@ -156,8 +156,8 @@
         "nonoperating",
         "non-operating"
       ],
-      "finding_count": 50,
-      "report_count": 43,
+      "finding_count": 49,
+      "report_count": 42,
       "example_titles": [
         "Annual Membership Dues",
         "Nonoperating and Operating Expenses",
@@ -175,8 +175,8 @@
         "plant in service",
         "property record"
       ],
-      "finding_count": 69,
-      "report_count": 39,
+      "finding_count": 67,
+      "report_count": 38,
       "example_titles": [
         "Allowance for Funds Used During Construction",
         "Noncarrier Property Revenue, Expenses, and Net Income",
@@ -192,12 +192,12 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 53,
-      "report_count": 39,
+      "finding_count": 49,
+      "report_count": 38,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Settlement: agreement",
-        "Affiliated Interests and Cost Allocations",
+        "Background, National Fuel Gas Company",
         "Reporting of Transactions with Associated (Affiliated) Companies"
       ]
     },
@@ -223,8 +223,8 @@
       "keywords": [
         "tariff"
       ],
-      "finding_count": 49,
-      "report_count": 35,
+      "finding_count": 47,
+      "report_count": 33,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -238,8 +238,8 @@
       "keywords": [
         "capitaliz"
       ],
-      "finding_count": 21,
-      "report_count": 20,
+      "finding_count": 20,
+      "report_count": 19,
       "example_titles": [
         "Property Unit Listing",
         "Allocation of Overhead Costs to CWIP",
@@ -266,13 +266,13 @@
         "outage management",
         "outage response"
       ],
-      "finding_count": 14,
-      "report_count": 13,
+      "finding_count": 23,
+      "report_count": 14,
       "example_titles": [
         "Settlement: terms",
         "Settlement: Agreement",
-        "Electric Operations",
-        "Accounting for Vegetation Management Costs"
+        "DGP Reliability Programs",
+        "Introduction & Executive Summary"
       ]
     },
     {
@@ -291,82 +291,13 @@
         "storm reserve",
         "securitization"
       ],
-      "finding_count": 23,
+      "finding_count": 22,
       "report_count": 12,
       "example_titles": [
         "Approval: $69.8 million",
         "Approval: $78 million",
         "Approval: $85.7 million",
-        "Settlement: AGREEMENT"
-      ]
-    },
-    {
-      "theme": "Internal audit & internal controls",
-      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-      "keywords": [
-        "internal audit",
-        "internal control",
-        "delegation of authority",
-        "code of business conduct",
-        "compliance program"
-      ],
-      "finding_count": 24,
-      "report_count": 11,
-      "example_titles": [
-        "Corporate Governance",
-        "Affiliated Interests and Cost Allocations",
-        "Customer Service",
-        "Financial Management"
-      ]
-    },
-    {
-      "theme": "Inventory, materials & fleet",
-      "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
-      "keywords": [
-        "inventory accuracy",
-        "inventory turnover",
-        "inventory tracking",
-        "inventory balance",
-        "physical inventory",
-        "inventory optimization",
-        "inventory accounting",
-        "inventory count",
-        "supplies inventory",
-        "materials management",
-        "fleet management",
-        "vehicle replacement"
-      ],
-      "finding_count": 16,
-      "report_count": 11,
-      "example_titles": [
-        "Auxiliary Fuel Costs in Nuclear Power Generation",
-        "Purchasing and Materials Management",
-        "Accounting for Materials and Supplies",
-        "Materials Management"
-      ]
-    },
-    {
-      "theme": "Customer service & billing",
-      "description": "Customer-service performance, billing accuracy, or call-center issues.",
-      "keywords": [
-        "customer service",
-        "billing and collections",
-        "metering and billing",
-        "billing process",
-        "billing adjustment",
-        "billing accuracy",
-        "billing lag",
-        "call center",
-        "meter reading",
-        "customer experience"
-      ],
-      "finding_count": 14,
-      "report_count": 11,
-      "example_titles": [
-        "Financial Management",
-        "Customer Service",
-        "Customer Service (continued)",
-        "Gas Delivery"
+        "Emergency Planning and Response"
       ]
     },
     {
@@ -383,26 +314,6 @@
         "Accounting for Edison Electric Institute Membership Dues",
         "Industry Trade Association Dues",
         "Accounting for EEI Annual Membership Dues"
-      ]
-    },
-    {
-      "theme": "Workforce, training & succession planning",
-      "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
-      "keywords": [
-        "succession",
-        "span of control",
-        "spans of control",
-        "training",
-        "workforce plan",
-        "learning management"
-      ],
-      "finding_count": 22,
-      "report_count": 9,
-      "example_titles": [
-        "Human Resources and Diversity (continued)",
-        "Cost Allocations and Affiliated Interests",
-        "Purchasing and Materials Management",
-        "Executive Management and Organizational Structure"
       ]
     },
     {
@@ -424,23 +335,92 @@
       ]
     },
     {
-      "theme": "Information technology & systems",
-      "description": "IT governance, systems, budgets, or project-management deficiencies.",
+      "theme": "Inventory, materials & fleet",
+      "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
       "keywords": [
-        "information technology",
-        "customer information system",
-        "it budget",
-        "it project",
-        "it backlog",
-        "it governance"
+        "inventory accuracy",
+        "inventory turnover",
+        "inventory tracking",
+        "inventory balance",
+        "physical inventory",
+        "inventory optimization",
+        "inventory accounting",
+        "inventory count",
+        "supplies inventory",
+        "materials management",
+        "fleet management",
+        "vehicle replacement"
       ],
       "finding_count": 10,
       "report_count": 9,
       "example_titles": [
-        "Approval: $156.9 million",
-        "Information Technology",
-        "Customer Service",
-        "Allocation of Information Technology Costs"
+        "Auxiliary Fuel Costs in Nuclear Power Generation",
+        "Executive Management and Organizational Structure",
+        "Accounting for Materials and Supplies",
+        "Corporate Governance"
+      ]
+    },
+    {
+      "theme": "Internal audit & internal controls",
+      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+      "keywords": [
+        "internal audit",
+        "internal control",
+        "delegation of authority",
+        "code of business conduct",
+        "compliance program"
+      ],
+      "finding_count": 10,
+      "report_count": 8,
+      "example_titles": [
+        "Executive Management and Organizational Structure",
+        "Corporate Governance",
+        "Background,",
+        "Human Resources, Exhibit XIV-4."
+      ]
+    },
+    {
+      "theme": "Customer service & billing",
+      "description": "Customer-service performance, billing accuracy, or call-center issues.",
+      "keywords": [
+        "customer service",
+        "billing and collections",
+        "metering and billing",
+        "billing process",
+        "billing adjustment",
+        "billing accuracy",
+        "billing lag",
+        "call center",
+        "meter reading",
+        "customer experience"
+      ],
+      "finding_count": 8,
+      "report_count": 8,
+      "example_titles": [
+        "Outage Communications",
+        "Executive Management and Organizational Structure",
+        "Corporate Governance",
+        "Background,"
+      ]
+    },
+    {
+      "theme": "Workforce, training & succession planning",
+      "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+      "keywords": [
+        "succession",
+        "span of control",
+        "spans of control",
+        "training",
+        "workforce plan",
+        "learning management"
+      ],
+      "finding_count": 7,
+      "report_count": 7,
+      "example_titles": [
+        "Emergency Planning and Response",
+        "Corporate Governance",
+        "Executive Management and Organizational Structure",
+        "Background,"
       ]
     },
     {
@@ -453,12 +433,33 @@
         "emergency management",
         "mutual assist"
       ],
-      "finding_count": 8,
-      "report_count": 8,
+      "finding_count": 5,
+      "report_count": 6,
       "example_titles": [
-        "Emergency Preparedness",
-        "Emergency Preparedness (continued)",
-        "Page 2 of 2"
+        "Emergency Planning and Response",
+        "Executive Management and Organizational Structure",
+        "Background,",
+        "Emergency Preparedness, Chapter X – Materials Management and Chapter XIV –"
+      ]
+    },
+    {
+      "theme": "Information technology & systems",
+      "description": "IT governance, systems, budgets, or project-management deficiencies.",
+      "keywords": [
+        "information technology",
+        "customer information system",
+        "it budget",
+        "it project",
+        "it backlog",
+        "it governance"
+      ],
+      "finding_count": 5,
+      "report_count": 5,
+      "example_titles": [
+        "Approval: $156.9 million",
+        "Executive Management and Organizational Structure",
+        "Information Technology and Chapter XVII – Human Resources for more information",
+        "Background,"
       ]
     },
     {
@@ -468,13 +469,12 @@
         "cyber",
         "physical security"
       ],
-      "finding_count": 8,
-      "report_count": 5,
+      "finding_count": 4,
+      "report_count": 4,
       "example_titles": [
-        "Emergency Preparedness",
-        "Emergency Preparedness (continued)",
-        "Cybersecurity",
-        "Page 2 of 2"
+        "Corporate Governance",
+        "Executive Management and Organizational Structure",
+        "Background,"
       ]
     },
     {
@@ -485,11 +485,25 @@
         "dividend payment",
         "dividend payout"
       ],
-      "finding_count": 5,
-      "report_count": 5,
+      "finding_count": 4,
+      "report_count": 4,
       "example_titles": [
-        "Financial Management",
-        "Page 2 of 2"
+        "Executive Management and Organizational Structure",
+        "Background,",
+        "Executive Management"
+      ]
+    },
+    {
+      "theme": "Creditworthiness",
+      "description": "Customer credit standards not applied as the tariff requires.",
+      "keywords": [
+        "creditworthiness"
+      ],
+      "finding_count": 2,
+      "report_count": 2,
+      "example_titles": [
+        "Creditworthiness Standards",
+        "Settlement: Agreement"
       ]
     },
     {
@@ -504,26 +518,11 @@
         "pipeline integrity",
         "leak management"
       ],
-      "finding_count": 4,
-      "report_count": 3,
+      "finding_count": 2,
+      "report_count": 2,
       "example_titles": [
-        "Gas Operations",
-        "Contractor Performance",
-        "Page 2 of 2"
-      ]
-    },
-    {
-      "theme": "Creditworthiness",
-      "description": "Customer credit standards not applied as the tariff requires.",
-      "keywords": [
-        "creditworthiness"
-      ],
-      "finding_count": 3,
-      "report_count": 3,
-      "example_titles": [
-        "Creditworthiness Standards",
-        "Settlement: Agreement",
-        "Page 2 of 2"
+        "Corporate Governance",
+        "Executive Management and Organizational Structure"
       ]
     }
   ],
@@ -542,7 +541,7 @@
     },
     {
       "title": "Settlement: terms",
-      "count": 15
+      "count": 16
     },
     {
       "title": "Settlement: AGREEMENT",
@@ -553,24 +552,12 @@
       "count": 12
     },
     {
-      "title": "Customer Service",
-      "count": 10
-    },
-    {
       "title": "Allowance for Funds Used During Construction (AFUDC)",
       "count": 10
     },
     {
-      "title": "Financial Management",
-      "count": 8
-    },
-    {
       "title": "Asset Retirement Obligations",
       "count": 8
-    },
-    {
-      "title": "Corporate Governance",
-      "count": 7
     },
     {
       "title": "Accounting for Compromise Settlements",
@@ -581,40 +568,12 @@
       "count": 6
     },
     {
-      "title": "Affiliated Interests and Cost Allocations",
-      "count": 6
-    },
-    {
-      "title": "Emergency Preparedness",
-      "count": 6
-    },
-    {
-      "title": "Executive Management and Organizational Structure",
-      "count": 6
-    },
-    {
       "title": "Accounting Misclassifications",
       "count": 6
     },
     {
       "title": "Income Tax Receivables",
       "count": 6
-    },
-    {
-      "title": "Gas Operations",
-      "count": 5
-    },
-    {
-      "title": "Human Resources and Diversity",
-      "count": 5
-    },
-    {
-      "title": "Information Technology",
-      "count": 5
-    },
-    {
-      "title": "Electric Operations",
-      "count": 5
     },
     {
       "title": "Approval: $5,475 ",
@@ -627,6 +586,46 @@
     {
       "title": "FERC Form No. 2 Reporting",
       "count": 5
+    },
+    {
+      "title": "Annual Cost of Service Based Analysis Schedule",
+      "count": 4
+    },
+    {
+      "title": "FERC Form No. 6 Reporting",
+      "count": 4
+    },
+    {
+      "title": "Allocation of Overhead Costs to CWIP",
+      "count": 4
+    },
+    {
+      "title": "Accounting for Administrative and General Expenses",
+      "count": 4
+    },
+    {
+      "title": "Excess Accumulated Deferred Income Tax",
+      "count": 4
+    },
+    {
+      "title": "Executive Management and Organizational Structure",
+      "count": 4
+    },
+    {
+      "title": "Application of Nonapproved Depreciation Rates",
+      "count": 4
+    },
+    {
+      "title": "Accounting for Asset Retirement Obligations",
+      "count": 4
+    },
+    {
+      "title": "Accounting for Nonoperating Expenses",
+      "count": 4
+    },
+    {
+      "title": "Wholesale Storm Damage Revenues",
+      "count": 4
     }
   ],
   "generated_at": "2026-06-15"

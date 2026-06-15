@@ -556,7 +556,7 @@ def structure_state_pa_audit(entry: ListingEntry, text: ReportText, existing_rep
     # Preserve metadata from existing report if available
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k != "findings"},  # Copy all fields except findings
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
             findings=findings,
             finding_count=len(findings),
         )

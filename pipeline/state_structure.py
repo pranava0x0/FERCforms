@@ -355,3 +355,177 @@ def structure_tx_audit(
         findings=findings,
         structured=True,
     )
+
+
+# --- Michigan Distribution Reliability Audits ---
+_MI_CHAPTER_RE = re.compile(r"^Chapter\s+([IVXLCM]+)\s*(?:–|—|-)\s*(.+?)$")
+_MI_FINDING_RE = re.compile(r"^(\d+)\.\s+(.+?)$")
+
+
+def parse_mi_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse Michigan MPSC reliability audit findings by chapter."""
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    current_chapter = None
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+
+    for line in lines:
+        chapter_match = _MI_CHAPTER_RE.match(line)
+        if chapter_match:
+            current_chapter = chapter_match.group(2)
+            chapters.append((current_chapter, []))
+            continue
+
+        finding_match = _MI_FINDING_RE.match(line)
+        if finding_match and current_chapter is not None:
+            finding_text = finding_match.group(2)
+            if finding_text:
+                chapters[-1][1].append((finding_text, None))
+
+    return chapters
+
+
+def structure_mi_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from Michigan distribution reliability audit."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_mi_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            rec_models.append(Recommendation(number=rec_no, text=text, source_page=None))
+        findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )
+
+
+# --- California ERRA Decisions ---
+def parse_ca_erra_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse California CPUC ERRA decision findings."""
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+    current_issue = None
+
+    for line in lines:
+        if any(marker in line for marker in ["Decision", "Finding", "Ruling", "Issue"]) and ":" in line:
+            parts = line.split(":", 1)
+            if len(parts[1].strip()) > 5:
+                current_issue = parts[1].strip()[:150]
+                chapters.append((current_issue, []))
+        elif current_issue and line and len(line) > 20 and not line.startswith("---"):
+            if chapters and chapters[-1][1]:
+                chapters[-1][1][-1] = (chapters[-1][1][-1][0] + " " + line, None)
+            elif chapters:
+                chapters[-1][1].append((line, None))
+
+    return chapters
+
+
+def structure_ca_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from California ERRA decision."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_ca_erra_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            text_clean = re.sub(r"\s+", " ", text).strip()
+            if text_clean and len(text_clean) > 10:
+                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
+        if rec_models:
+            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    if not findings:
+        return None
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )
+
+
+# --- New Jersey Rate Cases & Audit Orders ---
+def parse_nj_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse New Jersey BPU rate case orders and audit findings."""
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+
+    for i, line in enumerate(lines):
+        if any(marker in line for marker in ["Finding", "Order", "Determination", "Issue"]) and len(line) < 250:
+            title = line.replace("Finding", "").replace("Order", "").replace("Issue", "").strip()
+            if not title or len(title) < 3:
+                continue
+            description_lines = []
+            for j in range(i + 1, min(i + 8, len(lines))):
+                next_line = lines[j]
+                if any(m in next_line for m in ["Finding", "Order", "Issue"]):
+                    break
+                if next_line and len(next_line) > 15:
+                    description_lines.append(next_line)
+
+            if description_lines:
+                text = " ".join(description_lines)
+                chapters.append((title, [(text, None)]))
+
+    return chapters
+
+
+def structure_nj_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from New Jersey rate case or audit order."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_nj_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            text_clean = re.sub(r"\s+", " ", text).strip()
+            if text_clean and len(text_clean) > 20:
+                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
+        if rec_models:
+            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    if not findings:
+        return None
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )

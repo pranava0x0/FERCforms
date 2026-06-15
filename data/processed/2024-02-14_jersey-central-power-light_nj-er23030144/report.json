@@ -31,7 +31,15 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Settlement: terms",
+      "summary": "ters providing for their non-objection to the settlement. Having reviewed the record and the settlement terms, I FIND as follows: 1. The parties have voluntarily agreed to the settlement as evidenced by their signatures or the signatures of their represe",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": false
 }

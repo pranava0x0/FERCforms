@@ -12,8 +12,8 @@
     "issued_date": "2005-11-18",
     "docket": "A.05-02-014",
     "captured_at": "2026-06-07",
-    "source_note": "CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).",
-    "parse": false,
+    "source_note": "CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 \u2014 the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1\u2013Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).",
+    "parse": true,
     "fetch": false
   },
   {
@@ -29,8 +29,8 @@
     "issued_date": null,
     "docket": "D.06-01-007",
     "captured_at": "2026-06-07",
-    "source_note": "CPUC Decision D.06-01-007 — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Adopted January 2006 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).",
-    "parse": false,
+    "source_note": "CPUC Decision D.06-01-007 \u2014 the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Adopted January 2006 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).",
+    "parse": true,
     "fetch": false
   },
   {
@@ -46,8 +46,8 @@
     "issued_date": null,
     "docket": "A.02-12-028",
     "captured_at": "2026-06-07",
-    "source_note": "CPUC Decision D.03-12-063, Application A.02-12-028 — the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas & Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel & purchased-power prudence determination. Adopted December 2003 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).",
-    "parse": false,
+    "source_note": "CPUC Decision D.03-12-063, Application A.02-12-028 \u2014 the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas & Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel & purchased-power prudence determination. Adopted December 2003 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).",
+    "parse": true,
     "fetch": false
   },
   {
@@ -63,9 +63,9 @@
     "issued_date": null,
     "docket": "A.09-04-002",
     "fetch": false,
-    "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
+    "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 \u2014 SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2025-02-19_southern-california-gas_ca-balancing-accounts-audit",
@@ -81,7 +81,7 @@
     "docket": null,
     "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2024-07-23_southern-california-edison_ca-balancing-accounts-audit",
@@ -97,7 +97,7 @@
     "docket": null,
     "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
@@ -112,7 +112,7 @@
     "issued_date": "2025-06-12",
     "docket": "A.24-02-012",
     "captured_at": "2026-06-10",
-    "source_note": "CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.",
-    "parse": false
+    "source_note": "CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 \u2014 Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 \u2013 December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.",
+    "parse": true
   }
 ]

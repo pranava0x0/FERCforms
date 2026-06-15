@@ -22,7 +22,479 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Introduction & Executive Summary",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Electric Grid System",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Construction Standards and Inspection and Maintenance Practices",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Field Inspections",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Field and Stores Inventory",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "System Comparisons",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Reliability Comparisons & Vegetation Spending",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Electric Grid System",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "HVD Component Details",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "LVD Component Details",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "Grid Asset Ages",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "DSCADA",
+          "source_page": null
+        },
+        {
+          "number": 11,
+          "text": "Fault (Line) Sensors",
+          "source_page": null
+        },
+        {
+          "number": 12,
+          "text": "Communications Systems for System Protection Devices and DSCADA",
+          "source_page": null
+        },
+        {
+          "number": 13,
+          "text": "System Protection",
+          "source_page": null
+        },
+        {
+          "number": 14,
+          "text": "Mobile Substations and Voltage Regulators",
+          "source_page": null
+        },
+        {
+          "number": 15,
+          "text": "The many different LVD voltages that Consumers operates is unusual and poses material",
+          "source_page": null
+        },
+        {
+          "number": 16,
+          "text": "Consumers’ HVD and LVD asset types and ages are consistent with those of other large",
+          "source_page": null
+        },
+        {
+          "number": 17,
+          "text": "Consumers’ use of automatic recloser transfer schemes reduces customer interruptions",
+          "source_page": null
+        },
+        {
+          "number": 18,
+          "text": "Completing the inclusion of asset locations and data into its GIS and improving ADMS",
+          "source_page": null
+        },
+        {
+          "number": 19,
+          "text": "Well-paced installation of fault sensors, continuing to install fuses on lateral circuits, and",
+          "source_page": null
+        },
+        {
+          "number": 20,
+          "text": "Consumers provides sufficient service transformer capacity and its ability to identify the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Construction Standards and Inspection and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Asset Inspection and Maintenance Programs",
+          "source_page": null
+        },
+        {
+          "number": 22,
+          "text": "Electric Construction Standards",
+          "source_page": null
+        },
+        {
+          "number": 23,
+          "text": "Maintenance Costs for Underground vs. Overhead Facilities",
+          "source_page": null
+        },
+        {
+          "number": 24,
+          "text": "Consumers updates its electric construction designs whenever NESC guidelines are",
+          "source_page": null
+        },
+        {
+          "number": 25,
+          "text": "Consumers’ O&M spending for distribution overhead lines has increased significantly",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Stratified Facilities Sampling",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Comprehensive System Data Logging",
+          "source_page": null
+        },
+        {
+          "number": 27,
+          "text": "Secondary circuits",
+          "source_page": null
+        },
+        {
+          "number": 28,
+          "text": "Primary and sub-transmission/high voltage distribution circuits (by circuit)",
+          "source_page": null
+        },
+        {
+          "number": 29,
+          "text": "Service and substation transformers:",
+          "source_page": null
+        },
+        {
+          "number": 30,
+          "text": "Substations:",
+          "source_page": null
+        },
+        {
+          "number": 31,
+          "text": "Poles",
+          "source_page": null
+        },
+        {
+          "number": 32,
+          "text": "Third-party attachments",
+          "source_page": null
+        },
+        {
+          "number": 33,
+          "text": "Maintenance cycles",
+          "source_page": null
+        },
+        {
+          "number": 34,
+          "text": "Customer numbers",
+          "source_page": null
+        },
+        {
+          "number": 35,
+          "text": "10-year measures of SAIDI, SAIFI, CAIDI, ASAI, MAIFI, CEMI 0 through 10+, CELID8,",
+          "source_page": null
+        },
+        {
+          "number": 36,
+          "text": "Stratified Sampling Methodology",
+          "source_page": null
+        },
+        {
+          "number": 37,
+          "text": "Attributes Tested",
+          "source_page": null
+        },
+        {
+          "number": 38,
+          "text": "Pole Inspection Results",
+          "source_page": null
+        },
+        {
+          "number": 39,
+          "text": "Substation Inspections",
+          "source_page": null
+        },
+        {
+          "number": 40,
+          "text": "Field inspections did not identify recurring issues in Consumers’ company records, asset",
+          "source_page": null
+        },
+        {
+          "number": 41,
+          "text": "We found no issues requiring major, systematic response, but observed relatively",
+          "source_page": null
+        },
+        {
+          "number": 42,
+          "text": "A moderate number of GIS pole records have not been updated to reflect recent pole",
+          "source_page": null
+        },
+        {
+          "number": 43,
+          "text": "The observed rate of poor pole conditions requiring management attention was low.",
+          "source_page": null
+        },
+        {
+          "number": 44,
+          "text": "We did not observe significant numbers of safety issues involving poles.",
+          "source_page": null
+        },
+        {
+          "number": 45,
+          "text": "We found very few mismatches in Consumers’ substation records.",
+          "source_page": null
+        },
+        {
+          "number": 46,
+          "text": "The substations reviewed exhibited significantly better conditions than we have often",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Field & Stores Inventory",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "Asset Field Inventory",
+          "source_page": null
+        },
+        {
+          "number": 48,
+          "text": "Inventory of Spare New Stock",
+          "source_page": null
+        },
+        {
+          "number": 49,
+          "text": "Stores Inventory",
+          "source_page": null
+        },
+        {
+          "number": 50,
+          "text": "Consumers makes typical use of its GIS for recording circuit data and location and uses",
+          "source_page": null
+        },
+        {
+          "number": 51,
+          "text": "Consumers supply chain methods, including procurement, stock storage, and stock",
+          "source_page": null
+        },
+        {
+          "number": 52,
+          "text": "Our review of storeroom and storage yard found stock plentiful and in good condition.",
+          "source_page": null
+        },
+        {
+          "number": 53,
+          "text": "The substantial numbers of poles, service isolating transformers, and regulators",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "System Comparisons",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "Underground Assets",
+          "source_page": null
+        },
+        {
+          "number": 55,
+          "text": "Inspection and Tree Trim Cycles",
+          "source_page": null
+        },
+        {
+          "number": 56,
+          "text": "Comparing Forestry Spending",
+          "source_page": null
+        },
+        {
+          "number": 57,
+          "text": "Consumers Energy and DTE Energy Historic Capital and O&M Summary",
+          "source_page": null
+        },
+        {
+          "number": 58,
+          "text": "Consumers Energy and DTE Energy Historic and Projected Capital and O&M",
+          "source_page": null
+        },
+        {
+          "number": 59,
+          "text": "Michigan and Illinois Utilities Spending and Reliability Comparisons",
+          "source_page": null
+        },
+        {
+          "number": 60,
+          "text": "In 2018, the amounts for ComEd and Ameren Illinois began to flatten for several years, while Consumers and DTE expenditures",
+          "source_page": null
+        },
+        {
+          "number": 61,
+          "text": "Consumers targets 5-7-9-year cycles, depending on circuit voltages, but its current",
+          "source_page": null
+        },
+        {
+          "number": 62,
+          "text": "LBWL attained 1st quartile SAIDI after increasing O&M to reduce its tree trim cycle",
+          "source_page": null
+        },
+        {
+          "number": 63,
+          "text": "Consumers would need to spend more to attain a four-year trim cycle necessary to reduce",
+          "source_page": null
+        },
+        {
+          "number": 64,
+          "text": "Consumers’ SAIDI performance has not improved despite increases in total capital and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Reliability Comparisons & Vegetation Spending",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 65,
+          "text": "All Weather (Including MEDs) Reliability Metrics",
+          "source_page": null
+        },
+        {
+          "number": 66,
+          "text": "Reliability Metrics Excluding MEDs",
+          "source_page": null
+        },
+        {
+          "number": 67,
+          "text": "This suggests that the impact of blue and grey sky events (smaller storms that do not produce",
+          "source_page": null
+        },
+        {
+          "number": 68,
+          "text": "In 2022, Consumers’ SAIFI, excluding MEDs, was 0.96 and remained at 0.96 in 2023. In",
+          "source_page": null
+        },
+        {
+          "number": 69,
+          "text": "HVD, LVD, and Substations",
+          "source_page": null
+        },
+        {
+          "number": 70,
+          "text": "Causes of Interruptions – All Weather",
+          "source_page": null
+        },
+        {
+          "number": 71,
+          "text": "Causes of Interruptions – MEDs Excluded",
+          "source_page": null
+        },
+        {
+          "number": 72,
+          "text": "Tree-Caused Outages",
+          "source_page": null
+        },
+        {
+          "number": 73,
+          "text": "Customers Experiencing Multiple Interruptions",
+          "source_page": null
+        },
+        {
+          "number": 74,
+          "text": "Customers Experiencing Long Interruption Duration",
+          "source_page": null
+        },
+        {
+          "number": 75,
+          "text": "CEMI and CELID Comparisons to Other Utilities",
+          "source_page": null
+        },
+        {
+          "number": 76,
+          "text": "Instead, its CELID 8 numbers were 566,302 in 2021, 369,465 in 2022, and 496,961 in 2023,",
+          "source_page": null
+        },
+        {
+          "number": 77,
+          "text": "MAIFI and ASAI",
+          "source_page": null
+        },
+        {
+          "number": 78,
+          "text": "Consumers’ CEMI 4 and CELID 8 is higher than is usually acceptable for utilities.",
+          "source_page": null
+        },
+        {
+          "number": 79,
+          "text": "Consumers’ 2nd quartile 2022 and 2023 SAIFI is average industry performance.",
+          "source_page": null
+        },
+        {
+          "number": 80,
+          "text": "Consumers’ 2022 and 2023 CAIDI was in the 4th quartile for both including and",
+          "source_page": null
+        },
+        {
+          "number": 81,
+          "text": "Consumers’ 2022 and 2023 SAIDI metrics were in the 4th quartile including MEDs and",
+          "source_page": null
+        },
+        {
+          "number": 82,
+          "text": "Consumers’ LVD lines contribute approximately 87 percent of SAIDI minutes.",
+          "source_page": null
+        },
+        {
+          "number": 83,
+          "text": "Consumers use of cause codes of Weather and Unknown is not precise.",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

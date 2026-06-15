@@ -25,7 +25,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 11,
+  "finding_count": 1,
   "findings": [
     {
       "index": 1,
@@ -35,213 +35,463 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Complete and retain documentation of a span of control analysis upon projected completion of reorganization in December 2023.",
-          "source_page": 30
+          "text": "Functional Area Rating Summary",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "FirstEnergy Corporation – Service Territory",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "FirstEnergy Service Company – Internal Audit Function Structure",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "FirstEnergy Service Company – Supply Chain Organization",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Complete and retain documentation of a span of",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Cooperate fully with all ongoing investigations and",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Develop and implement approved enhancements to",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Conduct periodic market studies to confirm",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Perform a comprehensive update to ensure all key",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Determine the cause for the significant increases in",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Survey customers on their satisfaction with the IVR",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Evaluate the safety performance goal setting",
+          "source_page": null
         },
         {
           "number": 2,
-          "text": "Continue and complete the FE Forward Initiative with the integration of the Audit Bureau’s recommendations for various functional areas in the 2021 Management Audit report.",
-          "source_page": 30
-        }
-      ]
-    },
-    {
-      "index": 2,
-      "title": "Key Audit Matter",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "Quantifiable Savings Summary",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Corporation – Corporate Entity Chart",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Utilities – Organizational Structure",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Service Company – Sample Compliance Program",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Service Company – Internal Audit Annual Workload",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Pennsylvania Electric Company – Summary of Charges from/to",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Pennsylvania Companies – Long-Term Debt",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Utilities – Emergency Preparedness Coordinators",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Utilities – Transmission and Distribution Warehousing",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "First Energy-PA Companies without West Penn Power – Customer",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Service Company – IT Staffing Levels",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "FirstEnergy Corporation – Sample KPIs Linked to STIP",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Continue and complete the FE Forward Initiative with",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Carefully track and document ongoing activities",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Correct administrative oversight controls to ensure",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Comply with the requirements set forth in the various",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Establish collection agency goals based upon net",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Enter into an agreement with the EEI to allow",
+          "source_page": null
+        },
         {
           "number": 3,
-          "text": "Cooperate fully with all ongoing investigations and implement all approved recommendations for remediation determined by the completed internal and governmental investigations and any settlement terms arising therefrom.",
-          "source_page": 39
+          "text": "Summary of Recommendations",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "FirstEnergy Pennsylvania Companies – Customer Statistics",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "FirstEnergy Utilities – Utility Operations Organizational Structure",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Pennsylvania Power Company – Summary of Charges from/to",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "FirstEnergy Pennsylvania Companies – Dividends Paid as a Percent",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "FirstEnergy Utilities – Warehouse Locations and FirstEnergy",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "West Penn Power Company – Customer Contact Center",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "FirstEnergy Service Company – Evidentiary Sample of D&I Initiative",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Begin tracking pole attachment invoice receivables",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Test the new internal controls over financial reporting",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Study potential solutions to reduce arrearages",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Continue to identify exposures and to develop and",
+          "source_page": null
         },
         {
           "number": 4,
-          "text": "Carefully track and document ongoing activities related to the investigations and litigation, so the costs associated with dealing with the matter are appropriately segregated and to minimize negative impacts to ratepayers.",
-          "source_page": 39
-        }
-      ]
-    },
-    {
-      "index": 3,
-      "title": "Corporate Governance",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Organizational Structure",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "West Penn Power Company – Summary of Charges from/to Affiliates",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "FirstEnergy Pennsylvania Companies – Debt-to-Equity",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "FirstEnergy Corporation – Materials Management and Warehousing",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "FirstEnergy Pennsylvania Companies – Satisfaction with Ease of",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "FirstEnergy Utilities – Safety Function Organization",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Perform comprehensive, periodic updates to",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Revise the corporate absenteeism metric to granularly",
+          "source_page": null
+        },
         {
           "number": 5,
-          "text": "Develop and implement approved enhancements to the Compliance Program. Implement appropriate testing criterion for testing the key controls to strengthen FirstEnergy’s internal control environment and ultimately resolve the noted material weakness in internal control over financial reporting",
-          "source_page": 47
-        }
-      ]
-    },
-    {
-      "index": 4,
-      "title": "Affiliated Interests and Cost Allocations",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Corporation / FirstEnergy Service Company – Staffing",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "FirstEnergy Service Company – Accounting Department",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "FirstEnergy Pennsylvania Companies – Qualified Pension Funding",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "FirstEnergy Pennsylvania Companies – Inventory Turnover Levels",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "FirstEnergy Pennsylvania Companies – Satisfaction with Using",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Metropolitan Edison Company – Safety Performance",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Evaluate the current cost allocation factors to assess",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "shows the qualified pension funding status for each of the FE-PA Companies.",
+          "source_page": null
+        },
         {
           "number": 6,
-          "text": "Conduct periodic market studies to confirm FirstEnergy Service Company’s cost of services are at or lower than market, and the FE PA Companies are charging the higher of cost or market for goods/services to affiliates.",
-          "source_page": 64
+          "text": "FirstEnergy Pennsylvania Companies – Staffing Levels",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "FirstEnergy Pennsylvania Companies – Shared Services Cost per",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "FirstEnergy Pennsylvania Companies – External Short-Term",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "FirstEnergy Pennsylvania Companies – Potential Savings from",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Metropolitan Edison Company – Final Bill Collection Agency",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Pennsylvania Electric Company – Safety Performance",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Maintain transparent records of the additional costs",
+          "source_page": null
         },
         {
           "number": 7,
-          "text": "Correct administrative oversight controls to ensure every notice and summary information of future debt securities issuances by FE PA Companies are filed with the PUC within 60 days.",
-          "source_page": 64
-        }
-      ]
-    },
-    {
-      "index": 5,
-      "title": "Affiliated Interests and Cost Allocations (continued)",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Pole Attachment Fees in",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "FirstEnergy Pennsylvania Companies – Additional Interest Expenses",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "FirstEnergy Utilities – Inventory Turnover Levels",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "Pennsylvania Electric Company – Final Bill Collection Agency",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "Pennsylvania Power Company – Safety Performance",
+          "source_page": null
+        },
         {
           "number": 8,
-          "text": "Begin tracking pole attachment invoice receivables that are 60, 90, 120 and 180 days outstanding while charging late fees at each overdue interval to discourage late payments and improve collection performance for current arrearages at the FE-PA Companies.",
-          "source_page": 64
+          "text": "FirstEnergy Pennsylvania Companies – Average Amount in Arrears",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "FirstEnergy Utilities – Potential Savings from Reaching Quartile",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "Pennsylvania Power Company – Final Bill Collection Agency",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "West Penn Power Company – Safety Performance",
+          "source_page": null
         },
         {
           "number": 9,
-          "text": "Perform comprehensive, periodic updates to FirstEnergy’s CAM to ensure accurate and relevant information and follow it in practice.",
-          "source_page": 64
+          "text": "FirstEnergy Pennsylvania Companies – Flight Operations Charges",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "West Penn Power Company – Final Bill Collection Agency",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "FirstEnergy Pennsylvania Companies – Safety Performance Trends",
+          "source_page": null
         },
         {
           "number": 10,
-          "text": "Evaluate the current cost allocation factors to assess how accurately they represent the most relevant cost drivers, update the SA after the current reorganization is complete to include robust descriptions of all goods/services provided to the FE-PA Companies, and file the SA with the PUC for approval.",
-          "source_page": 65
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "FirstEnergy Pennsylvania Companies – Partial Year Safety",
+          "source_page": null
         },
         {
           "number": 11,
-          "text": "Maintain transparent records of the additional costs incurred as a result of the investigations and fallout related to bribery charges in Ohio to demonstrate prudent and reasonable operating costs in any future rate case proceeding.",
-          "source_page": 65
-        }
-      ]
-    },
-    {
-      "index": 6,
-      "title": "Financial Management",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
+        {
+          "number": 11,
+          "text": "FirstEnergy Pennsylvania Companies – Injuries Under or Potentially",
+          "source_page": null
+        },
         {
           "number": 12,
-          "text": "Perform a comprehensive update to ensure all key elements are included in all policies/procedures/processes within the Finance and Accounting departments.",
-          "source_page": 75
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
+        {
+          "number": 12,
+          "text": "FirstEnergy Pennsylvania Companies – Potential Lost Hours Due to",
+          "source_page": null
         },
         {
           "number": 13,
-          "text": "Comply with the requirements set forth in the various ongoing investigations to regain the confidence of the credit community.",
-          "source_page": 75
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
+        {
+          "number": 13,
+          "text": "FirstEnergy Pennsylvania Companies – Estimated Savings Through",
+          "source_page": null
         },
         {
           "number": 14,
-          "text": "Test the new internal controls over financial reporting and obtain an opinion from the external auditor without a material weakness.",
-          "source_page": 75
-        }
-      ]
-    },
-    {
-      "index": 7,
-      "title": "Electric Operations",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
         {
           "number": 15,
-          "text": "Improve electric reliability performance by implementing remedial programs that will effectively address the top outage causes within the FE PA Companies control (e.g., Equipment Failure, Line Failure, Animals) as well as actively identify priority off-ROW trees for removal where possible.",
-          "source_page": 103
-        }
-      ]
-    },
-    {
-      "index": 8,
-      "title": "Electric Operations (continued)",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
+        },
         {
           "number": 16,
-          "text": "Establish an overtime target based upon a percentage of straight time hours as opposed to dollars and determine the necessary staffing level for field operations personnel to achieve a goal of 15% overtime for the field operations employees.",
-          "source_page": 103
+          "text": "FirstEnergy Pennsylvania Companies – Primary Net Collection",
+          "source_page": null
         },
         {
           "number": 17,
-          "text": "Review and identify why field operations employees are incurring excessive amounts of overtime and promote and/or exercise the companies’ right to equally distribute emergency callouts.",
-          "source_page": 103
+          "text": "FirstEnergy Pennsylvania Companies – Estimated Improvement in",
+          "source_page": null
         },
         {
           "number": 18,
-          "text": "Review and redesign the training and learning management system(s) to create a centralized system to properly manage and report on employee training requirements and certification status.",
-          "source_page": 103
+          "text": "FirstEnergy Pennsylvania Companies – Overall Average Arrearages",
+          "source_page": null
         },
         {
           "number": 19,
-          "text": "Review the Met-Ed remediation measures for Penelec, Penn Power, and West Penn Power and implement as needed to standardize procedures to reduce the likeliness of a similar incident occurring at all FE-PA Companies.",
-          "source_page": 103
-        }
-      ]
-    },
-    {
-      "index": 9,
-      "title": "Materials Management",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
+          "text": "FirstEnergy Pennsylvania Companies – Potential Reduced Borrowing",
+          "source_page": null
+        },
         {
           "number": 20,
-          "text": "Determine the cause for the significant increases in average inventory balances; and create an action plan to decrease balances and improve inventory turnover performance to match internal goals.",
-          "source_page": 114
-        }
-      ]
-    },
-    {
-      "index": 10,
-      "title": "Customer Service",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
-        {
-          "number": 21,
-          "text": "Survey customers on their satisfaction with the IVR technology, and implement remedial actions based on the survey results.",
-          "source_page": 131
-        },
-        {
-          "number": 22,
-          "text": "Establish collection agency goals based upon net collection performance, track collection agency performance based upon actual dollars placed with each agency and hold the agencies accountable for their performance by eliminating agencies that can't achieve the established goals.",
-          "source_page": 131
-        },
-        {
-          "number": 23,
-          "text": "Study potential solutions to reduce arrearages including an analysis of customer segmentation as part of the FE Forward initiative.",
-          "source_page": 131
-        }
-      ]
-    },
-    {
-      "index": 11,
-      "title": "Human Resources and Diversity",
-      "summary": null,
-      "is_other_matter": false,
-      "recommendations": [
-        {
-          "number": 24,
-          "text": "Evaluate the safety performance goal setting strategies for effectiveness and efficiency. The companies should set challenging yet attainable goals, individualized for each operating company, to encourage reasonable improvement while continuing to nurture the underlying safety culture.",
-          "source_page": 162
-        },
-        {
-          "number": 25,
-          "text": "Enter into an agreement with the EEI to allow generalized composite benchmark data to be provided for regulatory review during future audits or participate in other safety benchmarking activities which allow for adequate review and verification.",
-          "source_page": 162
-        },
-        {
-          "number": 26,
-          "text": "Continue to identify exposures and to develop and implement adequate training on the appropriate procedures to proactively mitigate the risks associated with the identified exposures to ultimately improve safety performance.",
-          "source_page": 162
+          "text": "FirstEnergy Pennsylvania Companies – Potential Annual Savings in",
+          "source_page": null
         }
       ]
     }
