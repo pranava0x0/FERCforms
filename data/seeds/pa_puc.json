@@ -60,8 +60,8 @@
     "issued_date": "2025-09-25",
     "docket": null,
     "captured_at": "2026-06-01",
-    "source_note": "Management Efficiency Investigation (follow-up to the 2022 Management & Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf.",
-    "parse": false
+    "source_note": "Management Efficiency Investigation (follow-up to the 2022 Management & Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "parse": true
   },
   {
     "id": "2022-08-25_peco-energy_pa-mo-audit",

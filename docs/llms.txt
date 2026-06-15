@@ -2,7 +2,7 @@
 
 > Machine-readable findings of noncompliance and staff recommendations mined from **utility audit and prudence records**, across three collections: **FERC audits** (the Office of Enforcement's financial (FA) and non-financial (PA) audits of utilities, ISOs/RTOs, and pipelines, electric/gas/oil), **FERC prudence reviews** (rate-case cost determinations), and **state PUC/PSC/SCC audits** (rate, fuel-cost, and management proceedings from several state commissions). FERC audits and the parsed state management audits are broken into findings -> recommendations (verbatim); legal orders, testimony, and settlements are listed with their source. Themes are mined by transparent keyword tagging, never LLM judgement.
 
-Scope: FERC utility audits — electric, gas & oil, extended to prudence reviews and state audits. As of 2026-06-10, the corpus holds 294 structured records: 120 FERC audits (of 120 listed at https://www.ferc.gov/audits (233 electric, 36 gas, 18 oil identified)), 27 prudence reviews, and 36 state PUC audits. Findings and recommendations are quoted verbatim. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
+Scope: FERC utility audits — electric, gas & oil, extended to prudence reviews and state audits. As of 2026-06-15, the corpus holds 294 structured records: 120 FERC audits (of 120 listed at https://www.ferc.gov/audits (233 electric, 36 gas, 18 oil identified)), 27 prudence reviews, and 36 state PUC audits. Findings and recommendations are quoted verbatim. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 
 ## Data (machine-readable)
 - [Reports](data/reports.json): every structured record with findings, recommendations, and themes
