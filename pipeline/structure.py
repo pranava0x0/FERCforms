@@ -276,7 +276,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
             if "management" in doc_type.lower():
                 return structure_state_pa_audit(entry, text, existing_report)
             # Regulatory orders/decisions (CT, other PUC decisions)
-            elif any(word in doc_type.lower() for word in ["investigation", "decision", "order"]):
+            elif any(word in doc_type.lower() for word in ["investigation", "decision", "order", "erra"]):
                 return structure_regulatory_order(entry, text, existing_report)
             # Default: try regulatory parser for unknown formats
             else:

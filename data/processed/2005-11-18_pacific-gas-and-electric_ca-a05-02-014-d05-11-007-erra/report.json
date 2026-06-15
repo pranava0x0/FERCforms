@@ -14,7 +14,7 @@
   "captured_at": "2026-06-07",
   "source_note": "CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).",
   "archived_via": null,
-  "page_count": 0,
+  "page_count": 1,
   "scanned_pages": [],
   "ocr_used": false,
   "audit_period": null,
@@ -24,5 +24,5 @@
   "forms": [],
   "finding_count": 0,
   "findings": [],
-  "structured": false
+  "structured": true
 }

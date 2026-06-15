@@ -1,9 +1,12 @@
-"""Extract per-page text from downloaded report PDFs.
+"""Extract per-page text from downloaded report PDFs and HTML documents.
 
-pdfplumber is the primary extractor; PyMuPDF (fitz) is the fallback for pages it
-mishandles. A page that clears neither text threshold is flagged image-only
+For PDFs: pdfplumber is the primary extractor; PyMuPDF (fitz) is the fallback for
+pages it mishandles. A page that clears neither text threshold is flagged image-only
 (scanned) for a future OCR pass — v1 does not OCR (see BACKLOG.md). Per-page
 errors are logged and skipped, never fatal.
+
+For HTML documents (e.g., CPUC decisions): BeautifulSoup extracts text from the
+entire document as a single "page".
 """
 from __future__ import annotations
 
@@ -15,6 +18,7 @@ from pathlib import Path
 from typing import Optional
 
 import pdfplumber
+from bs4 import BeautifulSoup
 
 from pipeline import config
 from pipeline.models import ListingEntry, PageText, ReportText
@@ -93,6 +97,34 @@ def extract_pages(pdf_path: Path) -> list[PageText]:
                     text=text,
                 )
             )
+    return pages
+
+
+def extract_html(html_path: Path) -> list[PageText]:
+    """Extract text from an HTML document, treating the entire document as one page."""
+    html_content = html_path.read_text(encoding="utf-8", errors="replace")
+    soup = BeautifulSoup(html_content, "html.parser")
+
+    # Remove script and style tags
+    for tag in soup(["script", "style"]):
+        tag.decompose()
+
+    # Get text and clean up whitespace
+    text = soup.get_text(separator="\n")
+    lines = [line.strip() for line in text.splitlines()]
+    text = "\n".join(line for line in lines if line)
+
+    stripped = text.strip()
+    char_count = len(stripped)
+    pages = [
+        PageText(
+            page=1,
+            char_count=char_count,
+            is_image_only=False,
+            extractor="beautifulsoup" if char_count > 0 else "none",
+            text=text,
+        )
+    ]
     return pages
 
 

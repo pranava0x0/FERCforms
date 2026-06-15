@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 294 records, 1163 findings, 2553 recommendations. Generated 2026-06-15.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 294 records, 1169 findings, 2557 recommendations. Generated 2026-06-15.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5112,6 +5112,18 @@ CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025),
 
 ---
 
+## Southern California Edison Company
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
+- Docket: A.09-04-002 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Function(s): generation
+- Source page: https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
+
+---
+
 ## Puget Sound Energy
 - Collection: Prudence Reviews | Source: Washington Utilities and Transportation Commission
 - Docket: UE-250747 | Audit type: n/a
@@ -5387,17 +5399,6 @@ Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D
 
 ---
 
-## Southern California Edison Company
-- Collection: Prudence Reviews | Source: California Public Utilities Commission
-- Docket: A.09-04-002 | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Source page: https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm
-- Status: listed for reference (not machine-parsed into findings)
-
-CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
-
----
-
 ## FirstEnergy Pennsylvania Electric Company
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: n/a | Audit type: n/a
@@ -5447,9 +5448,16 @@ MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an inve
 - Docket: n/a | Audit type: n/a
 - Issued: 2025-02-19 | Industry: gas | FERC Form: n/a
 - Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
-- Status: listed for reference (not machine-parsed into findings)
 
-CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.
+### Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
+
+Recommendations:
+1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
+
+### Finding 2: This audit report is intended solely for the information and use of SoCalGas and
+
+Recommendations:
+2. This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).
 
 ---
 
@@ -6195,9 +6203,16 @@ Recommendations:
 - Docket: n/a | Audit type: n/a
 - Issued: 2024-07-23 | Industry: electric | FERC Form: n/a
 - Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
-- Status: listed for reference (not machine-parsed into findings)
 
-CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.
+### Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
+
+Recommendations:
+1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
+
+### Finding 2: This audit report is intended solely for the information and use of SCE and the 
+
+Recommendations:
+2. This audit report is intended solely for the information and use of SCE and the CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this audit report, which is a matter of public record and will be available on the CPUC website at Audit Reports by Industry (ca.gov).
 
 ---
 

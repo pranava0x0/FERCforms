@@ -3984,9 +3984,40 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "This audit report is intended solely for the information and use of SoCalGas and",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 2,
+            "text": "This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
@@ -10078,9 +10109,40 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "This audit report is intended solely for the information and use of SCE and the ",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 2,
+            "text": "This audit report is intended solely for the information and use of SCE and the CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this audit report, which is a matter of public record and will be available on the CPUC website at Audit Reports by Industry (ca.gov).",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
     "themes": [],
     "cost_to_customers": false
   },
@@ -31840,7 +31902,7 @@
     "captured_at": "2026-06-07",
     "source_note": "CPUC Decision D.05-11-007 (adopted November 18, 2005), Application A.05-02-014 — the Energy Resource Recovery Account (ERRA) reasonableness review for Pacific Gas and Electric Company, finding PG&E's power-purchase-agreement administration and least-cost-dispatch procurement for Jan 1–Dec 31, 2004 'reasonable and prudent' ($74.9M undercollection). ERRA is California's annual fuel & purchased-power prudence determination. Listed for reference (metadata-only); the decision is published as HTML on the CPUC document portal, so it is captured by reference rather than machine-fetched. Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/51417.htm).",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 1,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -31850,10 +31912,8 @@
     "forms": [],
     "finding_count": 0,
     "findings": [],
-    "structured": false,
-    "themes": [
-      "Fuel & purchased-power cost recovery"
-    ],
+    "structured": true,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -35590,10 +35650,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "prudence_review",
-    "jurisdiction": "CA",
-    "source": "California Public Utilities Commission",
-    "doc_type": "ERRA compliance & reasonableness review decision",
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
     "id": "2010_southern-california-edison_ca-a09-04-002-d10-07-049-erra",
     "company": "Southern California Edison Company",
     "company_raw": "Southern California Edison Company",
@@ -35605,20 +35665,20 @@
     "captured_at": "2026-06-08",
     "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 1,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
     "industry": "electric",
     "audit_type": null,
-    "functions": [],
+    "functions": [
+      "generation"
+    ],
     "forms": [],
     "finding_count": 0,
     "findings": [],
-    "structured": false,
-    "themes": [
-      "Fuel & purchased-power cost recovery"
-    ],
+    "structured": true,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -35637,7 +35697,7 @@
     "captured_at": "2026-06-07",
     "source_note": "CPUC Decision D.06-01-007 — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Adopted January 2006 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 1,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -35645,12 +35705,29 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [
-      "Fuel & purchased-power cost recovery"
+    "finding_count": 2,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Disallowance: $16.36 million",
+        "summary": "act in the most cost-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at u",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Approval: $7.91 million",
+        "summary": "st-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at unreasonable prices",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
     ],
+    "structured": true,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -35669,7 +35746,7 @@
     "captured_at": "2026-06-07",
     "source_note": "CPUC Decision D.03-12-063, Application A.02-12-028 — the Energy Resource Recovery Account (ERRA) reasonableness review for San Diego Gas & Electric Company's fuel and purchased-power costs. ERRA is California's annual fuel & purchased-power prudence determination. Adopted December 2003 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/32806-01.htm).",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 1,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,

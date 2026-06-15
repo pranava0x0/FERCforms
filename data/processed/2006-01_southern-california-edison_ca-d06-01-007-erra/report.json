@@ -14,7 +14,7 @@
   "captured_at": "2026-06-07",
   "source_note": "CPUC Decision D.06-01-007 — the Energy Resource Recovery Account (ERRA) reasonableness/prudence review for Southern California Edison Company; the Commission rejected the Division of Ratepayer Advocates' recommended $16.36M disallowance for hour-ahead-market transactions, finding SCE's least-cost-dispatch process reasonable. ERRA is California's annual fuel & purchased-power prudence determination. Adopted January 2006 (the CPUC decision number D.YY-MM-NNN encodes the adoption year+month); `issued_date` is left null because the exact adoption day is not carried in the CPUC HTML decision and is not inferred. Listed for reference (metadata-only; published as HTML on the CPUC document portal). Source: CPUC (docs.cpuc.ca.gov/published/Final_decision/52767-03.htm).",
   "archived_via": null,
-  "page_count": 0,
+  "page_count": 1,
   "scanned_pages": [],
   "ocr_used": false,
   "audit_period": null,
@@ -22,7 +22,22 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Disallowance: $16.36 million",
+      "summary": "act in the most cost-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at u",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Approval: $7.91 million",
+      "summary": "st-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at unreasonable prices",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
+  "structured": true
 }

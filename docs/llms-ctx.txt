@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="294 structured records (121 FERC audits, 26 prudence reviews, 36 state PUC audits); 1163 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="294 structured records (122 FERC audits, 25 prudence reviews, 36 state PUC audits); 1169 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-15). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -2887,6 +2887,10 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 Listed for reference (not machine-parsed into findings).
 CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&amp;E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
 </doc>
+<doc title="Southern California Edison Company" collection="FERC Audits" docket="A.09-04-002" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
+</doc>
 <doc title="Puget Sound Energy" collection="Prudence Reviews" docket="UE-250747" issued="2025-12-24" industry="electric" source="https://www.utc.wa.gov/casedocket/2025/250747/docsets">
 Listed for reference (not machine-parsed into findings).
 WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docket UE-250747, service date Dec 24, 2025. 9 pp. Page 1 verified.
@@ -2987,10 +2991,6 @@ Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Geo
 Listed for reference (not machine-parsed into findings).
 Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D. Roetger; William R. Jacobs, Jr., PhD) on Georgia Power’s Twenty-second Semi-annual Vogtle Construction Monitoring Report, Docket 29849 (Vogtle construction prudence). Page 1 carries no date -&gt; issued_date null. PDF: services.psc.ga.gov/.../DownloadFile/181460/63470.
 </doc>
-<doc title="Southern California Edison Company" collection="Prudence Reviews" docket="A.09-04-002" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm">
-Listed for reference (not machine-parsed into findings).
-CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
-</doc>
 <doc title="FirstEnergy Pennsylvania Electric Company" collection="State PUC Audits" docket="n/a" issued="2025-09-25" industry="electric" source="https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025">
 Listed for reference (not machine-parsed into findings).
 Management Efficiency Investigation (follow-up to the 2022 Management &amp; Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf. Findings &amp; recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.
@@ -3008,8 +3008,10 @@ Listed for reference (not machine-parsed into findings).
 MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an investigation into BGE gas-system inspection issues, documenting the PSC Engineering Division (PSCED) Investigation Report findings/recommendations (falsified-records pattern, QA/compliance-oversight gaps). 9 pp. Page 1 verified.
 </doc>
 <doc title="Southern California Gas Company" collection="State PUC Audits" docket="n/a" issued="2025-02-19" industry="gas" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
-Listed for reference (not machine-parsed into findings).
-CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.
+Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
+1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
+Finding 2: This audit report is intended solely for the information and use of SoCalGas and
+2. This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).
 </doc>
 <doc title="National Fuel Gas Distribution Corporation" collection="State PUC Audits" docket="D-2023-3040107" issued="2024-11-07" industry="gas" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-national-fuel-gas-distribution-corporation-11-07-2024">
 Finding 1: Background, National Fuel Gas Company
@@ -3640,8 +3642,10 @@ Finding 7: Reliability Comparisons &amp; Vegetation Spending
 83. Consumers use of cause codes of Weather and Unknown is not precise.
 </doc>
 <doc title="Southern California Edison Company" collection="State PUC Audits" docket="n/a" issued="2024-07-23" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
-Listed for reference (not machine-parsed into findings).
-CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.
+Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
+1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
+Finding 2: This audit report is intended solely for the information and use of SCE and the 
+2. This audit report is intended solely for the information and use of SCE and the CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this audit report, which is a matter of public record and will be available on the CPUC website at Audit Reports by Industry (ca.gov).
 </doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure

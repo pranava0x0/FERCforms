@@ -1,11 +1,11 @@
 {
   "ferc_audit": {
-    "report_count": 121,
+    "report_count": 122,
     "finding_count": 584,
     "other_matter_count": 10,
     "recommendation_count": 1419,
     "by_industry": {
-      "electric": 87,
+      "electric": 88,
       "oil": 17,
       "gas": 14,
       "unknown": 3
@@ -26,7 +26,7 @@
     },
     "by_function": {
       "transmission": 67,
-      "generation": 64,
+      "generation": 65,
       "distribution": 2
     },
     "themes": [
@@ -506,12 +506,12 @@
     "generated_at": "2026-06-15"
   },
   "prudence_review": {
-    "report_count": 26,
+    "report_count": 25,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 22,
+      "electric": 21,
       "gas": 3,
       "oil": 1
     },
@@ -564,7 +564,7 @@
           "energy cost recovery"
         ],
         "finding_count": 0,
-        "report_count": 7,
+        "report_count": 6,
         "example_titles": []
       },
       {
@@ -602,9 +602,9 @@
   },
   "state_audit": {
     "report_count": 36,
-    "finding_count": 37,
+    "finding_count": 41,
     "other_matter_count": 0,
-    "recommendation_count": 1134,
+    "recommendation_count": 1138,
     "by_industry": {
       "electric": 24,
       "gas": 10,
@@ -929,6 +929,10 @@
         "count": 4
       },
       {
+        "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
+        "count": 2
+      },
+      {
         "title": "Distribution System Organization, Management and",
         "count": 2
       },
@@ -969,6 +973,10 @@
         "count": 2
       },
       {
+        "title": "This audit report is intended solely for the information and use of SoCalGas and",
+        "count": 1
+      },
+      {
         "title": "Background, National Fuel Gas Company",
         "count": 1
       },
@@ -982,6 +990,10 @@
       },
       {
         "title": "EDIIP Reliability Programs",
+        "count": 1
+      },
+      {
+        "title": "This audit report is intended solely for the information and use of SCE and the ",
         "count": 1
       },
       {
@@ -1011,21 +1023,13 @@
       {
         "title": "Emergency Preparedness, Chapter X – Materials Management and Chapter XIV –",
         "count": 1
-      },
-      {
-        "title": "Gas Operations and Chapter VIII – Electric Operations for additional information.",
-        "count": 1
-      },
-      {
-        "title": "Executive Management",
-        "count": 1
       }
     ],
     "generated_at": "2026-06-15"
   },
   "state_rate_case": {
     "report_count": 111,
-    "finding_count": 542,
+    "finding_count": 544,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -1084,7 +1088,7 @@
           "energy cost recovery"
         ],
         "finding_count": 16,
-        "report_count": 29,
+        "report_count": 27,
         "example_titles": [
           "Approval: $225,000\n",
           "Approval: $0.69 ",

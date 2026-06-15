@@ -22,7 +22,34 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "This audit report is intended solely for the information and use of SoCalGas and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

@@ -1,8 +1,8 @@
 {
   "report_count": 294,
-  "finding_count": 1163,
+  "finding_count": 1169,
   "other_matter_count": 10,
-  "recommendation_count": 2553,
+  "recommendation_count": 2557,
   "by_industry": {
     "electric": 233,
     "gas": 36,
@@ -29,7 +29,7 @@
   },
   "by_function": {
     "transmission": 67,
-    "generation": 64,
+    "generation": 65,
     "distribution": 2
   },
   "themes": [
@@ -69,6 +69,21 @@
       ]
     },
     {
+      "theme": "Depreciation",
+      "description": "Unapproved or incorrect depreciation rates applied to plant.",
+      "keywords": [
+        "depreciation"
+      ],
+      "finding_count": 65,
+      "report_count": 45,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Depreciation Rates and Study",
+        "Allocation of Overhead Costs to CWIP",
+        "Depreciation Rates and Dismantlement Charge"
+      ]
+    },
+    {
       "theme": "Fuel & purchased-power cost recovery",
       "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
       "keywords": [
@@ -103,27 +118,12 @@
         "energy cost recovery"
       ],
       "finding_count": 28,
-      "report_count": 48,
+      "report_count": 45,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Approval: $225,000\n"
-      ]
-    },
-    {
-      "theme": "Depreciation",
-      "description": "Unapproved or incorrect depreciation rates applied to plant.",
-      "keywords": [
-        "depreciation"
-      ],
-      "finding_count": 65,
-      "report_count": 45,
-      "example_titles": [
-        "Allowance for Funds Used During Construction",
-        "Depreciation Rates and Study",
-        "Allocation of Overhead Costs to CWIP",
-        "Depreciation Rates and Dismantlement Charge"
       ]
     },
     {
