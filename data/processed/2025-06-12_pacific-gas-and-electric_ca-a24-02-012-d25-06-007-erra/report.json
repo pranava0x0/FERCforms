@@ -1,7 +1,7 @@
 {
-  "collection": "ferc_audit",
-  "jurisdiction": "FERC",
-  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "collection": "state_rate_case",
+  "jurisdiction": "CA",
+  "source": "California Public Utilities Commission",
   "doc_type": null,
   "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
   "company": "Pacific Gas and Electric Company",

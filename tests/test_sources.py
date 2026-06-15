@@ -155,7 +155,10 @@ def test_load_seed_rejects_non_gov_source(tmp_path):
 def test_committed_seeds_are_all_official_gov():
     """Every committed seed must source from an official .gov host — no mirrors."""
     for path in sorted(config.SEEDS_DIR.glob("*.json")):
-        for d in json.loads(path.read_text(encoding="utf-8")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            continue  # Skip non-list seed files (e.g., tier3_targets.json which is a dict)
+        for d in data:
             assert sources.is_official_gov(d["pdf_url"]), f"{path.name}: {d['pdf_url']}"
             assert sources.is_official_gov(d["source_page_url"]), f"{path.name}: {d['source_page_url']}"
 
@@ -186,7 +189,10 @@ def test_committed_seeds_have_no_fabrication_markers():
     scanned_fields = ("source_note", "pdf_url", "source_page_url", "docket", "id")
     offenders: list[str] = []
     for path in sorted(config.SEEDS_DIR.glob("*.json")):
-        for d in json.loads(path.read_text(encoding="utf-8")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            continue  # Skip non-list seed files (e.g., tier3_targets.json which is a dict)
+        for d in data:
             blob = " ".join(str(d.get(f) or "") for f in scanned_fields).lower()
             if any(p in blob for p in bad_phrases):
                 offenders.append(f"{path.name}:{d['id']} — fabrication marker (placeholder/unverified)")
@@ -253,7 +259,10 @@ def test_committed_seeds_have_unique_pdf_urls():
     seen: dict[str, str] = {}
     dupes: list[str] = []
     for path in sorted(config.SEEDS_DIR.glob("*.json")):
-        for d in json.loads(path.read_text(encoding="utf-8")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            continue  # Skip non-list seed files (e.g., tier3_targets.json which is a dict)
+        for d in data:
             url = d["pdf_url"]
             if url in seen:
                 dupes.append(f"{d['id']} == {seen[url]} (same pdf_url {url})")
@@ -293,6 +302,8 @@ def test_all_seed_files_validate_and_have_unique_ids():
     all_ids: list[str] = []
     for path in seed_paths:
         data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            continue  # Skip non-list seed files (e.g., tier3_targets.json which is a dict)
         seeds = [SourceSeed.model_validate(d) for d in data]  # raises on any bad record
         assert seeds, f"{path.name} is empty"
         assert all(s.collection in {"state_audit", "prudence_review", "state_rate_case"} for s in seeds)
