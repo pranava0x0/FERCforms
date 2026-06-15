@@ -155,6 +155,12 @@ class StatePUCParser(ABC):
             slug = re.sub(r"[^a-z0-9]+", "-", slug)[:40].strip("-")
             doc_id = f"{self.state.lower()}_{result.issued_date.year if result.issued_date else '0000'}_{i:03d}_{slug}"
 
+            # Enable findings extraction for certain state/doc_type combinations
+            should_parse = (
+                (self.state == "TX" and result.doc_type and "audit" in result.doc_type.lower())
+                or (self.state == "PA" and result.doc_type and "management" in result.doc_type.lower())
+            )
+
             seed = SourceSeed(
                 id=doc_id,
                 company=result.company or result.title,
@@ -169,7 +175,7 @@ class StatePUCParser(ABC):
                 docket=result.docket,
                 captured_at=date.today(),
                 source_note=f"{self.puc_info['name']} ({self.state})",
-                parse=False,  # metadata-only initially
+                parse=should_parse,
                 fetch=True,
             )
             seeds.append(seed)

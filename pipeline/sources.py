@@ -36,7 +36,7 @@ import requests
 from pipeline import config, fetch
 from pipeline.extract import extract_pages, pymupdf_pages
 from pipeline.models import AuditReport, ListingEntry, ReportText, SourceSeed
-from pipeline.state_structure import structure_mo_audit
+from pipeline.state_structure import structure_mo_audit, structure_tx_audit
 
 logger = logging.getLogger(__name__)
 
@@ -390,7 +390,10 @@ def process_seed(
                 encoding="utf-8",
             )
             try:
-                report = structure_mo_audit(seed, parse_pages, scanned)
+                if seed.jurisdiction == "TX":
+                    report = structure_tx_audit(seed, parse_pages, scanned)
+                else:
+                    report = structure_mo_audit(seed, parse_pages, scanned)
             except Exception as exc:  # noqa: BLE001 — parser miss falls back to metadata-only
                 logger.warning("parse failed for %s (%s) — metadata-only", seed.id, exc)
             if report is None:
