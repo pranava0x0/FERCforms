@@ -22,21 +22,46 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
+  "finding_count": 3,
   "findings": [
     {
       "index": 1,
-      "title": "Disallowance: $16.36 million",
-      "summary": "act in the most cost-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at u",
+      "title": "4, energy utilities are required to prudently administer all contracts within th",
+      "summary": null,
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "4, energy utilities are required to prudently administer all contracts within the terms and conditions of those contracts and to dispatch contracts when it is most economical to do so. SOC 4 also requires the utilities to dispose of economic long power and to purchase economic short power based on a least-cost dispatch process. Least-cost dispatch refers to a situation in which the most cost-effective mix of total resources is used, thereby minimizing the cost of delivering electric services.",
+          "source_page": null
+        }
+      ]
     },
     {
       "index": 2,
-      "title": "Approval: $7.91 million",
-      "summary": "st-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at unreasonable prices",
+      "title": "DRA found from its independent examination that the deviations in SCE's load and",
+      "summary": null,
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "DRA found from its independent examination that the deviations in SCE's load and resource forecasts were reasonable and that the day-ahead spot transactions were in line with the published day-ahead market prices.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Given the reasonableness of SCE's least-cost dispatch process and absence of a s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Given the reasonableness of SCE's least-cost dispatch process and absence of a standard to assess the \"most cost-effectiveness\" of its hour-ahead market transactions, we must reject the disallowance recommended by DRA . SCE and DRA should work jointly in establishing a standard to satisfy the most cost-effective standard of SCE's hour-ahead activities. Until such a standard is established, SCE should continue to maintain a record of its actual hour-ahead sales prices with bid prices in the same time period from other entities that purchase energy from SCE. SCE should also maintain a record of its actual hour-ahead purchase prices with asking prices from other entities selling energy, to the extent publicly available.",
+          "source_page": null
+        }
+      ]
     }
   ],
   "structured": true

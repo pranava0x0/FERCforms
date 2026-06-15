@@ -1,14 +1,14 @@
 {
-  "collection": "state_rate_case",
+  "collection": "prudence_review",
   "jurisdiction": "CA",
   "source": "California Public Utilities Commission",
-  "doc_type": null,
+  "doc_type": "ERRA compliance & reasonableness review decision",
   "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
   "company": "Pacific Gas and Electric Company",
   "company_raw": "Pacific Gas and Electric Company",
   "docket": "A.24-02-012",
   "docket_full": null,
-  "issued_date": null,
+  "issued_date": "2025-06-12",
   "source_page_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
   "pdf_download_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
   "captured_at": "2026-06-10",
@@ -20,11 +20,400 @@
   "audit_period": null,
   "industry": "electric",
   "audit_type": null,
-  "functions": [
-    "generation"
-  ],
+  "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 30,
+  "findings": [
+    {
+      "index": 1,
+      "title": "2024, stating that 1) an evidentiary hearing is not necessary because there are ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "2024, stating that 1) an evidentiary hearing is not necessary because there are no material facts in dispute; 2) A4NR will not be participating in the proceeding; and 3) the parties stipulated to certain facts, leaving only issues related to the Belden and Caribou 1 Powerhouse outages and two maintenance outages at",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "are reasonable, appropriate, accurate, and in compliance with Commission decisio",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "are reasonable, appropriate, accurate, and in compliance with Commission decisions. 4. Whether PG&E’s greenhouse gas compliance instrument procurement complied with its Bundled Procurement Plan",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "accounts are reasonable and in compliance with applicable tariffs and Commission",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "accounts are reasonable and in compliance with applicable tariffs and Commission directives: A.24-02-012 ALJ/LGG/asf - 7 -",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "We find that, with the exception of the two outages that will be reviewed in the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "We find that, with the exception of the two outages that will be reviewed in the 2024 ERRA Compliance Proceeding, PG&E operated its hydroelectric portfolio in a reasonable manner, in compliance with all applicable rules, regulations and Commission decisions during the Record Year by maintaining a",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "bearings after it fixed the problem, so there is nothing for the metallurgist to",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "bearings after it fixed the problem, so there is nothing for the metallurgist to test. As for seeking compensation from the manufacturer, PG&E typically rebuilds the pumps rather than purchasing new pumps. Therefore, the warranty on the pumps expired several years ago. Lastly, even if the pumps were still in their",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "We find that PG&E acted reasonably in addressing the outages at the Humbolt Bay ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "We find that PG&E acted reasonably in addressing the outages at the Humbolt Bay Generating Station, including the August 2, 2023 forced outage of unit 6. We further direct that if the engine water pump bearings fail in the future at Humbolt Bay Generating Station, that PG&E conduct a cause evaluation and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "cases where it is not seeking approval for executed transactions.36 Cal Advocate",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "cases where it is not seeking approval for executed transactions.36 Cal Advocates asserts that regardless of whether PG&E seeks approval for executed transactions, PG&E should submit the independent evaluator’s report. Cal Advocates highlights the benefits of the independent evaluator’s report",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "We find that PG&E satisfied the requirements for purchase and sale of RA consist",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "We find that PG&E satisfied the requirements for purchase and sale of RA consistent with PG&E’s BPP. We also direct PG&E to include BPP-required",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "BA recorded during the Record Year are reasonable and in compliance with applica",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "BA recorded during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.40 8.2. Disadvantaged Communities – Single Family",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "were reasonable.42 We find that the costs incurred and recorded in the Disadvant",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "were reasonable.42 We find that the costs incurred and recorded in the Disadvantaged Communities – Single Family Solar Affordable Homes BA during",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "the Record Year are reasonable and in compliance with applicable tariffs and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "the Record Year are reasonable and in compliance with applicable tariffs and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Commission directives, and that it is reasonable for PG&E to recover the 2023 pr",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Commission directives, and that it is reasonable for PG&E to recover the 2023 program management expenses in the amount of $49,113.43 40 Exhibit PG&E-01, chapter 11. 41 See D.18-06-027.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "We find that PG&E’s testimony demonstrated that its entries recorded in",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "We find that PG&E’s testimony demonstrated that its entries recorded in",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "the DCGTBA during the Record Year are reasonable and are in compliance with appl",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "the DCGTBA during the Record Year are reasonable and are in compliance with applicable tariffs and Commission directives.47 8.4. Community Solar Green Tariff BA",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "We find that PG&E’s testimony demonstrated that its entries recorded in",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "We find that PG&E’s testimony demonstrated that its entries recorded in",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "the CSGTBA during the Record Year are reasonable and in compliance with applicab",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "the CSGTBA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.49 8.5. Centralized Local Procurement Sub-Account of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "The Commission finds PG&E’s testimony demonstrated that its recorded costs in th",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "The Commission finds PG&E’s testimony demonstrated that its recorded costs in the Centralized Local Procurement Sub-Account of the New System Generation BA during the Record Year to be reasonable and in compliance with Commission decisions.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "title": "during the Record Year are reasonable and in compliance with applicable tariffs ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "title": "Tariff Shared Renewables BA during the Record Year are reasonable and in complia",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Tariff Shared Renewables BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives. BA records the costs of the Disadvantaged Communities – Single Family Solar",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "title": "Communities-Single Family Solar Affordable Homes BA are reasonable and in compli",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Communities-Single Family Solar Affordable Homes BA are reasonable and in compliance with applicable tariffs and Commission directives. Disadvantaged Communities Green Tariff Balancing Account during the Record",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "title": "Year are reasonable and in compliance with applicable tariffs and Commission dir",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Year are reasonable and in compliance with applicable tariffs and Commission directives. developing solar projects within five miles of the participating customer’s",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "title": "Community Solar Green Tariff BA during the Record Year are reasonable and in com",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Community Solar Green Tariff BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives. central procurement entity for local RA in the Centralized Local Procurement",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "title": "8. The entries recorded in the ERRA BA are reasonable, appropriate, accurate, an",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "8. The entries recorded in the ERRA BA are reasonable, appropriate, accurate, and in compliance with Commission decisions.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "title": "9. The entries recorded in the PABA are reasonable, appropriate, accurate, and i",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "9. The entries recorded in the PABA are reasonable, appropriate, accurate, and in compliance with Commission decisions. the Record Year is in compliance with its BPP, Commission directives and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "title": "Memorandum Account during the Record Year are reasonable and in compliance with ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Memorandum Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "title": "the Record Year are reasonable and in compliance with applicable tariffs and Com",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "the Record Year are reasonable and in compliance with applicable tariffs and Commission directives. Family Solar Affordable Homes BA were reasonable and in compliance with",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "title": "applicable tariffs and Commission directives and that it is reasonable for PG&E ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "applicable tariffs and Commission directives and that it is reasonable for PG&E to recover the 2023 program management expenses as recorded.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "title": "Balancing Account during the Record Year are reasonable and in compliance with a",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Balancing Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives. A.24-02-012 ALJ/LGG/asf - 32 -",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "title": "Account during the Record Year are reasonable and in compliance with applicable ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives. of the New System Generation Balancing Account during the Record Year are",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "title": "18. It is reasonable to approve PG&E’s 2023 ERRA Compliance application. O R D E",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "18. It is reasonable to approve PG&E’s 2023 ERRA Compliance application. O R D E R IT IS ORDERED that:",
+          "source_page": null
+        }
+      ]
+    }
+  ],
   "structured": true
 }

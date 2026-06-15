@@ -1,8 +1,8 @@
 {
-  "collection": "state_rate_case",
+  "collection": "prudence_review",
   "jurisdiction": "CA",
   "source": "California Public Utilities Commission",
-  "doc_type": null,
+  "doc_type": "ERRA compliance & reasonableness review decision",
   "id": "2010_southern-california-edison_ca-a09-04-002-d10-07-049-erra",
   "company": "Southern California Edison Company",
   "company_raw": "Southern California Edison Company",
@@ -20,11 +20,75 @@
   "audit_period": null,
   "industry": "electric",
   "audit_type": null,
-  "functions": [
-    "generation"
-  ],
+  "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "4. The amounts recorded in the NSGMA totaling $26,051,000 (representing $25,854,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "4. The amounts recorded in the NSGMA totaling $26,051,000 (representing $25,854,000 of expense and $197,000 of interest) are reasonable, correctly stated, in compliance with Commission decisions, and recoverable. 5. The recorded demand response program costs for the 2006 - 2008 program cycle, as shown in Exhibit 2, Table XII-34, are consistent with prior Commission decisions and reasonable. 6. The Phase II and Phase III costs recorded in the AMIBA and SmartConnect Balancing Account were properly recorded, consistent with the categories adopted in D.07-07-042 and D.08-09-039, and recoverable. Also, SCE should be granted authority to eliminate the AMIBA ratemaking mechanism from its tariffs. Issues relating to the MRTUMA, PDDMA, DOELMA and DRA's proposal for a separate review process for non-ERRA accounts are discussed below.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "SCE requests that the Commission find the costs recorded in the DOELMA are prope",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "SCE requests that the Commission find the costs recorded in the DOELMA are properly recorded, consistent with Advice Letter 2085-E, and are reasonable and recoverable.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Although DRA does not take issue with the reasonableness of the expenditures in ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Although DRA does not take issue with the reasonableness of the expenditures in this account, it believes that a determination regarding this account is not and should not be a part of this Application. The Resolution (E-4066, March 15, 2007) that authorized the opening of the account, along with the underlying Advice Letter, authorizes SCE to recover the funds as follows: At a future date, SCE shall make a proposal to dispose of the net amount recorded in the DOELMA in an application before the Commission. In its application, SCE shall also justify the reasonableness of its incremental litigation costs recorded in the DOELMA. Thus, it is DRA's position that the Commission did not order that this account be addressed in ERRA, but by way of \"an application.\" This is different from other accounts, like the PDDMA and the NSGMA, which were ordered to be addressed in an ERRA related application. The Commission's stated in the Scoping Memo that:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "DRA asserts that DOELMA is not one of those accounts, and SCE should be ordered ",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "DRA asserts that DOELMA is not one of those accounts, and SCE should be ordered to submit its request for recovery of this litigation account when the litigation is concluded and in a separate application.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Since (1) SCE was able to respond to DRA's revised proposal in its reply brief a",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Since (1) SCE was able to respond to DRA's revised proposal in its reply brief and (2) we are merely clarifying a previous decision and applying that here, it is not necessary to ignore DRA's new argument as requested by SCE.",
+          "source_page": null
+        }
+      ]
+    }
+  ],
   "structured": true
 }
