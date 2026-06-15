@@ -97,7 +97,8 @@ _STATE_LEGACY_GOV_RE = re.compile(r"\.state\.[a-z]{2}\.us$")
 # serves the rule's intent (official government, never third-party) where a commission
 # simply predates/never adopted `.gov`. Decision logged in ISSUES.md (2026-06-02).
 _OFFICIAL_GOV_ORG_DOMAINS = frozenset({
-    "dcpsc.org",  # District of Columbia Public Service Commission (edocket.dcpsc.org, www.dcpsc.org)
+    "dcpsc.org",  # District of Columbia Public Service Commission
+    "nm-prc.org",  # New Mexico Public Regulation Commission
 })
 
 
