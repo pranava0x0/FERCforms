@@ -25,7 +25,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
+  "finding_count": 11,
   "findings": [
     {
       "index": 1,
@@ -35,353 +35,243 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Functional Rating Summary",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Customer Statistics",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Governance Oversight Summary",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Executive Management Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Financial Management Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Gas Operations Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Fleet & Materials Management Organizational Structure",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Customer Service and Collections Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Information Service Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Streamline corporate governance processes to",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Develop specific guidance for span of control",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Update Internal Audit policies and procedures.",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Implement a policy and metrics-tracked plan to",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "File Self-Certification forms with the",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Leverage pandemic and low-income resources to",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Establish IS departmental performance metrics",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Improve efficiencies within the fleet department.",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Implement strategies for recruitment and retention",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Staffing Levels",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Capital Budget Timeline",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Miles of Main by Material Type",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Overall Customer Service Satisfaction Rate",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Vehicles and Equipment by Classification",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "DBE Participation Performance",
-          "source_page": null
+          "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.",
+          "source_page": 18
         },
         {
           "number": 2,
           "text": "Streamline the annual budget approval process.",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Implement a safety management system and",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Formally document explanations for variances",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Accelerate cast iron main replacement.",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Correct various deficiencies in physical security.",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Improve customer service performance through",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Leverage and integrate data visualization",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Drive safety performance to meet industry",
-          "source_page": null
+          "source_page": 18
         },
         {
           "number": 3,
-          "text": "Summary of Recommendations",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Corporate Strategy",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Operating Budget Timeline",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Overtime Hours",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Regulatory Compliance and Customer Programs – Customer",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Fleet Key Performance Metrics Dashboard",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "“At-Risk” Job Retention & Turnover Rates",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Establish committee charters for all PFMC board",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Plan and implement a process for gathering",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Establish a company-wide program for",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Complete implementation of the replacement",
-          "source_page": null
+          "text": "Establish committee charters for all PFMC board committees.",
+          "source_page": 18
         },
         {
           "number": 4,
-          "text": "Fiscal Year 2022 Goals and Objectives",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Debt to Total Capital Ratio",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Field Operations Organizational Chart – Customer Service Focus",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "OSHA Recordable Incident Rate",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Evaluate director performance annually to",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Reorganize the CARC reporting structure to",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Explore ways to eliminate or mitigate the",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Establish reporting and key performance metrics",
-          "source_page": null
-        },
+          "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.",
+          "source_page": 18
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Executive Management and Organizational Structure",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 5,
-          "text": "Spans of Control by Management Level",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Historical Credit Ratings",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Mercury Regulators Replaced",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Residential Customer Accounts Receivable Current Balances and",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Days Away Restricted or Transferred (DART)",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Increase focus on cybersecurity by developing a",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Repurpose or divest interest in district offices and",
-          "source_page": null
+          "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.",
+          "source_page": 26
         },
         {
           "number": 6,
-          "text": "Pension Funding Level",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Annual Breaks by Material Type",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Customer Service Performance Metrics",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Reinforce contingencies with the OT systems by",
-          "source_page": null
-        },
+          "text": "Implement a safety management system and improve safety culture at PGW.",
+          "source_page": 26
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 7,
-          "text": "Capital Spend vs Budget",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Main Leaks Repaired by Material Type",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Non-Phone/Electronic Customer Services",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Document the threshold where cybersecurity",
-          "source_page": null
+          "text": "Update Internal Audit policies and procedures.",
+          "source_page": 34
         },
         {
           "number": 8,
-          "text": "Operating and Maintenance Expense vs Budget",
-          "source_page": null
-        },
-        {
-          "number": 8,
-          "text": "Main Replacement Miles by Abandonment",
-          "source_page": null
-        },
-        {
-          "number": 8,
-          "text": "Implement a cybersecurity-focused risk registry.",
-          "source_page": null
-        },
+          "text": "Formally document explanations for variances from the capital and operating budgets.",
+          "source_page": 34
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 9,
-          "text": "Cast Iron Proposed Replacement Miles and Investments",
-          "source_page": null
+          "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.",
+          "source_page": 46
+        },
+        {
+          "number": 10,
+          "text": "Accelerate cast iron main replacement.",
+          "source_page": 46
+        },
+        {
+          "number": 11,
+          "text": "Plan and implement a process for gathering equipment and installation data in the GIS database.",
+          "source_page": 46
+        },
+        {
+          "number": 12,
+          "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.",
+          "source_page": 46
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "File Self-Certification forms with the Pennsylvania PUC annually.",
+          "source_page": 53
+        },
+        {
+          "number": 14,
+          "text": "Correct various deficiencies in physical security.",
+          "source_page": 53
+        },
+        {
+          "number": 15,
+          "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.",
+          "source_page": 53
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Emergency Preparedness (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis.",
+          "source_page": 53
+        },
+        {
+          "number": 17,
+          "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.",
+          "source_page": 53
+        },
+        {
+          "number": 18,
+          "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.",
+          "source_page": 53
+        },
+        {
+          "number": 19,
+          "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.",
+          "source_page": 53
+        },
+        {
+          "number": 20,
+          "text": "Implement a cybersecurity-focused risk registry.",
+          "source_page": 53
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Materials Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Document the policies and procedures of PGW’s cycle counting function.",
+          "source_page": 57
+        },
+        {
+          "number": 22,
+          "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.",
+          "source_page": 57
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.",
+          "source_page": 67
+        },
+        {
+          "number": 24,
+          "text": "Improve customer service performance through expanding call center resources.",
+          "source_page": 67
+        },
+        {
+          "number": 25,
+          "text": "Complete implementation of the replacement CIS.",
+          "source_page": 67
+        },
+        {
+          "number": 26,
+          "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.",
+          "source_page": 68
+        },
+        {
+          "number": 27,
+          "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.",
+          "source_page": 68
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Information Technology",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.",
+          "source_page": 72
+        },
+        {
+          "number": 29,
+          "text": "Leverage and integrate data visualization software consistently across PGW.",
+          "source_page": 72
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Fleet Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "Improve efficiencies within the fleet department.",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Human Resources and Diversity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Implement strategies for recruitment and retention of “at-risk” positions.",
+          "source_page": 84
+        },
+        {
+          "number": 32,
+          "text": "Drive safety performance to meet industry standards.",
+          "source_page": 84
         }
       ]
     }

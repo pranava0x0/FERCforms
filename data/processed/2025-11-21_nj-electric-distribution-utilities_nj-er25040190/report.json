@@ -22,15 +22,723 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
+  "finding_count": 55,
   "findings": [
     {
       "index": 1,
-      "title": "Approval: $500",
-      "summary": "e EDCs stated that they would need to become adhering parties to the US Stay Protocol if the Board approves MSCGI’s proposal. Further, a one (1)-time fee ($500) is required to be paid to the ISDA to become an adhering party to the US Stay Protocol. The EDCs requested that if the Board directs the ED",
+      "title": "By this Decision and  the New Jersey Board of Public Utilities (“Board” or “BPU”) considers",
+      "summary": null,
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "the procurement process for Basic Generation Service (“BGS”) for retail customers who purchase their electric supply from their electric distribution company (“EDC”) for the period beginning June",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "By  dated April 23, 2025, the Board directed the EDCs and interested parties to file",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "proposals by July 1, 2025, to determine how to procure the remaining one-third of the State’s BGS requirements for Residential and Small Commercial Pricing (“RSCP”) customers and the annual Commercial and Industrial Energy Pricing (“CIEP”) requirements for the period beginning",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "June 1, 2026.2  The April 2025  also ordered RECO to file a proposal as part of its BGS",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "filing to procure the BGS capacity requirements for its non-PJM Interconnection, LLC (“PJM”) service area within New Jersey for the period beginning June 1, 2026, to the extent not previously 1 The EDCs are Atlantic City Electric Company (“ACE”), Jersey Central Power & Light Company (“JCP&L”), Public Service Electric and Gas Company (“PSE&G”), and Rockland Electric Company (“RECO”). 2 In re the Provision of Basic Generation Service (BGS) for the Period Beginning June 1, 2026, BPU Docket",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "No. ER25040190,  dated April 23, 2025 (“April 2025 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Agenda Date: 11/21/25 BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 The EDCs made a joint BGS filing on July 1, 2025 (“Proposal”). By September 5, 2025, the Board",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "modifications.  While this  does not separately summarize each party’s position in detail, the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Board carefully reviewed each party’s proposal and position before rendering this decision. On July 1, 2025, the EDCs filed the Proposal for procuring BGS supply beginning on June 1, 2026, including proposed preliminary auction rules, Supplier Master Agreements (“SMAs”), and EDC-specific addenda. The EDCs jointly proposed two (2) simultaneous, multi-round, descending clock auctions for procurement of services to meet the full electricity requirements (i.e., energy, capacity, ancillary",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "No. ER24030191,  dated November 21, 2024 (“November 2024 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 be served through fifty-three (53) full-requirements tranches of approximately 85 to 101 MW The competitive process by which the EDCs proposed to procure their supply requirements for",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "their bids.  In its s issued in November 2020, November 2021, November 2022, November",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "2023, and November 2024, the Board further approved the use of the Capacity Proxy Price for the proposed delivery years where an applicable delivery year’s capacity price was not expected to be known prior to the given BGS-RSCP Auction. On April 11, 2023, PJM filed to revise its schedule for its capacity auctions for the 2025/2026 through 2028/2029 delivery years. On June 9, 2023, the Federal Energy Regulatory Commission",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "(“FERC”) issued an  accepting PJM’s proposed revisions to the base residual auction",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "(“BRA”) schedules for the 2025/2026 through the 2028/2029 delivery years. Additionally, the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "FERC required PJM to submit a compliance filing in response to the FERC’s June 9, 2023, ,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "and such compliance filing was to include an illustrative auction schedule for the 2025/2026 through the 2028/2029 delivery years. On February 12, 2024, PJM filed to delay the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "commencement of its BRA for the 2025/2026 delivery year, and the FERC issued an",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "accepting PJM’s request to delay on February 26, 2024. On October 15, 2024, PJM filed to delay the commencement of its base residual auction for the 2026/2027 delivery year by approximately six (6) months. In this filing, PJM provided a revised capacity auction schedule for the 2026/2027 through the 2029/2030 delivery years and explained that the delay in conducting the BRA for the 2026/2027 delivery year would also result in a delay for other delivery years through the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "2029/2030 delivery year.  The FERC issued an  granting PJM’s request to delay on",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "November 8, 2024. At the time that the EDCs filed the Proposal, the results of the BRAs for the 2026/2027, 2027/2028, and 2028/2029 delivery years [all three (3) delivery years covered by the 2026 BGS- RSCP product] were not yet available. The EDCs asserted that if the capacity price was not known for the delivery years prior to the 2026 BGS-RSCP Auction, it may be the case that BGS- RSCP suppliers are likely to include risk premiums into their bids to address this uncertainty and it may be the case that some bidders choose not to participate altogether. The EDCs asserted",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "No. ER19040428,  dated November 13, 2019.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 available in July 2025 and December 2025, respectively, if unforeseen schedule delays at PJM occur, the EDCs stated that it may be the case that the capacity prices for the 2026/2027 and 2027/2028 delivery years may also not be known prior to the 2026 BGS-RSCP Auction. As such,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "the BRA results for the 2025/2026 delivery year.  In the November 2024 , the Board",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "approved the EDCs’ setting of the Capacity Proxy Prices for the 2026/2027 and 2027/2028 delivery years equal to the BRA results for the 2025/2026 delivery year. As the results of the BRAs for the 2026/2027 and 2027/2028 delivery years were not made available prior to the 2025 BGS-RSCP Auction, the values of the Capacity Proxy Prices for the 2026/2027 and 2027/2028 delivery years remained set to the BRA results for the 2025/2026 delivery year. In the Proposal, the EDCs proposed to set the Capacity Proxy Price for all three (3) delivery years (2026/2027, 2027/2028, and 2028/2029) at $270.43/MW-day. The EDCs asserted that the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "Direct Current Fast Charging (“DCFC”) pilot programs.11  The November 2023  also directed",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "the EDCs to provide an update on the status of each EDC’s pilot program and to continue to collect data subject to customer consent and submit semi-annual reports to the Board and Rate",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "Counsel.  By the November 2024 , the Board directed the EDCs to provide, in the 2026",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "BGS proceeding, an update of the status of the pilot programs, as well as a proposal to implement permanent DCFC programs or provide justification for ending the programs. In their Company- specific addendums, ACE, PSE&G and RECO proposed to end their DCFC pilot programs. JCP&L proposed to continue its DCFC pilot program from June 1, 2026, through May 31, 2027, unless its Electric Vehicle (“EV”) Driven program is discontinued. Rate Counsel Comments In its Initial Comments, Rate Counsel stated that it has supported and supports the requirement",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "No. ER23030124,  dated November 17, 2023 (“November 2023 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 At the Legislative-Type Hearing, Rate Counsel indicated that it is in favor of reducing administrative costs associated with the physical BGS Auction office while the auctions are being conducted remotely. See T1 26:15 to 19. While Rate Counsel did not object to the EDCs’",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "implementation of the 2021 BGS auctions and the 2022 BGS auctions.  Ibid.  In its s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "approving the results of the 2021 and 2022 BGS auctions and its order approving the results of the Board stated that “the adjustments to typical practices and protocols in administering and monitoring the BGS auctions that were in place to accommodate State and Federal COVID-19 BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "title": "(BGS) for the Period Beginning June 1, 2022, BPU Docket No. ER21030631,  dated February 9,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "13 Bates White’s Annual Final Report on the 2022 BGS RSCP and CIEP Auctions at page 47 and at page BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "title": "NYISO customers because the Board approved the results of a procurement by  dated",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "January 31, 2024, for RECO’s non-PJM energy requirements through May 31, 2027.14 On August 16, 2013, in FERC Docket Number ER13-1380, FERC approved the creation of a new capacity market zone in the Lower Hudson Valley region encompassing NYISO Load Zones G, H, I, and J. According to RECO, Lower Hudson Valley capacity is not actively traded, and RECO does not expect any change before the BGS Auction. Because of capacity market changes at the NYISO noted above, RECO proposed purchasing the capacity needs of its BGS customers in its Central and Western Divisions in the NYISO capacity market and blending its forecast of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "title": "in the November 18, 2020 .15  RECO expects these capacity purchases to have minimal",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "impact because its Central and Western Divisions constitute only about ten percent (10%) of RECO’s BGS load. No party took issue or provided comments on RECO’s proposal. PSE&G TOU PROPOSAL In its last distribution rate case filed, PSE&G proposed a voluntary program (“TOU Proposal”) offering customers two (2) new Residential TOU rates: a two (2) period (“2P”) and a three (3) (“3P”) rate structure, initially designed to be revenue neutral to the Residential Service (“RS”) rate",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "title": "and  on RECO RFP, BPU Docket No. ER23030124,  dated January 31, 2024.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "15 In re the Provision of Basic Generation Service (BGS) for the Period Beginning June 1, 2021, BPU Docket",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "title": "No. ER20030190,  dated November 18, 2020.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 and, if successful, would provide for the closing of the Residential Load Management (“RLM”) rate (“TOU Proposal”).16 As a result, in its Company-Specific Addendum filed on July 1, 2024, in the 2025 BGS Proceeding, PSE&G proposed new BGS RS TOU 2P and 3P rates for the supply",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "title": "rates (“2025 BGS Auction TOU Rates”).  By  dated October 9, 2024, the Board approved",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "PSE&G’s base rate case, including the implementation of the three (3) period TOU residential rate structure (“RS TOU-3P).17 PSE&G’s 2025 BGS Company-Specific Addendum was approved",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "title": "by the Board by the November 2024 BGS .  As required by the November 2024 ,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "PSE&G included the Company-Specific Addendum in its December 5, 2024, BGS Compliance Filing. In its Company-Specific Addendum in this proceeding, PSE&G indicated that it presently plans to implement the RS TOU-3P rates later in 2025 and proposed revisions to the approved 2025 BGS RS TOU-3P rates and the proposed 2026 RS TOU-3P rate design effective June 1, According to PSE&G, the objective of the RS TOU-3P rate schedule is to create charges that provide customers with TOU pricing that gives customers the option to move some of their",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "title": "By the Rate Case , PSE&G was authorized to defer up to $12.4 million in costs associated",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "with the implementation of the RS TOU-3P rate option. Deferred costs would be subject to a prudence review in the company’s next base rate case. PSE&G asserted that it did not anticipate that any incremental cost would be incurred to implement the RS TOU-3P BGS rate.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "title": "In the derivation of the approved RS TOU-3P rate in the November 2024 , the costs related",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "to capacity were solely included in the on-peak period. However, given the present high cost of 16 In re the Petition of Public Service Electric and Gas Company for Approval of an Increase in Electric and Gas Rates for Changes in the Tariffs for Electric and Gas Service, B.P.U.N.J. No. 17 Electric and B.P.U.N.J. No. 17 Gas, and for Changes in Depreciation Rates, Pursuant to N.J.S.A. 48:2-18, N.J.S.A. 48:2-21 and N.J.S.A. 48:2-21.1, and for Other Appropriate Relief, BPU Docket Nos. ER23120924 & GR23120925. 17 In re the Petition of Public Service Electric and Gas Company for Approval of an Increase in Electric and Gas Rates for Changes in the Tariffs for Electric and Gas Service, B.P.U.N.J. No. 17 Electric and B.P.U.N.J.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "title": "dated October 9, 2024 (“Rate Case ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 capacity, in the instant proceeding PSE&G proposed to amend the rate design for the RS TOU- 3P rate by redistributing the capacity cost over both the on-peak and mid-peak periods. PSE&G asserted its belief that this change would be more appealing to customers. Accordingly, PSE&G",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "title": "proceeding.  By  dated September 10, 2025, the Board denied PSE&G’s request stating",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "that the request would be more appropriately addressed in the 2026 BGS proceeding or after consideration of the proceeding.18 PSE&G Reply Comments PSE&G reiterated that it requested Board approval to amend the rate design for the BGS RS TOU-3P, as the present (and previously approved) rate included all capacity costs solely in the on-peak period. Additionally, PSE&G proposed to redistribute the capacity cost over both the on- peak and mid-peak periods. PSE&G stated that it believes that this change would be more",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "title": "Filing”).  Ibid.  PSE&G noted that by the September 2025 , the Board denied PSE&G’s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "request stating that it believed the request would be more appropriately addressed in the pending 2026 BGS Filing or after consideration of the 2026 BGS Filing. Id. at 34. PSE&G claimed that, in conformance with the Board’s guidance, PSE&G reiterated the request it made in the Joint Compliance Filing to implement the RS TOU-3P rate. Accordingly, PSE&G appended to the end of the EDC Final Comments the relevant page of the Joint Compliance Filing titled “RS-TOU 3P Transmission Rate Calculation.” Ibid. 18 In re the Provision of Basic Generation Service for the Period Beginning June 1, 2025, Compliance Tariff",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "title": "No. ER25070380,  dated September 10, 2025 (“September 2025 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 ACE BGS RECONCILIATION CHARGE ACE currently calculates the BGS reconciliation charges (“RCs”), including interest, twice a year (effective June 1 and October 1). As part of its Company-specific addendum, ACE proposed to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "title": "The EDCs further explained that, on June 18, 2025, PJM initiated an issue charge (“",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "Charge”) to address the cost allocation options for potential future costs stemming from potential",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "title": "work by PJM’s new DOE  Cost Allocation Senior Task Force was expected to conclude on",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "September 30, 2025 to facilitate a filing to the FERC by October 31, 2025. Ibid. The EDCs acknowledged that it is not possible to predict when, and at what frequency, the DOE might issue an emergency order under Section 202(c) of the FPA or when an existing order could be extended. Id. at 28. Although the emergency orders issued under Section 202(c) of the FPA may require generation resources to remain operational beyond their planned retirement date for up to ninety (90) days from issuance in specific circumstances [each of the Initial and Second",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "title": "Eddystone s expired after ninety (90) days from issuance], the ability of the DOE to extend",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 33,
+          "text": "or issue additional emergency orders under Section 202(c) of the FPA contributes to the uncertainty surrounding the costs associated with these emergency orders. Ibid. The EDCs also stated that, at the time of submission of their final comments, PJM had not yet made a filing to the FERC containing a proposal on the cost allocation methodology for potential costs resulting from the second Eddystone order, or a proposal on the cost allocation methodology for potential future costs stemming from potential future DOE emergency orders under Section 202(c) of the FPA. Ibid. The EDCs maintained that it is unclear whether future costs resulting from these",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "title": "proceeding in this .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 34,
+          "text": "Based upon the experience of previous BGS Auctions, and having considered the record in this matter, the Board HEREBY FINDS that the EDC-proposed BGS-RSCP and BGS-CIEP Auctions, using a descending-clock Auction format, should be used for the procurement period beginning 19 In re the Provision of Basic Generation Service Pursuant to the Electric Discount and Energy Competition",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "title": "20 Board s dated December 2, 2003, Docket No. EO03050394; December 1, 2004, Docket No.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "EO04040288; December 8, 2005, Docket No. EO05040317; December 22, 2006, Docket No. EO06020119; January 25, 2008, Docket No. ER07060379; January 20, 2009, Docket No. ER08050310; December 10, 2009, Docket No. EO09050351; December 6, 2010, Docket ER10040287; November 11, 2011, Docket No. EO11040250; November 20, 2012, Docket No, ER12060485; November 22, 2013, Docket No. ER13050378; November 24, 2014, Docket No. ER14040370; November 16, 2015, Docket No. ER15040482; October 31, 2016, Docket No. ER16040337; November 21, 2017, Docket No. ER17040335; November 19, 2018, Docket No. ER18040356; November 13, 2019, Docket No. ER19040428; November",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "title": "As previous Board s required the filing of reports related to the DCFC pilot programs, the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 36,
+          "text": "Board HEREBY DIRECTS the EDCs to continue filing the quarterly reports as long as there are program participants. The Board agrees that the remote BGS Auctions held over the previous few years were successful. Accordingly, the Board HEREBY APPROVES the EDCs’ proposal to conduct the 2025 BGS Auctions remotely. RECO CENTRAL AND WESTERN BGS CUSTOMER REQUIREMENTS",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "title": "The Board HEREBY FINDS that the confidentiality provisions of its December 1, 2004  in",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 37,
+          "text": "Docket No. EO04040288 remain necessary and appropriate for the continued success of the BGS Auctions, and HEREBY APPROVES the same confidentiality provisions for the 2026 BGS",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "title": "as if set forth at length herein.  A copy of that  is attached hereto as Attachment C.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "21 In re the Provision of Basic Generation Service for Year Three of the Post-Transition Period –",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "title": "”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 39,
+          "text": "BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 AUCTION PROMOTION/DEVELOPMENT Based upon a review of the record, the Board HEREBY FINDS that a successful BGS procurement can be achieved with a well-designed simultaneous descending clock Auction,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "title": "timing of the Auction process approved with this , including certification of the Auction",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 40,
+          "text": "results, needs to take place according to a pre-approved schedule. As indicated in Attachment A, Tentative 2026 Auction Approvals and Decision Process, there are a number of decisions/actions that need to be made after Board approval of the Auction process.23 Each of these decisions/actions needs to take place according to such a schedule so that the bidders are prepared for and comfortable with participating in the Auctions, and the Auctions result in competitive market-based BGS prices. 22 These actions have occurred for past Auctions, and in anticipation of a favorable Board ruling herein,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "title": "letters approving the filings should Staff find them in compliance with this .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 41,
+          "text": "Either the EDCs or the Auction Manager, in consultation with Staff and the Board’s advisor, may",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "title": "make other Auction decisions as identified in Attachment A to this .  These decisions include",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 42,
+          "text": "establishing minimum and maximum starting prices, establishing specific starting prices, the resolution of association issues, specific bidder application and credit issues, load cap and volume adjustment decisions, Auction price decrements, and other decisions, which might be required throughout the implementation process. Some of the aforementioned areas, such as bidder application and credit issues, are subject to specific rules found in the Proposal. Other areas, such as load caps and volume adjustment decisions, establishing minimum and maximum starting prices, establishing specific starting prices, the resolution of association issues, and Auction price",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "title": "24 As used in this , a “business day” is a day when the Board is open for business.  Should weather",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "or other conditions make the Board’s offices inaccessible, the period will run until the end of the next day that is not a Saturday, Sunday or legal holiday. BPU DOCKET NO. ER25040190 Agenda Date: 11/21/25 provide a redacted version of the Final Report, consistent with the confidentiality provisions of this",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "title": ", to the EDCs and Rate Counsel.  The Board’s Auction advisor shall provide a",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "Precertification Report to the Board, including completed post-Auction evaluation forms in the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "title": "form of Attachment B to this , prior to Board certification of the results.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 45,
+          "text": "FINDINGS AND CONCLUSIONS Based upon the foregoing and after carefully reviewing the record in this proceeding, the Board HEREBY FINDS that: This was an open proceeding, with all parties seeking to present written or oral comments on the record having been afforded the opportunity to do so; The Proposal, as modified herein, is consistent with the Electric Discount Energy and Competition",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "title": "Act, N.J.S.A. 48:3-49 et seq., and the EDCs’ Final Restructuring s;",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 46,
+          "text": "The Proposal, as modified herein, can and should be implemented in a timely fashion to secure BGS service for BGS customers beginning June 1, 2026; The Proposal, as modified herein, appears to be the best means to secure BGS service for the 2026 BGS period for BGS-CIEP customers, and for the remaining one-third of the needs of BGS- RSCP customers, as well as for a portion of the BGS-RSCP service required for the 2027 and 2028 BGS periods; An Auction process for one-third of the EDCs’ BGS-RSCP load for a thirty-six (36)-month period",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "title": "approved in prior Board s, as well as the Auction rules, algorithms, and procedures that",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "were modified in this proceeding, including changes in the decrement formulas, are deemed reasonable for the purpose of these Auctions; Certain information and processes associated with the Auctions may be competitively sensitive",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "title": "by nature, and the Board has incorporated herein a Protective  addressing treatment of this",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 48,
+          "text": "competitive information as Attachment C; The accounting and cost recovery processes identified in the EDC-specific Addenda to the Proposal, as modified herein, are reasonable and consistent with the Board’s Final Unbundling",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "title": "Staff upon review finds the filings in compliance with this .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 49,
+          "text": "The Board HEREBY DIRECTS the EDCs to work with Staff and Bates White to ensure that any supplemental documents are fair and consistent with this decision, and that the review procedures for bidder applications are applied in a consistent and non-discriminatory manner. The EDCs' costs, including those related to BGS, will remain subject to audit by the Board. This",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "title": "Decision and  shall not preclude, nor prohibit, the Board from taking any actions determined",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 50,
+          "text": "to be appropriate as the result of any such audit.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "title": "The effective date of this Board  is November 21, 2025.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 51,
+          "text": "DATED: November 21, 2025 BOARD OF PUBLIC UTILITIES HRISTINE GUHL-SADOVY",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "title": "Table 2.  Overview of s on BGS-FP Auction",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 52,
+          "text": "1 BW’s/NERA’s recommendation as to whether the Board should certify the RSCP auction results? 2 Did bidders have sufficient information to prepare for the RSCP auction? 3 Was the information generally provided to bidders",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "title": "Table 2.  Overview of s on BGS-CIEP Auction",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 53,
+          "text": "1 BW’s/NERA’s recommendation as to whether the Board should certify the CIEP auction results? 2 Did bidders have sufficient information to prepare for the CIEP auction? 3 Was the information generally provided to bidders",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "title": "areas are covered by thrs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "(1) The Logic Processes and Algorithms The auction manager, National Economic Research Associates (\"NERA\"), uses logic processes a'ld algorithms to foster a competitive auction. (2) Starting Prices: EDC - specific minimum and maximum starting prices and final starting prices in effect during the bidding phase of the first round of the auction. Each EDC, in consultation with Staff, NERA and the Board's ::;onsultant, Charles River Associates (\"CRA\") sets its own starting prices. The EDC-specific final starting prices",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "title": "obtaining contract::, was announced with the Board  approving the auction results.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 55,
+          "text": "Approximately one month before the load was to be served, when suppliers had presumably locked up their contracts, the list of bidders with BGS contracts along with the volumes and prices for each contract were released. The reason for the delayed release of this tnformation was to ensure that the bidders were not placed at a competitive disadvantage. As stated above. BPU Docket No EO04040::88",
+          "source_page": null
+        }
+      ]
     }
   ],
-  "structured": false
+  "structured": true
 }

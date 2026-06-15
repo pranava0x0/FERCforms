@@ -24,331 +24,171 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
+  "finding_count": 7,
   "findings": [
     {
       "index": 1,
-      "title": "Executive Management and Organizational Structure",
+      "title": "Affiliated Interests and Cost Allocations",
       "summary": null,
       "is_other_matter": false,
       "recommendations": [
         {
           "number": 1,
-          "text": "Functional Rating Summary",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Service Territory",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Supply Operations Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Submit a detailed proposal to the Commission for",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Reduce Electric Operations staff overtime to 15%",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Correct minor deficiencies in physical security.",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Continue outreach efforts to engage payment",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Improve Safety Performance.",
-          "source_page": null
+          "text": "Submit a detailed proposal to the Commission for the appropriate crediting of ratepayers due to PECO’s corrected billings for the use of PECO’s fiber network.",
+          "source_page": 30
         },
         {
           "number": 2,
-          "text": "Quantifiable Savings Summary",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Abbreviated Corporate Entity Chart",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Exelon Utilities Organizational Chart",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Summary of Charges from PECO to Affiliates",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Budget Planning Process Flowchart",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Overtime Performance Metrics",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Comparison of PECO Issues from Stock and Materials Issued by",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Customer Operations Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "IT Operating and Capital Budget and Actual Expenses",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Support Services Department – Training & Safety Sections",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Document PECO’s annual process and continue",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Improve SAIDI and CAIDI to at or below the PUC",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Ensure that all fire extinguishers and first aid kits",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Refocus efforts on customer experiences to drive",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Reduce the rate of all motor vehicle accidents.",
-          "source_page": null
+          "text": "Document PECO’s annual process and continue to perform detailed reviews of all allocation factors, including utility-owned project allocation rates, to ensure costs are distributed in accordance with approved agreements.",
+          "source_page": 30
         },
         {
           "number": 3,
-          "text": "Summary of Recommendations",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Utilities’ Service Territories and Customers Served",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Staffing Levels by Department",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Operating and Maintenance Actual to Budget (in Millions)",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Total Company Overtime - Storm and Non-Storm Labor Costs",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Comparison of PECO Average Inventory Balances to Emergency",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Customer E-Bills to Total Bills",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Total Recordable Injury and DART Rate",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "File PECO’s money pool agreement for approval",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Reduce the number of customers experiencing",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Add an update and accountability section to the",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Complete implementation of the replacement CIS.",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Customer Statistics",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Spans of Control",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Capital Expenditures Actual to Budget (in Millions)",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Electric Operations Total Overtime Hours Worked as a Percentage",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Residential Customer Accounts Receivable Balances",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Vehicle Accidents per Million Miles",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Reduce outages caused by broken/uprooted",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Develop a lifecycle tracking and replacement",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Identify and address the root cause of CSR",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Summary of Capital Structure",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "PECO’s Fatigue Reports Monthly Averages",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Actual Dividend Levels vs. Proposed Modification for Special Relief",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Reduce interruptions caused by equipment",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Summary of Dividend Levels (in Millions)",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Electric Operations Overtime Vs. Employee Injury and DART Rates",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Customer Service Performance Metrics",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "summarizes PECO’s dividends to Exelon as a percentage of net income.",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Exelon Audit Services Department Organization",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Electric Operations Reliability Indicators",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Customer Service Bargaining Unit Separations",
-          "source_page": null
-        },
-        {
-          "number": 8,
-          "text": "Total Customer Interruptions",
-          "source_page": null
-        },
-        {
-          "number": 9,
-          "text": "CEMI Outages",
-          "source_page": null
-        },
-        {
-          "number": 10,
-          "text": "Customer Interruptions by Cause",
-          "source_page": null
-        },
-        {
-          "number": 11,
-          "text": "Number of Equipment Failures by Type",
-          "source_page": null
+          "text": "File PECO’s money pool agreement for approval with the PUC.",
+          "source_page": 30
         }
       ]
     },
     {
       "index": 2,
-      "title": "Information Technology and Chapter XVII – Human Resources for more information",
+      "title": "Electric Operations",
       "summary": null,
       "is_other_matter": false,
       "recommendations": [
         {
-          "number": 1,
-          "text": "Summary of Charges from Affiliates to PECO",
-          "source_page": null
+          "number": 4,
+          "text": "Reduce Electric Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+          "source_page": 55
         },
         {
-          "number": 1,
-          "text": "Financial Management Organization Chart",
-          "source_page": null
+          "number": 5,
+          "text": "Improve SAIDI and CAIDI to at or below the PUC Benchmarks.",
+          "source_page": 55
         },
         {
-          "number": 1,
-          "text": "Electric Operations Organization Chart",
-          "source_page": null
+          "number": 6,
+          "text": "Reduce the number of customers experiencing multiple interruptions and strive to have zero CEMI 10+.",
+          "source_page": 55
+        },
+        {
+          "number": 7,
+          "text": "Reduce outages caused by broken/uprooted vegetation to the 2015-2018 average levels",
+          "source_page": 55
+        },
+        {
+          "number": 8,
+          "text": "Reduce interruptions caused by equipment failures.",
+          "source_page": 55
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Reduce company-at-fault hits on gas infrastructure.",
+          "source_page": 73
+        },
+        {
+          "number": 10,
+          "text": "Study and then identify ways to reduce plastic pipe main and service damages with a focus on line hits.",
+          "source_page": 73
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Gas Operations (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Reduce Gas Operations staff overtime to 15% overtime hours per normal hours worked or less.",
+          "source_page": 73
+        },
+        {
+          "number": 12,
+          "text": "Accelerate the rate of GPS location for key gas infrastructure.",
+          "source_page": 73
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Correct minor deficiencies in physical security.",
+          "source_page": 78
+        },
+        {
+          "number": 14,
+          "text": "Ensure that all fire extinguishers and first aid kits are being inspected and tagged monthly.",
+          "source_page": 78
+        },
+        {
+          "number": 15,
+          "text": "Add an update and accountability section to the Safety Rulebook, move the table of contents closer to the beginning, and add chapter tabs or margin labels to encourage ease of navigation.",
+          "source_page": 78
+        },
+        {
+          "number": 16,
+          "text": "Develop a lifecycle tracking and replacement program for security equipment.",
+          "source_page": 78
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Continue outreach efforts to engage payment troubled customers, leverage pandemic and low- income resources to help reduce the overall level of outstanding customer balances.",
+          "source_page": 93
+        },
+        {
+          "number": 18,
+          "text": "Refocus efforts on customer experiences to drive customer service satisfaction through active listening and first call resolution.",
+          "source_page": 93
+        },
+        {
+          "number": 19,
+          "text": "Complete implementation of the replacement CIS.",
+          "source_page": 93
+        },
+        {
+          "number": 20,
+          "text": "Identify and address the root cause of CSR separations.",
+          "source_page": 93
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Human Resources and Diversity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Improve Safety Performance.",
+          "source_page": 108
+        },
+        {
+          "number": 22,
+          "text": "Reduce the rate of all motor vehicle accidents.",
+          "source_page": 108
         }
       ]
     }

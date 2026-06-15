@@ -25,7 +25,162 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 8,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Executive Management and Organizational Structure",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Perform and retain documentation of span of control analysis upon completion of the reorganization at year-end 2020.",
+          "source_page": 16
+        },
+        {
+          "number": 2,
+          "text": "Analyze processes where data is being reported on by a different group than those responsible for the business activities to ensure that appropriate levels of communication and review are maintained.",
+          "source_page": 16
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Corporate Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Formally record and retain minutes of all NGD and CPA management committee meetings during which corporate governance activities are performed. Alternatively, establish an Executive Committee for the NGD and CPA Boards of Directors, respectively, which would record and retain meeting minutes.",
+          "source_page": 20
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Affiliated Interests and Cost Allocations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Develop and implement controls to ensure that borrowing activities comply with regulatory approvals and notification requirements.",
+          "source_page": 28
+        },
+        {
+          "number": 5,
+          "text": "Develop and implement a review schedule to regularly update the NCSC CAM consulting the NARUC Guidelines for Cost Allocations and Affiliate Transactions.",
+          "source_page": 28
+        },
+        {
+          "number": 6,
+          "text": "Review and strengthen internal control subsequent to the NCSC accounting function reorganization.",
+          "source_page": 28
+        },
+        {
+          "number": 7,
+          "text": "Develop and implement cost allocation training for employees subsequent to the review and update of the CAM.",
+          "source_page": 28
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Revise the Dividend Policy to provide advance notice, including explanation of rationale, to the Commission whenever a dividend payment would exceed 85% of net income.",
+          "source_page": 38
+        },
+        {
+          "number": 9,
+          "text": "Include an O&M budget variance section that requires documented explanations when budget variances fall outside of defined variance tolerance levels in the O&M Policy.",
+          "source_page": 38
+        },
+        {
+          "number": 10,
+          "text": "Update the delegation of authority table to include approval levels for internal transactions.",
+          "source_page": 39
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Financial Management (Continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Revise the Treasury Operations Payment Guidelines, the O&M Policy, the Delegation of Authority Table, and Cash Collections Policy to include a responsibility and scope section.",
+          "source_page": 39
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Develop and implement a review schedule to ensure the metering and billing policies and procedures are kept current.",
+          "source_page": 59
+        },
+        {
+          "number": 13,
+          "text": "Implement various strategies to reduce arrearage levels such as increasing CAP enrollment and effective calculation of internal arrearage data to appropriately monitor and manage arrearage performance.",
+          "source_page": 59
+        },
+        {
+          "number": 14,
+          "text": "Develop and implement net collection goals with which to manage third-party collection efforts by benchmarking with similar utilities.",
+          "source_page": 59
+        },
+        {
+          "number": 15,
+          "text": "Develop and implement a documented TOS program.",
+          "source_page": 59
+        },
+        {
+          "number": 16,
+          "text": "Complete an analysis of the third-party retention application to evaluate program efficacy in reducing CSR turnover rates by December 31, 2020.",
+          "source_page": 59
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Human Resources",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Analyze influencing factors when developing future safety performance targets to ensure goals are set at challenging, attainable levels while continuing to prioritize the safety culture to bolster continuous improvement toward long-term safety performance goals.",
+          "source_page": 73
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Fleet Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Develop and regularly review a historical summary report of annual vehicle utilization data to ensure optimal fleet efficiency.",
+          "source_page": 76
+        }
+      ]
+    }
+  ],
   "structured": true
 }

@@ -22,7 +22,2387 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 183,
+  "findings": [
+    {
+      "index": 1,
+      "title": "s ........................................................................................................................ 7",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Conclusions ................................................................................................................ 33 Recommendations ...................................................................................................... 40 Appendix One: FirstEnergy Entities with Revenues <$1 Million/Year ............................... 43 Appendix Two: Organizational Health Assessment Statements .......................................... 44 Chapter III: Governance Table of Contents .................................................................................. 46",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "s ...................................................................................................................... 47",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "Conclusions ................................................................................................................ 65 Recommendations ...................................................................................................... 71 Appendix One: FirstEnergy Corp. Governance Framework ........................................................ 74 Chapter IV: Finance and Cash Management Table of Contents................................................... 76 Chapter IV: Finance and Cash Management ................................................................................ 78",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "s - - Dividend Policy and Capital Structure ................................................... 78",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Conclusions - - Dividend Policy and Capital Structure .............................................. 82 Recommendations - - Dividend Policy and Capital Structure .................................... 85 Background - - Long-Term Debt Financing ............................................................... 85",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "s - - Long-Term Debt Financing .................................................................... 86",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Conclusions - - Long-Term Debt Financing ............................................................... 91 Recommendations - - Long-Term Debt Financing ..................................................... 96 Background - - Cash Management ............................................................................. 96",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "s - - Cash Management .................................................................................. 96",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Conclusions - - Cash Management ........................................................................... 104 Recommendations - - Cash Management ................................................................. 109 Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "s - - Capital Investment Decisions/Tax Considerations ............................... 110",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Conclusions - - Capital Investment Decisions/Tax Considerations ......................... 114 Recommendations - - Capital Investment Decisions/Tax Considerations ............... 115 Chapter V: Planning and Budgeting Table of Contents.............................................................. 116 Chapter V: Planning and Budgeting ........................................................................................... 117",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "s .................................................................................................................... 120",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Conclusions .............................................................................................................. 154 Recommendations .................................................................................................... 164 Chapter VI: Staffing Table of Contents ...................................................................................... 172 Chapter VI: Staffing .................................................................................................................... 173",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "s .................................................................................................................... 175",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Conclusions .............................................................................................................. 195 Recommendations .................................................................................................... 201 Chapter VII: Compensation and Benefits Table of Contents ..................................................... 204 Chapter VII: Compensation and Benefits ................................................................................... 205",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "s .................................................................................................................... 206",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Conclusions .............................................................................................................. 221 Recommendations .................................................................................................... 224 Chapter VIII: Accounting and Property Records Table of Contents .......................................... 227 Chapter VIII: Accounting and Property Records........................................................................ 228",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "s .................................................................................................................... 228",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Conclusions .............................................................................................................. 239 Recommendations .................................................................................................... 242 Chapter IX: Controls, Sox, Auditing, and Listing Requirements Table of Contents ................. 244 Chapter IX: Controls, SOX, Auditing, and Listing Requirements ............................................. 245",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "s .................................................................................................................... 246",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Conclusions .............................................................................................................. 255 Recommendations .................................................................................................... 258 Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "s .................................................................................................................... 271",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Conclusions .............................................................................................................. 298 Recommendations .................................................................................................... 304 Chapter XI: Cost Deferrals Table of Contents ............................................................................ 309 Chapter XI: Cost Deferrals ......................................................................................................... 310",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "s .................................................................................................................... 310",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Conclusions .............................................................................................................. 315 Recommendations .................................................................................................... 315 Chapter XII: EDECA Table of Contents .................................................................................... 316 Chapter XII: EDECA .................................................................................................................. 319",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "s .................................................................................................................... 410",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Conclusions .............................................................................................................. 416 Recommendations .................................................................................................... 419 Appendix One: List of HR Policies and Procedures ................................................................... 421 Chapter XIV: Corporate Services Table of Contents ................................................................. 423 Chapter XIV: Corporate Services ............................................................................................... 424",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "s .................................................................................................................... 424",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Conclusions .............................................................................................................. 427 Recommendations .................................................................................................... 428 Chapter XV: Information Technology Table of Contents .......................................................... 429 Chapter XV: Information Technology ........................................................................................ 430",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "s .................................................................................................................... 431",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Conclusions .............................................................................................................. 438 Recommendations .................................................................................................... 440 Chapter XVI: Insurance and Risk Management Table of Contents ........................................... 441 Chapter XVI: Insurance and Risk Management ......................................................................... 442",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "s .................................................................................................................... 442",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Conclusions .............................................................................................................. 455 Recommendations .................................................................................................... 457 Chapter XVII: Legal Services Table of Contents ....................................................................... 460 Chapter XVII: Legal Services ..................................................................................................... 461",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "title": "s .................................................................................................................... 461",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Conclusions .............................................................................................................. 470 Recommendations .................................................................................................... 473 Chapter XVIII: Physical Security Table of Contents ................................................................. 474 Chapter XVIII: Physical Security ............................................................................................... 475",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "title": "s .................................................................................................................... 475",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Conclusions .............................................................................................................. 478 Recommendations .................................................................................................... 479 Chapter XIX: Records and Information Management Table of Contents .................................. 480 Chapter XIX: Records and Information Management ................................................................ 481",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "title": "s .................................................................................................................... 481",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Conclusions .............................................................................................................. 484 Recommendations .................................................................................................... 485 Chapter XX: Supply Chain Table of Contents ........................................................................... 486 Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "title": "s .................................................................................................................... 487",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Conclusions .............................................................................................................. 495 Recommendations .................................................................................................... 498 Chapter XXI: Surface and Air Fleet Management Table of Contents ........................................ 499 Chapter XXI: Surface and Air Fleet Management ..................................................................... 500",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "title": "s .................................................................................................................... 501",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Conclusions .............................................................................................................. 508 Recommendations .................................................................................................... 510 Chapter XXII: Power Supply and Market Conditions Table of Contents .................................. 512 Chapter XXII: Power Supply and Market Conditions ................................................................ 513",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "title": "s .................................................................................................................... 513",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Conclusions .............................................................................................................. 524 Recommendations .................................................................................................... 526 Chapter XXIII: MGP Remediation Table of Contents ............................................................... 528 Chapter XXIII: MGP Remediation ............................................................................................. 529",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "title": "s .................................................................................................................... 534",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Conclusions .............................................................................................................. 540 Recommendations .................................................................................................... 543 Appendix One: MGP Site Costs ................................................................................................. 544 Chapter XXIV: Non-Rate-Related Revenues Table of Contents ............................................... 545 Chapter XXIV: Non-Rate-Related Revenues ............................................................................. 546",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "title": "s .................................................................................................................... 546",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Conclusions .............................................................................................................. 548 Recommendations .................................................................................................... 548 Chapter XXV: Recommendations Made in Previous Examinations Table of Contents ............ 549 Chapter XXV: Recommendations Made in Previous Examinations .......................................... 550",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "title": "s .................................................................................................................... 550",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey Table of Contents Management Audit of JCP&L February 7, 2023",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "title": "s ............................................................................................................................ 7",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "FirstEnergy’s Electric Operating Companies ............................................................... 7 Other FirstEnergy Entities ............................................................................................ 9 Bankruptcy of the FirstEnergy Commercial Power and Energy Businesses .............. 10",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "1. FirstEnergy’s Electric Operating Companies A 1997 merger of Ohio Edison Company and Centerior Energy Corporation resulted in formation",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "title": "a pool of 80.  25 percent of them amenable to consolidation after completion of the process",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "and methods changes and examination of their implications for the management structure, would generate savings in the range of $500,000 or so for JCP&L. The process and methods changes overall have much higher potential value, and in any event should precede decisions about more marginal changes in spans of control. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "title": "s .......................................................................................................................... 47",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "FirstEnergy Corp. Board Structure ............................................................................. 47 Other Directorships..................................................................................................... 48 Top Executive Board Role ......................................................................................... 48",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "1. FirstEnergy Corp. Board Structure FirstEnergy Corp.’s Amended and Restated Articles of Incorporation, its Second Amended and Restated Code of Regulations, and a set of Corporate Governance Policies provides the framework for FirstEnergy Corp.’s board structure, size, and operation, setting forth a range of elements that typify those normally encountered and address board and committee structure and composition, membership and qualifications, and roles and authorities including as they relate to those of executive leadership, substantive and administrative procedures, and perspectives applicable in",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "title": "s - - Dividend Policy and Capital Structure ....................................................... 78",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "JCP&L Dividend Policy ............................................................................................. 78 JCP&L Equity Dividends/Removals and Injections, 2011-2021 ............................... 79 JCP&L Regulatory Capital Structure, 2011-2021 ...................................................... 80",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "title": "F. s - - Long-Term Debt Financing ............................................................................ 86",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 33,
+          "text": "JCP&L Long-Term Debt Outstanding ....................................................................... 86 JCP&L Long-Term Debt Issuances ............................................................................ 86 JCP&L LTD Documents ............................................................................................ 89",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "title": "s - - Cash Management ...................................................................................... 96",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 34,
+          "text": "Cash Management Operations .................................................................................... 96 Money Pool Operations and Participants ................................................................... 99 Short-Term Borrowing and Interest Costs ................................................................ 100",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "title": "s - - Capital Investment Decisions/Tax Considerations ................................... 110",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "FirstEnergy Tax Allocation Agreement ................................................................... 110 Federal Tax Allocations ............................................................................................ 110 Tax Impacts of Capital Expenditures ....................................................................... 111",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "title": "B. s - - Dividend Policy and Capital Structure",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 36,
+          "text": "1. JCP&L Dividend Policy JCP&L established a formal dividend policy in 2015 following BPU examination of the status of implementing recommendations from a 2011 management audit report. That report recommended establishment of a formal, written JCP&L dividend policy. JCP&L prepared such a policy in May 2015 and presented it to the BPU, which approved it in July 2015. The dividend policy included a purpose and background statement and a dividend process overview. It also defined the roles and responsibilities of JCP&L officers and board of directors for dividend payments. Factors",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "title": "F. s - - Long-Term Debt Financing",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 37,
+          "text": "1. JCP&L Long-Term Debt Outstanding JCP&L issues senior unsecured notes to provide long-term debt funding for its utility businesses. The following table shows the utility’s long-term debt issuances outstanding at July 30, 2021, including the latest issuance in June 2021. JCP&L debt outstanding totaled $2.150 billion, with a weighted average cost of 4.545 percent and an annual cost to customers of $97.0 million. JCP&L Cost of Long-Term Debt at 6/30/2021 2. JCP&L Long-Term Debt Issuances",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "title": "at S&P. S&P rated JCP&L’s senior unsecured debt at BB+, or one credit notch above its r",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 39,
+          "text": "Credit Rating, due to the subordination risk analysis commonly applied to subsidiary debt issuances. We also note that JCP&L’s S&P stand-alone credit rating (not influenced by the parent’s credit issues) as of the debt issuance stood at BBB, and its stand-alone senior unsecured debt rating would have been BBB+. The Moody’s A3 credit rating for JCP&L as of June 2021 indicates that credit issues at FirstEnergy did not significantly affect this rating, given that agency’s rating methods. At the time of the $500 million JCP&L debt issuance, a wide credit-rating dichotomy existed, with an A3 Moody’s rating,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "title": "r Ratings",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "JCP&L Stand-Alone February 8, 2019",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "title": "J. s - - Cash Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "1. Cash Management Operations A central, FirstEnergy Service Company (FirstEnergy SC) group jointly performs cash management for all of the operating companies and the holding company and other affiliates. Daily cash management operations follow a consistent, specific process repeated each business day Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "title": "N. s - - Capital Investment Decisions/Tax Considerations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 48,
+          "text": "1. FirstEnergy Tax Allocation Agreement FirstEnergy allocates its consolidated income taxes in accordance with the FirstEnergy Corp. and Subsidiary Companies Intercompany Income Tax Allocation Agreement dated January 31, 2017, signed by both the JCP&L President and Controller. An original tax allocation agreement that became effective approximately 20 years ago reportedly employed the same basic concepts and mechanisms as its successor, which remains in effect today. Various amendments to the agreement have added or removed participant companies, which includes all of the FirstEnergy regulated and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "title": "s ........................................................................................................................ 120",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 49,
+          "text": "Planning .................................................................................................................... 120 Long-Term Planning and Capital Allocation ........................................................... 127 Addressing Risk ........................................................................................................ 134",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 50,
+          "text": "a. Planning Organizations Through mid-2021, strategic planning fell under the Senior Vice President, Strategy, who headed a strategy group formed by FirstEnergy in 2015. The senior vice president reported directly to the Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "title": "s ........................................................................................................................ 175",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 51,
+          "text": "Workload and Staff Planning ................................................................................... 175 FE Tomorrow ........................................................................................................... 175 FE Forward ............................................................................................................... 177",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 52,
+          "text": "1. Workload and Staff Planning Our inquiry into generally applicable requirements, systems, and methods for workload and staffing planning (including means for determining both expected workloads and associated personnel requirements) produced only a general response. It does not appear that FirstEnergy takes an analytical approach to formulating staffing plans driven by specific forecasts of workloads or changes in them from year to year. We did find a reasonably typical process for controlling staffing additions as vacancies occurred or when new needs arose. Filling open JCP&L positions,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "title": "o Inspection vs.  Close: success defined as field completion of work orders within",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 53,
+          "text": "30 days of inspection o Actual vs. Standard Hours: success defined as timesheet charges within 50 percent of o Departure Time: success defined as vehicle departure from shop within 60 minutes of The next table summarizes JCP&L measures and compares them with group average and low",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "title": "Management-provided data provided under JCP&L Overtime in the s section above shows",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "JCP&L overtime consistently at the high end of the FirstEnergy operating company range. 1. FirstEnergy responded timely and appropriately to the need to transform its common service organizations to reflect the departure of the commercial power and energy businesses following the bankruptcy of the entities that ran them. A transition services agreement provided for continuation of services to the FES Debtors involved in bankruptcy. The agreement covered the provision of services through remaining bankruptcy",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "title": "The Reported Operating Company Productivity Values table presented in the last of the s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 55,
+          "text": "sections above highlights both concerns addressed here - - what management measures and relies on, and what the data show about comparative JCP&L performance. The measures are not extensive and focus less on drivers of personnel-related costs and productivity when compared with, for example, the vehicle and equipment metrics management employs (detailed in the Surface and Air Fleet Management chapter). Moreover, comprehensive or not, the data shows large and persistent negative gaps in JCP&L measurements when compared with those of the operating companies. Regular reports of that data through the year show statements of general",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "title": "provided and described in the JCP&L Overtime section of the preceding s portion of this",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 56,
+          "text": "report showed comparatively high levels. JCP&L also stood among the half or so of the operating companies for which productivity had not yet been examined. Even with the generalized data, variances from what management reported to us, and no detailed analysis of productivity at JCP&L, the analysis found a potential for $25 million or more in O&M as part of FE Forward Phase I analysis. Perhaps most significantly, management discontinued use of the existing performance metrics at the end of 2021. Replacement measures remained incomplete at our last report in mid-March",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "title": "s ........................................................................................................................ 206",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 57,
+          "text": "Compensation Organization ..................................................................................... 206 Compensation Philosophy ........................................................................................ 207 Job Levels ................................................................................................................. 208",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 58,
+          "text": "1. Compensation Organization Human Resources (HR) activities at FirstEnergy, which include compensation, fell under the Senior Vice President & Chief Human Resources Officer at that time. The next table shows the HR organization. Company comments on a draft of this report indicated that the organization has FirstEnergy Human Resources Organization First Energy Compensation Organization",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "title": "s ........................................................................................................................ 228",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 59,
+          "text": "Organization and Staffing ......................................................................................... 228 Accounting Systems ................................................................................................. 229",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "title": "Work  Management ......................................................................................... 231",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 60,
+          "text": "Monthly Book Close Process ................................................................................... 231 Accounting Policies and Procedure .......................................................................... 232 Accounting Controls ................................................................................................. 233",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 61,
+          "text": "1. Organization and Staffing The FirstEnergy Vice President, Controller & Chief Accounting Officer (CAO) has executive responsibility for accounting functions. FirstEnergy performs them on a consolidated basis for all of its businesses, entities, and operations, while assigning resources to work directly with operating companies, including JCP&L. Four Assistant Controllers report to the CAO. First, the resources in the organization of the Assistant Controller - Corporate (50 in total) include among them a 28- person group assigned general accounting (which includes accounts payable and regulatory",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "title": "FirstEnergy’s Work  Management Process accumulates costs by project, on-going activity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 62,
+          "text": "sets, and supports project, program, and activity control and monitoring. Work order systems accumulate costs (both capital and expense) from various sources, including employee time sheets and expense reports, overheads, allocations, vendor invoices, and journal entries. Separate and distinct accounting elements maintain these costs, allowing aspects of FirstEnergy’s SAP capabilities to drive costs to the right accounts in the right company. SAP employs three types of cost collectors used in these manners at FirstEnergy. The first collector, Cost Centers, consists of units that have assigned responsibility for costs,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "title": "their own; i.e., to the one(s) for whom they perform work. The second collector, s, includes",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 63,
+          "text": "sales, service, and other orders to associate specific cost center activities with specific purposes. The third collector, WBSs, collects costs for capital projects or for other projects exceeding defined dollar thresholds or durations. The term “WBS” derives from the name of a tool, work breakdown structure, used to define, categorize, break down, and organize complex work into a structure that supports successful delivery of the expected output(s). The SAP system also automatically captures the home (service providing) entity and the charged (service receiving entity). Recording transactions using these entity codes and cost collectors",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "title": "2. The Work  Management Process appears well designed and effective in assigning",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 64,
+          "text": "costs to the correct company and account. The three cost collectors utilized by FirstEnergy work in conjunction with SAP to drive costs to the correct accounts and companies. This design is important to ensure that no cross-subsidization from the regulated utilities to the unregulated companies exists. Process design also seeks to provide a complete audit trail of all transactions. As noted in the Affiliate Relationships and Cost Allocation Chapter of this Phase Two report, enhancements could better provide monthly summaries of affiliated charges, however nothing came to our attention that the underlying capture",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "title": "s ........................................................................................................................ 246",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 65,
+          "text": "Control Framework................................................................................................... 246 Sarbanes Oxley ......................................................................................................... 246 Internal Auditing....................................................................................................... 249",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 66,
+          "text": "1. Control Framework FirstEnergy adopted the 2013 COSO Internal Controls – Integrated framework for the year ended December 31, 2014. FirstEnergy’s entity level controls and sub-process controls map to the 17 COSO principles within the five key COSO components of Control Environment, Risk Assessment, Control Activities, Information and Communication, and Monitoring to ensure appropriate COSO coverage. 2. Sarbanes Oxley",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "title": "Evaluation of s Process.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 67,
+          "text": "Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey Controls, SOX, Auditing, and Listing Req. Management Audit of JCP&L February 7, 2023",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "title": ", and the failure to flag large payments split to avoid the Level of Signature Authorization",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 68,
+          "text": "limits. The other permitted individuals with approving or posting authority to the general ledger to change, edit, and post a document without return to the preparer, creating a segregation of duties issue. Our review of SOX reports back to 2017 found no other reported material weaknesses or significant deficiencies. d. SOX Reporting The SEC requires all registrants to complete a quarterly certification of the adequacy and effectiveness of internal controls for the quarter. The FirstEnergy Corp. CEO and CFO sign the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "title": "s ........................................................................................................................ 271",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 69,
+          "text": "Governing Documents .............................................................................................. 271 Affiliate Transactions ............................................................................................... 274 Allocation Factors..................................................................................................... 278",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 70,
+          "text": "1. Governing Documents a. Cost Allocation Manual The Cost Allocation Manual (CAM) provides the primary source of governance and guidance for charging costs among affiliates. Management began use of the current FirstEnergy CAM as a result of the combination of General Public Utilities (GPU) and FirstEnergy Corp., following U.S. Securities and Exchange Commission approval in June 2003. GPU Service, Inc. had operated as a direct service company subsidiary of GPU. FirstEnergy SC was organized to operate as the service",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "title": "CAM occurred in 2014, when management undertook a Financial Transformation Project.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 71,
+          "text": "ways to use technology to improve finance and accounting process efficiency and effectiveness served as a prime goal of that project. No subsequent review of CAM cost allocation factors has occurred since, although SOX controls produce annual reviews of allocation factors. Management reported work underway by the Legal Department with the organization under the Vice President Compliance (both FirstEnergy wide common service groups) to create a policy calling for annual CAM review and update, with a recommendation expected in the third quarter of 2022. Current expectations anticipate no changes to the allocation factors, however.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "title": "with  No. 890 obligations regarding planning for Supplemental Projects. That order requires",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 72,
+          "text": "coordinated and open local and regional planning processes that give stakeholders opportunity for meaningful input. PJM and the transmission owners in its region filed PJM Tariff amendments, including Attachment M-3 revising methods and procedures for addressing those obligations. The FERC compelled changes it deemed necessary to make Attachment M-3 provisions compliant with",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "title": "No. 890, accepting revised M-3 planning process provisions in September 2018.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 73,
+          "text": "M-3 process design seeks an “open and transparent framework” for planning supplemental projects. It employs a defined sequence of events designed to bring together the PJM transmission owners, which include JCP&L, and stakeholders: • PJM transmission owners describe for stakeholders the criteria, models, and assumptions they use for planning at an “Assumptions Meetings” • Transmission owners present transmission needs and discuss them and stakeholder needs at a “Needs Meeting”",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "title": "s ........................................................................................................................ 310",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 74,
+          "text": "Storm Damage .......................................................................................................... 310 Other Deferrals in Base Rates .................................................................................. 311",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "title": "Compliance with Policies and BPU s .............................................................. 313",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 75,
+          "text": "Account Activity Tracing ......................................................................................... 313 Access to Internal Auditing Work Addressing Storm Cost Deferrals ...................... 314 Conclusions .................................................................................................................. 315",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 76,
+          "text": "The BPU first authorized deferred accounting for storm damage expense in 1983 in Docket 831- 110. The Stipulation of Settlement stated that “the Company will defer actually incurred storm damage expenses on its books and that the appropriate amortization period for such expenses will be addressed on a rate case by rate case basis.” The schedule of activity management provided shows a balance of deferred costs at January 1, 2011, of $20,266,843. Board of Public Utilities",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "title": "deferral to future rate cases. The September 14, 2021 BPU  in Docket A020060471 extended",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 77,
+          "text": "the deferral period to December 31, 2022. First recording of associated costs in the deferral account came in June 2020. No amortization has yet occurred, pending presentation of the costs for recovery in a rate proceeding. The balance in this account stood at $15,322,859 as of December 31, 2020, and $18,192,535 as of June 30, 2021. b. Management Audit New Jersey Register, Section NJR 4812-164 sets forth guidelines relating to management audits. The May 17, 2004 BPU order in the 2002 base rate case addressed recovery of management audit",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "title": "By  dated August 1, 2003, the BPU required the Company to reduce existing depreciation",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 78,
+          "text": "rates and related recovery of depreciation expense to exclude the embedded cost of removal component, and the separate expensing of actual cost of removal required. The resulting excess depreciation provision related to past recovery of cost of removal became recognized as a regulatory liability subject to review in future base rate cases. The 2012 base rate case authorized the amortization of $107.2M over 28.5 years. The 2016 base rate case produced a revision in average remaining life of the property to 34.3 years. Amortization underwent adjustment to $260,346 per year, effective January 1, 2017. The 2020 base rate case provided for amortization",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "title": "3. Compliance with Policies and BPU s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 79,
+          "text": "The BPU does not have separate regulations governing the accounting or ratemaking treatment of deferred storm costs or other deferred costs. Rather, the BPU determines the appropriate treatment of such costs on a case-by-case basis. The last two base rate cases (2016 and 2020) both concluded with a stipulated settlement. In such settlements, final orders do not fully detail contributions of all issues, unlike what ordinarily occurs in fully litigated cases. In such cases, JCP&L takes the position, in the absence of contrary information, that the dimensions of issues, as filed by the company, become approved parts of the stipulation.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "title": "the reason for the asset/liability and traced the activity in each account to: (a) BPU s, where",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 80,
+          "text": "details existed in the orders, and (b) the Interpretation Memos maintained for each account. We Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey Management Audit of JCP&L",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "title": "• New Jersey Board of Public Utilities’ Storm  Requirements Project – Privileged and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 81,
+          "text": "Confidential – Prepared at the Request of Counsel,” dated August 2, 2013",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "title": "• New Jersey Board of Public Utilities’ Hurricane Irene and Hurricane Sandy s –",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 82,
+          "text": "Privileged and Confidential – Prepared at the Request of Counsel,” dated June 24, 2014. We asked for the reasons for conducting two audits involving BPU orders regarding storm damage subject to attorney-client privilege. Management’s response stated that their performance came as part of a legal proceeding before the BPU and were undertaken at the direction of counsel. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "title": "recommendations, in accordance with the timelines, contained in the BPU s.” Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 83,
+          "text": "identified the proceedings to which they referred as: • I/M/O The Board’s Review of the Utilities’ Response to Hurricane Irene in BPU Docket No. E011090543, order dated January 23, 2013 • I/M/O The Board’s Review of the Utilities’ Response to Hurricane Sandy, BPU Docket",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "title": "No. E0012111050,  dated May 29, 2013.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 84,
+          "text": "1. JCP&L appropriately classified the costs incurred for storm damage and other costs deferred for future recovery as Regulatory Assets and Regulatory Liabilities. Our review of the detail in the storm damage subaccount and other subaccounts in the regulatory asset and regulatory liability account, combined with the information contained in the two storm damage orders, and the three rate cases during the time period examined revealed no exceptions to terms prescribed by the BPU orders or company policy or procedure documents, or any",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "title": "s .................................................................................................................... 320",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 85,
+          "text": "Conclusions .............................................................................................................. 323 Recommendations .................................................................................................... 324 FirstEnergy and JCP&L Competitive Services ............................................................ 325",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "title": "s .................................................................................................................... 326",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 86,
+          "text": "Conclusions .............................................................................................................. 328 Recommendations .................................................................................................... 329 Non-Discrimination Standards (Section 14:4-3.3) ....................................................... 329",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "title": "s .................................................................................................................... 405",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 87,
+          "text": "Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey Management Audit of JCP&L February 7, 2023",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "title": "s .................................................................................................................... 406",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 88,
+          "text": "Conclusions .............................................................................................................. 406 Recommendations .................................................................................................... 406 Dispute Resolution (Section 14:4-3.8) ........................................................................ 406",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "title": "s .................................................................................................................... 407",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 89,
+          "text": "Conclusions .............................................................................................................. 407 Recommendations .................................................................................................... 407 Violations and Penalties (Section 14:4-3.9) ................................................................. 407",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "title": "s .................................................................................................................... 408",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 90,
+          "text": "Conclusions .............................................................................................................. 408 Recommendations .................................................................................................... 408 Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "title": "• s associated with books and records and chart of accounts requirements: included in",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 91,
+          "text": "the Accounting and Property Records Chapter of this Phase Two report • Customer service performance and training: included in the Customer Service Chapter of our Phase One report • Finance and money pool issues: included in the Finance and Cash Management Chapter of this Phase Two report • Independence and segregation of utility/non-utility planning: included in the Affiliate Relationships and Cost Allocation, Organization and Executive Management,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 92,
+          "text": "Responsibility for JCP&L’s Compliance Plan and its enforcement historically rested with the FirstEnergy-wide Legal and Regulatory Affairs Departments, who received support from other functional groups as various types of transactions contemplated by the Standards dictated their involvement. The Corporate Secretaries of JCP&L and FirstEnergy Corp. served as signatories and provided the legal certifications that the Standards required: Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 93,
+          "text": "a. First Energy Competitive Service Offerings Our prior audits have disclosed product and service offerings made by New Jersey utility company parents that compel their treatment as RCBSs in cases where the company did not consider them so. We requested that management provide separately for JCP&L and each of its affiliates a list of the products and services it offered from January 1, 2010, through December 31, 2020. This information would allow us to review each service to ensure that the company appropriately considered each a competitive service, or not. Management’s response included the following",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "title": "at Grid Assurance’s original cost. The BPU’s  found the agreement in the public interest.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 94,
+          "text": "b. JCP&L Competitive Service Offerings JCP&L began in 1993 to provide a tariffed electronics protection service called Consumer Electronics Protection Services (CEPS). JCP&L considers this service to fall under the “existing products and/or services” definition of the Standards. JCP&L received BPU approval to provide",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "title": "September 1994 Supplemental . The applicable provision defines “existing products and/or",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 95,
+          "text": "services” as those offered prior to January 1, 1993, or that have been approved by the BPU prior to February 9, 1999. JCP&L closed enrollment to any new customers on March 3, 1999. JCP&L continues to provide the service to pre-existing customers, which decreased from 11,374 in 2010 to 5,318 in 2020. Revenues from the program declined from $490,610 to $284,698 during that same period. The closing of the offering to new customers makes some EDECA requirements inapplicable and removes incentives for or benefits from undertaking a number of others. We generally found",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "title": "owned in part by FirstEnergy Transmission. The BPU’s  approving the agreement found it",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 96,
+          "text": "Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey Management Audit of JCP&L February 7, 2023",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 97,
+          "text": "We requested a copy of all print, radio, and television advertisements run by FirstEnergy, JCP&L, or any affiliate. Management was able to provide materials for all but the first year of the EDECA audit period, citing the lack of availability of 2010 information. The next table summarizes the campaigns, their purposes, and the years active. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 98,
+          "text": "The data gathering and field work summarized in the Affiliate Relationships and Cost Allocation and Power Supply and Market Conditions Chapters of this Phase Two report summarize our review of the transactions between JCP&L and affiliates. We examined whether those transactions violated the requirements of this provision of the Standards. The Plan summarized this section of the Standards, and noted overall compliance with them, noting that with “certain exceptions, transactions between JCP&L and its RCBS are prohibited by the Standards” and continued to describe the exceptions allowed and the governing provisions.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 99,
+          "text": "The findings set forth for Section 14:4-3.3(b), (d), and (e) in the report sections that immediately precede and follow this one fully address those relevant here. The conclusions set forth for Section 14:4-3.3(b), contained in the immediately preceding section of this chapter fully address those relevant here. e. Recommendations We have no recommendations regarding the requirements of this provision of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 100,
+          "text": "The Plan summarizes the applicable Standards and acknowledges the posting requirements necessary in the event of a supply, capacity, service, or information offering by JCP&L to Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 101,
+          "text": "The Plan notes that the Standards govern any discounts or waivers of charges or fees from JCP&L to an RCBS. JCP&L provided no tariffed services to any affiliates during EDECA audit period, nor did it provide any discounts, rebates, or waivers to any affiliate., Neither FirstEnergy or JCP&L offered to customers of any of RCBSs charging or financing of products or services on JCP&L 14. JCP&L offered no audit period discounts or waivers to tariffed services provided to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 102,
+          "text": "We explained in the preceding discussion under Section 14:4-3.3(h) that JCP&L did not offer discounts or waivers to RCBSs of its holding company. The absence of offerings that qualify negated any reporting and documentation. The Compliance Plan summarizes this section of the Standards where it addresses 14:4-3.3(h) and confirms JCP&L’s understanding that in the event that such offerings do occur, it must document the cost differential made available to any affiliate in the Annual Discount Report.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 103,
+          "text": "We found, as described above in addressing Section 14:4-3.3(h) of the Standards, that JCP&L provided no tariffed services to any affiliate during the EDECA audit period. The Compliance Plan notes JCP&L’s requirements to apply the provisions of its tariff on a non-discriminatory basis. It goes on the state that JCP&L will do so. 18. We found no evidence of discriminatory application by JCP&L in applying tariffs to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 104,
+          "text": "The Compliance Plan acknowledges JCP&L’s requirements to apply its tariff provisions to all market participants on a non-discriminatory basis. It further states that management will in fact do so. As we have noted, JCP&L provided no waivers or discounts to affiliates for tariffed services during the EDECA audit period. 20. We found no evidence of JCP&L failing to strictly enforce the provisions in its. JCP&L did not provide affiliates with tariffed services during the EDECA audit period and we",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 105,
+          "text": "We requested a list of all new or changed service requests that JCP&L received from any holding company RBCS during the EDECA audit period. Management responded that no RBCS made such a request. Further, management stated that it provided no services to FES or Suvon during the EDECA audit period. Management did report that JCP&L charged ‘’’’’’’’’’ ’’’’’’’’’’’’’’’’’ ‘’’’’’’’’’’’’’’’’’’’’’’’’’’ ‘’’’’’’’’’’’’’’’’’’’’’’’’’’ ‘’’’’’’’’’ performed under a standard agreement under which all ‘’’ ’’’’’’’’’’’’’’’’’’’’’’’’ ‘’’’’’’’’’’’’’’’’’’’’’’’’’’ ‘’’’’’’’’’’’’’’’’’’’’’’’’’’. JCP&L invoiced ‘’’’’ for the services. Management reported that it did not believe that ’’ ‘’’’’’ ‘’’’’ ‘’’’’",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 106,
+          "text": "The discussion earlier in this chapter addressing Section 14:4-3.3(a) of the Standards describes our finding that JCP&L did not represent in its customer communications (including web and advertising material we reviewed) an implication of preferential treatment for any PUHC RCBS or the customers of any PUHC RCBS. We address later (in Section F.14 of this chapter) related findings from our review of bill inserts and eBill materials, as subsequent portions of the Standards apply specific prohibitions to customer bills. These conclusions also apply to any conditions or tying of the provision of utility services or discounts to the taking of any products from a PUHC",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 107,
+          "text": "JCP&L’s Compliance Plan recites this provision of the Standards and notes its obligation to make any customer assignments on a non-discriminatory basis only. JCP&L reported that it made no assignments of customers to any of its RBCSs during the EDECA audit period. 26. The Compliance Plan adequately addresses this section of the Standards. The Plan addresses this provision of the Standards and acknowledges JCP&L’s requirements regarding any transfers of customers to an RBCS.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 108,
+          "text": "As summarized in the Planning and Budgeting chapter of this Phase Two report, we reviewed the relevant JCP&L and FirstEnergy strategic and business plans for adherence to these provisions, and found that the plans complied with this provision of the Standards. We also reviewed the information provided during the planning process to ensure that competitively sensitive information such as market analysis, customer usage information, and end use information are not inappropriately shared. Section D.10 above which includes our findings regarding the tying prohibitions in the Standards",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 109,
+          "text": "We examined customer call center interactions (see our Phase One report Chapter Ten, Customer Service) finding no instances of advice or assistance offered regarding relevant customer inquiries. The findings set forth in Section E.3 of this chapter discuss the issues surrounding this provision of the Standards as they pertain to supplier choice. Other sections of this chapter provide additional, related findings: • Section D.1 adressing14:4-3.3(a) through (c) • Section D.10 addressing 14:4-3.3(m)",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 110,
+          "text": "We noted earlier in this chapter that our examination found no JCP&L provision of tariffed services and no discounts, rebates or waivers of charges to affiliates during the EDECA audit period. The Plan discusses this provision of the Standards and addresses its application to any discount, waivers of charges, penalties, or fees offered to an RBCS. The Plan includes in its discussion of this provision of the Standards the relevant posting and reporting requirements and data elements those must include.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 111,
+          "text": "The findings set forth in the discussion of our examination under Section 14:4-3.3(q) apply here. The conclusions set forth in the discussion of our examination under Section 14:4-3.3(q) apply e. Recommendations We have no recommendations relating to this provision of the Standards. 16. Compliance with FERC Record Keeping Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 112,
+          "text": "JCP&L made no offering of discounts, rebates, or waivers to any customers, including its PUHC and RCBSs of its PUHC, during the EDECA audit period, therefore Section 14:4 3.3(q) did not apply. We reviewed JCP&L’s Compliance Plan and found no reference to this section of the 34. JCP&L made no audit period offerings requiring compliance with Section 14:4-3.3(s) of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 113,
+          "text": "JCP&L’s Plan acknowledges this provision’s restrictions and describes them completely and accurately. Sections D.1, D.2, and E.5. of this chapter discuss controls applicable to requests by affiliates for access to customer information. The Plan further requires the provision of any such data to occur under the same terms and conditions for all parties, including affiliates. We requested an explanation of the types of information interpreted as requiring customer permission before release to an affiliated entity. Management cited the definition described in N.J.A.C. 14:4-1.2:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 114,
+          "text": "JCP&L’s Plan acknowledges the existence of the restrictions surrounding the provision of non- customer specific non-public information. The Plan describes the nuances included in this provision of the Standards, the instances the Standards permit, and the posting requirements required. Management reported that it made no releases of non-customer specific non-public information acquired to any affiliated entity or competitive business segment. 38. The Compliance Plan addresses Section 14:4-3.4(b) of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 115,
+          "text": "The Plan identifies the need for JCP&L’s supplier lists to comply with this provision of the Standards and suggests that management’s practice involves providing customers with the BPU’s own list as “the best method of assuring that all of the Board’s expectations are met,” including the requirement that provided materials alphabetize approved suppliers. We summarize findings about other customer choice issues in Section D.10 of this chapter (regarding Section 14:4-3.3(m) of the Standards). We requested a list of TPSs provided to customers during the January 2010 through December",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 116,
+          "text": "We requested each instance where JCP&L provided non-public customer information it obtained from an unaffiliated supplier to either FirstEnergy or a FirstEnergy RCBS. Management reported that it has not provided and does not provide such information to FirstEnergy or any non-utility affiliate, including FirstEnergy RCBSs. We therefore had no reason to address the affirmative authorization requirement. The Plan responds to Section 14:4-3.4(d) of the Standards and includes an adequate and appropriate interpretation and explanation regarding what JCP&L must do to remain compliant.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 117,
+          "text": "During the EDECA audit period, JCP&L neither solicited non-public data or information from unaffiliated suppliers for release to an affiliate nor did it release any such information. The current Compliance Plan recites this provision of the Standards. Also see our findings in Section E.4. Conclusions #42, 43, and 44 in Section E.4 address this provision. e. Recommendations See Recommendation #7 in Section E.4.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 118,
+          "text": "The findings described under Section 14:4-3.3(n) apply here. The conclusions described under Section 14:4-3.3(n) apply here. e. Recommendations We have no recommendations regarding this provision of the standards. 7. Supplementing Information About Affiliated Providers a. Statement of Applicable Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 119,
+          "text": "The findings described under Section 14:4-3.3(n) apply here. The conclusions described under Section 14:4-3.3(n) apply here. e. Recommendations We have no recommendations regarding this provision of the standards. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 120,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 120,
+          "text": "The Plan covers subsection (h) of this portion of the Standards jointly with its discussion of the following two subsections (i) and (j). All three deal with elements of document retention and other record keeping requirements. The Plan states that: JCP&L will maintain complete and accurate records of all tariffed and non-tariffed transactions with its RCBS, including all waivers of tariff or contract provisions. Such records will be available for review by the Board and/or the Division of Rate Counsel on 72 hours notice. JCP&L will maintain them in accordance with the requirements of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 121,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 121,
+          "text": "The applicable NARUC regulations prescribe minimum category and sub-category retention requirements to documents under the following classifications: • Corporate and General • Plant and Depreciation • Information Technology Management • Purchases and Stores • General Accounting Records",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 122,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 122,
+          "text": "This provision requires JCP&L to make transaction records available for BPU and Ratepayer Advocate review upon 72 hours’ notice. Neither the BPU nor the Division of Rate Counsel reported any meaningful restrictions and limitations in dealings outside of this audit. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 123,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 123,
+          "text": "The findings presented in our discussion of Section 14:4-3.4(h) and (i) apply here. The conclusions presented in our discussion of Section 14:4-3.4(h) and (i) apply here. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 124,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 124,
+          "text": "JCP&L existed and operated as a distinct corporate entity during the EDECA audit period, as it has historically, and as it will most likely do in the future. Our examinations in several other audit tasks, including Executive Management and Corporate Governance and Affiliate Relationships and Cost Allocation Methods, discuss our findings and conclusions regarding the sufficiency of management’s organization structure and utility, particularly JCP&L-specific. The current Plan includes discussion of this provision of the Standards, notes the requirement for JCP&L to exist as a separate corporate entity, and includes a statement that JCP&L and its RCBS are and will",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 125,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 125,
+          "text": "We found separate books and records for the required entities. JCP&L’s Plan discusses this provision jointly with the next two sections, which also pertain to books and records maintenance. 53. FirstEnergy and JCP&L complied with the provisions of Section 14:4-3.5(b) of the Standards during the audit period. Each affiliate’s books and records were kept separately. The Accounting and Property Records Chapter of this Phase Two report further addresses accounting books and records.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 126,
+          "text": "The JCP&L chart of accounts is consistent with USOA. The current Plan covers Sections 14:4- 3.5(b), (c), and (d) jointly. Our discussion above of Section 14:4-3.5(b) addresses these provisions. We found the Plan’s coverage of each of these three sections appropriate. 55. JCP&L complied with the requirements of Section 14:4-3.5(c) during the audit period. Our work in examining the Accounting and Property Records portion of this audit’s scope found management’s maintenance of books in records in accord with the USOA.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 127,
+          "text": "The Compliance Plan discusses Section 14:4-3.5(d) of the Standards and states that JCP&L’s books and records are open for examination by the BPU, as are the books and records of its RCBS, to the extent necessary to ascertain compliance with the Standards with respect to its transactions, interactions, or relations with JCP&L, if any. Absent from the plan is JCP&L’s acknowledgment of transactions with its PUHC - - which the Standards do include as relevant. Management provided documentation and records regarding numerous JCP&L transactions with FirstEnergy and various affiliates. It also in several important areas of this audit’s scope, declined",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 128,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 128,
+          "text": "We sought to review the guidance given to and oversight exercised over database owners regarding access to their databases to ensure compliance with the provisions of the Standards addressing information sharing among affiliates and organizational units. FESC manages overall IT security on a FirstEnergy-wide basis. Management identified its corporate-wide Sensitive Data Tracking System and indicated its use to identify the business owner of each sensitive system and which IT group maintained ownership responsibility. Management used Microsoft Identity Manager to assign access and designate security groups and allowable",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 129,
+          "text": "JCP&L offered no joint products or services with a related competitive business segment of its public utility holding company during the time period specified. Therefore, we had no need to examine the terms and conditions of any such offerings for compliance. The Compliance Plan includes Section 14:4-3.5(f) of the Standards in a grouping that discusses its approach to joint purchases - - which subsections (g) and (h) of the Standards introduce. The Plan does not however include discussion of joint product and services offerings.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 130,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 130,
+          "text": "Section 14:4-3.2 of the Standards provides the following definitions relevant to Section 14:4- “Joint purchases” means purchases made by a parent or holding company or affiliate thereof for use by one or more affiliates, the fully allocated costs of which are allocated to be paid proportionally by the affiliates, based upon utilization. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 131,
+          "text": "See the findings in Section F.7. above regarding the lack of any EDECA audit period transactions of the type that would apply to this portion of the Standards. The Compliance Plan summarizes the provision of the Standards, including the treatment of costs associated with any such purchases. 65. No transactions subject to this portion of the Standards occurred during the audit period. As we described in Section F.7 above, JCP&L made no, and FirstEnergy engaged JCP&L in no transactions that would trigger this portion of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 132,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 132,
+          "text": "We conducted the activities described in our examinations under other provisions (see, for example, Sections E.3, E.12, and F.5.), to address the issues relevant to this provision as well. The findings in those sections address our review standards for this portion of the Standards. We carried out elements of our work in this area in other portions of the management audit, which we documented in the Affiliate Relationships and Cost Allocation and Planning and Budgeting Chapters of this Phase Two report. We reviewed the strategic and business plans of JCP&L. We found the business plans separate from those of affiliated companies and we did not identify any",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 133,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 133,
+          "text": "Section D.1 of this chapter summarizes our review of the FirstEnergy entities’ website and use of the disclaimer prescribed by the Standards. Management stated that neither FES nor Suvon used or traded upon JCP&L’s name or logo in its advertising and other related material. Our review of websites and marketing material observed no such occasions. Management’s response did not provide the requested production of business cards. In response to a follow-up request seeking them, management observed that all employees that support Suvon are FESC employees, and provided samples of officer and non-officer FESC business cards. Management also provided one",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 134,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 134,
+          "text": "The findings we made in relation to Sections 14:4-5.3(a) and (b) regarding affiliate preferences and communications with customers apply here. The Plan’s heading for its joint treatment of Section 14:4-3.5(k) through (o) of the Standards references Section (m), but its support text includes no reference or guidance to this particular portion of the Standards. 72. The Compliance Plan does not address directly Section 14:4-3.5(m) of the Standards or provide direct guidance regarding its provisions. (See Recommendation #12)",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 135,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 135,
+          "text": "We reviewed copies of JCP&L customer bill insert materials provided by management from 2010 through 2020. These comprised the types of materials we have typically seen in our review of other New Jersey EDCs and LDCs. We observed no references to services offered by FirstEnergy or non-utility affiliates. The materials covered items such as: • Communications Paths (phone information, website links, and for later periods social",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 136,
+      "title": "• Safety s, Tips, and Warnings (dig safe, downed power lines, storm and cold weather)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 136,
+          "text": "• Bill Payment Options and Payment Assistance Programs • Life-Sustaining Equipment Registration and Information • Notifications of Future Field Work (e.g., vegetation management) • Guidance to Customers on Understanding their Bill (meter reading, sample bills with • Information Summarizing the BPU’s “Bill of Rights.” Management reported that it offered no space in its billing envelope or in other written",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 137,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 137,
+          "text": "The Plan summarizes this portion of the Standards and the four listed sub-parts. JCP&L states that it will not engage in the types of join activity excluded by the Standards, and that it does not subsidize research and development or advanced technology research costs or fees. We requested a list of all trade shows, conventions, fairs and similar events, charitable events, promotional events, foundation events, sporting or other entertainment events attended commonly by JCP&L and any affiliate for the period from January 2010 through December 2020. Management’s response provided a list of events, which indicated FirstEnergy External Affairs as",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 138,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 138,
+          "text": "The Plan notes the employee-sharing restrictions of this provision and that no RCBS may use JCP&L assets or assets common to JCP&L in the provision of non-competitive utility and safety Management reported that no use of joint employees occurred outside of permitted use to provide services whose costs get billed or allocated to the entities which receive their services. The only joint use assets management identified for were various office buildings and call centers owned by an affiliate and at which JCP&L paid rent or at JCP&L’s Morristown General office,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 139,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 139,
+          "text": "The Plan addresses this portion of the Standards and acknowledges the restrictions it imposes on the sharing of officers and directions between JCP&L and a holding company RCBS. The Plan states that JCP&L will not share officers or directors in a manner that violates this portion of the We requested a list that identified for the EDECA audit period each FirstEnergy entity’s directors and officers, including their name, title, and the date and nature of each change. After receipt of the requested information, we screened that data and identified eight individuals who, at any point",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 140,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 140,
+          "text": "The following employee transfers to and from JCP&L occurred during the EDECA audit period. Employee Transfer Summary Transfers from JCP&L to an RCBS and vice versa activate additional provisions of the Standards. Eight such transfers occurred during the EDECA audit period, as the previous table shows. The first requires management to make a public posting and do so withing three business days. Management has no records indicating it made the required public postings at all, let alone within the required time period. The second requires that JCP&L make annual reports to the BPU",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 141,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 141,
+          "text": "Management reports no occasions during the EDECA audit period where it made temporary assignment of a JCP&L employee to an affiliate or when it gave a JCP&L employee temporary employment by an affiliate. Management employs procedures and controls to prevent the unauthorized use of utility information by employees who move from employment with JCP&L to an affiliate. The Monitoring of Employee and Contractor Transfers with FERC Indicator Changes policy, applied. This “Monitoring…” policy incorporates another, Corporate Policy 302, FirstEnergy Regulatory Compliance Access Policy Addressing Employee and Contractor",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "title": "Standards. JCP&L granted these to FTS pursuant to a 1998 BPU  in Docket No. EE9705035",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 142,
+          "text": "and they included a Capacity Use and Service Agreement, a Facilities Lease and indefeasible Right-of-Use Agreement, and an Agency Agreement. No other licenses, easements, or other encumbrances of utility assets between JCP&L and FirstEnergy RCBSs occurred during the EDECA audit period. The Plan addresses this provision of the Standards and acknowledges the requirements it imposes on transfers, leases, rentals, licenses, easements, and other encumbrances of assets. The Plan states that JCP&L will comply with the book and fair market value provisions in the event that any",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 143,
+      "title": "in the EDECA audit period and were subject to a BPU .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 143,
+          "text": "Management sought and received BPU approval for agreements which occurred in 2010 through 2012 with a now defunct RCBS. No subsequent types of activity involving any other RCBS d. Recommendations We have no recommendations regarding the requirements of this provision of the Standards. G. Utility RCBS Standards (Section 14:4-3.6) Section 14:4-3.6 of the Standards applies to any competitive services offered by the utility or a",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 144,
+          "text": "About 5,000 JCP&L customers continued to take service under the Conditioned Power Services program, which closed to new customers on March 3, 1999. See Conclusion #6 and Recommendation #3 in Section D above. H. Regulatory Oversight (Section 14:4-3.7) Section 14:4-3.7 of the Standards applies to the annual filing requirements for the Compliance Plan, its contents, and audits of compliance with the Plan. 1. Statement of Applicable Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 145,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 145,
+          "text": "JCP&L made the required annual Compliance Plan filings. Our review of the Plans in effect during the EDECA audit period found them to be reasonably complete and consistent with the intent of the Standards, but we did, as explained earlier in this chapter, recommend some changes or additions in subsequent versions. The Plan summarizes this portion of the Standards. 89. The Compliance Plan adequately addresses this Section 14:4-3.7 of the Standards. The Plan discusses this portion of the Standards and notes the requirements of annual filings and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 146,
+          "text": "The current version of the Plan responds to the four items listed under this provision of the Standards. The information is in all cases responsive to what the Standards prescribe with respect to this issue. FirstEnergy tracked and logged complaints throughout the EDECA audit period. For most of the period FirstEnergy maintained a log of complaints and their status and outcome in an Excel spreadsheet. FirstEnergy implemented a new tracking software in April of 2020 to enhance and modernize efforts in this area.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 147,
+          "text": "The current version of the plan includes a statement acknowledging awareness of the BPU’s ability to take action as described in the Standards and that fiscal penalties for violations are a potential course of action. 92. The Compliance Plan adequately addresses this Section 14:4-3.9 of the Standards. The Plan acknowledges the BPU’s authority to impose a fine for proven violations of the Standards and JCP&L’s requirements to pay any fine levied.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "title": "s ........................................................................................................................ 410",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 148,
+          "text": "Locally Assigned HR Resources .............................................................................. 412 Goals and Objectives and Measurement of Success in Meeting Them .................... 412 Human Resources Information Systems ................................................................... 414",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 149,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 149,
+          "text": "Human resources responsibilities and functions fell under a FirstEnergy Senior Vice President and Chief Human Resources Officer (CHRO), reporting to the FirstEnergy CEO. The direct reports to the CHRO include a Vice President, Talent Management, whose 32-person group had responsibility for recruiting, learning and development and providing support to the operating companies and FirstEnergy Service Company groups on HR-related matters. Recruiting activities under Talent Management addressed professional and hourly personnel, however bargaining unit field positions continued to be handled by HR “Business Partner” resources embedded at the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 150,
+      "title": "s ........................................................................................................................ 424",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 150,
+          "text": "Corporate Services Organization .............................................................................. 424 Administrative Services Cost Changes..................................................................... 425 Real Estate Cost Changes ......................................................................................... 425",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 151,
+          "text": "1. Corporate Services Organization A FirstEnergy Senior Vice President, Chief Human Resources Officer, and Corporate Services has responsibility for three groups: • Real Estate (23 persons) • Administrative Services: a group numbering in the 50s, with the bulk of that number aligned as follows: o Mail services (6 persons)",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 152,
+      "title": "s ........................................................................................................................ 431",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 152,
+          "text": "Organization and Staffing ......................................................................................... 431 Staffing and Cost Changes ....................................................................................... 432 Annual IT Planning .................................................................................................. 432",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 153,
+          "text": "1. Organization and Staffing FirstEnergy provides information technology services to each of its entities through a common organization headed by the Vice President & Chief Information Officer. This executive has three • Vice President, Information Technology, who heads an approximately 540-person IT • Vice President, Cyber & Physical Security, whose approximately 65-person organization",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "title": "“Poorly Controlled” findings; i.e., requiring immediate attention. s of some need for",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 154,
+          "text": "improvement came most frequently in the area of system and data security. However, it is clear that Internal Auditing has worked closely with Information Technology in identifying and securing commitment to needed change. 1. FirstEnergy’s centralized approach to managing the activities required to provide appropriate IT availability and support has promoted efficiency and the application of common systems, applications, and planning and development.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 155,
+      "title": "s ........................................................................................................................ 442",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 155,
+          "text": "Organization and Staffing ......................................................................................... 442 Costs ......................................................................................................................... 443 Enterprise Risk Management Governance and Coordination .................................. 444",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 156,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 156,
+          "text": "1. Organization and Staffing FirstEnergy manages and conducts ERM and Insurance activities on a centralized basis, employing a separate group (ERM & Risk Control and Insurance) for each. Both had reported to the Vice President, Risk & Internal Auditing, who retired effective April 1, 2021. FirstEnergy decided to create a Vice President, Chief Risk Officer, reporting to the FirstEnergy CFO. ERM & Risk Control and Insurance would come under the new Chief Risk Officer, slated to begin with Board of Public Utilities",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 157,
+      "title": "s ........................................................................................................................ 461",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 157,
+          "text": "FirstEnergy Legal Organization ............................................................................... 461 Legal Staffing Changes ............................................................................................ 465 Legal Costs ............................................................................................................... 465",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 158,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 158,
+          "text": "1. FirstEnergy Legal Organization The Senior Vice President & Chief Legal Officer (Chief Legal Officer) has overall responsibility for legal functions across all FirstEnergy companies and operations. The holder of that position came to FirstEnergy in January 2021, following the involuntary “separation” of the top two legal executives. FirstEnergy separated its chief legal officer and the general counsel and chief ethics officer (who reported to the former) in November 2020, “due to inaction and conduct that the board determined was influenced by the improper tone at the top.” The Deferred Prosecution Agreement,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 159,
+      "title": "s ........................................................................................................................ 475",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 159,
+          "text": "Organization and Resources ..................................................................................... 475 Security Policies ....................................................................................................... 476 Badging ..................................................................................................................... 477",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 160,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 160,
+          "text": "1. Organization and Resources FirstEnergy (FE) had conducted the management of physical and cyber security centrally, under a Vice President, Cyber & Physical Security, reporting to the Vice President & Chief Information Officer. This 65-person organization of the Vice President Cyber & Physical Security divided into two overall groups - - a 26-person group operating under the Director, Corporate Security that had responsibility for physical security across FE and a 38-person group under the Manager, Cyber Security & Transmission Security Operations Center (TSO Center) that had responsibility for",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 161,
+      "title": "s ........................................................................................................................ 481",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 161,
+          "text": "Organization and Staffing ......................................................................................... 481 Maintenance, Retention, and Destruction Practices ................................................. 482 Training .................................................................................................................... 483",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 162,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 162,
+          "text": "Management has reported electronic business records numbering over 31million, 63,000 boxes of hard-copy records, annual creation of 300,000 new electronic records, and annual disposition averaging 445 tons. 1. Organization and Staffing A Records and Information Compliance group in the FirstEnergy-wide Legal department had at an earlier time responsibility for records management and for ensuring compliance with information retention and use requirements across FirstEnergy. The Records and Information",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 163,
+      "title": "s ........................................................................................................................ 487",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 163,
+          "text": "Overall Organization ................................................................................................ 487 Organization and Staffing ......................................................................................... 488 Supply Chain Costs .................................................................................................. 488",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 164,
+      "title": "Fill Rates ........................................................................................................ 493",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 164,
+          "text": "Inventory Turns ........................................................................................................ 493 Inventory Movements ............................................................................................... 494 JCP&L Single and Sole Source Awards................................................................... 494",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 165,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 165,
+          "text": "1. Overall Organization FirstEnergy has conducted the purchasing side of supply chain operations on an enterprise-wide basis, with a central group performing it for all the operating companies and its commercial power and energy operations. After disposition of the latter, two groups divided procurement responsibilities, one directly addressing utility operating company needs and the other the corporate functions supporting utility operations. Until mid-2021, these two organizations, one under a Director, Utility Sourcing and the other under a Director, Corporate Sourcing and Support",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 166,
+      "title": "10.  Fill Rates",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 166,
+          "text": "The next table summarizes on-time, complete completion of work orders in recent years by the FE Distribution Centers.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 167,
+      "title": "Distribution Center Work",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 167,
+          "text": "2017 2018 2019 2020 2021 1",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 168,
+      "title": "s ........................................................................................................................ 501",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 168,
+          "text": "Vehicle Fleet Management Organization and Staffing ............................................ 501 JCP&L Vehicle Fleet ................................................................................................ 501 Vehicle Fleet Costs ................................................................................................... 503",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 169,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 169,
+          "text": "1. Vehicle Fleet Management Organization and Staffing The central, FESC Distribution Support Fleet Services has responsibility for approving and executing acquisition, retirement, and disposal of all vehicles, trailers, and power-operated equipment for all FirstEnergy operations, including the large fleet operated by JCP&L distribution operations personnel. Its authority extends to acquisition approval and execution. This group coordinates an annual process for identifying operating company vehicle replacements and additions. Acquisitions beyond the annual planning numbers and types use a request process",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 170,
+      "title": "s ........................................................................................................................ 513",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 170,
+          "text": "Organization and Staffing ......................................................................................... 513 PJM Participation ..................................................................................................... 514 BGS Auctions ........................................................................................................... 516",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 171,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 171,
+          "text": "1. Organization and Staffing FirstEnergy manages PJM activities centrally, with no direct engagement by JCP&L personnel. Four principal organizations (each headed by a director) have regular PJM responsibilities. All four report to the Vice President, Compliance & Regulated Services, who in turn reports to First Energy’s Senior Vice President, Operations. One of these four organizations, Policy and Support, Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 172,
+      "title": "s ........................................................................................................................ 534",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 172,
+          "text": "Program Organization and Staffing .......................................................................... 534 Company Role in Program Design and Execution ................................................... 535 Program Control and Record-Keeping ..................................................................... 538",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 173,
+      "title": "whose terms the BPU approved through its August 17, 2022 .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 173,
+          "text": "5. NJ BPU Review The Company files a large amount of information about Program expenditures as part of its annual petition for review and approval of those expenditures. That information undergoes examination over a number of months by the NJ BPU Staff and the New Jersey Division of Rate Counsel. Approval typically comes via a stipulation among the parties regarding recovery of the expenditures. In approving the stipulation, the BPU finds the Company’s MGP remediation work prudent, and the resulting costs reasonable and prudent.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 174,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 174,
+          "text": "1. Program Organization and Staffing a. Within FirstEnergy A Remediation and Environmental Services Group conducts remediation for all FirstEnergy MGP sites, most of which lie in New Jersey. The Group’s Supervisor serves as subject matter expert for groundwater-related environmental matters across FirstEnergy. The Group’s purview includes some non-MGP issues, such as non-radiological environmental liabilities at the site of the Company’s former Oyster Creek nuclear power plant.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 175,
+      "title": "particular deferred cost. We examined “Interpretation of NJ BPU s Regarding Deferral",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 175,
+          "text": "Accounting for Manufactured Gas Plant Remediation Costs – Revision #2”. A companion Accounting Guidance Memo also contains specific steps for appropriately recording the particular",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 176,
+      "title": "deferred cost. We examined “Accounting Guidance for NJ BPU Final  Regarding Deferral",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 176,
+          "text": "Accounting for Manufactured Gas Plant (MGP) Remediation Costs – Rev #2.” By order of the BPU, JCP&L may apply carrying charges on the balance of unamortized MGP balances at a rate equal to the seven-year Treasury rate plus 60 basis points. We examined the monthly carrying-charge calculations for 2017 through 2020, verifying the rate used and the calculation of the carrying charge b. Controls/Internal Audit Reviews Two primary controls ensure that all remediation costs to be recovered from JCP&L customers get",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 177,
+      "title": "s ........................................................................................................................ 546",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 177,
+          "text": "Actual Results and Accounting ................................................................................ 546 Gains on Asset Sales................................................................................................. 546",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 178,
+      "title": "Customer Impacts and Rate s .......................................................................... 547",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 178,
+          "text": "Conclusions .................................................................................................................. 548 Recommendations ........................................................................................................ 548 Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 179,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 179,
+          "text": "1. Actual Results and Accounting Allowance for Other Funds Used During Construction (AFUDC), Interest and Dividend Income, and Gains on Disposition of Property have accounted for the vast majority of non-rate JCP&L items since 2017. AFUDC values represent financing for construction work in progress (CWIP) between the effective dates of utility base rate cases. AFUDC amounts tend to grow to significant amounts prior to rate case re-sets of CWIP. The following table summarizes these items from 2017 through 2020 and estimated 2021 and 2022 values. The most significant item shown in the table",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 180,
+      "title": "3. Customer Impacts and Rate s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 180,
+          "text": "The BPU approved on March 27, 2020 the Stipulation of Settlement involving JCP&L and PSEG Fossil regarding the Yard’s Creek facility sale. JCP&L’s recorded a pre-tax gain of $109.05",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 181,
+      "title": "million in FERC account 421.10. The October 28, 2020  in JCP&L’s last rate case included",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 181,
+          "text": "The Parties agree that the entire actual net gain from the sale of JCP&L’s interest in the Yards Creek generating station, currently estimated to be $109.1 million, shall be applied to reduce the company's existing deferred storm cost balance. Rate Counsel and Staff shall review the final accounting and the calculation of the actual net proceeds from the Yards Creek sale in the company’s next Non-utility Generation Charge filing.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 182,
+      "title": "The BPU  in Docket No. EM19030357 authorized the pre-tax gain associated with the sale",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 182,
+          "text": "of the South Brunswick property. JCP&L recorded this gain of $6.68 million to FERC account",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 183,
+      "title": "accordance with FERC regulations and provided FERC with a copy of the .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 183,
+          "text": "The $3.55 million gain on the Allenhurst sale involved property previously included in JCP&L’s rate base. The gain later became an adjustment in the 2020 base rate case following JCP&L’s proposed sharing with customers of 50 percent of the gain, amortized over a five-year period. The proposed annual amortization of $509,978 became effective with new rates established as of January 1, 2021. AFUDC and dividends and interest income comprise the other major dollar categories for JCP&L non-rate revenues and expenses. JCP&L treated both as below-the-line revenues, and properly",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 184,
+      "title": "s ........................................................................................................................ 550",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 184,
+          "text": "2011 Management and Operations and Affiliates Audit of JCP&L ......................... 550 2016 Financial and Operational Review of JCP&L’s Distribution System ............. 552 Conclusions .................................................................................................................. 555",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 185,
+      "title": "all recommendations not acknowledged as complete by the Board’s  in Docket No.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 185,
+          "text": "EA09110943. We also examined the reported status of recommendations from the 2016 management and financial review of JCP&L’s distribution system, again, including any recommendations not considered complete. Finally, the team members responsible for each area of this audit for which recommendations from the 2011 and 2016 reports had implications considered those recommendations with continuing applicability in forming their base inquiries. They also examined the recommendations as they approached completion of their work on this engagement to identify any potential gaps in the matters the scope of this engagement addresses.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 186,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 186,
+          "text": "1. 2011 Management and Operations and Affiliates Audit of JCP&L The BPU accepted “for filing purposes” the report on the BPU-sponsored management and operations audit and audit of affiliate relationships of JCP&L on August 18, 2011. That June 20, 2011 report included eleven chapters, a two-phased structure, and significant scope element commonality with our engagement. However, our scope included significant expansion, as well. The 2011 audit report contained a total of 86 recommendations, for which management had responsibility to fully address and implement under a process that included review and verification",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 187,
+      "title": "A March 26, 2015  in Docket No. ER12111052 provided for BPU Staff input into a scope of",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 187,
+          "text": "work under which JCP&L would solicit proposals for the performance of a Financial and Operational Review of JCP&L’s Distribution System. The report that summarized the results of that audit, dated July 27, 2016 in Docket No. EF15070779, contained 53 total recommendations. The following table summarizes these recommendations by audit area. Board of Public Utilities Final Report – Public Version Phase Two of an Affiliates and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 188,
+      "title": "Compliance with Merger  (BPU Docket No. EM001108701)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 188,
+          "text": "Review of Financing Activities The audit report identified what it deemed as eleven “major” recommendations addressing changes that would produce the greatest benefits. These included:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 189,
+      "title": "addressed by the 2016 report. That report’s treatment of compliance with the merger  in",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 189,
+          "text": "Docket No. EM00110870 represented a notable example of items included in the 2016 review but not in ours. The following table lists where the 2016 report structure receives coverage in this audit’s phase and chapter structure. Current Audit Coverage of the 2016 Audit’s Topics Operational Review",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 190,
+      "title": "Compliance with Merger",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 190,
+          "text": "(BPU Docket No, EM001108701) Review of Financing Activities",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

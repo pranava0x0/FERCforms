@@ -26,7 +26,229 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 17,
+  "findings": [
+    {
+      "index": 1,
+      "title": "By this Decision and , the New Jersey Board of Public Utilities (“Board”) considers a",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "stipulation of settlement (“Stipulation”) executed by Atlantic City Electric Company (“ACE” or “Company”), the New Jersey Division of Rate Counsel (“Rate Counsel”), and Board Staff (“Staff”) (collectively, “Parties”) related to ACE’s petition filed in response to the Board’s April 23, 2025,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "directing New Jersey’s four (4) electric distribution companies to submit distribution-side",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "proposals to reduce the impact of rate increases affecting residential ratepayers beginning June 1, 2025 (“Petition”).1 1 In re the New Jersey Board of Public Utilities’ Consideration of Electric Rate Impacts Beginning June 1,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "2025, BPU Docket No. EX25040210,  dated April 23, 2025 (“April 2025 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Agenda Date: 6/18/25 DOCKET NOS. EX25040210 Agenda Date: 6/18/25",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "By the April 2025 , the Board directed the EDCs to file petitions, on or before May 5, 2025,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "providing distribution-side proposals to mitigate the bill impacts to residential customers during the high usage summer months. Additionally, the Board designated President Christine Guhl- Sadovy as presiding commissioner with the authority to rule on all motions that may arise during the pendency of the proceedings, and to modify all schedules that may be set as necessary to ensure a just and expeditious determination of the issues. Via correspondence dated May 1, 2025, ACE, with the consent of the EDCs, requested an extension to file petitions to May 7, 2025, noting that the EDCs’ rate mitigation proposals would",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "On May 7, 2025, ACE filed the Petition in response to the April 2025 .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "By the Petition, ACE modeled four (4) temporary rate mitigation scenarios to offset the June 1, 2025 BGS increase for the period of July 1, 2025 through September 30, 2025, at varying credit and deferral levels. The modeled scenarios included the following options: 1) one hundred percent (100%) mitigation of the rate increase; 2) mitigation of fifty percent (50%) of the rate increase; and 3) mitigation of twenty-five percent (25%) of the rate increase. For these three (3) options, ACE included a recovery rate to subsequently recover the credits from customers over the following eight (8)-",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "No. ER24030191,  dated February 12, 2025.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "3 In re the New Jersey Board of Public Utilities’ Consideration of Electric Rate Impacts Beginning June 1,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "2025, BPU Docket No. EX25040210,  dated May 5, 2025.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "DOCKET NOS. EX25040210 Agenda Date: 6/18/25 period beginning October 1, 2025 and ending January 31, 2026. ACE submitted that this level of offset best balances potential benefits associated with delaying bill impacts with the negative",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "the terms of the Stipulation control, subject to the findings and conclusions in this .  Paragraphs are",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "lettered and/or numbered to coincide with the Stipulation. 5 For the avoidance of doubt, neither the monthly rate credit nor the monthly charge to customers will be subject to proration due to the number of days in the customer’s billing cycle. DOCKET NOS. EX25040210 Agenda Date: 6/18/25",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "terms and conditions set forth in this .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "6 The Parties acknowledge that the terms of the Stipulation are non-precedential and apply only to the unique facts of this proceeding. The Parties expressly acknowledge that ACE’s agreement to forego carrying charges on the rate deferral balance is not precedential. DOCKET NOS. EX25040210 Agenda Date: 6/18/25",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Pursuant to the  issued by the Board in connection with In the Matter of the New Jersey",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Board of Public Utilities’ Response to the COVID-19 Pandemic for a Temporary Waiver of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Requirements for Certain Non-Essential Obligations, BPU Docket No. EO20030254,  dated",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "March 19, 2020, this document is being electronically filed with the Secretary of the Board, the Division of Law, the New Jersey Division of Rate Counsel, and the Service List. No paper copies Sherri L. Lewis, RMC Thank you for your cooperation and courtesies. Feel free to contact me with any questions.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "By  dated April 23, 2025, the Board directed the State’s electric public utilities",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "(“EDCs”) to file petitions proposing distribution-side measures to mitigate residential customer bill impacts during the high-usage summer months.1 On May 7, 2025, ACE filed a Petition proposing to create a “Temporary Supply Offset Clause” (“TSOC”) that would apply to electric service provided through May 31, 2026 (“Petition”). By the Petition, ACE explained that the purpose of the TSOC was to provide temporary relief from the electric bill increases that were to begin on June 1, 2025, following the implementation of increased Basic Generation Service (“BGS”) rates resulting from BGS Auctions conducted in February 2025.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "1, 2025, BPU Docket No. EX25040210,  (April 23, 2025) (“April 2025 ”).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "profiles and urged the Board to consider a variety of customer use profiles to better understand the potential range of customer experiences resulting from efforts to mitigate rate impacts. ACE also provided information about its numerous ongoing affordability initiatives that were announced earlier this year, including the Company’s emphasis on helping customers to conserve energy. These programs include but are not limited to: suspending physical disconnections for nonpayment through March 2025, expanding customer education efforts,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "Stipulation is not adopted in its entirety by the Board in any applicable (s), then any Party",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "hereto is free to pursue its then available legal remedies with respect to all issues addressed in this Stipulation as though this Stipulation had not been signed. The Parties agree that they consider the Stipulation to be binding on them for all purposes herein. It is specifically understood and agreed that this Stipulation represents a negotiated",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "become effective upon the service of said Board  or upon such date after the service thereof",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "as the Board may specify in accordance with N.J.S.A. 48:2-40. Wherefore, the Parties hereto have duly executed and respectfully submit this Stipulation to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "the Board, and recommend that the Board issue a final Decision and  adopting and approving",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "this Stipulation in its entirety. ATLANTIC CITY ELECTRIC NEW JERSEY DIVISION OF RATE COUNSEL, BRIAN O. LIPMAN, DIRECTOR BY: ___________________________ BY: ________________________________",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "Date of :                                                                                                      Effective Date:",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "In the Matter of the New Jersey Board of Public Utilities’ Consideration of Electric Rate Impacts Beginning June 1, 2025 BPU Docket No. EX25040210 Sherri L. Lewis, RMC ● Secretary of the Board",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }
