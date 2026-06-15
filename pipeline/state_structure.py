@@ -246,3 +246,112 @@ def structure_mo_audit(
         findings=findings,
         structured=True,
     )
+
+
+# --- Texas PUC Internal Audits ----
+# TX internal audits published by the PUC's Internal Audit Division use a consistent
+# "Detailed Results" section with numbered findings (either "Chapter N" or "Observation N").
+# Each finding has a title (headline) and descriptive paragraphs. We map, verbatim:
+#   - one Finding per Chapter/Observation (title = headline, summary = description)
+#   - no separate Recommendations (TX format puts action items in the description)
+_TX_CHAPTER_RE = re.compile(r"^Chapter\s+(\d+)\s*$")
+_TX_OBSERVATION_RE = re.compile(r"^Observation\s+(\d+)\s*$")
+_TX_DETAILED_RESULTS_RE = re.compile(r"Detailed Results")
+
+
+def parse_tx_findings(full_text: str) -> list[tuple[str, str]]:
+    """Parse Texas PUC audit findings from Detailed Results section.
+
+    Returns a list of (title, description) tuples. Scans for "Detailed Results"
+    anchor, then extracts numbered findings (Chapter N or Observation N format).
+    """
+    idx = full_text.find("Detailed Results")
+    if idx == -1:
+        return []
+
+    # Extract from Detailed Results to Appendix/end
+    rest = full_text[idx:]
+    end = max(
+        rest.find("Appendix") if rest.find("Appendix") != -1 else 999999,
+        rest.find("Project Information") if rest.find("Project Information") != -1 else 999999,
+    )
+    block = rest[: min(end, len(rest))]
+
+    lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
+
+    findings: list[tuple[str, str]] = []
+    current_title = ""
+    current_desc_lines: list[str] = []
+
+    for line in lines:
+        # Check for chapter or observation header
+        ch = _TX_CHAPTER_RE.match(line)
+        obs = _TX_OBSERVATION_RE.match(line)
+
+        if ch or obs:
+            # Flush previous finding
+            if current_title:
+                desc = re.sub(r"\s+", " ", " ".join(current_desc_lines)).strip()
+                if desc:
+                    findings.append((current_title, desc))
+            # Reset for new finding
+            current_title = ""
+            current_desc_lines = []
+        elif current_title == "" and line and not line.startswith("Detailed Results"):
+            # This is the title line for the current finding
+            current_title = line
+        elif current_title:
+            # Accumulate description lines
+            current_desc_lines.append(line)
+
+    # Flush final finding
+    if current_title:
+        desc = re.sub(r"\s+", " ", " ".join(current_desc_lines)).strip()
+        if desc:
+            findings.append((current_title, desc))
+
+    return findings
+
+
+def structure_tx_audit(
+    seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]
+) -> AuditReport | None:
+    """Build a structured AuditReport from a Texas PUC internal audit.
+
+    Extracts findings from the "Detailed Results" section. Returns None if no
+    findings are found (metadata-only fallback).
+    """
+    full_text = "\n".join(p.text for p in pages)
+    findings_data = parse_tx_findings(full_text)
+
+    if not findings_data:
+        return None
+
+    findings: list[Finding] = []
+    for idx, (title, description) in enumerate(findings_data, 1):
+        findings.append(Finding(index=idx, title=title, summary=description, recommendations=[]))
+
+    return AuditReport(
+        collection=seed.collection,
+        jurisdiction=seed.jurisdiction,
+        source=seed.source,
+        doc_type=seed.doc_type,
+        id=seed.id,
+        company=seed.company,
+        company_raw=seed.company,
+        docket=seed.docket,
+        docket_full=None,
+        issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url,
+        pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at,
+        source_note=seed.source_note,
+        archived_via=seed.archived_via,
+        industry=seed.industry,
+        page_count=len(pages),
+        scanned_pages=scanned_pages,
+        ocr_used=False,
+        finding_count=len(findings),
+        findings=findings,
+        structured=True,
+    )
