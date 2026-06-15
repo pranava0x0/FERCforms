@@ -1,7 +1,31 @@
 # State-by-State PUC Data Collection Tracking
 
-**Last updated**: 2026-06-15  
-**Overall status**: Tier 2 pipeline in progress, Tier 3 ready
+**Last updated**: 2026-06-15 (session 2, continued)  
+**Overall status**: Tier 2 complete (153 docs), Tier 3 extraction started, themes analysis complete (25 themes, 1263 findings)
+
+---
+
+## 📊 CURRENT SCORECARD
+
+| Metric | Value | Status |
+|--------|-------|--------|
+| Total documents ingested | 153+ | ✓ Tier 1+2 complete |
+| TX findings extracted | 29 | ✓ Parser implemented |
+| Total findings across all reports | 1,263 | ✓ Patterns generated |
+| Audit themes identified | 25 | ✓ Documented |
+| States with audit data | 10+ | 🔄 Tier 3 in progress |
+| Token efficiency | ~350K used | ✓ Inline crawlers |
+
+**Completed in this session:**
+- ✓ Texas findings parser (9 audit documents, 29 findings)
+- ✓ Audit themes analysis (25 themes from 447 reports)
+- ✓ Themes documentation (AUDIT_THEMES.md)
+- ✓ Tier 3 priority crawl initiated (6 AK PDFs extracted)
+
+**Next priorities:**
+1. Finish Tier 3 crawl (network issues limiting reach; focus on AK 6 PDFs)
+2. Build PA findings parser (PA M&O audits ready for extraction)
+3. Expand state coverage beyond current 10 (target: 20+ states with parsed findings)
 
 ---
 
