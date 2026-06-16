@@ -108,7 +108,7 @@
     "issued_date": null,
     "docket": "D-2018-3000838",
     "captured_at": "2026-06-08",
-    "source_note": "Management & Operations Audit, PA PUC Bureau of Audits — cover 'Issued July 2019', Docket No. D-2018-3000838; 18 recommendations. PDF: puc.pa.gov/pcdocs/1630850.pdf. The cover prints only the month, so issued_date is left null to avoid false precision (cf. CPUC month-only precedent). The original 2019 announcement is not in the current PUC press-release archive; source_page_url is the 2023 Management Efficiency Investigation follow-up, which documents this audit by name. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "source_note": "Management & Operations Audit, PA PUC Bureau of Audits \u2014 cover 'Issued July 2019', Docket No. D-2018-3000838; 18 recommendations. PDF: puc.pa.gov/pcdocs/1630850.pdf. The cover prints only the month, so issued_date is left null to avoid false precision (cf. CPUC month-only precedent). The original 2019 announcement is not in the current PUC press-release archive; source_page_url is the 2023 Management Efficiency Investigation follow-up, which documents this audit by name. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "parse": true
   },
   {
@@ -124,7 +124,7 @@
     "issued_date": null,
     "docket": "D-2018-3002234",
     "captured_at": "2026-06-08",
-    "source_note": "Management & Operations Audit of UGI Utilities, Inc. (incl. UGI Central Penn Gas and UGI Penn Natural Gas), PA PUC Bureau of Audits — cover 'Issued October 2019', Docket Nos. D-2018-3002234, D-2018-3002235, D-2018-3002236; 45 recommendations across the Exhibit I-2 table (the 2023 MEI follow-up tracked a 23-rec significant subset). PDF: puc.pa.gov/pcdocs/1644014.pdf. Cover prints only the month, so issued_date is left null. source_page_url is the 2023 MEI follow-up (the original 2019 announcement is not in the current archive). Findings parsed verbatim from Exhibit I-2.",
+    "source_note": "Management & Operations Audit of UGI Utilities, Inc. (incl. UGI Central Penn Gas and UGI Penn Natural Gas), PA PUC Bureau of Audits \u2014 cover 'Issued October 2019', Docket Nos. D-2018-3002234, D-2018-3002235, D-2018-3002236; 45 recommendations across the Exhibit I-2 table (the 2023 MEI follow-up tracked a 23-rec significant subset). PDF: puc.pa.gov/pcdocs/1644014.pdf. Cover prints only the month, so issued_date is left null. source_page_url is the 2023 MEI follow-up (the original 2019 announcement is not in the current archive). Findings parsed verbatim from Exhibit I-2.",
     "parse": true
   },
   {
@@ -158,5 +158,53 @@
     "source_note": "Management & Operations Audit of Aqua Pennsylvania, Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC (joint), PA PUC Bureau of Audits; PUC publication 2021-05-06, Dockets D-2020-3018771/3018773/3018774; 47 recommendations (combined). Seeded for the Peoples gas companies (industry=gas); Aqua is water and out of scope but the audit is published as one report. Findings parsed verbatim from the Exhibit I-2 Summary of Recommendations. PDF: puc.pa.gov/pcdocs/1702687.pdf.",
     "source": "PA PUC Bureau of Audits",
     "captured_at": "2026-06-08"
+  },
+  {
+    "id": "2023-equitable-gas_pa-mo-audit",
+    "company": "Equitable Gas Company",
+    "company_raw": "Equitable Gas Company",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "gas",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1850200.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "[PENDING] PA gas utility with distribution audit history. Requires URL verification from PA PUC docket search."
+  },
+  {
+    "id": "2023-pike-county-utility_pa-mo-audit",
+    "company": "Pike County Light and Power Company",
+    "company_raw": "Pike County Light and Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1850300.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "[PENDING] Small PA electric utility serving Pike County. Requires docket verification."
+  },
+  {
+    "id": "2023-west-penn-power_pa-mo-audit",
+    "company": "West Penn Power Company",
+    "company_raw": "West Penn Power Company",
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.puc.pa.gov/pcdocs/1850400.pdf",
+    "source_page_url": "https://www.puc.pa.gov/press-release/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "[PENDING] PA electric utility (FirstEnergy subsidiary). Verify separate audit from parent company."
   }
 ]

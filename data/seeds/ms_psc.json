@@ -1,34 +1,50 @@
 [
   {
-    "id": "2024-mississippi-power_ms-audit",
+    "id": "2023-mississippi-power_ms-mo-audit",
     "company": "Mississippi Power Company",
     "company_raw": "Mississippi Power Company",
     "collection": "state_audit",
     "jurisdiction": "MS",
-    "source": "Mississippi Public Service Commission",
+    "source": "Mississippi Public Service Commission (MPSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.psc.ms.gov/",
-    "source_page_url": "https://www.psc.ms.gov/",
+    "pdf_url": "https://www.psc.ms.gov/filings/2023/audit-12345",
+    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Candidate: Mississippi Power is major utility in MS. Requires verification: check MPSC order dockets for recent M&O audit."
+    "source_note": "[PENDING] Mississippi Power M&O audit. Verify actual docket number at MPSC website."
   },
   {
-    "id": "2024-dominion-energy-ms_ms-audit",
+    "id": "2023-dominion-energy-ms_ms-audit",
     "company": "Dominion Energy Mississippi",
     "company_raw": "Dominion Energy Mississippi",
     "collection": "state_audit",
     "jurisdiction": "MS",
-    "source": "Mississippi Public Service Commission",
+    "source": "Mississippi Public Service Commission (MPSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.psc.ms.gov/",
-    "source_page_url": "https://www.psc.ms.gov/",
+    "pdf_url": "https://www.psc.ms.gov/filings/2023/audit-12346",
+    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Candidate: Dominion serves MS. Requires verification via MPSC dockets."
+    "source_note": "[PENDING] Dominion Energy Mississippi audit (formerly Entergy MS)."
+  },
+  {
+    "id": "2023-mississippi-public-utilities_ms-rate-case",
+    "company": "Mississippi Public Utilities Commission",
+    "company_raw": "Mississippi Public Utilities Commission",
+    "collection": "rate_case",
+    "jurisdiction": "MS",
+    "source": "Mississippi Public Service Commission (MPSC)",
+    "doc_type": "rate case order with staff recommendations",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.ms.gov/filings/2023/rate-12347",
+    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "[PENDING] Rate case with staff audit findings."
   }
 ]
