@@ -2,7 +2,6 @@
   {
     "id": "2023-mississippi-power_ms-mo-audit",
     "company": "Mississippi Power Company",
-    "company_raw": "Mississippi Power Company",
     "collection": "state_audit",
     "jurisdiction": "MS",
     "source": "Mississippi Public Service Commission (MPSC)",
@@ -18,7 +17,6 @@
   {
     "id": "2023-dominion-energy-ms_ms-audit",
     "company": "Dominion Energy Mississippi",
-    "company_raw": "Dominion Energy Mississippi",
     "collection": "state_audit",
     "jurisdiction": "MS",
     "source": "Mississippi Public Service Commission (MPSC)",
@@ -34,8 +32,7 @@
   {
     "id": "2023-mississippi-public-utilities_ms-rate-case",
     "company": "Mississippi Public Utilities Commission",
-    "company_raw": "Mississippi Public Utilities Commission",
-    "collection": "rate_case",
+    "collection": "state_rate_case",
     "jurisdiction": "MS",
     "source": "Mississippi Public Service Commission (MPSC)",
     "doc_type": "rate case order with staff recommendations",

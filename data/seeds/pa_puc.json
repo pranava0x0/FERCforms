@@ -162,7 +162,6 @@
   {
     "id": "2023-equitable-gas_pa-mo-audit",
     "company": "Equitable Gas Company",
-    "company_raw": "Equitable Gas Company",
     "collection": "state_audit",
     "jurisdiction": "PA",
     "source": "PA PUC Bureau of Audits",
@@ -178,7 +177,6 @@
   {
     "id": "2023-pike-county-utility_pa-mo-audit",
     "company": "Pike County Light and Power Company",
-    "company_raw": "Pike County Light and Power Company",
     "collection": "state_audit",
     "jurisdiction": "PA",
     "source": "PA PUC Bureau of Audits",
@@ -194,7 +192,6 @@
   {
     "id": "2023-west-penn-power_pa-mo-audit",
     "company": "West Penn Power Company",
-    "company_raw": "West Penn Power Company",
     "collection": "state_audit",
     "jurisdiction": "PA",
     "source": "PA PUC Bureau of Audits",

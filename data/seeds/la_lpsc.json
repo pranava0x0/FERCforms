@@ -2,7 +2,6 @@
   {
     "id": "2023-entergy-louisiana-erera_la-fuel-review",
     "company": "Entergy Louisiana, Inc.",
-    "company_raw": "Entergy Louisiana, Inc.",
     "collection": "prudence_review",
     "jurisdiction": "LA",
     "source": "Louisiana Public Service Commission (LPSC)",
@@ -18,7 +17,6 @@
   {
     "id": "2023-swepco-fuel-cost_la-prudence",
     "company": "Southwestern Electric Power Company (SWEPCO)",
-    "company_raw": "Southwestern Electric Power Company",
     "collection": "prudence_review",
     "jurisdiction": "LA",
     "source": "Louisiana Public Service Commission (LPSC)",
@@ -34,7 +32,6 @@
   {
     "id": "2023-cleco-fuel-cost_la-prudence",
     "company": "CLECO Corporation",
-    "company_raw": "CLECO Corporation",
     "collection": "prudence_review",
     "jurisdiction": "LA",
     "source": "Louisiana Public Service Commission (LPSC)",

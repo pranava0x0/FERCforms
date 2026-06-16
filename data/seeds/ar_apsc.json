@@ -2,8 +2,7 @@
   {
     "id": "2023-entergy-arkansas_ar-rate-case",
     "company": "Entergy Arkansas, Inc.",
-    "company_raw": "Entergy Arkansas, Inc.",
-    "collection": "rate_case",
+    "collection": "state_rate_case",
     "jurisdiction": "AR",
     "source": "Arkansas Public Service Commission (APSC)",
     "doc_type": "rate case order with audit findings",
@@ -18,7 +17,6 @@
   {
     "id": "2023-empire-district-ar_ar-audit",
     "company": "The Empire District Electric Company",
-    "company_raw": "Empire District Electric Company",
     "collection": "state_audit",
     "jurisdiction": "AR",
     "source": "Arkansas Public Service Commission (APSC)",
@@ -34,7 +32,6 @@
   {
     "id": "2023-otter-tail-power_ar-audit",
     "company": "Otter Tail Power Company",
-    "company_raw": "Otter Tail Power Company",
     "collection": "state_audit",
     "jurisdiction": "AR",
     "source": "Arkansas Public Service Commission (APSC)",
