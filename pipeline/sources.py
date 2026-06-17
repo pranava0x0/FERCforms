@@ -343,6 +343,9 @@ def _fetch_html_once(session: requests.Session, seed: SourceSeed, raw_dir: Path)
 
 def load_seed(path: Path) -> list[SourceSeed]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
+    if not isinstance(data, list):
+        logger.debug("skipping %s: not a list (type: %s)", path.name, type(data).__name__)
+        return []
     seeds = [SourceSeed.model_validate(d) for d in data]
     for seed in seeds:  # official-government-source guard (fail loud, like backfill's ferc.gov check)
         _assert_official_gov(seed)
