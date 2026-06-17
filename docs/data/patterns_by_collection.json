@@ -503,15 +503,15 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-06-15"
+    "generated_at": "2026-06-16"
   },
   "prudence_review": {
-    "report_count": 25,
+    "report_count": 26,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 21,
+      "electric": 22,
       "gas": 3,
       "oil": 1
     },
@@ -564,7 +564,7 @@
           "energy cost recovery"
         ],
         "finding_count": 0,
-        "report_count": 6,
+        "report_count": 7,
         "example_titles": []
       },
       {
@@ -598,17 +598,18 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-06-15"
+    "generated_at": "2026-06-16"
   },
   "state_audit": {
-    "report_count": 36,
-    "finding_count": 41,
+    "report_count": 391,
+    "finding_count": 563,
     "other_matter_count": 0,
-    "recommendation_count": 1138,
+    "recommendation_count": 769,
     "by_industry": {
-      "electric": 24,
-      "gas": 10,
-      "unknown": 2
+      "unknown": 336,
+      "electric": 33,
+      "gas": 20,
+      "water": 2
     },
     "by_year": {
       "2017": 1,
@@ -624,6 +625,75 @@
     "by_function": {},
     "themes": [
       {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 27,
+        "report_count": 30,
+        "example_titles": [
+          "Corporate Governance",
+          "Affiliated Interests and Cost Allocations",
+          "Customer Service",
+          "s ........................................................................................................................ 246"
+        ]
+      },
+      {
+        "theme": "Customer service & billing",
+        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "keywords": [
+          "customer service",
+          "billing and collections",
+          "metering and billing",
+          "billing process",
+          "billing adjustment",
+          "billing accuracy",
+          "billing lag",
+          "call center",
+          "meter reading",
+          "customer experience"
+        ],
+        "finding_count": 26,
+        "report_count": 12,
+        "example_titles": [
+          "Financial Management",
+          "Customer Service",
+          "Corporate Governance",
+          "• s associated with books and records and chart of accounts requirements: included in"
+        ]
+      },
+      {
+        "theme": "Inventory, materials & fleet",
+        "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
+        "keywords": [
+          "inventory accuracy",
+          "inventory turnover",
+          "inventory tracking",
+          "inventory balance",
+          "physical inventory",
+          "inventory optimization",
+          "inventory accounting",
+          "inventory count",
+          "supplies inventory",
+          "materials management",
+          "fleet management",
+          "vehicle replacement"
+        ],
+        "finding_count": 17,
+        "report_count": 11,
+        "example_titles": [
+          "Purchasing and Materials Management",
+          "Corporate Governance",
+          "s .................................................................................................................... 487",
+          "The Reported Operating Company Productivity Values table presented in the last of the s"
+        ]
+      },
+      {
         "theme": "Affiliate / intercompany transactions",
         "description": "Transactions with affiliated companies mis-priced or mis-reported.",
         "keywords": [
@@ -631,13 +701,52 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 9,
+        "finding_count": 104,
         "report_count": 10,
         "example_titles": [
-          "Background, National Fuel Gas Company",
-          "Executive Management and Organizational Structure",
-          "Information Technology and Chapter XVII – Human Resources for more information",
-          "Background,"
+          "Affiliated Interests and Cost Allocations",
+          "Cost Allocations and Affiliated Interests",
+          "s - - Cash Management .................................................................................. 96",
+          "s .................................................................................................................... 246"
+        ]
+      },
+      {
+        "theme": "Workforce, training & succession planning",
+        "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+        "keywords": [
+          "succession",
+          "span of control",
+          "spans of control",
+          "training",
+          "workforce plan",
+          "learning management"
+        ],
+        "finding_count": 31,
+        "report_count": 10,
+        "example_titles": [
+          "Human Resources and Diversity (continued)",
+          "Cost Allocations and Affiliated Interests",
+          "Purchasing and Materials Management",
+          "Corporate Governance"
+        ]
+      },
+      {
+        "theme": "Emergency preparedness & business continuity",
+        "description": "Weak emergency response, storm readiness, or business-continuity planning.",
+        "keywords": [
+          "emergency prepared",
+          "business continu",
+          "emergency response",
+          "emergency management",
+          "mutual assist"
+        ],
+        "finding_count": 10,
+        "report_count": 8,
+        "example_titles": [
+          "Emergency Preparedness",
+          "2. s",
+          "• Irene: Many recommendations in the January 23, 2013  in Docket No. EO11090543",
+          "• Staging Area Checklist: attached to BPU-48 (January 23, 2013 Board  No."
         ]
       },
       {
@@ -659,121 +768,33 @@
           "outage management",
           "outage response"
         ],
-        "finding_count": 15,
+        "finding_count": 26,
         "report_count": 7,
         "example_titles": [
-          "DGP Reliability Programs",
-          "Introduction & Executive Summary",
-          "Stratified Facilities Sampling",
-          "System Comparisons"
+          "Electric Operations",
+          "• Safety s, Tips, and Warnings (dig safe, downed power lines, storm and cold weather)",
+          "s ...................................................................................................................... 151",
+          "required by the BPU’s May 29. 2013  at Docket No. EO12111950. The system complies"
         ]
       },
       {
-        "theme": "Customer service & billing",
-        "description": "Customer-service performance, billing accuracy, or call-center issues.",
+        "theme": "Information technology & systems",
+        "description": "IT governance, systems, budgets, or project-management deficiencies.",
         "keywords": [
-          "customer service",
-          "billing and collections",
-          "metering and billing",
-          "billing process",
-          "billing adjustment",
-          "billing accuracy",
-          "billing lag",
-          "call center",
-          "meter reading",
-          "customer experience"
+          "information technology",
+          "customer information system",
+          "it budget",
+          "it project",
+          "it backlog",
+          "it governance"
         ],
-        "finding_count": 8,
+        "finding_count": 11,
         "report_count": 7,
         "example_titles": [
-          "Outage Communications",
-          "Executive Management and Organizational Structure",
-          "Corporate Governance",
-          "Background,"
-        ]
-      },
-      {
-        "theme": "Inventory, materials & fleet",
-        "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
-        "keywords": [
-          "inventory accuracy",
-          "inventory turnover",
-          "inventory tracking",
-          "inventory balance",
-          "physical inventory",
-          "inventory optimization",
-          "inventory accounting",
-          "inventory count",
-          "supplies inventory",
-          "materials management",
-          "fleet management",
-          "vehicle replacement"
-        ],
-        "finding_count": 8,
-        "report_count": 7,
-        "example_titles": [
-          "Executive Management and Organizational Structure",
-          "Corporate Governance",
-          "Background,",
-          "Emergency Preparedness, Chapter X – Materials Management and Chapter XIV –"
-        ]
-      },
-      {
-        "theme": "Workforce, training & succession planning",
-        "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
-        "keywords": [
-          "succession",
-          "span of control",
-          "spans of control",
-          "training",
-          "workforce plan",
-          "learning management"
-        ],
-        "finding_count": 7,
-        "report_count": 7,
-        "example_titles": [
-          "Emergency Planning and Response",
-          "Corporate Governance",
-          "Executive Management and Organizational Structure",
-          "Background,"
-        ]
-      },
-      {
-        "theme": "Internal audit & internal controls",
-        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-        "keywords": [
-          "internal audit",
-          "internal control",
-          "delegation of authority",
-          "code of business conduct",
-          "compliance program"
-        ],
-        "finding_count": 7,
-        "report_count": 6,
-        "example_titles": [
-          "Executive Management and Organizational Structure",
-          "Corporate Governance",
-          "Background,",
-          "Human Resources, Exhibit XIV-4."
-        ]
-      },
-      {
-        "theme": "Emergency preparedness & business continuity",
-        "description": "Weak emergency response, storm readiness, or business-continuity planning.",
-        "keywords": [
-          "emergency prepared",
-          "business continu",
-          "emergency response",
-          "emergency management",
-          "mutual assist"
-        ],
-        "finding_count": 5,
-        "report_count": 6,
-        "example_titles": [
-          "Emergency Planning and Response",
-          "Executive Management and Organizational Structure",
-          "Background,",
-          "Emergency Preparedness, Chapter X – Materials Management and Chapter XIV –"
+          "Information Technology",
+          "s .................................................................................................................... 424",
+          "c. s",
+          "B. s"
         ]
       },
       {
@@ -783,12 +804,33 @@
           "cyber",
           "physical security"
         ],
-        "finding_count": 4,
-        "report_count": 4,
+        "finding_count": 17,
+        "report_count": 6,
         "example_titles": [
           "Corporate Governance",
-          "Executive Management and Organizational Structure",
-          "Background,"
+          "s .................................................................................................................... 461",
+          "B. s",
+          "Emergency Preparedness"
+        ]
+      },
+      {
+        "theme": "Cost of service & rates",
+        "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+        "keywords": [
+          "cost of service",
+          "cost-of-service",
+          "rate base",
+          "rate of return",
+          "return on equity",
+          "rate design"
+        ],
+        "finding_count": 5,
+        "report_count": 6,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "accordance with FERC regulations and provided FERC with a copy of the .",
+          "Affiliated Interests and Cost Allocations",
+          "C. s"
         ]
       },
       {
@@ -799,12 +841,13 @@
           "dividend payment",
           "dividend payout"
         ],
-        "finding_count": 4,
-        "report_count": 4,
+        "finding_count": 7,
+        "report_count": 5,
         "example_titles": [
-          "Executive Management and Organizational Structure",
-          "Background,",
-          "Executive Management"
+          "Financial Management",
+          "s - - Dividend Policy and Capital Structure ................................................... 78",
+          "s - - Dividend Policy and Capital Structure ....................................................... 78",
+          "B. s - - Dividend Policy and Capital Structure"
         ]
       },
       {
@@ -846,22 +889,18 @@
         "example_titles": []
       },
       {
-        "theme": "Information technology & systems",
-        "description": "IT governance, systems, budgets, or project-management deficiencies.",
+        "theme": "Tariff administration & oversight",
+        "description": "Not following the utility's own FERC-approved tariff.",
         "keywords": [
-          "information technology",
-          "customer information system",
-          "it budget",
-          "it project",
-          "it backlog",
-          "it governance"
+          "tariff"
         ],
-        "finding_count": 3,
+        "finding_count": 15,
         "report_count": 3,
         "example_titles": [
-          "Executive Management and Organizational Structure",
-          "Information Technology and Chapter XVII – Human Resources for more information",
-          "Background,"
+          "Customer Service",
+          "with  No. 890 obligations regarding planning for Supplemental Projects. That order requires",
+          "at Grid Assurance’s original cost. The BPU’s  found the agreement in the public interest.",
+          "c. s"
         ]
       },
       {
@@ -876,28 +915,11 @@
           "pipeline integrity",
           "leak management"
         ],
-        "finding_count": 2,
-        "report_count": 2,
+        "finding_count": 3,
+        "report_count": 3,
         "example_titles": [
           "Corporate Governance",
-          "Executive Management and Organizational Structure"
-        ]
-      },
-      {
-        "theme": "Cost of service & rates",
-        "description": "Errors in rate-base or return inputs to cost-of-service rates.",
-        "keywords": [
-          "cost of service",
-          "cost-of-service",
-          "rate base",
-          "rate of return",
-          "return on equity",
-          "rate design"
-        ],
-        "finding_count": 1,
-        "report_count": 2,
-        "example_titles": [
-          "Executive Management and Organizational Structure"
+          "Gas Operations"
         ]
       },
       {
@@ -916,124 +938,190 @@
           "storm reserve",
           "securitization"
         ],
-        "finding_count": 1,
+        "finding_count": 8,
+        "report_count": 2,
+        "example_titles": [
+          "s ........................................................................................................................ 310",
+          "Compliance with Policies and BPU s .............................................................. 313",
+          "B. s",
+          "3. Compliance with Policies and BPU s"
+        ]
+      },
+      {
+        "theme": "Property & plant records",
+        "description": "Incomplete or inaccurate utility plant and property records.",
+        "keywords": [
+          "property unit",
+          "carrier property",
+          "noncarrier property",
+          "plant in service",
+          "property record"
+        ],
+        "finding_count": 6,
+        "report_count": 2,
+        "example_titles": [
+          "s .................................................................................................................... 206",
+          "• s associated with books and records and chart of accounts requirements: included in",
+          "c. s",
+          "s ...................................................................................................................... 510"
+        ]
+      },
+      {
+        "theme": "AFUDC / cost of capital",
+        "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
+        "keywords": [
+          "allowance for funds used during construction",
+          "afudc"
+        ],
+        "finding_count": 2,
         "report_count": 1,
         "example_titles": [
-          "Emergency Planning and Response"
+          "B. s",
+          "accordance with FERC regulations and provided FERC with a copy of the ."
+        ]
+      },
+      {
+        "theme": "Depreciation",
+        "description": "Unapproved or incorrect depreciation rates applied to plant.",
+        "keywords": [
+          "depreciation"
+        ],
+        "finding_count": 2,
+        "report_count": 1,
+        "example_titles": [
+          "By  dated August 1, 2003, the BPU required the Company to reduce existing depreciation",
+          "c. s"
+        ]
+      },
+      {
+        "theme": "Below-the-line costs (lobbying, charitable, etc.)",
+        "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
+        "keywords": [
+          "lobbying",
+          "charitable",
+          "below-the-line",
+          "nonoperating",
+          "non-operating"
+        ],
+        "finding_count": 2,
+        "report_count": 1,
+        "example_titles": [
+          "c. s",
+          "accordance with FERC regulations and provided FERC with a copy of the ."
         ]
       }
     ],
     "top_titles": [
       {
+        "title": "c. s",
+        "count": 90
+      },
+      {
+        "title": "B. s",
+        "count": 26
+      },
+      {
+        "title": "2. s",
+        "count": 19
+      },
+      {
+        "title": "1. s",
+        "count": 15
+      },
+      {
+        "title": "C.   s and Conclusions",
+        "count": 11
+      },
+      {
+        "title": "C. s",
+        "count": 9
+      },
+      {
+        "title": "Customer Service",
+        "count": 8
+      },
+      {
+        "title": "Corporate Governance",
+        "count": 7
+      },
+      {
+        "title": "Financial Management",
+        "count": 7
+      },
+      {
+        "title": "s and Conclusions",
+        "count": 7
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations",
+        "count": 6
+      },
+      {
+        "title": "Emergency Preparedness",
+        "count": 5
+      },
+      {
         "title": "Executive Management and Organizational Structure",
+        "count": 5
+      },
+      {
+        "title": "Electric Operations",
+        "count": 5
+      },
+      {
+        "title": "Gas Operations",
         "count": 4
+      },
+      {
+        "title": "Human Resources and Diversity",
+        "count": 4
+      },
+      {
+        "title": "Information Technology",
+        "count": 4
+      },
+      {
+        "title": "Fleet Management",
+        "count": 4
+      },
+      {
+        "title": "Gas Operations (continued)",
+        "count": 3
+      },
+      {
+        "title": "Purchasing and Materials Management",
+        "count": 3
+      },
+      {
+        "title": "Materials Management",
+        "count": 3
       },
       {
         "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
         "count": 2
       },
       {
-        "title": "Distribution System Organization, Management and",
+        "title": "Affiliated Interests and Cost Allocations (continued)",
         "count": 2
       },
       {
-        "title": "Emergency Planning and Response",
+        "title": "Electric Operations (continued)",
         "count": 2
       },
       {
-        "title": "Outage Communications",
+        "title": "Human Resources",
         "count": 2
-      },
-      {
-        "title": "Introduction & Executive Summary",
-        "count": 2
-      },
-      {
-        "title": "Electric Grid System",
-        "count": 2
-      },
-      {
-        "title": "Construction Standards and Inspection and",
-        "count": 2
-      },
-      {
-        "title": "Stratified Facilities Sampling",
-        "count": 2
-      },
-      {
-        "title": "Field & Stores Inventory",
-        "count": 2
-      },
-      {
-        "title": "System Comparisons",
-        "count": 2
-      },
-      {
-        "title": "Reliability Comparisons & Vegetation Spending",
-        "count": 2
-      },
-      {
-        "title": "This audit report is intended solely for the information and use of SoCalGas and",
-        "count": 1
-      },
-      {
-        "title": "Background, National Fuel Gas Company",
-        "count": 1
-      },
-      {
-        "title": "Executive Management and Organizational Structure, Exhibit III-2).",
-        "count": 1
-      },
-      {
-        "title": "DGP Reliability Programs",
-        "count": 1
-      },
-      {
-        "title": "EDIIP Reliability Programs",
-        "count": 1
-      },
-      {
-        "title": "This audit report is intended solely for the information and use of SCE and the ",
-        "count": 1
-      },
-      {
-        "title": "Corporate Governance",
-        "count": 1
-      },
-      {
-        "title": "Information Technology and Chapter XVII – Human Resources for more information",
-        "count": 1
-      },
-      {
-        "title": "Background,",
-        "count": 1
-      },
-      {
-        "title": "Executive Management and Organizational Structure Exhibit III-1.  The corporate",
-        "count": 1
-      },
-      {
-        "title": "Human Resources, Exhibit XIV-4.",
-        "count": 1
-      },
-      {
-        "title": "Affiliated Interests and Cost Allocations, Chapter VI – Financial",
-        "count": 1
-      },
-      {
-        "title": "Emergency Preparedness, Chapter X – Materials Management and Chapter XIV –",
-        "count": 1
       }
     ],
-    "generated_at": "2026-06-15"
+    "generated_at": "2026-06-16"
   },
   "state_rate_case": {
-    "report_count": 111,
+    "report_count": 112,
     "finding_count": 544,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 100,
+      "electric": 101,
       "gas": 9,
       "unknown": 2
     },
@@ -1088,7 +1176,7 @@
           "energy cost recovery"
         ],
         "finding_count": 16,
-        "report_count": 27,
+        "report_count": 28,
         "example_titles": [
           "Approval: $225,000\n",
           "Approval: $0.69 ",
@@ -1389,6 +1477,6 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-15"
+    "generated_at": "2026-06-16"
   }
 }

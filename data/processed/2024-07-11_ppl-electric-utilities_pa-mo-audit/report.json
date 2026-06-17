@@ -25,7 +25,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
+  "finding_count": 8,
   "findings": [
     {
       "index": 1,
@@ -35,303 +35,154 @@
       "recommendations": [
         {
           "number": 1,
-          "text": "Functional Rating Summary",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "PPL Corporation Corporate Entity Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Executive Management Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "PPL Corporation Executive Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Summary of Affiliate Charges",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Customer Service Department Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Conduct routine employee surveys to ensure",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Document the services PPL Electric provides its",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Create a formal dividend policy and notify the",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Improve SAIDI and CAIDI performance to",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Update outdated policies and procedures.",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Improve and strengthen customer service",
-          "source_page": null
-        },
-        {
-          "number": 1,
-          "text": "Reduce budget variances for the IT total budget",
-          "source_page": null
+          "text": "Conduct routine employee surveys to ensure corporate culture aligns with company goals.",
+          "source_page": 16
         },
         {
           "number": 2,
-          "text": "Summary of Recommendations",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Service Territory",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Staffing Levels",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Summary of Intercompany Cost Assignment Methods",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Debt Ratings",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Electric Distribution Operations Department Organization Chart",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Inventory Turnover Performance",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Customer Service Call Center – Service Level",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "IT Overall Operating Budget vs. Actual",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Recordable Incidents and Injury and Illness Events",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Document the company’s strategic planning",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Compare the internal cost of services provided",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Modify or expand existing reliability programs to",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Improve inventory accuracy through expanded",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Continue outreach efforts to engage with",
-          "source_page": null
-        },
-        {
-          "number": 2,
-          "text": "Reassess the IT project backlog to eliminate",
-          "source_page": null
-        },
+          "text": "Document the company’s strategic planning process and establish a formal overarching strategic plan governing all long-term corporate initiatives.",
+          "source_page": 16
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Cost Allocations and Affiliated Interests",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 3,
-          "text": "Customer Statistics",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "PPL SC Direct and Indirect Charges to PPL Electric",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Operating and Maintenance Expenses Budget vs Actual",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Total System SAIFI",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Cycle Counting Accuracy",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Customer Service Call Center – Call Abandonment Rate",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "IT Operating Budget vs. Actual - Labor",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Develop and implement periodic refresher",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Complete and properly record the results of theft-",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Reevaluate the processes for determining",
-          "source_page": null
-        },
-        {
-          "number": 3,
-          "text": "Develop internal controls for source data and",
-          "source_page": null
+          "text": "Document the services PPL Electric provides its affiliates and the associated methodologies used to allocate the costs of those services in the Corporate CAM.",
+          "source_page": 29
         },
         {
           "number": 4,
-          "text": "Capital Expenses Budget vs Actual",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Total System MAIFI",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Inactive/Obsolete Inventory Levels",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "Residential Customer Accounts Receivable Balances",
-          "source_page": null
-        },
-        {
-          "number": 4,
-          "text": "IT Operating Budget vs. Actual - Employee Expenses",
-          "source_page": null
+          "text": "Compare the internal cost of services provided between PPL Electric Utilities and their corporate affiliates to market rates on a periodic basis and document any savings realized from resulting changes.",
+          "source_page": 29
         },
         {
           "number": 5,
-          "text": "PPL Retirement Plan and Non-Qualified Pension Plans Funding",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "PUC Systemwide 12-Month Standards and Benchmark Values for",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Emergency Stock Inventory Levels",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "Call Abandonment Rate",
-          "source_page": null
-        },
-        {
-          "number": 5,
-          "text": "IT Operating Budget vs. Actual - Outside Services",
-          "source_page": null
-        },
+          "text": "Develop and implement periodic refresher training to employees to ensure reported hours are accurately charged to affiliates.",
+          "source_page": 29
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 6,
-          "text": "Summary of Planned Internal Audits",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "Total System SAIDI",
-          "source_page": null
-        },
-        {
-          "number": 6,
-          "text": "IT Operating Budget vs. Actual - Software As A Service",
-          "source_page": null
-        },
+          "text": "Create a formal dividend policy and notify the PUC prior to paying dividends above 85% of net income.",
+          "source_page": 36
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 7,
-          "text": "Dividend Payments as a Percentage of Net Income",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "Total System CAIDI",
-          "source_page": null
-        },
-        {
-          "number": 7,
-          "text": "IT Operating Budget vs. Actual - Maintenance",
-          "source_page": null
+          "text": "Improve SAIDI and CAIDI performance to consistently achieve the minimum thresholds set by the Commission benchmarks and standards on reliability.",
+          "source_page": 47
         },
         {
           "number": 8,
-          "text": "Total System CEMI",
-          "source_page": null
-        },
-        {
-          "number": 8,
-          "text": "IT Capital Overall Budget vs. Actual",
-          "source_page": null
+          "text": "Modify or expand existing reliability programs to eliminate CEMI10+ and set goals for reducing CEMI4.",
+          "source_page": 47
         },
         {
           "number": 9,
-          "text": "IT Projects Placed in Service vs. Projects Closed",
-          "source_page": null
-        },
+          "text": "Complete and properly record the results of theft- of-service investigations for all accounts where theft or damage to meter is suspected.",
+          "source_page": 47
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
         {
           "number": 10,
-          "text": "IT Project Backlog",
-          "source_page": null
+          "text": "Address minor security and safety improvements.",
+          "source_page": 51
+        },
+        {
+          "number": 11,
+          "text": "Improve storm response communications to reduce logistical downtime and to improve real- time response effectiveness.",
+          "source_page": 51
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Purchasing and Materials Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Update outdated policies and procedures.",
+          "source_page": 59
+        },
+        {
+          "number": 13,
+          "text": "Improve inventory accuracy through expanded inventory count assessments and routinely conduct refresher training to resolve manual reporting inaccuracies.",
+          "source_page": 59
+        },
+        {
+          "number": 14,
+          "text": "Reevaluate the processes for determining obsolete, inactive, and emergency stock inventory to include input from all involved departments.",
+          "source_page": 59
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Improve and strengthen customer service performance to at least pre-pandemic levels.",
+          "source_page": 66
+        },
+        {
+          "number": 16,
+          "text": "Continue outreach efforts to engage with payment delinquent customers and leverage low- income resources to help reduce the overall level of outstanding customer balances.",
+          "source_page": 66
+        },
+        {
+          "number": 17,
+          "text": "Develop internal controls for source data and reporting systems to ensure accuracy.",
+          "source_page": 66
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Information Technology",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Reduce budget variances for the IT total budget and individual IT budget categories to less than ±10% and document reasons for large budget variances.",
+          "source_page": 75
+        },
+        {
+          "number": 19,
+          "text": "Reassess the IT project backlog to eliminate obsolete projects and complete a comprehensive staffing and resource assessment to achieve more reasonable backlog levels.",
+          "source_page": 76
         }
       ]
     }

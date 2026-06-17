@@ -34,7 +34,554 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 42,
+  "findings": [
+    {
+      "index": 1,
+      "title": "adopted by the Board pursuant to an  dated March 15, 2000 in Docket No.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "EX99030182, and were codified in Chapter 4 “Energy Competition Standards” of the New Jersey Administrative Code (N.J.A.C.) Title 14. (The Affiliate Relations, Fair Competition and Accounting Standards and Related Reporting Requirements and the relevant sections of the N.J.A.C. are collectively referred to as the Competitive Service Statutes.) In general, the Statues are designed to promote fair competition in retail markets where regulated utilities deals with their affiliates. Simply stated, NJNG’s affiliates should not gain any unfair competitive advantage as a result of their relationship with NJNG.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "C.   Summary of s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "Key findings and conclusions are summarized below. Detailed findings and conclusions for each audit area are provided in Chapters III – XVIII. Executive Management, Governance and Planning NJR is governed by an eleven-member Board of Directors (BOD): ten independent directors and Mr. Laurence Downes who serves as the NJR Chief Executive Officer (CEO) and Chairman of the Board. The CEO and BOD members are well-qualified and have extensive experience in both public and private enterprise. Six of the Directors (including",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "companies.  These Rules were originally adopted by the Board pursuant to an  dated",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "March 15, 2000 in Docket No. EX99030182, and were codified in Chapter 4 “Energy Competition Standards” of the N.J.A.C. Title 14. The Affiliate Relations, Fair Competition and Accounting Standards and Related Reporting Requirements and the relevant sections of the N.J.A.C. are collectively referred to as the Competitive Service Statutes. The Statutes are designed to promote fair competition in retail markets where NJNG deals with its affiliates. Simply stated, NJNG’s affiliates should not gain any unfair competitive advantage as a result of their relationship with NJNG. Key requirements are provided below.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "1. The NJR BOD has the experience and knowledge to fulfill NJR’s corporate goals and objectives. The NJNG BOD and executive management are appropriately involved in the governance of NJNG. The members of the NJR BOD and NJNG BOD have significant years of experience as shown in Exhibit III-4. The average tenure is nine years.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "C.  s & Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "1. Because NJNG does not perform strategic planning as a stand-alone entity, guidance is not provided by NJR or the BOD, nor can an NJNG planning process include input from operating levels or consideration of customer impacts, market conditions, internal resources and financial risks. There is no process, whether documented or informal, for NJNG to prepare a business plan, and there is no NJNG business plan.40",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "those with broader corporate impacts.  s and opportunities of specific relevance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "to the utility outside of this scope are not included in the NJR Plan. The planning process results in a singular view of future performance with no flexibility in its planning activities. As discussed further in Conclusion 3, there is no consideration of risks or their impact on the plan. As a result, the plan becomes of minimal value in the face of changes in circumstances. 44 DR 49 and DR 168",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "1. NJNG does not recognize CR&R and NJRCEV as related competitive business N.J.A.C. 14:4-3.2, Definitions include the following: Competitive service means any service offered by an electric public utility or a gas public utility that the board determines to be competitive pursuant to section 8",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Results from this sample testing are described in the s and Conclusions section of",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "B. Evaluative Criteria Do adequate policies and procedures exist for allocating allowed common costs and are costs allocated in accordance with the policies and procedures? (Conclusions 1 ACCOUNTING AND COST ALLOCATION",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "C. s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "1. The NJNG accounting system is administered by NJRSC. Its functions, processes and control procedures provide information on operations expenses and capital projects that meets the needs of the utility’s management. JDE reports contain accurate assignment of costs and are produced with adequate controls. The JDE accounting system is used by many utilities. NJR has used this system for over 20 years and adapted it to meet its needs and structure. Where needed, for",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "1. The level of participation in the TPS program in NJNG's service territory is comparable to that in other New Jersey gas utility service territories in both the residential and the commercial and industrial markets. Exhibits VII-1, VII-2 and VII-3 show the percent of residential accounts, commercial and industrial (C&I) accounts and C&I volumes served by TPS entities for the four New Jersey gas utilities from August 2010 to May 2013.108 Over this",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "share incremental margins with ratepayers.  These programs are discussed in the s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "section of this Chapter. 146 Any mid-year increase to the BGSS factor is subject to review by the BPU in the next BGSS hearing. 147 DR 68 and DR 301. GAS SUPPLY PROCUREMENT",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "and three incentive programs.  Each of these initiatives is discussed in the s and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Conclusions section of this Chapter. Incremental revenues received from these various programs are credited to ratepayers, in whole or in part depending on the program, through the BGSS filings.148 During the audit period, NJNG held a number of AMAs with NJRES and two independent counterparties, under which certain transportation and storage agreements were assigned to those parties at negotiated prices. AMAs are subject to terms and conditions established by the FERC, and NJNG’s AMAs have been approved by the BPU. FERC-",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "1. The organizational placement of the Gas Supply function does not provide sufficient visibility and executive attention to this key function and leads to a perception that utility procurement positions are less important than similar NJRES positions. The Gas Supply group is responsible for procuring more than $300 million in gas capacity and supply, more than twice NJNG’s total non-fuel operating budget ($150",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "In  712 issued in 2008, the FERC established criteria for capacity release and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "asset management agreements.180 During the audit period, NJNG reported multiple separate AMA contracts with NJRES and other independent counterparties.181",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "Under the , it is the responsibility of the releasing shipper (in this case, NJNG)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "to include appropriate terms and conditions in the agreements to qualify the release as an AMA.182 In NJNG’s AMA contracts, the parties affirm that the agreement terms are compliant with FERC requirements.183 NorthStar has no reason to believe the affirmations of the counterparties are incorrect.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "712 requires that the Asset Manager must bear a purchase or delivery",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "obligation to the releasing shipper for at least five months out of each 12-month period, for up to 100 percent of the daily contract demand of the released capacity. NJNG managed the AMA volumes consistent with this requirement.184",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "712 does not require use of a competitive Request for Proposal (RFP) process",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "for the selection of an Asset Manager or the extension of existing AMAs, allowing for direct negotiations with possible Asset Managers. Direct negotiation can be preferable when: A single marketer has unique knowledge of the region or other special",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "title": "180 d June 30, 2008, Clarification issued November 21, 2008.  http://www.ferc.gov/whats-new/comm-",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "meet/2008/112008/G-2.pdf",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "title": "182 FERC  712 and NorthStar research.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "183 DR 316 (Confidential) and 317 (Confidential) 184 Review of data in DR 693 (Confidential) and response to DR 793 (Confidential) 185 NorthStar research. 186 DR 316 (Confidential) and DR 317 (Confidential) GAS SUPPLY PROCUREMENT",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "1. NJR and NJNG employ several processes that support a stronger and more stable Neither company funds its long-term needs through short-term debt. Exhibit IX-7 summarizes NJNG’s long term debt as of the end of FY 2012. FINANCE AND CASH MANAGEMENT",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "title": "304 : Docket No. GA05100909 dated 1/28/2009.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "PREVIOUS AUDIT RECOMMENDATIONS Summary of 2007 Audit Report Recommendations",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "1. NJNG has failed to address or has only minimally addressed a number of the prior management audit recommendations. Many of these recommendations continue to be relevant and are reflected in NorthStar’s audit report. NJNG has failed to implement, or implemented in a manner inconsistent with the audit findings, most of Liberty’s prior audit recommendations in the GS area, leading to similar conclusions and recommendations in NorthStar’s audit. These findings are",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "title": "C.   s & Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "1. NJNG has a higher leak backlog than New York State utilities. The BPU does not require standardized natural gas pipeline leak and repair data collection and reporting by its regulated utilities which might otherwise be used for comparison. Exhibit XI-1 provides leak performance data for NJNG and selected New York State 332 The Distribution Integrity Management Program was developed pursuant to the Pipeline Inspection,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "1. NJNG has a sound process for inspecting the mark-outs performed by UtiliQuest. NJNG’s two mark-out inspectors perform a minimum of four inspections of each mark-out technician per quarter, including one face-to-face audit during which the inspector observes mark-out activities. The mark-out inspectors complete a formal checklist for each inspection.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "title": "Determination of Quality Score",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "Points if Problems Identified Number of Failures",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "1. NJR’s compensation policies are in-line with industry standards. Employees receive a base salary and routine annual salary adjustments and are eligible for a short-term incentive (i.e., bonus).443 According to a 2013 industry compensation survey, short-term incentives were used by 87 percent of the organizations surveyed.444 Union employees are eligible for a 2 percent incentive. Marketing and sales personnel earn a base salary plus commissions.445 Executives",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "1. NJNG has a strong commitment to customer service and receives high ratings in customer satisfaction surveys. NJNG ranked number one in the east region in overall customer satisfaction among residential and commercial customers in 2011 and 2012, as shown in Exhibit XIV-3. NJNG also ranked number one in residential customer satisfaction in 2009 and 2010. Customer satisfaction targets for 2013 were to win both the JD Power Residential and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "1. As a result of the state-wide utility management and structure of the Comfort Partners program, NJNG has little direct control over NJCEP activities and costs. The management and administration of the NJCEP Comfort Partners program is done jointly between the six utilities. Selection of program delivery contractors was done jointly. Implementation",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "title": "C. s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "1. NJNG’s environmental remediation strategy and implementation program are appropriate, and actions during the audit period have resulted in reductions in the scope of NJNG’s responsibilities and potential remediation costs. NJNG’s remediation strategy specifies that it will identify, develop and implement both conventional and innovative engineering and business solutions that will enable NJNG to cost effectively investigate, remediate and manage the risk of the long-term",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "title": "Once the remediation contractor is selected, the Purchase  (PO) can be",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "approved. If the PO is for more than $100,000, an Authority for Expenditure (AFE) is prepared which provides more information than the PO, including justification, a summary of bid data, and budget impact.720 During the audit period, NJNG issued 19 initial POs for MGP remediation work over $100,000 (excluding POs issued to the OECs). NorthStar reviewed documentation related to the selection of contractors for five of the 19 POs (see Exhibit XVI-3).",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "title": "As explained in the Purchase :  “This work was not bid against others for",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "the Atlantic Highlands work at this time, but a cost comparison was done with other environmental consultants. [Contractor] was competitively priced…”725 The replacement OEC was first hired to work on the Atlantic Highlands site when NJNG solicited bids for a specific task with a detailed scope of work. According to NJNG, NJR Procurement reviewed the bid and determined that there was value in using the successful bidder in lieu of [the first OEC]. After the successful",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "title": "C.   s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 33,
+          "text": "1. NJNG has few formal communications policies and procedures. Despite the lack of formal procedures, NJNG’s communications have generally proven effective as discussed in Conclusions 2 and 3. As is typical of most utilities, NJNG maintains a calendar of customer communications (i.e., bill inserts and newsletters).751 It does not maintain a specific calendar for other marketing materials.752",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 34,
+          "text": "1. The CR&R structure is not an optimal organizational choice for NJNG facilities The planning, maintenance, and other management of NJNG’s facilities are an integral part of the operation of the utility. CR&R is a small organization that should have ceased operations a number of years",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "3. NJNG benefits from the ability to use the NJR Law Department’s pool of legal resources, and resource levels have been stable over the audit period. The ability to consolidate all legal resources for the entire NJR organization provides economies of scale and the availability of skills that would otherwise be difficult to achieve for NJNG. Chairman and CEO - NJR",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 36,
+          "text": "6. NJRSC’s program to address risks and potential liability has been effective. Insurance coverage is consistent with industry standards. In July 2013, NJR conducted a broad insurance renewal strategy and risk identification review.802 A summary of this review and the current insurance program structure is shown in Exhibit XVIII-4. The policy term for casualty insurance program runs from October 1, through October 1, annually.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "title": "s and Conclusion",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 37,
+          "text": "8. Stores and purchasing controls are minimal and can be improved. Stores does not record or use management reports to address its primary mission: providing materials and supplies when needed. Purchasing controls are primarily the purchasing-approval hierarchy. The JDE system has approval tables tied to expenditure levels and the business unit’s criteria. Approval levels are reviewed annually.808",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "10. NJRSC’s records management program appears to meet NJNG’s records requirements. The system includes the basic components for a records management program and includes some policies, procedures, retention schedules, off-site storage capability and electronic database for management of the process. NJR has a set of policies and procedures for handling company records which include procedures for:820",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "title": "records",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 39,
+          "text": "Processing new records Offsite vendor submission or retrieval Record destruction",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 40,
+          "text": "14. NJNG’s systems and applications portfolio meet its current needs for operational reliability. They provide industry standard security, are mainly off the shelf, and appear to be maintained and run cost-effectively.828 The main enterprise resource planning (ERP) software used by NJNG is JDE and the associated systems shown in Exhibit XVIII-8. JDE is a mature system and used commonly in the utility industry for accounting and ERP functions.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 41,
+          "text": "21. NJNG fleet management practices are rudimentary, yet seem sufficient for the Company’s needs. Vehicle acquisition/replacement practices are based on years in service for a particular vehicle class, odometer reading and vehicle evaluation. Automobiles and light trucks are reviewed after seven years of service.843 Medium duty trucks, equipment and trailers are reviewed for replacement after 10 years of service. The",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "title": "s and Conclusions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 42,
+          "text": "23. NJNG has a basic program in place to identify, assess and resolve potential threats and exposure.847 NJNG’s security policies are contained in a collection of documents that are part of the recovery/business continuity plans, rather than as one cohesive plan.848 These",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "title": "Purchase",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "Point-of-Service Preferred Provider Organization Public Service Electric & Gas",
+          "source_page": null
+        }
+      ]
+    }
+  ],
   "structured": true
 }

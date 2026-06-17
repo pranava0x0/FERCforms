@@ -49,7 +49,7 @@ def export_findings_csv(output_path: Optional[Path] = None) -> Path:
 
     count = 0
     with open(output_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
 
         for report_path in sorted(config.PROCESSED_DIR.glob("*/report.json")):

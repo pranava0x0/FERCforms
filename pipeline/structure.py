@@ -288,6 +288,25 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     if collection == "state_rate_case":
         return structure_state_rate_case(entry, text, existing_report)
 
+    # Preserve non-FERC state collections (prudence reviews, etc.)
+    if collection == "prudence_review":
+        logger.debug("preserving prudence_review collection for %s", entry.id)
+        # Return metadata-only report to preserve source collection type
+        return AuditReport(
+            collection=collection, jurisdiction=existing_report.get("jurisdiction"),
+            source=existing_report.get("source"), doc_type=doc_type,
+            id=entry.id, company=existing_report.get("company"), company_raw=existing_report.get("company"),
+            docket=None, docket_full=None, issued_date=existing_report.get("issued_date"),
+            source_page_url=existing_report.get("source_page_url"),
+            pdf_download_url=existing_report.get("pdf_download_url"),
+            captured_at=existing_report.get("captured_at"),
+            source_note=existing_report.get("source_note"),
+            archived_via=existing_report.get("archived_via"),
+            industry=existing_report.get("industry"),
+            page_count=len(text.pages), scanned_pages=[], ocr_used=False,
+            finding_count=0, findings=[], structured=False,
+        )
+
     # FERC audit extraction (original)
     page1 = text.pages[0].text if text.pages else ""
     full_raw = "\n".join(p.text for p in text.pages)
