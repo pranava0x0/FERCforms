@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "WV",
+  "source": "Public Service Commission",
+  "doc_type": null,
+  "id": "wv_0000_009_2025-management-summary-report",
+  "company": "2025 Management Summary Report",
+  "company_raw": "2025 Management Summary Report",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.psc.state.wv.us",
+  "pdf_download_url": "https://www.psc.state.wv.us/Mgmt_Sum/MSR2025_Report.pdf",
+  "captured_at": "2026-06-14",
+  "source_note": "Public Service Commission (WV)",
+  "archived_via": null,
+  "page_count": 58,
+  "scanned_pages": [
+    2
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

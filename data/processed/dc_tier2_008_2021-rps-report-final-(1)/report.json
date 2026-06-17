@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "DC",
+  "source": "State of DC Utility Commission",
+  "doc_type": "report",
+  "id": "dc_tier2_008_2021-rps-report-final-(1)",
+  "company": "2021-RPS-report-FINAL-(1)",
+  "company_raw": "2021-RPS-report-FINAL-(1)",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.dcpsc.org/",
+  "pdf_download_url": "https://dcpsc.org/PSCDC/media/Images/2021-RPS-report-FINAL-(1).pdf",
+  "captured_at": "2026-06-15",
+  "source_note": "DC PUC (Tier 2 deep scrape)",
+  "archived_via": null,
+  "page_count": 51,
+  "scanned_pages": [
+    1
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

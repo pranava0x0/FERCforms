@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "DC",
+  "source": "State of DC Utility Commission",
+  "doc_type": "report",
+  "id": "dc_tier2_019_dcpsc_2024_rps_report-final",
+  "company": "DCPSC 2024 RPS Report-FINAL",
+  "company_raw": "DCPSC 2024 RPS Report-FINAL",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.dcpsc.org/",
+  "pdf_download_url": "https://www.dcpsc.org/PSCDC/media/PDFFiles/Reports/DCPSC_2024_RPS_Report-FINAL.pdf",
+  "captured_at": "2026-06-15",
+  "source_note": "DC PUC (Tier 2 deep scrape)",
+  "archived_via": null,
+  "page_count": 47,
+  "scanned_pages": [
+    8
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "State of PA Utility Commission",
+  "doc_type": "report",
+  "id": "pa_tier2_000_2026_pjm_summer_readiness_repo",
+  "company": "2026 pjm summer readiness report",
+  "company_raw": "2026 pjm summer readiness report",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.puc.pa.gov/",
+  "pdf_download_url": "https://www.puc.pa.gov/media/3965/2026_pjm_summer_readiness_report.pdf",
+  "captured_at": "2026-06-15",
+  "source_note": "PA PUC (Tier 2 deep scrape)",
+  "archived_via": null,
+  "page_count": 25,
+  "scanned_pages": [
+    16
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}
