@@ -7,41 +7,11 @@
     "source": "Louisiana Public Service Commission (LPSC)",
     "doc_type": "fuel cost recovery - annual ERRA compliance order",
     "industry": "electric",
-    "pdf_url": "https://www.lpsc.louisiana.gov/dockets/1234567",
-    "source_page_url": "https://www.lpsc.louisiana.gov/public-filings/",
+    "pdf_url": "https://www.lpsc.louisiana.gov/utilities/electric/entergy-louisiana-llc/",
+    "source_page_url": "https://www.lpsc.louisiana.gov/utilities/electric/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Entergy Louisiana annual ERRA compliance order. Requires LPSC docket lookup for actual filing URL."
-  },
-  {
-    "id": "2023-swepco-fuel-cost_la-prudence",
-    "company": "Southwestern Electric Power Company (SWEPCO)",
-    "collection": "prudence_review",
-    "jurisdiction": "LA",
-    "source": "Louisiana Public Service Commission (LPSC)",
-    "doc_type": "fuel cost prudence review - recovery order",
-    "industry": "electric",
-    "pdf_url": "https://www.lpsc.louisiana.gov/dockets/1234568",
-    "source_page_url": "https://www.lpsc.louisiana.gov/public-filings/",
-    "parse": false,
-    "fetch": false,
-    "captured_at": "2026-06-16",
-    "source_note": "[PENDING] SWEPCO multi-state utility fuel-cost prudence order from LA commission."
-  },
-  {
-    "id": "2023-cleco-fuel-cost_la-prudence",
-    "company": "CLECO Corporation",
-    "collection": "prudence_review",
-    "jurisdiction": "LA",
-    "source": "Louisiana Public Service Commission (LPSC)",
-    "doc_type": "fuel cost prudence review",
-    "industry": "electric",
-    "pdf_url": "https://www.lpsc.louisiana.gov/dockets/1234569",
-    "source_page_url": "https://www.lpsc.louisiana.gov/public-filings/",
-    "parse": false,
-    "fetch": false,
-    "captured_at": "2026-06-16",
-    "source_note": "[PENDING] CLECO fuel-cost prudence review order."
+    "source_note": "Entergy Louisiana fuel-cost recovery orders from LPSC. Requires manual docket lookup to find specific PDF URLs."
   }
 ]

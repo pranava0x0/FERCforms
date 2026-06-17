@@ -7,12 +7,12 @@
     "source": "Mississippi Public Service Commission (MPSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.psc.ms.gov/filings/2023/audit-12345",
-    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
+    "pdf_url": "https://www.psc.ms.gov/filings/?utility=mississippi-power",
+    "source_page_url": "https://www.psc.ms.gov/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Mississippi Power M&O audit. Verify actual docket number at MPSC website."
+    "source_note": "Mississippi Power M&O audit orders from MPSC. Requires manual docket search."
   },
   {
     "id": "2023-dominion-energy-ms_ms-audit",
@@ -22,26 +22,11 @@
     "source": "Mississippi Public Service Commission (MPSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.psc.ms.gov/filings/2023/audit-12346",
-    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
+    "pdf_url": "https://www.psc.ms.gov/filings/?utility=dominion-energy",
+    "source_page_url": "https://www.psc.ms.gov/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Dominion Energy Mississippi audit (formerly Entergy MS)."
-  },
-  {
-    "id": "2023-mississippi-public-utilities_ms-rate-case",
-    "company": "Mississippi Public Utilities Commission",
-    "collection": "state_rate_case",
-    "jurisdiction": "MS",
-    "source": "Mississippi Public Service Commission (MPSC)",
-    "doc_type": "rate case order with staff recommendations",
-    "industry": "electric",
-    "pdf_url": "https://www.psc.ms.gov/filings/2023/rate-12347",
-    "source_page_url": "https://www.psc.ms.gov/ordering-information/filings/",
-    "parse": false,
-    "fetch": false,
-    "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Rate case with staff audit findings."
+    "source_note": "Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search."
   }
 ]

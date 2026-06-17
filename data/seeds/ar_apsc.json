@@ -7,12 +7,12 @@
     "source": "Arkansas Public Service Commission (APSC)",
     "doc_type": "rate case order with audit findings",
     "industry": "electric",
-    "pdf_url": "https://www.apsc.arkansas.gov/filings/entergy-ar-2023",
-    "source_page_url": "https://www.apsc.arkansas.gov/filing-information/",
+    "pdf_url": "https://www.apsc.arkansas.gov/filings/?company=entergy-arkansas",
+    "source_page_url": "https://www.apsc.arkansas.gov/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Entergy Arkansas rate case with commission audit findings."
+    "source_note": "Entergy documents from APSC. Requires manual docket/order lookup."
   },
   {
     "id": "2023-empire-district-ar_ar-audit",
@@ -22,12 +22,12 @@
     "source": "Arkansas Public Service Commission (APSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.apsc.arkansas.gov/filings/empire-2023",
-    "source_page_url": "https://www.apsc.arkansas.gov/filing-information/",
+    "pdf_url": "https://www.apsc.arkansas.gov/filings/?company=empire-district",
+    "source_page_url": "https://www.apsc.arkansas.gov/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Empire District M&O audit in Arkansas jurisdiction."
+    "source_note": "The documents from APSC. Requires manual docket/order lookup."
   },
   {
     "id": "2023-otter-tail-power_ar-audit",
@@ -37,11 +37,11 @@
     "source": "Arkansas Public Service Commission (APSC)",
     "doc_type": "management and operations audit",
     "industry": "electric",
-    "pdf_url": "https://www.apsc.arkansas.gov/filings/otter-tail-2023",
-    "source_page_url": "https://www.apsc.arkansas.gov/filing-information/",
+    "pdf_url": "https://www.apsc.arkansas.gov/filings/?company=otter-tail-power",
+    "source_page_url": "https://www.apsc.arkansas.gov/filings/",
     "parse": false,
     "fetch": false,
     "captured_at": "2026-06-16",
-    "source_note": "[PENDING] Otter Tail Power audit in AR. Verify multi-state utility coverage."
+    "source_note": "Otter documents from APSC. Requires manual docket/order lookup."
   }
 ]
