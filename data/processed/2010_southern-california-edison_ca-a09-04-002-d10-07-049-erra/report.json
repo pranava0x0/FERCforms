@@ -1,8 +1,8 @@
 {
-  "collection": "ferc_audit",
-  "jurisdiction": "FERC",
-  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
-  "doc_type": null,
+  "collection": "prudence_review",
+  "jurisdiction": "CA",
+  "source": "California Public Utilities Commission",
+  "doc_type": "ERRA compliance & reasonableness review decision",
   "id": "2010_southern-california-edison_ca-a09-04-002-d10-07-049-erra",
   "company": "Southern California Edison Company",
   "company_raw": "Southern California Edison Company",
@@ -12,19 +12,17 @@
   "source_page_url": "https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm",
   "pdf_download_url": "https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm",
   "captured_at": "2026-06-08",
-  "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
+  "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 \u2014 SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
   "archived_via": null,
-  "page_count": 1,
+  "page_count": 0,
   "scanned_pages": [],
   "ocr_used": false,
   "audit_period": null,
   "industry": "electric",
   "audit_type": null,
-  "functions": [
-    "generation"
-  ],
+  "functions": [],
   "forms": [],
   "finding_count": 0,
   "findings": [],
-  "structured": true
+  "structured": false
 }
