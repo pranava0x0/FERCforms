@@ -22,9 +22,118 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 - ✅ **Real rate cases restored** — IL ComEd P2024-0087 + Ameren, LA SWEPCO, NJ ACE (all fetch=true, real page counts).
 - ✅ **Fabrication + phantom guards** — `pipeline.verify_sources` live sweep; offline tests for placeholder/future-date, FERC-listing trace, and **git-tracked report.json** (the gitignore-phantom trap).
 
+## FERC Form 1 Analysis (2026-06-15 plan)
+
+**[HIGH] Scope: Add time-series financial analysis, Part-101 account mapping, and deterministic error-flag engine to surface rate-base anomalies against audit findings.**
+
+✅ **Phase 0 COMPLETE (2026-06-15):** Download path verified. See `docs/FORM1_PHASE0_RESULTS.md` for full findings.
+
+**Key discovery:** Access confirmed at `https://forms.ferc.gov/` (Cloudflare-bypassed). Download mechanism identified: `forms.ferc.gov/DownloadFile.aspx?FileID={id}` (302 redirect). Both `.DBF` (pre-2021) and XBRL (2021+) formats available. **No blockers.** Recommended next: browser-capture Form 1 2023 for 1 utility (PG&E) to extract FileID pattern + validate DBF parsing.
+
+**Remaining phases:** Phase-1 (browser-capture + DBF parse validation) → Phase-2 (time-series ETL) → Phase-3 (error-flag engine).
+
+This leverages the **602 audit findings** we already hold as ground truth; the work is mostly ingesting Form 1 data + joining to assets we have. Three asks:
+
+1. **Time-series rate inputs** (medium effort): ingest N years/utility; extract rate-base + COS schedules (Form 1 pages 110-117, 320-351, 930.2); per-utility time series + YoY anomaly flags.
+2. **Stated reasoning per field** (structural + case-specific): Part-101 USoA (18 CFR 101) mapping + join state rate-case testimony for case-specific treatment; surfaces cost classification disputes.
+3. **Error-flag engine** (high ROI): deterministic rules seeded by the 13 themes + **validated against 602 findings**:
+   - Below-the-line leakage: flag Account 426.x / EEI dues in rate rollups (53 + 11 findings → top yield).
+   - Ratio/anomaly: AFUDC rate, depreciation rate, affiliate charges, capitalize-vs-expense, YoY spikes (62 + 46 + 34 findings).
+   - Reporting-consistency: Page 700 ↔ Form 1 cross-foots (183 findings).
+
+**Phased path:** ✅ Phase-0 (verify download path) → Phase-1 (Part-101 table) → Phase-2 (time series) → Phase-3 (flag engine, validated against audit findings). See `docs/form1-analysis-plan.md` and `docs/FORM1_PHASE0_RESULTS.md` for details. **Owner:** high-value, deterministic, ground-truth-backed (never speculative).
+
+**Note:** Form 1 is FERC wholesale; retail rate cases are state — state findings + Form 1 anomalies together give the full picture.
+
+---
+
+## High-Impact Next Work — Detailed Phased Plans
+
+### 2. PA Audit Expansion (2 hours, HIGH priority)
+
+**[HIGH] Scope: Add 3–5 new PA M&O audits, expected 30–100 findings.**
+
+See detailed plan: `docs/PA_AUDIT_EXPANSION_PHASED_PLAN.md`
+
+Current: 9 M&O + 1 MEI seeded, all with parse=True, covering major electric + gas.  
+Target: Identify 3–5 additional utilities not yet seeded.  
+Method: Scrape PA PUC press-release archive; verify page-1 captions; seed + parse.  
+Parser: PA Exhibit-I-2 ready (both layouts working, no regressions).  
+Success: 3–5 audits → 30–100 findings, zero test regressions, 1 commit.
+
+**Phases:**
+1. Discovery (30 min): Scrape PA PUC press releases for candidate audits
+2. Verification (30 min): Page-1 caption checks
+3. Seed & Parse (1 hour): Add to data/seeds/pa_puc.json, run pipeline.sources
+4. Commit & Docs (15 min): Single commit + documentation
+
+---
+
+### 3. Scale to 3 New States (5 hours, MEDIUM priority)
+
+**[MEDIUM] Scope: Expand Deep South coverage — Louisiana, Mississippi, Arkansas. Target 9–15 new documents, 50–150 findings.**
+
+See detailed plan: `docs/SCALE_THREE_STATES_PHASED_PLAN.md`
+
+**Target states (recommended cluster):**
+- **Louisiana (LPSC):** 3–5 docs (fuel-cost reviews, Entergy audits)
+- **Mississippi (MPSC):** 3–5 docs (MPLS/Dominion audits, rate cases)
+- **Arkansas (APSC):** 3–5 docs (Entergy AR, Empire District)
+
+**Rationale:** Adjacent utilities (multi-state footprint), high regulatory activity, minimal current coverage (high value), similar to existing corpus.
+
+**Method:** Per-state 1.5-hour cycles:
+1. Discover 3–5 high-value docs (audits + fuel-cost orders)
+2. Verify page-1 captions (official .gov sources only)
+3. Seed + run pipeline.sources
+4. Spot-check extraction quality
+
+**Success:** 9–15 new docs, 50–150 findings, 3 state-specific commits, full pipeline green.
+
+---
+
+### 4. MI Liberty Findings Parser Refinement (3.5 hours, MEDIUM-LOW priority)
+
+**[MEDIUM-LOW] Scope: Extract true audit findings instead of chapter headers. Quality improvement +10–20 findings.**
+
+See detailed plan: `docs/MI_PARSER_REFINEMENT_PHASED_PLAN.md`
+
+Current: 4 MI audits extract 22 findings (mostly chapter/section headers, not audit findings).  
+Root cause: Regex patterns capture structural markers instead of true audit findings.  
+Goal: Identify real "Finding N:" markers in text; extract substantive findings ("The utility did not..." style).
+
+**Phases:**
+1. Document Analysis (45 min): Understand MI audit structure, find true-finding markers
+2. Regex Refinement (1.5 hours): Update parse_mi_findings(); add unit test
+3. Re-extraction (1 hour): Run updated parser on all 4 MI audits
+4. Testing (30 min): Full pipeline + test suite validation
+5. Commit (15 min): Clean commit with improved data quality
+
+**Success:** MI findings now extract meaningful audit content, finding_count reasonable (5–10 per audit), zero regressions, 1 commit.
+
+**Optional expansion:** Apply same method to NJ Liberty audits (4 docs, currently metadata-only) → additional 50–100 findings.
+
+---
+
+## Scale to Full State Coverage — Strategic Plan (2026-06-15)
+
+**[MEDIUM] Scope: Systematically expand from sampling few docs per jurisdiction to exhaustive per-jurisdiction coverage.**
+
+Current state: ~35 state PUC/audit docs across 12 jurisdictions (mostly 2-5 docs/state for validation). Full coverage would mean:
+
+1. **Per-jurisdiction audit census** — gather all available state audit reports (M&O, rate-case, prudence, affiliate) per regulator/state. Start with the 12 we touch: PA (bureau press releases), MI (MPSC news), CA (CPUC decisions index), NJ/OH/MD/CT/NY/MO/MS/TN/UT.
+2. **Targeted rate-case sampling** — not *all* rate cases (too many), but 3–5 high-value ones per state: (a) contested fuel-cost/prudence, (b) base-rate reset with affiliate scrutiny, (c) tariff/cost-recovery dispute. Filter for relevance to audit themes.
+3. **Access map maintenance** — per-regulator web recipes in `docs/data-sources.md` (already started: CA CPUC, TX PUCT, IL ICC, SC PSC patterns documented). Extend to cover OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA (the "walled" states requiring browser-capture or alternative sources).
+4. **Verify→seed→ingest→commit workflow** — a repeatable agent-driven cycle (proven in prior sessions) to onboard new docs: (a) agent finds candidate, (b) verify against official source (page-1 caption), (c) seed with metadata, (d) run pipeline.sources, (e) commit per-state with provenance.
+
+**Effort estimate:** ~2–3 docs/state × 50 states = ~150 new seeds; phased per regulator (do 5 at a time). **Owner:** bulk-ingest, pattern-scalable. **Priority:** medium (corpus depth matters for pattern confidence; breadth matters for "audit-my-doc" coverage).
+
+**Governance:** all .gov sources only; metadata-only for non-PDF legal docs; `pipeline.verify_sources` before commit (guards against fabrication).
+
+---
+
 **Remaining real-expansion work (only REAL, verified docs — never fabricate; run `python -m pipeline.verify_sources` before committing):**
 - **[high] More PA Bureau of Audits M&O audits** — the parser now handles both layouts, so each new one is cheap findings. Energy-scope only (skip water cos). Find via the PUC press-release archive → `pcdocs/{id}.pdf`. NY DPS focused-operations audits next (DMM guids + caption verify).
-- **[med] MI Liberty findings parser** — the 4 MI audits are text-extractable (0 scanned pp) but metadata-only; their consultant format differs from PA Exhibit-I-2. A dedicated parser would add findings.
 - **[med] Browser-capture genuinely-walled states** (no real data at all now): OK, MA, NH, WY, HI, VT, ME, AL, NM, NC, IA — per-state walls in docs/data-sources.md. The new browser-UA fallback may unblock some (try first).
 - **[low] Browser-confirm 2 OH FirstEnergy 20-1502 records** — real but the F5 WAF blocks script re-verification (CMIDs authentic, provenance documented).
 

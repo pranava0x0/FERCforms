@@ -2223,25 +2223,6 @@
     "fetch": true
   },
   {
-    "id": "ga_tier2_002_rules-regs",
-    "company": "rules-regs",
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "industry": null,
-    "pdf_url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/residential-pdfs/tariffs/2025/rules-regs.pdf",
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "accession": null,
-    "issued_date": null,
-    "docket": null,
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "parse": false,
-    "fetch": true
-  },
-  {
     "id": "ga_tier2_003_datacenterfactsheet",
     "company": "datacenterfactsheet",
     "collection": "state_audit",

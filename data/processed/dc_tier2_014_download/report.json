@@ -1,0 +1,30 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "DC",
+  "source": "State of DC Utility Commission",
+  "doc_type": "report",
+  "id": "dc_tier2_014_download",
+  "company": "download",
+  "company_raw": "download",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.dcpsc.org/",
+  "pdf_download_url": "https://edocket.dcpsc.org/apis/api/filing/download?attachId=103412&guidFileName=e3f32527-c385-4b7f-8974-87cf5a3ad594.pdf",
+  "captured_at": "2026-06-15",
+  "source_note": "DC PUC (Tier 2 deep scrape)",
+  "archived_via": null,
+  "page_count": 62,
+  "scanned_pages": [
+    2
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

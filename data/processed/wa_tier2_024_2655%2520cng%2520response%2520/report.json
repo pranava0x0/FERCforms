@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "WA",
+  "source": "State of WA Utility Commission",
+  "doc_type": "report",
+  "id": "wa_tier2_024_2655%2520cng%2520response%2520",
+  "company": "2655%2520CNG%2520response%2520letter%2520dated%25206-28-13",
+  "company_raw": "2655%2520CNG%2520response%2520letter%2520dated%25206-28-13",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.utc.wa.gov/",
+  "pdf_download_url": "https://www.utc.wa.gov/sites/default/files/2021-05/2655%2520CNG%2520response%2520letter%2520dated%25206-28-13.pdf",
+  "captured_at": "2026-06-15",
+  "source_note": "WA PUC (Tier 2 deep scrape)",
+  "archived_via": null,
+  "page_count": 3,
+  "scanned_pages": [
+    1,
+    2,
+    3
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": null,
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

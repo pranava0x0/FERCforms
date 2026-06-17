@@ -1,30 +1,32 @@
 [
   {
-    "id": "2024-06-30_mississippi-public-utilities-staff_ms-annual-report",
-    "company": "Mississippi Public Utilities Staff",
+    "id": "2023-mississippi-power_ms-mo-audit",
+    "company": "Mississippi Power Company",
     "collection": "state_audit",
     "jurisdiction": "MS",
-    "source": "Mississippi Public Utilities Staff",
-    "doc_type": "utilities staff annual report",
-    "pdf_url": "https://www.psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf",
-    "source_page_url": "https://www.psc.ms.gov/",
-    "issued_date": "2024-06-30",
-    "captured_at": "2026-06-02",
-    "source_note": "Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).",
-    "parse": false
+    "source": "Mississippi Public Service Commission (MPSC)",
+    "doc_type": "management and operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.ms.gov/filings/?utility=mississippi-power",
+    "source_page_url": "https://www.psc.ms.gov/filings/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "Mississippi Power M&O audit orders from MPSC. Requires manual docket search."
   },
   {
-    "id": "2025-06-30_mississippi-public-utilities-staff_ms-annual-report",
-    "company": "Mississippi Public Utilities Staff",
+    "id": "2023-dominion-energy-ms_ms-audit",
+    "company": "Dominion Energy Mississippi",
     "collection": "state_audit",
     "jurisdiction": "MS",
-    "source": "Mississippi Public Utilities Staff",
-    "doc_type": "utilities staff annual report",
-    "pdf_url": "https://www.psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf",
-    "source_page_url": "https://www.psc.ms.gov/",
-    "issued_date": "2025-06-30",
-    "captured_at": "2026-06-02",
-    "source_note": "Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2025, 27 pp. Documents the Staff's ongoing audits of the major investor-owned utilities' fuel-adjustment clauses (Entergy Mississippi ECR, Mississippi Power FCR) and its rate/prudence review activity before the Mississippi Public Service Commission. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/Documents/MPUS-2025-Annual-Report.pdf).",
-    "parse": false
+    "source": "Mississippi Public Service Commission (MPSC)",
+    "doc_type": "management and operations audit",
+    "industry": "electric",
+    "pdf_url": "https://www.psc.ms.gov/filings/?utility=dominion-energy",
+    "source_page_url": "https://www.psc.ms.gov/filings/",
+    "parse": false,
+    "fetch": false,
+    "captured_at": "2026-06-16",
+    "source_note": "Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search."
   }
 ]

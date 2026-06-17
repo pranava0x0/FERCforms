@@ -355,3 +355,212 @@ def structure_tx_audit(
         findings=findings,
         structured=True,
     )
+
+
+# --- Michigan Distribution Reliability Audits ---
+_MI_CHAPTER_RE = re.compile(r"^Chapter\s+([IVXLCM]+)\s*(?:–|—|-)\s*(.+?)$")
+_MI_FINDING_RE = re.compile(r"^(\d+)\.\s+(.+?)$")
+
+
+def parse_mi_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse Michigan MPSC reliability audit findings by chapter."""
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    current_chapter = None
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+
+    for line in lines:
+        chapter_match = _MI_CHAPTER_RE.match(line)
+        if chapter_match:
+            current_chapter = chapter_match.group(2)
+            chapters.append((current_chapter, []))
+            continue
+
+        finding_match = _MI_FINDING_RE.match(line)
+        if finding_match and current_chapter is not None:
+            finding_text = finding_match.group(2)
+            if finding_text:
+                chapters[-1][1].append((finding_text, None))
+
+    return chapters
+
+
+def structure_mi_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from Michigan distribution reliability audit."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_mi_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            rec_models.append(Recommendation(number=rec_no, text=text, source_page=None))
+        findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )
+
+
+# --- California ERRA Decisions ---
+def parse_ca_erra_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse California CPUC ERRA decision findings.
+
+    CPUC ERRA decisions use prose format with finding markers like:
+    - "We find that..."
+    - "The Commission finds..."
+    - "found from its..."
+    - "is reasonable"
+    - "must reject"
+    - Section headers and explanations
+    """
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+
+    # More flexible finding/issue detection
+    finding_markers = [
+        "found from its",  # "DRA found from its examination..."
+        "We find",         # "We find that..."
+        "The Commission finds",
+        "is ordered",
+        "It is ordered",
+        "is reasonable",   # SCE's process is reasonable
+        "must reject",     # we must reject
+        "is not",          # "X is not reasonable"
+        "are reasonable",  # processes/activities are reasonable
+        "required to",     # utilities are required to
+    ]
+
+    current_section = None
+    for i, line in enumerate(lines):
+        # Check if this line contains a finding marker
+        has_marker = any(marker in line for marker in finding_markers)
+        if has_marker and len(line) > 15 and len(line) < 300:
+            # This looks like a finding/ruling statement
+            finding_text = line
+            # Gather next 2-3 lines that might be part of the same thought
+            j = i + 1
+            while j < len(lines) and j < i + 4:
+                next_line = lines[j]
+                # Stop if we hit another marker (start of new finding)
+                if any(marker in next_line for marker in finding_markers):
+                    break
+                # Add continuation lines
+                if next_line and not next_line.startswith(("1", "2", "3")):  # Skip footnotes
+                    finding_text += " " + next_line
+                j += 1
+
+            # Clean up and store
+            text_clean = re.sub(r"\s+", " ", finding_text).strip()
+            if text_clean and len(text_clean) > 20:
+                title = text_clean[:80]
+                chapters.append((title, [(text_clean, None)]))
+
+    return chapters
+
+
+def structure_ca_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from California ERRA decision."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_ca_erra_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            text_clean = re.sub(r"\s+", " ", text).strip()
+            if text_clean and len(text_clean) > 10:
+                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
+        if rec_models:
+            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    if not findings:
+        return None
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )
+
+
+# --- New Jersey Rate Cases & Audit Orders ---
+def parse_nj_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse New Jersey BPU rate case orders and audit findings."""
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
+
+    for i, line in enumerate(lines):
+        if any(marker in line for marker in ["Finding", "Order", "Determination", "Issue"]) and len(line) < 250:
+            title = line.replace("Finding", "").replace("Order", "").replace("Issue", "").strip()
+            if not title or len(title) < 3:
+                continue
+            description_lines = []
+            for j in range(i + 1, min(i + 8, len(lines))):
+                next_line = lines[j]
+                if any(m in next_line for m in ["Finding", "Order", "Issue"]):
+                    break
+                if next_line and len(next_line) > 15:
+                    description_lines.append(next_line)
+
+            if description_lines:
+                text = " ".join(description_lines)
+                chapters.append((title, [(text, None)]))
+
+    return chapters
+
+
+def structure_nj_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
+    """Build AuditReport from New Jersey rate case or audit order."""
+    full_text = "\n".join(p.text for p in pages)
+    chapters = parse_nj_findings(full_text)
+    with_findings = [(title, findings) for title, findings in chapters if findings]
+
+    if not with_findings:
+        return None
+
+    findings: list[Finding] = []
+    rec_no = 0
+    for idx, (title, finding_items) in enumerate(with_findings, 1):
+        rec_models = []
+        for text, _page in finding_items:
+            rec_no += 1
+            text_clean = re.sub(r"\s+", " ", text).strip()
+            if text_clean and len(text_clean) > 20:
+                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
+        if rec_models:
+            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
+
+    if not findings:
+        return None
+
+    return AuditReport(
+        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
+        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
+        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
+        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
+        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
+        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
+        finding_count=len(findings), findings=findings, structured=True,
+    )

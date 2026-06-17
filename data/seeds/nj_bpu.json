@@ -12,8 +12,8 @@
     "issued_date": "2024-10-09",
     "docket": "ER23120924 / GR23120925",
     "captured_at": "2026-06-02",
-    "source_note": "Order Adopting Initial Decision and Stipulation in the petition of Public Service Electric and Gas Company (PSE&G) for an increase in electric and gas base rates, NJ BPU Docket Nos. ER23120924 (electric) and GR23120925 (gas) / OAL PUC 00926-24, issued at the October 9, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20241009/; docket system: publicaccess.bpu.state.nj.us (Imperva-protected — the static board-order PDF is the fetched source).",
-    "parse": false
+    "source_note": "Order Adopting Initial Decision and Stipulation in the petition of Public Service Electric and Gas Company (PSE&G) for an increase in electric and gas base rates, NJ BPU Docket Nos. ER23120924 (electric) and GR23120925 (gas) / OAL PUC 00926-24, issued at the October 9, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20241009/; docket system: publicaccess.bpu.state.nj.us (Imperva-protected \u2014 the static board-order PDF is the fetched source).",
+    "parse": true
   },
   {
     "id": "2024-02-14_jersey-central-power-light_nj-er23030144",
@@ -29,7 +29,7 @@
     "docket": "ER23030144",
     "captured_at": "2026-06-02",
     "source_note": "Decision and Order Adopting Initial Decision and Stipulation on the verified petition of Jersey Central Power & Light Company (JCP&L) for increases in its electric rates (2023 base-rate filing), NJ BPU Docket No. ER23030144 / OAL PUC 3346-23, issued at the February 14, 2024 agenda meeting. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2024/20240214/; docket system: publicaccess.bpu.state.nj.us.",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2025-11-21_nj-electric-distribution-utilities_nj-er25040190",
@@ -44,8 +44,8 @@
     "issued_date": "2025-11-21",
     "docket": "ER25040190",
     "captured_at": "2026-06-02",
-    "source_note": "Decision and Order approving the auction process for Basic Generation Service (BGS) for the period beginning June 1, 2026 — the statewide descending-clock procurement that sets default-supply prices for Atlantic City Electric, JCP&L, PSE&G, and Rockland Electric customers, NJ BPU Docket No. ER25040190, issued at the November 21, 2025 agenda meeting. Listed for reference (metadata-only). PDF on the BPU energy/BGS host www.nj.gov/bpu/pdf/energy/bgs/; docket system: publicaccess.bpu.state.nj.us.",
-    "parse": false
+    "source_note": "Decision and Order approving the auction process for Basic Generation Service (BGS) for the period beginning June 1, 2026 \u2014 the statewide descending-clock procurement that sets default-supply prices for Atlantic City Electric, JCP&L, PSE&G, and Rockland Electric customers, NJ BPU Docket No. ER25040190, issued at the November 21, 2025 agenda meeting. Listed for reference (metadata-only). PDF on the BPU energy/BGS host www.nj.gov/bpu/pdf/energy/bgs/; docket system: publicaccess.bpu.state.nj.us.",
+    "parse": true
   },
   {
     "id": "2025-06-18_atlantic-city-electric_nj-rate-mitigation",
@@ -60,7 +60,7 @@
     "issued_date": "2025-06-18",
     "captured_at": "2026-06-07",
     "source_note": "Order on Rate Mitigation Filing of Atlantic City Electric Company (ACE / Exelon), issued at the June 18, 2025 agenda meeting. Rate mitigation filing in response to elevated wholesale electricity costs from PJM markets following July 2024 auctions. Listed for reference (metadata-only). PDF on the BPU board-orders host www.nj.gov/bpu/pdf/boardorders/2025/20250618/; docket system: publicaccess.bpu.state.nj.us.",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2022-12_pseg_nj-affiliate-management-audit",
@@ -92,7 +92,7 @@
     "docket": "EA20110733",
     "source_note": "NJ BPU audit (Liberty Consulting Group): Phase Two of an Audit of the Affiliated Transactions and a Management Audit of JCP&L. Docket EA20110733, dated Feb 7, 2023. 601 pp. Page 1 verified.",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2020-03-11_atlantic-city-electric_nj-affiliate-management-audit",
@@ -108,7 +108,7 @@
     "docket": null,
     "source_note": "NJ BPU audit (Liberty Consulting Group): Audit of Affiliated Transactions and Operational and Financial Performance and a Management Audit of Atlantic City Electric. Dated March 11, 2020. 705 pp. Page 1 verified.",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   },
   {
     "id": "2014_njng_nj-ga13010008-affiliate-management-audit",
@@ -124,6 +124,6 @@
     "docket": "GA13010008",
     "source_note": "NJ BPU audit: Audit of Affiliated Transactions between NJNG and New Jersey Resources and affiliates (N.J.S.A. 48:3-49) plus a Comprehensive Management Audit of NJNG. Docket GA13010008. 326 pp. Title page does not print a day -> issued_date null (filed 2014). Page 1 verified.",
     "captured_at": "2026-06-08",
-    "parse": false
+    "parse": true
   }
 ]

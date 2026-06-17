@@ -22,7 +22,3284 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 252,
+  "findings": [
+    {
+      "index": 1,
+      "title": "s ........................................................................................................................ 11",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Conclusions .................................................................................................................. 31 Chapter III: Power Supply and Market Conditions Table of Contents ......................................... 34 Chapter III: Power Supply and Market Conditions ...................................................................... 35 Chapter Summary ......................................................................................................... 35",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "s ........................................................................................................................ 37",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 2,
+          "text": "Conclusions .................................................................................................................. 58 Recommendations ........................................................................................................ 60 Chapter III Appendix: PJM Stakeholder Process Groups ............................................................. 62 Chapter IV: Cost Allocation Methods Table of Contents ............................................................. 63 Chapter IV: Cost Allocation Methods .......................................................................................... 64",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "s ........................................................................................................................ 65",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Conclusions .................................................................................................................. 85 Recommendations ........................................................................................................ 92 Chapter V: Capital Allocation Table of Contents ......................................................................... 96 Chapter V: Capital Allocation ...................................................................................................... 97",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "s ........................................................................................................................ 97",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Conclusions ................................................................................................................ 111 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Table of Contents",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "s - - Boards of Directors ................................................................................. 390",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Conclusions - - Boards of Directors ........................................................................... 398 Recommendations - - Boards of Directors ................................................................. 401",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "s - - Top Management’s Focus and Support .................................................. 403",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Conclusions - - Top Management’s Utility Focus and Support ................................. 421 Recommendations - - Top Management’s Utility Focus and Support ....................... 423",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "s - - Internal Controls, Compliance, and Ethics ............................................. 424",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Conclusions - - Internal Controls, Compliance, and Ethics ....................................... 437 Recommendations - - Internal Controls, Compliance, and Ethics ............................. 440 Chapter X: Human Resources Table of Contents ....................................................................... 441 Chapter X: Human Resources ..................................................................................................... 442",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "s ...................................................................................................................... 442",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Conclusions ................................................................................................................ 449 Recommendations ...................................................................................................... 451 Chapter XI: Staffing and Compensation Table of Contents ....................................................... 452 Chapter XI: Staffing and Compensation ..................................................................................... 453",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "s - - Staffing ................................................................................................... 455",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Conclusions - - Staffing .............................................................................................. 473 Recommendations - - Staffing .................................................................................... 474",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "s - - Compensation and Benefits .................................................................... 476",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Conclusions - - Compensation and Benefits .............................................................. 490 Recommendations - - Compensation and Benefits .................................................... 492 Chapter XII: Strategic Planning Table of Contents .................................................................... 493 Chapter XII: Strategic Planning .................................................................................................. 494",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "s ...................................................................................................................... 495",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 11,
+          "text": "Conclusions ................................................................................................................ 504 Recommendations ...................................................................................................... 507 Chapter XIII: Finance and Cash Management Table of Contents .............................................. 508 Chapter XIII: Finance and Cash Management ............................................................................ 509",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "s ...................................................................................................................... 510",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Conclusions ................................................................................................................ 525 Recommendation ........................................................................................................ 529 Chapter XIV: Accounting and Property Records Table of Contents .......................................... 530 Chapter XIV: Accounting and Property Records ....................................................................... 531",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "s ...................................................................................................................... 532",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Conclusions ................................................................................................................ 552 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Table of Contents",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "s ...................................................................................................................... 560",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Conclusions ................................................................................................................ 580 Recommendations ...................................................................................................... 586 Chapter XVI: External Relations Table of Contents .................................................................. 587 Chapter XVI: External Relations ................................................................................................ 588",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "O&M Management - - s ................................................................................. 606",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "O&M Management - - Conclusions ........................................................................... 616 O&M Management - - Recommendations ................................................................. 618 System Planning - - Background ................................................................................ 618",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "System Planning - - s ..................................................................................... 618",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "System Planning - - Conclusions ................................................................................ 625 System Planning - - Recommendations ...................................................................... 626 Smart Grid Planning - - Background .......................................................................... 626",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "title": "Smart Grid Planning - - s ............................................................................... 627",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 17,
+          "text": "Smart Grid Planning - - Conclusions ......................................................................... 632 Smart Grid Planning - - Recommendations ............................................................... 633 Chapter XVIII: Cyber Security and System Vulnerability Table of Contents ........................... 634 Chapter XVIII: Cyber Security and System Vulnerability ......................................................... 635",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "title": "s ...................................................................................................................... 637",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Conclusions ................................................................................................................ 641 Recommendations ...................................................................................................... 642 Chapter XIX: Clean Energy Table of Contents .......................................................................... 646 Chapter XIX: Clean Energy ........................................................................................................ 647",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "title": "s ...................................................................................................................... 647",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Conclusions ................................................................................................................ 653 Recommendations ...................................................................................................... 654 Chapter XX: Contractor Performance - - Mark-Outs and Services Table of Contents .............. 655 Chapter XX: Contractor Performance - - Mark-Outs & Services ............................................... 656",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "title": "s ...................................................................................................................... 657",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 20,
+          "text": "Conclusions ................................................................................................................ 661 Recommendations ...................................................................................................... 662 Chapter XXI: Support Services Table of Contents ..................................................................... 664 Chapter XXI: Support Services .................................................................................................. 665",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "title": "s ...................................................................................................................... 665",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "Conclusion .................................................................................................................. 694 Recommendations ...................................................................................................... 698 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "title": "16. Remove “consistent with the requirements of the ” from the required Exelon officer",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "certifications and add to the certification a statement that Exelon “has maintained” separation. 17. Establish and conduct a regular process for examining, tracking, and reporting of compliance with merger commitments to the BPU. Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "title": "s............................................................................................................................. 11",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Overview of 2008-2017 ACE Returns on Equity ........................................................ 11 2008-2017 Earnings Deficiency Contributors .............................................................. 12 Annual Deficiency Summary ....................................................................................... 14 Earnings Deficiency Drivers ........................................................................................ 15 Year-By-Year Analysis of Earnings Deficiency Factors ............................................. 22 Conclusions ....................................................................................................................... 31",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 24,
+          "text": "Overview of 2008-2017 ACE Returns on Equity ACE’s actual Return on Equity (ROE) fell well below BPU-authorized levels in every year since 2009. The company experienced consistent and substantial earnings shortfalls in each of the last nine years. The following chart shows that ACE earned less than a 5 percent return on equity in each year from 2011 through 2017. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "title": "s............................................................................................................................. 37",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 25,
+          "text": "NUG Contracts ............................................................................................................. 37 NUG Purchase and Sale Amounts ................................................................................ 38 NUG Pricing Validation ............................................................................................... 43",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 26,
+          "text": "1. NUG Contracts ACE’s NUG contracts came into existence under the provisions of the Public Utility Regulatory Policies Act of 1978 (PURPA). The Act has required utilities to purchase power from non-utility generators through long-term, non-market-based bilateral contracts. Each NUG decides the level of energy output produced by its facilities, and ACE system operations controls the dispatch of its NUG purchases into PJM, the region’s system operator. The contracts entitle the NUGs to fixed capacity prices and to energy prices tied to a coal price index. ACE pays NUGs a set contract price",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "title": "used to allocate costs to customer classes appropriate. We reviewed the NJBPU s finalizing",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "ACE’s 2014, 2015, 2016 and 2017 NGC rates. 13. PJM Participation a. PJM Committee Interface Procedures Exelon’s PJM Committee Interface Procedures lay out specific guidelines for participation in the many PJM committees. The document outlines a “coordination and communication protocol” between Exelon and PJM. The process is ostensibly designed to ensure that Exelon’s positions reflect input from the appropriate affected stakeholders within Exelon. It also lays out guidelines",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "title": "channeling communications on PJM issues. A PJM s Council (PIC) SharePoint repository",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 28,
+          "text": "houses documents related to each task or committee endeavor. Representatives of the MC and MRC and other employees from the array of Exelon affiliates in PJM form a Tariff Review Team. This team provides representation of ACE on key PJM issues. The process falls under the Transmission Strategy and Compliance organization. Exelon also lays out guidelines for external communications related to PJM initiatives. Procedures cover guidelines for external communications and ensure compliance with PJM’s Code of Conduct for committee participation. Ultimately, Committee Representatives support a united Exelon position.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "title": "s............................................................................................................................. 65",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 29,
+          "text": "Affiliate Transaction Paths ........................................................................................... 65 Cost Allocation Manuals .............................................................................................. 67 Service Agreements and Allocation Factors/Ratios ..................................................... 68",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "1. Affiliate Transaction Paths The Exelon merger created substantial changes in the transaction paths among affiliates of ACE: • A new service company, EBSCo, which had served the broad and large range of Exelon affiliates (utility and not) and which would provide increasing levels of corporate support services to the PHI companies • Movement of remaining PHI non-utility business operations to the non-utility sector of Exelon, completing a process that PHI had begun before the merger to focus more on its",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "title": "• An Internal  number, used for specific, generally not regular work activities; e.g., an",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 31,
+          "text": "audit of an individual affiliate • A Work Breakdown Structure (WBS) designator, generally used for field capital or O&M work; e.g., storm work. Thus, cost objects included both departments or work groups (cost centers) and project or activity- based collectors (work orders and other items under the work breakdown structure PHI used to budget, manage, and control work on activities like capital projects). These cost objects provided a comprehensive list of activities that allow the accumulation of costs in a robust manner of ways,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "title": "s............................................................................................................................. 97",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 32,
+          "text": "Capital Allocation Trends ............................................................................................ 97 PHI’s Adoption of Exelon Capital Allocation Processes ........................................... 100 Capital Allocation under the Exelon Approach ......................................................... 101 Conclusions ..................................................................................................................... 111 Recommendations ........................................................................................................... 114",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 33,
+          "text": "Capital Allocation Trends As 2014 began, PHI projected moderately declining capital expenditures for the next five years - - from a projected of $1.29 billion in 2014 to $1.131 for 2018. The next table shows actual capital expenditures in 2013-2018 for the PHI and Exelon utilities, and for Exelon Generation as reported in Exelon and PHI annual 10-K reports (actual through 2017 and estimated for 2018). Annual capital expenditures for all three former PHI utilities did not decrease as expected in 2014, but have actually increased substantially. The increase for the three years since the merger (beginning",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "title": "s ...................................................................................................................... 122",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 34,
+          "text": "Conclusions ................................................................................................................ 133 Recommendations ...................................................................................................... 134 Reliability Improvement ................................................................................................. 134",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "title": "s ...................................................................................................................... 135",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Conclusions ................................................................................................................ 146 Recommendations ...................................................................................................... 149 Asset Management, Inspection, and Maintenance .......................................................... 150",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "title": "s ...................................................................................................................... 151",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 36,
+          "text": "Conclusions ................................................................................................................ 163 Recommendation ........................................................................................................ 165 Vegetation Management ................................................................................................. 166",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "title": "s ...................................................................................................................... 166",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 37,
+          "text": "Conclusions ................................................................................................................ 171 Recommendations ...................................................................................................... 172 Improving System Resiliency ......................................................................................... 172",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "title": "s ...................................................................................................................... 173",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 38,
+          "text": "Conclusions ................................................................................................................ 175 Recommendations ...................................................................................................... 176 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "title": "s ...................................................................................................................... 178",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 39,
+          "text": "Conclusions ................................................................................................................ 188 Recommendations ...................................................................................................... 190 Distribution Planning ...................................................................................................... 191",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "title": "s ...................................................................................................................... 191",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 40,
+          "text": "Conclusions ................................................................................................................ 195 Recommendations ...................................................................................................... 195 Load Forecasting ............................................................................................................. 195",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "title": "s ...................................................................................................................... 196",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 41,
+          "text": "Conclusions ................................................................................................................ 200 Recommendations ...................................................................................................... 200 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "title": "required by the BPU’s May 29. 2013  at Docket No. EO12111950. The system complies",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 42,
+          "text": "with the requirements of N.J.A.C. Title 14:5-8.12 and it comports with good utility practice. Our review of system management tools found them appropriate. Operations Control Center organization, staffing, procedures, tools and practices are sound, but management should develop a formal response plan for addressing total loss of a major substation. We found restoration practices sufficiently focused on prioritization, management by personnel closest to the facilities and customers affected, yet efficient and well-controlled. Management performs effective tabulation and assessment of outage causes for use in identifying ways to reduce them.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "title": "We began our work with a review of a broad set of available information described in the s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "section of this chapter. The documents we reviewed included: • Annual System Performance Reports (ASPRs) • Reports of prior audits • Other performance reports and associated quarterly reports",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "title": "• Board s in base rate cases and infrastructure filings",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "• The documents related to reliability addressed in Chapter VIII, which addresses Merger We also undertook a detailed review of policies, practices, procedures, plans, and activities. We reviewed focused sets of data addressing distribution-system condition, status, trouble spots, and costs. We conducted interviews and a number of field inspections of equipment, condition, and 2. Task Structure",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 45,
+          "text": "a. BPU Requirements Regarding Outage Management System Reporting",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "title": "The BPU’s May 29, 2013 , in Docket No. EO12111950, (Recommendation No. 8) required",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 46,
+          "text": "ACE to submit to Staff a report detailing plans and timetables for specific technological advances and upgrades to its Outage Management System and computerized support systems, workflow process and workforce changes addressing the capture and reporting of damage and outages on a municipal basis. ACE’s system operations tools include GIS, SCADA, State Estimator, Energy Management System, IVR, and Outage Management System. ACE reported to the BPU on July 29, 2013. See Chapter VI. ACE reported its use of an Oracle Outage Management System to analyze outage data secured from SCADA input and customer calls to identify likely outage",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "title": "System as required by the BPU’s May 29. 2013  at Docket No. EO12111950; the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "system complies with N.J.A.C. Title 14:5-8.12. ACE’s July 29, 2013 report to the BPU satisfied this requirement. Our review of the system’s capabilities found them compliant with BPU requirements and with good utility practice. 2. Outage Management - - The capabilities of ACE’s Outage Management System conform to BPU requirements and to good utility practice. (See Recommendation #1) ACE has appropriately automated tools, which it applies to identify, manage responses to outages, and promote timely and effective restoration activities. Its systems and tools comport with the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 48,
+          "text": "a. Compliance with Reporting Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "title": "program targeting a SAIFI value of 1.30 and a SAIDI value of 160. The  required reliability",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 49,
+          "text": "improvement reporting against a number of specific measures, as part of ACE’s Annual System Performance Reports. These reports have included the required information, beginning with ACE’s 2013 Annual System Performance Report.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "title": "Docket No. EO12070650 and Docket EM14060581: The February 20, 2013  in Docket No.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 50,
+          "text": "EO12070650 required ACE to increase the percentage of priority feeders (Worst Performing Feeders) addressed in each of its operating districts from four to eight percent, and initiate reporting and tracking of hazard trees. ACE made the required changes to its Priority Feeder program, and included hazard-tree reporting, beginning with its 2014 Annual System Performance Report. The",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "title": "Exelon merger order (February 11, 2015  Approving Stipulation of Settlement (Docket",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 51,
+          "text": "EM14060581)) required ACE to continue its Reliability Improvement Plan programs and reporting on them until at least to the end of 2021.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "title": "The Board’s Annual System Performance Reports  requirements have been codified,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 52,
+          "text": "requiring that ACE Annual System Performance Reports: • Compare prior-year SAIFI and CAIDI performance with targets, • Summarize company-wide and operating district SAIFI and CAIDI performances and major causes of interruptions for the past 10 years. • Summarize reliability programs and any changes to them, including inspection and maintenance program, the Worst Performing Feeders program methods and corrective",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "title": "The February 20, 2013  in Docket No. EO12070650 required ACE to provide Quarterly",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 53,
+          "text": "Outage Reports addressing all sustained outages experienced. The BPU also required ACE to provide quarterly reports on substations exceeding minimum reliability levels. Section 14:5-8.7 of the 2015 N.J.A.C.- New Jersey Electric Distribution Service Reliability and Quality Standards codified these reporting requirements. ACE has submitted quarterly lists of substations SAIFI and SAIDI. ACE has also submitted submitting Quarterly Detailed Feeder Outage Reports. These reports contain the information required. ACE has also submitted Quarterly Reliability Improvement Plan Progress Reports, since at least",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "title": "Docket No. ER09080664’s May 16, 2011  addressing the Reliability Improvement Plan",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "targeted a 2016 value of 1.30 for SAIFI (average number of interruptions per customer per year) and a value of 160 for SAIDI (average minutes of interruption per system customer per year). Reaching these targets would produce a 20 percent improvement in SAIFI value and 25 percent",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "title": "for SAIDI, as compared with 2009 levels. The  and N.J.A.C. Title14:5-8.8(g) have required",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 55,
+          "text": "the following programs as part of the Reliability Improvement Plan: • Enhanced Vegetation Management • Priority (Worst Performing) Feeders (increased from four to eight percent in each district) • Load Growth (Distribution Capacity Expansion) • Distribution Automation • Feeder Improvements (Comprehensive Feeders) • Substation Improvements.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "title": "• The May 16, 2011  in Docket No. ER09080664 authorized Reliability Improvement",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 56,
+          "text": "programs Priority Feeders Feeder Improvements.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "title": "• The February 20, 2013  in Docket No. EO12070650 required an increase in the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 57,
+          "text": "percentage of Worst Performing Feeders to be addressed in each operating district from four to eight percent. • In 2015, N.J.A.C.14:5-8.8 required identification of eight percent of worst performing feeders in each operating district and actions to improve reliability within a year.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "title": "• The merger order (February 11, 2015  Approving Stipulation of Settlement in Docket",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 58,
+          "text": "EM14060581) continued Reliability Improvement Programs until to at least the end of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "title": "In assessing efforts to continue Reliability Improvement Plans consistently with BPU s and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 59,
+          "text": "N.J.A.C. regulations, we considered components, employed since or near the first applicable order • Capital Funded o Worst Performing Feeders o Comprehensive Feeder Program o Distribution Automation Using Smart Grid Technology o Underground Residential Cable Replacement",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "title": "Reporting under Docket No. ER09080664’s May 16, 2011  and N.J.A.C. 14:5-8.8 has been",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 60,
+          "text": "timely, and has included the required information. Annual System Performance Reports show an increase from four to eight percent in feeders included in the Priority Feeder Program in each its Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Focused Operations Review",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "title": "and in the Exelon merger docket. ACE has submitted quarterly lists of substation SAIFI and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 61,
+          "text": "SAIDI and Quarterly Detailed Feeder Outage Reports. 7. ACE has achieved first quartile reliability performance, exceeding the targets forming part of the Exelon merger commitments. ACE has already reached SAIFI and CAIDI performance levels better than those targeted for 2020. Its performance has gone well beyond levels targeted for 2020, moving into the top quartile of the peer group established for benchmarking performance. Using 2016 IEEE data for the peer group shows an ACE 2017 SAIFI measurement of 0.86 versus the 1st quartile threshold value of 0.88 and",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "title": "2011  in Docket No. ER09080664. Management has addressed more than the required",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 62,
+          "text": "numbers and distribution of feeders through actions appropriately designed to improve their reliability performance. Management has supplemented this program with substantial actions to address its broader population of feeders as well. Performance data show improved performance on treated feeders and better performance among currently targeted worst performers - - both substantial measures of success in meeting program goals. 10. The substantial investments made in Distribution Automation demonstrate robust continuation of this element of ACE’s Reliability Improvement Plan.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 63,
+          "text": "a. Asset Management Approach and Strategy Management describes its asset management goal and approach in a typical fashion: “to construct, maintain, and repair electric transmission, distribution and substation equipment using sound engineering principles and quality practices that support maximizing equipment and system reliability and resiliency in a cost effective and safe manner.” ACE meets this goal by continual investment in maintaining system reliability by upgrading distribution infrastructure to avoid equipment failures and by replacement of infrastructure that is aging, or has the reached the end",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "title": "May 16, 2011  in Docket No. ER09080664: The  requiring ACE to implement",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 64,
+          "text": "Reliability Improvement Plan (RIP) programs addressed increased clearance between overhead wires and trees and work with stakeholders to remove hazard trees. We address below management’s inclusion of these elements in its subsequent vegetation management plans and Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "title": "January 23, 2013 s following Hurricane Irene in Docket No. EO11090543: The",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 65,
+          "text": "required establishment of a work group to develop a system to be maintained by ACE for tracking vegetation-related distribution outages and vegetation. ACE has established and it maintains a vegetation Outage Data and Process Overview process for tree caused outages of 500 customers or more. ACE also reviewed vegetation-related outage data, analyzed impacts on system reliability, and reported on the results. ACE submitted its analysis of impacts on May 1, 2013. N.J.A.C. 14:5-8.6. 2015 provisions required ACE to focus inspection and maintenance in significant part on reliability, including vegetation, to submit an Annual System Performance",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 66,
+          "text": "a. PowerAhead’s Reporting Requirements ACE included in its 2016 base rate case filing proposed expenditures of $176 million over five years under a “PowerAhead” program designed to improve system resiliency. The BPU authorized $79 million for subprograms intended to improve distribution infrastructure storm resiliency and to reduce restoration times. Projects and programs making up the remainder of ACE’s proposal included smart sensors for street lights, a new mutual assistance staging center, a new emergency response center, distributed energy feeder upgrades, or replacing old open secondary wire with",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "title": "in Docket No. EO12070650 detailing blue-sky performance.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 67,
+          "text": "b. PowerAhead Genesis and Design ACE developed its resiliency plans using analyses of causes of poor feeder section performance during past major storm events. Resiliency-improvement practices have focused on reducing feeder faults and asset damage during severe storms, and improving sectionalizing and load transfer capability. These efforts bear a relationship to blue-sky reliability improvement plan programs, but specifically sought interruption minute and CAIDI improvements during storm",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "title": "Per the May 31, 2017  in Docket No. ER16030252, ACE has conducted baseline analysis",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 68,
+          "text": "detailing selection criteria for PowerAhead program feeders, using customer minutes of interruption and CAIDI metrics for major events. The analyses presented provide justifications that selected feeders are incremental to existing reliability improvement programs and base-rate reliability spending. ACE has commenced work on the six PowerAhead subprograms, and submitted on March 30, 2018, the first semi-annual PowerAhead progress report required by the ACE reported work performed, budgeted and actual costs, targeted completion, explanations of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "title": "provide a tabulation of daily stakeholder calls, as required by January 2013  EO11090543,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 69,
+          "text": "in response to Hurricane Irene. The next table summarizes the nine reportable weather and two substation events through 2017 and the three that occurred through the first quarter of 2018. The last column reports the approximate maximum time for most outages. Major Events between 2013 and March 2018 – Peak Totals of Customer Outages",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 70,
+          "text": "a. Consolidation of PHI/ACE and Exelon Emergency Management Exelon has integrated the pre-merger PHI Emergency Operations Plan with those of its other utilities, seeking to incorporate best practices, provide coordinated methods and practices, and to support the ability to share knowledgeable resources across companies when one faces extreme events. The Exelon Model’s Peer Group process (see Chapter IX) provides a forum for continuous improvement and the sharing of experiences, in part through regular quarterly meetings among emergency planning and response subject matter experts from across the Exelon footprint.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "title": "BPU s following Hurricane Irene, Hurricane Sandy, and the Bow Echo summer",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 71,
+          "text": "thunderstorm obligated ACE to address a number of event preparation and response recommendations:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "title": "• Irene: Many recommendations in the January 23, 2013  in Docket No. EO11090543",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 72,
+          "text": "came from the August I, 2012 EPP Report Actions to implement the recommendations address storm preparedness and restoration, the emergency organization, planning, drills, training, pre-event communications, customer service activities and the call center, external and internal communications, activation, mutual assistance, workforce management, damage assessment, estimated restoration times, command and control, cell phone application, logistics, follow up, storm restoration metrics, external analysis, and substation",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "title": "Board  in Docket No. EO12111050). The ’s recommendation address storm-",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 73,
+          "text": "restoration external communications.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "title": "• Bow Echo: The September 11, 2015  in Docket No. EO15080984 made a number of",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 74,
+          "text": "recommendations addressing internal and external communications and global estimated time of restorations. We reviewed actions taken to implement them. Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Focused Operations Review",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "title": ", Area, and Circuit Breaker Restoration",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 75,
+          "text": "District/Service Center Activation Guidance Transmission System Emergencies Lock Out Tag Out Overview Internal Communications 29. Management has implemented the recommendations arising from Irene, Sandy, and Bow",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "title": "Echo-related recommendations of the September 11, 2015  in Docket No. EO15080984.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 76,
+          "text": "30. The storm preparedness and restoration manual, procedures, and practices generally comport with BPU orders and largely reflect good utility practices, but exhibit features warranting improvement. The Emergency Operations plan is sufficiently comprehensive in scope and detail, and provides clear direction to those engaged in event preparation and response. It addresses nearly all elements of storm preparedness, restoration response, and post event analysis. 31. Management provides effectively for the organization and resources necessary for storm",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "title": "• Staging Area Checklist: attached to BPU-48 (January 23, 2013 Board  No.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 77,
+          "text": "• Crew Leader and Crew Daily Checklist. The conclusion referenced as underlying this recommendation details the activities and verifications we recommend. Update the Customer Care Storm Emergency Response Plan to reflect recent changes to key supporting technologies and outage communications strategies. (See Conclusion #35) Examples include the Twenty First Century Communications (TFCC) to West, discontinuation of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 78,
+          "text": "a. National Electrical Safety Code Compliance Management applies the National Electrical Safety Code (NESC) in planning its distribution facilities. Our audit work in the areas preceding those discussed in this portion of this chapter confirmed that application in general ways. We selected conformity with National Electric Safety Code rules applicable to Grade C and Grade B overhead line construction to test code compliance. These requirements address strength required to withstand at least 0.5 inch of radial ice, with a wind loading of 4 lbs. per square foot, at 0 F. These construction requirements, however, are not",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "title": "Following a 2013 BPU Distribution Automation , management began to implement a",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 79,
+          "text": "Distribution VAR Dispatch (DVD) system for control of capacitors. This centralized system monitors and controls distribution feeder capacitors. It automatically performs capacitor switching to achieve a targeted power factor. ACE piloted the program at is Glassboro, Lamb, Terrace, and Washington Substations, outfitting all capacitor banks on the substations’ feeders with communications equipment. The program has yet to expand beyond the initial group of four Board of Public Utilities",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 80,
+          "text": "a. Forecasting Organizations The PJM Interconnection operates as a regional transmission organization coordinating wholesale electricity movement in New Jersey, Delaware, Maryland, the District of Columbia, Pennsylvania, Virginia, West Virginia, Illinois, Indiana, Kentucky, Michigan, North Carolina, Ohio, and Tennessee. PJM operates a competitive wholesale electricity market and manages the high-voltage electricity grid to ensure reliability. PJM’s long-term regional planning process identifies grid improvements to ensure system-wide reliability and economic benefits. The PJM planning process",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "title": "s ...................................................................................................................... 209",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 81,
+          "text": "Conclusions ................................................................................................................ 211 Recommendations ...................................................................................................... 212 General Administration of the Standards ........................................................................ 212",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "title": "s ...................................................................................................................... 212",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 82,
+          "text": "Conclusions ................................................................................................................ 212 Recommendations ...................................................................................................... 213 Non-Discrimination Standards (Section 14:4-3.3) ......................................................... 213",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "title": "s ...................................................................................................................... 277",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 83,
+          "text": "Conclusions ................................................................................................................ 277 Recommendations ...................................................................................................... 277 Regulatory Oversight (Section 14:4-3.7) ........................................................................ 277",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "title": "s ...................................................................................................................... 278",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 84,
+          "text": "Conclusions ................................................................................................................ 278 Recommendations ...................................................................................................... 278 Dispute Resolution (Section 14:4-3.8) ............................................................................ 278",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "title": "s ...................................................................................................................... 279",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 85,
+          "text": "Conclusions ................................................................................................................ 279 Recommendations ...................................................................................................... 279 Violations and Penalties (Section 14:4-3.9).................................................................... 279",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "title": "s ...................................................................................................................... 279",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 86,
+          "text": "Conclusions ................................................................................................................ 280 Recommendations ...................................................................................................... 280 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "title": "• s associated with books and records and chart of accounts requirements: Chapter",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 87,
+          "text": "XIV, Accounting and Property Records • Customer service performance and training: Chapter XV, Customer Service • Finance and money pool issues: Chapter XIII, Finance and Cash Management • Independence and segregation of utility/non-utility planning: Chapters IV, Cost Allocation Methods, V, Capital Allocation, IX, Executive Management and Corporate Governance, and XII, Strategic Planning • Information technology protocols and management: XXI, Support Services",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 88,
+          "text": "Management provided a list of products and services offered by each Exelon or PHI business. The large majority of these entities, totaling 345, neither operated nor had customers in New Jersey during our audit period. ACE’s 2017 Compliance Plan identifies nine entities as offering or providing services to retail customers in New Jersey: • Millennium Account Services, LLC: this joint venture of Pepco Holdings, LLC and South Jersey Gas provided meter-reading services to each’s New Jersey utility operating companies: ACE and South Jersey Gas.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 89,
+          "text": "A Vice President at the Exelon level has overall responsibility for corporate compliance and ethics, including compliance with the Standards. Various ACE and PHISCo business groups support these efforts. Attorneys prepare the annual ACE Compliance Plans, with input from the business groups affected by specific portions of the Standards. The Cost Allocation Manual (CAM), which serves as a key component of many provisions in the Standards is also managed by a senior officer, the Vice President and Controller of PHI. The CAM, discussed more broadly in Chapter IV, Cost Allocation Methods, also gains support from various groups, which include PHISCo accounting",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 90,
+          "text": "We reviewed the available print and web advertisements used during the audit period. Those that management could produce for our review did not make any prohibited references, recommendations, or suggestions of preference. No affiliate has used television or radio Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 91,
+          "text": "During interviews and document reviews, we obtained information about many transactions between ACE and affiliates. We performed much of this work as part of efforts in addressing Cost Allocation Methods, which we described in Chapter IV of this report. We examined whether those transactions violated the requirements of this section of the Standards. The Compliance Plan summarizes this section of the Standards, and notes overall compliance with them. The Plan summarizes instruction given to ACE employees regarding these requirements.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 92,
+          "text": "Our findings for this provision are subsumed in the conclusions set forth for Section 14:4-3.3(b), (d), and (e) in the report sections that immediately precede and follow this one. Our conclusions for this provision are subsumed in the conclusions set forth for Section 14:4- 3.3(b), a discussion of which we provide in the report section immediately preceding this one. e. Recommendations We have no recommendations regarding the requirements of this provision, apart from the relevant",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 93,
+          "text": "ACE’s Compliance Plan states its responsibilities under the Standards, and notes the website where any public postings would be made. ACE’s website includes an area where postings of offerings of surplus energy to its affiliates can be posted. This page is also accessible via the “Public Postings” link on ACE’s homepage. There were no such transactions between ACE and its retail energy affiliates during the audit period, thus no postings were made. We conducted detailed examinations of capacity and supply transactions between ACE and its affiliates. This report’s chapter on Power Supply and Market Conditions (Chapter III) describes in more detailed work",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 94,
+          "text": "The Compliance Plan restates this section, and notes that ACE policy precludes offering discounts or discretionary waivers to any retail affiliates. ACE provided tariffed electric services to four affiliates during the audit period: PHISCo (its service company), Atlantic Southern Properties, Thermal Energy Limited Partnership I, and Millennium Account Services. No waivers or discounts 17. ACE offered no discounts or waivers to tariffed services provided to affiliates.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 95,
+          "text": "As discussed with respect to Section 14:4-3.3(h), ACE did not offer discounts or waivers to RCBSs of its holding company. Therefore, documentation of such discounts was not required. The Compliance Plan restates this section of the Standards and confirms ACE’s understanding that the cost differential of any such offering to an affiliated entity must be documented accordingly. 19. ACE offered no discounts or waivers to tariffed services provided to affiliates. 20. The Compliance Plan adequately addresses this section of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 96,
+          "text": "Section F of this report describing Section 14:4-3.3(h) of the Standards summarizes ACE’s audit period provision of tariffed services to affiliates, and that each such provision was provided without amending tariff provisions. ACE also highlighted its and its holding company’s prohibition against discriminating against others in these regards which they outline in the Compliance Plan. We discuss this matter under the treatment of Section 14:4-3.3(i) above. We note though that unlike each other individual sub-section, Section 14:4-3.3(j) of the Standards are not addressed directly in the Compliance Plan. However, this sub-section of the Standards bears",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 97,
+          "text": "The Compliance Plan states ACE’s understanding of its requirements to apply its tariff provisions to all market participants on a non-discriminatory basis. As we have noted, ACE provided no waivers or discounts to affiliates for tariffed services during the audit period. 23. We found no evidence that ACE failed to enforce tariff requirements with respect to e. Recommendations",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 98,
+          "text": "The Compliance Plan recites this provision of the standards, and notes that the only services provided at retail by ACE are its tariffed offerings. We asked ACE for a list of each request for new or changed services received from an RCBS during the audit period. Management reported that it was unaware of any occurrences of such requests. The services ACE provided to such entities did not change during the audit period. 24. We found no audit-period occasion that would create the potential for a violation of this",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 99,
+          "text": "As noted above regarding Section 14:4-3.3(a) of the Standards, we found that ACE does not represent in its customer communications (including the Energy Choice, bill insert, web and advertising material we reviewed) any implication of preferential treatment for any PUHC RCBS or the customers of any PUHC RCBS. These conclusions also apply to any conditions or tying of the provision of utility services or discounts to the taking of any products from a PUHC RCBS. The Compliance Plan recites this provision of the standards, and includes that ACE is forbidden from providing any products or services and the availability of any discounts, rebate or waivers",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 100,
+          "text": "ACE reported that it had no knowledge or information that any assignments of customers to any party took place during the audit period. The Compliance Plan recites this provision of the Standards, and cites the compliance training provided employees of ACE, EBSCo, PHISCo, and retail affiliates described in section A. Affiliate Transactions of this chapter. 30. During the audit period, ACE engaged in no activity concerning which the requirements of Standards Section 14:4-3.3(n) would apply.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 101,
+          "text": "We reviewed the ACE Compliance Plan. The plan summarizes management’s interpretation of this provision and includes its position that it “has not and will not” provide such assistance to affiliates without making it available to “all competitors on a non-discriminatory basis”. The Exelon Code of Conduct includes the following mentions of its requirements concerning affiliate Never give preferential treatment regarding utility customer leads or transmission and distribution systems to any seller of electric energy, natural gas or energy services, whether",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 102,
+          "text": "Our review of customer call center interactions, summarized in Chapter XV, found no instances of advice or assistance being offered regarding customer inquiries. The ACE website page regarding Energy Choice and third-party suppliers is found at the following link: https://www.atlanticcityelectric.com/MyAccount/MyService/Pages/EnergySupplyOptions.aspx. This link directs customers who seek to inquire about available alternative providers to a BPU- sponsored page where such information is maintained: https://nj.gov/njpowerswitch/. ACE’s site does not highlight or otherwise suggest any affiliated provider or any other supplier. We also",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 103,
+          "text": "Management indicated that it did not offer any form of fee waivers or discounts from ACE to any affiliate during the audit period. The Compliance Plan recites this section of the Standards. 36. ACE did not offer a discount or waiver to any affiliate during the audit period to which Section 14:4-3.3(q) would apply. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 104,
+          "text": "Our findings are the same as those set forth for Section 14:4-3.3(p). Our conclusions are the same as those set forth for Section 14:4-3.3(p). e. Recommendations Our recommendation is the same as that set forth for Section 14:4-3.3(p). 16. Compliance with FERC Record Keeping Requirements a. Statement of Applicable Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 105,
+          "text": "ACE has offered no discounts, rebates, or waivers to any customers, including its PUHC and RCBSs of its PUHC, during the audit period. Therefore Section 14:4 3.3(q) is not applicable. We reviewed the ACE Compliance Plan and found no reference to this section of the Standards. The Plan confirms ACE’s past compliance with this portion of the Standards (as well as those in Sections 14:4-3.3(q) and (r), and cites the provision of training to employees of the utility, service companies, and retail affiliates it provides to ensure employees adhere to them.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 106,
+          "text": "The Compliance Plan includes ACE’s interpretation of this provision of the Standards, and a statement asserting that it has and will continue to act in compliance with them, citing the compliance training provided to utility, service company, and retail affiliate employees as a primary means of ensuring appropriate handling of customer proprietary information. Sections E.1, E.2, and F.5. of this report discuss controls that ACE applies to requests by affiliates for access to customer information databases. The Plan further notes that the provision of any such data will be made under the same terms and conditions, regardless of whether the entity requesting the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 107,
+          "text": "ACE’s current Compliance Plan states that it will limit the provision of non-customer specific non- public information except in instances where a retail affiliate may need such information to provide corporate or shared services. Management reported that it made no releases of non-customer specific non-public information acquired as a result of operating ACE’s distribution system available to any related competitive business segment of its public utility holding company outside of disclosures made as part of its contract with Millennium Account Services. Management believes that, because such sharing occurred pursuant to a contract, no posting was required. We",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 108,
+          "text": "The Compliance plan restates this provision of the Standards, including the portion about alphabetizing the list of suppliers. Our broader findings about this issue are summarized in Section F.10 of this report, regarding Section 14:4-3.3(m). As noted in that section, ACE’s website Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 109,
+          "text": "During the audit period ACE did not solicit any such non-public information from unaffiliated suppliers, nor did it release any information of the type covered by this portion of the Standards to its affiliates. The current Compliance Plan recites this provision of the Standards. The Plan includes a statement that ACE would make such information available only upon receiving written authorization from the supplier to do so. 47. During the period of the audit, ACE did not provide or release non-public information",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 110,
+          "text": "During the audit period, ACE neither solicited non-public data or information from unaffiliated suppliers for release to an affiliate nor did it release any such information. The current Compliance Plan recites this provision of the Standards. 49. During the audit period ACE did not solicit unaffiliated supplier non-public information for release to affiliated entities. 50. The Compliance Plan adequately addresses Section 14:4-3.4(e) of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 111,
+          "text": "Our findings are the same as those set forth for Section 14:4-3.3(n). Our conclusions are the same as those set forth for Section 14:4-3.3(n). e. Recommendations Our recommendations are the same as those set forth for Section 14:4-3.3(n). 7. Supplementing Information About Affiliated Providers a. Statement of Applicable Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 112,
+          "text": "Our findings are the same as those set forth for Section 14:4-3.3(n). Our conclusions are the same as those set forth for Section 14:4-3.3(n). e. Recommendations Our recommendations are the same as those set forth for Section 14:4-3.3(n). 8. Record Keeping Concerning Transactions with Affiliates a. Statement of Applicable Requirements",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 113,
+          "text": "We found that ACE was able to provide requested documentation during the audit. The Compliance Plan recites this provision of the Standards. 51. The willingness and ability of ACE, its holding company, and affiliates to provide requested information during our audit demonstrated compliance with the provisions of Section 14:4-3.4(h) of the Standards. 52. The Compliance Plan adequately addresses the requirements of Section 14:4-3.4(h) of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 114,
+          "text": "Our audit work produced no case where transaction documentation was unavailable because of a failure to retain it. As noted in Section D.1 of this report, some of the electronic files were not able to be opened. The current Compliance Plan recites this provision of the Standards. 53. ACE provides adequately for the retention of records of transactions involving it and its holding company or holding company RCBSs. 54. The Compliance Plan adequately addresses the requirements of Section 14:4-3.4(i) of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 115,
+          "text": "We found that the companies were able to produce the records and documents as required during the audit. We did not gain from any involved party any evidence of a failure to produce requested records. The current Compliance Plan recites this provision of the Standards in its section on records retention. 55. ACE was in compliance with Section 14:4-3.4(j) of the Standards. 56. The Compliance Plan adequately addresses the requirements of Section 14:4-3.4(j) of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 116,
+          "text": "During audit data gathering and analysis and field work management provide access to all the agreements that we requested. The current Compliance Plan recites this provision of the Standards. 57. ACE’s practices were sufficient to assure retention of all contract information requested as part of audit data analysis and field work. 58. The Compliance Plan adequately addresses the requirements of Section 14:4-3.4(k) of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 117,
+          "text": "We found that ACE existed and operated as a distinct corporate entity during the audit period, as it has historically, and as it will most likely do in the future. Our examinations in other audit tasks, specifically Chapter IX, Executive Management and Corporate Governance, discuss our findings and conclusions regarding the sufficiency of management’s organization structure and utility, particularly ACE-specific, emphasis. The current Compliance Plan recites this provision of the Standards and includes a statement that ACE is a separate entity from its parent organizations, retail affiliates, and shared service companies.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 118,
+          "text": "We found that ACE maintains separate books and records for the required entities. The Compliance Plans in effect during the audit period each included an interpretation of this section of the Standards, a statement of ACE’s compliance with them, and examples of that compliance (separate books and records in accordance with the FERC Uniform System of Accounts and the Cost Allocation Manual which governs transactions with affiliates and how management accounts",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 119,
+          "text": "The ACE chart of accounts is consistent with USOA. The current Compliance Plan covers Sections 14:4-3.5(b), (c), and (d) jointly; its treatment of these standards is summarized in the findings sections above regarding Section 14:4-3.5(b). We found the Plan’s coverage of each of these three sections appropriate. 63. ACE complied with the requirements of Section 14:4-3.5(c) during the audit period. 64. The Compliance Plan adequately addresses the requirements of Section 14:4-3.5(c) of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 120,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 120,
+          "text": "Management provided substantially-complete responses to all of our requests for information, whether through data requests, access to documents, or interviews. We believe that ACE has demonstrated a strong willingness and ability to make its books and records open for examination for compliance with the Standards. We found the Plan’s coverage of this portion of the Standards 65. All of ACE/PHI/Exelon’s entities and personnel complied with the requirements of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 121,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 121,
+          "text": "We asked management for a list of all databases owned by the holding company and its subsidiaries and to identify which of those required protection vis-à-vis the Standards. We also sought information stating which specific departments and work groups had routine access to these databases, and those who were granted access on an exception basis. We requested detailed descriptions of the guidance given and oversight exercised over database owners regarding access to their data bases to ensure compliance with the Standards. Management identified a list of 375 applications and databases which Exelon owns and which the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 122,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 122,
+          "text": "ACE offered no joint products or services with an RCBS during the audit period. The Company states, and our audit work indicated, that there have been no joint marketing, promotional or advertising programs with an RCBS during the audit period. The Compliance Plan includes management’s interpretation of this section of the Standards. It goes on to state that employees receive instruction to contact the Legal Services Group before providing any joint product or service with a Retail Affiliate, so that appropriate filings and Board approval can be established and so that appropriate procedures can be put in place to ensure Standards compliance.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 123,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 123,
+          "text": "Section 14:4-3.2 of the Standards provides the following definitions relevant to Section 14:4- Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 124,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 124,
+          "text": "We requested a list of all joint purchasing agreements that included both the regulated utility and an unregulated affiliate. There were no joint purchasing agreements in place during the EDECA audit period. The current Compliance Plan appropriately summarizes the provision of the Standards, including the treatment of direct and indirect costs associated with any such purchases. The Plan states that ACE has been in compliance with this portion of the Standards and will continue to operate in compliance in the future.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 125,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 125,
+          "text": "We conducted the activities described under other provisions (see, for example, Sections D.3, D.12, and F.5.), to address the issues relevant to this provision as well. The findings in those sections address the criteria for this portion of the Standards. Much of our work in this area was carried out in other portions of the management audit, which we documented in Chapters V, Capital Allocation and XII, Strategic Planning. We reviewed the strategic and business plans of ACE. We found the business plans separate from those of affiliated companies and we did not identify any use of ACE information by affiliates in their plans and found no indication of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 126,
+          "text": "The current Compliance Plan recites Section 14.4-3.5(k) of the Standards. Management reported that the enterprise traded under the name Conectiv Power Delivery until 2005 - - and through that time various RCBS’s utilized some versions of the “Conectiv” name, meaning that usage of the required disclaimer was necessary. But since that time, the enterprise operated under the name Atlantic City Electric, and maintained usage of this name throughout our Audit period. None of ACE’s affiliates used any name or logo that was derived from the Atlantic City Electric name, nor mimicked or otherwise invoked the name and or logo used by ACE. As stated in Section F.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 127,
+          "text": "Our findings are the same as those set forth for Sections 14:4-5.3(a) and (c). We note that ACE’s Compliance Plans reviewed included an acceptable summation of this portion of the Standards. The 2017 version of the Plan further notes that ACE employees received training on this matter, as do employees of both service companies and RCBSs. Management’s comments on a draft of this report noted that, in October 2019, employees of PHI’s regulated utilities, including ACE, were required to receive training on affiliate regulations and relationships.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 128,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 128,
+          "text": "The Compliance Plan appropriately summarizes this portions of the Standards, states ACE’s historical compliance with it and intentions to do so in the future. We reviewed the billing inserts that were sent to customers for all years of the audit period and confirmed that ACE did not offer space in its billing envelope to any retail affiliates. Further, ACE reported that they offered no advertising space in its billing envelopes to its holding company or any RCBS. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 129,
+          "text": "The Compliance Plan adequately summarizes this portion of the Standards, including the limited exception noted in sub-Section (o)(1). The Plan notes the compliance training offered to ACE employees and RCBS employees, and includes footnotes providing further interpretations of elements of this portion of the Standards - - we found these items to be correctly interpreted and of informative value. ACE states that it has been and will continue to operate in compliance with all requirements and prohibitions. Management reports that ACE made no joint presentations, displays, or otherwise coordinated",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 130,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 130,
+          "text": "The current Compliance Plan summarizes this provision, and notes that all but one of ACE’s retail affiliates (Atlantic Southern Properties, Inc.) offers at least one of the services that the Standards address in this area. In the Plan, management states that ACE and its retail affiliates employ none of the same individuals through any employment or consulting/contracting method. We asked management about employee and asset sharing between ACE and affiliates during the audit period. Management told us that there was no employee sharing. To the extent that any employees from an affiliate were simultaneously engaged in the provision of utility and safety",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 131,
+          "text": "The Plan interprets this portion of the Standards as follows: • Prohibiting ACE and “Retail Affiliates from having the same persons serving on the Board of Directors as corporate officers” • “Other than with respect to shared services positions permitted under Section 3.5(i) and (j) (and the definition of “shared services”) of the Standards, the Company does not have any persons serving on the Board of Directors of both the Company and any Retail Affiliate, who are also serving as corporate officers of the Company”",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 132,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 132,
+          "text": "There were no employee transfers to/from ACE or an RCBS as envisioned by Section 14:4-3.5(r) of the Standards during the audit period. Management made annual filings to the Board on this matter during the audit period, each noting the lack of any applicable transfer. The Compliance Plan recites this provision of the Standards, and notes that all but one of the RCBSs offer one or more of the services covered by this section of the Standards. The ACE web site includes a “public postings” page: https://www.atlanticcityelectric.com/Pages/PublicPostings.aspx, but as no such transfers occurred during the audit period, none would have been necessary. We observed no such",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 133,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 133,
+          "text": "Management reports that there were no temporary employment or temporary assignments involving ACE personnel and an affiliate during the audit period. The Plan adequately summarizes this portion of the Standards, and includes discussion of the employee training associated with FERC and Code of Conduct Standards. It further notes that ACE will make no assignments of the Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 134,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 134,
+          "text": "The most recent contract for MAS’ provision of these services results from a 2012 solicitation. The following portions of the Standards are relevant in assessing the pricing provisions in this • 14:4-3.5(t)2. Transfers from a related competitive business segment of the public utility holding company to the electric and/or gas public utility of services produced, purchased or developed for sale on the open market by the related competitive business segment of the public utility holding company shall be priced",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 135,
+      "title": "c. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 135,
+          "text": "No asset transfers - - either from ACE to affiliates or affiliates to ACE - - occurred during the audit period. Nor were there any audit period transfers of intellectual property. We requested copies of all leases and rentals between affiliated entities during the audit period. Management identified two such leases, only one of which involved ACE. Atlantic Southern Properties, a holding Company RCBS owns the Mays Landing, NJ regional office and leases a portion of this property Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 136,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 136,
+          "text": "This section of the standards does currently not apply to ACE, as it offers no competitive services. The Compliance Plan addresses this section of the Standards. ACE has no internal RCBS nor does it provide any competitive service. The Compliance Plan adequately addresses Section 14:4-3.6 of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 137,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 137,
+          "text": "As noted in Section A. Chapter Summary, of this report, ACE made the required annual Compliance Plan filings. Our review of the Plans in effect during the audit period found them to be reasonably complete and consistent with the intent of the Standards. The Compliance Plan summarizes this portion of the Standards. The Compliance Plan adequately addresses this Section 14:4-3.7 of the Standards.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 138,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 138,
+          "text": "The current version of the Plan responds to each of the four items listed under this provision of the Standards. The information is in all cases responsive to what the Standards prescribe with respect The Compliance Plan adequately addresses this Section 14:4-3.8 of the Standards. 4. Recommendations",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 139,
+      "title": "2. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 139,
+          "text": "The current version of the plan includes a statement by management that they are aware of the Board’s ability to take action as described in the Standards and that fiscal penalties for violations are a potential course of action. Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 140,
+      "title": "s ...................................................................................................................... 288",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 140,
+          "text": "Conclusions ................................................................................................................ 291 Recommendations ...................................................................................................... 291 Superseded Merger Commitments .................................................................................. 291",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 141,
+      "title": "s ...................................................................................................................... 292",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 141,
+          "text": "Conclusions ................................................................................................................ 299 Recommendations ...................................................................................................... 299 Ongoing Structural Commitments .................................................................................. 300",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "title": "s ...................................................................................................................... 300",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 142,
+          "text": "Conclusions ................................................................................................................ 305 Recommendations ...................................................................................................... 306 Ring-Fencing Generally .................................................................................................. 306",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 143,
+      "title": "s ...................................................................................................................... 306",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 143,
+          "text": "Conclusions ................................................................................................................ 310 Recommendations ...................................................................................................... 311 Ongoing Special Purpose Entity and Golden Share Commitments ................................ 312",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "title": "s ...................................................................................................................... 312",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 144,
+          "text": "Conclusions ................................................................................................................ 324 Recommendations ...................................................................................................... 326 Ongoing Financial Commitments ................................................................................... 327",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 145,
+      "title": "s ...................................................................................................................... 327",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 145,
+          "text": "Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Merger Conditions Docket No. EA17030297",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "title": "s ...................................................................................................................... 332",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 146,
+          "text": "Conclusions ................................................................................................................ 334 Recommendations ...................................................................................................... 334 Ongoing Customer-Service Commitments ..................................................................... 334",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "title": "s ...................................................................................................................... 334",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 147,
+          "text": "Conclusions ................................................................................................................ 340 Recommendations ...................................................................................................... 340 Ongoing Operations Commitments ................................................................................ 341",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "title": "s ...................................................................................................................... 341",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 148,
+          "text": "Conclusions ................................................................................................................ 342 Recommendations ...................................................................................................... 342 M. Ongoing Employee and Supplier Commitments ............................................................ 342",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 149,
+      "title": "s ...................................................................................................................... 342",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 149,
+          "text": "Conclusions ................................................................................................................ 349 Recommendations ...................................................................................................... 349 Ongoing Accounting and Rates Commitments............................................................... 349",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 150,
+      "title": "s ...................................................................................................................... 349",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 150,
+          "text": "Conclusions ................................................................................................................ 352 Recommendations ...................................................................................................... 352 Ongoing Affiliates Commitments ................................................................................... 352",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "title": "s ...................................................................................................................... 353",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 151,
+          "text": "Conclusions ................................................................................................................ 359 Recommendations ...................................................................................................... 360 Ongoing Reporting Commitments .................................................................................. 361",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 152,
+      "title": "s ...................................................................................................................... 361",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 152,
+          "text": "Conclusions ................................................................................................................ 365 Recommendations ...................................................................................................... 365 Power Markets ................................................................................................................ 366",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "title": "s ...................................................................................................................... 366",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 153,
+          "text": "Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Merger Conditions Docket No. EA17030297",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "title": "s ...................................................................................................................... 374",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 154,
+          "text": "Conclusions ................................................................................................................ 375 Recommendations ...................................................................................................... 376 2010 Audit Recommendations ........................................................................................ 376",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 155,
+      "title": "s ...................................................................................................................... 376",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 155,
+          "text": "Conclusions ................................................................................................................ 378 Recommendations ...................................................................................................... 378 Chapter VIII Appendix: Summary of Merger Commitment Compliance Status ....................... 379 Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 156,
+      "title": "Favored Nation .",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 156,
+          "text": "The first of these orders approved the merger based on a Stipulation of Settlement supported by parties to the merger proceedings before the BPU. This order contained a Most-Favored-Nation (MFN provision) that required consideration of the comparability of commitments in New Jersey to those finally adopted by the public service commissions of other states having jurisdiction over the merger. The second order resolved MFN questions on the basis of a joint settlement recommendation supported by parties to the BPU proceedings addressing the merger. The second, MFN order required additional commitments, and amended and superseded some.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 157,
+      "title": "of its staff in issuing its  of Implementation in Docket No. EA07100794, dated January 21,",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 157,
+          "text": "2015. That order found that ACE had implemented all 54 recommendations remaining open, except for two. These two 3-1 and 3-2 remained subject to monitoring, evaluation, and modification, as necessary. The areas addressed by the other recommendations, all closed as having been addressed elsewhere, rendered unnecessary by outside events, or implemented by company action generally cover functions and activities addressed in this audit. We believe that addressing such areas afresh, as this audit has done, is appropriate, given the eight years since the last report. However, the January 2015 order did leave two areas specifically open",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 158,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 158,
+          "text": "This group includes commitments that do not require action, or remain contingent on actions or circumstances not yet existing. Thus, future circumstances may require action, or cause non- compliance in the event of non-action. This group includes the following self-effectuating • Stipulation of Settlement Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 159,
+      "title": "o No. 79:  Notice of EBSC Regulatory s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 159,
+          "text": "o No. 83: 60-Day GSA Change Letters o No. 84: Filings Seeking GSA Changes o No. 85: BPU Review of GSA and Allocations No. 4: PHI Money Pool Participation Commitment No. 4 of the Stipulation of Settlement provides that: The Signatory Parties agree it is in the public interest to authorize ACE to participate in the PHI money pool as more fully described in Paragraph 55.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 160,
+      "title": "Consolidated Tax Adjustment, BPU Docket No. EO12121772,  Modifying the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 160,
+          "text": "Board's Current Consolidated Tax Adjustment Policy, (dated October 22, 2014), and no further action is required in this proceeding. This Commitment requires no implementing actions. It merely recognizes that the tax adjustment issue has been addressed already. No. 27: Exelon Consent to BPU Jurisdiction Commitment No. 27 of the Stipulation of Settlement provides that: Exelon submits to the jurisdiction of the Board of Public Utilities for: (a.) the enforcement",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 161,
+      "title": "No. 79: Notice of EBSC Regulatory s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 161,
+          "text": "Commitment No. 79 of the Stipulation of Settlement provides that: ACE shall promptly notify the Board, Board Staff and Rate Counsel when it has received notice that the SEC, the FERC, or any state regulatory commission in which an affiliate utility company operates has issued a specific decision affecting EBSC, including a rulemaking, pertaining directly or indirectly to EBSC's determinations of direct billings and cost allocations to its affiliate utility companies. Management reports that there have been no covered decisions affecting EBSC since 2015.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 162,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 162,
+          "text": "This group includes the following commitments fulfillable by one-time actions: • Stipulation of Settlement o No. 3: General Services Agreement o No. 5: ACE Books and Records Location o No. 7: Rate Credits o No. 9: Future Base Rate Filing o No. 13: SAIFI/CAIDI Goal and Analysis",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 163,
+      "title": "in BPU Dkt. No. ER09080664,  dated May 16, 2011) including its reporting",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 163,
+          "text": "requirements, 2016 performance targets, and budgeted reliability spending levels through 2015 (the previously determined reliability spending levels for 2014 and 2015 are specified in Table One below). We reviewed a number of ACE reports addressing reliability improvement plan, status, and accomplishments. For example, management presented a December 21, 2017 ACE Electric Reliability Improvement Plan Progress Report for the Third Quarter, 2017. The report summarized reliability results, but did not describe RIP activities or expenditures. Quarterly ACE",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 164,
+      "title": "The  Approving Joint Recommendation for Settlement of the Most Favored Nation",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 164,
+          "text": "(Docket EM14060581, entered October 31, 2016, and effective November 10, 2016) superseded the amounts set forth in this Commitment. MFN Commitment No. M3a provides the following with respect to Rate Credits: The Joint Petitioners will provide additional rate credits consisting of two components: (1.) a $16,737,451 reduction of a portion of the present Non-Utility Generator Charge deferral balance and Uncollectible deferral balance that is part of the Societal Benefits Charge, both of which are the subject of a separate proceeding in BPU Docket No.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 165,
+      "title": "to offset the rate increase for all customer classes approved by the Board in an",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 165,
+          "text": "(dated August 24, 2016) in the Company's base rate case in BPU Docket No. ER16030252 (as described more fully in Exhibit E hereto). Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Merger Conditions",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 166,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 166,
+          "text": "No. 29: Separate ACE Existence Commitment No. 29 of the Stipulation of Settlement provides that: ACE will maintain its separate existence as a separate corporate subsidiary and its separate franchises, obligations and privileges. ACE continues as a separate entity, and maintains its franchises and obligations to provide utility service in New Jersey. The general role directly assumed by ACE, its officers, managers, and employees in providing utility service has remained the same following merger close. ACE",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 167,
+      "title": "The MFN  (based on Joint Settlement Commitment No. 4) modified this obligation to include",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 167,
+          "text": "New Jersey among the locations of Exelon Board of Directors and annual stockholder meetings. Provision No. 4 provides that: Exelon will include the State of New Jersey among the locations of Exelon's Board of Directors meetings and Exelon's annual stockholder meetings. This paragraph revises and supersedes paragraph 69 of the Stipulation of Settlement. Management provided a schedule for meetings through 2020. The Exelon Board meets quarterly, and conducts a strategy retreat each September. The board has scheduled Baltimore, Washington",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 168,
+      "title": "The MFN  (based on Provision No. 5 of the Joint Settlement) modified this obligation to",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 168,
+          "text": "include New Jersey among the locations of the Exelon Executive Committee. Provision 5 states The Exelon Executive Committee will include the State of New Jersey among the locations of its meetings. This paragraph revises and supersedes paragraph 70 of the Stipulation of The Exelon Executive Committee, which generally meets monthly, and on some occasions by teleconference, has held one meeting in New Jersey since May 2017. Exelon has complied with",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 169,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 169,
+          "text": "Creation of PHI LLC Ring-fencing protections comprise a central component of the many commitments required by the BPU as a condition of approving the combination of Exelon and Old PHI. The creation of a highly layered ownership structure, in turn, proves central to the execution of many of the Commitments that address ring-fencing. The LLC Agreement comprises a core document in creating that structure and in defining the roles of its components. The LLC Agreement observes that the Old PHI (Pepco Holdings, Inc.) converted into a limited",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 170,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 170,
+          "text": "No. 32: Ownership of SPE Commitment No. 32 of the Stipulation of Settlement provides that: The SPE will be a direct subsidiary of Exelon Energy Delivery Company LLC (\"EEDC\"). We described in this chapter’s discussion of Commitment No. 31 (Special Purpose Entity Creation), EEDC’s direct ownership of the SPE, and the existence of the Golden Share Holder (the Class “B” member). The SPE operating agreement permits a transfer of EEDC’s ownership in whole or in part. For example, Section 2.8 of the SPE Operating Agreement permits EEDC to",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 171,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 171,
+          "text": "No. 30: No ACE Acquisition Debt Commitment No. 30 of the Stipulation of Settlement provides that: ACE will not incur or assume any debt, including the provision of guarantees or collateral support, related to this Merger or any future Exelon acquisition. As discussed in Chapter XIII, ACE has not issued, incurred, or assumed any debt, or provided guarantees or collateral support for the merger with Exelon or in connection with any other Exelon",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 172,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 172,
+          "text": "No. 14: SAIFI/CAIDI Target Commitment No.14 of the Stipulation of Settlement provides that: ACE will achieve the following reliability performance levels by 2020, based on a three- year historical average calculated over the 2018-2020 period (excluding major events as calculated consistent with the methodology currently utilized by the Board of Public Utilities): (a.) the System Average Interruption Frequency Index (\"SAIFI\") will not exceed 1.05 interruptions; and (b.) the Customer Average Interruption Duration Index (\"CAIDI\")",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 173,
+      "title": "No. 17: Customer Service s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 173,
+          "text": "Commitment No.17 of the Stipulation of Settlement provides that: For a period of five years following the closing of the Merger, ACE will continue to meet with Board Staff and Rate Counsel on a quarterly basis regarding customer service- related issues, and to continue the reporting requirements contained in the Customer",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 174,
+      "title": "Service Improvement Plan established in BPU Dkt. No. ER09080664,  dated May",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 174,
+          "text": "16, 2011. ACE agrees for the five years following the closing of the Merger, it will conduct 6,500 Moment of Truth surveys annually beginning in 2015 unless Board Staff and Rate Counsel agree a fewer number of surveys can be conducted. In 2016, ACE will institute measures and devote additional resources to comply with the Board's directive to have \"no more than 1,500 customer complaints per year reported to the Board by its customers.\" Within six months following the closing of the Merger, ACE will provide to Board Staff and Rate Counsel an update regarding the status of its approach on how it will reduce its",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 175,
+      "title": "territory. Within sixty days after the issuance of an  of the Board approving this Joint",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 175,
+          "text": "Recommendation, the Joint Petitioners will disburse grants of $250,000 to each of the following four organizations: the Affordable Housing Alliance, Catholic Charities of the Diocese of Camden, New Jersey SHARES, and The People for People Foundation of Gloucester County. The Joint Petitioners will then make annual grants for three additional years of $250,000 to each of these organizations. The agencies will utilize these funds to provide direct grants of up to $200 to ACE residential customers who require assistance Board of Public Utilities",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 176,
+      "title": "The MFN  superseded the funding requirements of this Commitment. Provision 3.d. of the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 176,
+          "text": "MFN Joint Recommendation provides that: The Joint Petitioners agree to spend $15,000,000 over five years (through March, 2021) to provide energy-efficiency programs in the ACE service territory, ACE will direct the energy-efficiency programs and will include programs targeting low-income customers and economically-challenged towns and cities. This spending level represents an incremental increase in spending of approximately $7.5 million on energy-efficiency programs over the five-year period as a result of the reconciliation of the MFN Provision.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 177,
+      "title": "44. No. 17: Customer Service s - - Management has so far complied with the eight",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 177,
+          "text": "elements of this commitment. It remains important nevertheless to recognize that future circumstances may affect the nature and contents of the required reporting. We address generally customer service management and operations effectiveness and efficiency in Chapter XV. 45. No. 24: Low Income Assistance - - ACE has maintained its existing commitments to programs to assist low-income customers, and has since the merger enhanced them. ACE has added resources to its customer advocacy group, and undertaken pilot programs intended",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 178,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 178,
+          "text": "No. 19: Headquarters Location Commitment No. 19 of the Stipulation of Settlement states that: ACE will maintain its local operational headquarters in Mays Landing, New Jersey. PHI LLC, PHISCo, and ACE continue to operate from a variety of locations, as they did before the merger. Management reported no diminishment in operations leadership, functions, or overall resources operating from ACEs’ Mays Landing location. Our examination of management and operations disclosed none.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 179,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 179,
+          "text": "No. 22: Outplacement Services Commitment No. 22 of the Stipulation of Settlement provides that: Joint Petitioners agree to provide outplacement services to employees terminated as a result of the Merger. As set out in the respective severance policies of Exelon and PHI, Exelon employees will be provided with access to outplacement services, and PHI employees will receive an unrestricted cash payment (based on years of service), in addition to their severance payments, which can be used for outplacement services. Any",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 180,
+      "title": "Within 60 days after the issuance by the Board of an  approving this Joint",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 180,
+          "text": "Recommendation, Joint Petitioners will provide Board Staff and Rate Counsel with a detailed program of proposed workforce-development initiatives, focusing on programs providing the skills needed for jobs within the public utility industry. Within 60 days after the Joint Petitioners, Board Staff and Rate Counsel agree upon the recipients of the workforce-development funds, the Joint Petitioners will provide a total of $6,542,173 in installments over a six-year period to fund workforce-development initiatives in the ACE service territory.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 181,
+      "title": "The MFN Merger  supersedes this Commitment. Provision 6 of the MFN Joint",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 181,
+          "text": "Recommendation states that: ACE will honor all existing collective bargaining agreements. For at least five (5) years after Merger close, Exelon shall not permit a net reduction, due to involuntary attrition as a result of the Merger integration process, in the employment levels at ACE's utility operations in New Jersey. \"Involuntary attrition\" includes transfer-or-quit offers where the employee decides to quit or retire rather than being transferred to a work location outside of New Jersey. For at least the first five (5) years following the consummation of the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 182,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 182,
+          "text": "No. 10: Acquisition Premium and Transaction Costs Commitment No.10 of the Stipulation of Settlement states that: Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Merger Conditions",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 183,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 183,
+          "text": "No. 57: PHI Non-Utility Subs Transfer to Exelon Commitment No. 57 of the Stipulation of Settlement provides that: PHI subsidiaries, other than PHISCo and the PHI utilities, that are currently engaged in operations that are not regulated by a state or local utility regulatory authority will be transferred to Exelon or an Exelon affiliate; provided that PHI may retain ownership of Conectiv LLC (\"Conectiv\") as a holding company for ACE and Delmarva Power; and Conectiv or subsidiaries of Conectiv may retain ownership of real estate and other assets",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 184,
+      "title": "not of a desired quality level, or for any other valid reason, including Board s, after",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 184,
+          "text": "having failed to first resolve the issue with EBSC. The Associate Transaction Procedures Manual sets forth procedures for completing Service Level Arrangements, which define and set the terms for services performed by EBSC for affiliates, including ACE. These “SLAs” generally set forth the scope of EBSC service to be provided, for periods ranging from one to three years. The SLAs also define service-level and unit-cost expectations, performance measures, and billing processes. The result from interaction between management at each EBSC service provider and each entity served. Senior management at the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 185,
+      "title": "s regarding provision of Basic Generation Service.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 185,
+          "text": "To the extent that this audit and our recently completed audit of the New Jersey BGS process addressed such regulations, we found no violations. 63. No. 57: PHI Non-Utility Subs Transfer to Exelon - - The transfer of the former non- regulated PHI subsidiaries to Exelon has occurred, no entities in the PHI LLC structure have acquired non-utility operations, and the corporate structure surrounding PHI LLC conforms to the requirements of this Commitment.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 186,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 186,
+          "text": "No. 64: Reports on Ring Fencing and Other Requirements Commitment No. 64 of the Stipulation of Settlement provides that: ACE will file with the Board of Public Utilities an annual compliance report with respect to the ring-fencing and other requirements. Provision 13 of the MFN Joint Settlement amends and supersedes this commitment. Provision No.13 provides that: Exelon shall conduct an analysis of its operational and financial risk to determine the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 187,
+      "title": "the requirements of the .” This addition begs the question of whether the intent of the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 187,
+          "text": "Commitment’s use of the term “requisite” meant: (1) sufficient to avoid consolidation, or (2) merely sufficient to meet the explicit requirements of the Stipulation of Settlement Commitments regarding separateness, whether or not they eventually might prove to produce separateness. Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 188,
+      "title": ".” The point of the certification being a declaration sufficient to avoid consolidation, the",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 188,
+          "text": "language added should be removed from future certifications. The future-oriented term “will” comports with the language of the commitment, but its reduces the certification to a statement of an intent as to the future. Finally, as separateness largely concerns how an entity has held itself out it would better serve for Exelon to include the certification in documents having more visibility to the community that needs to be kept on notice about the separateness of ACE and PHI. 78. MFN No. 8: Merger Economic Benefits Reports - - ACE has filed reports for 2016 and for 2017. They provide the analysis and explanations required by this Commitment.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 189,
+      "title": "16. Remove “consistent with the requirements of the ” from the required Exelon",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 189,
+          "text": "officer certifications and add to the certification a statement that Exelon “has maintained” separation. (See Conclusion #77 immediately above) Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Merger Conditions",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 190,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 190,
+          "text": "90A: Competition Protections (Electric Generation Interconnection Studies) Commitment No. 90A of the Stipulation of Settlement provides with respect to Electric Generation Interconnection Studies that: Exelon commits that its Affiliated Transmission Companies will each identify, with PJM's concurrence, at least three independent third-party engineering consulting firms that are qualified to conduct Facilities Studies under the PJM generator interconnection process. Exelon shall provide notice and a list of such firms to the Parties to this Settlement thirty",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 191,
+      "title": "No. 90D: Compliance with ACE-PEPCO Merger  Stipulation",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 191,
+          "text": "Commitment No. 90D of the Stipulation of Settlement provides that: Exelon commits to comply with the competition-related provisions (paragraphs 1-14 set out below, modified to reflect this Merger) of the stipulation embodied in the Commission's",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 192,
+      "title": "June 2002  approving the merger of ACE and Pepco (219 P.U.R. 4th 235).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 192,
+          "text": "1. Atlantic City Electric Company (\"Atlantic\") shall transact business with Exelon's generation and marketing affiliates in the same manner as Atlantic transacts business with unaffiliated competitive generators and marketers, shall provide no preferences to such affiliates and shall provide no competitive information to such affiliates that is not provided on the same basis and contemporaneously to such unaffiliated entities. Notwithstanding the above, it is understood and agreed that Exelon's service corporation, generation and trading affiliates will provide Atlantic",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 193,
+      "title": "the date of the BPU's issuance of a final  in this proceeding. After the four",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 193,
+          "text": "year period, Atlantic shall provide Signatory Parties of this Stipulation with 90- days advance notice of its intent to file a petition with the BPU seeking such changes and engage in good faith discussions related to the proposed changes with Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 194,
+      "title": "84. No. 90D: Compliance with ACE-PEPCO Merger  Stipulation - - The requirements",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 194,
+          "text": "of this Commitment have been met so far. 85. No. 90E: PJM Market Monitor Review of PJM Bids - - The PJM market monitor already has the power to review the bids that this commitment addresses. 86. Management has undertaken the activities necessary to fulfill the requirements of the commitments under the TASC agreement, and continues to work with stakeholders, including the Alliance for Solar Choice on further developing the planning, analysis, reporting, administration, and technical requirements of this Commitment.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 195,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 195,
+          "text": "The Compliance and Ethics group within the EBSCo organization tracks merger commitment status. This tracking occurs at the ordering paragraph level from the two orders that set forth the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 196,
+      "title": "November 10, 2016 (MFN Merger ).",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 196,
+          "text": "A regularly issued status sheet shows, among other things, status as open or closed, and indicates whether compliance with commitments remaining in progress (termed “open”) is or is not on target. It identifies all 50 remaining (roughly half of the total) that remain open as “on target.” The tracking report does not identify actions remaining open, or provide a schedule for their completion (other than any deadlines specified in applicable BPU ordering paragraph, which the list quotes). The status report also does not identify actions required to ensure continuing compliance with those commitments that have a continuing nature. Finally, while Compliance and Ethics tracks",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 197,
+      "title": "1. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 197,
+          "text": "2010 Audit Recommendation 3.1: Allocation Factor Inputs and Calculations This recommendation, addressing the detailing of allocation factor inputs and calculations, included the following description: Include detailed definitions of the calculations of allocation factors (“Statistical Key Figures” or “SKFs”) in the CAM – SKFs are the factors used to allocate common service company expenses to subsidiaries. As discussed above, current CAM and Service Agreement documentation of allocation factors is limited to general descriptions that apply",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 198,
+      "title": "Notice of EBSC Regulatory s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 198,
+          "text": "Notice contingent on orders, which have not",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 199,
+      "title": "Customer Service s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 199,
+          "text": "Activities and reporting have been as required;",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 200,
+      "title": "s - - Boards of Directors ..................................................................................... 390",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 200,
+          "text": "Exelon’s Governance Principles ................................................................................ 390 Overall Board Structure .............................................................................................. 390 The Exelon Parent Board ........................................................................................... 390",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 201,
+      "title": "s - - Top Management’s Focus and Support ....................................................... 403",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 201,
+          "text": "Exelon-Level-Executive Organization ....................................................................... 403 Exelon Utilities Organization ..................................................................................... 406 Exelon’s “Management Model” ................................................................................. 407 The Exelon CEO’s Executive Committee .................................................................. 409",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 202,
+      "title": "s - - Internal Controls, Compliance, and Ethics.................................................. 424",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 202,
+          "text": "The Exelon Board Audit Committee .......................................................................... 424 Internal Audit Structure and Resources ...................................................................... 424 Audit Plans ................................................................................................................. 425",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 203,
+      "title": "Audit  Tracking .................................................................................................. 427",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 203,
+          "text": "Sarbanes Oxley and Exchange Requirements ............................................................ 428 Affiliate Transaction Controls .................................................................................... 430 Affiliate Transaction Reporting .................................................................................. 432",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 204,
+      "title": "B. s - - Boards of Directors",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 204,
+          "text": "1. Exelon’s Governance Principles An 18-page Exelon Corporate Governance Principles document begins with a description of the role of the parent company’s board of directors. The listed roles include several overarching responsibilities typical of the industry; i.e., selection and oversight of senior management, and development and execution of strategy and long-range business plans. Chapter XII of this report addresses the Exelon board’s role in that development. These Exelon principles also identify a broad range of functions, activities, and risks subject to board oversight:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 205,
+      "title": "E. s - - Top Management’s Focus and Support",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 205,
+          "text": "Both the Exelon and PHI LLC level executive organizations provide material support to utility operations generally and to the PHI utilities specifically. Exelon-Level-Executive Organization Exelon operates under a team of 22 senior executives, directed overall by a President and CEO (Parent CEO). The next diagram illustrates the top-level parent executive organization. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 206,
+      "title": "H. s - - Internal Controls, Compliance, and Ethics",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 206,
+          "text": "The other chapters of this report address arms’-length interaction, and compliance with affiliate and fair competition standards between directors and management, and among management. Those chapters provide a variety of recommended changes that address affiliate relationships and transactions, fair participation in markets, and optimizing ACE’s costs. While important, none of those recommendations give reason to question overall integrity, fair dealing, manipulation, or disregard for the interests of ACE. 1. The Exelon Board Audit Committee",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 207,
+      "title": "Ineffective.  ratings are either High, Medium or Low.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 207,
+          "text": "We found that Internal Audit completes scheduled Cost Allocation Process Reviews every two years, as service agreements require. We reviewed the following examples: • PHI Cost Allocation Audit for audit years 2013 and 2014 • PHI Cost Allocation Process for audit year 2015 • BSC Cost Allocation Review for audit year 2016. Board of Public Utilities Final Report – Public Version",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 208,
+      "title": "5. Audit  Tracking",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 208,
+          "text": "We found that Internal Audit completed scheduled audits in sufficient conformity with its audit plans, which reflected the application of risk assessments of processes. We observed evidence of audit team meetings with management to discuss issues and processes to be audited, identify documentary evidence to be used and retained, follow-up with management on report findings, remediation plans, and recording of issue closure. We found documentation of testing of internal controls of the processes existence and effectiveness. Follow-up emails are issued to the owners of required remediation actions (responsible management). These emails list the failed control,",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 209,
+      "title": "Exelon employs an Employee s Advisory Committee. Monthly reports circulated to about 25",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 209,
+          "text": "officers across the Exelon entities, including senior PHI executive leadership and counsel receive monthly reports that address statistics, positive or negative trends, and summary explanations (by entity, down to and including the ACE level): • New Grievances • Written Disciplines • OSHA Recordables",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 210,
+      "title": "s........................................................................................................................... 442",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 210,
+          "text": "Human Resources Organization ................................................................................. 442 HR Systems ................................................................................................................ 445 HR Performance Effectiveness .................................................................................. 445 Recruitment, Development, and Training .................................................................. 445 Diversity ..................................................................................................................... 448 HR Metrics ................................................................................................................. 449 Labor Relations .......................................................................................................... 449",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 211,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 211,
+          "text": "Human Resources Organization Following the merger with Exelon, responsibility for human resources functions affecting PHISCo and its three operating utilities (including ACE) moved to Exelon, under Exelon’s service company. This service company, EBSCo provides Exelon-wide human resources under the direction of Exelon’s Senior Vice President and Chief Human Resources Officer. Twelve executives reporting to this senior Exelon officer divide responsibilities, in part segregated by Exelon business operation and in part by functions largely common to all. The left-hand portion",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 212,
+      "title": "s - - Staffing ........................................................................................................ 455",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 212,
+          "text": "Staffing Planning and Control .................................................................................... 455 Resources Dedicated to ACE and the Other PHI Utilities ......................................... 457 EBSCo Resources and Costs ...................................................................................... 463",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 213,
+      "title": "s - - Compensation and Benefits ......................................................................... 476",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 213,
+          "text": "Responsibility for Management Compensation ......................................................... 476 Overall Approach to and Components of Management Compensation ..................... 477 Salary Grades ............................................................................................................. 479",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 214,
+      "title": "C. s - - Staffing",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 214,
+          "text": "1. Staffing Planning and Control Through 2014, PHI incorporated human resource planning into its annual strategic planning process. Following the establishment of overall PHI direction and the alignment of line of business goals to support it, the development of workforce assumptions began in February, and continued into June. These assumptions considered retirement eligibility and historical attrition data provided by HR’s Talent Strategy & Workforce Planning group. HR Relationship Managers worked with leaders of the business units responsible for staffing planning to interpret the data, and develop",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 215,
+      "title": "F. s - - Compensation and Benefits",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 215,
+          "text": "1. Responsibility for Management Compensation Overall responsibility for managing compensation moved to Exelon following the merger, residing among the functions and activities led by Exelon’s Senior Vice President and Chief HR Officer. A direct report of this executive, the Vice President Corporate Compensation exercises direct responsibility for management compensation at all Exelon entities. The principal reports to this vice president consist of three Directors of Compensation and two principal compensation consultants. The division of the three directors is:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 216,
+      "title": "s........................................................................................................................... 495",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 216,
+          "text": "Exelon Mission, Vision and High-Level Strategy ...................................................... 495 Exelon Utilities Vision and Strategy as of 2018 ........................................................ 496 Goals, Objectives, and Strategic Initiatives - - 2018 .................................................. 500 PHI/ACE Business Performance Measurement ......................................................... 501 Enterprise Risk Management ..................................................................................... 501 Linkage to PHI Long-Range Plans ............................................................................. 503 Management Focus and Diversification ..................................................................... 503",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 217,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 217,
+          "text": "Exelon Mission, Vision and High-Level Strategy Exelon’s 2018 mission statement and vision statements (for all of Exelon Corp.’s businesses, including all utility and diversified businesses) proclaims that: Exelon’s mission is to be the leading diversified energy company - by providing reliable, clean, affordable and innovative energy products.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 218,
+      "title": "s........................................................................................................................... 510",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 218,
+          "text": "The EBSCo Treasury Operations Organization ......................................................... 510 Cost History ................................................................................................................ 510 Financial Policies ....................................................................................................... 512",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 219,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 219,
+          "text": "1. The EBSCo Treasury Operations Organization Financial management for ACE historically fell under the PHI CFO, who also acted as the Treasurer and CFO of ACE, DPL and Pepco. Major restructuring of the function followed the Exelon merger. The Treasury and capital markets, cash management, and rating agency relations functions have moved to Exelon Treasury, which performs operations under a Service Level Agreement. A Director of Exelon Business Services manages Exelon Treasury through a group of about 20 employees that perform treasury operations for each of the six Exelon utilities and other",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 220,
+      "title": "s........................................................................................................................... 532",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 220,
+          "text": "Operating Costs .......................................................................................................... 532 Financial Policies ....................................................................................................... 532 Accounting Processes ................................................................................................. 536",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 221,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 221,
+          "text": "1. Operating Costs Exelon has undertaken a substantial consolidation of activities under the controller function since 2016. The following chart shows the reduction in ACE costs following that consolidation. Controller Costs (all amounts above the “Total Costs” line are confidential) 2. Financial Policies a. Key Accounting Systems",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 222,
+      "title": "• s – collects specific lower level costs of responsibility using internal orders, plant",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 222,
+          "text": "maintenance orders and customer service orders. • Work Breakdown Structure (WBS) elements and projects are used primarily to collect capital and plant costs, i.e. project work orders. In addition to using cost objects for collecting costs for actual to budget comparisons, they can be used for the distribution of costs to affiliates and to functionalize expenses for regulatory reporting purposes. Specific cost centers such as resource cost center, B cost centers and receiver cost centers further provide for the cost accumulation process for accounting and cost management purposes.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 223,
+      "title": "s........................................................................................................................... 560",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 223,
+          "text": "Customer Organization and Staffing .......................................................................... 560 Information Systems ................................................................................................... 563 Performance Measurement ......................................................................................... 563",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 224,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 224,
+          "text": "1. Customer Organization and Staffing Customer Operations, operating at the PHISCo level, comprises the organization responsible for delivering customer service to ACE’s customers. The Vice President of Customer Operations Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 225,
+      "title": "s - - Communications ..................................................................................... 590",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 225,
+          "text": "Conclusions - - Communications ............................................................................... 592 Recommendations - - Communication ....................................................................... 593 Regulatory Affairs and Strategy ..................................................................................... 593 Background - - Regulatory Affairs ............................................................................. 593",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 226,
+      "title": "s - - Regulatory Affairs .................................................................................. 593",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 226,
+          "text": "Conclusions - - Regulatory Affairs ............................................................................ 597 Recommendations - - Regulatory Affairs .................................................................. 600 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey External Relations",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 227,
+      "title": "s - - Communications",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 227,
+          "text": "The communications organization designs and implements programs that provide information to employees and to the public. The regular messaging and communications channels it delivers include advertising, a range of social media, releases, regular employee publications, outreach to media representatives, and corporate and executive image and reputation enhancement. The organization operates under a fairly comprehensive statement of goals and focus areas:",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 228,
+      "title": "s - - Regulatory Affairs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 228,
+          "text": "The principal functions of the PHISCo Regulatory Policy and Strategy organization include, as they did before the Exelon merger, performing work to: • Develop and implement rate strategies for ACE, Pepco, and Delmarva • Design, file, and administer customer distribution, transmission, Standard Offer Service/Basic Generation Service (default supply) and other tariffs • Provide the primary interface with the BPU, the D.C. Public Service Commission, the",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 229,
+      "title": "O&M Management - - s ..................................................................................... 606",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 229,
+          "text": "Work Planning and Management Structure and Responsibilities .............................. 606 Work Management Digital Tools ............................................................................... 608 Performance Monitoring and Oversight ..................................................................... 608",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 230,
+      "title": "System Planning - - s .......................................................................................... 618",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 230,
+          "text": "Post-Exelon-Merger Changes ..................................................................................... 618 Distribution Capacity Planning Organization ............................................................ 619 Distribution Planning Process Elements .................................................................... 619",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 231,
+      "title": "Smart Grid Planning - - s .................................................................................... 627",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 231,
+          "text": "Early Efforts to Build Intelligence into the Distribution System ............................... 627 Ongoing Deployment of Smart Grid Technology ...................................................... 630 Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 232,
+      "title": "C. O&M Management - - s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 232,
+          "text": "1. Work Planning and Management Structure and Responsibilities Management employs both short- and long-term processes for determining future resources and budgets. Each year, management creates annual Long-Range Plans with five-year horizons (See Chapter V for a fuller description of the development and use of these “LRPs”). Each organization builds its own long plans for presentation to senior leadership as part of the LRP process. PHISCO develops for its three utility operations 18-month work plans, using the 5-year LRP as a foundation. Monthly reviews provide a slotted occasion for balancing budgets and resources as work unfolds.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 233,
+      "title": "G. System Planning - - s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 233,
+          "text": "1. Post-Exelon-Merger Changes Management revised the PHISCo system planning criteria to align with those of the other Exelon utilities, applying the Exelon Peer Group process. Current practice seeks to minimize customer outages and voltage problems by limiting the number of customers on 12 kV feeders to 2,000 and Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 234,
+      "title": "K. Smart Grid Planning - - s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 234,
+          "text": "PHISCo adopted and employs a focused approach to identify trends and developments associated with the deployment of Smart Grid technologies to support ACE efficiency and reliability. Distribution Automation engineers attend technical conferences, work with vendors, and participate in the Exelon Performance Automation Peer Group to discuss distribution automation issues and identify best schemes and practices. 1. Early Efforts to Build Intelligence into the Distribution System In late 2009, ACE received a U.S. Department of Energy Smart Grid grant which provided",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 235,
+      "title": "Following the January 23, 2013 Board  at Docket No. EO 11090543, ACE implemented its",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 235,
+          "text": "on-going Automatic Sectionalizing and Restoration pilot program. Based on the pilot program and past smart grid PHI experience, ACE began installing automatic circuit reclosers (ACRs) to improve sectionalizing and feeder tie capability, and automatic sectionalizing and restoration (ASR) systems. ASRs systems use advanced automatic control, communication, and switching systems to automatically identify and isolate a faulted feeder section and then automatically and quickly restore service to customers served by remaining feeder sections. ACE’s intent was to deploy technology that would enhance reliability by speeding the isolation of system trouble spots",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 236,
+      "title": "Board  and by N.J.A.C. provisions. Prioritization then generally follows the premise of",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 236,
+          "text": "funding those programs that will generate the biggest reliability improvement per dollar spent. ACE reliability engineers have access to outage data via daily Outage Management System outage reports. The process for identifying, prioritizing, and budgeting feeder and substation projects employs the following factors: • Historical reliability performance of feeders and other assets • Material condition • Projected reliability performance improvement",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 237,
+      "title": "s........................................................................................................................... 637",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 237,
+          "text": "Governance ................................................................................................................. 637 Exelon’s Approach to Cybersecurity ......................................................................... 637 Cybersecurity Risk Assessment ................................................................................. 638",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 238,
+      "title": "Cooperation with Government Agencies/Compliance with BPU Security  ..... 640",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 238,
+          "text": "Previous Cybersecurity Audits ................................................................................... 641 Conclusions ..................................................................................................................... 641 Recommendations ........................................................................................................... 642 Board of Public Utilities",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 239,
+      "title": "• s of previous cybersecurity audits",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 239,
+          "text": "In 2016, the BPU adopted new cybersecurity requirements for the state’s regulated utilities in BPU Docket No. AO16030196. The requirements were developed by Commission staff with input from the State’s utilities, the Federal Bureau of Investigation (FBI) and the New Jersey Office of",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 240,
+      "title": "Homeland Security and Preparedness (NJOHSP). The BPU  addressed utility adoption and",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 240,
+          "text": "use of a Cyber Security Program that defines and implements organizational oversight, accountabilities, and responsibilities for cyber risk management activities, and that establishes policies, plans, processes, and procedures for identifying and mitigating risk to critical systems to acceptable levels. Utility Cyber Security Programs must meet minimum requirements for: • Cyber Risk Management • Situational Awareness • Incident Reporting",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 241,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 241,
+          "text": "Exelon employs a highly structured organization for cybersecurity. Governance documentation for all aspects of CISS is found in document SY-AC-1, Exelon’s Corporate and Information Security Services Policy. The policy lays out a structure assigning roles and responsibilities according to Exelon’s Governance, Oversight, Support, Perform (GOSP) format as follows: • Chief Security Officer (CSO) -- Responsible for governing and providing functional oversight of all security functions across the enterprise with the exception of those",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 242,
+      "title": "and retaining cybersecurity resources has been challenging in recent years. Cybersecurity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 242,
+          "text": "professionals, in particular, are in great demand. Worse yet, projections of the supply and demand of IT and cybersecurity personnel show a serious shortage of people. Exelon is acutely aware of the challenge of recruiting talent to staff CISS. In the course of interviewing key CISS management, it was made clear that CISS looked years ahead in terms of Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 243,
+      "title": "7. Cooperation with Government Agencies/Compliance with BPU Security",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 243,
+          "text": "Cybersecurity represents a global problem affecting IT resources across the country and the world. A key element of dealing with cyberattacks is sharing of information on cyberattacks with state- level, federal, and industry-wide organizations. Within New Jersey, Exelon shares information on key cybersecurity issues with NJCICC, which is explicitly required of the 2016 BPU Security",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 244,
+      "title": ". Additionally, Exelon participates in DOE’s Cybersecurity Risk Information Sharing",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 244,
+          "text": "Board of Public Utilities Final Report – Public Version Audit of Atlantic City Electric State of New Jersey Cyber Security and System Vulnerability Docket No. EA17030297",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 245,
+      "title": "s........................................................................................................................... 647",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 245,
+          "text": "Energy Efficiency Programs ...................................................................................... 647 Proprietary of Disbursements ..................................................................................... 650 Conclusions ..................................................................................................................... 653",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 246,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 246,
+          "text": "1. Energy Efficiency Programs Management describes the ACE and PHI direct role in energy program design and execution as limited over the past ten years. That role has focused on administering the Comfort Partners and Energy Wise programs for participating ACE customers. The New Jersey Office of Clean Energy runs the Comfort Partners program, which provides for energy savings assessments, energy education and counseling, and no-cost installations for income-eligible households.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 247,
+      "title": "s........................................................................................................................... 657",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 247,
+          "text": "Underground Locating ............................................................................................... 657 Line and Service Installation and Replacement ......................................................... 658 Conclusions ..................................................................................................................... 661",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 248,
+      "title": "C. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 248,
+          "text": "1. Underground Locating The NJ1C program has helped utilities avoid service interruptions that would result from excavation damage. NJ1C operates as a state-regulated, non-profit organization comprised of public utilities and municipalities in the State. The NJ1C Center functions as a one-call notification system that provides excavators and the general public with the ability to notify owners of underground facilities before proposed excavation. NJ1C handles both routine and emergency",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 249,
+      "title": "s........................................................................................................................... 665",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 249,
+          "text": "Legal Services ............................................................................................................ 665 Insurance and Claims ................................................................................................. 669 Facilities Management ............................................................................................... 674",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 250,
+      "title": "B. s",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 250,
+          "text": "1. Legal Services a. Organization of Legal Services The Exelon merger brought a significantly changed organization structure for the provision of legal services for and related to ACE. Prior to the merger, PHI operated a legal services group centralized at the PHI level. That approach remains for regulatory services (predominantly those related to state and federal utility regulatory authorities, including the BPU). However, other legal services related to PHI and to ACE have been consolidated under Exelon. The next chart shows",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 251,
+      "title": "Purchase  Lines Processed",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 251,
+          "text": "Slow Moving Inventory Balance",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 252,
+      "title": "Purchase  Spend",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 252,
+          "text": "$197.3M $275.5M $267.5M $303.7M As the ACE and other PHI utility operations have become integrated into the Exelon systems, the supply chain organizations have begun tracking additional Exelon-wide supply chain measurements at the total PHI level. The VP of PHI Supply Integration attends quarterly PHI leadership meetings and PHI COO staff meeting to obtain informal information about how supply chain and procurement support is doing. EBSCo also periodically surveys its business partners to help assess satisfaction with its services, but supply chain management has not been the part of",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

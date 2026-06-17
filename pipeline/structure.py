@@ -276,7 +276,7 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
             if "management" in doc_type.lower():
                 return structure_state_pa_audit(entry, text, existing_report)
             # Regulatory orders/decisions (CT, other PUC decisions)
-            elif any(word in doc_type.lower() for word in ["investigation", "decision", "order"]):
+            elif any(word in doc_type.lower() for word in ["investigation", "decision", "order", "erra"]):
                 return structure_regulatory_order(entry, text, existing_report)
             # Default: try regulatory parser for unknown formats
             else:
@@ -287,6 +287,25 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
 
     if collection == "state_rate_case":
         return structure_state_rate_case(entry, text, existing_report)
+
+    # Preserve non-FERC state collections (prudence reviews, etc.)
+    if collection == "prudence_review":
+        logger.debug("preserving prudence_review collection for %s", entry.id)
+        # Return metadata-only report to preserve source collection type
+        return AuditReport(
+            collection=collection, jurisdiction=existing_report.get("jurisdiction"),
+            source=existing_report.get("source"), doc_type=doc_type,
+            id=entry.id, company=existing_report.get("company"), company_raw=existing_report.get("company"),
+            docket=None, docket_full=None, issued_date=existing_report.get("issued_date"),
+            source_page_url=existing_report.get("source_page_url"),
+            pdf_download_url=existing_report.get("pdf_download_url"),
+            captured_at=existing_report.get("captured_at"),
+            source_note=existing_report.get("source_note"),
+            archived_via=existing_report.get("archived_via"),
+            industry=existing_report.get("industry"),
+            page_count=len(text.pages), scanned_pages=[], ocr_used=False,
+            finding_count=0, findings=[], structured=False,
+        )
 
     # FERC audit extraction (original)
     page1 = text.pages[0].text if text.pages else ""
@@ -556,7 +575,7 @@ def structure_state_pa_audit(entry: ListingEntry, text: ReportText, existing_rep
     # Preserve metadata from existing report if available
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k != "findings"},  # Copy all fields except findings
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
             findings=findings,
             finding_count=len(findings),
         )

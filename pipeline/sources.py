@@ -34,9 +34,15 @@ from urllib.parse import urlparse
 import requests
 
 from pipeline import config, fetch
-from pipeline.extract import extract_pages, pymupdf_pages
+from pipeline.extract import extract_pages, extract_html, pymupdf_pages
 from pipeline.models import AuditReport, ListingEntry, ReportText, SourceSeed
-from pipeline.state_structure import structure_mo_audit, structure_tx_audit
+from pipeline.state_structure import (
+    structure_ca_audit,
+    structure_mi_audit,
+    structure_mo_audit,
+    structure_nj_audit,
+    structure_tx_audit,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -91,7 +97,8 @@ _STATE_LEGACY_GOV_RE = re.compile(r"\.state\.[a-z]{2}\.us$")
 # serves the rule's intent (official government, never third-party) where a commission
 # simply predates/never adopted `.gov`. Decision logged in ISSUES.md (2026-06-02).
 _OFFICIAL_GOV_ORG_DOMAINS = frozenset({
-    "dcpsc.org",  # District of Columbia Public Service Commission (edocket.dcpsc.org, www.dcpsc.org)
+    "dcpsc.org",  # District of Columbia Public Service Commission
+    "nm-prc.org",  # New Mexico Public Regulation Commission
 })
 
 
@@ -318,8 +325,27 @@ def _fetch_elibrary_once(
     )
 
 
+def _fetch_html_once(session: requests.Session, seed: SourceSeed, raw_dir: Path) -> Path:
+    """Fetch an HTML document from pdf_url and save it as .html file."""
+    dest = raw_dir / f"{seed.id}.html"
+    if dest.exists():
+        logger.info("cached: %s", dest.name)
+        return dest
+
+    time.sleep(config.REQUEST_DELAY_SECONDS)
+    resp = session.get(seed.pdf_url, timeout=30)
+    resp.raise_for_status()
+
+    dest.write_text(resp.text, encoding="utf-8")
+    logger.info("downloaded %s (%d bytes)", dest.name, len(resp.text))
+    return dest
+
+
 def load_seed(path: Path) -> list[SourceSeed]:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
+    if not isinstance(data, list):
+        logger.debug("skipping %s: not a list (type: %s)", path.name, type(data).__name__)
+        return []
     seeds = [SourceSeed.model_validate(d) for d in data]
     for seed in seeds:  # official-government-source guard (fail loud, like backfill's ferc.gov check)
         _assert_official_gov(seed)
@@ -347,20 +373,30 @@ def process_seed(
         logger.info("[%d/%d] %s — %s", i, len(seeds), seed.id, seed.company)
         page_count, scanned, pages = 0, [], []  # type: ignore[var-annotated]
         pdf_path = None
+        html_path = None
         try:
             if not seed.fetch:
-                # URL captured out-of-band (e.g. a WAF-blocked source opened in a browser).
-                # Don't hit the blocked endpoint — write metadata-only straight from the seed.
-                raise SourceFetchError(f"{seed.id}: fetch disabled (browser-captured URL)")
-            if seed.accession:
-                if elib_session is None:
-                    elib_session = fetch.make_session()
-                pdf_path = _fetch_elibrary_once(elib_session, seed, raw_dir, force=force)
+                # HTML documents (e.g., CPUC ERRA decisions) have fetch: false but parse: true.
+                # For these, fetch directly from the URL and extract as HTML.
+                if seed.parse:
+                    html_path = _fetch_html_once(session, seed, raw_dir)
+                    pages = extract_html(html_path)
+                    page_count = len(pages)
+                    scanned = []
+                else:
+                    # URL captured out-of-band (e.g. a WAF-blocked source opened in a browser).
+                    # Don't hit the blocked endpoint — write metadata-only straight from the seed.
+                    raise SourceFetchError(f"{seed.id}: fetch disabled (browser-captured URL)")
             else:
-                pdf_path = fetch_doc(session, seed, raw_dir, force=force)
-            pages = extract_pages(pdf_path)
-            page_count = len(pages)
-            scanned = [p.page for p in pages if p.is_image_only]
+                if seed.accession:
+                    if elib_session is None:
+                        elib_session = fetch.make_session()
+                    pdf_path = _fetch_elibrary_once(elib_session, seed, raw_dir, force=force)
+                else:
+                    pdf_path = fetch_doc(session, seed, raw_dir, force=force)
+                pages = extract_pages(pdf_path)
+                page_count = len(pages)
+                scanned = [p.page for p in pages if p.is_image_only]
         except Exception as exc:  # noqa: BLE001 — fetch is best-effort for metadata-only records
             logger.warning(
                 "could not fetch/extract %s (%s) — writing metadata-only with no page count",
@@ -371,15 +407,19 @@ def process_seed(
         out_dir = processed_dir / seed.id
         out_dir.mkdir(parents=True, exist_ok=True)
 
-        # parse=True seeds (currently PA M&O audits) get findings extracted from the
-        # PDF; everything else — and any parse miss — is written metadata-only. The
-        # extracted text is saved (re-runnable + feeds the no-regression test, like
-        # the FERC path); a parser failure never aborts the run.
+        # parse=True seeds (PA M&O audits, CA ERRA decisions, MI audits, NJ orders)
+        # get findings extracted from the PDF or HTML; everything else — and any parse miss
+        # — is written metadata-only. The extracted text is saved (re-runnable + feeds the
+        # no-regression test, like the FERC path); a parser failure never aborts the run.
         report: AuditReport | None = None
-        if seed.parse and pdf_path is not None:
-            # Re-extract with PyMuPDF (clean table linearization for the parser),
-            # save it as text.json (re-runnable + feeds the no-regression test).
-            parse_pages = pymupdf_pages(pdf_path)
+        if seed.parse and (pdf_path is not None or html_path is not None):
+            # For PDFs: re-extract with PyMuPDF (clean table linearization for the parser).
+            # For HTML: use the already-extracted pages.
+            # Save as text.json (re-runnable + feeds the no-regression test).
+            if html_path is not None:
+                parse_pages = pages  # Already extracted HTML pages
+            else:
+                parse_pages = pymupdf_pages(pdf_path)
             (out_dir / "text.json").write_text(
                 ReportText(
                     id=seed.id, accession_number=seed.accession or seed.id,
@@ -392,6 +432,14 @@ def process_seed(
             try:
                 if seed.jurisdiction == "TX":
                     report = structure_tx_audit(seed, parse_pages, scanned)
+                elif seed.jurisdiction == "PA":
+                    report = structure_mo_audit(seed, parse_pages, scanned)
+                elif seed.jurisdiction == "MI":
+                    report = structure_mi_audit(seed, parse_pages, scanned)
+                elif seed.jurisdiction == "CA":
+                    report = structure_ca_audit(seed, parse_pages, scanned)
+                elif seed.jurisdiction == "NJ":
+                    report = structure_nj_audit(seed, parse_pages, scanned)
                 else:
                     report = structure_mo_audit(seed, parse_pages, scanned)
             except Exception as exc:  # noqa: BLE001 — parser miss falls back to metadata-only
