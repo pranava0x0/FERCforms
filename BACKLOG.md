@@ -34,6 +34,24 @@ Exhibit I-2, one rec per row) remain the cheapest reliable findings.
 
 ---
 
+## ▶ Done 2026-06-19 (cont.) — FERC audit refresh: +3 new audits since the Feb-2026 snapshot
+
+The live `/audits` page is Cloudflare-walled, but the **eLibrary AdvancedSearch API is scriptable from
+here** (warm the F5 cookie, POST AdvancedSearch by `FA{YY}`/`PA{YY}` docket prefix, filter
+`documentType:"Audit Summary"` + "issuing audit report"). Enumerated FA18-25/PA18-26 → **3 completed
+FERC audits issued after our 2025-09-29 latest**, all electric, all fetched + structured into findings:
+- **DC Energy Holdings** (PA23-11, 2026-01-08, non-financial) — 1 finding / 5 recs
+- **Southwestern Electric Power** (FA24-2, 2026-03-19, financial) — 7 findings
+- **Southern Electric Generating Co.** (FA24-3, 2026-05-07, financial) — 4 findings (AFUDC, depreciation, minor-property)
+
+Corpus 652 → **655** reports, total_listed 120 → 123, findings 1715 → **1727**. **#2 (gas/oil depth)
+confirmed a non-gap:** zero new gas/oil audits issued in the window — FERC simply hasn't issued any.
+Reusable discovery recipe + the "bare extract/structure re-processes the whole corpus → revert via
+`git checkout HEAD -- data/processed/`" gotcha are in [docs/data-sources.md](docs/data-sources.md).
+**To stay current**, re-run the AdvancedSearch enumeration each refresh (no browser needed).
+
+---
+
 ## ▶ Done 2026-06-19 (cont.) — +2 concluded fuel-reconciliation docs (TX/IL); CA/MO dups caught
 
 Batched a CA/TX/MO/IL fuel-prudence finder agent. Net **+2** PROVEN metadata-only records:

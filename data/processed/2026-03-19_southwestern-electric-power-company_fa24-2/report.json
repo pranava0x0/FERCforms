@@ -1,0 +1,82 @@
+{
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
+  "id": "2026-03-19_southwestern-electric-power-company_fa24-2",
+  "company": "Southwestern Electric Power Company",
+  "company_raw": "Southwestern Electric Power Company (FA24-2)",
+  "docket": "FA24-2",
+  "docket_full": "FA24-2-000",
+  "issued_date": "2026-03-19",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260319-3008&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260319-3008",
+  "captured_at": "2026-06-19",
+  "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-2; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-2) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+  "archived_via": null,
+  "page_count": 55,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2021 through December 31, 2025",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Capitalization of Vegetation Management Costs",
+      "summary": "SWEPCo’s vegetation management policy was not consistent with the Commission’s accounting regulations. Specifically, SWEPCo (1) improperly capitalized $97 million of vegetation management costs that were not related to the initial or original clearing of land and rights-of-way (ROW); (2) accrued Allowance for Funds Used During Construction (AFUDC) on the improperly capitalized vegetation management costs; and (3) included the same vegetation management costs in two different accounts and included both accounts as input for the purposes of computing its annual transmission revenue requirement (ATRR). As a result, SWEPCo overstated its electric plant and overbilled transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Prepaid Pension AFUDC",
+      "summary": "SWEPCo improperly accrued AFUDC on its prepaid pension asset and included this AFUDC in the electric plant in service accounts. As a result, SWEPCo overstated its electric plant by $10 million and overbilled transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "SWEPCo’s AFUDC rate derivation, AFUDC accrual, and AFUDC accounting were inconsistent with the Commission’s accounting regulations. Specifically, SWEPCo incorrectly (1) calculated its long-term debt cost rate; (2) included balances of Accounts 181, Unamortized Debt Expense, 189, Unamortized Loss on Reacquired Debt, and 226, Unamortized Discount on Long-Term Debt, in the long-term debt balances; (3) accrued AFUDC on completed projects, suspended projects, and equipment purchases; and (4) recorded the state portion of AFUDC debt and equity accumulated deferred income taxes (ADIT) in Account 283, Accumulated Deferred Income Taxes – Other, instead of Account 282, Accumulated Deferred Income Taxes − Other Property. As a result, SWEPCo over accrued AFUDC included in electric plant in service accounts and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Prepayments",
+      "summary": "SWEPCo improperly recorded certain advance payments that were applicable to future accounting periods in administrative and general (A&G) and operation and maintenance (O&M) expense accounts, instead of in Account 165, Prepayments. As a result, SWEPCo did not accurately recognize certain expenses in the period in which they were incurred, leading to the misstatement of A&G, O&M, and other account balances reported in its FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting Misclassifications",
+      "summary": "SWEPCo recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. Some of the improper accounting resulted in SWEPCo overstating its ATRR and overbilling its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Excess and Deficient Accumulated Deferred Income Tax",
+      "summary": "SWEPCo improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SWEPCo’s FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "FERC Form No. 1 Reporting",
+      "summary": "SWEPCo did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information on certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
+  "structured": true
+}

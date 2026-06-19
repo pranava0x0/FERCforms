@@ -1,5 +1,89 @@
 [
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-05-07_southern-electric-generating-company_fa24-3",
+    "company": "Southern Electric Generating Company",
+    "company_raw": "Southern Electric Generating Company (FA24-3)",
+    "docket": "FA24-3",
+    "docket_full": "FA24-3-000",
+    "issued_date": "2026-05-07",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260507-3001",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-3; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-3) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 43,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2021 to December 31, 2024",
+    "industry": "electric",
+    "audit_type": "financial",
+    "functions": [
+      "generation"
+    ],
+    "forms": [
+      "1",
+      "3-Q"
+    ],
+    "finding_count": 4,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Accounting for Replacement of Minor Items of Property",
+        "summary": "SEGCO improperly capitalized costs related to the replacement of minor items of property in a manner that was not consistent with its units of property listing and the Commission’s accounting requirements. SEGCO’s accounting caused utility plant to be overstated and maintenance expenses to be understated.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Capitalization vs. expense"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Allowance for Funds Used During Construction",
+        "summary": "SEGCO improperly accrued allowance for funds used during construction (AFUDC) on projects that were completed or ready to be placed into service. As a result, SEGCO over accrued AFUDC and overstated electric plant in service during the audit period.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Computation of Depreciation Rates",
+        "summary": "SEGCO improperly used a depreciation rate for computing depreciation expense for transmission plant that was not on file with the Commission.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Depreciation"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "FERC Form Nos. 1 and 3-Q Reporting",
+        "summary": "SEGCO did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions reduced the transparency, accuracy, and usefulness of certain information in the reports. D.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "AFUDC / cost of capital",
+      "Capitalization vs. expense",
+      "Depreciation",
+      "Property & plant records"
+    ],
+    "cost_to_customers": true
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "MN",
     "source": "Minnesota Office of Administrative Hearings",
@@ -60,6 +144,130 @@
       "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
+  },
+  {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-03-19_southwestern-electric-power-company_fa24-2",
+    "company": "Southwestern Electric Power Company",
+    "company_raw": "Southwestern Electric Power Company (FA24-2)",
+    "docket": "FA24-2",
+    "docket_full": "FA24-2-000",
+    "issued_date": "2026-03-19",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260319-3008&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260319-3008",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-2; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-2) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 55,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2021 through December 31, 2025",
+    "industry": "electric",
+    "audit_type": "financial",
+    "functions": [
+      "transmission"
+    ],
+    "forms": [
+      "1"
+    ],
+    "finding_count": 7,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Capitalization of Vegetation Management Costs",
+        "summary": "SWEPCo’s vegetation management policy was not consistent with the Commission’s accounting regulations. Specifically, SWEPCo (1) improperly capitalized $97 million of vegetation management costs that were not related to the initial or original clearing of land and rights-of-way (ROW); (2) accrued Allowance for Funds Used During Construction (AFUDC) on the improperly capitalized vegetation management costs; and (3) included the same vegetation management costs in two different accounts and included both accounts as input for the purposes of computing its annual transmission revenue requirement (ATRR). As a result, SWEPCo overstated its electric plant and overbilled transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Capitalization vs. expense",
+          "Service reliability & vegetation management"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 2,
+        "title": "Prepaid Pension AFUDC",
+        "summary": "SWEPCo improperly accrued AFUDC on its prepaid pension asset and included this AFUDC in the electric plant in service accounts. As a result, SWEPCo overstated its electric plant by $10 million and overbilled transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Allowance for Funds Used During Construction",
+        "summary": "SWEPCo’s AFUDC rate derivation, AFUDC accrual, and AFUDC accounting were inconsistent with the Commission’s accounting regulations. Specifically, SWEPCo incorrectly (1) calculated its long-term debt cost rate; (2) included balances of Accounts 181, Unamortized Debt Expense, 189, Unamortized Loss on Reacquired Debt, and 226, Unamortized Discount on Long-Term Debt, in the long-term debt balances; (3) accrued AFUDC on completed projects, suspended projects, and equipment purchases; and (4) recorded the state portion of AFUDC debt and equity accumulated deferred income taxes (ADIT) in Account 283, Accumulated Deferred Income Taxes – Other, instead of Account 282, Accumulated Deferred Income Taxes − Other Property. As a result, SWEPCo over accrued AFUDC included in electric plant in service accounts and overbilled its transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Prepayments",
+        "summary": "SWEPCo improperly recorded certain advance payments that were applicable to future accounting periods in administrative and general (A&G) and operation and maintenance (O&M) expense accounts, instead of in Account 165, Prepayments. As a result, SWEPCo did not accurately recognize certain expenses in the period in which they were incurred, leading to the misstatement of A&G, O&M, and other account balances reported in its FERC Form No. 1 filings.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Accounting misclassification",
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Accounting Misclassifications",
+        "summary": "SWEPCo recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. Some of the improper accounting resulted in SWEPCo overstating its ATRR and overbilling its transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Accounting misclassification"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Excess and Deficient Accumulated Deferred Income Tax",
+        "summary": "SWEPCo improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SWEPCo’s FERC Form No. 1 filings.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "FERC Form No. 1 Reporting",
+        "summary": "SWEPCo did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information on certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "AFUDC / cost of capital",
+      "Accounting misclassification",
+      "Capitalization vs. expense",
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Property & plant records",
+      "Service reliability & vegetation management"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -202,6 +410,75 @@
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-01-08_dc-energy-holdings-llc_pa23-11",
+    "company": "DC Energy Holdings, LLC",
+    "company_raw": "DC Energy Holdings, LLC (PA23-11)",
+    "docket": "PA23-11",
+    "docket_full": "PA23-11-000",
+    "issued_date": "2026-01-08",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260108-3014&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260108-3014",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), PA23-11; accession resolved via eLibrary AdvancedSearch API (searchText=PA23-11) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 23,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2020 to January 31, 2025",
+    "industry": "electric",
+    "audit_type": "non-financial",
+    "functions": [
+      "generation",
+      "transmission"
+    ],
+    "forms": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Submittal of Required Financial Statements",
+        "summary": "DC Energy did not submit quarterly financial statements to PJM for Quarter 3, 2022 through Quarter 3, 2024 as required by PJM’s credit policy in Attachment Q of PJM’s OATT. Also, DC Energy did not submit quarterly financial statements to SPP during the audit period as required by SPP’s credit policy in Attachment X of SPP’s OATT. This action affected PJM and SPP’s overall risk management policy of monitoring credit risk to protect the market from participant defaults. D.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Submit quarterly financial statements for the audit period to SPP.",
+            "source_page": null
+          },
+          {
+            "number": 2,
+            "text": "Submit quarterly financial statements for the period of Quarter 3, 2022 through Quarter 3, 2024 to PJM.",
+            "source_page": null
+          },
+          {
+            "number": 3,
+            "text": "Establish and implement policies and procedures to ensure compliance with credit policies, timelines, and other relevant requirements as specified in RTO/ISO tariffs.",
+            "source_page": null
+          },
+          {
+            "number": 4,
+            "text": "Establish and implement policies and procedures to review credit policies and requirements as RTOs/ISOs update their tariffs to ensure that DC Energy is submitting all required documents accurately and timely.",
+            "source_page": null
+          },
+          {
+            "number": 5,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 3 and 4 and repeat such training as needed. E.",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_rate_case",

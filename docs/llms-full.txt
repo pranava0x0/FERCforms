@@ -1,8 +1,81 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 652 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 655 records, 1727 findings, 2185 recommendations. Generated 2026-06-19.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
+
+---
+
+## Southern Electric Generating Company
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
+- Docket: FA24-3-000 | Audit type: financial
+- Issued: 2026-05-07 | Industry: electric | FERC Form: No. 1, No. 3-Q
+- Function(s): generation
+- Audit period: January 1, 2021 to December 31, 2024
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&optimized=false
+
+### Finding 1: Accounting for Replacement of Minor Items of Property
+SEGCO improperly capitalized costs related to the replacement of minor items of property in a manner that was not consistent with its units of property listing and the Commission’s accounting requirements. SEGCO’s accounting caused utility plant to be overstated and maintenance expenses to be understated.
+
+### Finding 2: Allowance for Funds Used During Construction
+SEGCO improperly accrued allowance for funds used during construction (AFUDC) on projects that were completed or ready to be placed into service. As a result, SEGCO over accrued AFUDC and overstated electric plant in service during the audit period.
+
+### Finding 3: Computation of Depreciation Rates
+SEGCO improperly used a depreciation rate for computing depreciation expense for transmission plant that was not on file with the Commission.
+
+### Finding 4: FERC Form Nos. 1 and 3-Q Reporting
+SEGCO did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions reduced the transparency, accuracy, and usefulness of certain information in the reports. D.
+
+---
+
+## Southwestern Electric Power Company
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
+- Docket: FA24-2-000 | Audit type: financial
+- Issued: 2026-03-19 | Industry: electric | FERC Form: No. 1
+- Function(s): transmission
+- Audit period: January 1, 2021 through December 31, 2025
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260319-3008&optimized=false
+
+### Finding 1: Capitalization of Vegetation Management Costs
+SWEPCo’s vegetation management policy was not consistent with the Commission’s accounting regulations. Specifically, SWEPCo (1) improperly capitalized $97 million of vegetation management costs that were not related to the initial or original clearing of land and rights-of-way (ROW); (2) accrued Allowance for Funds Used During Construction (AFUDC) on the improperly capitalized vegetation management costs; and (3) included the same vegetation management costs in two different accounts and included both accounts as input for the purposes of computing its annual transmission revenue requirement (ATRR). As a result, SWEPCo overstated its electric plant and overbilled transmission customers.
+
+### Finding 2: Prepaid Pension AFUDC
+SWEPCo improperly accrued AFUDC on its prepaid pension asset and included this AFUDC in the electric plant in service accounts. As a result, SWEPCo overstated its electric plant by $10 million and overbilled transmission customers.
+
+### Finding 3: Allowance for Funds Used During Construction
+SWEPCo’s AFUDC rate derivation, AFUDC accrual, and AFUDC accounting were inconsistent with the Commission’s accounting regulations. Specifically, SWEPCo incorrectly (1) calculated its long-term debt cost rate; (2) included balances of Accounts 181, Unamortized Debt Expense, 189, Unamortized Loss on Reacquired Debt, and 226, Unamortized Discount on Long-Term Debt, in the long-term debt balances; (3) accrued AFUDC on completed projects, suspended projects, and equipment purchases; and (4) recorded the state portion of AFUDC debt and equity accumulated deferred income taxes (ADIT) in Account 283, Accumulated Deferred Income Taxes – Other, instead of Account 282, Accumulated Deferred Income Taxes − Other Property. As a result, SWEPCo over accrued AFUDC included in electric plant in service accounts and overbilled its transmission customers.
+
+### Finding 4: Prepayments
+SWEPCo improperly recorded certain advance payments that were applicable to future accounting periods in administrative and general (A&G) and operation and maintenance (O&M) expense accounts, instead of in Account 165, Prepayments. As a result, SWEPCo did not accurately recognize certain expenses in the period in which they were incurred, leading to the misstatement of A&G, O&M, and other account balances reported in its FERC Form No. 1 filings.
+
+### Finding 5: Accounting Misclassifications
+SWEPCo recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. Some of the improper accounting resulted in SWEPCo overstating its ATRR and overbilling its transmission customers.
+
+### Finding 6: Excess and Deficient Accumulated Deferred Income Tax
+SWEPCo improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SWEPCo’s FERC Form No. 1 filings.
+
+### Finding 7: FERC Form No. 1 Reporting
+SWEPCo did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information on certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.
+
+---
+
+## DC Energy Holdings, LLC
+- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
+- Docket: PA23-11-000 | Audit type: non-financial
+- Issued: 2026-01-08 | Industry: electric | FERC Form: n/a
+- Function(s): generation, transmission
+- Audit period: January 1, 2020 to January 31, 2025
+- Source page: https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260108-3014&optimized=false
+
+### Finding 1: Submittal of Required Financial Statements
+DC Energy did not submit quarterly financial statements to PJM for Quarter 3, 2022 through Quarter 3, 2024 as required by PJM’s credit policy in Attachment Q of PJM’s OATT. Also, DC Energy did not submit quarterly financial statements to SPP during the audit period as required by SPP’s credit policy in Attachment X of SPP’s OATT. This action affected PJM and SPP’s overall risk management policy of monitoring credit risk to protect the market from participant defaults. D.
+
+Recommendations:
+1. Submit quarterly financial statements for the audit period to SPP.
+2. Submit quarterly financial statements for the period of Quarter 3, 2022 through Quarter 3, 2024 to PJM.
+3. Establish and implement policies and procedures to ensure compliance with credit policies, timelines, and other relevant requirements as specified in RTO/ISO tariffs.
+4. Establish and implement policies and procedures to review credit policies and requirements as RTOs/ISOs update their tariffs to ensure that DC Energy is submitting all required documents accurately and timely.
+5. Provide training to relevant staff on policies and procedures implemented in response to Recommendations 3 and 4 and repeat such training as needed. E.
 
 ---
 

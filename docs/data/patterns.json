@@ -1,11 +1,11 @@
 {
-  "report_count": 652,
-  "finding_count": 1715,
+  "report_count": 655,
+  "finding_count": 1727,
   "other_matter_count": 10,
-  "recommendation_count": 2180,
+  "recommendation_count": 2185,
   "by_industry": {
     "unknown": 330,
-    "electric": 253,
+    "electric": 256,
     "gas": 49,
     "oil": 18,
     "water": 2
@@ -26,11 +26,11 @@
     "2023": 25,
     "2024": 45,
     "2025": 62,
-    "2026": 5
+    "2026": 8
   },
   "by_function": {
-    "transmission": 67,
-    "generation": 63,
+    "transmission": 69,
+    "generation": 65,
     "distribution": 2
   },
   "themes": [
@@ -44,13 +44,13 @@
         "improperly included",
         "incorrectly included"
       ],
-      "finding_count": 180,
-      "report_count": 67,
+      "finding_count": 182,
+      "report_count": 68,
       "example_titles": [
+        "Prepayments",
+        "Accounting Misclassifications",
         "Allowance for Funds Used During Construction",
-        "Annual Membership Dues",
-        "Nonoperating and Operating Expenses",
-        "Noncarrier Property Revenue, Expenses, and Net Income"
+        "Annual Membership Dues"
       ]
     },
     {
@@ -60,13 +60,13 @@
         "form no.",
         "page 700"
       ],
-      "finding_count": 152,
-      "report_count": 57,
+      "finding_count": 155,
+      "report_count": 58,
       "example_titles": [
-        "Annual Cost of Service Based Analysis Schedule",
-        "Nonoperating and Operating Expenses",
-        "Noncarrier Property Revenue, Expenses, and Net Income",
-        "Crude Oil Accounting Misclassifications"
+        "Prepayments",
+        "Excess and Deficient Accumulated Deferred Income Tax",
+        "FERC Form No. 1 Reporting",
+        "Annual Cost of Service Based Analysis Schedule"
       ]
     },
     {
@@ -138,13 +138,13 @@
       "keywords": [
         "depreciation"
       ],
-      "finding_count": 67,
-      "report_count": 46,
+      "finding_count": 68,
+      "report_count": 47,
       "example_titles": [
+        "Computation of Depreciation Rates",
         "Allowance for Funds Used During Construction",
         "Depreciation Rates and Study",
-        "Allocation of Overhead Costs to CWIP",
-        "Depreciation Rates and Dismantlement Charge"
+        "Allocation of Overhead Costs to CWIP"
       ]
     },
     {
@@ -176,13 +176,29 @@
         "plant in service",
         "property record"
       ],
-      "finding_count": 73,
+      "finding_count": 76,
+      "report_count": 42,
+      "example_titles": [
+        "Allowance for Funds Used During Construction",
+        "Prepaid Pension AFUDC",
+        "Noncarrier Property Revenue, Expenses, and Net Income",
+        "Property Unit Listing"
+      ]
+    },
+    {
+      "theme": "AFUDC / cost of capital",
+      "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
+      "keywords": [
+        "allowance for funds used during construction",
+        "afudc"
+      ],
+      "finding_count": 53,
       "report_count": 40,
       "example_titles": [
         "Allowance for Funds Used During Construction",
-        "Noncarrier Property Revenue, Expenses, and Net Income",
-        "Property Unit Listing",
-        "Depreciation Rates and Study"
+        "Capitalization of Vegetation Management Costs",
+        "Prepaid Pension AFUDC",
+        "Capitalized Interest Expense"
       ]
     },
     {
@@ -200,22 +216,6 @@
         "Cost Allocations and Affiliated Interests",
         "Settlement: agreement",
         "Affiliated Interests and Cost Allocations"
-      ]
-    },
-    {
-      "theme": "AFUDC / cost of capital",
-      "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
-      "keywords": [
-        "allowance for funds used during construction",
-        "afudc"
-      ],
-      "finding_count": 49,
-      "report_count": 38,
-      "example_titles": [
-        "Allowance for Funds Used During Construction",
-        "Capitalized Interest Expense",
-        "Transmission Incentives",
-        "Allowance for Funds Using During Construction"
       ]
     },
     {
@@ -258,13 +258,13 @@
       "keywords": [
         "capitaliz"
       ],
-      "finding_count": 20,
-      "report_count": 19,
+      "finding_count": 22,
+      "report_count": 21,
       "example_titles": [
+        "Accounting for Replacement of Minor Items of Property",
+        "Capitalization of Vegetation Management Costs",
         "Property Unit Listing",
-        "Allocation of Overhead Costs to CWIP",
-        "Accounting for A&G Overheads and Accruals",
-        "Accounting for Costs in Account 922"
+        "Allocation of Overhead Costs to CWIP"
       ]
     },
     {
@@ -286,13 +286,13 @@
         "outage management",
         "outage response"
       ],
-      "finding_count": 34,
-      "report_count": 14,
+      "finding_count": 35,
+      "report_count": 15,
       "example_titles": [
+        "Capitalization of Vegetation Management Costs",
         "Settlement: terms",
         "Settlement: Agreement",
-        "Electric Operations",
-        "• Safety s, Tips, and Warnings (dig safe, downed power lines, storm and cold weather)"
+        "Electric Operations"
       ]
     },
     {
@@ -552,7 +552,7 @@
     },
     {
       "title": "FERC Form No. 1 Reporting",
-      "count": 17
+      "count": 18
     },
     {
       "title": "Settlement: terms",
@@ -563,12 +563,12 @@
       "count": 15
     },
     {
-      "title": "Settlement: AGREEMENT",
+      "title": "Allowance for Funds Used During Construction",
       "count": 14
     },
     {
-      "title": "Allowance for Funds Used During Construction",
-      "count": 12
+      "title": "Settlement: AGREEMENT",
+      "count": 14
     },
     {
       "title": "C.   s and Conclusions",
@@ -603,6 +603,10 @@
       "count": 8
     },
     {
+      "title": "Accounting Misclassifications",
+      "count": 7
+    },
+    {
       "title": "Electric Operations",
       "count": 7
     },
@@ -624,10 +628,6 @@
     },
     {
       "title": "Affiliated Interests and Cost Allocations",
-      "count": 6
-    },
-    {
-      "title": "Executive Management and Organizational Structure",
       "count": 6
     }
   ],

@@ -1,0 +1,62 @@
+{
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
+  "id": "2026-05-07_southern-electric-generating-company_fa24-3",
+  "company": "Southern Electric Generating Company",
+  "company_raw": "Southern Electric Generating Company (FA24-3)",
+  "docket": "FA24-3",
+  "docket_full": "FA24-3-000",
+  "issued_date": "2026-05-07",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260507-3001",
+  "captured_at": "2026-06-19",
+  "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-3; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-3) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+  "archived_via": null,
+  "page_count": 43,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2021 to December 31, 2024",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "generation"
+  ],
+  "forms": [
+    "1",
+    "3-Q"
+  ],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Replacement of Minor Items of Property",
+      "summary": "SEGCO improperly capitalized costs related to the replacement of minor items of property in a manner that was not consistent with its units of property listing and the Commission’s accounting requirements. SEGCO’s accounting caused utility plant to be overstated and maintenance expenses to be understated.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "SEGCO improperly accrued allowance for funds used during construction (AFUDC) on projects that were completed or ready to be placed into service. As a result, SEGCO over accrued AFUDC and overstated electric plant in service during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Computation of Depreciation Rates",
+      "summary": "SEGCO improperly used a depreciation rate for computing depreciation expense for transmission plant that was not on file with the Commission.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "FERC Form Nos. 1 and 3-Q Reporting",
+      "summary": "SEGCO did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions reduced the transparency, accuracy, and usefulness of certain information in the reports. D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
+  "structured": true
+}
