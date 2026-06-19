@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 655 records, 1715 findings, 2180 recommendations. Generated 2026-06-18.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 641 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5364,17 +5364,6 @@ Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia
 
 ---
 
-## Entergy Louisiana, Inc.
-- Collection: Prudence Reviews | Source: Louisiana Public Service Commission (LPSC)
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Source page: https://www.lpsc.louisiana.gov/utilities/electric/
-- Status: listed for reference (not machine-parsed into findings)
-
-Entergy Louisiana fuel-cost recovery orders from LPSC. Requires manual docket lookup to find specific PDF URLs.
-
----
-
 ## Georgia Power Company
 - Collection: Prudence Reviews | Source: Georgia Public Service Commission
 - Docket: 29849 | Audit type: n/a
@@ -9884,17 +9873,6 @@ Public Utility Commission (TX)
 
 ---
 
-## Audit on Asset Management (FY 2021)
-- Collection: State PUC Audits | Source: Public Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.puc.texas.gov/agency/about/audit/
-- Status: listed for reference (not machine-parsed into findings)
-
-Public Utility Commission (TX)
-
----
-
 ## Audit of the General Law Division's Public Information Act Requests (FY 2021)
 - Collection: State PUC Audits | Source: Public Utility Commission
 - Docket: n/a | Audit type: n/a
@@ -10819,17 +10797,6 @@ Public Service Commission (MS)
 
 ---
 
-## Report Lack of Service
-- Collection: State PUC Audits | Source: Public Service Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ms.us
-- Status: listed for reference (not machine-parsed into findings)
-
-Public Service Commission (MS)
-
----
-
 ## MPSC seeks public comment on report on shutoff protections for critical care customers
 - Collection: State PUC Audits | Source: Public Service Commission
 - Docket: n/a | Audit type: n/a
@@ -11743,94 +11710,6 @@ GA PUC (Tier 2 deep scrape)
 
 ---
 
-## media advisory 5 28 26 fuel storm stip approval
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## 2021-2023 Regulated Provider RFP
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## human-trafficking-hotline-notice
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## psc-2022-map-packet
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## datacenterfactsheet
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## Alternative eFiling Memo
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## USF Low-IncomeAssistancePrograms
-- Collection: State PUC Audits | Source: State of GA Utility Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us/
-- Status: listed for reference (not machine-parsed into findings)
-
-GA PUC (Tier 2 deep scrape)
-
----
-
-## PSC Annual Reports
-- Collection: State PUC Audits | Source: Public Service Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.psc.state.ga.us
-- Status: listed for reference (not machine-parsed into findings)
-
-Public Service Commission (GA)
-
----
-
 ## GUFPA Violation Reporting System
 - Collection: State PUC Audits | Source: Public Service Commission
 - Docket: n/a | Audit type: n/a
@@ -12348,17 +12227,6 @@ Regulatory Commission (AK)
 
 ---
 
-## Report a Traffic Crash
-- Collection: State PUC Audits | Source: Regulatory Commission
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: n/a | FERC Form: n/a
-- Source page: https://www.state.ak.us/rca
-- Status: listed for reference (not machine-parsed into findings)
-
-Regulatory Commission (AK)
-
----
-
 ## Otter Tail Power Company
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission (APSC)
 - Docket: n/a | Audit type: n/a
@@ -12370,17 +12238,6 @@ Otter documents from APSC. Requires manual docket/order lookup.
 
 ---
 
-## Mississippi Power Company
-- Collection: State PUC Audits | Source: Mississippi Public Service Commission (MPSC)
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Source page: https://www.psc.ms.gov/filings/
-- Status: listed for reference (not machine-parsed into findings)
-
-Mississippi Power M&O audit orders from MPSC. Requires manual docket search.
-
----
-
 ## The Empire District Electric Company
 - Collection: State PUC Audits | Source: Arkansas Public Service Commission (APSC)
 - Docket: n/a | Audit type: n/a
@@ -12389,17 +12246,6 @@ Mississippi Power M&O audit orders from MPSC. Requires manual docket search.
 - Status: listed for reference (not machine-parsed into findings)
 
 The documents from APSC. Requires manual docket/order lookup.
-
----
-
-## Dominion Energy Mississippi
-- Collection: State PUC Audits | Source: Mississippi Public Service Commission (MPSC)
-- Docket: n/a | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Source page: https://www.psc.ms.gov/filings/
-- Status: listed for reference (not machine-parsed into findings)
-
-Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search.
 
 ---
 

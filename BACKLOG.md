@@ -19,9 +19,42 @@ pcdocs id** (a Koloko Transportation data-request letter) — corrected to the r
 `1775875.pdf`, restoring **11 findings/32 recs**; (2) **`verify_sources` crashed** on the non-list
 `tier3_targets.json` planning file — added a shape guard + regression test.
 
-**Next cheap PA findings:** an **MEI Exhibit II-1 parser** would unlock the 2 Duquesne/UGI MEIs (and
-future MEIs) — the follow-up format lists numbered recs under "Summary of … Recommendations and
-Follow-Up Findings." Until then, new M&O audits remain the cheapest findings (parser ready).
+**MEI Exhibit II-1 parser — assessed 2026-06-19, NOT a cheap win → deferred [low].** Examined the
+extracted text of both MEIs. The Exhibit II-1 "Summary of … Recommendations and Follow-Up Findings"
+is a **3-column table** (prior-audit rec | MEI follow-up finding `III-1 – …` | MEI follow-up rec)
+that linearizes per row as `col1 → label+col2 → col3`. The col2/col3 boundary is **unmarked**: when
+col3 is "None" (≈32 of 46 rows) it terminates cleanly, but the ~14 rows carrying a real new
+recommendation merge col2+col3 (and bleed into the next row's col1) with no delimiter — three cells
+concatenated, unrecoverable as clean verbatim. The `{ROMAN}-{N}` labels also appear in the TOC/List
+of Exhibits as *exhibit* numbers, so they can't anchor rows without strict body-only scoping. Net
+yield (~14 recs across 2 docs) doesn't justify a fragile parser that would garble per the verbatim
+discipline. **Both MEIs stay metadata-only.** Revisit only if many more MEIs accumulate AND a
+layout-aware (column-bbox) extractor replaces the linear-text one. New **M&O** audits (clean
+Exhibit I-2, one rec per row) remain the cheapest reliable findings.
+
+---
+
+## ▶ Done 2026-06-19 — MEI parser assessed (deferred) + 14 crawler-junk records purged
+
+Assessed the MEI Exhibit II-1 parser (see the dated note above — deferred [low], 3-column boundary
+is unrecoverable from linear text). PA M&O corpus confirmed **exhausted** for the clean Exhibit I-2
+format (a research pass verified all qualifying audits are already seeded; older 2008-2016 cycles use
+a contractor "Stratified" format with no I-3 recs table). Then ran `verify_sources` and **removed 14
+DEAD records** — crawler false-positives (AK traffic-crash page, GA website assets, MS PSC homepage)
+and unresolved MS/LA/TX placeholders (`pdf_url` = a docket-search page; `source_note` = "requires
+manual docket search"). All 0-page/0-finding. Corpus 655 → **641** reports, findings unchanged (1715).
+See ISSUES.md.
+
+**[med] Crawler-seed quality audit — `state_puc.json` (197) + `state_puc_tier2_extended.json` (143).**
+These two tier-1/tier-2 web-crawl seed files are the junk source (the 14 DEAD all came from here or
+their per-state offshoots). `verify_sources` still shows **NON_PDF=150** — records whose URL returns
+200 but isn't a PDF; some are intentional (CA `.htm` decisions, OH/NC browser-capture `fetch=false`),
+but the crawler ones point at HTML landing/index pages and several survivors are off-theme by name
+(media advisories, fact sheets, eFiling memos). Do a per-record pass over these two files: keep only
+records that (a) are genuine utility audit/prudence/rate documents AND (b) resolve to a real fetched
+PDF or a deliberately-captured `.htm`/`fetch=false` source; drop nav-link/website-asset/placeholder
+rows. Guard against regression by tightening the crawler or adding a seed-quality test (e.g. reject a
+`pdf_url` that is a search/`?`-query or directory index for `parse`/`fetch` records).
 
 ---
 

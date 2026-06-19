@@ -503,15 +503,15 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-06-18"
+    "generated_at": "2026-06-19"
   },
   "prudence_review": {
-    "report_count": 28,
+    "report_count": 27,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 24,
+      "electric": 23,
       "gas": 3,
       "oil": 1
     },
@@ -564,7 +564,7 @@
           "energy cost recovery"
         ],
         "finding_count": 0,
-        "report_count": 9,
+        "report_count": 8,
         "example_titles": []
       },
       {
@@ -598,16 +598,16 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-06-18"
+    "generated_at": "2026-06-19"
   },
   "state_audit": {
-    "report_count": 395,
+    "report_count": 382,
     "finding_count": 587,
     "other_matter_count": 0,
     "recommendation_count": 761,
     "by_industry": {
-      "unknown": 336,
-      "electric": 36,
+      "unknown": 325,
+      "electric": 34,
       "gas": 21,
       "water": 2
     },
@@ -635,7 +635,7 @@
           "compliance program"
         ],
         "finding_count": 29,
-        "report_count": 31,
+        "report_count": 30,
         "example_titles": [
           "Corporate Governance",
           "Cost Allocations and Affiliated Interests",
@@ -1113,7 +1113,7 @@
         "count": 2
       }
     ],
-    "generated_at": "2026-06-18"
+    "generated_at": "2026-06-19"
   },
   "state_rate_case": {
     "report_count": 112,
@@ -1477,6 +1477,6 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-18"
+    "generated_at": "2026-06-19"
   }
 }

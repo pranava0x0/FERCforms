@@ -1,11 +1,11 @@
 {
-  "report_count": 655,
+  "report_count": 641,
   "finding_count": 1715,
   "other_matter_count": 10,
   "recommendation_count": 2180,
   "by_industry": {
-    "unknown": 341,
-    "electric": 247,
+    "unknown": 330,
+    "electric": 244,
     "gas": 47,
     "oil": 18,
     "water": 2
@@ -104,7 +104,7 @@
         "energy cost recovery"
       ],
       "finding_count": 28,
-      "report_count": 49,
+      "report_count": 48,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
@@ -244,7 +244,7 @@
         "compliance program"
       ],
       "finding_count": 32,
-      "report_count": 33,
+      "report_count": 32,
       "example_titles": [
         "Corporate Governance",
         "Cost Allocations and Affiliated Interests",
@@ -631,5 +631,5 @@
       "count": 6
     }
   ],
-  "generated_at": "2026-06-18"
+  "generated_at": "2026-06-19"
 }

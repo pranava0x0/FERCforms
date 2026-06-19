@@ -1,5 +1,5 @@
-<project title="FERC Audit Explorer" summary="655 structured records (120 FERC audits, 28 prudence reviews, 395 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-18). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="641 structured records (120 FERC audits, 27 prudence reviews, 382 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-19). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
 Finding 1: Renewable Natural Gas Quality Specifications
@@ -2979,10 +2979,6 @@ FERC order on the Mid-Atlantic Power Pathway (MAPP) abandonment cost recovery fi
 Listed for reference (not machine-parsed into findings).
 Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 &amp; 4), Docket 29849; cover 'February 2024' (month-only -&gt; issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/217538/98678.
 </doc>
-<doc title="Entergy Louisiana, Inc." collection="Prudence Reviews" docket="n/a" issued="n/a" industry="electric" source="https://www.lpsc.louisiana.gov/utilities/electric/">
-Listed for reference (not machine-parsed into findings).
-Entergy Louisiana fuel-cost recovery orders from LPSC. Requires manual docket lookup to find specific PDF URLs.
-</doc>
 <doc title="Georgia Power Company" collection="Prudence Reviews" docket="29849" issued="n/a" industry="electric" source="https://psc.ga.gov/search/facts-docket/?docketId=29849">
 Listed for reference (not machine-parsed into findings).
 Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 &amp; 4), Docket 29849; cover 'February 2023' (month-only -&gt; issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.
@@ -4791,10 +4787,6 @@ Public Utility Commission (TX)
 Listed for reference (not machine-parsed into findings).
 Public Utility Commission (TX)
 </doc>
-<doc title="Audit on Asset Management (FY 2021)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/agency/about/audit/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
 <doc title="Audit of the General Law Division&#x27;s Public Information Act Requests (FY 2021)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/agency/about/audit/">
 Listed for reference (not machine-parsed into findings).
 Public Utility Commission (TX)
@@ -5131,10 +5123,6 @@ Public Service Commission (MT)
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MS)
 </doc>
-<doc title="Report Lack of Service" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ms.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MS)
-</doc>
 <doc title="MPSC seeks public comment on report on shutoff protections for critical care customers" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.michigan.gov/mpsc">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MI)
@@ -5467,38 +5455,6 @@ Public Utilities Commission (HI)
 Listed for reference (not machine-parsed into findings).
 GA PUC (Tier 2 deep scrape)
 </doc>
-<doc title="media advisory 5 28 26 fuel storm stip approval" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="2021-2023 Regulated Provider RFP" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="human-trafficking-hotline-notice" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="psc-2022-map-packet" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="datacenterfactsheet" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="Alternative eFiling Memo" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="USF Low-IncomeAssistancePrograms" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="PSC Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (GA)
-</doc>
 <doc title="GUFPA Violation Reporting System" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (GA)
@@ -5687,25 +5643,13 @@ Regulatory Commission (AK)
 Listed for reference (not machine-parsed into findings).
 Regulatory Commission (AK)
 </doc>
-<doc title="Report a Traffic Crash" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
 <doc title="Otter Tail Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).
 Otter documents from APSC. Requires manual docket/order lookup.
 </doc>
-<doc title="Mississippi Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.psc.ms.gov/filings/">
-Listed for reference (not machine-parsed into findings).
-Mississippi Power M&amp;O audit orders from MPSC. Requires manual docket search.
-</doc>
 <doc title="The Empire District Electric Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).
 The documents from APSC. Requires manual docket/order lookup.
-</doc>
-<doc title="Dominion Energy Mississippi" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.psc.ms.gov/filings/">
-Listed for reference (not machine-parsed into findings).
-Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search.
 </doc>
 <doc title="Public Service Electric and Gas Company (PSE&amp;G)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
 Listed for reference (not machine-parsed into findings).
