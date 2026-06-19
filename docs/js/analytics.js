@@ -20,7 +20,7 @@
   "use strict";
 
   // ── The one value to configure ──────────────────────────────────────────────
-  var GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // <-- replace with your GA4 id (G-XXXXXXXXXX)
+  var GA_MEASUREMENT_ID = "G-8K4GBB47BF"; // GA4 "FERC Audit Explorer" property (Mint Test account)
 
   // No-op until a real id is set, so committing the placeholder ships nothing live.
   if (!GA_MEASUREMENT_ID || GA_MEASUREMENT_ID === "G-XXXXXXXXXX") return;
