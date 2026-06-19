@@ -1117,12 +1117,12 @@
     "generated_at": "2026-06-19"
   },
   "state_rate_case": {
-    "report_count": 116,
+    "report_count": 120,
     "finding_count": 544,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 104,
+      "electric": 108,
       "gas": 10,
       "unknown": 2
     },
@@ -1136,7 +1136,7 @@
       "2021": 5,
       "2022": 5,
       "2023": 7,
-      "2024": 20,
+      "2024": 24,
       "2025": 39,
       "2026": 5
     },
@@ -1177,7 +1177,7 @@
           "energy cost recovery"
         ],
         "finding_count": 16,
-        "report_count": 28,
+        "report_count": 32,
         "example_titles": [
           "Approval: $225,000\n",
           "Approval: $0.69 ",

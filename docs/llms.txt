@@ -2,7 +2,7 @@
 
 > Machine-readable findings of noncompliance and staff recommendations mined from **utility audit and prudence records**, across three collections: **FERC audits** (the Office of Enforcement's financial (FA) and non-financial (PA) audits of utilities, ISOs/RTOs, and pipelines, electric/gas/oil), **FERC prudence reviews** (rate-case cost determinations), and **state PUC/PSC/SCC audits** (rate, fuel-cost, and management proceedings from several state commissions). FERC audits and the parsed state management audits are broken into findings -> recommendations (verbatim); legal orders, testimony, and settlements are listed with their source. Themes are mined by transparent keyword tagging, never LLM judgement.
 
-Scope: FERC utility audits — electric, gas & oil, extended to prudence reviews and state audits. As of 2026-06-19, the corpus holds 646 structured records: 120 FERC audits (of 120 listed at https://www.ferc.gov/audits (248 electric, 48 gas, 18 oil, 2 water identified)), 28 prudence reviews, and 382 state PUC audits. Findings and recommendations are quoted verbatim. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
+Scope: FERC utility audits — electric, gas & oil, extended to prudence reviews and state audits. As of 2026-06-19, the corpus holds 650 structured records: 120 FERC audits (of 120 listed at https://www.ferc.gov/audits (252 electric, 48 gas, 18 oil, 2 water identified)), 28 prudence reviews, and 382 state PUC audits. Findings and recommendations are quoted verbatim. Independent public-interest tool, not affiliated with FERC. Links below are relative to the site root.
 
 ## Data (machine-readable)
 - [Reports](data/reports.json): every structured record with findings, recommendations, and themes
@@ -557,7 +557,7 @@ _382 document(s), 2017–2025. jurisdictions: WA (111), IN (55), PA (53), DC (33
 ## Common themes (from parsed findings)
 - Accounting misclassification — Costs or revenues booked to the wrong FERC account. (67 report(s), 180 finding(s))
 - Form reporting (Form No. 1/2/6, Page 700) — Errors or omissions in the annual FERC forms utilities file. (57 report(s), 152 finding(s))
-- Fuel & purchased-power cost recovery — Fuel, purchased-power, and energy-cost recovery or prudence matters. (49 report(s), 28 finding(s))
+- Fuel & purchased-power cost recovery — Fuel, purchased-power, and energy-cost recovery or prudence matters. (53 report(s), 28 finding(s))
 - Cost of service & rates — Errors in rate-base or return inputs to cost-of-service rates. (47 report(s), 85 finding(s))
 - Depreciation — Unapproved or incorrect depreciation rates applied to plant. (46 report(s), 67 finding(s))
 - Below-the-line costs (lobbying, charitable, etc.) — Non-recoverable costs (lobbying, charity, ads) charged to ratepayers. (43 report(s), 51 finding(s))

@@ -34,6 +34,20 @@ Exhibit I-2, one rec per row) remain the cheapest reliable findings.
 
 ---
 
+## ▶ Done 2026-06-19 (cont.) — +4 verified SC PSC Duke fuel-prudence docs
+
+Added 4 page-1-verified, PROVEN metadata-only SC PSC records (all `dms.psc.sc.gov`, plain-GET
+`/Attachments/{Order|Matter}/{guid}`): the annual **fuel-cost reasonableness** proceedings for the
+two Duke utilities (we already had Dominion SC 2024-2-E) — **Duke Energy Carolinas 2024-3-E** Order
+2024-727 (30 pp) + ORS audit-staff testimony (25 pp); **Duke Energy Progress 2024-1-E** Order 2024-500
+(58 pp) + ORS proposed order (25 pp). Corpus 646 → **650**. Same proceeding exists annually for both
+Duke utilities + Dominion if more breadth wanted. **NC NCUC** (Duke E-7/E-2 fuel riders) stays
+browser-walled (`starw1.ncuc.gov` 403s scripts). **GA PSC** fuel orders (FCR-26/27) are **image-only
+scans with no extractable text** — fetchable but can't be caption-verified per the quote discipline;
+need OCR before seeding.
+
+---
+
 ## ▶ Done 2026-06-19 (cont.) — +5 verified thin-state docs (NM/DE/NE/KS/SD)
 
 Added 5 page-1-verified, PROVEN metadata-only records to under-covered states (each fetched 200 +
