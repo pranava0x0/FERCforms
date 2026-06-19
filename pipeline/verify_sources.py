@@ -84,7 +84,15 @@ def probe(url: str, timeout: int = 25) -> tuple[int, str, bool]:
 def _load_seeds() -> dict[str, dict]:
     seeds: dict[str, dict] = {}
     for path in sorted(config.SEEDS_DIR.glob("*.json")):
-        for rec in json.loads(path.read_text(encoding="utf-8")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        # Some files in data/seeds/ are planning docs (e.g. tier3_targets.json, a
+        # state-keyed dict), not SourceSeed lists. Skip anything that isn't a list
+        # of seed dicts so the fabrication sweep never crashes on them.
+        if not isinstance(data, list):
+            continue
+        for rec in data:
+            if not isinstance(rec, dict) or "id" not in rec:
+                continue
             rec["_file"] = path.name
             seeds[rec["id"]] = rec
     return seeds

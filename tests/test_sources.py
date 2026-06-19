@@ -311,6 +311,18 @@ def test_all_seed_files_validate_and_have_unique_ids():
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
 
 
+def test_verify_sources_load_seeds_skips_non_list_files():
+    """`verify_sources._load_seeds` must tolerate non-SourceSeed files in
+    data/seeds/ (e.g. tier3_targets.json, a state-keyed planning dict) instead of
+    crashing with 'str object does not support item assignment'. Regression for the
+    fabrication-sweep crash that blocked pre-commit verification (2026-06-18)."""
+    from pipeline import verify_sources
+
+    seeds = verify_sources._load_seeds()  # must not raise
+    assert seeds, "expected seeds to load"
+    assert all(isinstance(rec, dict) and "id" in rec for rec in seeds.values())
+
+
 # --- fetch resilience (timeouts / throttling / broken TLS / WAF / placeholders) ---
 
 import logging  # noqa: E402
