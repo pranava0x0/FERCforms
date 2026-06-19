@@ -1,12 +1,12 @@
 {
-  "report_count": 651,
-  "finding_count": 1691,
+  "report_count": 655,
+  "finding_count": 1715,
   "other_matter_count": 10,
-  "recommendation_count": 2188,
+  "recommendation_count": 2180,
   "by_industry": {
     "unknown": 341,
-    "electric": 244,
-    "gas": 46,
+    "electric": 247,
+    "gas": 47,
     "oil": 18,
     "water": 2
   },
@@ -19,18 +19,18 @@
     "2016": 15,
     "2017": 12,
     "2018": 19,
-    "2019": 13,
+    "2019": 14,
     "2020": 16,
     "2021": 16,
     "2022": 20,
-    "2023": 21,
+    "2023": 23,
     "2024": 40,
-    "2025": 60,
+    "2025": 62,
     "2026": 5
   },
   "by_function": {
     "transmission": 67,
-    "generation": 65,
+    "generation": 63,
     "distribution": 2
   },
   "themes": [
@@ -70,26 +70,6 @@
       ]
     },
     {
-      "theme": "Cost of service & rates",
-      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
-      "keywords": [
-        "cost of service",
-        "cost-of-service",
-        "rate base",
-        "rate of return",
-        "return on equity",
-        "rate design"
-      ],
-      "finding_count": 85,
-      "report_count": 47,
-      "example_titles": [
-        "Approval: $1,277,051,206. ",
-        "Approval: $35.7 million",
-        "Annual Membership Dues",
-        "Annual Cost of Service Based Analysis Schedule"
-      ]
-    },
-    {
       "theme": "Fuel & purchased-power cost recovery",
       "description": "Fuel, purchased-power, and energy-cost recovery or prudence matters.",
       "keywords": [
@@ -124,12 +104,32 @@
         "energy cost recovery"
       ],
       "finding_count": 28,
-      "report_count": 47,
+      "report_count": 49,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Approval: $225,000\n"
+      ]
+    },
+    {
+      "theme": "Cost of service & rates",
+      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+      "keywords": [
+        "cost of service",
+        "cost-of-service",
+        "rate base",
+        "rate of return",
+        "return on equity",
+        "rate design"
+      ],
+      "finding_count": 85,
+      "report_count": 47,
+      "example_titles": [
+        "Approval: $1,277,051,206. ",
+        "Approval: $35.7 million",
+        "Annual Membership Dues",
+        "Annual Cost of Service Based Analysis Schedule"
       ]
     },
     {
@@ -193,13 +193,13 @@
         "intercompany",
         "inter-company"
       ],
-      "finding_count": 144,
-      "report_count": 38,
+      "finding_count": 145,
+      "report_count": 39,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
+        "Cost Allocations and Affiliated Interests",
         "Settlement: agreement",
-        "Affiliated Interests and Cost Allocations",
-        "Reporting of Transactions with Associated (Affiliated) Companies"
+        "Affiliated Interests and Cost Allocations"
       ]
     },
     {
@@ -224,8 +224,8 @@
       "keywords": [
         "tariff"
       ],
-      "finding_count": 62,
-      "report_count": 36,
+      "finding_count": 63,
+      "report_count": 37,
       "example_titles": [
         "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
@@ -243,13 +243,13 @@
         "code of business conduct",
         "compliance program"
       ],
-      "finding_count": 30,
-      "report_count": 32,
+      "finding_count": 32,
+      "report_count": 33,
       "example_titles": [
         "Corporate Governance",
+        "Cost Allocations and Affiliated Interests",
         "Affiliated Interests and Cost Allocations",
-        "Customer Service",
-        "s ........................................................................................................................ 246"
+        "Customer Service"
       ]
     },
     {
@@ -296,6 +296,30 @@
       ]
     },
     {
+      "theme": "Customer service & billing",
+      "description": "Customer-service performance, billing accuracy, or call-center issues.",
+      "keywords": [
+        "customer service",
+        "billing and collections",
+        "metering and billing",
+        "billing process",
+        "billing adjustment",
+        "billing accuracy",
+        "billing lag",
+        "call center",
+        "meter reading",
+        "customer experience"
+      ],
+      "finding_count": 28,
+      "report_count": 14,
+      "example_titles": [
+        "Customer Service",
+        "Customer Service (continued)",
+        "Financial Management",
+        "• s associated with books and records and chart of accounts requirements: included in"
+      ]
+    },
+    {
       "theme": "Storm cost recovery & securitization",
       "description": "Storm restoration costs, storm riders/reserves, or securitization.",
       "keywords": [
@@ -321,30 +345,6 @@
       ]
     },
     {
-      "theme": "Customer service & billing",
-      "description": "Customer-service performance, billing accuracy, or call-center issues.",
-      "keywords": [
-        "customer service",
-        "billing and collections",
-        "metering and billing",
-        "billing process",
-        "billing adjustment",
-        "billing accuracy",
-        "billing lag",
-        "call center",
-        "meter reading",
-        "customer experience"
-      ],
-      "finding_count": 26,
-      "report_count": 13,
-      "example_titles": [
-        "Financial Management",
-        "Customer Service",
-        "Corporate Governance",
-        "• s associated with books and records and chart of accounts requirements: included in"
-      ]
-    },
-    {
       "theme": "Inventory, materials & fleet",
       "description": "Inventory accuracy, materials management, or fleet/vehicle management gaps.",
       "keywords": [
@@ -361,13 +361,52 @@
         "fleet management",
         "vehicle replacement"
       ],
-      "finding_count": 19,
+      "finding_count": 20,
       "report_count": 13,
       "example_titles": [
         "Auxiliary Fuel Costs in Nuclear Power Generation",
         "Purchasing and Materials Management",
         "Accounting for Materials and Supplies",
-        "Corporate Governance"
+        "Materials Management"
+      ]
+    },
+    {
+      "theme": "Workforce, training & succession planning",
+      "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+      "keywords": [
+        "succession",
+        "span of control",
+        "spans of control",
+        "training",
+        "workforce plan",
+        "learning management"
+      ],
+      "finding_count": 34,
+      "report_count": 12,
+      "example_titles": [
+        "Executive Management, Organizational Structure, and Safety",
+        "Human Resources and Diversity (continued)",
+        "Cost Allocations and Affiliated Interests",
+        "Purchasing and Materials Management"
+      ]
+    },
+    {
+      "theme": "Emergency preparedness & business continuity",
+      "description": "Weak emergency response, storm readiness, or business-continuity planning.",
+      "keywords": [
+        "emergency prepared",
+        "business continu",
+        "emergency response",
+        "emergency management",
+        "mutual assist"
+      ],
+      "finding_count": 14,
+      "report_count": 11,
+      "example_titles": [
+        "Emergency Preparedness",
+        "Emergency Preparedness (continued)",
+        "2. s",
+        "• Irene: Many recommendations in the January 23, 2013  in Docket No. EO11090543"
       ]
     },
     {
@@ -387,23 +426,23 @@
       ]
     },
     {
-      "theme": "Workforce, training & succession planning",
-      "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+      "theme": "Information technology & systems",
+      "description": "IT governance, systems, budgets, or project-management deficiencies.",
       "keywords": [
-        "succession",
-        "span of control",
-        "spans of control",
-        "training",
-        "workforce plan",
-        "learning management"
+        "information technology",
+        "customer information system",
+        "it budget",
+        "it project",
+        "it backlog",
+        "it governance"
       ],
-      "finding_count": 31,
+      "finding_count": 14,
       "report_count": 10,
       "example_titles": [
-        "Human Resources and Diversity (continued)",
-        "Cost Allocations and Affiliated Interests",
-        "Purchasing and Materials Management",
-        "Corporate Governance"
+        "Approval: $156.9 million",
+        "Information Technology",
+        "s .................................................................................................................... 424",
+        "c. s"
       ]
     },
     {
@@ -425,58 +464,19 @@
       ]
     },
     {
-      "theme": "Information technology & systems",
-      "description": "IT governance, systems, budgets, or project-management deficiencies.",
-      "keywords": [
-        "information technology",
-        "customer information system",
-        "it budget",
-        "it project",
-        "it backlog",
-        "it governance"
-      ],
-      "finding_count": 13,
-      "report_count": 9,
-      "example_titles": [
-        "Approval: $156.9 million",
-        "Information Technology",
-        "s .................................................................................................................... 424",
-        "c. s"
-      ]
-    },
-    {
-      "theme": "Emergency preparedness & business continuity",
-      "description": "Weak emergency response, storm readiness, or business-continuity planning.",
-      "keywords": [
-        "emergency prepared",
-        "business continu",
-        "emergency response",
-        "emergency management",
-        "mutual assist"
-      ],
-      "finding_count": 10,
-      "report_count": 8,
-      "example_titles": [
-        "Emergency Preparedness",
-        "2. s",
-        "• Irene: Many recommendations in the January 23, 2013  in Docket No. EO11090543",
-        "• Staging Area Checklist: attached to BPU-48 (January 23, 2013 Board  No."
-      ]
-    },
-    {
       "theme": "Cybersecurity & physical security",
       "description": "Gaps in cyber defenses or physical security of facilities and systems.",
       "keywords": [
         "cyber",
         "physical security"
       ],
-      "finding_count": 17,
-      "report_count": 6,
+      "finding_count": 20,
+      "report_count": 8,
       "example_titles": [
-        "Corporate Governance",
+        "Emergency Preparedness",
+        "Emergency Preparedness (continued)",
         "s .................................................................................................................... 461",
-        "B. s",
-        "Emergency Preparedness"
+        "B. s"
       ]
     },
     {
@@ -487,8 +487,8 @@
         "dividend payment",
         "dividend payout"
       ],
-      "finding_count": 7,
-      "report_count": 5,
+      "finding_count": 8,
+      "report_count": 6,
       "example_titles": [
         "Financial Management",
         "s - - Dividend Policy and Capital Structure ................................................... 78",
@@ -511,7 +511,7 @@
       "finding_count": 3,
       "report_count": 3,
       "example_titles": [
-        "Corporate Governance",
+        "Electric Operations",
         "Gas Operations"
       ]
     },
@@ -575,15 +575,27 @@
       "count": 11
     },
     {
+      "title": "Customer Service",
+      "count": 10
+    },
+    {
       "title": "Allowance for Funds Used During Construction (AFUDC)",
       "count": 10
+    },
+    {
+      "title": "Financial Management",
+      "count": 9
     },
     {
       "title": "C. s",
       "count": 9
     },
     {
-      "title": "Customer Service",
+      "title": "Corporate Governance",
+      "count": 8
+    },
+    {
+      "title": "Emergency Preparedness",
       "count": 8
     },
     {
@@ -591,11 +603,7 @@
       "count": 8
     },
     {
-      "title": "Corporate Governance",
-      "count": 7
-    },
-    {
-      "title": "Financial Management",
+      "title": "Electric Operations",
       "count": 7
     },
     {
@@ -611,25 +619,17 @@
       "count": 6
     },
     {
+      "title": "Gas Operations",
+      "count": 6
+    },
+    {
       "title": "Affiliated Interests and Cost Allocations",
       "count": 6
     },
     {
-      "title": "Accounting Misclassifications",
-      "count": 6
-    },
-    {
-      "title": "Income Tax Receivables",
-      "count": 6
-    },
-    {
-      "title": "Emergency Preparedness",
-      "count": 5
-    },
-    {
       "title": "Executive Management and Organizational Structure",
-      "count": 5
+      "count": 6
     }
   ],
-  "generated_at": "2026-06-16"
+  "generated_at": "2026-06-18"
 }

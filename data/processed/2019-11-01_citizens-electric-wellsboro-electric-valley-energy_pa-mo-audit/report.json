@@ -1,0 +1,89 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2019-11-01_citizens-electric-wellsboro-electric-valley-energy_pa-mo-audit",
+  "company": "Citizens' Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc.",
+  "company_raw": "Citizens' Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc.",
+  "docket": "D-2019-3007883",
+  "docket_full": null,
+  "issued_date": "2019-11-01",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2019/puc-makes-management-recommendations-to-citizens-electric-wellsboro-electric-and-valley-energy-releases-audit-and-implementation-plan",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1648244.pdf",
+  "captured_at": "2026-06-18",
+  "source_note": "Management & Operations Audit of Citizens' Electric Company of Lewisburg, Wellsboro Electric Company, and Valley Energy, Inc., PA PUC Bureau of Audits; PUC publication November 2019, Docket No. D-2019-3007883. PDF: puc.pa.gov/pcdocs/1648244.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+  "archived_via": null,
+  "page_count": 68,
+  "scanned_pages": [
+    1,
+    68
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Executive Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Execute the proposed plan to assign the Wellsboro CEO position to a qualified individual able to devote the necessary time to provide adequate leadership to Wellsboro by year end 2019.",
+          "source_page": 17
+        },
+        {
+          "number": 2,
+          "text": "Review all schedules in Valley Energy’s Annual Report to the PUC for accurate reporting and determine and correct any sources of errors.",
+          "source_page": 17
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "Reduce the number of unknown outages at Wellsboro by providing additional resources to assist in investigating unknown outages and/or through supplemental training for field operations employees.",
+          "source_page": 36
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 4,
+          "text": "Develop a business case to assess the options to create a C&T position to oversee the cybersecurity function for the C&T Companies.",
+          "source_page": 48
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Human Resources",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Establish minority employee and MWDBE vendor utilization goals and submit annual diversity reports to the PUC for Wellsboro Electric Company.",
+          "source_page": 52
+        }
+      ]
+    }
+  ],
+  "structured": true
+}

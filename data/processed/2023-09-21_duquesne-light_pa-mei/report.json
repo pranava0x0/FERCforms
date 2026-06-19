@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management efficiency investigation",
+  "id": "2023-09-21_duquesne-light_pa-mei",
+  "company": "Duquesne Light Company",
+  "company_raw": "Duquesne Light Company",
+  "docket": "D-2023-3037425",
+  "docket_full": null,
+  "issued_date": "2023-09-21",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1799646.pdf",
+  "captured_at": "2026-06-18",
+  "source_note": "Management Efficiency Investigation of Duquesne Light Company, PA PUC Bureau of Audits; PUC publication 2023-09-21, Docket No. D-2023-3037425. Follow-up review; recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1799646.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).",
+  "archived_via": null,
+  "page_count": 48,
+  "scanned_pages": [
+    1,
+    48
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

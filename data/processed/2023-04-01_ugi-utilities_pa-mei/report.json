@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management efficiency investigation",
+  "id": "2023-04-01_ugi-utilities_pa-mei",
+  "company": "UGI Utilities, Inc.",
+  "company_raw": "UGI Utilities, Inc.",
+  "docket": "D-2022-3032778",
+  "docket_full": null,
+  "issued_date": "2023-04-01",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1785721.pdf",
+  "captured_at": "2026-06-18",
+  "source_note": "Management Efficiency Investigation of UGI Utilities, Inc. (follow-up to the 2019 Focused Management & Operations Audit), PA PUC Bureau of Audits; PUC publication April 2023, Docket No. D-2022-3032778. Recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1785721.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).",
+  "archived_via": null,
+  "page_count": 61,
+  "scanned_pages": [
+    2,
+    60,
+    61
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "gas",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

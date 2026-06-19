@@ -1,0 +1,237 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "PA PUC Bureau of Audits",
+  "doc_type": "management & operations audit",
+  "id": "2025-07-10_pike-county-light-power-leatherstocking-gas_pa-mo-audit",
+  "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+  "company_raw": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+  "docket": "D-2024-3050338",
+  "docket_full": null,
+  "issued_date": "2025-07-10",
+  "source_page_url": "https://www.puc.pa.gov/press-release/2025/puc-issues-management-and-operations-audit-for-pike-county-light-power-and-leatherstocking-gas-company-07102025",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1886204.pdf",
+  "captured_at": "2026-06-18",
+  "source_note": "Management & Operations Audit of Pike County Light & Power Company and Leatherstocking Gas Company LLC, PA PUC Bureau of Audits; PUC publication 2025-07-10, Docket No. D-2024-3050338. PDF: puc.pa.gov/pcdocs/1886204.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+  "archived_via": null,
+  "page_count": 62,
+  "scanned_pages": [
+    1,
+    62
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Executive Management, Organizational Structure, and Safety",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Expand the succession planning process to include short-term contingency plans for the PCLP General Manager, and all key employees.",
+          "source_page": 15
+        },
+        {
+          "number": 2,
+          "text": "Formally document procedures for all human resources filing and reporting activities to ensure compliance.",
+          "source_page": 16
+        },
+        {
+          "number": 3,
+          "text": "Implement a system to govern oversight of the review, update and documentation of all policies, and create a policy for centralized management of the system.",
+          "source_page": 17
+        },
+        {
+          "number": 4,
+          "text": "Expand staffing at PCLP to ensure optimal electric operations.",
+          "source_page": 18
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Corporate Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Establish an overarching internal control policy.",
+          "source_page": 22
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Cost Allocations and Affiliated Interests",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "File an updated AIA which accurately reflects the intercompany transactions occurring between PCLP, LGC, and their affiliates.",
+          "source_page": 25
+        },
+        {
+          "number": 7,
+          "text": "Conduct routine periodic testing of intercompany transactions to ensure shared costs are distributed in accordance with approved methodologies.",
+          "source_page": 26
+        },
+        {
+          "number": 8,
+          "text": "Compare total actual costs for internally performed shared services and the cost of outside services to ensure cost effectiveness for all entities regularly.",
+          "source_page": 27
+        },
+        {
+          "number": 9,
+          "text": "Establish internal controls over intercompany transactions and cost allocations processes and comply with all aspects of the approved AIA.",
+          "source_page": 27
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Financial Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 10,
+          "text": "Establish a process to routinely review and update financial management policies and procedures and ensure version control is in place.",
+          "source_page": 31
+        },
+        {
+          "number": 11,
+          "text": "Document an internal dividend policy that provides advance notice and written explanation to the Commission for each dividend payment PCLP and LGC make in excess of 85% of net income.",
+          "source_page": 31
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Financial Management (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Document cash management procedures and establish guidelines for assessment of cash positions.",
+          "source_page": 32
+        },
+        {
+          "number": 13,
+          "text": "Develop and document guidelines and policies for budget creation and management including the regular reporting of significant budget variance explanations.",
+          "source_page": 33
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 14,
+          "text": "Develop and maintain a comprehensive damage prevention manual that details appropriate excavating procedures for PCLP’s electric utility infrastructure and assets.",
+          "source_page": 36
+        },
+        {
+          "number": 15,
+          "text": "Update PCLP’s storm response plan after a storm-related event or at least annually.",
+          "source_page": 37
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Establish and maintain a collection system for excavation damages and increase public awareness efforts for all involved parties about their responsibilities under PA One Call.",
+          "source_page": 44
+        },
+        {
+          "number": 17,
+          "text": "Review the UFG calculation, including the adjustment factor, and document all steps to ensure accuracy of reporting.",
+          "source_page": 45
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Emergency Preparedness",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Correct minor physical security deficiencies at PCLP and LGC and perform periodic physical security reviews of all facilities.",
+          "source_page": 48
+        },
+        {
+          "number": 19,
+          "text": "Develop comprehensive business continuity plans for PCLP and LGC and review, test, and update them annually.",
+          "source_page": 49
+        },
+        {
+          "number": 20,
+          "text": "Develop and maintain physical security plans for PCLP and LGC and review, update, and test annually.",
+          "source_page": 49
+        },
+        {
+          "number": 21,
+          "text": "Annually review, test, and update emergency response plans for PCLP and LGC, and update PCLP’s emergency response plan to detail company response to non-storm related emergencies.",
+          "source_page": 50
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "Formally document customer service policies and procedures to govern customer service practices.",
+          "source_page": 55
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Customer Service (continued)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Revise the tariff and other customer-facing documentation to accurately reflect PCLP’s and LGC’s budget billing processes.",
+          "source_page": 56
+        },
+        {
+          "number": 24,
+          "text": "Explore eliminating manual meter reading at LGC to streamline operations, reduce errors, and efficiently use staff.",
+          "source_page": 57
+        },
+        {
+          "number": 25,
+          "text": "Improve the customer experience by expanding payment options and eliminating the manual process for budget billing.",
+          "source_page": 57
+        }
+      ]
+    }
+  ],
+  "structured": true
+}

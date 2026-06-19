@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 651 records, 1691 findings, 2188 recommendations. Generated 2026-06-16.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 655 records, 1715 findings, 2180 recommendations. Generated 2026-06-18.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5100,30 +5100,6 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 
 ---
 
-## Pacific Gas and Electric Company
-- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
-- Docket: A.24-02-012 | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Function(s): generation
-- Source page: https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF
-- Status: listed for reference (not machine-parsed into findings)
-
-CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
-
----
-
-## Southern California Edison Company
-- Collection: FERC Audits | Source: FERC Office of Enforcement, Division of Audits & Accounting
-- Docket: A.09-04-002 | Audit type: n/a
-- Issued: n/a | Industry: electric | FERC Form: n/a
-- Function(s): generation
-- Source page: https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm
-- Status: listed for reference (not machine-parsed into findings)
-
-CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
-
----
-
 ## Puget Sound Energy
 - Collection: Prudence Reviews | Source: Washington Utilities and Transportation Commission
 - Docket: UE-250747 | Audit type: n/a
@@ -5187,6 +5163,17 @@ PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/W
 - Status: listed for reference (not machine-parsed into findings)
 
 PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.
+
+---
+
+## Pacific Gas and Electric Company
+- Collection: Prudence Reviews | Source: California Public Utilities Commission
+- Docket: A.24-02-012 | Audit type: n/a
+- Issued: 2025-06-12 | Industry: electric | FERC Form: n/a
+- Source page: https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
 
 ---
 
@@ -5410,6 +5397,17 @@ Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D
 
 ---
 
+## Southern California Edison Company
+- Collection: Prudence Reviews | Source: California Public Utilities Commission
+- Docket: A.09-04-002 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
+
+---
+
 ## FirstEnergy Pennsylvania Electric Company
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: n/a | Audit type: n/a
@@ -5429,6 +5427,79 @@ Management Efficiency Investigation (follow-up to the 2022 Management & Operatio
 - Status: listed for reference (not machine-parsed into findings)
 
 Notice of Filing by the Utilities Division of the Tennessee Public Utility Commission of the Weather Normalization Adjustment (WNA) Audit re Atmos Energy Corporation, Docket No. 25-00044, July 18, 2025 — the Division's audit of Atmos's WNA gas-cost mechanism (20 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf).
+
+---
+
+## Pike County Light & Power Company / Leatherstocking Gas Company LLC
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2024-3050338 | Audit type: n/a
+- Issued: 2025-07-10 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2025/puc-issues-management-and-operations-audit-for-pike-county-light-power-and-leatherstocking-gas-company-07102025
+
+### Finding 1: Executive Management, Organizational Structure, and Safety
+
+Recommendations:
+1. Expand the succession planning process to include short-term contingency plans for the PCLP General Manager, and all key employees. (source p. 15)
+2. Formally document procedures for all human resources filing and reporting activities to ensure compliance. (source p. 16)
+3. Implement a system to govern oversight of the review, update and documentation of all policies, and create a policy for centralized management of the system. (source p. 17)
+4. Expand staffing at PCLP to ensure optimal electric operations. (source p. 18)
+
+### Finding 2: Corporate Governance
+
+Recommendations:
+5. Establish an overarching internal control policy. (source p. 22)
+
+### Finding 3: Cost Allocations and Affiliated Interests
+
+Recommendations:
+6. File an updated AIA which accurately reflects the intercompany transactions occurring between PCLP, LGC, and their affiliates. (source p. 25)
+7. Conduct routine periodic testing of intercompany transactions to ensure shared costs are distributed in accordance with approved methodologies. (source p. 26)
+8. Compare total actual costs for internally performed shared services and the cost of outside services to ensure cost effectiveness for all entities regularly. (source p. 27)
+9. Establish internal controls over intercompany transactions and cost allocations processes and comply with all aspects of the approved AIA. (source p. 27)
+
+### Finding 4: Financial Management
+
+Recommendations:
+10. Establish a process to routinely review and update financial management policies and procedures and ensure version control is in place. (source p. 31)
+11. Document an internal dividend policy that provides advance notice and written explanation to the Commission for each dividend payment PCLP and LGC make in excess of 85% of net income. (source p. 31)
+
+### Finding 5: Financial Management (continued)
+
+Recommendations:
+12. Document cash management procedures and establish guidelines for assessment of cash positions. (source p. 32)
+13. Develop and document guidelines and policies for budget creation and management including the regular reporting of significant budget variance explanations. (source p. 33)
+
+### Finding 6: Electric Operations
+
+Recommendations:
+14. Develop and maintain a comprehensive damage prevention manual that details appropriate excavating procedures for PCLP’s electric utility infrastructure and assets. (source p. 36)
+15. Update PCLP’s storm response plan after a storm-related event or at least annually. (source p. 37)
+
+### Finding 7: Gas Operations
+
+Recommendations:
+16. Establish and maintain a collection system for excavation damages and increase public awareness efforts for all involved parties about their responsibilities under PA One Call. (source p. 44)
+17. Review the UFG calculation, including the adjustment factor, and document all steps to ensure accuracy of reporting. (source p. 45)
+
+### Finding 8: Emergency Preparedness
+
+Recommendations:
+18. Correct minor physical security deficiencies at PCLP and LGC and perform periodic physical security reviews of all facilities. (source p. 48)
+19. Develop comprehensive business continuity plans for PCLP and LGC and review, test, and update them annually. (source p. 49)
+20. Develop and maintain physical security plans for PCLP and LGC and review, update, and test annually. (source p. 49)
+21. Annually review, test, and update emergency response plans for PCLP and LGC, and update PCLP’s emergency response plan to detail company response to non-storm related emergencies. (source p. 50)
+
+### Finding 9: Customer Service
+
+Recommendations:
+22. Formally document customer service policies and procedures to govern customer service practices. (source p. 55)
+
+### Finding 10: Customer Service (continued)
+
+Recommendations:
+23. Revise the tariff and other customer-facing documentation to accurately reflect PCLP’s and LGC’s budget billing processes. (source p. 56)
+24. Explore eliminating manual meter reading at LGC to streamline operations, reduce errors, and efficiently use staff. (source p. 57)
+25. Improve the customer experience by expanding payment options and eliminating the manual process for budget billing. (source p. 57)
 
 ---
 
@@ -5701,85 +5772,109 @@ Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 
 
 ---
 
+## Duquesne Light Company
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2023-3037425 | Audit type: n/a
+- Issued: 2023-09-21 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light
+- Status: listed for reference (not machine-parsed into findings)
+
+Management Efficiency Investigation of Duquesne Light Company, PA PUC Bureau of Audits; PUC publication 2023-09-21, Docket No. D-2023-3037425. Follow-up review; recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1799646.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).
+
+---
+
+## UGI Utilities, Inc.
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2022-3032778 | Audit type: n/a
+- Issued: 2023-04-01 | Industry: gas | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities
+- Status: listed for reference (not machine-parsed into findings)
+
+Management Efficiency Investigation of UGI Utilities, Inc. (follow-up to the 2019 Focused Management & Operations Audit), PA PUC Bureau of Audits; PUC publication April 2023, Docket No. D-2022-3032778. Recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1785721.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).
+
+---
+
 ## Philadelphia Gas Works
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2022-3030321 | Audit type: n/a
 - Issued: 2023-03-02 | Industry: gas | FERC Form: n/a
-- Source page: https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works
+- Source page: https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-for-philadelphia-gas-works
 
 ### Finding 1: Corporate Governance
 
 Recommendations:
-1. Functional Rating Summary
-1. Customer Statistics
-1. Governance Oversight Summary
-1. Executive Management Organizational Chart
-1. Financial Management Organizational Chart
-1. Gas Operations Organizational Chart
-1. Fleet & Materials Management Organizational Structure
-1. Customer Service and Collections Organizational Chart
-1. Information Service Organizational Chart
-1. Streamline corporate governance processes to
-1. Develop specific guidance for span of control
-1. Update Internal Audit policies and procedures.
-1. Implement a policy and metrics-tracked plan to
-1. File Self-Certification forms with the
-1. Leverage pandemic and low-income resources to
-1. Establish IS departmental performance metrics
-1. Improve efficiencies within the fleet department.
-1. Implement strategies for recruitment and retention
-2. Staffing Levels
-2. Capital Budget Timeline
-2. Miles of Main by Material Type
-2. Overall Customer Service Satisfaction Rate
-2. Vehicles and Equipment by Classification
-2. DBE Participation Performance
-2. Streamline the annual budget approval process.
-2. Implement a safety management system and
-2. Formally document explanations for variances
-2. Accelerate cast iron main replacement.
-2. Correct various deficiencies in physical security.
-2. Improve customer service performance through
-2. Leverage and integrate data visualization
-2. Drive safety performance to meet industry
-3. Summary of Recommendations
-3. Corporate Strategy
-3. Operating Budget Timeline
-3. Overtime Hours
-3. Regulatory Compliance and Customer Programs – Customer
-3. Fleet Key Performance Metrics Dashboard
-3. “At-Risk” Job Retention & Turnover Rates
-3. Establish committee charters for all PFMC board
-3. Plan and implement a process for gathering
-3. Establish a company-wide program for
-3. Complete implementation of the replacement
-4. Fiscal Year 2022 Goals and Objectives
-4. Debt to Total Capital Ratio
-4. Field Operations Organizational Chart – Customer Service Focus
-4. OSHA Recordable Incident Rate
-4. Evaluate director performance annually to
-4. Reorganize the CARC reporting structure to
-4. Explore ways to eliminate or mitigate the
-4. Establish reporting and key performance metrics
-5. Spans of Control by Management Level
-5. Historical Credit Ratings
-5. Mercury Regulators Replaced
-5. Residential Customer Accounts Receivable Current Balances and
-5. Days Away Restricted or Transferred (DART)
-5. Increase focus on cybersecurity by developing a
-5. Repurpose or divest interest in district offices and
-6. Pension Funding Level
-6. Annual Breaks by Material Type
-6. Customer Service Performance Metrics
-6. Reinforce contingencies with the OT systems by
-7. Capital Spend vs Budget
-7. Main Leaks Repaired by Material Type
-7. Non-Phone/Electronic Customer Services
-7. Document the threshold where cybersecurity
-8. Operating and Maintenance Expense vs Budget
-8. Main Replacement Miles by Abandonment
-8. Implement a cybersecurity-focused risk registry.
-9. Cast Iron Proposed Replacement Miles and Investments
+1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework. (source p. 18)
+2. Streamline the annual budget approval process. (source p. 18)
+3. Establish committee charters for all PFMC board committees. (source p. 18)
+4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met. (source p. 18)
+
+### Finding 2: Executive Management and Organizational Structure
+
+Recommendations:
+5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions. (source p. 26)
+6. Implement a safety management system and improve safety culture at PGW. (source p. 26)
+
+### Finding 3: Financial Management
+
+Recommendations:
+7. Update Internal Audit policies and procedures. (source p. 34)
+8. Formally document explanations for variances from the capital and operating budgets. (source p. 34)
+
+### Finding 4: Gas Operations
+
+Recommendations:
+9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system. (source p. 46)
+10. Accelerate cast iron main replacement. (source p. 46)
+11. Plan and implement a process for gathering equipment and installation data in the GIS database. (source p. 46)
+12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations. (source p. 46)
+
+### Finding 5: Emergency Preparedness
+
+Recommendations:
+13. File Self-Certification forms with the Pennsylvania PUC annually. (source p. 53)
+14. Correct various deficiencies in physical security. (source p. 53)
+15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities. (source p. 53)
+
+### Finding 6: Emergency Preparedness (continued)
+
+Recommendations:
+16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis. (source p. 53)
+17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position. (source p. 53)
+18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method. (source p. 53)
+19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels. (source p. 53)
+20. Implement a cybersecurity-focused risk registry. (source p. 53)
+
+### Finding 7: Materials Management
+
+Recommendations:
+21. Document the policies and procedures of PGW’s cycle counting function. (source p. 57)
+22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use. (source p. 57)
+
+### Finding 8: Customer Service
+
+Recommendations:
+23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers. (source p. 67)
+24. Improve customer service performance through expanding call center resources. (source p. 67)
+25. Complete implementation of the replacement CIS. (source p. 67)
+26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers. (source p. 68)
+27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers. (source p. 68)
+
+### Finding 9: Information Technology
+
+Recommendations:
+28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency. (source p. 72)
+29. Leverage and integrate data visualization software consistently across PGW. (source p. 72)
+
+### Finding 10: Fleet Management
+
+Recommendations:
+30. Improve efficiencies within the fleet department. (source p. 77)
+
+### Finding 11: Human Resources and Diversity
+
+Recommendations:
+31. Implement strategies for recruitment and retention of “at-risk” positions. (source p. 84)
+32. Drive safety performance to meet industry standards. (source p. 84)
 
 ---
 
@@ -8294,6 +8389,35 @@ Recommendations:
 
 Recommendations:
 252. $197.3M $275.5M $267.5M $303.7M As the ACE and other PHI utility operations have become integrated into the Exelon systems, the supply chain organizations have begun tracking additional Exelon-wide supply chain measurements at the total PHI level. The VP of PHI Supply Integration attends quarterly PHI leadership meetings and PHI COO staff meeting to obtain informal information about how supply chain and procurement support is doing. EBSCo also periodically surveys its business partners to help assess satisfaction with its services, but supply chain management has not been the part of
+
+---
+
+## Citizens' Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc.
+- Collection: State PUC Audits | Source: PA PUC Bureau of Audits
+- Docket: D-2019-3007883 | Audit type: n/a
+- Issued: 2019-11-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2019/puc-makes-management-recommendations-to-citizens-electric-wellsboro-electric-and-valley-energy-releases-audit-and-implementation-plan
+
+### Finding 1: Executive Management
+
+Recommendations:
+1. Execute the proposed plan to assign the Wellsboro CEO position to a qualified individual able to devote the necessary time to provide adequate leadership to Wellsboro by year end 2019. (source p. 17)
+2. Review all schedules in Valley Energy’s Annual Report to the PUC for accurate reporting and determine and correct any sources of errors. (source p. 17)
+
+### Finding 2: Electric Operations
+
+Recommendations:
+3. Reduce the number of unknown outages at Wellsboro by providing additional resources to assist in investigating unknown outages and/or through supplemental training for field operations employees. (source p. 36)
+
+### Finding 3: Emergency Preparedness
+
+Recommendations:
+4. Develop a business case to assess the options to create a C&T position to oversee the cybersecurity function for the C&T Companies. (source p. 48)
+
+### Finding 4: Human Resources
+
+Recommendations:
+5. Establish minority employee and MWDBE vendor utilization goals and submit annual diversity reports to the PUC for Wellsboro Electric Company. (source p. 52)
 
 ---
 

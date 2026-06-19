@@ -4,6 +4,27 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ---
 
+## ▶ Done 2026-06-18 — PA M&O expansion (+4 audits, +29 findings) + 2 data-integrity fixes
+
+**+4 verified PA PUC Bureau-of-Audits docs** (all page-1-caption-verified, PROVEN by `verify_sources`):
+two **Management & Operations audits** parsed into findings via the existing Exhibit I-2 parser —
+**Pike County Light & Power / Leatherstocking Gas** (1886204, 10 findings/25 recs) and
+**Citizens' Electric / Wellsboro Electric / Valley Energy** (1648244, 4/5); plus two 2023
+**Management Efficiency Investigations** (Duquesne Light 1799646, UGI Utilities 1785721) kept
+**metadata-only** because they use an Exhibit II-1 follow-up format the M&O parser doesn't handle.
+Corpus baked 655 reports / 1715 findings.
+
+**Two pre-existing bugs surfaced + fixed** (see ISSUES.md): (1) the **PGW M&O seed pointed at the wrong
+pcdocs id** (a Koloko Transportation data-request letter) — corrected to the real 95-page audit
+`1775875.pdf`, restoring **11 findings/32 recs**; (2) **`verify_sources` crashed** on the non-list
+`tier3_targets.json` planning file — added a shape guard + regression test.
+
+**Next cheap PA findings:** an **MEI Exhibit II-1 parser** would unlock the 2 Duquesne/UGI MEIs (and
+future MEIs) — the follow-up format lists numbered recs under "Summary of … Recommendations and
+Follow-Up Findings." Until then, new M&O audits remain the cheapest findings (parser ready).
+
+---
+
 ## ▶ CURRENT STATUS — 2026-06-08
 
 **Corpus (verified real):** 290 documents — 120 FERC audits + 26 prudence reviews + 35 state PUC audits + 109 state rate cases. ~1168 findings. State PUC Audits span **12 jurisdictions** (PA NJ NY CA OH MD MI CT MO MS TN UT) and the tab now surfaces **13 patterns of noncompliance** (was 1) mined from the parsed M&O-audit recommendations. Source of truth: `docs/data/meta.json`.
