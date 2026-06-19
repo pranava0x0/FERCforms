@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 641 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 646 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5240,6 +5240,17 @@ FERC Order on Complaint re CORE Electric Cooperative et al. v. Public Service Co
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC ALJ Initial Decision re Louisiana Public Service Commission et al. v. System Energy Resources, Inc., Docket EL20-72, issued 2023-05-15. The states' complaint challenges the prudence of costs System Energy recovers through the Unit Power Sales Agreement for the Grand Gulf nuclear plant (uprate, sale-leaseback, and related cost recovery). Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL20-72); accession 20230515-3006.
+
+---
+
+## Evergy Kansas Metro and Evergy Kansas Central
+- Collection: Prudence Reviews | Source: Kansas Corporation Commission
+- Docket: 21-EKME-329-GIE | Audit type: n/a
+- Issued: 2022-01-21 | Industry: electric | FERC Form: n/a
+- Source page: https://estar.kcc.ks.gov/
+- Status: listed for reference (not machine-parsed into findings)
+
+Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).
 
 ---
 

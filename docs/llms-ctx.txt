@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="641 structured records (120 FERC audits, 27 prudence reviews, 382 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="646 structured records (120 FERC audits, 28 prudence reviews, 382 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-19). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -2934,6 +2934,10 @@ FERC Order on Complaint re CORE Electric Cooperative et al. v. Public Service Co
 <doc title="Louisiana Public Service Commission et al. v. System Energy Resources, Inc." collection="Prudence Reviews" docket="EL20-72" issued="2023-05-15" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230515-3006&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC ALJ Initial Decision re Louisiana Public Service Commission et al. v. System Energy Resources, Inc., Docket EL20-72, issued 2023-05-15. The states' complaint challenges the prudence of costs System Energy recovers through the Unit Power Sales Agreement for the Grand Gulf nuclear plant (uprate, sale-leaseback, and related cost recovery). Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL20-72); accession 20230515-3006.
+</doc>
+<doc title="Evergy Kansas Metro and Evergy Kansas Central" collection="Prudence Reviews" docket="21-EKME-329-GIE" issued="2022-01-21" industry="electric" source="https://estar.kcc.ks.gov/">
+Listed for reference (not machine-parsed into findings).
+Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).
 </doc>
 <doc title="Delmarva Power &amp; Light Company" collection="Prudence Reviews" docket="ER09-1158" issued="2020-08-28" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200828-3048&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).

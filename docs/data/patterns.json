@@ -1,12 +1,12 @@
 {
-  "report_count": 641,
+  "report_count": 646,
   "finding_count": 1715,
   "other_matter_count": 10,
   "recommendation_count": 2180,
   "by_industry": {
     "unknown": 330,
-    "electric": 244,
-    "gas": 47,
+    "electric": 248,
+    "gas": 48,
     "oil": 18,
     "water": 2
   },
@@ -14,17 +14,17 @@
     "2005": 1,
     "2012": 1,
     "2013": 1,
-    "2014": 4,
+    "2014": 5,
     "2015": 10,
     "2016": 15,
     "2017": 12,
     "2018": 19,
     "2019": 14,
     "2020": 16,
-    "2021": 16,
-    "2022": 20,
-    "2023": 23,
-    "2024": 40,
+    "2021": 17,
+    "2022": 21,
+    "2023": 24,
+    "2024": 41,
     "2025": 62,
     "2026": 5
   },
@@ -104,7 +104,7 @@
         "energy cost recovery"
       ],
       "finding_count": 28,
-      "report_count": 48,
+      "report_count": 49,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",

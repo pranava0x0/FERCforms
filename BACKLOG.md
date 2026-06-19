@@ -34,6 +34,28 @@ Exhibit I-2, one rec per row) remain the cheapest reliable findings.
 
 ---
 
+## ▶ Done 2026-06-19 (cont.) — +5 verified thin-state docs (NM/DE/NE/KS/SD)
+
+Added 5 page-1-verified, PROVEN metadata-only records to under-covered states (each fetched 200 +
+%PDF, page counts confirmed): **NM** PNM rate-case Recommended Decision (22-00270-UT, 384 pp, new
+`nm_prc.json`), **DE** Delmarva Order No. 8589 (13-115, 163 pp), **NE** Black Hills NG-109 rate order
+(14 pp), **KS** Evergy winter-storm **fuel-prudence Staff audit report** (21-EKME-329-GIE, 134 pp —
+a 2nd doc in an existing docket, the substantive auditor report alongside the seeded stipulation),
+**SD** NorthWestern EL23-016 amended settlement order (2 pp). Corpus 641 → **646** reports.
+The parser-ready *findings* seam (PA Exhibit I-2, Overland "Comprehensive Listing") is confirmed
+exhausted for scriptable `.gov` access — a research pass found the remaining Overland findings-rich
+audits (NY NYSEG/RG&E 2018 ~81 recs, ME Versant) are behind JS portals needing browser capture; and
+the Overland house format is per-chapter prose, not the consolidated listing, on most reports.
+
+**[low] Orphan MS MPUS annual-report records lack a seed + source URL.** `data/processed/2024-06-30…`
+and `…2025-06-30_mississippi-public-utilities-staff_ms-annual-report` exist (20/27 pp, baked) but have
+**no seed file and `pdf_url: null`** — they can't be re-ingested or verified. The real 2024 URL is
+`psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf` (verified; the 2025 follows the same
+pattern — confirm before seeding). Recreate a small `ms_psc.json` with proper metadata for both so
+they're regenerable + provenance-complete. Fold into the crawler-seed quality audit below.
+
+---
+
 ## ▶ Done 2026-06-19 — MEI parser assessed (deferred) + 14 crawler-junk records purged
 
 Assessed the MEI Exhibit II-1 parser (see the dated note above — deferred [low], 3-column boundary

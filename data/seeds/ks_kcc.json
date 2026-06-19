@@ -30,5 +30,21 @@
     "captured_at": "2026-06-07",
     "source_note": "Joint Motion to Approve Non-Unanimous Stipulation and Agreement (filed April 22, 2022) in the Kansas Corporation Commission's Investigation into Evergy Kansas Metro and Evergy Kansas Central regarding the February 2021 Winter Weather Events (Winter Storm Uri), Docket No. 21-EKME-329-GIE (contemplated by Docket 21-GIMX-303-MIS) \u2014 addressing the recovery and prudence of the extraordinary fuel and purchased-power costs Evergy incurred during the storm (21 pp). Listed for reference (metadata-only). Source: Kansas Corporation Commission eSTAR (estar.kcc.ks.gov/estar/ViewFile.aspx, document Id 54e98b5e-d9e2-4627-8355-b0c65b057bd9).",
     "parse": false
+  },
+  {
+    "id": "2022-01-21_evergy-kansas_ks-21-ekme-329-gie-staff-fuel-prudence-report",
+    "company": "Evergy Kansas Metro and Evergy Kansas Central",
+    "collection": "prudence_review",
+    "jurisdiction": "KS",
+    "source": "Kansas Corporation Commission",
+    "doc_type": "fuel & purchased-power prudence staff audit report",
+    "industry": "electric",
+    "pdf_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf?Id=c3651aba-c4e9-415f-a36c-a1a2c44d8514",
+    "source_page_url": "https://estar.kcc.ks.gov/",
+    "issued_date": "2022-01-21",
+    "docket": "21-EKME-329-GIE",
+    "captured_at": "2026-06-19",
+    "source_note": "Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).",
+    "parse": false
   }
 ]
