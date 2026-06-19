@@ -75,3 +75,23 @@
 ---
 
 **Phase 0 Verdict:** ✅ **Proceed to Phase 1.** Download path and mechanism confirmed. No blockers identified.
+
+---
+
+## Phase 1 reconnaissance — 2026-06-19 (browser-mapped; parse/ETL still to build)
+
+Drove forms.ferc.gov with Chrome MCP and mapped the exact download UI:
+
+- **Navigation:** `forms.ferc.gov/` → left-menu **"Form 1 Data"** (ASP.NET `__doPostBack('ctl00$lnkFormData1','')`) → a **"Download FERC Form 1 Data"** year grid.
+- **Year coverage (DBF):** **1994–2020 full years + 2021 Q1 & Q2** as individual links. Each year is `__doPostBack('ctl00$Content1$lnk{YYYY}f1','')` — the server **streams that year's DBF zip** as the postback response (no stable `DownloadFile.aspx?FileID=` URL for DBF years). **2021+ is XBRL** via the eForms transition (not in this DBF grid).
+- **Access reality (verified this session):**
+  - **Browser navigation works** — the grid renders and the year links are live.
+  - **Scripted postback replay does NOT reproduce the year grid** — replaying `ctl00$lnkFormData1` with `requests` (carrying `__VIEWSTATE`/`__EVENTVALIDATION` from a fresh GET) returns the generic page *without* the `lnk{YYYY}f1` controls; the panel depends on full ASP.NET WebForms state the plain-`requests` chain doesn't hold. So the DBF download is **browser-gated** in practice.
+  - The MCP browser **click fired the postback but no file landed** in `~/Downloads` during the automated session — getting the bytes reliably needs the browser download-handler configured for automation, or a faithful WebForms-state replay (Playwright).
+
+**Net:** path fully mapped, but Phase 1's "download a year + validate parsing" is **not done** and is **not a one-turn job.** Remaining, scoped:
+1. **Reliably fetch one year.** Easiest is **2021 XBRL** (XML in a zip → stdlib-parseable, no new dep) or a **2020 DBF** (needs `dbfread`/`simpledbf` — *not installed*; run the CLAUDE.md advisory check before `pip install`). Likely a short Playwright download rather than a `requests` postback.
+2. **Validate parsing** of 1–2 tables (`F1_PLANT_IN_SERVICE`, `F1_INCOME`; XBRL equivalents).
+3. Only then Phase 2 (time-series ETL) / Phase 3 (flag engine validated vs. the 602 findings).
+
+**Owner note:** treat Phases 1(parse)→3 as a dedicated multi-session build (new parsing dep + ETL design + flag rules), not a corpus-refresh increment. Don't ship a partial ETL — the flag engine is worthless until validated against the findings ground truth.

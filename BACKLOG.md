@@ -153,6 +153,8 @@ rows. Guard against regression by tightening the crawler or adding a seed-qualit
 
 ✅ **Phase 0 COMPLETE (2026-06-15):** Download path verified. See `docs/FORM1_PHASE0_RESULTS.md` for full findings.
 
+🔶 **Phase 1 RECONNAISSANCE done (2026-06-19), parse/ETL still to build.** Browser-mapped the exact UI: forms.ferc.gov → "Form 1 Data" → year grid (**DBF 1994–2020 + 2021 Q1&Q2**; **XBRL 2021+**); each year is an ASP.NET `__doPostBack` that streams the DBF zip (no stable FileID URL for DBF years). **Download is browser-gated** — scripted `requests` postback replay does NOT render the year grid (ASP.NET WebForms state), and the MCP click didn't land a file. Remaining Phase-1: reliably fetch one year (2021 XBRL = stdlib-parseable/no dep, or 2020 DBF needs `dbfread`/`simpledbf` — not installed, advisory-check first) via a short Playwright download, then validate 1–2 tables. **Treat Phases 1(parse)→3 as a dedicated multi-session build, not a refresh increment — don't ship a partial ETL.** Full notes in `docs/FORM1_PHASE0_RESULTS.md`.
+
 **Key discovery:** Access confirmed at `https://forms.ferc.gov/` (Cloudflare-bypassed). Download mechanism identified: `forms.ferc.gov/DownloadFile.aspx?FileID={id}` (302 redirect). Both `.DBF` (pre-2021) and XBRL (2021+) formats available. **No blockers.** Recommended next: browser-capture Form 1 2023 for 1 utility (PG&E) to extract FileID pattern + validate DBF parsing.
 
 **Remaining phases:** Phase-1 (browser-capture + DBF parse validation) → Phase-2 (time-series ETL) → Phase-3 (error-flag engine).
