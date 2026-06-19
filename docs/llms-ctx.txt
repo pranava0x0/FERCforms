@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="650 structured records (120 FERC audits, 28 prudence reviews, 382 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="652 structured records (120 FERC audits, 29 prudence reviews, 382 state PUC audits); 1715 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-19). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
@@ -2926,6 +2926,10 @@ FERC Order on Rehearing and Clarification re Constellation Mystic Power, LLC cos
 <doc title="Wabash Valley Power Association, Inc." collection="Prudence Reviews" docket="ER20-1041" issued="2023-12-05" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20231205-3095&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC Order Rejecting Wholesale Power Supply Contracts and Notices of Cancellation re Wabash Valley Power Association, Inc., Docket ER20-1041, issued 2023-12-05 — addressing the reasonableness of wholesale power-supply contract terms. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER20-1041); accession 20231205-3095.
+</doc>
+<doc title="Mt. Carmel Public Utility Co." collection="Prudence Reviews" docket="22-0639" issued="2023-11-02" industry="gas" source="https://www.icc.illinois.gov/docket/P2022-0639/documents">
+Listed for reference (not machine-parsed into findings).
+ICC Order in the purchased gas adjustment (PGA) reconciliation of Mt. Carmel Public Utility Co. — reconciliation of revenues collected under gas adjustment charges with the actual cost of gas demonstrated to be prudently incurred, Docket 22-0639, entered November 2, 2023; 3 pp. PDF: icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf. Listed for reference (metadata-only).
 </doc>
 <doc title="CORE Electric Cooperative et al. v. Public Service Company of Colorado" collection="Prudence Reviews" docket="EL23-21" issued="2023-08-08" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230808-3031&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).

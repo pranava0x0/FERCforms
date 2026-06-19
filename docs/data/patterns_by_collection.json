@@ -506,13 +506,13 @@
     "generated_at": "2026-06-19"
   },
   "prudence_review": {
-    "report_count": 28,
+    "report_count": 29,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
       "electric": 24,
-      "gas": 3,
+      "gas": 4,
       "oil": 1
     },
     "by_year": {
@@ -524,7 +524,7 @@
       "2018": 2,
       "2020": 1,
       "2022": 1,
-      "2023": 3,
+      "2023": 4,
       "2024": 2,
       "2025": 8
     },
@@ -1117,17 +1117,17 @@
     "generated_at": "2026-06-19"
   },
   "state_rate_case": {
-    "report_count": 120,
+    "report_count": 121,
     "finding_count": 544,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 108,
+      "electric": 109,
       "gas": 10,
       "unknown": 2
     },
     "by_year": {
-      "2005": 1,
+      "2005": 2,
       "2012": 1,
       "2014": 2,
       "2018": 1,
@@ -1177,7 +1177,7 @@
           "energy cost recovery"
         ],
         "finding_count": 16,
-        "report_count": 32,
+        "report_count": 33,
         "example_titles": [
           "Approval: $225,000\n",
           "Approval: $0.69 ",

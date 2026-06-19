@@ -62,5 +62,21 @@
     "captured_at": "2026-06-01",
     "source_note": "Direct Testimony of Vonetta Jackson, Rate Regulation Division, Public Utility Commission of Texas (Commission Staff), in El Paso Electric Company's fuel-cost reconciliation, PUC Docket No. 57149 / SOAH Docket No. 473-25-05084, filed April 1, 2025. Listed for reference (metadata-only). Source: PUCT Interchange, document interchange.puc.texas.gov/Documents/57149_118_1485108.PDF.",
     "parse": false
+  },
+  {
+    "id": "2005-12-19_southwestern-public-service_puct-29801-fuel-reconciliation-order",
+    "company": "Southwestern Public Service Company",
+    "collection": "state_rate_case",
+    "jurisdiction": "TX",
+    "source": "Public Utility Commission of Texas",
+    "doc_type": "fuel cost reconciliation order",
+    "industry": "electric",
+    "pdf_url": "https://interchange.puc.texas.gov/Documents/29801_432_499091.PDF",
+    "source_page_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=29801",
+    "issued_date": "2005-12-19",
+    "docket": "29801",
+    "captured_at": "2026-06-19",
+    "source_note": "Commission Order reconciling Southwestern Public Service Company's (SPS) fuel and purchased-power costs for 2002-2003, PUCT Docket 29801 (SOAH 473-04-6558), Item 432, issued December 19, 2005; 21 pp. A concluded contested fuel-cost reconciliation (complements the still-open El Paso Electric 57149). PDF: interchange.puc.texas.gov/Documents/29801_432_499091.PDF. Listed for reference (metadata-only).",
+    "parse": false
   }
 ]

@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 650 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 652 records, 1715 findings, 2180 recommendations. Generated 2026-06-19.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5218,6 +5218,17 @@ FERC Order on Rehearing and Clarification re Constellation Mystic Power, LLC cos
 - Status: listed for reference (not machine-parsed into findings)
 
 FERC Order Rejecting Wholesale Power Supply Contracts and Notices of Cancellation re Wabash Valley Power Association, Inc., Docket ER20-1041, issued 2023-12-05 — addressing the reasonableness of wholesale power-supply contract terms. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER20-1041); accession 20231205-3095.
+
+---
+
+## Mt. Carmel Public Utility Co.
+- Collection: Prudence Reviews | Source: Illinois Commerce Commission
+- Docket: 22-0639 | Audit type: n/a
+- Issued: 2023-11-02 | Industry: gas | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/docket/P2022-0639/documents
+- Status: listed for reference (not machine-parsed into findings)
+
+ICC Order in the purchased gas adjustment (PGA) reconciliation of Mt. Carmel Public Utility Co. — reconciliation of revenues collected under gas adjustment charges with the actual cost of gas demonstrated to be prudently incurred, Docket 22-0639, entered November 2, 2023; 3 pp. PDF: icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf. Listed for reference (metadata-only).
 
 ---
 

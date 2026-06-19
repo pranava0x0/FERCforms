@@ -34,6 +34,23 @@ Exhibit I-2, one rec per row) remain the cheapest reliable findings.
 
 ---
 
+## ▶ Done 2026-06-19 (cont.) — +2 concluded fuel-reconciliation docs (TX/IL); CA/MO dups caught
+
+Batched a CA/TX/MO/IL fuel-prudence finder agent. Net **+2** PROVEN metadata-only records:
+**TX** SPS (Southwestern Public Service) fuel & purchased-power cost reconciliation **Order**, PUCT
+29801 item 432 (21 pp — a *concluded* contested fuel case, complements the still-open El Paso 57149),
+and **IL** Mt. Carmel PGA gas-cost reconciliation order, ICC 22-0639 (3 pp, `prudence_review`).
+Corpus 650 → **652**. Dedup caught two would-be duplicates: the agent's **CA** PG&E 2023 ERRA doc was
+D.25-06-045 with a "PROPOSED DECISION" header — we already hold the *adopted* D.25-06-007 for the same
+review (skipped); the **MO** Ameren Tenth FAC Prudence Review (EO-2024-0053, doc 772394) was an exact
+already-seeded record. (Lesson reinforced: dedupe agent output by docket AND doc-id before seeding.)
+
+CA ERRA reasonableness reviews + MO Ameren FAC prudence + TX fuel reconciliations remain deep, mostly
+well-covered seams; further adds there are increasingly near-duplicates — prefer a *different*
+utility/year and always dedup first.
+
+---
+
 ## ▶ Done 2026-06-19 (cont.) — +4 verified SC PSC Duke fuel-prudence docs
 
 Added 4 page-1-verified, PROVEN metadata-only SC PSC records (all `dms.psc.sc.gov`, plain-GET

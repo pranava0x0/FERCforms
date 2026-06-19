@@ -138,7 +138,7 @@
     "source_page_url": "https://icc.illinois.gov/docket/P2016-0376/documents/262806",
     "docket": "16-0376",
     "issued_date": "2018-01-10",
-    "source_note": "Illinois Commerce Commission Final Order (215 pp) in the §8-501/10-101 investigation of Peoples Gas's natural-gas System Modernization Program (formerly Accelerated Main Replacement), issued 2018-01-10; incorporates the Liberty Consulting management-audit findings (~95 recommendations). Listed for reference (metadata-only; ICC order format, not the Exhibit I-2 parser). PDF: icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf.",
+    "source_note": "Illinois Commerce Commission Final Order (215 pp) in the \u00a78-501/10-101 investigation of Peoples Gas's natural-gas System Modernization Program (formerly Accelerated Main Replacement), issued 2018-01-10; incorporates the Liberty Consulting management-audit findings (~95 recommendations). Listed for reference (metadata-only; ICC order format, not the Exhibit I-2 parser). PDF: icc.illinois.gov/docket/P2016-0376/documents/262806/files/462056.pdf.",
     "source": "Illinois Commerce Commission",
     "captured_at": "2026-06-08",
     "parse": false
@@ -148,15 +148,31 @@
     "company": "Northern Illinois Gas Company d/b/a Nicor Gas Company",
     "collection": "prudence_review",
     "jurisdiction": "IL",
-    "doc_type": "PGA / gas-adjustment-charge reconciliation prudence order (§9-220)",
+    "doc_type": "PGA / gas-adjustment-charge reconciliation prudence order (\u00a79-220)",
     "industry": "gas",
     "pdf_url": "https://icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf",
     "source_page_url": "https://icc.illinois.gov/docket/P2015-0519/documents/271451",
     "docket": "15-0519",
     "issued_date": "2018-05-17",
-    "source_note": "Illinois Commerce Commission Final Order reconciling Nicor Gas revenues collected under Rider 6 (Gas Supply Cost / PGA) with actual costs prudently incurred for the year ended Dec 31 2015, Docket 15-0519, issued 2018-05-17 (§9-220). PDF: icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf.",
+    "source_note": "Illinois Commerce Commission Final Order reconciling Nicor Gas revenues collected under Rider 6 (Gas Supply Cost / PGA) with actual costs prudently incurred for the year ended Dec 31 2015, Docket 15-0519, issued 2018-05-17 (\u00a79-220). PDF: icc.illinois.gov/docket/P2015-0519/documents/271451/files/474549.pdf.",
     "source": "Illinois Commerce Commission",
     "captured_at": "2026-06-08",
+    "parse": false
+  },
+  {
+    "id": "2023-11-02_mt-carmel-public-utility_icc-22-0639-pga-reconciliation-order",
+    "company": "Mt. Carmel Public Utility Co.",
+    "collection": "prudence_review",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "gas cost (PGA) reconciliation order",
+    "industry": "gas",
+    "pdf_url": "https://icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf",
+    "source_page_url": "https://www.icc.illinois.gov/docket/P2022-0639/documents",
+    "issued_date": "2023-11-02",
+    "docket": "22-0639",
+    "captured_at": "2026-06-19",
+    "source_note": "ICC Order in the purchased gas adjustment (PGA) reconciliation of Mt. Carmel Public Utility Co. \u2014 reconciliation of revenues collected under gas adjustment charges with the actual cost of gas demonstrated to be prudently incurred, Docket 22-0639, entered November 2, 2023; 3 pp. PDF: icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf. Listed for reference (metadata-only).",
     "parse": false
   }
 ]
