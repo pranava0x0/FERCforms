@@ -1,5 +1,89 @@
 [
   {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-05-07_southern-electric-generating-company_fa24-3",
+    "company": "Southern Electric Generating Company",
+    "company_raw": "Southern Electric Generating Company (FA24-3)",
+    "docket": "FA24-3",
+    "docket_full": "FA24-3-000",
+    "issued_date": "2026-05-07",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260507-3001",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-3; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-3) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 43,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2021 to December 31, 2024",
+    "industry": "electric",
+    "audit_type": "financial",
+    "functions": [
+      "generation"
+    ],
+    "forms": [
+      "1",
+      "3-Q"
+    ],
+    "finding_count": 4,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Accounting for Replacement of Minor Items of Property",
+        "summary": "SEGCO improperly capitalized costs related to the replacement of minor items of property in a manner that was not consistent with its units of property listing and the Commission’s accounting requirements. SEGCO’s accounting caused utility plant to be overstated and maintenance expenses to be understated.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Capitalization vs. expense"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Allowance for Funds Used During Construction",
+        "summary": "SEGCO improperly accrued allowance for funds used during construction (AFUDC) on projects that were completed or ready to be placed into service. As a result, SEGCO over accrued AFUDC and overstated electric plant in service during the audit period.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Computation of Depreciation Rates",
+        "summary": "SEGCO improperly used a depreciation rate for computing depreciation expense for transmission plant that was not on file with the Commission.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Depreciation"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "FERC Form Nos. 1 and 3-Q Reporting",
+        "summary": "SEGCO did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions reduced the transparency, accuracy, and usefulness of certain information in the reports. D.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "AFUDC / cost of capital",
+      "Capitalization vs. expense",
+      "Depreciation",
+      "Property & plant records"
+    ],
+    "cost_to_customers": true
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "MN",
     "source": "Minnesota Office of Administrative Hearings",
@@ -60,6 +144,130 @@
       "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
+  },
+  {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-03-19_southwestern-electric-power-company_fa24-2",
+    "company": "Southwestern Electric Power Company",
+    "company_raw": "Southwestern Electric Power Company (FA24-2)",
+    "docket": "FA24-2",
+    "docket_full": "FA24-2-000",
+    "issued_date": "2026-03-19",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260319-3008&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260319-3008",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-2; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-2) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 55,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2021 through December 31, 2025",
+    "industry": "electric",
+    "audit_type": "financial",
+    "functions": [
+      "transmission"
+    ],
+    "forms": [
+      "1"
+    ],
+    "finding_count": 7,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Capitalization of Vegetation Management Costs",
+        "summary": "SWEPCo’s vegetation management policy was not consistent with the Commission’s accounting regulations. Specifically, SWEPCo (1) improperly capitalized $97 million of vegetation management costs that were not related to the initial or original clearing of land and rights-of-way (ROW); (2) accrued Allowance for Funds Used During Construction (AFUDC) on the improperly capitalized vegetation management costs; and (3) included the same vegetation management costs in two different accounts and included both accounts as input for the purposes of computing its annual transmission revenue requirement (ATRR). As a result, SWEPCo overstated its electric plant and overbilled transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Capitalization vs. expense",
+          "Service reliability & vegetation management"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 2,
+        "title": "Prepaid Pension AFUDC",
+        "summary": "SWEPCo improperly accrued AFUDC on its prepaid pension asset and included this AFUDC in the electric plant in service accounts. As a result, SWEPCo overstated its electric plant by $10 million and overbilled transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 3,
+        "title": "Allowance for Funds Used During Construction",
+        "summary": "SWEPCo’s AFUDC rate derivation, AFUDC accrual, and AFUDC accounting were inconsistent with the Commission’s accounting regulations. Specifically, SWEPCo incorrectly (1) calculated its long-term debt cost rate; (2) included balances of Accounts 181, Unamortized Debt Expense, 189, Unamortized Loss on Reacquired Debt, and 226, Unamortized Discount on Long-Term Debt, in the long-term debt balances; (3) accrued AFUDC on completed projects, suspended projects, and equipment purchases; and (4) recorded the state portion of AFUDC debt and equity accumulated deferred income taxes (ADIT) in Account 283, Accumulated Deferred Income Taxes – Other, instead of Account 282, Accumulated Deferred Income Taxes − Other Property. As a result, SWEPCo over accrued AFUDC included in electric plant in service accounts and overbilled its transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "AFUDC / cost of capital",
+          "Property & plant records"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Prepayments",
+        "summary": "SWEPCo improperly recorded certain advance payments that were applicable to future accounting periods in administrative and general (A&G) and operation and maintenance (O&M) expense accounts, instead of in Account 165, Prepayments. As a result, SWEPCo did not accurately recognize certain expenses in the period in which they were incurred, leading to the misstatement of A&G, O&M, and other account balances reported in its FERC Form No. 1 filings.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Accounting misclassification",
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Accounting Misclassifications",
+        "summary": "SWEPCo recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. Some of the improper accounting resulted in SWEPCo overstating its ATRR and overbilling its transmission customers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Accounting misclassification"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Excess and Deficient Accumulated Deferred Income Tax",
+        "summary": "SWEPCo improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SWEPCo’s FERC Form No. 1 filings.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "FERC Form No. 1 Reporting",
+        "summary": "SWEPCo did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information on certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "themes": [
+          "Form reporting (Form No. 1/2/6, Page 700)"
+        ],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "AFUDC / cost of capital",
+      "Accounting misclassification",
+      "Capitalization vs. expense",
+      "Form reporting (Form No. 1/2/6, Page 700)",
+      "Property & plant records",
+      "Service reliability & vegetation management"
+    ],
+    "cost_to_customers": true
   },
   {
     "collection": "state_rate_case",
@@ -202,6 +410,75 @@
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "ferc_audit",
+    "jurisdiction": "FERC",
+    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+    "doc_type": null,
+    "id": "2026-01-08_dc-energy-holdings-llc_pa23-11",
+    "company": "DC Energy Holdings, LLC",
+    "company_raw": "DC Energy Holdings, LLC (PA23-11)",
+    "docket": "PA23-11",
+    "docket_full": "PA23-11-000",
+    "issued_date": "2026-01-08",
+    "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260108-3014&optimized=false",
+    "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260108-3014",
+    "captured_at": "2026-06-19",
+    "source_note": "FERC audit report (Letter order issuing Audit Report), PA23-11; accession resolved via eLibrary AdvancedSearch API (searchText=PA23-11) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+    "archived_via": null,
+    "page_count": 23,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": "January 1, 2020 to January 31, 2025",
+    "industry": "electric",
+    "audit_type": "non-financial",
+    "functions": [
+      "generation",
+      "transmission"
+    ],
+    "forms": [],
+    "finding_count": 1,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Submittal of Required Financial Statements",
+        "summary": "DC Energy did not submit quarterly financial statements to PJM for Quarter 3, 2022 through Quarter 3, 2024 as required by PJM’s credit policy in Attachment Q of PJM’s OATT. Also, DC Energy did not submit quarterly financial statements to SPP during the audit period as required by SPP’s credit policy in Attachment X of SPP’s OATT. This action affected PJM and SPP’s overall risk management policy of monitoring credit risk to protect the market from participant defaults. D.",
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Submit quarterly financial statements for the audit period to SPP.",
+            "source_page": null
+          },
+          {
+            "number": 2,
+            "text": "Submit quarterly financial statements for the period of Quarter 3, 2022 through Quarter 3, 2024 to PJM.",
+            "source_page": null
+          },
+          {
+            "number": 3,
+            "text": "Establish and implement policies and procedures to ensure compliance with credit policies, timelines, and other relevant requirements as specified in RTO/ISO tariffs.",
+            "source_page": null
+          },
+          {
+            "number": 4,
+            "text": "Establish and implement policies and procedures to review credit policies and requirements as RTOs/ISOs update their tariffs to ensure that DC Energy is submitting all required documents accurately and timely.",
+            "source_page": null
+          },
+          {
+            "number": 5,
+            "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 3 and 4 and repeat such training as needed. E.",
+            "source_page": null
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "state_rate_case",
@@ -2543,6 +2820,294 @@
     "cost_to_customers": false
   },
   {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2025-07-10_pike-county-light-power-leatherstocking-gas_pa-mo-audit",
+    "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+    "company_raw": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+    "docket": "D-2024-3050338",
+    "docket_full": null,
+    "issued_date": "2025-07-10",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2025/puc-issues-management-and-operations-audit-for-pike-county-light-power-and-leatherstocking-gas-company-07102025",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1886204.pdf",
+    "captured_at": "2026-06-18",
+    "source_note": "Management & Operations Audit of Pike County Light & Power Company and Leatherstocking Gas Company LLC, PA PUC Bureau of Audits; PUC publication 2025-07-10, Docket No. D-2024-3050338. PDF: puc.pa.gov/pcdocs/1886204.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 62,
+    "scanned_pages": [
+      1,
+      62
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 10,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management, Organizational Structure, and Safety",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Expand the succession planning process to include short-term contingency plans for the PCLP General Manager, and all key employees.",
+            "source_page": 15
+          },
+          {
+            "number": 2,
+            "text": "Formally document procedures for all human resources filing and reporting activities to ensure compliance.",
+            "source_page": 16
+          },
+          {
+            "number": 3,
+            "text": "Implement a system to govern oversight of the review, update and documentation of all policies, and create a policy for centralized management of the system.",
+            "source_page": 17
+          },
+          {
+            "number": 4,
+            "text": "Expand staffing at PCLP to ensure optimal electric operations.",
+            "source_page": 18
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Corporate Governance",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 5,
+            "text": "Establish an overarching internal control policy.",
+            "source_page": 22
+          }
+        ],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Cost Allocations and Affiliated Interests",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 6,
+            "text": "File an updated AIA which accurately reflects the intercompany transactions occurring between PCLP, LGC, and their affiliates.",
+            "source_page": 25
+          },
+          {
+            "number": 7,
+            "text": "Conduct routine periodic testing of intercompany transactions to ensure shared costs are distributed in accordance with approved methodologies.",
+            "source_page": 26
+          },
+          {
+            "number": 8,
+            "text": "Compare total actual costs for internally performed shared services and the cost of outside services to ensure cost effectiveness for all entities regularly.",
+            "source_page": 27
+          },
+          {
+            "number": 9,
+            "text": "Establish internal controls over intercompany transactions and cost allocations processes and comply with all aspects of the approved AIA.",
+            "source_page": 27
+          }
+        ],
+        "themes": [
+          "Affiliate / intercompany transactions",
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": true
+      },
+      {
+        "index": 4,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 10,
+            "text": "Establish a process to routinely review and update financial management policies and procedures and ensure version control is in place.",
+            "source_page": 31
+          },
+          {
+            "number": 11,
+            "text": "Document an internal dividend policy that provides advance notice and written explanation to the Commission for each dividend payment PCLP and LGC make in excess of 85% of net income.",
+            "source_page": 31
+          }
+        ],
+        "themes": [
+          "Dividend policy & capital management"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Financial Management (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 12,
+            "text": "Document cash management procedures and establish guidelines for assessment of cash positions.",
+            "source_page": 32
+          },
+          {
+            "number": 13,
+            "text": "Develop and document guidelines and policies for budget creation and management including the regular reporting of significant budget variance explanations.",
+            "source_page": 33
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 14,
+            "text": "Develop and maintain a comprehensive damage prevention manual that details appropriate excavating procedures for PCLP’s electric utility infrastructure and assets.",
+            "source_page": 36
+          },
+          {
+            "number": 15,
+            "text": "Update PCLP’s storm response plan after a storm-related event or at least annually.",
+            "source_page": 37
+          }
+        ],
+        "themes": [
+          "Gas safety & pipeline integrity"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Establish and maintain a collection system for excavation damages and increase public awareness efforts for all involved parties about their responsibilities under PA One Call.",
+            "source_page": 44
+          },
+          {
+            "number": 17,
+            "text": "Review the UFG calculation, including the adjustment factor, and document all steps to ensure accuracy of reporting.",
+            "source_page": 45
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 18,
+            "text": "Correct minor physical security deficiencies at PCLP and LGC and perform periodic physical security reviews of all facilities.",
+            "source_page": 48
+          },
+          {
+            "number": 19,
+            "text": "Develop comprehensive business continuity plans for PCLP and LGC and review, test, and update them annually.",
+            "source_page": 49
+          },
+          {
+            "number": 20,
+            "text": "Develop and maintain physical security plans for PCLP and LGC and review, update, and test annually.",
+            "source_page": 49
+          },
+          {
+            "number": 21,
+            "text": "Annually review, test, and update emergency response plans for PCLP and LGC, and update PCLP’s emergency response plan to detail company response to non-storm related emergencies.",
+            "source_page": 50
+          }
+        ],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 22,
+            "text": "Formally document customer service policies and procedures to govern customer service practices.",
+            "source_page": 55
+          }
+        ],
+        "themes": [
+          "Customer service & billing"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Customer Service (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 23,
+            "text": "Revise the tariff and other customer-facing documentation to accurately reflect PCLP’s and LGC’s budget billing processes.",
+            "source_page": 56
+          },
+          {
+            "number": 24,
+            "text": "Explore eliminating manual meter reading at LGC to streamline operations, reduce errors, and efficiently use staff.",
+            "source_page": 57
+          },
+          {
+            "number": 25,
+            "text": "Improve the customer experience by expanding payment options and eliminating the manual process for budget billing.",
+            "source_page": 57
+          }
+        ],
+        "themes": [
+          "Tariff administration & oversight",
+          "Customer service & billing"
+        ],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Affiliate / intercompany transactions",
+      "Customer service & billing",
+      "Cybersecurity & physical security",
+      "Dividend policy & capital management",
+      "Emergency preparedness & business continuity",
+      "Gas safety & pipeline integrity",
+      "Internal audit & internal controls",
+      "Tariff administration & oversight",
+      "Workforce, training & succession planning"
+    ],
+    "cost_to_customers": true
+  },
+  {
     "collection": "state_rate_case",
     "jurisdiction": "IL",
     "source": "Illinois Commerce Commission",
@@ -2947,6 +3512,38 @@
     "structured": true,
     "themes": [
       "Informational postings"
+    ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA compliance & reasonableness review decision",
+    "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
+    "company": "Pacific Gas and Electric Company",
+    "company_raw": "Pacific Gas and Electric Company",
+    "docket": "A.24-02-012",
+    "docket_full": null,
+    "issued_date": "2025-06-12",
+    "source_page_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
+    "pdf_download_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
+    "captured_at": "2026-06-10",
+    "source_note": "CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.",
+    "archived_via": null,
+    "page_count": 0,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
   },
@@ -5012,6 +5609,38 @@
   },
   {
     "collection": "state_rate_case",
+    "jurisdiction": "SC",
+    "source": "Public Service Commission of South Carolina",
+    "doc_type": "fuel cost prudence review order",
+    "id": "2024-10-30_duke-energy-carolinas_sc-2024-3-e-fuel-order",
+    "company": "Duke Energy Carolinas, LLC",
+    "company_raw": "Duke Energy Carolinas, LLC",
+    "docket": "2024-3-E",
+    "docket_full": null,
+    "issued_date": "2024-10-30",
+    "source_page_url": "https://dms.psc.sc.gov/Web/Dockets/Detail/118763",
+    "pdf_download_url": "https://dms.psc.sc.gov/Attachments/Order/80623761-72e1-4c1e-9a82-4675bdfe57c0",
+    "captured_at": "2026-06-19",
+    "source_note": "Order No. 2024-727 Approving Adjustment in Fuel Cost Recovery Factors in Duke Energy Carolinas, LLC's Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-3-E, issued October 30, 2024; 30 pp. Listed for reference (metadata-only). Source: SC PSC Document Management System, Order 80623761-72e1-4c1e-9a82-4675bdfe57c0 (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118763).",
+    "archived_via": null,
+    "page_count": 30,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
     "jurisdiction": "FL",
     "source": "Florida Public Service Commission",
     "doc_type": "final order on storm cost recovery",
@@ -5695,6 +6324,38 @@
         "cost_to_customers": false
       }
     ],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "SC",
+    "source": "Public Service Commission of South Carolina",
+    "doc_type": "fuel-cost audit testimony (ORS)",
+    "id": "2024-08-29_duke-energy-carolinas_sc-2024-3-e-ors-fuel-audit-testimony",
+    "company": "Duke Energy Carolinas, LLC",
+    "company_raw": "Duke Energy Carolinas, LLC",
+    "docket": "2024-3-E",
+    "docket_full": null,
+    "issued_date": "2024-08-29",
+    "source_page_url": "https://dms.psc.sc.gov/Web/Dockets/Detail/118763",
+    "pdf_download_url": "https://dms.psc.sc.gov/Attachments/Matter/1474abd1-c4b6-429f-9dcb-4832750064db",
+    "captured_at": "2026-06-19",
+    "source_note": "Direct Testimony and Exhibits of Anthony D. Briseno (Senior Audit Manager) on behalf of the South Carolina Office of Regulatory Staff in Duke Energy Carolinas' Annual Review of Base Rates for Fuel Costs, Docket No. 2024-3-E, filed August 29, 2024; 25 pp. ORS fuel-cost audit work. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter 1474abd1-c4b6-429f-9dcb-4832750064db (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118763).",
+    "archived_via": null,
+    "page_count": 25,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
     "structured": false,
     "themes": [
       "Fuel & purchased-power cost recovery"
@@ -7093,6 +7754,38 @@
     "cost_to_customers": true
   },
   {
+    "collection": "state_rate_case",
+    "jurisdiction": "SC",
+    "source": "Public Service Commission of South Carolina",
+    "doc_type": "fuel cost prudence review order",
+    "id": "2024-07-31_duke-energy-progress_sc-2024-1-e-fuel-order",
+    "company": "Duke Energy Progress, LLC",
+    "company_raw": "Duke Energy Progress, LLC",
+    "docket": "2024-1-E",
+    "docket_full": null,
+    "issued_date": "2024-07-31",
+    "source_page_url": "https://dms.psc.sc.gov/Web/Dockets/Detail/118761",
+    "pdf_download_url": "https://dms.psc.sc.gov/Attachments/Order/33f005fe-b9d0-4dbe-a626-b5ef9cd72c77",
+    "captured_at": "2026-06-19",
+    "source_note": "Order No. 2024-500 Approving Adjustment in Fuel Cost Recovery Factors in Duke Energy Progress, LLC's Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-1-E, issued July 31, 2024; 58 pp. Listed for reference (metadata-only). Source: SC PSC Document Management System, Order 33f005fe-b9d0-4dbe-a626-b5ef9cd72c77 (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118761).",
+    "archived_via": null,
+    "page_count": 58,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_audit",
     "jurisdiction": "CA",
     "source": "CPUC Utility Audits, Risk and Compliance Division",
@@ -7151,6 +7844,38 @@
     ],
     "structured": true,
     "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "SC",
+    "source": "Public Service Commission of South Carolina",
+    "doc_type": "fuel cost prudence review proposed order (ORS)",
+    "id": "2024-07-22_duke-energy-progress_sc-2024-1-e-ors-proposed-order",
+    "company": "Duke Energy Progress, LLC",
+    "company_raw": "Duke Energy Progress, LLC",
+    "docket": "2024-1-E",
+    "docket_full": null,
+    "issued_date": "2024-07-22",
+    "source_page_url": "https://dms.psc.sc.gov/Web/Dockets/Detail/118761",
+    "pdf_download_url": "https://dms.psc.sc.gov/Attachments/Matter/fb34c4b6-f079-4fa2-9b38-2befcd66e54e",
+    "captured_at": "2026-06-19",
+    "source_note": "Office of Regulatory Staff proposed order on fuel-cost reasonableness in Duke Energy Progress, LLC's Annual Review of Base Rates for Fuel Costs, before the Public Service Commission of South Carolina, Docket No. 2024-1-E, filed July 22, 2024; 25 pp. Listed for reference (metadata-only). Source: SC PSC Document Management System, Matter fb34c4b6-f079-4fa2-9b38-2befcd66e54e (docket landing: dms.psc.sc.gov/Web/Dockets/Detail/118761).",
+    "archived_via": null,
+    "page_count": 25,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {
@@ -9721,6 +10446,36 @@
   },
   {
     "collection": "state_rate_case",
+    "jurisdiction": "SD",
+    "source": "South Dakota Public Utilities Commission",
+    "doc_type": "rate case order",
+    "id": "2024-01-17_northwestern-energy_sd-el23-016-amended-settlement-order",
+    "company": "NorthWestern Corporation d/b/a NorthWestern Energy",
+    "company_raw": "NorthWestern Corporation d/b/a NorthWestern Energy",
+    "docket": "EL23-016",
+    "docket_full": null,
+    "issued_date": "2024-01-17",
+    "source_page_url": "https://puc.sd.gov/Dockets/Electric/2023/EL23-016.aspx",
+    "pdf_download_url": "https://puc.sd.gov/commission/dockets/electric/2023/el23-016/EL23-016settlementAmended.pdf",
+    "captured_at": "2026-06-19",
+    "source_note": "Amended Order Granting Joint Motion for Approval of Settlement Stipulation in NorthWestern Energy's electric rate increase, SD PUC Docket EL23-016. PDF: puc.sd.gov/commission/dockets/electric/2023/el23-016/EL23-016settlementAmended.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 2,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
     "jurisdiction": "WV",
     "source": "Public Service Commission of West Virginia",
     "doc_type": "fuel cost review order",
@@ -10071,6 +10826,36 @@
     "cost_to_customers": true
   },
   {
+    "collection": "state_rate_case",
+    "jurisdiction": "NM",
+    "source": "New Mexico Public Regulation Commission",
+    "doc_type": "rate case recommended decision",
+    "id": "2023-12-08_public-service-company-of-new-mexico_nm-22-00270-ut-recommended-decision",
+    "company": "Public Service Company of New Mexico (PNM)",
+    "company_raw": "Public Service Company of New Mexico (PNM)",
+    "docket": "22-00270-UT",
+    "docket_full": null,
+    "issued_date": "2023-12-08",
+    "source_page_url": "https://www.prc.nm.gov/nmprc-legal-notices/",
+    "pdf_download_url": "https://www.prc.nm.gov/wp-content/uploads/2023/12/prs10051295doc.pdf",
+    "captured_at": "2026-06-19",
+    "source_note": "Hearing Examiners' Recommended Decision in PNM's retail electric rate revision, NM PRC Case No. 22-00270-UT; 384 pp. Examines PNM's costs and revenue requirement. PDF: prc.nm.gov/wp-content/uploads/2023/12/prs10051295doc.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 384,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "prudence_review",
     "jurisdiction": "FERC",
     "source": "FERC (eLibrary)",
@@ -10356,6 +11141,36 @@
     "themes": [
       "Fuel & purchased-power cost recovery"
     ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "prudence_review",
+    "jurisdiction": "IL",
+    "source": "Illinois Commerce Commission",
+    "doc_type": "gas cost (PGA) reconciliation order",
+    "id": "2023-11-02_mt-carmel-public-utility_icc-22-0639-pga-reconciliation-order",
+    "company": "Mt. Carmel Public Utility Co.",
+    "company_raw": "Mt. Carmel Public Utility Co.",
+    "docket": "22-0639",
+    "docket_full": null,
+    "issued_date": "2023-11-02",
+    "source_page_url": "https://www.icc.illinois.gov/docket/P2022-0639/documents",
+    "pdf_download_url": "https://icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf",
+    "captured_at": "2026-06-19",
+    "source_note": "ICC Order in the purchased gas adjustment (PGA) reconciliation of Mt. Carmel Public Utility Co. — reconciliation of revenues collected under gas adjustment charges with the actual cost of gas demonstrated to be prudently incurred, Docket 22-0639, entered November 2, 2023; 3 pp. PDF: icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 3,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
     "cost_to_customers": false
   },
   {
@@ -10795,6 +11610,39 @@
       "Tariff administration & oversight"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management efficiency investigation",
+    "id": "2023-09-21_duquesne-light_pa-mei",
+    "company": "Duquesne Light Company",
+    "company_raw": "Duquesne Light Company",
+    "docket": "D-2023-3037425",
+    "docket_full": null,
+    "issued_date": "2023-09-21",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1799646.pdf",
+    "captured_at": "2026-06-18",
+    "source_note": "Management Efficiency Investigation of Duquesne Light Company, PA PUC Bureau of Audits; PUC publication 2023-09-21, Docket No. D-2023-3037425. Follow-up review; recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1799646.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).",
+    "archived_via": null,
+    "page_count": 48,
+    "scanned_pages": [
+      1,
+      48
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "ferc_audit",
@@ -12702,6 +13550,40 @@
     "collection": "state_audit",
     "jurisdiction": "PA",
     "source": "PA PUC Bureau of Audits",
+    "doc_type": "management efficiency investigation",
+    "id": "2023-04-01_ugi-utilities_pa-mei",
+    "company": "UGI Utilities, Inc.",
+    "company_raw": "UGI Utilities, Inc.",
+    "docket": "D-2022-3032778",
+    "docket_full": null,
+    "issued_date": "2023-04-01",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1785721.pdf",
+    "captured_at": "2026-06-18",
+    "source_note": "Management Efficiency Investigation of UGI Utilities, Inc. (follow-up to the 2019 Focused Management & Operations Audit), PA PUC Bureau of Audits; PUC publication April 2023, Docket No. D-2022-3032778. Recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1785721.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).",
+    "archived_via": null,
+    "page_count": 61,
+    "scanned_pages": [
+      2,
+      60,
+      61
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
     "doc_type": "management & operations audit",
     "id": "2023-03-02_philadelphia-gas-works_pa-mo-audit",
     "company": "Philadelphia Gas Works",
@@ -12709,10 +13591,10 @@
     "docket": "D-2022-3030321",
     "docket_full": null,
     "issued_date": "2023-03-02",
-    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-for-philadelphia-gas-works",
     "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1775875.pdf",
-    "captured_at": "2026-06-01",
-    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits, published 2023-03-02. PDF: puc.pa.gov/pcdocs/1775875.pdf (the audit report, distinct from the company implementation plan at 1775874). Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "captured_at": "2026-06-08",
+    "source_note": "Management & Operations Audit issued by the PA PUC Bureau of Audits; PUC publication 2023-03-02. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
     "archived_via": null,
     "page_count": 95,
     "scanned_pages": [
@@ -12725,7 +13607,7 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 1,
+    "finding_count": 11,
     "findings": [
       {
         "index": 1,
@@ -12735,363 +13617,285 @@
         "recommendations": [
           {
             "number": 1,
-            "text": "Functional Rating Summary",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Customer Statistics",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Governance Oversight Summary",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Executive Management Organizational Chart",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Financial Management Organizational Chart",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Gas Operations Organizational Chart",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Fleet & Materials Management Organizational Structure",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Customer Service and Collections Organizational Chart",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Information Service Organizational Chart",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Streamline corporate governance processes to",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Develop specific guidance for span of control",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Update Internal Audit policies and procedures.",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Implement a policy and metrics-tracked plan to",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "File Self-Certification forms with the",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Leverage pandemic and low-income resources to",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Establish IS departmental performance metrics",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Improve efficiencies within the fleet department.",
-            "source_page": null
-          },
-          {
-            "number": 1,
-            "text": "Implement strategies for recruitment and retention",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Staffing Levels",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Capital Budget Timeline",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Miles of Main by Material Type",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Overall Customer Service Satisfaction Rate",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Vehicles and Equipment by Classification",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "DBE Participation Performance",
-            "source_page": null
+            "text": "Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework.",
+            "source_page": 18
           },
           {
             "number": 2,
             "text": "Streamline the annual budget approval process.",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Implement a safety management system and",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Formally document explanations for variances",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Accelerate cast iron main replacement.",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Correct various deficiencies in physical security.",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Improve customer service performance through",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Leverage and integrate data visualization",
-            "source_page": null
-          },
-          {
-            "number": 2,
-            "text": "Drive safety performance to meet industry",
-            "source_page": null
+            "source_page": 18
           },
           {
             "number": 3,
-            "text": "Summary of Recommendations",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Corporate Strategy",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Operating Budget Timeline",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Overtime Hours",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Regulatory Compliance and Customer Programs – Customer",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Fleet Key Performance Metrics Dashboard",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "“At-Risk” Job Retention & Turnover Rates",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Establish committee charters for all PFMC board",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Plan and implement a process for gathering",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Establish a company-wide program for",
-            "source_page": null
-          },
-          {
-            "number": 3,
-            "text": "Complete implementation of the replacement",
-            "source_page": null
+            "text": "Establish committee charters for all PFMC board committees.",
+            "source_page": 18
           },
           {
             "number": 4,
-            "text": "Fiscal Year 2022 Goals and Objectives",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Debt to Total Capital Ratio",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Field Operations Organizational Chart – Customer Service Focus",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "OSHA Recordable Incident Rate",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Evaluate director performance annually to",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Reorganize the CARC reporting structure to",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Explore ways to eliminate or mitigate the",
-            "source_page": null
-          },
-          {
-            "number": 4,
-            "text": "Establish reporting and key performance metrics",
-            "source_page": null
-          },
+            "text": "Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met.",
+            "source_page": 18
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Executive Management and Organizational Structure",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
           {
             "number": 5,
-            "text": "Spans of Control by Management Level",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Historical Credit Ratings",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Mercury Regulators Replaced",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Residential Customer Accounts Receivable Current Balances and",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Days Away Restricted or Transferred (DART)",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Increase focus on cybersecurity by developing a",
-            "source_page": null
-          },
-          {
-            "number": 5,
-            "text": "Repurpose or divest interest in district offices and",
-            "source_page": null
+            "text": "Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions.",
+            "source_page": 26
           },
           {
             "number": 6,
-            "text": "Pension Funding Level",
-            "source_page": null
-          },
-          {
-            "number": 6,
-            "text": "Annual Breaks by Material Type",
-            "source_page": null
-          },
-          {
-            "number": 6,
-            "text": "Customer Service Performance Metrics",
-            "source_page": null
-          },
-          {
-            "number": 6,
-            "text": "Reinforce contingencies with the OT systems by",
-            "source_page": null
-          },
+            "text": "Implement a safety management system and improve safety culture at PGW.",
+            "source_page": 26
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Financial Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
           {
             "number": 7,
-            "text": "Capital Spend vs Budget",
-            "source_page": null
-          },
-          {
-            "number": 7,
-            "text": "Main Leaks Repaired by Material Type",
-            "source_page": null
-          },
-          {
-            "number": 7,
-            "text": "Non-Phone/Electronic Customer Services",
-            "source_page": null
-          },
-          {
-            "number": 7,
-            "text": "Document the threshold where cybersecurity",
-            "source_page": null
+            "text": "Update Internal Audit policies and procedures.",
+            "source_page": 34
           },
           {
             "number": 8,
-            "text": "Operating and Maintenance Expense vs Budget",
-            "source_page": null
-          },
-          {
-            "number": 8,
-            "text": "Main Replacement Miles by Abandonment",
-            "source_page": null
-          },
-          {
-            "number": 8,
-            "text": "Implement a cybersecurity-focused risk registry.",
-            "source_page": null
-          },
+            "text": "Formally document explanations for variances from the capital and operating budgets.",
+            "source_page": 34
+          }
+        ],
+        "themes": [
+          "Internal audit & internal controls"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Gas Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
           {
             "number": 9,
-            "text": "Cast Iron Proposed Replacement Miles and Investments",
-            "source_page": null
+            "text": "Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system.",
+            "source_page": 46
+          },
+          {
+            "number": 10,
+            "text": "Accelerate cast iron main replacement.",
+            "source_page": 46
+          },
+          {
+            "number": 11,
+            "text": "Plan and implement a process for gathering equipment and installation data in the GIS database.",
+            "source_page": 46
+          },
+          {
+            "number": 12,
+            "text": "Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations.",
+            "source_page": 46
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 13,
+            "text": "File Self-Certification forms with the Pennsylvania PUC annually.",
+            "source_page": 53
+          },
+          {
+            "number": 14,
+            "text": "Correct various deficiencies in physical security.",
+            "source_page": 53
+          },
+          {
+            "number": 15,
+            "text": "Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities.",
+            "source_page": 53
           }
         ],
         "themes": [
           "Cybersecurity & physical security",
-          "Workforce, training & succession planning",
-          "Internal audit & internal controls",
-          "Customer service & billing",
-          "Inventory, materials & fleet",
-          "Gas safety & pipeline integrity"
+          "Emergency preparedness & business continuity"
         ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "Emergency Preparedness (continued)",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 16,
+            "text": "Explore ways to eliminate or mitigate the identified security risk through a business case analysis.",
+            "source_page": 53
+          },
+          {
+            "number": 17,
+            "text": "Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position.",
+            "source_page": 53
+          },
+          {
+            "number": 18,
+            "text": "Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method.",
+            "source_page": 53
+          },
+          {
+            "number": 19,
+            "text": "Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels.",
+            "source_page": 53
+          },
+          {
+            "number": 20,
+            "text": "Implement a cybersecurity-focused risk registry.",
+            "source_page": 53
+          }
+        ],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity",
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "Materials Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 21,
+            "text": "Document the policies and procedures of PGW’s cycle counting function.",
+            "source_page": 57
+          },
+          {
+            "number": 22,
+            "text": "Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use.",
+            "source_page": 57
+          }
+        ],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "Customer Service",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 23,
+            "text": "Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers.",
+            "source_page": 67
+          },
+          {
+            "number": 24,
+            "text": "Improve customer service performance through expanding call center resources.",
+            "source_page": 67
+          },
+          {
+            "number": 25,
+            "text": "Complete implementation of the replacement CIS.",
+            "source_page": 67
+          },
+          {
+            "number": 26,
+            "text": "Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers.",
+            "source_page": 68
+          },
+          {
+            "number": 27,
+            "text": "Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers.",
+            "source_page": 68
+          }
+        ],
+        "themes": [
+          "Customer service & billing"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "Information Technology",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 28,
+            "text": "Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency.",
+            "source_page": 72
+          },
+          {
+            "number": 29,
+            "text": "Leverage and integrate data visualization software consistently across PGW.",
+            "source_page": 72
+          }
+        ],
+        "themes": [
+          "Information technology & systems"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "Fleet Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 30,
+            "text": "Improve efficiencies within the fleet department.",
+            "source_page": 77
+          }
+        ],
+        "themes": [
+          "Inventory, materials & fleet"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "Human Resources and Diversity",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 31,
+            "text": "Implement strategies for recruitment and retention of “at-risk” positions.",
+            "source_page": 84
+          },
+          {
+            "number": 32,
+            "text": "Drive safety performance to meet industry standards.",
+            "source_page": 84
+          }
+        ],
+        "themes": [],
         "cost_to_customers": false
       }
     ],
@@ -13099,7 +13903,8 @@
     "themes": [
       "Customer service & billing",
       "Cybersecurity & physical security",
-      "Gas safety & pipeline integrity",
+      "Emergency preparedness & business continuity",
+      "Information technology & systems",
       "Internal audit & internal controls",
       "Inventory, materials & fleet",
       "Workforce, training & succession planning"
@@ -19000,6 +19805,41 @@
     "cost_to_customers": true
   },
   {
+    "collection": "prudence_review",
+    "jurisdiction": "KS",
+    "source": "Kansas Corporation Commission",
+    "doc_type": "fuel & purchased-power prudence staff audit report",
+    "id": "2022-01-21_evergy-kansas_ks-21-ekme-329-gie-staff-fuel-prudence-report",
+    "company": "Evergy Kansas Metro and Evergy Kansas Central",
+    "company_raw": "Evergy Kansas Metro and Evergy Kansas Central",
+    "docket": "21-EKME-329-GIE",
+    "docket_full": null,
+    "issued_date": "2022-01-21",
+    "source_page_url": "https://estar.kcc.ks.gov/",
+    "pdf_download_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf?Id=c3651aba-c4e9-415f-a36c-a1a2c44d8514",
+    "captured_at": "2026-06-19",
+    "source_note": "Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 134,
+    "scanned_pages": [
+      104,
+      105
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
+    "cost_to_customers": false
+  },
+  {
     "collection": "state_audit",
     "jurisdiction": "OH",
     "source": "Public Utilities Commission of Ohio",
@@ -21425,6 +22265,36 @@
       "Informational postings"
     ],
     "cost_to_customers": true
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "NE",
+    "source": "Nebraska Public Service Commission",
+    "doc_type": "gas rate case order",
+    "id": "2021-01-26_black-hills-nebraska-gas_ne-ng-109-rate-order",
+    "company": "Black Hills Nebraska Gas, LLC d/b/a Black Hills Energy",
+    "company_raw": "Black Hills Nebraska Gas, LLC d/b/a Black Hills Energy",
+    "docket": "NG-109",
+    "docket_full": null,
+    "issued_date": "2021-01-26",
+    "source_page_url": "https://psc.nebraska.gov/natural-gas/ng-109-black-hills-nebraska-gas-llc-dba-black-hills-energy-rate-case-0",
+    "pdf_download_url": "https://psc.nebraska.gov/sites/psc.nebraska.gov/files/doc/2021-01-26%20NG-109%20Order%20Approving%20Stipulation%20And%20Settlement%20Agreement.pdf",
+    "captured_at": "2026-06-19",
+    "source_note": "Order Approving Stipulation and Settlement Agreement in Black Hills Nebraska Gas general rate increase, NE PSC Application No. NG-109; 14 pp. PDF: psc.nebraska.gov/sites/psc.nebraska.gov/files/doc/2021-01-26 NG-109 Order Approving Stipulation And Settlement Agreement.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 14,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "gas",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
   },
   {
     "collection": "ferc_audit",
@@ -28090,6 +28960,114 @@
     "findings": [],
     "structured": true,
     "themes": [],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_audit",
+    "jurisdiction": "PA",
+    "source": "PA PUC Bureau of Audits",
+    "doc_type": "management & operations audit",
+    "id": "2019-11-01_citizens-electric-wellsboro-electric-valley-energy_pa-mo-audit",
+    "company": "Citizens' Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc.",
+    "company_raw": "Citizens' Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc.",
+    "docket": "D-2019-3007883",
+    "docket_full": null,
+    "issued_date": "2019-11-01",
+    "source_page_url": "https://www.puc.pa.gov/press-release/2019/puc-makes-management-recommendations-to-citizens-electric-wellsboro-electric-and-valley-energy-releases-audit-and-implementation-plan",
+    "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1648244.pdf",
+    "captured_at": "2026-06-18",
+    "source_note": "Management & Operations Audit of Citizens' Electric Company of Lewisburg, Wellsboro Electric Company, and Valley Energy, Inc., PA PUC Bureau of Audits; PUC publication November 2019, Docket No. D-2019-3007883. PDF: puc.pa.gov/pcdocs/1648244.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.",
+    "archived_via": null,
+    "page_count": 68,
+    "scanned_pages": [
+      1,
+      68
+    ],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 4,
+    "findings": [
+      {
+        "index": 1,
+        "title": "Executive Management",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 1,
+            "text": "Execute the proposed plan to assign the Wellsboro CEO position to a qualified individual able to devote the necessary time to provide adequate leadership to Wellsboro by year end 2019.",
+            "source_page": 17
+          },
+          {
+            "number": 2,
+            "text": "Review all schedules in Valley Energy’s Annual Report to the PUC for accurate reporting and determine and correct any sources of errors.",
+            "source_page": 17
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "Electric Operations",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 3,
+            "text": "Reduce the number of unknown outages at Wellsboro by providing additional resources to assist in investigating unknown outages and/or through supplemental training for field operations employees.",
+            "source_page": 36
+          }
+        ],
+        "themes": [
+          "Workforce, training & succession planning"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "Emergency Preparedness",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 4,
+            "text": "Develop a business case to assess the options to create a C&T position to oversee the cybersecurity function for the C&T Companies.",
+            "source_page": 48
+          }
+        ],
+        "themes": [
+          "Cybersecurity & physical security",
+          "Emergency preparedness & business continuity"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "Human Resources",
+        "summary": null,
+        "is_other_matter": false,
+        "recommendations": [
+          {
+            "number": 5,
+            "text": "Establish minority employee and MWDBE vendor utilization goals and submit annual diversity reports to the PUC for Wellsboro Electric Company.",
+            "source_page": 52
+          }
+        ],
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
+    "themes": [
+      "Cybersecurity & physical security",
+      "Emergency preparedness & business continuity",
+      "Workforce, training & succession planning"
+    ],
     "cost_to_customers": false
   },
   {
@@ -34931,6 +35909,36 @@
     "cost_to_customers": false
   },
   {
+    "collection": "state_rate_case",
+    "jurisdiction": "DE",
+    "source": "Delaware Public Service Commission",
+    "doc_type": "base-rate case order",
+    "id": "2014-08-05_delmarva-power-light_de-13-115-order-8589",
+    "company": "Delmarva Power & Light Company",
+    "company_raw": "Delmarva Power & Light Company",
+    "docket": "13-115",
+    "docket_full": null,
+    "issued_date": "2014-08-05",
+    "source_page_url": "https://depsc.delaware.gov/commission-orders/2014-orders/",
+    "pdf_download_url": "https://depsc.delaware.gov/wp-content/uploads/sites/54/2017/03/8589.pdf",
+    "captured_at": "2026-06-19",
+    "source_note": "Findings, Opinion and Order No. 8589 in Delmarva Power & Light's electric distribution rate change, DE PSC Docket No. 13-115; 163 pp. PDF: depsc.delaware.gov/wp-content/uploads/sites/54/2017/03/8589.pdf. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 163,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [],
+    "cost_to_customers": false
+  },
+  {
     "collection": "prudence_review",
     "jurisdiction": "FERC",
     "source": "FERC (eLibrary)",
@@ -35243,6 +36251,38 @@
     "themes": [
       "Fuel & purchased-power cost recovery",
       "Tariff administration & oversight"
+    ],
+    "cost_to_customers": false
+  },
+  {
+    "collection": "state_rate_case",
+    "jurisdiction": "TX",
+    "source": "Public Utility Commission of Texas",
+    "doc_type": "fuel cost reconciliation order",
+    "id": "2005-12-19_southwestern-public-service_puct-29801-fuel-reconciliation-order",
+    "company": "Southwestern Public Service Company",
+    "company_raw": "Southwestern Public Service Company",
+    "docket": "29801",
+    "docket_full": null,
+    "issued_date": "2005-12-19",
+    "source_page_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=29801",
+    "pdf_download_url": "https://interchange.puc.texas.gov/Documents/29801_432_499091.PDF",
+    "captured_at": "2026-06-19",
+    "source_note": "Commission Order reconciling Southwestern Public Service Company's (SPS) fuel and purchased-power costs for 2002-2003, PUCT Docket 29801 (SOAH 473-04-6558), Item 432, issued December 19, 2005; 21 pp. A concluded contested fuel-cost reconciliation (complements the still-open El Paso Electric 57149). PDF: interchange.puc.texas.gov/Documents/29801_432_499091.PDF. Listed for reference (metadata-only).",
+    "archived_via": null,
+    "page_count": 21,
+    "scanned_pages": [],
+    "ocr_used": false,
+    "audit_period": null,
+    "industry": "electric",
+    "audit_type": null,
+    "functions": [],
+    "forms": [],
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
     ],
     "cost_to_customers": false
   },
@@ -39352,38 +40392,6 @@
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
     "doc_type": "internal audit",
-    "id": "tx_0000_024_audit-on-asset-management-fy-2021",
-    "company": "Audit on Asset Management (FY 2021)",
-    "company_raw": "Audit on Asset Management (FY 2021)",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.puc.texas.gov/agency/about/audit/",
-    "pdf_download_url": "https://ftp.puc.texas.gov/public/puct-info/agency/about/audit/reports/Asset Management2021-100.pdf",
-    "captured_at": "2026-06-14",
-    "source_note": "Public Utility Commission (TX)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [
-      "Internal audit & internal controls"
-    ],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "TX",
-    "source": "Public Utility Commission",
-    "doc_type": "internal audit",
     "id": "tx_0000_023_audit-of-the-general-law-division-s-publ",
     "company": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",
     "company_raw": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",
@@ -42197,36 +43205,6 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
-    "jurisdiction": "MS",
-    "source": "Public Service Commission",
-    "doc_type": null,
-    "id": "ms_0000_001_report-lack-of-service",
-    "company": "Report Lack of Service",
-    "company_raw": "Report Lack of Service",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ms.us",
-    "pdf_download_url": "https://www.psc.state.ms.us/ztg/home",
-    "captured_at": "2026-06-14",
-    "source_note": "Public Service Commission (MS)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
     "collection": "state_rate_case",
     "jurisdiction": "SD",
     "source": "South Dakota Public Utilities Commission",
@@ -44869,246 +45847,6 @@
       13,
       14
     ],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_007_media_advisory_5_28_26_fuel_st",
-    "company": "media advisory 5 28 26 fuel storm stip approval",
-    "company_raw": "media advisory 5 28 26 fuel storm stip approval",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/assets/files/9488/media_advisory_5_28_26_fuel_storm_stip_approval.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_006_2021-2023_regulated_provider_r",
-    "company": "2021-2023 Regulated Provider RFP",
-    "company_raw": "2021-2023 Regulated Provider RFP",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/downloads/2021-2023_Regulated_Provider_RFP.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_005_human-trafficking-hotline-noti",
-    "company": "human-trafficking-hotline-notice",
-    "company_raw": "human-trafficking-hotline-notice",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/downloads/human-trafficking-hotline-notice.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_004_psc-2022-map-packet",
-    "company": "psc-2022-map-packet",
-    "company_raw": "psc-2022-map-packet",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/downloads/psc-2022-map-packet.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_003_datacenterfactsheet",
-    "company": "datacenterfactsheet",
-    "company_raw": "datacenterfactsheet",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/downloads/datacenterfactsheet.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_001_alternative_efiling_memo",
-    "company": "Alternative eFiling Memo",
-    "company_raw": "Alternative eFiling Memo",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/downloads/Alternative_eFiling_Memo.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "State of GA Utility Commission",
-    "doc_type": "report",
-    "id": "ga_tier2_000_usf_low-incomeassistanceprogra",
-    "company": "USF Low-IncomeAssistancePrograms",
-    "company_raw": "USF Low-IncomeAssistancePrograms",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us/",
-    "pdf_download_url": "https://www.psc.state.ga.us/site/assets/files/1112/USF_Low-IncomeAssistancePrograms.pdf",
-    "captured_at": "2026-06-15",
-    "source_note": "GA PUC (Tier 2 deep scrape)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "GA",
-    "source": "Public Service Commission",
-    "doc_type": null,
-    "id": "ga_0000_001_psc-annual-reports",
-    "company": "PSC Annual Reports",
-    "company_raw": "PSC Annual Reports",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.state.ga.us",
-    "pdf_download_url": "https://www.psc.state.ga.us/annual-reports/",
-    "captured_at": "2026-06-14",
-    "source_note": "Public Service Commission (GA)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
     "industry": null,
@@ -48546,36 +49284,6 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
-    "jurisdiction": "AK",
-    "source": "Regulatory Commission",
-    "doc_type": null,
-    "id": "ak_0000_000_report-a-traffic-crash",
-    "company": "Report a Traffic Crash",
-    "company_raw": "Report a Traffic Crash",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.state.ak.us/rca",
-    "pdf_download_url": "https://www.dot.state.ak.us/stwdplng/accreptapp/index.shtml",
-    "captured_at": "2026-06-14",
-    "source_note": "Regulatory Commission (AK)",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": null,
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
     "collection": "state_rate_case",
     "jurisdiction": "NV",
     "source": "Public Utilities Commission of Nevada",
@@ -48761,38 +49469,6 @@
     "cost_to_customers": false
   },
   {
-    "collection": "ferc_audit",
-    "jurisdiction": "FERC",
-    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
-    "doc_type": null,
-    "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
-    "company": "Pacific Gas and Electric Company",
-    "company_raw": "Pacific Gas and Electric Company",
-    "docket": "A.24-02-012",
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
-    "pdf_download_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
-    "captured_at": "2026-06-10",
-    "source_note": "CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.",
-    "archived_via": null,
-    "page_count": 35,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": "electric",
-    "audit_type": null,
-    "functions": [
-      "generation"
-    ],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": true,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
     "collection": "state_rate_case",
     "jurisdiction": "NY",
     "source": "New York State Department of Public Service",
@@ -48916,68 +49592,6 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
-    "jurisdiction": "MS",
-    "source": "Mississippi Public Service Commission (MPSC)",
-    "doc_type": "management and operations audit",
-    "id": "2023-mississippi-power_ms-mo-audit",
-    "company": "Mississippi Power Company",
-    "company_raw": "Mississippi Power Company",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.ms.gov/filings/",
-    "pdf_download_url": "https://www.psc.ms.gov/filings/?utility=mississippi-power",
-    "captured_at": "2026-06-16",
-    "source_note": "Mississippi Power M&O audit orders from MPSC. Requires manual docket search.",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": "electric",
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "prudence_review",
-    "jurisdiction": "LA",
-    "source": "Louisiana Public Service Commission (LPSC)",
-    "doc_type": "fuel cost recovery - annual ERRA compliance order",
-    "id": "2023-entergy-louisiana-erera_la-fuel-review",
-    "company": "Entergy Louisiana, Inc.",
-    "company_raw": "Entergy Louisiana, Inc.",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.lpsc.louisiana.gov/utilities/electric/",
-    "pdf_download_url": "https://www.lpsc.louisiana.gov/utilities/electric/entergy-louisiana-llc/",
-    "captured_at": "2026-06-16",
-    "source_note": "Entergy Louisiana fuel-cost recovery orders from LPSC. Requires manual docket lookup to find specific PDF URLs.",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": "electric",
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [
-      "Fuel & purchased-power cost recovery"
-    ],
-    "cost_to_customers": false
-  },
-  {
     "collection": "state_rate_case",
     "jurisdiction": "AR",
     "source": "Arkansas Public Service Commission (APSC)",
@@ -49022,36 +49636,6 @@
     "pdf_download_url": "https://www.apsc.arkansas.gov/filings/?company=empire-district",
     "captured_at": "2026-06-16",
     "source_note": "The documents from APSC. Requires manual docket/order lookup.",
-    "archived_via": null,
-    "page_count": 0,
-    "scanned_pages": [],
-    "ocr_used": false,
-    "audit_period": null,
-    "industry": "electric",
-    "audit_type": null,
-    "functions": [],
-    "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
-    "themes": [],
-    "cost_to_customers": false
-  },
-  {
-    "collection": "state_audit",
-    "jurisdiction": "MS",
-    "source": "Mississippi Public Service Commission (MPSC)",
-    "doc_type": "management and operations audit",
-    "id": "2023-dominion-energy-ms_ms-audit",
-    "company": "Dominion Energy Mississippi",
-    "company_raw": "Dominion Energy Mississippi",
-    "docket": null,
-    "docket_full": null,
-    "issued_date": null,
-    "source_page_url": "https://www.psc.ms.gov/filings/",
-    "pdf_download_url": "https://www.psc.ms.gov/filings/?utility=dominion-energy",
-    "captured_at": "2026-06-16",
-    "source_note": "Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search.",
     "archived_via": null,
     "page_count": 0,
     "scanned_pages": [],
@@ -50603,10 +51187,10 @@
     "cost_to_customers": true
   },
   {
-    "collection": "ferc_audit",
-    "jurisdiction": "FERC",
-    "source": "FERC Office of Enforcement, Division of Audits & Accounting",
-    "doc_type": null,
+    "collection": "prudence_review",
+    "jurisdiction": "CA",
+    "source": "California Public Utilities Commission",
+    "doc_type": "ERRA compliance & reasonableness review decision",
     "id": "2010_southern-california-edison_ca-a09-04-002-d10-07-049-erra",
     "company": "Southern California Edison Company",
     "company_raw": "Southern California Edison Company",
@@ -50618,20 +51202,20 @@
     "captured_at": "2026-06-08",
     "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
     "archived_via": null,
-    "page_count": 1,
+    "page_count": 0,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
     "industry": "electric",
     "audit_type": null,
-    "functions": [
-      "generation"
-    ],
+    "functions": [],
     "forms": [],
     "finding_count": 0,
     "findings": [],
-    "structured": true,
-    "themes": [],
+    "structured": false,
+    "themes": [
+      "Fuel & purchased-power cost recovery"
+    ],
     "cost_to_customers": false
   },
   {

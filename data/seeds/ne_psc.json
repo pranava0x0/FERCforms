@@ -30,5 +30,21 @@
     "captured_at": "2026-06-07",
     "source_note": "Nebraska PSC Order (Application No. NG-0088) in the matter of SourceGas Distribution LLC seeking approval of the regulatory treatment of the net buyout costs of two gas supply-related contracts \u2014 a gas commodity / purchased-gas cost-recovery prudence determination (7 pp). Listed for reference (metadata-only). Source: Nebraska PSC orders repository (nebraska.gov/psc/orders/natgas/NG-0088.9.pdf).",
     "parse": false
+  },
+  {
+    "id": "2021-01-26_black-hills-nebraska-gas_ne-ng-109-rate-order",
+    "company": "Black Hills Nebraska Gas, LLC d/b/a Black Hills Energy",
+    "collection": "state_rate_case",
+    "jurisdiction": "NE",
+    "source": "Nebraska Public Service Commission",
+    "doc_type": "gas rate case order",
+    "industry": "gas",
+    "pdf_url": "https://psc.nebraska.gov/sites/psc.nebraska.gov/files/doc/2021-01-26%20NG-109%20Order%20Approving%20Stipulation%20And%20Settlement%20Agreement.pdf",
+    "source_page_url": "https://psc.nebraska.gov/natural-gas/ng-109-black-hills-nebraska-gas-llc-dba-black-hills-energy-rate-case-0",
+    "issued_date": "2021-01-26",
+    "docket": "NG-109",
+    "captured_at": "2026-06-19",
+    "source_note": "Order Approving Stipulation and Settlement Agreement in Black Hills Nebraska Gas general rate increase, NE PSC Application No. NG-109; 14 pp. PDF: psc.nebraska.gov/sites/psc.nebraska.gov/files/doc/2021-01-26 NG-109 Order Approving Stipulation And Settlement Agreement.pdf. Listed for reference (metadata-only).",
+    "parse": false
   }
 ]

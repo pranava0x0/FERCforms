@@ -1,0 +1,31 @@
+{
+  "collection": "prudence_review",
+  "jurisdiction": "KS",
+  "source": "Kansas Corporation Commission",
+  "doc_type": "fuel & purchased-power prudence staff audit report",
+  "id": "2022-01-21_evergy-kansas_ks-21-ekme-329-gie-staff-fuel-prudence-report",
+  "company": "Evergy Kansas Metro and Evergy Kansas Central",
+  "company_raw": "Evergy Kansas Metro and Evergy Kansas Central",
+  "docket": "21-EKME-329-GIE",
+  "docket_full": null,
+  "issued_date": "2022-01-21",
+  "source_page_url": "https://estar.kcc.ks.gov/",
+  "pdf_download_url": "https://estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf?Id=c3651aba-c4e9-415f-a36c-a1a2c44d8514",
+  "captured_at": "2026-06-19",
+  "source_note": "Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).",
+  "archived_via": null,
+  "page_count": 134,
+  "scanned_pages": [
+    104,
+    105
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

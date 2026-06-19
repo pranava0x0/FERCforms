@@ -1,6 +1,41 @@
-<project title="FERC Audit Explorer" summary="651 structured records (122 FERC audits, 26 prudence reviews, 391 state PUC audits); 1691 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-16). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="655 structured records (123 FERC audits, 29 prudence reviews, 382 state PUC audits); 1727 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-19). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
+<doc title="Southern Electric Generating Company" collection="FERC Audits" docket="FA24-3-000" issued="2026-05-07" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&amp;optimized=false">
+Finding 1: Accounting for Replacement of Minor Items of Property
+SEGCO improperly capitalized costs related to the replacement of minor items of property in a manner that was not consistent with its units of property listing and the Commission’s accounting requirements. SEGCO’s accounting caused utility plant to be overstated and maintenance expenses to be understated.
+Finding 2: Allowance for Funds Used During Construction
+SEGCO improperly accrued allowance for funds used during construction (AFUDC) on projects that were completed or ready to be placed into service. As a result, SEGCO over accrued AFUDC and overstated electric plant in service during the audit period.
+Finding 3: Computation of Depreciation Rates
+SEGCO improperly used a depreciation rate for computing depreciation expense for transmission plant that was not on file with the Commission.
+Finding 4: FERC Form Nos. 1 and 3-Q Reporting
+SEGCO did not properly follow the FERC Form Nos. 1 and 3-Q instructions and, therefore, did not report all required information in its FERC Form Nos. 1 and 3-Q filings. These actions reduced the transparency, accuracy, and usefulness of certain information in the reports. D.
+</doc>
+<doc title="Southwestern Electric Power Company" collection="FERC Audits" docket="FA24-2-000" issued="2026-03-19" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260319-3008&amp;optimized=false">
+Finding 1: Capitalization of Vegetation Management Costs
+SWEPCo’s vegetation management policy was not consistent with the Commission’s accounting regulations. Specifically, SWEPCo (1) improperly capitalized $97 million of vegetation management costs that were not related to the initial or original clearing of land and rights-of-way (ROW); (2) accrued Allowance for Funds Used During Construction (AFUDC) on the improperly capitalized vegetation management costs; and (3) included the same vegetation management costs in two different accounts and included both accounts as input for the purposes of computing its annual transmission revenue requirement (ATRR). As a result, SWEPCo overstated its electric plant and overbilled transmission customers.
+Finding 2: Prepaid Pension AFUDC
+SWEPCo improperly accrued AFUDC on its prepaid pension asset and included this AFUDC in the electric plant in service accounts. As a result, SWEPCo overstated its electric plant by $10 million and overbilled transmission customers.
+Finding 3: Allowance for Funds Used During Construction
+SWEPCo’s AFUDC rate derivation, AFUDC accrual, and AFUDC accounting were inconsistent with the Commission’s accounting regulations. Specifically, SWEPCo incorrectly (1) calculated its long-term debt cost rate; (2) included balances of Accounts 181, Unamortized Debt Expense, 189, Unamortized Loss on Reacquired Debt, and 226, Unamortized Discount on Long-Term Debt, in the long-term debt balances; (3) accrued AFUDC on completed projects, suspended projects, and equipment purchases; and (4) recorded the state portion of AFUDC debt and equity accumulated deferred income taxes (ADIT) in Account 283, Accumulated Deferred Income Taxes – Other, instead of Account 282, Accumulated Deferred Income Taxes − Other Property. As a result, SWEPCo over accrued AFUDC included in electric plant in service accounts and overbilled its transmission customers.
+Finding 4: Prepayments
+SWEPCo improperly recorded certain advance payments that were applicable to future accounting periods in administrative and general (A&amp;G) and operation and maintenance (O&amp;M) expense accounts, instead of in Account 165, Prepayments. As a result, SWEPCo did not accurately recognize certain expenses in the period in which they were incurred, leading to the misstatement of A&amp;G, O&amp;M, and other account balances reported in its FERC Form No. 1 filings.
+Finding 5: Accounting Misclassifications
+SWEPCo recorded various A&amp;G expenses in a manner contrary to the Commission’s accounting regulations. Some of the improper accounting resulted in SWEPCo overstating its ATRR and overbilling its transmission customers.
+Finding 6: Excess and Deficient Accumulated Deferred Income Tax
+SWEPCo improperly netted the excess and deficient ADIT related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in SWEPCo’s FERC Form No. 1 filings.
+Finding 7: FERC Form No. 1 Reporting
+SWEPCo did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information on certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.
+</doc>
+<doc title="DC Energy Holdings, LLC" collection="FERC Audits" docket="PA23-11-000" issued="2026-01-08" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260108-3014&amp;optimized=false">
+Finding 1: Submittal of Required Financial Statements
+DC Energy did not submit quarterly financial statements to PJM for Quarter 3, 2022 through Quarter 3, 2024 as required by PJM’s credit policy in Attachment Q of PJM’s OATT. Also, DC Energy did not submit quarterly financial statements to SPP during the audit period as required by SPP’s credit policy in Attachment X of SPP’s OATT. This action affected PJM and SPP’s overall risk management policy of monitoring credit risk to protect the market from participant defaults. D.
+1. Submit quarterly financial statements for the audit period to SPP.
+2. Submit quarterly financial statements for the period of Quarter 3, 2022 through Quarter 3, 2024 to PJM.
+3. Establish and implement policies and procedures to ensure compliance with credit policies, timelines, and other relevant requirements as specified in RTO/ISO tariffs.
+4. Establish and implement policies and procedures to review credit policies and requirements as RTOs/ISOs update their tariffs to ensure that DC Energy is submitting all required documents accurately and timely.
+5. Provide training to relevant staff on policies and procedures implemented in response to Recommendations 3 and 4 and repeat such training as needed. E.
+</doc>
 <doc title="Kern River Gas Transmission Company" collection="FERC Audits" docket="FA23-10-000" issued="2025-09-29" industry="gas" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20250929-3000&amp;optimized=false">
 Finding 1: Renewable Natural Gas Quality Specifications
 Kern River posted a Biomethane Operating Policy on its Informational Postings website, which lays out gas quality specifications for Renewable Natural Gas (RNG). However, the gas quality specifications in the Biomethane Operating Policy have not been incorporated into Kern River’s Tariff; thus, consistent with the Gas Quality Policy Statement, they cannot be enforced.
@@ -2883,14 +2918,6 @@ Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 20
 Listed for reference (not machine-parsed into findings).
 Listed on FERC ferc.gov/audits via Internet Archive Wayback Machine (snapshot 2021-12-07; origin www.ferc.gov); report PDF from FERC eLibrary, accession 20141024-3019 (fileID 13666270).
 </doc>
-<doc title="Pacific Gas and Electric Company" collection="FERC Audits" docket="A.24-02-012" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF">
-Listed for reference (not machine-parsed into findings).
-CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&amp;E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
-</doc>
-<doc title="Southern California Edison Company" collection="FERC Audits" docket="A.09-04-002" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm">
-Listed for reference (not machine-parsed into findings).
-CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
-</doc>
 <doc title="Puget Sound Energy" collection="Prudence Reviews" docket="UE-250747" issued="2025-12-24" industry="electric" source="https://www.utc.wa.gov/casedocket/2025/250747/docsets">
 Listed for reference (not machine-parsed into findings).
 WA UTC Order 01 on PSE Schedule 95 Power Cost Adjustment Clause revisions, Docket UE-250747, service date Dec 24, 2025. 9 pp. Page 1 verified.
@@ -2915,6 +2942,10 @@ PSC of Wisconsin Final Decision reconciling Wisconsin Power and Light (Alliant/W
 Listed for reference (not machine-parsed into findings).
 PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel costs to the authorized fuel cost plan, Docket 6630-FR-2024, issued 2025-08-12 (Wis. Admin. Code PSC 116.07 fuel prudence). PDF: apps.psc.wi.gov/ERF/ERFview/viewdoc.aspx?docid=557994.
 </doc>
+<doc title="Pacific Gas and Electric Company" collection="Prudence Reviews" docket="A.24-02-012" issued="2025-06-12" industry="electric" source="https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&amp;E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
+</doc>
 <doc title="Virginia Electric and Power Company (Dominion Energy Virginia)" collection="Prudence Reviews" docket="PUR-2025-00059" issued="2025-05-12" industry="electric" source="https://www.scc.virginia.gov/docketsearch">
 Listed for reference (not machine-parsed into findings).
 Virginia SCC Order establishing the 2025-2026 fuel factor for Dominion Energy Virginia, Case No. PUR-2025-00059, issued 2025-05-12 (§56-249.6 fuel-cost recovery/prudence). PDF: scc.virginia.gov/docketsearch/DOCS/85$601!.PDF.
@@ -2931,6 +2962,10 @@ FERC Order on Rehearing and Clarification re Constellation Mystic Power, LLC cos
 Listed for reference (not machine-parsed into findings).
 FERC Order Rejecting Wholesale Power Supply Contracts and Notices of Cancellation re Wabash Valley Power Association, Inc., Docket ER20-1041, issued 2023-12-05 — addressing the reasonableness of wholesale power-supply contract terms. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=ER20-1041); accession 20231205-3095.
 </doc>
+<doc title="Mt. Carmel Public Utility Co." collection="Prudence Reviews" docket="22-0639" issued="2023-11-02" industry="gas" source="https://www.icc.illinois.gov/docket/P2022-0639/documents">
+Listed for reference (not machine-parsed into findings).
+ICC Order in the purchased gas adjustment (PGA) reconciliation of Mt. Carmel Public Utility Co. — reconciliation of revenues collected under gas adjustment charges with the actual cost of gas demonstrated to be prudently incurred, Docket 22-0639, entered November 2, 2023; 3 pp. PDF: icc.illinois.gov/docket/P2022-0639/documents/343711/files/600359.pdf. Listed for reference (metadata-only).
+</doc>
 <doc title="CORE Electric Cooperative et al. v. Public Service Company of Colorado" collection="Prudence Reviews" docket="EL23-21" issued="2023-08-08" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230808-3031&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC Order on Complaint re CORE Electric Cooperative et al. v. Public Service Company of Colorado (Xcel), Docket EL23-21, issued 2023-08-08 — a wholesale rate/cost complaint against Public Service Company of Colorado. Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL23-21); accession 20230808-3031.
@@ -2938,6 +2973,10 @@ FERC Order on Complaint re CORE Electric Cooperative et al. v. Public Service Co
 <doc title="Louisiana Public Service Commission et al. v. System Energy Resources, Inc." collection="Prudence Reviews" docket="EL20-72" issued="2023-05-15" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20230515-3006&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
 FERC ALJ Initial Decision re Louisiana Public Service Commission et al. v. System Energy Resources, Inc., Docket EL20-72, issued 2023-05-15. The states' complaint challenges the prudence of costs System Energy recovers through the Unit Power Sales Agreement for the Grand Gulf nuclear plant (uprate, sale-leaseback, and related cost recovery). Metadata-only (free-form legal order). Found via the eLibrary AdvancedSearch API (searchText=EL20-72); accession 20230515-3006.
+</doc>
+<doc title="Evergy Kansas Metro and Evergy Kansas Central" collection="Prudence Reviews" docket="21-EKME-329-GIE" issued="2022-01-21" industry="electric" source="https://estar.kcc.ks.gov/">
+Listed for reference (not machine-parsed into findings).
+Staff's Report and Recommendation (KCC Utilities Division, Senior Auditor Bill Baldry) reviewing Evergy's fuel and purchased-power costs from the Feb 2021 winter storm, Docket 21-EKME-329-GIE; 134 pp. Companion to the docket settlement (id 2022-04-22_evergy-kansas_ks-21-ekme-329-gie-winter-storm-uri-stipulation). PDF: estar.kcc.ks.gov/estar/ViewFile.aspx/S202201210923455044.pdf. Listed for reference (metadata-only).
 </doc>
 <doc title="Delmarva Power &amp; Light Company" collection="Prudence Reviews" docket="ER09-1158" issued="2020-08-28" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20200828-3048&amp;optimized=false">
 Listed for reference (not machine-parsed into findings).
@@ -2983,10 +3022,6 @@ FERC order on the Mid-Atlantic Power Pathway (MAPP) abandonment cost recovery fi
 Listed for reference (not machine-parsed into findings).
 Georgia PSC Thirtieth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 &amp; 4), Docket 29849; cover 'February 2024' (month-only -&gt; issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/217538/98678.
 </doc>
-<doc title="Entergy Louisiana, Inc." collection="Prudence Reviews" docket="n/a" issued="n/a" industry="electric" source="https://www.lpsc.louisiana.gov/utilities/electric/">
-Listed for reference (not machine-parsed into findings).
-Entergy Louisiana fuel-cost recovery orders from LPSC. Requires manual docket lookup to find specific PDF URLs.
-</doc>
 <doc title="Georgia Power Company" collection="Prudence Reviews" docket="29849" issued="n/a" industry="electric" source="https://psc.ga.gov/search/facts-docket/?docketId=29849">
 Listed for reference (not machine-parsed into findings).
 Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Georgia Power, Vogtle Units 3 &amp; 4), Docket 29849; cover 'February 2023' (month-only -&gt; issued_date null). PDF: services.psc.ga.gov/.../DownloadFile/193355/74970.
@@ -2995,6 +3030,10 @@ Georgia PSC Twenty-eighth Semi-annual Vogtle Construction Monitoring Report (Geo
 Listed for reference (not machine-parsed into findings).
 Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D. Roetger; William R. Jacobs, Jr., PhD) on Georgia Power’s Twenty-second Semi-annual Vogtle Construction Monitoring Report, Docket 29849 (Vogtle construction prudence). Page 1 carries no date -&gt; issued_date null. PDF: services.psc.ga.gov/.../DownloadFile/181460/63470.
 </doc>
+<doc title="Southern California Edison Company" collection="Prudence Reviews" docket="A.09-04-002" issued="n/a" industry="electric" source="https://docs.cpuc.ca.gov/PUBLISHED/FINAL_DECISION/121393-16.htm">
+Listed for reference (not machine-parsed into findings).
+CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
+</doc>
 <doc title="FirstEnergy Pennsylvania Electric Company" collection="State PUC Audits" docket="n/a" issued="2025-09-25" industry="electric" source="https://www.puc.pa.gov/press-release/2025/puc-issues-management-efficiency-investigation-report-for-firstenergy-pennsylvania-electric-company-09252025">
 Listed for reference (not machine-parsed into findings).
 Management Efficiency Investigation (follow-up to the 2022 Management &amp; Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf. Findings &amp; recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.
@@ -3002,6 +3041,43 @@ Management Efficiency Investigation (follow-up to the 2022 Management &amp; Oper
 <doc title="Atmos Energy Corporation" collection="State PUC Audits" docket="25-00044" issued="2025-07-18" industry="gas" source="https://www.tn.gov/tpuc.html">
 Listed for reference (not machine-parsed into findings).
 Notice of Filing by the Utilities Division of the Tennessee Public Utility Commission of the Weather Normalization Adjustment (WNA) Audit re Atmos Energy Corporation, Docket No. 25-00044, July 18, 2025 — the Division's audit of Atmos's WNA gas-cost mechanism (20 pp). Listed for reference (metadata-only). Source: TPUC dockets archive (tpucdockets.tn.gov/archive/filings/2025/2500044a.pdf).
+</doc>
+<doc title="Pike County Light &amp; Power Company / Leatherstocking Gas Company LLC" collection="State PUC Audits" docket="D-2024-3050338" issued="2025-07-10" industry="electric" source="https://www.puc.pa.gov/press-release/2025/puc-issues-management-and-operations-audit-for-pike-county-light-power-and-leatherstocking-gas-company-07102025">
+Finding 1: Executive Management, Organizational Structure, and Safety
+1. Expand the succession planning process to include short-term contingency plans for the PCLP General Manager, and all key employees. (source p. 15)
+2. Formally document procedures for all human resources filing and reporting activities to ensure compliance. (source p. 16)
+3. Implement a system to govern oversight of the review, update and documentation of all policies, and create a policy for centralized management of the system. (source p. 17)
+4. Expand staffing at PCLP to ensure optimal electric operations. (source p. 18)
+Finding 2: Corporate Governance
+5. Establish an overarching internal control policy. (source p. 22)
+Finding 3: Cost Allocations and Affiliated Interests
+6. File an updated AIA which accurately reflects the intercompany transactions occurring between PCLP, LGC, and their affiliates. (source p. 25)
+7. Conduct routine periodic testing of intercompany transactions to ensure shared costs are distributed in accordance with approved methodologies. (source p. 26)
+8. Compare total actual costs for internally performed shared services and the cost of outside services to ensure cost effectiveness for all entities regularly. (source p. 27)
+9. Establish internal controls over intercompany transactions and cost allocations processes and comply with all aspects of the approved AIA. (source p. 27)
+Finding 4: Financial Management
+10. Establish a process to routinely review and update financial management policies and procedures and ensure version control is in place. (source p. 31)
+11. Document an internal dividend policy that provides advance notice and written explanation to the Commission for each dividend payment PCLP and LGC make in excess of 85% of net income. (source p. 31)
+Finding 5: Financial Management (continued)
+12. Document cash management procedures and establish guidelines for assessment of cash positions. (source p. 32)
+13. Develop and document guidelines and policies for budget creation and management including the regular reporting of significant budget variance explanations. (source p. 33)
+Finding 6: Electric Operations
+14. Develop and maintain a comprehensive damage prevention manual that details appropriate excavating procedures for PCLP’s electric utility infrastructure and assets. (source p. 36)
+15. Update PCLP’s storm response plan after a storm-related event or at least annually. (source p. 37)
+Finding 7: Gas Operations
+16. Establish and maintain a collection system for excavation damages and increase public awareness efforts for all involved parties about their responsibilities under PA One Call. (source p. 44)
+17. Review the UFG calculation, including the adjustment factor, and document all steps to ensure accuracy of reporting. (source p. 45)
+Finding 8: Emergency Preparedness
+18. Correct minor physical security deficiencies at PCLP and LGC and perform periodic physical security reviews of all facilities. (source p. 48)
+19. Develop comprehensive business continuity plans for PCLP and LGC and review, test, and update them annually. (source p. 49)
+20. Develop and maintain physical security plans for PCLP and LGC and review, update, and test annually. (source p. 49)
+21. Annually review, test, and update emergency response plans for PCLP and LGC, and update PCLP’s emergency response plan to detail company response to non-storm related emergencies. (source p. 50)
+Finding 9: Customer Service
+22. Formally document customer service policies and procedures to govern customer service practices. (source p. 55)
+Finding 10: Customer Service (continued)
+23. Revise the tariff and other customer-facing documentation to accurately reflect PCLP’s and LGC’s budget billing processes. (source p. 56)
+24. Explore eliminating manual meter reading at LGC to streamline operations, reduce errors, and efficiently use staff. (source p. 57)
+25. Improve the customer experience by expanding payment options and eliminating the manual process for budget billing. (source p. 57)
 </doc>
 <doc title="Mississippi Public Utilities Staff" collection="State PUC Audits" docket="n/a" issued="2025-06-30" industry="n/a" source="https://www.psc.ms.gov/">
 Listed for reference (not machine-parsed into findings).
@@ -3116,78 +3192,58 @@ Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June
 Listed for reference (not machine-parsed into findings).
 Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 2022 by Daymark Energy Advisors — Public Executive Summary (filed Nov 7, 2023 as a Utah Division of Public Utilities exhibit), Docket No. 23-035-01 — the independent audit of the prudence/recovery of RMP's net power (fuel &amp; purchased-power) costs trued up through the EBA for CY2022: RMP requested recovery of ~$175 million in deferred EBA costs; Daymark found outages at 4 units 'demonstrated sufficient imprudence that we recommend reducing EBA' (8 pp). Predecessor-year companion to the seeded CY2023 EBA audit (24-035-01). Listed for reference (metadata-only). Source: Utah PSC document repository (pscdocs.utah.gov/electric/23docs/2303501/). Page-1 verified 2026-06-10.
 </doc>
-<doc title="Philadelphia Gas Works" collection="State PUC Audits" docket="D-2022-3030321" issued="2023-03-02" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-and-implementation-plan-for-philadelphia-gas-works">
+<doc title="Duquesne Light Company" collection="State PUC Audits" docket="D-2023-3037425" issued="2023-09-21" industry="electric" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-duquesne-light">
+Listed for reference (not machine-parsed into findings).
+Management Efficiency Investigation of Duquesne Light Company, PA PUC Bureau of Audits; PUC publication 2023-09-21, Docket No. D-2023-3037425. Follow-up review; recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1799646.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).
+</doc>
+<doc title="UGI Utilities, Inc." collection="State PUC Audits" docket="D-2022-3032778" issued="2023-04-01" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-efficiency-investigation-report-for-ugi-utilities">
+Listed for reference (not machine-parsed into findings).
+Management Efficiency Investigation of UGI Utilities, Inc. (follow-up to the 2019 Focused Management &amp; Operations Audit), PA PUC Bureau of Audits; PUC publication April 2023, Docket No. D-2022-3032778. Recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1785721.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).
+</doc>
+<doc title="Philadelphia Gas Works" collection="State PUC Audits" docket="D-2022-3030321" issued="2023-03-02" industry="gas" source="https://www.puc.pa.gov/press-release/2023/puc-issues-management-and-operations-audit-for-philadelphia-gas-works">
 Finding 1: Corporate Governance
-1. Functional Rating Summary
-1. Customer Statistics
-1. Governance Oversight Summary
-1. Executive Management Organizational Chart
-1. Financial Management Organizational Chart
-1. Gas Operations Organizational Chart
-1. Fleet &amp; Materials Management Organizational Structure
-1. Customer Service and Collections Organizational Chart
-1. Information Service Organizational Chart
-1. Streamline corporate governance processes to
-1. Develop specific guidance for span of control
-1. Update Internal Audit policies and procedures.
-1. Implement a policy and metrics-tracked plan to
-1. File Self-Certification forms with the
-1. Leverage pandemic and low-income resources to
-1. Establish IS departmental performance metrics
-1. Improve efficiencies within the fleet department.
-1. Implement strategies for recruitment and retention
-2. Staffing Levels
-2. Capital Budget Timeline
-2. Miles of Main by Material Type
-2. Overall Customer Service Satisfaction Rate
-2. Vehicles and Equipment by Classification
-2. DBE Participation Performance
-2. Streamline the annual budget approval process.
-2. Implement a safety management system and
-2. Formally document explanations for variances
-2. Accelerate cast iron main replacement.
-2. Correct various deficiencies in physical security.
-2. Improve customer service performance through
-2. Leverage and integrate data visualization
-2. Drive safety performance to meet industry
-3. Summary of Recommendations
-3. Corporate Strategy
-3. Operating Budget Timeline
-3. Overtime Hours
-3. Regulatory Compliance and Customer Programs – Customer
-3. Fleet Key Performance Metrics Dashboard
-3. “At-Risk” Job Retention &amp; Turnover Rates
-3. Establish committee charters for all PFMC board
-3. Plan and implement a process for gathering
-3. Establish a company-wide program for
-3. Complete implementation of the replacement
-4. Fiscal Year 2022 Goals and Objectives
-4. Debt to Total Capital Ratio
-4. Field Operations Organizational Chart – Customer Service Focus
-4. OSHA Recordable Incident Rate
-4. Evaluate director performance annually to
-4. Reorganize the CARC reporting structure to
-4. Explore ways to eliminate or mitigate the
-4. Establish reporting and key performance metrics
-5. Spans of Control by Management Level
-5. Historical Credit Ratings
-5. Mercury Regulators Replaced
-5. Residential Customer Accounts Receivable Current Balances and
-5. Days Away Restricted or Transferred (DART)
-5. Increase focus on cybersecurity by developing a
-5. Repurpose or divest interest in district offices and
-6. Pension Funding Level
-6. Annual Breaks by Material Type
-6. Customer Service Performance Metrics
-6. Reinforce contingencies with the OT systems by
-7. Capital Spend vs Budget
-7. Main Leaks Repaired by Material Type
-7. Non-Phone/Electronic Customer Services
-7. Document the threshold where cybersecurity
-8. Operating and Maintenance Expense vs Budget
-8. Main Replacement Miles by Abandonment
-8. Implement a cybersecurity-focused risk registry.
-9. Cast Iron Proposed Replacement Miles and Investments
+1. Streamline corporate governance processes to efficiently align with PGW’s current regulatory framework. (source p. 18)
+2. Streamline the annual budget approval process. (source p. 18)
+3. Establish committee charters for all PFMC board committees. (source p. 18)
+4. Evaluate director performance annually to identify opportunities for improvement and to ensure emerging needs and priorities are met. (source p. 18)
+Finding 2: Executive Management and Organizational Structure
+5. Develop specific guidance for span of control expectations, periodically review spans of control, and document any narrow or wide spans for PGW’s management positions. (source p. 26)
+6. Implement a safety management system and improve safety culture at PGW. (source p. 26)
+Finding 3: Financial Management
+7. Update Internal Audit policies and procedures. (source p. 34)
+8. Formally document explanations for variances from the capital and operating budgets. (source p. 34)
+Finding 4: Gas Operations
+9. Implement a policy and metrics-tracked plan to replace mercury regulators within the distribution system. (source p. 46)
+10. Accelerate cast iron main replacement. (source p. 46)
+11. Plan and implement a process for gathering equipment and installation data in the GIS database. (source p. 46)
+12. Reorganize the CARC reporting structure to eliminate conflicts of interest with the SVP of Operations. (source p. 46)
+Finding 5: Emergency Preparedness
+13. File Self-Certification forms with the Pennsylvania PUC annually. (source p. 53)
+14. Correct various deficiencies in physical security. (source p. 53)
+15. Establish a company-wide program for inspections for safety, security, medical, and fire equipment, and make assessable standardized first aid kits at all regularly occupied facilities. (source p. 53)
+Finding 6: Emergency Preparedness (continued)
+16. Explore ways to eliminate or mitigate the identified security risk through a business case analysis. (source p. 53)
+17. Increase focus on cybersecurity by developing a dedicated cybersecurity budget, performing a staffing study and adjusting resources as needed, and create an executive level cybersecurity leadership position. (source p. 53)
+18. Reinforce contingencies with the OT systems by cross-training, increasing resources, or by some other method. (source p. 53)
+19. Document the threshold where cybersecurity risks will be relayed to the cabinet and board levels. (source p. 53)
+20. Implement a cybersecurity-focused risk registry. (source p. 53)
+Finding 7: Materials Management
+21. Document the policies and procedures of PGW’s cycle counting function. (source p. 57)
+22. Implement and/or increase automation of materials management processes to improve efficiency, accuracy, and ease-of-use. (source p. 57)
+Finding 8: Customer Service
+23. Leverage pandemic and low-income resources to help reduce the overall level of outstanding customer balances and maintain outreach efforts to engage payment troubled customers. (source p. 67)
+24. Improve customer service performance through expanding call center resources. (source p. 67)
+25. Complete implementation of the replacement CIS. (source p. 67)
+26. Establish reporting and key performance metrics for all back-office activities that support electronic, self-service, and alternative exchanges with customers. (source p. 68)
+27. Repurpose or divest interest in district offices and reallocate resources to benefit PGW ratepayers. (source p. 68)
+Finding 9: Information Technology
+28. Establish IS departmental performance metrics for transparency, evaluation, and improvement of productivity and efficiency. (source p. 72)
+29. Leverage and integrate data visualization software consistently across PGW. (source p. 72)
+Finding 10: Fleet Management
+30. Improve efficiencies within the fleet department. (source p. 77)
+Finding 11: Human Resources and Diversity
+31. Implement strategies for recruitment and retention of “at-risk” positions. (source p. 84)
+32. Drive safety performance to meet industry standards. (source p. 84)
 </doc>
 <doc title="Jersey Central Power &amp; Light Company (JCP&amp;L)" collection="State PUC Audits" docket="EA20110733" issued="2023-02-07" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
 Finding 1: s ........................................................................................................................ 7
@@ -4231,6 +4287,17 @@ Finding 251: Purchase  Lines Processed
 Finding 252: Purchase  Spend
 252. $197.3M $275.5M $267.5M $303.7M As the ACE and other PHI utility operations have become integrated into the Exelon systems, the supply chain organizations have begun tracking additional Exelon-wide supply chain measurements at the total PHI level. The VP of PHI Supply Integration attends quarterly PHI leadership meetings and PHI COO staff meeting to obtain informal information about how supply chain and procurement support is doing. EBSCo also periodically surveys its business partners to help assess satisfaction with its services, but supply chain management has not been the part of
 </doc>
+<doc title="Citizens&#x27; Electric Company of Lewisburg / Wellsboro Electric Company / Valley Energy, Inc." collection="State PUC Audits" docket="D-2019-3007883" issued="2019-11-01" industry="electric" source="https://www.puc.pa.gov/press-release/2019/puc-makes-management-recommendations-to-citizens-electric-wellsboro-electric-and-valley-energy-releases-audit-and-implementation-plan">
+Finding 1: Executive Management
+1. Execute the proposed plan to assign the Wellsboro CEO position to a qualified individual able to devote the necessary time to provide adequate leadership to Wellsboro by year end 2019. (source p. 17)
+2. Review all schedules in Valley Energy’s Annual Report to the PUC for accurate reporting and determine and correct any sources of errors. (source p. 17)
+Finding 2: Electric Operations
+3. Reduce the number of unknown outages at Wellsboro by providing additional resources to assist in investigating unknown outages and/or through supplemental training for field operations employees. (source p. 36)
+Finding 3: Emergency Preparedness
+4. Develop a business case to assess the options to create a C&amp;T position to oversee the cybersecurity function for the C&amp;T Companies. (source p. 48)
+Finding 4: Human Resources
+5. Establish minority employee and MWDBE vendor utilization goals and submit annual diversity reports to the PUC for Wellsboro Electric Company. (source p. 52)
+</doc>
 <doc title="New York State Electric &amp; Gas Corporation and Rochester Gas and Electric Corporation" collection="State PUC Audits" docket="16-M-0610" issued="2019-02-07" industry="electric" source="https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=16-M-0610">
 Listed for reference (not machine-parsed into findings).
 NY PSC Order Releasing Audit Report, Case 16-M-0610 — Comprehensive Management and Operations Audits of NYSEG and RG&amp;E (PSL 66(19)). Issued &amp; effective Feb 7, 2019. Page 1 verified.
@@ -4763,10 +4830,6 @@ Public Utility Commission (TX)
 Listed for reference (not machine-parsed into findings).
 Public Utility Commission (TX)
 </doc>
-<doc title="Audit on Asset Management (FY 2021)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/agency/about/audit/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
 <doc title="Audit of the General Law Division&#x27;s Public Information Act Requests (FY 2021)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/agency/about/audit/">
 Listed for reference (not machine-parsed into findings).
 Public Utility Commission (TX)
@@ -5103,10 +5166,6 @@ Public Service Commission (MT)
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MS)
 </doc>
-<doc title="Report Lack of Service" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ms.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MS)
-</doc>
 <doc title="MPSC seeks public comment on report on shutoff protections for critical care customers" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.michigan.gov/mpsc">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MI)
@@ -5439,38 +5498,6 @@ Public Utilities Commission (HI)
 Listed for reference (not machine-parsed into findings).
 GA PUC (Tier 2 deep scrape)
 </doc>
-<doc title="media advisory 5 28 26 fuel storm stip approval" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="2021-2023 Regulated Provider RFP" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="human-trafficking-hotline-notice" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="psc-2022-map-packet" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="datacenterfactsheet" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="Alternative eFiling Memo" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="USF Low-IncomeAssistancePrograms" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
-Listed for reference (not machine-parsed into findings).
-GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="PSC Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (GA)
-</doc>
 <doc title="GUFPA Violation Reporting System" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (GA)
@@ -5659,25 +5686,13 @@ Regulatory Commission (AK)
 Listed for reference (not machine-parsed into findings).
 Regulatory Commission (AK)
 </doc>
-<doc title="Report a Traffic Crash" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
 <doc title="Otter Tail Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).
 Otter documents from APSC. Requires manual docket/order lookup.
 </doc>
-<doc title="Mississippi Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.psc.ms.gov/filings/">
-Listed for reference (not machine-parsed into findings).
-Mississippi Power M&amp;O audit orders from MPSC. Requires manual docket search.
-</doc>
 <doc title="The Empire District Electric Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).
 The documents from APSC. Requires manual docket/order lookup.
-</doc>
-<doc title="Dominion Energy Mississippi" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.psc.ms.gov/filings/">
-Listed for reference (not machine-parsed into findings).
-Dominion Energy Mississippi audit/rate documents from MPSC. Requires manual docket search.
 </doc>
 <doc title="Public Service Electric and Gas Company (PSE&amp;G)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.nj.gov/bpu/about/divisions/audits/auditreports.html">
 Listed for reference (not machine-parsed into findings).

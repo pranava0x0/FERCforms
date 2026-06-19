@@ -4,6 +4,131 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ---
 
+## ▶ Done 2026-06-18 — PA M&O expansion (+4 audits, +29 findings) + 2 data-integrity fixes
+
+**+4 verified PA PUC Bureau-of-Audits docs** (all page-1-caption-verified, PROVEN by `verify_sources`):
+two **Management & Operations audits** parsed into findings via the existing Exhibit I-2 parser —
+**Pike County Light & Power / Leatherstocking Gas** (1886204, 10 findings/25 recs) and
+**Citizens' Electric / Wellsboro Electric / Valley Energy** (1648244, 4/5); plus two 2023
+**Management Efficiency Investigations** (Duquesne Light 1799646, UGI Utilities 1785721) kept
+**metadata-only** because they use an Exhibit II-1 follow-up format the M&O parser doesn't handle.
+Corpus baked 655 reports / 1715 findings.
+
+**Two pre-existing bugs surfaced + fixed** (see ISSUES.md): (1) the **PGW M&O seed pointed at the wrong
+pcdocs id** (a Koloko Transportation data-request letter) — corrected to the real 95-page audit
+`1775875.pdf`, restoring **11 findings/32 recs**; (2) **`verify_sources` crashed** on the non-list
+`tier3_targets.json` planning file — added a shape guard + regression test.
+
+**MEI Exhibit II-1 parser — assessed 2026-06-19, NOT a cheap win → deferred [low].** Examined the
+extracted text of both MEIs. The Exhibit II-1 "Summary of … Recommendations and Follow-Up Findings"
+is a **3-column table** (prior-audit rec | MEI follow-up finding `III-1 – …` | MEI follow-up rec)
+that linearizes per row as `col1 → label+col2 → col3`. The col2/col3 boundary is **unmarked**: when
+col3 is "None" (≈32 of 46 rows) it terminates cleanly, but the ~14 rows carrying a real new
+recommendation merge col2+col3 (and bleed into the next row's col1) with no delimiter — three cells
+concatenated, unrecoverable as clean verbatim. The `{ROMAN}-{N}` labels also appear in the TOC/List
+of Exhibits as *exhibit* numbers, so they can't anchor rows without strict body-only scoping. Net
+yield (~14 recs across 2 docs) doesn't justify a fragile parser that would garble per the verbatim
+discipline. **Both MEIs stay metadata-only.** Revisit only if many more MEIs accumulate AND a
+layout-aware (column-bbox) extractor replaces the linear-text one. New **M&O** audits (clean
+Exhibit I-2, one rec per row) remain the cheapest reliable findings.
+
+---
+
+## ▶ Done 2026-06-19 (cont.) — FERC audit refresh: +3 new audits since the Feb-2026 snapshot
+
+The live `/audits` page is Cloudflare-walled, but the **eLibrary AdvancedSearch API is scriptable from
+here** (warm the F5 cookie, POST AdvancedSearch by `FA{YY}`/`PA{YY}` docket prefix, filter
+`documentType:"Audit Summary"` + "issuing audit report"). Enumerated FA18-25/PA18-26 → **3 completed
+FERC audits issued after our 2025-09-29 latest**, all electric, all fetched + structured into findings:
+- **DC Energy Holdings** (PA23-11, 2026-01-08, non-financial) — 1 finding / 5 recs
+- **Southwestern Electric Power** (FA24-2, 2026-03-19, financial) — 7 findings
+- **Southern Electric Generating Co.** (FA24-3, 2026-05-07, financial) — 4 findings (AFUDC, depreciation, minor-property)
+
+Corpus 652 → **655** reports, total_listed 120 → 123, findings 1715 → **1727**. **#2 (gas/oil depth)
+confirmed a non-gap:** zero new gas/oil audits issued in the window — FERC simply hasn't issued any.
+Reusable discovery recipe + the "bare extract/structure re-processes the whole corpus → revert via
+`git checkout HEAD -- data/processed/`" gotcha are in [docs/data-sources.md](docs/data-sources.md).
+**To stay current**, re-run the AdvancedSearch enumeration each refresh (no browser needed).
+
+---
+
+## ▶ Done 2026-06-19 (cont.) — +2 concluded fuel-reconciliation docs (TX/IL); CA/MO dups caught
+
+Batched a CA/TX/MO/IL fuel-prudence finder agent. Net **+2** PROVEN metadata-only records:
+**TX** SPS (Southwestern Public Service) fuel & purchased-power cost reconciliation **Order**, PUCT
+29801 item 432 (21 pp — a *concluded* contested fuel case, complements the still-open El Paso 57149),
+and **IL** Mt. Carmel PGA gas-cost reconciliation order, ICC 22-0639 (3 pp, `prudence_review`).
+Corpus 650 → **652**. Dedup caught two would-be duplicates: the agent's **CA** PG&E 2023 ERRA doc was
+D.25-06-045 with a "PROPOSED DECISION" header — we already hold the *adopted* D.25-06-007 for the same
+review (skipped); the **MO** Ameren Tenth FAC Prudence Review (EO-2024-0053, doc 772394) was an exact
+already-seeded record. (Lesson reinforced: dedupe agent output by docket AND doc-id before seeding.)
+
+CA ERRA reasonableness reviews + MO Ameren FAC prudence + TX fuel reconciliations remain deep, mostly
+well-covered seams; further adds there are increasingly near-duplicates — prefer a *different*
+utility/year and always dedup first.
+
+---
+
+## ▶ Done 2026-06-19 (cont.) — +4 verified SC PSC Duke fuel-prudence docs
+
+Added 4 page-1-verified, PROVEN metadata-only SC PSC records (all `dms.psc.sc.gov`, plain-GET
+`/Attachments/{Order|Matter}/{guid}`): the annual **fuel-cost reasonableness** proceedings for the
+two Duke utilities (we already had Dominion SC 2024-2-E) — **Duke Energy Carolinas 2024-3-E** Order
+2024-727 (30 pp) + ORS audit-staff testimony (25 pp); **Duke Energy Progress 2024-1-E** Order 2024-500
+(58 pp) + ORS proposed order (25 pp). Corpus 646 → **650**. Same proceeding exists annually for both
+Duke utilities + Dominion if more breadth wanted. **NC NCUC** (Duke E-7/E-2 fuel riders) stays
+browser-walled (`starw1.ncuc.gov` 403s scripts). **GA PSC** fuel orders (FCR-26/27) are **image-only
+scans with no extractable text** — fetchable but can't be caption-verified per the quote discipline;
+need OCR before seeding.
+
+---
+
+## ▶ Done 2026-06-19 (cont.) — +5 verified thin-state docs (NM/DE/NE/KS/SD)
+
+Added 5 page-1-verified, PROVEN metadata-only records to under-covered states (each fetched 200 +
+%PDF, page counts confirmed): **NM** PNM rate-case Recommended Decision (22-00270-UT, 384 pp, new
+`nm_prc.json`), **DE** Delmarva Order No. 8589 (13-115, 163 pp), **NE** Black Hills NG-109 rate order
+(14 pp), **KS** Evergy winter-storm **fuel-prudence Staff audit report** (21-EKME-329-GIE, 134 pp —
+a 2nd doc in an existing docket, the substantive auditor report alongside the seeded stipulation),
+**SD** NorthWestern EL23-016 amended settlement order (2 pp). Corpus 641 → **646** reports.
+The parser-ready *findings* seam (PA Exhibit I-2, Overland "Comprehensive Listing") is confirmed
+exhausted for scriptable `.gov` access — a research pass found the remaining Overland findings-rich
+audits (NY NYSEG/RG&E 2018 ~81 recs, ME Versant) are behind JS portals needing browser capture; and
+the Overland house format is per-chapter prose, not the consolidated listing, on most reports.
+
+**[low] Orphan MS MPUS annual-report records lack a seed + source URL.** `data/processed/2024-06-30…`
+and `…2025-06-30_mississippi-public-utilities-staff_ms-annual-report` exist (20/27 pp, baked) but have
+**no seed file and `pdf_url: null`** — they can't be re-ingested or verified. The real 2024 URL is
+`psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf` (verified; the 2025 follows the same
+pattern — confirm before seeding). Recreate a small `ms_psc.json` with proper metadata for both so
+they're regenerable + provenance-complete. Fold into the crawler-seed quality audit below.
+
+---
+
+## ▶ Done 2026-06-19 — MEI parser assessed (deferred) + 14 crawler-junk records purged
+
+Assessed the MEI Exhibit II-1 parser (see the dated note above — deferred [low], 3-column boundary
+is unrecoverable from linear text). PA M&O corpus confirmed **exhausted** for the clean Exhibit I-2
+format (a research pass verified all qualifying audits are already seeded; older 2008-2016 cycles use
+a contractor "Stratified" format with no I-3 recs table). Then ran `verify_sources` and **removed 14
+DEAD records** — crawler false-positives (AK traffic-crash page, GA website assets, MS PSC homepage)
+and unresolved MS/LA/TX placeholders (`pdf_url` = a docket-search page; `source_note` = "requires
+manual docket search"). All 0-page/0-finding. Corpus 655 → **641** reports, findings unchanged (1715).
+See ISSUES.md.
+
+**[med] Crawler-seed quality audit — `state_puc.json` (197) + `state_puc_tier2_extended.json` (143).**
+These two tier-1/tier-2 web-crawl seed files are the junk source (the 14 DEAD all came from here or
+their per-state offshoots). `verify_sources` still shows **NON_PDF=150** — records whose URL returns
+200 but isn't a PDF; some are intentional (CA `.htm` decisions, OH/NC browser-capture `fetch=false`),
+but the crawler ones point at HTML landing/index pages and several survivors are off-theme by name
+(media advisories, fact sheets, eFiling memos). Do a per-record pass over these two files: keep only
+records that (a) are genuine utility audit/prudence/rate documents AND (b) resolve to a real fetched
+PDF or a deliberately-captured `.htm`/`fetch=false` source; drop nav-link/website-asset/placeholder
+rows. Guard against regression by tightening the crawler or adding a seed-quality test (e.g. reject a
+`pdf_url` that is a search/`?`-query or directory index for `parse`/`fetch` records).
+
+---
+
 ## ▶ CURRENT STATUS — 2026-06-08
 
 **Corpus (verified real):** 290 documents — 120 FERC audits + 26 prudence reviews + 35 state PUC audits + 109 state rate cases. ~1168 findings. State PUC Audits span **12 jurisdictions** (PA NJ NY CA OH MD MI CT MO MS TN UT) and the tab now surfaces **13 patterns of noncompliance** (was 1) mined from the parsed M&O-audit recommendations. Source of truth: `docs/data/meta.json`.
@@ -27,6 +152,8 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 **[HIGH] Scope: Add time-series financial analysis, Part-101 account mapping, and deterministic error-flag engine to surface rate-base anomalies against audit findings.**
 
 ✅ **Phase 0 COMPLETE (2026-06-15):** Download path verified. See `docs/FORM1_PHASE0_RESULTS.md` for full findings.
+
+🔶 **Phase 1 RECONNAISSANCE done (2026-06-19), parse/ETL still to build.** Browser-mapped the exact UI: forms.ferc.gov → "Form 1 Data" → year grid (**DBF 1994–2020 + 2021 Q1&Q2**; **XBRL 2021+**); each year is an ASP.NET `__doPostBack` that streams the DBF zip (no stable FileID URL for DBF years). **Download is browser-gated** — scripted `requests` postback replay does NOT render the year grid (ASP.NET WebForms state), and the MCP click didn't land a file. Remaining Phase-1: reliably fetch one year (2021 XBRL = stdlib-parseable/no dep, or 2020 DBF needs `dbfread`/`simpledbf` — not installed, advisory-check first) via a short Playwright download, then validate 1–2 tables. **Treat Phases 1(parse)→3 as a dedicated multi-session build, not a refresh increment — don't ship a partial ETL.** Full notes in `docs/FORM1_PHASE0_RESULTS.md`.
 
 **Key discovery:** Access confirmed at `https://forms.ferc.gov/` (Cloudflare-bypassed). Download mechanism identified: `forms.ferc.gov/DownloadFile.aspx?FileID={id}` (302 redirect). Both `.DBF` (pre-2021) and XBRL (2021+) formats available. **No blockers.** Recommended next: browser-capture Form 1 2023 for 1 utility (PG&E) to extract FileID pattern + validate DBF parsing.
 

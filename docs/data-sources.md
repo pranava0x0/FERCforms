@@ -85,6 +85,23 @@ These generalize across the per-state recipes below. They're the difference betw
   (`pipeline/backfill.py`, **ferc.gov-origin only**; records carry `archived_via`).
 - **eLibrary PDFs** — `pipeline/fetch.py` runs the **F5 WAF cookie dance**: GET the `filelist`
   endpoint to seed the session cookie, then POST `DownloadPDF`. Accession-keyed (`YYYYMMDD-####`).
+- **NEW FERC audits since the last `/audits` snapshot (scriptable, no browser needed — verified 2026-06-19).**
+  The live `/audits` page is Cloudflare-walled, but the eLibrary AdvancedSearch API enumerates audit
+  issuances directly. Warm the F5 cookie (`fetch.make_session()` + `fetch._warm(s, <any-recent-acc>)`),
+  then `POST /eLibraryWebAPI/api/Search/AdvancedSearch` with
+  `{"searchText":"<DOCKET-PREFIX>","searchFullText":false,"categories":["Issuance"]}`. **Enumerate the
+  audit docket series** `FA{YY}` (financial) and `PA{YY}` (non-financial), YY ≈ last ~6 FYs. A
+  **completed** report's hit has `documentType:"Audit Summary"` and a description matching
+  `issuing [Aa]udit [Rr]eport` (the `"…Commission is commencing/informing…"` hits are just audit
+  *start* notices — no report yet). Keep hits with `issuedDate` newer than the latest in `listing.json`,
+  dedupe by `acesssionNumber`, then append ListingEntry rows (id `YYYY-MM-DD_<co-slug>_<docket-lower>`,
+  `pdf_download_url=…/api/File/DownloadPDF?accesssionNumber={acc}`) and run
+  `fetch → classify → extract → structure → build`. **Gotcha that cost a revert (2026-06-19):** bare
+  `pipeline.extract` + `pipeline.structure` re-process the WHOLE corpus — they re-extracted/re-parsed
+  ~20 already-committed records and silently regressed some (PGW 11/32 → 1/70). After running them,
+  `git checkout HEAD -- data/processed/` to drop all tracked modifications (the new untracked report
+  dirs survive), then rebuild. (Note params `fromDate`/`toDate` are ignored; `sortBy:"date"` works but
+  the `page` param doesn't — prefix-enumeration is the reliable path.)
 - **eLibrary discovery (prudence reviews)** — `POST /eLibraryWebAPI/api/Search/AdvancedSearch` returns
   JSON (scriptable, unlike the `www.ferc.gov` HTML). **Working recipe (2026-06-02):** the docket goes
   in **`searchText`** (NOT a dedicated docket field — `docketNumber`/`dockets` are silently ignored),

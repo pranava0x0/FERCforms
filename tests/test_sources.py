@@ -311,6 +311,40 @@ def test_all_seed_files_validate_and_have_unique_ids():
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
 
 
+def test_verify_sources_load_seeds_skips_non_list_files():
+    """`verify_sources._load_seeds` must tolerate non-SourceSeed files in
+    data/seeds/ (e.g. tier3_targets.json, a state-keyed planning dict) instead of
+    crashing with 'str object does not support item assignment'. Regression for the
+    fabrication-sweep crash that blocked pre-commit verification (2026-06-18)."""
+    from pipeline import verify_sources
+
+    seeds = verify_sources._load_seeds()  # must not raise
+    assert seeds, "expected seeds to load"
+    assert all(isinstance(rec, dict) and "id" in rec for rec in seeds.values())
+
+
+def test_seed_inventory_covers_every_committed_seed():
+    """`pipeline.seed_inventory.load_inventory` (the finder-agent dedup harness)
+    must list every committed seed id, so a finder agent dedupes against the full
+    corpus — not a hand-written partial list (which let the 2026-06-19 CA/MO
+    near-duplicates through). Tolerates non-list planning files."""
+    from pipeline import seed_inventory
+
+    rows = seed_inventory.load_inventory()
+    assert rows, "inventory is empty"
+    assert all(r.get("id") and r.get("jurisdiction") for r in rows)
+    inv_ids = {r["id"] for r in rows}
+    assert len(inv_ids) == len(rows), "duplicate id in inventory"
+
+    seed_ids: set[str] = set()
+    for path in sorted(config.SEEDS_DIR.glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(data, list):
+            seed_ids |= {r["id"] for r in data if isinstance(r, dict) and "id" in r}
+    missing = seed_ids - inv_ids
+    assert not missing, f"inventory omits seeded docs: {sorted(missing)[:5]}"
+
+
 # --- fetch resilience (timeouts / throttling / broken TLS / WAF / placeholders) ---
 
 import logging  # noqa: E402

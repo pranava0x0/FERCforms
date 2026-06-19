@@ -12,12 +12,23 @@ Commit discipline (load-bearing): **keep a seed and its baked output (`docs/data
 
 ## 1. Rebuild only (data already ingested)
 
-Edit happened to `pipeline/patterns.py` (themes), `pipeline/llmstxt.py`, or a `report.json`? Just:
+Edit happened to `pipeline/patterns.py` (themes), `pipeline/llmstxt.py`, or a `report.json`?
+**A full rebuild is THREE steps, not one** — `build` does not regenerate everything:
 
 ```bash
 python3 -m pipeline.build        # re-bakes docs/data/*.json + llms.txt + llms-full.txt
+python3 -m pipeline.patterns     # writes data/processed/patterns.json (GITIGNORED test artifact)
+python3 -m pipeline.csv_export   # regenerates docs/data/findings.csv (separate from build)
 python3 -m pytest -q
 ```
+
+Why all three (each omission bit in the 2026-06-19 session):
+- **`pipeline.patterns`** writes `data/processed/patterns.json`, which `build` does NOT, and which
+  `tests/test_themes.py` reads. It's **gitignored**, so a *fresh worktree fails 3 theme tests* until
+  you run it — run `pipeline.patterns` first thing in a new clone/worktree before trusting `pytest`.
+- **`pipeline.csv_export`** regenerates `docs/data/findings.csv` (a committed build output) and is
+  **not** part of `build` — skip it after a data change and you commit a stale CSV. (No findings
+  changed? The CSV won't change either — that's expected, not a skip.)
 
 ## 2. Full FERC pipeline (from scratch / new audit year)
 
@@ -54,13 +65,29 @@ The high-value, repeatable path. **Always verify before seeding** (opaque doc ID
    `load_seed` raises otherwise.
 4. **Ingest + build + verify:**
    ```bash
-   python3 -m pipeline.sources --seed data/seeds/<source>.json
-   python3 -m pipeline.build
+   python3 -m pipeline.sources --seed data/seeds/<source>.json   # ONE seed file per call
+   python3 -m pipeline.build && python3 -m pipeline.patterns && python3 -m pipeline.csv_export
    python3 -m pytest -q
    ```
    Then load `python3 -m http.server -d docs 8000`, open the **State PUC Audits** tab, confirm the
    records render ("Listed for reference" with the right doc-type pill).
-5. **Commit** the seed + new `data/processed/<id>/report.json` + baked `docs/data` together.
+
+   **Two re-ingest gotchas (2026-06-19):**
+   - **Don't loop `pipeline.sources` over multiple seed files in one shell command.** The harness may
+     background a `for … do pipeline.sources … done` loop and silently drop later iterations (the SD
+     seed vanished this way). Run each seed file as its own call, or one combined run, and confirm
+     each finished.
+   - **Re-running a multi-record seed file re-extracts `text.json` for ALL its records.** A
+     no-clobber guard protects existing `report.json`, **but not `text.json`** — and a throttled
+     burst re-download can return a *truncated/wrong* PDF, silently corrupting a previously-good
+     record (this is how the PGW seed got a 3-page stub over its real 95-page audit). After
+     re-ingesting a file you only added to, **spot-check that pre-existing records kept their expected
+     `page_count`** (`python3 -c "import json;print(json.load(open('data/processed/<id>/report.json'))['page_count'])"`).
+5. **Verify sources before committing:** `python3 -m pipeline.verify_sources` — new records must land
+   in **PROVEN** (DEAD/NON_PDF for a real PDF is a wrong/dead URL — fix it, don't commit it). The
+   sweep also catches the wrong-document class of bug (a seed `pdf_url` pointing at an unrelated doc).
+6. **Commit** the seed + new `data/processed/<id>/report.json` (force-add: `git add -f`, it's
+   gitignored) + baked `docs/data` (incl. `findings.csv`) together.
 
 ## 4. WAF-blocked source (OH PUCO, NC NCUC, FERC /audits)
 

@@ -151,6 +151,48 @@ The full per-regulator access recipes and the step-by-step workflow live in
 
 `SourceSeed`'s `extra="forbid"` + `load_seed`'s `.gov` guard catch bad fields/hosts; a test
 validates every committed seed.
+
+### Dispatching a research-finder agent (web discovery of new docs)
+
+Finding NEW real `.gov` documents to seed is the one task where a `general-purpose` agent *earns
+its cost* — it's open-ended discovery that **requires fetching + page-1 verification per candidate**
+(unlike a bounded "find docket X" lookup, which stays inline per § "What NOT to do"). The agents in
+the 2026-06-19 session performed well on rigor (every candidate fetched + caption-verified, zero
+fabrication, walled/exhausted targets reported honestly). Rules learned that session:
+
+1. **Pre-flight the hypothesis against our OWN data before spawning.** Before sending an agent to
+   "find more docs matching format/format X," confirm X is real with a near-free local check (grep
+   the parser's anchor string across `data/seeds` / `data/processed`; re-read the parser). The
+   2026-06-19 Overland-finder agent (~85k tokens) was launched on the premise that Overland audits
+   share the "Comprehensive Listing of All Recommendations" our parser keys on — it returned `[]`
+   *and* claimed our own seeded PSE&G doc lacks that listing, contradicting the parser that extracts
+   17 findings from it via that exact anchor. A 1-minute local grep would have shown the premise was
+   shaky and saved the run.
+2. **Batch by breadth, don't multiply by unit.** One agent covering 8–10 states beats eight
+   single-state agents (each re-loads the system prompt + tools). Sequence agents only when the prior
+   result genuinely informs the next direction — don't fan out five in parallel "to be thorough."
+3. **Record exhausted / walled seams durably** in BACKLOG.md and [docs/data-sources.md](docs/data-sources.md)
+   so no future session re-spends an agent confirming the same dead end (e.g. "PA M&O Exhibit-I-2
+   corpus exhausted"; "NC NCUC `starw1.ncuc.gov` 403s scripts → browser-capture only"; "GA PSC fuel
+   orders are image-only scans → need OCR"). A confirmed-negative is a real deliverable — capture it.
+4. **The non-negotiable verification template** (every finder-agent prompt must include): give the
+   already-seeded list to dedupe against; define "on-theme" narrowly; require the agent to **fetch
+   each PDF (HTTP 200) and read pages 1–3** to confirm caption/utility/docket/date; **never guess or
+   construct a URL** (a search/`?`-query or directory index does NOT qualify — only the document PDF);
+   **`.gov`/official host only**; return a strict JSON array; **honesty over quantity, `[]` is a
+   valid answer**; and report which targets were walled/unfetchable. This template caught GA
+   image-scans, off-theme docs, and mislabeled filings — keep it verbatim.
+
+**Give the agent the current corpus inventory so it self-dedupes** — don't hand-write a partial
+"already have" list (that's how the 2026-06-19 CA PG&E ERRA + MO Ameren FAC near-duplicates reached
+post-hoc dedup). Generate it: `python3 -m pipeline.seed_inventory [--jurisdiction SC TX …]` prints
+every held doc as `JURIS | docket | company | id` — paste the relevant slice into the finder prompt.
+
+After the agent returns: **dedupe every candidate** (`grep` its docket + pcdocs/guid id across
+`data/seeds`, or check it against the inventory) and **re-verify the URL fetches from the pipeline UA**
+(`curl` → `%PDF` + page count) before seeding — agents occasionally surface a doc already seeded under
+a different id, or a URL that 200s for a browser but not the pipeline.
+
 ### Extracting text from seed documents (rate cases, state audits, etc.)
 
 The extraction pipeline works across both FERC audits (from listing.json) and seed documents (from reports.json):
@@ -191,6 +233,33 @@ Key insight: seed documents are identified by their presence in reports.json wit
 
 
 ---
+
+## After every agent run — evaluate it (STANDING PRACTICE)
+
+Every time you spawn an agent (`Agent` tool, any subagent_type), do a short retrospective once it
+returns — **this is not optional**, it's how the agent rules stay sharp:
+
+1. **Reason** — was an agent the right tool, or would inline `WebSearch`/Python/`grep` have done it
+   cheaper? (See § "What NOT to do" thresholds.) A bounded lookup or data query over files we control
+   should NOT have been an agent.
+2. **Cost** — note the `subagent_tokens` + `tool_uses` from the result's `<usage>` block. Compute a
+   rough **tokens-per-useful-result** (e.g. per verified doc). The 2026-06-19 finder agents ran
+   ~13–17k tok/doc when they hit, but a dry speculative run cost 85k for `[]` and a dup-heavy run cost
+   ~45k/net-doc. Flag any run > ~40k tok/useful-result as a candidate to restructure.
+3. **Transcript & result** — did it follow the prompt's hard rules (verification, no guessed URLs,
+   honest `[]`)? Did the result hold up under your own dedupe/verify checks, or did it surface
+   dups/wrong docs you had to catch? A confirmed-negative (seam exhausted/walled) **counts as a
+   useful result** — but only if you record it so it's never re-run.
+4. **Improve** — fold the lesson into the right place and say you did:
+   - a recurring *prompt* fix → the finder-agent template (§ above) / the skill;
+   - a recurring *manual* step (dedupe, hypothesis pre-check) → a **harness** (e.g.
+     `pipeline.seed_inventory`) + a test, so it's not hand-done next time;
+   - a *cost/threshold* lesson → § "What NOT to do" + a dated memory note
+     (`research_finder_agent_review_*`, `agent_usage_review_*`);
+   - a *dead seam* → BACKLOG.md / docs/data-sources.md.
+
+Rule of thumb: if the same correction would apply to the *next* agent run, it belongs in a file, not
+just this turn's reply.
 
 ## Agent checkpointing & failure logging (multi-step ingest tasks)
 

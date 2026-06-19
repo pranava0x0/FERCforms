@@ -46,5 +46,21 @@
     "captured_at": "2026-06-07",
     "source_note": "Montana-Dakota Utilities Co. filing for Approval of the Annual Update to its Transmission Cost Recovery (TCR), before the South Dakota Public Utilities Commission, Docket No. EL25-006 (2 pp). Listed for reference (metadata-only). Source: SD PUC electronic docket, EL25-006 (puc.sd.gov/commission/dockets/electric/2025/EL25-006/EL25-006TCR.pdf).",
     "parse": false
+  },
+  {
+    "id": "2024-01-17_northwestern-energy_sd-el23-016-amended-settlement-order",
+    "company": "NorthWestern Corporation d/b/a NorthWestern Energy",
+    "collection": "state_rate_case",
+    "jurisdiction": "SD",
+    "source": "South Dakota Public Utilities Commission",
+    "doc_type": "rate case order",
+    "industry": "electric",
+    "pdf_url": "https://puc.sd.gov/commission/dockets/electric/2023/el23-016/EL23-016settlementAmended.pdf",
+    "source_page_url": "https://puc.sd.gov/Dockets/Electric/2023/EL23-016.aspx",
+    "issued_date": "2024-01-17",
+    "docket": "EL23-016",
+    "captured_at": "2026-06-19",
+    "source_note": "Amended Order Granting Joint Motion for Approval of Settlement Stipulation in NorthWestern Energy's electric rate increase, SD PUC Docket EL23-016. PDF: puc.sd.gov/commission/dockets/electric/2023/el23-016/EL23-016settlementAmended.pdf. Listed for reference (metadata-only).",
+    "parse": false
   }
 ]

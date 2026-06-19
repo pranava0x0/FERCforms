@@ -1,0 +1,65 @@
+{
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement, Division of Audits & Accounting",
+  "doc_type": null,
+  "id": "2026-01-08_dc-energy-holdings-llc_pa23-11",
+  "company": "DC Energy Holdings, LLC",
+  "company_raw": "DC Energy Holdings, LLC (PA23-11)",
+  "docket": "PA23-11",
+  "docket_full": "PA23-11-000",
+  "issued_date": "2026-01-08",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260108-3014&optimized=false",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260108-3014",
+  "captured_at": "2026-06-19",
+  "source_note": "FERC audit report (Letter order issuing Audit Report), PA23-11; accession resolved via eLibrary AdvancedSearch API (searchText=PA23-11) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
+  "archived_via": null,
+  "page_count": 23,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2020 to January 31, 2025",
+  "industry": "electric",
+  "audit_type": "non-financial",
+  "functions": [
+    "generation",
+    "transmission"
+  ],
+  "forms": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Submittal of Required Financial Statements",
+      "summary": "DC Energy did not submit quarterly financial statements to PJM for Quarter 3, 2022 through Quarter 3, 2024 as required by PJM’s credit policy in Attachment Q of PJM’s OATT. Also, DC Energy did not submit quarterly financial statements to SPP during the audit period as required by SPP’s credit policy in Attachment X of SPP’s OATT. This action affected PJM and SPP’s overall risk management policy of monitoring credit risk to protect the market from participant defaults. D.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Submit quarterly financial statements for the audit period to SPP.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Submit quarterly financial statements for the period of Quarter 3, 2022 through Quarter 3, 2024 to PJM.",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Establish and implement policies and procedures to ensure compliance with credit policies, timelines, and other relevant requirements as specified in RTO/ISO tariffs.",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Establish and implement policies and procedures to review credit policies and requirements as RTOs/ISOs update their tariffs to ensure that DC Energy is submitting all required documents accurately and timely.",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 3 and 4 and repeat such training as needed. E.",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
+}
