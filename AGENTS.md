@@ -183,10 +183,15 @@ fabrication, walled/exhausted targets reported honestly). Rules learned that ses
    valid answer**; and report which targets were walled/unfetchable. This template caught GA
    image-scans, off-theme docs, and mislabeled filings — keep it verbatim.
 
+**Give the agent the current corpus inventory so it self-dedupes** — don't hand-write a partial
+"already have" list (that's how the 2026-06-19 CA PG&E ERRA + MO Ameren FAC near-duplicates reached
+post-hoc dedup). Generate it: `python3 -m pipeline.seed_inventory [--jurisdiction SC TX …]` prints
+every held doc as `JURIS | docket | company | id` — paste the relevant slice into the finder prompt.
+
 After the agent returns: **dedupe every candidate** (`grep` its docket + pcdocs/guid id across
-`data/seeds`) and **re-verify the URL fetches from the pipeline UA** (`curl` → `%PDF` + page count)
-before seeding — agents occasionally surface a doc already seeded under a different id, or a URL that
-200s for a browser but not the pipeline.
+`data/seeds`, or check it against the inventory) and **re-verify the URL fetches from the pipeline UA**
+(`curl` → `%PDF` + page count) before seeding — agents occasionally surface a doc already seeded under
+a different id, or a URL that 200s for a browser but not the pipeline.
 
 ### Extracting text from seed documents (rate cases, state audits, etc.)
 
@@ -228,6 +233,33 @@ Key insight: seed documents are identified by their presence in reports.json wit
 
 
 ---
+
+## After every agent run — evaluate it (STANDING PRACTICE)
+
+Every time you spawn an agent (`Agent` tool, any subagent_type), do a short retrospective once it
+returns — **this is not optional**, it's how the agent rules stay sharp:
+
+1. **Reason** — was an agent the right tool, or would inline `WebSearch`/Python/`grep` have done it
+   cheaper? (See § "What NOT to do" thresholds.) A bounded lookup or data query over files we control
+   should NOT have been an agent.
+2. **Cost** — note the `subagent_tokens` + `tool_uses` from the result's `<usage>` block. Compute a
+   rough **tokens-per-useful-result** (e.g. per verified doc). The 2026-06-19 finder agents ran
+   ~13–17k tok/doc when they hit, but a dry speculative run cost 85k for `[]` and a dup-heavy run cost
+   ~45k/net-doc. Flag any run > ~40k tok/useful-result as a candidate to restructure.
+3. **Transcript & result** — did it follow the prompt's hard rules (verification, no guessed URLs,
+   honest `[]`)? Did the result hold up under your own dedupe/verify checks, or did it surface
+   dups/wrong docs you had to catch? A confirmed-negative (seam exhausted/walled) **counts as a
+   useful result** — but only if you record it so it's never re-run.
+4. **Improve** — fold the lesson into the right place and say you did:
+   - a recurring *prompt* fix → the finder-agent template (§ above) / the skill;
+   - a recurring *manual* step (dedupe, hypothesis pre-check) → a **harness** (e.g.
+     `pipeline.seed_inventory`) + a test, so it's not hand-done next time;
+   - a *cost/threshold* lesson → § "What NOT to do" + a dated memory note
+     (`research_finder_agent_review_*`, `agent_usage_review_*`);
+   - a *dead seam* → BACKLOG.md / docs/data-sources.md.
+
+Rule of thumb: if the same correction would apply to the *next* agent run, it belongs in a file, not
+just this turn's reply.
 
 ## Agent checkpointing & failure logging (multi-step ingest tasks)
 
