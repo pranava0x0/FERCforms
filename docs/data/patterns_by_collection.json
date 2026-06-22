@@ -505,7 +505,7 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-06-19"
+    "generated_at": "2026-06-22"
   },
   "prudence_review": {
     "report_count": 29,
@@ -601,16 +601,16 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-06-19"
+    "generated_at": "2026-06-22"
   },
   "state_audit": {
-    "report_count": 382,
+    "report_count": 387,
     "finding_count": 587,
     "other_matter_count": 0,
     "recommendation_count": 761,
     "by_industry": {
       "unknown": 325,
-      "electric": 34,
+      "electric": 39,
       "gas": 21,
       "water": 2
     },
@@ -621,9 +621,9 @@
       "2020": 2,
       "2021": 2,
       "2022": 3,
-      "2023": 5,
-      "2024": 9,
-      "2025": 6
+      "2023": 6,
+      "2024": 10,
+      "2025": 9
     },
     "by_function": {},
     "themes": [
@@ -671,6 +671,23 @@
         ]
       },
       {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 105,
+        "report_count": 12,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "Affiliated Interests and Cost Allocations",
+          "s - - Cash Management .................................................................................. 96",
+          "s .................................................................................................................... 246"
+        ]
+      },
+      {
         "theme": "Workforce, training & succession planning",
         "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
         "keywords": [
@@ -688,23 +705,6 @@
           "Human Resources and Diversity (continued)",
           "Cost Allocations and Affiliated Interests",
           "Purchasing and Materials Management"
-        ]
-      },
-      {
-        "theme": "Affiliate / intercompany transactions",
-        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-        "keywords": [
-          "affiliate",
-          "intercompany",
-          "inter-company"
-        ],
-        "finding_count": 105,
-        "report_count": 11,
-        "example_titles": [
-          "Cost Allocations and Affiliated Interests",
-          "Affiliated Interests and Cost Allocations",
-          "s - - Cash Management .................................................................................. 96",
-          "s .................................................................................................................... 246"
         ]
       },
       {
@@ -1116,7 +1116,7 @@
         "count": 2
       }
     ],
-    "generated_at": "2026-06-19"
+    "generated_at": "2026-06-22"
   },
   "state_rate_case": {
     "report_count": 121,
@@ -1480,6 +1480,6 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-06-19"
+    "generated_at": "2026-06-22"
   }
 }
