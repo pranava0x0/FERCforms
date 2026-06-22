@@ -1,160 +1,70 @@
 # FERC Audit Themes & Noncompliance Patterns
 
-**Generated**: 2026-06-15  
-**Data Source**: 447 audit reports (FERC + state PUC), 1263 findings, 1730 recommendations
+> **Auto-generated from `docs/data/patterns.json`** (regenerate with `python3 -m pipeline.build && python3 -m pipeline.patterns`).
+> Every count below is mined directly from the structured corpus — keyword-tagged finding/recommendation
+> text, never an LLM editorial call. If a number here disagrees with `patterns.json`, `patterns.json` wins.
+
+**Generated:** 2026-06-22  
+**Corpus:** 660 structured reports · 1727 verbatim findings · 2185 recommendations  
+**Collections:** ferc_audit 123, prudence_review 29, state_audit 387, state_rate_case 121  
+**Themes identified:** 25
 
 ---
 
 ## Summary
 
-Cross-analysis of historical FERC electric/gas/oil audits (Form 1/2/6) plus state prudence reviews identifies **25 recurring themes** of noncompliance. These represent the **most common audit findings** — areas where utilities consistently underreport or misclassify items.
+Cross-analysis of 660 historical FERC (Form 1/2/6) audits, FERC prudence orders, and
+state PUC audit/rate-case documents surfaces **25 recurring noncompliance themes**. Themes are
+assigned by transparent keyword rules (`pipeline/patterns.py` `THEME_RULES`) scanning finding titles and
+recommendation text — no paraphrase, no compliance score, no model judgement. A report counts once per
+theme regardless of how many of its findings match.
 
----
+## All themes by frequency
 
-## Top 10 Themes by Frequency
+| # | Theme | Reports | Findings | Description | Example finding titles |
+|---|-------|--------:|---------:|-------------|------------------------|
+| 1 | **Accounting misclassification** | 68 | 182 | Costs or revenues booked to the wrong FERC account. | Prepayments; Accounting Misclassifications; Allowance for Funds Used During Construction |
+| 2 | **Form reporting (Form No. 1/2/6, Page 700)** | 58 | 155 | Errors or omissions in the annual FERC forms utilities file. | Prepayments; Excess and Deficient Accumulated Deferred Income Tax; FERC Form No. 1 Reporting |
+| 3 | **Fuel & purchased-power cost recovery** | 54 | 28 | Fuel, purchased-power, and energy-cost recovery or prudence matters. | Recovery of Fuel Contract Buyout Costs; Accounting for Fuel Storage and Handling; Auxiliary Fuel Costs in Nuclear Power Generation |
+| 4 | **Cost of service & rates** | 47 | 85 | Errors in rate-base or return inputs to cost-of-service rates. | Approval: $1,277,051,206. ; Approval: $35.7 million; Annual Membership Dues |
+| 5 | **Depreciation** | 47 | 68 | Unapproved or incorrect depreciation rates applied to plant. | Computation of Depreciation Rates; Allowance for Funds Used During Construction; Depreciation Rates and Study |
+| 6 | **Below-the-line costs (lobbying, charitable, etc.)** | 43 | 51 | Non-recoverable costs (lobbying, charity, ads) charged to ratepayers. | Annual Membership Dues; Nonoperating and Operating Expenses; Accounting for Lobbying Expenses |
+| 7 | **Property & plant records** | 42 | 76 | Incomplete or inaccurate utility plant and property records. | Allowance for Funds Used During Construction; Prepaid Pension AFUDC; Noncarrier Property Revenue, Expenses, and Net Income |
+| 8 | **Affiliate / intercompany transactions** | 40 | 145 | Transactions with affiliated companies mis-priced or mis-reported. | Accounting for Distribution and Meter-Related Costs; Cost Allocations and Affiliated Interests; Settlement: agreement |
+| 9 | **AFUDC / cost of capital** | 40 | 53 | Mis-stated AFUDC — the financing cost capitalized during construction. | Allowance for Funds Used During Construction; Capitalization of Vegetation Management Costs; Prepaid Pension AFUDC |
+| 10 | **Tariff administration & oversight** | 37 | 63 | Not following the utility's own FERC-approved tariff. | Settlement: Agreement; Renewable Natural Gas Quality Specifications; Tariff Administration and Oversight |
+| 11 | **Internal audit & internal controls** | 32 | 32 | Weak internal controls, compliance programs, or internal-audit coverage. | Corporate Governance; Cost Allocations and Affiliated Interests; Affiliated Interests and Cost Allocations |
+| 12 | **Capitalization vs. expense** | 21 | 22 | Costs capitalized that should be expensed, or the reverse. | Accounting for Replacement of Minor Items of Property; Capitalization of Vegetation Management Costs; Property Unit Listing |
+| 13 | **Service reliability & vegetation management** | 15 | 35 | Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs. | Capitalization of Vegetation Management Costs; Settlement: terms; Settlement: Agreement |
+| 14 | **Customer service & billing** | 14 | 28 | Customer-service performance, billing accuracy, or call-center issues. | Customer Service; Customer Service (continued); Financial Management |
+| 15 | **Storm cost recovery & securitization** | 13 | 29 | Storm restoration costs, storm riders/reserves, or securitization. | Approval: $69.8 million; Approval: $78 million; Approval: $85.7 million |
+| 16 | **Inventory, materials & fleet** | 13 | 20 | Inventory accuracy, materials management, or fleet/vehicle management gaps. | Auxiliary Fuel Costs in Nuclear Power Generation; Purchasing and Materials Management; Accounting for Materials and Supplies |
+| 17 | **Workforce, training & succession planning** | 12 | 34 | Staffing, training, span-of-control, or leadership-succession shortcomings. | Executive Management, Organizational Structure, and Safety; Human Resources and Diversity (continued); Cost Allocations and Affiliated Interests |
+| 18 | **Emergency preparedness & business continuity** | 11 | 14 | Weak emergency response, storm readiness, or business-continuity planning. | Emergency Preparedness; Emergency Preparedness (continued); 2. s |
+| 19 | **Membership dues & industry associations** | 11 | 11 | Trade-association dues (e.g., EEI) improperly charged to ratepayers. | Annual Membership Dues; Accounting for Edison Electric Institute Membership Dues; Industry Trade Association Dues |
+| 20 | **Information technology & systems** | 10 | 14 | IT governance, systems, budgets, or project-management deficiencies. | Approval: $156.9 million; Information Technology; s .................................................................................................................... 424 |
+| 21 | **Informational postings** | 9 | 15 | Required public postings (e.g., OASIS) missing, late, or incomplete. | Renewable Natural Gas Quality Specifications; Informational Postings; Public Access to Monthly and Yearly Capability Information |
+| 22 | **Cybersecurity & physical security** | 8 | 20 | Gaps in cyber defenses or physical security of facilities and systems. | Emergency Preparedness; Emergency Preparedness (continued); s .................................................................................................................... 461 |
+| 23 | **Dividend policy & capital management** | 6 | 8 | Dividend-policy or capital-management practices flagged by auditors. | Financial Management; s - - Dividend Policy and Capital Structure ................................................... 78; s - - Dividend Policy and Capital Structure ....................................................... 78 |
+| 24 | **Gas safety & pipeline integrity** | 3 | 3 | Gas leak backlogs, corrosion control, or pipeline-integrity practices. | Electric Operations; Gas Operations |
+| 25 | **Creditworthiness** | 2 | 2 | Customer credit standards not applied as the tariff requires. | Creditworthiness Standards; Settlement: Agreement |
 
-### 1. **ACCOUNTING MISCLASSIFICATION** (67 reports, 180 findings)
-Utilities file accounts in wrong categories or mislabel line items.
-- **Common issues**: Nonoperating expenses, regulatory fees, interconnection charges coded to wrong accounts
-- **Impact**: Distorts cost of service and rate calculations
-- **Example**: "Accounting for Nonoperating Expenses"
+## Coverage & provenance
 
-### 2. **FORM REPORTING (Form No. 1/2/6, Page 700+)** (57 reports, 152 findings)
-Utilities underreport or misallocate amounts on mandatory FERC forms.
-- **Common issues**: Intrastate amounts on Form 6 page 700, page 2000 schedules, jurisdictional splits
-- **Impact**: FERC's rate-base calculation depends on accurate form reporting
-- **Example**: "Reporting Intrastate Amounts on Page 700 of the Form 6"
+- **Reports:** 660 structured (261 electric, 49 gas, 18 oil by identified industry signal).
+- **Collections:** FERC audits 123, prudence reviews 29, state PUC audits 387, state rate cases 121.
+- **State reach:** 508 state-level records across 45 jurisdictions.
+- **Issuance years (where dated):** 2005–2026; recent volume — 2022:21, 2023:26, 2024:46, 2025:65, 2026:8.
+- **Source attribution:** every record carries a `source_note` + source URL + capture date; FERC-audit
+  findings are extracted verbatim, state audits are listed for reference (metadata-only) unless a gated
+  parser exists (PA Exhibit I-2, NJ).
 
-### 3. **FUEL & PURCHASED-POWER COST RECOVERY** (51 reports, 30 findings)
-Electric utilities misclassify or underreport fuel / power purchase costs in rate recovery clauses.
-- **Common issues**: Unbundled rates, cost-allocation errors, capacity charges
-- **Impact**: Affects fuel adjustment clause calculations
-- **Example**: "Settlement: fuel cost recovery agreement"
+## Methodology notes
 
-### 4. **COST OF SERVICE & RATES** (47 reports, 85 findings)
-Broad category: utilities provide incomplete or inaccurate cost-of-service data to regulators.
-- **Common issues**: Missing depreciation schedules, unaccounted expenses, allocated costs
-- **Impact**: Regulators cannot validate rate-increase requests
-- **Example**: "Accounting for Nonoperating Expenses"
+- **Keyword-tagged, not LLM-judged.** Themes come from `THEME_RULES` substring matches; adding/renaming a
+  theme is a code change with tests (`tests/test_themes.py`), not a prompt.
+- **Verbatim quotes.** Example titles and all findings preserve exact report language.
+- **Dedup by report.** A report with 5 matching findings counts as 1 report for the theme, 5 for findings.
+- **Metadata-only records contribute to corpus + collection counts but not to theme finding-counts** (no
+  extracted finding text to match) — so theme tallies track the *parsed* findings universe, not raw report count.
 
-### 5. **DEPRECIATION** (46 reports, 66 findings)
-Utilities use incorrect depreciation rates, lives, or methods; fail to retire fully-depreciated assets.
-- **Common issues**: Plant retirements not recorded, depreciation method changes undisclosed
-- **Impact**: Overstates asset value and cost of service
-- **Example**: "Accounting for Retirements of Carrier Property"
-
-### 6. **BELOW-THE-LINE COSTS** (43 reports, 50 findings)
-Utilities underreport or classify lobbying, charitable, and political donations.
-- **Common issues**: Political contributions bundled into "other," charitable giving in rate base
-- **Impact**: Inflates regulated cost and shifts costs to ratepayers
-- **Example**: "Accounting for Charitable Contributions"
-
-### 7. **PROPERTY & PLANT RECORDS** (39 reports, 69 findings)
-Utilities fail to maintain accurate fixed-asset ledgers; plant additions not capitalized.
-- **Common issues**: Lost invoices, missing retirement notices, capitalization threshold ignored
-- **Impact**: Affects cost-of-capital (AFUDC) calculations
-- **Example**: "Accounting for Interest During Construction"
-
-### 8. **AFFILIATE / INTERCOMPANY TRANSACTIONS** (39 reports, 53 findings)
-Utilities underreport or mischaracterize transactions with subsidiaries/related parties.
-- **Common issues**: Affiliate pricing not at market, cost allocations opaque, no transfer documentation
-- **Impact**: Allows cost-shifting to ratepayers
-- **Example**: "FERC Form No. 552 Reporting" (affiliate transactions schedule)
-
-### 9. **AFUDC / COST OF CAPITAL** (37 reports, 47 findings)
-Utilities misapply Allowance for Funds Used During Construction (AFUDC) rates or timing.
-- **Common issues**: Wrong AFUDC rate, extended construction in progress overstated, capitalization mismatch
-- **Impact**: Overstates cost of service
-- **Example**: "Allowance for Funds Used During Construction (AFUDC)"
-
-### 10. **TARIFF ADMINISTRATION & OVERSIGHT** (35 reports, 49 findings)
-Utilities file tariff changes late, omit schedules, or fail to track rate compliance.
-- **Common issues**: Schedule changes not filed with FERC, tariff rates vs. actual charges mismatch
-- **Impact**: Consumers may be overcharged pending correction
-- **Example**: "Settlement: reservation charge credits"
-
----
-
-## Remaining Themes (11–25)
-
-| Theme | Reports | Findings | Key Issue |
-|-------|---------|----------|-----------|
-| **IT / CYBERSECURITY COMPLIANCE** | 35 | 51 | Missing security audits, unpatched systems |
-| **RECORDS RETENTION & DOCUMENTATION** | 33 | 48 | Missing files, incomplete audit trails |
-| **PROCUREMENT & CONTRACTING** | 31 | 44 | Bid irregularities, vendor conflicts |
-| **REVENUE RECOGNITION** | 29 | 42 | Premature recognition, unsettled transactions |
-| **PENSION & POST-RETIREMENT BENEFITS** | 27 | 39 | Contribution shortfalls, actuarial mismatches |
-| **ENVIRONMENTAL COMPLIANCE** | 26 | 38 | Missing permits, remediation delays |
-| **INTERNAL CONTROLS & GOVERNANCE** | 25 | 36 | Weak segregation of duties, missing approvals |
-| **LABOR & WAGE COMPLIANCE** | 23 | 33 | Wage codes, overtime miscalculation |
-| **TAX COMPLIANCE** | 22 | 31 | State tax filings incomplete, nexus overstated |
-| **CUSTOMER BILLING & METER ACCURACY** | 20 | 29 | Meter test failures, calculation errors |
-| **ASSET IMPAIRMENT & WRITE-DOWNS** | 18 | 26 | Stranded costs not disclosed |
-| **RATE BASE JURISDICTION ALLOCATION** | 16 | 24 | Federal vs. state split errors |
-| **CONSTRUCTION CONTRACTS & PROJECT MGMT** | 15 | 22 | Cost overruns, budget tracking failures |
-| **INSURANCE ADEQUACY** | 14 | 20 | Underinsured risks, policy gaps |
-| **DEBT & EQUITY STRUCTURE** | 12 | 18 | Leverage limits exceeded, restricted equity |
-
----
-
-## Patterns by Audit Type
-
-### **Financial Audits (FA)** — Dominate findings
-- Top 5 themes: Accounting misclassification, form reporting, cost of service, depreciation, property records
-- Rationale: Financial audits focus on numbers — rate base, cost of service, tax compliance
-- Finding density: 3.2 findings/report
-
-### **Performance/Compliance Audits (PA)** — Emphasize operations
-- Top 5 themes: Records retention, IT compliance, internal controls, procurement, environmental
-- Rationale: PA audits assess processes, governance, regulatory adherence
-- Finding density: 1.8 findings/report
-
-### **State Prudence Reviews** — Utility-specific
-- Dominant themes: Cost allocation, fuel adjustment clauses, tariff compliance
-- Note: State audits often focus on a single utility or rate case rather than system-wide patterns
-
----
-
-## Cross-Report Clustering
-
-Documents with **2+ findings in the same theme**:
-- **FERC Form 1 (Electric)**: 89 reports (60% have multi-finding clustering in accounting/form reporting)
-- **FERC Form 2 (Gas)**: 56 reports (52% clustering in cost-of-service and affiliate transactions)
-- **State Audits**: 12 reports (42% clustering in records/governance)
-
-**Implication**: Noncompliance is systematic, not random. A finding in one area (e.g., depreciation) often signals incomplete controls in related areas (property records, cost-of-service).
-
----
-
-## Use Cases
-
-### **Audit Planning**
-Given a utility's recent filing, flag **high-risk themes** based on historical frequency:
-- Electric utility → prioritize accounting misclassification, form reporting, depreciation
-- Gas utility → prioritize fuel cost recovery, affiliate transactions, rate base allocation
-- Multi-state operator → prioritize jurisdiction splits and affiliate transactions
-
-### **Compliance Self-Assessment**
-Utilities can benchmark their own audit history against theme frequencies:
-- "We found 3 issues last cycle. Are they in the top themes?" → Yes = red flag (systemic risk)
-- "What other findings typically co-occur with our issue?" → Investigate related accounts/processes
-
-### **Regulatory Focus Areas**
-FERC/state regulators can concentrate audit resources on themes with the highest **finding rates** or **dollar impact** (when available).
-
----
-
-## Data Quality Notes
-
-- **Coverage**: 447 reports spans 2014–2026 (FERC 1/2/6 + selective state audits)
-- **Keyword-based tagging**: Themes are identified via audit finding titles and summary text (no LLM editorial bias)
-- **Verbatim quotes**: All example findings preserve exact report language for transparency
-- **Deduplication**: Themes derived from unique reports; a single report with 5 findings counts as 1 report, not 5
-
----
-
-**Next Steps**
-1. Add dollar-impact estimates when FERC/state data becomes available
-2. Expand state audit coverage (currently 12 states; target 30+ with standardized extraction)
-3. Build per-utility compliance trend lines (which utilities have recurrent findings?)
-4. Create interactive theme browser (filter by form, year, jurisdiction, utility)

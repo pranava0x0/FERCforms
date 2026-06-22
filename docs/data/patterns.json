@@ -1,11 +1,11 @@
 {
-  "report_count": 655,
+  "report_count": 660,
   "finding_count": 1727,
   "other_matter_count": 10,
   "recommendation_count": 2185,
   "by_industry": {
     "unknown": 330,
-    "electric": 256,
+    "electric": 261,
     "gas": 49,
     "oil": 18,
     "water": 2
@@ -23,9 +23,9 @@
     "2020": 16,
     "2021": 17,
     "2022": 21,
-    "2023": 25,
-    "2024": 45,
-    "2025": 62,
+    "2023": 26,
+    "2024": 46,
+    "2025": 65,
     "2026": 8
   },
   "by_function": {
@@ -186,6 +186,23 @@
       ]
     },
     {
+      "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 145,
+      "report_count": 40,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Cost Allocations and Affiliated Interests",
+        "Settlement: agreement",
+        "Affiliated Interests and Cost Allocations"
+      ]
+    },
+    {
       "theme": "AFUDC / cost of capital",
       "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
       "keywords": [
@@ -199,23 +216,6 @@
         "Capitalization of Vegetation Management Costs",
         "Prepaid Pension AFUDC",
         "Capitalized Interest Expense"
-      ]
-    },
-    {
-      "theme": "Affiliate / intercompany transactions",
-      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-      "keywords": [
-        "affiliate",
-        "intercompany",
-        "inter-company"
-      ],
-      "finding_count": 145,
-      "report_count": 39,
-      "example_titles": [
-        "Accounting for Distribution and Meter-Related Costs",
-        "Cost Allocations and Affiliated Interests",
-        "Settlement: agreement",
-        "Affiliated Interests and Cost Allocations"
       ]
     },
     {
@@ -631,5 +631,5 @@
       "count": 6
     }
   ],
-  "generated_at": "2026-06-19"
+  "generated_at": "2026-06-22"
 }
