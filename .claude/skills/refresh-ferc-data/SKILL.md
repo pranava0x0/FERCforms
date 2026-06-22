@@ -55,10 +55,18 @@ The high-value, repeatable path. **Always verify before seeding** (opaque doc ID
 
 1. **Find the doc + its stable `.gov` URL.** Use the per-source recipe in
    [docs/data-sources.md](../../../docs/data-sources.md) (PA/MI plain GET; TX/SC scriptable search;
-   VA direct DOCS path; IL server-rendered e-Docket; OH/NC browser-capture).
+   VA direct DOCS path; IL server-rendered e-Docket; NY DPS DMM scriptable search; OH/NC browser-capture).
 2. **Read page 1–2 of each PDF** (skip "Filing Receipt"/"Notice of Filing" covers) to label
    `company` / `issued_date` / `doc_type` accurately. Discard off-theme docs (the corpus is utility
    cost/prudence/audit matters — not generic presentations or rulemaking comments).
+   **Verify-by-download (the proven pattern, generalizes GA/2026-06-22 NY):** never seed a search-found
+   URL on trust — `requests.get` it (stream + ~45 MB cap so a 500-page report can't hang you), assert
+   `content[:5]==b"%PDF-"`, then `fitz.open(stream=…)` → print `page_count` + page-1 text. The page-1
+   caption is what you label from and is the proof the `pdf_url` resolves to the *claimed* document
+   (a `200` on the wrong real doc is the fabrication trap). Seed `fetch:true` so the pipeline re-proves
+   it. **Buffered-output gotcha:** Python stdout block-buffers when piped — run verify/ingest with
+   `python3 -u` (or `flush=True`) or you'll see nothing until it finishes and mistake a slow large-PDF
+   download for a hang.
 3. **Write `data/seeds/<source>.json`** — one `SourceSeed` per doc: `collection:"state_audit"`,
    `jurisdiction`, `source`, `doc_type`, `industry`, `pdf_url`, `source_page_url`, `issued_date`,
    `docket`, `captured_at`, a full provenance `source_note`, `parse:false`. **`.gov` hosts only** —
