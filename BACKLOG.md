@@ -8,12 +8,13 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 Single source of priority truth — the ranked order to pull work from. Anchor: the north-star
 ("audit-my-document") needs **parsed findings**, and "data is the product" — so **depth + integrity beat
-thin metadata-only breadth** (the corpus is broad but shallow: real findings sit in ~60 of 518 state
-records). New items from the 2026-06-22 session are marked ⊕; full descriptions in the sections below.
+thin metadata-only breadth** (the corpus is broad but shallow: real findings sit in ~60 of ~342 state
+records — after the 2026-06-22 WA+IN junk purge, down from 518). New items from the 2026-06-22 session
+are marked ⊕; full descriptions in the sections below.
 
-**P0 — do next (cheap integrity win, then core findings):**
-1. ⊕ **[high] Purge/relabel the ~166 WA+IN crawler-junk `state_audit` records** — ~25% of the corpus is off-theme, filename-as-company noise (WA pipeline/hazmat *safety-inspection closure letters*; IN *weekly filing-lists / annual reports / order PDFs*), unknown industry, 0 findings. Quick, high-trust; makes the 660 headline honest. → *Pipeline & data*
-2. **[high] Recover findings from the 26 zero-finding FERC reports** — born-digital, snapshot-gated re-parse. The biggest *real-findings* lever now FERC has issued no new audits since 2026-05-07. → *Pipeline & data*
+**P0 — do next (core findings recovery):**
+1. ✅ **[DONE 2026-06-22] Purged the 166 WA+IN crawler-junk `state_audit` records** — corpus 660 → **494**, `state_audit` 387 → **221**, findings unchanged at 1727. See the Done section below + ISSUES.md.
+2. **[high] Recover findings from the 26 zero-finding FERC reports** — born-digital, snapshot-gated re-parse. The biggest *real-findings* lever now FERC has issued no new audits since 2026-05-07. **← now the top P0.** → *Pipeline & data*
 
 **P1 — biggest north-star levers (more parsed findings + dollars):**
 3. ⊕ **[high] Generalize a comprehensive M&O-audit findings parser (NorthStar / Overland / Liberty)** — unlock structured findings from the richest docs (the NY 23-M-0103 439pp/128-rec + LIPA 21-00618 569pp/49-rec just added, plus NJ/MI). Extend the existing `parse_overland_recommendations`; gate with a no-regression snapshot. → *Pipeline & data*
@@ -35,6 +36,13 @@ records). New items from the 2026-06-22 session are marked ⊕; full description
 13. [low] absolute llms.txt URLs · per-report markdown pages · MBR-seller relabel of the 3 `unknown` FERC audits · theme A/B variants · accessibility/Lighthouse pass.
 
 ---
+
+## ▶ Done 2026-06-22 (cont.) — P0 #1: purged 166 WA+IN crawler-junk records
+
+- **Purged all 166 WA+IN crawler-junk `state_audit` records** (BACKLOG P0 #1; precedent: the 2026-06-08/06-19 crawler-junk removals). ~25% of the corpus was off-theme tier-1/tier-2 scrape noise: **WA** 111 (pipeline/hazmat **safety-inspection** reports + closure/follow-up letters + telecom reporting-requirement nav pages + media advisories; `company` = a URL-encoded *filename*); **IN** 55 (weekly **filing-lists** + `Utility-Articles` newsletters + IURC **annual reports** + `ord_UA` order lists). All `industry: unknown`, 0 findings, `structured: false`.
+- **Removed from the two crawler seeds** (`state_puc.json` −66, `state_puc_tier2_extended.json` −100) + `git rm` 166 processed dirs + rebuilt. Corpus 660 → **494** reports; `state_audit` 387 → **221**; `industry: unknown` 330 → **173**; **findings unchanged at 1727** (the junk carried none); `findings.csv` byte-identical. 142 tests pass (== baseline).
+- **Genuine WA/IN coverage untouched** — WA 7 (PacifiCorp/PSE/Avista, `wa_utc.json`), IN 4 (Duke/NIPSCO/AES/CenterPoint, `in_iurc.json`). WA & IN now hold **0** `state_audit` records (honest: they never had genuine state *audits*, only fuel/rate/prudence orders, which remain).
+- **Still open (out of WA+IN scope):** the broader `[med]` crawler-seed quality audit of `state_puc.json` (131 left) + `state_puc_tier2_extended.json` (43 left) — still carry an AK `Report an Environmental Crime` row and other NON_PDF nav/asset survivors. See [memory: corpus-depth-vs-breadth].
 
 ## ▶ Done 2026-06-22 — +5 NY DPS M&O audits; faithful themes regen; WA/IN junk found
 
@@ -156,9 +164,11 @@ and unresolved MS/LA/TX placeholders (`pdf_url` = a docket-search page; `source_
 manual docket search"). All 0-page/0-finding. Corpus 655 → **641** reports, findings unchanged (1715).
 See ISSUES.md.
 
-**[med] Crawler-seed quality audit — `state_puc.json` (197) + `state_puc_tier2_extended.json` (143).**
-These two tier-1/tier-2 web-crawl seed files are the junk source (the 14 DEAD all came from here or
-their per-state offshoots). `verify_sources` still shows **NON_PDF=150** — records whose URL returns
+**[med] Crawler-seed quality audit — `state_puc.json` (now 131) + `state_puc_tier2_extended.json` (now 43).**
+These two tier-1/tier-2 web-crawl seed files are the junk source (the 14 DEAD and the 166 WA+IN purged
+2026-06-22 all came from here or their per-state offshoots). The WA+IN slices are now fully cleaned; the
+remaining states (TX/PA/WV/ME/AK/MT/DC/ID/OK/TN/GA…) still need the same per-record pass — e.g. an AK
+`Report an Environmental Crime` row survives. `verify_sources` still shows **NON_PDF** — records whose URL returns
 200 but isn't a PDF; some are intentional (CA `.htm` decisions, OH/NC browser-capture `fetch=false`),
 but the crawler ones point at HTML landing/index pages and several survivors are off-theme by name
 (media advisories, fact sheets, eFiling memos). Do a per-record pass over these two files: keep only
@@ -431,7 +441,7 @@ Current state: ~35 state PUC/audit docs across 12 jurisdictions (mostly 2-5 docs
 
 ## Pipeline & data
 
-- **[high] Purge or relabel the ~166 WA+IN crawler-junk `state_audit` records.** *(Found 2026-06-22.)* WA (111) and IN (55) — ~43% of `state_audit`, ~25% of the whole corpus — were harvested by an old "Tier 2 deep scrape" and are off-theme with garbled metadata: `company` is a URL-encoded *filename* (`8771%20Inspection%20Report`, `9001%20Closure%20Letter`, `Weekly-Filings-List-1.20.26`, `ord UA 050626`), `industry` unknown, 0 findings. WA = pipeline/hazmat **safety-inspection closure letters** (not utility cost/management audits); IN = **filing-lists / annual reports / order PDFs** (not audits). They inflate the headline count and violate "data is the product." **Action:** prune the off-theme ones (precedent: the 2026-06-08 removal of 14 crawler-junk records) and re-characterize any genuine audits by reading page 1; then rebuild. Decide whether the WA UTC / IN IURC sources are worth a *targeted* re-seed of real audits afterward. See [memory: corpus-depth-vs-breadth].
+- **[DONE 2026-06-22] Purged the ~166 WA+IN crawler-junk `state_audit` records.** All 166 removed (WA 111 + IN 55) — off-theme tier-1/tier-2 scrape noise (WA pipeline/hazmat safety-inspection letters; IN filing-lists/annual-reports), 0 findings each. Corpus 660 → **494**; findings unchanged at 1727. Genuine WA/IN coverage (`wa_utc.json` 7, `in_iurc.json` 4) untouched; no targeted re-seed needed (those sources already represented by real fuel/rate/prudence orders). See the Done section above + ISSUES.md. The remaining crawler-seed cleanup (other states, NON_PDF survivors) is the `[med]` item below.
 - **[high] Generalize a comprehensive M&O-audit findings parser (NorthStar / Overland / Liberty).** *(Added 2026-06-22.)* The single biggest *parsed-findings* depth lever after the 26-report recovery. The richest documents in the corpus are metadata-only because no parser handles their format: the NorthStar **NY 23-M-0103** (439 pp / 128 recs) + **LIPA 21-00618** (569 pp / 49 recs) just added, plus NJ (JCP&L/ACE/NJNG) and MI (Liberty). These consulting firms audit many jurisdictions with a **consistent structure** (a consolidated "Comprehensive Listing / Summary of Recommendations" + per-area findings), so one parser scales across states. The NJ PSE&G **Overland** parser already exists (`parse_overland_recommendations` in `pipeline/state_structure.py`) — extend it to the NorthStar layout, **gated by a no-regression snapshot** of current per-report finding counts (the documented overfit trap), flip `parse:true` on those seeds, re-ingest, rebuild, verify. Falls back to metadata-only if a parse garbles. Directly feeds "audit-my-document."
 - **[med] Partial-date (year/month-known) support for metadata-only records.** *(PR #6 review, 2026-06-07.)* Some legal docs publish only a year+month, not a day — e.g. CPUC decisions, whose number `D.YY-MM-NNN` authoritatively encodes the adoption *month* but whose HTML doesn't carry the adoption-*day* caption (D.06-01-007, D.03-12-063). Today `issued_date` is a full `date`, so these are seeded **null** (no fabricated day) — which **drops them out of the by-year facet / timeline sort**. Add an `issued_date_precision` (`day`|`month`|`year`) or a derived `issued_year`/`issued_month` so the year facet and chronological sort can include month-known docs without implying a false day. Touches `models.AuditReport`, `pipeline/patterns.summarize` (by_year), and the site's year facet. Until then these records carry the month in `source_note`.
 - **[low] Surface the per-collection doc-type breakdown in the site tabs.** `llms.txt` now derives a grounded doc-type histogram per collection (e.g. State PUC: direct testimony ×6, RAC order ×2, …) directly in `pipeline/llmstxt.py`. The site tabs only facet by industry/year/theme — adding a doc-type facet/insight chip (from a `by_doc_type` Counter, computed like the others in `pipeline/patterns.summarize`) would give the metadata-only collections, whose main signal IS doc_type, a real "insights" panel like FERC's themes. Keep it mechanical (counts only).

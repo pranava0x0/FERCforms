@@ -5,15 +5,15 @@
 > text, never an LLM editorial call. If a number here disagrees with `patterns.json`, `patterns.json` wins.
 
 **Generated:** 2026-06-22  
-**Corpus:** 660 structured reports · 1727 verbatim findings · 2185 recommendations  
-**Collections:** ferc_audit 123, prudence_review 29, state_audit 387, state_rate_case 121  
+**Corpus:** 494 structured reports · 1727 verbatim findings · 2185 recommendations  
+**Collections:** ferc_audit 123, prudence_review 29, state_audit 221, state_rate_case 121  
 **Themes identified:** 25
 
 ---
 
 ## Summary
 
-Cross-analysis of 660 historical FERC (Form 1/2/6) audits, FERC prudence orders, and
+Cross-analysis of 494 historical FERC (Form 1/2/6) audits, FERC prudence orders, and
 state PUC audit/rate-case documents surfaces **25 recurring noncompliance themes**. Themes are
 assigned by transparent keyword rules (`pipeline/patterns.py` `THEME_RULES`) scanning finding titles and
 recommendation text — no paraphrase, no compliance score, no model judgement. A report counts once per
@@ -51,9 +51,9 @@ theme regardless of how many of its findings match.
 
 ## Coverage & provenance
 
-- **Reports:** 660 structured (261 electric, 49 gas, 18 oil by identified industry signal).
-- **Collections:** FERC audits 123, prudence reviews 29, state PUC audits 387, state rate cases 121.
-- **State reach:** 508 state-level records across 45 jurisdictions.
+- **Reports:** 494 structured (260 electric, 42 gas, 18 oil by identified industry signal).
+- **Collections:** FERC audits 123, prudence reviews 29, state PUC audits 221, state rate cases 121.
+- **State reach:** 342 state-level records across 45 jurisdictions.
 - **Issuance years (where dated):** 2005–2026; recent volume — 2022:21, 2023:26, 2024:46, 2025:65, 2026:8.
 - **Source attribution:** every record carries a `source_note` + source URL + capture date; FERC-audit
   findings are extracted verbatim, state audits are listed for reference (metadata-only) unless a gated

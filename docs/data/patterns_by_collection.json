@@ -604,15 +604,15 @@
     "generated_at": "2026-06-22"
   },
   "state_audit": {
-    "report_count": 387,
+    "report_count": 221,
     "finding_count": 587,
     "other_matter_count": 0,
     "recommendation_count": 761,
     "by_industry": {
-      "unknown": 325,
-      "electric": 39,
-      "gas": 21,
-      "water": 2
+      "unknown": 168,
+      "electric": 38,
+      "gas": 14,
+      "water": 1
     },
     "by_year": {
       "2017": 1,

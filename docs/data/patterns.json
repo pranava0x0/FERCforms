@@ -1,14 +1,14 @@
 {
-  "report_count": 660,
+  "report_count": 494,
   "finding_count": 1727,
   "other_matter_count": 10,
   "recommendation_count": 2185,
   "by_industry": {
-    "unknown": 330,
-    "electric": 261,
-    "gas": 49,
+    "electric": 260,
+    "unknown": 173,
+    "gas": 42,
     "oil": 18,
-    "water": 2
+    "water": 1
   },
   "by_year": {
     "2005": 2,
