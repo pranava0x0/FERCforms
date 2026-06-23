@@ -25,7 +25,78 @@
     "transmission"
   ],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 10,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Posting ATC Offerings on Interconnection Paths",
+      "summary": "Idaho Power did not post ATC offerings on seven control-area-to-control-area interconnection paths when ATCs were, in fact, available on these paths. The impact of not posting ATCs on these paths reduced the transparency for transmission customers and consequently inhibited their ability to identify and request available transmission services.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Identification of Affiliates on OASIS",
+      "summary": "Idaho Power did not identify as an affiliate on its OASIS one of its internal divisions that requested transmission service. Consequently, Idaho Power did not identify all the transactions associated with this internal division as affiliated transactions and consequently did not populate Transmission Service Request (TSR) metrics reports appropriately.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Timely Processing of Transmission Service Requests",
+      "summary": "Idaho Power did not act upon ten customers' transmission service requests within the 30-minute window required under its OATT Section 18.4. Out of customer requests impacted after the audit started, only in a single instance did Idaho Power's delay result in a customer not receiving the service it originally requested.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Posting of Ancillary Services",
+      "summary": "Idaho Power did not post any of its required ancillary service offerings and prices on its OASIS. As a result, the TSRs posted on Idaho Power's OASIS did not include any information identifying what, if any, ancillary service transactions were associated with the posted TSRs.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Reporting of Transmission Study Performance Metrics",
+      "summary": "Idaho Power did not properly report required transmission study performance metrics for several quarters during the audit period.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Generation Interconnection Queue",
+      "summary": "Idaho Power did not post required information specified in its OATT, Attachment M, Section 3.4 including: the identification of its own interconnection requests in the Generation Interconnection Queue posted on OASIS, every interconnection study report conducted during the audit period, and the required advance notice of scoping meetings between Idaho Power's transmission function and its affiliate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Annual Reevaluation of Capacity Benefit Margin Needs",
+      "summary": "Idaho Power did not maintain documentation to demonstrate whether, and how, it met the requirement 5 to reevaluate its capacity benefit margin (CBM) needs at least annually, and post its practices for reevaluating its CBM needs.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Transmission Study List",
+      "summary": "Idaho Power incorrectly excluded a customer's transmission study from its Transmission Study List posted on OASIS.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "OASIS Access Control",
+      "summary": "Idaho Power did not revoke the OASIS access privileges of two employees after these individuals no longer required OASIS access.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Use ofDesignated Network Resource to Make Finn Off-System Sales",
+      "summary": "Idaho Power incorrectly used a DNR to make firm off-system sales. G.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

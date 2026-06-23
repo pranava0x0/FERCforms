@@ -26,7 +26,57 @@
     "3-Q",
     "60"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 7,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Depreciation Expense of Service Companies Assets",
+      "summary": "National Grid USA Service Company (NGUSASCo) and National Grid Engineering & Survey Inc. (NGE&S) used improper composite depreciation rates to determine depreciation expense accrued on certain property. This led the two service companies to accrue depreciation expense at rates not consistent with Commission accounting rules. The service companies then allocated and billed the incorrectly calculated depreciation expense to their public utility and nonutility affiliates. As a result, amounts billed to public utility affiliates with transmission formula rates were included in the rates charged to wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Cost Allocation Methodologies",
+      "summary": "NGUSASCo and NGE&S did not consistently use their documented cost allocation methods, nor timely update their general ledger system to reflect changes in the allocation percentages actually used to bill affiliates. These errors led the service companies to over- allocate costs to certain National Grid public utility subsidiaries, and these public utilities in turn overbilled their respective wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Industry Association Dues",
+      "summary": "NGUSACo improperly accounted for and allocated a portion of the cost of its gas and electric industry associations’ membership dues to National Grid’s public utility subsidiaries. As a result, National Grid’s public utility subsidiaries improperly included the lobbying component of industry association payments in their wholesale transmission rates.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Donations",
+      "summary": "NGUSASCo improperly recorded certain donations to Account 921, Office Supplies and Expenses, and Account 930.2, Miscellaneous General Expenses, instead of Account 426.1, Donations, as required by Commission regulations. Amounts recorded in Accounts 921 and 930.2 were allocated to National Grid’s public utility subsidiaries and other affiliates and accounted for by the entities using the same accounts, and for some public utility subsidiaries were included as inputs to their respective wholesale transmission formula rate cost recovery mechanisms. As a result, in some years National Grid’s public utility subsidiaries improperly included the donations in their wholesale transmission rates. 3",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Service Company Account Misclassifications",
+      "summary": "NGUSASCo improperly accounted for various administrative and general expenses in its books and records. As a result, NGUSASCo overstated certain administrative and general accounts it billed to National Grid public utility subsidiaries, resulting in misclassifications reported in the public utilities’ FERC Form No. 1.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Reporting of Transactions with Associated (Affiliated) Companies",
+      "summary": "National Grid’s public utility subsidiaries did not follow the instructions on page 429, Transactions with Associated (Affiliated) Companies, of the FERC Form No. 1 and as a result reported inaccurate and incomplete information for transactions with associated companies.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Annual Report of Centralized Service Companies, FERC Form No. 60 (FERC Form No. 60)",
+      "summary": "NGUSASCo and NGE&S did not complete the FERC Form No. 60 reports filed during the audit period in accordance with the general and schedule instructions of the form. D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

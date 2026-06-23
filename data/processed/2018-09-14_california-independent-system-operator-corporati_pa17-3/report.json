@@ -27,7 +27,112 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Independence of the Department of Market Monitoring",
+      "summary": "CAISO did not have adequate structures in place to ensure sufficient independence of the market monitoring functions of the DMM from the influence of CAISO's senior management. Specifically, CAISO executives were too closely involved in the DMM Director's performance review and compensation, DMM staff incentive compensation awards, DMM staffing issues, and approval of the DMM budget.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Involve the Oversight Committee when reviewing the performance of the DMM and the DMM Director.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Separate the awarding of incentive compensation to DMM staff from approval by CAISO and from measurement by performance of tasks in areas other than DMM-specific objectives and goals.",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Grant the Oversight Committee the authority to review and approve the DMM budget, subject only to overall budget approval by the CAISO Board. Physical Separation of the DMM",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Provide the DMM Director adequate notice of, and involvement in, the process by which CAISO evaluates relocation of CAISO staff, particularly adjacent to DMM staff, so that the Director may raise his concerns on the independence of the DMM.",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Ensure the DMM Director has the opportunity to bring any unresolved concerns on matters of potential impacts of staff relocation, and other issues of inadequacies in physical separation before the DMM Oversight Committee, who will have the authority itself to address, or bring them to the full Board to address, regarding actions sufficient to ensure independence around the DMM workspace.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "DMM Involvement in CAISO OATT Formation",
+      "summary": "By filing joint comments with CAISO, the DMM did not adequately ensure its independence in advising all interested parties of its views regarding CAISO's proposed OATT and market rule changes. This is particularly problematic when its views differed from those of CAISO. Had the DMM independently advised the Commission, the CAISO, and other interested entities of its views regarding any needed rule and tariff changes, it would have improved the clarity of DMM's position and better demonstrated its independence from CAISO, both of which are critical in its role of advising the Commission.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 6,
+          "text": "Facilitate and encourage the DMM to (i) continue its advisory participation in internal committees involved in issues with significant market impact, (ii) articulate its independent views when there is a Commission filing by CAISO with market implications, particularly when they diverge from those of the CAISO, and (iii) use DMM's own legal representation, as necessary, in making such filings.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Testing Ancillary Service Providers",
+      "summary": "CAISO did not conduct the range and frequency of testing and auditing required by the CAISO OATT to verify, within 2 reasonable timeframes, that generators paid to provide ancillary services were capable of providing the services.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Conduct ancillary service testing and auditing, by the means specified in its OATT.",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "Enhance controls to ensure CAISO conducts ancillary service testing and auditing within reasonable timeframes.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Assuring the Accuracy of Data Submitted to CAISO",
+      "summary": "CAISO did not have sufficient controls to ensure certain data submitted by market participants were accurate and could be relied on by CAISO when performing its responsibilities under the OATT. Other Matter",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Continue to conduct risk analyses to identify where inaccurate, incomplete, or untimely submissions of data by market participants to the CAISO may threaten CAISO's ability to ensure reliability and/or proper market functioning.",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "Use CAISO's internal audit function to evaluate CAISO's effectiveness in addressing these risk areas under the direction of the Audit Committee. Other Matter: CAISO Internal Audit Function Audit staff suggests that CAISO consider:",
+          "source_page": null
+        },
+        {
+          "number": 1,
+          "text": "Having the Audit Committee assess the performance and remuneration of the Director of Internal Audit.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Removing compensation metrics that might conflict with IA's objective of detecting noncompliance during the audit process.",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Adding staff or supplementing the necessary skills in operational areas to empower IA in performing the full range of audits necessary to provide adequate assurance of CAISO's compliance to its OATT. E. Compliance with Implementation of Recommendations Audit staff further recommends that CAISO submit for review: • Plans for implementing audit staffs recommendations within 30 days after the issuance of this report. • Quarterly reports to DAA describing CAISO's progress in completing each corrective action. CAISO should make these nonpublic quarterly filings no later than 30 days after the end of each calendar quarter, beginning with the first quarter after the Commission issues this report, and continuing until it completes all recommended actions. • Copies of written policies and procedures developed in response to the recommendations. These documents should be submitted for audit staffs review in the first nonpublic quarterly filing after CAISO completes them.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "CAISO Internal Audit Function",
+      "summary": "CAISO Internal Audit (IA) could strengthen its level of independence and enhance its staffing with expertise in the critical areas of CAISO's operations and markets to facilitate its role in providing adequate assurance of CAISO's compliance to its OATT. D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

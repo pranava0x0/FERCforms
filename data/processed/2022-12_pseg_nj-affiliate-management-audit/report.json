@@ -22,7 +22,436 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 16,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Non-Power Affiliate Relationships and Transactions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "In conjunction with Recommendation 1, we recommend PSEG explore development of transaction-type-based budgets and budget variance reporting for large, recurring intercompany transactions involving fund transfers between affiliates. PSEG should report to the BPU whether it is possible to develop and implement these capabilities cost effectively prior to the replacement of the Company’s SAP system. Budgeting for expected funds transfers by type of transaction is no less necessary for large intercompany transactions than for transactions between unrelated parties. Budgeting occurs for each operating company and plans vs. actuals are reviewed and may trigger more in depth analysis for any given variance. However, by setting expected levels of charges and funds flow, budgeting can help maintain control over large, recurring charges between affiliates. Examples of recurring charges that should be budgeted include large, recurring transmission agreement payments made to Power but owed to PSE&G, large corporate life insurance payouts received by PSEG Enterprise that are owed to PSE&G, and retiree prescription subsidy program payments received by Enterprise but owed to PSE&G. When significant variances occur, it should prompt follow up review, at least by the affiliate to which funds are owed. Implementation of this recommendation requires maintaining information to classify intercompany transactions by type; as such it is related to the previous recommendation.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "We recommend PSEG clarify its position regarding compliance with New Jersey Affiliate Standards in its Annual Compliance Plan and clarify and document controls in place between PSE&G and affiliates regardless of the Company’s position that certain regulations are inapplicable. PSEG takes the position that, as a matter of law, it is required to comply with New Jersey Affiliate Standards only with respect to its relationships with two, in our opinion very minor, “affected affiliates” (PSEG Solar Hackettstown and PSEG Energy Solutions). It is our opinion as auditors that there are many provisions of Affiliate Standards that should apply to the material relationships between PSE&G and its more significant operating affiliates (PSEG Services, Power, Energy Holdings and PSEG LI). In addition, there are provisions in Affiliate Standards, including those in N.J.A.C 14:3-3.3 and 14:3-3.4, that, in our opinion should apply to PSE&G’s Appliance Services Business, notwithstanding the fact that the ASB is a separate PSE&G business unit rather than a legally distinct affiliate. While we found that, in practice, PSEG applied Affiliate Standards requirements to PSE&G’s relationships and transactions with PSEG Services, PSEG Power and other significant operating affiliates, we recommend PSEG consider the “Relevant [Affiliate] Standards” covered in its Annual Compliance Plan and clarify, in each of the Plan’s “Compliance Procedures” sections, the affiliates and / or ASB business unit to which specific regulations apply. We also recommend PSEG clarify, regardless of applicability of these regulations, the procedures PSEG uses either to ensure compliance where required, or to enhance affiliate controls where technically not required. The NJBPU should review these Compliance Plan clarifications to ensure they properly recognize PSEG’s controls with respect to PSE&G’s relationships and transactions with its major operating affiliates, and between PSE&G’s regulated utility business and the ASB.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Centralized Service Cost Allocation Methods and Procedures",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 3,
+          "text": "PSEG should reform the Enterprise Corporate allocator to implement a uniform set of inputs for all PSEG operating subsidiaries and document the calculation methodology in the CAM. Any adjustments to the inputs and the impacts of such adjustments, or the basis for not making such adjustments, such as to the O&M expense component of the allocator, should be documented in the CAM and submitted for review by the BPU. Specifically:",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "The zero-value used for PSEG LI’s assets should be replaced by the utility’s actual net fixed asset (or gross plant) input value. Allocators that rely on measures of size to distribute non- attributable corporate costs are inherently arbitrary in that they cannot be linked to cost objectives based on cost causation. This does not mean they cannot be objective, systematic and rational. However, it is neither systematic or rational to calculate an allocator based on measures of size that, for one reason or another, either do not apply to or are determined not to be useful for all of the allocator’s significant cost objectives. In this particular case, there is no reason that PSEG Long Island’s net fixed assets should not contribute to its “weight” in drawing PSEG’s corporate enterprise costs. PSEG supports the Long Island utility’s assets in all material respects. PSEG manages, operates and maintains the assets and performs asset planning. If PSEG’s stated reason for excluding Long Island’s assets from the allocator’s calculation, that it does not hold the title to the assets, overcomes the asset management, operation, maintenance and other activities supported by PSEG Corporation, then the basis for using assets as a measure of relative corporate support in the allocator is flawed, because it cannot be applied in a balanced fashion to the significant subsidiaries supported. Regardless of the measures selected, the Enterprise Corporate allocator should be based on measures of size that are characteristic of and can be used for all subsidiary cost objectives, with the exception of subsidiaries that are small enough that the difference between using or not using a particular component would be immaterial. Leaving assets out of the allocator lowers PSEG LI’s allocation of corporate enterprise costs by nearly a third, and improperly shifts corporate enterprise costs to PSE&G and Power, but primarily to PSE&G as Power shrinks. Centralized Service Cost Allocation Methods and Procedures Recommendation 3.1a The Plan headcount factors used in the enterprise allocator should be replaced with actual employee headcounts. The Plan-based (authorized) subsidiary headcounts used to calculate the enterprise factor’s headcount component materially exceeded actual headcounts for PSE&G and Power, but not for PSEG LI. For example, PSE&G’s Plan headcount was more that 7% above actual headcount throughout the three-year review period, while PSEG LI’s actual headcount was within about 2% of Plan. This caused the allocator to assign relatively less corporate cost to PSEG LI and relatively more to PSE&G and Power than would have been the case had actual employee counts been used. Actual headcount is an accurate measure of the relative level of support provided by corporate activities to the employees of each subsidiary and is preferable to authorized employee levels, particularly when Plan levels contain several hundred authorized positions that never seem to get filled for one subsidiary, but not for another. Centralized Service Cost Allocation Methods and Procedures Recommendation 3.1b Adjustments to financial statement O&M expense for use in the enterprise allocator should be documented and explained. There are significant adjustments made to financial statement O&M expense for use in the Enterprise Corporate allocator. For example, in 2020 nearly 48% of PSE&G’s O&M expense was adjusted out for allocation purposes, and more than 42% was adjusted out for PSEG LI. Neither the basis nor the reasons for the adjustments are explained anywhere in PSEG Services’ CAM. It is not clear that the adjustments render a better “apple-to- apples” comparison of O&M expense across subsidiaries. To the extent any adjustments to published, verifiable O&M expense amounts are made in the allocator, they should be supported by the objective of making the figures more comparable across all subsidiary cost objectives. The logic behind any adjustments to O&M used for allocation purposes should be fully explained and documented in the CAM. Centralized Service Cost Allocation Methods and Procedures Recommendation 3.1c The service company catalog should be updated and documentation improved. The service company catalog should be reviewed to ensure it covers all services which are or are authorized to be provided. All obsolete services should be removed. An additional column of information should be added to better explain how the services are allocated; for example, descriptions of the transactional bases for services should be added. The service company activities included in services should be better documented in some cases. For example, instead of stating simply that a service is intended to include “enterprise level” activities, the service definition should provide examples of the types of work that qualify as enterprise level in the context of the department providing the service and the activities performed.",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "The Cost Allocation Manual should be updated to add, or a supplemental document should be developed to provide, an understandable description of how costs are allocated to business units within PSE&G; in particular, how PSEG Services’ costs are distributed to UbUs that comprise the foundation of state-level electric and gas distribution revenue requirements and rates. The CAM was not designed to explain how service company costs attributable to multiple PSE&G UbUs are distributed to the business units. The CAM does not explain the basis for allocations to UbUs or why some service company Customer Operations, Electric Operations and Asset Management and Centralized Services costs are or are not attributable to UbUs such as Appliance Services or Transmission. Instead, the CAM contains a technical discussion of the means of allocation within the utility (for example, what “surcharging,” “assessment” and “fixed percentage allocators” are and how they are calculated.) While this technical information is fine, as far as it goes, it does not explain the basis for the allocation of various common service company activities or why they are considered attributable to some UbUs, but not others. One way to accomplish a service-level documentation of the basis for cost allocation to UbUs would be to add the information to the service company catalog discussed above. Alternatively, the company should develop supplemental documentation that should be referenced in the CAM that provides this information.",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "PSEG Services should conduct and document a review of all significant common cost allocations to UbUs. Overland reviewed a limited number of allocations of service company costs within PSE&G and found mistakes had been made in the application of allocation percentages. In addition, services which appear to have been common to all UbUs served by operating organizations such as Customer Operations and Electric Operations were not allocated to all of the UbUs served by those organizations. It is likely that these problems are due to the “wall” between information available for utility FLoBs in the service company’s accounting system and UbU information available in the utility’s accounting system. We recommend a complete review of the links between service company services and utility UbUs and the basis and selection of UbU cost objectives for all services common to more than one UbU.",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "At the time of our audit the Service Agreement between PSEG Services and PSE&G was outdated. The agreement should accurately reflect all current service and allocation relationships. PSEG stated that the agreement we reviewed, which had not updated since 2003, was updated in 2022. Going forward, the Company should periodically review the agreement for material changes and update the agreement to reflect details and applicable changes through an addendum, or as appropriate, to update the entire agreement. The Service Agreement establishes basic terms for service company staffing, service accounting and utility payment, a service company working capital fund, record keeping and PSE&G access to records. It provides for a service company Board of Directors with approval responsibility for cost allocation methods. Overland did not review the 2022 update and it is not clear that it was comprehensive or addressed the problems the led to our recommendation. Although service and charging method descriptions are generic enough that many still apply, certain services and allocation descriptions in Agreement Schedule 1 have been changed pursuant to notice to the BPU. For example, Schedule item 9 describes the allocation basis for General PSEG Management services (corporate enterprise services) as being “assigned using a number of allocation methodologies [which] include but are not limited to . . . Modified Massachusetts formula, Revenue, Earnings and Capital Expenditures and Headcount.” It is Overland’s understanding that enterprise cost allocation formulas other than the currently used three- factor formula composed of net assets, headcount and operating expense were abandoned after 2009.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Marketing Conditions",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 8,
+          "text": "Provide a link to the Board’s “Shop for Energy Suppliers” webpage on PSE&G’s retail choice page to make Supplier browsing easier for customers.",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "Provide a link to the Company’s Price to Compare directly from its “Electric and Gas Choice Customer Information” page to allow customers to easily see the Price to Compare versus TPS rates.",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "Continue to actively participate in supporting retail choice in New Jersey, especially with the roll-out of Advanced Metering Infrastructure.",
+          "source_page": null
+        },
+        {
+          "number": 11,
+          "text": "PSE&G should initiate discussions with the New Jersey Board of Public Utilities (the “Board” or “BPU”) to discuss options and strategies to advocate for new sector weighting in PJM to provide more voting power and influence for members owning significant transmission and distribution assets and that have long-term interests in providing reliable service to end-use customers when voting in transmission-related proceedings, especially regarding New Jersey.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Electric Procurement and Supply",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "PSE&G should not implement any changes in current BGS policies and practices until their proposal is approved by the Board.",
+          "source_page": null
+        },
+        {
+          "number": 13,
+          "text": "The Electric Procurement and Supply function in PSE&G should adopt a more formal documented succession planning process for all of its manager-level and key analyst roles to maintain secure operations in the future.",
+          "source_page": null
+        },
+        {
+          "number": 14,
+          "text": "The Board should look at the impacts post sale of PSEG Power fossil facilities relative to the financial information provided and justification of ZECs to make sure stranded shared Service Company costs are not included as part of the financial hardship justification included by the nuclear plants in any future ZEC application.",
+          "source_page": null
+        },
+        {
+          "number": 15,
+          "text": "The Board should conduct an inquiry or audit of PSEG Services allocation methodology to ensure that none of the stranded shared services costs resulting from the sale of PSEG Power’s assets will be charged to the PSE&G ratepayers post-closing of the transaction.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Gas Supply and Procurement",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "The BPU should consider whether the benefits to customer of this arrangement continue to support this arrangement. Management should evaluate whether supply contract ownership and management should be moved to the regulated PSE&G utility, when practical. This would create synergies within the organization and centralize all gas supply processes within the PSE&G organization.",
+          "source_page": null
+        },
+        {
+          "number": 17,
+          "text": "Since the internal audit function is the primary tool for ensuring ER&T compliance with the Requirements Contract, audits should be scheduled more frequently and explicitly include the contract elements covered under the audit scope.",
+          "source_page": null
+        },
+        {
+          "number": 18,
+          "text": "ER&T should track the effectiveness of its hedging program to determine the overall impact to customers.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Deferral of Costs",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Given the critical role operating areas play in determining which storm-related costs can be deferred, we recommend that PSE&G formally notify the BPU in advance in writing of any plans to increase or otherwise subdivide its current New Jersey operating areas on a prospective basis. In addition, until the BPU decides that the consequences of this decision on the deferral of future PSE&G storm restoration costs are acceptable, the criteria for determining whether an event is major or not will be based on historical definitions of PSE&G’s operating areas.",
+          "source_page": null
+        },
+        {
+          "number": 20,
+          "text": "If not already included in its 2022 plan, we recommend that Internal Auditing Services perform audit(s) in the next twelve months of PSE&G’s most significant regulatory assets and liabilities as well as those that have been created since 2017, such as the post-2018 base rate case storm- related cost deferrals and the COVID-19 cost deferral. Thereafter, all of PSE&G’s regulatory assets and liabilities should undergo internal audit at least once every three years, or the Company should justify why they do not warrant such examination. In addition to determining whether the regulatory assets and liabilities are properly presented and disclosed in the Company’s financial statements, the audits should ensure compliance with regulatory policy, precedent, and rules in addition to confirming that internal controls associated with these regulatory assets and liabilities are appropriate and operating effectively. All related audit reports should be made available to BPU staff or their delegates, upon request.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Recommendations and Review of Previous Analysis",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 21,
+          "text": "We recommend that implementation plans and/or actions taken by the company to respond to recommendations made in this affiliate transactions and management audit be tested by PSEG’s Internal Auditing Services group for comprehensiveness and effectiveness on an annual basis until all accepted recommendations have been implemented. The results of this review should be provided to the BPU in a timely manner upon request, and associated workpapers should be made available for review by the BPU, as requested.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Strategic Planning",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 22,
+          "text": "We recommend that the PSEG board’s Executive Committee members should be compensated by the number of meetings attended rather than by annual retainer at levels equal to that of the board’s standing committees. A payment of $5,000 per meeting attended would more closely align with the actual workload of this as-needed committee than the status quo. If the board is concerned that this would unduly penalize Executive Committee members from a compensation standpoint, given the historical composition of the committee, it could make minor adjustments to Lead Director and committee chair annual retainer amounts. Executive Management and Corporate Governance Recommendations 12.1 We recommend that actual and targeted performance associated with compensable metrics used in the SMICP, MICP, and LTIP be proactively communicated to all participants throughout the performance year so that informed decisions concerning remedial action can be taken by all in a timely manner. If release of this information cannot be disseminated to the Company employees who have been identified as most crucial to the success of the organization, then different metrics that can be shared should be selected. Executive Management and Corporate Governance Recommendations 12.2 We recommend that the Organization and Compensation Committee require a certain level of accomplishment be achieved with respect to PSE&G safety, reliability, and customer satisfaction in order for pay-outs to be paid to executives under the short-term incentive compensation plans as currently designed. If these threshold levels of safety, reliability, and customer satisfaction are not achieved in a given year, then short-term incentive compensation earned by executives should be capped at 50 percent of target performance achievement irrespective of how the Company performs against other metrics such as financial, ESG, etc. Executive Management and Corporate Governance Recommendations 12.3 The destruction of PSEG materials, including those related to the board and the board committee self-evaluations, should conform with the Company’s currently existing record retention policy and verifiable market standard practices. Executive Management and Corporate Governance Recommendations 12.4 The PSEG board of directors should retain a qualified expert on public company board and corporate governance matters to conduct a periodic independent assessment of the board’s and its committees’ effectiveness. At a minimum, the purpose of this assessment would be to identify areas of improvement, instances in which corporate governance best practices are not being followed by the board or its committees, and non-conformance with regulatory requirements. The third party should be retained by the PSEG board or one of its standing committees. The assessment should be conducted at least once every five years. Executive Management and Corporate Governance Recommendations 12.5 The Company should enhance its ERM policy and procedures to address the development of a risk appetite statement that is owned by the Risk Management Committee and subject to approval by the board (or relevant committee).",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Accounting and Property Records",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Internal Audit should continue to functionally report to the Audit Committee of the PSEG board of directors. However, on an administrative basis, it should ideally report to the CEO of PSEG. Alternatively, we recommend that Internal Audit should revert back to reporting administratively to the CFO, and the Audit Committee of the PSEG board of directors should document its rationale in writing for this reporting structure, including mitigating controls available for situations that could adversely impact the objectivity of the head of Internal Audit and the department as a whole. In such instances, the Audit Committee should periodically, but not less than annually, evaluate whether the head of Internal Audit is impartial and not unduly influenced by the administrative reporting line arrangement. Furthermore, conflicts of interest for the head of Internal Audit and all other audit staff should be monitored at least annually with appropriate restrictions placed on auditing areas where conflicts may arise.",
+          "source_page": null
+        },
+        {
+          "number": 24,
+          "text": "When a new person is considered for the position of head of Internal Audit on a prospective basis, management and PSEG board’s Audit Committee should select and approve a person with a professional and educational background as an accountant and/or financial auditor. In addition, future periodic external assessments of PSEG’s Internal Audit function should specifically include an assessment of the competence of the head of Internal Audit as well as a commentary on industry and peer best practices concerning the educational and professional qualifications of the head of Internal Audit, adequately supported by benchmarking data.",
+          "source_page": null
+        },
+        {
+          "number": 25,
+          "text": "The Internal Audit charter and the PSEG board of directors’ Audit Committee charter should state that the Audit Committee has the responsibility to approve the staffing of the Internal Audit department (a key component of resource planning) and the budget of Internal Audit rather than the Company’s executive management.",
+          "source_page": null
+        },
+        {
+          "number": 26,
+          "text": "The PSEG Audit Committee charter should be modified to explicitly state that the Audit Committee is responsible for reviewing and approving the internal audit plan for the upcoming year.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Electric Distribution and Operations Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "The Company should leverage advanced computerized tools to assist with staffing forecasts that optimizes internal hiring and contractor utilization. This should be coordinated with a broader corporate effort to accurately model and forecast staffing needs by leveraging input from leadership through a formalized process. The output of this model should be the generation of a short- and long-term resourcing plan.",
+          "source_page": null
+        },
+        {
+          "number": 28,
+          "text": "The Company should conduct a time study for all front-line supervision within Electric Operations, then benchmark to other utilities for best practices. Pending the results of the study, the Company should strive to reduce the administrative burden, if applicable, so supervisors can maximize their time overseeing employee safety and productivity.",
+          "source_page": null
+        },
+        {
+          "number": 29,
+          "text": "The Company should prepare checklists for all ICS roles that capture required activity for all phases of restoration. The checklist should be aligned to the Company’s response plans and with the goal of supporting the effective management of each ICS role.",
+          "source_page": null
+        },
+        {
+          "number": 30,
+          "text": "The Company should re-evaluate their ETR process to determine whether Damage Assessment can be better incorporated to support ETR development in the earliest phase of major events. Additionally, the Company should indicate their compliance to the ETR standards established by the BPU by implementing a tracking method and reporting their compliance through every submitted Major Event report.",
+          "source_page": null
+        },
+        {
+          "number": 31,
+          "text": "The actions and initiatives resulting from AARs conducted after each weather event should incorporate project management rigor and governance to ensure accountability, timeliness and transparency.",
+          "source_page": null
+        },
+        {
+          "number": 32,
+          "text": "In addition to tracking PPCs at a circuit level, the Company should also track the substations that tend to contain a concentration of PPCs to identify trends that could support asset management recommendations at the substation level.",
+          "source_page": null
+        },
+        {
+          "number": 33,
+          "text": "More advanced DER penetration and EV Charger forecasts should be prepared on a short- and long-term basis. This effort should use more advanced forecasting methods such as economic modeling, industry data, and surveying.",
+          "source_page": null
+        },
+        {
+          "number": 34,
+          "text": "To ensure the proper oversight and management of the Company’s Smart Grid strategy and implementation, including deploying their Integrated Distribution Plan (IDP), they should implement a PMO and associated program management frameworks to manage.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Cybersecurity",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "The Company should develop a customized template to drive a consistent approach to reporting for all levels of governance. Content and metrics should be generally similar including, but not be limited to, Progress on Actions from last month, Emergent Topics or issues, latest intelligence, Key Risks, any escalations from other meetings and metrics.",
+          "source_page": null
+        },
+        {
+          "number": 36,
+          "text": "The Company should have robust meeting minutes, decision, and action tracking logs for all cybersecurity governance meetings. This will ensure that all decisions and actions are trackable and accountability is clear for appropriate follow through.",
+          "source_page": null
+        },
+        {
+          "number": 37,
+          "text": "The Company should report key staffing risks to leadership through the governance process and highlight actions taken to close these risk areas.",
+          "source_page": null
+        },
+        {
+          "number": 38,
+          "text": "The Company should prioritize the creation of and implementation of an internally visible schedule of third party cybersecurity compliance audits for medium and high risk vendors and suppliers.",
+          "source_page": null
+        },
+        {
+          "number": 39,
+          "text": "The incorporation of cybersecurity checkpoints into the SDLC should be a mandatory requirement and not optional, the rationale for not implementing should be detailed and vetted through appropriate leadership.",
+          "source_page": null
+        },
+        {
+          "number": 40,
+          "text": "While Overland recognizes that the Company is moving forward with implementing a customized program management framework for cybersecurity programs, the effort is still developing and many questions remain. Therefore, Overland recommends that the Company provides regular reporting to the BPU on progress and scope of this effort to ensure it incorporates best practices and is timely.",
+          "source_page": null
+        },
+        {
+          "number": 41,
+          "text": "The CSRC Incident Response Plan should include process maps where appropriate to assist with plan use. Additionally, where applicable decision trees should also be included to help with more complex decision making processes.",
+          "source_page": null
+        },
+        {
+          "number": 42,
+          "text": "The Company should implement a more robust After Action Review tracking approach by implementing a project management centric (including progress to date, delivery date, dependencies, key issues, etc.) and reporting approach, which assigns a clear owner for delivery.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Gas Delivery",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 43,
+          "text": "To support increased collaboration between Asset Management & Planning and Gas Operations departments, PSE&G should pursue the collaboration initiatives cited in the Utility Culture Action Plan Rollout, dated February 2021, with the goal of creating a shared vision, mutual respect, and in-depth understanding of each other’s role in achieving excellent business outcomes and outstanding customer service. To confirm the two departments are making progress, a focused employee engagement survey should be periodically conducted, and based on survey results the collaboration initiatives employed adjusted.",
+          "source_page": null
+        },
+        {
+          "number": 44,
+          "text": "Develop a program that prioritizes the replacement of all short sections (less than 50 feet) of smaller diameter (8-inch and smaller) of cast iron pipe operating above utilization pressure in low priority GSMP grids. The program should have a definitive start and end date consistent with prudent distribution system risk management.",
+          "source_page": null
+        },
+        {
+          "number": 45,
+          "text": "Augment current Gas Distribution Standards training by stressing the need for correct entries with respect to leak cause. Training should emphasize the importance of this information as it provides the basis for determining which mains and services get replaced.",
+          "source_page": null
+        },
+        {
+          "number": 46,
+          "text": "Perform an open leak cost-benefit study, similar to what other gas utilities have conducted, to determine if there is a potential cost savings as well as reduced methane emissions associated with fixing leaks sooner.",
+          "source_page": null
+        },
+        {
+          "number": 47,
+          "text": "If conclusions from the open leak cost-benefit study support reducing the number of open leaks, the Company should develop and commit to a plan of significantly reducing the number of open leaks from end of year 2020 levels.",
+          "source_page": null
+        },
+        {
+          "number": 48,
+          "text": "Future GSMP filings will recommend continued replacement of cast iron and bare steel in PSE&G’s gas distribution system. By continuing to remove these leak prone facilities and assuming normal winter conditions, the Company should experience less leaks per mile in the remaining facilities. Consequently, the Company should continue to commit to the BPU that it will achieve a reduced end of year open leak backlog in concert with any future GSMP filings.",
+          "source_page": null
+        },
+        {
+          "number": 49,
+          "text": "Develop a written policy and process addressing when and how potential non-pipeline alternatives to traditional long-term system reinforcement projects should be evaluated.",
+          "source_page": null
+        },
+        {
+          "number": 50,
+          "text": "To demonstrate GSMP success in reducing the Leak Hazard Index per mile of main that remains in its system, PSE&G should develop and annually report to the BPU a suitable metric that emphasizes the inventory of prioritized utilization pressure cast iron main remaining in its system based on the Hazard Index per mile of main per map grid.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "Contractor Performance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 51,
+          "text": "Expand PSE&G’s Peer Panel Benchmarking to include additional comparisons for gas and electric damage prevention, specifically the markout program, or develop some other enhanced comparative analysis for damage prevention. The comparison should be structured in such a way that the damage prevention program variability between utilities can be identified to allow understanding of the methods utilized by the utilities achieving superior gas and electric damage prevention performance.",
+          "source_page": null
+        },
+        {
+          "number": 52,
+          "text": "Initiate the documenting and tracking of any procedure or process changes resulting from analysis of major categories of improvement ideas expressed by customers in the Transaction Satisfaction Survey should be initiated.",
+          "source_page": null
+        },
+        {
+          "number": 53,
+          "text": "Include the Gas Operator Qualifications Program in PSE&G’s audit risk assessment process and perform an internal audit of operator qualifications (OQ) program compliance with US Department of Transportation (DOT) rules and regulations. The audit should focus on determining whether the OQ program adheres to the protocols required by DOT rules. Reassess audit risk after performing the audit and determine whether the OQ program should be subject to periodic audit.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "Human Resources",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "The Labor Relations team within HR, in consultation with the company’s Compensation HR Center of Excellence, should consider more formally benchmarking wage compensation for union employees against peers to assist in negotiating union wages that are both fair and comparable with peers. Overland requested union wage, benefits, job classification and work rules benchmarking data. In response to our request, PSEG stated that “[o]ther than the benchmarking data provided by the other HR Centers for Excellence, records of the research and consultation performed by Labor Relations are utilized in the normal course of business to inform the work of the Labor Relations team but are not formally archived.” Our recommendation applies primarily to union wages, as opposed to employee benefits, given that PSEG obtains benchmarking data for union employee benefits from Aon.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "title": "Customer Service",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 55,
+          "text": "The relatively new 82,000 square foot Newark Customer Contact Center is significantly underutilized considering the annual lease and utilities costs of approximately [BEGIN CONFIDENTIAL] [END CONFIDENTIAL]million and estimated space utilization of only about 15%, due mainly to a continuation of the Covid-era policy of allowing most agents to work from home. As soon as practicable, PSE&G should take steps to reduce its leased space footprint in the new Newark Customer Contact to match the highest utilization the Company expects it will need under its ongoing work-from-home policy.",
+          "source_page": null
+        },
+        {
+          "number": 56,
+          "text": "Rather than simply having a stated goal of top-quartile or top-decile performance, PSE&G should develop a concrete plan of action to improve, over the medium term (1-3 years), key Contact Center metrics in which it ranks in the third or fourth quartile, specifically the customer inquiry service level and the abandoned call percentage, to at least second quartile performance among peers in the JD Power survey. While the ongoing efforts PSE&G cited in response to our data request concerning performance in these metrics could be part of this plan, we recommend PSE&G document a plan with an overall target performance level for each metric, the timeframe over which it expects to achieve the resulting performance, the specific efforts or projects it expects will bring about the improvement, and assign management accountability for the targeted performance.",
+          "source_page": null
+        },
+        {
+          "number": 57,
+          "text": "PSE&G’s 16 CSCs currently cost approximately $10 million annually to operate, excluding building costs, while processing only about 2% of PSE&G’s total payments. As part of the ongoing effort to move customer communication to digital channels, we recommend PSE&G develop a specific plan to better utilize the CSCs or simply reduce their overall cost by closing the least productive centers, as permitted by employee attrition or reassignment, and considering geography, customer payment alternatives, and historic trends of utilization. Recognizing PSE&G may be constrained by current agreements with union-represented employees, such steps might include utilizing current CSC employees for additional customer service functions or requirements, or simply closing the least utilized centers permanently. Overland recognizes there are additional mitigating factors, such as the social service assistance provided within some of the centers; however, regarding these we believe PSE&G should determine whether digitized customer channels might, in some cases, provide equivalent or even improved social services assistance. This should not be construed as a recommendation to close all 16 local centers.",
+          "source_page": null
+        },
+        {
+          "number": 58,
+          "text": "We recommend PSE&G develop a metric to measure the extent to which its procedures result in the establishment of service within two business days of the receipt of a customer’s application for utility service, as required by N.J.A.C. Section 14:3-3.2(g). Consideration should include evaluation of processes, systems, and costs required to implement.",
+          "source_page": null
+        },
+        {
+          "number": 59,
+          "text": "We recommend PSE&G develop a metric to measure the extent to which its procedures result in the restoration of service within 12 hours upon a customer correcting all of the conditions which caused service to be disconnected, as required by N.J.A.C. Section 14:3-3A.9(a). Consideration should include evaluation of processes, systems, and costs required to implement.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "title": "Support Services",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 60,
+          "text": "PSE&G should implement the inventory optimization analysis currently in development and update the SAP system with optimal material quantities.",
+          "source_page": null
+        }
+      ]
+    }
+  ],
   "structured": true
 }

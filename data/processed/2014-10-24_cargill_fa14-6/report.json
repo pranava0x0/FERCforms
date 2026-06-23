@@ -24,7 +24,15 @@
   "forms": [
     "552"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Nonreportable Purchase and Sales Volumes",
+      "summary": "Cargill incorrectly reported certain nonreportable purchase and sales volumes as transactions contracted: at fixed prices, at prices that refer to published daily and monthly indices, and at prices set upon a physical basis transaction value. This resulted in Cargill over-reporting purchase and sales volumes by 202.2 TBtu and 218.6 TBtu, respectively, in its 2012 Form 552.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

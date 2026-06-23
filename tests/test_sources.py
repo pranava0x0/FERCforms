@@ -8,6 +8,7 @@ their source and full provenance but NOT machine-extracted into findings
 from __future__ import annotations
 
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -249,6 +250,47 @@ def test_every_committed_report_is_gov_sourced():
         d = json.loads(p.read_text(encoding="utf-8"))
         assert sources.is_official_gov(d["source_page_url"]), f"{p.parent.name}: {d['source_page_url']}"
         assert sources.is_official_gov(d["pdf_download_url"]), f"{p.parent.name}: {d['pdf_download_url']}"
+
+
+# Garbage signatures a loose/marker-based parser produces (regression for the
+# 2026-06-23 cleanups: NJ Liberty TOC-leader "findings", the PSE&G Overland 1.8 MB
+# runaway row, and rate-case TOC fragments). Findings/recs are verbatim quotes — none
+# of these may ever appear in committed data again.
+_TOC_LEADER_RE = re.compile(r"\.{6,}|…{2,}")   # dotted / middle-dot Table-of-Contents leaders
+_CID_ARTIFACT = "(cid:"                          # PDF glyph-extraction artifact
+_MAX_FIELD_CHARS = 15000                          # a real verbatim finding/rec is far shorter
+
+
+def _finding_fields(finding: dict) -> list[tuple[str, str]]:
+    """(label, text) for every quoted field on a finding + its recommendations."""
+    out = [("title", finding.get("title") or ""), ("summary", finding.get("summary") or "")]
+    out += [("rec", r.get("text") or "") for r in finding.get("recommendations", [])]
+    return out
+
+
+def test_no_garbled_findings_in_committed_corpus():
+    """Corpus-wide data-quality guard. Every committed finding/recommendation is a
+    verbatim quote, so none may be Table-of-Contents furniture, a glyph artifact, a
+    runaway field that absorbed the document, or a contentless title. This catches the
+    whole class of loose-parser garbage cleaned 2026-06-23 — see ISSUES.md."""
+    offenders: list[str] = []
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        rid = p.parent.name
+        for f in d.get("findings", []):
+            title = (f.get("title") or "").strip()
+            # A finding title must carry real content (the garbage titles were "s",
+            # page numbers, bare punctuation).
+            if len(re.sub(r"[^A-Za-z0-9]", "", title)) < 2:
+                offenders.append(f"{rid}: contentless finding title {title!r}")
+            for label, text in _finding_fields(f):
+                if _TOC_LEADER_RE.search(text):
+                    offenders.append(f"{rid}: {label} is a TOC leader: {text[:60]!r}")
+                if _CID_ARTIFACT in text:
+                    offenders.append(f"{rid}: {label} has a (cid:) artifact: {text[:60]!r}")
+                if len(text) > _MAX_FIELD_CHARS:
+                    offenders.append(f"{rid}: {label} is {len(text)} chars (runaway row?)")
+    assert not offenders, "garbled findings in committed corpus:\n" + "\n".join(offenders[:40])
 
 
 def test_committed_seeds_have_unique_pdf_urls():

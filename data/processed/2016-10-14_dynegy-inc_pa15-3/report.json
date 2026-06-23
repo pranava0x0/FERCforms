@@ -24,7 +24,15 @@
     "generation"
   ],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "EQR Filing Requirements",
+      "summary": "Dynegy’s EQR filings contained numerous errors, some of which were significant, including: uplift payments in the wholesale organized markets and misclassification of transactions as energy sales, as well as unreported and inaccurately reported capacity sales, particularly in the MISO markets. These errors inhibit the ability of the Commission and other interested entities to monitor wholesale electricity market activities.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

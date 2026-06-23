@@ -138,12 +138,19 @@ def parse_exhibit_i2(full_text: str) -> list[tuple[str, list[str]]]:
 #     Accounting and Property Records  <- the row's "Chapter" column value (title-case,
 #                                          no terminal punctuation), then the next label.
 # So per row the chapter title trails the text. We map, verbatim and no-LLM, one
-# Finding per consecutive run of the same chapter title. (Liberty Consulting audits —
-# JCP&L/ACE/NJNG/MI — have NO such consolidated list, only prose "We recommend …"
-# embedded in chapters, so they stay metadata-only — forcing a parse would garble.)
+# Finding per consecutive run of the same chapter title (PSE&G → 16 findings/60 recs).
+# (Liberty Consulting audits — JCP&L/ACE/NJNG/MI — have NO such consolidated list, only
+# prose "We recommend …" embedded in chapters, so they stay metadata-only — forcing a
+# parse would garble; routed through structure_mo_audit which returns None for them.)
 _OVERLAND_ANCHOR = "Comprehensive Listing of All Recommendations"
 _OVERLAND_LABEL_RE = re.compile(r"^Recommendation\s+\d+\.\d+$")
+_OVERLAND_LABEL_LINE_RE = re.compile(r"(?m)^\s*Recommendation\s+\d+\.\d+\s*$")
 _OVERLAND_SKIP_RE = re.compile(r"^(Public Version|Public Service|Overland Consulting|Attachment\b|©|\d+$)")
+# End of the listing: the next attachment / boilerplate that follows it. Without this
+# bound the final row's text absorbs the rest of the document (e.g. PSE&G's last row
+# swallowed 1.8 MB of interview lists / appendices). See ISSUES.md 2026-06-23.
+_OVERLAND_END_RE = re.compile(r"(This page intentionally left blank|LIST OF INTERVIEWS|List of Interviews)", re.I)
+_OVERLAND_MAX_REC_CHARS = 6000  # a real listed recommendation is short; cap guards any runaway
 
 
 def _looks_like_chapter(line: str) -> bool:
@@ -159,13 +166,23 @@ def parse_overland_recommendations(full_text: str) -> list[tuple[str, list[tuple
     idx = full_text.find(_OVERLAND_ANCHOR)
     if idx == -1:
         return []
-    lines = [ln.strip() for ln in full_text[idx:].splitlines() if ln.strip()]
+    # Bound the region: the listing is a dense run of "Recommendation N.M" labels, so
+    # cap it just past the last one. This stops the final row from swallowing the
+    # detailed report / appendices that follow the listing.
+    region = full_text[idx:]
+    labels = list(_OVERLAND_LABEL_LINE_RE.finditer(region))
+    if labels:
+        region = region[: labels[-1].end() + _OVERLAND_MAX_REC_CHARS]
+    lines = [ln.strip() for ln in region.splitlines() if ln.strip()]
     lines = [ln for ln in lines if ln not in ("Recommendation", "Chapter") and not _OVERLAND_SKIP_RE.match(ln)]
 
-    # 1) Split into (text-lines) buffers per Recommendation N.M label.
+    # 1) Split into (text-lines) buffers per Recommendation N.M label. Stop at the
+    # first end-of-listing marker so trailing attachment text never enters a row.
     raw: list[list[str]] = []
     cur: list[str] | None = None
     for ln in lines:
+        if _OVERLAND_END_RE.search(ln):
+            break
         if _OVERLAND_LABEL_RE.match(ln):
             if cur is not None:
                 raw.append(cur)
@@ -181,7 +198,7 @@ def parse_overland_recommendations(full_text: str) -> list[tuple[str, list[tuple
         chap: list[str] = []
         while buf and _looks_like_chapter(buf[-1]):
             chap.insert(0, buf.pop())
-        text = re.sub(r"\s+", " ", " ".join(buf)).strip()
+        text = re.sub(r"\s+", " ", " ".join(buf)).strip()[:_OVERLAND_MAX_REC_CHARS]
         if text:
             rows.append((re.sub(r"\s+", " ", " ".join(chap)).strip() or "Recommendations", text))
 
@@ -194,14 +211,101 @@ def parse_overland_recommendations(full_text: str) -> list[tuple[str, list[tuple
     return chapters
 
 
+# --- NorthStar Consulting comprehensive M&O audits (e.g. NY DPS NYSEG/RG&E, LIPA) ----
+# NorthStar M&O audits open with a "Summary of Recommendations" table whose rows are:
+#     GOVERNANCE AND MANAGEMENT      <- ALL-CAPS functional-area heading
+#     III-1                          <- {chapter-roman}-{item} label (own line)
+#     <verbatim recommendation text, 1-N wrapped lines>
+#     III-2
+#     ...
+# The consolidated table is the FIRST monotonic run of chapter labels (III-1 … XIII-N);
+# the detailed body then restarts the same labels (III-1 …), so we stop when a chapter
+# roman decreases. Chapters I/II are the Executive Summary / Background, paginated as
+# "I-10", "I-11" page footers interleaved in the table text — those are skipped. The
+# report states its own count ("produced 128 recommendations" / "a total of 80
+# recommendations"), used as the acceptance gate so a partial/over-read is rejected.
+_NORTHSTAR_ANCHOR = "Summary of Recommendations"
+_NS_LABEL_RE = re.compile(r"^([IVXLCM]+)-(\d+)[A-Za-z]?$")
+_NS_ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8,
+             "IX": 9, "X": 10, "XI": 11, "XII": 12, "XIII": 13, "XIV": 14, "XV": 15, "XVI": 16}
+_NS_FIRST_CHAPTER = 3  # chapters I & II (exec summary / background) carry no table recs
+_NS_HEAD_NOISE = {"RECOMMENDATION", "REC #", "NORTHSTAR", "SUMMARY OF RECOMMENDATIONS",
+                  "TABLE OF CONTENTS", "EXECUTIVE SUMMARY"}
+# Grand-total phrasings only ("total of N" / "produced N" / "made N recommendations").
+# These carry the report's overall count; LIPA's incidental "with 18 recommendations" /
+# "resulted in 49 recommendations" (prior audits) use other verbs and are not matched.
+_NS_COUNT_RES = [
+    re.compile(r"total of (\d{1,3}) recommendations", re.I),
+    re.compile(r"produced (\d{1,3}) recommendations", re.I),
+    re.compile(r"made (\d{1,3}) recommendations", re.I),
+]
+
+
+def northstar_stated_count(full_text: str) -> "int | None":
+    """The number of recommendations the NorthStar report says it made, or None."""
+    flat = re.sub(r"\s+", " ", full_text)
+    for rx in _NS_COUNT_RES:
+        if (m := rx.search(flat)):
+            return int(m.group(1))
+    return None
+
+
+def parse_northstar_recommendations(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
+    """Parse the NorthStar 'Summary of Recommendations' table. Returns chapters in
+    document order as (functional_area_title, [(verbatim_rec, None), ...]); empty if
+    the table isn't present. source_page is None (the labels are chapter.item, not pages)."""
+    start = full_text.find(_NORTHSTAR_ANCHOR)
+    if start == -1:
+        return []
+    lines = [ln.strip() for ln in full_text[start:].splitlines() if ln.strip()]
+    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
+    parts: list[str] = []
+    collecting = False
+    cur_roman: int | None = None
+    last_num = 0
+    pending_title: str | None = None
+
+    def flush() -> None:
+        nonlocal parts, collecting
+        if collecting and parts and chapters:
+            text = re.sub(r"\s+", " ", " ".join(parts)).strip()[:1200]
+            if text:
+                chapters[-1][1].append((text, None))
+        parts = []
+        collecting = False
+
+    for ln in lines:
+        m = _NS_LABEL_RE.match(ln)
+        if m and _NS_ROMAN.get(m.group(1)):
+            r, n = _NS_ROMAN[m.group(1)], int(m.group(2))
+            if r < _NS_FIRST_CHAPTER:
+                continue  # "I-10"/"II-3" page-footer artifact — ignore, keep collecting
+            if cur_roman is not None and r < cur_roman:
+                break     # a chapter roman went backward -> the detailed body restarted
+            if cur_roman is not None and r == cur_roman and n >= last_num + 1:
+                flush(); collecting = True; last_num = n; continue
+            if (cur_roman is None or r > cur_roman) and n == 1:
+                flush(); chapters.append((pending_title or f"Chapter {m.group(1)}", []))
+                cur_roman, last_num, collecting, pending_title = r, 1, True, None; continue
+            continue      # a stray non-monotonic label within the chapter -> skip
+        if (ln.isupper() and any(c.isalpha() for c in ln) and len(ln) < 60
+                and ln not in _NS_HEAD_NOISE and not _NS_LABEL_RE.match(ln)):
+            pending_title = ln.title(); continue
+        if collecting:
+            parts.append(ln)
+    flush()
+    return [(t, recs) for t, recs in chapters if recs]
+
+
 def structure_mo_audit(
     seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]
 ) -> AuditReport | None:
     """Build a structured AuditReport from a state management/operations audit.
 
-    Tries the PA Bureau of Audits Exhibit I-2 table first, then the Overland
-    Consulting "Comprehensive Listing of All Recommendations". Returns None when
-    neither format is present or neither yields findings — the caller then falls
+    Tries, in order: the PA Bureau of Audits Exhibit I-2 table, the Overland
+    Consulting "Comprehensive Listing of All Recommendations", then the NorthStar
+    "Summary of Recommendations" table (count-gated against the report's stated total).
+    Returns None when none is present or none yields findings — the caller then falls
     back to metadata-only (so a non-matching report never emits a broken record).
     """
     full_text = "\n".join(p.text for p in pages)
@@ -210,6 +314,16 @@ def structure_mo_audit(
     if not with_recs:
         chapters = parse_overland_recommendations(full_text)
         with_recs = [(title, recs) for title, recs in chapters if recs]
+    if not with_recs:
+        chapters = parse_northstar_recommendations(full_text)
+        with_recs = [(title, recs) for title, recs in chapters if recs]
+        # Gate: accept only if the parse recovers ~all of the report's stated count
+        # (≥90%, not over). Rejects a false-fire on a non-NorthStar doc (no stated
+        # count) or a partial/body-bleed read, falling back to metadata-only.
+        stated = northstar_stated_count(full_text)
+        n = sum(len(recs) for _t, recs in with_recs)
+        if not stated or not (stated * 0.9 <= n <= stated):
+            with_recs = []
     if not with_recs:
         return None
 
@@ -505,62 +619,10 @@ def structure_ca_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: l
     )
 
 
-# --- New Jersey Rate Cases & Audit Orders ---
-def parse_nj_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
-    """Parse New Jersey BPU rate case orders and audit findings."""
-    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
-    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
-
-    for i, line in enumerate(lines):
-        if any(marker in line for marker in ["Finding", "Order", "Determination", "Issue"]) and len(line) < 250:
-            title = line.replace("Finding", "").replace("Order", "").replace("Issue", "").strip()
-            if not title or len(title) < 3:
-                continue
-            description_lines = []
-            for j in range(i + 1, min(i + 8, len(lines))):
-                next_line = lines[j]
-                if any(m in next_line for m in ["Finding", "Order", "Issue"]):
-                    break
-                if next_line and len(next_line) > 15:
-                    description_lines.append(next_line)
-
-            if description_lines:
-                text = " ".join(description_lines)
-                chapters.append((title, [(text, None)]))
-
-    return chapters
-
-
-def structure_nj_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
-    """Build AuditReport from New Jersey rate case or audit order."""
-    full_text = "\n".join(p.text for p in pages)
-    chapters = parse_nj_findings(full_text)
-    with_findings = [(title, findings) for title, findings in chapters if findings]
-
-    if not with_findings:
-        return None
-
-    findings: list[Finding] = []
-    rec_no = 0
-    for idx, (title, finding_items) in enumerate(with_findings, 1):
-        rec_models = []
-        for text, _page in finding_items:
-            rec_no += 1
-            text_clean = re.sub(r"\s+", " ", text).strip()
-            if text_clean and len(text_clean) > 20:
-                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
-        if rec_models:
-            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
-
-    if not findings:
-        return None
-
-    return AuditReport(
-        collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
-        doc_type=seed.doc_type, id=seed.id, company=seed.company, company_raw=seed.company,
-        docket=seed.docket, docket_full=None, issued_date=seed.issued_date,
-        source_page_url=seed.source_page_url, pdf_download_url=seed.pdf_url,
-        captured_at=seed.captured_at, source_note=seed.source_note, archived_via=seed.archived_via,
-        industry=seed.industry, page_count=len(pages), scanned_pages=scanned_pages, ocr_used=False,
-        finding_count=len(findings), findings=findings, structured=True,
-    )
+# NOTE: NJ BPU documents are routed through `structure_mo_audit` (Overland/Exhibit-I2)
+# in pipeline/sources.py. The PSE&G affiliate/management audit carries the Overland
+# "Comprehensive Listing of All Recommendations" (parsed verbatim → 17 findings/61 recs);
+# the Liberty audits (JCP&L/ACE/NJNG) and the rate-case orders have no consolidated list,
+# so structure_mo_audit returns None and they stay metadata-only. The earlier marker-based
+# `parse_nj_findings`/`structure_nj_audit` were removed (2026-06-23): they harvested TOC
+# dotted-leader lines as 477 garbled "findings" (JCP&L 183, ACE 252, NJNG 42). See ISSUES.md.

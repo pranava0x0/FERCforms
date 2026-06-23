@@ -40,7 +40,6 @@ from pipeline.state_structure import (
     structure_ca_audit,
     structure_mi_audit,
     structure_mo_audit,
-    structure_nj_audit,
     structure_tx_audit,
 )
 
@@ -438,9 +437,14 @@ def process_seed(
                     report = structure_mi_audit(seed, parse_pages, scanned)
                 elif seed.jurisdiction == "CA":
                     report = structure_ca_audit(seed, parse_pages, scanned)
-                elif seed.jurisdiction == "NJ":
-                    report = structure_nj_audit(seed, parse_pages, scanned)
                 else:
+                    # NJ included here: its M&O/affiliate audits use the Overland
+                    # "Comprehensive Listing" (PSE&G) or no consolidated list at all
+                    # (Liberty: JCP&L/ACE/NJNG) — structure_mo_audit parses the former
+                    # verbatim and returns None for the latter so they fall back to
+                    # metadata-only. (The old marker-based structure_nj_audit harvested
+                    # TOC dotted-leader lines as hundreds of garbled "findings" — see
+                    # ISSUES.md 2026-06-23.)
                     report = structure_mo_audit(seed, parse_pages, scanned)
             except Exception as exc:  # noqa: BLE001 — parser miss falls back to metadata-only
                 logger.warning("parse failed for %s (%s) — metadata-only", seed.id, exc)

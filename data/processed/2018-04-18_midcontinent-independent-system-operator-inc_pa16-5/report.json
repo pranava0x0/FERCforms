@@ -26,7 +26,15 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Records Management Procedures",
+      "summary": "MISO inappropriately destroyed certain records during the audit contrary to the requirements of the Commissions regulations and direction. The destruction of these records inhibited the performance of certain audit processes and procedures.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

@@ -24,7 +24,50 @@
   "forms": [
     "2"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 6,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Calculation of Allowance for Funds Used During Construction (AFUDC) Rates and Accrual",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Allocation of Overhead Costs to Construction Work In Progress (CWIP)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Greenlick Storage Fire Gas Loss Regulatory Asset",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for Employment Discrimination Settlements or Judgments",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Lobbying Expenses",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Filing of Proposed Accounting for the Sale of Gas Plant Assets",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }
