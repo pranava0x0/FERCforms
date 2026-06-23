@@ -26,7 +26,85 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "SDG&E’s methods for calculating its Allowance for Funds Used During Construction (AFUDC) base and rate were deficient. Specifically, SDG&E improperly included unpaid contract retention accruals in its construction work in process (CWIP) balance, and unamortized debt discounts and losses on reacquired debt in the determination of its long-term debt balance. As a result, SDG&E miscalculated its AFUDC base and rate. This led it to over-accrue AFUDC, which resulted in an overstatement of CWIP and plant in service balances. This resulted in SDG&E overbilling wholesale transmission customers because the excessive AFUDC costs were included in utility plant that impacted wholesale formula rate determinations. 3 16 U.S.C. § 824s (2018). 4 Promoting Transmission Investment through Pricing Reform, Order No. 679, 116 FERC ¶ 61,057, order on reh’g, Order No. 679-A, 117 FERC ¶ 61,345 (2006), order on reh’g, 119 FERC ¶ 61,062 (2007). The Commission provided additional guidance regarding the application of its transmission incentive policies in Promoting Transmission Investment through Pricing Reform, 141 FERC ¶ 61,129 (2012). 5 San Diego Gas & Elec. Co., 151 FERC ¶ 61,011 (2015). 3",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Commitment Fees",
+      "summary": "SDG&E improperly accounted for upfront fees it paid that were associated with revolving line of credit agreements in Account 182.3, Other Regulatory Assets, and improperly accounted for quarterly commitment fees associated with the agreements in Account 923, Outside Services Employed. In addition, SDG&E improperly included the amortization of upfront line of credit fees in its calculation of long-term debt interest expense used to compute its AFUDC rate.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Allocation of Overhead Costs to CWIP",
+      "summary": "SDG&E capitalized overhead costs to Account 107, Construction Work in Progress – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This led to SDG&E charging costs to Account 107 that did not have a definite relationship to construction. As a result, SDG&E may have overstated construction costs recorded in Account 107 and electric plant in service, as well as accumulated depreciation and accumulated deferred income tax (ADIT) balances, and may have understated operating expenses. Moreover, this accounting may have led SDG&E to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Accounting for EV Charging Stations",
+      "summary": "SDG&E improperly accounted for electric vehicle (EV) charging station distribution assets in Account 398, Miscellaneous Equipment. SDG&E’s accounting resulted in the cost of the assets and associated expenses being incorrectly included in accounts that are wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Regulatory Commission Expenses",
+      "summary": "SDG&E improperly accounted for regulatory commission expenses. SDG&E’s accounting resulted in regulatory commission expenses being incorrectly included in accounts that are wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers. 4",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Accounting for Distribution-Related Expenses",
+      "summary": "SDG&E improperly accounted for distribution-related operation costs in a transmission operation expense account. SDG&E’s accounting resulted in expenses being incorrectly included in accounts that were wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Donations and Lobbying Expenses",
+      "summary": "SDG&E misclassified donation payments and costs incurred to support activities to influence public opinion with regard to legislation. SDG&E’s accounting resulted in such expenses being incorrectly included in accounts that were wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Outside Services Employed",
+      "summary": "SDG&E improperly accounted for external consultant fees incurred to support general services not applicable to a particular operating function. SDG&E’s accounting resulted in expenses being incorrectly included in an account that is a wholesale transmission formula rate input. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Filing of Tariff Records",
+      "summary": "SDG&E did not properly file all Tariff Records, as required, in the Commission’s electronic tariff (eTariff) database. Specifically, SDG&E’s eTariff filing omitted Attachment 2, its Formula Rate Spreadsheet, from its tariff filed in the eTariff database. This impacted interested parties’ ability to access and review the attachment through the Commission’s eTariff Public Viewer.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 10,
+      "title": "Premature Destruction or Loss of Records",
+      "summary": "SDG&E could not verify the existence of an asset, or provide documentation associated with the asset’s cost, that was recorded in Account 154, Plant Materials and Operating Supplies. SDG&E’s inability to produce the documentation represents an instance of premature destruction or loss of records.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 11,
+      "title": "Filing Associated with Electric Plant Purchased",
+      "summary": "SDG&E did not file its proposed journal entries for the purchase of electric plant within six months, as required. This hindered the Commission’s and other interested parties’ ability to timely review and monitor the transaction. 5 D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

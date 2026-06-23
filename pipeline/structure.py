@@ -189,6 +189,255 @@ def _body_summary(full: str, title: str, docket_full: Optional[str]) -> Optional
     return chunk[:600].strip() or None
 
 
+# --- Zero-finding recovery (ADDITIVE: only runs when the primary path finds none) ---
+#
+# A corpus audit found 26/120 reports parse to 0 findings. ~half are genuinely clean
+# small-entity letters (correctly 0); the rest are a parser-coverage gap across the
+# evolving FERC report formats 2014-2023:
+#   - multi-column Executive-Summary lists that pdfplumber scrambles out of reading
+#     order (PyMuPDF linearizes them — the caller re-extracts before calling here),
+#   - the "Summary of Audit Findings" header wording the primary path didn't list,
+#   - bulleted (•) Exec-Summary lists vs the numbered ones the primary path handles,
+#   - legacy body "IV. Finding(s) and Recommendations" sections (incl. (cid:9)/tab
+#     leaders) for reports whose Exec Summary only points to the body.
+#
+# THE VALIDATION GATE: every FERC audit states its own count ("Audit staff identified
+# N areas of noncompliance"). A recovered list is accepted ONLY if its finding count
+# equals that stated N — so a partial/garbled parse is rejected (the report stays 0)
+# rather than emitting wrong "verbatim" text, honoring the project's quote discipline.
+# This whole path is gated on the primary parse yielding 0 real findings, so the
+# validated reports never reach it and their output is unchanged by construction.
+
+_NUM_WORDS = {
+    "no": 0, "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+    "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11,
+    "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15,
+}
+# Authoritative-count phrasings, most specific first. The audit's own sentence stating
+# how many noncompliance findings it raised — the gate the recovered parse must match.
+# FERC varies the wording across years ("N areas of noncompliance" / "N findings of
+# noncompliance" / "audit staff's N compliance findings" / "N findings and M recs").
+_STATED_COUNT_RES = [
+    re.compile(r"identified\s+(\w+)\s+(?:areas?|findings?)\s+of\s+non-?compliance", re.I),
+    re.compile(r"found\s+(\w+)\s+(?:areas?|findings?)\s+of\s+non-?compliance", re.I),
+    re.compile(r"contains\s+(\w+)\s+findings?\s+of\s+non-?compliance", re.I),
+    re.compile(r"staff['’]?s?\s+(\w+)\s+compliance\s+findings?\b", re.I),  # straight or curly apostrophe
+    re.compile(r"\b(\w+)\s+findings?\s+and\s+\d+\s+recommendations?", re.I),
+]
+# Singular phrasing ("audit staff's compliance finding is summarized") => exactly one.
+_SINGLE_FINDING_RE = re.compile(r"compliance finding is summarized", re.I)
+
+
+def _word_to_int(w: str) -> Optional[int]:
+    w = w.lower().strip()
+    if w.isdigit():
+        return int(w)
+    return _NUM_WORDS.get(w)
+
+
+def _stated_finding_count(full: str) -> Optional[int]:
+    """The number of noncompliance findings the report states it raised, or None.
+
+    Returns 0 when the report explicitly says it found none (so a genuinely-clean
+    audit is distinguishable from one we simply failed to parse)."""
+    flat = re.sub(r"\s+", " ", full)
+    for rx in _STATED_COUNT_RES:
+        m = rx.search(flat)
+        if m and (n := _word_to_int(m.group(1))) is not None:
+            return n
+    if _SINGLE_FINDING_RE.search(flat):
+        return 1
+    if re.search(r"\b(?:no|zero)\s+(?:findings?|areas?\s+of\s+non-?compliance)\b", flat, re.I):
+        return 0
+    if re.search(r"did not identify any (?:findings?|areas? of non-?compliance)", flat, re.I):
+        return 0
+    return None
+
+
+# Exec-Summary findings-list headers (a superset of the primary path's, adding the
+# "Summary of Audit Findings" wording used by FY2016-2018 reports).
+_RECOVERY_FINDING_HEADERS = [
+    "Summary of Noncompliance Findings",
+    "Summary of Findings of Noncompliance",
+    "Summary of Compliance Findings",
+    "Summary of Audit Findings",
+    "Summary of Findings",
+]
+# Where the findings list ends (the recommendations list / next section).
+_RECOVERY_END_ANCHORS = [
+    "Summary of Recommendations",
+    "recommendations to remedy",
+    "Summary of Other Matter",
+    "II. Background",
+    "Compliance and Implementation",
+]
+
+
+def _is_toc_tail(tail: str) -> bool:
+    """A TOC entry's text is followed by a leader (dots or tab) and a page number."""
+    return tail.count(".") >= 4 or bool(re.match(r"\s*(?:\(cid:9\)|\t)\s*\d", tail))
+
+
+def _split_title_summary(body: str) -> tuple[str, Optional[str]]:
+    body = re.sub(r"\s+", " ", body).strip()
+    parts = re.split(r"\s[–—-]\s", body, maxsplit=1)  # "Title – summary"
+    if len(parts) == 2:
+        return parts[0].strip(), (parts[1].strip() or None)
+    return body, None
+
+
+def _parse_listed_specs(block: Optional[str]) -> list[tuple[str, Optional[str], bool]]:
+    """Parse a numbered OR bulleted 'Title – summary' Exec-Summary list -> specs."""
+    if not block:
+        return []
+    raw: list[str] = [m.group(2) for m in re.finditer(r"(?ms)^\s*(\d+)\.\s+(.+?)(?=^\s*\d+\.\s|\Z)", block)]
+    if not raw:  # fall back to bulleted lists (• ▪ ●)
+        raw = [m.group(1) for m in re.finditer(r"(?ms)^\s*[•▪●]\s+(.+?)(?=^\s*[•▪●]\s|\Z)", block)]
+    specs: list[tuple[str, Optional[str], bool]] = []
+    for body in raw:
+        title, summary = _split_title_summary(body)
+        if 3 <= len(title) <= 140:  # drop page-number noise / stray fragments
+            specs.append((title, summary, False))
+    return specs
+
+
+def _exec_summary_specs(full: str) -> list[tuple[str, Optional[str], bool]]:
+    """Recover findings from the Exec-Summary list (non-TOC header occurrence)."""
+    for header in _RECOVERY_FINDING_HEADERS:
+        for m in re.finditer(re.escape(header), full):
+            if _is_toc_tail(full[m.end(): m.end() + 60]):
+                continue  # this is the Table-of-Contents pointer, not the body list
+            rest = full[m.end():]
+            ends = [rest.find(e) for e in _RECOVERY_END_ANCHORS if rest.find(e) > 0]
+            block = rest[: min(ends)] if ends else rest[:4000]
+            specs = _parse_listed_specs(block)
+            if specs:
+                return specs
+    return []
+
+
+_BODY_FINDINGS_HEAD_RE = re.compile(r"(?m)^\s*(?:IV|V)\.\s*\n?\s*Finding[s]?\s+and\s+Recommendations\b")
+_BODY_SECTION_END_RE = re.compile(r"(?m)^\s*(?:V|VI|VII)\.\s*\n?\s*(?:Other Matter|Company Response|[A-Z][a-z]+ Response|Appendix)")
+
+
+def _body_section_specs(full: str) -> list[tuple[str, Optional[str], bool]]:
+    """Recover findings from the body 'IV. Finding(s) and Recommendations' section.
+
+    Each finding is 'N. Title' (number then title on the same or next line, possibly
+    with a (cid:9)/tab artifact) followed by the finding body and a 'Pertinent
+    Guidance' block. The body section also contains numbered *recommendations*, which
+    share the number space — so we keep a numbered item only when (a) it continues the
+    1, 2, 3, … finding sequence AND (b) its span contains 'Pertinent Guidance' (every
+    finding cites guidance; a recommendation never does). That discriminator cleanly
+    separates findings from the recommendations interleaved with them.
+    """
+    heads = list(_BODY_FINDINGS_HEAD_RE.finditer(full))
+    if not heads:
+        return []
+    start = heads[-1].end()  # the body section, not the TOC entry
+    rest = full[start:]
+    endm = _BODY_SECTION_END_RE.search(rest)
+    # No fixed length cap: a findings section can run tens of thousands of chars
+    # (PacifiCorp FA16-4's spans ~100 KB). The sequential-number + Pertinent-Guidance
+    # gate stops on its own once the finding sequence ends, and the caller's
+    # stated-count check rejects any over-read, so reading to the next section (or to
+    # end-of-text) is safe.
+    block = rest[: endm.start()] if endm else rest
+    if re.match(r"\s*A\.\s*Conclusion", block):  # "A. Conclusion" => genuinely no findings
+        return []
+    nums = list(re.finditer(r"(?m)^[ \t]*(\d+)\.[ \t]*(.*)$", block))
+    specs: list[tuple[str, Optional[str], bool]] = []
+    expected = 1
+    for i, m in enumerate(nums):
+        if int(m.group(1)) != expected:
+            continue  # keep only the 1,2,3,… sequence (skips restarting rec lists)
+        nxt = nums[i + 1].start() if i + 1 < len(nums) else len(block)
+        span = block[m.end():nxt]
+        if "Pertinent Guidance" not in span:
+            continue  # a recommendation, not a finding — don't advance `expected`
+        # Title: the rest of the number's line, else the next non-empty line.
+        title = re.sub(r"^(?:\(cid:9\)|\t|\s)+", "", m.group(2)).strip()
+        body = span
+        if not title:
+            nl = re.search(r"\n([^\n]+)", span)
+            if nl:
+                title = re.sub(r"^(?:\(cid:9\)|\t|\s)+", "", nl.group(1)).strip()
+                body = span[nl.end():]
+        title = re.sub(r"\s+", " ", title).strip()
+        summary = re.sub(r"\s+", " ", re.split(r"Pertinent Guidance", body)[0]).strip()[:600] or None
+        if 3 <= len(title) <= 140:
+            specs.append((title, summary, False))
+            expected += 1
+    return specs
+
+
+# Commission ORDERS that review a contested audit summarize the audit's findings as an
+# inline enumerated list ("six areas of noncompliance: (1) …; (2) …; and (6) …"), not
+# the audit-report template's sections. Titles only (the order's prose is the body).
+_INLINE_LIST_RE = re.compile(
+    r"(\w+)\s+areas?\s+of\s+non-?compliance:\s*(\(1\).+?)(?:\.\s+[A-Z]|\Z)", re.S
+)
+
+
+def _inline_list_specs(full: str) -> list[tuple[str, Optional[str], bool]]:
+    """Recover findings from an inline '(1) …; (2) …' enumerated list."""
+    flat = re.sub(r"\s+", " ", full)
+    m = _INLINE_LIST_RE.search(flat)
+    if not m:
+        return []
+    specs: list[tuple[str, Optional[str], bool]] = []
+    # Split on the "(n)" markers; titles may themselves contain "(AFUDC)"/"(CWIP)".
+    for seg in re.split(r"\(\d+\)\s*", m.group(2)):
+        title = seg.strip().strip(";. ")
+        title = re.sub(r"\s*;?\s*and$", "", title).strip()   # trailing "; and" connector
+        title = re.sub(r"^and\s+", "", title).strip(";. ")    # leading "and"
+        if 3 <= len(title) <= 140:
+            specs.append((title, None, False))
+    return specs
+
+
+def recover_zero_finding_specs(full: str) -> list[tuple[str, Optional[str], bool]]:
+    """Best-effort findings recovery, validated against the report's stated count.
+
+    `full` should be PyMuPDF-linearized text (cleaner for multi-column layouts).
+    Returns [] unless a parse exactly matches the stated noncompliance count — the
+    gate that prevents shipping a partial/garbled finding list.
+    """
+    stated = _stated_finding_count(full)
+    if not stated:  # None (unknown) or 0 (genuinely clean) -> nothing to recover
+        return []
+    for parse in (_exec_summary_specs, _body_section_specs, _inline_list_specs):
+        specs = parse(full)
+        if sum(1 for _t, _s, om in specs if not om) == stated:
+            return specs
+    return []
+
+
+def _pymupdf_full(entry: ListingEntry) -> Optional[str]:
+    """Re-extract the report PDF with PyMuPDF (linearizes multi-column text the
+    primary pdfplumber pass scrambles). Returns None if the raw PDF isn't present
+    (e.g. a clean checkout), so the recovery path is a no-op rather than an error."""
+    from pipeline.extract import pymupdf_pages  # local import: avoids a module cycle
+
+    for name in (f"{entry.id}.pdf", f"{entry.accession_number}.pdf"):
+        pdf_path = config.RAW_DIR / name
+        if pdf_path.exists():
+            try:
+                text = "\n".join(p.text for p in pymupdf_pages(pdf_path))
+                # Strip eLibrary's per-page footer stamp so it can't bleed into a
+                # finding's verbatim summary (e.g. "...within 2 Document Accession
+                # #: 20180914-3005 Filed Date: 09/14/2018").
+                return _ELIBRARY_STAMP_RE.sub(" ", text)
+            except Exception as exc:  # noqa: BLE001 — recovery is best-effort
+                logger.warning("pymupdf re-extract failed for %s: %s", entry.id, exc)
+                return None
+    return None
+
+
+# eLibrary stamps every downloaded page with this footer; remove it before parsing.
+_ELIBRARY_STAMP_RE = re.compile(r"Document Accession #:\s*\S+\s+Filed Date:\s*\d{2}/\d{2}/\d{4}")
+
+
 def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
     """Parse regulatory orders and decisions (CT, other state PUC orders).
 
@@ -318,15 +567,17 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     # TOC "Findings and Recommendations" subsection + body-paragraph summaries.
     # Reports whose section is just "A. Conclusion" legitimately have 0 findings.
     #
-    # KNOWN COVERAGE GAP (audited 2026-05-31): 26/120 reports (22%) yield 0
-    # findings. ~half are genuinely clean small-entity letters; the rest are a
-    # parser miss spanning BOTH eras — the FY2014-2018 combined "Compliance
-    # Findings and Other Matter" header + `(cid:9)` tab leaders, AND ~11 live
-    # 2019+ reports (e.g. SDG&E FA19-3 85pp, WEC FA21-2 65pp) whose section
-    # wording this path doesn't catch. A naive header/leader extension regressed
-    # the validated path (Cleco 12->1, MISO 3->7). Recovery is gated on a
-    # no-regression snapshot of current finding counts — see ISSUES.md and the
-    # top BACKLOG.md item before touching the dispatch below.
+    # COVERAGE GAP (audited 2026-05-31, mostly closed 2026-06-23): 26/120 reports
+    # parsed to 0 findings. The recovery pass below (recover_zero_finding_specs)
+    # closed 14 of them (+67 findings) — multi-column Exec-Summary scrambles, the
+    # "Summary of Audit Findings" variant, bulleted lists, legacy body sections, and
+    # order-style inline lists — leaving 12 that genuinely have none (they state so).
+    # That recovery is ADDITIVE: it runs ONLY when this primary path finds 0 real
+    # findings, so the validated reports never enter it and cannot regress. Don't
+    # globally swap the extractor or loosen the headers here: a naive change regressed
+    # the validated path before (Cleco, MISO). PDF re-extraction is itself
+    # nondeterministic (see ISSUES.md 2026-06-23) — re-structure targeted ids, never
+    # the whole corpus, and keep the snapshot test green.
     es_block = _section_any(
         full,
         [
@@ -346,6 +597,29 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
         dk = meta["docket_full"]
         specs = [(t, _body_summary(full_raw, t, dk), False) for t in _toc_titles(full_raw, _TOC_FR_RE)]
         specs += [(t, _body_summary(full_raw, t, dk), True) for t in _toc_titles(full_raw, _TOC_OM_RE)]
+
+    # ADDITIVE zero-finding recovery: when the primary path found no noncompliance
+    # findings, the report may be a format-gap case (multi-column scramble, a header
+    # variant, or a body-only list). Re-parse PyMuPDF-linearized text, gated on the
+    # report's own stated count (see recover_zero_finding_specs). Reports that already
+    # parsed to >=1 finding never enter this branch, so their output is unchanged.
+    if not any(not om for _t, _s, om in specs):
+        pm_full = _pymupdf_full(entry)
+        if pm_full:
+            recovered = recover_zero_finding_specs(pm_full)
+            if recovered:
+                # Strip the running page header ("<Company> Docket No. <full>") that
+                # can bleed into a summary spanning a page break, so quotes stay clean.
+                hdr = re.compile(
+                    r"\s*" + re.escape(entry.company) + r"\s*Docket No\.\s*[A-Z]{2}\d{2}-\d+-\d+\s*",
+                    re.I,
+                ) if entry.company else None
+                specs = [
+                    (t, (hdr.sub(" ", s).strip() if s and hdr else s), om)
+                    for t, s, om in recovered
+                ]
+                full = _clean(pm_full, meta["docket_full"])  # cleaner text for the recs parse too
+                logger.info("%s: recovered %d finding(s) (was 0)", entry.id, len(recovered))
 
     titles = [t for t, _s, _o in specs]
     parsed_recs = _parse_recommendations(_recommendations_section(full), titles)

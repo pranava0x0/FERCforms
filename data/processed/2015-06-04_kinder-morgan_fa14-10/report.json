@@ -24,7 +24,48 @@
   "forms": [
     "2"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 4,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Maintenance Expenses",
+      "summary": "After the merger, EPC legacy entities adopted the accounting classification procedures used by KMI legacy entities for certain maintenance expenses that were inconsistent with the Commission's accounting regulations under 18 C.F.R. Part 201. This resulted in the KMI jurisdictional entities inappropriately using operating expense Account 824, Other Expenses, and Account 859, Other Expenses, to classify pipeline assessment expenses and other maintenance costs.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Merger-related Internal Labor Costs",
+      "summary": "The KMI jurisdictional entities did not record the cost of labor devoted towards merger consummation activities to the appropriate nonoperating expense account in accordance with the Commission's rules and regulations.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Abandoned Projects",
+      "summary": "Based on audit staff examination of KMI's merger activity and related costs, audit staff observed that the EPC legacy entities incorrectly wrote off costs for software development projects supporting pipeline operations. These software development projects were abandoned due to the merger and the related costs were recorded in administrative and general expense accounts rather than appropriate operating expense accounts. As a result, these costs were misclassified in the books and financial records of the EPC legacy entities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 921,
+          "text": "Depending on the intended use of the projects, their expenses should have been recorded to the appropriate transmission or storage expense accounts. Recommendations Audit staff recommends EPC Legacy companies: 5. Modify its existing accounting practice to ensure that costs for canceled or abandoned capital projects are expensed to the functional accounts related to the intended function of the abandoned project. 6. Submit to DAA their documented accounting practice implementing the proper accounting for canceled or abandoned capital projects. Kinder Morgan, Inc. 4.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Miscellaneous Accounting Classification Errors",
+      "summary": "The KMI jurisdictional entities accounted for certain costs inconsistent with the Commission rules and regulations under 18 C.F.R. Part 201.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 920,
+          "text": "23 Account 923, Outside Services Employed, states: A. This account shall include the fees and expenses of professional consultants and others for general services which are not applicable to a particular operating function or to other accounts. It shall include also the pay and expenses of persons engaged for a special or temporary administrative or general purpose in circumstances where the person so engaged is not considered as an employee of the utility. 24 Account 924, Property Insurance, states in part: 21 18 C.F.R. pt. 201, Account 426.1. 22 Id. at Account 426.5. 23 Id. at Account 921. 24 Id. at Account 923. Kinder Morgan, Inc. A. This account shall include the cost of insurance or reserve accruals to protect the utility against losses and damages to owned or leased property used in its utility operations . . . . 25 Account 925, Injuries and Damages, states in part: A. This account shall include the cost of insurance or reserve accruals to protect the utility against injuries and damages claims of employees or others, losses of such character not covered by insurance, and expenses incurred in settlement of injuries and damages claims. 26 Account 931, Rents, states: This account shall include rents properly includible in utility operating expenses for the property of others used, occupied, or operated in connection with the customer accounts, customer service and informational, sales, and general and administrative functions of the utility. 27 Account 816, Wells Expenses, states: This account shall include the cost of labor, materials used and expenses incurred in operating storage gas wells.28 Account 832, Maintenance of Reservoirs and Wells, states: This account shall include the cost of labor, materials used and expenses incurred in the maintenance of storage wells, the book cost of which is included in account 352, Wells, and the maintenance of reservoirs, the book cost of which is included in account 352.2, Reservoirs.29 25 Id. at Account 924. 26 Id. at Account 925. 27 1d. at Account 931. 28 Id. at Account 816. 29 Id. at Account 832. Kinder Morgan, Inc. Background Audit staff tested a sample of charges made to certain expense accounts to attest to the types of merger-related costs the KMI jurisdictional entities recorded, and evaluated whether they were recorded consistent with Commission accounting requirements. Audit staff testing identified several accounting misclassification errors in the sample that related to the cost types in the table below: . cco i Use il 1 Liability Insurance Premiums Office Building Rent 930.2 Storage Well Maintenance Stora:e Field Shut in Ex senses Donations 426.1 Outside Tax Services Environmental Legal Reserve 426.5 Civil Penalties 426.3 Audit staff believes that the KMI jurisdictional entities should have classified these charges in the appropriate accounts as Commission rules and regulations have prescribed. Further, the KMI jurisdictional entities should strengthen their procedures to ensure that accounting misclassifications identified do not reoccur. Recommendations Audit staff recommends that the KMI jurisdictional entities: 7. Modify their accounting system and policy so KMI costs allocated to its jurisdictional entities can be accounted for appropriately. 8. Establish and implement procedures to ensure proper coding and accounting of expenses under Commission regulations. 9. Revise their procedures to properly classify the costs identified in the",
+          "source_page": null
+        }
+      ]
+    }
+  ],
   "structured": true
 }

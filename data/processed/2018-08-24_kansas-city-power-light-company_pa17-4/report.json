@@ -26,7 +26,22 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 2,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Derivative Instruments",
+      "summary": "KCP&L improperly recorded derivative instruments that were not designated as cash flow or fair value hedges in Account 176, Derivative Instrument Assets-Hedges, Account 245, Derivative Instrument Liabilities-Hedges, and Account 253, Other deferred credits. KCP&L also incorrectly recorded gains and losses on the derivative instruments for its Missouri jurisdiction in Account 447, Sales for Resale, and Account 547, Fuel. These misclassifications did not impact wholesale rates, but did reduce the accuracy and transparency of the accounting for these activities as derivative instruments to users of the FERC Form No. 1.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Electric Quarterly Report Contracts and Transactions",
+      "summary": "KCP&L's EQRs contained errors in the reporting of certain contract and transactional data during the audit period. These errors impact the Commission and other stakeholders' ability to effectively oversee wholesale electric market activities. D.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

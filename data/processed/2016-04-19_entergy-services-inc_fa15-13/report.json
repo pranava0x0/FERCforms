@@ -27,7 +27,15 @@
     "1",
     "65"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Merger-Related Costs",
+      "summary": "The Entergy Operating Companies recorded merger-related costs in operation and maintenance (O&M) and administrative and general (A&G) expense accounts rather than in Account 426.5, Other Deductions, as required by Commission precedent. The improper accounting led to overstatements of O&M and A&G expenses in the Entergy Operating Companies’ FERC Form No. 1 filings. Additionally, the Entergy Operating Companies inappropriately included some merger-related costs in transmission formula rate calculations.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

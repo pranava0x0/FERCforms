@@ -203,3 +203,160 @@ def test_real_reports_regression(rid, audit_type, min_findings, min_recs):
     assert report.finding_count >= min_findings
     assert sum(len(f.recommendations) for f in report.findings) >= min_recs
     assert all(f.title for f in report.findings)  # every finding has a title
+
+
+# --- Zero-finding recovery (pipeline/structure.py recover_zero_finding_specs) -------
+# Synthetic fixtures, one per real FERC report format the recovery handles. These run
+# in any checkout (no PDF needed) and lock the parsing logic; the snapshot test below
+# guards the real reports when their text.json is present.
+
+def test_stated_finding_count_phrasings():
+    f = structure._stated_finding_count
+    assert f("Audit staff identified two areas of noncompliance.") == 2
+    assert f("Audit staff identified two findings of noncompliance.") == 2
+    assert f("Audit staff found three areas of non-compliance.") == 3
+    assert f("The enclosed audit report contains one finding of noncompliance.") == 1
+    assert f("Audit staff's five compliance findings are detailed below.") == 5
+    assert f("Audit staff's compliance finding is summarized below.") == 1  # singular => 1
+    assert f("SDG&E accepts the 11 findings and 55 recommendations.") == 11
+    assert f("The audit identified no findings of noncompliance.") == 0
+    assert f("A report that never states a count.") is None
+
+
+def test_recover_exec_summary_numbered():
+    """Modern Exec-Summary 'N. Title – summary' list (e.g. National Grid FA16-2)."""
+    text = (
+        "C. Summary of Compliance Findings\n"
+        "Below is a summary of audit staff's findings. Audit staff identified two "
+        "areas of noncompliance.\n"
+        "1. Depreciation Expense – The company used improper composite depreciation\nrates.\n"
+        "2. Cost Allocation Methodologies – The company did not follow its documented\nmethods.\n"
+        "D. Summary of Recommendations\n"
+        "Audit staff's recommendations to remedy the findings are summarized below.\n"
+        "1. Recalculate depreciation.\n"
+    )
+    specs = structure.recover_zero_finding_specs(text)
+    assert [t for t, _s, _o in specs] == ["Depreciation Expense", "Cost Allocation Methodologies"]
+    assert specs[0][1].startswith("The company used improper composite depreciation")
+
+
+def test_recover_exec_summary_bulleted():
+    """Bulleted '• Title – summary' Exec-Summary list (e.g. WEC FA21-2)."""
+    text = (
+        "C. Summary of Compliance Findings\n"
+        "Audit staff's compliance findings are summarized below. Audit staff found "
+        "three areas of noncompliance:\n"
+        "• Merger-Related Capital Expenditures – improperly accounted for capital costs.\n"
+        "• Accounting for Reserves – overstated reserve balances.\n"
+        "• Misclassification of Administrative Costs – booked to the wrong account.\n"
+        "D. Summary of Recommendations\n"
+    )
+    specs = structure.recover_zero_finding_specs(text)
+    assert len(specs) == 3
+    assert specs[0][0] == "Merger-Related Capital Expenditures"
+
+
+def test_recover_body_section_separates_findings_from_recs():
+    """Body 'IV. Finding(s) and Recommendations': only the numbered items that carry a
+    'Pertinent Guidance' block are findings — the interleaved numbered recommendations
+    (which never cite guidance) are excluded (e.g. Entergy FA15-13, Kinder Morgan)."""
+    text = (
+        "The enclosed audit report contains two findings of noncompliance.\n"
+        "IV. Findings and Recommendations\n"
+        "1.\nMerger-Related Costs\n"
+        "The company recorded merger costs in O&M accounts rather than Account 426.5.\n"
+        "Pertinent Guidance\n"
+        "Under Commission precedent, merger costs are nonoperational.\n"
+        "Recommendation\n"
+        "1. Reclassify the costs to Account 426.5.\n"
+        "2. File a refund report.\n"
+        "2.\nDepreciation Rates\n"
+        "The company applied unapproved depreciation rates to plant accounts.\n"
+        "Pertinent Guidance\n"
+        "18 C.F.R. Part 101 governs depreciation.\n"
+        "Recommendation\n"
+        "1. Recompute depreciation.\n"
+    )
+    specs = structure.recover_zero_finding_specs(text)
+    assert [t for t, _s, _o in specs] == ["Merger-Related Costs", "Depreciation Rates"]
+    assert specs[0][1].startswith("The company recorded merger costs")
+
+
+def test_recover_inline_list_order_format():
+    """A Commission order summarizing an audit's findings inline (Dominion FA15-16)."""
+    text = (
+        "The Audit Report identified three areas of noncompliance: "
+        "(1) Calculation of Allowance for Funds Used During Construction (AFUDC); "
+        "(2) Allocation of Overhead Costs to Construction Work In Progress (CWIP); "
+        "and (3) Accounting for Lobbying Expenses. The Audit Report made recommendations."
+    )
+    specs = structure.recover_zero_finding_specs(text)
+    assert [t for t, _s, _o in specs] == [
+        "Calculation of Allowance for Funds Used During Construction (AFUDC)",
+        "Allocation of Overhead Costs to Construction Work In Progress (CWIP)",
+        "Accounting for Lobbying Expenses",
+    ]
+
+
+def test_recover_gate_rejects_count_mismatch():
+    """The stated-count gate rejects a partial parse rather than emit wrong findings."""
+    text = (
+        "Audit staff identified three areas of noncompliance.\n"
+        "C. Summary of Compliance Findings\n"
+        "1. Only One Topic – we could only parse this one.\n"
+        "D. Summary of Recommendations\n"
+    )
+    assert structure.recover_zero_finding_specs(text) == []  # 1 parsed != 3 stated
+
+
+def test_recover_returns_empty_when_genuinely_clean():
+    """A report that states it found nothing recovers nothing (stays 0 — correct)."""
+    assert structure.recover_zero_finding_specs("The audit identified no areas of noncompliance.") == []
+    assert structure.recover_zero_finding_specs("A report with no count statement at all.") == []
+
+
+_SNAPSHOT_PATH = __import__("pathlib").Path(__file__).parent / "fixtures" / "structure_snapshot_validated.json"
+
+
+def test_committed_ferc_finding_counts_match_snapshot():
+    """No-regression guard: every FERC audit's committed report.json finding_count must
+    equal the snapshot. The snapshot is the per-report count of record — regenerate it
+    deliberately (from docs/data/reports.json) only when a parser change is intended, so
+    an *accidental* change to a committed report.json (e.g. a careless full re-structure,
+    which can drift validated reports via PDF-extraction nondeterminism) fails loudly.
+    Covers both the 94 long-validated reports and the 14 recovered 2026-06-23."""
+    snapshot = json.loads(_SNAPSHOT_PATH.read_text(encoding="utf-8"))
+    baked = {r["id"]: r for r in json.loads((config.SITE_DATA_DIR / "reports.json").read_text(encoding="utf-8"))}
+    drift = []
+    for rid, expected in snapshot.items():
+        got = baked.get(rid, {}).get("finding_count")
+        if got != expected:
+            drift.append(f"{rid}: snapshot {expected} != baked {got}")
+    assert not drift, "FERC finding-count drift vs snapshot:\n" + "\n".join(drift)
+
+
+def test_recovered_reports_have_expected_findings():
+    """The 14 reports recovered 2026-06-23 (were 0) now carry their stated finding count.
+    Reads the committed/baked corpus, so it runs in any checkout (no PDF needed)."""
+    expected = {
+        "2014-10-24_cargill_fa14-6": 1,
+        "2015-06-04_kinder-morgan_fa14-10": 4,
+        "2016-04-19_entergy-services-inc_fa15-13": 1,
+        "2016-10-14_dynegy-inc_pa15-3": 1,
+        "2017-08-29_pacificorp_fa16-4": 9,
+        "2018-04-18_midcontinent-independent-system-operator-inc_pa16-5": 1,
+        "2018-06-11_idaho-power-company_pa17-7": 10,
+        "2018-08-24_kansas-city-power-light-company_pa17-4": 2,
+        "2018-09-14_california-independent-system-operator-corporati_pa17-3": 5,
+        "2019-11-15_national-grid-usa_fa16-2": 7,
+        "2020-07-02_midamerican-energy-company_fa19-2": 1,
+        "2020-07-30_san-diego-gas-electric-company_fa19-3": 11,
+        "2020-12-17_dominion-energy-transmission-inc_fa15-16": 6,
+        "2023-02-10_wec-business-services-llc_fa21-2": 8,
+    }
+    baked = {r["id"]: r for r in json.loads((config.SITE_DATA_DIR / "reports.json").read_text(encoding="utf-8"))}
+    for rid, n in expected.items():
+        rpt = baked.get(rid)
+        assert rpt is not None, f"{rid} missing from baked corpus"
+        assert rpt["finding_count"] == n, f"{rid}: expected {n} findings, got {rpt['finding_count']}"
+        assert all(f["title"] for f in rpt["findings"]), f"{rid}: a finding has no title"

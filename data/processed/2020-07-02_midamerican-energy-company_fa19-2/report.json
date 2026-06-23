@@ -26,7 +26,15 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 1,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "MEC improperly recorded a transaction related to compromise settlements in Account 920, Administrative and General Salaries, instead of Account 426.5, Other Deductions. As a result, MEC included approximately $11,000 in its formula rate computation, and the revenue requirement used to set rates for wholesale customers was overstated.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }

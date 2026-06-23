@@ -27,7 +27,71 @@
   "forms": [
     "1"
   ],
-  "finding_count": 0,
-  "findings": [],
+  "finding_count": 9,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Storm Damage Accounting and Costs Recovery",
+      "summary": "PacifiCorp’s accounting and wholesale formula rate billings for storm damage costs during the period of 2012 through 2015 were deficient as follows:  PacifiCorp improperly overbilled storm damage costs to its merchant function and third-party wholesale customers that procured transmission services under PacifiCorp’s OATT. This occurred because PacifiCorp improperly included actual plus estimated costs associated with the same storms in billings to its merchant and third-party wholesale customers. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximatel",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 2,
+      "title": "Mining Assets",
+      "summary": "PacifiCorp inappropriately recovered from its wholesale customers the cost of production related mining assets through its wholesale formula rates. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximately $3.7 million, which led to overbillings to third-party wholesale customers by approximately $600,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 3,
+      "title": "Amortization of Regulatory Assets",
+      "summary": "PacifiCorp inappropriately included amortization of regulatory assets in its wholesale formula rates. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximately $800,000, which led to overbillings to third-party wholesale customers of approximately $100,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 4,
+      "title": "Injuries and Damages Accounting and Costs Recovery",
+      "summary": "PacifiCorp improperly classified injuries and damages accruals and recovered those costs through its wholesale formula rates when it had insurance policies to cover the cost of those damages. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximately $2.9 million, which led to overbillings to third- party wholesale customers by approximately $400,000.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 5,
+      "title": "Allowance for Funds Used During Construction",
+      "summary": "PacifiCorp’s methods for calculating Allowance for Funds Used During Construction (AFUDC) rate was deficient as follows:  PacifiCorp inappropriately included letter of credit fees (up-front and quarterly) as part of short term debt interest expense to compute AFUDC rate.  PacifiCorp inappropriately included Unappropriated Undistributed Subsidiary Earnings as part of the equity component for the purpose of computing AFUDC rate.  PacifiCorp inappropriately included Accumulated Other Comprehensive Income (AOCI) as part of the equity component for the purpose of computing AFUDC rate in 2013. As",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 6,
+      "title": "Asset Retirement Obligations",
+      "summary": "PacifiCorp’s accounting and rate treatment of Asset Retirement Obligations (ARO) were deficient as follows:  PacifiCorp inappropriately excluded accumulated depreciation amounts removed from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, to implement ARO accounting in the wholesale formula rates determinations. As a result, PacifiCorp understated its wholesale transmission revenue requirement which led to under-billings to its wholesale customers through its wholesale formula rates.  PacifiCorp inappropriately included estimated future asset retirement costs r",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 7,
+      "title": "Accounting for Coal Settlement Costs",
+      "summary": "PacifiCorp incorrectly accounted for amortization of two coal settlement payments in Account 151, Fuel Stock, instead of Account 501, Fuel.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 8,
+      "title": "Accounting for Liquidated Damages",
+      "summary": "PacifiCorp incorrectly accounted for amortization of production related regulatory assets associated with liquidated damages as an administrative and general expense in Account 930.2, Miscellaneous General Expense.",
+      "is_other_matter": false,
+      "recommendations": []
+    },
+    {
+      "index": 9,
+      "title": "Accounting for Pensions, PBOP and Other Benefits",
+      "summary": "PacifiCorp recorded the cost of pensions, post-retirement benefits other than pensions (PBOP) and other employee benefits in various functional operating and maintenance expense accounts, instead of in Account 926, Employee Pensions and Benefits.",
+      "is_other_matter": false,
+      "recommendations": []
+    }
+  ],
   "structured": true
 }
