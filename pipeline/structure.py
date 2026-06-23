@@ -31,6 +31,11 @@ FERC_AUDIT_SOURCE = "FERC Office of Enforcement, Division of Audits & Accounting
 _DOCKET_FULL_RE = re.compile(r"Docket No\.?\s*([A-Z]{2}\d{2}-\d+-\d+)")
 _DATE_LINE_RE = re.compile(r"(?m)^\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*$")
 _AUDIT_PERIOD_RE = re.compile(r"audit covered the period\s+(.+?)\.", re.S)
+# Table-of-Contents furniture: a run of dotted/middle-dot leaders (".......", "……")
+# or a (cid:N) extraction artifact. The loose rate-case / regulatory-order parsers
+# must reject any match whose surrounding text is a TOC line — extracting those gave
+# garbage "findings" (dotted-leader titles/summaries). See ISSUES.md 2026-06-23.
+_TOC_NOISE_RE = re.compile(r"\.{6,}|…{2,}|\(cid:")
 
 
 def _clean(text: str, docket_full: Optional[str]) -> str:
@@ -462,6 +467,9 @@ def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_r
             decision_text = m.group(1) if len(m.groups()) == 1 else m.group(2)
             decision_text = re.sub(r"\s+", " ", decision_text).strip()[:500]
 
+            if _TOC_NOISE_RE.search(decision_text):
+                continue  # a Table-of-Contents line, not a determination — skip
+
             if len(decision_text) > 20:
                 findings.append(
                     Finding(
@@ -688,6 +696,12 @@ def _extract_rate_case_findings(full_text: str, doc_type: str) -> list[Finding]:
             end = min(len(full_text), m.end() + 150)
             context = full_text[start:end]
             context = re.sub(r"\s+", " ", context).strip()
+
+            # Skip a match that landed in a Table of Contents: dotted/tab leaders
+            # ("...... 24") and (cid:N) artifacts are TOC furniture, not a decision —
+            # extracting them produced garbage "findings" (see ISSUES.md 2026-06-23).
+            if _TOC_NOISE_RE.search(context):
+                continue
 
             if len(context) > 20:  # Only add substantial findings
                 findings.append(

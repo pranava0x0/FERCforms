@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="494 structured records (123 FERC audits, 29 prudence reviews, 221 state PUC audits); 1348 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="494 structured records (123 FERC audits, 29 prudence reviews, 221 state PUC audits); 1341 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-23). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Southern Electric Generating Company" collection="FERC Audits" docket="FA24-3-000" issued="2026-05-07" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&amp;optimized=false">

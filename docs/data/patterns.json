@@ -1,6 +1,6 @@
 {
   "report_count": 494,
-  "finding_count": 1348,
+  "finding_count": 1341,
   "other_matter_count": 10,
   "recommendation_count": 2030,
   "by_industry": {
@@ -283,7 +283,7 @@
         "storm reserve",
         "securitization"
       ],
-      "finding_count": 24,
+      "finding_count": 23,
       "report_count": 14,
       "example_titles": [
         "Approval: $69.8 million",
@@ -530,7 +530,7 @@
   "top_titles": [
     {
       "title": "Settlement: Agreement",
-      "count": 338
+      "count": 336
     },
     {
       "title": "Settlement: agreement",
@@ -545,16 +545,16 @@
       "count": 16
     },
     {
-      "title": "Settlement: AGREEMENT",
-      "count": 14
-    },
-    {
       "title": "Settlement: terms",
       "count": 12
     },
     {
       "title": "Customer Service",
       "count": 11
+    },
+    {
+      "title": "Settlement: AGREEMENT",
+      "count": 10
     },
     {
       "title": "Allowance for Funds Used During Construction (AFUDC)",

@@ -22,7 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 28,
+  "finding_count": 25,
   "findings": [
     {
       "index": 1,
@@ -61,160 +61,139 @@
     },
     {
       "index": 6,
-      "title": "Approval: $51,223,778 ",
-      "summary": "....................................................................................139 ii. The PSC approves $51,223,778 in Capital Additions and $28.4 Million in O&M Test Year Fire Mitigation Costs. .......................................................................",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 7,
       "title": "Approval: $41.8 million",
       "summary": "ly $25 million to ratepayers.71 DPU testified that using RMP’s hypothetical capital structure would allow RMP to earn $41.8 million over what it should earn with its actual forecasted capital structure.72 FEA testified that using RMP’s hypothetical capital structure to set rates w",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 8,
+      "index": 7,
       "title": "Approval: $4,460.80 ",
       "summary": "FERC- approved transmission rates will go into effect in June 2025. OCS recommends RMP use the FERC-approved transmission rate of $4,460.80 for the first five months to calculate its estimated wheeling revenues for the first five months. Based on this recommendation, OCS adjusts wheeling r",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 9,
+      "index": 8,
       "title": "Approval: $624.1 million",
       "summary": ". Next, consistent with RMP’s approach, the PSC took the average of $1.104 billion and the 2021 GRC-approved NPC of $624.1 million, resulting in $864.2 million of Test Year Base NPC that we approve in this case. This results in a deferral of $240.1 million in NPC for potential fu",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 10,
+      "index": 9,
       "title": "Approval: $240.1 million",
       "summary": "2021 GRC-approved NPC of $624.1 million, resulting in $864.2 million of Test Year Base NPC that we approve in this case. This results in a deferral of $240.1 million in NPC for potential future EBA recovery instead of the $285.2 million that RMP proposed. 130 Id. at 4:69-77. 131 Id. at 4:65-66. DOCK",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 11,
+      "index": 10,
       "title": "Approval: $2,495,883 ",
       "summary": "r state for the purpose of fulfilling RMP’s obligations to California and Oregon under the KHSA. We approve UAE’s recommended adjustment and deny the $2,495,883 in revenue requirement that RMP seeks relating to the Fall Creek Hatchery. ii. Klamath Regulatory Asset and Klamath Transmission RMP’s Appl",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 12,
+      "index": 11,
       "title": "Approval: $0.1\nmillion",
       "summary": "as just, reasonable, and in the public interest. We decline to adopt DPU’s proposed adjustments and approve RMP’s proposed $0.1 million adjustment for the brief delay associated with the in-service date of Rock Creek I. 4. Other Regulatory Issues i. Renewable Energy Credit Program RMP",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 13,
+      "index": 12,
       "title": "Approval: $15,289,781 ",
       "summary": "costs through the base rates established in its most recent GRC.282 OCS contends the PSC should disallow recovery of at least $15,289,781 of RMP’s claimed Incremental WBA Costs (“OCS’s WBA Adjustment”).283 More specifically, OCS’s WBA Adjustment is comprised of (1) $5,681,724 relating to",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 14,
+      "index": 13,
       "title": "Approval: $156.9 million",
       "summary": "’ Recommended Adjustments After accepting an adjustment to its initial request, RMP asks the PSC to approve $156.9 million in capital expenditures and $24.9 million in O&M expenses that it projects incurring in the Test Year to implement its 2023 Plan. DPU and OCS both ad",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 15,
+      "index": 14,
       "title": "Approval: $24.9 million",
       "summary": "has a much lower capital budget of [$]22 million for calendar year 2025.”301 OCS recommends the PSC approve an O&M budget of $24.9 million, which is the three-year average O&M cost (2023 through 2025) under RMP’s 2023 Plan. OCS explains it recommends “a much higher amount for O&M than th",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 16,
+      "index": 15,
       "title": "Approval: $40.5 million",
       "summary": "302 Id. at 107:7-20. DOCKET NOS. 24-035-04, 23-035-40, and 23-035-44 - 140 - DPU recommends the PSC approve $40.5 million for capital costs and $4.8 million for O&M for the Test Year. DPU emphasizes its recommended “O&M expense still represents over a 35 percent increase",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 17,
+      "index": 16,
       "title": "Approval: $51,223,778 ",
       "summary": ". at 21. 306 Id. at 22. 307 Id. DOCKET NOS. 24-035-04, 23-035-40, and 23-035-44 - 141 - ii. The PSC approves $51,223,778 in Capital Additions and $28.4 Million in O&M Test Year Fire Mitigation Costs. As discussed supra at 129, RMP is not entitled to any assurances of cos",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 18,
+      "index": 17,
       "title": "Approval: $28.4 million",
       "summary": "s’ testimony regarding the efficacy and value of O&M devoted to fire mitigation, the PSC adopts and approves RMP’s original requested O&M expenditures of $28.4 million for the Test Year. These adjustments reduce RMP’s total requested revenue requirement in the amount of $6,164,165. 316 The PSC adopt",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 19,
+      "index": 18,
       "title": "Approval: $6,557,841 ",
       "summary": "rive at this amount, the PSC referred to the amount of liability insurance premiums expense the PSC approved in the 2020 GRC, $6,557,841 (on a system basis). See 2020 GRC, Direct Test. of S. McDougal at Ex. __(SRM-3). The PSC multiplied the sum approved for ELI Premiums in the 2020 GRC",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 20,
+      "index": 19,
       "title": "Approval: $87,232,937\nmillion",
       "summary": "e approve and adopt base NPC to be included in the Test Year in the amount of $864.2 million. 3. We approve a revenue requirement increase of $87,232,937 million, allocated to the various customer classes consistent with the Adjusted Phase II Settlement and reflected in Exhibits A and B to this orde",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 21,
-      "title": "Settlement: Agreement",
-      "summary": "tion Order and Order Adopting Alternative Process ................................... 9 3. Phase II Settlement and Hearing on Settlement Agreement ........................................ 10 4. Final Order Denying Initial Application ..............................................................",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 22,
-      "title": "Settlement: Agreement",
-      "summary": "............................................................... 112 A. The PSC Adjusts the Phase II Settlement Agreement to Increase the Low-Income Lifeline Credit to $18.00 per Month ......................................................................................",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 23,
+      "index": 20,
       "title": "Settlement: Agreement",
       "summary": "eduling Order”), establishing an adjudication schedule and hearing dates for Phase III. 3. Phase II Settlement and Hearing on Settlement Agreement On January 13, 2025, RMP’s counsel notified the PSC, via e-mail, that “[t]he parties have reached a unanimous settlement on all Phase II issues” that",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 24,
+      "index": 21,
       "title": "Settlement: terms",
       "summary": "day. The PSC, therefore, canceled the Phase II hearing dates and noticed a hearing to consider the settlement’s terms for January 17, 2025.18 On January 14, 2025, RMP filed a Phase II Settlement Stipulation (“Phase II Settlement”), which represents the agreement “res",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 25,
+      "index": 22,
       "title": "Settlement: agreement",
       "summary": "for January 17, 2025.18 On January 14, 2025, RMP filed a Phase II Settlement Stipulation (“Phase II Settlement”), which represents the agreement “resolves all issues in Phase II of [the GRC].”19 Ten parties are signatories to the Phase II Settlement, and RMP represents that Walmart, though it",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 26,
+      "index": 23,
       "title": "Settlement: agreement",
       "summary": "rt, though it did not sign, authorized RMP to represent to the PSC that Walmart does not oppose the settlement agreement.20 On January 17, 2025, the PSC conducted a hearing to consider approval of the Phase II Settlement at which counsel for the following parties appear",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 27,
+      "index": 24,
       "title": "Settlement: Agreement",
       "summary": "at RMP constructed the Fall Creek Hatchery to fulfill an obligation under the Klamath Hydroelectric Settlement Agreement133 (“KHSA”). Very broadly, the KHSA is an agreement, first executed in 2010 and subsequently amended, wherein RMP agreed to remove certain hydroelect",
       "is_other_matter": false,
       "recommendations": []
     },
     {
-      "index": 28,
+      "index": 25,
       "title": "Settlement: Agreement",
       "summary": "ENT SPREAD, AND RATE DESIGN – DISCUSSION, FINDINGS, AND CONCLUSIONS A. The PSC Adjusts the Phase II Settlement Agreement to Increase the Low- Income Lifeline Credit to $18.00 per Month RMP administers a Low-Income Lifeline Program, consistent with Utah Code § 54-7-13.6,",
       "is_other_matter": false,

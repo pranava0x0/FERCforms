@@ -380,6 +380,7 @@ Expanding a card reveals the Wave-style thread **inline** (no full-page nav — 
 
 - **Title-case company names on ingest.** FERC data ships ALL-CAPS (`SOUTHERN COMPANY SERVICES, INC.`). Run a prettifier; keep `*_raw`. Whitelist acronyms (LLC, LP, FERC, PJM, MISO, ISO, RTO, NERC, USA).
 - **Quote findings verbatim.** A finding's text is copied, never summarized. Summaries (if any) are visibly marked as generated ([§11](#11-editorial--content-rules) AI rule: 3px accent left-border + model credit).
+- **No machine garbage in the findings stream.** Because findings are verbatim, a card must never show Table-of-Contents furniture (dotted/middle-dot leaders `…… 24`), glyph artifacts (`(cid:9)`), a contentless title (`s`, a page number), or a runaway block that absorbed half the PDF. These come from *loose marker-based parsers* and are forbidden — a structured record that can't be parsed cleanly stays metadata-only ("Listed for reference"). Enforced corpus-wide by `tests/test_sources.py::test_no_garbled_findings_in_committed_corpus` (2026-06-23).
 - **Every card cites its source PDF.** No card ships without a working `source_url` and a `captured_at` ("as of YYYY-MM-DD").
 - **Null → placeholder, never blank.** Missing docket / date renders as muted "Not stated" ([§8.4](#84-kv-grids-detail-panels)).
 - **Don't compute a "compliance score."** Show findings; let the reader judge ([AGENTS.md](AGENTS.md)).

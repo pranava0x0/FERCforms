@@ -1081,7 +1081,7 @@
   },
   "state_rate_case": {
     "report_count": 121,
-    "finding_count": 535,
+    "finding_count": 528,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -1197,13 +1197,13 @@
           "storm reserve",
           "securitization"
         ],
-        "finding_count": 15,
+        "finding_count": 14,
         "report_count": 7,
         "example_titles": [
           "Approval: $69.8 million",
           "Approval: $78 million",
           "Approval: $85.7 million",
-          "Settlement: AGREEMENT"
+          "Settlement: Agreement"
         ]
       },
       {
@@ -1341,19 +1341,19 @@
     "top_titles": [
       {
         "title": "Settlement: Agreement",
-        "count": 338
+        "count": 336
       },
       {
         "title": "Settlement: agreement",
         "count": 39
       },
       {
-        "title": "Settlement: AGREEMENT",
-        "count": 14
-      },
-      {
         "title": "Settlement: terms",
         "count": 12
+      },
+      {
+        "title": "Settlement: AGREEMENT",
+        "count": 10
       },
       {
         "title": "Approval: $5,475 ",
@@ -1389,10 +1389,6 @@
       },
       {
         "title": "Approval: $156.9 million",
-        "count": 2
-      },
-      {
-        "title": "Approval: $51,223,778 ",
         "count": 2
       },
       {
@@ -1437,6 +1433,10 @@
       },
       {
         "title": "Approval: $175\nmillion",
+        "count": 1
+      },
+      {
+        "title": "Approval: $55.4 million",
         "count": 1
       }
     ],

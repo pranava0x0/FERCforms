@@ -5,7 +5,7 @@
 > text, never an LLM editorial call. If a number here disagrees with `patterns.json`, `patterns.json` wins.
 
 **Generated:** 2026-06-23  
-**Corpus:** 494 structured reports · 1348 verbatim findings · 2030 recommendations  
+**Corpus:** 494 structured reports · 1341 verbatim findings · 2030 recommendations  
 **Collections:** ferc_audit 123, prudence_review 29, state_audit 221, state_rate_case 121  
 **Themes identified:** 25
 
@@ -35,7 +35,7 @@ theme regardless of how many of its findings match.
 | 10 | **Tariff administration & oversight** | 38 | 50 | Not following the utility's own FERC-approved tariff. | Settlement: Agreement ; Renewable Natural Gas Quality Specifications ; Tariff Administration and Oversight |
 | 11 | **Internal audit & internal controls** | 34 | 29 | Weak internal controls, compliance programs, or internal-audit coverage. | Corporate Governance ; Cost Allocations and Affiliated Interests ; Governance And Management |
 | 12 | **Capitalization vs. expense** | 22 | 23 | Costs capitalized that should be expensed, or the reverse. | Accounting for Replacement of Minor Items of Property ; Capitalization of Vegetation Management Costs ; Property Unit Listing |
-| 13 | **Storm cost recovery & securitization** | 14 | 24 | Storm restoration costs, storm riders/reserves, or securitization. | Approval: $69.8 million ; Approval: $78 million ; Approval: $85.7 million |
+| 13 | **Storm cost recovery & securitization** | 14 | 23 | Storm restoration costs, storm riders/reserves, or securitization. | Approval: $69.8 million ; Approval: $78 million ; Approval: $85.7 million |
 | 14 | **Customer service & billing** | 14 | 17 | Customer-service performance, billing accuracy, or call-center issues. | Customer Service ; Customer Service (continued) ; Customer Operations |
 | 15 | **Service reliability & vegetation management** | 14 | 15 | Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs. | Capitalization of Vegetation Management Costs ; Settlement: terms ; Settlement: Agreement |
 | 16 | **Workforce, training & succession planning** | 13 | 27 | Staffing, training, span-of-control, or leadership-succession shortcomings. | Executive Management, Organizational Structure, and Safety ; Customer Operations ; Performance Management |

@@ -37,6 +37,11 @@ are marked ⊕; full descriptions in the sections below.
 
 ---
 
+## ▶ Done 2026-06-23 (cont. 2) — hardened loose parsers + corpus-wide garbage-finding guard
+
+- **Closed the garbage-finding class for good.** After the NJ purge, 7 dotted-leader "findings" remained from the loose *rate-case* parser (`_extract_rate_case_findings` matched `$N` near a TOC line): DE 3, UT 3, AZ 1 (e.g. `Settlement: AGREEMENT` / summary `'…… 24'`). Both `_extract_rate_case_findings` and `structure_regulatory_order` now skip any match whose context hits `_TOC_NOISE_RE` (`\.{6,}|…{2,}|(cid:`); the 7 were removed from the committed report.json (AZ 122→121, DE 82→79, UT 28→25, renumbered). Corpus findings 1348 → **1341**.
+- **New durable guard:** `tests/test_sources.py::test_no_garbled_findings_in_committed_corpus` scans every committed report.json and fails on dotted/`…` TOC leaders, `(cid:)` artifacts, runaway field length (>15 KB), or contentless titles — covering the whole class (NJ Liberty junk, the PSE&G 1.8 MB runaway row, rate-case TOC fragments). **158 tests pass.** Learning folded into CLAUDE.md, AGENTS.md, DESIGN.md §15.6, and [memory: loose-parsers-garble-2026-06-23].
+
 ## ▶ Done 2026-06-23 (cont.) — P1 #3: comprehensive M&O parser (NorthStar + Overland fix) + NJ garbage purge
 
 - **NorthStar parser added** (`parse_northstar_recommendations` + `northstar_stated_count`, added to the `structure_mo_audit` chain): parses the "Summary of Recommendations" table (ALL-CAPS area headings + `{ROMAN}-{N}` labels), skips chapter I/II page-footer artifacts, stops at the detailed-body restart, and is **count-gated** against the report's stated total. **NY NYSEG/RG&E 23-M-0103 → 11 findings / 128 recs** (exact); **LIPA 21-00618 → 13 findings / 79 recs** (stated 80 — the backlog's "49" was a *prior* audit cited inside LIPA). `parse:true` flipped on the 2 NY final reports; the 3 orders/implementation-plans stay metadata-only.
