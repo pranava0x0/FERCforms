@@ -22,7 +22,736 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 11,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Governance And Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise the Avangrid, NYSEG and RG&E organization and governance to comply with each element of the NYSPSC Order Adopting Staff Report and Approving Reorganization – Case 12-M-0066, et al. Provide a report to DPS demonstrating how each element has been satisfied.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "Develop SLAs that include detailed descriptions of services to be provided to clients such as NYSEG and RG&E.",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "Revise and update the CAM to provide a detailed list of functions and charges based on the level of products and services descriptions.",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Develop SLAs that define units of measure and volumes of products and services to be provided over specified time periods. Units of measure and volumes are necessary to reconcile levels of services provided – whether they are directly charged or allocated.",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Provide comparisons of cost competitiveness between SLA products and services versus third-party providers to demonstrate whether Avangrid services charged are greater or less than other commercially available services. Report this information in SLAs and implementation plans. Provide updates to the extent information changes.",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Report SLA cost competitiveness to DPS on an annual basis.",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "Develop and include comprehensive SLA key performance metrics that pertain to all products and services provided. Report this information in SLAs and implementation plans. Provide updates to the extent information changes.",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "Provide measures of quality for SLA products and services.",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "Establish SLA economic performance premiums and penalties for all products and services provided.",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "Develop and report SLA true-up for budget amounts and invoice amounts based on actual volume of services, quality and cost at year-end.",
+          "source_page": null
+        },
+        {
+          "number": 11,
+          "text": "Provide a review of SLA agreed-upon service level expectations from the previous year, plus expectations for the upcoming year.",
+          "source_page": null
+        },
+        {
+          "number": 12,
+          "text": "Provide a detailed comparison of actual versus budgeted services/expenditures and invoice an amount at year-end with supporting variance information.",
+          "source_page": null
+        },
+        {
+          "number": 13,
+          "text": "Develop strategic planning processes and strategic plans for NYSEG and RG&E, respectively. The resulting plans must focus on the unique issues impacting each utility, with specific goals, objectives, and performance metrics that represent the strategic, operating, and regulatory environment of each utility. See Chapter XIII- Performance Management.",
+          "source_page": null
+        },
+        {
+          "number": 14,
+          "text": "Have an independent, third-party firm specializing in ERM maturity assessments conduct a comprehensive study of Avangrid’s ERM program using industry accepted standards. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION Review ERM Maturity Assessment RFP with DPS prior to issuance to obtain feedback. Review vendor selection with DPS. Upon completion of the study, provide a full copy of results and plans to implement recommendations with DPS.",
+          "source_page": null
+        },
+        {
+          "number": 15,
+          "text": "Develop a comprehensive and fully resourced ERM program for Avangrid Networks, NYSEG, and RG&E incorporating all recommendations from the third-party maturity assessment. Furthermore, the ERM program should be aligned with internal controls such that risks can be monitored on a continuous basis. Internal audits of ERM programs, processes, and risk registers must be performed at least on a biennial basis and documented and maintained for future evaluation.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Budget And Finance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Simplify the service company cost-allocation process. Increase the illustration and support documentation so the user can easily understand and verify the allocations to the FERC Form 1. Also, prepare an annual report that summarizes and supports the amounts charged to NYSEG and RG&E. Reporting should be provided to DPS during interim periods between rate cases to support affiliate charges.",
+          "source_page": null
+        },
+        {
+          "number": 17,
+          "text": "Improve unitization process. Going forward, Avangrid must ensure that unitized fixed- asset data are accurate and consistent for NYSEG and RG&E. Future plant in-service additions must accurately reflect cost, units, vintage and material.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Electric Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Improve the electric load forecast model(s) used to address issues specific to NYSEG and RG&E, focusing on the following: 1.1 Accuracy 1.2 Weather-normalization methodologies 1.3 Sector segmentation 1.4 Forecasting horizon 1.5 CLCPA considerations 1.6 Econometric equation specification",
+          "source_page": null
+        },
+        {
+          "number": 19,
+          "text": "Issue RFP for planning services for an asset-management system. Work products should include the following: 2.1 Data needs assessment 2.2 Software needs assessment 2.3 System needs assessment 2.4 Staffing needs assessment 2.5Change management assessment 2.6 List of proposed systems, business and system integrators",
+          "source_page": null
+        },
+        {
+          "number": 20,
+          "text": "Implement a trim cycle of five or six years consistent with the last Joint Proposal.",
+          "source_page": null
+        },
+        {
+          "number": 21,
+          "text": "Edit the link to the Hosting Capacity website to read “Hosting Capacity Portal (PV, BESS, Electrification)”. Update hosting-capacity maps according to the documented schedule.",
+          "source_page": null
+        },
+        {
+          "number": 22,
+          "text": "Conduct an independent, third-party audit with DPS oversight of storm costs to determine the accuracy of costs recorded to storm events that comply with the current rate plan and to provide more timely recovery of storm expenditures for NYSEG and RG&E. This includes but is not limited to tracing a major storm and a vegetation management work order to financial statements and reviewing the work order procedure to ensure there are no overlapping or duplicate cost collectors in storms, vegetation management, and capital. As a substantial portion of storm expenditures are paid to external parties, it is difficult to evaluate the reasonableness or accuracy of costs without auditing a valid sample of costs. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Gas Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 23,
+          "text": "Comply with §192.1007(a): based on the DIMP presentations of 18 risk categories, identify missing data for the entire pipeline system and develop a plan to collect all relevant information as part of normal pipeline activities.",
+          "source_page": null
+        },
+        {
+          "number": 24,
+          "text": "Utilize sources of information such as past O&M procedures, abnormal operating events, purchase orders, material lists from old field orders or standards, and information from industry sources (e.g., plastic pipe database committee (PPDC), NTSB accident reports, or PHMSA advisory bulletins) to help identify threats. PHMSA identified potential threats that include, but are not limited to, non-leak events such as near misses, over pressurizations, and material and appurtenance failures.",
+          "source_page": null
+        },
+        {
+          "number": 25,
+          "text": "Comply with §192.1007(b): use the information gathered in compliance with §192.1007(a) to identify threats to the integrity of the entire gas distribution systems by segment or lengths of similar characteristics – LPM, traditional LPM, non-traditional LPM and non LPM.",
+          "source_page": null
+        },
+        {
+          "number": 26,
+          "text": "Do not eliminate any existing or potential threat to a system segment or lengths of pipeline without an adequate basis and justification for doing so. PHMSA clarified through enforcement guidance that to exclude a threat from consideration (i.e., the absence of a risk category as identified in the DIMP), an operator should document the basis for that conclusion and should not exclude a threat based on the unavailability of information to support the existence of such a threat.",
+          "source_page": null
+        },
+        {
+          "number": 27,
+          "text": "Establish a formal schedule for the identification of missing risk data and report progress to the DPS quarterly.",
+          "source_page": null
+        },
+        {
+          "number": 28,
+          "text": "Comply with §192.1007(c): subdivide all the NYSEG/RG&E pipeline systems into multiple regions based on similar pipeline characteristics (e.g., contiguous areas within a distribution pipeline consisting of mains, services and other appurtenances; areas with common materials or environmental factors), and for which similar mitigation actions would be effective in reducing risk.",
+          "source_page": null
+        },
+        {
+          "number": 29,
+          "text": "Comply with §192.1007(d): determine and implement measures designed to reduce the risks from failure of their gas distribution pipelines. Define measures (actions and activities not merely statistical measures) to improve the leak management program.",
+          "source_page": null
+        },
+        {
+          "number": 30,
+          "text": "Comply with §192.1007(d): prioritize, plan and address the risks of greatest concern first in the NYSEG/RG&E pipeline system replacement program.",
+          "source_page": null
+        },
+        {
+          "number": 31,
+          "text": "Accelerate the replacement of LPM before the life expectancy expiration of pipeline materials.",
+          "source_page": null
+        },
+        {
+          "number": 32,
+          "text": "Reconcile, correct and report solutions on record keeping discrepancies in the inspection data based on Conclusion 15. Add records that are missing or perform inspections and update the work management system to include missing inspections.",
+          "source_page": null
+        },
+        {
+          "number": 33,
+          "text": "Comply with 16 NYCRR 255.825 and change the methodology per DPS guidance to calculate emergency response time. Report these changes to DPS and revise/correct the emergency response data reported since 2019.",
+          "source_page": null
+        },
+        {
+          "number": 34,
+          "text": "Improve the gas load forecast model(s) to better address CLCPA considerations and to increase the forecasting horizon.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Project Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 35,
+          "text": "Develop industry-accepted Work Breakdown Structures for capital programs/projects and use WBSs in initial phases of project justification and conceptual estimating. Continue refinement as a project progresses. 1.1. Develop well-defined work packages that can be used to track and measure project performance based on earned value. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION 1.2. Plan work in logical work groupings or packages and subdivide into smaller work groupings. 1.3. Ensure that activities required to perform work in each group are identified and defined, and that dependent relationships are established. 1.4. Formalize use of WBS elements by all project participants in their respective areas of responsibility and as an identification tool for project-management performance measurement. 1.5. Use new WBSs in procurement/contracting activities and specify WBS in contractor framework agreements. 1.6. Use new WBSs for project costing and as a means to assess impact of programmatic changes in funding levels on work content, schedules and contractual support. 1.7. Prepare cost estimates for each WBS element to assist budgeting and project validation. 1.8. Integrate new WBSs with ",
+          "source_page": null
+        },
+        {
+          "number": 36,
+          "text": "Address deficiencies in project estimating by making process improvements. 2.1. Formally assess process used to develop and update capital program/project cost estimates and develop detailed study. Submit detailed study to DPS. 2.2. Formally document in detail development of all electric and gas program/project cost estimates at each level of estimate according to Avangrid’s SOP.E-CD.04.04: Cost Management Standard Operating Procedure and at various stages of project life cycle. 2.3. Formally document in detail project cost-estimate reviews at each level of estimate. 2.4 Continuously verify accuracy of estimates versus actual project costs and maintain record of updates to cost-estimating tools. 2.5 Keep all detailed cost estimates in program/project folder for regulatory and audit purposes.",
+          "source_page": null
+        },
+        {
+          "number": 37,
+          "text": "Standardize project-prioritization process across all Avangrid departments that provide services to NYSEG and RG&E. Record and retain meeting minutes for all governance committees involved in project-prioritization process.",
+          "source_page": null
+        },
+        {
+          "number": 38,
+          "text": "Integrate CLCPA requirements into electric and gas capital project-prioritization process/algorithm. Review requirements and prioritization process/algorithm with DPS.",
+          "source_page": null
+        },
+        {
+          "number": 39,
+          "text": "Identify and document all tangible benefits for each capital program/project as part of Project Charters and Project Management Plans. Develop and implement method to track and report project benefits for life of program/project. Provide benefit realization reports to DPS for each completed program/project.",
+          "source_page": null
+        },
+        {
+          "number": 40,
+          "text": "Conduct an independent, third-party audit with DPS oversight of Avangrid’s record- management practices that includes electric and gas program/project records. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION",
+          "source_page": null
+        },
+        {
+          "number": 41,
+          "text": "Develop project plan and schedule and assign resources to update all Avangrid QMS procedure documentation. Include incentive compensation metrics for VPs of Electric and Gas Operations, respectively, to complete documentation updates. Review plan, schedule and incentive compensation metrics with DPS.",
+          "source_page": null
+        },
+        {
+          "number": 42,
+          "text": "Engage an independent monitor to oversee electric and gas program/project planning, management and delivery. Key responsibility of the independent monitor is to review and report to DPS Staff on effectiveness of capital program/project planning, capital budgeting processes and program/project management, plus program/project cost effectiveness, efficiency, appropriate cost assignment, benefit realization and tracking, and other information. Include DPS in RFP development, vendor proposal review and selection, and contracting. Shareholders should be responsible for the cost of the independent monitor.",
+          "source_page": null
+        },
+        {
+          "number": 43,
+          "text": "Improve coordination and management of public improvement and interference projects. 9.1 Develop and implement procedure documentation for coordination of electric and gas public improvement and interference projects with municipalities and agencies. Integrate with Project Outreach group’s procedures. 9.2. Actively solicit short- and long-term capital plans from key municipal and agency stakeholders. 9.3. Work with DPS to develop annual post-project survey for public improvement and interference projects to be delivered to municipalities and agencies upon project completion. 9.3.1. Incorporate results into continuing process-improvement efforts. 9.3.2. Provide annual report of survey results and process-improvement initiatives/progress to DPS. 9.3.3. Include completed survey metric as part of incentive compensation for VPs delivering services to municipalities and agencies. Review survey completion metric to be included in incentive compensation plan with",
+          "source_page": null
+        },
+        {
+          "number": 44,
+          "text": "Include all project outreach costs in capital program/project cost estimates. Directly charge all actual project outreach costs to capital programs/projects so that booked capital costs reflect actual project costs.",
+          "source_page": null
+        },
+        {
+          "number": 45,
+          "text": "Initiate an independent review with DPS oversight to determine if Avangrid is following its own project management policies and procedures on select, completed gas projects over $500K and select completed electric projects over $1M up to CY2023 to quantify the cost of unreasonable management. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Work Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 46,
+          "text": "Develop an integrated work management system covering all NYSEG and RG&E Gas and Electric operations, maintenance and construction resources based on engineered time standards. This system should cover routine operations, repetitive maintenance activities, planned work and support requirements, while also providing continuous feedback on workforce effectiveness. The system should be in an easy-to-use format expressed in man- hours, along with the combined employee and contractor capacity available, supported by real-time reporting of capacity utilization. The system should include the following specific elements: 1.1. Documentation of work level versus resource histogram development and work plan process 1.2. Enhanced methods to calculate workforce capacity and utilization 1.3. Expanded workforce coverage in reports 1.4. Documentation of processes for establishing workforce levels 1.5. Documentation of criteria for adding contractor capacity 1.6. Real-time variance reporting for O&M and project costs 1.7. Tracking performance targets versus actuals.",
+          "source_page": null
+        },
+        {
+          "number": 47,
+          "text": "Develop management information reporting and organizational reporting relationships to support integrated work management system.",
+          "source_page": null
+        },
+        {
+          "number": 48,
+          "text": "Develop formal reports on trends covering NYSEG and RG&E workload levels, workforce productivity and utilization. Analysis of these trends should identify high- performing functional areas, along with areas needing improvement. This should serve as a foundation for developing strategies to improve workforce performance.",
+          "source_page": null
+        },
+        {
+          "number": 49,
+          "text": "Integrate reported information covering NYSEG and RG&E workload levels, workforce productivity and utilization with SLA recommendations contained in Chapter III – Governance.",
+          "source_page": null
+        },
+        {
+          "number": 50,
+          "text": "Establish formal processes to use work management data as part of annual business planning for NYSEG and RG&E operations and maintenance.",
+          "source_page": null
+        },
+        {
+          "number": 51,
+          "text": "Refine formal work management practices for NYSEG and RG&E Gas and Electric engineering and design functions. Work management systems should include appropriate system tools to support various individual and distinct engineering functional processes and integrate with SLA recommendations contained in Chapter III – Governance. Elements that should be formalized include the following: 6.1. Scheduling 6.2. Prioritization and planning 6.3. Resource allocation and leveling 6.4. Performance measurement 6.5. Budget planning and control 6.6. Vendor tracking 6.7. Document/drawing control 6.8. Records management 6.9. Procurement management 6.10. Time reporting.",
+          "source_page": null
+        },
+        {
+          "number": 52,
+          "text": "Develop and report on overtime targets and performance metrics for NYSEG and RG&E Gas and Electric operations and maintenance organizations. These metrics should be based on economic analyses and verified industry norms.",
+          "source_page": null
+        },
+        {
+          "number": 53,
+          "text": "Annually review the design of monitoring and controlling reports to improve their usefulness. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Customer Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 54,
+          "text": "Perform in-depth analysis to cross reference NYCRR Part 11 and 13 regulations with built-in system controls and manual processes required for compliance with each customer service rule. Exception reports should be created to ensure controls are sufficient.",
+          "source_page": null
+        },
+        {
+          "number": 55,
+          "text": "Implement the following as related to compliance assessment findings for 16 NYCRR Part 11 and 13: 2.1. Create metric to monitor Timing of Service non-compliance instances. 2.2. Include actual payment due date on customer bills. 2.3. Provide training and updated materials related to security-deposit requirements and reasonable proof of identify. 2.4. Allow for negotiation of Deferred Payment Agreements (DPAs) to ensure fair and equitable consideration of the customer’s financial circumstances. 2.5. Mail the Annual Notification of Rights to every customer",
+          "source_page": null
+        },
+        {
+          "number": 56,
+          "text": "Implement version control for process and procedure/training documents, including but not limited to, description of content changed, date content changed, required update frequency, content author, reviewer and approver.",
+          "source_page": null
+        },
+        {
+          "number": 57,
+          "text": "Eliminate bi-monthly meter readings and complete universal AMI implementation. Until then, offer to move customers complaining of bill estimates to a levelized payment plan.",
+          "source_page": null
+        },
+        {
+          "number": 58,
+          "text": "Develop quarterly report of shared-meter investigations, including status and pending issues for upper management. Include milestones of investigations.",
+          "source_page": null
+        },
+        {
+          "number": 59,
+          "text": "Develop database of shared-meter investigations including customer information, date of complaint, date of investigation, resulting actions and dates, and record locator.",
+          "source_page": null
+        },
+        {
+          "number": 60,
+          "text": "Maintain shared-meter investigation records for a minimum of five years.",
+          "source_page": null
+        },
+        {
+          "number": 61,
+          "text": "Include additional information on letters sent to customers about rate changes. 8.1. Current rate schedule – NYSEG only 8.2. Requirements of current rate schedule – NYSEG only 8.3. Detailed reason for change (e.g., the demand on your facility was 512 kW, exceeding 500 kW twice in the past 12 months) – both RG&E and NYSEG. 8.4. Requirements of new rate schedule – NYSEG only",
+          "source_page": null
+        },
+        {
+          "number": 62,
+          "text": "Provide more visibility on the utilities’ websites for time-of-use rate options.",
+          "source_page": null
+        },
+        {
+          "number": 63,
+          "text": "Determine drivers of substantial increase in Call Center costs between 2018 and 2023. Ensure costs are directly attributable to NYSEG and RG&E.",
+          "source_page": null
+        },
+        {
+          "number": 64,
+          "text": "Formally communicate to DPS any planned changes to business operations that result in consolidation or situations where outsourcing of utility work is done.",
+          "source_page": null
+        },
+        {
+          "number": 65,
+          "text": "Implement formal contract management to ensure such things as agreement-number assignments, change-order numbering, and monitoring of contract values in comparison to invoiced amounts.",
+          "source_page": null
+        },
+        {
+          "number": 66,
+          "text": "Unsupported expenses such as Customer Operations charges that cannot be substantiated by invoices and proven to be directly attributable to services for NYSEG and RG&E, should be classified as “below the line” and paid by shareholders.",
+          "source_page": null
+        },
+        {
+          "number": 67,
+          "text": "Improve QRS and SRS case file documentation. Include a minimum of the following: 14.1. Usage and billing history. 14.2. Customer communication log. 14.3. Root cause assessment. 14.4. Proof of feedback sent to responsible department. 14.5. Copy of customer letter for case closeout.",
+          "source_page": null
+        },
+        {
+          "number": 68,
+          "text": "Create KPIs to track and monitor the following: 15.1. First Call resolution EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION 15.2. Delayed bills. 15.3. Commitments to follow-up with customers on issues when call-back is promised.",
+          "source_page": null
+        },
+        {
+          "number": 69,
+          "text": "Create a formal invoice review process and ensure this review process includes, but is not limited to, the following: 16.1. Invoices received and added to transaction record. 16.2. Invoice contains appropriate line-item information. 16.3. Invoice aligns with invoiceable items, per contract, and item amounts match. 16.4. Cost allocations are justified, and methodology is within transaction record. Also ensure that charges to NYSEG and RG&E can be directed supported, and that each budget owner has approved. 16.5. Transaction record indicates all budget owners have approved cost allocations. 16.6. Transaction is recorded correctly.",
+          "source_page": null
+        },
+        {
+          "number": 70,
+          "text": "Several areas of deficiency were noted in the Low-Income Program area: 17.1. Create a comprehensive Program Manual to include end-to-end program management. Include a minimum of the following: 17.1.1. Stakeholders. 17.1.2. Applicable tariffs. 17.1.3. Proof of eligibility requirements. 17.1.4. Process and procedure documentation. 17.1.5. Program goals and KPIs. 17.1.6. Program budget by admin, marketing/outreach and implementation. 17.1.7. OTDA file-matching cadence. 17.1.8. Tier discounts – maintenance of Tier discounts. 17.1.9. EAP form – English and other languages. 17.1.10. EAP letters – English and other languages. 17.1.11. Marketing and Outreach collateral – English and other languages. 17.1.12. Marketing and Outreach Strategy. 17.1.13. Community Based Organization partners. 17.1.14. List of reports with samples. 17.1.15. Training material locations. 17.1.16. Quality audit report locations. 17.2. Update Tariffs as noted in chapter. 17.3. Implement monthly quality review process.",
+          "source_page": null
+        },
+        {
+          "number": 71,
+          "text": "Provide supplemental data on the monthly CSPI report to DPS to include the number of bills not yet issued, number of bills issued late, number of days bills delayed by situation category (i.e. implausible, CDG Bill, etc.). In addition, each month indicates the number of accounts where consecutive bills were delayed including the number of consecutive months.",
+          "source_page": null
+        },
+        {
+          "number": 72,
+          "text": "Perform further financial review of Marketing and Outreach transactions to determine if costs are attributable to NYSEG and RG&E – and to define extent of corporate marketing transactions included in reporting. Eliminate corporate marketing costs in Outreach and Education and costs that are not directly attributable to NYSEG and",
+          "source_page": null
+        },
+        {
+          "number": 73,
+          "text": "Update CSPI process documentation to define how percentage of calls answered is calculated and retain numerator and denominator values in workpapers. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION",
+          "source_page": null
+        },
+        {
+          "number": 74,
+          "text": "Create formal override process to allow proper authority to approve adjustments made to CSPI metrics with appropriate supporting information on why it meets OCS definition and reason raw data reflected a different outcome.",
+          "source_page": null
+        },
+        {
+          "number": 75,
+          "text": "Ensure CSPI report model calculates all data in all cells, make sure quality checks are evident, review, document and certify all metric adjustments, and re-file CSPI metrics.",
+          "source_page": null
+        },
+        {
+          "number": 76,
+          "text": "Develop narrative of observations/actions to accompany staffing reports.",
+          "source_page": null
+        },
+        {
+          "number": 77,
+          "text": "Continue to make improvements to scam-tracking database to allow for reporting of scam types, amounts, verified scams, completed actions, and customer contact for closeout.",
+          "source_page": null
+        },
+        {
+          "number": 78,
+          "text": "Implement quality review and controls to ensure accuracy of Energy Efficiency data.",
+          "source_page": null
+        },
+        {
+          "number": 79,
+          "text": "Create implementation plan for all vendor recommendations to improve Energy Efficiency programs and data. Physical and Cybersecurity",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Rg&E.",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 80,
+          "text": "Provide a detailed report and in-person presentation to DPS on Avangrid’s prior and current plans to implement NIST CSF. This report must be provided at least one month prior to an in-person presentation. The report and presentation must include, at minimum, the following: 1.1. Detailed description of CSMP from original assessment in March 2020 to current date. 1.2. Review of each CSMP reassessment/re-evaluation performed and reason each reassessment/re-evaluation was required. 1.3. Discussion of CSMP governance model and all committees – including committee membership, responsibilities and work products produced. 1.4. Discussion of project management approach and implementation. Include all changes to project management since inception to current date. 1.5. Past and current CSMP procurement plans and contracting for all vendors, equipment and materials. 1.6. Scope changes to CSMP from inception to current date, with justifications for each scope change. Include information on all scope changes currently planned. Discuss scope risks and mitigation strategies. 1.7. CSMP resource management approach, staffing plans and actuals (internal and external) from inception to current date – ",
+          "source_page": null
+        },
+        {
+          "number": 81,
+          "text": "Formalize CSMP expectations and planned outcomes with DPS. Provide testimony in future NYSEG and RG&E rate cases regarding CSMP expectations. Furthermore, provide DPS with semi-annual Avangrid CSMP reports going forward. At minimum, these reports should include metrics for scope, cost, schedule and resource management, plus earned value. Provide DPS with detailed variance reporting, with verifiable justification for all variances. Notify DPS of all Avangrid NIST CSF maturity assessments in terms of timing, scope, cost and vendor selection. Provide all signed Avangrid contracts, procurement assessments and full study results going forward. Meet with DPS to finalize CSMP expectations, outcomes and all reporting requirements",
+          "source_page": null
+        },
+        {
+          "number": 82,
+          "text": "Develop metrics to track effectiveness of remediation efforts associated with Vulnerability Assessments/Penetration Tests and similar audits/assessments. Include these metrics as part of responsible executives’/employees’ incentive compensation plans.",
+          "source_page": null
+        },
+        {
+          "number": 83,
+          "text": "Develop a detailed plan to implement all NERC CIP internal controls and provide to DPS. Also provide quarterly implementation progress updates. Perform internal audit of NERC CIP controls for high-risk standards, as well those for CIP 004, 007, 010, and 011 and provide results and workpapers to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 84,
+          "text": "Provide DPS with detailed report and in-person presentation of Avangrid’s business resilience program and current effort to revise the company’s program, materials and reporting. The report must be provided to DPS at least one month in advance of in- person presentation. As part of this presentation, include a demonstration of the Business Continuity Management tool. Also provide DPS with a copy of all updated Business Impact Analysis, Business Continuity and Disaster Recovery Plans upon completion of these materials. The report and presentation should describe funding provided in rates for these activities and how funds have been used for the last five years.",
+          "source_page": null
+        },
+        {
+          "number": 85,
+          "text": "Include DPS in all business resilience drills/exercises to observe activities. Provide DPS with post-drill/exercise reports, findings, recommendations and implementation plans.",
+          "source_page": null
+        },
+        {
+          "number": 86,
+          "text": "Develop thresholds for “bad swipes” at non-NERC CIP-covered NYSEG and RG&E facilities and apply appropriate remediation for repeat offenders.",
+          "source_page": null
+        },
+        {
+          "number": 87,
+          "text": "Develop annual goals for all Avangrid phishing program metrics and report quarterly results to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 88,
+          "text": "Benchmark how other industries, not just energy/utilities, are adapting proactive cybersecurity programs to the evolving cyber-threat environment (e.g., integration of AI into social engineering attacks). Complete benchmark and provide detailed report to",
+          "source_page": null
+        },
+        {
+          "number": 89,
+          "text": "Conduct an internal audit of all contractors using their own computers to access Avangrid networks/systems/applications. Develop the audit scope in collaboration with DPS. At minimum, this audit must assess impact to Avangrid’s cyber-security posture. Provide EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION audit results and associated work papers to DPS. Avangrid Internal Audit must make a presentation to DPS on audit results.",
+          "source_page": null
+        },
+        {
+          "number": 90,
+          "text": "Clearly document and provide verifiable evidence to support adherence to implementation plans filed in Case 13-M-0178. Submit document and associated materials for DPS review.",
+          "source_page": null
+        },
+        {
+          "number": 91,
+          "text": "Update Comprehensive Security Plan to meet all requirements in New York State’s Critical Energy Generating and Transmission Facilities pursuant to Executive Law Section 713 and provide copy of Plan to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 92,
+          "text": "Immediately notify DPS of all physical and cyber-security staffing changes. Avangrid will meet with DPS to standardize and finalize reporting requirements as an activity in forthcoming audit recommendations implementation plan.",
+          "source_page": null
+        },
+        {
+          "number": 93,
+          "text": "Perform background checks on all Avangrid physical and cyber-security employees who don’t have a background check on file or have a background check that has not been updated within five years. Revise procedures to include requirement for updating physical and cyber-security personnel background checks on mutually agreeable timing with DPS and collective bargaining units (as required).",
+          "source_page": null
+        },
+        {
+          "number": 94,
+          "text": "Revise position descriptions for all resources supporting the NERC CIP program to clearly detail NERC CIP roles and responsibilities.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Information Systems",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 95,
+          "text": "Develop formal documentation and standardized templates to support management decision-making for IT project selection and prioritization. Documentation and templates must be aligned with and support Investment Planning’s prioritization processes.",
+          "source_page": null
+        },
+        {
+          "number": 96,
+          "text": "Complete all IT PDDs according to Avangrid’s documented instructions. Ensure all PDDs include comprehensive documentation of project purpose/justification, detailed cost estimates, cost-benefit analysis, estimated efficiency (ROI, quantified performance/process improvements, etc.), and standardized risk analysis. Each project should clearly map to specific NYSEG and RG&E strategic objectives.",
+          "source_page": null
+        },
+        {
+          "number": 97,
+          "text": "Develop a standardized method to track and report progress toward and attained benefit realization for each IT project. Provide annual reports to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 98,
+          "text": "Perform closer monitoring of AMI-installed endpoints that are not communicating and develop cost estimates based on anticipated solution category.",
+          "source_page": null
+        },
+        {
+          "number": 99,
+          "text": "Create a model to track and quantify AMI benefits and review with DPS.",
+          "source_page": null
+        },
+        {
+          "number": 100,
+          "text": "Adhere to procurement policies. Require a formal justification document to be completed and included with all single-source and sole-source contracts.",
+          "source_page": null
+        },
+        {
+          "number": 101,
+          "text": "Engage a third-party to perform an independent and thorough study of Avangrid’s IT project delivery practices. Incorporate recommendations into IT project management policies and procedures. Provide a full copy of the study results and revised IT policies and procedures to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 102,
+          "text": "Adhere to formal project management practices, with proper monitoring and controls. This includes but is not limited to the following: 8.1. Use Earned Value Management to measure project performance. 8.2. Ensure project financial health is presented to stakeholders in a transparent manner and not subject to interpretation. Include workstream by budget. 8.3. Ensure all work efforts, including work areas not started, are communicated to stakeholders with cost estimates and that work is reflected in project schedule. 8.4. Include system performance by deployment region on stakeholder reports. EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION 8.5. Perform quality reviews to ensure that invoices and SAP amounts match – and that transactions are for AMI Project, within scope, and match contract-pricing schedule. 8.6. Implement controls for contract-value monitoring and ensure products are not able to be ordered unless contracted for. 8.7. Maintain risk register with impact analysis. 8.8. Develop SAP reporting for increased visibility into internal and external costs.",
+          "source_page": null
+        },
+        {
+          "number": 103,
+          "text": "Formally disclose AMI AFUDC and all other AMI expenses as well as all other AMI plan deviations not captured in prior Rate Case testimony / workpapers to the DPS.",
+          "source_page": null
+        },
+        {
+          "number": 104,
+          "text": "Complete CIS assessment and roadmap. Provide assessment, roadmap and workpapers as part of a detailed presentation for DPS.",
+          "source_page": null
+        },
+        {
+          "number": 105,
+          "text": "Perform an annual comprehensive assessment to determine what routine manual work is completed outside of CIS and determine cost to business. Perform cost-benefit analysis for CIS change.",
+          "source_page": null
+        },
+        {
+          "number": 106,
+          "text": "Ensure vendor costs are directly charged for work performed on behalf of specific utilities. Where costs cannot be directly charged, clearly document planned allocation methodology and reasons for adjustments.",
+          "source_page": null
+        },
+        {
+          "number": 107,
+          "text": "Ensure that Budget Transfer forms include the name of approver and approval date fields.",
+          "source_page": null
+        },
+        {
+          "number": 108,
+          "text": "Initiate an independent review with DPS oversight of AMI and other IT projects to quantify the cost of unreasonable management.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Procurement",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 109,
+          "text": "Redefine competitive procurement of goods and services versus transparency using accepted industrial terminology and include this in policies and procedures documents.",
+          "source_page": null
+        },
+        {
+          "number": 110,
+          "text": "Develop comprehensive performance metrics for the purchasing function. Formally define how each performance metric will be calculated and the data source for each.",
+          "source_page": null
+        },
+        {
+          "number": 111,
+          "text": "Develop a comprehensive, semi-annual report on the purchasing performance directly applicable to NYSEG and to RG&E supported by verifiable data. Ensure reports and supporting data are readily available and produced for the next management audit.",
+          "source_page": null
+        },
+        {
+          "number": 112,
+          "text": "Formally define how Supplier Diversity identification and certification will be conducted for NYSEG and for RG&E.",
+          "source_page": null
+        },
+        {
+          "number": 113,
+          "text": "Formally define how Supplier Diversity procurement will be conducted, how fair and equitable competition among suppliers will be ensured and include this in policies and procedures documents.",
+          "source_page": null
+        },
+        {
+          "number": 114,
+          "text": "Develop comprehensive performance metrics for Supplier Diversity procurement applicable to NYSEG and to RG&E.",
+          "source_page": null
+        },
+        {
+          "number": 115,
+          "text": "Develop a comprehensive, semi-annual report on Supplier Diversity purchasing performance directly applicable to NYSEG and to RG&E supported by verifiable data. Ensure reports and supporting data readily available and produced for the next management audit.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Performance Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 116,
+          "text": "In support of developing separate NYSEG and RG&E strategic plans (see Chapter III- Governance and Management), create a performance management program that provides a clear line of sight from top-level NYSEG and RG&E corporate goals supported by subsequent department/operational goals and KPIs.",
+          "source_page": null
+        },
+        {
+          "number": 117,
+          "text": "Create individual incentive plans for NYSEG and RG&E.",
+          "source_page": null
+        },
+        {
+          "number": 118,
+          "text": "Include CLCPA initiatives in annual NYSEG and RG&E corporate goals.",
+          "source_page": null
+        },
+        {
+          "number": 119,
+          "text": "To the extent that New York ratepayers have contributed to annual incentive payments to Avangrid employees (i.e. ASC, AMC, NYSEG and RG&E), NYSEG and RG&E should EXECUTIVE SUMMARY NORTHSTAR Rec # RECOMMENDATION adjust incentive compensation for performance metrics not related to NYSEG and RG&E and where NYSEG and RG&E performance did not meet targets",
+          "source_page": null
+        },
+        {
+          "number": 120,
+          "text": "Formally document the annual goal-setting process.",
+          "source_page": null
+        },
+        {
+          "number": 121,
+          "text": "Ensure that annual goals presented to CNC include clear targets and measurement criteria. Clearly indicate when a goal represents a customer-benefiting measure.",
+          "source_page": null
+        },
+        {
+          "number": 122,
+          "text": "Expand third-party auditor review to include Avangrid Networks and the NYSEG and RG&E President and CEO individual metrics.",
+          "source_page": null
+        },
+        {
+          "number": 123,
+          "text": "Ensure that CNC meeting minutes are reflective of pre-meeting distributed materials. All such materials should be included in the meeting minute package for official records.",
+          "source_page": null
+        },
+        {
+          "number": 124,
+          "text": "Clarify the CNC role and Management Committee roles for APA plan administration within the formal APA plan documents.",
+          "source_page": null
+        },
+        {
+          "number": 125,
+          "text": "Include date and version for all incentive plans, along with including the plan administrator’s name.",
+          "source_page": null
+        },
+        {
+          "number": 126,
+          "text": "Develop individual goals and career paths for union employees.",
+          "source_page": null
+        },
+        {
+          "number": 127,
+          "text": "Pursue additional training and oversight to ensure individual goals are appropriately structured and focused on customer benefits.",
+          "source_page": null
+        },
+        {
+          "number": 128,
+          "text": "Discontinue discretionary assessments in incentive compensation plans to ensure that all employees are evaluated based on consistent and measurable performance metrics. NORTHSTAR On May 18, 2023, the NYSPSC issued a Request for Proposal (RFP) in Case 23-M-0103 for a consultant to perform a Comprehensive Management and Operations Audit of New York State Electric & Gas Corporation (NYSEG) and Rochester Gas and Electric Corporation (RG&E). NorthStar Consulting Group, Inc. (NorthStar) was selected by the NYSPSC on September 15, 2023, to perform the audit. Pursuant to Public Service Law §66(19)1, the NYSPSC is authorized to engage a consulting firm to perform comprehensive management and operations audits. These audits, managed by DPS, provide an opportunity to gain valuable insight into utility operations and management. NorthStar conducted this audit in a manner characterized by frank and open discussion of findings, conclusions and recommendations. NorthStar’s final report provides a comprehensive, independent and objective evaluation of current performance, specifically with respect to Avangrid’s governance and executive management, budgeting and finance, electric and gas operations",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

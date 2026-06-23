@@ -265,3 +265,83 @@ def test_real_pa_mo_audits_regression(rid, min_findings, min_recs):
     assert all(r.text for r in recs)                                   # every rec non-empty
     # every PA M&O rec carries its Exhibit I-2 "Page No." (a positive printed page)
     assert all(isinstance(r.source_page, int) and r.source_page > 0 for r in recs)
+
+
+# --- NorthStar "Summary of Recommendations" parser (NY DPS NYSEG/RG&E, LIPA) --------
+# Synthetic table: two ALL-CAPS functional areas, {ROMAN}-{N} labels, a wrapped rec,
+# an "I-12" page-footer artifact (skipped), and a body restart ("III-1" again, stopped).
+_NORTHSTAR = """Summary of Recommendations
+Rec #
+RECOMMENDATION
+GOVERNANCE AND MANAGEMENT
+III-1
+Revise the organization and governance to comply with each element
+of the Commission Order.
+III-2
+Develop service-level agreements for all client services.
+I-12
+BUDGET AND FINANCE
+IV-1
+Simplify the service-company cost-allocation process.
+III-1
+This is the detailed body restating chapter III and must not be parsed.
+"""
+
+
+def test_northstar_stated_count():
+    f = state_structure.northstar_stated_count
+    assert f("The audit produced 128 recommendations for improvements.") == 128
+    assert f("This report contains a total of 80 recommendations summarized in Exhibit C.") == 80
+    assert f("A document with no stated recommendation total.") is None
+
+
+def test_parse_northstar_chapters_and_verbatim_recs():
+    chapters = state_structure.parse_northstar_recommendations(_NORTHSTAR)
+    assert [t for t, _ in chapters] == ["Governance And Management", "Budget And Finance"]
+    govern = chapters[0][1]
+    assert len(govern) == 2  # III-1, III-2 (the "I-12" footer artifact is skipped)
+    assert govern[0][0].startswith("Revise the organization and governance")
+    assert "detailed body" not in " ".join(r for _t, recs in chapters for r, _p in recs)  # body restart stopped
+
+
+def test_structure_mo_audit_northstar_count_gate():
+    """structure_mo_audit accepts a NorthStar parse only within ~90-100% of the stated
+    total, so a partial/over-read or a false-fire (no stated count) becomes metadata-only."""
+    pages_ok = [PageText(page=1, char_count=len(_NORTHSTAR), is_image_only=False,
+                         extractor="pymupdf", text=_NORTHSTAR + "\nThe audit produced 3 recommendations.")]
+    rep = state_structure.structure_mo_audit(_seed(), pages_ok, scanned_pages=[])
+    assert rep is not None and rep.finding_count == 2 and sum(len(f.recommendations) for f in rep.findings) == 3
+    # Same table but a stated count of 99 -> 3 parsed is <90% -> rejected (metadata-only).
+    pages_bad = [PageText(page=1, char_count=len(_NORTHSTAR), is_image_only=False,
+                          extractor="pymupdf", text=_NORTHSTAR + "\nThe audit produced 99 recommendations.")]
+    assert state_structure.structure_mo_audit(_seed(), pages_bad, scanned_pages=[]) is None
+    # No stated count at all -> rejected.
+    pages_nocount = [PageText(page=1, char_count=len(_NORTHSTAR), is_image_only=False,
+                             extractor="pymupdf", text=_NORTHSTAR)]
+    assert state_structure.structure_mo_audit(_seed(), pages_nocount, scanned_pages=[]) is None
+
+
+# --- No-regression snapshot over the comprehensive M&O audits (skip if not ingested) ---
+@pytest.mark.parametrize(
+    "rid, seed_file, min_findings, min_recs",
+    [
+        # Overland (PSE&G) — restored 2026-06-23 after the NJ dispatch fix; 60 recs
+        # after the listing-region bound dropped the runaway final row (was 61/1.8 MB).
+        ("2022-12_pseg_nj-affiliate-management-audit", "nj_bpu.json", 16, 60),
+        # NorthStar (NY NYSEG/RG&E 128 recs, LIPA 79 of a stated 80).
+        ("2025-02-04_nyseg-rge_ny-23-m-0103-mo-audit-final-report", "ny_dps_audits.json", 11, 128),
+        ("2024-03-22_lipa-pseg-li_ny-21-00618-mo-audit-final-report", "ny_dps_audits.json", 13, 79),
+    ],
+)
+def test_comprehensive_mo_audits_regression(rid, seed_file, min_findings, min_recs):
+    text_path = config.PROCESSED_DIR / rid / "text.json"
+    if not text_path.exists():
+        pytest.skip(f"{rid} not ingested locally (run: pipeline.sources --seed data/seeds/{seed_file})")
+    seeds = {s["id"]: SourceSeed.model_validate(s) for s in json.loads((config.SEEDS_DIR / seed_file).read_text())}
+    text = ReportText.model_validate_json(text_path.read_text(encoding="utf-8"))
+    report = state_structure.structure_mo_audit(seeds[rid], text.pages, text.scanned_pages)
+    assert report is not None
+    assert report.finding_count >= min_findings
+    assert sum(len(f.recommendations) for f in report.findings) >= min_recs
+    assert all(f.title for f in report.findings)
+    assert all(r.text for f in report.findings for r in f.recommendations)

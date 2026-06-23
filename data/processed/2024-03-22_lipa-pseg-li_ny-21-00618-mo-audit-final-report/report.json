@@ -12,7 +12,7 @@
   "source_page_url": "https://dps.ny.gov/audit-lipa-and-pseg-long-island",
   "pdf_download_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B00EF678E-0000-CB15-A42B-4743D2FCC852%7D",
   "captured_at": "2026-06-22",
-  "source_note": "NorthStar Consulting Group's independent Comprehensive Management and Operations Audit of the Long Island Power Authority (LIPA) and its service provider PSEG Long Island, LLC — Matter No. 21-00618, conducted for the NY DPS under the LIPA Reform Act (569 pp). Final report dated March 22, 2024; the audit makes 49 recommendations across core utility operations. Page 1 verified: 'COMPREHENSIVE MANAGEMENT AND OPERATIONS AUDIT OF LONG ISLAND POWER AUTHORITY AND PSEG LONG ISLAND, LLC MATTER NO. 21-00618 ... MARCH 22, 2024 NORTHSTAR CONSULTING GROUP ... FINAL REPORT'. Harvested from the NY DPS DMM via the DPS LIPA-audit landing page. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={00EF678E-0000-CB15-A42B-4743D2FCC852}).",
+  "source_note": "NorthStar Consulting Group's independent Comprehensive Management and Operations Audit of the Long Island Power Authority (LIPA) and its service provider PSEG Long Island, LLC — Matter No. 21-00618, conducted for the NY DPS under the LIPA Reform Act (569 pp). Final report dated March 22, 2024; the audit makes 80 recommendations across core utility operations. Page 1 verified: 'COMPREHENSIVE MANAGEMENT AND OPERATIONS AUDIT OF LONG ISLAND POWER AUTHORITY AND PSEG LONG ISLAND, LLC MATTER NO. 21-00618 ... MARCH 22, 2024 NORTHSTAR CONSULTING GROUP ... FINAL REPORT'. Harvested from the NY DPS DMM via the DPS LIPA-audit landing page. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={00EF678E-0000-CB15-A42B-4743D2FCC852}).",
   "archived_via": null,
   "page_count": 569,
   "scanned_pages": [],
@@ -22,7 +22,507 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 0,
-  "findings": [],
-  "structured": false
+  "finding_count": 13,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Governance",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "The LIPA Board of Trustee’s should utilize independent, third-party resources to provide “on-call” utility strategy and operations advisory services in review of Board meeting information packets and in advance of Board meetings, when needed, as common among investor-owned utility Boards.",
+          "source_page": null
+        },
+        {
+          "number": 2,
+          "text": "PSEG LI must provide LIPA with access to detailed ethics and compliance program information regarding concerns, investigations, findings, and resolutions/remediation actions taken.",
+          "source_page": null
+        },
+        {
+          "number": 3,
+          "text": "PSEG LI must follow its own record management procedures as stated in Practice 105-1 and 105-1- 2. Annual attestations from executive management of each PSEG LI business unit should be completed by the December due date and PSEG LI RMG should perform an evaluation of the program for PSEG LI management and the LIPA’s review. EXECUTIVE SUMMARY NORTHSTAR Rec #",
+          "source_page": null
+        },
+        {
+          "number": 4,
+          "text": "Conduct an audit of the PSEG LI and LIPA records management programs including Property Records, and the implementation of the ERDMS project. Once the audit is complete, work with the New York State Archive to develop a record inventory and record retention schedule.",
+          "source_page": null
+        },
+        {
+          "number": 5,
+          "text": "Prioritize implementation of LIPA’s ERDMS so that PSEG LI can use the platform as anticipated in the Second A&R OSA.",
+          "source_page": null
+        },
+        {
+          "number": 6,
+          "text": "Conduct a comprehensive organization structure analysis of LIPA as well as a skill and capabilities analysis conducted once clarity is given on the future of LIPA by the NY legislature, OSA contract is extended, or a new Service Provider is contracted. Recommendations from this study should be fully implemented in a timely fashion.",
+          "source_page": null
+        },
+        {
+          "number": 7,
+          "text": "Review skill and capabilities gaps of employees at LIPA and PSEG LI and use results to develop meaningful training and development programs. Increase investment in training and development to at least 2018 levels.",
+          "source_page": null
+        },
+        {
+          "number": 8,
+          "text": "Implement the LIPA DE&I program with program metrics to report progress to the Board.",
+          "source_page": null
+        },
+        {
+          "number": 9,
+          "text": "Consistently track and report PSEG LI’s key performance indicators for Management Diversity (Women and PoC), Union Diversity, and commensurate with survey cadence, Employee Engagement to PSEG LI management and LIPA.",
+          "source_page": null
+        },
+        {
+          "number": 10,
+          "text": "Conduct an audit of PSEG LI compliance with the OSA including, but not limited to Section 10.8.",
+          "source_page": null
+        },
+        {
+          "number": 11,
+          "text": "Partner with New York State universities for IT and Cybersecurity programs and develop internships for these functional areas.",
+          "source_page": null
+        },
+        {
+          "number": 12,
+          "text": "Continue the development of LIPA and PSEG LI ERM Programs with the following considerations. • Formally charge “Organizational risk culture and risk awareness” as the responsibility of the LIPA and PSEG LI executive management and LIPA and PSEG LI ERM teams to manage, improve, and report to the LIPA Board. - The LIPA and PSEG ERM teams must analyze “organizational risk culture and risk awareness” and the Board’s ERM policy, #1808, amended September 27, 2023, and recommend changes to the policy to promote management and employee accountability. - Develop a comprehensive program to improve “organizational risk culture and awareness” at LIPA and PSEG LI. The program must include metrics to baseline and report progress in risk culture. - “Organizational risk culture and awareness” must be evaluated during the 2024 risk assessment process for each LIPA and PSEG LI department. - LIPA/PSEG LI ERM teams must investigate incentives and accountability programs used by organizations outside the utility industry to improve risk culture and awareness. • Require risk analysis such as a “bow-tie” analysis for each risk included in department risk profiles and update annually as necessary. • Inves",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Budget And Financial Reporting",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Implement standards and methods to reduce the large variances between budget and actuals for capital projects resulting from: imprecise estimating, overhead assessments without clear cost causation, and significant risk and contingency included in the budgeting process. Include the following enhancements to capital budgeting: - Apply the same standards and methods (or comparable standards and methods) used in the budget briefing book process to capital budgeting. - Use the Hyperion structure and functionality to improve the capital budgeting process.",
+          "source_page": null
+        },
+        {
+          "number": 14,
+          "text": "Implement processes to measure, analyze, and correct overhead assessments based on valid costs causation principles and clearly demonstrate LIPA/PSEG LI review of how costs were allocated appropriately, including: - Request periodic or annual listing of work orders. Obtain and review costing sheets for a selection of those work orders and analyze whether the overhead assessments assigned to the work orders are appropriate. - Develop summary overhead reporting with underlying overhead charges and allocation rates. - Perform analytics to understand large fluctuations in assessment rates or amounts.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Debt Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Provide disclosures detailing the methodology of the debt-to-asset ratio. Describe obligations not included in debt and grant funded projects included in assets. Reconcile amounts to the financial statements so various stakeholders, beyond rating agencies, can perform a more informed evaluation of fiscal sustainability. None",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Power Supply",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 16,
+          "text": "Begin formal record retentions of Power Market Documents",
+          "source_page": null
+        },
+        {
+          "number": 17,
+          "text": "Calculate the Local Supply Charge for six consecutive months using two methodologies: - The current methodology of subtracting Market Supply Costs from total PSC costs. - A separate methodology of calculating Local Supply Charge using the general ledger 69 accounts for Local Supply Charge. Report findings to DPS.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "System Planning, Dsp Development And Clcpa",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 18,
+          "text": "Review the CAC Scoping Plan and identify themes and strategies to align clean energy and EE programs. Identify Scoping Plan topic leads to consider new and innovative programs to further CLCPA goals.",
+          "source_page": null
+        },
+        {
+          "number": 19,
+          "text": "Create and appropriately resource a group in Construction Services to focus on the scope, scale, and number of projects CLCPA construction programs.",
+          "source_page": null
+        },
+        {
+          "number": 20,
+          "text": "Perform a review of historical EE goals and budgets to develop goals and “stretch” goals and adopt realistic budgets to meet goals and “stretch goals”.",
+          "source_page": null
+        },
+        {
+          "number": 21,
+          "text": "Conduct a third-party operations audit of PSEG LI’s clean energy and energy efficiency programs in 2024.",
+          "source_page": null
+        },
+        {
+          "number": 22,
+          "text": "Improve the visibility of Demand Response programs and their requirements and eligibility on the PSEG LI website. Provide a list of aggregators that would like to be included on the website.",
+          "source_page": null
+        },
+        {
+          "number": 23,
+          "text": "Develop a DAC investment “tracker” to demonstrate compliance with CLCPA goals by Q2 2024.",
+          "source_page": null
+        },
+        {
+          "number": 24,
+          "text": "Present CLCPA goals and progress to the Oversight and Clean Energy Committee bi-annually.",
+          "source_page": null
+        },
+        {
+          "number": 25,
+          "text": "Develop a CLCPA goal and progress tracker to be posted on LIPA and PSEG LI websites to increase public awareness. This CLCPA goal and progress tracker should be refreshed bi-annually. If no progress is made on CLCPA goals for that period, the companies should inform the public why.",
+          "source_page": null
+        },
+        {
+          "number": 26,
+          "text": "Formalize the Environmental Advisory Committee and provide resources adequate for its success. Create a formal committee charter, develop goals and objectives, track recommendations and deliverables, identify a Committee Secretary to organize meetings, record meeting minutes, and create meeting materials for distribution well in advance of meetings. Report Environmental Advisory Committee findings, recommendations, and actions to the Board’s Oversight and Clean Energy Committee bi-annually. EXECUTIVE SUMMARY NORTHSTAR Rec #",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Transmission And Distribution Operations",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 27,
+          "text": "Make considerations for MAIFI performance in determining the worst performing circuits list.",
+          "source_page": null
+        },
+        {
+          "number": 28,
+          "text": "Determine the causes for poor SAIFI performance for the following circuits [listed in Chapter IX] that have been unable to be remedied over multiple years. Determine the causes that are within PSEG LI’s control and those outside of PSEG LI’s control and report findings to DPS.",
+          "source_page": null
+        },
+        {
+          "number": 29,
+          "text": "Document the successful implementation of each of the EAMS functional requirements by a utility using the EAMS software selected before proceeding with implementation.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Program And Project Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 30,
+          "text": "Continue to develop and implement the SOS capital program optimization model. • Expand the SOS platform to include projects from other business units (e.g., IT and Customer Operations) and programs (e.g., Utility 2.0) • Implement improvements such as: - Review the scoring criteria for each business area when setting up a new project in SOS. - Identify any biases toward certain types of projects. - Review the Strategic Objectives and the Success Criteria. • Share SOS output results with LIPA and the Board of Trustees. • Collaborate with Enterprise Risk Management on risk scoring capital projects.",
+          "source_page": null
+        },
+        {
+          "number": 31,
+          "text": "Review and address inconsistencies as well as the lack of integration in project management procedures.",
+          "source_page": null
+        },
+        {
+          "number": 32,
+          "text": "Revise current procedures related to quality assurance and quality controls for capital programs and projects requiring project managers to develop a comprehensive quality management plan for each capital project.",
+          "source_page": null
+        },
+        {
+          "number": 33,
+          "text": "Address the deficiencies in project estimating by making process improvements and adding controls. • Develop cost estimate reports for each stage of capital projects. Formally document project cost reviews at each level of estimate in detail and at various stages of project completion. • Integrate cost and schedule systems and ensure project master schedule is appropriately integrated with the approved project budget. • Continuously verify the accuracy of estimates versus the actual project cost and maintain a record of updates to the estimating database.",
+          "source_page": null
+        },
+        {
+          "number": 34,
+          "text": "Utilize a WBS in the initial phases of the project justification and order of magnitude estimating, and continue their refinement as the project progresses. • Develop well-defined work packages that can be used to track and measure project performance based on earned value. • Plan work in logical work groupings or packages and subdivide into smaller work groupings. Ensure that activities required to perform the work in each group are identified, defined, and dependent relationships established. • Formalize the use of WBS elements by all project participants in their respective areas of responsibility and as an identification tool for project management performance measurement. • Use the WBS in procurement/contracting activities and specify the WBS in contractor Requests for Proposals. • Use the WBS for project costing and as a means to assess the impact of programmatic changes in funding levels on work content, schedules, and contractual support. • Integrate the WBS with PSEG LI’s accounting systems, project cost management systems and schedule management systems. • Integrate master work plans and detailed contractor schedules / activities to the WBS to permit integration of schedu",
+          "source_page": null
+        },
+        {
+          "number": 35,
+          "text": "Formalize and incorporate risk and contingency management in capital project cost estimating and cost management. Formally report the expenditure of risk funds and contingency funds separately from project estimates rather than inflate total project budget amounts. Risk funds should be assigned to specific project risks. Use of risk and contingency funds should be approved by the URB. EXECUTIVE SUMMARY NORTHSTAR Rec #",
+          "source_page": null
+        },
+        {
+          "number": 36,
+          "text": "Define and report project management performance measures that focus on the effectiveness of cost estimation, earned value and schedule management. Project progress reports should contain all information which is pertinent for their target audience. Cost estimates and schedules developed for preliminary plans should be evaluated when a project is complete to determine where further enhancements to project estimating can be made. • Have project managers actively monitor overall project progress against the baseline schedule and review cost versus progress and budget. • Formalize project management performance reporting to LIPA and PSEG LI. • Integrate cost and schedule systems with the project master schedule and the approved project budget. • Develop a baseline schedule for every capital project showing the logical relationships, duration, and timing of the WBS elements for engineering and construction. • Establish processes for systematic schedule preparation, review and analysis. • Include critical path in project schedules. • Periodically, perform analyses of the initial establishment of operation/completion dates.",
+          "source_page": null
+        },
+        {
+          "number": 37,
+          "text": "Review governance and processes for managing work directives to ensure information on change orders and costs are readily available.",
+          "source_page": null
+        },
+        {
+          "number": 38,
+          "text": "Review the governance structure and processes for reviewing, screening, and approving capital projects. Develop formal charters for committees, clearly defined purpose, approval and oversight responsibilities, and deliverables. Integrate governance committees, responsibilities, capital project meeting documentation requirements, and stage-gate approvals with Project Management policies and procedures.",
+          "source_page": null
+        },
+        {
+          "number": 39,
+          "text": "Develop meaningful oversight activities to determine the effectiveness of PSEG LI capital project planning and management and outcomes. This includes, but not limited to, an in-depth analysis of PSEG LI’s scope development and management, risk analysis and management, cost and schedule management, project performance, and quality management practices.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Work Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 40,
+          "text": "Develop an integrated a work management system covering all PSEG LI operations, maintenance and construction resources that are based on engineered time standards and cover routine operations, repetitive maintenance activities, planned work, support requirements, and provide continuous feedback on workforce effectiveness. The system should be in an easy-to-use format expressed in man-hours, along with the combined employee and contractor capacity available to perform the work, supported by real time reporting of capacity utilization. The system should include: • Documentation of work level versus resource histogram development and work plan process. • Enhanced methods to calculate workforce capacity and utilization. • Expanded workforce coverage in reports. • Documentation of processes for establishing workforce levels. • Documentation of criteria for adding contractor capacity. • Establish real time variance reporting for O&M and project costs. • Additional decision-making information to work plans.",
+          "source_page": null
+        },
+        {
+          "number": 41,
+          "text": "Continue to fill gaps in the current management information reporting and organizational reporting relationships to support an integrated work management system. • Develop formal reports on trends in work load levels, workforce productivity and utilization. The analysis of these trends identifies areas that are performing well, where improvements are needed, and is a foundation for the development of strategies to improve work force performance. • Establish formal processes to use work management data for annual resource planning as part of the annual business planning activities of PSEG LI operations and maintenance. • Refine formal work management practices for PSEG LI engineering and design functions. The work management systems should have appropriate system tools to support the various individual and distinct engineering functional processes. Elements that should be formalized include: - Scheduling EXECUTIVE SUMMARY NORTHSTAR Rec # - Prioritization and planning - Resource allocation and leveling - Performance measurement - Budget planning and control - Vendor tracking - Document/drawing control - Records management - Procurement management - Time reporting.",
+          "source_page": null
+        },
+        {
+          "number": 42,
+          "text": "Refine overtime targets and performance metrics for PSEG LI operations and maintenance organizations that are based on economic analyses and verified industry norms.",
+          "source_page": null
+        },
+        {
+          "number": 43,
+          "text": "Review the design of monitoring and controlling reports to improve their usefulness.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Outside Services",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 44,
+          "text": "Improve LIPA and PSEG LI competitive procurement levels to significantly exceed previous levels of performance. • Edit and modify procurement policies and procedures to establish a stronger competitive bias. • Provide formal value analysis of all bid evaluations and selections to record competitive placement with an emphasis on materials and services cost. • Increase approval levels for any non-competitive transactions. • Competitively re-bid contracts or formally re-confirm competitive basis instead of providing funding extensions, renewals and selections among multiple existing contracted suppliers. • Perform a verifiable benchmarking study of large utility purchasing functions to establish best in class performance levels. Use this information to establish stretch targets for future competitive performance goals. • Adopt competitive procurement KPIs and OSA performance metrics. • Develop an improved competitive approach to contractors, their geographic coverage and staggered strategy for multi-year procurement contracts. • Remove end-users from participation in the selection of multiple service providers for similar services or provide specific guidelines to be followed and repo",
+          "source_page": null
+        },
+        {
+          "number": 45,
+          "text": "Conduct an independent audit of LIPA and PSEG LI supply chain functions directed by DPS to address each of the control deficiencies noted in this chapter to determine whether they have been addressed and effectively resolved.",
+          "source_page": null
+        },
+        {
+          "number": 46,
+          "text": "Demonstrate that all of the EAMS functional requirements pertaining to supply chain activities (including procurement, materials management and accounts payable) are presently used, operating as planned and effective at another utility using the software platform obtained by LIPA/PSEG LI before proceeding with the EAMS initiative.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Customer Operations And Communication",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 47,
+          "text": "Improve oversight, controls, reporting, and tools for Shared Meter Investigations. • Require Special Investigations supervisors to approve all Shared Meter Reports prior to submittal to Customer Relations. • Require Customer Relations supervisor to approve all Shared Meter penalties and assessments prior to notification of landlords. • Develop in-field tools for investigators that are consistent across all employees and updated as necessary. Discontinue the use of private notes. Tools may include: EXECUTIVE SUMMARY NORTHSTAR Rec # - Checklists - Forms to be completed - Photographs to be taken - New technology such as electronic notebooks etc. • Discontinue the practice of reviewing a week’s worth of investigations on Fridays and require daily reporting.",
+          "source_page": null
+        },
+        {
+          "number": 48,
+          "text": "For projects where PSEG LI relies heavily on external vendor expertise and support, LIPA should have closer involvement in contracting and project management oversight.",
+          "source_page": null
+        },
+        {
+          "number": 49,
+          "text": "Determine the extent to which PSEG LI can offer customers bill credits for the purposes of achieving OSA metrics.",
+          "source_page": null
+        },
+        {
+          "number": 50,
+          "text": "Improve Call Center resource planning, budgeting, and training. • PSEG LI Call Center should have a documented plan and be appropriately prepared for an increase in customer call volume for the 2024 TOD implementation. • Refine Call Center forecasting model to day-of-week and include all resources (including supplemental department support). Call volume forecast should be “tunable” to calculate needs based on variable inputs (e.g., TOD rollout). • The Call Center forecasting model output should be used to inform the call center budget. • Call Center agents should have training on EE programs and information sheets they can send or email customers • Retain records of training material, along with dates of training, and individuals who participated in the training session.",
+          "source_page": null
+        },
+        {
+          "number": 51,
+          "text": "PSEG LI required Call Center performance metrics should be consistent with Case 15-M-0566 reporting requirements in alignment with other New York utilities. Refer to the four metrics discussed within the Chapter.",
+          "source_page": null
+        },
+        {
+          "number": 52,
+          "text": "Implement process improvement initiatives for the Household Assistance Program. Scope should include at a minimum: • Update Household Assistance Program processing procedure per report findings. • Create a comprehensive Program Manual for the Household Assistance Program to include end-to-end program management. Include the following: - Stakeholders - Applicable Tariffs - Eligibility - Program goals and KPI’s - Program budget by admin, marketing/outreach and implementation. - File matching cadence - Tier discounts – maintenance of Tier discounts - HAR form – English and other languages - HAR letters – English and other languages - Marketing and Outreach collateral – English and other languages - Marketing and Outreach Strategy - Community Based Organization partners - List of reports with samples. - Training material locations - Audit report locations - Etc. • Establish cadence for receipt of OTDA file and track file match rates. Encourage customers (and change website verbiage) that have received HEAP or Emergency HEAP to apply directly to the utility until a higher rate of customer matching is achieved. • Determine reasons for HAR high rate of denials for manually processed appli",
+          "source_page": null
+        },
+        {
+          "number": 53,
+          "text": "Update Internal Financial Assistance Program Guide to include HAR.",
+          "source_page": null
+        },
+        {
+          "number": 54,
+          "text": "Track and coordinate internal referrals to maximize low-income program participation such as between the Household Assistance Program and REAP. Review REAP program eligibility rules and determine if they can be adjusted to align with the Household Assistance Program so participation in one program will qualify for the other.",
+          "source_page": null
+        },
+        {
+          "number": 55,
+          "text": "Revisit and clarify the net income requirements for $10 Agreement eligibility for payment agreements.",
+          "source_page": null
+        },
+        {
+          "number": 56,
+          "text": "Evolve marketing and outreach strategies to focus on methods that increase customer participation in the Household Assistance Program and EE programs.",
+          "source_page": null
+        },
+        {
+          "number": 57,
+          "text": "Implement capital project outreach recommendations from prior NorthStar audit. • Update the External Affairs Handbook to reflect recent lessons learned, the findings in NorthStar’s report. • Implement formal capital outreach training as recommended in the prior NorthStar audit, document attendees, and conduct post-training surveys for continuous improvement. • Develop Tier 3 Capital Project Outreach Plans in accordance with the prior NorthStar audit.",
+          "source_page": null
+        },
+        {
+          "number": 58,
+          "text": "Improve transparency and controls over EE programs. At a minimum: • Implement approval process for LIPA to approve fund-shifting between EE programs. • Implement processes to increase transparency of EE program funds. Suggest budgeting and tracking at a program level by admin, marketing/outreach, implementation, and rebates/incentives costs.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Advanced Metering Infrastructure (Ami)",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 59,
+          "text": "Ensure risks associated with system integration projects (Sonic ESB to MuleSoft) overlapping with the system separation program are captured within the appropriate mitigation plan to support the continuation of system separation.",
+          "source_page": null
+        },
+        {
+          "number": 60,
+          "text": "Create a centralized library to document Data Lake / Tableau reports specifications and business uses.",
+          "source_page": null
+        },
+        {
+          "number": 61,
+          "text": "Determine if any distribution automation, power quality monitoring, streetlighting controls, pre-pay and collaboration opportunities can be considered in the roadmap.",
+          "source_page": null
+        },
+        {
+          "number": 62,
+          "text": "Evaluate functionality of the L+G HES Command Center to determine if it is being utilized to its fullest extent.",
+          "source_page": null
+        },
+        {
+          "number": 63,
+          "text": "Create a mechanism to gather information to determine what factors contributed to program engagement as customers enroll in demand response and energy efficiency programs.",
+          "source_page": null
+        },
+        {
+          "number": 64,
+          "text": "Determine if reduced truck rolls associated with mapping corrections (eliminating a field visit) can be tracked and included as a future AMI savings category.",
+          "source_page": null
+        },
+        {
+          "number": 65,
+          "text": "Include documentation of actual meter reader attrition and meter services vehicles for annual O&M Savings support.",
+          "source_page": null
+        },
+        {
+          "number": 66,
+          "text": "Simplify the AMI benefits reporting workbooks for calculating realized savings.",
+          "source_page": null
+        },
+        {
+          "number": 67,
+          "text": "Expand AMI benefit workbooks to include AMI benefit tracking for other anticipated AMI benefits such as customer bills savings through TOU rates, revenue protection from theft/tamper, revenue protection from move-in/move-out, and reduced bad debt and write-offs.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "Information Technology And Cyber Security",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 68,
+          "text": "Implement the fourteen (14) recommendations as included in the LIPA’s June 2023 IV&V Final Report.",
+          "source_page": null
+        },
+        {
+          "number": 69,
+          "text": "Continue the development of the PSEG LI cyber security program. Implement a cyber security framework for AMI data.",
+          "source_page": null
+        },
+        {
+          "number": 70,
+          "text": "Engage a third-party to perform comprehensive vulnerability assessments and penetration tests of the PSEG LI environment on a frequent and consistent basis that is contracted and overseen by LIPA.",
+          "source_page": null
+        },
+        {
+          "number": 71,
+          "text": "Develop a comprehensive plan and implement each recommendation from the NERC Best Practices Review. EXECUTIVE SUMMARY NORTHSTAR Rec #",
+          "source_page": null
+        },
+        {
+          "number": 72,
+          "text": "Perform independent audits of the following areas: • The IT System Separation Program • OMS data quality. • PSEG LI’s NERC CIP program (after implementation of each recommendation from the NERC Best Practices Review). • PSEG LI’s AMAG access control system project. • LIPA’s cyber security incident response plan and practices.",
+          "source_page": null
+        },
+        {
+          "number": 73,
+          "text": "Implement each requirement noted in the PSC Order in Case 13-M-0178.",
+          "source_page": null
+        },
+        {
+          "number": 74,
+          "text": "Identify and hire a Chief Privacy Officer (CPO) and develop a comprehensive privacy program. • If PSEG LI’s service provider contract is extended with LIPA, identify and hire CPO reporting to the PSEG LI President. Provide the CPO the authority and resources to develop a privacy program. • If the PSEG LI service provider contract is not extended, the successful service provider should be contractually required to have a CPO reporting to the President/CEO of the service provider. Provide the CPO the authority and resources to develop a privacy program. • If New York legislation concerning the Future of LIPA authorizes a municipal model, identify and hire a CPO reporting to the President/CEO. Provide the CPO the authority and resource to develop a privacy program.",
+          "source_page": null
+        },
+        {
+          "number": 75,
+          "text": "Identify a deadline and expedite development LIPA and PSEG LI internal network monitoring policies and procedures. Assign a LIPA team to provide effective oversight of PSEG LI’s development of their internal network policies and procedures.",
+          "source_page": null
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "Performance Management",
+      "summary": null,
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 76,
+          "text": "Identify data sources, methodology for developing summary data, organizational roles and responsibilities, and identify all exclusion/exceptions for the 2024 performance metric “handbook”.",
+          "source_page": null
+        },
+        {
+          "number": 77,
+          "text": "Track cost savings and productivity gains from capital and O&M programs and projects.",
+          "source_page": null
+        },
+        {
+          "number": 78,
+          "text": "Identify key operational performance metrics based on strategic goals and objectives and cascade down through the organization and in the OSA. Eliminate metrics that do not actively support these goals and objectives for contract year 2025.",
+          "source_page": null
+        },
+        {
+          "number": 79,
+          "text": "Align a majority of PSEG LI executive management (Grades LX and 31-33) incentive compensation with achievement of OSA metrics. XVII-1 Record and status accepted management audit recommendations in their original text without revisions, reclassification into other management topic areas or combination with other recommendations that diffuse their intent and timetable for implementation. NORTHSTAR This chapter provides background information on the Long Island Power Authority (LIPA or the Authority) and the status of the implementation of recommendations resulting from the prior management audit as the recommendations pertain to LIPA and its primary outside service provider – PSEG Long Island, LLC (PSEG LI or the Service Provider).1 LIPA provides electric delivery service to approximately 1.2 million customers in Nassau and Suffolk Counties and a portion of Queens County known as the Rockaways (Service Area). The population of the Service Area is approximately 2.9 million. Exhibit II-1 provides an overview of the service territory. Exhibit II-1 During 2022, approximately 53 percent of the Authority’s annual retail revenues were received from residential customers, 44 percent from com",
+          "source_page": null
+        }
+      ]
+    }
+  ],
+  "structured": true
 }

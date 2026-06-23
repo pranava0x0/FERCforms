@@ -17,7 +17,7 @@ are marked ⊕; full descriptions in the sections below.
 2. ✅ **[DONE 2026-06-23] Recovered findings from 14 of the 26 zero-finding FERC reports** — additive PyMuPDF recovery, count-gated; **+67 findings** (corpus 1727 → **1794**); the 12 still at 0 are genuinely clean. The FERC parser-coverage gap is effectively closed. See the Done section below + ISSUES.md. *(Spawned a new P-tier item: make PDF extraction deterministic — see Pipeline & data.)*
 
 **P1 — biggest north-star levers (more parsed findings + dollars):**
-3. ⊕ **[high] Generalize a comprehensive M&O-audit findings parser (NorthStar / Overland / Liberty)** — unlock structured findings from the richest docs (the NY 23-M-0103 439pp/128-rec + LIPA 21-00618 569pp/49-rec just added, plus NJ/MI). Extend the existing `parse_overland_recommendations`; gate with a no-regression snapshot. → *Pipeline & data*
+3. ✅ **[DONE 2026-06-23] Generalized the comprehensive M&O-audit findings parser** — added a NorthStar parser (NY 23-M-0103 **128 recs**, LIPA 21-00618 **79** of a stated 80), fixed the NJ dispatch so PSE&G's Overland listing parses (**16/60**) and the Liberty audits (JCP&L/ACE/NJNG) fall back to metadata-only, **removing 477 garbled TOC-leader "findings"**. Count-gated; 157 tests pass. See the Done section below + ISSUES.md. *(MI Liberty distribution audits remain metadata-only — no consolidated list; left as-is.)*
 4. **[high] Detailed-section (Section IV) parsing → `amount_usd`** + its dependent **[high] Ratepayer-impact $ magnitude** — the one affordability story the corpus can tell ("$X improperly recovered from customers"). → *Pipeline & data / Analysis*
 
 **P2 — high-value expansion (on-theme breadth + depth showcase):**
@@ -36,6 +36,13 @@ are marked ⊕; full descriptions in the sections below.
 13. [low] absolute llms.txt URLs · per-report markdown pages · MBR-seller relabel of the 3 `unknown` FERC audits · theme A/B variants · accessibility/Lighthouse pass.
 
 ---
+
+## ▶ Done 2026-06-23 (cont.) — P1 #3: comprehensive M&O parser (NorthStar + Overland fix) + NJ garbage purge
+
+- **NorthStar parser added** (`parse_northstar_recommendations` + `northstar_stated_count`, added to the `structure_mo_audit` chain): parses the "Summary of Recommendations" table (ALL-CAPS area headings + `{ROMAN}-{N}` labels), skips chapter I/II page-footer artifacts, stops at the detailed-body restart, and is **count-gated** against the report's stated total. **NY NYSEG/RG&E 23-M-0103 → 11 findings / 128 recs** (exact); **LIPA 21-00618 → 13 findings / 79 recs** (stated 80 — the backlog's "49" was a *prior* audit cited inside LIPA). `parse:true` flipped on the 2 NY final reports; the 3 orders/implementation-plans stay metadata-only.
+- **NJ dispatch fixed** (the "Liberty" half of P1 #3): routed NJ through `structure_mo_audit` and deleted the loose `parse_nj_findings`/`structure_nj_audit` that had harvested **477 garbled TOC-leader "findings"** (JCP&L 183, ACE 252, NJNG 42). PSE&G's Overland listing now parses to **16 findings / 60 recs** (was 0 — misrouted); JCP&L/ACE/NJNG + the 4 rate orders correctly → metadata-only.
+- **Overland runaway-row bug fixed:** the parser's final row had absorbed 1.8 MB (the whole trailing document); now bounded to the listing region + end markers + a 6000-char cap.
+- Net corpus findings 1794 → **1348** (−446 garbage, +267 verbatim recs). 157 tests pass (9 new state-parser tests + a comprehensive-M&O snapshot covering PSE&G/NY/LIPA). See ISSUES.md.
 
 ## ▶ Done 2026-06-23 — P0 #2: recovered findings from 14 of 26 zero-finding FERC reports
 

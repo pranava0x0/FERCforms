@@ -607,9 +607,9 @@
   },
   "state_audit": {
     "report_count": 221,
-    "finding_count": 587,
+    "finding_count": 150,
     "other_matter_count": 0,
-    "recommendation_count": 761,
+    "recommendation_count": 551,
     "by_industry": {
       "unknown": 168,
       "electric": 38,
@@ -639,13 +639,33 @@
           "code of business conduct",
           "compliance program"
         ],
-        "finding_count": 29,
-        "report_count": 30,
+        "finding_count": 25,
+        "report_count": 31,
         "example_titles": [
           "Corporate Governance",
           "Cost Allocations and Affiliated Interests",
-          "Affiliated Interests and Cost Allocations",
-          "Customer Service"
+          "Governance And Management",
+          "Rg&E."
+        ]
+      },
+      {
+        "theme": "Workforce, training & succession planning",
+        "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
+        "keywords": [
+          "succession",
+          "span of control",
+          "spans of control",
+          "training",
+          "workforce plan",
+          "learning management"
+        ],
+        "finding_count": 27,
+        "report_count": 13,
+        "example_titles": [
+          "Executive Management, Organizational Structure, and Safety",
+          "Customer Operations",
+          "Performance Management",
+          "Human Resources and Diversity (continued)"
         ]
       },
       {
@@ -663,13 +683,13 @@
           "meter reading",
           "customer experience"
         ],
-        "finding_count": 28,
+        "finding_count": 17,
         "report_count": 13,
         "example_titles": [
           "Customer Service",
           "Customer Service (continued)",
-          "Financial Management",
-          "• s associated with books and records and chart of accounts requirements: included in"
+          "Customer Operations",
+          "Financial Management"
         ]
       },
       {
@@ -680,33 +700,13 @@
           "intercompany",
           "inter-company"
         ],
-        "finding_count": 105,
-        "report_count": 12,
+        "finding_count": 14,
+        "report_count": 13,
         "example_titles": [
           "Cost Allocations and Affiliated Interests",
+          "Budget And Finance",
           "Affiliated Interests and Cost Allocations",
-          "s - - Cash Management .................................................................................. 96",
-          "s .................................................................................................................... 246"
-        ]
-      },
-      {
-        "theme": "Workforce, training & succession planning",
-        "description": "Staffing, training, span-of-control, or leadership-succession shortcomings.",
-        "keywords": [
-          "succession",
-          "span of control",
-          "spans of control",
-          "training",
-          "workforce plan",
-          "learning management"
-        ],
-        "finding_count": 34,
-        "report_count": 12,
-        "example_titles": [
-          "Executive Management, Organizational Structure, and Safety",
-          "Human Resources and Diversity (continued)",
-          "Cost Allocations and Affiliated Interests",
-          "Purchasing and Materials Management"
+          "Affiliated Interests and Cost Allocations (continued)"
         ]
       },
       {
@@ -726,13 +726,13 @@
           "fleet management",
           "vehicle replacement"
         ],
-        "finding_count": 18,
-        "report_count": 11,
+        "finding_count": 14,
+        "report_count": 10,
         "example_titles": [
           "Purchasing and Materials Management",
+          "Outside Services",
           "Materials Management",
-          "Fleet Management",
-          "s .................................................................................................................... 487"
+          "Fleet Management"
         ]
       },
       {
@@ -745,13 +745,13 @@
           "emergency management",
           "mutual assist"
         ],
-        "finding_count": 14,
-        "report_count": 11,
+        "finding_count": 11,
+        "report_count": 10,
         "example_titles": [
           "Emergency Preparedness",
-          "Emergency Preparedness (continued)",
-          "2. s",
-          "• Irene: Many recommendations in the January 23, 2013  in Docket No. EO11090543"
+          "Gas Operations",
+          "Rg&E.",
+          "Emergency Preparedness (continued)"
         ]
       },
       {
@@ -761,13 +761,13 @@
           "cyber",
           "physical security"
         ],
-        "finding_count": 20,
-        "report_count": 8,
+        "finding_count": 13,
+        "report_count": 9,
         "example_titles": [
           "Emergency Preparedness",
-          "Emergency Preparedness (continued)",
-          "s .................................................................................................................... 461",
-          "B. s"
+          "Customer Operations",
+          "Rg&E.",
+          "Governance"
         ]
       },
       {
@@ -781,13 +781,13 @@
           "it backlog",
           "it governance"
         ],
-        "finding_count": 12,
+        "finding_count": 9,
         "report_count": 8,
         "example_titles": [
+          "Information Systems",
           "Information Technology",
-          "s .................................................................................................................... 424",
-          "c. s",
-          "B. s"
+          "Information Technology And Cyber Security",
+          "Customer Service"
         ]
       },
       {
@@ -809,13 +809,31 @@
           "outage management",
           "outage response"
         ],
-        "finding_count": 26,
-        "report_count": 7,
+        "finding_count": 6,
+        "report_count": 6,
         "example_titles": [
           "Electric Operations",
-          "• Safety s, Tips, and Warnings (dig safe, downed power lines, storm and cold weather)",
-          "s ...................................................................................................................... 151",
-          "required by the BPU’s May 29. 2013  at Docket No. EO12111950. The system complies"
+          "Electric Operations (continued)"
+        ]
+      },
+      {
+        "theme": "Gas safety & pipeline integrity",
+        "description": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
+        "keywords": [
+          "class a leak",
+          "main leak",
+          "cathodic",
+          "corros",
+          "damage prevention",
+          "pipeline integrity",
+          "leak management"
+        ],
+        "finding_count": 5,
+        "report_count": 5,
+        "example_titles": [
+          "Electric Operations",
+          "Gas Operations",
+          "Contractor Performance"
         ]
       },
       {
@@ -826,13 +844,25 @@
           "dividend payment",
           "dividend payout"
         ],
-        "finding_count": 8,
-        "report_count": 6,
+        "finding_count": 5,
+        "report_count": 5,
         "example_titles": [
-          "Financial Management",
-          "s - - Dividend Policy and Capital Structure ................................................... 78",
-          "s - - Dividend Policy and Capital Structure ....................................................... 78",
-          "B. s - - Dividend Policy and Capital Structure"
+          "Financial Management"
+        ]
+      },
+      {
+        "theme": "Tariff administration & oversight",
+        "description": "Not following the utility's own FERC-approved tariff.",
+        "keywords": [
+          "tariff"
+        ],
+        "finding_count": 4,
+        "report_count": 4,
+        "example_titles": [
+          "Customer Service (continued)",
+          "Customer Operations",
+          "Customer Service",
+          "Customer Operations And Communication"
         ]
       },
       {
@@ -846,28 +876,11 @@
           "return on equity",
           "rate design"
         ],
-        "finding_count": 5,
-        "report_count": 6,
-        "example_titles": [
-          "Cost Allocations and Affiliated Interests",
-          "accordance with FERC regulations and provided FERC with a copy of the .",
-          "Affiliated Interests and Cost Allocations",
-          "C. s"
-        ]
-      },
-      {
-        "theme": "Tariff administration & oversight",
-        "description": "Not following the utility's own FERC-approved tariff.",
-        "keywords": [
-          "tariff"
-        ],
-        "finding_count": 16,
+        "finding_count": 3,
         "report_count": 4,
         "example_titles": [
-          "Customer Service (continued)",
-          "Customer Service",
-          "with  No. 890 obligations regarding planning for Supplemental Projects. That order requires",
-          "at Grid Assurance’s original cost. The BPU’s  found the agreement in the public interest."
+          "Cost Allocations and Affiliated Interests",
+          "Affiliated Interests and Cost Allocations"
         ]
       },
       {
@@ -909,22 +922,20 @@
         "example_titles": []
       },
       {
-        "theme": "Gas safety & pipeline integrity",
-        "description": "Gas leak backlogs, corrosion control, or pipeline-integrity practices.",
+        "theme": "Property & plant records",
+        "description": "Incomplete or inaccurate utility plant and property records.",
         "keywords": [
-          "class a leak",
-          "main leak",
-          "cathodic",
-          "corros",
-          "damage prevention",
-          "pipeline integrity",
-          "leak management"
+          "property unit",
+          "carrier property",
+          "noncarrier property",
+          "plant in service",
+          "property record"
         ],
-        "finding_count": 3,
-        "report_count": 3,
+        "finding_count": 2,
+        "report_count": 2,
         "example_titles": [
-          "Electric Operations",
-          "Gas Operations"
+          "Governance",
+          "Accounting and Property Records"
         ]
       },
       {
@@ -943,32 +954,11 @@
           "storm reserve",
           "securitization"
         ],
-        "finding_count": 8,
+        "finding_count": 2,
         "report_count": 2,
         "example_titles": [
-          "s ........................................................................................................................ 310",
-          "Compliance with Policies and BPU s .............................................................. 313",
-          "B. s",
-          "3. Compliance with Policies and BPU s"
-        ]
-      },
-      {
-        "theme": "Property & plant records",
-        "description": "Incomplete or inaccurate utility plant and property records.",
-        "keywords": [
-          "property unit",
-          "carrier property",
-          "noncarrier property",
-          "plant in service",
-          "property record"
-        ],
-        "finding_count": 6,
-        "report_count": 2,
-        "example_titles": [
-          "s .................................................................................................................... 206",
-          "• s associated with books and records and chart of accounts requirements: included in",
-          "c. s",
-          "s ...................................................................................................................... 510"
+          "Electric Operations",
+          "Deferral of Costs"
         ]
       },
       {
@@ -978,75 +968,20 @@
           "allowance for funds used during construction",
           "afudc"
         ],
-        "finding_count": 2,
+        "finding_count": 1,
         "report_count": 1,
         "example_titles": [
-          "B. s",
-          "accordance with FERC regulations and provided FERC with a copy of the ."
-        ]
-      },
-      {
-        "theme": "Depreciation",
-        "description": "Unapproved or incorrect depreciation rates applied to plant.",
-        "keywords": [
-          "depreciation"
-        ],
-        "finding_count": 2,
-        "report_count": 1,
-        "example_titles": [
-          "By  dated August 1, 2003, the BPU required the Company to reduce existing depreciation",
-          "c. s"
-        ]
-      },
-      {
-        "theme": "Below-the-line costs (lobbying, charitable, etc.)",
-        "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
-        "keywords": [
-          "lobbying",
-          "charitable",
-          "below-the-line",
-          "nonoperating",
-          "non-operating"
-        ],
-        "finding_count": 2,
-        "report_count": 1,
-        "example_titles": [
-          "c. s",
-          "accordance with FERC regulations and provided FERC with a copy of the ."
+          "Information Systems"
         ]
       }
     ],
     "top_titles": [
       {
-        "title": "c. s",
-        "count": 90
-      },
-      {
-        "title": "B. s",
-        "count": 26
-      },
-      {
-        "title": "2. s",
-        "count": 19
-      },
-      {
-        "title": "1. s",
-        "count": 15
-      },
-      {
-        "title": "C.   s and Conclusions",
+        "title": "Customer Service",
         "count": 11
       },
       {
-        "title": "Customer Service",
-        "count": 10
-      },
-      {
         "title": "Financial Management",
-        "count": 9
-      },
-      {
-        "title": "C. s",
         "count": 9
       },
       {
@@ -1054,20 +989,16 @@
         "count": 8
       },
       {
+        "title": "Electric Operations",
+        "count": 8
+      },
+      {
         "title": "Emergency Preparedness",
         "count": 8
       },
       {
-        "title": "Electric Operations",
-        "count": 7
-      },
-      {
-        "title": "s and Conclusions",
-        "count": 7
-      },
-      {
         "title": "Gas Operations",
-        "count": 6
+        "count": 7
       },
       {
         "title": "Affiliated Interests and Cost Allocations",
@@ -1094,15 +1025,15 @@
         "count": 4
       },
       {
+        "title": "Human Resources",
+        "count": 4
+      },
+      {
         "title": "Gas Operations (continued)",
         "count": 3
       },
       {
         "title": "Purchasing and Materials Management",
-        "count": 3
-      },
-      {
-        "title": "Human Resources",
         "count": 3
       },
       {
@@ -1116,13 +1047,41 @@
       {
         "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
         "count": 2
+      },
+      {
+        "title": "Work Management",
+        "count": 2
+      },
+      {
+        "title": "Performance Management",
+        "count": 2
+      },
+      {
+        "title": "Affiliated Interests and Cost Allocations (continued)",
+        "count": 2
+      },
+      {
+        "title": "Electric Operations (continued)",
+        "count": 2
+      },
+      {
+        "title": "Executive Management",
+        "count": 2
+      },
+      {
+        "title": "Executive Management, Organizational Structure, and Safety",
+        "count": 1
+      },
+      {
+        "title": "Financial Management (continued)",
+        "count": 1
       }
     ],
     "generated_at": "2026-06-23"
   },
   "state_rate_case": {
     "report_count": 121,
-    "finding_count": 544,
+    "finding_count": 535,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -1215,11 +1174,10 @@
         "keywords": [
           "tariff"
         ],
-        "finding_count": 12,
-        "report_count": 11,
+        "finding_count": 9,
+        "report_count": 10,
         "example_titles": [
           "Settlement: Agreement",
-          "Approval: $5 million",
           "Settlement: agreement"
         ]
       },
@@ -1387,15 +1345,15 @@
       },
       {
         "title": "Settlement: agreement",
-        "count": 40
-      },
-      {
-        "title": "Settlement: terms",
-        "count": 16
+        "count": 39
       },
       {
         "title": "Settlement: AGREEMENT",
         "count": 14
+      },
+      {
+        "title": "Settlement: terms",
+        "count": 12
       },
       {
         "title": "Approval: $5,475 ",
@@ -1404,10 +1362,6 @@
       {
         "title": "Approval: $43,409 ",
         "count": 5
-      },
-      {
-        "title": "Approval: $5 million",
-        "count": 3
       },
       {
         "title": "Approval: $231.8 million",
@@ -1470,15 +1424,19 @@
         "count": 1
       },
       {
-        "title": "Approval: $500",
-        "count": 1
-      },
-      {
         "title": "Approval: $9.98 ",
         "count": 1
       },
       {
         "title": "Disallowance: $330,788.",
+        "count": 1
+      },
+      {
+        "title": "Approval: $88 million",
+        "count": 1
+      },
+      {
+        "title": "Approval: $175\nmillion",
         "count": 1
       }
     ],
