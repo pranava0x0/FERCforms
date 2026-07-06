@@ -124,6 +124,15 @@ class Finding(BaseModel):
     summary: Optional[str] = None  # verbatim noncompliance description
     is_other_matter: bool = False  # True for "Other Matter" items vs noncompliance
     recommendations: list[Recommendation] = Field(default_factory=list)
+    # The headline dollar figure this finding cites (the first amount mentioned in its
+    # own summary/recommendations text — never re-derived from unvetted raw text). See
+    # pipeline/amounts.py. amount_usd_quote is the verbatim sentence carrying the figure
+    # (a citation a reader can Ctrl-F against the finding's own summary/recommendations
+    # AND against the source PDF page); amount_usd_page is that page's PDF page number.
+    # All three are None until a report has been through pipeline.amounts enrichment.
+    amount_usd: Optional[float] = None
+    amount_usd_quote: Optional[str] = None
+    amount_usd_page: Optional[int] = None
 
 
 class AuditReport(BaseModel):

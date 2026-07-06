@@ -64,7 +64,10 @@
           "text": "Refund amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 24300000.0,
+      "amount_usd_quote": "SIGECO incorrectly included $24.3 million of merger costs in wholesale transmission formula rate service cost determinati",
+      "amount_usd_page": 5
     },
     {
       "index": 2,
@@ -117,7 +120,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
@@ -190,14 +196,20 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 4400000.0,
+      "amount_usd_quote": "SIGECO recorded approximately $4.4 million in various A&G expense accounts in a manner contrary to the Commission’s accoun",
+      "amount_usd_page": 6
     },
     {
       "index": 4,
       "title": "Non-Operating Expense Accounting Misclassifications",
       "summary": "SIGECO recorded approximately $364,000 in various non-operating expenses in a manner contrary to the Commission’s accounting regulations. The improper accounting resulted in SIGECO overstating its ATRR by approximately $36,400 and overbilling its wholesale transmission customers.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 364000.0,
+      "amount_usd_quote": "SIGECO recorded approximately $364,000 in various non-operating expenses in a manner contrary to the Commission’s accounting regulations.",
+      "amount_usd_page": 6
     },
     {
       "index": 5,
@@ -240,7 +252,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -263,7 +278,10 @@
           "text": "Provide training to relevant staff on the revised policies and procedures for accounting for and reporting the effect of changes in tax laws or tax rates. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -281,7 +299,10 @@
           "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports the provision of periodic training in this area, as needed. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

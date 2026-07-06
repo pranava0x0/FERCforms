@@ -71,7 +71,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 97872000.0,
+      "amount_usd_quote": "DES incurred merger-related voluntary retirement program (VRP) costs of approximately $97,872,000 that it allocated to its affiliates, including VEPCO and DESC, which then partially recovered these costs through FERC-jurisdictional rates without the Commission’s approval.",
+      "amount_usd_page": 8
     },
     {
       "index": 2,
@@ -109,7 +112,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 5176000.0,
+      "amount_usd_quote": "DES, VEPCO, and DESC incurred merger labor and labor- related costs, including incentive compensation, of approximately $5,176,000 that it did not track as merger-related.",
+      "amount_usd_page": 8
     },
     {
       "index": 3,
@@ -142,7 +148,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 4599000.0,
+      "amount_usd_quote": "DES misconfigured certain merger-related billing Work Breakdown Structure (WBS) elements within its cost accumulation system, causing it to inadvertently bill approximately $4,599,000 of merger costs to VEPCO and DESC.",
+      "amount_usd_page": 8
     },
     {
       "index": 4,
@@ -180,7 +189,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 2361000.0,
+      "amount_usd_quote": "DES, VEPCO, and DESC incurred approximately $2,361,000 of merger-related costs that were not tracked as merger costs.",
+      "amount_usd_page": 8
     },
     {
       "index": 5,
@@ -218,7 +230,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 2552000.0,
+      "amount_usd_quote": "$2,552,000 but did not exclude them from FERC-jurisdictional revenue requirements.",
+      "amount_usd_page": 9
     },
     {
       "index": 6,
@@ -291,7 +306,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -329,7 +347,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -367,7 +388,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 9,
@@ -400,7 +424,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -428,7 +455,10 @@
           "text": "Correct the service company property balances after receiving DAA’s assessment of the proposed accounting entries and restate and footnote the balances reported in DES’s most recent FERC Form No. 60 as necessary to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 11,
@@ -466,7 +496,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 12,
@@ -489,14 +522,20 @@
           "text": "Within 120 days of the issuance of this audit report, refile revised DES FERC Forms No. 60 for 2019 and 2020 to accurately report functional expense classification by correcting the errors noted in this finding. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 13,
       "title": "This affected the transparency, accuracy, and usefulness of certain sections of these financial disclosures. D. List of",
       "summary": null,
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

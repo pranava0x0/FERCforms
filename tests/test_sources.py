@@ -315,6 +315,31 @@ def test_state_rate_case_reports_are_metadata_only():
     assert not offenders, f"state_rate_case reports must be metadata-only: {offenders}"
 
 
+def test_amount_usd_citations_are_self_consistent():
+    """Corpus-wide OFFLINE guard (BACKLOG P1 #4 pilot, 2026-07-06): every committed
+    finding carrying amount_usd must have amount_usd/_quote/_page set together (never
+    partial), the quote must be a verbatim substring of that SAME finding's own
+    summary/recommendations (proves the citation wasn't invented), and the dollar
+    figure embedded in the quote must re-parse to exactly amount_usd. This is the
+    fast, no-network tier of pipeline.verify_amounts — run with --live for the
+    additional live source-page recheck."""
+    from pipeline import verify_amounts
+
+    offenders: list[str] = []
+    checked = 0
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        for f in d.get("findings", []):
+            if f.get("amount_usd") is None:
+                continue
+            checked += 1
+            offenders.extend(verify_amounts.check_offline(p.parent.name, f))
+    assert not offenders, "amount_usd citation problems:\n" + "\n".join(offenders[:40])
+    # Not a hard requirement (the pilot may still be in progress), but surface the
+    # count so a future reader can see how far the rollout has gotten.
+    logging.getLogger(__name__).info("checked %d cited finding(s)", checked)
+
+
 def test_committed_seeds_have_unique_pdf_urls():
     """No two seeds may point at the same PDF URL — that's the same document seeded
     twice (regression for the 2026-06-08 wave-2 dedup: parallel research agents

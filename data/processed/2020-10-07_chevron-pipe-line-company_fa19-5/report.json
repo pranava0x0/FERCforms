@@ -62,7 +62,10 @@
           "text": "Upon receiving DAA staff’s review and response to CPL’s accounting entries and worksheets, restate and footnote the balances reported in the FERC Form No. 6 in the current and comparative years of the report, including all schedules affected, to reflect and disclose the revisions made.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 11400000.0,
+      "amount_usd_quote": "lying asset accounts had been fully depreciated. This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.  Maintained two carrie",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
@@ -110,14 +113,20 @@
           "text": "Restate and footnote the income statement balances reported in the FERC Form No. 6 in the current and comparative years of the report for Accounts 600, 610, and 620, including all schedules affected, to reflect and disclose revisions made.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
       "title": "Noncarrier Property Revenues and Expenses",
       "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 3600000.0,
+      "amount_usd_quote": "rier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported",
+      "amount_usd_page": 6
     },
     {
       "index": 4,
@@ -135,7 +144,10 @@
           "text": "Record employee discrimination claim settlement payments in Account 660, Miscellaneous Income Charges, and record regulatory fees, such as PHMSA user fees, in Account 590, Other Expenses, prospectively.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -153,7 +165,10 @@
           "text": "Strengthen processes to ensure employees perform adequate reviews of interstate operating revenues reported on Page 700 data. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

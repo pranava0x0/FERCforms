@@ -47,7 +47,10 @@
           "text": "Train employees responsible for pipeline operations on the potential impacts that operational changes have upon tariff compliance.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 2,
@@ -65,7 +68,10 @@
           "text": "Refund any overcollections to shippers with interest.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 536555.0,
+      "amount_usd_quote": "The result was an overcollection of $536,555.",
+      "amount_usd_page": 7
     },
     {
       "index": 3,
@@ -88,7 +94,10 @@
           "text": "Resubmit its 2009-2013 Form 6 with the corrected page 700 amounts.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
@@ -106,7 +115,10 @@
           "text": "Review operating expense accounts and make correcting entries to reclassify amounts for donations and charitable contributions from Account 590, Other Expenses, to Account 660, Miscellaneous Income Charges, for the audit period.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 191030.0,
+      "amount_usd_quote": "NDPL incorrectly recorded $191,030 in donations and charitable contributions in Account 590, Other Expenses (General), instead of in Account 660, Miscellaneous Income Charges, during the audit period.",
+      "amount_usd_page": 8
     },
     {
       "index": 5,
@@ -129,7 +141,10 @@
           "text": "Resubmit its 2013 Form 6 with the corrected page 700 amounts and sufficient explanations in the footnotes.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -152,7 +167,10 @@
           "text": "NDPL should record correcting entries to reclassify the accounting for derivatives and hedging activities for 2015 from Account 47 to Account 46, and reclassify gains and losses from Account 230 to Account 640 (gains), and Account 660 (losses). NDPL shall notify the Division of Audits when such adjustments are made.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -180,7 +198,10 @@
           "text": "Ensure that due diligence is performed for future assets acquired by purchase to ensure that records were provided to support valuation of assets recorded on the books and any subsequent retirement.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 0.01,
+      "amount_usd_quote": "entries to properly reflect the costs of the assets previously retired at only $0.01.",
+      "amount_usd_page": 11
     },
     {
       "index": 8,
@@ -198,7 +219,10 @@
           "text": "Strengthen policies and procedures that address NDPL’s accounting for amortization of intangible assets.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 168667.0,
+      "amount_usd_quote": "NDPL improperly included $168,667 of amortization expense in Account 541, Depreciation Expense for Asset Retirement Costs instead of Account 540, Depreciation and Amortization.",
+      "amount_usd_page": 42
     },
     {
       "index": 9,
@@ -216,7 +240,10 @@
           "text": "Record appropriate adjusting entries to reclassify any Delivery Revenues currently recorded in the Gathering Revenues account.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -239,7 +266,10 @@
           "text": "Record correcting entries to reclassify the utilities expenses not directly allocable to operations expense for 2015 from Account 310 to Account 590. NDPL shall notify the Division of Audits when such adjustments are made.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 11,
@@ -252,7 +282,10 @@
           "text": "Establish written policies and procedures that ensure appropriate personnel are assigned the responsibility, and carry out the duties, of monitoring compliance with all filing requirements, including filing current cash management agreements.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 12,
@@ -270,7 +303,10 @@
           "text": "Develop a training program and conduct training of shared employees that are responsible for preparing and drafting filings on the FERC rules and policies for the protection of confidential shipper information. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

@@ -52,7 +52,10 @@
           "text": "Make a footnote disclosure in the Form No. 6 to disclose the change in account coding for the Line 901 expenses and the impact on the financial statements.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 70000000.0,
+      "amount_usd_quote": "As a result, Plains overstated operating expenses by $70 million and miscellaneous income charges by $15 million in its 2015 Form No.",
+      "amount_usd_page": 7
     },
     {
       "index": 2,
@@ -65,7 +68,10 @@
           "text": "Reclassify amounts improperly recorded in Accounts 390 and 520 to Account 570 and submit revised journal entries.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
@@ -88,7 +94,10 @@
           "text": "Train employees how to determine each shipper’s equitable basis when a line segment or system is in proration.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
@@ -116,7 +125,10 @@
           "text": "Implement procedures to ensure that questions regarding guidance with unclear interpretation are submitted to the Commission for consideration in accordance with General Instruction 1-11 of the USofA.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -134,7 +146,10 @@
           "text": "Record gains and losses from the sale of carrier property in Account 31, Accumulated Depreciation, prospectively.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -147,7 +162,10 @@
           "text": "Revise accounting policies and procedures to ensure idle carrier property is recorded in Account 34, and reclassify all idle carrier property recorded in Account 30 during the audit period that will not be used in Plains’ future pipeline operations to Account 34.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -160,7 +178,10 @@
           "text": "Implement written procedures to account for, track, report, and review expenses associated with nonoperating activities.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -188,7 +209,10 @@
           "text": "Strengthen procedures for completing the Form No. 6 review instructions prior to submission to reduce the number of errors. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 9,
@@ -211,7 +235,10 @@
           "text": "Record settlement payments in Account 660, Miscellaneous Income Charges.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 212550.0,
+      "amount_usd_quote": "Plains improperly recorded settlements totaling $212,550 on its books that were actually paid by affiliates, Plains All-American Pipelin",
+      "amount_usd_page": 8
     },
     {
       "index": 10,
@@ -229,7 +256,10 @@
           "text": "Use Commission-approved depreciation rates to calculate the depreciation expense included in the annual cost-of-service determinations, or timely file a request pursuant to Part 347 of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 11,
@@ -247,7 +277,10 @@
           "text": "Strengthen procedures for completing the Form No. 6 review instructions prior to submission to eliminate errors.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 12,
@@ -270,7 +303,10 @@
           "text": "Enhance transparency of the availability of allowance oil inventory volumes. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 10000000.0,
+      "amount_usd_quote": "r consideration and approval related to a property acquisition in the amount of $10 million in 2015, as required by 18 C.F.R. Part 352, Instruction for Carrier Property Ac",
+      "amount_usd_page": 9
     }
   ],
   "structured": true

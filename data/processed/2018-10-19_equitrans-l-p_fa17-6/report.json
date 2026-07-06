@@ -31,56 +31,80 @@
       "title": "Allowance for Funds Used During Construction (AFUDC)",
       "summary": "Equitrans inappropriately included unpaid contract retention accruals in the calculation of its AFUDC rate. In addition, the company erroneously Document Accession #: 20181019-3030 Filed Date: 10/19/2018 Equitrans L.P. excluded certain other cash outlays from the calculation. This led Equitrans to under-accrue AFUDC capitalized into construction work in progress (CWIP) and plant in service of approximately $694,000 on its Ohio Valley Connector (OVC) pipeline system, and over-accrue $127,000 on its Allegheny Valley Connector (AVC) pipeline system, and $49,000 on other Equitrans pipelines.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 694000.0,
+      "amount_usd_quote": "This led Equitrans to under-accrue AFUDC capitalized into construction work in progress (CWIP) and plant in service of approximately $694,000 on its Ohio Valley Connector (OVC) pipeline system, and over-accrue $127,000 on its Allegheny Valley Connector (AVC) pipeline system, and $49,000 on other Equitrans pipelines.",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
       "title": "Accounting for Unused Materials",
       "summary": "Equitrans incorrectly included approximately $1.3 million of unused materials in construction work orders and therefore overstated the cost of plant recorded in Account 101, Gas Plant in Service, during the audit period.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 1300000.0,
+      "amount_usd_quote": "Equitrans incorrectly included approximately $1.3 million of unused materials in construction work orders and therefore overstated the co",
+      "amount_usd_page": 6
     },
     {
       "index": 3,
       "title": "Accounting for Tax Receivable",
       "summary": "Equitrans improperly accounted for an income tax receivable that represented a refund for an overpayment in Account 165, Prepayments, instead of in Account 146, Accounts Receivable from Associated Companies.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
       "title": "Accounting for Nonoperating Expenses",
       "summary": "Equitrans improperly accounted for donations, penalties, and nonutility expenses in utility plant and operating expense accounts. As a result, utility plant and operating expense balances in Equitrans’ FERC Form No. 2 were overstated.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
       "title": "Plant Held for Future Use",
       "summary": "Equitrans recorded assets in Account 105, Plant Held for Future Use, without a definite plan for their future use in gas service. The accounting resulted in a misclassification of plant balances in its FERC Form No. 2.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
       "title": "Unfiled Service Agreements",
       "summary": "Equitrans did not file two non-conforming interruptible gathering service agreements with the Commission as required. The agreements included service provisions that deviated materially from the pro forma service agreement in its FERC Gas Tariff.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
       "title": "Cash Management Program",
       "summary": "Equitrans did not file its effective cash management agreement with the Commission as required. The failure to file inhibited the financial transparency of Equitrans’ cash management program, and could have hampered the Commission’s ability to perform its oversight and market monitoring obligations.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
       "title": "FERC Form No. 2 Reporting",
       "summary": "Equitrans did not report certain information in its FERC Form No. 2 filings as required, resulting in reduced overall transparency, accuracy, and usefulness of the filings. Document Accession #: 20181019-3030 Filed Date: 10/19/2018 Equitrans L.P. D. Summary of",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

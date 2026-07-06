@@ -59,7 +59,10 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 7300000.0,
+      "amount_usd_quote": "SCE improperly recorded approximately $7.3 million of compromise settlement payments related, at least in part, to alleged employm",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
@@ -77,14 +80,20 @@
           "text": "Provide training to staff on the revised procedures for accounting for vendor discounts. Also, develop a training program that supports periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 39900000.0,
+      "amount_usd_quote": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Mis",
+      "amount_usd_page": 6
     },
     {
       "index": 3,
       "title": "Allowance for Funds Used During Construction (AFUDC)",
       "summary": "SCE’s method for computing and applying its AFUDC rate to construction projects was deficient. Specifically, SCE improperly excluded short-term debt related to energy procurement margin and collateral postings, and improperly excluded $100 million of long-term debt related to nuclear fuel procurement from its AFUDC rate calculation. In addition, SCE improperly accrued $182,586 of AFUDC on a suspended construction project during the audit period. As a result, SCE overaccrued AFUDC included in utility plant accounts and overbilled wholesale transmission customers.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 100000000.0,
+      "amount_usd_quote": "Specifically, SCE improperly excluded short-term debt related to energy procurement margin and collateral postings, and improperly excluded $100 million of long-term debt related to nuclear fuel procurement from its AFUDC rate calculation.",
+      "amount_usd_page": 6
     },
     {
       "index": 4,
@@ -147,7 +156,10 @@
           "text": "Provide training to relevant staff on the revised procedures implemented under Recommendation 17. Provide periodic training in these areas as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -165,7 +177,10 @@
           "text": "Provide training to relevant staff on the revised procedures for properly accounting for A&G expenditures. Also, develop a training program for periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -183,7 +198,10 @@
           "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Also, develop a training program that supports periodic training in this area, as needed. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true
