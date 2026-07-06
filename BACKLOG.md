@@ -23,7 +23,7 @@ are marked ⊕; full descriptions in the sections below.
 4. **[high] Detailed-section (Section IV) parsing → `amount_usd`** + its dependent **[high] Ratepayer-impact $ magnitude** — the one affordability story the corpus can tell ("$X improperly recovered from customers"). → *Pipeline & data / Analysis*
 
 **P2 — high-value expansion (on-theme breadth + depth showcase):**
-5. ⊕ **[med] Systematic fuel-adjustment-clause / ERRA prudence harvest across states** — only 18 records, yet every fuel-clause state runs these *annually*; coherent, recurring, on-theme (cost recovery). → *Multi-source expansion*
+5. ⊕ **[med, in progress] Systematic fuel-adjustment-clause / ERRA prudence harvest across states** — 18→**19** records (2026-07-06: +1 FL fuel-cost-recovery order, `20250001-EI`). A finder-agent pass targeting 8 uncovered states (MS/OK/NM/CO/MT/UT/NV + FL) landed only FL; the other 7 hit real, durable seams (stale imaging links, browser-only portals, utility-hosted-not-.gov content, or genuinely off-theme bundling into rate cases) — see [docs/data-sources.md](docs/data-sources.md) "Fuel-adjustment-clause / prudence-review harvest — 2026-07-06" for the per-state detail before re-spending an agent on the same states. → *Multi-source expansion*
 6. ⊕ **[med] "Make one state complete" (CA or NY)** — end-to-end doc-type coverage for one jurisdiction (M&O audit + rate case + fuel/ERRA prudence + reliability + billing) as a depth showcase vs. thin-everywhere. → *Multi-source expansion*
 7. **[med] OCR fallback for scanned reports** (run the security sweep before installing tesseract). → *Pipeline & data*
 

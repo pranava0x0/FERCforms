@@ -487,3 +487,38 @@ interactive CAPTCHAs** — only non-interactive JS challenges that the browser p
   interactive CAPTCHA). The docket search (`/NCUC/page/Dockets/portal.aspx`) posts back without inline
   results — driving that search to a docket → order → PDF URL is the remaining step. On-theme target:
   fuel-cost riders (Duke Energy Progress `E-2`, Duke Energy Carolinas `E-7`). Seed `fetch=false`.
+
+## Fuel-adjustment-clause / prudence-review harvest — 2026-07-06 finder-agent pass
+
+A finder agent (BACKLOG P2 #5) searched 8 states with little/no fuel-clause coverage. Landed 2
+verified candidates (**FL** `20250001-EI` above; **NM** dropped — see below), and confirmed/durable
+dead-ends for the other 6 — recorded here so a future session doesn't re-spend an agent on the same
+seams:
+
+- **NM — found a real, on-theme document but no `.gov`-hosted copy exists.** PNM's periodic FPPCAC
+  factor-reset notices (Case `22-00270-UT`, the same base docket as the already-seeded 2023 rate-case
+  recommended decision — NM apparently administers the clause via notices filed under the original
+  rate-case docket rather than a new case number each quarter) are self-published at `pnm.com` — the
+  *utility's own* site, not `prc.nm.gov`. `WebSearch site:prc.nm.gov` for the exact case number
+  surfaces only the existing rate-case documents, not the factor-reset notices. Rejected by
+  `_assert_official_gov` correctly — do not add `pnm.com` to `_OFFICIAL_GOV_ORG_DOMAINS` (that
+  allowlist is for a commission's *own* non-`.gov` domain, e.g. `nm-prc.org`, never a regulated
+  utility's site). Would need NM PRC's own case-file system (not indexed here) to close.
+- **Mississippi** — correct docket numbers exist (Entergy MS ECR-4, Docket 2023-UN-145; Mississippi
+  Power FCR-2) but `psc.ms.gov`'s Utility Docket listing only shows rate-schedule tariff sheets for
+  these, not a fetchable order/notice PDF. Next attempt: navigate `psc.ms.gov`'s e-filing/docket-detail
+  page for 2023-UN-145 directly, not the monthly docket listing.
+- **Oklahoma** — real OG&E/PSO annual Fuel Adjustment Clause dockets exist before the OCC, but every
+  `imaging.occ.ok.gov` URL surfaced by search (e.g. `occ30399759.pdf`) 404s on fetch — the OCC imaging
+  system's links go stale once out of the live case-search UI. Needs `case.occ.ok.gov`'s live search
+  (browser-only), not search-engine-cached links.
+- **Colorado** — Xcel bundles fuel cost recovery into its general rate cases via the Electric Commodity
+  Adjustment rider; no standalone fuel-prudence docket found. Off-theme by design, not a gap.
+- **Montana** — PCCAM-specific docket `2021.04.047` confirmed to exist (via search snippets) but
+  `psc.mt.gov`'s document search is a Tableau-embedded portal with no direct document links — would
+  require guessing a URL (against the rules). The only fetchable PDF was NorthWestern's general rate
+  case, not the PCCAM docket.
+- **Utah** — only fetchable RMP ECAM-adjacent document found was a 2009 procedural scheduling order
+  (Docket 09-035-15) — not a substantive prudence/approval order.
+- **Nevada** — `puc-onbase.nv.gov` is a search-portal-only interface (no direct document links);
+  `pucweb1.state.nv.us` links found were image-only/corrupted streams, unverifiable within budget.

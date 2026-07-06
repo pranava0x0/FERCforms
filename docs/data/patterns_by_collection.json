@@ -1079,12 +1079,12 @@
     "generated_at": "2026-07-06"
   },
   "state_rate_case": {
-    "report_count": 121,
+    "report_count": 122,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 109,
+      "electric": 110,
       "gas": 10,
       "unknown": 2
     },
@@ -1099,7 +1099,7 @@
       "2022": 5,
       "2023": 7,
       "2024": 24,
-      "2025": 39,
+      "2025": 40,
       "2026": 5
     },
     "by_function": {},
@@ -1139,7 +1139,7 @@
           "energy cost recovery"
         ],
         "finding_count": 0,
-        "report_count": 33,
+        "report_count": 34,
         "example_titles": []
       },
       {
