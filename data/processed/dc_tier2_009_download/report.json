@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "DC",
   "source": "State of DC Utility Commission",
-  "doc_type": "report",
+  "doc_type": "reference document (original title lost to crawler; content unrenamed)",
   "id": "dc_tier2_009_download",
   "company": "download",
   "company_raw": "download",

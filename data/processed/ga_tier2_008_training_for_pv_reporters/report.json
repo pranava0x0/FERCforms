@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "GA",
   "source": "State of GA Utility Commission",
-  "doc_type": "report",
+  "doc_type": "state PUC administrative/reference document",
   "id": "ga_tier2_008_training_for_pv_reporters",
   "company": "Training for PV Reporters",
   "company_raw": "Training for PV Reporters",

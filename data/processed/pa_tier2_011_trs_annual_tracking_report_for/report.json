@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "PA",
   "source": "State of PA Utility Commission",
-  "doc_type": "report",
+  "doc_type": "state PUC administrative/reference document",
   "id": "pa_tier2_011_trs_annual_tracking_report_for",
   "company": "TRS Annual Tracking Report Form 2026",
   "company_raw": "TRS Annual Tracking Report Form 2026",

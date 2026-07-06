@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_020_audit-of-the-infrastructure-division-fy",
   "company": "Audit of the Infrastructure Division (FY 2023)",
   "company_raw": "Audit of the Infrastructure Division (FY 2023)",

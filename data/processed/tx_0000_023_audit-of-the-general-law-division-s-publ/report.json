@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_023_audit-of-the-general-law-division-s-publ",
   "company": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",
   "company_raw": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",

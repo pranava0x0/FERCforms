@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "OK",
   "source": "Corporation Commission",
-  "doc_type": null,
+  "doc_type": "agency reference/navigation page",
   "id": "ok_0000_000_agency-reports",
   "company": "Agency Reports",
   "company_raw": "Agency Reports",

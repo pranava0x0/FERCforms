@@ -4,7 +4,7 @@
    Google+ style stream of report cards, each expanding into a thread of
    findings -> recommendations. No framework, no build step. */
 
-/* The four collections, one per tab. Keys mirror pipeline/build.py COLLECTIONS
+/* The five collections, one per tab. Keys mirror pipeline/build.py COLLECTIONS
    (a Python test asserts the key sets stay in sync). `lead` is the per-tab intro
    sentence; `empty` shows when a collection has no documents yet. */
 const COLLECTIONS = [
@@ -31,6 +31,12 @@ const COLLECTIONS = [
     label: "State Rate Cases (Reference)",
     lead: "<strong><span class=\"intro-count\">—</span> state regulatory rate-case documents</strong> — base-rate orders, fuel-cost decisions, settlements, and testimony. These are cost-recovery proceedings showing commission-approved/denied costs; listed with their source for regulatory reference.",
     empty: "No state rate-case documents in this build yet.",
+  },
+  {
+    key: "state_reference",
+    label: "State Reference Docs",
+    lead: "<strong><span class=\"intro-count\">—</span> state PUC reference &amp; administrative documents</strong> — a commission's own internal/self-audits, recurring compliance or informational filings, and administrative reference pages. These are not audits of a regulated utility; listed with their source for reference.",
+    empty: "No state reference documents in this build yet.",
   },
 ];
 

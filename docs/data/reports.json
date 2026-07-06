@@ -28529,10 +28529,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "wv_0000_009_2025-management-summary-report",
     "company": "2025 Management Summary Report",
     "company_raw": "2025 Management Summary Report",
@@ -28561,10 +28561,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "wv_0000_008_cmrs-subscriber-fee-report",
     "company": "CMRS Subscriber Fee Report",
     "company_raw": "CMRS Subscriber Fee Report",
@@ -28591,10 +28591,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "wv_0000_007_annual-report-ilec-line-count-form",
     "company": "Annual Report ILEC Line Count Form",
     "company_raw": "Annual Report ILEC Line Count Form",
@@ -28621,10 +28621,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "blank report-form template",
     "id": "wv_0000_006_annual-report-ixc-blank-form",
     "company": "Annual Report IXC Blank Form",
     "company_raw": "Annual Report IXC Blank Form",
@@ -28681,10 +28681,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "blank report-form template",
     "id": "wv_0000_005_annual-report-clec-blank-form",
     "company": "Annual Report CLEC Blank Form",
     "company_raw": "Annual Report CLEC Blank Form",
@@ -28727,10 +28727,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "wv_0000_004_special-reports",
     "company": "Special Reports",
     "company_raw": "Special Reports",
@@ -28757,10 +28757,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "wv_0000_003_selected-annual-reports",
     "company": "Selected Annual Reports",
     "company_raw": "Selected Annual Reports",
@@ -28787,10 +28787,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WV",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "wv_0000_001_annual-statistical-reports",
     "company": "Annual Statistical Reports",
     "company_raw": "Annual Statistical Reports",
@@ -28853,10 +28853,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "WI",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "wi_0000_000_annual-reports",
     "company": "Annual Reports",
     "company_raw": "Annual Reports",
@@ -28883,10 +28883,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_032_audit-implementation-status-report-fy-20",
     "company": "Audit Implementation Status Report (FY 2025)",
     "company_raw": "Audit Implementation Status Report (FY 2025)",
@@ -28915,10 +28915,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_031_audit-implementation-status-report-fy-20",
     "company": "Audit Implementation Status Report (FY 2026)",
     "company_raw": "Audit Implementation Status Report (FY 2026)",
@@ -28947,10 +28947,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_030_fy-2023-internal-audit-annual-report",
     "company": "FY 2023 Internal Audit Annual Report",
     "company_raw": "FY 2023 Internal Audit Annual Report",
@@ -28979,10 +28979,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_029_fy-2024-internal-audit-annual-report",
     "company": "FY 2024 Internal Audit Annual Report",
     "company_raw": "FY 2024 Internal Audit Annual Report",
@@ -29011,10 +29011,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_028_fy-2025-internal-audit-annual-report",
     "company": "FY 2025 Internal Audit Annual Report",
     "company_raw": "FY 2025 Internal Audit Annual Report",
@@ -29043,10 +29043,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_027_audit-of-performance-measures-at-the-puc",
     "company": "Audit of Performance Measures at the PUC (FY 2019)",
     "company_raw": "Audit of Performance Measures at the PUC (FY 2019)",
@@ -29075,10 +29075,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_026_audit-of-the-legal-division-s-process-fo",
     "company": "Audit of the Legal Division's Process for Contested Cases (FY 2020)",
     "company_raw": "Audit of the Legal Division's Process for Contested Cases (FY 2020)",
@@ -29107,10 +29107,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_025_audit-of-the-contract-procurement-proces",
     "company": "Audit of the Contract Procurement Process (FY 2020)",
     "company_raw": "Audit of the Contract Procurement Process (FY 2020)",
@@ -29139,10 +29139,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_023_audit-of-the-general-law-division-s-publ",
     "company": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",
     "company_raw": "Audit of the General Law Division's Public Information Act Requests (FY 2021)",
@@ -29171,10 +29171,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_022_audit-of-the-contract-oversight-function",
     "company": "Audit of the Contract Oversight Function (FY 2022)",
     "company_raw": "Audit of the Contract Oversight Function (FY 2022)",
@@ -29203,10 +29203,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_021_audit-of-the-central-records-division-fy",
     "company": "Audit of the Central Records Division (FY 2022)",
     "company_raw": "Audit of the Central Records Division (FY 2022)",
@@ -29235,10 +29235,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_020_audit-of-the-infrastructure-division-fy",
     "company": "Audit of the Infrastructure Division (FY 2023)",
     "company_raw": "Audit of the Infrastructure Division (FY 2023)",
@@ -29267,10 +29267,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_019_audit-of-compliance-with-select-tac-202",
     "company": "Audit of Compliance with Select TAC 202, Information Security Standards (FY 2024)",
     "company_raw": "Audit of Compliance with Select TAC 202, Information Security Standards (FY 2024)",
@@ -29299,10 +29299,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_018_audit-of-the-consumer-complaint-division",
     "company": "Audit of the Consumer Complaint Division's, Informal Complaint Process (FY 2025)",
     "company_raw": "Audit of the Consumer Complaint Division's, Informal Complaint Process (FY 2025)",
@@ -29331,10 +29331,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_017_an-efficiency-and-effectiveness-audit-fo",
     "company": "An Efficiency and Effectiveness Audit for the Division of Utility Outreach (FY 2025)",
     "company_raw": "An Efficiency and Effectiveness Audit for the Division of Utility Outreach (FY 2025)",
@@ -29363,10 +29363,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_016_fy-2023-annual-audit-plan",
     "company": "FY 2023 Annual Audit Plan",
     "company_raw": "FY 2023 Annual Audit Plan",
@@ -29395,10 +29395,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_015_fy-2024-annual-audit-plan",
     "company": "FY 2024 Annual Audit Plan",
     "company_raw": "FY 2024 Annual Audit Plan",
@@ -29427,10 +29427,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_014_fy-2025-annual-audit-plan",
     "company": "FY 2025 Annual Audit Plan",
     "company_raw": "FY 2025 Annual Audit Plan",
@@ -29459,10 +29459,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TX",
     "source": "Public Utility Commission",
-    "doc_type": "internal audit",
+    "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
     "id": "tx_0000_013_fy-2026-annual-audit-plan",
     "company": "FY 2026 Annual Audit Plan",
     "company_raw": "FY 2026 Annual Audit Plan",
@@ -29491,10 +29491,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TN",
     "source": "Regulatory Authority",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "tn_0000_003_24-25-annual-report-pdf",
     "company": "24-25 Annual Report (pdf)",
     "company_raw": "24-25 Annual Report (pdf)",
@@ -29521,10 +29521,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TN",
     "source": "Regulatory Authority",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "tn_0000_002_reports",
     "company": "Reports",
     "company_raw": "Reports",
@@ -29551,10 +29551,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TN",
     "source": "Regulatory Authority",
-    "doc_type": null,
+    "doc_type": "administrative notice / meeting-schedule page",
     "id": "tn_0000_001_annual-cybersecurity-reports-due-july-1s",
     "company": "Annual Cybersecurity Reports Due July 1st",
     "company_raw": "Annual Cybersecurity Reports Due July 1st",
@@ -29581,10 +29581,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "TN",
     "source": "Regulatory Authority",
-    "doc_type": null,
+    "doc_type": "administrative notice / meeting-schedule page",
     "id": "tn_0000_000_internal-audit-committee-meetings",
     "company": "Internal Audit Committee Meetings",
     "company_raw": "Internal Audit Committee Meetings",
@@ -29701,10 +29701,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_012_2026_peco_summer_readiness_rep",
     "company": "2026 peco summer readiness report",
     "company_raw": "2026 peco summer readiness report",
@@ -29731,10 +29731,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "pa_tier2_011_trs_annual_tracking_report_for",
     "company": "TRS Annual Tracking Report Form 2026",
     "company_raw": "TRS Annual Tracking Report Form 2026",
@@ -29761,10 +29761,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document (untitled filing id)",
     "id": "pa_tier2_010_1880199",
     "company": "1880199",
     "company_raw": "1880199",
@@ -29791,10 +29791,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_009_2026_ugi_summer_readiness_repo",
     "company": "2026 ugi summer readiness report",
     "company_raw": "2026 ugi summer readiness report",
@@ -29821,10 +29821,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_008_2026_fe_summer_readiness_repor",
     "company": "2026 fe summer readiness report",
     "company_raw": "2026 fe summer readiness report",
@@ -29851,10 +29851,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document (untitled filing id)",
     "id": "pa_tier2_007_1830583",
     "company": "1830583",
     "company_raw": "1830583",
@@ -29881,10 +29881,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_006_2026_ppl_summer_readiness_repo",
     "company": "2026 ppl summer readiness report",
     "company_raw": "2026 ppl summer readiness report",
@@ -29911,10 +29911,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "informational/reference guide",
     "id": "pa_tier2_005_ratemaking_guide2018",
     "company": "Ratemaking Guide2018",
     "company_raw": "Ratemaking Guide2018",
@@ -29950,10 +29950,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_004_2026_wellsboro_summer_readines",
     "company": "2026 wellsboro summer readiness report",
     "company_raw": "2026 wellsboro summer readiness report",
@@ -29980,10 +29980,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_003_2026_dlc_summer_readiness_repo",
     "company": "2026 dlc summer readiness report",
     "company_raw": "2026 dlc summer readiness report",
@@ -30010,10 +30010,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_002_2026_citizens_summer_readiness",
     "company": "2026 citizens summer readiness report",
     "company_raw": "2026 citizens summer readiness report",
@@ -30040,10 +30040,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document (untitled filing id)",
     "id": "pa_tier2_001_1785711",
     "company": "1785711",
     "company_raw": "1785711",
@@ -30070,10 +30070,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "PA",
     "source": "State of PA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "utility seasonal-readiness compliance filing",
     "id": "pa_tier2_000_2026_pjm_summer_readiness_repo",
     "company": "2026 pjm summer readiness report",
     "company_raw": "2026 pjm summer readiness report",
@@ -30132,10 +30132,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "OK",
     "source": "Corporation Commission",
-    "doc_type": null,
+    "doc_type": "citizen tip-line / complaint-reporting page (not a downloadable document)",
     "id": "ok_0000_003_report-a-utility-operating-outside-of-oc",
     "company": "Report a Utility Operating Outside of OCC Regulation",
     "company_raw": "Report a Utility Operating Outside of OCC Regulation",
@@ -30162,10 +30162,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "OK",
     "source": "Corporation Commission",
-    "doc_type": null,
+    "doc_type": "citizen tip-line / complaint-reporting page (not a downloadable document)",
     "id": "ok_0000_002_report-an-inaccurate-and-or-non-function",
     "company": "Report an Inaccurate and/or Non-Functioning EV Charging Station",
     "company_raw": "Report an Inaccurate and/or Non-Functioning EV Charging Station",
@@ -30192,10 +30192,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "OK",
     "source": "Corporation Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "ok_0000_001_pipeline-accident-incident-and-excavatio",
     "company": "Pipeline Accident/Incident and Excavation Report",
     "company_raw": "Pipeline Accident/Incident and Excavation Report",
@@ -30222,10 +30222,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "OK",
     "source": "Corporation Commission",
-    "doc_type": null,
+    "doc_type": "agency reference/navigation page",
     "id": "ok_0000_000_agency-reports",
     "company": "Agency Reports",
     "company_raw": "Agency Reports",
@@ -30346,10 +30346,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "MT",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "mt_0000_001_2024-psc-annual-report",
     "company": "2024 PSC Annual Report",
     "company_raw": "2024 PSC Annual Report",
@@ -30379,10 +30379,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "MT",
     "source": "Public Service Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "mt_0000_000_2025-annual-performance-report",
     "company": "2025 Annual Performance Report",
     "company_raw": "2025 Annual Performance Report",
@@ -30469,10 +30469,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "ME",
     "source": "State of ME Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "me_tier2_001_triibal-state%20collaboration%",
     "company": "Triibal-State%20Collaboration%20Act 0",
     "company_raw": "Triibal-State%20Collaboration%20Act 0",
@@ -30505,10 +30505,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "ME",
     "source": "State of ME Utility Commission",
-    "doc_type": "report",
+    "doc_type": "informational FAQ page",
     "id": "me_tier2_000_standard%20offer%20faqs%200331",
     "company": "Standard%20Offer%20FAQs%20033126 4",
     "company_raw": "Standard%20Offer%20FAQs%20033126 4",
@@ -30565,10 +30565,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "ID",
     "source": "Public Utilities Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "id_0000_004_safety-accident-reporting-rules",
     "company": "Safety & Accident Reporting Rules",
     "company_raw": "Safety & Accident Reporting Rules",
@@ -30595,10 +30595,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "ID",
     "source": "Public Utilities Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "id_0000_003_ipuc-2025-annual-report",
     "company": "IPUC 2025 Annual Report",
     "company_raw": "IPUC 2025 Annual Report",
@@ -30625,10 +30625,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "ID",
     "source": "Public Utilities Commission",
-    "doc_type": null,
+    "doc_type": "state PUC administrative/reference document",
     "id": "id_0000_001_safety-and-accident-reporting-rules",
     "company": "Safety and Accident Reporting Rules",
     "company_raw": "Safety and Accident Reporting Rules",
@@ -30655,10 +30655,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "GA",
     "source": "State of GA Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "ga_tier2_008_training_for_pv_reporters",
     "company": "Training for PV Reporters",
     "company_raw": "Training for PV Reporters",
@@ -30877,10 +30877,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_026_renewable-may-2016",
     "company": "Renewable-May-2016",
     "company_raw": "Renewable-May-2016",
@@ -30907,10 +30907,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_025_renewable-march-2012",
     "company": "Renewable-March-2012",
     "company_raw": "Renewable-March-2012",
@@ -30937,10 +30937,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_024_renewable-january-2015",
     "company": "Renewable-January-2015",
     "company_raw": "Renewable-January-2015",
@@ -30969,10 +30969,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "dc_tier2_023_biannualreportfuelmix_-2015",
     "company": "BiAnnualReportFuelMix -2015",
     "company_raw": "BiAnnualReportFuelMix -2015",
@@ -30999,10 +30999,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_022_fuel_mix_report",
     "company": "Fuel Mix Report",
     "company_raw": "Fuel Mix Report",
@@ -31029,10 +31029,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_021_dcpsc-2023_rps_report-final",
     "company": "DCPSC-2023 RPS Report-FINAL",
     "company_raw": "DCPSC-2023 RPS Report-FINAL",
@@ -31061,10 +31061,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_020_renewable-may-2017",
     "company": "Renewable-May-2017",
     "company_raw": "Renewable-May-2017",
@@ -31143,10 +31143,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_019_dcpsc_2024_rps_report-final",
     "company": "DCPSC 2024 RPS Report-FINAL",
     "company_raw": "DCPSC 2024 RPS Report-FINAL",
@@ -31175,10 +31175,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_018_2022-dcpsc-rps-report-final",
     "company": "2022-DCPSC-RPS-Report-FINAL",
     "company_raw": "2022-DCPSC-RPS-Report-FINAL",
@@ -31205,10 +31205,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_017_2026-dcpsc-renewable-energy-po",
     "company": "2026-DCPSC-Renewable-Energy-Portfolio-Standard-Report-FINAL",
     "company_raw": "2026-DCPSC-Renewable-Energy-Portfolio-Standard-Report-FINAL",
@@ -31235,10 +31235,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_016_2025-rps-report-final",
     "company": "2025-RPS-Report-FINAL",
     "company_raw": "2025-RPS-Report-FINAL",
@@ -31265,10 +31265,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_015_2021-biennial-report-on-fuel-m",
     "company": "2021-Biennial-Report-on-Fuel-Mix-FINAL",
     "company_raw": "2021-Biennial-Report-on-Fuel-Mix-FINAL",
@@ -31313,10 +31313,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "reference document (original title lost to crawler; content unrenamed)",
     "id": "dc_tier2_014_download",
     "company": "download",
     "company_raw": "download",
@@ -31345,10 +31345,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_013_renewable-april-2014",
     "company": "Renewable-April-2014",
     "company_raw": "Renewable-April-2014",
@@ -31377,10 +31377,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "dc_tier2_012_biannualreportfuelmix-_2013",
     "company": "BiAnnualReportFuelMix- 2013",
     "company_raw": "BiAnnualReportFuelMix- 2013",
@@ -31407,10 +31407,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_011_renewable-march-2010",
     "company": "Renewable-March-2010",
     "company_raw": "Renewable-March-2010",
@@ -31439,10 +31439,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_010_renewable-may-2015",
     "company": "Renewable-May-2015",
     "company_raw": "Renewable-May-2015",
@@ -31471,10 +31471,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "reference document (original title lost to crawler; content unrenamed)",
     "id": "dc_tier2_009_download",
     "company": "download",
     "company_raw": "download",
@@ -31501,10 +31501,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_008_2021-rps-report-final-(1)",
     "company": "2021-RPS-report-FINAL-(1)",
     "company_raw": "2021-RPS-report-FINAL-(1)",
@@ -31533,10 +31533,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_007_renewable-april-2013",
     "company": "Renewable-April-2013",
     "company_raw": "Renewable-April-2013",
@@ -31565,10 +31565,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_006_report-on-reps-for-2018-043018",
     "company": "Report-on-REPS-for-2018-043018-final",
     "company_raw": "Report-on-REPS-for-2018-043018-final",
@@ -31595,10 +31595,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_005_renewable-march-2011",
     "company": "Renewable-March-2011",
     "company_raw": "Renewable-March-2011",
@@ -31625,10 +31625,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_004_rps-report-to-council-march-20",
     "company": "RPS-Report-to-Council-March-2017-Final-030117 1",
     "company_raw": "RPS-Report-to-Council-March-2017-Final-030117 1",
@@ -31655,10 +31655,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_003_report-on-reps-for-2019-043019",
     "company": "Report-on-REPS-for-2019-043019-final",
     "company_raw": "Report-on-REPS-for-2019-043019-final",
@@ -31685,10 +31685,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_002_renewable-march-2009",
     "company": "Renewable-March-2009",
     "company_raw": "Renewable-March-2009",
@@ -31715,10 +31715,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
     "id": "dc_tier2_001_dcpsc-2023_biennial_report_on_",
     "company": "DCPSC-2023 Biennial Report On Fuel Mix-FINAL",
     "company_raw": "DCPSC-2023 Biennial Report On Fuel Mix-FINAL",
@@ -31764,10 +31764,10 @@
     "cost_to_customers": false
   },
   {
-    "collection": "state_audit",
+    "collection": "state_reference",
     "jurisdiction": "DC",
     "source": "State of DC Utility Commission",
-    "doc_type": "report",
+    "doc_type": "state PUC administrative/reference document",
     "id": "dc_tier2_000_biannualreportfuelmix-2017",
     "company": "BiAnnualReportFuelMix-2017",
     "company_raw": "BiAnnualReportFuelMix-2017",

@@ -56,7 +56,7 @@ class SourceSeed(BaseModel):
 
     id: str                       # stable slug (also the raw-PDF filename + processed dir)
     company: str                  # audited entity / case caption
-    collection: str               # "state_audit" | "prudence_review"
+    collection: str               # "state_audit" | "prudence_review" | "state_rate_case" | "state_reference"
     jurisdiction: str             # "PA" | "MI" | "FERC" | ...
     source: str                   # human label, e.g. "PA PUC Bureau of Audits"
     doc_type: Optional[str] = None  # e.g. "management audit", "Commission order"
@@ -135,7 +135,12 @@ class AuditReport(BaseModel):
     # FERC audit corpus valid without rewriting 120 committed report.json files.
     #   "ferc_audit"      — FERC Office of Enforcement audit reports (Form 1/2/6)
     #   "prudence_review" — FERC rate-case prudence determinations (metadata-only)
-    #   "state_audit"     — state PUC/PSC/SCC audits & prudence reviews
+    #   "state_audit"     — state PUC/PSC/SCC audits of a regulated utility
+    #   "state_rate_case" — state rate-case orders/testimony/settlements (metadata-only)
+    #   "state_reference" — real, on-theme state PUC docs that are NOT an audit of a
+    #                       utility (a commission's own self-audit, a blank report-form
+    #                       template, a recurring compliance/informational filing) —
+    #                       kept out of state_audit so they don't dilute its stats
     collection: str = "ferc_audit"
     jurisdiction: str = "FERC"          # "FERC" | "PA" | "MI" | "VA" | "IL" | ...
     source: str = ""                    # human label, e.g. "PA PUC Bureau of Audits"

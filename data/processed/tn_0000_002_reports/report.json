@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TN",
   "source": "Regulatory Authority",
-  "doc_type": null,
+  "doc_type": "agency reference/navigation page",
   "id": "tn_0000_002_reports",
   "company": "Reports",
   "company_raw": "Reports",

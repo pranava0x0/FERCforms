@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "PA",
   "source": "State of PA Utility Commission",
-  "doc_type": "report",
+  "doc_type": "informational/reference guide",
   "id": "pa_tier2_005_ratemaking_guide2018",
   "company": "Ratemaking Guide2018",
   "company_raw": "Ratemaking Guide2018",

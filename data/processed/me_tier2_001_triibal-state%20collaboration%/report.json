@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "ME",
   "source": "State of ME Utility Commission",
-  "doc_type": "report",
+  "doc_type": "state PUC administrative/reference document",
   "id": "me_tier2_001_triibal-state%20collaboration%",
   "company": "Triibal-State%20Collaboration%20Act 0",
   "company_raw": "Triibal-State%20Collaboration%20Act 0",

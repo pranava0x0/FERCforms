@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "OK",
   "source": "Corporation Commission",
-  "doc_type": null,
+  "doc_type": "citizen tip-line / complaint-reporting page (not a downloadable document)",
   "id": "ok_0000_003_report-a-utility-operating-outside-of-oc",
   "company": "Report a Utility Operating Outside of OCC Regulation",
   "company_raw": "Report a Utility Operating Outside of OCC Regulation",

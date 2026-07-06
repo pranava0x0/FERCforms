@@ -606,14 +606,14 @@
     "generated_at": "2026-07-06"
   },
   "state_audit": {
-    "report_count": 133,
+    "report_count": 49,
     "finding_count": 150,
     "other_matter_count": 0,
     "recommendation_count": 551,
     "by_industry": {
-      "unknown": 86,
       "electric": 36,
-      "gas": 11
+      "gas": 11,
+      "unknown": 2
     },
     "by_year": {
       "2017": 1,
@@ -628,25 +628,6 @@
     },
     "by_function": {},
     "themes": [
-      {
-        "theme": "Internal audit & internal controls",
-        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-        "keywords": [
-          "internal audit",
-          "internal control",
-          "delegation of authority",
-          "code of business conduct",
-          "compliance program"
-        ],
-        "finding_count": 25,
-        "report_count": 32,
-        "example_titles": [
-          "Corporate Governance",
-          "Cost Allocations and Affiliated Interests",
-          "Governance And Management",
-          "Rg&E."
-        ]
-      },
       {
         "theme": "Affiliate / intercompany transactions",
         "description": "Transactions with affiliated companies mis-priced or mis-reported.",
@@ -682,6 +663,25 @@
           "Customer Operations",
           "Performance Management",
           "Human Resources and Diversity (continued)"
+        ]
+      },
+      {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 25,
+        "report_count": 13,
+        "example_titles": [
+          "Corporate Governance",
+          "Cost Allocations and Affiliated Interests",
+          "Governance And Management",
+          "Rg&E."
         ]
       },
       {
@@ -1253,6 +1253,35 @@
         ],
         "finding_count": 0,
         "report_count": 1,
+        "example_titles": []
+      }
+    ],
+    "top_titles": [],
+    "generated_at": "2026-07-06"
+  },
+  "state_reference": {
+    "report_count": 84,
+    "finding_count": 0,
+    "other_matter_count": 0,
+    "recommendation_count": 0,
+    "by_industry": {
+      "unknown": 84
+    },
+    "by_year": {},
+    "by_function": {},
+    "themes": [
+      {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 0,
+        "report_count": 19,
         "example_titles": []
       }
     ],

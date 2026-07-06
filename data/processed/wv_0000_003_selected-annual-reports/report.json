@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WV",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "agency reference/navigation page",
   "id": "wv_0000_003_selected-annual-reports",
   "company": "Selected Annual Reports",
   "company_raw": "Selected Annual Reports",

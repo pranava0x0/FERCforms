@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "MT",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "mt_0000_000_2025-annual-performance-report",
   "company": "2025 Annual Performance Report",
   "company_raw": "2025 Annual Performance Report",

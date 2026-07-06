@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "OK",
   "source": "Corporation Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "ok_0000_001_pipeline-accident-incident-and-excavatio",
   "company": "Pipeline Accident/Incident and Excavation Report",
   "company_raw": "Pipeline Accident/Incident and Excavation Report",

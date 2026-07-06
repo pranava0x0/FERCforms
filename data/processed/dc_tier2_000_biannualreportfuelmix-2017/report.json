@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "DC",
   "source": "State of DC Utility Commission",
-  "doc_type": "report",
+  "doc_type": "state PUC administrative/reference document",
   "id": "dc_tier2_000_biannualreportfuelmix-2017",
   "company": "BiAnnualReportFuelMix-2017",
   "company_raw": "BiAnnualReportFuelMix-2017",

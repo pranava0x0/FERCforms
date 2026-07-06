@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_014_fy-2025-annual-audit-plan",
   "company": "FY 2025 Annual Audit Plan",
   "company_raw": "FY 2025 Annual Audit Plan",

@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WV",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "wv_0000_009_2025-management-summary-report",
   "company": "2025 Management Summary Report",
   "company_raw": "2025 Management Summary Report",

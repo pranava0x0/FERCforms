@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_019_audit-of-compliance-with-select-tac-202",
   "company": "Audit of Compliance with Select TAC 202, Information Security Standards (FY 2024)",
   "company_raw": "Audit of Compliance with Select TAC 202, Information Security Standards (FY 2024)",

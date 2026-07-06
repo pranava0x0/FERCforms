@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_021_audit-of-the-central-records-division-fy",
   "company": "Audit of the Central Records Division (FY 2022)",
   "company_raw": "Audit of the Central Records Division (FY 2022)",

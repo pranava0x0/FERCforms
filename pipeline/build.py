@@ -36,6 +36,7 @@ COLLECTIONS: list[dict[str, str]] = [
     {"key": "prudence_review", "label": "Prudence Reviews"},
     {"key": "state_audit", "label": "State PUC Audits"},
     {"key": "state_rate_case", "label": "State Rate Cases (Reference)"},
+    {"key": "state_reference", "label": "State Reference Docs"},
 ]
 COLLECTION_KEYS: list[str] = [c["key"] for c in COLLECTIONS]
 

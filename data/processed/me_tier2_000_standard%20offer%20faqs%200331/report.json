@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "ME",
   "source": "State of ME Utility Commission",
-  "doc_type": "report",
+  "doc_type": "informational FAQ page",
   "id": "me_tier2_000_standard%20offer%20faqs%200331",
   "company": "Standard%20Offer%20FAQs%20033126 4",
   "company_raw": "Standard%20Offer%20FAQs%20033126 4",
