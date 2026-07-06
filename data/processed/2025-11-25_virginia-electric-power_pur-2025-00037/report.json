@@ -22,15 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $35.7 million",
-      "summary": "illion.87 Accordingly, we find (i) that the Company’s proposed rate design for Rider CERC should be approved, and (ii) that a Rate Year revenue requirement of $35.7 million is appropriate and should be approved. 84 Staff s Post-Hearing Brief at 10. Sierra Club’s Post-Hearing Brief at 1-2. Post-Heari",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

@@ -22,15 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $1,671,378.\n",
-      "summary": "filing 3 to $97,325,308 in Staff’s Attachment A.2. This has the effect of increasing the 4 maximum allowed increase in revenues (A.2 L6) by $1,671,378. 5 MODIFIED BALANCE SHEET APPROACH 6 Q. What is the methodology used to determine Working Capital Assets 7 (“WCA”) and Current, Accrued, and Other Li",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

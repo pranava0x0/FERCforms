@@ -22,71 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 9,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Disallowance: $18 million",
-      "summary": "ny’s proposed revenue requirement.426 218. In its Rebuttal Testimony, Pepco opposes AOBA’s proposed $18 million disallowance of projected CapEx from the revenue requirement in 2023 through 2026 for ITN 420 See generally, Pepco (H)-2 (Cantler Direct Exhibit). 421 AOBA (A",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Disallowance: $848,000.463",
-      "summary": "of rate base. The adjustment reduces rate base by $5.3 million and increases operating expenses by $848,000.463 233. The Commission agrees with OPC’s position to deny Pepco RMA-15. Pepco does not raise any new arguments that persuade the Commission to change the basis for its prior decision in Forma",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Approval: $167.3 million",
-      "summary": "pend would ultimately be allocated to Pepco’s DC distribution rates.425 As such, AOBA’s proposed disallowance of $167.3 million is flawed for multiple reasons, not least because a large portion of the proposed disallowed costs are not even included in the Company’s proposed re",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 4,
-      "title": "Approval: $77\nmillion",
-      "summary": "period by approximately $211 million (28%). This reduction is achieved by reducing plant additions approved for recover in this Order by $77 million in 2025 and by $134 million in 2026. This adjustment results in an overall reduction in rate 544 All Commission adopted RMA’s are formatted “RMA-(#)”",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 5,
-      "title": "Approval: $3,228.6 million",
-      "summary": "proposed rate base adjustments, no party contests the methodology. Based on the Commission’s final approved rate base of $3,228.6 million, and $3,302.7 million, and 5.02% and 5.04% approved cost of debt for 2025 and 2026, respectively. RMA 28 reduces revenue requirement by $43 million i",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 6,
-      "title": "Settlement: Agreement",
-      "summary": "ted recovery period. 223. RMA Pepco-12 Reflection of Benning Insurance Proceeds. As outlined in the Settlement Agreement in Formal Case Nos. 1150 and 1151, Pepco has been pursuing recovery of insurance proceeds and agreed to return these funds to customers through rates",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 7,
-      "title": "Settlement: Agreement",
-      "summary": "ng to return to customers. Pepco determined that $0.785 million was charged through rates after the Settlement Agreement until the time that regulatory asset amortization was paused upon the Commission’s approval of the Formal Case No. 1156 Modified 436 Pepco (B) (Lemin",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 8,
-      "title": "Settlement: agreement",
-      "summary": "pco (3B) (Leming Rebuttal) at 25:16-18. Order No. 22328 Page 81 The Company’s reference to the EDIT Settlement agreement is misplaced. The NP EDIT agreed to in Formal Case No. 1150 did not address the PHISCO deferred income tax balances; it only addressed the Pepco bala",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 9,
-      "title": "Settlement: agreement",
-      "summary": "dy was filed in 2017 in Formal Case No. 1139, and the current depreciation rates were approved in a settlement agreement in that case.620 354. Pepco proposes to follow recent Commission precedent and adopt the Financial Accounting Standards No. 143 method of calculating",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

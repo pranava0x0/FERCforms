@@ -293,6 +293,28 @@ def test_no_garbled_findings_in_committed_corpus():
     assert not offenders, "garbled findings in committed corpus:\n" + "\n".join(offenders[:40])
 
 
+def test_state_rate_case_reports_are_metadata_only():
+    """State rate-case orders/testimony/settlements are free-form legal prose with
+    no enumerable findings structure to anchor a parser on. A prior parser
+    (`_extract_rate_case_findings`, removed 2026-07-06) grabbed a blind +/-100/150
+    char window around any "$N ... disallow/approve" or "settlement ... agreement"
+    match and called it a "finding" — on real documents this produced mid-sentence
+    fragments (titles like "Settlement: Agreement", summaries starting
+    lowercase-mid-word) in 528 of the corpus's then-1341 findings, spanning 41
+    reports — the same "loose marker-based parser harvests garbage" anti-pattern
+    documented in CLAUDE.md/AGENTS.md. Every state_rate_case record must stay
+    metadata-only (structured=False, findings=[]), matching the prudence_review
+    default. See ISSUES.md 2026-07-06."""
+    offenders = []
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("collection") != "state_rate_case":
+            continue
+        if d.get("findings") or d.get("structured", True):
+            offenders.append(p.parent.name)
+    assert not offenders, f"state_rate_case reports must be metadata-only: {offenders}"
+
+
 def test_committed_seeds_have_unique_pdf_urls():
     """No two seeds may point at the same PDF URL — that's the same document seeded
     twice (regression for the 2026-06-08 wave-2 dedup: parallel research agents

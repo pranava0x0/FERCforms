@@ -22,22 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $7,862,875 ",
-      "summary": "is is $35,292,236 more than NIPSCO’s authorized amount of $407,403,229, which includes $399,540,354 approved in the applicable rate case, plus $7,862,875 of actual TDSIC operating income during the 12 months ended September 30, 2024. Since the Petitioner’s actual return exceeds the amount authorized",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $0.69 ",
-      "summary": "will pay $201.92 (excluding taxes), which consists of $180.24 in base charges set in NIPSCO’s last approved rate case (Cause No. 45772), $0.69 in a fuel adjustment clause credit, and $20.99 in non-FAC trackers. 12. Fuel Cost Adjustment Factor. OUCC witness Eckert recommended the Commission ap",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

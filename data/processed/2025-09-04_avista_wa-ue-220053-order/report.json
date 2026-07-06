@@ -22,22 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Settlement: terms",
-      "summary": "he settlement was lawful, supported by the record, and consistent with the public interest.4 11 The settlement terms addressing the annual capital projects review process extended the company’s initial proposal for the review period from three to four months “to all",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Settlement: terms",
-      "summary": "settlement in the general rate proceeding for Northwest Natural Gas in Docket UG-200994, et al. The settlement terms on the capital projects review were included to provide assurance that the provisional capital included prior to the rate effective period (for 2022",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

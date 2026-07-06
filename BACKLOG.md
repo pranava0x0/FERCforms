@@ -12,7 +12,9 @@ thin metadata-only breadth** (the corpus is broad but shallow: real findings sit
 records — after the 2026-06-22 WA+IN junk purge, down from 518). New items from the 2026-06-22 session
 are marked ⊕; full descriptions in the sections below.
 
-**P0 — both done (2026-06-22/23):**
+**P0 — 2026-07-06 validation sweep found + fixed 3 issues, surfaced 1 more (see below):**
+0. ✅ **[DONE 2026-07-06] Full corpus validation sweep** (`pipeline.verify_sources` live + a semantic audit) — purged 90 more `state_puc.json` crawler-junk records (corpus 494→**404**), root-cause-fixed the loose rate-case parser that was shipping mid-sentence fragments as "findings" (528 of 1341 findings, 41 reports, now metadata-only; findings 1341→**813**), and registered 9 orphaned-but-real LA/AR/MS records that had no seed entry. See the Done section below + ISSUES.md 2026-07-06.
+0b. **[high, new] Confirm-then-purge: `state_puc.json` (41 left) + `state_puc_tier2_extended.json` (43 left) are, on inspection, 100% off-theme crawler junk** — no genuine audited-utility record survives in either file (TX PUC's own internal-audit-of-itself reports, blank report forms, PA/DC recurring compliance filings with `company` literally `'1785711'` or `'download'`). The live NON_PDF signal under-flags these (they're `fetch:true` real HTML/PDF pages, just not *audits of a utility*) — this needs the semantic read done 2026-07-06, not another network sweep. Not purged yet — needs a quick user confirm since it's a judgment call, not a hard technical failure. Would take corpus 404→~320.
 1. ✅ **[DONE 2026-06-22] Purged the 166 WA+IN crawler-junk `state_audit` records** — corpus 660 → **494**, `state_audit` 387 → **221**, findings unchanged at 1727. See the Done section below + ISSUES.md.
 2. ✅ **[DONE 2026-06-23] Recovered findings from 14 of the 26 zero-finding FERC reports** — additive PyMuPDF recovery, count-gated; **+67 findings** (corpus 1727 → **1794**); the 12 still at 0 are genuinely clean. The FERC parser-coverage gap is effectively closed. See the Done section below + ISSUES.md. *(Spawned a new P-tier item: make PDF extraction deterministic — see Pipeline & data.)*
 

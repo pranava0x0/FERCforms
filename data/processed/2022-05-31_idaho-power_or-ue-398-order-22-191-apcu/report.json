@@ -22,22 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Settlement: terms",
-      "summary": "inistrative and General (\"OHAG\") expenses in accordance with the terms 20 of the 2016 and 2017 APCU settlement stipulations. 7 Per the terms of the 2016 APCU 2 See Idaho Power/100-110. 3 Idaho Power/100, Brady/5. 4 See Idaho Power/100, Brady/15. 5 Idaho Power/100, Brady/5. 6 Idaho Power/10",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Settlement: Agreement",
-      "summary": "pulating Parties resolved all the issues in this case through these 8 conferences, resulting in the settlement stipulation as described in this Agreement. 9 AGREEMENT 10 23. The Stipulating Parties agree to a revenue requirement increase of $3.98 million 11 or 6.97 percent overall. The Stipulating P",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

@@ -22,15 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $548,548 ",
-      "summary": "y for the purchased power costs that exceeded the Benchmark and the OUCC agreed Applicant should be allowed to recover $548,548 in purchased power costs that exceeded the Benchmark. Accordingly, the Commission finds Applicant’s request for recovery of its purchased power over t",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

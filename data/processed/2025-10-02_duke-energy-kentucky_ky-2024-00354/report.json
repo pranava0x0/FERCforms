@@ -31,15 +31,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Disallowance: $330,788.",
-      "summary": "ed the appropriate methodology for forecasted billed revenues including the pro forma adjustment of $330,788. Consequently, the Commission will reject the Attorney General’s adjustment to test year revenues. 113 Kollen Direct Testimony at 28. 114 Lawler Rebuttal Testimony at 3. 115 Lawler Rebuttal T",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

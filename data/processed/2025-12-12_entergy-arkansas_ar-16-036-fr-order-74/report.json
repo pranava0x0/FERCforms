@@ -22,43 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 5,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $117.7\nmillion",
-      "summary": "s an overview of EAL’s Application. He testifies that the revenue change necessary to achieve EAL’s allowed return of 9.65 percent is $117.7 million. The total revenue change is based upon a Projected Year deficiency of $68.9 million for 2026 and $48.8 million deficiency in the Historical Year Net",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $1,671,378.\n",
-      "summary": "cent revenue constraint from $95,653,930 in EAL’s filing to $97,325,308 which increased the maximum allowed increase in revenue by $1,671,378. Id. at 9. Mr. Ray also states that Staff witness Sites supports a recommended change from the Company’s requested Projected Year BRORB of 5.78994 perc",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Settlement: terms",
-      "summary": "oberts presents the results of his review of the information EAL provided in response to the agreed settlement terms as approved by the Commission in Order Nos. 10 and 14 with respect to reliability metrics and vegetation management. He also presents the results of",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 4,
-      "title": "Settlement: Agreement",
-      "summary": "ults of his review of the information EAL provided pursuant to the 2021 Evaluation Report Rider FRP Settlement Agreement with respect to the Feeder Level Investment Plan (FLIP) and integration of the Quality of Service reporting of the Worst-of-the-Worst into EAL’s FOCU",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 5,
-      "title": "Settlement: Agreement",
-      "summary": "14, and updated cost information and reliability metrics for the FLIP feeders pursuant to the 2021 Settlement Agreement. Mr. Roberts testifies that Staff is monitoring the reliability metrics for certain feeders, and Staff did not identify any feeders that met the elig",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

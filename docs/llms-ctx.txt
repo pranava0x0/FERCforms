@@ -1,5 +1,5 @@
-<project title="FERC Audit Explorer" summary="494 structured records (123 FERC audits, 29 prudence reviews, 221 state PUC audits); 1341 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-06-23). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="404 structured records (123 FERC audits, 29 prudence reviews, 131 state PUC audits); 813 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-07-06). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Southern Electric Generating Company" collection="FERC Audits" docket="FA24-3-000" issued="2026-05-07" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&amp;optimized=false">
 Finding 1: Accounting for Replacement of Minor Items of Property
@@ -3874,15 +3874,7 @@ Public Service Commission (WV)
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (WV)
 </doc>
-<doc title="Coal Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.wv.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (WV)
-</doc>
 <doc title="Annual Statistical Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.wv.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (WV)
-</doc>
-<doc title="Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.wv.us">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (WV)
 </doc>
@@ -3966,50 +3958,6 @@ Public Utility Commission (TX)
 Listed for reference (not machine-parsed into findings).
 Public Utility Commission (TX)
 </doc>
-<doc title="Report Fraud, Waste or Abuse" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Online Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Confidential Filing Instructions" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Central Records Filing Procedures" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Filings Search" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Registration &amp; Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Registration &amp; Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
-<doc title="Central Records &amp; Filings" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.texas.gov/industry/filings/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (TX)
-</doc>
 <doc title="24-25 Annual Report (pdf)" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://tn.gov/tpuc.html">
 Listed for reference (not machine-parsed into findings).
 Regulatory Authority (TN)
@@ -4025,10 +3973,6 @@ Regulatory Authority (TN)
 <doc title="Internal Audit Committee Meetings" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://tn.gov/tpuc.html">
 Listed for reference (not machine-parsed into findings).
 Regulatory Authority (TN)
-</doc>
-<doc title="PURC Energy Policy Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.sc.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (SC)
 </doc>
 <doc title="2026 peco summer readiness report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/">
 Listed for reference (not machine-parsed into findings).
@@ -4082,114 +4026,6 @@ PA PUC (Tier 2 deep scrape)
 Listed for reference (not machine-parsed into findings).
 PA PUC (Tier 2 deep scrape)
 </doc>
-<doc title="Reasonableness Review Ratio Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Natural Gas Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="gas" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Telecommunications Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Water/Wastewater Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="water" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Pipeline Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Motor Carrier Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Rail Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Electricity Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Post-Storm Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Rate Comparison Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Electric Service Reliability Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Electric Power Outlook Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Universal Service  Programs and Collections Performance Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Customer Service Performance Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Quinquennial Report Pursuant Per Section 1415 / Residential Collections Data" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Natural Gas Outlook Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="gas" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Retail Choice Activity Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Alternative Energy Portfolio Standards (AEPS) Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Quarterly Earnings Summary Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Consumer Activities Report &amp; Evaluation" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Accident Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Accident Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Biennial NMP Progress Report Forms" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Monthly Remittance and Annual Reporting by Telcos" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.puc.pa.gov/filing-resources/reports/">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (PA)
-</doc>
-<doc title="Reports &amp; Forms" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.oregon.gov/puc">
-Listed for reference (not machine-parsed into findings).
-Public Utility Commission (OR)
-</doc>
 <doc title="Report a Utility Operating Outside of OCC Regulation" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://oklahoma.gov/occ.html">
 Listed for reference (not machine-parsed into findings).
 Corporation Commission (OK)
@@ -4206,46 +4042,6 @@ Corporation Commission (OK)
 Listed for reference (not machine-parsed into findings).
 Corporation Commission (OK)
 </doc>
-<doc title="DPS Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://dps.ny.gov/completed-annual-reports-regulated-utilities">
-Listed for reference (not machine-parsed into findings).
-Department of Public Service (NY)
-</doc>
-<doc title="Utility Annual Reports Forms for E-filing" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://dps.ny.gov/completed-annual-reports-regulated-utilities">
-Listed for reference (not machine-parsed into findings).
-Department of Public Service (NY)
-</doc>
-<doc title="Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.nv.gov">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (NV)
-</doc>
-<doc title="PRCe360 |  Compliance Filings" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.nm-prc.org">
-Listed for reference (not machine-parsed into findings).
-Public Regulation Commission (NM)
-</doc>
-<doc title="Audits" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.nj.gov/bpu">
-Listed for reference (not machine-parsed into findings).
-Board of Public Utilities (NJ)
-</doc>
-<doc title="Railroad Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.nd.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (ND)
-</doc>
-<doc title="Investigation into Resource Adequacy/Data CentersInvestigation into Resource Adequacy/Data Centers" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MT)
-</doc>
-<doc title="LATEST NEWS- PSC Adopts Response Team Report, Immediate Remote Work Restriction for Commissioner Molnar" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MT)
-</doc>
-<doc title="Compliance Materials and Forms" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MT)
-</doc>
-<doc title="PSC Plans and Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MT)
-</doc>
 <doc title="2024 PSC Annual Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MT)
@@ -4253,18 +4049,6 @@ Public Service Commission (MT)
 <doc title="2025 Annual Performance Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.mt.gov">
 Listed for reference (not machine-parsed into findings).
 Public Service Commission (MT)
-</doc>
-<doc title="Report A Telemarketer Call" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ms.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MS)
-</doc>
-<doc title="MPSC seeks public comment on report on shutoff protections for critical care customers" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.michigan.gov/mpsc">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MI)
-</doc>
-<doc title="Reports, Forms, &amp; Data" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.michigan.gov/mpsc">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MI)
 </doc>
 <doc title="Triibal-State%20Collaboration%20Act 0" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc/">
 Listed for reference (not machine-parsed into findings).
@@ -4274,62 +4058,6 @@ ME PUC (Tier 2 deep scrape)
 Listed for reference (not machine-parsed into findings).
 ME PUC (Tier 2 deep scrape)
 </doc>
-<doc title="2024-00137 Commission Initiated Investigation Follow-On Proceeding to Further Investigate Stranded Cost Rate Design" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="2024-00111 Audit of Operations and Management Practices Pertaining to Versant Power" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Annual Financial Reports Templates" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Reports to the Legislature" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Reports and Data" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="ILEC Access Line Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Transparency Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Annual Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.maine.gov/mpuc">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ME)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.md.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MD)
-</doc>
-<doc title="Electric Choice Enrollment Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.psc.state.md.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (MD)
-</doc>
-<doc title="Investigation of Pole Attachmentsopens in a new window" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://psc.ky.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (KY)
-</doc>
-<doc title="Outage Reporting" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://psc.ky.gov">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (KY)
-</doc>
-<doc title="Credit, Collections, and Arrearages Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.icc.illinois.gov">
-Listed for reference (not machine-parsed into findings).
-Commerce Commission (IL)
-</doc>
-<doc title="ICC Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.icc.illinois.gov">
-Listed for reference (not machine-parsed into findings).
-Commerce Commission (IL)
-</doc>
 <doc title="Safety &amp; Accident Reporting Rules" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.idaho.gov">
 Listed for reference (not machine-parsed into findings).
 Public Utilities Commission (ID)
@@ -4338,41 +4066,13 @@ Public Utilities Commission (ID)
 Listed for reference (not machine-parsed into findings).
 Public Utilities Commission (ID)
 </doc>
-<doc title="Annual Gross Intrastate Revenues Report Form" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.idaho.gov">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ID)
-</doc>
 <doc title="Safety and Accident Reporting Rules" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.idaho.gov">
 Listed for reference (not machine-parsed into findings).
 Public Utilities Commission (ID)
 </doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.idaho.gov">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (ID)
-</doc>
-<doc title="Data &amp; Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://iub.iowa.gov">
-Listed for reference (not machine-parsed into findings).
-State Utilities Board (IA)
-</doc>
-<doc title="Information from Utility Annual Report Filings" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://iub.iowa.gov">
-Listed for reference (not machine-parsed into findings).
-State Utilities Board (IA)
-</doc>
-<doc title="File a Utility Annual Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://iub.iowa.gov">
-Listed for reference (not machine-parsed into findings).
-State Utilities Board (IA)
-</doc>
-<doc title="Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://puc.hawaii.gov">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (HI)
-</doc>
 <doc title="Training for PV Reporters" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us/">
 Listed for reference (not machine-parsed into findings).
 GA PUC (Tier 2 deep scrape)
-</doc>
-<doc title="GUFPA Violation Reporting System" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.psc.state.ga.us">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (GA)
 </doc>
 <doc title="Union Electric Company d/b/a Ameren Missouri" collection="State PUC Audits" docket="ER-2011-0028" issued="n/a" industry="electric" source="https://efis.psc.mo.gov/Document/Display/99523">
 Listed for reference (not machine-parsed into findings).
@@ -4490,34 +4190,6 @@ DC PUC (Tier 2 deep scrape)
 Listed for reference (not machine-parsed into findings).
 DC PUC (Tier 2 deep scrape)
 </doc>
-<doc title="2026 RPS Report shows D.C. is successfully creating its own localized energy independence." collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="Renewable Energy Portfolio Standard (RPS) Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="Biennial Report on Fuel Mix" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="Natural Gas Leaks Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="gas" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="DCPSC Annual and Statistical Reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="Orders/Reports/Regulations" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.dcpsc.org">
-Listed for reference (not machine-parsed into findings).
-Public Service Commission (DC)
-</doc>
-<doc title="Annual Report" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://ct.gov/PURA">
-Listed for reference (not machine-parsed into findings).
-Department of Public Utility Control (CT)
-</doc>
 <doc title="The Connecticut Light and Power Company (Eversource) and United Illuminating Company" collection="State PUC Audits" docket="20-08-03" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).
@@ -4525,38 +4197,6 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 <doc title="Connecticut electric distribution companies (Eversource / United Illuminating)" collection="State PUC Audits" docket="17-12-03RE011" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
-</doc>
-<doc title="CPUC: See docs.cpuc.ca.gov for audit reports" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.cpuc.ca.gov/documents">
-Listed for reference (not machine-parsed into findings).
-Public Utilities Commission (CA)
-</doc>
-<doc title="Report a Railroad Issue" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.azcc.gov">
-Listed for reference (not machine-parsed into findings).
-Corporation Commission (AZ)
-</doc>
-<doc title="Report Fraud" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
-<doc title="Report a fish/wildlife violation?" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
-<doc title="Report Child Abuse" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
-<doc title="Report a Cruise Ship Concern" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
-<doc title="Report a Spill" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
-</doc>
-<doc title="Report an Environmental Crime" collection="State PUC Audits" docket="n/a" issued="n/a" industry="n/a" source="https://www.state.ak.us/rca">
-Listed for reference (not machine-parsed into findings).
-Regulatory Commission (AK)
 </doc>
 <doc title="Otter Tail Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).

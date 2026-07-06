@@ -31,11 +31,6 @@ FERC_AUDIT_SOURCE = "FERC Office of Enforcement, Division of Audits & Accounting
 _DOCKET_FULL_RE = re.compile(r"Docket No\.?\s*([A-Z]{2}\d{2}-\d+-\d+)")
 _DATE_LINE_RE = re.compile(r"(?m)^\s*([A-Z][a-z]+ \d{1,2}, \d{4})\s*$")
 _AUDIT_PERIOD_RE = re.compile(r"audit covered the period\s+(.+?)\.", re.S)
-# Table-of-Contents furniture: a run of dotted/middle-dot leaders (".......", "……")
-# or a (cid:N) extraction artifact. The loose rate-case / regulatory-order parsers
-# must reject any match whose surrounding text is a TOC line — extracting those gave
-# garbage "findings" (dotted-leader titles/summaries). See ISSUES.md 2026-06-23.
-_TOC_NOISE_RE = re.compile(r"\.{6,}|…{2,}|\(cid:")
 
 
 def _clean(text: str, docket_full: Optional[str]) -> str:
@@ -444,49 +439,23 @@ _ELIBRARY_STAMP_RE = re.compile(r"Document Accession #:\s*\S+\s+Filed Date:\s*\d
 
 
 def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
-    """Parse regulatory orders and decisions (CT, other state PUC orders).
+    """State PUC orders/decisions/investigations (CT, MD, NY, OH, IL, ...).
 
-    These documents contain regulatory determinations, not audit findings.
-    Extract key order language as minimal findings.
+    These are free-form legal prose, not an enumerated findings list — there is
+    no structural marker to anchor on. A prior version of this function matched
+    "Finding N:" / "the Commission finds..." with a blind regex and truncated at
+    a fixed 500-char boundary; on real documents that produced zero usable
+    findings (the boundary almost never lands on a sentence break) while still
+    carrying the same "harvest garbage from unstructured prose" risk the project
+    guards against elsewhere (see CLAUDE.md "loose heuristic parsers"). Metadata-
+    only, matching the prudence_review default.
     """
-    full_raw = "\n".join(p.text for p in text.pages)
-
-    # Look for numbered findings or key decision language
-    findings: list[Finding] = []
-
-    # Pattern: "Finding 1:", "The Commission finds:", "It is ordered:"
-    decision_patterns = [
-        r"(?i)(?:finding|conclusion|determination|order|decision)\s+(\d+)[:\.]?\s+(.+?)(?=(?:Finding|Conclusion|Order|Decision)\s+\d+|$)",
-        r"(?i)(?:the commission|we)\s+(?:find|order|determine)s?\s+(.+?)(?=\n\n|\nFinding|\nConclusion|\nOrder|$)",
-    ]
-
-    for pattern in decision_patterns:
-        matches = re.finditer(pattern, full_raw, re.DOTALL)
-        for m in matches:
-            # Extract the decision text
-            decision_text = m.group(1) if len(m.groups()) == 1 else m.group(2)
-            decision_text = re.sub(r"\s+", " ", decision_text).strip()[:500]
-
-            if _TOC_NOISE_RE.search(decision_text):
-                continue  # a Table-of-Contents line, not a determination — skip
-
-            if len(decision_text) > 20:
-                findings.append(
-                    Finding(
-                        index=len(findings) + 1,
-                        title="Regulatory Determination",
-                        summary=decision_text,
-                        is_other_matter=False,
-                        recommendations=[]
-                    )
-                )
-
-    # Preserve metadata from existing report
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k != "findings"},
-            findings=findings,
-            finding_count=len(findings),
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
+            findings=[],
+            finding_count=0,
+            structured=False,
         )
 
     return AuditReport(
@@ -511,8 +480,9 @@ def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_r
         functions=[],
         forms=[],
         collection="state_audit",
-        finding_count=len(findings),
-        findings=findings,
+        finding_count=0,
+        findings=[],
+        structured=False,
     )
 
 
@@ -669,74 +639,28 @@ def structure_report(entry: ListingEntry, text: ReportText) -> AuditReport:
     )
 
 
-def _extract_rate_case_findings(full_text: str, doc_type: str) -> list[Finding]:
-    """Extract key regulatory decisions from rate-case documents.
-
-    Looks for:
-    - Disallowances: "$X cost request denied for [reason]"
-    - Approvals: "$X recovery approved [with conditions]"
-    - Settlements: "Parties agree to [outcome]"
-
-    Returns minimal findings for rate cases (different from audit "findings").
-    """
-    findings: list[Finding] = []
-
-    # Keywords that indicate key decisions
-    decision_patterns = [
-        (r"(?i)(\$[\d.,]+\s*(?:million|M)?)\s+.*?(?:disallow|deny|reject)", "Disallowance"),
-        (r"(?i)(?:approve|grant|allow).*?(\$[\d.,]+\s*(?:million|M)?)", "Approval"),
-        (r"(?i)settlement.*?(agreement|terms)", "Settlement"),
-    ]
-
-    for pattern, category in decision_patterns:
-        matches = re.finditer(pattern, full_text)
-        for m in matches:
-            # Extract context around match
-            start = max(0, m.start() - 100)
-            end = min(len(full_text), m.end() + 150)
-            context = full_text[start:end]
-            context = re.sub(r"\s+", " ", context).strip()
-
-            # Skip a match that landed in a Table of Contents: dotted/tab leaders
-            # ("...... 24") and (cid:N) artifacts are TOC furniture, not a decision —
-            # extracting them produced garbage "findings" (see ISSUES.md 2026-06-23).
-            if _TOC_NOISE_RE.search(context):
-                continue
-
-            if len(context) > 20:  # Only add substantial findings
-                findings.append(
-                    Finding(
-                        index=len(findings) + 1,
-                        title=f"{category}: {m.group(1) if m.groups() else 'Regulatory decision'}",
-                        summary=context[:300],
-                        is_other_matter=False,
-                        recommendations=[]
-                    )
-                )
-
-    return findings
-
-
 def structure_state_rate_case(entry: ListingEntry, text: ReportText, existing_report: Optional[dict] = None) -> AuditReport:
-    """Parse state regulatory rate-case orders and decisions.
+    """State rate-case orders, testimony, and settlements — metadata-only.
 
-    Rate cases document regulatory decisions on cost recovery, rate design,
-    and settlement terms. Unlike audits (which flag operational issues),
-    rate cases show what costs the commission approved/denied and why.
-
-    Extraction: Key regulatory decisions (disallowances, approvals, settlements)
-    as minimal findings.
+    Rate cases are free-form legal/testimony prose with no enumerable findings
+    structure (no "Exhibit I-2"-style table, no self-stated count to gate
+    against). A prior version here (`_extract_rate_case_findings`, removed) grabbed
+    a blind +/-100/150-char window around any "$N ... disallow/approve" or
+    "settlement ... agreement" match and called it a "finding" — on real
+    documents this produced mid-sentence fragments ~78% of the time (528 of the
+    corpus's 1341 findings, 100% of it in the 41 affected reports) with titles
+    like "Settlement: Agreement" that carry no audit signal. This is exactly the
+    "loose marker-based parser harvests garbage" anti-pattern documented in
+    CLAUDE.md/AGENTS.md — anchor on a structural marker or fall back to
+    metadata-only; there is no structural marker in rate-case prose, so: always
+    metadata-only, matching the prudence_review default.
     """
-    full_raw = "\n".join(p.text for p in text.pages)
-    doc_type = existing_report.get("doc_type") if existing_report else ""
-    findings = _extract_rate_case_findings(full_raw, doc_type)
-
-    # Preserve metadata from existing report if available
     if existing_report:
         return AuditReport(
             **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
-            findings=findings,
-            finding_count=len([f for f in findings if not f.is_other_matter]),
+            findings=[],
+            finding_count=0,
+            structured=False,
         )
 
     # Fallback if no existing report
@@ -762,8 +686,9 @@ def structure_state_rate_case(entry: ListingEntry, text: ReportText, existing_re
         functions=[],
         forms=[],
         collection="state_rate_case",
-        finding_count=len([f for f in findings if not f.is_other_matter]),
-        findings=findings,
+        finding_count=0,
+        findings=[],
+        structured=False,
     )
 
 
