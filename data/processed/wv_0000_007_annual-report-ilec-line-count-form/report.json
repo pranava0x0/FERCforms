@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WV",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "wv_0000_007_annual-report-ilec-line-count-form",
   "company": "Annual Report ILEC Line Count Form",
   "company_raw": "Annual Report ILEC Line Count Form",

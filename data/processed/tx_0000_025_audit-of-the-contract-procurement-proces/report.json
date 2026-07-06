@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_025_audit-of-the-contract-procurement-proces",
   "company": "Audit of the Contract Procurement Process (FY 2020)",
   "company_raw": "Audit of the Contract Procurement Process (FY 2020)",

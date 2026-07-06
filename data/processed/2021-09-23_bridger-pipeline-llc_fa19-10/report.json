@@ -52,7 +52,10 @@
           "text": "Upon receiving DAA’s response to the analysis in Recommendation No. 3, restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 930355.0,
+      "amount_usd_quote": "This resulted in Bridger incorrectly reporting several line inputs used to derive cost of service on Page 700, which caused Bridger to overstate its total cost of service by between $739,763 to $930,355 during the audit period.",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
@@ -80,7 +83,10 @@
           "text": "Restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
@@ -98,7 +104,10 @@
           "text": "Perform an analysis to ensure that fines and penalties, lobbying expenses, charitable contributions, and other costs of this nature are correctly reported in nonoperating expense accounts in the FERC Form No. 6. For consistency restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
@@ -131,7 +140,10 @@
           "text": "Upon receiving DAA’s response, restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -164,7 +176,10 @@
           "text": "Restate and footnote the comparative year balances reported in the next FERC Form No. 6 filed, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 25000000.0,
+      "amount_usd_quote": "The annual interstate portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
+      "amount_usd_page": 7
     },
     {
       "index": 6,
@@ -187,7 +202,10 @@
           "text": "Restate and footnote the comparative year balances reported on Page 700 in the next FERC Form No. 6 filed to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -235,7 +253,10 @@
           "text": "Upon receiving DAA staff’s response, restate and footnote the balances reported in the FERC Form No. 6 in the comparative years of the report, including all schedules affected, to reflect and disclose the revisions.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -253,7 +274,10 @@
           "text": "Prospectively, file accounting entries with the Commission to seek approval for the property acquired that constitutes a distinct operating system, or an integral portion thereof, when the purchase price exceeds $250,000.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 250000.0,
+      "amount_usd_quote": "Bridger did not file journal entries for consideration and approval for two operating systems it acquired in 2003 and 2017 both with a purchase price that exceeded $250,000.",
+      "amount_usd_page": 7
     },
     {
       "index": 9,
@@ -276,14 +300,20 @@
           "text": "Prospectively, file an accounting request with the Commission to seek approval to use Account 710, Other Credits to Retained Income, as required by the instructions for this account. F.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
       "title": "Method to Derive Return on Equity",
       "summary": "Bridger derived its return on equity (ROE) using a combination of the Discounted Cash Flow (DCF) Model, Capital Asset Pricing Model (CAPM), and Risk Premium Model for Page 700, during the audit period. This did not fully align with the Commission’s previous and current policy statements on determining ROE for oil pipelines. Bridger’s ROE derivation is an important part of ensuring cost- of-service information is not misleading and enables shippers and other interested parties to make informed decisions related to Page 700. Prospectively, Bridger should consider developing its ROE for Page 700 using a method consistent with Commission policy. E.",
       "is_other_matter": true,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

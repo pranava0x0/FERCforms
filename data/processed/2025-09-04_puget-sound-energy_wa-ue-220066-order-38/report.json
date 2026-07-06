@@ -22,15 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $88 million",
-      "summary": "o be known and measurable, used and useful, and prudent. 3 Staff explains that PSE pursued multiple grant opportunities in excess of $88 million and that of the 19 grant applications submitted, eight were successful. However, Staff notes that not all the grants had a monetary component, and th",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

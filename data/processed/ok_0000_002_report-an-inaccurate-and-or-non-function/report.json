@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "OK",
   "source": "Corporation Commission",
-  "doc_type": null,
+  "doc_type": "citizen tip-line / complaint-reporting page (not a downloadable document)",
   "id": "ok_0000_002_report-an-inaccurate-and-or-non-function",
   "company": "Report an Inaccurate and/or Non-Functioning EV Charging Station",
   "company_raw": "Report an Inaccurate and/or Non-Functioning EV Charging Station",

@@ -22,22 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Disallowance: $16.36 million",
-      "summary": "act in the most cost-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at u",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $7.91 million",
-      "summary": "st-effective manner and that a monetary penalty was appropriate. DRA recommends a $16.36 million disallowance ($7.91 million for on-peak hour-ahead sales and $8.45 million for off-peak hour-ahead sales) for SCE selling energy in the hour-ahead market at unreasonable prices",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
-  "structured": true
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
 }

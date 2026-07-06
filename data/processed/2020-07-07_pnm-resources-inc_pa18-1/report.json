@@ -55,7 +55,10 @@
           "text": "Provide to DAA a summary of the above-described review in a quarterly compliance report for two consecutive quarters after this audit report is issued.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 2,
@@ -78,7 +81,10 @@
           "text": "After the new process is adopted, provide validation results in a quarterly compliance report to DAA for two consecutive quarters after this audit report is issued to demonstrate the new process works consistently.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 121500.0,
+      "amount_usd_quote": "These estimated costs did not reflect the actual transmission costs and resulted in PNM overcharging a transmission customer by approximately $121,500.",
+      "amount_usd_page": 7
     },
     {
       "index": 3,
@@ -101,7 +107,10 @@
           "text": "Develop and implement processes and procedures to review e-tags that have a transmission segment(s) associated with a Network Integration Transmission Service (NITS) request to ensure the proper use of transmission service.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
@@ -169,21 +178,30 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
       "title": "Asset Retirement Obligations (ARO)",
       "summary": "PNM did not obtain Commission approval in advance of recovering asset retirement obligation costs in its transmission formula rate calculations. Also, PNM did not file its accounting entries with the Commission to reclassify approximately $37 million from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only) to Account 435, Extraordinary Deductions.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 37000000.0,
+      "amount_usd_quote": "Also, PNM did not file its accounting entries with the Commission to reclassify approximately $37 million from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant (Major Only) to Account 435, Extraordinary Deductions.",
+      "amount_usd_page": 7
     },
     {
       "index": 6,
       "title": "Allowance for Funds Used During Construction (AFUDC)",
       "summary": "PNM’s methods for calculating and accounting for its AFUDC rate were deficient and caused PNM’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • PNM improperly included in its short-term debt rate an amount labeled “other interest,” which represented the interest recorded against transmission and interconnection study advances paid to PNM. • PNM incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • PNM combined the costs of all debt issuances, rather than individually computing the costs of each debt issuance, to determine the weighted cost of long-term debt. As a result of these methods, PNM overstated AFUDC by approximately $443,000 for 2015 and approximately $1,151,000 for 2016.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 443000.0,
+      "amount_usd_quote": "As a result of these methods, PNM overstated AFUDC by approximately $443,000 for 2015 and approximately $1,151,000 for 2016.",
+      "amount_usd_page": 8
     },
     {
       "index": 7,
@@ -201,7 +219,10 @@
           "text": "Revise its procedures to record the upfront and quarterly commitment fees excluded from AFUDC rate calculations in Account 930.2, Miscellaneous General Expenses.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -214,7 +235,10 @@
           "text": "Revise its accounting policies to ensure that production-related remediation expenses are accounted for in production expense accounts, consistent with the Commission’s accounting regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 9,
@@ -227,7 +251,10 @@
           "text": "Develop and implement processes and procedures to verify schedules against non-OASIS reservations as part of its e-tag validation process to ensure the accuracy of all attributes, including the “Affiliate” flag.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -245,7 +272,10 @@
           "text": "Refile the affected EQR filings in coordination with the refilings to be undertaken pursuant to Recommendation 31 in Finding 10 of this audit report.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 11,
@@ -288,21 +318,30 @@
           "text": "Document its ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review, including PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 12,
       "title": "Use of non-OASIS Reservations",
       "summary": "PNM’s transmission function created Transmission Service Numbers (TSN), a subset of non-OASIS reservations, and assigned TSNs to WPM in order to facilitate scheduling of transmission service. Since TSNs are created outside of OASIS, PNM’s scheduling of transmission service using the TSNs was less transparent than typical Transmission Service Requests (TSR) created in OASIS.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 13,
       "title": "After-the-Fact Reservation and Scheduling Practice",
       "summary": "PNM performs an “after-the-fact” (ATF) review to determine overuse of transmission service by its transmission customers. However, this ATF review is not documented as a formal business practice and posted on OASIS. Audit staff encourages PNM to document this ATF review as a formal business practice and post the business practice document on OASIS in order to enhance transparency of the ATF review. The formal business practice should include PNM’s ATF evaluation process, the approval/denial process, and information on the related transmission and ancillary service charges. D. Summary of",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

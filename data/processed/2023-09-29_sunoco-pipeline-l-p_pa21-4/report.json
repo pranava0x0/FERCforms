@@ -49,7 +49,10 @@
           "text": "Implement process improvements available through automated system processes or other means to increase efficiency and accuracy of prorated capacity awarded.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 2,
@@ -77,7 +80,10 @@
           "text": "File currently effective versions of Tariff Nos. 6.0.0 and 169.0.0 in eTariff, along with any prior versions that were inadvertently omitted from eTariff, so that eTariff includes an accurate record of all Commission-approved versions of these tariffs. Also, correct the collation value(s), so that they 2 Electronic Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified Order No. 714-A, 147 FERC ¶ 61,115 (2014). will provide proper sequencing of Sunoco’s tariff records in eTariff and update all miscoded filings.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
@@ -105,7 +111,10 @@
           "text": "For the next FERC Form No. 6 annual filing ensure that the noncarrier property and related expenses are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 104113.0,
+      "amount_usd_quote": "This resulted in Sunoco overstating total cost of service by $104,113 (2018), $1,432,068 (2019), and $3,289,888 (2020).",
+      "amount_usd_page": 7
     },
     {
       "index": 4,
@@ -143,7 +152,10 @@
           "text": "For the next FERC Form No. 6 annual filing ensure that the nonoperating expenses and expenses unrelated to Sunoco’s business are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 1828678.0,
+      "amount_usd_quote": "The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, ranging between $562,806 to $1,828,678, during the audit period.",
+      "amount_usd_page": 7
     },
     {
       "index": 5,
@@ -166,7 +178,10 @@
           "text": "For the next FERC Form No. 6 annual filing ensure that impacts from the changes in depreciation rates are accurately accounted for and reported in current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -189,7 +204,10 @@
           "text": "Ensure that all future FERC Form No. 6 submissions reflect Sunoco’s revised PLA procedures. Additionally, for the next FERC Form No. 6 annual filing ensure that PLA is accurately reported in current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 5509857.0,
+      "amount_usd_quote": "These understatements were approximately $5,509,857 (2018), $4,662,188 (2019), and $3,054,798 (2020).",
+      "amount_usd_page": 8
     },
     {
       "index": 7,
@@ -217,7 +235,10 @@
           "text": "For the next FERC Form No. 6 annual filing ensure that the effects of IDC are removed from the AFUDC computation for the current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 1706995.0,
+      "amount_usd_quote": "Consequently, Sunoco overstated its total cost of service on Page 700 by $1,706,995 and $1,986,041 in 2019 and 2020, respectively.",
+      "amount_usd_page": 8
     },
     {
       "index": 8,
@@ -245,7 +266,10 @@
           "text": "For the next FERC Form No. 6 annual filing made by Sunoco, exclude cost components related to asset retirement obligations that would impact the calculation of rate base from the rate base computation for the current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 4400000.0,
+      "amount_usd_quote": "This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
+      "amount_usd_page": 8
     },
     {
       "index": 9,
@@ -273,7 +297,10 @@
           "text": "For the next FERC Form No. 6 annual filing, correctly include amortization related to a throughput and deficiency (T&D) agreement in the depreciation expense computation and correctly calculate working capital in the rate base computation on Page 700 for the current and comparative years and provide appropriate footnote disclosures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -291,7 +318,10 @@
           "text": "Review the reporting deficiencies with relevant staff to ensure they include on a prospective basis all required information in Sunoco’s FERC Form No. 6 filings. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

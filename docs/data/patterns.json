@@ -1,14 +1,13 @@
 {
-  "report_count": 494,
-  "finding_count": 1341,
+  "report_count": 407,
+  "finding_count": 813,
   "other_matter_count": 10,
   "recommendation_count": 2030,
   "by_industry": {
-    "electric": 260,
-    "unknown": 173,
-    "gas": 42,
-    "oil": 18,
-    "water": 1
+    "electric": 259,
+    "unknown": 91,
+    "gas": 39,
+    "oil": 18
   },
   "by_year": {
     "2005": 2,
@@ -25,7 +24,7 @@
     "2022": 21,
     "2023": 26,
     "2024": 46,
-    "2025": 65,
+    "2025": 68,
     "2026": 8
   },
   "by_function": {
@@ -103,28 +102,13 @@
         "gas cost adjustment",
         "energy cost recovery"
       ],
-      "finding_count": 28,
-      "report_count": 54,
+      "finding_count": 12,
+      "report_count": 55,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
         "Auxiliary Fuel Costs in Nuclear Power Generation",
-        "Approval: $225,000\n"
-      ]
-    },
-    {
-      "theme": "Depreciation",
-      "description": "Unapproved or incorrect depreciation rates applied to plant.",
-      "keywords": [
-        "depreciation"
-      ],
-      "finding_count": 70,
-      "report_count": 50,
-      "example_titles": [
-        "Computation of Depreciation Rates",
-        "Allowance for Funds Used During Construction",
-        "Depreciation Rates and Study",
-        "Allocation of Overhead Costs to CWIP"
+        "Amortization of Retail Regulatory Assets"
       ]
     },
     {
@@ -147,23 +131,18 @@
       ]
     },
     {
-      "theme": "Cost of service & rates",
-      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+      "theme": "Depreciation",
+      "description": "Unapproved or incorrect depreciation rates applied to plant.",
       "keywords": [
-        "cost of service",
-        "cost-of-service",
-        "rate base",
-        "rate of return",
-        "return on equity",
-        "rate design"
+        "depreciation"
       ],
-      "finding_count": 83,
-      "report_count": 45,
+      "finding_count": 63,
+      "report_count": 46,
       "example_titles": [
-        "Approval: $1,277,051,206. ",
-        "Approval: $35.7 million",
-        "Annual Membership Dues",
-        "Annual Cost of Service Based Analysis Schedule"
+        "Computation of Depreciation Rates",
+        "Allowance for Funds Used During Construction",
+        "Depreciation Rates and Study",
+        "Allocation of Overhead Costs to CWIP"
       ]
     },
     {
@@ -186,31 +165,14 @@
       ]
     },
     {
-      "theme": "Affiliate / intercompany transactions",
-      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-      "keywords": [
-        "affiliate",
-        "intercompany",
-        "inter-company"
-      ],
-      "finding_count": 61,
-      "report_count": 44,
-      "example_titles": [
-        "Accounting for Distribution and Meter-Related Costs",
-        "Cost Allocations and Affiliated Interests",
-        "Settlement: agreement",
-        "Budget And Finance"
-      ]
-    },
-    {
       "theme": "AFUDC / cost of capital",
       "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
       "keywords": [
         "allowance for funds used during construction",
         "afudc"
       ],
-      "finding_count": 56,
-      "report_count": 43,
+      "finding_count": 55,
+      "report_count": 42,
       "example_titles": [
         "Allowance for Funds Used During Construction",
         "Capitalization of Vegetation Management Costs",
@@ -219,18 +181,55 @@
       ]
     },
     {
+      "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 55,
+      "report_count": 42,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Cost Allocations and Affiliated Interests",
+        "Budget And Finance",
+        "Affiliated Interests and Cost Allocations"
+      ]
+    },
+    {
+      "theme": "Cost of service & rates",
+      "description": "Errors in rate-base or return inputs to cost-of-service rates.",
+      "keywords": [
+        "cost of service",
+        "cost-of-service",
+        "rate base",
+        "rate of return",
+        "return on equity",
+        "rate design"
+      ],
+      "finding_count": 54,
+      "report_count": 35,
+      "example_titles": [
+        "Annual Membership Dues",
+        "Annual Cost of Service Based Analysis Schedule",
+        "Nonoperating and Operating Expenses",
+        "Recognition of Intrastate Transportation Movements"
+      ]
+    },
+    {
       "theme": "Tariff administration & oversight",
       "description": "Not following the utility's own FERC-approved tariff.",
       "keywords": [
         "tariff"
       ],
-      "finding_count": 50,
-      "report_count": 38,
+      "finding_count": 41,
+      "report_count": 35,
       "example_titles": [
-        "Settlement: Agreement",
         "Renewable Natural Gas Quality Specifications",
         "Tariff Administration and Oversight",
-        "Creditworthiness Standards"
+        "Creditworthiness Standards",
+        "Customer Service (continued)"
       ]
     },
     {
@@ -244,7 +243,7 @@
         "compliance program"
       ],
       "finding_count": 29,
-      "report_count": 34,
+      "report_count": 35,
       "example_titles": [
         "Corporate Governance",
         "Cost Allocations and Affiliated Interests",
@@ -265,31 +264,6 @@
         "Capitalization of Vegetation Management Costs",
         "Property Unit Listing",
         "Allocation of Overhead Costs to CWIP"
-      ]
-    },
-    {
-      "theme": "Storm cost recovery & securitization",
-      "description": "Storm restoration costs, storm riders/reserves, or securitization.",
-      "keywords": [
-        "storm cost",
-        "storm protection plan",
-        "storm restoration",
-        "storm damage",
-        "storm rider",
-        "storm expense",
-        "storm recovery",
-        "storm deferral",
-        "storm revenue",
-        "storm reserve",
-        "securitization"
-      ],
-      "finding_count": 23,
-      "report_count": 14,
-      "example_titles": [
-        "Approval: $69.8 million",
-        "Approval: $78 million",
-        "Approval: $85.7 million",
-        "Electric Operations"
       ]
     },
     {
@@ -314,34 +288,6 @@
         "Customer Service (continued)",
         "Customer Operations",
         "Financial Management"
-      ]
-    },
-    {
-      "theme": "Service reliability & vegetation management",
-      "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
-      "keywords": [
-        "vegetation",
-        "electric reliability",
-        "service reliability",
-        "reliability performance",
-        "reliability metric",
-        "reliability program",
-        "reliability report",
-        "saidi",
-        "caidi",
-        "outage cause",
-        "outages caused",
-        "emergency outage",
-        "outage management",
-        "outage response"
-      ],
-      "finding_count": 15,
-      "report_count": 14,
-      "example_titles": [
-        "Capitalization of Vegetation Management Costs",
-        "Settlement: terms",
-        "Settlement: Agreement",
-        "Electric Operations"
       ]
     },
     {
@@ -407,6 +353,31 @@
       ]
     },
     {
+      "theme": "Storm cost recovery & securitization",
+      "description": "Storm restoration costs, storm riders/reserves, or securitization.",
+      "keywords": [
+        "storm cost",
+        "storm protection plan",
+        "storm restoration",
+        "storm damage",
+        "storm rider",
+        "storm expense",
+        "storm recovery",
+        "storm deferral",
+        "storm revenue",
+        "storm reserve",
+        "securitization"
+      ],
+      "finding_count": 9,
+      "report_count": 11,
+      "example_titles": [
+        "Electric Operations",
+        "Wholesale Storm Damage Revenues",
+        "Other Special Funds Related To Storm Damages",
+        "Regulatory Assets"
+      ]
+    },
+    {
       "theme": "Informational postings",
       "description": "Required public postings (e.g., OASIS) missing, late, or incomplete.",
       "keywords": [
@@ -444,23 +415,31 @@
       ]
     },
     {
-      "theme": "Information technology & systems",
-      "description": "IT governance, systems, budgets, or project-management deficiencies.",
+      "theme": "Service reliability & vegetation management",
+      "description": "Electric reliability (SAIDI/CAIDI), outages, or vegetation-management programs.",
       "keywords": [
-        "information technology",
-        "customer information system",
-        "it budget",
-        "it project",
-        "it backlog",
-        "it governance"
+        "vegetation",
+        "electric reliability",
+        "service reliability",
+        "reliability performance",
+        "reliability metric",
+        "reliability program",
+        "reliability report",
+        "saidi",
+        "caidi",
+        "outage cause",
+        "outages caused",
+        "emergency outage",
+        "outage management",
+        "outage response"
       ],
-      "finding_count": 11,
+      "finding_count": 10,
       "report_count": 10,
       "example_titles": [
-        "Approval: $156.9 million",
-        "Information Systems",
-        "Information Technology",
-        "Information Technology And Cyber Security"
+        "Capitalization of Vegetation Management Costs",
+        "Electric Operations",
+        "Accounting for Vegetation Management Costs",
+        "Accounting for Amortization of Regulatory Assets"
       ]
     },
     {
@@ -477,6 +456,26 @@
         "Customer Operations",
         "Rg&E.",
         "Governance"
+      ]
+    },
+    {
+      "theme": "Information technology & systems",
+      "description": "IT governance, systems, budgets, or project-management deficiencies.",
+      "keywords": [
+        "information technology",
+        "customer information system",
+        "it budget",
+        "it project",
+        "it backlog",
+        "it governance"
+      ],
+      "finding_count": 10,
+      "report_count": 9,
+      "example_titles": [
+        "Information Systems",
+        "Information Technology",
+        "Information Technology And Cyber Security",
+        "Customer Service"
       ]
     },
     {
@@ -519,23 +518,14 @@
       "keywords": [
         "creditworthiness"
       ],
-      "finding_count": 2,
-      "report_count": 2,
+      "finding_count": 1,
+      "report_count": 1,
       "example_titles": [
-        "Creditworthiness Standards",
-        "Settlement: Agreement"
+        "Creditworthiness Standards"
       ]
     }
   ],
   "top_titles": [
-    {
-      "title": "Settlement: Agreement",
-      "count": 336
-    },
-    {
-      "title": "Settlement: agreement",
-      "count": 39
-    },
     {
       "title": "FERC Form No. 1 Reporting",
       "count": 18
@@ -545,16 +535,8 @@
       "count": 16
     },
     {
-      "title": "Settlement: terms",
-      "count": 12
-    },
-    {
       "title": "Customer Service",
       "count": 11
-    },
-    {
-      "title": "Settlement: AGREEMENT",
-      "count": 10
     },
     {
       "title": "Allowance for Funds Used During Construction (AFUDC)",
@@ -621,13 +603,29 @@
       "count": 5
     },
     {
-      "title": "Approval: $5,475 ",
+      "title": "FERC Form No. 2 Reporting",
       "count": 5
     },
     {
-      "title": "Approval: $43,409 ",
+      "title": "Fleet Management",
       "count": 5
+    },
+    {
+      "title": "Annual Cost of Service Based Analysis Schedule",
+      "count": 4
+    },
+    {
+      "title": "FERC Form No. 6 Reporting",
+      "count": 4
+    },
+    {
+      "title": "Accounting for Administrative and General Expenses",
+      "count": 4
+    },
+    {
+      "title": "Excess Accumulated Deferred Income Tax",
+      "count": 4
     }
   ],
-  "generated_at": "2026-06-23"
+  "generated_at": "2026-07-06"
 }

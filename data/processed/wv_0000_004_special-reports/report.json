@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WV",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "agency reference/navigation page",
   "id": "wv_0000_004_special-reports",
   "company": "Special Reports",
   "company_raw": "Special Reports",

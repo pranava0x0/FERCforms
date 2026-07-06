@@ -26,15 +26,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 1,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Settlement: Agreement",
-      "summary": "ility property and are 17 summarized below on Table 10. 18 19 20 35 Order Approving Stipulation and Settlement Agreement, Exhibit A – Stipulation & Settlement Agreement, Attachment A, Schedule 13, TPUC Docket No. 16-00001 (October 19, 2016). 36 Consumer Advocate Revenue",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

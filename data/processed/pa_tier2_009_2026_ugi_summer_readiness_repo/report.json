@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "PA",
   "source": "State of PA Utility Commission",
-  "doc_type": "report",
+  "doc_type": "utility seasonal-readiness compliance filing",
   "id": "pa_tier2_009_2026_ugi_summer_readiness_repo",
   "company": "2026 ugi summer readiness report",
   "company_raw": "2026 ugi summer readiness report",

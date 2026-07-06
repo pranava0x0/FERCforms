@@ -56,7 +56,7 @@ class SourceSeed(BaseModel):
 
     id: str                       # stable slug (also the raw-PDF filename + processed dir)
     company: str                  # audited entity / case caption
-    collection: str               # "state_audit" | "prudence_review"
+    collection: str               # "state_audit" | "prudence_review" | "state_rate_case" | "state_reference"
     jurisdiction: str             # "PA" | "MI" | "FERC" | ...
     source: str                   # human label, e.g. "PA PUC Bureau of Audits"
     doc_type: Optional[str] = None  # e.g. "management audit", "Commission order"
@@ -124,6 +124,15 @@ class Finding(BaseModel):
     summary: Optional[str] = None  # verbatim noncompliance description
     is_other_matter: bool = False  # True for "Other Matter" items vs noncompliance
     recommendations: list[Recommendation] = Field(default_factory=list)
+    # The headline dollar figure this finding cites (the first amount mentioned in its
+    # own summary/recommendations text — never re-derived from unvetted raw text). See
+    # pipeline/amounts.py. amount_usd_quote is the verbatim sentence carrying the figure
+    # (a citation a reader can Ctrl-F against the finding's own summary/recommendations
+    # AND against the source PDF page); amount_usd_page is that page's PDF page number.
+    # All three are None until a report has been through pipeline.amounts enrichment.
+    amount_usd: Optional[float] = None
+    amount_usd_quote: Optional[str] = None
+    amount_usd_page: Optional[int] = None
 
 
 class AuditReport(BaseModel):
@@ -135,7 +144,12 @@ class AuditReport(BaseModel):
     # FERC audit corpus valid without rewriting 120 committed report.json files.
     #   "ferc_audit"      — FERC Office of Enforcement audit reports (Form 1/2/6)
     #   "prudence_review" — FERC rate-case prudence determinations (metadata-only)
-    #   "state_audit"     — state PUC/PSC/SCC audits & prudence reviews
+    #   "state_audit"     — state PUC/PSC/SCC audits of a regulated utility
+    #   "state_rate_case" — state rate-case orders/testimony/settlements (metadata-only)
+    #   "state_reference" — real, on-theme state PUC docs that are NOT an audit of a
+    #                       utility (a commission's own self-audit, a blank report-form
+    #                       template, a recurring compliance/informational filing) —
+    #                       kept out of state_audit so they don't dilute its stats
     collection: str = "ferc_audit"
     jurisdiction: str = "FERC"          # "FERC" | "PA" | "MI" | "VA" | "IL" | ...
     source: str = ""                    # human label, e.g. "PA PUC Bureau of Audits"

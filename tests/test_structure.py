@@ -360,3 +360,50 @@ def test_recovered_reports_have_expected_findings():
         assert rpt is not None, f"{rid} missing from baked corpus"
         assert rpt["finding_count"] == n, f"{rid}: expected {n} findings, got {rpt['finding_count']}"
         assert all(f["title"] for f in rpt["findings"]), f"{rid}: a finding has no title"
+
+
+@pytest.mark.parametrize(
+    "structure_fn",
+    [structure.structure_regulatory_order, structure.structure_state_rate_case],
+)
+def test_metadata_only_structurers_handle_existing_structured_key(structure_fn):
+    """Regression (2026-07-06 code review): both functions build their return value
+    via `AuditReport(**{k: v for k, v in existing_report.items() if k not in (...)},
+    ..., structured=False)`. Every committed report.json already has a `structured`
+    key, so if that key isn't excluded from the spread, this raises `TypeError: got
+    multiple values for keyword argument 'structured'` on every re-run against an
+    already-processed record — silently caught only by the outer per-record
+    try/except in pipeline.structure's main(), so a whole collection would fail to
+    re-structure without a loud error. Assert it doesn't."""
+    existing_report = {
+        "collection": "state_rate_case",
+        "jurisdiction": "CA",
+        "source": "State Regulatory Commission",
+        "doc_type": "rate case order",
+        "id": "2024-03-05_some-company_pa99-1",
+        "company": "Some Company",
+        "company_raw": "Some Company (PA99-1)",
+        "docket": "PA99-1",
+        "docket_full": None,
+        "issued_date": "2024-03-05",
+        "source_page_url": "https://example.gov/order.pdf",
+        "pdf_download_url": "https://example.gov/order.pdf",
+        "captured_at": "2026-02-03",
+        "source_note": "",
+        "archived_via": None,
+        "page_count": 2,
+        "scanned_pages": [],
+        "ocr_used": False,
+        "audit_period": None,
+        "industry": "electric",
+        "audit_type": None,
+        "functions": [],
+        "forms": [],
+        "finding_count": 3,  # a stale nonzero value the spread must not resurrect
+        "findings": [{"index": 1, "title": "Stale Finding", "summary": None, "recommendations": []}],
+        "structured": True,  # the collision-prone key
+    }
+    report = structure_fn(_entry(), _report_text(), existing_report)
+    assert report.structured is False
+    assert report.findings == []
+    assert report.finding_count == 0

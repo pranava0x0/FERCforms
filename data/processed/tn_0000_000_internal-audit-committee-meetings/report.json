@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TN",
   "source": "Regulatory Authority",
-  "doc_type": null,
+  "doc_type": "administrative notice / meeting-schedule page",
   "id": "tn_0000_000_internal-audit-committee-meetings",
   "company": "Internal Audit Committee Meetings",
   "company_raw": "Internal Audit Committee Meetings",

@@ -24,36 +24,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 4,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Settlement: Agreement",
-      "summary": "e Report.26 27. The Parties set forth the terms of their agreement in a Comprehensive and Unanimous Settlement Agreement (the Settlement) filed on June 26, 2024, and attached hereto as Appendix A.27 28. On August 29, 2024, the Parties jointly filed a set of Proposed Fin",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Settlement: Agreement",
-      "summary": "hird Prehearing Order (June 17, 2024) (eDocket No. 20246-207760-01). 27 Comprehensive and Unanimous Settlement Agreement (June 26, 2024) (eDocket No. 20246-207989- 01). 28 Proposed Findings of Fact, Conclusions of Law, and Recommendation to Accept Settlement (eDocket No",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Settlement: agreement",
-      "summary": "ettlement offers and discussions related to the parties’ compromises. If the Commission rejects the Settlement, the agreement further provides that the Settlement shall not be part of the record and that no party may use settlement materials for any purpose in any proceeding",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 4,
-      "title": "Settlement: AGREEMENT",
-      "summary": "s expressly adopted by the Commission as its final order. [211538/1] 22 [211538/1] APPENDIX A SETTLEMENT AGREEMENT APPENDIX B CITATION DETAIL FOR FOOTNOTE 57 57 Jason Donabauer (eDocket No. 202311-200665-01); Ben Fladager (eDocket No. 20241-201723-01); Sandr",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

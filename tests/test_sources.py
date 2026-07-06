@@ -293,6 +293,74 @@ def test_no_garbled_findings_in_committed_corpus():
     assert not offenders, "garbled findings in committed corpus:\n" + "\n".join(offenders[:40])
 
 
+def test_state_rate_case_reports_are_metadata_only():
+    """State rate-case orders/testimony/settlements are free-form legal prose with
+    no enumerable findings structure to anchor a parser on. A prior parser
+    (`_extract_rate_case_findings`, removed 2026-07-06) grabbed a blind +/-100/150
+    char window around any "$N ... disallow/approve" or "settlement ... agreement"
+    match and called it a "finding" — on real documents this produced mid-sentence
+    fragments (titles like "Settlement: Agreement", summaries starting
+    lowercase-mid-word) in 528 of the corpus's then-1341 findings, spanning 41
+    reports — the same "loose marker-based parser harvests garbage" anti-pattern
+    documented in CLAUDE.md/AGENTS.md. Every state_rate_case record must stay
+    metadata-only (structured=False, findings=[]), matching the prudence_review
+    default. See ISSUES.md 2026-07-06."""
+    offenders = []
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("collection") != "state_rate_case":
+            continue
+        if d.get("findings") or d.get("structured", True):
+            offenders.append(p.parent.name)
+    assert not offenders, f"state_rate_case reports must be metadata-only: {offenders}"
+
+
+def test_check_offline_rejects_quote_spanning_summary_and_recommendation():
+    """Regression (2026-07-06 code review): check_offline used to join summary +
+    every recommendation's text with a single space before the substring check, so
+    a quote that only exists as an artifact of that join (never actually verbatim
+    in either field) would incorrectly pass as 'self-consistent'."""
+    from pipeline import verify_amounts
+
+    finding = {
+        "index": 1,
+        "summary": "The company failed to recover",
+        "recommendations": [{"number": 1, "text": "$500,000 from the disallowed costs."}],
+        # This string never appears verbatim in EITHER field alone — only as an
+        # artifact of joining them with " ".
+        "amount_usd_quote": "failed to recover $500,000 from the disallowed costs.",
+        "amount_usd": 500000.0,
+        "amount_usd_page": 4,
+    }
+    fails = verify_amounts.check_offline("test-report", finding)
+    assert any("not a substring" in f for f in fails), f"expected a substring failure, got: {fails}"
+
+
+def test_amount_usd_citations_are_self_consistent():
+    """Corpus-wide OFFLINE guard (BACKLOG P1 #4 pilot, 2026-07-06): every committed
+    finding carrying amount_usd must have amount_usd/_quote/_page set together (never
+    partial), the quote must be a verbatim substring of that SAME finding's own
+    summary/recommendations (proves the citation wasn't invented), and the dollar
+    figure embedded in the quote must re-parse to exactly amount_usd. This is the
+    fast, no-network tier of pipeline.verify_amounts — run with --live for the
+    additional live source-page recheck."""
+    from pipeline import verify_amounts
+
+    offenders: list[str] = []
+    checked = 0
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        for f in d.get("findings", []):
+            if f.get("amount_usd") is None:
+                continue
+            checked += 1
+            offenders.extend(verify_amounts.check_offline(p.parent.name, f))
+    assert not offenders, "amount_usd citation problems:\n" + "\n".join(offenders[:40])
+    # Not a hard requirement (the pilot may still be in progress), but surface the
+    # count so a future reader can see how far the rollout has gotten.
+    logging.getLogger(__name__).info("checked %d cited finding(s)", checked)
+
+
 def test_committed_seeds_have_unique_pdf_urls():
     """No two seeds may point at the same PDF URL — that's the same document seeded
     twice (regression for the 2026-06-08 wave-2 dedup: parallel research agents
@@ -348,7 +416,7 @@ def test_all_seed_files_validate_and_have_unique_ids():
             continue  # Skip non-list seed files (e.g., tier3_targets.json which is a dict)
         seeds = [SourceSeed.model_validate(d) for d in data]  # raises on any bad record
         assert seeds, f"{path.name} is empty"
-        assert all(s.collection in {"state_audit", "prudence_review", "state_rate_case"} for s in seeds)
+        assert all(s.collection in {"state_audit", "prudence_review", "state_rate_case", "state_reference"} for s in seeds)
         all_ids += [s.id for s in seeds]
     assert len(set(all_ids)) == len(all_ids), "duplicate seed id across seed files"
 

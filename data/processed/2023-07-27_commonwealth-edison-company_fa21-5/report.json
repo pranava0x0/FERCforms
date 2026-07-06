@@ -60,7 +60,10 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 6100000.0,
+      "amount_usd_quote": "ComEd recorded approximately $6.1 million of costs incurred for the purpose of influencing the decisions of public official in various A&G and O&M accounts.",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
@@ -78,7 +81,10 @@
           "text": "Provide training to its staff on the revised procedures for properly accounting for settlement expenditures in ComEd’s books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 109000000.0,
+      "amount_usd_quote": "ComEd improperly recorded two settlement payments, totaling $109 million, made to the City of Chicago, that related to its distribution and production operations, in Account 186, Miscellaneous Deferred Debits, instead of expensing the cost to the distribution and production O&M accounts when it incurred the cost.",
+      "amount_usd_page": 7
     },
     {
       "index": 3,
@@ -156,14 +162,20 @@
           "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 14000000.0,
+      "amount_usd_quote": "As a result of ComEd’s improper accounting and the inclusion of AROs in transmission formula rate determinations, ComEd overstated its annual transmission revenue requirements by approximately $14 million from 2007 to 2020 and overbilled wholesale transmission customers.",
+      "amount_usd_page": 7
     },
     {
       "index": 4,
       "title": "Allocation of Overhead Costs to Construction Work in Progress (CWIP)",
       "summary": "ComEd capitalized overhead costs to Account 107, CWIP – Electric, using an allocation method that was not based on the actual time that employees were engaged in construction activities or on a representative time study. This may have led to ComEd charging costs to Account 107 that did not have a definitive relationship to construction. As a result, ComEd may have overstated construction costs recorded in Account 107, Construction Work in Progress, and electric plant in service, as well as accumulated depreciation and ADIT, and may have understated operating expenses. Moreover, this accounting may have led ComEd to overstate its wholesale annual transmission revenue requirement and overbill wholesale transmission customers.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -206,7 +218,10 @@
           "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -239,7 +254,10 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -297,7 +315,10 @@
           "text": "Refund the amounts disclosed in the refund report to wholesale transmission customers with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -330,7 +351,10 @@
           "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 180000.0,
+      "amount_usd_quote": "ComEd improperly recorded approximately $180 thousand of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages, instead of in Account 426.5, Other Deductions.",
+      "amount_usd_page": 8
     },
     {
       "index": 9,
@@ -383,7 +407,10 @@
           "text": "Refund amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -401,7 +428,10 @@
           "text": "Provide training to relevant staff on the revised policies and procedures for recording and reporting the effect of changes in tax laws or tax rates. Provide periodic training in these areas as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 11,
@@ -419,7 +449,10 @@
           "text": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas as needed. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

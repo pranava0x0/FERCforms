@@ -22,22 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 2,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $69.8 million",
-      "summary": "erefore, will accept its adjustments to the ENEC proposed revenue increase. The Companies should be allowed an annual ENEC increase of $69.8 million. As we explained in the Order issued in Case No. 24-0854-E-42T, we are approving the Companies’ proceeding with securitization. We anticipate that th",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $68.9 million",
-      "summary": "o tie coal contract prices to PJM energy market prices. CONCLUSIONS OF LAW 1. The Commission should allow $68.9 million in additional revenue requirements in this case, but that amount should be deferred to coincide with the decrease proposed by the Companies in their",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

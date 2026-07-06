@@ -65,7 +65,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 1960000.0,
+      "amount_usd_quote": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period.",
+      "amount_usd_page": 7
     },
     {
       "index": 2,
@@ -103,7 +106,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 667500.0,
+      "amount_usd_quote": "TEP improperly accounted for and reported $667,500 of Research, Development, and Demonstration (RD&D) expenses associated with renewable power generation in Account 909, Informational and Instructional Advertising Expenses (Major Only), and Account 923, Outside Services Employed, instead of in Account 549, Miscellaneous Other Power Generation Expenses (Major Only).",
+      "amount_usd_page": 7
     },
     {
       "index": 3,
@@ -146,7 +152,10 @@
           "text": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 29000000.0,
+      "amount_usd_quote": "TEP accounted for and reported approximately $29 million of unrecovered plant on its books when it retired, prior to the end of their useful life, certain generating assets during the audit period.",
+      "amount_usd_page": 7
     },
     {
       "index": 4,
@@ -184,7 +193,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 372368.0,
+      "amount_usd_quote": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various administrative and general (A&G) expense accounts, rather than recording the expenditures in Account 426.5, Other Deductions.",
+      "amount_usd_page": 8
     },
     {
       "index": 5,
@@ -222,7 +234,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 211000.0,
+      "amount_usd_quote": "TEP improperly accounted for and reported $211,000 in its A&G and operations and maintenance (O&M) accounts that should have been allocated to one or more of its affiliates.",
+      "amount_usd_page": 8
     },
     {
       "index": 6,
@@ -260,7 +275,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 26500.0,
+      "amount_usd_quote": "This led the company to overstate its FERC-jurisdictional annual transmission revenue requirement during the audit period by approximately $26,500.",
+      "amount_usd_page": 8
     },
     {
       "index": 7,
@@ -298,7 +316,10 @@
           "text": "Refund the amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 58800.0,
+      "amount_usd_quote": "As a result of the improper accounting for certain O&M expenses, TEP overstated its annual transmission revenue requirement by approximately $58,800 and over collected revenues from FERC- jurisdictional transmission customers.",
+      "amount_usd_page": 52
     },
     {
       "index": 8,
@@ -321,7 +342,10 @@
           "text": "Use Commission-approved depreciation rates to calculate inputs to its formula rate, or timely file a request under FPA section 205 for a change in rates.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 9,
@@ -344,7 +368,10 @@
           "text": "Within 60 days of issuance of this audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the transfer of ARO-related costs improperly recorded in Account 108 to Account 182.3.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 10,
@@ -362,7 +389,10 @@
           "text": "Provide training to its staff on the revised procedures for properly accounting for vendor discounts in its books and records. Also, develop a training program that supports the provision of periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 1800000.0,
+      "amount_usd_quote": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Office Supplies and Expenses.",
+      "amount_usd_page": 9
     },
     {
       "index": 11,
@@ -385,7 +415,10 @@
           "text": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

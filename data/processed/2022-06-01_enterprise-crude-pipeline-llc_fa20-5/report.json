@@ -57,7 +57,10 @@
           "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 78100000.0,
+      "amount_usd_quote": "The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period.",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
@@ -80,7 +83,10 @@
           "text": "Ensure all future FERC Form No. 6 submissions reflect ECPL’s revised PLA and GSD procedures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 46812994.0,
+      "amount_usd_quote": "The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
+      "amount_usd_page": 6
     },
     {
       "index": 3,
@@ -113,7 +119,10 @@
           "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 2706526.0,
+      "amount_usd_quote": "This resulted in ECPL overstating it cost of service on Page 700 by $57,242 to $2,706,526 during the audit period.",
+      "amount_usd_page": 6
     },
     {
       "index": 4,
@@ -161,7 +170,10 @@
           "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -194,7 +206,10 @@
           "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 6,
@@ -222,7 +237,10 @@
           "text": "Further, ensure future FERC Form No. 6 submissions reflect all corrective actions resulting from ECPL’s analysis and revised procedures. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

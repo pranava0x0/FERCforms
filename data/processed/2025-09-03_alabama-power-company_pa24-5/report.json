@@ -34,35 +34,50 @@
       "title": "Acquisition-Related Costs",
       "summary": "Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 3548278.0,
+      "amount_usd_quote": "Alabama Power did not track and exclude $3,548,278 of outside services relating to either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs.",
+      "amount_usd_page": 6
     },
     {
       "index": 2,
       "title": "Acquisition-Related Internal Labor",
       "summary": "Alabama Power did not track and exclude $1,768,184 of internal labor for its employees who performed work on either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs. As a result, a portion of these acquisition-related expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 1768184.0,
+      "amount_usd_quote": "Alabama Power did not track and exclude $1,768,184 of internal labor for its employees who performed work on either the TAP II or Calhoun Power acquisitions from accounts that were Commission-jurisdictional rate inputs.",
+      "amount_usd_page": 6
     },
     {
       "index": 3,
       "title": "Accounting for Lobbying Expenses",
       "summary": "Alabama Power improperly recorded $818,002 of lobbying expenses in Account 920, Administrative and General Salaries, and Account 426.5, Other Deductions, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political and Related Activities. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and improperly billed to transmission customers taking service under the OATT.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 818002.0,
+      "amount_usd_quote": "Alabama Power improperly recorded $818,002 of lobbying expenses in Account 920, Administrative and General Salaries, and Account 426.5, Other Deductions, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political and Related Activities.",
+      "amount_usd_page": 6
     },
     {
       "index": 4,
       "title": "Account Misclassifications",
       "summary": "Alabama Power improperly recorded expenses totaling $602,665 in various administrative and general (A&G) accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirement calculation and billed to transmission customers taking service under the OATT.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 602665.0,
+      "amount_usd_quote": "Alabama Power improperly recorded expenses totaling $602,665 in various administrative and general (A&G) accounts.",
+      "amount_usd_page": 7
     },
     {
       "index": 5,
       "title": "Accounting for Edison Electric Institute Membership Dues",
       "summary": "Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts. As a result, a portion of these expenses was improperly included in the Southern OATT’s system-wide transmission revenue requirements calculation and billed to transmission customers taking service under the OATT. D.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": 2942962.0,
+      "amount_usd_quote": "Alabama Power improperly recorded $2,942,962 of Edison Electric Institute (EEI) annual membership dues, including dues designated as lobbying and donation expenditures, in various A&G and nonoperating expense accounts.",
+      "amount_usd_page": 7
     }
   ],
   "structured": true

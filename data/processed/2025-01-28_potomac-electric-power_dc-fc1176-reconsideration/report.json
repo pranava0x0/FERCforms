@@ -22,29 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 3,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $63.4 million",
-      "summary": "No. 22328 at 179-181. Order No. 22358 Page No. 33 ratemaking adjustments, culminating in a modified approved revenue requirement of $63.4 million for CY 2024, $99.6 million for CY 2025 and $123.4 million for CY 2026. 78. The Commission also observes that OPC has not identified any errors in the",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $30 million",
-      "summary": "emonstrate exactly what AOBA has argued, that the ERA is added to the GT-LV rates in advance of the approved revenue requirement, adding approximately $30 million in revenue to that rate class. As the majority concedes in Order No. 22328: “If Pepco’s forecasts were more accurate (acknowledging that ",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Settlement: agreement",
-      "summary": "e Commission noted that “it was not until filing an application for reconsideration of the approved settlement agreement that GSA identified 21 specific issues for consideration.”116 The Commission further noted, in denying GSA’s reconsideration petition, that “GSA has",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_018_audit-of-the-consumer-complaint-division",
   "company": "Audit of the Consumer Complaint Division's, Informal Complaint Process (FY 2025)",
   "company_raw": "Audit of the Consumer Complaint Division's, Informal Complaint Process (FY 2025)",

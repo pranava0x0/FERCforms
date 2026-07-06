@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "DC",
   "source": "State of DC Utility Commission",
-  "doc_type": "report",
+  "doc_type": "recurring renewable-portfolio-standard / fuel-mix compliance filing",
   "id": "dc_tier2_026_renewable-may-2016",
   "company": "Renewable-May-2016",
   "company_raw": "Renewable-May-2016",

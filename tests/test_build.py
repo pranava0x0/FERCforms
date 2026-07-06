@@ -54,6 +54,7 @@ def test_meta_by_collection_counts_every_canonical_collection():
         "prudence_review": 0,
         "state_audit": 1,
         "state_rate_case": 0,
+        "state_reference": 0,
     }
     assert set(meta["by_collection"]) == set(build.COLLECTION_KEYS)
 

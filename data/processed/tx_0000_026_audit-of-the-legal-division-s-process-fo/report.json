@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "TX",
   "source": "Public Utility Commission",
-  "doc_type": "internal audit",
+  "doc_type": "commission internal audit (of the regulator's own operations, not a regulated utility)",
   "id": "tx_0000_026_audit-of-the-legal-division-s-process-fo",
   "company": "Audit of the Legal Division's Process for Contested Cases (FY 2020)",
   "company_raw": "Audit of the Legal Division's Process for Contested Cases (FY 2020)",

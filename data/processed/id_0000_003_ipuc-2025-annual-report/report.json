@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "ID",
   "source": "Public Utilities Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "id_0000_003_ipuc-2025-annual-report",
   "company": "IPUC 2025 Annual Report",
   "company_raw": "IPUC 2025 Annual Report",

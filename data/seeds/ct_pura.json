@@ -12,7 +12,7 @@
     "issued_date": null,
     "docket": "20-08-03",
     "captured_at": "2026-06-07",
-    "source_note": "Connecticut PURA Final Decision, Docket No. 20-08-03 \u2014 Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).",
+    "source_note": "Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the Electric Distribution Companies' (The Connecticut Light and Power Company d/b/a Eversource Energy and The United Illuminating Company) Preparation for and Response to Tropical Storm Isaias, resulting in civil penalties and management directives for inadequate emergency response (139 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/PURA/).",
     "parse": false
   },
   {
@@ -28,7 +28,26 @@
     "issued_date": null,
     "docket": "17-12-03RE011",
     "captured_at": "2026-06-07",
-    "source_note": "Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 \u2014 PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).",
+    "source_note": "Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).",
     "parse": false
+  },
+  {
+    "id": "2025-02-11_eversource-energy-connecticut-companies_ct-rfp-2022-01-management-audit",
+    "company": "Eversource Energy's Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company)",
+    "collection": "state_audit",
+    "jurisdiction": "CT",
+    "source": "Connecticut Public Utilities Regulatory Authority",
+    "doc_type": "management audit report",
+    "industry": "electric",
+    "pdf_url": "https://portal.ct.gov/-/media/pura/1---website-media/eversource-management-audit-public.pdf?rev=beac01ab144c40c4956b3eaea4df5cff&hash=284B093EE0D939A2ABD61731C0B58586",
+    "source_page_url": "https://portal.ct.gov/PURA/Docket/Management-Audit-Reports",
+    "accession": null,
+    "issued_date": "2025-02-11",
+    "docket": "RFP #2022-01",
+    "captured_at": "2026-07-06",
+    "source_note": "Management Audit of Eversource Energy's Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company), RFP #2022-01, Public Version, 443 pp, issued February 11, 2025. A statutorily-required PURA-ordered independent management audit (Conn. Gen. Stat. Sections 16-8(b) and 16-8c(b)) examining operations, internal controls, and affiliate transactions across Eversource's CT electric, gas, and water utilities — the corpus's first Connecticut management-audit-class document (prior CT records are rate-design/storm-response decisions) and its first Connecticut water utility (Aquarion). Listed for reference (metadata-only) pending a parser-format assessment for the existing M&O findings chain. Source: Connecticut PURA (portal.ct.gov/PURA/Docket/Management-Audit-Reports).",
+    "archived_via": null,
+    "parse": false,
+    "fetch": true
   }
 ]

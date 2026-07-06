@@ -34,7 +34,10 @@
       "title": "Merger-Related Capital Expenditures",
       "summary": "WEC Business Services and the WEC 3 electric utilities, which were allocated a portion of the service company’s costs, improperly accounted for their portion of approximately $142.2 million of merger- related capital costs in operating capital expenditure accounts and also improperly accounted for the related, resulting depreciation in operating expense accounts, rather than accounting for their portion of the $142.2 million in non-operating Account 426.5, Other Deductions. This improper accounting resulted in the inappropriate recovery of merger-related costs through two of the WEC electric utilities’ cost-based rate recovery mechanisms without the WEC electric utilities first seeking and obtaining the Commission’s approval for recovery under section 205 of the Federal Power Act as required by the 2015 merger order. As a result, the WEC electric utilities over- collected approximately $1,419,000 from wholesale customers during the hold- harmless period between 2015 and 2020.",
       "is_other_matter": false,
-      "recommendations": []
+      "recommendations": [],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 2,
@@ -82,7 +85,10 @@
           "text": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 3,
@@ -125,7 +131,10 @@
           "text": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 4,
@@ -168,7 +177,10 @@
           "text": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 5,
@@ -206,7 +218,10 @@
           "text": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": 3300000.0,
+      "amount_usd_quote": "WEC Business Services improperly accounted for total payments of around $3.3 million made annually to comply with a settlement agreement instrumental in the relicensing of a power plant it co-owns and operates through its franchised public utility, WEPCO.",
+      "amount_usd_page": 47
     },
     {
       "index": 6,
@@ -249,7 +264,10 @@
           "text": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. WEC Business Services LLC Docket No. FA21-2-000",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 7,
@@ -272,7 +290,10 @@
           "text": "Provide training to its staff on the revised procedures for properly accounting for vendor discounts and rebates in its books and records and provide periodic training in this area, as needed.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     },
     {
       "index": 8,
@@ -290,7 +311,10 @@
           "text": "Provide training to relevant staff on the revised FERC Form No. 60 policies, procedures, and practices. Provide periodic training in these areas, as needed. E.",
           "source_page": null
         }
-      ]
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
     }
   ],
   "structured": true

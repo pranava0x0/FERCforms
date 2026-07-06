@@ -22,29 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 3,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Settlement: AGREEMENT",
-      "summary": "PLAN EXTENSION OR RATE REVIEW, AND PROPOSED REVISIONS TO CERTAIN FEES ASSESSED TO CUSTOMERS GLOBAL SETTLEMENT STIPULATION AGREEMENT This Stipulation Term Sheet (“Stipulation”) is entered into by and among the Louisiana Public Service Commission (“LPSC” or “Commission”) Staff (“Sta",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Settlement: terms",
-      "summary": "ation as indicated by the signatures affixed hereto. Accordingly, the Parties propose the following settlement terms to the Commission: I. Conditions Precedent A. This Stipulation reflects a compromise, settlement, and accommodation among the Parties and the terms a",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Settlement: Agreement",
-      "summary": "s described above in paragraphs II.B, II.C, II.D, and II.E.; b) $5.8 million credit provided in the Settlement Agreement approved in LPSC Order No. U-34951; and c) $15 million increase in nuclear depreciation expense, further discussed in Section III.C.4 below. 3. The f",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }

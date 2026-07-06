@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WV",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "blank report-form template",
   "id": "wv_0000_005_annual-report-clec-blank-form",
   "company": "Annual Report CLEC Blank Form",
   "company_raw": "Annual Report CLEC Blank Form",

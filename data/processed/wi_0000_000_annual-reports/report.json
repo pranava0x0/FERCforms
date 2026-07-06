@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "WI",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "agency reference/navigation page",
   "id": "wi_0000_000_annual-reports",
   "company": "Annual Reports",
   "company_raw": "Annual Reports",

@@ -1,8 +1,8 @@
 {
-  "collection": "state_audit",
+  "collection": "state_reference",
   "jurisdiction": "MT",
   "source": "Public Service Commission",
-  "doc_type": null,
+  "doc_type": "state PUC administrative/reference document",
   "id": "mt_0000_001_2024-psc-annual-report",
   "company": "2024 PSC Annual Report",
   "company_raw": "2024 PSC Annual Report",

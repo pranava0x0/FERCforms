@@ -22,43 +22,7 @@
   "audit_type": null,
   "functions": [],
   "forms": [],
-  "finding_count": 5,
-  "findings": [
-    {
-      "index": 1,
-      "title": "Approval: $91,260,074\n",
-      "summary": "$0 $0 $0 $0 $0 $0 (5) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (6) Allowable Working Capital Costs $91,260,074 (7) Number of Days Lag 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 (8) Working Capital Requirement (9) Weighted Average Co",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 2,
-      "title": "Approval: $9,002,911 ",
-      "summary": "$0 $0 $0 $0 $0 (21) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (22) Allowable Working Capital Costs $9,002,911 $17,740,363 $23,348,504 $19,187,157 $14,298,113 $5,801,939 $3,365,355 $2,249,232 $1,905,760 $1,982,445 $1,989,370 $3,622,063 $104,493,212 (23) Number",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 3,
-      "title": "Approval: $23,806,638\n",
-      "summary": "$0 $0 $0 $0 $0 (36) Plus: Supply Related LNG O&M Costs $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (37) Allowable Working Capital Costs $23,806,638 (38) Number of Days Lag 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 32.92 (39) Working Capital Requirement (40) Weighted Average",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 4,
-      "title": "Approval: $1,089,461 ",
-      "summary": "72,885) ($174,431) ($787,885) ($3,328,078) ($8,360,951) ($7,653,525) ($4,156,160) ($25,707,398) (5) Allowable Working Capital Costs $1,089,461 $5,193,444 $5,634,365 $5,400,060 $5,517,845 $5,668,654 $6,059,056 $6,262,313 $6,371,400 $6,299,336 $6,087,882 $6,230,292 $65,814,108 (6) Number of Day",
-      "is_other_matter": false,
-      "recommendations": []
-    },
-    {
-      "index": 5,
-      "title": "Approval: $5,606,412 ",
-      "summary": "0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (19)Total Adjustments $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 $0 (20)Allowable Working Capital Costs $5,606,412 $3,486,113 $3,238,095 $2,661,004 $2,716,763 $2,677,824 $3,383,133 $9,959,991 $11,721,411 $23,053,617 $14,391,166 $11,932,267 $94,827,797 (21)Number of",
-      "is_other_matter": false,
-      "recommendations": []
-    }
-  ],
+  "finding_count": 0,
+  "findings": [],
   "structured": false
 }
