@@ -1,10 +1,10 @@
 {
-  "report_count": 405,
+  "report_count": 407,
   "finding_count": 813,
   "other_matter_count": 10,
   "recommendation_count": 2030,
   "by_industry": {
-    "electric": 257,
+    "electric": 259,
     "unknown": 91,
     "gas": 39,
     "oil": 18
@@ -24,7 +24,7 @@
     "2022": 21,
     "2023": 26,
     "2024": 46,
-    "2025": 66,
+    "2025": 68,
     "2026": 8
   },
   "by_function": {
@@ -189,7 +189,7 @@
         "inter-company"
       ],
       "finding_count": 55,
-      "report_count": 41,
+      "report_count": 42,
       "example_titles": [
         "Accounting for Distribution and Meter-Related Costs",
         "Cost Allocations and Affiliated Interests",
@@ -243,7 +243,7 @@
         "compliance program"
       ],
       "finding_count": 29,
-      "report_count": 34,
+      "report_count": 35,
       "example_titles": [
         "Corporate Governance",
         "Cost Allocations and Affiliated Interests",

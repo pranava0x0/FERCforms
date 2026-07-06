@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 405 records, 813 findings, 2030 recommendations. Generated 2026-07-06.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 407 records, 813 findings, 2030 recommendations. Generated 2026-07-06.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5726,6 +5726,17 @@ CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recov
 
 ---
 
+## The Narragansett Electric Company d/b/a Rhode Island Energy
+- Collection: State PUC Audits | Source: Rhode Island Public Utilities Commission
+- Docket: 25-08-GE | Audit type: n/a
+- Issued: 2025-11-14 | Industry: electric | FERC Form: n/a
+- Source page: https://ripuc.ri.gov/Docket-25-08-GE
+- Status: listed for reference (not machine-parsed into findings)
+
+Rhode Island Energy Billing System Evaluation (Redacted), Final Report for RIPUC Docket No. 25-08-GE, 109 pp, prepared by Guidehouse Inc. and Van Reen Accounting LLC for the Rhode Island PUC, issued November 14, 2025. Docket 25-08-GE opened March 2025 after billing discrepancies (delayed net-metering credit application causing customer overpayments); the Commission ordered an independent evaluation of RIE's electric and gas billing and related systems, operational status, accuracy, and effectiveness. Listed for reference (metadata-only). Source: Rhode Island PUC (ripuc.ri.gov/sites/g/files/xkgbur841/files/2025-11/RIE-BillingEval_Report_2025-11-14-REDACTED.pdf).
+
+---
+
 ## FirstEnergy Pennsylvania Electric Company
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: n/a | Audit type: n/a
@@ -5880,6 +5891,17 @@ Recommendations:
 
 Recommendations:
 2. This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).
+
+---
+
+## Eversource Energy's Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company)
+- Collection: State PUC Audits | Source: Connecticut Public Utilities Regulatory Authority
+- Docket: RFP #2022-01 | Audit type: n/a
+- Issued: 2025-02-11 | Industry: electric | FERC Form: n/a
+- Source page: https://portal.ct.gov/PURA/Docket/Management-Audit-Reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Management Audit of Eversource Energy's Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company), RFP #2022-01, Public Version, 443 pp, issued February 11, 2025. A statutorily-required PURA-ordered independent management audit (Conn. Gen. Stat. Sections 16-8(b) and 16-8c(b)) examining operations, internal controls, and affiliate transactions across Eversource's CT electric, gas, and water utilities — the corpus's first Connecticut management-audit-class document (prior CT records are rate-design/storm-response decisions) and its first Connecticut water utility (Aquarion). Listed for reference (metadata-only) pending a parser-format assessment for the existing M&O findings chain. Source: Connecticut PURA (portal.ct.gov/PURA/Docket/Management-Audit-Reports).
 
 ---
 

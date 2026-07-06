@@ -606,13 +606,13 @@
     "generated_at": "2026-07-06"
   },
   "state_audit": {
-    "report_count": 131,
+    "report_count": 133,
     "finding_count": 150,
     "other_matter_count": 0,
     "recommendation_count": 551,
     "by_industry": {
       "unknown": 86,
-      "electric": 34,
+      "electric": 36,
       "gas": 11
     },
     "by_year": {
@@ -624,7 +624,7 @@
       "2022": 3,
       "2023": 6,
       "2024": 10,
-      "2025": 9
+      "2025": 11
     },
     "by_function": {},
     "themes": [
@@ -639,12 +639,29 @@
           "compliance program"
         ],
         "finding_count": 25,
-        "report_count": 31,
+        "report_count": 32,
         "example_titles": [
           "Corporate Governance",
           "Cost Allocations and Affiliated Interests",
           "Governance And Management",
           "Rg&E."
+        ]
+      },
+      {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 14,
+        "report_count": 14,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "Budget And Finance",
+          "Affiliated Interests and Cost Allocations",
+          "Affiliated Interests and Cost Allocations (continued)"
         ]
       },
       {
@@ -689,23 +706,6 @@
           "Customer Service (continued)",
           "Customer Operations",
           "Financial Management"
-        ]
-      },
-      {
-        "theme": "Affiliate / intercompany transactions",
-        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-        "keywords": [
-          "affiliate",
-          "intercompany",
-          "inter-company"
-        ],
-        "finding_count": 14,
-        "report_count": 13,
-        "example_titles": [
-          "Cost Allocations and Affiliated Interests",
-          "Budget And Finance",
-          "Affiliated Interests and Cost Allocations",
-          "Affiliated Interests and Cost Allocations (continued)"
         ]
       },
       {
