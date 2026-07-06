@@ -26,14 +26,14 @@ def test_parse_dollar_amount(raw, expected):
     assert amounts.parse_dollar_amount(raw) == expected
 
 
-def test_first_dollar_mention_returns_containing_sentence_not_a_char_window():
+def test_find_dollar_mention_returns_containing_sentence_not_a_char_window():
     text = (
         "PSCo has a long history of proper accounting. "
         "PSCo improperly recorded $82,195 in compromise settlement payments relating to "
         "claims of alleged employee discrimination in Account 920. "
         "This is a separate unrelated sentence about something else."
     )
-    hit = amounts._first_dollar_mention(text)
+    hit = amounts.find_dollar_mention(text)
     assert hit is not None
     assert hit.raw == "$82,195"
     assert hit.amount_usd == 82195.0
@@ -45,10 +45,10 @@ def test_first_dollar_mention_returns_containing_sentence_not_a_char_window():
     assert "long history of proper accounting" not in hit.quote
 
 
-def test_first_dollar_mention_none_when_no_dollar_figure():
-    assert amounts._first_dollar_mention("No dollar figures in this sentence at all.") is None
-    assert amounts._first_dollar_mention(None) is None
-    assert amounts._first_dollar_mention("") is None
+def test_find_dollar_mention_none_when_no_dollar_figure():
+    assert amounts.find_dollar_mention("No dollar figures in this sentence at all.") is None
+    assert amounts.find_dollar_mention(None) is None
+    assert amounts.find_dollar_mention("") is None
 
 
 def test_find_primary_dollar_mention_prefers_summary_over_recommendations():
@@ -125,4 +125,46 @@ def test_locate_page_falls_back_to_bare_dollar_figure_when_sentence_reflows():
 def test_locate_page_none_when_not_found_anywhere():
     mention = amounts.DollarMention(raw="$1,234", quote="Nobody mentions $1,234 anywhere.", amount_usd=1234.0)
     pages = [PageText(page=1, char_count=10, is_image_only=False, extractor="pymupdf", text="completely unrelated text")]
+    assert amounts.locate_page(mention, pages) is None
+
+
+# --- regression tests for the 2026-07-06 code review ---
+
+def test_dollar_regex_multiplier_word_boundary():
+    """'$5 thousandths of a percent' must not match as '$5 thousand' (a silent
+    1000x inflation) — the multiplier word requires a real word boundary."""
+    hit = amounts.find_dollar_mention("The measurement error was $5 thousandths of a percent, immaterial.")
+    assert hit is not None
+    assert hit.raw == "$5"
+    assert hit.amount_usd == 5.0
+
+
+def test_dollar_range_skips_low_bound_for_a_complete_figure():
+    """'$5 to $10 million' must not report amount_usd=5.0 (the range's bare low
+    bound, missing the shared multiplier) — it should skip to the complete,
+    self-contained figure."""
+    hit = amounts.find_dollar_mention(
+        "The disallowance ranged from $5 to $10 million depending on the final rate design."
+    )
+    assert hit is not None
+    assert hit.raw == "$10 million"
+    assert hit.amount_usd == 10_000_000.0
+
+
+def test_dollar_range_with_hyphen_also_skips_low_bound():
+    hit = amounts.find_dollar_mention("Costs of $5-$10 million were disallowed.")
+    assert hit is not None
+    assert hit.amount_usd == 10_000_000.0
+
+
+def test_locate_page_bare_figure_does_not_match_inside_a_longer_number():
+    """A short raw figure like '$5' must not match as a prefix of an unrelated
+    longer figure like '$500,000' on some other page."""
+    mention = amounts.DollarMention(raw="$5", quote="The item cost only $5 according to the ledger.", amount_usd=5.0)
+    pages = [
+        PageText(
+            page=3, char_count=30, is_image_only=False, extractor="pymupdf",
+            text="Total settlement of $500,000 was reached with the affected customers.",
+        ),
+    ]
     assert amounts.locate_page(mention, pages) is None

@@ -67,7 +67,7 @@
         }
       ],
       "amount_usd": 1960000.0,
-      "amount_usd_quote": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of St",
+      "amount_usd_quote": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period.",
       "amount_usd_page": 7
     },
     {
@@ -195,7 +195,7 @@
         }
       ],
       "amount_usd": 372368.0,
-      "amount_usd_quote": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various admini",
+      "amount_usd_quote": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various administrative and general (A&G) expense accounts, rather than recording the expenditures in Account 426.5, Other Deductions.",
       "amount_usd_page": 8
     },
     {
@@ -391,7 +391,7 @@
         }
       ],
       "amount_usd": 1800000.0,
-      "amount_usd_quote": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Offic",
+      "amount_usd_quote": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Office Supplies and Expenses.",
       "amount_usd_page": 9
     },
     {

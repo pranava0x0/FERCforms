@@ -64,7 +64,7 @@
         }
       ],
       "amount_usd": 11400000.0,
-      "amount_usd_quote": "lying asset accounts had been fully depreciated. This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.  Maintained two carrie",
+      "amount_usd_quote": "This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.",
       "amount_usd_page": 6
     },
     {
@@ -124,8 +124,8 @@
       "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
       "is_other_matter": false,
       "recommendations": [],
-      "amount_usd": 3600000.0,
-      "amount_usd_quote": "rier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported",
+      "amount_usd": 5700000.0,
+      "amount_usd_quote": "This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million.",
       "amount_usd_page": 6
     },
     {

@@ -53,7 +53,7 @@
           "source_page": null
         }
       ],
-      "amount_usd": 739763.0,
+      "amount_usd": 930355.0,
       "amount_usd_quote": "This resulted in Bridger incorrectly reporting several line inputs used to derive cost of service on Page 700, which caused Bridger to overstate its total cost of service by between $739,763 to $930,355 during the audit period.",
       "amount_usd_page": 6
     },
@@ -177,8 +177,8 @@
           "source_page": null
         }
       ],
-      "amount_usd": 2800000.0,
-      "amount_usd_quote": "state portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
+      "amount_usd": 25000000.0,
+      "amount_usd_quote": "The annual interstate portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
       "amount_usd_page": 7
     },
     {

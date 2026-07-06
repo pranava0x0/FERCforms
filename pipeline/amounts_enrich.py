@@ -26,7 +26,7 @@ import json
 import logging
 from pathlib import Path
 
-from pipeline import amounts, config, extract, fetch
+from pipeline import amounts, config, fetch
 from pipeline.models import AuditReport
 
 logger = logging.getLogger(__name__)
@@ -38,9 +38,7 @@ def enrich_report(report_id: str, listing_by_id: dict, session) -> dict:
     data = json.loads(report_path.read_text(encoding="utf-8"))
     report = AuditReport.model_validate(data)
 
-    entry = listing_by_id[report_id]
-    fetch.download_pdf(session, entry, config.RAW_DIR)
-    text = extract.extract_report(entry, config.RAW_DIR, config.PROCESSED_DIR)
+    text = amounts.fetch_and_extract(listing_by_id[report_id], session)
 
     cited = 0
     uncited_mention = 0
@@ -85,11 +83,23 @@ def main() -> None:
         raise SystemExit(f"not in listing.json (FERC audits only): {missing}")
 
     session = fetch.make_session()
-    results = [enrich_report(i, listing_by_id, session) for i in args.ids]
+    results = []
+    failures: list[tuple[str, str]] = []
+    for i in args.ids:
+        try:
+            results.append(enrich_report(i, listing_by_id, session))
+        except Exception as exc:  # noqa: BLE001 — never let one report's fetch/extract failure abort the batch
+            failures.append((i, str(exc)))
+            logger.error("FAILED %s: %s", i, exc)
 
     total_cited = sum(r["cited"] for r in results)
     total_uncited = sum(r["uncited_mention"] for r in results)
-    logger.info("done: %d report(s), %d finding(s) cited, %d mention(s) uncited", len(results), total_cited, total_uncited)
+    logger.info(
+        "done: %d report(s) ok, %d failed, %d finding(s) cited, %d mention(s) uncited",
+        len(results), len(failures), total_cited, total_uncited,
+    )
+    for report_id, error in failures:
+        logger.error("  %s: %s", report_id, error)
 
 
 if __name__ == "__main__":

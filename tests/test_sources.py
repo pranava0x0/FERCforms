@@ -315,6 +315,27 @@ def test_state_rate_case_reports_are_metadata_only():
     assert not offenders, f"state_rate_case reports must be metadata-only: {offenders}"
 
 
+def test_check_offline_rejects_quote_spanning_summary_and_recommendation():
+    """Regression (2026-07-06 code review): check_offline used to join summary +
+    every recommendation's text with a single space before the substring check, so
+    a quote that only exists as an artifact of that join (never actually verbatim
+    in either field) would incorrectly pass as 'self-consistent'."""
+    from pipeline import verify_amounts
+
+    finding = {
+        "index": 1,
+        "summary": "The company failed to recover",
+        "recommendations": [{"number": 1, "text": "$500,000 from the disallowed costs."}],
+        # This string never appears verbatim in EITHER field alone — only as an
+        # artifact of joining them with " ".
+        "amount_usd_quote": "failed to recover $500,000 from the disallowed costs.",
+        "amount_usd": 500000.0,
+        "amount_usd_page": 4,
+    }
+    fails = verify_amounts.check_offline("test-report", finding)
+    assert any("not a substring" in f for f in fails), f"expected a substring failure, got: {fails}"
+
+
 def test_amount_usd_citations_are_self_consistent():
     """Corpus-wide OFFLINE guard (BACKLOG P1 #4 pilot, 2026-07-06): every committed
     finding carrying amount_usd must have amount_usd/_quote/_page set together (never

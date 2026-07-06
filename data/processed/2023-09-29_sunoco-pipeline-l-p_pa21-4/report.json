@@ -153,7 +153,7 @@
           "source_page": null
         }
       ],
-      "amount_usd": 562806.0,
+      "amount_usd": 1828678.0,
       "amount_usd_quote": "The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, ranging between $562,806 to $1,828,678, during the audit period.",
       "amount_usd_page": 7
     },
@@ -267,8 +267,8 @@
           "source_page": null
         }
       ],
-      "amount_usd": 2900000.0,
-      "amount_usd_quote": "lings. This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
+      "amount_usd": 4400000.0,
+      "amount_usd_quote": "This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
       "amount_usd_page": 8
     },
     {

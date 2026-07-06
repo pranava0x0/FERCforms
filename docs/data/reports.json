@@ -2216,7 +2216,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "amount_usd": 818002.0,
-        "amount_usd_quote": "Alabama Power improperly recorded $818,002 of lobbying expenses in Account 920, Administrative and General Salaries, and A",
+        "amount_usd_quote": "Alabama Power improperly recorded $818,002 of lobbying expenses in Account 920, Administrative and General Salaries, and Account 426.5, Other Deductions, instead of recording this amount in Account 426.4, Expenditures for Certain Civic, Political and Related Activities.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification",
@@ -6268,7 +6268,7 @@
           }
         ],
         "amount_usd": 24300000.0,
-        "amount_usd_quote": "SIGECO incorrectly included $24.3 million of merger costs in wholesale transmission formula rate service cost determinati",
+        "amount_usd_quote": "SIGECO incorrectly included $24.3 million of merger costs in wholesale transmission formula rate service cost determinations, contrary to the directives of the 2018 Merger Order.",
         "amount_usd_page": 5,
         "themes": [
           "Accounting misclassification"
@@ -6409,7 +6409,7 @@
           }
         ],
         "amount_usd": 4400000.0,
-        "amount_usd_quote": "SIGECO recorded approximately $4.4 million in various A&G expense accounts in a manner contrary to the Commission’s accoun",
+        "amount_usd_quote": "SIGECO recorded approximately $4.4 million in various A&G expense accounts in a manner contrary to the Commission’s accounting regulations.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification"
@@ -10737,7 +10737,7 @@
             "source_page": null
           }
         ],
-        "amount_usd": 562806.0,
+        "amount_usd": 1828678.0,
         "amount_usd_quote": "The incorrect accounting for these expenses resulted in overstating operating expense and carrier property account balances, which overstated total cost of service on Page 700, ranging between $562,806 to $1,828,678, during the audit period.",
         "amount_usd_page": 7,
         "themes": [
@@ -10878,8 +10878,8 @@
             "source_page": null
           }
         ],
-        "amount_usd": 2900000.0,
-        "amount_usd_quote": "lings. This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
+        "amount_usd": 4400000.0,
+        "amount_usd_quote": "This error caused Sunoco to overstate its cost of service on Page 700 by $2.9 million to $4.4 million annually, during the audit period.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification",
@@ -11751,7 +11751,7 @@
           }
         ],
         "amount_usd": 6100000.0,
-        "amount_usd_quote": "ComEd recorded approximately $6.1 million of costs incurred for the purpose of influencing the decisions of public offici",
+        "amount_usd_quote": "ComEd recorded approximately $6.1 million of costs incurred for the purpose of influencing the decisions of public official in various A&G and O&M accounts.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification"
@@ -12075,7 +12075,7 @@
           }
         ],
         "amount_usd": 180000.0,
-        "amount_usd_quote": "ComEd improperly recorded approximately $180 thousand of compromise settlement payments for alleged employment discrimination in Acco",
+        "amount_usd_quote": "ComEd improperly recorded approximately $180 thousand of compromise settlement payments for alleged employment discrimination in Account 925, Injuries and Damages, instead of in Account 426.5, Other Deductions.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification"
@@ -13629,7 +13629,7 @@
           }
         ],
         "amount_usd": 3300000.0,
-        "amount_usd_quote": "WEC Business Services improperly accounted for total payments of around $3.3 million made annually to comply with a settlement agreement instrumental in the relicen",
+        "amount_usd_quote": "WEC Business Services improperly accounted for total payments of around $3.3 million made annually to comply with a settlement agreement instrumental in the relicensing of a power plant it co-owns and operates through its franchised public utility, WEPCO.",
         "amount_usd_page": 47,
         "themes": [
           "Form reporting (Form No. 1/2/6, Page 700)"
@@ -13914,7 +13914,7 @@
           }
         ],
         "amount_usd": 1960000.0,
-        "amount_usd_quote": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of St",
+        "amount_usd_quote": "TEP improperly accounted for and reported $1.96 million of electric distribution maintenance expenses in Account 570, Maintenance of Station Equipment (Major Only) for transmission expenses, instead of in Account 592, Maintenance of Station Equipment (Major Only) for distribution expenses, during the audit period.",
         "amount_usd_page": 7,
         "themes": [
           "Accounting misclassification"
@@ -14057,7 +14057,7 @@
           }
         ],
         "amount_usd": 372368.0,
-        "amount_usd_quote": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various admini",
+        "amount_usd_quote": "TEP misclassified $372,368 of expenditures relating to a compromise settlement agreement in various administrative and general (A&G) expense accounts, rather than recording the expenditures in Account 426.5, Other Deductions.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification"
@@ -14278,7 +14278,7 @@
           }
         ],
         "amount_usd": 1800000.0,
-        "amount_usd_quote": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Offic",
+        "amount_usd_quote": "TEP improperly accounted for and reported approximately $1.8 million of vendor discounts for early payment of various invoices in Account 921, Office Supplies and Expenses.",
         "amount_usd_page": 9,
         "themes": [
           "Property & plant records"
@@ -15403,8 +15403,8 @@
             "source_page": null
           }
         ],
-        "amount_usd": 11900000.0,
-        "amount_usd_quote": "its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should hav",
+        "amount_usd": 78100000.0,
+        "amount_usd_quote": "The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification",
@@ -15435,7 +15435,7 @@
             "source_page": null
           }
         ],
-        "amount_usd": 19726306.0,
+        "amount_usd": 46812994.0,
         "amount_usd_quote": "The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
         "amount_usd_page": 6,
         "themes": [
@@ -15475,7 +15475,7 @@
             "source_page": null
           }
         ],
-        "amount_usd": 57242.0,
+        "amount_usd": 2706526.0,
         "amount_usd_quote": "This resulted in ECPL overstating it cost of service on Page 700 by $57,242 to $2,706,526 during the audit period.",
         "amount_usd_page": 6,
         "themes": [
@@ -17763,7 +17763,7 @@
             "source_page": null
           }
         ],
-        "amount_usd": 739763.0,
+        "amount_usd": 930355.0,
         "amount_usd_quote": "This resulted in Bridger incorrectly reporting several line inputs used to derive cost of service on Page 700, which caused Bridger to overstate its total cost of service by between $739,763 to $930,355 during the audit period.",
         "amount_usd_page": 6,
         "themes": [
@@ -17909,8 +17909,8 @@
             "source_page": null
           }
         ],
-        "amount_usd": 2800000.0,
-        "amount_usd_quote": "state portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
+        "amount_usd": 25000000.0,
+        "amount_usd_quote": "The annual interstate portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
         "amount_usd_page": 7,
         "themes": [
           "Accounting misclassification",
@@ -18672,7 +18672,7 @@
           }
         ],
         "amount_usd": 7300000.0,
-        "amount_usd_quote": "SCE improperly recorded approximately $7.3 million of compromise settlement payments related, at least in part, to alleged employm",
+        "amount_usd_quote": "SCE improperly recorded approximately $7.3 million of compromise settlement payments related, at least in part, to alleged employment discrimination in Account 925, Injuries and Damages.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification"
@@ -18697,7 +18697,7 @@
           }
         ],
         "amount_usd": 39900000.0,
-        "amount_usd_quote": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Mis",
+        "amount_usd_quote": "SCE improperly recorded approximately $39.9 million of vendor discounts for early payment of various invoices in Account 930.2, Miscellaneous General Expenses.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification",
@@ -20778,7 +20778,7 @@
           }
         ],
         "amount_usd": 11400000.0,
-        "amount_usd_quote": "lying asset accounts had been fully depreciated. This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.  Maintained two carrie",
+        "amount_usd_quote": "This resulted in CPL recording $11.4 million of excess depreciation expense as of December 31, 2018.",
         "amount_usd_page": 6,
         "themes": [
           "Depreciation",
@@ -20852,8 +20852,8 @@
         "summary": "CPL improperly accounted for revenues and expenses related to noncarrier property in operating expense and revenue accounts. This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported in the FERC Form No. 6.",
         "is_other_matter": false,
         "recommendations": [],
-        "amount_usd": 3600000.0,
-        "amount_usd_quote": "rier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million. These errors impacted the accuracy of the information reported",
+        "amount_usd": 5700000.0,
+        "amount_usd_quote": "This resulted in CPL misstating net income from noncarrier property each year of the audit period, with reporting errors ranging from $3.6 million to $5.7 million.",
         "amount_usd_page": 6,
         "themes": [
           "Form reporting (Form No. 1/2/6, Page 700)",
@@ -23072,7 +23072,7 @@
           }
         ],
         "amount_usd": 19700000.0,
-        "amount_usd_quote": "Assets. As a result of these methods, Avista overstated AFUDC by approximately $19.7 million for the period 2015 through 2017.",
+        "amount_usd_quote": "As a result of these methods, Avista overstated AFUDC by approximately $19.7 million for the period 2015 through 2017.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification",
@@ -23119,7 +23119,7 @@
           }
         ],
         "amount_usd": 8400000.0,
-        "amount_usd_quote": "expense included in its Income Statement for 2015 through 2017 by approximately $8.4 million.",
+        "amount_usd_quote": "As a result of the foregoing improper accounting, Avista overstated the Deferred Income Tax expense included in its Income Statement for 2015 through 2017 by approximately $8.4 million.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification",
@@ -23150,7 +23150,7 @@
           }
         ],
         "amount_usd": 2800000.0,
-        "amount_usd_quote": "Avista improperly capitalized system planning costs of approximately $2.8 million as a cost of plant through its CWIP between 2014 and 2017. When subsequently co",
+        "amount_usd_quote": "Avista improperly capitalized system planning costs of approximately $2.8 million as a cost of plant through its CWIP between 2014 and 2017.",
         "amount_usd_page": 8,
         "themes": [
           "AFUDC / cost of capital",
@@ -24847,7 +24847,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "amount_usd": 1300000.0,
-        "amount_usd_quote": "Equitrans incorrectly included approximately $1.3 million of unused materials in construction work orders and therefore overstated the co",
+        "amount_usd_quote": "Equitrans incorrectly included approximately $1.3 million of unused materials in construction work orders and therefore overstated the cost of plant recorded in Account 101, Gas Plant in Service, during the audit period.",
         "amount_usd_page": 6,
         "themes": [
           "Accounting misclassification",
@@ -26114,7 +26114,7 @@
           }
         ],
         "amount_usd": 212550.0,
-        "amount_usd_quote": "Plains improperly recorded settlements totaling $212,550 on its books that were actually paid by affiliates, Plains All-American Pipelin",
+        "amount_usd_quote": "Plains improperly recorded settlements totaling $212,550 on its books that were actually paid by affiliates, Plains All-American Pipeline, L.",
         "amount_usd_page": 8,
         "themes": [
           "Accounting misclassification",
@@ -26199,7 +26199,7 @@
           }
         ],
         "amount_usd": 10000000.0,
-        "amount_usd_quote": "r consideration and approval related to a property acquisition in the amount of $10 million in 2015, as required by 18 C.F.R. Part 352, Instruction for Carrier Property Ac",
+        "amount_usd_quote": "Plains did not file journal entries with the Commission for consideration and approval related to a property acquisition in the amount of $10 million in 2015, as required by 18 C.",
         "amount_usd_page": 9,
         "themes": [
           "Property & plant records"
@@ -27738,7 +27738,7 @@
         "is_other_matter": false,
         "recommendations": [],
         "amount_usd": 2900000.0,
-        "amount_usd_quote": "Corp overstated its wholesale transmission revenue requirement by approximately $2.9 million, which led to overbillings to third- party wholesale customers by approximately",
+        "amount_usd_quote": "As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximately $2.9 million, which led to overbillings to third- party wholesale customers by approximately $400,000.",
         "amount_usd_page": 35,
         "themes": [],
         "cost_to_customers": false
@@ -29399,7 +29399,7 @@
           }
         ],
         "amount_usd": 0.01,
-        "amount_usd_quote": "entries to properly reflect the costs of the assets previously retired at only $0.01.",
+        "amount_usd_quote": "Record appropriate adjusting journal entries to properly reflect the costs of the assets previously retired at only $0.01.",
         "amount_usd_page": 11,
         "themes": [
           "Depreciation",

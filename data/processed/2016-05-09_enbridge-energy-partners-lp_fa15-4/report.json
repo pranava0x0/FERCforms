@@ -200,7 +200,7 @@
         }
       ],
       "amount_usd": 0.01,
-      "amount_usd_quote": "entries to properly reflect the costs of the assets previously retired at only $0.01.",
+      "amount_usd_quote": "Record appropriate adjusting journal entries to properly reflect the costs of the assets previously retired at only $0.01.",
       "amount_usd_page": 11
     },
     {

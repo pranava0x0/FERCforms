@@ -58,8 +58,8 @@
           "source_page": null
         }
       ],
-      "amount_usd": 11900000.0,
-      "amount_usd_quote": "its FERC Form No. 6. The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period. Besides these errors, ECPL should hav",
+      "amount_usd": 78100000.0,
+      "amount_usd_quote": "The impact on the annual total cost of service ranged from $11.9 million to $78.1 million during the audit period.",
       "amount_usd_page": 6
     },
     {
@@ -84,7 +84,7 @@
           "source_page": null
         }
       ],
-      "amount_usd": 19726306.0,
+      "amount_usd": 46812994.0,
       "amount_usd_quote": "The understatements ranged from $19,726,306 to $46,812,994 during the audit period.",
       "amount_usd_page": 6
     },
@@ -120,7 +120,7 @@
           "source_page": null
         }
       ],
-      "amount_usd": 57242.0,
+      "amount_usd": 2706526.0,
       "amount_usd_quote": "This resulted in ECPL overstating it cost of service on Page 700 by $57,242 to $2,706,526 during the audit period.",
       "amount_usd_page": 6
     },

@@ -33,22 +33,19 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import re
-from pathlib import Path
 
-from pipeline import amounts, config, extract, fetch
+from pipeline import amounts, config, fetch
+from pipeline.amounts import _normalize
 
 logger = logging.getLogger(__name__)
 
 
-def _normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def _finding_own_text(finding: dict) -> str:
-    parts = [finding.get("summary") or ""]
-    parts += [r.get("text") or "" for r in finding.get("recommendations", [])]
-    return " ".join(parts)
+def _finding_own_fields(finding: dict) -> list[str]:
+    """Every field a quote could legitimately have come from, kept SEPARATE (never
+    joined) — joining summary+recommendations with a space would let a quote that
+    spans the artificial join boundary (never actually contiguous in either field)
+    falsely pass a substring check against neither field individually."""
+    return [finding.get("summary") or ""] + [r.get("text") or "" for r in finding.get("recommendations", [])]
 
 
 def check_offline(report_id: str, finding: dict) -> list[str]:
@@ -63,37 +60,29 @@ def check_offline(report_id: str, finding: dict) -> list[str]:
         fails.append(f"{report_id} finding {idx}: amount_usd/_quote/_page must all be set together (partial fields)")
         return fails
 
-    own_text_norm = _normalize(_finding_own_text(finding))
-    if _normalize(quote) not in own_text_norm:
-        fails.append(f"{report_id} finding {idx}: amount_usd_quote is not a substring of the finding's own summary/recommendations")
+    quote_norm = _normalize(quote)
+    if not any(quote_norm in _normalize(field) for field in _finding_own_fields(finding)):
+        fails.append(f"{report_id} finding {idx}: amount_usd_quote is not a substring of the finding's own summary or any single recommendation")
 
-    m = amounts._DOLLAR_RE.search(quote)
-    if not m:
+    # Re-derive via the SAME selection logic amounts.find_primary_dollar_mention used
+    # to produce amount_usd in the first place (skips a range's low bound, applies
+    # the word-boundary-safe multiplier) — a bare DOLLAR_RE.search would pick the
+    # WRONG figure whenever the quote is a range ("...$5 to $10 million...") and
+    # falsely flag every correctly-cited range finding as inconsistent.
+    reparsed_hit = amounts.find_dollar_mention(quote)
+    if reparsed_hit is None:
         fails.append(f"{report_id} finding {idx}: amount_usd_quote contains no dollar figure at all")
-    else:
-        try:
-            reparsed = amounts.parse_dollar_amount(m.group(0))
-        except ValueError:
-            fails.append(f"{report_id} finding {idx}: dollar figure in quote ({m.group(0)!r}) failed to re-parse")
-        else:
-            if abs(reparsed - amount) > 0.01:
-                fails.append(
-                    f"{report_id} finding {idx}: amount_usd={amount} does not match re-parsed {reparsed} from quote"
-                )
+    elif abs(reparsed_hit.amount_usd - amount) > 0.01:
+        fails.append(
+            f"{report_id} finding {idx}: amount_usd={amount} does not match re-parsed {reparsed_hit.amount_usd} from quote"
+        )
     return fails
 
 
-def check_live(report_id: str, finding: dict, listing_by_id: dict, session) -> list[str]:
+def check_live_finding(report_id: str, finding: dict, text) -> list[str]:
+    """The per-finding page-text recheck, given an already-fetched/extracted
+    ReportText (see fetch_and_extract) — no network/IO per call."""
     idx = finding.get("index")
-    entry = listing_by_id.get(report_id)
-    if entry is None:
-        return [f"{report_id} finding {idx}: not a FERC audit (no listing.json entry) — cannot live-recheck"]
-    try:
-        fetch.download_pdf(session, entry, config.RAW_DIR)
-        text = extract.extract_report(entry, config.RAW_DIR, config.PROCESSED_DIR)
-    except Exception as exc:  # noqa: BLE001 — a fetch/extract failure is a check failure, not a crash
-        return [f"{report_id} finding {idx}: could not fetch/extract source PDF to recheck: {exc}"]
-
     page_num = finding["amount_usd_page"]
     page = next((p for p in text.pages if p.page == page_num), None)
     if page is None:
@@ -103,8 +92,10 @@ def check_live(report_id: str, finding: dict, listing_by_id: dict, session) -> l
     quote_norm = _normalize(finding["amount_usd_quote"])
     if quote_norm in page_norm:
         return []
-    m = amounts._DOLLAR_RE.search(finding["amount_usd_quote"])
-    if m and _normalize(m.group(0)) in page_norm:
+    # Fall back to the SAME figure amount_usd was derived from (range-aware — see
+    # check_offline), not just any dollar-looking substring in the quote.
+    hit = amounts.find_dollar_mention(finding["amount_usd_quote"])
+    if hit and _normalize(hit.raw) in page_norm:
         return []
     return [f"{report_id} finding {idx}: neither the quote nor its dollar figure was found on the cited page {page_num} in a fresh re-extraction"]
 
@@ -129,13 +120,30 @@ def main() -> int:
         if args.ids and report_id not in args.ids:
             continue
         data = json.loads(path.read_text(encoding="utf-8"))
-        for finding in data.get("findings", []):
-            if finding.get("amount_usd") is None:
-                continue
+        cited = [f for f in data.get("findings", []) if f.get("amount_usd") is not None]
+        if not cited:
+            continue
+
+        offline_results = {id(f): check_offline(report_id, f) for f in cited}
+
+        # Fetch/extract the source PDF ONCE per report (not once per finding) — every
+        # cited finding in the same report shares the same source PDF.
+        text = None
+        report_fail: list[str] = []
+        if args.live and any(not fails for fails in offline_results.values()):
+            if report_id not in listing_by_id:
+                report_fail = [f"{report_id}: not a FERC audit (no listing.json entry) — cannot live-recheck"]
+            else:
+                try:
+                    text = amounts.fetch_and_extract(listing_by_id[report_id], session)
+                except Exception as exc:  # noqa: BLE001 — a fetch/extract failure is a check failure, not a crash
+                    report_fail = [f"{report_id}: could not fetch/extract source PDF to recheck: {exc}"]
+
+        for finding in cited:
             checked += 1
-            fails = check_offline(report_id, finding)
+            fails = offline_results[id(finding)]
             if not fails and args.live:
-                fails = check_live(report_id, finding, listing_by_id, session)
+                fails = report_fail or check_live_finding(report_id, finding, text)
             for f in fails:
                 logger.error("FAIL  %s", f)
             all_fails.extend(fails)

@@ -452,7 +452,7 @@ def structure_regulatory_order(entry: ListingEntry, text: ReportText, existing_r
     """
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count", "structured")},
             findings=[],
             finding_count=0,
             structured=False,
@@ -657,7 +657,7 @@ def structure_state_rate_case(entry: ListingEntry, text: ReportText, existing_re
     """
     if existing_report:
         return AuditReport(
-            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count")},
+            **{k: v for k, v in existing_report.items() if k not in ("findings", "finding_count", "structured")},
             findings=[],
             finding_count=0,
             structured=False,

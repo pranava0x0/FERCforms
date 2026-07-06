@@ -22,20 +22,39 @@ from __future__ import annotations
 import re
 from typing import NamedTuple, Optional
 
-from pipeline.models import Finding, PageText
+from pipeline import config, extract, fetch
+from pipeline.models import Finding, ListingEntry, PageText, ReportText
 
 # $1,234 | $1,234.56 | $1.5 million | $2 billion | $500 thousand
-_DOLLAR_RE = re.compile(
-    r"\$\s?[\d,]+(?:\.\d{1,2})?(?:\s?(?:million|billion|thousand))?",
+# \b after the multiplier word matters: without it "$5 thousandths" would match
+# "$5 thousand" (silently inflating the parsed amount 1000x) — \b stops the word
+# match at a real word boundary, so a trailing "ths"/"s" correctly excludes it.
+DOLLAR_RE = re.compile(
+    r"\$\s?[\d,]+(?:\.\d{1,2})?(?:\s?(?:million|billion|thousand)\b)?",
     re.IGNORECASE,
 )
 
+# A dollar figure immediately followed by this is the LOW end of a stated range
+# ("$5 to $10 million", "$5-$10 million") — its own multiplier (if any) may not
+# reflect the range's actual multiplier, which typically appears once at the end.
+# Skip it and prefer the next mention, which carries a complete, self-contained
+# figure instead of a misleadingly small "primary" amount.
+_RANGE_LOW_BOUND_RE = re.compile(r"^\s*(?:to|-)\s*\$", re.IGNORECASE)
+
 _MULTIPLIERS = {"thousand": 1_000, "million": 1_000_000, "billion": 1_000_000_000}
 
-# Sentence boundary: a run of non-terminator text ending in . ! or ? (followed by
-# whitespace/end), OR a final fragment with no terminator. Deliberately simple —
-# good enough to bound a dollar-bearing clause without a full NLP sentence splitter.
-_SENTENCE_RE = re.compile(r"[^.!?]*[.!?]+(?:\s+|$)|[^.!?]+$")
+# Sentence boundary: bounded by real sentence-terminating punctuation. A period
+# is deliberately NOT treated as a terminator when it sits between two digits (a
+# decimal point, e.g. the "." in "$2.8 million") — without this, a dollar figure
+# with a decimal fragments its own sentence, producing a garbled mid-word quote
+# like "8 million to $25 million." instead of the full sentence (caught
+# 2026-07-06 by inspecting real pilot output, not by the unit tests alone).
+def _is_decimal_point(text: str, pos: int) -> bool:
+    return (
+        text[pos] == "."
+        and pos > 0 and text[pos - 1].isdigit()
+        and pos + 1 < len(text) and text[pos + 1].isdigit()
+    )
 
 
 class DollarMention(NamedTuple):
@@ -58,35 +77,49 @@ def parse_dollar_amount(raw: str) -> float:
 
 def _sentence_containing(text: str, match_start: int, match_end: int) -> str:
     """The sentence spanning [match_start, match_end) in `text` (bounded by real
-    sentence punctuation, never a fixed character count)."""
-    for m in _SENTENCE_RE.finditer(text):
-        if m.start() <= match_start and match_end <= m.end():
-            return m.group(0).strip()
+    sentence-terminating punctuation, never a fixed character count — decimal
+    points inside numbers don't count, see _is_decimal_point)."""
+    seg_start = 0
+    i, n = 0, len(text)
+    while i < n:
+        if text[i] in ".!?" and not _is_decimal_point(text, i):
+            j = i + 1
+            while j < n and text[j] in ".!?" and not _is_decimal_point(text, j):
+                j += 1
+            if seg_start <= match_start and match_end <= j:
+                return text[seg_start:j].strip()
+            seg_start = j
+            i = j
+        else:
+            i += 1
+    if seg_start <= match_start:
+        return text[seg_start:].strip()
     return text[max(0, match_start - 80): match_end + 80].strip()  # pathological fallback
 
 
-def _first_dollar_mention(text: Optional[str]) -> Optional[DollarMention]:
+def find_dollar_mention(text: Optional[str]) -> Optional[DollarMention]:
     if not text:
         return None
-    m = _DOLLAR_RE.search(text)
-    if not m:
-        return None
-    quote = _sentence_containing(text, m.start(), m.end())
-    try:
-        amount = parse_dollar_amount(m.group(0))
-    except ValueError:
-        return None
-    return DollarMention(raw=m.group(0), quote=quote, amount_usd=amount)
+    for m in DOLLAR_RE.finditer(text):
+        if _RANGE_LOW_BOUND_RE.match(text[m.end(): m.end() + 12]):
+            continue  # the low end of "$5 to $10 million" — prefer the complete figure
+        quote = _sentence_containing(text, m.start(), m.end())
+        try:
+            amount = parse_dollar_amount(m.group(0))
+        except ValueError:
+            continue
+        return DollarMention(raw=m.group(0), quote=quote, amount_usd=amount)
+    return None
 
 
 def find_primary_dollar_mention(finding: Finding) -> Optional[DollarMention]:
     """The first dollar figure in a finding's OWN committed text: summary first,
     then each recommendation in order. Returns None if none is present."""
-    hit = _first_dollar_mention(finding.summary)
+    hit = find_dollar_mention(finding.summary)
     if hit:
         return hit
     for rec in finding.recommendations:
-        hit = _first_dollar_mention(rec.text)
+        hit = find_dollar_mention(rec.text)
         if hit:
             return hit
     return None
@@ -104,11 +137,22 @@ def locate_page(mention: DollarMention, pages: list[PageText]) -> Optional[int]:
     neither is found on any page."""
     quote_norm = _normalize(mention.quote)
     raw_norm = _normalize(mention.raw)
+    # A trailing \b stops a short figure ("$5") from falsely matching as a prefix
+    # of an unrelated longer one ("$500,000") on some other page.
+    raw_re = re.compile(re.escape(raw_norm) + r"\b") if raw_norm else None
     raw_page = None
     for page in pages:
         page_norm = _normalize(page.text)
         if quote_norm and quote_norm in page_norm:
             return page.page
-        if raw_page is None and raw_norm in page_norm:
+        if raw_page is None and raw_re and raw_re.search(page_norm):
             raw_page = page.page
     return raw_page
+
+
+def fetch_and_extract(entry: ListingEntry, session) -> ReportText:
+    """Fetch (cached) + extract a report's source PDF ONCE. Shared by
+    pipeline.amounts_enrich and pipeline.verify_amounts so a report with several
+    cited findings is only fetched/extracted a single time, not once per finding."""
+    fetch.download_pdf(session, entry, config.RAW_DIR)
+    return extract.extract_report(entry, config.RAW_DIR, config.PROCESSED_DIR)
