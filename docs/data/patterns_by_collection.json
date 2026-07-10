@@ -606,13 +606,13 @@
     "generated_at": "2026-07-10"
   },
   "state_audit": {
-    "report_count": 70,
+    "report_count": 81,
     "finding_count": 150,
     "other_matter_count": 0,
     "recommendation_count": 551,
     "by_industry": {
-      "electric": 49,
-      "gas": 19,
+      "electric": 57,
+      "gas": 22,
       "unknown": 2
     },
     "by_year": {
@@ -624,15 +624,32 @@
       "2018": 1,
       "2019": 3,
       "2020": 2,
-      "2021": 2,
+      "2021": 4,
       "2022": 5,
       "2023": 9,
-      "2024": 14,
-      "2025": 17,
-      "2026": 1
+      "2024": 18,
+      "2025": 19,
+      "2026": 4
     },
     "by_function": {},
     "themes": [
+      {
+        "theme": "Affiliate / intercompany transactions",
+        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+        "keywords": [
+          "affiliate",
+          "intercompany",
+          "inter-company"
+        ],
+        "finding_count": 14,
+        "report_count": 18,
+        "example_titles": [
+          "Cost Allocations and Affiliated Interests",
+          "Budget And Finance",
+          "Affiliated Interests and Cost Allocations",
+          "Affiliated Interests and Cost Allocations (continued)"
+        ]
+      },
       {
         "theme": "Internal audit & internal controls",
         "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
@@ -650,23 +667,6 @@
           "Cost Allocations and Affiliated Interests",
           "Governance And Management",
           "Rg&E."
-        ]
-      },
-      {
-        "theme": "Affiliate / intercompany transactions",
-        "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-        "keywords": [
-          "affiliate",
-          "intercompany",
-          "inter-company"
-        ],
-        "finding_count": 14,
-        "report_count": 16,
-        "example_titles": [
-          "Cost Allocations and Affiliated Interests",
-          "Budget And Finance",
-          "Affiliated Interests and Cost Allocations",
-          "Affiliated Interests and Cost Allocations (continued)"
         ]
       },
       {

@@ -1,12 +1,12 @@
 {
-  "report_count": 428,
+  "report_count": 439,
   "finding_count": 813,
   "other_matter_count": 10,
   "recommendation_count": 2030,
   "by_industry": {
-    "electric": 272,
+    "electric": 280,
     "unknown": 91,
-    "gas": 47,
+    "gas": 50,
     "oil": 18
   },
   "by_year": {
@@ -20,12 +20,12 @@
     "2018": 19,
     "2019": 15,
     "2020": 16,
-    "2021": 17,
+    "2021": 19,
     "2022": 23,
     "2023": 29,
-    "2024": 50,
-    "2025": 74,
-    "2026": 9
+    "2024": 54,
+    "2025": 76,
+    "2026": 12
   },
   "by_function": {
     "transmission": 69,
@@ -146,6 +146,23 @@
       ]
     },
     {
+      "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 55,
+      "report_count": 46,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Cost Allocations and Affiliated Interests",
+        "Budget And Finance",
+        "Affiliated Interests and Cost Allocations"
+      ]
+    },
+    {
       "theme": "Property & plant records",
       "description": "Incomplete or inaccurate utility plant and property records.",
       "keywords": [
@@ -162,23 +179,6 @@
         "Prepaid Pension AFUDC",
         "Noncarrier Property Revenue, Expenses, and Net Income",
         "Property Unit Listing"
-      ]
-    },
-    {
-      "theme": "Affiliate / intercompany transactions",
-      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
-      "keywords": [
-        "affiliate",
-        "intercompany",
-        "inter-company"
-      ],
-      "finding_count": 55,
-      "report_count": 44,
-      "example_titles": [
-        "Accounting for Distribution and Meter-Related Costs",
-        "Cost Allocations and Affiliated Interests",
-        "Budget And Finance",
-        "Affiliated Interests and Cost Allocations"
       ]
     },
     {
