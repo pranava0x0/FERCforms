@@ -433,6 +433,33 @@ def test_verify_sources_load_seeds_skips_non_list_files():
     assert all(isinstance(rec, dict) and "id" in rec for rec in seeds.values())
 
 
+def test_verify_sources_company_token_matching():
+    """`verify_sources` --live content-match: distinctive company tokens are found
+    in real document text (no false MISMATCH), and a genuinely wrong document — one
+    that never names the claimed company — is flagged. Guards the offline core of
+    the deep re-fetch check so a future tweak can't silently gut it (the WGL
+    PROJECTpipes false-positive that first-6-pages scanning produced, 2026-07-10)."""
+    from pipeline import verify_sources as vs
+
+    # Corporate suffixes / industry words are dropped; the brand/geographic
+    # remainder is what proves identity.
+    assert vs.company_tokens("Pacific Gas and Electric Company") == ["pacific"]
+    assert "pepco" in vs.company_tokens("Potomac Electric Power Company (Pepco)")
+    assert vs.company_tokens("Avista Corporation") == ["avista"]
+
+    # A real audit that names the utility only deep inside still matches on the
+    # full-doc fallback text.
+    body = "Management Audit of PROJECTpipes ... the Washington Gas Light Company system"
+    assert vs.content_match_fails("Washington Gas Light Company", body) == []
+
+    # Glyph-spaced covers ("F P L") still match via the despaced pass.
+    assert vs.content_match_fails("Florida Power & Light Company", "review of f l o r i d a") == []
+
+    # A wrong document — never mentions the claimed company — is flagged.
+    wrong = "This is the annual report of Some Other Utility, Inc. for fiscal year 2024."
+    assert vs.content_match_fails("Pacific Gas and Electric Company", wrong)
+
+
 def test_seed_inventory_covers_every_committed_seed():
     """`pipeline.seed_inventory.load_inventory` (the finder-agent dedup harness)
     must list every committed seed id, so a finder agent dedupes against the full

@@ -25,9 +25,17 @@ FERC audits are verified OFFLINE (accession ∈ listing.json) — we never re-ha
 eLibrary's POST DownloadPDF 120×. Rate-limited to ≥1.6s per host, parallel across
 hosts. Exit code is non-zero if any DEAD/NON_PDF record is found.
 
+The offline sweep marks a `fetch=true` record PROVEN on the `page_count>0`
+shortcut — it trusts the pipeline's earlier download. `--live` closes that gap:
+it re-fetches every fetchable PDF and re-confirms it is STILL the *claimed*
+document — %PDF magic, page-count == the committed report, and a distinctive
+company token present in the first pages (the "200 on the wrong real doc" catch).
+
 Usage:
-    python -m pipeline.verify_sources                 # full sweep
-    python -m pipeline.verify_sources --seed sc_psc   # one seed file
+    python -m pipeline.verify_sources                       # offline sweep (fast)
+    python -m pipeline.verify_sources --seed sc_psc         # one seed file
+    python -m pipeline.verify_sources --live                # + re-fetch & content-match ALL
+    python -m pipeline.verify_sources --seed fl_psc --live  # deep-check one seed file
 """
 from __future__ import annotations
 
@@ -79,6 +87,104 @@ def probe(url: str, timeout: int = 25) -> tuple[int, str, bool]:
         return r.status_code, ctype, head[:5] == b"%PDF-"
     except Exception as exc:  # noqa: BLE001 — any network error is a "could not reach"
         return 0, type(exc).__name__, False
+
+
+_MAX_PDF_BYTES = 45_000_000
+_LIVE_SCAN_PAGES = 15  # fast pass over front-matter; falls back to the whole doc on a miss
+
+# Corporate suffixes / industry words that aren't distinctive enough to prove a
+# document is the *claimed* company (every gas audit says "gas"). We match on the
+# distinctive remainder (geographic/brand tokens like "pacific", "pepco", "avista").
+_CORP_STOPWORDS = frozenset({
+    "the", "and", "of", "company", "companies", "corporation", "corp", "inc",
+    "incorporated", "llc", "lp", "llp", "co", "gas", "electric", "power", "light",
+    "energy", "utilities", "utility", "service", "services", "system", "systems",
+    "natural", "holdings", "group",
+})
+
+
+def company_tokens(company: str) -> list[str]:
+    """Distinctive lowercase tokens from a company name for content-matching.
+
+    Drops corporate suffixes and generic industry words; falls back to any word
+    ≥3 chars if stripping leaves nothing (e.g. a single-word brand)."""
+    import re
+
+    words = re.findall(r"[a-z0-9]+", company.lower())
+    toks = [w for w in words if len(w) >= 4 and w not in _CORP_STOPWORDS]
+    if not toks:
+        toks = [w for w in words if len(w) >= 3]
+    return toks
+
+
+def fetch_pdf_bytes(url: str, timeout: int = 90) -> bytes:
+    """Stream a URL with a hard byte cap (so a 500-page report can't hang the
+    sweep). Rate-limited per host. The reusable verify-by-download primitive."""
+    host = (urlparse(url).hostname or "").lower()
+    _throttle(host)
+    r = requests.get(
+        url,
+        headers={"User-Agent": config.USER_AGENT, "Accept": "*/*"},
+        timeout=timeout,
+        stream=True,
+        allow_redirects=True,
+    )
+    data = bytearray()
+    for chunk in r.iter_content(65536):
+        data.extend(chunk)
+        if len(data) > _MAX_PDF_BYTES:
+            break
+    r.close()
+    return bytes(data)
+
+
+def content_match_fails(company: str, pages_text: str) -> list[str]:
+    """Offline core of the live check: does the extracted text actually mention
+    the claimed company? Returns failure strings (empty = matched). Split out so a
+    unit test can exercise the matching logic without touching the network."""
+    norm = " ".join(pages_text.lower().split())
+    despaced = norm.replace(" ", "")  # tolerate glyph-spaced covers ("F P L")
+    toks = company_tokens(company)
+    if toks and not any(t in norm or t in despaced for t in toks):
+        return [f"none of company tokens {toks} found in scanned pages — possible wrong document"]
+    return []
+
+
+def live_verify(rid: str, seed: dict, report: dict) -> list[str]:
+    """Re-fetch a fetch=true PDF record and confirm it is STILL the claimed
+    document: %PDF magic, page-count == committed report, and a company token
+    present in the first pages. Returns failure strings (empty = verified)."""
+    import fitz  # PyMuPDF
+
+    url = seed["pdf_url"]
+    try:
+        data = fetch_pdf_bytes(url)
+    except Exception as exc:  # noqa: BLE001
+        return [f"{rid}: fetch error {type(exc).__name__}: {exc} — {url}"]
+    if data[:5] != b"%PDF-":
+        return [f"{rid}: not a PDF (head={data[:12]!r}) — {url}"]
+    try:
+        doc = fitz.open(stream=data, filetype="pdf")
+    except Exception as exc:  # noqa: BLE001
+        return [f"{rid}: unreadable PDF ({type(exc).__name__}) — {url}"]
+    fails: list[str] = []
+    with doc:
+        n = doc.page_count
+        expected = report.get("page_count", 0)
+        if expected and n != expected:
+            fails.append(f"{rid}: live page_count {n} != committed {expected} — {url}")
+        # Fast pass over front-matter; only if the company isn't named there do we
+        # pay to scan the whole (already-downloaded) doc — so a report that names
+        # the utility deep inside (a consultant report titled by program, not
+        # company) never false-fails, while a genuinely wrong document — which
+        # never mentions the claimed company — still fails hard.
+        front = " ".join(doc[i].get_text() for i in range(min(n, _LIVE_SCAN_PAGES)))
+        cfails = content_match_fails(seed.get("company", ""), front)
+        if cfails and n > _LIVE_SCAN_PAGES:
+            whole = " ".join(doc[i].get_text() for i in range(n))
+            cfails = content_match_fails(seed.get("company", ""), whole)
+    fails += [f"{rid}: {m}" for m in cfails]
+    return fails
 
 
 def _load_seeds() -> dict[str, dict]:
@@ -182,6 +288,12 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     ap = argparse.ArgumentParser(description="Live source-verification sweep (fabrication catcher)")
     ap.add_argument("--seed", default=None, help="restrict to seed files matching this substring")
+    ap.add_argument(
+        "--live",
+        action="store_true",
+        help="deep check: re-fetch every fetch=true PDF and confirm page-count + "
+        "company-token match (not just the offline page_count>0 shortcut)",
+    )
     args = ap.parse_args()
 
     verdicts = verify(args.seed)
@@ -194,6 +306,28 @@ def main() -> int:
                 logger.info("  %s", i)
 
     failures = len(verdicts.get("DEAD", [])) + len(verdicts.get("NON_PDF", []))
+
+    live_fails: list[str] = []
+    if args.live:
+        seeds = _load_seeds()
+        reports = _load_reports()
+        work = [
+            (rid, seeds[rid], reports[rid])
+            for rid in reports
+            if rid in seeds
+            and seeds[rid].get("fetch", True)
+            and reports[rid].get("page_count", 0) > 0
+            and (not args.seed or args.seed in seeds[rid]["_file"])
+        ]
+        logger.info("\n=== LIVE re-fetch + content match: %d record(s) ===", len(work))
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            for fails in ex.map(lambda w: live_verify(*w), work):
+                live_fails.extend(fails)
+        for f in sorted(live_fails):
+            logger.info("  MISMATCH %s", f)
+        logger.info("\nLIVE: %d verified, %d mismatch(es)", len(work) - len(live_fails), len(live_fails))
+        failures += len(live_fails)
+
     if failures:
         logger.error("\nFABRICATION/MISMATCH SUSPECTS: %d — investigate before committing", failures)
         return 1
