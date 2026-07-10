@@ -117,14 +117,10 @@ def company_tokens(company: str) -> list[str]:
     return toks
 
 
-def fetch_pdf_bytes(url: str, timeout: int = 90) -> bytes:
-    """Stream a URL with a hard byte cap (so a 500-page report can't hang the
-    sweep). Rate-limited per host. The reusable verify-by-download primitive."""
-    host = (urlparse(url).hostname or "").lower()
-    _throttle(host)
+def _stream_capped(url: str, ua: str, timeout: int) -> bytes:
     r = requests.get(
         url,
-        headers={"User-Agent": config.USER_AGENT, "Accept": "*/*"},
+        headers={"User-Agent": ua, "Accept": "*/*"},
         timeout=timeout,
         stream=True,
         allow_redirects=True,
@@ -136,6 +132,22 @@ def fetch_pdf_bytes(url: str, timeout: int = 90) -> bytes:
             break
     r.close()
     return bytes(data)
+
+
+def fetch_pdf_bytes(url: str, timeout: int = 90) -> bytes:
+    """Stream a URL with a hard byte cap (so a 500-page report can't hang the
+    sweep). Rate-limited per host. The reusable verify-by-download primitive.
+
+    Mirrors the pipeline fetcher's UA fallback: some hosts (michigan.gov)
+    UA-filter and serve an HTML interstitial to the default UA but the real PDF
+    to a browser UA — so retry once with BROWSER_USER_AGENT on a non-PDF body."""
+    host = (urlparse(url).hostname or "").lower()
+    _throttle(host)
+    data = _stream_capped(url, config.USER_AGENT, timeout)
+    if data[:5] != b"%PDF-":
+        _throttle(host)
+        data = _stream_capped(url, config.BROWSER_USER_AGENT, timeout)
+    return data
 
 
 def content_match_fails(company: str, pages_text: str) -> list[str]:
@@ -178,11 +190,18 @@ def live_verify(rid: str, seed: dict, report: dict) -> list[str]:
         # the utility deep inside (a consultant report titled by program, not
         # company) never false-fails, while a genuinely wrong document — which
         # never mentions the claimed company — still fails hard.
-        front = " ".join(doc[i].get_text() for i in range(min(n, _LIVE_SCAN_PAGES)))
-        cfails = content_match_fails(seed.get("company", ""), front)
-        if cfails and n > _LIVE_SCAN_PAGES:
-            whole = " ".join(doc[i].get_text() for i in range(n))
-            cfails = content_match_fails(seed.get("company", ""), whole)
+        # state_reference is the "not an audit of a utility" collection (blank
+        # forms, admin/reference pages) — its `company` field is a document-title
+        # slug, not a utility name, so the company-token match is meaningless.
+        # Verify it resolves to a PDF (above), but skip the content match.
+        if report.get("collection") == "state_reference":
+            cfails = []
+        else:
+            front = " ".join(doc[i].get_text() for i in range(min(n, _LIVE_SCAN_PAGES)))
+            cfails = content_match_fails(seed.get("company", ""), front)
+            if cfails and n > _LIVE_SCAN_PAGES:
+                whole = " ".join(doc[i].get_text() for i in range(n))
+                cfails = content_match_fails(seed.get("company", ""), whole)
     fails += [f"{rid}: {m}" for m in cfails]
     return fails
 
@@ -316,6 +335,7 @@ def main() -> int:
             for rid in reports
             if rid in seeds
             and seeds[rid].get("fetch", True)
+            and not seeds[rid].get("accession")  # eLibrary needs the F5 cookie dance, not a plain GET
             and reports[rid].get("page_count", 0) > 0
             and (not args.seed or args.seed in seeds[rid]["_file"])
         ]
