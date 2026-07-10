@@ -1,31 +1,31 @@
 {
-  "report_count": 407,
+  "report_count": 428,
   "finding_count": 813,
   "other_matter_count": 10,
   "recommendation_count": 2030,
   "by_industry": {
-    "electric": 259,
+    "electric": 272,
     "unknown": 91,
-    "gas": 39,
+    "gas": 47,
     "oil": 18
   },
   "by_year": {
     "2005": 2,
-    "2012": 1,
-    "2013": 1,
-    "2014": 5,
-    "2015": 10,
+    "2012": 2,
+    "2013": 2,
+    "2014": 6,
+    "2015": 11,
     "2016": 15,
     "2017": 12,
     "2018": 19,
-    "2019": 14,
+    "2019": 15,
     "2020": 16,
     "2021": 17,
-    "2022": 21,
-    "2023": 26,
-    "2024": 46,
-    "2025": 68,
-    "2026": 8
+    "2022": 23,
+    "2023": 29,
+    "2024": 50,
+    "2025": 74,
+    "2026": 9
   },
   "by_function": {
     "transmission": 69,
@@ -165,6 +165,23 @@
       ]
     },
     {
+      "theme": "Affiliate / intercompany transactions",
+      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "keywords": [
+        "affiliate",
+        "intercompany",
+        "inter-company"
+      ],
+      "finding_count": 55,
+      "report_count": 44,
+      "example_titles": [
+        "Accounting for Distribution and Meter-Related Costs",
+        "Cost Allocations and Affiliated Interests",
+        "Budget And Finance",
+        "Affiliated Interests and Cost Allocations"
+      ]
+    },
+    {
       "theme": "AFUDC / cost of capital",
       "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
       "keywords": [
@@ -181,20 +198,22 @@
       ]
     },
     {
-      "theme": "Affiliate / intercompany transactions",
-      "description": "Transactions with affiliated companies mis-priced or mis-reported.",
+      "theme": "Internal audit & internal controls",
+      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
       "keywords": [
-        "affiliate",
-        "intercompany",
-        "inter-company"
+        "internal audit",
+        "internal control",
+        "delegation of authority",
+        "code of business conduct",
+        "compliance program"
       ],
-      "finding_count": 55,
-      "report_count": 42,
+      "finding_count": 29,
+      "report_count": 38,
       "example_titles": [
-        "Accounting for Distribution and Meter-Related Costs",
+        "Corporate Governance",
         "Cost Allocations and Affiliated Interests",
-        "Budget And Finance",
-        "Affiliated Interests and Cost Allocations"
+        "Governance And Management",
+        "Rg&E."
       ]
     },
     {
@@ -230,25 +249,6 @@
         "Tariff Administration and Oversight",
         "Creditworthiness Standards",
         "Customer Service (continued)"
-      ]
-    },
-    {
-      "theme": "Internal audit & internal controls",
-      "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-      "keywords": [
-        "internal audit",
-        "internal control",
-        "delegation of authority",
-        "code of business conduct",
-        "compliance program"
-      ],
-      "finding_count": 29,
-      "report_count": 35,
-      "example_titles": [
-        "Corporate Governance",
-        "Cost Allocations and Affiliated Interests",
-        "Governance And Management",
-        "Rg&E."
       ]
     },
     {
@@ -369,7 +369,7 @@
         "securitization"
       ],
       "finding_count": 9,
-      "report_count": 11,
+      "report_count": 12,
       "example_titles": [
         "Electric Operations",
         "Wholesale Storm Damage Revenues",
@@ -393,6 +393,22 @@
         "Informational Postings",
         "Public Access to Monthly and Yearly Capability Information",
         "Posting of Short Circuit Information"
+      ]
+    },
+    {
+      "theme": "Cybersecurity & physical security",
+      "description": "Gaps in cyber defenses or physical security of facilities and systems.",
+      "keywords": [
+        "cyber",
+        "physical security"
+      ],
+      "finding_count": 13,
+      "report_count": 10,
+      "example_titles": [
+        "Emergency Preparedness",
+        "Customer Operations",
+        "Rg&E.",
+        "Governance"
       ]
     },
     {
@@ -440,22 +456,6 @@
         "Electric Operations",
         "Accounting for Vegetation Management Costs",
         "Accounting for Amortization of Regulatory Assets"
-      ]
-    },
-    {
-      "theme": "Cybersecurity & physical security",
-      "description": "Gaps in cyber defenses or physical security of facilities and systems.",
-      "keywords": [
-        "cyber",
-        "physical security"
-      ],
-      "finding_count": 13,
-      "report_count": 9,
-      "example_titles": [
-        "Emergency Preparedness",
-        "Customer Operations",
-        "Rg&E.",
-        "Governance"
       ]
     },
     {
@@ -627,5 +627,5 @@
       "count": 4
     }
   ],
-  "generated_at": "2026-07-06"
+  "generated_at": "2026-07-10"
 }

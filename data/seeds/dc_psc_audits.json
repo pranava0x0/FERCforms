@@ -1,0 +1,53 @@
+[
+  {
+    "id": "2025-12-31_potomac-electric-power_dc-management-audit",
+    "company": "Potomac Electric Power Company (Pepco)",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "DC Public Service Commission",
+    "doc_type": "management audit",
+    "industry": "electric",
+    "pdf_url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=235944&guidFileName=3fb10421-4fa1-47fe-96be-3533d7b5c0b4.pdf",
+    "source_page_url": "https://edocket.dcpsc.org/public/search/casenumber/FC1176",
+    "issued_date": "2025-12-31",
+    "docket": "FC 1176",
+    "captured_at": "2026-07-10",
+    "source_note": "DC PSC Formal Case No. 1176 — Independent Management Audit of Potomac Electric Power Company (Pepco), prepared for the Commission by Atrium Economics, LLC (submitted December 31, 2025, 242 pp; public version). An independent assessment of Pepco's governance, budgeting, and capital planning ordered by the DC PSC. Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 is the eDocket filing receipt ('FC1176 - 2025 - E - 542 RECEIVED 2025 DEC 31'); the Atrium management-audit report follows. Downloaded + verified 2026-07-10. Listed for reference (metadata-only).",
+    "parse": false,
+    "fetch": true
+  },
+  {
+    "id": "2023-12-12_washington-gas-light_dc-projectpipes2-management-audit",
+    "company": "Washington Gas Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "DC Public Service Commission",
+    "doc_type": "management audit (PROJECTpipes 2)",
+    "industry": "gas",
+    "pdf_url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=196957&guidFileName=8682766d-b45d-440a-8efc-7ecad9b0d40d.pdf",
+    "source_page_url": "https://edocket.dcpsc.org/public/search/casenumber/FC1154",
+    "issued_date": "2023-12-12",
+    "docket": "FC 1154",
+    "captured_at": "2026-07-10",
+    "source_note": "DC PSC Formal Case No. 1154 — Independent Management Audit of Washington Gas Light Company's PROJECTpipes 2 accelerated pipe-replacement program, prepared for the Commission by Continuum Capital (December 12, 2023, 138 pp; public version, confidential material redacted). Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 verified 2026-07-10 (Continuum Capital cover letter to the DC PSC Office of Infrastructure and System Planning). Listed for reference (metadata-only).",
+    "parse": false,
+    "fetch": true
+  },
+  {
+    "id": "2019-04-19_washington-gas-light_dc-projectpipes-management-audit",
+    "company": "Washington Gas Light Company",
+    "collection": "state_audit",
+    "jurisdiction": "DC",
+    "source": "DC Public Service Commission",
+    "doc_type": "management audit (PROJECTpipes)",
+    "industry": "gas",
+    "pdf_url": "https://edocket.dcpsc.org/apis/api/Filing/download?attachId=84421&guidFileName=0e997724-a919-450e-9da2-dda958cbe416.pdf",
+    "source_page_url": "https://edocket.dcpsc.org/public/search/casenumber/FC1115",
+    "issued_date": "2019-04-19",
+    "docket": "FC 1115",
+    "captured_at": "2026-07-10",
+    "source_note": "DC PSC Formal Case No. 1115 — Final Report, Management Audit of Washington Gas Light Company's PROJECTpipes accelerated pipe-replacement program, prepared for the Commission by The Liberty Consulting Group (April 19, 2019, 140 pp; public version, confidential material redacted). Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 verified 2026-07-10: 'Final Report Management Audit of PROJECTpipes Public Version ... Presented to: District of Columbia Public Service Commission ... The Liberty Consulting Group. April 19, 2019'. Listed for reference (metadata-only).",
+    "parse": false,
+    "fetch": true
+  }
+]
