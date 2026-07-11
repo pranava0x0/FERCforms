@@ -1,0 +1,19 @@
+[
+  {
+    "id": "2011-02-28_arizona-public-service_az-benchmarking-performance-audit",
+    "company": "Arizona Public Service Company",
+    "collection": "state_audit",
+    "jurisdiction": "AZ",
+    "source": "Arizona Corporation Commission Utilities Division (The Liberty Consulting Group audit)",
+    "doc_type": "management/operations performance benchmarking audit (independent consultant)",
+    "industry": "electric",
+    "pdf_url": "https://www.azcc.gov/Divisions/Utilities/Electric/LCG%20-%20APS%20Benchmarking%20Supporting%20Analysis%20-%20Final%20SEC.pdf",
+    "source_page_url": "https://www.azcc.gov/utilities/industry-types/electric",
+    "issued_date": "2011-02-28",
+    "docket": "E-01345A-08-0172",
+    "captured_at": "2026-07-11",
+    "source_note": "Arizona Corporation Commission — 'Benchmarking Study of Arizona Public Service Company's Operations, Cost, and Financial Performance' (Final Report Supporting Analysis), prepared for the ACC Utilities Division by The Liberty Consulting Group (February 28, 2011, 260 pp; born-digital), Docket E-01345A-08-0172. A standalone independent consultant performance/management audit benchmarking APS against peer utilities (arose alongside the 2008 APS rate case but is a discrete audit report). Hosted on the valid-cert www.azcc.gov host (direct GET, application/pdf). The companion narrative 'Final Report' is filed only inside the docket (not separately hosted) — see docs/data-sources.md AZ dead-seam note. Page 1 verified 2026-07-11: 'Benchmarking Study of Arizona Public Service Company's Operations, Cost, and Financial Performance ... Presented to: Arizona Corporation Commission Utilities Division. Presented by: The Liberty Consulting Group. February 28, 2011.'. Listed for reference (metadata-only).",
+    "parse": false,
+    "fetch": true
+  }
+]
