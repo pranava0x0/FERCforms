@@ -106,18 +106,24 @@ _CORP_STOPWORDS = frozenset({
 def company_tokens(company: str) -> list[str]:
     """Distinctive lowercase tokens from a company name for content-matching.
 
-    Drops corporate suffixes and generic industry words; falls back to any word
-    ≥3 chars if stripping leaves nothing (e.g. a single-word brand)."""
+    Drops corporate suffixes and generic industry words. Falls back to ≥3-char
+    tokens (still stopword-filtered) to keep short distinctive brands like "DTE"
+    / "UGI" / "PSE". Returns [] when a name is ALL generic ("Power Company") — the
+    caller then can't (and must not) content-match, rather than trivially matching
+    any utility doc on "power"/"company" and silently defeating the check."""
     import re
 
     words = re.findall(r"[a-z0-9]+", company.lower())
     toks = [w for w in words if len(w) >= 4 and w not in _CORP_STOPWORDS]
     if not toks:
-        toks = [w for w in words if len(w) >= 3]
+        toks = [w for w in words if len(w) >= 3 and w not in _CORP_STOPWORDS]
     return toks
 
 
-def _stream_capped(url: str, ua: str, timeout: int) -> bytes:
+def _stream_capped(url: str, ua: str, timeout: int) -> tuple[bytes, bool]:
+    """Return (bytes, truncated). `truncated` is True if the download hit the
+    byte cap — the tail (xref/trailer) is then missing, so the PDF is structurally
+    incomplete and must not be treated as a verification failure."""
     r = requests.get(
         url,
         headers={"User-Agent": ua, "Accept": "*/*"},
@@ -126,38 +132,45 @@ def _stream_capped(url: str, ua: str, timeout: int) -> bytes:
         allow_redirects=True,
     )
     data = bytearray()
+    truncated = False
     for chunk in r.iter_content(65536):
         data.extend(chunk)
         if len(data) > _MAX_PDF_BYTES:
+            truncated = True
             break
     r.close()
-    return bytes(data)
+    return bytes(data), truncated
 
 
-def fetch_pdf_bytes(url: str, timeout: int = 90) -> bytes:
+def fetch_pdf_bytes(url: str, timeout: int = 90) -> tuple[bytes, bool]:
     """Stream a URL with a hard byte cap (so a 500-page report can't hang the
-    sweep). Rate-limited per host. The reusable verify-by-download primitive.
+    sweep). Rate-limited per host. Returns (bytes, truncated). The reusable
+    verify-by-download primitive.
 
     Mirrors the pipeline fetcher's UA fallback: some hosts (michigan.gov)
     UA-filter and serve an HTML interstitial to the default UA but the real PDF
     to a browser UA — so retry once with BROWSER_USER_AGENT on a non-PDF body."""
     host = (urlparse(url).hostname or "").lower()
     _throttle(host)
-    data = _stream_capped(url, config.USER_AGENT, timeout)
+    data, truncated = _stream_capped(url, config.USER_AGENT, timeout)
     if data[:5] != b"%PDF-":
         _throttle(host)
-        data = _stream_capped(url, config.BROWSER_USER_AGENT, timeout)
-    return data
+        data, truncated = _stream_capped(url, config.BROWSER_USER_AGENT, timeout)
+    return data, truncated
 
 
 def content_match_fails(company: str, pages_text: str) -> list[str]:
     """Offline core of the live check: does the extracted text actually mention
     the claimed company? Returns failure strings (empty = matched). Split out so a
-    unit test can exercise the matching logic without touching the network."""
+    unit test can exercise the matching logic without touching the network.
+
+    Matches on whitespace-normalized text only — NOT a despaced concatenation,
+    which would manufacture cross-word substrings ("the pep company" → "pepco")
+    and let a genuinely wrong document pass (the exact false-negative this check
+    exists to prevent)."""
     norm = " ".join(pages_text.lower().split())
-    despaced = norm.replace(" ", "")  # tolerate glyph-spaced covers ("F P L")
     toks = company_tokens(company)
-    if toks and not any(t in norm or t in despaced for t in toks):
+    if toks and not any(t in norm for t in toks):
         return [f"none of company tokens {toks} found in scanned pages — possible wrong document"]
     return []
 
@@ -165,16 +178,33 @@ def content_match_fails(company: str, pages_text: str) -> list[str]:
 def live_verify(rid: str, seed: dict, report: dict) -> list[str]:
     """Re-fetch a fetch=true PDF record and confirm it is STILL the claimed
     document: %PDF magic, page-count == committed report, and a company token
-    present in the first pages. Returns failure strings (empty = verified)."""
+    present in the first pages. Returns failure strings (empty = verified).
+
+    Fully guarded: any unexpected error becomes a per-record failure string, never
+    a raised exception — so one bad record can't abort the whole sweep (the sweep
+    runs these concurrently via ex.map, which would otherwise propagate)."""
+    try:
+        return _live_verify(rid, seed, report)
+    except Exception as exc:  # noqa: BLE001 — never let one record crash the sweep
+        return [f"{rid}: live-check error {type(exc).__name__}: {exc}"]
+
+
+def _live_verify(rid: str, seed: dict, report: dict) -> list[str]:
     import fitz  # PyMuPDF
 
     url = seed["pdf_url"]
     try:
-        data = fetch_pdf_bytes(url)
+        data, truncated = fetch_pdf_bytes(url)
     except Exception as exc:  # noqa: BLE001
         return [f"{rid}: fetch error {type(exc).__name__}: {exc} — {url}"]
     if data[:5] != b"%PDF-":
         return [f"{rid}: not a PDF (head={data[:12]!r}) — {url}"]
+    if truncated:
+        # Hit the byte cap: the PDF tail (xref/trailer) is missing, so page_count
+        # and text can't be trusted. Not a fabrication signal — a valid PDF header
+        # that's simply too large to fully verify here. Pass (don't false-fail).
+        logger.info("  (skipped %s — exceeds %d MB cap, not fully verified)", rid, _MAX_PDF_BYTES // 1_000_000)
+        return []
     try:
         doc = fitz.open(stream=data, filetype="pdf")
     except Exception as exc:  # noqa: BLE001

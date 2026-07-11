@@ -85,11 +85,13 @@ const yearOf = (iso) => (iso ? iso.slice(0, 4) : null);
    in a finding's own committed text — see pipeline/amounts.py). */
 const fmtAmount = (n) => {
   if (n == null || !isFinite(n)) return null;
-  const a = Math.abs(n);
-  if (a >= 1e9) return "$" + (n / 1e9).toFixed(a >= 1e10 ? 0 : 1).replace(/\.0$/, "") + "B";
-  if (a >= 1e6) return "$" + (n / 1e6).toFixed(a >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
-  if (a >= 1e3) return "$" + Math.round(n / 1e3) + "K";
-  return "$" + Math.round(n).toLocaleString("en-US");
+  const a = Math.abs(n), sign = n < 0 ? "-" : "";
+  // Thresholds are 0.5% below each unit so values that round up across a
+  // boundary (999,999 -> "$1M", not "$1000K") land in the higher unit.
+  if (a >= 9.95e8) return sign + "$" + (a / 1e9).toFixed(a >= 1e10 ? 0 : 1).replace(/\.0$/, "") + "B";
+  if (a >= 9.95e5) return sign + "$" + (a / 1e6).toFixed(a >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
+  if (a >= 1e3) return sign + "$" + Math.round(a / 1e3) + "K";
+  return sign + "$" + Math.round(a).toLocaleString("en-US");
 };
 const initials = (name) => (name || "?").replace(/[^A-Za-z ]/g, "").trim().charAt(0).toUpperCase() || "?";
 

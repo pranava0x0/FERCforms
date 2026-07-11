@@ -446,14 +446,22 @@ def test_verify_sources_company_token_matching():
     assert vs.company_tokens("Pacific Gas and Electric Company") == ["pacific"]
     assert "pepco" in vs.company_tokens("Potomac Electric Power Company (Pepco)")
     assert vs.company_tokens("Avista Corporation") == ["avista"]
+    # ≥3-char fallback keeps short distinctive brands but still drops stopwords.
+    assert vs.company_tokens("DTE Electric Company") == ["dte"]
+    # An all-generic name yields NO tokens, so the caller can't (and must not)
+    # trivially match every utility doc on "power"/"company" (defeating the check).
+    assert vs.company_tokens("Power Company") == []
+    assert vs.content_match_fails("Power Company", "totally unrelated text") == []
 
     # A real audit that names the utility only deep inside still matches on the
     # full-doc fallback text.
     body = "Management Audit of PROJECTpipes ... the Washington Gas Light Company system"
     assert vs.content_match_fails("Washington Gas Light Company", body) == []
 
-    # Glyph-spaced covers ("F P L") still match via the despaced pass.
-    assert vs.content_match_fails("Florida Power & Light Company", "review of f l o r i d a") == []
+    # Matching is on whitespace-normalized text, NOT a despaced concatenation:
+    # a wrong doc whose adjacent words happen to concatenate into the token must
+    # still be flagged (no "the pep company" -> "pepco" false match).
+    assert vs.content_match_fails("Potomac Electric Power Company (Pepco)", "the pep company operates here")
 
     # A wrong document — never mentions the claimed company — is flagged.
     wrong = "This is the annual report of Some Other Utility, Inc. for fiscal year 2024."
