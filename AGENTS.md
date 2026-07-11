@@ -261,6 +261,19 @@ returns — **this is not optional**, it's how the agent rules stay sharp:
 Rule of thumb: if the same correction would apply to the *next* agent run, it belongs in a file, not
 just this turn's reply.
 
+**2026-07-10/11 state-expansion batches (9 finders, ~926k tok → 22 records; full eval in memory
+`agent_eval_2026_07_10_state_expansion`).** Three durable lessons:
+- **Pre-screen that the state HAS a standalone audit program before spending an agent.** MN & WI
+  don't (prudence lives inside dockets) — a 2-min inline `WebSearch` would have flagged both and saved
+  ~169k tok. Pre-vetted states (FL/CA/IL/DC — known audit programs) yielded; un-vetted low-probability
+  states mostly returned `[]`.
+- **Use ONE agent to discover a source's URL *pattern*, then enumerate INLINE (token-free).** CA's
+  agent found 4 + the index; enumerating 11 more inline cost ~0 tokens. The agent's marginal value is
+  the pattern, not each record — applies to any flat static dir (FL/WA/CA).
+- **SPA-driving / broken-cert / Cloudflare sources give terrible tokens/record** (AZ 76, WA 65, VA 36
+  `tool_uses`). Cap effort hard; reserve them for a *named* high-value target. And genre-gate the
+  prompt: VA returned rate-case *testimony* as "audits" (a category error caught downstream, 0 committed).
+
 ## Agent checkpointing & failure logging (multi-step ingest tasks)
 
 When spinning off agents for data ingest, processing loops, or state-backfill work, the agent MUST implement:
