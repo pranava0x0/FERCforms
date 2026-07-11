@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 407 records, 813 findings, 2030 recommendations. Generated 2026-07-06.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 440 records, 813 findings, 2030 recommendations. Generated 2026-07-11.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5726,6 +5726,72 @@ CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recov
 
 ---
 
+## Pacific Gas and Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2026-06-05 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Pacific Gas and Electric Company, dated 2026-06-05 (30 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Southwest Gas Corporation
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2026-02-12 | Industry: gas | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Southwest Gas Corporation, dated 2026-02-12 (21 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Liberty Utilities (CalPeco Electric) LLC
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2026-02-12 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Liberty Utilities (CalPeco Electric) LLC, dated 2026-02-12 (17 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Cascade Natural Gas Corporation
+- Collection: State PUC Audits | Source: Washington UTC Pipeline Safety Program
+- Docket: n/a | Audit type: n/a
+- Issued: 2026-01-05 | Industry: gas | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/public-safety/pipeline-safety/pipeline-operators-inspected-pipeline-safety-program/cascade-natural-gas-inspection-reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC Pipeline Safety Program technical/compliance inspection report #8997 (bundled 8898/8999/9000) — Standard Gas Distribution Inspection of Cascade Natural Gas's Bellingham, Yakima, Sunnyside and Bellingham-South systems, protocol set WA.GD.2024.02 (field activity Apr–Aug 2025; approved Jan 5, 2026; 146 pp). Static .gov PDF on utc.wa.gov; no docket (program inspection). Page 1 verified 2026-07-10. Listed for reference (metadata-only).
+
+---
+
+## Potomac Electric Power Company (Pepco)
+- Collection: State PUC Audits | Source: DC Public Service Commission
+- Docket: FC 1176 | Audit type: n/a
+- Issued: 2025-12-31 | Industry: electric | FERC Form: n/a
+- Source page: https://edocket.dcpsc.org/public/search/casenumber/FC1176
+- Status: listed for reference (not machine-parsed into findings)
+
+DC PSC Formal Case No. 1176 — Independent Management Audit of Potomac Electric Power Company (Pepco), prepared for the Commission by Atrium Economics, LLC (submitted December 31, 2025, 242 pp; public version). An independent assessment of Pepco's governance, budgeting, and capital planning ordered by the DC PSC. Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 is the eDocket filing receipt ('FC1176 - 2025 - E - 542 RECEIVED 2025 DEC 31'); the Atrium management-audit report follows. Downloaded + verified 2026-07-10. Listed for reference (metadata-only).
+
+---
+
+## San Diego Gas & Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-12-30 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Affiliate Transaction Rules Performance Audit of San Diego Gas & Electric Company, dated 2025-12-30 (27 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
 ## The Narragansett Electric Company d/b/a Rhode Island Energy
 - Collection: State PUC Audits | Source: Rhode Island Public Utilities Commission
 - Docket: 25-08-GE | Audit type: n/a
@@ -5737,6 +5803,17 @@ Rhode Island Energy Billing System Evaluation (Redacted), Final Report for RIPUC
 
 ---
 
+## Avista Corporation
+- Collection: State PUC Audits | Source: Washington UTC Pipeline Safety Program
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-09-30 | Industry: gas | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/public-safety/pipeline-safety/pipeline-operators-inspected-pipeline-safety-program/avista-corporation-inspection-reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC Pipeline Safety Program technical/compliance inspection report #8985 — Standard Gas Distribution Inspection of Avista's Ritzville system, protocol set WA.GD.2024.02 (field activity Aug 2025; approved Sept 30, 2025; 38 pp). Static .gov PDF on utc.wa.gov; no docket (program inspection). Page 1 verified 2026-07-10. Listed for reference (metadata-only).
+
+---
+
 ## FirstEnergy Pennsylvania Electric Company
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: n/a | Audit type: n/a
@@ -5745,6 +5822,39 @@ Rhode Island Energy Billing System Evaluation (Redacted), Final Report for RIPUC
 - Status: listed for reference (not machine-parsed into findings)
 
 Management Efficiency Investigation (follow-up to the 2022 Management & Operations Audit) issued by the PA PUC Bureau of Audits, published 2025-09-25. PDF: puc.pa.gov/pcdocs/1896261.pdf. Findings & recommendations parsed verbatim from the Exhibit I-2 Summary of Recommendations.
+
+---
+
+## Pacific Gas and Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-09-16 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Affiliate Transaction Rules Performance Audit of Pacific Gas and Electric Company (review period Jan 1, 2022 – Dec 31, 2023), dated September 16, 2025 (20 pp). PG&E is a combined electric+gas utility; tagged electric (primary Form-1 filer). Page 1 verified 2026-07-10: 'AFFILIATE TRANSACTION RULES PERFORMANCE AUDIT Pacific Gas & Electric Company January 1, 2022, through December 31, 2023 ... Utility Audits Branch September 16, 2025'. Listed for reference (metadata-only).
+
+---
+
+## Southern California Edison Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-08-27 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Affiliate Transaction Rules Performance Audit of Southern California Edison Company, dated 2025-08-27 (34 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Southern California Gas Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-07-18 | Industry: gas | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Affiliate Transaction Rules Performance Audit of Southern California Gas Company (review period Jan 1, 2022 – Dec 31, 2023), dated July 18, 2025 (42 pp). Page 1 verified 2026-07-10: 'AFFILIATE TRANSACTION RULES PERFORMANCE AUDIT Southern California Gas Company January 1, 2022, through December 31, 2023 ... Utility Audits Branch July 18, 2025'. Listed for reference (metadata-only).
 
 ---
 
@@ -5843,6 +5953,17 @@ Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June
 
 ---
 
+## Northwest Natural Gas Company
+- Collection: State PUC Audits | Source: Washington UTC Pipeline Safety Program
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-06-26 | Industry: gas | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/public-safety/pipeline-safety/pipeline-operators-inspected-pipeline-safety-program/northwest-natural-gas-inspection-reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC Pipeline Safety Program technical/compliance inspection report #9027 — Operations & Maintenance (O&M) program review of Northwest Natural Gas Company's Washington gas distribution (plan approved Jan 14, 2025; report generated June 26, 2025; 27 pp). Static .gov PDF on utc.wa.gov; no docket (program inspection). Page 1 verified 2026-07-10. Listed for reference (metadata-only).
+
+---
+
 ## New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation
 - Collection: State PUC Audits | Source: New York State Department of Public Service
 - Docket: 23-M-0103 | Audit type: n/a
@@ -5851,6 +5972,17 @@ Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June
 - Status: listed for reference (not machine-parsed into findings)
 
 NYSEG and RG&E Implementation Plans (June 18, 2025), Case 23-M-0103 (716 pp) — the utilities' filed plans describing the corrective actions they will take in response to the 128 recommendations in NorthStar's comprehensive management and operations audit (PSL §66(19)). Page 1 verified: 'Case 23-M-0103: In the Matter of a Comprehensive Management Audit of New York State Electric & Gas, and Rochester Gas and Electric Implementation Plans June 18, 2025 New York State Electric & Gas Corporation Rochester Gas and Electric Corporation'. Harvested from the NY DPS DMM. Listed for reference (metadata-only). Source: NY DPS DMM (documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId={40F38397-0000-C120-9A8C-C2B1D73E3053}).
+
+---
+
+## San Diego Gas & Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2025-06-13 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of San Diego Gas & Electric Company (review period Jan 1 – Dec 31, 2023), dated June 13, 2025 (26 pp). SDG&E is a combined electric+gas utility; tagged electric (primary Form-1 filer). Page 1 verified 2026-07-10: 'BALANCING ACCOUNTS PERFORMANCE AUDIT San Diego Gas & Electric Company January 1, 2023, through December 31, 2023 ... Utility Audits Branch June 13, 2025'. Listed for reference (metadata-only).
 
 ---
 
@@ -6215,6 +6347,17 @@ Final Report — Utility Distribution Audit of Consumers Energy, Part One, by Th
 
 ---
 
+## Puget Sound Energy
+- Collection: State PUC Audits | Source: Washington UTC Pipeline Safety Program
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-09-10 | Industry: gas | FERC Form: n/a
+- Source page: https://www.utc.wa.gov/public-safety/pipeline-safety/pipeline-operators-inspected-pipeline-safety-program/puget-sound-energy-inspection-reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Washington UTC Pipeline Safety Program technical/compliance inspection report #8807 — LNG Standard Inspection of Puget Sound Energy's Gig Harbor LNG satellite plant, protocol set LNG.2024.01 (approved Sept 10, 2024, 18 pp). UTC inspectors audit the operator's program against a published protocol set, recording scope, findings and satisfactory/unsatisfactory ratings ('No violations or concerns from this inspection'). These program inspections carry no docket number; the report id + protocol set is the stable key. Static .gov PDF on utc.wa.gov. Page 1 verified 2026-07-10. Listed for reference (metadata-only).
+
+---
+
 ## Southern California Edison Company
 - Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
 - Docket: n/a | Audit type: n/a
@@ -6300,6 +6443,28 @@ Recommendations:
 - Status: listed for reference (not machine-parsed into findings)
 
 Mississippi Public Utilities Staff (MPUS) Annual Report for the year ending June 30, 2024 (Charles Jim Beckett, Executive Director), 20 pp. MPUS is the independent staff that, per the Mississippi PSC's General Orders, conducts year-round audits of the investor-owned utilities' fuel-adjustment clauses and purchased-gas adjustments — including Entergy Mississippi's Energy Cost Recovery (ECR) rider and Mississippi Power Company's fuel cost recovery (FCR) rider — and reviews rate and prudence matters. Listed for reference (metadata-only). Source: Mississippi Public Service Commission (psc.ms.gov/sites/default/files/2024-MPUS-Annual-Report.pdf).
+
+---
+
+## PacifiCorp
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-05-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of PacifiCorp, dated 2024-05-01 (15 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Pacific Gas and Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-04-10 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Pacific Gas and Electric Company, dated April 10, 2024 (44 pp). PG&E is a combined electric+gas utility; tagged electric (primary Form-1 filer). Page 1 (title page) verified 2026-07-10: 'Pacific Gas & Electric Company Balancing Accounts ... California Public Utilities Commission, Utility Audits, Risk and Compliance Division, Sacramento, CA'. Listed for reference (metadata-only).
 
 ---
 
@@ -6442,6 +6607,72 @@ Recommendations:
 
 ---
 
+## Liberty Utilities (CalPeco Electric) LLC
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-03-15 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Liberty Utilities (CalPeco Electric) LLC, dated 2024-03-15 (20 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Southwest Gas Corporation
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-03-01 | Industry: gas | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Southwest Gas Corporation, dated 2024-03-01 (20 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Bear Valley Electric Service
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-02-15 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Bear Valley Electric Service, dated 2024-02-15 (21 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
+## Tampa Electric Company
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-02-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Review of Tampa Electric Company's Storm Protection Plan Program Internal Controls' (February 2024, 49 pp). Staff performance audit of TECO's Storm Protection Plan (SPP) program controls. issued_date set to the month (2024-02-01). Page 1 verified 2026-07-10: 'Review of Tampa Electric Company's Storm Protection Plan Program Internal Controls February 2024 ... Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).
+
+---
+
+## Florida Power & Light Company
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2024-01-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Review of Nuclear Operations, Florida Power & Light Company' (January 2024, 45 pp). A staff management/operations audit authored 'BY AUTHORITY OF The Florida Public Service Commission, Office of Auditing and Performance Analysis'. issued_date set to the month (2024-01-01) as the report carries month/year, not a day. Page 1 verified 2026-07-10: 'Review of Nuclear Operations Florida Power & Light Company January 2024 ... BY AUTHORITY OF The Florida Public Service Commission, Office of Auditing and Performance Analysis'. Served identically on www.psc.state.fl.us (used here) and www.floridapsc.com. Listed for reference (metadata-only).
+
+---
+
+## Washington Gas Light Company
+- Collection: State PUC Audits | Source: DC Public Service Commission
+- Docket: FC 1154 | Audit type: n/a
+- Issued: 2023-12-12 | Industry: gas | FERC Form: n/a
+- Source page: https://edocket.dcpsc.org/public/search/casenumber/FC1154
+- Status: listed for reference (not machine-parsed into findings)
+
+DC PSC Formal Case No. 1154 — Independent Management Audit of Washington Gas Light Company's PROJECTpipes 2 accelerated pipe-replacement program, prepared for the Commission by Continuum Capital (December 12, 2023, 138 pp; public version, confidential material redacted). Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 verified 2026-07-10 (Continuum Capital cover letter to the DC PSC Office of Infrastructure and System Planning). Listed for reference (metadata-only).
+
+---
+
 ## Rocky Mountain Power (PacifiCorp)
 - Collection: State PUC Audits | Source: Public Service Commission of Utah
 - Docket: 23-035-01 | Audit type: n/a
@@ -6461,6 +6692,17 @@ Energy Balancing Account (EBA) Audit for Rocky Mountain Power for Calendar Year 
 - Status: listed for reference (not machine-parsed into findings)
 
 Management Efficiency Investigation of Duquesne Light Company, PA PUC Bureau of Audits; PUC publication 2023-09-21, Docket No. D-2023-3037425. Follow-up review; recommendations in Exhibit II-1. PDF: puc.pa.gov/pcdocs/1799646.pdf. Listed for reference (metadata-only; MEI Exhibit II-1 format not yet parsed).
+
+---
+
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission (The Liberty Consulting Group audit)
+- Docket: n/a | Audit type: n/a
+- Issued: 2023-07-17 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/programs/ComEd-Management-Audit-of-Ethics-and-Compliance
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission — 'Management Audit of Commonwealth Edison Company Ethics and Compliance, Final Report', prepared for the ICC by The Liberty Consulting Group (July 17, 2023, 159 pp). Independent management audit of ComEd's ethics and compliance program, commissioned by the ICC. No ICC docket number surfaced on the landing page; left null rather than guessed. Page 1 verified 2026-07-10: 'Management Audit of Commonwealth Edison Company Ethics and Compliance Final Report ... Presented by: The Liberty Consulting Group. July 17, 2023'. Listed for reference (metadata-only).
 
 ---
 
@@ -6578,6 +6820,17 @@ Recommendations:
 - Status: listed for reference (not machine-parsed into findings)
 
 NJ BPU audit (Liberty Consulting Group): Phase Two of an Audit of the Affiliated Transactions and a Management Audit of JCP&L. Docket EA20110733, dated Feb 7, 2023. 601 pp. Page 1 verified.
+
+---
+
+## Florida Power & Light Company
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2023-02-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Review of Cyber and Physical Security Protections, Florida Power & Light Company' (February 2023, 38 pp). Staff operations audit of FPL's cyber and physical security protections. issued_date set to the month (2023-02-01). Page 1 verified 2026-07-10: 'Review of Cyber and Physical Security Protections Florida Power & Light Company February 2023 ... Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).
 
 ---
 
@@ -6717,6 +6970,28 @@ Recommendations:
 
 ---
 
+## Commonwealth Edison Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission (The Liberty Consulting Group audit)
+- Docket: 21-0737 | Audit type: n/a
+- Issued: 2022-04-12 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/programs/climate-and-equitable-jobs-act-implementation
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission — 'Baseline Distribution Grid Assessment of Commonwealth Edison Company, Pursuant to Section 16-105.10 of the Illinois Public Utilities Act, Final Report', prepared for the ICC by The Liberty Consulting Group (April 12, 2022, 131 pp), ICC Docket 21-0737 under the Climate and Equitable Jobs Act (CEJA). Page 1 verified 2026-07-10: 'Final Report Baseline Distribution Grid Assessment of Commonwealth Edison Company, Pursuant to Section 16-105.10 ... Presented by: The Liberty Consulting Group. April 12, 2022'. Listed for reference (metadata-only).
+
+---
+
+## Ameren Illinois Company
+- Collection: State PUC Audits | Source: Illinois Commerce Commission (The Liberty Consulting Group audit)
+- Docket: 21-0736 | Audit type: n/a
+- Issued: 2022-04-12 | Industry: electric | FERC Form: n/a
+- Source page: https://www.icc.illinois.gov/programs/climate-and-equitable-jobs-act-implementation
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission — 'Baseline Distribution Grid Assessment of Ameren Illinois, Pursuant to Section 16-105.10 of the Illinois Public Utilities Act, Final Report (Revised)', prepared for the ICC by The Liberty Consulting Group (April 12, 2022, 106 pp), ICC Docket 21-0736 under the Climate and Equitable Jobs Act (CEJA). Page 1 verified 2026-07-10: 'Final Report Baseline Distribution Grid Assessment of Ameren IL, Pursuant to Section 16-105.10 ... Presented by: The Liberty Consulting Group. April 12, 2022'. Listed for reference (metadata-only).
+
+---
+
 ## FirstEnergy 'Ohio Companies' (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)
 - Collection: State PUC Audits | Source: Public Utilities Commission of Ohio
 - Docket: 17-2474-EL-RDR | Audit type: n/a
@@ -6725,6 +7000,17 @@ Recommendations:
 - Status: listed for reference (not machine-parsed into findings)
 
 PUCO third-party audit (Daymark Energy Advisors), Case 17-2474-EL-RDR — Audit of the FirstEnergy Ohio Companies' Rider DMR. 137 pp. Live host F5-WAF-blocked to scripts (fetch=false); content verified via the Internet Archive snapshot in archived_via. Page 1 verified: 'DAYMARK ENERGY ADVISORS ... AN AUDIT REPORT OF THE OHIO COMPANIES' RIDER DMR JANUARY 14, 2022'.
+
+---
+
+## San Diego Gas & Electric Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2021-12-20 | Industry: electric | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of San Diego Gas & Electric Company, dated 2021-12-20 (12 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
 
 ---
 
@@ -6846,6 +7132,17 @@ Recommendations:
 
 ---
 
+## Southern California Gas Company
+- Collection: State PUC Audits | Source: CPUC Utility Audits, Risk and Compliance Division
+- Docket: n/a | Audit type: n/a
+- Issued: 2021-04-27 | Industry: gas | FERC Form: n/a
+- Source page: https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry
+- Status: listed for reference (not machine-parsed into findings)
+
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of Southern California Gas Company, dated 2021-04-27 (18 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
+
+---
+
 ## Columbia Gas of Pennsylvania, Inc.
 - Collection: State PUC Audits | Source: PA PUC Bureau of Audits
 - Docket: D-2019-3011582 | Audit type: n/a
@@ -6944,6 +7241,17 @@ Recommendations:
 
 ---
 
+## Washington Gas Light Company
+- Collection: State PUC Audits | Source: DC Public Service Commission
+- Docket: FC 1115 | Audit type: n/a
+- Issued: 2019-04-19 | Industry: gas | FERC Form: n/a
+- Source page: https://edocket.dcpsc.org/public/search/casenumber/FC1115
+- Status: listed for reference (not machine-parsed into findings)
+
+DC PSC Formal Case No. 1115 — Final Report, Management Audit of Washington Gas Light Company's PROJECTpipes accelerated pipe-replacement program, prepared for the Commission by The Liberty Consulting Group (April 19, 2019, 140 pp; public version, confidential material redacted). Host edocket.dcpsc.org is the DC PSC's official e-Docket (allowlisted). Page 1 verified 2026-07-10: 'Final Report Management Audit of PROJECTpipes Public Version ... Presented to: District of Columbia Public Service Commission ... The Liberty Consulting Group. April 19, 2019'. Listed for reference (metadata-only).
+
+---
+
 ## New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation
 - Collection: State PUC Audits | Source: NY Public Service Commission
 - Docket: 16-M-0610 | Audit type: n/a
@@ -6974,6 +7282,61 @@ Illinois Commerce Commission Final Order (215 pp) in the §8-501/10-101 investig
 - Status: listed for reference (not machine-parsed into findings)
 
 NY PSC Order Releasing Audit Report, Case 16-M-0001 — Comprehensive Management and Operations Audit of Central Hudson (PSL 66(19)). Issued & effective Oct 24, 2017. Page 1 verified.
+
+---
+
+## Peoples Gas System
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2015-11-01 | Industry: gas | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Peoples Gas System — Distribution Facility Inspections Follow-up Audit' (November 2015, 37 pp). Staff operations follow-up audit of Peoples Gas System's distribution facility inspections. issued_date set to the month (2015-11-01). Page 1 verified 2026-07-10: 'Peoples Gas System Distribution Facility Inspections Follow-up Audit NOVEMBER 2015 BY AUTHORITY OF The Florida Public Service Commission, Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).
+
+---
+
+## Gulf Power Company
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2014-04-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Review of Gulf Power Company's Internal Audit Function' (April 2014, 16 pp). Staff operations audit of Gulf Power's internal audit function. issued_date set to the month (2014-04-01). Page 1 verified 2026-07-10 (some OCR glyph noise in the born-image cover): 'Review of Gulf Power Company's Internal Audit Function April 2014 BY AUTHORITY OF The Florida Public Service Commission...'. Listed for reference (metadata-only).
+
+---
+
+## Progress Energy Florida, Inc.
+- Collection: State PUC Audits | Source: Florida PSC Office of Auditing and Performance Analysis
+- Docket: n/a | Audit type: n/a
+- Issued: 2013-03-01 | Industry: electric | FERC Form: n/a
+- Source page: https://www.psc.state.fl.us/reports
+- Status: listed for reference (not machine-parsed into findings)
+
+Florida PSC Office of Auditing and Performance Analysis — 'Review of Progress Energy Florida, Inc.'s Quality Assurance Process for Distribution Construction' (March 2013, 41 pp). Staff operations audit of PEF's distribution-construction QA process. issued_date set to the month (2013-03-01). Page 1 verified 2026-07-10: 'Review of Progress Energy Florida, Inc.'s Quality Assurance Process for Distribution Const... Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).
+
+---
+
+## Ameren Illinois
+- Collection: State PUC Audits | Source: Illinois Commerce Commission (The Liberty Consulting Group audit)
+- Docket: n/a | Audit type: n/a
+- Issued: 2012-11-29 | Industry: electric | FERC Form: n/a
+- Source page: https://icc.illinois.gov/industry-reports/electric-reliability-archive
+- Status: listed for reference (not machine-parsed into findings)
+
+Illinois Commerce Commission — 'Verification/Monitoring Investigation of Wind and Ice Storm Preparedness and Restoration of Ameren Illinois, Final Report', prepared for the ICC by The Liberty Consulting Group (November 29, 2012, 418 pp). Independent performance audit of Ameren Illinois's storm preparedness and restoration. No ICC docket surfaced on the reliability-archive landing page; left null rather than guessed. Predates the FERC 2014+ window, but that constraint is FERC-specific; the state_audit collection already carries older reports. Page 1 verified 2026-07-10: 'Final Report Verification/Monitoring Investigation of Wind and Ice Storm Preparedness and Restoration of Ameren Illinois ... By: The Liberty Consulting Group ... November 29, 2012'. Listed for reference (metadata-only).
+
+---
+
+## Arizona Public Service Company
+- Collection: State PUC Audits | Source: Arizona Corporation Commission Utilities Division (The Liberty Consulting Group audit)
+- Docket: E-01345A-08-0172 | Audit type: n/a
+- Issued: 2011-02-28 | Industry: electric | FERC Form: n/a
+- Source page: https://www.azcc.gov/utilities/industry-types/electric
+- Status: listed for reference (not machine-parsed into findings)
+
+Arizona Corporation Commission — 'Benchmarking Study of Arizona Public Service Company's Operations, Cost, and Financial Performance' (Final Report Supporting Analysis), prepared for the ACC Utilities Division by The Liberty Consulting Group (February 28, 2011, 260 pp; born-digital), Docket E-01345A-08-0172. A standalone independent consultant performance/management audit benchmarking APS against peer utilities (arose alongside the 2008 APS rate case but is a discrete audit report). Hosted on the valid-cert www.azcc.gov host (direct GET, application/pdf). The companion narrative 'Final Report' is filed only inside the docket (not separately hosted) — see docs/data-sources.md AZ dead-seam note. Page 1 verified 2026-07-11: 'Benchmarking Study of Arizona Public Service Company's Operations, Cost, and Financial Performance ... Presented to: Arizona Corporation Commission Utilities Division. Presented by: The Liberty Consulting Group. February 28, 2011.'. Listed for reference (metadata-only).
 
 ---
 
