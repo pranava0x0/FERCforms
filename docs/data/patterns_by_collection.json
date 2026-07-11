@@ -507,7 +507,7 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-07-06"
+    "generated_at": "2026-07-11"
   },
   "prudence_review": {
     "report_count": 29,
@@ -603,28 +603,34 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-06"
+    "generated_at": "2026-07-11"
   },
   "state_audit": {
-    "report_count": 49,
+    "report_count": 82,
     "finding_count": 150,
     "other_matter_count": 0,
     "recommendation_count": 551,
     "by_industry": {
-      "electric": 36,
-      "gas": 11,
+      "electric": 58,
+      "gas": 22,
       "unknown": 2
     },
     "by_year": {
+      "2011": 1,
+      "2012": 1,
+      "2013": 1,
+      "2014": 1,
+      "2015": 1,
       "2017": 1,
       "2018": 1,
-      "2019": 2,
+      "2019": 3,
       "2020": 2,
-      "2021": 2,
-      "2022": 3,
-      "2023": 6,
-      "2024": 10,
-      "2025": 11
+      "2021": 4,
+      "2022": 5,
+      "2023": 9,
+      "2024": 18,
+      "2025": 19,
+      "2026": 4
     },
     "by_function": {},
     "themes": [
@@ -637,12 +643,31 @@
           "inter-company"
         ],
         "finding_count": 14,
-        "report_count": 14,
+        "report_count": 18,
         "example_titles": [
           "Cost Allocations and Affiliated Interests",
           "Budget And Finance",
           "Affiliated Interests and Cost Allocations",
           "Affiliated Interests and Cost Allocations (continued)"
+        ]
+      },
+      {
+        "theme": "Internal audit & internal controls",
+        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
+        "keywords": [
+          "internal audit",
+          "internal control",
+          "delegation of authority",
+          "code of business conduct",
+          "compliance program"
+        ],
+        "finding_count": 25,
+        "report_count": 16,
+        "example_titles": [
+          "Corporate Governance",
+          "Cost Allocations and Affiliated Interests",
+          "Governance And Management",
+          "Rg&E."
         ]
       },
       {
@@ -663,25 +688,6 @@
           "Customer Operations",
           "Performance Management",
           "Human Resources and Diversity (continued)"
-        ]
-      },
-      {
-        "theme": "Internal audit & internal controls",
-        "description": "Weak internal controls, compliance programs, or internal-audit coverage.",
-        "keywords": [
-          "internal audit",
-          "internal control",
-          "delegation of authority",
-          "code of business conduct",
-          "compliance program"
-        ],
-        "finding_count": 25,
-        "report_count": 13,
-        "example_titles": [
-          "Corporate Governance",
-          "Cost Allocations and Affiliated Interests",
-          "Governance And Management",
-          "Rg&E."
         ]
       },
       {
@@ -735,6 +741,22 @@
         ]
       },
       {
+        "theme": "Cybersecurity & physical security",
+        "description": "Gaps in cyber defenses or physical security of facilities and systems.",
+        "keywords": [
+          "cyber",
+          "physical security"
+        ],
+        "finding_count": 13,
+        "report_count": 10,
+        "example_titles": [
+          "Emergency Preparedness",
+          "Customer Operations",
+          "Rg&E.",
+          "Governance"
+        ]
+      },
+      {
         "theme": "Emergency preparedness & business continuity",
         "description": "Weak emergency response, storm readiness, or business-continuity planning.",
         "keywords": [
@@ -751,22 +773,6 @@
           "Gas Operations",
           "Rg&E.",
           "Emergency Preparedness (continued)"
-        ]
-      },
-      {
-        "theme": "Cybersecurity & physical security",
-        "description": "Gaps in cyber defenses or physical security of facilities and systems.",
-        "keywords": [
-          "cyber",
-          "physical security"
-        ],
-        "finding_count": 13,
-        "report_count": 9,
-        "example_titles": [
-          "Emergency Preparedness",
-          "Customer Operations",
-          "Rg&E.",
-          "Governance"
         ]
       },
       {
@@ -921,23 +927,6 @@
         "example_titles": []
       },
       {
-        "theme": "Property & plant records",
-        "description": "Incomplete or inaccurate utility plant and property records.",
-        "keywords": [
-          "property unit",
-          "carrier property",
-          "noncarrier property",
-          "plant in service",
-          "property record"
-        ],
-        "finding_count": 2,
-        "report_count": 2,
-        "example_titles": [
-          "Governance",
-          "Accounting and Property Records"
-        ]
-      },
-      {
         "theme": "Storm cost recovery & securitization",
         "description": "Storm restoration costs, storm riders/reserves, or securitization.",
         "keywords": [
@@ -954,10 +943,27 @@
           "securitization"
         ],
         "finding_count": 2,
-        "report_count": 2,
+        "report_count": 3,
         "example_titles": [
           "Electric Operations",
           "Deferral of Costs"
+        ]
+      },
+      {
+        "theme": "Property & plant records",
+        "description": "Incomplete or inaccurate utility plant and property records.",
+        "keywords": [
+          "property unit",
+          "carrier property",
+          "noncarrier property",
+          "plant in service",
+          "property record"
+        ],
+        "finding_count": 2,
+        "report_count": 2,
+        "example_titles": [
+          "Governance",
+          "Accounting and Property Records"
         ]
       },
       {
@@ -1076,7 +1082,7 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-07-06"
+    "generated_at": "2026-07-11"
   },
   "state_rate_case": {
     "report_count": 122,
@@ -1257,7 +1263,7 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-06"
+    "generated_at": "2026-07-11"
   },
   "state_reference": {
     "report_count": 84,
@@ -1286,6 +1292,6 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-06"
+    "generated_at": "2026-07-11"
   }
 }

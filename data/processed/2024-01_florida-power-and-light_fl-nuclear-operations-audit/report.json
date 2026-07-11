@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "FL",
+  "source": "Florida PSC Office of Auditing and Performance Analysis",
+  "doc_type": "management/operations audit (nuclear operations review)",
+  "id": "2024-01_florida-power-and-light_fl-nuclear-operations-audit",
+  "company": "Florida Power & Light Company",
+  "company_raw": "Florida Power & Light Company",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2024-01-01",
+  "source_page_url": "https://www.psc.state.fl.us/reports",
+  "pdf_download_url": "https://www.psc.state.fl.us/pscfiles/website-files/PDF/Publications/Reports/General/Electricgas/FPL_Nuclear_Operations_Audit.pdf",
+  "captured_at": "2026-07-10",
+  "source_note": "Florida PSC Office of Auditing and Performance Analysis — 'Review of Nuclear Operations, Florida Power & Light Company' (January 2024, 45 pp). A staff management/operations audit authored 'BY AUTHORITY OF The Florida Public Service Commission, Office of Auditing and Performance Analysis'. issued_date set to the month (2024-01-01) as the report carries month/year, not a day. Page 1 verified 2026-07-10: 'Review of Nuclear Operations Florida Power & Light Company January 2024 ... BY AUTHORITY OF The Florida Public Service Commission, Office of Auditing and Performance Analysis'. Served identically on www.psc.state.fl.us (used here) and www.floridapsc.com. Listed for reference (metadata-only).",
+  "archived_via": null,
+  "page_count": 45,
+  "scanned_pages": [
+    2,
+    4,
+    28
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

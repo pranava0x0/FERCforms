@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "FL",
+  "source": "Florida PSC Office of Auditing and Performance Analysis",
+  "doc_type": "operations audit (distribution construction quality-assurance process review)",
+  "id": "2013-03_progress-energy-florida_fl-qa-process-audit",
+  "company": "Progress Energy Florida, Inc.",
+  "company_raw": "Progress Energy Florida, Inc.",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2013-03-01",
+  "source_page_url": "https://www.psc.state.fl.us/reports",
+  "pdf_download_url": "https://www.psc.state.fl.us/pscfiles/website-files/PDF/Publications/Reports/General/Electricgas/PEF_QA.pdf",
+  "captured_at": "2026-07-10",
+  "source_note": "Florida PSC Office of Auditing and Performance Analysis — 'Review of Progress Energy Florida, Inc.'s Quality Assurance Process for Distribution Construction' (March 2013, 41 pp). Staff operations audit of PEF's distribution-construction QA process. issued_date set to the month (2013-03-01). Page 1 verified 2026-07-10: 'Review of Progress Energy Florida, Inc.'s Quality Assurance Process for Distribution Const... Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).",
+  "archived_via": null,
+  "page_count": 41,
+  "scanned_pages": [
+    2,
+    4,
+    38
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

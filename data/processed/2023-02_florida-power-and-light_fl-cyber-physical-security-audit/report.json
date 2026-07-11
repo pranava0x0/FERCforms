@@ -1,0 +1,32 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "FL",
+  "source": "Florida PSC Office of Auditing and Performance Analysis",
+  "doc_type": "operations audit (cyber and physical security protections review)",
+  "id": "2023-02_florida-power-and-light_fl-cyber-physical-security-audit",
+  "company": "Florida Power & Light Company",
+  "company_raw": "Florida Power & Light Company",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2023-02-01",
+  "source_page_url": "https://www.psc.state.fl.us/reports",
+  "pdf_download_url": "https://www.psc.state.fl.us/pscfiles/website-files/PDF/Publications/Reports/General/Electricgas/2023_FPL_Cybersecurity.pdf",
+  "captured_at": "2026-07-10",
+  "source_note": "Florida PSC Office of Auditing and Performance Analysis — 'Review of Cyber and Physical Security Protections, Florida Power & Light Company' (February 2023, 38 pp). Staff operations audit of FPL's cyber and physical security protections. issued_date set to the month (2023-02-01). Page 1 verified 2026-07-10: 'Review of Cyber and Physical Security Protections Florida Power & Light Company February 2023 ... Office of Auditing and Performance Analysis'. Listed for reference (metadata-only).",
+  "archived_via": null,
+  "page_count": 38,
+  "scanned_pages": [
+    2,
+    4,
+    22
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

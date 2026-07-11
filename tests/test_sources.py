@@ -433,6 +433,41 @@ def test_verify_sources_load_seeds_skips_non_list_files():
     assert all(isinstance(rec, dict) and "id" in rec for rec in seeds.values())
 
 
+def test_verify_sources_company_token_matching():
+    """`verify_sources` --live content-match: distinctive company tokens are found
+    in real document text (no false MISMATCH), and a genuinely wrong document — one
+    that never names the claimed company — is flagged. Guards the offline core of
+    the deep re-fetch check so a future tweak can't silently gut it (the WGL
+    PROJECTpipes false-positive that first-6-pages scanning produced, 2026-07-10)."""
+    from pipeline import verify_sources as vs
+
+    # Corporate suffixes / industry words are dropped; the brand/geographic
+    # remainder is what proves identity.
+    assert vs.company_tokens("Pacific Gas and Electric Company") == ["pacific"]
+    assert "pepco" in vs.company_tokens("Potomac Electric Power Company (Pepco)")
+    assert vs.company_tokens("Avista Corporation") == ["avista"]
+    # ≥3-char fallback keeps short distinctive brands but still drops stopwords.
+    assert vs.company_tokens("DTE Electric Company") == ["dte"]
+    # An all-generic name yields NO tokens, so the caller can't (and must not)
+    # trivially match every utility doc on "power"/"company" (defeating the check).
+    assert vs.company_tokens("Power Company") == []
+    assert vs.content_match_fails("Power Company", "totally unrelated text") == []
+
+    # A real audit that names the utility only deep inside still matches on the
+    # full-doc fallback text.
+    body = "Management Audit of PROJECTpipes ... the Washington Gas Light Company system"
+    assert vs.content_match_fails("Washington Gas Light Company", body) == []
+
+    # Matching is on whitespace-normalized text, NOT a despaced concatenation:
+    # a wrong doc whose adjacent words happen to concatenate into the token must
+    # still be flagged (no "the pep company" -> "pepco" false match).
+    assert vs.content_match_fails("Potomac Electric Power Company (Pepco)", "the pep company operates here")
+
+    # A wrong document — never mentions the claimed company — is flagged.
+    wrong = "This is the annual report of Some Other Utility, Inc. for fiscal year 2024."
+    assert vs.content_match_fails("Pacific Gas and Electric Company", wrong)
+
+
 def test_seed_inventory_covers_every_committed_seed():
     """`pipeline.seed_inventory.load_inventory` (the finder-agent dedup harness)
     must list every committed seed id, so a finder agent dedupes against the full

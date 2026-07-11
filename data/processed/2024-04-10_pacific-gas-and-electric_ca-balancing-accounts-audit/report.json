@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "CA",
+  "source": "CPUC Utility Audits, Risk and Compliance Division",
+  "doc_type": "balancing accounts performance audit (Utility Audits Branch)",
+  "id": "2024-04-10_pacific-gas-and-electric_ca-balancing-accounts-audit",
+  "company": "Pacific Gas and Electric Company",
+  "company_raw": "Pacific Gas and Electric Company",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2024-04-10",
+  "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+  "pdf_download_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2024/energy_2024-04-10_pge_ba.pdf",
+  "captured_at": "2026-07-10",
+  "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of Pacific Gas and Electric Company, dated April 10, 2024 (44 pp). PG&E is a combined electric+gas utility; tagged electric (primary Form-1 filer). Page 1 (title page) verified 2026-07-10: 'Pacific Gas & Electric Company Balancing Accounts ... California Public Utilities Commission, Utility Audits, Risk and Compliance Division, Sacramento, CA'. Listed for reference (metadata-only).",
+  "archived_via": null,
+  "page_count": 44,
+  "scanned_pages": [
+    1,
+    21
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

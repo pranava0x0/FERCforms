@@ -522,3 +522,72 @@ seams:
   (Docket 09-035-15) — not a substantive prudence/approval order.
 - **Nevada** — `puc-onbase.nv.gov` is a search-portal-only interface (no direct document links);
   `pucweb1.state.nv.us` links found were image-only/corrupted streams, unverifiable within budget.
+
+## Management/operations audit expansion — 2026-07-10 (state_audit +21 across 5 states)
+
+A finder-agent batch (6 states) targeting genuine utility *audit reports* for the `state_audit`
+collection. Landed **21 verified metadata-only records** (FL 6, IL 4, CA 4, DC 3, WA 4) — 3 new
+states (FL, DC, WA), CA 2→6, IL 1→5. All page-1-verified by download; `pipeline.verify_sources` PROVEN.
+New reusable source recipes:
+
+- **FL — Florida PSC Office of Auditing and Performance Analysis** · static `.gov` PDFs. The staff
+  management/operations audit program ("Review of … BY AUTHORITY OF The Florida Public Service
+  Commission, Office of Auditing and Performance Analysis") publishes every report under one flat dir:
+  `https://www.psc.state.fl.us/pscfiles/website-files/PDF/Publications/Reports/General/Electricgas/{Name}.pdf`
+  (identical mirror on `www.floridapsc.com`, but **use `psc.state.fl.us`** — the `.com` fails the
+  gov-guard). Index page: `https://www.psc.state.fl.us/reports`. No docket on these staff reports.
+- **DC — DC PSC eDocket API** (`edocket.dcpsc.org`, allowlisted `.org`). The SPA has two undocumented
+  GET endpoints that need no browser: `apis/api/Filing/GetFilings?caseNumber=FC1154&recordsToShow=800&isAdmin=false&orderByColumn=receivedDate&sortBy=asc&caseTypeId=0`
+  → rows with `filingId`/`filingType` (filter `filingType=="Report - Audit"`); then
+  `apis/api/Filing/GetAttachmentsByFilingId?filingId={id}` → `{attachmentId, guidFilename, pageCount}`.
+  Stable download URL: `apis/api/Filing/download?attachId={attachmentId}&guidFileName={guidFilename}`
+  (guidFilename already ends `.pdf`). **Always take the `isConfidential:false` / "Public" attachment**
+  (each audit has a confidential twin). DC PSC statutorily orders periodic management audits of Pepco
+  (FC 1176) & Washington Gas (FC 1154 PROJECTpipes 2, FC 1115 PROJECTpipes).
+- **WA — UTC Pipeline Safety inspection reports** · static `.gov` PDFs, a *different* host path from
+  the existing WA `apiproxy.utc.wa.gov/cases/GetDocument` case-API. UTC inspectors audit each gas/LNG
+  operator against a published protocol set (`WA.GD.2024.02`, `LNG.2024.01`, `GD.2025.01`), producing
+  scope + findings + satisfactory/unsatisfactory ratings. URL:
+  `https://www.utc.wa.gov/sites/default/files/{YYYY-MM}/{report#}%20Inspection%20Report.pdf`; the
+  report# and upload-month folder are harvested from the per-operator index page
+  (`.../pipeline-operators-inspected-pipeline-safety-program/{operator}-inspection-reports`), whose
+  **year sections are JS accordions** (collapsed on load → need a browser to reveal the links). No
+  docket (program inspections). NOTE: classic WA UTC *docketed* consultant management audits (PA/NY
+  genre) do **not** exist — WA uses prudence reviews / GRCs / penalty investigations (already seeded).
+- **CA — CPUC Utility Audits Branch** · the energy audit-reports index lists **381 reports** across 6
+  categories; `.../reports/energy/{YYYY}/energy_{YYYY-MM-DD}_{util}_{ba|atr}.pdf` on `cpuc.ca.gov`.
+  Added Balancing-Accounts + a new-to-corpus **Affiliate Transaction Rules** audit type. Deep room to
+  scale (PacifiCorp, Bear Valley, Liberty Utilities BA; more ATR).
+- **IL — ICC** · Liberty Consulting Group audits on `icc.illinois.gov` (static `/downloads/public/…`
+  and `api/web-management/documents/downloads/public/…`; URL-encode spaces). Genuine management /
+  baseline-grid-assessment (§16-105.10 CEJA, dockets 21-0736/21-0737) / storm-restoration audits.
+
+**VA — dead seam (intentional exclusion).** The VA SCC does **not** publish standalone management/
+operations audit *reports*; its "audit" work product is **Commission Staff prefiled testimony**
+(Division of Utility Accounting & Finance earnings-test exhibits) inside biennial/triennial reviews —
+adjudicative filings that belong in `state_rate_case`, not `state_audit`. Held out to preserve the
+audit collection's meaning. Useful byproduct: the SCC DocketSearch SPA has a scriptable Breeze OData
+API — `scc.virginia.gov/DocketSearchAPI/breeze/CASES_ESTABDATE/GetCasesEstDate?$filter=Case_Number eq 'PUR-2024-00024'&$select=MATTER_NO,…`
+then `…/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO eq {n}&$select=Document_Name,DocID,FileName`,
+whose `FileName` plugs into `www.scc.virginia.gov/docketsearch/DOCS/{FileName}` (percent-encode `#`).
+
+### More-states dead seams — 2026-07-10 batch 2 (MN, WI)
+
+Two states swept for standalone utility *audit reports* for `state_audit`; both are
+**structural** dead seams (the state's regulatory model doesn't produce discrete audit reports),
+not effort limits — recorded so a future session doesn't re-spend a finder agent:
+
+- **Minnesota** — MN publishes no independent management/operations/service-quality *audit* report
+  of its utilities as a static `.gov` PDF. OAH-hosted PDFs (`mn.gov/oah/...`) are **ALJ rate-case
+  reports** (adjudicative, excluded, already in `mn_puc.json`); the MN PUC Reliability & Service
+  Standards page hosts **utility-self-filed** SRSQ reports (compliance filings, not audits); the MN
+  Office of the Legislative Auditor audits state *agencies*, never the utilities; and MN eDockets
+  (where a consultant/management audit would live) is WAF-walled ("Security check") to scripts.
+- **Wisconsin** — WI PSC handles prudence/construction oversight *inside* CE-/UR-/FR- dockets via
+  Staff/intervenor testimony, utility compliance filings, and Commission Final Decisions — not
+  discrete consultant "management/construction audit" reports. The ERF search + docket-detail pages
+  (`apps.psc.wi.gov/ERF/ERFsearch`, `.../APPS/dockets/.../detail.aspx`) are **Cloudflare-403** to
+  scripts; only `viewdoc.aspx?docid={N}` downloads (pipeline UA), but that needs an already-known
+  docid and search surfaces docids only for testimony/CPCN/intervenor letters. The Oak Creek CT
+  cost-overrun generic investigation (docket 6630-CE-317) was only *opened* May 2025 — no report
+  exists yet. Breaking this seam needs browser-capture (Chrome MCP) once a report lands.

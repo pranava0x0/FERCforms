@@ -81,6 +81,18 @@ const fmtDate = (iso) => {
   return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 };
 const yearOf = (iso) => (iso ? iso.slice(0, 4) : null);
+/* Compact USD for the finding-level $ pill (amount_usd is the first dollar figure
+   in a finding's own committed text — see pipeline/amounts.py). */
+const fmtAmount = (n) => {
+  if (n == null || !isFinite(n)) return null;
+  const a = Math.abs(n), sign = n < 0 ? "-" : "";
+  // Thresholds are 0.5% below each unit so values that round up across a
+  // boundary (999,999 -> "$1M", not "$1000K") land in the higher unit.
+  if (a >= 9.95e8) return sign + "$" + (a / 1e9).toFixed(a >= 1e10 ? 0 : 1).replace(/\.0$/, "") + "B";
+  if (a >= 9.95e5) return sign + "$" + (a / 1e6).toFixed(a >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
+  if (a >= 1e3) return sign + "$" + Math.round(a / 1e3) + "K";
+  return sign + "$" + Math.round(a).toLocaleString("en-US");
+};
 const initials = (name) => (name || "?").replace(/[^A-Za-z ]/g, "").trim().charAt(0).toUpperCase() || "?";
 
 /* ---------- data load ---------- */
@@ -424,8 +436,15 @@ function findingNode(f) {
   ]);
   const parts = [head];
   if (f.summary) parts.push(el("p", { class: "finding-summary", text: f.summary }));
-  if (f.cost_to_customers || (f.themes && f.themes.length)) {
+  const amount = fmtAmount(f.amount_usd);
+  if (f.cost_to_customers || amount || (f.themes && f.themes.length)) {
     const tags = [];
+    if (amount) {
+      // Cited dollar figure: title carries the verbatim quote + source page it was located on.
+      const tip = (f.amount_usd_quote ? '"' + f.amount_usd_quote + '"' : "Headline dollar figure") +
+        (f.amount_usd_page != null ? ` (source p. ${f.amount_usd_page})` : "");
+      tags.push(el("span", { class: "finding-tag amount-tag", title: tip, text: amount }));
+    }
     if (f.cost_to_customers) tags.push(el("span", { class: "finding-tag cost-tag", title: COST_TIP, text: "Cost to customers" }));
     (f.themes || []).forEach((t) => tags.push(el("span", { class: "finding-tag", text: t })));
     parts.push(el("div", { class: "finding-tags" }, tags));

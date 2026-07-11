@@ -566,6 +566,15 @@ a:hover { color: var(--accent-hover); }
   border-color: var(--status-finding);
   font-weight: 600;
 }
+.finding-tag.amount-tag {
+  background: transparent;
+  color: var(--accent, var(--status-finding));
+  border-color: currentColor;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  cursor: help;
+}
 
 .recs { margin: 10px 0 0; padding: 0; list-style: none; }
 .rec {
