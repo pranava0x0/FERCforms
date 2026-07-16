@@ -507,7 +507,7 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "prudence_review": {
     "report_count": 29,
@@ -603,7 +603,7 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_audit": {
     "report_count": 82,
@@ -1082,7 +1082,7 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_rate_case": {
     "report_count": 122,
@@ -1263,7 +1263,7 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_reference": {
     "report_count": 84,
@@ -1292,6 +1292,6 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   }
 }

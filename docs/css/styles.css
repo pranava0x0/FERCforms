@@ -86,6 +86,46 @@ a:hover { color: var(--accent-hover); }
 }
 .skip-link:focus { left: 0; }
 
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Hero (E1 entry layer) ---------- */
+.hero { max-width: 1180px; margin: 18px auto 0; padding: 0 16px; }
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(21px, 4vw, 26px);
+  line-height: 1.25;
+  margin: 0 0 6px;
+}
+/* The credibility stat: corpus counts + freshness, never a claim. */
+.trust-line {
+  margin: 0 0 12px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+.trust-line strong { color: var(--text); font-variant-numeric: tabular-nums; }
+.hero-search { max-width: 620px; }
+.search-input {
+  width: 100%;
+  font-size: 16px; /* prevents iOS zoom */
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-rest);
+}
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus-visible { border-color: var(--accent); }
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
@@ -400,17 +440,21 @@ a:hover { color: var(--accent-hover); }
   margin-bottom: 7px;
   font-weight: 600;
 }
-#search {
-  width: 100%;
-  font-size: 16px; /* prevents iOS zoom */
-  padding: 9px 11px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface-2);
-  color: var(--text);
-}
-
 .chip-options { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Year presets (E1) — shortcuts that select the year chips beneath them. */
+.preset-options { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 7px; }
+.preset-chip {
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 9px;
+  border: 1px dashed var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.preset-chip:hover { border-style: solid; border-color: var(--accent); color: var(--accent); }
 .filter-chip {
   font: inherit;
   font-size: 12.5px;
@@ -444,6 +488,9 @@ a:hover { color: var(--accent-hover); }
   min-height: 44px; /* touch target (DESIGN §7) */
 }
 .btn-secondary:hover { background: var(--surface-2); }
+/* A secondary action that shouldn't compete with the source/citation CTAs. */
+.btn-secondary.subtle { color: var(--text-muted); }
+.btn-secondary.subtle:hover { color: var(--accent); }
 .link-btn { background: none; border: 0; color: var(--accent); cursor: pointer; font: inherit; text-decoration: underline; padding: 0; }
 
 /* ---------- Stream toolbar ---------- */
@@ -457,6 +504,24 @@ a:hover { color: var(--accent-hover); }
 }
 .result-count { color: var(--text-muted); font-size: 13px; }
 .filters-toggle { display: none; }
+.toolbar-spacer { flex: 1; }
+.sort-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600; }
+.sort-select {
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 8px;
+  min-height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+/* Back-to-top rides the mobile bottom bar; the desktop toolbar doesn't need it. */
+.to-top { display: none; }
+
+/* B1 — the append trigger for the next page of cards. */
+.stream-sentinel { height: 1px; }
 
 /* ---------- Stream / cards ---------- */
 .stream { display: flex; flex-direction: column; gap: 14px; }
@@ -480,7 +545,11 @@ a:hover { color: var(--accent-hover); }
 }
 .card-summary::-webkit-details-marker { display: none; }
 
-.source-line { display: flex; align-items: center; gap: 10px; }
+/* A2 — the ratepayer-harm axis gets a card-level edge tick: the highest-salience
+   axis for the general reader, readable without opening the thread. */
+.card.has-cost { border-left: 3px solid var(--status-finding); }
+
+.source-line { display: flex; align-items: flex-start; gap: 10px; }
 .avatar {
   width: 36px; height: 36px; flex: none;
   border-radius: 50%;
@@ -490,18 +559,37 @@ a:hover { color: var(--accent-hover); }
   font-weight: 700; font-size: 15px;
   border: 1px solid var(--accent-line);
 }
-.source-meta { min-width: 0; flex: 1; }
+.source-meta { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 1px; }
 .company { font-weight: 600; font-size: 15px; }
-.sub-meta { color: var(--text-muted); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+/* F9 — segments wrap BETWEEN themselves, never mid-phrase ("Issued ⏎ Sep 8, 2025"). */
+.sub-meta { color: var(--text-muted); font-size: 12.5px; font-variant-numeric: tabular-nums; display: flex; flex-wrap: wrap; gap: 0 6px; }
+.sub-bit { white-space: nowrap; }
+.sub-bit + .sub-bit::before { content: "· "; }
+/* Dockets are identifiers analysts copy — mono + select-all is the records-tool cue. */
+.docket-bit { font-family: var(--font-mono); font-size: 11.5px; user-select: all; }
 .disclosure { color: var(--text-muted); font-size: 13px; flex: none; }
 .card[open] .disclosure .chev { transform: rotate(180deg); }
 .chev { display: inline-block; transition: transform 200ms ease; }
 
-.headline { font-family: var(--font-serif); font-size: 16px; margin: 10px 0 8px; }
+/* A2 — the mechanical subject line (F1: this style existed but was never rendered). */
+.headline {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  color: var(--text);
+  margin: 8px 0 8px;
+}
+/* A2 — theme chips are the best scent for both personas. */
+.card-themes { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.more-tag { cursor: help; font-variant-numeric: tabular-nums; }
 
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+/* Lazily-loaded thread placeholder (detail file still in flight). */
+.thread-pending { padding: 14px 16px; font-size: 13px; }
+.thread-pending p { margin: 0; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .pill {
-  font-size: 10.5px;
+  /* B4 — 10.5px was below a comfortable reading minimum. */
+  font-size: 11.5px;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 999px;
@@ -513,6 +601,20 @@ a:hover { color: var(--accent-hover); }
 .pill.kind { border: 1px solid var(--accent-line); color: var(--accent-hover); }
 .pill.func { background: var(--surface-2); color: var(--text-muted); text-transform: capitalize; }
 .pill.muted { border: 1px solid var(--border); color: var(--text-muted); background: var(--surface-2); }
+/* Money is data, not status: ink + mono tabular numerals, no hue (spec C1). */
+.pill.amount {
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  cursor: help;
+}
+/* The ratepayer-harm axis — one hue, filled badge (matches the card edge tick). */
+.pill.cost {
+  background: var(--status-finding);
+  color: var(--surface);
+  cursor: help;
+}
 
 /* ---------- Thread (expanded) ---------- */
 .thread { padding: 0 16px 16px; border-top: 1px solid var(--border); }
@@ -656,7 +758,7 @@ a:hover { color: var(--accent-hover); }
     padding-bottom: max(14px, env(safe-area-inset-bottom));
   }
   .filters.open { transform: translateY(0); }
-  .filters-toggle { display: inline-block; }
+  .filters-toggle { display: inline-flex; align-items: center; }
 
   /* Bottom-sheet close affordances: a Done button + a tap-to-dismiss backdrop. */
   .sheet-header {
@@ -687,6 +789,56 @@ a:hover { color: var(--accent-hover); }
     background: rgba(15, 15, 30, 0.45);
     z-index: 39;
   }
+}
+
+/* Tablet (B3) — a bottom sheet feels phone-y at 768px and hides the stream it's
+   filtering. Slide the rail in from the left instead, over the filters' own space. */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .filters {
+    inset: 0 auto 0 0;
+    top: 0;
+    width: min(320px, 82vw);
+    max-height: none;
+    border-radius: 0 14px 14px 0;
+    transform: translateX(-100%);
+    box-shadow: 6px 0 24px rgba(0, 0, 0, 0.18);
+    padding-bottom: 14px;
+  }
+  .filters.open { transform: translateX(0); }
+}
+
+/* Phone (B3) — the toolbar is fixed to the bottom so Filters/sort/count/top stay
+   reachable from card #10 (they used to scroll away). Same DOM, CSS only. */
+@media (max-width: 639px) {
+  .stream-toolbar {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 35;
+    margin: 0;
+    padding: 8px 12px max(8px, env(safe-area-inset-bottom));
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+  }
+  .sort-label { display: none; } /* the select's own options read as the label */
+  .sort-select { min-height: 44px; }
+  .to-top {
+    display: grid;
+    place-items: center;
+    width: 44px; height: 44px;
+    flex: none;
+    font: inherit;
+    font-size: 17px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+  /* Clear the fixed bar so the last card and the footer stay reachable. */
+  .layout { padding-bottom: 84px; }
+  .site-footer { padding-bottom: 96px; }
 }
 
 @media (max-width: 560px) {

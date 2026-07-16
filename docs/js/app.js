@@ -40,14 +40,89 @@ const COLLECTIONS = [
   },
 ];
 
+/* The fields the first-paint payload (data/reports_index.json) carries for every
+   report — enough to render a collapsed card and run every facet/sort. Findings
+   and thread metadata live in data/findings_<collection>.json, fetched lazily on
+   first expand. Mirrors pipeline/build.py CARD_FIELDS (a Python test asserts the
+   two lists stay in sync); reading anything outside this list off a report object
+   before its detail has loaded yields undefined. */
+const CARD_FIELDS = [
+  "id",
+  "collection",
+  "company",
+  "docket",
+  "docket_full",
+  "issued_date",
+  "audit_type",
+  "doc_type",
+  "industry",
+  "forms",
+  "functions",
+  "finding_count",
+  "themes",
+  "cost_to_customers",
+  "structured",
+  "source",
+  "audit_period",
+];
+
 const state = {
   collection: "ferc_audit",
-  reports: [],
+  reports: [],             // index entries (no findings — see CARD_FIELDS)
+  details: {},             // { collection: { report_id: {findings, ...thread fields} } }
+  detailFetches: {},       // { collection: Promise } — in-flight/settled, dedupes fetches
   patterns: null,          // global summary (all collections)
   patternsByCollection: {}, // { key: PatternsSummary }
   meta: null,
+  sort: "newest",
   filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
 };
+
+/* ---------- lazy detail loading ---------- */
+/* Finding bodies are ~80% of the corpus text but are only needed to render an
+   expanded thread (or to search finding text). Fetch each collection's detail
+   file at most once; callers await the same promise. */
+function ensureDetails(collection) {
+  if (state.detailFetches[collection]) return state.detailFetches[collection];
+  const p = fetch(`data/findings_${collection}.json`)
+    .then((r) => {
+      if (!r.ok) throw new Error(`findings_${collection}.json: HTTP ${r.status}`);
+      return r.json();
+    })
+    .then((d) => {
+      state.details[collection] = d;
+      return d;
+    })
+    .catch((e) => {
+      // Let the next caller retry rather than caching the failure forever.
+      delete state.detailFetches[collection];
+      throw e;
+    });
+  state.detailFetches[collection] = p;
+  return p;
+}
+
+const detailOf = (r) => (state.details[r.collection] || {})[r.id] || null;
+const findingsOf = (r) => (detailOf(r) || {}).findings || [];
+
+/* Warm the active tab's detail file once the page is interactive, so expanding a
+   card is instant in the common case. Low priority — never races the first paint. */
+function prefetchDetails(collection) {
+  const go = () => ensureDetails(collection).catch(() => {});
+  if ("requestIdleCallback" in window) requestIdleCallback(go, { timeout: 3000 });
+  else setTimeout(go, 400);
+}
+
+/* A11 — long enough to skip intermediate keystrokes, short enough to feel live. */
+const SEARCH_DEBOUNCE_MS = 150;
+
+/* Search exists in two places (the hero box — E1's primary CTA — and the filter
+   rail on desktop). They are one filter, so keep their values identical. */
+function syncSearchInputs(value, except) {
+  document.querySelectorAll(".search-input").forEach((i) => {
+    if (i !== except) i.value = value;
+  });
+}
 
 /* Patterns + reports for the active tab. */
 const activePatterns = () => state.patternsByCollection[state.collection] || { report_count: 0, finding_count: 0, recommendation_count: 0, themes: [], by_year: {}, by_industry: {}, by_function: {} };
@@ -75,11 +150,14 @@ function el(tag, props = {}, children = []) {
   return node;
 }
 
-const fmtDate = (iso) => {
+const fmtDate = (iso, short) => {
   if (!iso) return "Not stated";
   const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  return d.toLocaleDateString("en-US", { year: "numeric", month: short ? "short" : "long", day: "numeric" });
 };
+/* B3 — "Sep 8, 2025" on phones so the card sub-meta stays one line. Read at render
+   time; a resize past the breakpoint re-renders via applyFilters, not per-card. */
+const useShortDates = () => matchMedia("(max-width: 560px)").matches;
 const yearOf = (iso) => (iso ? iso.slice(0, 4) : null);
 /* Compact USD for the finding-level $ pill (amount_usd is the first dollar figure
    in a finding's own committed text — see pipeline/amounts.py). */
@@ -96,18 +174,23 @@ const fmtAmount = (n) => {
 const initials = (name) => (name || "?").replace(/[^A-Za-z ]/g, "").trim().charAt(0).toUpperCase() || "?";
 
 /* ---------- data load ---------- */
+const getJSON = (path) =>
+  fetch(path).then((r) => {
+    if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+    return r.json();
+  });
+
 async function load() {
-  const [meta, patterns, byCollection, reports] = await Promise.all([
-    fetch("data/meta.json").then((r) => r.json()),
-    fetch("data/patterns.json").then((r) => r.json()),
-    fetch("data/patterns_by_collection.json").then((r) => r.json()),
-    fetch("data/reports.json").then((r) => r.json()),
+  const [meta, patterns, byCollection, index] = await Promise.all([
+    getJSON("data/meta.json"),
+    getJSON("data/patterns.json"),
+    getJSON("data/patterns_by_collection.json"),
+    getJSON("data/reports_index.json"),
   ]);
   state.meta = meta;
   state.patterns = patterns;
   state.patternsByCollection = byCollection;
-  // Newest first — a feed-like default. Null issued_date sorts last.
-  state.reports = reports.slice().sort((a, b) => (b.issued_date || "").localeCompare(a.issued_date || ""));
+  state.reports = index;
 }
 
 /* ---------- KPIs ---------- */
@@ -162,6 +245,7 @@ function switchCollection(key) {
   // resetFilters already called applyFilters, but facet/intro DOM changed — re-run.
   applyFilters();
   scrollToTop();
+  prefetchDetails(key); // warm the new tab's finding bodies while the user reads
 }
 
 function scrollToTop() {
@@ -220,6 +304,39 @@ function renderFilters() {
   fillFacet("function-options", functions.map((fn) => chip(cap(fn), null, "functions", fn)));
   fillFacet("form-options", formsList.map((fm) => chip("No. " + fm, null, "form", fm)));
   fillFacet("year-options", years.map((y) => chip(y, null, "year", y)));
+  renderYearPresets(years);
+}
+
+/* E1 — date facets ship as PRESETS, never a blank date picker (EDGAR's pattern).
+   A preset is a shortcut that selects the underlying year chips, so it stays one
+   filter model — nothing new to encode in state. */
+const YEAR_PRESETS = [
+  { label: "Last year", years: 1 },
+  { label: "Last 5 years", years: 5 },
+  { label: "All years", years: null },
+];
+function renderYearPresets(years) {
+  const host = document.getElementById("year-presets");
+  if (!host) return;
+  if (!years.length) { host.replaceChildren(); return; }
+  const newest = Number(years[0]); // years is sorted newest-first
+  host.replaceChildren(
+    ...YEAR_PRESETS.map((p) => {
+      // Anchor on the newest year the CORPUS has, not today's date: "last year"
+      // must mean "the most recent year with audits", or a preset silently
+      // selects nothing whenever the regulator has been quiet (A9's honesty rule).
+      const wanted = p.years === null ? years : years.filter((y) => Number(y) > newest - p.years);
+      const btn = el("button", { type: "button", class: "preset-chip", text: p.label });
+      btn.addEventListener("click", () => {
+        state.filters.year = new Set(wanted);
+        document.querySelectorAll('[data-group="year"]').forEach((c) =>
+          c.setAttribute("aria-pressed", state.filters.year.has(c.dataset.value) ? "true" : "false")
+        );
+        applyFilters();
+      });
+      return btn;
+    })
+  );
 }
 
 function toggleFilter(group, value, btn) {
@@ -242,7 +359,7 @@ function resetFilters() {
   state.filters.year.clear();
   state.filters.theme.clear();
   state.filters.impact.clear();
-  document.getElementById("search").value = "";
+  syncSearchInputs("");
   document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
 }
@@ -258,17 +375,36 @@ function matches(report) {
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
   if (f.theme.size && !(report.themes || []).some((t) => f.theme.has(t))) return false;
   if (f.search) {
+    // Finding bodies come from the lazily-fetched detail file. The search handler
+    // awaits it before filtering, so by here findingsOf() is populated; if a fetch
+    // failed we still match on the index fields rather than dropping the report.
     const hay = [
       report.company,
       report.docket_full,
       report.audit_period,
-      ...report.findings.map((x) => x.title + " " + (x.summary || "")),
+      ...findingsOf(report).map((x) => x.title + " " + (x.summary || "")),
     ]
       .join(" ")
       .toLowerCase();
     if (!hay.includes(f.search.toLowerCase())) return false;
   }
   return true;
+}
+
+/* ---------- sort (A3) ---------- */
+/* Every comparator is a total order with a stable id tiebreak, so the stream
+   never reshuffles between renders. Null issued_date / no cited $ sort last. */
+const SORTS = {
+  newest: { label: "Newest first", cmp: (a, b) => (b.issued_date || "").localeCompare(a.issued_date || "") },
+  oldest: { label: "Oldest first", cmp: (a, b) => (a.issued_date || "￿").localeCompare(b.issued_date || "￿") },
+  findings: { label: "Most findings", cmp: (a, b) => b.finding_count - a.finding_count },
+  amount: { label: "Largest $", cmp: (a, b) => (b.amount_max || -1) - (a.amount_max || -1) },
+  company: { label: "Company A–Z", cmp: (a, b) => a.company.localeCompare(b.company) },
+};
+
+function sortReports(list) {
+  const { cmp } = SORTS[state.sort] || SORTS.newest;
+  return list.slice().sort((a, b) => cmp(a, b) || a.id.localeCompare(b.id));
 }
 
 /* ---------- top patterns band ---------- */
@@ -389,8 +525,7 @@ function activeChipLabel(group, value) {
 function removeActiveFilter(group, value) {
   if (group === "search") {
     state.filters.search = "";
-    const s = document.getElementById("search");
-    if (s) s.value = "";
+    syncSearchInputs("");
   } else {
     state.filters[group].delete(value);
     document
@@ -469,65 +604,77 @@ function findingNode(f) {
   return el("div", { class: "finding" }, parts);
 }
 
-function citationText(r) {
+/* The source URL lives in the detail record (thread-only), so citations are only
+   ever built where a thread is rendered. */
+function citationText(r, detail) {
   const kind = r.doc_type || (r.collection === "prudence_review" ? "FERC order" : r.collection === "state_audit" ? "Audit report" : "FERC Audit Report");
   const docket = r.docket_full || r.docket;
   return `${r.company}, ${kind}${docket ? ", Docket No. " + docket : ""}` +
-    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${r.source_page_url}`;
+    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${detail.source_page_url}`;
 }
 
-function cardNode(r) {
-  const card = el("details", { class: "card" });
+/* E1 — "See an issue? Report it": a prefilled GitHub issue (zero-backend
+   analogue of ProPublica's "See an issue with the data? Contact Us"). The record
+   id + docket travel in the body so a report is actionable without a round-trip. */
+const ISSUE_URL = "https://github.com/pranava0x0/FERCforms/issues/new";
+function reportIssueLink(r) {
+  const body = [
+    `Record: ${r.id}`,
+    `Company: ${r.company}`,
+    r.docket_full || r.docket ? `Docket: ${r.docket_full || r.docket}` : null,
+    "",
+    "What looks wrong?",
+  ].filter((x) => x !== null).join("\n");
+  const href = `${ISSUE_URL}?title=${encodeURIComponent(`Data issue: ${r.company} (${r.id})`)}&body=${encodeURIComponent(body)}`;
+  return el("a", { class: "btn-secondary subtle", href, rel: "noopener", target: "_blank", text: "See an issue? Report it ↗" });
+}
 
-  const recCount = r.findings.reduce((n, f) => n + (f.recommendations ? f.recommendations.length : 0), 0);
-  const docket = r.docket_full || r.docket;
-  // Sub-meta: docket (if any) · issued date · source (for non-FERC provenance).
-  const subBits = [];
-  if (docket) subBits.push(`Docket No. ${docket}`);
-  subBits.push(`Issued ${fmtDate(r.issued_date)}`);
-  if (r.collection !== "ferc_audit" && r.source) subBits.push(r.source);
+/* A2 — a mechanical one-line subject for the collapsed card. Composed only from
+   fields the record already states (audit type/period, or document type); it
+   never paraphrases a finding. Returns null when the record states neither. */
+function cardSubject(r) {
+  if (r.collection === "ferc_audit") {
+    const bits = [];
+    if (r.audit_type) bits.push((_ABBR[r.audit_type] || r.audit_type) + " audit");
+    if (r.audit_period) bits.push(r.audit_period);
+    return bits.length ? bits.join(" — ") : null;
+  }
+  return r.doc_type ? cap(r.doc_type) : null;
+}
 
-  // Status pill: real findings → count; metadata-only legal doc → "read source";
-  // otherwise a genuinely finding-free audit.
-  const statusPill = r.finding_count > 0
-    ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
-    : r.structured === false
-      ? el("span", { class: "pill muted", text: "Listed for reference" })
-      : el("span", { class: "pill muted", text: "No findings extracted" });
-
-  const summary = el("summary", { class: "card-summary" }, [
-    el("div", { class: "source-line" }, [
-      el("span", { class: "avatar", "aria-hidden": "true", text: initials(r.company) }),
-      el("span", { class: "source-meta" }, [
-        el("span", { class: "company", text: r.company }),
-        el("br"),
-        el("span", { class: "sub-meta", text: subBits.join(" · ") }),
-      ]),
-      el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
-    ]),
-    el("div", { class: "chips" }, [
-      r.doc_type ? el("span", { class: "pill kind", text: cap(r.doc_type) })
-        : r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
-      statusPill,
-      r.finding_count > 0 ? el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }) : null,
-      ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
-    ]),
+/* A2 — up to 3 theme chips + a "+N" overflow count. Themes are the best scent
+   for both personas, and every report already carries its union at bake time. */
+const THEME_CHIP_LIMIT = 3;
+function cardThemeChips(r) {
+  const themes = r.themes || [];
+  if (!themes.length) return null;
+  const shown = themes.slice(0, THEME_CHIP_LIMIT);
+  const extra = themes.length - shown.length;
+  return el("div", { class: "card-themes" }, [
+    ...shown.map((t) => el("span", { class: "finding-tag", text: t })),
+    extra ? el("span", { class: "finding-tag more-tag", title: themes.slice(THEME_CHIP_LIMIT).join(" · "), text: `+${extra}` }) : null,
   ]);
+}
 
-  // Metadata rows — only include those that apply to this record's collection.
+/* The expanded thread. Built from the lazily-fetched detail record, so it only
+   runs on first open — which is also what keeps the whole-corpus render cheap. */
+function threadNode(r, detail) {
   const rows = [];
   if (r.audit_period) rows.push(...kv("Audit period", r.audit_period, false));
   if (r.audit_type) rows.push(...kv("Audit type", _ABBR[r.audit_type] || r.audit_type, false));
   if (r.doc_type) rows.push(...kv("Document type", cap(r.doc_type), false));
-  rows.push(...kv("Jurisdiction", r.jurisdiction || "—", !r.jurisdiction));
+  rows.push(...kv("Jurisdiction", detail.jurisdiction || "—", !detail.jurisdiction));
   if (r.functions && r.functions.length) rows.push(...kv("Function(s)", r.functions.map(cap).join(", "), false));
   if (r.forms && r.forms.length) rows.push(...kv("FERC forms", r.forms.map((f) => "No. " + f).join(", "), false));
-  if (r.page_count > 0) rows.push(...kv("Pages", String(r.page_count), false));
-  rows.push(...kv("Source", r.source || r.source_note || "Not stated", !(r.source || r.source_note)));
+  if (detail.page_count > 0) rows.push(...kv("Pages", String(detail.page_count), false));
+  // A9 — surface the capture date on the card itself: "as of" is the difference
+  // between absence-of-data and absence-of-issues.
+  if (detail.captured_at) rows.push(...kv("Captured", fmtDate(detail.captured_at), false));
+  rows.push(...kv("Source", r.source || detail.source_note || "Not stated", !(r.source || detail.source_note)));
   const root = el("div", { class: "thread-root" }, [el("dl", {}, rows)]);
 
-  const findings = r.finding_count > 0
-    ? el("div", {}, r.findings.map(findingNode))
+  const findings = (detail.findings || []).length
+    ? el("div", {}, detail.findings.map(findingNode))
     : el("div", { class: "no-findings" }, [
         r.structured === false
           ? el("p", {}, [
@@ -548,7 +695,7 @@ function cardNode(r) {
   const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });
   copyBtn.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(citationText(r));
+      await navigator.clipboard.writeText(citationText(r, detail));
       copyBtn.textContent = "Copied ✓";
       setTimeout(() => (copyBtn.textContent = "Copy citation"), 1800);
     } catch (e) {
@@ -556,25 +703,161 @@ function cardNode(r) {
     }
   });
 
-  const sourceLabel = r.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
+  const sourceLabel = detail.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
   const footer = el("div", { class: "thread-footer" }, [
-    el("a", { class: "btn-secondary", href: r.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
-    r.archived_via
-      ? el("a", { class: "btn-secondary", href: r.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
+    el("a", { class: "btn-secondary", href: detail.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
+    detail.archived_via
+      ? el("a", { class: "btn-secondary", href: detail.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
       : null,
     copyBtn,
+    reportIssueLink(r),
+  ]);
+
+  return el("div", { class: "thread" }, [root, findings, footer]);
+}
+
+/* Fill a card's thread on first expand. The detail file is usually already warm
+   (prefetchDetails), so this resolves synchronously-ish; the placeholder only
+   shows on a cold or slow fetch. */
+async function fillThread(card, r) {
+  if (card.dataset.filled) return;
+  card.dataset.filled = "1";
+  const detail = detailOf(r);
+  if (detail) {
+    card.appendChild(threadNode(r, detail));
+    return;
+  }
+  const pending = el("div", { class: "thread thread-pending" }, [el("p", { class: "muted-cell", text: "Loading findings…" })]);
+  card.appendChild(pending);
+  try {
+    await ensureDetails(r.collection);
+    const loaded = detailOf(r);
+    if (!loaded) throw new Error(`no detail record for ${r.id}`);
+    pending.replaceWith(threadNode(r, loaded));
+  } catch (e) {
+    console.error(e);
+    // Fail loud and offer a way out rather than leaving a dead "Loading…".
+    const retry = el("button", { type: "button", class: "link-btn", text: "Retry" });
+    retry.addEventListener("click", () => {
+      pending.remove();
+      delete card.dataset.filled;
+      fillThread(card, r);
+    });
+    pending.replaceChildren(el("p", {}, ["Couldn’t load this report’s findings. ", retry]));
+  }
+}
+
+function cardNode(r) {
+  const card = el("details", { class: "card" });
+  if (r.cost_to_customers) card.classList.add("has-cost"); // A2 — amber edge tick
+
+  const docket = r.docket_full || r.docket;
+  // Sub-meta: docket (if any) · issued date · source (for non-FERC provenance).
+  // Each segment is its own node so it can wrap BETWEEN segments but never mid-phrase (F9/B3).
+  const subBits = [];
+  if (docket) subBits.push(el("span", { class: "sub-bit docket-bit", text: `Docket No. ${docket}` }));
+  subBits.push(el("span", { class: "sub-bit", text: `Issued ${fmtDate(r.issued_date, useShortDates())}` }));
+  if (r.collection !== "ferc_audit" && r.source) subBits.push(el("span", { class: "sub-bit", text: r.source }));
+
+  // Status pill: real findings → count; metadata-only legal doc → "read source";
+  // otherwise a genuinely finding-free audit.
+  const statusPill = r.finding_count > 0
+    ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
+    : r.structured === false
+      ? el("span", { class: "pill muted", text: "Listed for reference" })
+      : el("span", { class: "pill muted", text: "No findings extracted" });
+
+  // F2 — a "0 recs" pill reads as "auditors made no recommendations", which is
+  // false for essentially every FERC audit; it really means recs weren't parsed.
+  // Render the pill only when recommendations were actually extracted.
+  const recPill = r.rec_count > 0
+    ? el("span", { class: "pill outline", text: `${r.rec_count} rec${r.rec_count === 1 ? "" : "s"}` })
+    : null;
+
+  const amount = fmtAmount(r.amount_max);
+
+  const summary = el("summary", { class: "card-summary" }, [
+    el("div", { class: "source-line" }, [
+      el("span", { class: "avatar", "aria-hidden": "true", text: initials(r.company) }),
+      el("span", { class: "source-meta" }, [
+        el("span", { class: "company", text: r.company }),
+        el("span", { class: "sub-meta" }, subBits),
+      ]),
+      el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
+    ]),
+    cardSubject(r) ? el("p", { class: "headline", text: cardSubject(r) }) : null,
+    el("div", { class: "chips" }, [
+      r.doc_type ? el("span", { class: "pill kind", text: cap(r.doc_type) })
+        : r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
+      statusPill,
+      recPill,
+      amount ? el("span", { class: "pill amount", title: "Largest dollar figure cited in this report's findings, as stated in the report", text: amount }) : null,
+      r.cost_to_customers ? el("span", { class: "pill cost", title: COST_TIP, text: "Cost to customers" }) : null,
+      ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
+    ]),
+    cardThemeChips(r),
   ]);
 
   card.appendChild(summary);
-  card.appendChild(el("div", { class: "thread" }, [root, findings, footer]));
+  card.addEventListener("toggle", () => {
+    if (card.open) fillThread(card, r);
+  });
   return card;
 }
 
 /* ---------- render stream ---------- */
-function applyFilters() {
-  const visible = state.reports.filter(matches);
+/* B1 — the stream appends cards in pages behind an IntersectionObserver sentinel
+   rather than rendering every match at once (123 cards on the FERC tab produced
+   multi-second blank frames). Filtering stays whole-corpus, so the result count
+   is always exact — only the DOM append is chunked. */
+const PAGE_SIZE = 20;
+const _render = { visible: [], shown: 0, observer: null, sentinel: null };
+
+function appendPage() {
   const stream = document.getElementById("stream");
-  stream.replaceChildren(...visible.map(cardNode));
+  const next = _render.visible.slice(_render.shown, _render.shown + PAGE_SIZE);
+  if (!next.length) return;
+  const frag = document.createDocumentFragment();
+  next.forEach((r) => frag.appendChild(cardNode(r)));
+  stream.appendChild(frag);
+  _render.shown += next.length;
+  if (_render.shown >= _render.visible.length) {
+    // Everything rendered — retire the sentinel so the observer stops firing.
+    if (_render.observer) _render.observer.disconnect();
+    if (_render.sentinel) _render.sentinel.hidden = true;
+  }
+}
+
+function renderStream(visible) {
+  const stream = document.getElementById("stream");
+  _render.visible = visible;
+  _render.shown = 0;
+  stream.replaceChildren();
+
+  if (!_render.sentinel) {
+    _render.sentinel = el("div", { class: "stream-sentinel", "aria-hidden": "true" });
+    stream.after(_render.sentinel);
+  }
+  _render.sentinel.hidden = false;
+
+  if (!_render.observer && "IntersectionObserver" in window) {
+    // rootMargin pre-renders the next page before the sentinel is on screen, so
+    // fast scrolling doesn't reach the end of the list first (DESIGN.md §12.3).
+    _render.observer = new IntersectionObserver(
+      (entries) => { if (entries.some((e) => e.isIntersecting)) appendPage(); },
+      { rootMargin: "600px 0px" }
+    );
+  }
+  appendPage();
+  if (_render.observer) _render.observer.observe(_render.sentinel);
+  // No IntersectionObserver (very old browser): render everything rather than
+  // silently truncating the corpus.
+  else while (_render.shown < _render.visible.length) appendPage();
+}
+
+function applyFilters() {
+  const visible = sortReports(state.reports.filter(matches));
+  renderStream(visible);
 
   const findings = visible.reduce((n, r) => n + r.finding_count, 0);
   document.getElementById("result-count").textContent =
@@ -594,6 +877,29 @@ function applyFilters() {
   const activeCount = _GROUP_ORDER.reduce((n, g) => n + state.filters[g].size, 0) + (state.filters.search ? 1 : 0);
   const ft = document.getElementById("filters-toggle");
   if (ft) ft.textContent = activeCount ? `Filters · ${activeCount}` : "Filters";
+}
+
+/* ---------- hero trust line (E1) ---------- */
+/* The genre's credibility stat, above the search box: what's in here, from whom,
+   over what period, how fresh. Every number is a corpus count, never a claim. */
+function renderTrustLine() {
+  const host = document.getElementById("trust-line");
+  if (!host) return;
+  const p = state.patterns || {};
+  const m = state.meta || {};
+  // Counted at bake time (meta.jurisdictions_covered) — `jurisdiction` is a
+  // detail field, so the index alone can't count regulators.
+  const juris = m.jurisdictions_covered || [];
+  const states = juris.filter((j) => j !== "FERC").length;
+  const who = juris.includes("FERC") ? `FERC + ${states} state regulator${states === 1 ? "" : "s"}` : `${juris.length} regulators`;
+  const years = Object.keys(p.by_year || {}).sort();
+  const span = years.length ? `, ${years[0]}→present` : "";
+  host.replaceChildren(
+    el("strong", { text: `${p.finding_count || 0} verbatim findings` }),
+    document.createTextNode(" from "),
+    el("strong", { text: `${p.report_count || 0} audit & regulatory documents` }),
+    document.createTextNode(` — ${who}${span} · updated ${fmtDate(m.generated_at)}`)
+  );
 }
 
 /* ---------- footer ---------- */
@@ -650,12 +956,51 @@ function wireChrome() {
     });
   }
 
-  document.getElementById("search").addEventListener("input", (e) => {
-    state.filters.search = e.target.value;
-    applyFilters();
-  });
+  // A11 — debounce: re-filtering the corpus on every keystroke compounds F4.
+  // Searching also needs finding bodies, so the active tab's detail file is
+  // fetched (once) before the filter runs; a failed fetch degrades to matching
+  // company/docket only rather than blocking the search box.
+  let searchTimer = null;
+  let searchSeq = 0;
+  const onSearch = (value) => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(async () => {
+      const seq = ++searchSeq;
+      if (value) {
+        try { await ensureDetails(state.collection); } catch (e) { console.error(e); }
+        if (seq !== searchSeq) return; // a newer keystroke already won
+      }
+      state.filters.search = value;
+      applyFilters();
+    }, SEARCH_DEBOUNCE_MS);
+  };
+  document.querySelectorAll(".search-input").forEach((input) =>
+    input.addEventListener("input", (e) => {
+      // Keep the hero box and the rail box showing the same query.
+      syncSearchInputs(e.target.value, e.target);
+      onSearch(e.target.value);
+    })
+  );
+
+  // A3 — sort control. Pure client-side reorder of the current result set.
+  const sortSel = document.getElementById("sort");
+  if (sortSel) {
+    sortSel.replaceChildren(
+      ...Object.entries(SORTS).map(([k, { label }]) => el("option", { value: k, text: label }))
+    );
+    sortSel.value = state.sort;
+    sortSel.addEventListener("change", (e) => {
+      state.sort = e.target.value;
+      applyFilters();
+      scrollToResults();
+    });
+  }
+
   document.getElementById("reset-filters").addEventListener("click", resetFilters);
   document.getElementById("empty-reset").addEventListener("click", resetFilters);
+
+  const toTop = document.getElementById("to-top");
+  if (toTop) toTop.addEventListener("click", scrollToTop);
 }
 
 /* ---------- init ---------- */
@@ -664,18 +1009,25 @@ function wireChrome() {
   try {
     await load();
   } catch (e) {
-    document.getElementById("result-count").textContent = "Failed to load data.";
     console.error(e);
+    // B4 — a dead "Failed to load data." leaves no way forward; offer a retry.
+    const count = document.getElementById("result-count");
+    count.textContent = "Failed to load data. ";
+    const retry = el("button", { type: "button", class: "link-btn", text: "Retry" });
+    retry.addEventListener("click", () => location.reload());
+    count.appendChild(retry);
     return;
   }
   renderTabs();
   const def = COLLECTIONS.find((c) => c.key === state.collection);
   const lead = document.getElementById("intro-lead");
   if (lead && def) lead.innerHTML = def.lead;
+  renderTrustLine();
   renderKPIs();
   renderFilters();
   renderPatternsBand();
   renderTrends();
   renderFooter();
   applyFilters();
+  prefetchDetails(state.collection);
 })();

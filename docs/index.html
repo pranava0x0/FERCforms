@@ -10,7 +10,9 @@
   <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt — machine-readable summary" />
   <link rel="alternate" type="text/markdown" href="llms-full.txt" title="llms-full.txt — full structured corpus" />
   <link rel="alternate" type="application/xml" href="llms-ctx.txt" title="llms-ctx.txt — LLM context (llms.txt XML shape)" />
-  <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
+  <!-- First paint needs the card/filter index only; finding bodies load lazily per
+       collection (data/findings_<collection>.json). reports.json stays the full download. -->
+  <link rel="preload" href="data/reports_index.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
   <script>
     /* Set theme before first paint to avoid a flash. */
@@ -54,6 +56,18 @@
     </button>
   </header>
 
+  <!-- Hero (E1) — the genre's universal entry point: one search box above a corpus
+       trust line (what / how much / from whom / how fresh). Search lives here, not
+       buried in the filter rail; the rail keeps the facets. -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 class="hero-title" id="hero-title">What has FERC flagged about a utility?</h1>
+    <p class="trust-line" id="trust-line">Loading the corpus…</p>
+    <div class="hero-search">
+      <label class="sr-only" for="hero-search-input">Search a utility, docket, or keyword</label>
+      <input class="search-input" type="search" id="hero-search-input" placeholder="Search a utility, docket, or keyword…" autocomplete="off" />
+    </div>
+  </section>
+
   <!-- Collection tabs — FERC audits vs. prudence reviews vs. state PUC audits -->
   <nav class="tabs" id="tabs" role="tablist" aria-label="Document collections"></nav>
 
@@ -72,8 +86,9 @@
         <ul>
           <li><strong>Read a report:</strong> click a card to expand its thread — each finding of noncompliance, with the staff recommendations nested beneath, quoted verbatim.</li>
           <li><strong>Spot the trends:</strong> the <strong>Top patterns</strong> strip ranks the issues FERC raises most. Tap one to narrow the stream to reports with that issue.</li>
-          <li><strong>Filter &amp; search:</strong> narrow by industry, FERC form, audit type, function, or year — or type a company or keyword in <strong>Search</strong>. Picks within one filter widen the results; picks across different filters narrow them.</li>
-          <li><strong>Trace the source:</strong> every card links to FERC's original PDF via <em>View on eLibrary</em>; <em>Copy citation</em> grabs a reference.</li>
+          <li><strong>Filter &amp; search:</strong> type a company, docket or keyword in the <strong>search box at the top</strong>, or narrow by industry, FERC form, audit type, function, or year in <strong>Filters</strong>. Picks within one filter widen the results; picks across different filters narrow them.</li>
+          <li><strong>Sort:</strong> reorder the stream by newest, oldest, most findings, largest cited dollar figure, or company.</li>
+          <li><strong>Trace the source:</strong> every card links to FERC's original PDF via <em>View on eLibrary</em>; <em>Copy citation</em> grabs a reference. Spot a mistake? Every report links to <em>See an issue? Report it</em>.</li>
         </ul>
       </div>
     </details>
@@ -112,11 +127,8 @@
         <span class="sheet-title">Filters</span>
         <button type="button" id="sheet-close" class="sheet-close">Done</button>
       </div>
+      <!-- Search deliberately lives in the hero (E1), not here — the rail is facets only. -->
       <form id="filter-form">
-        <div class="field">
-          <label class="field-label" for="search">Search</label>
-          <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
-        </div>
         <fieldset class="field">
           <legend class="field-label">Ratepayer impact</legend>
           <div id="impact-options" class="chip-options"></div>
@@ -139,6 +151,8 @@
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Year</legend>
+          <!-- Presets first (E1: never a blank date picker); they select the year chips below. -->
+          <div id="year-presets" class="preset-options"></div>
           <div id="year-options" class="chip-options"></div>
         </fieldset>
         <button type="button" id="reset-filters" class="btn-secondary">Reset filters</button>
@@ -150,6 +164,12 @@
       <div class="stream-toolbar">
         <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
         <span class="result-count" id="result-count" aria-live="polite">Loading…</span>
+        <span class="toolbar-spacer"></span>
+        <label class="sort-label" for="sort">Sort</label>
+        <select id="sort" class="sort-select"></select>
+        <!-- Mobile-only (CSS): the bar is fixed to the bottom there, so back-to-top
+             belongs in it. Same DOM at every width — no duplicate trees. -->
+        <button id="to-top" class="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
       </div>
       <div id="active-filters" class="active-filters" aria-label="Active filters" hidden></div>
       <div id="stream" class="stream"></div>
