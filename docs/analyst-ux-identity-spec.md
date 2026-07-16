@@ -4,7 +4,10 @@
 > Evaluated from two personas — a **FERC/regulatory analyst** (works with dockets daily, cites sources,
 > re-analyzes data) and a **general energy-sector reader** (PM/consultant/investor/journalist who knows
 > the industry but not FERC audit mechanics). Also mines the **LBNL Energy Markets & Policy**
-> (emp.lbl.gov) data-product conventions for transferable ideas (Part D).
+> (emp.lbl.gov) data-product conventions (Part D), and a comparative study of ten
+> enforcement/civic-data explorers (Violation Tracker, EPA ECHO, SEC EDGAR, DOL/OSHA, FERC eLibrary,
+> ProPublica Nonprofit Explorer, CourtListener, LegiScan, OpenSecrets, PUDL) for the
+> **jobs-to-be-done map (§1.1)** and the **flows & CTA system (Part E)**.
 >
 > Constraints inherited from CLAUDE.md/DESIGN.md and NOT revisited here: zero-backend static site,
 > vanilla JS, no framework, verbatim findings only, no compliance scores, no LLM editorial, data is
@@ -93,6 +96,32 @@ shareable link/graphic, no acronym walls.
 
 Design rule of thumb used below: **P-A gets density, precision, and export; P-B gets orientation,
 narrative, and headlines. Neither gets paraphrased findings.**
+
+### 1.1 Jobs-to-be-done map
+
+Derived from comparative research (2026-07-16) across ten enforcement/civic-data products —
+Violation Tracker, EPA ECHO, SEC EDGAR full-text search, OSHA/DOL enforcement data, FERC eLibrary
+(the pain baseline), ProPublica Nonprofit Explorer, CourtListener/RECAP, LegiScan, OpenSecrets,
+PUDL — plus GovInfo/Congress.gov for archive conventions. Every tool in the genre converges on the
+same job set; the table maps each job to this spec's items and its primary CTA (Part E).
+
+| # | Job (When… I want… so I can…) | Persona | Served today? | Spec items | Primary CTA (E1) |
+|---|---|---|---|---|---|
+| J1 | When a utility surfaces in my work, I want its complete audit/finding history in one dossier, so I can assess its conduct record without visiting N regulator sites. | P-A, P-B | Weak — search + scroll; no entity view | A4, A1 | Hero search → company view |
+| J2 | When I research a category of noncompliance, I want every instance across companies/years, so I can tell systemic from one-off and quantify prevalence. | P-A | Partial — patterns band filters, no drill-down stats | A5, A3 | Pattern card → theme panel |
+| J3 | When I prepare a filing or run compliance, I want to see what auditors flagged at peers, so I can pre-empt the same findings. | P-A | Partial (same as J2; north-star audit-my-document consumes this) | A5, A2 | Theme panel → filtered stream |
+| J4 | When I find a relevant finding, I want the verbatim text plus one click to the official source PDF, so I can quote it defensibly. | P-A | **Strong — already the core design** | keep; E1 source-triplet labels | "Source PDF ↗" |
+| J5 | When I cite or hand off what I found, I want a stable link to this exact view/report/finding, so the citation survives fact-checking. | P-A | **Absent** (F3) | A1 | "Copy link" |
+| J6 | When I've scoped a result set or want the corpus, I want CSV/JSON with a data dictionary and license, so I can analyze it in my own tools. | P-A | Weak — findings.csv baked but unlinked, no dictionary | A7, A3 export | "Get the data" (nav) |
+| J7 | When new audits about a company/topic/collection appear, I want to be notified, so my coverage is continuous rather than session-based. | P-A | **Absent** | A10, D1 | "Follow updates (RSS)" |
+| J8 | When I care about a jurisdiction (my state, service territory), I want its regulator's activity in one slice, so I can see local exposure. | P-A, P-B | Partial — jurisdiction shown, not facetable | A9 map/table, A4 facet | State grid / facet |
+| J9 | When I arrive cold, I want ranked/aggregate views and example questions ("who's flagged most, for what, how much $"), so I get a successful first click without composing a query. | P-B | Partial — patterns band exists but below KPI/intro; no entry router | E1 hero, A8, A6 | Question cards |
+| J10 | When I decide whether to rely on this site, I want visible provenance, coverage denominators, and freshness, so I can trust or discount it. | P-A, P-B | Partial — footer + About; not in the chrome | A9, A7, E1 nav | "About the data" (nav) |
+| J11 | When I integrate this into code or an AI assistant, I want a documented machine path, so reuse is legitimate and low-friction. | P-A (dev) | **Strong** — llms.txt trio + JSON; just under-surfaced | A7; E1 footer CTA | "For AI assistants: llms.txt" |
+
+Reading of the table: the corpus and the verbatim discipline already win J4/J11 — the genre's
+credibility jobs. What's missing is almost entirely **surface**: entity views, permalinks, feeds,
+and an entry layer — which is exactly Parts A and E.
 
 ---
 
@@ -362,24 +391,124 @@ Their conventions, mapped to this project:
 
 ---
 
+## Part E — Flows & the CTA system
+
+*(Grounded in the 2026-07-16 comparative research; label wording below deliberately echoes what the
+genre's best tools ship, cited inline. Governing rule from DESIGN.md §8.1: one primary CTA per
+view.)*
+
+### E0. Findings about the current CTA layer
+
+- **The site has no entry layer.** Search — the genre's universal primary CTA (Violation Tracker's
+  entire homepage is one `Enter company name…` box; ECHO leads with two search boxes; EDGAR with
+  two fields) — is buried mid-page inside the filter rail. There is no hero, no corpus trust line,
+  no browse router. A cold visitor's first decision is 5 tabs × 6 facet groups.
+- **No monitoring CTA of any kind** (every comparable ships one: ProPublica per-org "Subscribe",
+  CourtListener "Get Alerts", ECHO Notify, FERC's own eSubscription).
+- **No data CTA in the chrome** (findings.csv is baked but reachable from nowhere; llms.txt links
+  hide in the footer's fine print).
+- **Provenance is footer-only.** Violation Tracker puts "Data Sources" and "Updates" in the top
+  nav; OSHA stamps "Reflects inspection data through {date}" beside the form.
+- What the site already does *right* by genre standards: per-record source CTA ("View on
+  eLibrary ↗"), "Copy citation", honest empty states, free everything (no export paywall, no login
+  walls — Violation Tracker gates CSV behind subscription; ECHO Notify gates behind login; we
+  never will).
+
+### E1. The CTA system (per surface, with labels)
+
+| Surface | Primary CTA | Secondary | Notes / precedent |
+|---|---|---|---|
+| **Header (new, slim nav)** | — (brand = home) | **Get the data** · **About the data** · **What's new** · theme toggle | Provenance-as-navigation (Violation Tracker's "Data Sources"/"Updates" top-nav). "About the data" = about.html + coverage (A9); "What's new" = feed page + changelog (A10/A7). |
+| **Home hero (new)** | **Search box** — `Search a utility, docket, or keyword…` + Search button | trust line above it: "**813 verbatim findings** from **440 audit & regulatory documents** — FERC + 39 state regulators, 2014→present · updated {date}" | VT's headline+box+credibility-stat pattern; OSHA's inline freshness stamp. Search moves OUT of the filter rail (rail keeps facets). 16px input (iOS), autofocus on desktop only. |
+| **Question-card router (new, under hero)** | 3 cards, question → verb-CTA | "What do auditors flag most?" → **See common patterns** · "Has my utility been audited?" → **Search by company** · "Want the raw data?" → **Get the dataset** | OpenSecrets' question cards ("Who contributes to politicians?" → "Explore contributions"). Collapses on repeat visits (localStorage), never on mobile-first-paint critical path. |
+| **Patterns band** | pattern card (tap = filter, as today) | card CTA microcopy: "**N reports →**" | keep; the band is our genre differentiator (no comparable does cross-document pattern mining well). |
+| **Stream toolbar** | **Sort** + **view toggle** (A3) | **Export view (CSV)** (A7) · result count | ECHO's "Download Data" on every result set; EDGAR's URL-encoded result state. |
+| **Card (collapsed)** | whole card opens (implicit) | — | no competing links on the summary; scent does the selling (A2). |
+| **Thread (expanded)** | **Source PDF (eLibrary) ↗** / **Source PDF ({regulator}) ↗** | **Copy citation** · **Copy link** (A1) · **More on {company} →** (A4) · **See an issue? Report it** | ProPublica's per-filing "View Filing / PDF / XML" triplet + its "See an issue with the data? Contact Us". Report-it = prefilled GitHub-issue link (zero-backend). |
+| **Company view (A4)** | **Follow {company} — RSS** | **Download {company} records (CSV)** · per-record source links | ProPublica org-page "Subscribe"; CourtListener docket "Get Alerts". RSS is the no-account static equivalent. |
+| **Data page (A7)** | per-mode download buttons | **Copy suggested citation** · dictionary anchor links | PUDL's access-mode matrix (Platform/Format/Cadence/**Who it's for**/Use case) + its opinionated "We recommend starting with…" line → ours: "start with findings.csv". |
+| **Footer** | — | machine line incl. **For AI assistants: llms.txt** · contact · About | CourtListener markets its machine path (MCP) prominently; llms.txt deserves a labeled CTA, not fine print. |
+| **Empty states** | **Clear filters** (exists) | "or try: {nearest facet with results}" | keep honesty; add one suggestion. |
+
+Constraints adopted as hard rules (the genre's anti-patterns, observed at OSHA/eLibrary/VT/ECHO):
+**never** a multi-field form as the entry point; **never** require a docket/system key before
+content; **no export paywalls, no login walls, no accounts** — monitoring ships as RSS/Atom, not
+email; date facets use **presets** ("Last 5 years / Last year / All since 2014" — EDGAR's pattern),
+never blank date pickers.
+
+### E2. Core flows (entry → success)
+
+Each flow lists steps, the spec items it depends on, and the acceptance test. Success metric
+convention: a cold visitor reaches value in ≤ 2 interactions; an analyst completes cite/export in
+≤ 3.
+
+- **F-A · Orient (J9, J10).** Land → read trust line (what/how much/how fresh) → either a question
+  card, a pattern card, or the latest-reports stream visible below the fold. *Deps:* E1 hero,
+  A2 scent. *Test:* first meaningful click available without scrolling on mobile; stream top
+  visible within one viewport on desktop. Precedent: CourtListener's tagline → box → "Latest
+  Opinions" → "The Numbers" ladder.
+- **F-B · Research a pattern (J2, J3).** Patterns band → tap theme → theme panel (definition,
+  trend sparkline, top companies — A5) → narrowed stream → open finding → cite (F-D) or export
+  (F-E). *Deps:* A5, A1 (theme URL = shareable landing page), A3 sort. *Test:* theme URL reload
+  restores panel + filter; panel stats match patterns.json.
+- **F-C · Background a company (J1, J8).** Hero search (or company facet) → company view: stats
+  header (audits, findings, cited $, jurisdictions), reverse-chron per-document blocks with
+  verbatim excerpts, cross-collection counts → per-record Source PDF → **Follow {company} — RSS**.
+  *Deps:* A4, A1, A10 per-company feed entry filtering. *Test:* ProPublica-dossier parity — entity
+  reachable in ≤ 2 interactions from cold; every block carries its source link.
+- **F-D · Cite & share (J5, J4).** Any state (tab/filters/open report/finding anchor) → **Copy
+  link** or **Copy citation** (citation embeds the permalink) → recipient restores the exact view.
+  *Deps:* A1. *Test:* URL round-trip unit test; citation pasted into a doc resolves to the same
+  open card.
+- **F-E · Take the data (J6, J11).** Nav **Get the data** → data page: access-mode matrix
+  (findings.csv / reports.json / llms.txt trio / per-view export), each with format, cadence,
+  license, "who it's for", dictionary → download. Alt entry: **Export view (CSV)** in the toolbar
+  serializes the current filter set. *Deps:* A7. *Test:* dictionary covers every column; exported
+  CSV row count == result count shown.
+- **F-F · Monitor (J7).** Footer/nav **What's new** → feed page: global Atom + per-collection
+  feeds (+ per-company via F-C), changelog, latest edition briefing (D1) → subscribe in any reader.
+  *Deps:* A10, A7 changelog, D1. *Test:* feeds validate; new build adds entries idempotently
+  (stable GUIDs = report ids).
+
+### E3. Research provenance
+
+Two agent passes (2026-07-16), browser-captured where sites block scripts. Products studied:
+Violation Tracker (+ Quick Start/User Guide/plans), EPA ECHO (+ ECHO Notify, downloads help),
+SEC EDGAR FTS (+ FAQ), OSHA establishment search + DOL enforcement-data portal, FERC
+eLibrary/eSubscription (baseline pain: docket-first, PDF-only results, account-gated alerts),
+ProPublica Nonprofit Explorer (+ API docs, alerts announcement), CourtListener/RECAP (+ alerts
+help, API wiki), LegiScan (+ datasets/API), OpenSecrets (+ open-data/bulk-data), PUDL viewer +
+README, GovInfo URL structure, Congress.gov saved-search alerts. Full logs with verbatim label
+wording and URLs in the session transcripts; the durable conclusions are encoded above (E1 table,
+E2 flows, J-table §1.1).
+
+---
+
 ## Phasing, effort, acceptance
 
-**Phase 1 — Analyst quick wins + perf floor (1–2 sessions).**
+**Phase 1 — Analyst quick wins + perf floor + entry layer (1–2 sessions).**
 A2 (card scent, 0-recs fix) · A3 sort · B1 incremental render · B2 payload split + stale-file
-removal · B3 mobile bar + wrap fixes · A11 debounce.
+removal · B3 mobile bar + wrap fixes · A11 debounce · **E1 hero**: promote search out of the filter
+rail + corpus trust line with freshness stamp · year-facet presets · "See an issue? Report it"
+link on threads.
 *Acceptance:* card shows subject + themes + honest pills; FERC tab scrolls jank-free; first-paint
-data ≤ ~300 KB raw; sticky mobile controls; all existing tests green + new build-parity test (B2).
+data ≤ ~300 KB raw; sticky mobile controls; search + trust line above the fold at 375px (F-A
+test); all existing tests green + new build-parity test (B2).
 
 **Phase 2 — Identity refresh (1 session, pure CSS/markup + token test).**
 C1 palette + contrast script · C2 type treatment · C3 surface language · B4 pill-size/contrast fixes.
 *Acceptance:* zero hardcoded hex outside `:root`; contrast test green both themes; before/after
 screenshots at 375/768/1280 reviewed by the user (the "doesn't feel like Claude" check is theirs).
 
-**Phase 3 — Share & lenses (1–2 sessions).**
+**Phase 3 — Share, lenses & the CTA build-out (1–2 sessions).**
 A1 URL state/permalinks · A3 Ledger view · A4 company lens (+ cross_links decision) · A5 theme
-panel (+ `themes_by_year` bake) · A7 data page + filtered CSV export · A10 feed.
+panel (+ `themes_by_year` bake) · A7 data page + filtered CSV export · A10 feeds (global +
+per-collection + per-company) · **E1 full CTA system**: header nav (Get the data / About the data /
+What's new), question-card router, thread CTA row (Copy link · More on {company}), data-page
+access-mode matrix · flows F-B through F-F pass their E2 acceptance tests.
 *Acceptance:* deep link restores exact view; ledger sorts; theme panel sparkline matches
-patterns.json; feed validates; data dictionary covers every findings.csv column.
+patterns.json; feeds validate with stable GUIDs; data dictionary covers every findings.csv column;
+each E2 flow completes within its interaction budget.
 
 **Phase 4 — Storytelling (gated).**
 A6 dollar lens (gated on amounts scale-out, BACKLOG P1 #4) · D1 annual briefing page · A8 glossary
