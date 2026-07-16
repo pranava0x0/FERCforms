@@ -101,6 +101,58 @@ def test_findings_carry_stable_anchors(page_factory, site_page):
     assert ids and all(i.startswith(f"f-{rid}-") for i in ids)
 
 
+def test_a_saved_search_permalink_restores_its_results(page_factory):
+    """REGRESSION (2026-07-16, Codex review). A query can match ONLY finding text,
+    which lives in the lazily-fetched detail file. The first applyFilters() ran
+    before that landed, so a shared search link rendered "0 reports" and nothing
+    re-applied it — it only came right once the user retyped the same query.
+    Measured: #/ferc_audit?q=lobbying gave 0 cold and 25 after retyping.
+
+    The reload test above used a THEME filter (an index field), which is why it
+    passed throughout — the same false-confidence shape as the docket bug.
+    """
+    p = page_factory(hash_="#/ferc_audit?q=lobbying")
+    p.wait_for_timeout(1800)
+    assert p.input_value(".hero .search-input") == "lobbying"
+    n = int(p.locator("#result-count").inner_text().split()[0])
+    assert n > 0, "a shared search permalink restored an empty stream"
+
+
+def test_a_finding_permalink_opens_and_scrolls_to_that_finding(clipboard_page, page_factory):
+    """REGRESSION (2026-07-16, Codex review). The `f-<report>-<n>` ids shipped as
+    dead weight: this app owns the fragment for routing, so navigating to a bare
+    "#f-…" anchor replaced the route and decoded to the default view — findings
+    were not addressable at all, despite the ids implying they were. The target
+    now travels as routed state (?open=<id>&finding=<n>).
+    """
+    rid = clipboard_page.evaluate(
+        "state.reports.filter(r => r.collection === 'ferc_audit' && r.finding_count > 2)[0].id"
+    )
+    clipboard_page.goto(clipboard_page.url.split("#")[0] + f"#/ferc_audit?open={rid}")
+    clipboard_page.wait_for_selector(f"#r-{rid} .thread .finding", timeout=5000)
+    clipboard_page.locator(".finding-link").nth(2).click()
+    clipboard_page.wait_for_timeout(400)
+    link = clipboard_page.evaluate("navigator.clipboard.readText()")
+    assert f"open={rid}" in link and "finding=3" in link
+    assert "#f-" not in link, "a bare fragment anchor would collide with the router"
+
+    p = page_factory(hash_=link.split("#", 1)[1] and "#" + link.split("#", 1)[1])
+    p.wait_for_timeout(1600)
+    assert p.evaluate(f"!!document.getElementById('r-{rid}')?.open") is True
+    in_view = p.evaluate(
+        f"""(() => {{ const n = document.getElementById('f-{rid}-3'); if (!n) return false;
+             const r = n.getBoundingClientRect(); return r.top > -50 && r.top < 900; }})()"""
+    )
+    assert in_view, "followed a finding permalink but that finding wasn't scrolled into view"
+
+
+def test_a_finding_index_without_an_open_report_is_dropped(page_factory):
+    """`finding` is only meaningful inside a report — it must not survive alone."""
+    p = page_factory(hash_="#/ferc_audit?finding=3")
+    p.wait_for_timeout(500)
+    assert "finding=" not in p.evaluate("location.hash")
+
+
 def test_a_fresh_load_does_not_push_a_history_entry(site_browser, site_url):
     """REGRESSION (2026-07-16, code review). `applyUrlState` reset the URL-write
     suppression flag to `false` in its `finally` instead of restoring the previous

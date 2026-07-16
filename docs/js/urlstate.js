@@ -31,7 +31,7 @@
   function emptyState() {
     const filters = { search: "" };
     FILTER_GROUPS.forEach((g) => (filters[g] = []));
-    return { collection: DEFAULTS.collection, filters, sort: DEFAULTS.sort, view: DEFAULTS.view, open: null };
+    return { collection: DEFAULTS.collection, filters, sort: DEFAULTS.sort, view: DEFAULTS.view, open: null, finding: null };
   }
 
   /* state -> "#/…". Values are sorted so the same view always encodes to the same
@@ -49,6 +49,10 @@
     if (s.sort && s.sort !== DEFAULTS.sort) params.set("sort", s.sort);
     if (s.view && s.view !== DEFAULTS.view) params.set("view", s.view);
     if (s.open) params.set("open", s.open);
+    // A finding is addressable only WITHIN its report: this app owns the fragment
+    // for routing, so a bare "#f-<report>-<n>" anchor would replace the route and
+    // decode to the default view. It travels as routed state instead.
+    if (s.open && s.finding) params.set("finding", String(s.finding));
     const qs = params.toString();
     return "#/" + (s.collection || DEFAULTS.collection) + (qs ? "?" + qs : "");
   }
@@ -72,6 +76,8 @@
     out.sort = params.get("sort") || DEFAULTS.sort;
     out.view = params.get("view") || DEFAULTS.view;
     out.open = params.get("open") || null;
+    const finding = parseInt(params.get("finding"), 10);
+    out.finding = out.open && Number.isInteger(finding) && finding > 0 ? finding : null;
     return out;
   }
 

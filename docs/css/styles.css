@@ -848,6 +848,30 @@ a:hover { color: var(--accent-hover); }
    stays sans. This is the single clearest "these are documents, not UI" signal. */
 .finding-title { font-family: var(--font-serif); font-weight: 700; font-size: 15px; }
 .finding-flag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); }
+/* A1 — per-finding permalink. The pilcrow is the long-standing convention for
+   "link to this passage" (Wikipedia/MDN); it stays quiet until the finding is
+   hovered or it's keyboard-focused. */
+.finding-link {
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  padding: 2px 5px;
+  border: 0;
+  border-radius: 3px;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 90ms ease, color 90ms ease;
+}
+.finding:hover .finding-link,
+.finding-link:focus-visible { opacity: 1; }
+.finding-link:hover { color: var(--accent); background: var(--accent-weak); }
+.finding-link.copied { opacity: 1; color: var(--status-resolved); }
+/* Touch has no hover — never hide the only affordance behind one (DESIGN §7). */
+@media (hover: none) {
+  .finding-link { opacity: 1; min-height: 44px; min-width: 44px; }
+}
 .finding-summary { margin: 6px 0 0; font-size: 13.5px; color: var(--text); }
 
 /* Per-finding taxonomy tags + the ratepayer-harm ("cost to customers") badge. */

@@ -83,6 +83,7 @@ const state = {
   sort: "newest",
   view: "stream",          // stream | ledger (A3) — desktop/tablet only
   open: null,              // report id deep-linked open (A1)
+  finding: null,           // 1-based finding index to scroll to within `open` (A1)
   filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set(), company: new Set() },
 };
 
@@ -170,6 +171,7 @@ function currentUrlState() {
     sort: state.sort,
     view: state.view,
     open: state.open,
+    finding: state.finding,
   };
 }
 
@@ -198,15 +200,49 @@ function applyUrlState(u) {
     state.sort = SORTS[u.sort] ? u.sort : URLState.DEFAULTS.sort;
     state.view = u.view === "ledger" ? "ledger" : "stream";
     state.open = u.open || null;
+    state.finding = u.finding || null;
     state.filters.search = u.filters.search || "";
     URLState.FILTER_GROUPS.forEach((g) => (state.filters[g] = new Set(u.filters[g] || [])));
     // A ledger row is not expandable, so `open` has no meaning there — drop it
     // rather than carry an id the view can't represent. Below the ledger
     // breakpoint the view falls back to the stream, where `open` still works.
-    if (useLedger()) state.open = null;
+    if (useLedger()) state.open = state.finding = null;
   } finally {
     _applyingHash = prev;
   }
+}
+
+/* Apply whatever the hash says and render it. Shared by first load and by
+   back/forward, because both restore a view the app didn't author.
+
+   The await is load-bearing: a saved query can match ONLY finding text, which
+   lives in the lazily-fetched detail file. Filtering before that lands rendered
+   "0 reports" for a perfectly good shared link (#/ferc_audit?q=lobbying showed 0,
+   then 25 the moment the user retyped the same query), and nothing re-applied it.
+
+   Note the await must sit BETWEEN the two suppressed blocks, never inside one:
+   withUrlSuppressed is synchronous, so its `finally` would restore the flag the
+   instant an async callback hit its first await — un-suppressing everything after
+   it and pushing history entries for a state the URL already describes. */
+async function restoreFromUrl() {
+  const hash = location.hash;
+  withUrlSuppressed(() => applyUrlState(URLState.decode(hash)));
+  if (state.filters.search) {
+    try {
+      await ensureDetails(state.collection);
+    } catch (e) {
+      // Fall through: matches() degrades to index-only fields rather than
+      // rendering an empty stream for a link that should work.
+      console.error(e);
+    }
+    if (location.hash !== hash) return; // a newer navigation won the race
+  }
+  withUrlSuppressed(() => {
+    renderCollectionSurfaces();
+    syncControlsToState();
+    applyFilters();
+  });
+  revealOpenReport();
 }
 
 /* Re-render every surface that depends on the active collection. Shared by the
@@ -831,13 +867,36 @@ function kv(label, value, muted) {
   ];
 }
 
-/* A1 — every finding is individually addressable (`#f-<report>-<n>`), so a
-   citation can point at the exact finding rather than the whole report. */
+/* A1 — every finding is individually addressable. The DOM id is the scroll
+   target; the shareable form is routed state (`?open=<id>&finding=<n>`), because
+   a bare "#f-<report>-<n>" anchor would collide with this app's own use of the
+   fragment and decode to the default view. */
 function findingNode(f, reportId) {
   const head = el("div", { class: "finding-head" }, [
     el("span", { class: "dot " + (f.is_other_matter ? "other-dot" : "finding-dot"), "aria-hidden": "true" }),
     el("span", { class: "finding-title", text: f.title }),
     f.is_other_matter ? el("span", { class: "finding-flag", text: "Other matter" }) : null,
+    reportId
+      ? (() => {
+          const b = el("button", {
+            type: "button",
+            class: "finding-link",
+            title: "Copy a link to this finding",
+            "aria-label": `Copy a link to finding ${f.index}: ${f.title}`,
+            text: "¶",
+          });
+          b.addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(permalinkFor(reportId, f.index));
+              b.classList.add("copied");
+            } catch (e) {
+              console.error(e);
+            }
+            setTimeout(() => b.classList.remove("copied"), 1500);
+          });
+          return b;
+        })()
+      : null,
   ]);
   const parts = [head];
   if (f.summary) parts.push(el("p", { class: "finding-summary", text: f.summary }));
@@ -909,9 +968,12 @@ const cardDomId = (reportId) => `r-${reportId}`;
 const findingDomId = (reportId, index) => `f-${reportId}-${index}`;
 
 /* A1 — the permalink for one report: the current view, plus this card open. An
-   absolute URL, because the point is to paste it somewhere else. */
-function permalinkFor(reportId) {
-  const url = URLState.encode({ ...currentUrlState(), open: reportId });
+   absolute URL, because the point is to paste it somewhere else.
+   `findingIndex` (1-based) targets a single finding. It rides as routed state,
+   NOT as a bare "#f-…" fragment: this app owns the fragment for routing, so an
+   anchor link would replace the route and land on the default view. */
+function permalinkFor(reportId, findingIndex) {
+  const url = URLState.encode({ ...currentUrlState(), open: reportId, finding: findingIndex || null });
   return location.origin + location.pathname + url;
 }
 
@@ -1141,7 +1203,7 @@ function cardNode(r) {
       fillThread(card, r);
       state.open = r.id;
     } else if (state.open === r.id) {
-      state.open = null;
+      state.open = state.finding = null;
     }
     // Opening a report is a citable view (A1), but NOT a navigation the user
     // should have to press Back through — replace, don't push.
@@ -1317,7 +1379,20 @@ function revealOpenReport() {
   if (!card) return;
   card.open = true; // fires the toggle handler → lazy-loads the thread
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  const behavior = reduce ? "auto" : "smooth";
+  card.scrollIntoView({ behavior, block: "start" });
+
+  // A finding target needs the thread to exist first, and the thread is filled
+  // asynchronously (the detail file may still be in flight). Wait for the fetch
+  // this same toggle kicked off rather than guessing at a timeout.
+  if (!state.finding) return;
+  const target = findingDomId(id, state.finding);
+  ensureDetails(state.collection)
+    .then(() => {
+      const node = document.getElementById(target);
+      if (node) node.scrollIntoView({ behavior, block: "center" });
+    })
+    .catch((e) => console.error(e)); // the report is open; only the scroll is lost
 }
 
 function applyFilters() {
@@ -1326,7 +1401,7 @@ function applyFilters() {
   // this view — drop it before rendering, so the URL can't keep advertising a
   // report the page doesn't show. (A report still in the set is re-opened by
   // appendPage as its card is rebuilt.)
-  if (state.open && !visible.some((r) => r.id === state.open)) state.open = null;
+  if (state.open && !visible.some((r) => r.id === state.open)) state.open = state.finding = null;
   renderStream(visible);
 
   const findings = visible.reduce((n, r) => n + r.finding_count, 0);
@@ -1482,7 +1557,7 @@ function wireChrome() {
       // An open card can't survive into the ledger — leaving `open` set put an id
       // in the URL that the ledger can't represent (and that a reload then tried,
       // and failed, to page to).
-      if (useLedger()) state.open = null;
+      if (useLedger()) state.open = state.finding = null;
       syncViewToggle();
       applyFilters();
       syncUrl(true);
@@ -1526,14 +1601,8 @@ function wireChrome() {
 
   // A1 — the URL is the source of truth at load: restore the shared view before
   // the first render, so a deep link never paints the default view first.
-  withUrlSuppressed(() => {
-    applyUrlState(URLState.decode(location.hash));
-    renderCollectionSurfaces();
-    syncControlsToState();
-    applyFilters();
-  });
+  await restoreFromUrl();
   syncUrl(false);        // canonicalize (drops junk params, sorts values)
-  revealOpenReport();    // scroll to + expand an `open=` deep link
   prefetchDetails(state.collection);
 
   // Back/forward walks the filter states the user moved through.
@@ -1543,12 +1612,6 @@ function wireChrome() {
     // the user back into the query they just navigated away from — and it passes
     // the collection guard whenever Back stays on the same tab.
     cancelPendingSearch();
-    withUrlSuppressed(() => {
-      applyUrlState(URLState.decode(location.hash));
-      renderCollectionSurfaces();
-      syncControlsToState();
-      applyFilters();
-    });
-    revealOpenReport();
+    restoreFromUrl();
   });
 })();

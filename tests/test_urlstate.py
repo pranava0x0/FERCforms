@@ -79,6 +79,47 @@ def test_state_round_trips_through_encode_decode():
     assert out["same"], f"round-trip lost state: {out['back']}"
 
 
+def test_finding_rides_as_routed_state_not_a_bare_anchor():
+    """A "#f-<report>-<n>" anchor would collide with this app's own routing (the
+    fragment IS the route), so the finding target must live inside the query."""
+    out = _node(
+        """
+        const s = U.emptyState();
+        s.open = 'rep-1'; s.finding = 3;
+        const enc = U.encode(s);
+        console.log(JSON.stringify({ enc, back: U.decode(enc).finding }));
+        """
+    )
+    assert out["enc"] == "#/ferc_audit?open=rep-1&finding=3"
+    assert out["back"] == 3
+
+
+def test_finding_is_dropped_without_an_open_report():
+    """A finding index is meaningless on its own — it addresses a position INSIDE
+    a report, so it must not survive encode or decode without one."""
+    out = _node(
+        """
+        const s = U.emptyState(); s.finding = 3;   // no open
+        console.log(JSON.stringify({
+          enc: U.encode(s),
+          decoded: U.decode('#/ferc_audit?finding=3').finding,
+        }));
+        """
+    )
+    assert "finding" not in out["enc"]
+    assert out["decoded"] is None
+
+
+@pytest.mark.parametrize("raw", ["0", "-1", "abc", "1.5", "", "99999999999999999999"])
+def test_a_junk_finding_index_never_reaches_the_app(raw):
+    """Decoding runs on whatever a user pasted; a non-positive-integer index must
+    become None rather than an id the DOM lookup would silently miss."""
+    out = _node(
+        f"console.log(JSON.stringify(U.decode('#/ferc_audit?open=rep-1&finding={raw}').finding))"
+    )
+    assert out is None or (isinstance(out, int) and out > 0)
+
+
 def test_encode_is_canonical():
     """The same view must always produce the same string, whatever order the user
     clicked the facets in — otherwise two people on one view share different links
