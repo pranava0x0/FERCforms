@@ -195,6 +195,10 @@
     <p style="padding:1rem;text-align:center">This explorer needs JavaScript to render the audit-report stream. The underlying data is in <code>docs/data/</code>.</p>
   </noscript>
 
+  <!-- urlstate.js defines window.URLState and must load first; both are `defer`,
+       which preserves document order. Kept a separate file so it stays DOM-free
+       and node-testable (tests/test_urlstate.py) without a build step. -->
+  <script src="js/urlstate.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 </html>

@@ -75,6 +75,8 @@ const state = {
   patternsByCollection: {}, // { key: PatternsSummary }
   meta: null,
   sort: "newest",
+  view: "stream",          // stream | ledger (A3) — desktop/tablet only
+  open: null,              // report id deep-linked open (A1)
   filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
 };
 
@@ -133,6 +135,90 @@ function cancelPendingSearch() {
    isn't the only thing this can ever drive. */
 function setSearchInputs(value) {
   document.querySelectorAll(".search-input").forEach((i) => (i.value = value));
+}
+
+/* ---------- URL state (A1) ---------- */
+/* The codec is pure and lives in urlstate.js (round-tripped by tests/test_urlstate.py).
+   This half is the DOM/state binding: read the hash on load, write it whenever the
+   view changes, and re-apply it on back/forward. */
+
+/* Guard against a hash-write loop: applying a hash mutates state, which would
+   otherwise write the hash again and push a duplicate history entry. */
+let _applyingHash = false;
+
+/* Run a block that mutates state WITHOUT writing the URL — used when the URL is
+   already the source of the change (first load, back/forward). */
+function withUrlSuppressed(fn) {
+  const prev = _applyingHash;
+  _applyingHash = true;
+  try { fn(); } finally { _applyingHash = prev; }
+}
+
+function currentUrlState() {
+  return {
+    collection: state.collection,
+    filters: {
+      search: state.filters.search,
+      ...Object.fromEntries(URLState.FILTER_GROUPS.map((g) => [g, [...state.filters[g]]])),
+    },
+    sort: state.sort,
+    view: state.view,
+    open: state.open,
+  };
+}
+
+/* Called after every state change. `push` distinguishes a navigation the user
+   should be able to go BACK from (changing a filter/tab) from an incidental
+   correction (restoring state on load) — see DESIGN.md's back-button rule. */
+function syncUrl(push) {
+  if (_applyingHash) return;
+  const hash = URLState.encode(currentUrlState());
+  if (hash === location.hash) return;
+  if (push) history.pushState(null, "", hash);
+  else history.replaceState(null, "", hash);
+}
+
+/* Apply a decoded URL state to the app. Unknown collections/sorts fall back to
+   the defaults rather than rendering an empty tab for a typo'd link. */
+function applyUrlState(u) {
+  _applyingHash = true;
+  try {
+    state.collection = COLLECTIONS.some((c) => c.key === u.collection) ? u.collection : URLState.DEFAULTS.collection;
+    state.sort = SORTS[u.sort] ? u.sort : URLState.DEFAULTS.sort;
+    state.view = u.view === "ledger" ? "ledger" : "stream";
+    state.open = u.open || null;
+    state.filters.search = u.filters.search || "";
+    URLState.FILTER_GROUPS.forEach((g) => (state.filters[g] = new Set(u.filters[g] || [])));
+  } finally {
+    _applyingHash = false;
+  }
+}
+
+/* Re-render every surface that depends on the active collection. Shared by the
+   tab switcher and by a hash change that lands on a different tab. */
+function renderCollectionSurfaces() {
+  document.querySelectorAll(".tab").forEach((t) =>
+    t.setAttribute("aria-selected", t.dataset.collection === state.collection ? "true" : "false")
+  );
+  const def = COLLECTIONS.find((c) => c.key === state.collection);
+  const lead = document.getElementById("intro-lead");
+  if (lead && def) lead.innerHTML = def.lead; // trusted static strings (COLLECTIONS)
+  renderKPIs();
+  renderFilters();
+  renderPatternsBand();
+  renderTrends();
+}
+
+/* Reflect the restored state back into the controls, so a deep link doesn't show
+   a filtered stream above an empty-looking filter rail. */
+function syncControlsToState() {
+  setSearchInputs(state.filters.search);
+  const sortSel = document.getElementById("sort");
+  if (sortSel) sortSel.value = state.sort;
+  document.querySelectorAll("[data-group][data-value]").forEach((c) => {
+    const set = state.filters[c.dataset.group];
+    c.setAttribute("aria-pressed", set && set.has(c.dataset.value) ? "true" : "false");
+  });
 }
 
 /* Patterns + reports for the active tab. */
@@ -247,19 +333,12 @@ function renderTabs() {
 function switchCollection(key) {
   if (key === state.collection) return;
   state.collection = key;
-  resetFilters(); // facets differ per collection; start each tab clean
-  document.querySelectorAll(".tab").forEach((t) =>
-    t.setAttribute("aria-selected", t.dataset.collection === key ? "true" : "false")
-  );
-  const def = COLLECTIONS.find((c) => c.key === key);
-  const lead = document.getElementById("intro-lead");
-  if (lead && def) lead.innerHTML = def.lead;
-  renderKPIs();
-  renderFilters();
-  renderPatternsBand();
-  renderTrends();
+  state.open = null;   // an open report belongs to the tab it came from
+  resetFilters();      // facets differ per collection; start each tab clean
+  renderCollectionSurfaces();
   // resetFilters already called applyFilters, but facet/intro DOM changed — re-run.
   applyFilters();
+  syncUrl(true);       // a tab switch is a navigation — back should return
   scrollToTop();
   prefetchDetails(key); // warm the new tab's finding bodies while the user reads
 }
@@ -587,7 +666,9 @@ function kv(label, value, muted) {
   ];
 }
 
-function findingNode(f) {
+/* A1 — every finding is individually addressable (`#f-<report>-<n>`), so a
+   citation can point at the exact finding rather than the whole report. */
+function findingNode(f, reportId) {
   const head = el("div", { class: "finding-head" }, [
     el("span", { class: "dot " + (f.is_other_matter ? "other-dot" : "finding-dot"), "aria-hidden": "true" }),
     el("span", { class: "finding-title", text: f.title }),
@@ -625,16 +706,48 @@ function findingNode(f) {
     });
     parts.push(recs);
   }
-  return el("div", { class: "finding" }, parts);
+  return el("div", { class: "finding", id: reportId ? findingDomId(reportId, f.index) : null }, parts);
 }
 
 /* The source URL lives in the detail record (thread-only), so citations are only
-   ever built where a thread is rendered. */
+   ever built where a thread is rendered.
+   A1 — the citation carries the permalink as well as the official source URL: the
+   source proves the quote, the permalink lets a fact-checker land on the exact
+   view it was read in. */
 function citationText(r, detail) {
   const kind = r.doc_type || (r.collection === "prudence_review" ? "FERC order" : r.collection === "state_audit" ? "Audit report" : "FERC Audit Report");
   const docket = r.docket_full || r.docket;
   return `${r.company}, ${kind}${docket ? ", Docket No. " + docket : ""}` +
-    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${detail.source_page_url}`;
+    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${detail.source_page_url}` +
+    ` (via FERC Audit Explorer, ${permalinkFor(r.id)})`;
+}
+
+/* A small copy-to-clipboard button that reports success/failure in place. */
+function copyButton(label, getText) {
+  const btn = el("button", { type: "button", class: "btn-secondary", text: label });
+  btn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(getText());
+      btn.textContent = "Copied ✓";
+    } catch (e) {
+      console.error(e);
+      btn.textContent = "Copy failed";
+    }
+    setTimeout(() => (btn.textContent = label), 1800);
+  });
+  return btn;
+}
+
+/* A1 — DOM ids. Report ids contain dots and other CSS-unsafe characters, so they
+   are namespaced and only ever selected via getElementById (never a selector). */
+const cardDomId = (reportId) => `r-${reportId}`;
+const findingDomId = (reportId, index) => `f-${reportId}-${index}`;
+
+/* A1 — the permalink for one report: the current view, plus this card open. An
+   absolute URL, because the point is to paste it somewhere else. */
+function permalinkFor(reportId) {
+  const url = URLState.encode({ ...currentUrlState(), open: reportId });
+  return location.origin + location.pathname + url;
 }
 
 /* E1 — "See an issue? Report it": a prefilled GitHub issue (zero-backend
@@ -698,7 +811,7 @@ function threadNode(r, detail) {
   const root = el("div", { class: "thread-root" }, [el("dl", {}, rows)]);
 
   const findings = (detail.findings || []).length
-    ? el("div", {}, detail.findings.map(findingNode))
+    ? el("div", {}, detail.findings.map((f) => findingNode(f, r.id)))
     : el("div", { class: "no-findings" }, [
         r.structured === false
           ? el("p", {}, [
@@ -716,24 +829,16 @@ function threadNode(r, detail) {
           : null,
       ]);
 
-  const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });
-  copyBtn.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(citationText(r, detail));
-      copyBtn.textContent = "Copied ✓";
-      setTimeout(() => (copyBtn.textContent = "Copy citation"), 1800);
-    } catch (e) {
-      copyBtn.textContent = "Copy failed";
-    }
-  });
-
+  // E1 — the source triplet leads (ProPublica's per-filing pattern): the official
+  // document first, then the ways to carry it away.
   const sourceLabel = detail.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
   const footer = el("div", { class: "thread-footer" }, [
-    el("a", { class: "btn-secondary", href: detail.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
+    el("a", { class: "btn-secondary primary", href: detail.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
     detail.archived_via
       ? el("a", { class: "btn-secondary", href: detail.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
       : null,
-    copyBtn,
+    copyButton("Copy citation", () => citationText(r, detail)),
+    copyButton("Copy link", () => permalinkFor(r.id)),
     reportIssueLink(r),
   ]);
 
@@ -772,7 +877,7 @@ async function fillThread(card, r) {
 }
 
 function cardNode(r) {
-  const card = el("details", { class: "card" });
+  const card = el("details", { class: "card", id: cardDomId(r.id) });
   if (r.cost_to_customers) card.classList.add("has-cost"); // A2 — amber edge tick
 
   const docket = r.docket_full || r.docket;
@@ -824,7 +929,15 @@ function cardNode(r) {
 
   card.appendChild(summary);
   card.addEventListener("toggle", () => {
-    if (card.open) fillThread(card, r);
+    if (card.open) {
+      fillThread(card, r);
+      state.open = r.id;
+    } else if (state.open === r.id) {
+      state.open = null;
+    }
+    // Opening a report is a citable view (A1), but NOT a navigation the user
+    // should have to press Back through — replace, don't push.
+    syncUrl(false);
   });
   return card;
 }
@@ -879,6 +992,22 @@ function renderStream(visible) {
   else while (_render.shown < _render.visible.length) appendPage();
 }
 
+/* A1 — a shared link must land on its report even when the pager hasn't reached
+   it yet (an `open=` id can be card #87 of 123). Render pages until it exists,
+   then expand + scroll to it. Bounded by the result length, so a stale id in an
+   old link just does nothing rather than spinning. */
+function revealOpenReport() {
+  const id = state.open;
+  if (!id) return;
+  if (!_render.visible.some((r) => r.id === id)) return; // not in this filter set
+  while (_render.shown < _render.visible.length && !document.getElementById(cardDomId(id))) appendPage();
+  const card = document.getElementById(cardDomId(id));
+  if (!card) return;
+  card.open = true; // fires the toggle handler → lazy-loads the thread
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+}
+
 function applyFilters() {
   const visible = sortReports(state.reports.filter(matches));
   renderStream(visible);
@@ -901,6 +1030,10 @@ function applyFilters() {
   const activeCount = _GROUP_ORDER.reduce((n, g) => n + state.filters[g].size, 0) + (state.filters.search ? 1 : 0);
   const ft = document.getElementById("filters-toggle");
   if (ft) ft.textContent = activeCount ? `Filters · ${activeCount}` : "Filters";
+
+  // Every narrowing of the stream is a view worth citing and going back from.
+  // No-ops when the URL already matches, or when the URL is what caused this.
+  syncUrl(true);
 }
 
 /* ---------- hero trust line (E1) ---------- */
@@ -1042,15 +1175,29 @@ function wireChrome() {
     return;
   }
   renderTabs();
-  const def = COLLECTIONS.find((c) => c.key === state.collection);
-  const lead = document.getElementById("intro-lead");
-  if (lead && def) lead.innerHTML = def.lead;
   renderTrustLine();
-  renderKPIs();
-  renderFilters();
-  renderPatternsBand();
-  renderTrends();
   renderFooter();
-  applyFilters();
+
+  // A1 — the URL is the source of truth at load: restore the shared view before
+  // the first render, so a deep link never paints the default view first.
+  withUrlSuppressed(() => {
+    applyUrlState(URLState.decode(location.hash));
+    renderCollectionSurfaces();
+    syncControlsToState();
+    applyFilters();
+  });
+  syncUrl(false);        // canonicalize (drops junk params, sorts values)
+  revealOpenReport();    // scroll to + expand an `open=` deep link
   prefetchDetails(state.collection);
+
+  // Back/forward walks the filter states the user moved through.
+  window.addEventListener("popstate", () => {
+    withUrlSuppressed(() => {
+      applyUrlState(URLState.decode(location.hash));
+      renderCollectionSurfaces();
+      syncControlsToState();
+      applyFilters();
+    });
+    revealOpenReport();
+  });
 })();

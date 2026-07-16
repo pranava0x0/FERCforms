@@ -540,6 +540,10 @@ a:hover { color: var(--accent-hover); }
   min-height: 44px; /* touch target (DESIGN §7) */
 }
 .btn-secondary:hover { background: var(--surface-2); }
+/* E1 — one primary CTA per view (DESIGN.md §8.1): in a thread that's the official
+   source document. Everything beside it is a way to carry the record away. */
+.btn-secondary.primary { border-color: var(--accent); color: var(--accent-hover); font-weight: 600; }
+.btn-secondary.primary:hover { background: var(--accent-weak); }
 /* A secondary action that shouldn't compete with the source/citation CTAs. */
 .btn-secondary.subtle { color: var(--text-muted); }
 .btn-secondary.subtle:hover { color: var(--accent); }
