@@ -15,7 +15,7 @@ import pytest
 
 @pytest.fixture(scope="module")
 def ferc_patterns(request):
-    # site_url is session-scoped; fetch the same file the site_page reads.
+    # site_url is session-scoped; fetch the same file the page reads.
     url = request.getfixturevalue("site_url")
     raw = urllib.request.urlopen(url + "data/patterns_by_collection.json").read()
     return json.loads(raw)["ferc_audit"]

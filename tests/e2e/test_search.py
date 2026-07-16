@@ -1,7 +1,7 @@
 """Search behaviour (A11) — including the regression that shipped and was caught.
 
 The race below is the reason this file exists: it passed every unit test, and only
-a real site_browser with a slow network showed it.
+a real browser with a slow network showed it.
 """
 from __future__ import annotations
 

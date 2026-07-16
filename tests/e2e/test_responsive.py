@@ -51,7 +51,7 @@ def test_no_horizontal_page_scroll(page_factory, width, height, name):
     p = page_factory(width=width, height=height)
     assert not p.evaluate(
         "document.documentElement.scrollWidth > document.documentElement.clientWidth"
-    ), f"the site_page scrolls horizontally at {name} ({width}px)"
+    ), f"the page scrolls horizontally at {name} ({width}px)"
 
 
 def test_tablet_filters_slide_in_from_the_left(page_factory):

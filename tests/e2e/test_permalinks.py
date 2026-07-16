@@ -1,7 +1,7 @@
 """Spec A1 acceptance, verbatim:
 
   "reload restores exact view; opening a shared link scrolls to + expands the
-   report; copy-citation includes the permalink; site_browser back/forward walks
+   report; copy-citation includes the permalink; browser back/forward walks
    filter states."
 
 The codec's own round-trip is unit-tested in tests/test_urlstate.py; this file
@@ -14,7 +14,7 @@ import pytest
 
 @pytest.fixture
 def clipboard_page(site_browser, site_url):
-    """A site_page allowed to read the clipboard, for the Copy-* CTAs."""
+    """A page allowed to read the clipboard, for the Copy-* CTAs."""
     ctx = site_browser.new_context(
         viewport={"width": 1280, "height": 900},
         permissions=["clipboard-read", "clipboard-write"],
@@ -26,11 +26,11 @@ def clipboard_page(site_browser, site_url):
     site_page.wait_for_timeout(350)
     yield site_page
     ctx.close()
-    assert not errors, f"uncaught site_page errors: {errors}"
+    assert not errors, f"uncaught page errors: {errors}"
 
 
 def _deep_id(site_page, index=86):
-    """A report well past the 20-card first site_page — the case that breaks naive
+    """A report well past the 20-card first page — the case that breaks naive
     deep-linking, because the card doesn't exist in the DOM yet."""
     return site_page.evaluate(
         "i => state.reports.filter(r=>r.collection==='ferc_audit')"
@@ -105,7 +105,7 @@ def test_a_stale_open_id_does_not_hang_or_throw(page_factory):
     """Old links outlive the corpus; an unknown id must be a no-op, not a spin."""
     p = page_factory(hash_="#/ferc_audit?open=not-a-real-report-id")
     p.wait_for_timeout(600)
-    assert p.locator("#stream .card").count() == 20  # normal first site_page
+    assert p.locator("#stream .card").count() == 20  # normal first page
     assert p.locator("#result-count").inner_text().startswith("123 report")
 
 
