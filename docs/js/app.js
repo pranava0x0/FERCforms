@@ -521,7 +521,13 @@ function resetFilters() {
   state.filters.impact.clear();
   state.filters.company.clear();
   setSearchInputs("");
-  document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
+  // Only FACET controls — `[data-group][data-value]` is exactly the filter chips
+  // and pattern cards. A blanket `[aria-pressed="true"]` also unpressed the A3
+  // view toggle, leaving the ledger rendering with neither Stream nor Ledger
+  // marked selected (visually and for a screen reader).
+  document
+    .querySelectorAll('[data-group][data-value][aria-pressed="true"]')
+    .forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
 }
 
@@ -542,6 +548,11 @@ function matches(report) {
     // failed we still match on the index fields rather than dropping the report.
     const hay = [
       report.company,
+      // BOTH docket fields: 199 of 440 records (most state ones) have a `docket`
+      // and NO `docket_full`, and `docket` is what their card prints — so
+      // searching the docket a user can see returned nothing, while the hero
+      // promises "Search a utility, docket, or keyword".
+      report.docket,
       report.docket_full,
       report.audit_period,
       ...findingsOf(report).map((x) => x.title + " " + (x.summary || "")),
@@ -964,14 +975,20 @@ function moreOnCompanyRow(r) {
     const label = `${n} ${c.label.replace(" (Reference)", "")}${n === 1 ? "" : ""}`;
     const btn = el("button", { type: "button", class: "more-link", text: label });
     btn.addEventListener("click", () => {
-      // Deep-link: that collection, filtered to this company.
-      state.collection = c.key;
-      state.open = null;
-      resetFilters();
-      state.filters.company = new Set([r.company]);
-      renderCollectionSurfaces();
-      syncControlsToState();
-      applyFilters();
+      // Deep-link: that collection, filtered to this company. The whole move is
+      // ONE navigation, so the intermediate states must not reach the URL —
+      // resetFilters() calls applyFilters(), which would otherwise push an
+      // unfiltered destination tab, and Back would land there instead of on the
+      // report the user came from.
+      withUrlSuppressed(() => {
+        state.collection = c.key;
+        state.open = null;
+        resetFilters();
+        state.filters.company = new Set([r.company]);
+        renderCollectionSurfaces();
+        syncControlsToState();
+        applyFilters();
+      });
       syncUrl(true);
       scrollToResults();
     });
@@ -1230,6 +1247,16 @@ function appendPage() {
   next.forEach((r) => frag.appendChild(ledger ? ledgerRow(r) : cardNode(r)));
   host.appendChild(frag);
   _render.shown += next.length;
+
+  // Re-open the deep-linked report whenever its card is (re)created — renderStream
+  // rebuilds every card on any filter/sort change, which used to silently close it
+  // while `state.open` and the URL still said it was open, so the permalink no
+  // longer described the page. Set AFTER insertion so the toggle fires and the
+  // thread lazy-loads; setting `open` at construction skips the event entirely.
+  if (!ledger && state.open) {
+    const card = next.some((r) => r.id === state.open) ? document.getElementById(cardDomId(state.open)) : null;
+    if (card && !card.open) card.open = true;
+  }
   if (_render.shown >= _render.visible.length) {
     // Everything rendered — retire the sentinel so the observer stops firing.
     if (_render.observer) _render.observer.disconnect();
@@ -1295,6 +1322,11 @@ function revealOpenReport() {
 
 function applyFilters() {
   const visible = sortReports(state.reports.filter(matches));
+  // An `open` report that the new filters exclude is no longer describable by
+  // this view — drop it before rendering, so the URL can't keep advertising a
+  // report the page doesn't show. (A report still in the set is re-opened by
+  // appendPage as its card is rebuilt.)
+  if (state.open && !visible.some((r) => r.id === state.open)) state.open = null;
   renderStream(visible);
 
   const findings = visible.reduce((n, r) => n + r.finding_count, 0);
@@ -1506,6 +1538,11 @@ function wireChrome() {
 
   // Back/forward walks the filter states the user moved through.
   window.addEventListener("popstate", () => {
+    // Same class as the reset/tab-switch race: a debounced search awaiting its
+    // detail fetch would land AFTER the history restore and overwrite it, pushing
+    // the user back into the query they just navigated away from — and it passes
+    // the collection guard whenever Back stays on the same tab.
+    cancelPendingSearch();
     withUrlSuppressed(() => {
       applyUrlState(URLState.decode(location.hash));
       renderCollectionSurfaces();

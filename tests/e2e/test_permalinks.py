@@ -126,6 +126,85 @@ def test_a_fresh_load_does_not_push_a_history_entry(site_browser, site_url):
     page.close()
 
 
+def test_the_open_report_survives_a_rerender(site_page):
+    """REGRESSION (2026-07-16, Codex review). renderStream rebuilds every card on
+    any filter/sort change, so the open card was silently replaced by a closed one
+    while `state.open` and the URL still said it was open — the permalink stopped
+    describing the page it pointed at.
+
+    Filters to the report's own company so it stays on the first rendered page:
+    that isolates the rebuild bug from paging (a report re-sorted to position ~120
+    legitimately isn't in the DOM yet — see the test below for that half).
+    """
+    site_page.locator("#stream .card summary").first.click()
+    site_page.wait_for_timeout(500)
+    rid = site_page.evaluate("state.open")
+    company = site_page.evaluate("id => state.reports.find(r => r.id === id).company", rid)
+    assert rid and company
+
+    site_page.evaluate("c => { state.filters.company = new Set([c]); applyFilters(); }", company)
+    site_page.wait_for_timeout(700)
+
+    assert site_page.evaluate("id => !!document.getElementById('r-'+id)?.open", rid) is True, (
+        "the rebuilt card came back closed while the URL still said it was open"
+    )
+    assert f"open={rid}" in site_page.evaluate("location.hash")
+
+
+def test_an_open_report_paged_away_reopens_when_its_card_is_rebuilt(site_page):
+    """The other half of the rebuild fix: when a re-sort moves the open report past
+    the first page it is legitimately not in the DOM, but it must come back OPEN
+    once the pager reaches it — not silently closed."""
+    site_page.locator("#stream .card summary").first.click()   # newest
+    site_page.wait_for_timeout(500)
+    rid = site_page.evaluate("state.open")
+    site_page.select_option("#sort", "oldest")                 # -> moves to the end
+    site_page.wait_for_timeout(600)
+    assert f"open={rid}" in site_page.evaluate("location.hash")  # still in the result set
+
+    for _ in range(20):
+        site_page.mouse.wheel(0, 40000)
+        site_page.wait_for_timeout(220)
+        if site_page.evaluate("id => !!document.getElementById('r-'+id)", rid):
+            break
+    site_page.wait_for_timeout(400)
+    assert site_page.evaluate("id => !!document.getElementById('r-'+id)?.open", rid) is True
+
+
+def test_an_open_report_filtered_out_stops_claiming_to_be_open(site_page):
+    """The other half: if the new filters exclude it, the URL must let it go
+    rather than advertise a report the page no longer shows."""
+    site_page.locator("#stream .card summary").first.click()
+    site_page.wait_for_timeout(500)
+    assert "open=" in site_page.evaluate("location.hash")
+    site_page.fill(".hero .search-input", "zzzznomatch")
+    site_page.wait_for_timeout(900)
+    assert "open=" not in site_page.evaluate("location.hash")
+
+
+def test_more_on_company_is_one_history_entry(site_page, page_factory):
+    """REGRESSION (2026-07-16, Codex review). The click changed collection and
+    called resetFilters() — whose applyFilters() pushed an UNFILTERED destination
+    tab — before pushing the intended company-filtered state. Two entries for one
+    click, so Back landed on an unrelated unfiltered tab instead of the report the
+    user came from."""
+    rep = site_page.evaluate(
+        """(() => { const c={}; state.reports.forEach(r=>c[r.company]=(c[r.company]||0)+1);
+             const [n]=Object.entries(c).sort((a,b)=>b[1]-a[1])[0];
+             const r=state.reports.find(x=>x.company===n); return {id:r.id, col:r.collection}; })()"""
+    )
+    p = page_factory(hash_=f"#/{rep['col']}?open={rep['id']}")
+    p.wait_for_selector(".more-link", timeout=5000)
+    before = p.evaluate("history.length")
+    p.locator(".more-link").first.click()
+    p.wait_for_timeout(800)
+    assert p.evaluate("history.length") - before == 1, "one navigation must be one history entry"
+    assert "company=" in p.evaluate("location.hash")
+    p.go_back()
+    p.wait_for_timeout(700)
+    assert f"open={rep['id']}" in p.evaluate("location.hash"), "Back must return to the originating report"
+
+
 def test_a_stale_open_id_does_not_hang_or_throw(page_factory):
     """Old links outlive the corpus; an unknown id must be a no-op, not a spin."""
     p = page_factory(hash_="#/ferc_audit?open=not-a-real-report-id")

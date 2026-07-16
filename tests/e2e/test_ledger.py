@@ -125,6 +125,22 @@ def test_ledger_fits_without_horizontal_scroll(page_factory):
         assert not m["overflows"], f"ledger overflows its container at {width}px"
 
 
+def test_resetting_filters_keeps_the_view_toggle_selected(page_factory):
+    """REGRESSION (2026-07-16, Codex review). resetFilters() cleared EVERY
+    `[aria-pressed="true"]` in the document, including the view toggle — so after
+    a reset the ledger kept rendering while both Stream and Ledger reported
+    unpressed, leaving the current mode unselected visually and for a screen
+    reader. Reset is about facets; it has no business touching the view."""
+    p = page_factory(hash_="#/ferc_audit?view=ledger&theme=Depreciation")
+    p.click("#reset-filters")
+    p.wait_for_timeout(500)
+    assert p.is_visible("#ledger"), "reset should not change the view"
+    pressed = p.evaluate(
+        "Object.fromEntries([...document.querySelectorAll('.view-btn')].map(b=>[b.dataset.view,b.getAttribute('aria-pressed')]))"
+    )
+    assert pressed == {"stream": "false", "ledger": "true"}, pressed
+
+
 def test_ledger_is_dense(ledger_page):
     """Density is the entire justification for this view (F8: ~6 cards/screen)."""
     h = ledger_page.evaluate("document.querySelector('#ledger-body tr').getBoundingClientRect().height")
