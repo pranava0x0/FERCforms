@@ -1,6 +1,8 @@
 # Spec — Analyst-grade UX, interaction model & visual identity refresh
 
-> **Status: SPEC / not yet scheduled.** Written 2026-07-16. Backlog placeholder: BACKLOG.md → "Design / UI".
+> **Status: Phase 1 SHIPPED 2026-07-16 (`c498b53`); Phases 2–4 open.** Written 2026-07-16.
+> Backlog placeholder: BACKLOG.md → "Design / UI". Per-phase status is recorded at the bottom
+> (see "Phasing, effort, acceptance"); F-numbered findings fixed in Phase 1 are struck through in §0.
 > Evaluated from two personas — a **FERC/regulatory analyst** (works with dockets daily, cites sources,
 > re-analyzes data) and a **general energy-sector reader** (PM/consultant/investor/journalist who knows
 > the industry but not FERC audit mechanics). Also mines the **LBNL Energy Markets & Policy**
@@ -486,7 +488,7 @@ E2 flows, J-table §1.1).
 
 ## Phasing, effort, acceptance
 
-**Phase 1 — Analyst quick wins + perf floor + entry layer (1–2 sessions).**
+**Phase 1 — Analyst quick wins + perf floor + entry layer (1–2 sessions). ✅ SHIPPED 2026-07-16 (`c498b53`).**
 A2 (card scent, 0-recs fix) · A3 sort · B1 incremental render · B2 payload split + stale-file
 removal · B3 mobile bar + wrap fixes · A11 debounce · **E1 hero**: promote search out of the filter
 rail + corpus trust line with freshness stamp · year-facet presets · "See an issue? Report it"
@@ -494,6 +496,27 @@ link on threads.
 *Acceptance:* card shows subject + themes + honest pills; FERC tab scrolls jank-free; first-paint
 data ≤ ~300 KB raw; sticky mobile controls; search + trust line above the fold at 375px (F-A
 test); all existing tests green + new build-parity test (B2).
+
+*Result (measured, not asserted):* first-paint data **295 KB raw** (`reports_index.json` 241 KB /
+25 KB gz + patterns/meta), down from 1.96 MB — reports.json is no longer fetched at all. Stream
+renders **20 cards, 0 threads** at first paint with an exact 123-report count. **188 tests pass /
+14 skipped** (was 182/14). Fixes landed for F1, F2, F4, F5, F6 (stale file), F9, F13 (partial —
+how-to copy only), F10 (partial — debounce only).
+
+*Deltas from the spec as written, and why:*
+- **`amount_max`, not a sum.** A2 said "max or sum of its findings' `amount_usd`". Sum is unsafe:
+  findings restate the same dollars, so a sum invents a figure no report states. Max only.
+- **Trust line reads "FERC + 42 state regulators, 2005→present"**, not the spec's illustrative
+  "39 … 2014→present". Both numbers are now mechanically derived (`meta.jurisdictions_covered`;
+  `patterns.by_year`): the corpus really covers 43 jurisdictions and its earliest record is a
+  2005 state rate case. 2014→present describes the FERC audits only; the hero describes the corpus.
+- **Year presets anchor on the corpus's newest year, not today.** "Last year" against a wall-clock
+  date silently selects nothing whenever a regulator has been quiet — exactly the
+  absence-of-data-vs-absence-of-issues confusion A9 exists to prevent.
+- **`cross_links.json` still ships** (363 KB, consumed by nothing). B2 defers the call to A4; the
+  Phase 3 company lens either consumes it or it stops being baked.
+- **A9's `captured_at`** ("as of" per card) came along free with the thread rework — it was a
+  one-line addition once the detail record was already in hand.
 
 **Phase 2 — Identity refresh (1 session, pure CSS/markup + token test).**
 C1 palette + contrast script · C2 type treatment · C3 surface language · B4 pill-size/contrast fixes.
