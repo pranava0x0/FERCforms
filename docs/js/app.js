@@ -77,7 +77,7 @@ const state = {
   sort: "newest",
   view: "stream",          // stream | ledger (A3) — desktop/tablet only
   open: null,              // report id deep-linked open (A1)
-  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set(), company: new Set() },
 };
 
 /* ---------- lazy detail loading ---------- */
@@ -394,12 +394,49 @@ function renderFilters() {
     ? [(() => { const c = chip("Cost to customers", harmCount, "impact", "cost_to_customers"); c.title = COST_TIP; return c; })()]
     : [];
   fillFacet("impact-options", impactChips);
+  renderCompanyFacet(reports);
   fillFacet("industry-options", industries.map((i) => chip(cap(i), null, "industry", i)));
   fillFacet("type-options", types.map((t) => chip(_ABBR[t] || t, null, "audit_type", t)));
   fillFacet("function-options", functions.map((fn) => chip(cap(fn), null, "functions", fn)));
   fillFacet("form-options", formsList.map((fm) => chip("No. " + fm, null, "form", fm)));
   fillFacet("year-options", years.map((y) => chip(y, null, "year", y)));
   renderYearPresets(years);
+}
+
+/* A4 — the company facet. The same utilities recur across FERC audits, state
+   audits and rate cases, so "which company" is a first-class lens, not a search
+   string. Top 20 by report count (the recurring ones — the point of the lens),
+   with a search-within box because the tail is long (hundreds of companies).
+   A company selected from elsewhere (theme panel, "More on…") is always shown
+   even if it isn't in the top 20, or the active filter would be invisible. */
+const COMPANY_FACET_LIMIT = 20;
+function renderCompanyFacet(reports) {
+  const box = document.getElementById("company-options");
+  if (!box) return;
+  const counts = new Map();
+  reports.forEach((r) => counts.set(r.company, (counts.get(r.company) || 0) + 1));
+  const field = box.closest(".field");
+  if (field) field.hidden = counts.size < 2; // a one-company tab needs no facet
+
+  const search = document.getElementById("company-search");
+  const q = (search && search.value.trim().toLowerCase()) || "";
+  const ranked = [...counts.entries()]
+    .filter(([name]) => !q || name.toLowerCase().includes(q))
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+  const shown = ranked.slice(0, COMPANY_FACET_LIMIT);
+  const shownNames = new Set(shown.map(([n]) => n));
+  state.filters.company.forEach((name) => {
+    if (!shownNames.has(name) && counts.has(name)) shown.push([name, counts.get(name)]);
+  });
+
+  box.replaceChildren(...shown.map(([name, n]) => chip(name, n, "company", name)));
+  const more = ranked.length - Math.min(ranked.length, COMPANY_FACET_LIMIT);
+  const note = document.getElementById("company-more");
+  if (note) {
+    note.textContent = more > 0 ? `+${more} more — type to find one` : "";
+    note.hidden = more <= 0;
+  }
 }
 
 /* E1 — date facets ship as PRESETS, never a blank date picker (EDGAR's pattern).
@@ -455,6 +492,7 @@ function resetFilters() {
   state.filters.year.clear();
   state.filters.theme.clear();
   state.filters.impact.clear();
+  state.filters.company.clear();
   setSearchInputs("");
   document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
@@ -464,6 +502,7 @@ function matches(report) {
   const f = state.filters;
   if (report.collection !== state.collection) return false;
   if (f.impact.size && !report.cost_to_customers) return false;
+  if (f.company.size && !f.company.has(report.company)) return false;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
   if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
@@ -554,6 +593,93 @@ function renderPatternsBand() {
   });
 }
 
+/* ---------- theme panel (A5) ---------- */
+/* When exactly one theme filter is active, the stream gets a header answering the
+   analyst's real question: is this systemic or one-off? Everything here is a
+   mechanical count baked into patterns_by_collection.json — no LLM, no editorial.
+   Shown for ONE theme only: with two themes active the stream is an OR across
+   them, so a single theme's stats would describe a different set than the one
+   on screen. */
+function themeSparkline(byYear) {
+  const years = Object.keys(byYear).sort();
+  if (!years.length) return null;
+  const max = Math.max(...years.map((y) => byYear[y]));
+  return el("div", { class: "spark", role: "list", "aria-label": "Reports per year with this issue" }, years.map((y) =>
+    el("div", {
+      class: "spark-col",
+      role: "listitem",
+      "aria-label": `${y}: ${byYear[y]} report${byYear[y] === 1 ? "" : "s"}`,
+      title: `${y}: ${byYear[y]} report${byYear[y] === 1 ? "" : "s"}`,
+    }, [
+      el("span", { class: "spark-bar", style: `height:${Math.max(3, Math.round((byYear[y] / max) * 34))}px` }),
+      el("span", { class: "spark-yr", text: "’" + y.slice(2) }),
+    ])
+  ));
+}
+
+function renderThemePanel() {
+  const host = document.getElementById("theme-panel");
+  if (!host) return;
+  const active = [...state.filters.theme];
+  if (active.length !== 1) { host.replaceChildren(); host.hidden = true; return; }
+  const stat = activePatterns().themes.find((t) => t.theme === active[0]);
+  if (!stat) { host.replaceChildren(); host.hidden = true; return; }
+
+  const total = activePatterns().report_count || 1;
+  const pct = Math.round((stat.report_count / total) * 100);
+  const spark = themeSparkline(stat.by_year || {});
+
+  host.replaceChildren(
+    el("div", { class: "tp-head" }, [
+      el("h2", { class: "tp-title", text: stat.theme }),
+      el("button", { type: "button", class: "link-btn tp-clear", text: "Clear this issue",
+        onclick: () => removeActiveFilter("theme", stat.theme) }),
+    ]),
+    stat.description ? el("p", { class: "tp-desc", text: stat.description }) : null,
+    el("div", { class: "tp-stats" }, [
+      el("div", { class: "tp-stat" }, [
+        el("span", { class: "tp-num", text: String(stat.report_count) }),
+        el("span", { class: "tp-lab", text: `of ${total} reports · ${pct}%` }),
+      ]),
+      el("div", { class: "tp-stat" }, [
+        el("span", { class: "tp-num", text: String(stat.finding_count) }),
+        el("span", { class: "tp-lab", text: "findings" }),
+      ]),
+      spark ? el("div", { class: "tp-stat tp-spark" }, [spark, el("span", { class: "tp-lab", text: "reports per year issued" })]) : null,
+    ]),
+    (stat.top_companies || []).length
+      ? el("div", { class: "tp-companies" }, [
+          el("span", { class: "tp-lab", text: "Most often" }),
+          el("ul", { class: "tp-co-list" }, stat.top_companies.map((c) =>
+            el("li", {}, [
+              // Deep-links into the company lens (A4) so "who does this most" is
+              // one click from "show me their record".
+              (() => {
+                const b = el("button", { type: "button", class: "tp-co", text: c.company });
+                b.addEventListener("click", () => {
+                  state.filters.company = new Set([c.company]);
+                  syncControlsToState();
+                  applyFilters();
+                  scrollToResults();
+                });
+                return b;
+              })(),
+              el("span", { class: "tp-co-n", text: String(c.report_count) }),
+            ])
+          )),
+        ])
+      : null,
+    // The transparency line: these are keyword rules, and the user can see them.
+    (stat.keywords || []).length
+      ? el("p", { class: "tp-keywords" }, [
+          el("span", { text: "Tagged by keyword: " }),
+          el("code", { text: stat.keywords.join(", ") }),
+        ])
+      : null
+  );
+  host.hidden = false;
+}
+
 /* ---------- corpus trends (charts over the already-computed aggregates) ---------- */
 /* A vertical column chart — used for the year timeline. */
 function trendColumns(title, unit, entries) {
@@ -616,9 +742,10 @@ function renderTrends() {
 }
 
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
-const _GROUP_ORDER = ["impact", "industry", "audit_type", "functions", "form", "year", "theme"];
+const _GROUP_ORDER = ["impact", "company", "industry", "audit_type", "functions", "form", "year", "theme"];
 function activeChipLabel(group, value) {
   if (group === "impact") return "Cost to customers";
+  if (group === "company") return value;
   if (group === "audit_type") return _ABBR[value] || value;
   if (group === "form") return "Form No. " + value;
   if (group === "industry" || group === "functions") return cap(value);
@@ -793,6 +920,43 @@ function cardThemeChips(r) {
   ]);
 }
 
+/* A4 — "More on {company}": mechanical counts of this company's OTHER records
+   across collections, each a deep link (A1). This is the cross-collection view
+   `cross_links.json` was baked for; computed here from the index instead, which
+   is why that file is now retired rather than shipped unread (F6).
+   Matches on the exact normalized `company` — the pipeline already normalizes it
+   at structure time, so no fuzzy matching (and no false "same company" claims). */
+function moreOnCompanyRow(r) {
+  const others = state.reports.filter((x) => x.company === r.company && x.id !== r.id);
+  if (!others.length) return null;
+  const byCollection = new Map();
+  others.forEach((x) => byCollection.set(x.collection, (byCollection.get(x.collection) || 0) + 1));
+
+  const links = COLLECTIONS.filter((c) => byCollection.has(c.key)).map((c) => {
+    const n = byCollection.get(c.key);
+    const label = `${n} ${c.label.replace(" (Reference)", "")}${n === 1 ? "" : ""}`;
+    const btn = el("button", { type: "button", class: "more-link", text: label });
+    btn.addEventListener("click", () => {
+      // Deep-link: that collection, filtered to this company.
+      state.collection = c.key;
+      state.open = null;
+      resetFilters();
+      state.filters.company = new Set([r.company]);
+      renderCollectionSurfaces();
+      syncControlsToState();
+      applyFilters();
+      syncUrl(true);
+      scrollToResults();
+    });
+    return btn;
+  });
+
+  return el("div", { class: "more-on" }, [
+    el("span", { class: "more-lab", text: `More on ${r.company}` }),
+    el("div", { class: "more-links" }, links),
+  ]);
+}
+
 /* The expanded thread. Built from the lazily-fetched detail record, so it only
    runs on first open — which is also what keeps the whole-corpus render cheap. */
 function threadNode(r, detail) {
@@ -842,7 +1006,7 @@ function threadNode(r, detail) {
     reportIssueLink(r),
   ]);
 
-  return el("div", { class: "thread" }, [root, findings, footer]);
+  return el("div", { class: "thread" }, [root, findings, moreOnCompanyRow(r), footer]);
 }
 
 /* Fill a card's thread on first expand. The detail file is usually already warm
@@ -1026,6 +1190,7 @@ function applyFilters() {
   document.getElementById("empty-reset").hidden = collectionEmpty;
   document.getElementById("empty-state").hidden = visible.length !== 0;
 
+  renderThemePanel();
   renderActiveFilters();
   const activeCount = _GROUP_ORDER.reduce((n, g) => n + state.filters[g].size, 0) + (state.filters.search ? 1 : 0);
   const ft = document.getElementById("filters-toggle");
@@ -1154,6 +1319,11 @@ function wireChrome() {
 
   document.getElementById("reset-filters").addEventListener("click", resetFilters);
   document.getElementById("empty-reset").addEventListener("click", resetFilters);
+
+  // A4 — search WITHIN the company facet. Re-renders the chip list only; it does
+  // not filter the stream (that's what picking a chip does).
+  const coSearch = document.getElementById("company-search");
+  if (coSearch) coSearch.addEventListener("input", () => renderCompanyFacet(collectionReports()));
 
   const toTop = document.getElementById("to-top");
   if (toTop) toTop.addEventListener("click", scrollToTop);

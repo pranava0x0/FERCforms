@@ -22,7 +22,7 @@
 })(typeof self !== "undefined" ? self : globalThis, function () {
   /* The facet groups that live in the URL. Mirrors state.filters in app.js minus
      `search` (carried as `q`, since "search" reads oddly in a URL). */
-  const FILTER_GROUPS = ["impact", "industry", "audit_type", "functions", "form", "year", "theme"];
+  const FILTER_GROUPS = ["impact", "industry", "audit_type", "functions", "form", "year", "theme", "company"];
 
   /* Defaults are OMITTED from the encoded URL — a shared link should carry what
      the sender changed, not the whole state object. */

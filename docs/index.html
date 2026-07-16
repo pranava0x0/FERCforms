@@ -133,6 +133,14 @@
           <legend class="field-label">Ratepayer impact</legend>
           <div id="impact-options" class="chip-options"></div>
         </fieldset>
+        <!-- A4 company lens: top 20 by report count + search-within (the tail is long). -->
+        <fieldset class="field">
+          <legend class="field-label">Company</legend>
+          <label class="sr-only" for="company-search">Find a company</label>
+          <input type="search" id="company-search" class="facet-search" placeholder="Find a company…" autocomplete="off" />
+          <div id="company-options" class="chip-options"></div>
+          <p id="company-more" class="facet-note" hidden></p>
+        </fieldset>
         <fieldset class="field">
           <legend class="field-label">Industry</legend>
           <div id="industry-options" class="chip-options"></div>
@@ -172,6 +180,8 @@
         <button id="to-top" class="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
       </div>
       <div id="active-filters" class="active-filters" aria-label="Active filters" hidden></div>
+      <!-- A5 theme drill-down: renders when exactly one theme filter is active. -->
+      <section id="theme-panel" class="theme-panel" aria-label="About this issue" hidden></section>
       <div id="stream" class="stream"></div>
       <p id="empty-state" class="empty-state" hidden><span id="empty-msg">No reports match these filters.</span> <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>

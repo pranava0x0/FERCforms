@@ -199,6 +199,12 @@ class ThemeStat(BaseModel):
     finding_count: int            # findings matching this theme
     report_count: int             # distinct reports with >=1 matching finding
     example_titles: list[str]     # up to a few real finding titles that matched
+    # Drill-down aggregates for the site's theme panel (spec A5) — the
+    # systemic-vs-one-off answer. Both are counted ONCE PER REPORT, not per
+    # finding, so they sum to report_count and can't be inflated by one report
+    # that happens to restate a theme across several findings.
+    by_year: dict[str, int] = {}   # issued-year -> reports carrying this theme
+    top_companies: list[dict] = [] # [{"company": str, "report_count": int}], top 5
 
 
 class PatternsSummary(BaseModel):

@@ -491,6 +491,70 @@ a:hover { color: var(--accent-hover); }
 }
 .chip-options { display: flex; flex-wrap: wrap; gap: 6px; }
 
+/* A4 — search-within-facet (the company tail is hundreds long). */
+.facet-search {
+  width: 100%;
+  font-size: 16px; /* prevents iOS zoom */
+  padding: 7px 9px;
+  margin-bottom: 7px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--text);
+}
+.facet-note { margin: 6px 0 0; font-size: 11px; color: var(--text-muted); }
+/* Company names are long — let their chips wrap instead of overflowing the rail. */
+#company-options .filter-chip { white-space: normal; text-align: left; }
+
+/* ---------- Theme panel (A5) ---------- */
+/* The systemic-vs-one-off answer, above the stream it describes. */
+.theme-panel {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--status-finding);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.tp-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.tp-title { font-family: var(--font-serif); font-size: 18px; margin: 0; }
+.tp-clear { font-size: 12px; }
+.tp-desc { margin: 6px 0 0; font-size: 13.5px; color: var(--text-muted); max-width: 70ch; }
+.tp-stats { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 22px; margin-top: 12px; }
+.tp-stat { display: flex; flex-direction: column; gap: 2px; }
+.tp-num { font-family: var(--font-serif); font-size: 24px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.tp-lab { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); }
+/* Sparkline — reports per year carrying this issue. */
+.spark { display: flex; align-items: flex-end; gap: 3px; height: 40px; }
+.spark-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 2px; }
+.spark-bar { display: block; width: 9px; background: var(--cat-1); border-radius: 1px; }
+.spark-yr { font-size: 9px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.tp-companies { margin-top: 12px; }
+.tp-co-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tp-co-list li { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--rule); border-radius: 3px; padding: 3px 8px; }
+.tp-co { font: inherit; font-size: 12.5px; background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-align: left; }
+.tp-co:hover { color: var(--accent-hover); text-decoration: underline; }
+.tp-co-n { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.tp-keywords { margin: 12px 0 0; font-size: 11px; color: var(--text-muted); }
+.tp-keywords code { font-family: var(--font-mono); font-size: 10.5px; }
+
+/* A4 — "More on {company}" row inside an open thread. */
+.more-on { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.more-lab { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); }
+.more-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.more-link {
+  font: inherit;
+  font-size: 12.5px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.more-link:hover { border-color: var(--accent); background: var(--accent-weak); }
+
 /* Year presets (E1) — shortcuts that select the year chips beneath them. */
 .preset-options { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 7px; }
 .preset-chip {
