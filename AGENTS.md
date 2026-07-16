@@ -31,14 +31,15 @@ data/
   raw/               downloaded PDFs (gitignored; re-fetchable from listing/seeds)
   processed/         per-report extracted text + structured JSON
 docs/                GitHub Pages site (vanilla HTML/CSS/JS) + baked data/*.json
-tests/               pytest
+tests/               pytest (unit + data guards)
+tests/e2e/           Playwright suite over the built site — skips itself without `requirements-dev.txt`
 ```
 
 **Commands** (fill in exact flags as stages land):
 
 | Goal | Command |
 | --- | --- |
-| Install deps | `pip install -r requirements.txt` (all already present) |
+| Install deps | `pip install -r requirements.txt` (all already present); browser tests also need `pip install -r requirements-dev.txt && python3 -m playwright install chromium` |
 | Build listing from snapshot | `python -m pipeline.listing` |
 | Backfill FY2014-2018 (Wayback) | `python -m pipeline.backfill` |
 | Ingest prudence / state-PUC docs | `python -m pipeline.sources` (add `--seed data/seeds/<file>.json`) |
@@ -97,11 +98,51 @@ Default verification matrix (project-specific `AGENTS.md` should override with c
 | Schema edit                    | Schema-validation tests (Pydantic / zod / etc.)       |
 | Seed / data edit               | Refresh script + data-integrity tests                 |
 | Shared vocabulary change       | Match-frontend-to-backend test                        |
-| Frontend (markup / styles / JS) | E2E / Playwright suite, or manual UAT in browser     |
+| Frontend (markup / styles / JS) | `pytest tests/e2e` (Playwright, renders for real) + `tests/test_palette.py` |
 | Connector / fetcher            | Connector unit tests + a small live integration run  |
 | Anything substantial           | Full test suite (`pytest` / `npm test` / `vitest`)   |
 
 **For UI changes**, also run the app locally and click through the affected views — type checks and unit tests verify code correctness, not feature correctness.
+
+**The MCP browser panes render the page in a HIDDEN tab — never "verify" `IntersectionObserver`,
+`requestAnimationFrame`, lazy-loading, animation, or scroll behaviour in them.** Both the Browser
+pane (`mcp__Claude_Browser__*`) and Claude-in-Chrome report `document.visibilityState === "hidden"`
+with `requestAnimationFrame` never firing, because Chrome suspends rAF + IO callbacks for
+non-rendered documents. Consequence (cost 2026-07-16: ~40 min): the Phase-1 stream paging looked
+catastrophically broken — 20 of 123 cards rendered, sentinel on screen at `top:585` in an 800px
+viewport, and *even a freshly-constructed IntersectionObserver never fired a single callback*. The
+code was correct; the environment simply wasn't rendering. Tells that you are chasing this ghost,
+not a bug: a *control* IO on an obviously-visible element also never fires; screenshots come back
+blank; `computer{action:"scroll"}` times out after 30s.
+
+**That class of behaviour has a suite: `tests/e2e/`** (Playwright — it renders for real:
+`visibilityState: "visible"`, rAF fires). It serves `docs/` on an ephemeral port exactly as GitHub
+Pages does, so the committed `docs/data/*.json` are the fixtures and a stale bake fails there rather
+than in production. **Add to it rather than hand-rolling a one-off script**: it already covers the
+spec's acceptance criteria (paging, lazy detail, permalinks/back-forward, theme + company lenses,
+ledger, search races, F-A/touch/no-h-scroll at 375/768/1280).
+
+```bash
+pip install -r requirements-dev.txt && python3 -m playwright install chromium   # once
+pytest                       # runs everything; e2e SKIPS itself if playwright is absent
+pytest tests/e2e -q          # just the browser suite (~90s)
+```
+
+Fixtures are `site_page`, `page_factory(width=…, hash_="#/…")`, `site_browser`, `site_url` —
+deliberately NOT named `page`/`browser`, which would shadow pytest-playwright's own fixtures.
+`page_factory` fails a test on any uncaught page error, so a silent JS exception can't pass.
+
+The panes are still the right tool for DOM/text/state assertions (`get_page_text`, `read_page`,
+`javascript_tool`) and for static screenshots — just not for anything gated on the page painting.
+
+**Check that the files you think you committed are actually IN the commit** — `git log -1 --stat`.
+The repo's credential guards in `.gitignore` are broad globs (`*_token*`, `*_secret*`, `*_password*`,
+`oauth*.json`), and `git add -A` obeys them **silently**: no warning, no error, exit 0. On
+2026-07-16 `tests/test_tokens.py` — the whole point of the identity phase — was ignored by
+`*_token*` and dropped from its commit, whose message described it in detail; a fresh clone would
+have had 188 tests instead of 230 and no contrast guard at all. **Never weaken the glob** (it exists
+to stop real credentials); **rename the file** (`tests/test_palette.py`) and move on. Anything named
+`*token*`, `*secret*`, or `*password*` in this repo is presumed to be a credential.
 
 **For data changes**, diff the canonical output (`docs/data/*.json` or equivalent) and skim the diff before committing. A 30-second skim catches regressions tests miss (especially around character encoding, pretty-printer drift, and unintended fields).
 
@@ -257,6 +298,42 @@ returns — **this is not optional**, it's how the agent rules stay sharp:
    - a *cost/threshold* lesson → § "What NOT to do" + a dated memory note
      (`research_finder_agent_review_*`, `agent_usage_review_*`);
    - a *dead seam* → BACKLOG.md / docs/data-sources.md.
+
+**2026-07-16 · the PR bot found 4× what my own high-effort review did — and the gap has a shape.**
+On PR #17 (Phases 1-3): my 8-angle self-review found **3** real bugs; the Codex PR bot found **12**
+across 3 rounds, including two P1s I would have shipped. Every one was reproduced before fixing, so
+this isn't bot noise. The pattern in what I missed, and what to do about it:
+
+- **I reviewed the code I'd just written, against the model of it I already had.** The bot read it
+  cold. Its best catches came from data and semantics I'd stopped questioning: that `docket_full` is
+  null on 199 of 440 records; that this app *owns the fragment*, so my `#f-…` anchors could never
+  resolve; that a `<form>` with exactly one text input submits on Enter.
+- **My tests were the same blind spot, not a defence.** Three separate bugs (docket search, the
+  `?q=` permalink, the finding anchors) each had a passing test that exercised the one shape that
+  happened to work — a FERC docket, a theme filter, the ids' *existence*. Green tests written by the
+  same mind that wrote the bug inherit its assumptions.
+- **So: don't treat the self-review as the gate.** Push early and let the bot read it cold; budget a
+  round or two of fixes rather than merging on your own green. When a finding arrives, **reproduce it
+  before fixing and re-verify after** — that costs minutes and converts "plausible bot comment" into
+  a fact, and it caught one of my own fixes being half a fix (clearing the facet input without
+  re-rendering the facet).
+- **Re-posted ≠ new.** The bot re-reviews the whole PR diff on every push and re-anchors old comments
+  to the new head, so identical findings reappear as if fresh. Sort by `created_at` to find what's
+  actually new (`gh api repos/<o>/<r>/pulls/<n>/comments --jq '.[] | "\(.created_at) \(.path)"'`),
+  and verify against HEAD before re-fixing anything.
+
+**2026-07-16 · zero agents, and that was correct — the retrospective cuts both ways.** A large
+session (spec Phases 1-3: payload split, identity refresh, permalinks, lenses, ledger, +48 e2e tests)
+spawned **no subagents and no workflows**. Every question was about *files this repo controls*
+(`grep` for `cross_links` consumers, `git log --diff-filter=A` for its provenance, reading `app.js`)
+or was answered by *running the thing* (Playwright, `pytest`, measuring `table.scrollWidth`). Per the
+thresholds above, an agent for any of it would have been pure overhead — the rule "Explore for
+codebase questions, not data analysis on controlled files" (2026-06-15 memory) held. The one external
+lookup — the pre-`pip install` advisory sweep CLAUDE.md mandates — was a **single `WebFetch`**, not a
+research harness; that is the right size for a bounded factual check against one known URL.
+**Generalisation:** on implementation sessions in a repo you already understand, the default agent
+count is **zero**. Reach for one when the question is genuinely *discovery over unknown external
+surface*, not when it's "read my own code" or "check my own output".
 
 Rule of thumb: if the same correction would apply to the *next* agent run, it belongs in a file, not
 just this turn's reply.

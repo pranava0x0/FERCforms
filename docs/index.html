@@ -10,7 +10,9 @@
   <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt — machine-readable summary" />
   <link rel="alternate" type="text/markdown" href="llms-full.txt" title="llms-full.txt — full structured corpus" />
   <link rel="alternate" type="application/xml" href="llms-ctx.txt" title="llms-ctx.txt — LLM context (llms.txt XML shape)" />
-  <link rel="preload" href="data/reports.json" as="fetch" crossorigin="anonymous" />
+  <!-- First paint needs the card/filter index only; finding bodies load lazily per
+       collection (data/findings_<collection>.json). reports.json stays the full download. -->
+  <link rel="preload" href="data/reports_index.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css" />
   <script>
     /* Set theme before first paint to avoid a flash. */
@@ -27,7 +29,10 @@
   <script src="js/analytics.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#stream">Skip to results</a>
+  <!-- Targets #main, not #stream: #stream is display:none in Ledger view, so a
+       keyboard user skipping to it landed on a hidden element. #main is the
+       stable results container whichever renderer is live. -->
+  <a class="skip-link" href="#main">Skip to results</a>
 
   <header class="site-header" role="banner">
     <div class="brand">
@@ -54,6 +59,18 @@
     </button>
   </header>
 
+  <!-- Hero (E1) — the genre's universal entry point: one search box above a corpus
+       trust line (what / how much / from whom / how fresh). Search lives here, not
+       buried in the filter rail; the rail keeps the facets. -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 class="hero-title" id="hero-title">What has FERC flagged about a utility?</h1>
+    <p class="trust-line" id="trust-line">Loading the corpus…</p>
+    <div class="hero-search">
+      <label class="sr-only" for="hero-search-input">Search a utility, docket, or keyword</label>
+      <input class="search-input" type="search" id="hero-search-input" placeholder="Search a utility, docket, or keyword…" autocomplete="off" />
+    </div>
+  </section>
+
   <!-- Collection tabs — FERC audits vs. prudence reviews vs. state PUC audits -->
   <nav class="tabs" id="tabs" role="tablist" aria-label="Document collections"></nav>
 
@@ -72,8 +89,9 @@
         <ul>
           <li><strong>Read a report:</strong> click a card to expand its thread — each finding of noncompliance, with the staff recommendations nested beneath, quoted verbatim.</li>
           <li><strong>Spot the trends:</strong> the <strong>Top patterns</strong> strip ranks the issues FERC raises most. Tap one to narrow the stream to reports with that issue.</li>
-          <li><strong>Filter &amp; search:</strong> narrow by industry, FERC form, audit type, function, or year — or type a company or keyword in <strong>Search</strong>. Picks within one filter widen the results; picks across different filters narrow them.</li>
-          <li><strong>Trace the source:</strong> every card links to FERC's original PDF via <em>View on eLibrary</em>; <em>Copy citation</em> grabs a reference.</li>
+          <li><strong>Filter &amp; search:</strong> type a company, docket or keyword in the <strong>search box at the top</strong>, or narrow by industry, FERC form, audit type, function, or year in <strong>Filters</strong>. Picks within one filter widen the results; picks across different filters narrow them.</li>
+          <li><strong>Sort:</strong> reorder the stream by newest, oldest, most findings, largest cited dollar figure, or company.</li>
+          <li><strong>Trace the source:</strong> every card links to FERC's original PDF via <em>View on eLibrary</em>; <em>Copy citation</em> grabs a reference. Spot a mistake? Every report links to <em>See an issue? Report it</em>.</li>
         </ul>
       </div>
     </details>
@@ -112,14 +130,19 @@
         <span class="sheet-title">Filters</span>
         <button type="button" id="sheet-close" class="sheet-close">Done</button>
       </div>
+      <!-- Search deliberately lives in the hero (E1), not here — the rail is facets only. -->
       <form id="filter-form">
-        <div class="field">
-          <label class="field-label" for="search">Search</label>
-          <input type="search" id="search" name="search" placeholder="Company, finding, keyword…" autocomplete="off" />
-        </div>
         <fieldset class="field">
           <legend class="field-label">Ratepayer impact</legend>
           <div id="impact-options" class="chip-options"></div>
+        </fieldset>
+        <!-- A4 company lens: top 20 by report count + search-within (the tail is long). -->
+        <fieldset class="field">
+          <legend class="field-label">Company</legend>
+          <label class="sr-only" for="company-search">Find a company</label>
+          <input type="search" id="company-search" class="facet-search" placeholder="Find a company…" autocomplete="off" />
+          <div id="company-options" class="chip-options"></div>
+          <p id="company-more" class="facet-note" hidden></p>
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Industry</legend>
@@ -139,6 +162,8 @@
         </fieldset>
         <fieldset class="field">
           <legend class="field-label">Year</legend>
+          <!-- Presets first (E1: never a blank date picker); they select the year chips below. -->
+          <div id="year-presets" class="preset-options"></div>
           <div id="year-options" class="chip-options"></div>
         </fieldset>
         <button type="button" id="reset-filters" class="btn-secondary">Reset filters</button>
@@ -146,13 +171,41 @@
     </aside>
 
     <!-- Stream -->
-    <main class="stream-wrap" id="main" role="main">
+    <!-- tabindex="-1" so the skip link can actually move focus here: <main> isn't
+         natively focusable, and without it the link scrolls but leaves focus at
+         the top of the document, so the next Tab goes back into the header. -->
+    <main class="stream-wrap" id="main" role="main" tabindex="-1">
       <div class="stream-toolbar">
         <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
         <span class="result-count" id="result-count" aria-live="polite">Loading…</span>
+        <span class="toolbar-spacer"></span>
+        <!-- A3 view toggle — desktop/tablet only; JS hides it below 640px, where
+             the ledger falls back to the stream. -->
+        <div class="view-toggle" id="view-toggle" role="group" aria-label="View">
+          <button type="button" class="view-btn" data-view="stream" aria-pressed="true">Stream</button>
+          <button type="button" class="view-btn" data-view="ledger" aria-pressed="false">Ledger</button>
+        </div>
+        <label class="sort-label" for="sort">Sort</label>
+        <select id="sort" class="sort-select"></select>
+        <!-- Mobile-only (CSS): the bar is fixed to the bottom there, so back-to-top
+             belongs in it. Same DOM at every width — no duplicate trees. -->
+        <button id="to-top" class="to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
       </div>
       <div id="active-filters" class="active-filters" aria-label="Active filters" hidden></div>
+      <!-- A5 theme drill-down: renders when exactly one theme filter is active. -->
+      <section id="theme-panel" class="theme-panel" aria-label="About this issue" hidden></section>
       <div id="stream" class="stream"></div>
+      <!-- A3 Ledger: the analyst scan mode. Same data + filters + sort as the
+           stream; a row click deep-links back to its card, where the thread is. -->
+      <div id="ledger" class="ledger-wrap" hidden>
+        <table class="ledger">
+          <caption class="sr-only">Audit reports matching the current filters, one row per report. Select a row to open its findings.</caption>
+          <thead id="ledger-head"></thead>
+          <tbody id="ledger-body"></tbody>
+        </table>
+      </div>
+      <!-- Paging trigger — after BOTH renderers, so it is always below the live one. -->
+      <div id="stream-sentinel" class="stream-sentinel" aria-hidden="true"></div>
       <p id="empty-state" class="empty-state" hidden><span id="empty-msg">No reports match these filters.</span> <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>
   </div>
@@ -175,6 +228,10 @@
     <p style="padding:1rem;text-align:center">This explorer needs JavaScript to render the audit-report stream. The underlying data is in <code>docs/data/</code>.</p>
   </noscript>
 
+  <!-- urlstate.js defines window.URLState and must load first; both are `defer`,
+       which preserves document order. Kept a separate file so it stays DOM-free
+       and node-testable (tests/test_urlstate.py) without a build step. -->
+  <script src="js/urlstate.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 </html>

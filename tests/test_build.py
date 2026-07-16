@@ -131,6 +131,81 @@ def test_industry_counts_nonempty_for_nonempty_corpus():
     assert meta["listing_captured_at"] is None
 
 
+def test_split_reports_round_trips():
+    """The index/detail split must be LOSSLESS — merge_split is split_reports'
+    exact inverse. reports.json stays the single source of truth; the runtime
+    payloads are only a repackaging of it (spec B2)."""
+    dicts = build.bake_report_dicts([
+        _report("a", "electric", findings=[Finding(index=1, title="Lobbying", summary="s")]),
+        _report("b", "gas", collection="state_audit"),
+    ])
+    index, details = build.split_reports(dicts)
+    assert build.merge_split(index, details) == dicts
+
+
+def test_split_index_carries_only_card_fields_plus_rollups():
+    """The index must not smuggle finding bodies back into the first paint — that
+    is the entire point of the split (F5)."""
+    dicts = build.bake_report_dicts([_report("a", "electric", findings=[Finding(index=1, title="X", summary="body")])])
+    index, details = build.split_reports(dicts)
+    assert set(index[0]) == set(build.CARD_FIELDS) | set(build.DERIVED_INDEX_FIELDS)
+    assert "findings" not in index[0]
+    assert "findings" in details["ferc_audit"]["a"]
+
+
+def test_split_rollups_count_recs_and_take_max_amount():
+    """rec_count sums recommendations; amount_max is the LARGEST cited figure —
+    never a sum, which would invent a number no report states."""
+    from pipeline.models import Recommendation
+
+    r = _report(
+        "a", "electric",
+        findings=[
+            Finding(index=1, title="A", summary="", amount_usd=3_500_000.0,
+                    recommendations=[Recommendation(number=1, text="do x"), Recommendation(number=2, text="do y")]),
+            Finding(index=2, title="B", summary="", amount_usd=120_000.0,
+                    recommendations=[Recommendation(number=1, text="do z")]),
+        ],
+    )
+    [entry], _ = build.split_reports(build.bake_report_dicts([r]))
+    assert entry["rec_count"] == 3
+    assert entry["amount_max"] == 3_500_000.0
+
+
+def test_split_rollups_absent_when_no_findings():
+    [entry], _ = build.split_reports(build.bake_report_dicts([_report("b", "gas", findings=[])]))
+    assert entry["rec_count"] == 0
+    assert entry["amount_max"] is None
+
+
+def test_committed_corpus_split_round_trips():
+    """Corpus-wide parity guard: the real baked reports.json must survive the
+    split/merge round-trip, so the shipped index+detail files can always be
+    reconstructed into the documented full download."""
+    import json
+
+    from pipeline import config
+
+    path = config.SITE_DATA_DIR / "reports.json"
+    if not path.exists():
+        import pytest
+
+        pytest.skip("reports.json not baked in this checkout")
+    dicts = json.loads(path.read_text(encoding="utf-8"))
+    index, details = build.split_reports(dicts)
+    assert build.merge_split(index, details) == dicts
+
+
+def test_card_fields_match_frontend():
+    """docs/js/app.js must declare the SAME card fields as the bake. If the site
+    reads a field the index doesn't carry, collapsed cards silently render
+    `undefined` (the field now lives in the lazily-fetched detail file)."""
+    app_js = (Path(__file__).resolve().parent.parent / "docs" / "js" / "app.js").read_text(encoding="utf-8")
+    block = app_js.split("const CARD_FIELDS = [", 1)[1].split("];", 1)[0]
+    js_fields = re.findall(r'"([a-z_]+)"', block)
+    assert js_fields == build.CARD_FIELDS
+
+
 def test_committed_reports_carry_full_schema_and_named_source():
     """Every committed report.json must EXPLICITLY carry the provenance fields
     (collection/jurisdiction/source/structured) on disk — not lean on model

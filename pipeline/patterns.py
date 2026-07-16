@@ -213,6 +213,9 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
     theme_findings: Counter[str] = Counter()
     theme_reports: dict[str, set[str]] = {theme: set() for theme, _ in THEME_RULES}
     theme_examples: dict[str, list[str]] = {theme: [] for theme, _ in THEME_RULES}
+    # A5 drill-down: per-theme year + company tallies, counted once per REPORT.
+    theme_years: dict[str, Counter[str]] = {theme: Counter() for theme, _ in THEME_RULES}
+    theme_companies: dict[str, Counter[str]] = {theme: Counter() for theme, _ in THEME_RULES}
     keyword_lookup = {theme: kws for theme, kws in THEME_RULES}
 
     finding_count = other_count = rec_count = 0
@@ -222,6 +225,9 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             by_year[str(r.issued_date.year)] += 1
         for fn in r.functions:
             by_function[fn] += 1
+        # Themes this REPORT carries — collected first, then tallied once, so a
+        # report restating one theme across several findings counts once.
+        report_themes: set[str] = set()
         for f in r.findings:
             rec_count += len(f.recommendations)
             if f.is_other_matter:
@@ -230,14 +236,18 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
                 finding_count += 1
                 title_counts[f.title] += 1
             for theme in _themes_for(finding_theme_text(f, include_recs=r.collection != "ferc_audit")):
-                theme_findings[theme] += 1
-                theme_reports[theme].add(r.id)
+                theme_findings[theme] += 1   # per-finding, unlike the tallies below
+                report_themes.add(theme)
                 if f.title not in theme_examples[theme] and len(theme_examples[theme]) < 4:
                     theme_examples[theme].append(f.title)
         # Reference records (structured=False) also count toward a theme's report
         # tally via their displayed descriptors — finding_count stays finding-only.
-        for theme in descriptor_themes(r):
+        report_themes.update(descriptor_themes(r))
+        for theme in report_themes:
             theme_reports[theme].add(r.id)
+            if r.issued_date:
+                theme_years[theme][str(r.issued_date.year)] += 1
+            theme_companies[theme][r.company] += 1
 
     themes = [
         ThemeStat(
@@ -247,6 +257,10 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             finding_count=theme_findings[theme],
             report_count=len(theme_reports[theme]),
             example_titles=theme_examples[theme],
+            by_year=dict(sorted(theme_years[theme].items())),
+            top_companies=[
+                {"company": c, "report_count": n} for c, n in theme_companies[theme].most_common(5)
+            ],
         )
         for theme, _ in THEME_RULES
         if theme_findings[theme] > 0 or theme_reports[theme]

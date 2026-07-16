@@ -48,6 +48,42 @@
           "Accounting Misclassifications",
           "Allowance for Funds Used During Construction",
           "Annual Membership Dues"
+        ],
+        "by_year": {
+          "2015": 3,
+          "2016": 7,
+          "2017": 4,
+          "2018": 10,
+          "2019": 10,
+          "2020": 8,
+          "2021": 6,
+          "2022": 8,
+          "2023": 6,
+          "2024": 7,
+          "2025": 6,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "Alabama Power Company",
+            "report_count": 2
+          },
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -64,6 +100,42 @@
           "Excess and Deficient Accumulated Deferred Income Tax",
           "FERC Form No. 1 Reporting",
           "Annual Cost of Service Based Analysis Schedule"
+        ],
+        "by_year": {
+          "2015": 3,
+          "2016": 3,
+          "2017": 5,
+          "2018": 6,
+          "2019": 8,
+          "2020": 6,
+          "2021": 7,
+          "2022": 7,
+          "2023": 5,
+          "2024": 7,
+          "2025": 4,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Tallgrass Pony Express Pipeline, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -79,6 +151,41 @@
           "Allowance for Funds Used During Construction",
           "Depreciation Rates and Study",
           "Allocation of Overhead Costs to CWIP"
+        ],
+        "by_year": {
+          "2016": 4,
+          "2017": 5,
+          "2018": 4,
+          "2019": 3,
+          "2020": 6,
+          "2021": 7,
+          "2022": 4,
+          "2023": 6,
+          "2024": 2,
+          "2025": 4,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "Southern Electric Generating Company",
+            "report_count": 1
+          },
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Tallgrass Pony Express Pipeline, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -98,6 +205,41 @@
           "Nonoperating and Operating Expenses",
           "Accounting for Lobbying Expenses",
           "Accounting for Edison Electric Institute Membership Dues"
+        ],
+        "by_year": {
+          "2015": 2,
+          "2016": 4,
+          "2017": 1,
+          "2018": 7,
+          "2019": 4,
+          "2020": 7,
+          "2021": 3,
+          "2022": 5,
+          "2023": 3,
+          "2024": 4,
+          "2025": 4
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Alabama Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Tallgrass Pony Express Pipeline, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Alliant Energy Corporate Services, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -117,6 +259,42 @@
           "Prepaid Pension AFUDC",
           "Noncarrier Property Revenue, Expenses, and Net Income",
           "Property Unit Listing"
+        ],
+        "by_year": {
+          "2015": 1,
+          "2016": 4,
+          "2017": 1,
+          "2018": 4,
+          "2019": 3,
+          "2020": 5,
+          "2021": 6,
+          "2022": 4,
+          "2023": 6,
+          "2024": 1,
+          "2025": 5,
+          "2026": 2
+        },
+        "top_companies": [
+          {
+            "company": "Southern Electric Generating Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -133,6 +311,41 @@
           "Capitalization of Vegetation Management Costs",
           "Prepaid Pension AFUDC",
           "Capitalized Interest Expense"
+        ],
+        "by_year": {
+          "2016": 2,
+          "2017": 5,
+          "2018": 3,
+          "2019": 3,
+          "2020": 7,
+          "2021": 4,
+          "2022": 6,
+          "2023": 5,
+          "2024": 1,
+          "2025": 3,
+          "2026": 2
+        },
+        "top_companies": [
+          {
+            "company": "Southern Electric Generating Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -150,6 +363,41 @@
           "Reporting of Transactions with Associated (Affiliated) Companies",
           "Recording of Carrier Property",
           "Recording of Noncarrier Property"
+        ],
+        "by_year": {
+          "2015": 1,
+          "2016": 1,
+          "2017": 2,
+          "2018": 5,
+          "2019": 2,
+          "2020": 4,
+          "2021": 4,
+          "2022": 1,
+          "2023": 3,
+          "2024": 3,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "NextEra Energy Transmission, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "EnLink NGL Pipeline, LP",
+            "report_count": 1
+          },
+          {
+            "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
+            "report_count": 1
+          },
+          {
+            "company": "Sunoco Pipeline L.P.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -170,6 +418,40 @@
           "Annual Cost of Service Based Analysis Schedule",
           "Nonoperating and Operating Expenses",
           "Recognition of Intrastate Transportation Movements"
+        ],
+        "by_year": {
+          "2015": 1,
+          "2017": 1,
+          "2018": 3,
+          "2019": 1,
+          "2020": 3,
+          "2021": 4,
+          "2022": 3,
+          "2023": 4,
+          "2024": 1,
+          "2025": 3
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Tallgrass Pony Express Pipeline, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "EnLink NGL Pipeline, LP",
+            "report_count": 1
+          },
+          {
+            "company": "Sunoco Pipeline L.P.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -185,6 +467,39 @@
           "Tariff Administration and Oversight",
           "Creditworthiness Standards",
           "Posting of Generator Interconnection Study Times"
+        ],
+        "by_year": {
+          "2016": 4,
+          "2018": 6,
+          "2019": 1,
+          "2020": 3,
+          "2021": 1,
+          "2022": 3,
+          "2023": 2,
+          "2024": 2,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Midcontinent Independent System Operator, Inc.",
+            "report_count": 1
+          },
+          {
+            "company": "NextEra Energy Transmission, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "EnLink NGL Pipeline, LP",
+            "report_count": 1
+          },
+          {
+            "company": "Sunoco Pipeline L.P.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -200,6 +515,39 @@
           "Capitalization of Vegetation Management Costs",
           "Property Unit Listing",
           "Allocation of Overhead Costs to CWIP"
+        ],
+        "by_year": {
+          "2018": 1,
+          "2019": 3,
+          "2020": 3,
+          "2021": 3,
+          "2022": 1,
+          "2023": 4,
+          "2024": 1,
+          "2025": 4,
+          "2026": 2
+        },
+        "top_companies": [
+          {
+            "company": "Southern Electric Generating Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Medallion Pipeline Company, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -216,6 +564,38 @@
           "Accounting for Edison Electric Institute Membership Dues",
           "Industry Trade Association Dues",
           "Accounting for EEI Annual Membership Dues"
+        ],
+        "by_year": {
+          "2018": 2,
+          "2019": 2,
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 1,
+          "2025": 3
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Alabama Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Tallgrass Pony Express Pipeline, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Dominion Energy Services, Inc. and Dominion Energy Southeast Services, Inc.",
+            "report_count": 1
+          },
+          {
+            "company": "Gulf South Pipeline Company, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -234,6 +614,37 @@
           "Informational Postings",
           "Public Access to Monthly and Yearly Capability Information",
           "Posting of Short Circuit Information"
+        ],
+        "by_year": {
+          "2018": 1,
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 2,
+          "2025": 3
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          },
+          {
+            "company": "Portland General Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Midcontinent Independent System Operator, Inc.",
+            "report_count": 1
+          },
+          {
+            "company": "Black Hills Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Tri-State Generation and Transmission Association, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -277,6 +688,36 @@
           "Accounting for Fuel Storage and Handling",
           "Auxiliary Fuel Costs in Nuclear Power Generation",
           "Amortization of Retail Regulatory Assets"
+        ],
+        "by_year": {
+          "2018": 2,
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2024": 2,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Appalachian Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "NET Mexico Pipeline Partners, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "FirstEnergy Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Southern California Edison Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -302,6 +743,31 @@
           "Other Special Funds Related To Storm Damages",
           "Regulatory Assets",
           "Storm Damage Accounting and Costs Recovery"
+        ],
+        "by_year": {
+          "2017": 5
+        },
+        "top_companies": [
+          {
+            "company": "Mississippi Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Gulf Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Georgia Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Alabama Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "PacifiCorp",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -321,6 +787,25 @@
           "Filing of Cash Management Agreements",
           "Treatment of Confidential Pipeline Shipper Information",
           "Aggregation of Next-Day Gas Deals"
+        ],
+        "by_year": {
+          "2015": 1,
+          "2016": 1,
+          "2018": 1
+        },
+        "top_companies": [
+          {
+            "company": "California Independent System Operator Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Enbridge Energy Partners, LP",
+            "report_count": 1
+          },
+          {
+            "company": "ConocoPhillips",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -349,6 +834,25 @@
           "Accounting for Vegetation Management Costs",
           "Accounting for Amortization of Regulatory Assets",
           "Construction Work in Progress"
+        ],
+        "by_year": {
+          "2017": 1,
+          "2022": 1,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "FirstEnergy Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Georgia Power Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -373,6 +877,20 @@
         "example_titles": [
           "Auxiliary Fuel Costs in Nuclear Power Generation",
           "Accounting for Materials and Supplies"
+        ],
+        "by_year": {
+          "2023": 1,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Duke Energy Progress, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Commonwealth Edison Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -385,6 +903,15 @@
         "report_count": 1,
         "example_titles": [
           "Creditworthiness Standards"
+        ],
+        "by_year": {
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -402,6 +929,15 @@
         "report_count": 1,
         "example_titles": [
           "Allocation of Information Technology Costs"
+        ],
+        "by_year": {
+          "2019": 1
+        },
+        "top_companies": [
+          {
+            "company": "Xcel Energy Inc.",
+            "report_count": 1
+          }
         ]
       }
     ],
@@ -507,7 +1043,7 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "prudence_review": {
     "report_count": 29,
@@ -570,7 +1106,33 @@
         ],
         "finding_count": 0,
         "report_count": 9,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2022": 1,
+          "2025": 7
+        },
+        "top_companies": [
+          {
+            "company": "Puget Sound Energy",
+            "report_count": 2
+          },
+          {
+            "company": "Southern Indiana Gas and Electric Company d/b/a CenterPoint Energy Indiana South",
+            "report_count": 1
+          },
+          {
+            "company": "Wisconsin Power and Light Company (Alliant Energy)",
+            "report_count": 1
+          },
+          {
+            "company": "Wisconsin Electric Power Company (We Energies)",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Cost of service & rates",
@@ -585,7 +1147,20 @@
         ],
         "finding_count": 0,
         "report_count": 2,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2024": 2
+        },
+        "top_companies": [
+          {
+            "company": "Basin Electric Power Cooperative",
+            "report_count": 1
+          },
+          {
+            "company": "Constellation Mystic Power, LLC",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Below-the-line costs (lobbying, charitable, etc.)",
@@ -599,11 +1174,20 @@
         ],
         "finding_count": 0,
         "report_count": 1,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2017": 1
+        },
+        "top_companies": [
+          {
+            "company": "Potomac-Appalachian Transmission Highline, LLC and PJM Interconnection, L.L.C.",
+            "report_count": 1
+          }
+        ]
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_audit": {
     "report_count": 82,
@@ -649,6 +1233,36 @@
           "Budget And Finance",
           "Affiliated Interests and Cost Allocations",
           "Affiliated Interests and Cost Allocations (continued)"
+        ],
+        "by_year": {
+          "2020": 2,
+          "2021": 1,
+          "2022": 2,
+          "2023": 1,
+          "2024": 2,
+          "2025": 7
+        },
+        "top_companies": [
+          {
+            "company": "San Diego Gas & Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southern California Edison Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southern California Gas Company",
+            "report_count": 1
+          },
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -668,6 +1282,37 @@
           "Cost Allocations and Affiliated Interests",
           "Governance And Management",
           "Rg&E."
+        ],
+        "by_year": {
+          "2014": 1,
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 2,
+          "2024": 4,
+          "2025": 3
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Eversource Energy's Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company)",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -688,6 +1333,37 @@
           "Customer Operations",
           "Performance Management",
           "Human Resources and Diversity (continued)"
+        ],
+        "by_year": {
+          "2019": 1,
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 3,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -712,6 +1388,36 @@
           "Customer Service (continued)",
           "Customer Operations",
           "Financial Management"
+        ],
+        "by_year": {
+          "2020": 1,
+          "2021": 1,
+          "2022": 2,
+          "2023": 1,
+          "2024": 3,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -738,6 +1444,35 @@
           "Outside Services",
           "Materials Management",
           "Fleet Management"
+        ],
+        "by_year": {
+          "2020": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 3
+        },
+        "top_companies": [
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Philadelphia Gas Works",
+            "report_count": 1
+          },
+          {
+            "company": "FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -754,6 +1489,36 @@
           "Customer Operations",
           "Rg&E.",
           "Governance"
+        ],
+        "by_year": {
+          "2019": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 2,
+          "2024": 1,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Philadelphia Gas Works",
+            "report_count": 1
+          },
+          {
+            "company": "Florida Power & Light Company",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -773,6 +1538,36 @@
           "Gas Operations",
           "Rg&E.",
           "Emergency Preparedness (continued)"
+        ],
+        "by_year": {
+          "2019": 1,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 2,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Philadelphia Gas Works",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -793,6 +1588,34 @@
           "Information Technology",
           "Information Technology And Cyber Security",
           "Customer Service"
+        ],
+        "by_year": {
+          "2021": 1,
+          "2023": 1,
+          "2024": 3,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Philadelphia Gas Works",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -819,6 +1642,33 @@
         "example_titles": [
           "Electric Operations",
           "Electric Operations (continued)"
+        ],
+        "by_year": {
+          "2022": 2,
+          "2024": 1,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PECO Energy Company",
+            "report_count": 1
+          },
+          {
+            "company": "FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)",
+            "report_count": 1
+          },
+          {
+            "company": "UGI Utilities, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -839,6 +1689,32 @@
           "Electric Operations",
           "Gas Operations",
           "Contractor Performance"
+        ],
+        "by_year": {
+          "2021": 1,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Public Service Electric and Gas Company (PSE&G)",
+            "report_count": 1
+          },
+          {
+            "company": "UGI Utilities, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -853,6 +1729,34 @@
         "report_count": 5,
         "example_titles": [
           "Financial Management"
+        ],
+        "by_year": {
+          "2020": 1,
+          "2021": 1,
+          "2024": 2,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Peoples Natural Gas Co. LLC and Peoples Gas Co. LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Columbia Gas of Pennsylvania, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -868,6 +1772,28 @@
           "Customer Operations",
           "Customer Service",
           "Customer Operations And Communication"
+        ],
+        "by_year": {
+          "2024": 2,
+          "2025": 2
+        },
+        "top_companies": [
+          {
+            "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+            "report_count": 1
+          },
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "National Fuel Gas Distribution Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -886,6 +1812,28 @@
         "example_titles": [
           "Cost Allocations and Affiliated Interests",
           "Affiliated Interests and Cost Allocations"
+        ],
+        "by_year": {
+          "2022": 1,
+          "2024": 1
+        },
+        "top_companies": [
+          {
+            "company": "PPL Electric Utilities Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "FirstEnergy Pennsylvania Companies (Met-Ed, Penelec, Penn Power, West Penn Power)",
+            "report_count": 1
+          },
+          {
+            "company": "Connecticut electric distribution companies (Eversource / United Illuminating)",
+            "report_count": 1
+          },
+          {
+            "company": "UGI Utilities, Inc.",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -924,7 +1872,25 @@
         ],
         "finding_count": 0,
         "report_count": 4,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2023": 1,
+          "2024": 2
+        },
+        "top_companies": [
+          {
+            "company": "Rocky Mountain Power (PacifiCorp)",
+            "report_count": 2
+          },
+          {
+            "company": "Mississippi Public Utilities Staff",
+            "report_count": 1
+          },
+          {
+            "company": "Union Electric Company d/b/a Ameren Missouri",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Storm cost recovery & securitization",
@@ -947,6 +1913,24 @@
         "example_titles": [
           "Electric Operations",
           "Deferral of Costs"
+        ],
+        "by_year": {
+          "2024": 1,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Tampa Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Public Service Electric and Gas Company (PSE&G)",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -964,6 +1948,19 @@
         "example_titles": [
           "Governance",
           "Accounting and Property Records"
+        ],
+        "by_year": {
+          "2024": 1
+        },
+        "top_companies": [
+          {
+            "company": "Long Island Power Authority and PSEG Long Island, LLC",
+            "report_count": 1
+          },
+          {
+            "company": "Public Service Electric and Gas Company (PSE&G)",
+            "report_count": 1
+          }
         ]
       },
       {
@@ -977,6 +1974,15 @@
         "report_count": 1,
         "example_titles": [
           "Information Systems"
+        ],
+        "by_year": {
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+            "report_count": 1
+          }
         ]
       }
     ],
@@ -1082,7 +2088,7 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_rate_case": {
     "report_count": 122,
@@ -1146,7 +2152,39 @@
         ],
         "finding_count": 0,
         "report_count": 34,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2005": 2,
+          "2012": 1,
+          "2018": 1,
+          "2021": 2,
+          "2022": 3,
+          "2024": 10,
+          "2025": 9,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "Idaho Power Company",
+            "report_count": 3
+          },
+          {
+            "company": "Dominion Energy South Carolina, Inc.",
+            "report_count": 3
+          },
+          {
+            "company": "Appalachian Power Company and Wheeling Power Company",
+            "report_count": 2
+          },
+          {
+            "company": "El Paso Electric Company",
+            "report_count": 2
+          },
+          {
+            "company": "Duke Energy Carolinas, LLC",
+            "report_count": 2
+          }
+        ]
       },
       {
         "theme": "Tariff administration & oversight",
@@ -1156,7 +2194,34 @@
         ],
         "finding_count": 0,
         "report_count": 7,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2019": 1,
+          "2023": 1,
+          "2025": 4
+        },
+        "top_companies": [
+          {
+            "company": "Montana-Dakota Utilities Co.",
+            "report_count": 2
+          },
+          {
+            "company": "Florida investor-owned utilities (energy conservation cost recovery)",
+            "report_count": 2
+          },
+          {
+            "company": "Duke Energy Kentucky, Inc.",
+            "report_count": 1
+          },
+          {
+            "company": "The Narragansett Electric Company d/b/a Rhode Island Energy",
+            "report_count": 1
+          },
+          {
+            "company": "Wisconsin Electric Power Company (We Energies)",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Cost of service & rates",
@@ -1171,7 +2236,33 @@
         ],
         "finding_count": 0,
         "report_count": 5,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2023": 2,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Ameren Illinois Company",
+            "report_count": 1
+          },
+          {
+            "company": "NorthWestern Energy",
+            "report_count": 1
+          },
+          {
+            "company": "Tucson Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy",
+            "report_count": 1
+          },
+          {
+            "company": "The Empire District Electric Company d/b/a Liberty",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Storm cost recovery & securitization",
@@ -1191,7 +2282,27 @@
         ],
         "finding_count": 0,
         "report_count": 4,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2022": 1,
+          "2023": 1,
+          "2024": 1,
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
+            "report_count": 2
+          },
+          {
+            "company": "Appalachian Power Company and Wheeling Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc.",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Below-the-line costs (lobbying, charitable, etc.)",
@@ -1205,7 +2316,17 @@
         ],
         "finding_count": 0,
         "report_count": 2,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2025": 1,
+          "2026": 1
+        },
+        "top_companies": [
+          {
+            "company": "FirstEnergy Ohio (Ohio Edison, Cleveland Electric Illuminating, Toledo Edison)",
+            "report_count": 2
+          }
+        ]
       },
       {
         "theme": "Affiliate / intercompany transactions",
@@ -1217,7 +2338,14 @@
         ],
         "finding_count": 0,
         "report_count": 1,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {},
+        "top_companies": [
+          {
+            "company": "Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Customer service & billing",
@@ -1236,7 +2364,14 @@
         ],
         "finding_count": 0,
         "report_count": 1,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {},
+        "top_companies": [
+          {
+            "company": "The Empire District Electric Company d/b/a Liberty",
+            "report_count": 1
+          }
+        ]
       },
       {
         "theme": "Service reliability & vegetation management",
@@ -1259,11 +2394,20 @@
         ],
         "finding_count": 0,
         "report_count": 1,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Southwestern Electric Power Company (SWEPCO)",
+            "report_count": 1
+          }
+        ]
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   },
   "state_reference": {
     "report_count": 84,
@@ -1288,10 +2432,33 @@
         ],
         "finding_count": 0,
         "report_count": 19,
-        "example_titles": []
+        "example_titles": [],
+        "by_year": {},
+        "top_companies": [
+          {
+            "company": "Audit Implementation Status Report (FY 2025)",
+            "report_count": 1
+          },
+          {
+            "company": "Audit Implementation Status Report (FY 2026)",
+            "report_count": 1
+          },
+          {
+            "company": "FY 2023 Internal Audit Annual Report",
+            "report_count": 1
+          },
+          {
+            "company": "FY 2024 Internal Audit Annual Report",
+            "report_count": 1
+          },
+          {
+            "company": "FY 2025 Internal Audit Annual Report",
+            "report_count": 1
+          }
+        ]
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-07-11"
+    "generated_at": "2026-07-16"
   }
 }

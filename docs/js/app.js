@@ -40,14 +40,249 @@ const COLLECTIONS = [
   },
 ];
 
+/* The fields the first-paint payload (data/reports_index.json) carries for every
+   report — enough to render a collapsed card and run every facet/sort. Findings
+   and thread metadata live in data/findings_<collection>.json, fetched lazily on
+   first expand. Mirrors pipeline/build.py CARD_FIELDS (a Python test asserts the
+   two lists stay in sync).
+
+   Index entries also carry build.py's DERIVED_INDEX_FIELDS — `rec_count` and
+   `amount_max`, rolled up from the findings at bake time — which is why the sort
+   and the ledger can show recs/$ without fetching a body. Don't add those two
+   here: merge_split() strips exactly the derived fields to reverse the split, and
+   the build-parity test pins that. Anything outside this list AND those two reads
+   undefined until the detail file has loaded. */
+const CARD_FIELDS = [
+  "id",
+  "collection",
+  "company",
+  "docket",
+  "docket_full",
+  "issued_date",
+  "audit_type",
+  "doc_type",
+  "industry",
+  "forms",
+  "functions",
+  "finding_count",
+  "themes",
+  "cost_to_customers",
+  "structured",
+  "source",
+  "audit_period",
+];
+
 const state = {
   collection: "ferc_audit",
-  reports: [],
+  reports: [],             // index entries (no findings — see CARD_FIELDS)
+  details: {},             // { collection: { report_id: {findings, ...thread fields} } }
+  detailFetches: {},       // { collection: Promise } — in-flight/settled, dedupes fetches
   patterns: null,          // global summary (all collections)
   patternsByCollection: {}, // { key: PatternsSummary }
   meta: null,
-  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set() },
+  sort: "newest",
+  view: "stream",          // stream | ledger (A3) — desktop/tablet only
+  open: null,              // report id deep-linked open (A1)
+  finding: null,           // 1-based finding index to scroll to within `open` (A1)
+  filters: { search: "", industry: new Set(), form: new Set(), audit_type: new Set(), functions: new Set(), year: new Set(), theme: new Set(), impact: new Set(), company: new Set() },
 };
+
+/* ---------- lazy detail loading ---------- */
+/* Finding bodies are ~80% of the corpus text but are only needed to render an
+   expanded thread (or to search finding text). Fetch each collection's detail
+   file at most once; callers await the same promise. */
+function ensureDetails(collection) {
+  if (state.detailFetches[collection]) return state.detailFetches[collection];
+  const p = fetch(`data/findings_${collection}.json`)
+    .then((r) => {
+      if (!r.ok) throw new Error(`findings_${collection}.json: HTTP ${r.status}`);
+      return r.json();
+    })
+    .then((d) => {
+      state.details[collection] = d;
+      return d;
+    })
+    .catch((e) => {
+      // Let the next caller retry rather than caching the failure forever.
+      delete state.detailFetches[collection];
+      throw e;
+    });
+  state.detailFetches[collection] = p;
+  return p;
+}
+
+const detailOf = (r) => (state.details[r.collection] || {})[r.id] || null;
+const findingsOf = (r) => (detailOf(r) || {}).findings || [];
+
+/* Warm the active tab's detail file once the page is interactive, so expanding a
+   card is instant in the common case. Low priority — never races the first paint. */
+function prefetchDetails(collection) {
+  const go = () => ensureDetails(collection).catch(() => {});
+  if ("requestIdleCallback" in window) requestIdleCallback(go, { timeout: 3000 });
+  else setTimeout(go, 400);
+}
+
+/* A11 — long enough to skip intermediate keystrokes, short enough to feel live. */
+const SEARCH_DEBOUNCE_MS = 150;
+
+/* A pending search is module state, not wireChrome-local, because every path that
+   CLEARS the search (reset filters, clear-all, the chip ✕, a tab switch) has to be
+   able to cancel one. A queued search doesn't just wait out the debounce — it also
+   awaits a detail-file fetch, so the window it can fire in is the whole download,
+   long enough to land after the user has moved on. */
+let _searchTimer = null;
+let _searchSeq = 0;
+function cancelPendingSearch() {
+  clearTimeout(_searchTimer);
+  _searchSeq++; // also invalidates a run already past its timer, mid-fetch
+}
+
+/* Set the search box(es) directly — used by the reset paths, which must not go
+   through the input handler. A query rather than a hard-coded id so the hero box
+   isn't the only thing this can ever drive. */
+function setSearchInputs(value) {
+  document.querySelectorAll(".search-input").forEach((i) => (i.value = value));
+}
+
+/* ---------- URL state (A1) ---------- */
+/* The codec is pure and lives in urlstate.js (round-tripped by tests/test_urlstate.py).
+   This half is the DOM/state binding: read the hash on load, write it whenever the
+   view changes, and re-apply it on back/forward. */
+
+/* Guard against a hash-write loop: applying a hash mutates state, which would
+   otherwise write the hash again and push a duplicate history entry. */
+let _applyingHash = false;
+
+/* Run a block that mutates state WITHOUT writing the URL — used when the URL is
+   already the source of the change (first load, back/forward). */
+function withUrlSuppressed(fn) {
+  const prev = _applyingHash;
+  _applyingHash = true;
+  try { fn(); } finally { _applyingHash = prev; }
+}
+
+function currentUrlState() {
+  return {
+    collection: state.collection,
+    filters: {
+      search: state.filters.search,
+      ...Object.fromEntries(URLState.FILTER_GROUPS.map((g) => [g, [...state.filters[g]]])),
+    },
+    sort: state.sort,
+    view: state.view,
+    open: state.open,
+    finding: state.finding,
+  };
+}
+
+/* Called after every state change. `push` distinguishes a navigation the user
+   should be able to go BACK from (changing a filter/tab) from an incidental
+   correction (restoring state on load) — see DESIGN.md's back-button rule. */
+function syncUrl(push) {
+  if (_applyingHash) return;
+  const hash = URLState.encode(currentUrlState());
+  if (hash === location.hash) return;
+  if (push) history.pushState(null, "", hash);
+  else history.replaceState(null, "", hash);
+}
+
+/* Apply a decoded URL state to the app. Unknown collections/sorts fall back to
+   the defaults rather than rendering an empty tab for a typo'd link. */
+function applyUrlState(u) {
+  // Save/restore rather than force `false`: this runs INSIDE withUrlSuppressed,
+  // and resetting the flag unconditionally re-armed URL writes for the rest of
+  // that block — so the applyFilters() right after it pushed a history entry on
+  // every fresh load, and Back stopped leaving the site.
+  const prev = _applyingHash;
+  _applyingHash = true;
+  try {
+    state.collection = COLLECTIONS.some((c) => c.key === u.collection) ? u.collection : URLState.DEFAULTS.collection;
+    state.sort = SORTS[u.sort] ? u.sort : URLState.DEFAULTS.sort;
+    state.view = u.view === "ledger" ? "ledger" : "stream";
+    state.open = u.open || null;
+    state.finding = u.finding || null;
+    state.filters.search = u.filters.search || "";
+    URLState.FILTER_GROUPS.forEach((g) => (state.filters[g] = new Set(u.filters[g] || [])));
+    // A ledger row is not expandable, so `open` has no meaning there — drop it
+    // rather than carry an id the view can't represent. Below the ledger
+    // breakpoint the view falls back to the stream, where `open` still works.
+    if (useLedger()) state.open = state.finding = null;
+  } finally {
+    _applyingHash = prev;
+  }
+}
+
+/* Apply whatever the hash says and render it. Shared by first load and by
+   back/forward, because both restore a view the app didn't author.
+
+   The await is load-bearing: a saved query can match ONLY finding text, which
+   lives in the lazily-fetched detail file. Filtering before that lands rendered
+   "0 reports" for a perfectly good shared link (#/ferc_audit?q=lobbying showed 0,
+   then 25 the moment the user retyped the same query), and nothing re-applied it.
+
+   Note the await must sit BETWEEN the two suppressed blocks, never inside one:
+   withUrlSuppressed is synchronous, so its `finally` would restore the flag the
+   instant an async callback hit its first await — un-suppressing everything after
+   it and pushing history entries for a state the URL already describes. */
+async function restoreFromUrl() {
+  const hash = location.hash;
+  withUrlSuppressed(() => applyUrlState(URLState.decode(hash)));
+  if (state.filters.search) {
+    try {
+      await ensureDetails(state.collection);
+    } catch (e) {
+      // Fall through: matches() degrades to index-only fields rather than
+      // rendering an empty stream for a link that should work.
+      console.error(e);
+    }
+    if (location.hash !== hash) return; // a newer navigation won the race
+  }
+  withUrlSuppressed(() => {
+    renderCollectionSurfaces();
+    syncControlsToState();
+    applyFilters();
+  });
+  revealOpenReport();
+}
+
+/* Re-render every surface that depends on the active collection. Shared by the
+   tab switcher and by a hash change that lands on a different tab. */
+function renderCollectionSurfaces() {
+  document.querySelectorAll(".tab").forEach((t) =>
+    t.setAttribute("aria-selected", t.dataset.collection === state.collection ? "true" : "false")
+  );
+  const def = COLLECTIONS.find((c) => c.key === state.collection);
+  const lead = document.getElementById("intro-lead");
+  if (lead && def) lead.innerHTML = def.lead; // trusted static strings (COLLECTIONS)
+  renderKPIs();
+  renderFilters();
+  renderPatternsBand();
+  renderTrends();
+}
+
+/* A3 — the view toggle mirrors state.view, and hides itself where the ledger
+   isn't offered (below 640px the ledger renders as the stream). */
+function syncViewToggle() {
+  const host = document.getElementById("view-toggle");
+  if (!host) return;
+  host.hidden = !ledgerAvailable();
+  host.querySelectorAll(".view-btn").forEach((b) =>
+    b.setAttribute("aria-pressed", b.dataset.view === state.view ? "true" : "false")
+  );
+}
+
+/* Reflect the restored state back into the controls, so a deep link doesn't show
+   a filtered stream above an empty-looking filter rail. */
+function syncControlsToState() {
+  setSearchInputs(state.filters.search);
+  syncViewToggle();
+  const sortSel = document.getElementById("sort");
+  if (sortSel) sortSel.value = state.sort;
+  document.querySelectorAll("[data-group][data-value]").forEach((c) => {
+    const set = state.filters[c.dataset.group];
+    c.setAttribute("aria-pressed", set && set.has(c.dataset.value) ? "true" : "false");
+  });
+}
 
 /* Patterns + reports for the active tab. */
 const activePatterns = () => state.patternsByCollection[state.collection] || { report_count: 0, finding_count: 0, recommendation_count: 0, themes: [], by_year: {}, by_industry: {}, by_function: {} };
@@ -75,11 +310,19 @@ function el(tag, props = {}, children = []) {
   return node;
 }
 
-const fmtDate = (iso) => {
+const fmtDate = (iso, short) => {
   if (!iso) return "Not stated";
   const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  return d.toLocaleDateString("en-US", { year: "numeric", month: short ? "short" : "long", day: "numeric" });
 };
+/* B3 — card sub-meta always uses the short date ("Sep 8, 2025") so it stays one
+   line at 375px. The spec scoped this to <560px, but a viewport-dependent date
+   has to be read at render time, which freezes the format at whatever width first
+   painted unless the whole stream re-renders on every breakpoint cross (which
+   would also collapse any open card). One format everywhere is simpler, has no
+   stale-state failure mode, and reads more like the ledger the identity is aiming
+   at. The full date still appears where formality matters: the thread's KV grid
+   and the citation string. */
 const yearOf = (iso) => (iso ? iso.slice(0, 4) : null);
 /* Compact USD for the finding-level $ pill (amount_usd is the first dollar figure
    in a finding's own committed text — see pipeline/amounts.py). */
@@ -96,18 +339,23 @@ const fmtAmount = (n) => {
 const initials = (name) => (name || "?").replace(/[^A-Za-z ]/g, "").trim().charAt(0).toUpperCase() || "?";
 
 /* ---------- data load ---------- */
+const getJSON = (path) =>
+  fetch(path).then((r) => {
+    if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+    return r.json();
+  });
+
 async function load() {
-  const [meta, patterns, byCollection, reports] = await Promise.all([
-    fetch("data/meta.json").then((r) => r.json()),
-    fetch("data/patterns.json").then((r) => r.json()),
-    fetch("data/patterns_by_collection.json").then((r) => r.json()),
-    fetch("data/reports.json").then((r) => r.json()),
+  const [meta, patterns, byCollection, index] = await Promise.all([
+    getJSON("data/meta.json"),
+    getJSON("data/patterns.json"),
+    getJSON("data/patterns_by_collection.json"),
+    getJSON("data/reports_index.json"),
   ]);
   state.meta = meta;
   state.patterns = patterns;
   state.patternsByCollection = byCollection;
-  // Newest first — a feed-like default. Null issued_date sorts last.
-  state.reports = reports.slice().sort((a, b) => (b.issued_date || "").localeCompare(a.issued_date || ""));
+  state.reports = index;
 }
 
 /* ---------- KPIs ---------- */
@@ -148,20 +396,14 @@ function renderTabs() {
 function switchCollection(key) {
   if (key === state.collection) return;
   state.collection = key;
-  resetFilters(); // facets differ per collection; start each tab clean
-  document.querySelectorAll(".tab").forEach((t) =>
-    t.setAttribute("aria-selected", t.dataset.collection === key ? "true" : "false")
-  );
-  const def = COLLECTIONS.find((c) => c.key === key);
-  const lead = document.getElementById("intro-lead");
-  if (lead && def) lead.innerHTML = def.lead;
-  renderKPIs();
-  renderFilters();
-  renderPatternsBand();
-  renderTrends();
+  state.open = null;   // an open report belongs to the tab it came from
+  resetFilters();      // facets differ per collection; start each tab clean
+  renderCollectionSurfaces();
   // resetFilters already called applyFilters, but facet/intro DOM changed — re-run.
   applyFilters();
+  syncUrl(true);       // a tab switch is a navigation — back should return
   scrollToTop();
+  prefetchDetails(key); // warm the new tab's finding bodies while the user reads
 }
 
 function scrollToTop() {
@@ -174,11 +416,18 @@ function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort();
 }
 
+/* A chip is born reflecting the CURRENT filter state, never hardcoded unpressed.
+   The company facet rebuilds its chips on every keystroke of "Find a company…",
+   so a hardcoded "false" made an active company announce itself as unselected
+   while the stream stayed filtered and the active-filter bar still named it.
+   Fixed here rather than in renderCompanyFacet: every facet rebuilds sooner or
+   later, and only this helper knows how a chip is born. */
 function chip(label, count, group, value) {
+  const set = state.filters[group];
   const c = el("button", {
     type: "button",
     class: "filter-chip",
-    "aria-pressed": "false",
+    "aria-pressed": String(!!(set && set.has(value))),
     "data-group": group,
     "data-value": value,
   });
@@ -215,11 +464,81 @@ function renderFilters() {
     ? [(() => { const c = chip("Cost to customers", harmCount, "impact", "cost_to_customers"); c.title = COST_TIP; return c; })()]
     : [];
   fillFacet("impact-options", impactChips);
+  renderCompanyFacet(reports);
   fillFacet("industry-options", industries.map((i) => chip(cap(i), null, "industry", i)));
   fillFacet("type-options", types.map((t) => chip(_ABBR[t] || t, null, "audit_type", t)));
   fillFacet("function-options", functions.map((fn) => chip(cap(fn), null, "functions", fn)));
   fillFacet("form-options", formsList.map((fm) => chip("No. " + fm, null, "form", fm)));
   fillFacet("year-options", years.map((y) => chip(y, null, "year", y)));
+  renderYearPresets(years);
+}
+
+/* A4 — the company facet. The same utilities recur across FERC audits, state
+   audits and rate cases, so "which company" is a first-class lens, not a search
+   string. Top 20 by report count (the recurring ones — the point of the lens),
+   with a search-within box because the tail is long (hundreds of companies).
+   A company selected from elsewhere (theme panel, "More on…") is always shown
+   even if it isn't in the top 20, or the active filter would be invisible. */
+const COMPANY_FACET_LIMIT = 20;
+function renderCompanyFacet(reports) {
+  const box = document.getElementById("company-options");
+  if (!box) return;
+  const counts = new Map();
+  reports.forEach((r) => counts.set(r.company, (counts.get(r.company) || 0) + 1));
+  const field = box.closest(".field");
+  if (field) field.hidden = counts.size < 2; // a one-company tab needs no facet
+
+  const search = document.getElementById("company-search");
+  const q = (search && search.value.trim().toLowerCase()) || "";
+  const ranked = [...counts.entries()]
+    .filter(([name]) => !q || name.toLowerCase().includes(q))
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+  const shown = ranked.slice(0, COMPANY_FACET_LIMIT);
+  const shownNames = new Set(shown.map(([n]) => n));
+  state.filters.company.forEach((name) => {
+    if (!shownNames.has(name) && counts.has(name)) shown.push([name, counts.get(name)]);
+  });
+
+  box.replaceChildren(...shown.map(([name, n]) => chip(name, n, "company", name)));
+  const more = ranked.length - Math.min(ranked.length, COMPANY_FACET_LIMIT);
+  const note = document.getElementById("company-more");
+  if (note) {
+    note.textContent = more > 0 ? `+${more} more — type to find one` : "";
+    note.hidden = more <= 0;
+  }
+}
+
+/* E1 — date facets ship as PRESETS, never a blank date picker (EDGAR's pattern).
+   A preset is a shortcut that selects the underlying year chips, so it stays one
+   filter model — nothing new to encode in state. */
+const YEAR_PRESETS = [
+  { label: "Last year", years: 1 },
+  { label: "Last 5 years", years: 5 },
+  { label: "All years", years: null },
+];
+function renderYearPresets(years) {
+  const host = document.getElementById("year-presets");
+  if (!host) return;
+  if (!years.length) { host.replaceChildren(); return; }
+  const newest = Number(years[0]); // years is sorted newest-first
+  host.replaceChildren(
+    ...YEAR_PRESETS.map((p) => {
+      // Anchor on the newest year the CORPUS has, not today's date: "last year"
+      // must mean "the most recent year with audits", or a preset silently
+      // selects nothing whenever the regulator has been quiet (A9's honesty rule).
+      const wanted = p.years === null ? years : years.filter((y) => Number(y) > newest - p.years);
+      const btn = el("button", { type: "button", class: "preset-chip", text: p.label });
+      btn.addEventListener("click", () => {
+        state.filters.year = new Set(wanted);
+        document.querySelectorAll('[data-group="year"]').forEach((c) =>
+          c.setAttribute("aria-pressed", state.filters.year.has(c.dataset.value) ? "true" : "false")
+        );
+        applyFilters();
+      });
+      return btn;
+    })
+  );
 }
 
 function toggleFilter(group, value, btn) {
@@ -234,6 +553,7 @@ function toggleFilter(group, value, btn) {
 }
 
 function resetFilters() {
+  cancelPendingSearch(); // else a queued search re-applies itself after the reset
   state.filters.search = "";
   state.filters.industry.clear();
   state.filters.form.clear();
@@ -242,8 +562,26 @@ function resetFilters() {
   state.filters.year.clear();
   state.filters.theme.clear();
   state.filters.impact.clear();
-  document.getElementById("search").value = "";
-  document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
+  state.filters.company.clear();
+  // The facet's own "Find a company…" query is part of what a reset resets: left
+  // behind, renderCompanyFacet keeps hiding every company that doesn't match the
+  // stale text, so a freshly-reset (or newly-switched) tab shows an empty
+  // Company rail until the user notices and clears that box separately.
+  // Clearing the box isn't enough — the chip list is rebuilt by renderCompanyFacet,
+  // which applyFilters() below does not call.
+  const coSearch = document.getElementById("company-search");
+  if (coSearch) {
+    coSearch.value = "";
+    renderCompanyFacet(collectionReports());
+  }
+  setSearchInputs("");
+  // Only FACET controls — `[data-group][data-value]` is exactly the filter chips
+  // and pattern cards. A blanket `[aria-pressed="true"]` also unpressed the A3
+  // view toggle, leaving the ledger rendering with neither Stream nor Ledger
+  // marked selected (visually and for a screen reader).
+  document
+    .querySelectorAll('[data-group][data-value][aria-pressed="true"]')
+    .forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
 }
 
@@ -251,6 +589,7 @@ function matches(report) {
   const f = state.filters;
   if (report.collection !== state.collection) return false;
   if (f.impact.size && !report.cost_to_customers) return false;
+  if (f.company.size && !f.company.has(report.company)) return false;
   if (f.industry.size && !f.industry.has(report.industry)) return false;
   if (f.form.size && !(report.forms || []).some((x) => f.form.has(x))) return false;
   if (f.audit_type.size && !f.audit_type.has(report.audit_type)) return false;
@@ -258,17 +597,41 @@ function matches(report) {
   if (f.year.size && !f.year.has(yearOf(report.issued_date))) return false;
   if (f.theme.size && !(report.themes || []).some((t) => f.theme.has(t))) return false;
   if (f.search) {
+    // Finding bodies come from the lazily-fetched detail file. The search handler
+    // awaits it before filtering, so by here findingsOf() is populated; if a fetch
+    // failed we still match on the index fields rather than dropping the report.
     const hay = [
       report.company,
+      // BOTH docket fields: 199 of 440 records (most state ones) have a `docket`
+      // and NO `docket_full`, and `docket` is what their card prints — so
+      // searching the docket a user can see returned nothing, while the hero
+      // promises "Search a utility, docket, or keyword".
+      report.docket,
       report.docket_full,
       report.audit_period,
-      ...report.findings.map((x) => x.title + " " + (x.summary || "")),
+      ...findingsOf(report).map((x) => x.title + " " + (x.summary || "")),
     ]
       .join(" ")
       .toLowerCase();
     if (!hay.includes(f.search.toLowerCase())) return false;
   }
   return true;
+}
+
+/* ---------- sort (A3) ---------- */
+/* Every comparator is a total order with a stable id tiebreak, so the stream
+   never reshuffles between renders. Null issued_date / no cited $ sort last. */
+const SORTS = {
+  newest: { label: "Newest first", cmp: (a, b) => (b.issued_date || "").localeCompare(a.issued_date || "") },
+  oldest: { label: "Oldest first", cmp: (a, b) => (a.issued_date || "￿").localeCompare(b.issued_date || "￿") },
+  findings: { label: "Most findings", cmp: (a, b) => b.finding_count - a.finding_count },
+  amount: { label: "Largest $", cmp: (a, b) => (b.amount_max || -1) - (a.amount_max || -1) },
+  company: { label: "Company A–Z", cmp: (a, b) => a.company.localeCompare(b.company) },
+};
+
+function sortReports(list) {
+  const { cmp } = SORTS[state.sort] || SORTS.newest;
+  return list.slice().sort((a, b) => cmp(a, b) || a.id.localeCompare(b.id));
 }
 
 /* ---------- top patterns band ---------- */
@@ -322,6 +685,93 @@ function renderPatternsBand() {
   });
 }
 
+/* ---------- theme panel (A5) ---------- */
+/* When exactly one theme filter is active, the stream gets a header answering the
+   analyst's real question: is this systemic or one-off? Everything here is a
+   mechanical count baked into patterns_by_collection.json — no LLM, no editorial.
+   Shown for ONE theme only: with two themes active the stream is an OR across
+   them, so a single theme's stats would describe a different set than the one
+   on screen. */
+function themeSparkline(byYear) {
+  const years = Object.keys(byYear).sort();
+  if (!years.length) return null;
+  const max = Math.max(...years.map((y) => byYear[y]));
+  return el("div", { class: "spark", role: "list", "aria-label": "Reports per year with this issue" }, years.map((y) =>
+    el("div", {
+      class: "spark-col",
+      role: "listitem",
+      "aria-label": `${y}: ${byYear[y]} report${byYear[y] === 1 ? "" : "s"}`,
+      title: `${y}: ${byYear[y]} report${byYear[y] === 1 ? "" : "s"}`,
+    }, [
+      el("span", { class: "spark-bar", style: `height:${Math.max(3, Math.round((byYear[y] / max) * 34))}px` }),
+      el("span", { class: "spark-yr", text: "’" + y.slice(2) }),
+    ])
+  ));
+}
+
+function renderThemePanel() {
+  const host = document.getElementById("theme-panel");
+  if (!host) return;
+  const active = [...state.filters.theme];
+  if (active.length !== 1) { host.replaceChildren(); host.hidden = true; return; }
+  const stat = activePatterns().themes.find((t) => t.theme === active[0]);
+  if (!stat) { host.replaceChildren(); host.hidden = true; return; }
+
+  const total = activePatterns().report_count || 1;
+  const pct = Math.round((stat.report_count / total) * 100);
+  const spark = themeSparkline(stat.by_year || {});
+
+  host.replaceChildren(
+    el("div", { class: "tp-head" }, [
+      el("h2", { class: "tp-title", text: stat.theme }),
+      el("button", { type: "button", class: "link-btn tp-clear", text: "Clear this issue",
+        onclick: () => removeActiveFilter("theme", stat.theme) }),
+    ]),
+    stat.description ? el("p", { class: "tp-desc", text: stat.description }) : null,
+    el("div", { class: "tp-stats" }, [
+      el("div", { class: "tp-stat" }, [
+        el("span", { class: "tp-num", text: String(stat.report_count) }),
+        el("span", { class: "tp-lab", text: `of ${total} reports · ${pct}%` }),
+      ]),
+      el("div", { class: "tp-stat" }, [
+        el("span", { class: "tp-num", text: String(stat.finding_count) }),
+        el("span", { class: "tp-lab", text: "findings" }),
+      ]),
+      spark ? el("div", { class: "tp-stat tp-spark" }, [spark, el("span", { class: "tp-lab", text: "reports per year issued" })]) : null,
+    ]),
+    (stat.top_companies || []).length
+      ? el("div", { class: "tp-companies" }, [
+          el("span", { class: "tp-lab", text: "Most often" }),
+          el("ul", { class: "tp-co-list" }, stat.top_companies.map((c) =>
+            el("li", {}, [
+              // Deep-links into the company lens (A4) so "who does this most" is
+              // one click from "show me their record".
+              (() => {
+                const b = el("button", { type: "button", class: "tp-co", text: c.company });
+                b.addEventListener("click", () => {
+                  state.filters.company = new Set([c.company]);
+                  syncControlsToState();
+                  applyFilters();
+                  scrollToResults();
+                });
+                return b;
+              })(),
+              el("span", { class: "tp-co-n", text: String(c.report_count) }),
+            ])
+          )),
+        ])
+      : null,
+    // The transparency line: these are keyword rules, and the user can see them.
+    (stat.keywords || []).length
+      ? el("p", { class: "tp-keywords" }, [
+          el("span", { text: "Tagged by keyword: " }),
+          el("code", { text: stat.keywords.join(", ") }),
+        ])
+      : null
+  );
+  host.hidden = false;
+}
+
 /* ---------- corpus trends (charts over the already-computed aggregates) ---------- */
 /* A vertical column chart — used for the year timeline. */
 function trendColumns(title, unit, entries) {
@@ -339,13 +789,19 @@ function trendColumns(title, unit, entries) {
   ]);
 }
 
-/* A horizontal bar chart — used for the few-category breakdowns. */
+/* A horizontal bar chart — used for the few-category breakdowns.
+   Each row takes a categorical tone (C1): these are categories, not statuses, so
+   they're distinguished without ranking and never borrow the brand or semantic
+   palettes. Cycles at 5 — no breakdown here has more rows than that. */
+const CAT_CLASSES = 5;
 function trendBars(title, unit, entries, note) {
   const max = Math.max(1, ...entries.map(([, v]) => v));
-  const rows = entries.map(([label, v]) =>
+  const rows = entries.map(([label, v], i) =>
     el("div", { class: "trend-row", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
       el("span", { class: "trend-row-label", text: label }),
-      el("span", { class: "trend-track", "aria-hidden": "true" }, [el("span", { class: "trend-bar", style: `width:${Math.round((v / max) * 100)}%` })]),
+      el("span", { class: "trend-track", "aria-hidden": "true" }, [
+        el("span", { class: `trend-bar cat-${(i % CAT_CLASSES) + 1}`, style: `width:${Math.round((v / max) * 100)}%` }),
+      ]),
       el("span", { class: "trend-row-val", text: String(v) }),
     ])
   );
@@ -378,9 +834,10 @@ function renderTrends() {
 }
 
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
-const _GROUP_ORDER = ["impact", "industry", "audit_type", "functions", "form", "year", "theme"];
+const _GROUP_ORDER = ["impact", "company", "industry", "audit_type", "functions", "form", "year", "theme"];
 function activeChipLabel(group, value) {
   if (group === "impact") return "Cost to customers";
+  if (group === "company") return value;
   if (group === "audit_type") return _ABBR[value] || value;
   if (group === "form") return "Form No. " + value;
   if (group === "industry" || group === "functions") return cap(value);
@@ -388,9 +845,9 @@ function activeChipLabel(group, value) {
 }
 function removeActiveFilter(group, value) {
   if (group === "search") {
+    cancelPendingSearch();
     state.filters.search = "";
-    const s = document.getElementById("search");
-    if (s) s.value = "";
+    setSearchInputs("");
   } else {
     state.filters[group].delete(value);
     document
@@ -428,11 +885,36 @@ function kv(label, value, muted) {
   ];
 }
 
-function findingNode(f) {
+/* A1 — every finding is individually addressable. The DOM id is the scroll
+   target; the shareable form is routed state (`?open=<id>&finding=<n>`), because
+   a bare "#f-<report>-<n>" anchor would collide with this app's own use of the
+   fragment and decode to the default view. */
+function findingNode(f, reportId) {
   const head = el("div", { class: "finding-head" }, [
     el("span", { class: "dot " + (f.is_other_matter ? "other-dot" : "finding-dot"), "aria-hidden": "true" }),
     el("span", { class: "finding-title", text: f.title }),
     f.is_other_matter ? el("span", { class: "finding-flag", text: "Other matter" }) : null,
+    reportId
+      ? (() => {
+          const b = el("button", {
+            type: "button",
+            class: "finding-link",
+            title: "Copy a link to this finding",
+            "aria-label": `Copy a link to finding ${f.index}: ${f.title}`,
+            text: "¶",
+          });
+          b.addEventListener("click", async () => {
+            try {
+              await navigator.clipboard.writeText(permalinkFor(reportId, f.index));
+              b.classList.add("copied");
+            } catch (e) {
+              console.error(e);
+            }
+            setTimeout(() => b.classList.remove("copied"), 1500);
+          });
+          return b;
+        })()
+      : null,
   ]);
   const parts = [head];
   if (f.summary) parts.push(el("p", { class: "finding-summary", text: f.summary }));
@@ -466,68 +948,158 @@ function findingNode(f) {
     });
     parts.push(recs);
   }
-  return el("div", { class: "finding" }, parts);
+  return el("div", { class: "finding", id: reportId ? findingDomId(reportId, f.index) : null }, parts);
 }
 
-function citationText(r) {
+/* The source URL lives in the detail record (thread-only), so citations are only
+   ever built where a thread is rendered.
+   A1 — the citation carries the permalink as well as the official source URL: the
+   source proves the quote, the permalink lets a fact-checker land on the exact
+   view it was read in. */
+function citationText(r, detail) {
   const kind = r.doc_type || (r.collection === "prudence_review" ? "FERC order" : r.collection === "state_audit" ? "Audit report" : "FERC Audit Report");
   const docket = r.docket_full || r.docket;
   return `${r.company}, ${kind}${docket ? ", Docket No. " + docket : ""}` +
-    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${r.source_page_url}`;
+    `${r.issued_date ? " (issued " + fmtDate(r.issued_date) + ")" : ""}. ${r.source ? r.source + ". " : ""}${detail.source_page_url}` +
+    ` (via FERC Audit Explorer, ${permalinkFor(r.id)})`;
 }
 
-function cardNode(r) {
-  const card = el("details", { class: "card" });
+/* A small copy-to-clipboard button that reports success/failure in place. */
+function copyButton(label, getText) {
+  const btn = el("button", { type: "button", class: "btn-secondary", text: label });
+  btn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(getText());
+      btn.textContent = "Copied ✓";
+    } catch (e) {
+      console.error(e);
+      btn.textContent = "Copy failed";
+    }
+    setTimeout(() => (btn.textContent = label), 1800);
+  });
+  return btn;
+}
 
-  const recCount = r.findings.reduce((n, f) => n + (f.recommendations ? f.recommendations.length : 0), 0);
-  const docket = r.docket_full || r.docket;
-  // Sub-meta: docket (if any) · issued date · source (for non-FERC provenance).
-  const subBits = [];
-  if (docket) subBits.push(`Docket No. ${docket}`);
-  subBits.push(`Issued ${fmtDate(r.issued_date)}`);
-  if (r.collection !== "ferc_audit" && r.source) subBits.push(r.source);
+/* A1 — DOM ids. Report ids contain dots and other CSS-unsafe characters, so they
+   are namespaced and only ever selected via getElementById (never a selector). */
+const cardDomId = (reportId) => `r-${reportId}`;
+const findingDomId = (reportId, index) => `f-${reportId}-${index}`;
 
-  // Status pill: real findings → count; metadata-only legal doc → "read source";
-  // otherwise a genuinely finding-free audit.
-  const statusPill = r.finding_count > 0
-    ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
-    : r.structured === false
-      ? el("span", { class: "pill muted", text: "Listed for reference" })
-      : el("span", { class: "pill muted", text: "No findings extracted" });
+/* A1 — the permalink for one report: the current view, plus this card open. An
+   absolute URL, because the point is to paste it somewhere else.
+   `findingIndex` (1-based) targets a single finding. It rides as routed state,
+   NOT as a bare "#f-…" fragment: this app owns the fragment for routing, so an
+   anchor link would replace the route and land on the default view. */
+function permalinkFor(reportId, findingIndex) {
+  const url = URLState.encode({ ...currentUrlState(), open: reportId, finding: findingIndex || null });
+  return location.origin + location.pathname + url;
+}
 
-  const summary = el("summary", { class: "card-summary" }, [
-    el("div", { class: "source-line" }, [
-      el("span", { class: "avatar", "aria-hidden": "true", text: initials(r.company) }),
-      el("span", { class: "source-meta" }, [
-        el("span", { class: "company", text: r.company }),
-        el("br"),
-        el("span", { class: "sub-meta", text: subBits.join(" · ") }),
-      ]),
-      el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
-    ]),
-    el("div", { class: "chips" }, [
-      r.doc_type ? el("span", { class: "pill kind", text: cap(r.doc_type) })
-        : r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
-      statusPill,
-      r.finding_count > 0 ? el("span", { class: "pill outline", text: `${recCount} rec${recCount === 1 ? "" : "s"}` }) : null,
-      ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
-    ]),
+/* E1 — "See an issue? Report it": a prefilled GitHub issue (zero-backend
+   analogue of ProPublica's "See an issue with the data? Contact Us"). The record
+   id + docket travel in the body so a report is actionable without a round-trip. */
+const ISSUE_URL = "https://github.com/pranava0x0/FERCforms/issues/new";
+function reportIssueLink(r) {
+  const body = [
+    `Record: ${r.id}`,
+    `Company: ${r.company}`,
+    r.docket_full || r.docket ? `Docket: ${r.docket_full || r.docket}` : null,
+    "",
+    "What looks wrong?",
+  ].filter((x) => x !== null).join("\n");
+  const href = `${ISSUE_URL}?title=${encodeURIComponent(`Data issue: ${r.company} (${r.id})`)}&body=${encodeURIComponent(body)}`;
+  return el("a", { class: "btn-secondary subtle", href, rel: "noopener", target: "_blank", text: "See an issue? Report it ↗" });
+}
+
+/* A2 — a mechanical one-line subject for the collapsed card. Composed only from
+   fields the record already states (audit type/period, or document type); it
+   never paraphrases a finding. Returns null when the record states neither. */
+function cardSubject(r) {
+  if (r.collection === "ferc_audit") {
+    const bits = [];
+    if (r.audit_type) bits.push((_ABBR[r.audit_type] || r.audit_type) + " audit");
+    if (r.audit_period) bits.push(r.audit_period);
+    return bits.length ? bits.join(" — ") : null;
+  }
+  return r.doc_type ? cap(r.doc_type) : null;
+}
+
+/* A2 — up to 3 theme chips + a "+N" overflow count. Themes are the best scent
+   for both personas, and every report already carries its union at bake time. */
+const THEME_CHIP_LIMIT = 3;
+function cardThemeChips(r) {
+  const themes = r.themes || [];
+  if (!themes.length) return null;
+  const shown = themes.slice(0, THEME_CHIP_LIMIT);
+  const extra = themes.length - shown.length;
+  return el("div", { class: "card-themes" }, [
+    ...shown.map((t) => el("span", { class: "finding-tag", text: t })),
+    extra ? el("span", { class: "finding-tag more-tag", title: themes.slice(THEME_CHIP_LIMIT).join(" · "), text: `+${extra}` }) : null,
   ]);
+}
 
-  // Metadata rows — only include those that apply to this record's collection.
+/* A4 — "More on {company}": mechanical counts of this company's OTHER records
+   across collections, each a deep link (A1). This is the cross-collection view
+   `cross_links.json` was baked for; computed here from the index instead, which
+   is why that file is now retired rather than shipped unread (F6).
+   Matches on the exact normalized `company` — the pipeline already normalizes it
+   at structure time, so no fuzzy matching (and no false "same company" claims). */
+function moreOnCompanyRow(r) {
+  const others = state.reports.filter((x) => x.company === r.company && x.id !== r.id);
+  if (!others.length) return null;
+  const byCollection = new Map();
+  others.forEach((x) => byCollection.set(x.collection, (byCollection.get(x.collection) || 0) + 1));
+
+  const links = COLLECTIONS.filter((c) => byCollection.has(c.key)).map((c) => {
+    const n = byCollection.get(c.key);
+    const label = `${n} ${c.label.replace(" (Reference)", "")}${n === 1 ? "" : ""}`;
+    const btn = el("button", { type: "button", class: "more-link", text: label });
+    btn.addEventListener("click", () => {
+      // Deep-link: that collection, filtered to this company. The whole move is
+      // ONE navigation, so the intermediate states must not reach the URL —
+      // resetFilters() calls applyFilters(), which would otherwise push an
+      // unfiltered destination tab, and Back would land there instead of on the
+      // report the user came from.
+      withUrlSuppressed(() => {
+        state.collection = c.key;
+        state.open = null;
+        resetFilters();
+        state.filters.company = new Set([r.company]);
+        renderCollectionSurfaces();
+        syncControlsToState();
+        applyFilters();
+      });
+      syncUrl(true);
+      scrollToResults();
+    });
+    return btn;
+  });
+
+  return el("div", { class: "more-on" }, [
+    el("span", { class: "more-lab", text: `More on ${r.company}` }),
+    el("div", { class: "more-links" }, links),
+  ]);
+}
+
+/* The expanded thread. Built from the lazily-fetched detail record, so it only
+   runs on first open — which is also what keeps the whole-corpus render cheap. */
+function threadNode(r, detail) {
   const rows = [];
   if (r.audit_period) rows.push(...kv("Audit period", r.audit_period, false));
   if (r.audit_type) rows.push(...kv("Audit type", _ABBR[r.audit_type] || r.audit_type, false));
   if (r.doc_type) rows.push(...kv("Document type", cap(r.doc_type), false));
-  rows.push(...kv("Jurisdiction", r.jurisdiction || "—", !r.jurisdiction));
+  rows.push(...kv("Jurisdiction", detail.jurisdiction || "—", !detail.jurisdiction));
   if (r.functions && r.functions.length) rows.push(...kv("Function(s)", r.functions.map(cap).join(", "), false));
   if (r.forms && r.forms.length) rows.push(...kv("FERC forms", r.forms.map((f) => "No. " + f).join(", "), false));
-  if (r.page_count > 0) rows.push(...kv("Pages", String(r.page_count), false));
-  rows.push(...kv("Source", r.source || r.source_note || "Not stated", !(r.source || r.source_note)));
+  if (detail.page_count > 0) rows.push(...kv("Pages", String(detail.page_count), false));
+  // A9 — surface the capture date on the card itself: "as of" is the difference
+  // between absence-of-data and absence-of-issues.
+  if (detail.captured_at) rows.push(...kv("Captured", fmtDate(detail.captured_at), false));
+  rows.push(...kv("Source", r.source || detail.source_note || "Not stated", !(r.source || detail.source_note)));
   const root = el("div", { class: "thread-root" }, [el("dl", {}, rows)]);
 
-  const findings = r.finding_count > 0
-    ? el("div", {}, r.findings.map(findingNode))
+  const findings = (detail.findings || []).length
+    ? el("div", {}, detail.findings.map((f) => findingNode(f, r.id)))
     : el("div", { class: "no-findings" }, [
         r.structured === false
           ? el("p", {}, [
@@ -545,36 +1117,310 @@ function cardNode(r) {
           : null,
       ]);
 
-  const copyBtn = el("button", { type: "button", class: "btn-secondary", text: "Copy citation" });
-  copyBtn.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(citationText(r));
-      copyBtn.textContent = "Copied ✓";
-      setTimeout(() => (copyBtn.textContent = "Copy citation"), 1800);
-    } catch (e) {
-      copyBtn.textContent = "Copy failed";
-    }
-  });
-
-  const sourceLabel = r.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
+  // E1 — the source triplet leads (ProPublica's per-filing pattern): the official
+  // document first, then the ways to carry it away.
+  const sourceLabel = detail.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
   const footer = el("div", { class: "thread-footer" }, [
-    el("a", { class: "btn-secondary", href: r.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
-    r.archived_via
-      ? el("a", { class: "btn-secondary", href: r.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
+    el("a", { class: "btn-secondary primary", href: detail.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
+    detail.archived_via
+      ? el("a", { class: "btn-secondary", href: detail.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
       : null,
-    copyBtn,
+    copyButton("Copy citation", () => citationText(r, detail)),
+    copyButton("Copy link", () => permalinkFor(r.id)),
+    reportIssueLink(r),
+  ]);
+
+  return el("div", { class: "thread" }, [root, findings, moreOnCompanyRow(r), footer]);
+}
+
+/* Fill a card's thread on first expand. The detail file is usually already warm
+   (prefetchDetails), so this resolves synchronously-ish; the placeholder only
+   shows on a cold or slow fetch. */
+async function fillThread(card, r) {
+  if (card.dataset.filled) return;
+  card.dataset.filled = "1";
+  const detail = detailOf(r);
+  if (detail) {
+    card.appendChild(threadNode(r, detail));
+    return;
+  }
+  const pending = el("div", { class: "thread thread-pending" }, [el("p", { class: "muted-cell", text: "Loading findings…" })]);
+  card.appendChild(pending);
+  try {
+    await ensureDetails(r.collection);
+    const loaded = detailOf(r);
+    if (!loaded) throw new Error(`no detail record for ${r.id}`);
+    pending.replaceWith(threadNode(r, loaded));
+  } catch (e) {
+    console.error(e);
+    // Fail loud and offer a way out rather than leaving a dead "Loading…".
+    const retry = el("button", { type: "button", class: "link-btn", text: "Retry" });
+    retry.addEventListener("click", () => {
+      pending.remove();
+      delete card.dataset.filled;
+      fillThread(card, r);
+    });
+    pending.replaceChildren(el("p", {}, ["Couldn’t load this report’s findings. ", retry]));
+  }
+}
+
+function cardNode(r) {
+  const card = el("details", { class: "card", id: cardDomId(r.id) });
+  if (r.cost_to_customers) card.classList.add("has-cost"); // A2 — amber edge tick
+
+  const docket = r.docket_full || r.docket;
+  // Sub-meta: docket (if any) · issued date · source (for non-FERC provenance).
+  // Each segment is its own node so it can wrap BETWEEN segments but never mid-phrase (F9/B3).
+  const subBits = [];
+  if (docket) subBits.push(el("span", { class: "sub-bit docket-bit", text: `Docket No. ${docket}` }));
+  subBits.push(el("span", { class: "sub-bit", text: `Issued ${fmtDate(r.issued_date, true)}` }));
+  if (r.collection !== "ferc_audit" && r.source) subBits.push(el("span", { class: "sub-bit", text: r.source }));
+
+  // Status pill: real findings → count; metadata-only legal doc → "read source";
+  // otherwise a genuinely finding-free audit.
+  const statusPill = r.finding_count > 0
+    ? el("span", { class: "pill solid", text: `${r.finding_count} finding${r.finding_count === 1 ? "" : "s"}` })
+    : r.structured === false
+      ? el("span", { class: "pill muted", text: "Listed for reference" })
+      : el("span", { class: "pill muted", text: "No findings extracted" });
+
+  // F2 — a "0 recs" pill reads as "auditors made no recommendations", which is
+  // false for essentially every FERC audit; it really means recs weren't parsed.
+  // Render the pill only when recommendations were actually extracted.
+  const recPill = r.rec_count > 0
+    ? el("span", { class: "pill outline", text: `${r.rec_count} rec${r.rec_count === 1 ? "" : "s"}` })
+    : null;
+
+  const amount = fmtAmount(r.amount_max);
+
+  const summary = el("summary", { class: "card-summary" }, [
+    el("div", { class: "source-line" }, [
+      el("span", { class: "avatar", "aria-hidden": "true", text: initials(r.company) }),
+      el("span", { class: "source-meta" }, [
+        el("span", { class: "company", text: r.company }),
+        el("span", { class: "sub-meta" }, subBits),
+      ]),
+      el("span", { class: "disclosure" }, [el("span", { class: "chev", "aria-hidden": "true", text: "▾" })]),
+    ]),
+    cardSubject(r) ? el("p", { class: "headline", text: cardSubject(r) }) : null,
+    el("div", { class: "chips" }, [
+      r.doc_type ? el("span", { class: "pill kind", text: cap(r.doc_type) })
+        : r.audit_type ? el("span", { class: "pill kind", text: _ABBR[r.audit_type] || r.audit_type }) : null,
+      statusPill,
+      recPill,
+      amount ? el("span", { class: "pill amount", title: "Largest dollar figure cited in this report's findings, as stated in the report", text: amount }) : null,
+      r.cost_to_customers ? el("span", { class: "pill cost", title: COST_TIP, text: "Cost to customers" }) : null,
+      ...(r.functions || []).map((fn) => el("span", { class: "pill func", text: fn })),
+    ]),
+    cardThemeChips(r),
   ]);
 
   card.appendChild(summary);
-  card.appendChild(el("div", { class: "thread" }, [root, findings, footer]));
+  card.addEventListener("toggle", () => {
+    if (card.open) {
+      fillThread(card, r);
+      state.open = r.id;
+    } else if (state.open === r.id) {
+      state.open = state.finding = null;
+    }
+    // Opening a report is a citable view (A1), but NOT a navigation the user
+    // should have to press Back through — replace, don't push.
+    syncUrl(false);
+  });
   return card;
 }
 
+/* The ledger's header row is rendered from LEDGER_COLUMNS (never hand-listed —
+   DESIGN.md §12.4: anything enumerating a fixed list iterates the source array,
+   or the header and the cells drift apart). */
+function renderLedgerHead() {
+  const head = document.getElementById("ledger-head");
+  if (!head || head.childElementCount) return; // static across renders
+  head.replaceChildren(
+    el("tr", {}, LEDGER_COLUMNS.map((c) =>
+      el("th", { scope: "col", class: c.numeric ? "lg-num" : null, text: c.label })
+    ))
+  );
+}
+
+/* ---------- ledger view (A3) ---------- */
+/* The analyst scan mode: one row per report, ~10x cheaper than a card and ~5x
+   denser. Same baked data, same filters, same sort — only the renderer differs.
+   Desktop/tablet only: below 640px it falls back to the stream, so there is one
+   renderer per viewport class rather than two DOM trees (DESIGN.md §6).
+   Clicking a row deep-links (A1) to the stream card, which is where the verbatim
+   thread lives — the ledger is for finding the row, not reading it. */
+const LEDGER_MIN_WIDTH = 640;
+const ledgerAvailable = () => window.innerWidth >= LEDGER_MIN_WIDTH;
+const useLedger = () => state.view === "ledger" && ledgerAvailable();
+
+const LEDGER_COLUMNS = [
+  { key: "issued", label: "Issued", cell: (r) => el("td", { class: "lg-date", text: fmtDate(r.issued_date, true) }) },
+  { key: "company", label: "Company", cell: (r) => el("td", { class: "lg-co", text: r.company }) },
+  { key: "docket", label: "Docket", cell: (r) => el("td", { class: "lg-docket", text: r.docket_full || r.docket || "—" }) },
+  // Density is the whole point of this view, so the type is the SHORT form here
+  // ("FA"/"PA", not "Non-financial (PA)", which wraps to three lines and triples
+  // the row height). The full label rides in the title attribute.
+  {
+    key: "type", label: "Type",
+    cell: (r) => {
+      const full = r.doc_type ? cap(r.doc_type) : (_ABBR[r.audit_type] || r.audit_type || "—");
+      const short = r.audit_type === "financial" ? "FA" : r.audit_type === "non-financial" ? "PA" : full;
+      return el("td", { class: "lg-type", title: full, text: short });
+    },
+  },
+  {
+    key: "findings", label: "Findings", numeric: true,
+    cell: (r) => el("td", { class: "lg-num" }, [
+      r.finding_count > 0
+        ? el("span", { text: String(r.finding_count) })
+        : el("span", { class: "muted-cell", text: r.structured === false ? "ref." : "0" }),
+    ]),
+  },
+  // F2 again: no recs parsed is not "0 recommendations" — show a dash, not a zero.
+  { key: "recs", label: "Recs", numeric: true, cell: (r) => el("td", { class: "lg-num", text: r.rec_count > 0 ? String(r.rec_count) : "—" }) },
+  { key: "amount", label: "$", numeric: true, cell: (r) => el("td", { class: "lg-num lg-amt", text: fmtAmount(r.amount_max) || "—" }) },
+  {
+    key: "themes", label: "Issues",
+    cell: (r) => el("td", { class: "lg-themes" }, [
+      el("span", { class: "lg-theme-text", title: (r.themes || []).join(" · "), text: (r.themes || []).slice(0, 2).join(" · ") || "—" }),
+      (r.themes || []).length > 2 ? el("span", { class: "lg-more", text: ` +${r.themes.length - 2}` }) : null,
+    ]),
+  },
+];
+
+function ledgerRow(r) {
+  const tr = el("tr", { class: "lg-row" + (r.cost_to_customers ? " has-cost" : ""), tabindex: "0", "data-id": r.id });
+  LEDGER_COLUMNS.forEach((c) => tr.appendChild(c.cell(r)));
+  const open = () => {
+    state.view = "stream";      // the thread lives in the stream
+    state.open = r.id;
+    applyFilters();
+    syncUrl(true);
+    revealOpenReport();
+  };
+  tr.addEventListener("click", open);
+  tr.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+  });
+  return tr;
+}
+
 /* ---------- render stream ---------- */
-function applyFilters() {
-  const visible = state.reports.filter(matches);
+/* B1 — the stream appends cards in pages behind an IntersectionObserver sentinel
+   rather than rendering every match at once (123 cards on the FERC tab produced
+   multi-second blank frames). Filtering stays whole-corpus, so the result count
+   is always exact — only the DOM append is chunked. */
+const PAGE_SIZE = 20;
+const LEDGER_PAGE_SIZE = 60; // rows are ~10x cheaper than cards
+const _render = { visible: [], shown: 0, observer: null, sentinel: null };
+
+function appendPage() {
+  const ledger = useLedger();
+  // Rows go in the <tbody>; cards go straight in the stream container.
+  const host = ledger ? document.getElementById("ledger-body") : document.getElementById("stream");
+  if (!host) return;
+  const size = ledger ? LEDGER_PAGE_SIZE : PAGE_SIZE;
+  const next = _render.visible.slice(_render.shown, _render.shown + size);
+  if (!next.length) return;
+  const frag = document.createDocumentFragment();
+  next.forEach((r) => frag.appendChild(ledger ? ledgerRow(r) : cardNode(r)));
+  host.appendChild(frag);
+  _render.shown += next.length;
+
+  // Re-open the deep-linked report whenever its card is (re)created — renderStream
+  // rebuilds every card on any filter/sort change, which used to silently close it
+  // while `state.open` and the URL still said it was open, so the permalink no
+  // longer described the page. Set AFTER insertion so the toggle fires and the
+  // thread lazy-loads; setting `open` at construction skips the event entirely.
+  if (!ledger && state.open) {
+    const card = next.some((r) => r.id === state.open) ? document.getElementById(cardDomId(state.open)) : null;
+    if (card && !card.open) card.open = true;
+  }
+  if (_render.shown >= _render.visible.length) {
+    // Everything rendered — retire the sentinel so the observer stops firing.
+    if (_render.observer) _render.observer.disconnect();
+    if (_render.sentinel) _render.sentinel.hidden = true;
+  }
+}
+
+function renderStream(visible) {
   const stream = document.getElementById("stream");
-  stream.replaceChildren(...visible.map(cardNode));
+  const ledger = document.getElementById("ledger");
+  const asLedger = useLedger();
+  _render.visible = visible;
+  _render.shown = 0;
+
+  // One renderer is live at a time; the other is emptied so it can't hold a stale
+  // (and invisibly tall) DOM tree.
+  stream.replaceChildren();
+  document.getElementById("ledger-body").replaceChildren();
+  stream.hidden = asLedger;
+  ledger.hidden = !asLedger;
+  renderLedgerHead();
+
+  // The sentinel is a static element that sits AFTER both containers, so it is
+  // always below whichever renderer is live. (Anchoring it to #stream would put
+  // it above the ledger table, where it intersects immediately and pages the
+  // whole result set in one go.)
+  _render.sentinel = document.getElementById("stream-sentinel");
+  _render.sentinel.hidden = false;
+
+  if (!_render.observer && "IntersectionObserver" in window) {
+    // rootMargin pre-renders the next page before the sentinel is on screen, so
+    // fast scrolling doesn't reach the end of the list first (DESIGN.md §12.3).
+    _render.observer = new IntersectionObserver(
+      (entries) => { if (entries.some((e) => e.isIntersecting)) appendPage(); },
+      { rootMargin: "600px 0px" }
+    );
+  }
+  appendPage();
+  if (_render.observer) _render.observer.observe(_render.sentinel);
+  // No IntersectionObserver (very old browser): render everything rather than
+  // silently truncating the corpus.
+  else while (_render.shown < _render.visible.length) appendPage();
+}
+
+/* A1 — a shared link must land on its report even when the pager hasn't reached
+   it yet (an `open=` id can be card #87 of 123). Render pages until it exists,
+   then expand + scroll to it. Bounded by the result length, so a stale id in an
+   old link just does nothing rather than spinning. */
+function revealOpenReport() {
+  const id = state.open;
+  if (!id) return;
+  // The ledger renders rows, never a card with this id — without this guard the
+  // loop below never finds its target and pages the ENTIRE result set in.
+  if (useLedger()) return;
+  if (!_render.visible.some((r) => r.id === id)) return; // not in this filter set
+  while (_render.shown < _render.visible.length && !document.getElementById(cardDomId(id))) appendPage();
+  const card = document.getElementById(cardDomId(id));
+  if (!card) return;
+  card.open = true; // fires the toggle handler → lazy-loads the thread
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const behavior = reduce ? "auto" : "smooth";
+  card.scrollIntoView({ behavior, block: "start" });
+
+  // A finding target needs the thread to exist first, and the thread is filled
+  // asynchronously (the detail file may still be in flight). Wait for the fetch
+  // this same toggle kicked off rather than guessing at a timeout.
+  if (!state.finding) return;
+  const target = findingDomId(id, state.finding);
+  ensureDetails(state.collection)
+    .then(() => {
+      const node = document.getElementById(target);
+      if (node) node.scrollIntoView({ behavior, block: "center" });
+    })
+    .catch((e) => console.error(e)); // the report is open; only the scroll is lost
+}
+
+function applyFilters() {
+  const visible = sortReports(state.reports.filter(matches));
+  // An `open` report that the new filters exclude is no longer describable by
+  // this view — drop it before rendering, so the URL can't keep advertising a
+  // report the page doesn't show. (A report still in the set is re-opened by
+  // appendPage as its card is rebuilt.)
+  if (state.open && !visible.some((r) => r.id === state.open)) state.open = state.finding = null;
+  renderStream(visible);
 
   const findings = visible.reduce((n, r) => n + r.finding_count, 0);
   document.getElementById("result-count").textContent =
@@ -590,10 +1436,38 @@ function applyFilters() {
   document.getElementById("empty-reset").hidden = collectionEmpty;
   document.getElementById("empty-state").hidden = visible.length !== 0;
 
+  renderThemePanel();
   renderActiveFilters();
   const activeCount = _GROUP_ORDER.reduce((n, g) => n + state.filters[g].size, 0) + (state.filters.search ? 1 : 0);
   const ft = document.getElementById("filters-toggle");
   if (ft) ft.textContent = activeCount ? `Filters · ${activeCount}` : "Filters";
+
+  // Every narrowing of the stream is a view worth citing and going back from.
+  // No-ops when the URL already matches, or when the URL is what caused this.
+  syncUrl(true);
+}
+
+/* ---------- hero trust line (E1) ---------- */
+/* The genre's credibility stat, above the search box: what's in here, from whom,
+   over what period, how fresh. Every number is a corpus count, never a claim. */
+function renderTrustLine() {
+  const host = document.getElementById("trust-line");
+  if (!host) return;
+  const p = state.patterns || {};
+  const m = state.meta || {};
+  // Counted at bake time (meta.jurisdictions_covered) — `jurisdiction` is a
+  // detail field, so the index alone can't count regulators.
+  const juris = m.jurisdictions_covered || [];
+  const states = juris.filter((j) => j !== "FERC").length;
+  const who = juris.includes("FERC") ? `FERC + ${states} state regulator${states === 1 ? "" : "s"}` : `${juris.length} regulators`;
+  const years = Object.keys(p.by_year || {}).sort();
+  const span = years.length ? `, ${years[0]}→present` : "";
+  host.replaceChildren(
+    el("strong", { text: `${p.finding_count || 0} verbatim findings` }),
+    document.createTextNode(" from "),
+    el("strong", { text: `${p.report_count || 0} audit & regulatory documents` }),
+    document.createTextNode(` — ${who}${span} · updated ${fmtDate(m.generated_at)}`)
+  );
 }
 
 /* ---------- footer ---------- */
@@ -650,12 +1524,95 @@ function wireChrome() {
     });
   }
 
-  document.getElementById("search").addEventListener("input", (e) => {
-    state.filters.search = e.target.value;
-    applyFilters();
-  });
+  // A11 — debounce: re-filtering the corpus on every keystroke compounds F4.
+  // Searching also needs finding bodies, so the active tab's detail file is
+  // fetched (once) before the filter runs; a failed fetch degrades to matching
+  // company/docket only rather than blocking the search box.
+  const onSearch = (value) => {
+    clearTimeout(_searchTimer);
+    _searchTimer = setTimeout(async () => {
+      const seq = ++_searchSeq;
+      // Pin the tab this run belongs to: the awaited file must be the one
+      // matches() will read, and the result must not be applied to another tab.
+      const collection = state.collection;
+      if (value) {
+        try { await ensureDetails(collection); } catch (e) { console.error(e); }
+        // Bail if a newer keystroke, a filter reset, or a tab switch happened
+        // while the fetch was in flight.
+        if (seq !== _searchSeq || collection !== state.collection) return;
+      }
+      state.filters.search = value;
+      applyFilters();
+    }, SEARCH_DEBOUNCE_MS);
+  };
+  document.querySelectorAll(".search-input").forEach((input) =>
+    input.addEventListener("input", (e) => onSearch(e.target.value))
+  );
+
+  // A3 — sort control. Pure client-side reorder of the current result set.
+  const sortSel = document.getElementById("sort");
+  if (sortSel) {
+    sortSel.replaceChildren(
+      ...Object.entries(SORTS).map(([k, { label }]) => el("option", { value: k, text: label }))
+    );
+    sortSel.value = state.sort;
+    sortSel.addEventListener("change", (e) => {
+      state.sort = e.target.value;
+      applyFilters();
+      scrollToResults();
+    });
+  }
+
   document.getElementById("reset-filters").addEventListener("click", resetFilters);
   document.getElementById("empty-reset").addEventListener("click", resetFilters);
+
+  // A3 — view toggle. `state.view` persists in the URL even below 640px (where
+  // useLedger() falls back to the stream), so a ledger link opened on a phone
+  // reads as the stream and returns to the ledger on a desktop.
+  document.querySelectorAll(".view-btn").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      state.view = btn.dataset.view;
+      // An open card can't survive into the ledger — leaving `open` set put an id
+      // in the URL that the ledger can't represent (and that a reload then tried,
+      // and failed, to page to).
+      if (useLedger()) state.open = state.finding = null;
+      syncViewToggle();
+      applyFilters();
+      syncUrl(true);
+    })
+  );
+  // The toggle is meaningless below the ledger breakpoint — hide it there, and
+  // re-render if a resize crosses the line while the ledger is selected.
+  const ledgerMQ = matchMedia(`(min-width: ${LEDGER_MIN_WIDTH}px)`);
+  ledgerMQ.addEventListener("change", () => {
+    // Crossing the breakpoint is a third way into the ledger, so it needs the same
+    // cleanup as the toggle: a `view=ledger` link opened on a phone renders the
+    // stream, where a card CAN be opened — resizing up then rendered the ledger
+    // while `open` stayed in the URL, unrepresentable here and reopening
+    // unexpectedly on the way back down.
+    if (useLedger()) state.open = state.finding = null;
+    syncViewToggle();
+    if (state.view === "ledger") {
+      applyFilters();
+      syncUrl(false); // a resize isn't a navigation — correct the URL, don't push
+    }
+  });
+
+  // The rail is a <form> for the fieldset/legend semantics (DESIGN.md §9), not to
+  // submit anything — there is no server. Once it contained a lone text input
+  // ("Find a company…"), Enter triggered IMPLICIT form submission and reloaded the
+  // document, throwing away the whole filtered view. Nothing else here submits, so
+  // block it at the form rather than per-input.
+  const filterForm = document.getElementById("filter-form");
+  if (filterForm) filterForm.addEventListener("submit", (e) => e.preventDefault());
+
+  // A4 — search WITHIN the company facet. Re-renders the chip list only; it does
+  // not filter the stream (that's what picking a chip does).
+  const coSearch = document.getElementById("company-search");
+  if (coSearch) coSearch.addEventListener("input", () => renderCompanyFacet(collectionReports()));
+
+  const toTop = document.getElementById("to-top");
+  if (toTop) toTop.addEventListener("click", scrollToTop);
 }
 
 /* ---------- init ---------- */
@@ -664,18 +1621,32 @@ function wireChrome() {
   try {
     await load();
   } catch (e) {
-    document.getElementById("result-count").textContent = "Failed to load data.";
     console.error(e);
+    // B4 — a dead "Failed to load data." leaves no way forward; offer a retry.
+    const count = document.getElementById("result-count");
+    count.textContent = "Failed to load data. ";
+    const retry = el("button", { type: "button", class: "link-btn", text: "Retry" });
+    retry.addEventListener("click", () => location.reload());
+    count.appendChild(retry);
     return;
   }
   renderTabs();
-  const def = COLLECTIONS.find((c) => c.key === state.collection);
-  const lead = document.getElementById("intro-lead");
-  if (lead && def) lead.innerHTML = def.lead;
-  renderKPIs();
-  renderFilters();
-  renderPatternsBand();
-  renderTrends();
+  renderTrustLine();
   renderFooter();
-  applyFilters();
+
+  // A1 — the URL is the source of truth at load: restore the shared view before
+  // the first render, so a deep link never paints the default view first.
+  await restoreFromUrl();
+  syncUrl(false);        // canonicalize (drops junk params, sorts values)
+  prefetchDetails(state.collection);
+
+  // Back/forward walks the filter states the user moved through.
+  window.addEventListener("popstate", () => {
+    // Same class as the reset/tab-switch race: a debounced search awaiting its
+    // detail fetch would land AFTER the history restore and overwrite it, pushing
+    // the user back into the query they just navigated away from — and it passes
+    // the collection guard whenever Back stays on the same tab.
+    cancelPendingSearch();
+    restoreFromUrl();
+  });
 })();

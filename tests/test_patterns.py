@@ -195,3 +195,57 @@ def test_every_theme_has_a_description():
 def test_summarize_empty():
     s = patterns.summarize([])
     assert s.report_count == 0 and s.themes == [] and s.finding_count == 0
+
+
+# ---------- A5 theme drill-down aggregates ----------
+def _co_report(rid: str, company: str, year: int, titles: list[str]) -> AuditReport:
+    r = _report(rid, "electric", year, [Finding(index=i + 1, title=t, summary="") for i, t in enumerate(titles)])
+    return r.model_copy(update={"company": company, "company_raw": company})
+
+
+def test_theme_by_year_counts_reports_once_not_findings():
+    """The sparkline is reports-per-year. A report restating one theme across
+    several findings must count ONCE, or the panel overstates prevalence — the
+    exact "systemic vs one-off" question A5 exists to answer."""
+    s = patterns.summarize([
+        _co_report("a", "Alpha Co", 2024, ["Depreciation Rates", "Depreciation Study", "Depreciation Expense"]),
+        _co_report("b", "Beta Co", 2024, ["Depreciation Rates"]),
+        _co_report("c", "Gamma Co", 2023, ["Depreciation Rates"]),
+    ])
+    dep = next(t for t in s.themes if t.theme == "Depreciation")
+    assert dep.by_year == {"2023": 1, "2024": 2}   # NOT {"2024": 4} — reports, not findings
+    assert dep.finding_count == 5                   # findings ARE still counted per finding (3+1+1)
+    assert dep.report_count == 3
+
+
+def test_theme_by_year_sums_to_report_count():
+    """Internal consistency: the sparkline must reconcile with the headline count
+    the panel prints beside it (every report here carries an issued_date)."""
+    s = patterns.summarize([
+        _co_report("a", "Alpha Co", 2024, ["Depreciation Rates"]),
+        _co_report("b", "Beta Co", 2023, ["Depreciation Study", "Lobbying Expenses"]),
+        _co_report("c", "Gamma Co", 2022, ["Depreciation Rates"]),
+    ])
+    for t in s.themes:
+        assert sum(t.by_year.values()) == t.report_count, f"{t.theme}: by_year != report_count"
+
+
+def test_theme_top_companies_ranked_and_capped():
+    s = patterns.summarize(
+        [_co_report(f"a{i}", "Repeat Co", 2020 + i, ["Depreciation Rates"]) for i in range(3)]
+        + [_co_report(f"b{i}", f"One-Off {i} Co", 2024, ["Depreciation Rates"]) for i in range(6)]
+    )
+    dep = next(t for t in s.themes if t.theme == "Depreciation")
+    assert dep.top_companies[0] == {"company": "Repeat Co", "report_count": 3}
+    assert len(dep.top_companies) == 5  # top 5 only
+    assert sum(c["report_count"] for c in dep.top_companies) <= dep.report_count
+
+
+def test_theme_by_year_skips_reports_without_an_issued_date():
+    """A null issued_date must not become a phantom year bucket (or a crash)."""
+    r = _co_report("a", "Alpha Co", 2024, ["Depreciation Rates"]).model_copy(update={"issued_date": None})
+    s = patterns.summarize([r])
+    dep = next(t for t in s.themes if t.theme == "Depreciation")
+    assert dep.by_year == {}
+    assert dep.report_count == 1
+    assert dep.top_companies == [{"company": "Alpha Co", "report_count": 1}]
