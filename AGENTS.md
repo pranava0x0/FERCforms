@@ -299,6 +299,19 @@ returns — **this is not optional**, it's how the agent rules stay sharp:
      (`research_finder_agent_review_*`, `agent_usage_review_*`);
    - a *dead seam* → BACKLOG.md / docs/data-sources.md.
 
+**2026-07-16 · zero agents, and that was correct — the retrospective cuts both ways.** A large
+session (spec Phases 1-3: payload split, identity refresh, permalinks, lenses, ledger, +48 e2e tests)
+spawned **no subagents and no workflows**. Every question was about *files this repo controls*
+(`grep` for `cross_links` consumers, `git log --diff-filter=A` for its provenance, reading `app.js`)
+or was answered by *running the thing* (Playwright, `pytest`, measuring `table.scrollWidth`). Per the
+thresholds above, an agent for any of it would have been pure overhead — the rule "Explore for
+codebase questions, not data analysis on controlled files" (2026-06-15 memory) held. The one external
+lookup — the pre-`pip install` advisory sweep CLAUDE.md mandates — was a **single `WebFetch`**, not a
+research harness; that is the right size for a bounded factual check against one known URL.
+**Generalisation:** on implementation sessions in a repo you already understand, the default agent
+count is **zero**. Reach for one when the question is genuinely *discovery over unknown external
+surface*, not when it's "read my own code" or "check my own output".
+
 Rule of thumb: if the same correction would apply to the *next* agent run, it belongs in a file, not
 just this turn's reply.
 

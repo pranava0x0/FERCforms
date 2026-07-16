@@ -258,6 +258,21 @@ When a row has a "Program" column and a "Status" column, the Status cell must re
 
 ---
 
+### 12.8 A dense table dies by wrapping — one line per row, or it's just a worse card list
+
+2026-07-16, building the ledger: the first cut rendered `Non-financial (PA)` in a Type column, which
+wrapped to three lines and pushed rows to ~70px — the table was *less* dense than the cards it
+existed to replace. Density is the only reason a table view exists, so it has to be defended
+explicitly, not assumed:
+
+- **Every cell is `white-space: nowrap`**, truncating with `text-overflow: ellipsis` and the full
+  value in a `title`. Abbreviate in the cell (`FA` / `PA`), not in the tooltip.
+- **Tune column widths so the table FITS the layout** (measure `table.scrollWidth` vs
+  `wrap.clientWidth` — don't eyeball it). A ledger you scroll sideways to read defeats itself. The
+  elastic columns (long names, tag lists) are the ones to cap.
+- **Assert it**: `tests/e2e/test_ledger.py` fails if row height exceeds 40px or the table overflows
+  at 1280/768. Measured result: 34px rows, ~26 reports/screen vs ~6 cards.
+
 ## 13. What's intentionally NOT in design
 
 Decisions made by *omission*:
