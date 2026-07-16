@@ -1,0 +1,19 @@
+# Dev-only dependencies. NOT needed to run the pipeline or to serve the site —
+# `pip install -r requirements.txt` remains sufficient for everything in
+# pipeline/ and for every test outside tests/e2e/.
+#
+# playwright drives tests/e2e/, which assert the analyst-UX spec's acceptance
+# criteria against the real built site. It exists because the MCP browser panes
+# render pages in a HIDDEN tab, where Chrome suspends requestAnimationFrame and
+# IntersectionObserver — so lazy-loading, paging and scroll behaviour CANNOT be
+# verified there and look broken even when correct (AGENTS.md → "Verifying
+# changes"). Playwright renders for real.
+#
+# tests/e2e/ skips itself cleanly when this isn't installed, so the suite stays
+# one command (`pytest`) for contributors who don't want a browser.
+#
+# After installing, fetch the browser once:  python3 -m playwright install chromium
+#
+# Advisory swept 2026-07-16 against pranava0x0.github.io/vibe-coding-security
+# (index generated 2026-07-15): no advisory listed for playwright. See security.md.
+playwright==1.58.0

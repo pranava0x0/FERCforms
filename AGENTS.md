@@ -31,14 +31,15 @@ data/
   raw/               downloaded PDFs (gitignored; re-fetchable from listing/seeds)
   processed/         per-report extracted text + structured JSON
 docs/                GitHub Pages site (vanilla HTML/CSS/JS) + baked data/*.json
-tests/               pytest
+tests/               pytest (unit + data guards)
+tests/e2e/           Playwright suite over the built site — skips itself without `requirements-dev.txt`
 ```
 
 **Commands** (fill in exact flags as stages land):
 
 | Goal | Command |
 | --- | --- |
-| Install deps | `pip install -r requirements.txt` (all already present) |
+| Install deps | `pip install -r requirements.txt` (all already present); browser tests also need `pip install -r requirements-dev.txt && python3 -m playwright install chromium` |
 | Build listing from snapshot | `python -m pipeline.listing` |
 | Backfill FY2014-2018 (Wayback) | `python -m pipeline.backfill` |
 | Ingest prudence / state-PUC docs | `python -m pipeline.sources` (add `--seed data/seeds/<file>.json`) |
@@ -97,7 +98,7 @@ Default verification matrix (project-specific `AGENTS.md` should override with c
 | Schema edit                    | Schema-validation tests (Pydantic / zod / etc.)       |
 | Seed / data edit               | Refresh script + data-integrity tests                 |
 | Shared vocabulary change       | Match-frontend-to-backend test                        |
-| Frontend (markup / styles / JS) | E2E / Playwright suite, or manual UAT in browser     |
+| Frontend (markup / styles / JS) | `pytest tests/e2e` (Playwright, renders for real) + `tests/test_palette.py` |
 | Connector / fetcher            | Connector unit tests + a small live integration run  |
 | Anything substantial           | Full test suite (`pytest` / `npm test` / `vitest`)   |
 
@@ -114,19 +115,22 @@ code was correct; the environment simply wasn't rendering. Tells that you are ch
 not a bug: a *control* IO on an obviously-visible element also never fires; screenshots come back
 blank; `computer{action:"scroll"}` times out after 30s.
 
-**Verify that class of behaviour with Playwright instead** (installed; not a repo dependency —
-don't add one). It renders for real (`visibilityState: "visible"`, rAF fires):
+**That class of behaviour has a suite: `tests/e2e/`** (Playwright — it renders for real:
+`visibilityState: "visible"`, rAF fires). It serves `docs/` on an ephemeral port exactly as GitHub
+Pages does, so the committed `docs/data/*.json` are the fixtures and a stale bake fails there rather
+than in production. **Add to it rather than hand-rolling a one-off script**: it already covers the
+spec's acceptance criteria (paging, lazy detail, permalinks/back-forward, theme + company lenses,
+ledger, search races, F-A/touch/no-h-scroll at 375/768/1280).
 
-```python
-from playwright.sync_api import sync_playwright   # python3, against `preview_start` on :8766
-with sync_playwright() as p:
-    page = p.chromium.launch().new_page(viewport={"width": 1280, "height": 800})
-    page.on("pageerror", print)                    # fail loud — catches what screenshots hide
-    page.goto("http://localhost:8766/", wait_until="networkidle")
-    for _ in range(20):                            # each IO hit appends a page
-        page.mouse.wheel(0, 40000); page.wait_for_timeout(250)
-    print(page.locator("#stream .card").count())   # 123, not 20
+```bash
+pip install -r requirements-dev.txt && python3 -m playwright install chromium   # once
+pytest                       # runs everything; e2e SKIPS itself if playwright is absent
+pytest tests/e2e -q          # just the browser suite (~90s)
 ```
+
+Fixtures are `site_page`, `page_factory(width=…, hash_="#/…")`, `site_browser`, `site_url` —
+deliberately NOT named `page`/`browser`, which would shadow pytest-playwright's own fixtures.
+`page_factory` fails a test on any uncaught page error, so a silent JS exception can't pass.
 
 The panes are still the right tool for DOM/text/state assertions (`get_page_text`, `read_page`,
 `javascript_tool`) and for static screenshots — just not for anything gated on the page painting.
