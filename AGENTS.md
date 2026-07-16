@@ -299,6 +299,29 @@ returns — **this is not optional**, it's how the agent rules stay sharp:
      (`research_finder_agent_review_*`, `agent_usage_review_*`);
    - a *dead seam* → BACKLOG.md / docs/data-sources.md.
 
+**2026-07-16 · the PR bot found 4× what my own high-effort review did — and the gap has a shape.**
+On PR #17 (Phases 1-3): my 8-angle self-review found **3** real bugs; the Codex PR bot found **12**
+across 3 rounds, including two P1s I would have shipped. Every one was reproduced before fixing, so
+this isn't bot noise. The pattern in what I missed, and what to do about it:
+
+- **I reviewed the code I'd just written, against the model of it I already had.** The bot read it
+  cold. Its best catches came from data and semantics I'd stopped questioning: that `docket_full` is
+  null on 199 of 440 records; that this app *owns the fragment*, so my `#f-…` anchors could never
+  resolve; that a `<form>` with exactly one text input submits on Enter.
+- **My tests were the same blind spot, not a defence.** Three separate bugs (docket search, the
+  `?q=` permalink, the finding anchors) each had a passing test that exercised the one shape that
+  happened to work — a FERC docket, a theme filter, the ids' *existence*. Green tests written by the
+  same mind that wrote the bug inherit its assumptions.
+- **So: don't treat the self-review as the gate.** Push early and let the bot read it cold; budget a
+  round or two of fixes rather than merging on your own green. When a finding arrives, **reproduce it
+  before fixing and re-verify after** — that costs minutes and converts "plausible bot comment" into
+  a fact, and it caught one of my own fixes being half a fix (clearing the facet input without
+  re-rendering the facet).
+- **Re-posted ≠ new.** The bot re-reviews the whole PR diff on every push and re-anchors old comments
+  to the new head, so identical findings reappear as if fresh. Sort by `created_at` to find what's
+  actually new (`gh api repos/<o>/<r>/pulls/<n>/comments --jq '.[] | "\(.created_at) \(.path)"'`),
+  and verify against HEAD before re-fixing anything.
+
 **2026-07-16 · zero agents, and that was correct — the retrospective cuts both ways.** A large
 session (spec Phases 1-3: payload split, identity refresh, permalinks, lenses, ledger, +48 e2e tests)
 spawned **no subagents and no workflows**. Every question was about *files this repo controls*
