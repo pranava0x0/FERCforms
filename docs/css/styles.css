@@ -965,9 +965,15 @@ a:hover { color: var(--accent-hover); }
   .filters.open { transform: translateY(0); }
   .filters-toggle { display: inline-flex; align-items: center; }
   /* Everything <=1023px is a touch surface (this range is exactly where the rail
-     becomes a sheet/panel), so the sort control takes a full touch target — not
-     just on phones. */
+     becomes a sheet/panel), so these take a full touch target — not just on
+     phones. The 44px floor is non-negotiable (CLAUDE.md, DESIGN.md §7); the
+     documented sub-44 exception in ISSUES.md covers compact filter/active-filter
+     chips only, and none of these are that: the view toggle is a primary control
+     in the same toolbar as the sort, and .more-link / .tp-co are navigation. */
   .sort-select { min-height: 44px; }
+  .view-btn { min-height: 44px; }
+  .more-link { min-height: 44px; }
+  .tp-co { min-height: 44px; display: inline-flex; align-items: center; }
 
   /* Bottom-sheet close affordances: a Done button + a tap-to-dismiss backdrop. */
   .sheet-header {

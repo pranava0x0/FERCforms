@@ -44,8 +44,14 @@ const COLLECTIONS = [
    report — enough to render a collapsed card and run every facet/sort. Findings
    and thread metadata live in data/findings_<collection>.json, fetched lazily on
    first expand. Mirrors pipeline/build.py CARD_FIELDS (a Python test asserts the
-   two lists stay in sync); reading anything outside this list off a report object
-   before its detail has loaded yields undefined. */
+   two lists stay in sync).
+
+   Index entries also carry build.py's DERIVED_INDEX_FIELDS — `rec_count` and
+   `amount_max`, rolled up from the findings at bake time — which is why the sort
+   and the ledger can show recs/$ without fetching a body. Don't add those two
+   here: merge_split() strips exactly the derived fields to reverse the split, and
+   the build-parity test pins that. Anything outside this list AND those two reads
+   undefined until the detail file has loaded. */
 const CARD_FIELDS = [
   "id",
   "collection",
@@ -181,6 +187,11 @@ function syncUrl(push) {
 /* Apply a decoded URL state to the app. Unknown collections/sorts fall back to
    the defaults rather than rendering an empty tab for a typo'd link. */
 function applyUrlState(u) {
+  // Save/restore rather than force `false`: this runs INSIDE withUrlSuppressed,
+  // and resetting the flag unconditionally re-armed URL writes for the rest of
+  // that block — so the applyFilters() right after it pushed a history entry on
+  // every fresh load, and Back stopped leaving the site.
+  const prev = _applyingHash;
   _applyingHash = true;
   try {
     state.collection = COLLECTIONS.some((c) => c.key === u.collection) ? u.collection : URLState.DEFAULTS.collection;
@@ -189,8 +200,12 @@ function applyUrlState(u) {
     state.open = u.open || null;
     state.filters.search = u.filters.search || "";
     URLState.FILTER_GROUPS.forEach((g) => (state.filters[g] = new Set(u.filters[g] || [])));
+    // A ledger row is not expandable, so `open` has no meaning there — drop it
+    // rather than carry an id the view can't represent. Below the ledger
+    // breakpoint the view falls back to the stream, where `open` still works.
+    if (useLedger()) state.open = null;
   } finally {
-    _applyingHash = false;
+    _applyingHash = prev;
   }
 }
 
@@ -1266,6 +1281,9 @@ function renderStream(visible) {
 function revealOpenReport() {
   const id = state.open;
   if (!id) return;
+  // The ledger renders rows, never a card with this id — without this guard the
+  // loop below never finds its target and pages the ENTIRE result set in.
+  if (useLedger()) return;
   if (!_render.visible.some((r) => r.id === id)) return; // not in this filter set
   while (_render.shown < _render.visible.length && !document.getElementById(cardDomId(id))) appendPage();
   const card = document.getElementById(cardDomId(id));
@@ -1429,6 +1447,10 @@ function wireChrome() {
   document.querySelectorAll(".view-btn").forEach((btn) =>
     btn.addEventListener("click", () => {
       state.view = btn.dataset.view;
+      // An open card can't survive into the ledger — leaving `open` set put an id
+      // in the URL that the ledger can't represent (and that a reload then tried,
+      // and failed, to page to).
+      if (useLedger()) state.open = null;
       syncViewToggle();
       applyFilters();
       syncUrl(true);

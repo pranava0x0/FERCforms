@@ -39,11 +39,37 @@ def test_touch_targets_meet_44px_at_375(page_factory, sel):
     assert box and box["h"] >= 44, f"{sel} is {box and box['h']}px — under the 44px floor"
 
 
-def test_sort_control_is_a_touch_target_on_tablet_too(page_factory):
+@pytest.mark.parametrize("sel", [".sort-select", ".view-btn"])
+def test_toolbar_controls_are_touch_targets_on_tablet_too(page_factory, sel):
     """640-1023 is treated as touch by this design (the rail becomes a slide-in),
-    so the sort control needs a full target there, not just on phones."""
+    so toolbar controls need a full target there, not just on phones.
+
+    REGRESSION for `.view-btn`, which shipped at 36px and was visible at 768px —
+    right beside the sort control this same test had always held to 44px.
+    """
     p = page_factory(width=768, height=1024)
-    assert _box(p, ".sort-select")["h"] >= 44
+    box = _box(p, sel)
+    assert box and box["h"] >= 44, f"{sel} is {box and box['h']}px at 768 — under the 44px floor"
+
+
+def test_new_navigation_controls_are_touch_targets(page_factory):
+    """`.more-link` (32px) and `.tp-co` (unsized) are navigation, not the compact
+    filter chips ISSUES.md grants a sub-44 exception to."""
+    p = page_factory(width=375, height=812, hash_="#/ferc_audit?theme=Depreciation")
+    p.wait_for_timeout(400)
+    assert _box(p, ".tp-co")["h"] >= 44
+
+    repeat = p.evaluate(
+        """(() => { const c={}; state.reports.filter(r=>r.collection==='ferc_audit')
+             .forEach(r=>c[r.company]=(c[r.company]||0)+1);
+             const hit = Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];
+             const r = state.reports.find(x=>x.collection==='ferc_audit' && x.company===hit);
+             return r.id; })()"""
+    )
+    p2 = page_factory(width=375, height=812, hash_=f"#/ferc_audit?open={repeat}")
+    p2.wait_for_selector(f"#r-{repeat} .thread", timeout=5000)
+    if p2.locator(".more-link").count():
+        assert _box(p2, ".more-link")["h"] >= 44
 
 
 @pytest.mark.parametrize("width,height,name", WIDTHS)

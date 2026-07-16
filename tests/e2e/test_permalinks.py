@@ -101,6 +101,31 @@ def test_findings_carry_stable_anchors(page_factory, site_page):
     assert ids and all(i.startswith(f"f-{rid}-") for i in ids)
 
 
+def test_a_fresh_load_does_not_push_a_history_entry(site_browser, site_url):
+    """REGRESSION (2026-07-16, code review). `applyUrlState` reset the URL-write
+    suppression flag to `false` in its `finally` instead of restoring the previous
+    value — but it runs INSIDE `withUrlSuppressed`, so the `applyFilters()` right
+    after it saw writes re-armed and pushed. On a fresh load `location.hash` is ""
+    while `encode()` yields "#/ferc_audit", so they differed and pushState fired:
+    history.length went 1 -> 3 for one navigation, and Back left the user on the
+    same page instead of leaving the site.
+
+    Canonicalising the URL at load is correct — doing it with pushState is not.
+    """
+    page = site_browser.new_page(viewport={"width": 1280, "height": 900})
+    page.goto("about:blank")
+    before = page.evaluate("history.length")
+    page.goto(site_url, wait_until="networkidle")
+    page.wait_for_timeout(600)
+    after = page.evaluate("history.length")
+    assert page.evaluate("location.hash") == "#/ferc_audit"   # still canonicalised
+    assert after - before == 1, (
+        f"a fresh load added {after - before} history entries; the navigation itself "
+        "is the only one it may add (the load-time canonicalise must replaceState)"
+    )
+    page.close()
+
+
 def test_a_stale_open_id_does_not_hang_or_throw(page_factory):
     """Old links outlive the corpus; an unknown id must be a no-op, not a spin."""
     p = page_factory(hash_="#/ferc_audit?open=not-a-real-report-id")

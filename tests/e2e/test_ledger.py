@@ -66,6 +66,53 @@ def test_row_click_returns_to_the_stream_and_deep_links_the_card(ledger_page):
     assert f"open={rid}" in h and "view=ledger" not in h
 
 
+def test_ledger_with_an_open_id_does_not_render_the_whole_result_set(page_factory):
+    """REGRESSION (2026-07-16, code review). `revealOpenReport` paged until it
+    found `#r-<id>`; the ledger renders <tr> rows, so that element never appears
+    and the loop ran to exhaustion — 123 of 123 rows, B1 paging defeated with no
+    error. Reachable, not theoretical: opening a card then clicking Ledger used to
+    leave `open=` in the URL (see the test below), so a reload hit exactly this.
+    """
+    p = page_factory(hash_="#/ferc_audit?view=ledger")
+    rid = p.evaluate("state.reports.filter(r=>r.collection==='ferc_audit')[0].id")
+    p2 = page_factory(hash_=f"#/ferc_audit?view=ledger&open={rid}")
+    p2.wait_for_timeout(700)
+    assert p2.locator("#ledger-body tr").count() <= 60
+
+
+def test_switching_to_the_ledger_drops_the_open_report(page_factory):
+    """The ledger has no expandable row, so it must not carry an `open` id it
+    can't represent — that stale URL is what fed the full-render bug above."""
+    p = page_factory()
+    p.locator("#stream .card summary").first.click()
+    p.wait_for_timeout(500)
+    assert "open=" in p.evaluate("location.hash")
+    p.click('.view-btn[data-view="ledger"]')
+    p.wait_for_timeout(500)
+    h = p.evaluate("location.hash")
+    assert "view=ledger" in h and "open=" not in h, f"stale open= survived into the ledger: {h}"
+
+
+def test_a_hand_written_ledger_open_url_is_canonicalised(page_factory):
+    """Belt and braces: even if someone types the combination, it must not persist."""
+    p = page_factory(hash_="#/ferc_audit?view=ledger")
+    rid = p.evaluate("state.reports.filter(r=>r.collection==='ferc_audit')[0].id")
+    p2 = page_factory(hash_=f"#/ferc_audit?view=ledger&open={rid}")
+    p2.wait_for_timeout(600)
+    assert "open=" not in p2.evaluate("location.hash")
+
+
+def test_below_the_breakpoint_a_ledger_link_still_honours_open(page_factory):
+    """`open` is only meaningless where the ledger actually renders. On a phone the
+    view falls back to the stream, so a shared ledger link must still land on its
+    report rather than silently dropping it."""
+    p = page_factory(width=375, height=812, hash_="#/ferc_audit?view=ledger")
+    rid = p.evaluate("state.reports.filter(r=>r.collection==='ferc_audit')[0].id")
+    p2 = page_factory(width=375, height=812, hash_=f"#/ferc_audit?view=ledger&open={rid}")
+    p2.wait_for_timeout(800)
+    assert p2.evaluate(f"document.getElementById('r-{rid}')?.open") is True
+
+
 def test_ledger_fits_without_horizontal_scroll(page_factory):
     """A ledger you scroll sideways to read defeats its own purpose. Both the
     desktop and tablet widths must fit."""

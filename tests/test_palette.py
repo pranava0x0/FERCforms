@@ -126,10 +126,14 @@ def test_no_hardcoded_hex_outside_token_blocks():
     css = CSS
     for selector in (":root", '[data-theme="dark"]'):
         css = css.replace(_block(selector), "")
+    # Strip comments across the WHOLE text, not per line: a hex explaining a
+    # decision inside a multi-line /* ... */ block has no "/*" on its own line, so
+    # a per-line split leaves it looking like a live declaration and fails the
+    # build for a comment.
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
     offenders = []
-    for i, line in enumerate(css.splitlines(), 1):
-        code = line.split("/*")[0]
-        if re.search(r"#[0-9a-fA-F]{3,8}\b", code):
+    for line in css.splitlines():
+        if re.search(r"#[0-9a-fA-F]{3,8}\b", line):
             offenders.append(f"  {line.strip()}")
     assert not offenders, (
         "hardcoded hex outside the token blocks (use a var(--token)):\n" + "\n".join(offenders)
