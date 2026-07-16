@@ -103,6 +103,34 @@ Default verification matrix (project-specific `AGENTS.md` should override with c
 
 **For UI changes**, also run the app locally and click through the affected views — type checks and unit tests verify code correctness, not feature correctness.
 
+**The MCP browser panes render the page in a HIDDEN tab — never "verify" `IntersectionObserver`,
+`requestAnimationFrame`, lazy-loading, animation, or scroll behaviour in them.** Both the Browser
+pane (`mcp__Claude_Browser__*`) and Claude-in-Chrome report `document.visibilityState === "hidden"`
+with `requestAnimationFrame` never firing, because Chrome suspends rAF + IO callbacks for
+non-rendered documents. Consequence (cost 2026-07-16: ~40 min): the Phase-1 stream paging looked
+catastrophically broken — 20 of 123 cards rendered, sentinel on screen at `top:585` in an 800px
+viewport, and *even a freshly-constructed IntersectionObserver never fired a single callback*. The
+code was correct; the environment simply wasn't rendering. Tells that you are chasing this ghost,
+not a bug: a *control* IO on an obviously-visible element also never fires; screenshots come back
+blank; `computer{action:"scroll"}` times out after 30s.
+
+**Verify that class of behaviour with Playwright instead** (installed; not a repo dependency —
+don't add one). It renders for real (`visibilityState: "visible"`, rAF fires):
+
+```python
+from playwright.sync_api import sync_playwright   # python3, against `preview_start` on :8766
+with sync_playwright() as p:
+    page = p.chromium.launch().new_page(viewport={"width": 1280, "height": 800})
+    page.on("pageerror", print)                    # fail loud — catches what screenshots hide
+    page.goto("http://localhost:8766/", wait_until="networkidle")
+    for _ in range(20):                            # each IO hit appends a page
+        page.mouse.wheel(0, 40000); page.wait_for_timeout(250)
+    print(page.locator("#stream .card").count())   # 123, not 20
+```
+
+The panes are still the right tool for DOM/text/state assertions (`get_page_text`, `read_page`,
+`javascript_tool`) and for static screenshots — just not for anything gated on the page painting.
+
 **For data changes**, diff the canonical output (`docs/data/*.json` or equivalent) and skim the diff before committing. A 30-second skim catches regressions tests miss (especially around character encoding, pretty-printer drift, and unintended fields).
 
 ---

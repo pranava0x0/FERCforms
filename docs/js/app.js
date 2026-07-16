@@ -155,9 +155,14 @@ const fmtDate = (iso, short) => {
   const d = new Date(iso + "T00:00:00");
   return d.toLocaleDateString("en-US", { year: "numeric", month: short ? "short" : "long", day: "numeric" });
 };
-/* B3 — "Sep 8, 2025" on phones so the card sub-meta stays one line. Read at render
-   time; a resize past the breakpoint re-renders via applyFilters, not per-card. */
-const useShortDates = () => matchMedia("(max-width: 560px)").matches;
+/* B3 — card sub-meta always uses the short date ("Sep 8, 2025") so it stays one
+   line at 375px. The spec scoped this to <560px, but a viewport-dependent date
+   has to be read at render time, which freezes the format at whatever width first
+   painted unless the whole stream re-renders on every breakpoint cross (which
+   would also collapse any open card). One format everywhere is simpler, has no
+   stale-state failure mode, and reads more like the ledger the identity is aiming
+   at. The full date still appears where formality matters: the thread's KV grid
+   and the citation string. */
 const yearOf = (iso) => (iso ? iso.slice(0, 4) : null);
 /* Compact USD for the finding-level $ pill (amount_usd is the first dollar figure
    in a finding's own committed text — see pipeline/amounts.py). */
@@ -756,7 +761,7 @@ function cardNode(r) {
   // Each segment is its own node so it can wrap BETWEEN segments but never mid-phrase (F9/B3).
   const subBits = [];
   if (docket) subBits.push(el("span", { class: "sub-bit docket-bit", text: `Docket No. ${docket}` }));
-  subBits.push(el("span", { class: "sub-bit", text: `Issued ${fmtDate(r.issued_date, useShortDates())}` }));
+  subBits.push(el("span", { class: "sub-bit", text: `Issued ${fmtDate(r.issued_date, true)}` }));
   if (r.collection !== "ferc_audit" && r.source) subBits.push(el("span", { class: "sub-bit", text: r.source }));
 
   // Status pill: real findings → count; metadata-only legal doc → "read source";

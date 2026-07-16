@@ -517,6 +517,18 @@ how-to copy only), F10 (partial — debounce only).
   Phase 3 company lens either consumes it or it stops being baked.
 - **A9's `captured_at`** ("as of" per card) came along free with the thread rework — it was a
   one-line addition once the detail record was already in hand.
+- **Card dates are short ("Sep 8, 2025") at every width**, not only below 560px as B3 says. A
+  viewport-dependent date must be read at render time, which freezes the format at whatever width
+  first painted unless the whole stream re-renders on every breakpoint cross — which would also
+  collapse any open card. One format has no stale-state failure mode and reads more like the ledger
+  C3 is aiming at. The full date still appears in the thread's KV grid and in the citation string,
+  which is where formality actually matters.
+
+*Verification note:* B1's paging cannot be verified in the MCP browser panes — they render the page
+in a hidden tab where Chrome suspends `requestAnimationFrame` and `IntersectionObserver`, so the
+stream looks stuck at 20 cards even when it is correct. Verified with Playwright instead (all 123
+cards page in, sentinel retires, thread lazy-loads, no page errors). See AGENTS.md → "Verifying
+changes".
 
 **Phase 2 — Identity refresh (1 session, pure CSS/markup + token test).**
 C1 palette + contrast script · C2 type treatment · C3 surface language · B4 pill-size/contrast fixes.
