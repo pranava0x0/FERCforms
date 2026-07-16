@@ -141,6 +141,35 @@ def test_resetting_filters_keeps_the_view_toggle_selected(page_factory):
     assert pressed == {"stream": "false", "ledger": "true"}, pressed
 
 
+def test_resizing_into_the_ledger_drops_the_open_report(page_factory):
+    """REGRESSION (2026-07-16, Codex review). Crossing the breakpoint is a THIRD
+    way into the ledger, and it lacked the toggle's cleanup: a `view=ledger` link
+    opened on a phone renders the stream, where a card can be opened — resizing up
+    then showed the ledger while `open` stayed in the URL, unrepresentable there
+    and reopening unexpectedly on the way back down."""
+    p = page_factory(width=375, height=812, hash_="#/ferc_audit?view=ledger")
+    p.locator("#stream .card summary").first.click()
+    p.wait_for_timeout(500)
+    assert "open=" in p.evaluate("location.hash")   # legitimate: the stream is live here
+
+    p.set_viewport_size({"width": 1280, "height": 900})
+    p.wait_for_timeout(700)
+    assert p.is_visible("#ledger")
+    assert "open=" not in p.evaluate("location.hash"), "an unrepresentable open= survived the resize"
+
+
+def test_the_skip_link_targets_a_visible_container_in_both_views(page_factory):
+    """REGRESSION (2026-07-16, Codex review). The skip link pointed at #stream,
+    which is display:none in Ledger view — a keyboard user skipping to results
+    landed on a hidden element."""
+    for hash_ in ("#/ferc_audit", "#/ferc_audit?view=ledger"):
+        p = page_factory(hash_=hash_)
+        target = p.get_attribute(".skip-link", "href").lstrip("#")
+        assert p.locator(f"#{target}").is_visible(), f"skip target #{target} is hidden at {hash_}"
+        # and it must be able to hold focus, or the link scrolls but Tab returns to the header
+        assert p.evaluate("t => document.getElementById(t).hasAttribute('tabindex')", target)
+
+
 def test_ledger_is_dense(ledger_page):
     """Density is the entire justification for this view (F8: ~6 cards/screen)."""
     h = ledger_page.evaluate("document.querySelector('#ledger-body tr').getBoundingClientRect().height")

@@ -416,11 +416,18 @@ function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort();
 }
 
+/* A chip is born reflecting the CURRENT filter state, never hardcoded unpressed.
+   The company facet rebuilds its chips on every keystroke of "Find a company…",
+   so a hardcoded "false" made an active company announce itself as unselected
+   while the stream stayed filtered and the active-filter bar still named it.
+   Fixed here rather than in renderCompanyFacet: every facet rebuilds sooner or
+   later, and only this helper knows how a chip is born. */
 function chip(label, count, group, value) {
+  const set = state.filters[group];
   const c = el("button", {
     type: "button",
     class: "filter-chip",
-    "aria-pressed": "false",
+    "aria-pressed": String(!!(set && set.has(value))),
     "data-group": group,
     "data-value": value,
   });
@@ -556,6 +563,17 @@ function resetFilters() {
   state.filters.theme.clear();
   state.filters.impact.clear();
   state.filters.company.clear();
+  // The facet's own "Find a company…" query is part of what a reset resets: left
+  // behind, renderCompanyFacet keeps hiding every company that doesn't match the
+  // stale text, so a freshly-reset (or newly-switched) tab shows an empty
+  // Company rail until the user notices and clears that box separately.
+  // Clearing the box isn't enough — the chip list is rebuilt by renderCompanyFacet,
+  // which applyFilters() below does not call.
+  const coSearch = document.getElementById("company-search");
+  if (coSearch) {
+    coSearch.value = "";
+    renderCompanyFacet(collectionReports());
+  }
   setSearchInputs("");
   // Only FACET controls — `[data-group][data-value]` is exactly the filter chips
   // and pattern cards. A blanket `[aria-pressed="true"]` also unpressed the A3
@@ -1567,9 +1585,26 @@ function wireChrome() {
   // re-render if a resize crosses the line while the ledger is selected.
   const ledgerMQ = matchMedia(`(min-width: ${LEDGER_MIN_WIDTH}px)`);
   ledgerMQ.addEventListener("change", () => {
+    // Crossing the breakpoint is a third way into the ledger, so it needs the same
+    // cleanup as the toggle: a `view=ledger` link opened on a phone renders the
+    // stream, where a card CAN be opened — resizing up then rendered the ledger
+    // while `open` stayed in the URL, unrepresentable here and reopening
+    // unexpectedly on the way back down.
+    if (useLedger()) state.open = state.finding = null;
     syncViewToggle();
-    if (state.view === "ledger") applyFilters();
+    if (state.view === "ledger") {
+      applyFilters();
+      syncUrl(false); // a resize isn't a navigation — correct the URL, don't push
+    }
   });
+
+  // The rail is a <form> for the fieldset/legend semantics (DESIGN.md §9), not to
+  // submit anything — there is no server. Once it contained a lone text input
+  // ("Find a company…"), Enter triggered IMPLICIT form submission and reloaded the
+  // document, throwing away the whole filtered view. Nothing else here submits, so
+  // block it at the form rather than per-input.
+  const filterForm = document.getElementById("filter-form");
+  if (filterForm) filterForm.addEventListener("submit", (e) => e.preventDefault());
 
   // A4 — search WITHIN the company facet. Re-renders the chip list only; it does
   // not filter the stream (that's what picking a chip does).

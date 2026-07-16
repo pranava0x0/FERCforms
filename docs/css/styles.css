@@ -121,6 +121,9 @@ a:hover { color: var(--accent-hover); }
   z-index: 100;
 }
 .skip-link:focus { left: 0; }
+/* #main only takes focus programmatically (via the skip link) — it must not draw
+   a focus ring around the whole results region when it does. */
+#main:focus { outline: none; }
 
 .sr-only {
   position: absolute;

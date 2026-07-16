@@ -29,7 +29,10 @@
   <script src="js/analytics.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#stream">Skip to results</a>
+  <!-- Targets #main, not #stream: #stream is display:none in Ledger view, so a
+       keyboard user skipping to it landed on a hidden element. #main is the
+       stable results container whichever renderer is live. -->
+  <a class="skip-link" href="#main">Skip to results</a>
 
   <header class="site-header" role="banner">
     <div class="brand">
@@ -168,7 +171,10 @@
     </aside>
 
     <!-- Stream -->
-    <main class="stream-wrap" id="main" role="main">
+    <!-- tabindex="-1" so the skip link can actually move focus here: <main> isn't
+         natively focusable, and without it the link scrolls but leaves focus at
+         the top of the document, so the next Tab goes back into the header. -->
+    <main class="stream-wrap" id="main" role="main" tabindex="-1">
       <div class="stream-toolbar">
         <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
         <span class="result-count" id="result-count" aria-live="polite">Loading…</span>

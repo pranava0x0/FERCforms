@@ -87,6 +87,55 @@ def test_company_facet_renders_and_searches_within(site_page):
     assert shown and all("duke" in c.lower() for c in shown)
 
 
+def test_enter_in_the_company_facet_does_not_reload_the_page(page_factory):
+    """REGRESSION (2026-07-16, Codex review). The filter rail is a <form> for its
+    fieldset/legend semantics; adding "Find a company…" made it the only text input
+    in that form, so Enter triggered IMPLICIT form submission and reloaded the
+    document — throwing away the entire filtered view. There is no server here;
+    nothing in this form should ever submit."""
+    p = page_factory(hash_="#/ferc_audit?theme=Depreciation")
+    navigations: list[str] = []
+    p.on("framenavigated", lambda f: navigations.append(f.url))
+    p.fill("#company-search", "duke")
+    p.press("#company-search", "Enter")
+    p.wait_for_timeout(800)
+    assert not navigations, f"Enter navigated away: {navigations}"
+    assert p.evaluate("location.hash") == "#/ferc_audit?theme=Depreciation"
+
+
+def test_an_active_company_chip_stays_pressed_while_typing_in_the_facet(site_page):
+    """REGRESSION (2026-07-16, Codex review). renderCompanyFacet rebuilds every
+    chip on each keystroke, and chip() hardcoded aria-pressed="false" — so the
+    selected company announced itself as unselected while the stream stayed
+    filtered and the active-filter bar still named it."""
+    company = site_page.evaluate("state.reports.filter(r => r.collection === 'ferc_audit')[0].company")
+    site_page.evaluate("c => { state.filters.company = new Set([c]); applyFilters(); syncControlsToState(); }", company)
+    site_page.wait_for_timeout(300)
+    site_page.fill("#company-search", company.split()[0].lower())
+    site_page.wait_for_timeout(400)
+    pressed = site_page.evaluate(
+        """c => { const el = [...document.querySelectorAll('#company-options .filter-chip')]
+                    .find(n => n.dataset.value === c);
+                  return el && el.getAttribute('aria-pressed'); }""",
+        company,
+    )
+    assert pressed == "true"
+
+
+def test_reset_clears_the_company_facet_query(site_page):
+    """REGRESSION (2026-07-16, Codex review). Reset cleared the selected company
+    but left the facet's own search box, so renderCompanyFacet kept hiding
+    everything that didn't match the stale text — a reset tab showed an EMPTY
+    Company rail (measured: 0 chips) until the user cleared that box separately."""
+    site_page.fill("#company-search", "zzznomatch")
+    site_page.wait_for_timeout(300)
+    assert site_page.locator("#company-options .filter-chip").count() == 0
+    site_page.click("#reset-filters")
+    site_page.wait_for_timeout(500)
+    assert site_page.input_value("#company-search") == ""
+    assert site_page.locator("#company-options .filter-chip").count() > 0
+
+
 def test_more_on_company_row_deep_links_across_collections(site_page, page_factory):
     """A4's cross-collection counts — computed from the index at runtime, which is
     why cross_links.json was retired."""
