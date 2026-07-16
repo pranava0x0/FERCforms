@@ -447,7 +447,10 @@ a:hover { color: var(--accent-hover); }
 .preset-chip {
   font: inherit;
   font-size: 12px;
-  padding: 4px 9px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px; /* presets live in the touch filter sheet — see BACKLOG (B4) */
+  padding: 4px 10px;
   border: 1px dashed var(--border);
   background: transparent;
   color: var(--text-muted);
@@ -759,6 +762,10 @@ a:hover { color: var(--accent-hover); }
   }
   .filters.open { transform: translateY(0); }
   .filters-toggle { display: inline-flex; align-items: center; }
+  /* Everything <=1023px is a touch surface (this range is exactly where the rail
+     becomes a sheet/panel), so the sort control takes a full touch target — not
+     just on phones. */
+  .sort-select { min-height: 44px; }
 
   /* Bottom-sheet close affordances: a Done button + a tap-to-dismiss backdrop. */
   .sheet-header {
@@ -822,7 +829,6 @@ a:hover { color: var(--accent-hover); }
     gap: 8px;
   }
   .sort-label { display: none; } /* the select's own options read as the label */
-  .sort-select { min-height: 44px; }
   .to-top {
     display: grid;
     place-items: center;

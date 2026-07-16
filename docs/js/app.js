@@ -116,12 +116,23 @@ function prefetchDetails(collection) {
 /* A11 — long enough to skip intermediate keystrokes, short enough to feel live. */
 const SEARCH_DEBOUNCE_MS = 150;
 
-/* Search exists in two places (the hero box — E1's primary CTA — and the filter
-   rail on desktop). They are one filter, so keep their values identical. */
-function syncSearchInputs(value, except) {
-  document.querySelectorAll(".search-input").forEach((i) => {
-    if (i !== except) i.value = value;
-  });
+/* A pending search is module state, not wireChrome-local, because every path that
+   CLEARS the search (reset filters, clear-all, the chip ✕, a tab switch) has to be
+   able to cancel one. A queued search doesn't just wait out the debounce — it also
+   awaits a detail-file fetch, so the window it can fire in is the whole download,
+   long enough to land after the user has moved on. */
+let _searchTimer = null;
+let _searchSeq = 0;
+function cancelPendingSearch() {
+  clearTimeout(_searchTimer);
+  _searchSeq++; // also invalidates a run already past its timer, mid-fetch
+}
+
+/* Set the search box(es) directly — used by the reset paths, which must not go
+   through the input handler. A query rather than a hard-coded id so the hero box
+   isn't the only thing this can ever drive. */
+function setSearchInputs(value) {
+  document.querySelectorAll(".search-input").forEach((i) => (i.value = value));
 }
 
 /* Patterns + reports for the active tab. */
@@ -356,6 +367,7 @@ function toggleFilter(group, value, btn) {
 }
 
 function resetFilters() {
+  cancelPendingSearch(); // else a queued search re-applies itself after the reset
   state.filters.search = "";
   state.filters.industry.clear();
   state.filters.form.clear();
@@ -364,7 +376,7 @@ function resetFilters() {
   state.filters.year.clear();
   state.filters.theme.clear();
   state.filters.impact.clear();
-  syncSearchInputs("");
+  setSearchInputs("");
   document.querySelectorAll('[aria-pressed="true"]').forEach((c) => c.setAttribute("aria-pressed", "false"));
   applyFilters();
 }
@@ -529,8 +541,9 @@ function activeChipLabel(group, value) {
 }
 function removeActiveFilter(group, value) {
   if (group === "search") {
+    cancelPendingSearch();
     state.filters.search = "";
-    syncSearchInputs("");
+    setSearchInputs("");
   } else {
     state.filters[group].delete(value);
     document
@@ -965,26 +978,25 @@ function wireChrome() {
   // Searching also needs finding bodies, so the active tab's detail file is
   // fetched (once) before the filter runs; a failed fetch degrades to matching
   // company/docket only rather than blocking the search box.
-  let searchTimer = null;
-  let searchSeq = 0;
   const onSearch = (value) => {
-    clearTimeout(searchTimer);
-    searchTimer = setTimeout(async () => {
-      const seq = ++searchSeq;
+    clearTimeout(_searchTimer);
+    _searchTimer = setTimeout(async () => {
+      const seq = ++_searchSeq;
+      // Pin the tab this run belongs to: the awaited file must be the one
+      // matches() will read, and the result must not be applied to another tab.
+      const collection = state.collection;
       if (value) {
-        try { await ensureDetails(state.collection); } catch (e) { console.error(e); }
-        if (seq !== searchSeq) return; // a newer keystroke already won
+        try { await ensureDetails(collection); } catch (e) { console.error(e); }
+        // Bail if a newer keystroke, a filter reset, or a tab switch happened
+        // while the fetch was in flight.
+        if (seq !== _searchSeq || collection !== state.collection) return;
       }
       state.filters.search = value;
       applyFilters();
     }, SEARCH_DEBOUNCE_MS);
   };
   document.querySelectorAll(".search-input").forEach((input) =>
-    input.addEventListener("input", (e) => {
-      // Keep the hero box and the rail box showing the same query.
-      syncSearchInputs(e.target.value, e.target);
-      onSearch(e.target.value);
-    })
+    input.addEventListener("input", (e) => onSearch(e.target.value))
   );
 
   // A3 — sort control. Pure client-side reorder of the current result set.
