@@ -173,6 +173,12 @@
         <button id="filters-toggle" class="btn-secondary filters-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
         <span class="result-count" id="result-count" aria-live="polite">Loading…</span>
         <span class="toolbar-spacer"></span>
+        <!-- A3 view toggle — desktop/tablet only; JS hides it below 640px, where
+             the ledger falls back to the stream. -->
+        <div class="view-toggle" id="view-toggle" role="group" aria-label="View">
+          <button type="button" class="view-btn" data-view="stream" aria-pressed="true">Stream</button>
+          <button type="button" class="view-btn" data-view="ledger" aria-pressed="false">Ledger</button>
+        </div>
         <label class="sort-label" for="sort">Sort</label>
         <select id="sort" class="sort-select"></select>
         <!-- Mobile-only (CSS): the bar is fixed to the bottom there, so back-to-top
@@ -183,6 +189,17 @@
       <!-- A5 theme drill-down: renders when exactly one theme filter is active. -->
       <section id="theme-panel" class="theme-panel" aria-label="About this issue" hidden></section>
       <div id="stream" class="stream"></div>
+      <!-- A3 Ledger: the analyst scan mode. Same data + filters + sort as the
+           stream; a row click deep-links back to its card, where the thread is. -->
+      <div id="ledger" class="ledger-wrap" hidden>
+        <table class="ledger">
+          <caption class="sr-only">Audit reports matching the current filters, one row per report. Select a row to open its findings.</caption>
+          <thead id="ledger-head"></thead>
+          <tbody id="ledger-body"></tbody>
+        </table>
+      </div>
+      <!-- Paging trigger — after BOTH renderers, so it is always below the live one. -->
+      <div id="stream-sentinel" class="stream-sentinel" aria-hidden="true"></div>
       <p id="empty-state" class="empty-state" hidden><span id="empty-msg">No reports match these filters.</span> <button type="button" id="empty-reset" class="link-btn">Clear filters</button></p>
     </main>
   </div>

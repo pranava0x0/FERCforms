@@ -209,10 +209,22 @@ function renderCollectionSurfaces() {
   renderTrends();
 }
 
+/* A3 — the view toggle mirrors state.view, and hides itself where the ledger
+   isn't offered (below 640px the ledger renders as the stream). */
+function syncViewToggle() {
+  const host = document.getElementById("view-toggle");
+  if (!host) return;
+  host.hidden = !ledgerAvailable();
+  host.querySelectorAll(".view-btn").forEach((b) =>
+    b.setAttribute("aria-pressed", b.dataset.view === state.view ? "true" : "false")
+  );
+}
+
 /* Reflect the restored state back into the controls, so a deep link doesn't show
    a filtered stream above an empty-looking filter rail. */
 function syncControlsToState() {
   setSearchInputs(state.filters.search);
+  syncViewToggle();
   const sortSel = document.getElementById("sort");
   if (sortSel) sortSel.value = state.sort;
   document.querySelectorAll("[data-group][data-value]").forEach((c) => {
@@ -1106,21 +1118,102 @@ function cardNode(r) {
   return card;
 }
 
+/* The ledger's header row is rendered from LEDGER_COLUMNS (never hand-listed —
+   DESIGN.md §12.4: anything enumerating a fixed list iterates the source array,
+   or the header and the cells drift apart). */
+function renderLedgerHead() {
+  const head = document.getElementById("ledger-head");
+  if (!head || head.childElementCount) return; // static across renders
+  head.replaceChildren(
+    el("tr", {}, LEDGER_COLUMNS.map((c) =>
+      el("th", { scope: "col", class: c.numeric ? "lg-num" : null, text: c.label })
+    ))
+  );
+}
+
+/* ---------- ledger view (A3) ---------- */
+/* The analyst scan mode: one row per report, ~10x cheaper than a card and ~5x
+   denser. Same baked data, same filters, same sort — only the renderer differs.
+   Desktop/tablet only: below 640px it falls back to the stream, so there is one
+   renderer per viewport class rather than two DOM trees (DESIGN.md §6).
+   Clicking a row deep-links (A1) to the stream card, which is where the verbatim
+   thread lives — the ledger is for finding the row, not reading it. */
+const LEDGER_MIN_WIDTH = 640;
+const ledgerAvailable = () => window.innerWidth >= LEDGER_MIN_WIDTH;
+const useLedger = () => state.view === "ledger" && ledgerAvailable();
+
+const LEDGER_COLUMNS = [
+  { key: "issued", label: "Issued", cell: (r) => el("td", { class: "lg-date", text: fmtDate(r.issued_date, true) }) },
+  { key: "company", label: "Company", cell: (r) => el("td", { class: "lg-co", text: r.company }) },
+  { key: "docket", label: "Docket", cell: (r) => el("td", { class: "lg-docket", text: r.docket_full || r.docket || "—" }) },
+  // Density is the whole point of this view, so the type is the SHORT form here
+  // ("FA"/"PA", not "Non-financial (PA)", which wraps to three lines and triples
+  // the row height). The full label rides in the title attribute.
+  {
+    key: "type", label: "Type",
+    cell: (r) => {
+      const full = r.doc_type ? cap(r.doc_type) : (_ABBR[r.audit_type] || r.audit_type || "—");
+      const short = r.audit_type === "financial" ? "FA" : r.audit_type === "non-financial" ? "PA" : full;
+      return el("td", { class: "lg-type", title: full, text: short });
+    },
+  },
+  {
+    key: "findings", label: "Findings", numeric: true,
+    cell: (r) => el("td", { class: "lg-num" }, [
+      r.finding_count > 0
+        ? el("span", { text: String(r.finding_count) })
+        : el("span", { class: "muted-cell", text: r.structured === false ? "ref." : "0" }),
+    ]),
+  },
+  // F2 again: no recs parsed is not "0 recommendations" — show a dash, not a zero.
+  { key: "recs", label: "Recs", numeric: true, cell: (r) => el("td", { class: "lg-num", text: r.rec_count > 0 ? String(r.rec_count) : "—" }) },
+  { key: "amount", label: "$", numeric: true, cell: (r) => el("td", { class: "lg-num lg-amt", text: fmtAmount(r.amount_max) || "—" }) },
+  {
+    key: "themes", label: "Issues",
+    cell: (r) => el("td", { class: "lg-themes" }, [
+      el("span", { class: "lg-theme-text", title: (r.themes || []).join(" · "), text: (r.themes || []).slice(0, 2).join(" · ") || "—" }),
+      (r.themes || []).length > 2 ? el("span", { class: "lg-more", text: ` +${r.themes.length - 2}` }) : null,
+    ]),
+  },
+];
+
+function ledgerRow(r) {
+  const tr = el("tr", { class: "lg-row" + (r.cost_to_customers ? " has-cost" : ""), tabindex: "0", "data-id": r.id });
+  LEDGER_COLUMNS.forEach((c) => tr.appendChild(c.cell(r)));
+  const open = () => {
+    state.view = "stream";      // the thread lives in the stream
+    state.open = r.id;
+    applyFilters();
+    syncUrl(true);
+    revealOpenReport();
+  };
+  tr.addEventListener("click", open);
+  tr.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+  });
+  return tr;
+}
+
 /* ---------- render stream ---------- */
 /* B1 — the stream appends cards in pages behind an IntersectionObserver sentinel
    rather than rendering every match at once (123 cards on the FERC tab produced
    multi-second blank frames). Filtering stays whole-corpus, so the result count
    is always exact — only the DOM append is chunked. */
 const PAGE_SIZE = 20;
+const LEDGER_PAGE_SIZE = 60; // rows are ~10x cheaper than cards
 const _render = { visible: [], shown: 0, observer: null, sentinel: null };
 
 function appendPage() {
-  const stream = document.getElementById("stream");
-  const next = _render.visible.slice(_render.shown, _render.shown + PAGE_SIZE);
+  const ledger = useLedger();
+  // Rows go in the <tbody>; cards go straight in the stream container.
+  const host = ledger ? document.getElementById("ledger-body") : document.getElementById("stream");
+  if (!host) return;
+  const size = ledger ? LEDGER_PAGE_SIZE : PAGE_SIZE;
+  const next = _render.visible.slice(_render.shown, _render.shown + size);
   if (!next.length) return;
   const frag = document.createDocumentFragment();
-  next.forEach((r) => frag.appendChild(cardNode(r)));
-  stream.appendChild(frag);
+  next.forEach((r) => frag.appendChild(ledger ? ledgerRow(r) : cardNode(r)));
+  host.appendChild(frag);
   _render.shown += next.length;
   if (_render.shown >= _render.visible.length) {
     // Everything rendered — retire the sentinel so the observer stops firing.
@@ -1131,14 +1224,24 @@ function appendPage() {
 
 function renderStream(visible) {
   const stream = document.getElementById("stream");
+  const ledger = document.getElementById("ledger");
+  const asLedger = useLedger();
   _render.visible = visible;
   _render.shown = 0;
-  stream.replaceChildren();
 
-  if (!_render.sentinel) {
-    _render.sentinel = el("div", { class: "stream-sentinel", "aria-hidden": "true" });
-    stream.after(_render.sentinel);
-  }
+  // One renderer is live at a time; the other is emptied so it can't hold a stale
+  // (and invisibly tall) DOM tree.
+  stream.replaceChildren();
+  document.getElementById("ledger-body").replaceChildren();
+  stream.hidden = asLedger;
+  ledger.hidden = !asLedger;
+  renderLedgerHead();
+
+  // The sentinel is a static element that sits AFTER both containers, so it is
+  // always below whichever renderer is live. (Anchoring it to #stream would put
+  // it above the ledger table, where it intersects immediately and pages the
+  // whole result set in one go.)
+  _render.sentinel = document.getElementById("stream-sentinel");
   _render.sentinel.hidden = false;
 
   if (!_render.observer && "IntersectionObserver" in window) {
@@ -1319,6 +1422,25 @@ function wireChrome() {
 
   document.getElementById("reset-filters").addEventListener("click", resetFilters);
   document.getElementById("empty-reset").addEventListener("click", resetFilters);
+
+  // A3 — view toggle. `state.view` persists in the URL even below 640px (where
+  // useLedger() falls back to the stream), so a ledger link opened on a phone
+  // reads as the stream and returns to the ledger on a desktop.
+  document.querySelectorAll(".view-btn").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      state.view = btn.dataset.view;
+      syncViewToggle();
+      applyFilters();
+      syncUrl(true);
+    })
+  );
+  // The toggle is meaningless below the ledger breakpoint — hide it there, and
+  // re-render if a resize crosses the line while the ledger is selected.
+  const ledgerMQ = matchMedia(`(min-width: ${LEDGER_MIN_WIDTH}px)`);
+  ledgerMQ.addEventListener("change", () => {
+    syncViewToggle();
+    if (state.view === "ledger") applyFilters();
+  });
 
   // A4 — search WITHIN the company facet. Re-renders the chip list only; it does
   // not filter the stream (that's what picking a chip does).
