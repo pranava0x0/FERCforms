@@ -1,6 +1,6 @@
 # Spec — Analyst-grade UX, interaction model & visual identity refresh
 
-> **Status: Phase 1 SHIPPED 2026-07-16 (`c498b53`); Phases 2–4 open.** Written 2026-07-16.
+> **Status: Phase 1 SHIPPED 2026-07-16 (`c498b53`); Phase 2 BUILT, pending the user's visual sign-off; Phases 3–4 open.** Written 2026-07-16.
 > Backlog placeholder: BACKLOG.md → "Design / UI". Per-phase status is recorded at the bottom
 > (see "Phasing, effort, acceptance"); F-numbered findings fixed in Phase 1 are struck through in §0.
 > Evaluated from two personas — a **FERC/regulatory analyst** (works with dockets daily, cites sources,
@@ -530,10 +530,34 @@ stream looks stuck at 20 cards even when it is correct. Verified with Playwright
 cards page in, sentinel retires, thread lazy-loads, no page errors). See AGENTS.md → "Verifying
 changes".
 
-**Phase 2 — Identity refresh (1 session, pure CSS/markup + token test).**
+**Phase 2 — Identity refresh (1 session, pure CSS/markup + token test). ✅ BUILT 2026-07-16 — awaiting the user's "doesn't feel like Claude" check.**
 C1 palette + contrast script · C2 type treatment · C3 surface language · B4 pill-size/contrast fixes.
 *Acceptance:* zero hardcoded hex outside `:root`; contrast test green both themes; before/after
 screenshots at 375/768/1280 reviewed by the user (the "doesn't feel like Claude" check is theirs).
+
+*Result:* `tests/test_palette.py` (+42 tests, 188 → 230) parses the token blocks and asserts every
+text/bg pair ≥4.5:1 in **both** themes, no hardcoded hex outside `:root`/`[data-theme]`, five
+distinct categorical tokens, and ≥45° hue distance between every semantic hue and the brand accent
+— the F15 guard expressed as the *rule* rather than as a hex, so it survives a future re-palette.
+Screenshots captured at 375/768/1280 × light/dark, before and after.
+
+*Three things the automated check caught that the manual pass had missed:*
+- **White-on-accent was already broken in dark mode.** `--accent` is *light* periwinkle there, so
+  the `#fff` in `.pill.solid` and the skip link measured **2.73:1**. Fixed via an `--on-accent`
+  token (5.37:1 light / 6.8:1 dark). Same class of bug for filled semantic stamps → `--on-status`.
+- **This spec's own `#A8690A` fails AA** (4.48:1 on white) despite the C1 table annotating it "AA on
+  paper". Shipped `#A2650A` (4.77:1) — same ochre, actually passes.
+- **`--accent` on `--accent-weak` is 4.40:1**, so the selected tab *label* now uses `--accent-hover`
+  (5.65:1); the brand-mark pylon keeps `--accent` there because it's a non-text icon (WCAG 1.4.11 →
+  3:1, which it clears).
+
+*Deltas:* C3 says the findings-count stamp fills — it fills with **ink**, not periwinkle, because C1
+reserves the accent for chrome/interaction/selection, and a brand-filled count is the single loudest
+"this is a product UI" cue on the card. The same reasoning retired `--accent-line` from the chart
+bars in favour of `--cat-1…5`: a bar encodes data, so brand colour there makes magnitude read as
+chrome. Periwinkle returns on a pattern bar only in its *pressed* (selected) state, which is chrome.
+C2's self-hosted-serif decision gate stays **deferred** — the restyle is doing the work without a
+font download, so the gate hasn't been triggered.
 
 **Phase 3 — Share, lenses & the CTA build-out (1–2 sessions).**
 A1 URL state/permalinks · A3 Ledger view · A4 company lens (+ cross_links decision) · A5 theme

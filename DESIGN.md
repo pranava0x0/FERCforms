@@ -304,69 +304,60 @@ This is a **public-record tool that reads like a feed.** FERC audit reports are 
 - **Google Wave (the "threaded" part)** — a report expands **in place into a thread**: the report is the root "wave," each **finding** is a post in the thread, and each finding's **recommendation / company response** is a nested reply. This is the "stream + threaded" model the project is built around.
 - **Restraint underneath the playfulness.** Tabular numerals, verbatim quotes, a citation to the source PDF on every card. The retro-Google warmth is in the chrome (rounded cards, soft periwinkle, gentle motion) — never in the data.
 
-### 15.2 Palette — periwinkle
+### 15.2 Palette — periwinkle, derived by hue relationship
 
-Periwinkle is the **brand/accent** family. Keep it out of the semantic (status) family per [§3.1](#31-semantic-separation). All values are CSS custom properties on `:root`; JS reads via `getComputedStyle()`.
+Periwinkle (**hue 240°**) is the **brand/accent** family, and its usage is strict: **chrome,
+interaction, and selection only.** Findings/recs/status/money never borrow it — a dollar figure in
+accent reads as a link, and a "flagged" marker in accent reads as brand chrome ([§3.1](#31-semantic-separation)).
+Every other colour is derived from the anchor by a deliberate hue relationship, so the palette is
+reproducible rather than taste:
 
-```css
-:root {
-  /* Brand / surface — periwinkle-tinted neutrals */
-  --bg:          #F4F4FB;   /* page: faintest periwinkle wash */
-  --surface:     #FFFFFF;   /* cards, panels */
-  --surface-2:   #ECECF8;   /* inputs, secondary surfaces, hover fills */
-  --border:      #DEDEF1;
-  --text:        #1B1B2E;   /* deep indigo-charcoal, ~13:1 on --surface */
-  --text-muted:  #63637E;   /* ~5.0:1 on --surface */
+| Role | Hue logic | Light | Dark |
+|---|---|---|---|
+| Brand accent | anchor 240° | `#5B5BD6` | `#9393F2` |
+| Ink / paper / hairline | anchor-tinted neutrals | `#191930` / `#F5F5FB` / `#D9D9EC` | `#ECECF6` / `#12121E` / `#31314A` |
+| **Finding** | **near-complement ≈38°** (amber-ochre) — max hue distance from brand, so "flagged" reads instantly | `#A2650A` | `#E3A84E` |
+| **Recommendation** | **split-complement ≈185°** (teal) | `#0E7A83` | `#5BC4CE` |
+| Resolved | triadic ≈150° (green) | `#20794D` | `#6FC795` |
+| Categorical (`--cat-1…5`) | even-spaced 240/185/38/300/150, ~45% sat — sits *between* brand and semantic saturation | periwinkle · teal · ochre · violet · green | lightened equivalents |
+| Money | **ink + mono tabular numerals, NO hue** | `--text` | `--text` |
 
-  /* Accent — periwinkle */
-  --accent:        #5B5BD6; /* CTAs, links, focus ring (white text ~4.7:1) */
-  --accent-hover:  #4A4AC2;
-  --accent-weak:   #E7E7FB; /* active facet bg, +1 pressed wash */
-  --accent-line:   #C7C7F0; /* thread connector lines, left rails */
+Live values: `docs/css/styles.css` `:root` / `[data-theme="dark"]`. Two tokens exist purely to make
+filled surfaces legible in both themes — **`--on-accent`** and **`--on-status`** (see below).
 
-  /* Semantic — meaning, NOT brand (keep distinct from periwinkle) */
-  --status-finding:  #B7791F; /* noncompliance finding (amber) */
-  --status-rec:      #2F73C4; /* staff recommendation (steel blue) */
-  --status-resolved: #2E7D52; /* implemented / closed (green) */
-}
+**The contrast check is automated, not manual — `tests/test_palette.py`.** It parses the token
+blocks, computes WCAG ratios for every text/bg pair the UI actually renders, and asserts ≥4.5:1 in
+**both** themes; it also fails on any hardcoded hex outside the token blocks and on a semantic hue
+drifting within 45° of the brand accent. Scars it encodes:
 
-[data-theme="dark"] {
-  --bg:          #131320;
-  --surface:     #1D1D2C;
-  --surface-2:   #262639;
-  --border:      #32324A;
-  --text:        #ECECF6;
-  --text-muted:  #9D9DBA;
-  --accent:        #9393F2; /* lighter periwinkle for dark bg */
-  --accent-hover:  #A6A6F6;
-  --accent-weak:   #2A2A48;
-  --accent-line:   #3C3C5E;
-  --status-finding:  #E0A85A;
-  --status-rec:      #6BA6E8;
-  --status-resolved: #6FC795;
-}
-```
-
-Contrast check is non-negotiable ([§9](#9-accessibility-baseline)): verify every text/bg pair ≥ 4.5:1 in both themes. `--accent` is for fills + focus, not body text on white.
+- **White-on-accent is a dark-mode bug.** `--accent` is *light* periwinkle on dark, so `#fff` on it
+  is **2.73:1** — this is exactly how `.pill.solid` and the skip link shipped. Filled accent takes
+  `--on-accent` (white on light, near-black on dark: 5.37:1 / 6.8:1). Same for `--on-status`: the
+  dark semantic hues are light, so a filled stamp needs dark ink.
+- **Reference values can be wrong.** The amber `#A8690A` this section originally specced measures
+  **4.48:1** on white — just under AA despite being annotated "AA on paper". Shipped `#A2650A`
+  (4.77:1). Don't trust an eyeballed hex; run the test.
+- **Text on `--accent-weak` must use `--accent-hover`**, not `--accent` (4.40:1 — under AA). The
+  brand-mark pylon may use `--accent` there because it's a non-text icon (1.4.11 → 3:1).
 
 ### 15.3 The stream card (collapsed)
 
 One card = one audit report. Anatomy, top to bottom:
 
-1. **Source line** (the "author" row): company name (title-cased from CAPS source — see [§11](#11-editorial--content-rules)), a periwinkle company avatar/monogram, then muted meta: `Docket No. · Issued YYYY-MM-DD`.
-2. **Headline**: serif, the report subject / audited program.
-3. **Finding chips**: outline pills — `N findings`, top finding categories. Pills follow [§8.2](#82-pills); category pills use category tokens, never status tokens.
-4. **Action bar** (Google+ analogue, periwinkle): **Open thread** (expand), **Source PDF** (cite — links to the FERC PDF), **Copy citation**. Touch targets ≥ 44px.
+1. **Source line** (the "author" row): company name (title-cased from CAPS source — see [§11](#11-editorial--content-rules)), a **square monogram plate** with a serif initial, then muted meta: `Docket No. · Issued Mon D, YYYY`. A *circle* avatar is social-feed furniture; a square plate reads as a record stamp. The docket is **mono + `user-select: all`** — it's an identifier analysts copy, and it's the cheapest "records tool, not chatbot" signal in the whole UI.
+2. **Headline**: serif, the report subject / audited program — composed mechanically from stated fields (audit type + period, or doc type), never a paraphrase of a finding.
+3. **Stamps**, not pastel pills: uppercase, letterspaced, 1px-bordered, radius 3 (see [§8.2](#82-pills)). Outline by default; **only the two semantic states fill** (finding amber, resolved green), so a filled stamp always means something. The findings count fills with *ink*, not brand. Theme chips are outline taxonomy tags. A `$` rollup is mono ink.
+4. **Action bar**: the whole summary toggles the thread; **Source PDF**, **Copy citation**, **See an issue? Report it** live in the thread footer. Touch targets ≥ 44px.
 
-`background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px;` Rest shadow `0 1px 2px rgba(27,27,46,.06)`; hover `0 4px 18px rgba(91,91,214,.14)` (periwinkle-tinted).
+`background: var(--surface); border: 1px solid var(--rule); border-radius: 8px;` — **hairlines over boxes, and no resting shadow**: shadow appears only on hover/open. Radius 12 → 8 (a record, not a bubble). A ratepayer-harm card carries a 3px amber left edge tick.
 
 ### 15.4 The thread (expanded)
 
 Expanding a card reveals the Wave-style thread **inline** (no full-page nav — preserves the browse loop, [§7](#7-mobile-patterns)):
 
 - **Root** = the report summary (scope, period audited, overall conclusion).
-- **Finding posts** = each finding, indented under the root with a `--accent-line` connector. Each shows: a `Finding` status dot (`--status-finding`), the verbatim finding text (quoted, never paraphrased — [AGENTS.md](AGENTS.md)), and the citation (page/section).
-- **Reply** = the staff **recommendation** and any company response, nested one level deeper with a `--status-rec` dot.
+- **Finding posts** = each finding, separated by a full-width `--rule` hairline and indented under the root with a `--accent-line` connector (the connector stays periwinkle — it's chrome, not meaning). Each shows: a `Finding` status dot (`--status-finding`), a **serif** finding title (the content is editorial; the chrome stays sans), the verbatim finding text (quoted, never paraphrased — [AGENTS.md](AGENTS.md)), and the citation (page/section).
+- **Reply** = the staff **recommendation** and any company response, nested one level deeper with a `--status-rec` (teal) dot. Teal, not the old steel blue: at dot/pill size a 212° blue read as the 240° brand accent, so "staff recommendation" looked like a link.
 - Use the native `<details>`/`<summary>` primitive for expand/collapse where possible ([§7](#7-mobile-patterns)) — keyboard- and screen-reader-friendly, no JS re-render.
 
 ### 15.5 Layout & motion

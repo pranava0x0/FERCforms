@@ -1,50 +1,86 @@
-/* FERC Audit Explorer — periwinkle + Google+ "stream + threaded" (DESIGN.md §15) */
+/* FERC Audit Explorer — "public record, periwinkle" (DESIGN.md §15; spec Part C).
+   The treatment is a regulatory ledger, not a pastel feed: hairlines over boxes,
+   stamps over pills, restraint over palette. Every colour below is derived from
+   the periwinkle anchor by a deliberate hue relationship — see the spec's C1
+   table. Contrast for every text/bg pair is asserted by tests/test_palette.py, so
+   changing a value here without re-running the suite will fail loudly. */
 
 :root {
-  /* Brand / surface — periwinkle-tinted neutrals */
-  --bg: #f4f4fb;
+  /* ---- Brand / surface: periwinkle-tinted neutrals (anchor hue 240°) ---- */
+  --bg: #f5f5fb;          /* paper: 3–4% anchor wash — cool, never warm cream */
   --surface: #ffffff;
-  --surface-2: #ececf8;
-  --border: #dedef1;
-  --text: #1b1b2e;
-  --text-muted: #63637e;
+  --surface-2: #ececf6;
+  --border: #d9d9ec;
+  --rule: #d9d9ec;        /* hairline — the primary separator (C3) */
+  --text: #191930;        /* ink: anchor-tinted near-black, deeper for ledger contrast */
+  --text-muted: #5c5c78;
 
-  /* Accent — periwinkle */
+  /* ---- Accent — periwinkle. Chrome, interaction, selection ONLY (C1). ----
+     Findings/recs/status never borrow it, or "flagged" reads as "link". */
   --accent: #5b5bd6;
   --accent-hover: #4a4ac2;
   --accent-weak: #e7e7fb;
   --accent-line: #c7c7f0;
+  --on-accent: #ffffff;   /* text on a filled accent (5.37:1) */
 
-  /* Semantic — meaning, not brand */
-  --status-finding: #b7791f;
-  --status-rec: #2f73c4;
-  --status-resolved: #2e7d52;
+  /* ---- Semantic — meaning, not brand (DESIGN.md §3.1) ----
+     finding = near-complement (≈38°) → maximum hue distance from brand, so
+     "flagged" reads instantly. rec = split-complement teal (≈185°), moved off
+     the old 212° steel blue that collided with the 240° anchor (F15).
+     NB the spec's #a8690a measures 4.48:1 on white — just under AA. Darkened one
+     step to #a2650a (4.77:1); same ochre, actually passes. */
+  --status-finding: #a2650a;
+  --status-rec: #0e7a83;
+  --status-resolved: #20794d;
+  /* Filled-stamp foregrounds: paired with the semantic hue as background. */
+  --on-status: #ffffff;
+
+  /* ---- Categorical — distinguish without ranking (DESIGN.md §3.1).
+     Even-spaced around the wheel: 240 / 185 / 38 / 300 / 150, all ~45% sat, so
+     they sit visually BETWEEN brand and semantic saturation and never read as
+     status. Charts only. ---- */
+  --cat-1: #6f6fc4;
+  --cat-2: #3f8f96;
+  --cat-3: #b3853f;
+  --cat-4: #9a5fa8;
+  --cat-5: #4f8f6b;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Charter", "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 
-  --shadow-rest: 0 1px 2px rgba(27, 27, 46, 0.06);
+  --shadow-rest: 0 1px 2px rgba(25, 25, 48, 0.05);
   --shadow-hover: 0 4px 18px rgba(91, 91, 214, 0.14);
-  --radius: 12px;
+  --radius: 8px;          /* C3: 12 → 8 — a record, not a bubble */
 
   font-feature-settings: "tnum";
 }
 
 [data-theme="dark"] {
-  --bg: #131320;
+  --bg: #12121e;
   --surface: #1d1d2c;
   --surface-2: #26263a;
-  --border: #32324a;
+  --border: #31314a;
+  --rule: #31314a;
   --text: #ececf6;
-  --text-muted: #9d9dba;
+  --text-muted: #a2a2be;
   --accent: #9393f2;
   --accent-hover: #a6a6f6;
   --accent-weak: #2a2a48;
   --accent-line: #3c3c5e;
-  --status-finding: #e0a85a;
-  --status-rec: #6ba6e8;
+  /* On dark the accent is LIGHT periwinkle — white on it is 2.73:1 (this is how
+     .pill.solid and the skip link shipped). Filled accent takes dark ink: 6.8:1. */
+  --on-accent: #12121e;
+  --status-finding: #e3a84e;
+  --status-rec: #5bc4ce;
   --status-resolved: #6fc795;
+  /* On dark, the semantic hues are light — a filled stamp needs dark ink. */
+  --on-status: #12121e;
+  --cat-1: #9393f2;
+  --cat-2: #5bc4ce;
+  --cat-3: #e3a84e;
+  --cat-4: #c98fd6;
+  --cat-5: #6fc795;
   --shadow-rest: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-hover: 0 6px 22px rgba(0, 0, 0, 0.5);
 }
@@ -79,7 +115,7 @@ a:hover { color: var(--accent-hover); }
   left: -9999px;
   top: 0;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   padding: 8px 14px;
   border-radius: 0 0 8px 0;
   z-index: 100;
@@ -202,7 +238,9 @@ a:hover { color: var(--accent-hover); }
 }
 .tab:hover { background: var(--surface-2); color: var(--text); }
 .tab[aria-selected="true"] {
-  color: var(--accent);
+  /* -hover, not --accent: the label is text on --accent-weak, where plain
+     --accent measures 4.40:1 (under AA). See tests/test_palette.py. */
+  color: var(--accent-hover);
   border-color: var(--accent-line);
   border-bottom-color: var(--accent);
   background: var(--accent-weak);
@@ -327,8 +365,10 @@ a:hover { color: var(--accent-hover); }
 }
 .pattern-stat { font-size: 12px; color: var(--text-muted); }
 .pattern-count { font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
-.pattern-track { height: 5px; background: var(--surface-2); border-radius: 3px; overflow: hidden; margin-top: auto; }
-.pattern-bar { display: block; height: 100%; background: var(--accent-line); border-radius: 3px; }
+.pattern-track { height: 5px; background: var(--surface-2); border-radius: 2px; overflow: hidden; margin-top: auto; }
+/* The bar encodes DATA (report count), so it takes a categorical tone, not brand.
+   Periwinkle returns only for the pressed (selected) state — that IS chrome. */
+.pattern-bar { display: block; height: 100%; background: var(--cat-1); border-radius: 2px; }
 .pattern-card[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-weak); }
 .pattern-card[aria-pressed="true"] .pattern-bar { background: var(--accent); }
 
@@ -356,16 +396,25 @@ a:hover { color: var(--accent-hover); }
 .trend-cols { display: flex; align-items: flex-end; gap: 5px; height: 104px; }
 .trend-col { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 3px; }
 .trend-col-val { font-size: 10.5px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.trend-col-bar { width: 100%; max-width: 24px; min-height: 0; background: var(--accent-line); border-radius: 3px 3px 0 0; }
+/* One measure over time — a single categorical tone, not the brand accent. */
+.trend-col-bar { width: 100%; max-width: 24px; min-height: 0; background: var(--cat-1); border-radius: 2px 2px 0 0; }
 .trend-col-yr { font-size: 10px; color: var(--text-muted); white-space: nowrap; }
 
 /* Horizontal bars — the few-category breakdowns. */
 .trend-rows { display: flex; flex-direction: column; gap: 9px; }
 .trend-row { display: grid; grid-template-columns: 88px minmax(0, 1fr) auto; align-items: center; gap: 8px; }
 .trend-row-label { font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.trend-track { height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
-.trend-bar { display: block; height: 100%; background: var(--accent-line); border-radius: 4px; }
-.trend-row-val { font-size: 12px; color: var(--text-muted); font-variant-numeric: tabular-nums; min-width: 22px; text-align: right; }
+.trend-track { height: 8px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+.trend-bar { display: block; height: 100%; background: var(--cat-1); border-radius: 2px; }
+/* Category ≠ status (DESIGN.md §3.1): electric/gas/oil and the function
+   breakdown are distinguished, never ranked. Assigned by index in renderTrends. */
+.trend-bar.cat-1 { background: var(--cat-1); }
+.trend-bar.cat-2 { background: var(--cat-2); }
+.trend-bar.cat-3 { background: var(--cat-3); }
+.trend-bar.cat-4 { background: var(--cat-4); }
+.trend-bar.cat-5 { background: var(--cat-5); }
+/* C3 — values at the bar ends, in mono. */
+.trend-row-val { font-family: var(--font-mono); font-size: 11.5px; color: var(--text); font-variant-numeric: tabular-nums; min-width: 22px; text-align: right; }
 .trend-note { margin: 9px 0 0; font-size: 10.5px; line-height: 1.4; color: var(--text-muted); }
 
 @media (max-width: 1023px) {
@@ -529,15 +578,15 @@ a:hover { color: var(--accent-hover); }
 /* ---------- Stream / cards ---------- */
 .stream { display: flex; flex-direction: column; gap: 14px; }
 
+/* C3 — hairlines over boxes: no resting shadow, shadow only on hover/open. */
 .card {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-rest);
   overflow: hidden;
   transition: box-shadow 120ms ease, border-color 120ms ease;
 }
-.card[open] { border-color: var(--accent-line); }
+.card[open] { border-color: var(--accent-line); box-shadow: var(--shadow-rest); }
 .card:hover { box-shadow: var(--shadow-hover); }
 
 .card-summary {
@@ -553,14 +602,17 @@ a:hover { color: var(--accent-hover); }
 .card.has-cost { border-left: 3px solid var(--status-finding); }
 
 .source-line { display: flex; align-items: flex-start; gap: 10px; }
+/* C3 — a square plate with a serif initial, not a circle avatar. A circle avatar
+   is social-feed furniture; a square monogram reads as a record stamp. */
 .avatar {
-  width: 36px; height: 36px; flex: none;
-  border-radius: 50%;
-  background: var(--accent-weak);
-  color: var(--accent-hover);
+  width: 34px; height: 34px; flex: none;
+  border-radius: 3px;
+  background: var(--surface-2);
+  color: var(--text-muted);
   display: grid; place-items: center;
-  font-weight: 700; font-size: 15px;
-  border: 1px solid var(--accent-line);
+  font-family: var(--font-serif);
+  font-weight: 700; font-size: 16px;
+  border: 1px solid var(--rule);
 }
 .source-meta { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 1px; }
 .company { font-weight: 600; font-size: 15px; }
@@ -589,33 +641,44 @@ a:hover { color: var(--accent-hover); }
 .thread-pending { padding: 14px 16px; font-size: 13px; }
 .thread-pending p { margin: 0; }
 
+/* ---------- Stamps (C3) ----------
+   Status markers are "stamps", not pastel pills: uppercase, letterspaced, square-ish,
+   1px-bordered. Outline is the default; only the two SEMANTIC states fill (finding
+   amber, resolved green), so a filled stamp always means something. This is what
+   kills the pastel-pill field that read as "AI dashboard" (F14). */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .pill {
   /* B4 — 10.5px was below a comfortable reading minimum. */
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 600;
-  padding: 2px 8px;
-  border-radius: 999px;
-  letter-spacing: 0.02em;
+  padding: 2px 7px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
   white-space: nowrap;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
 }
-.pill.solid { background: var(--accent); color: #fff; }
-.pill.outline { border: 1px solid var(--border); color: var(--text-muted); }
-.pill.kind { border: 1px solid var(--accent-line); color: var(--accent-hover); }
-.pill.func { background: var(--surface-2); color: var(--text-muted); text-transform: capitalize; }
-.pill.muted { border: 1px solid var(--border); color: var(--text-muted); background: var(--surface-2); }
+/* The findings count is the card's headline fact — filled, but in ink-on-paper
+   terms, not brand: periwinkle stays chrome (C1). */
+.pill.solid { background: var(--text); color: var(--bg); border-color: var(--text); }
+.pill.outline { color: var(--text-muted); }
+.pill.kind { color: var(--text); border-color: var(--text-muted); }
+.pill.func { color: var(--text-muted); }
+.pill.muted { color: var(--text-muted); border-style: dashed; }
 /* Money is data, not status: ink + mono tabular numerals, no hue (spec C1). */
 .pill.amount {
-  border: 1px solid var(--border);
   color: var(--text);
   font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
   cursor: help;
 }
-/* The ratepayer-harm axis — one hue, filled badge (matches the card edge tick). */
+/* The ratepayer-harm axis — one hue, filled (matches the card edge tick). */
 .pill.cost {
   background: var(--status-finding);
-  color: var(--surface);
+  color: var(--on-status);
+  border-color: var(--status-finding);
   cursor: help;
 }
 
@@ -633,10 +696,12 @@ a:hover { color: var(--accent-hover); }
 .thread-root dd { margin: 0; }
 .muted-cell { color: var(--text-muted); font-style: italic; }
 
+/* C3 — full-width hairlines between findings (the left connector stays periwinkle;
+   it's chrome, not meaning). */
 .finding {
   position: relative;
   padding: 12px 0 12px 20px;
-  border-top: 1px dashed var(--border);
+  border-top: 1px solid var(--rule);
 }
 .finding::before {
   content: "";
@@ -650,31 +715,39 @@ a:hover { color: var(--accent-hover); }
 .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; position: relative; top: 3px; margin-left: -20px; }
 .dot.finding-dot { background: var(--status-finding); }
 .dot.other-dot { background: var(--text-muted); }
-.finding-title { font-weight: 600; font-size: 14.5px; }
-.finding-flag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+/* C2 — finding titles go SERIF: the content becomes editorial while the chrome
+   stays sans. This is the single clearest "these are documents, not UI" signal. */
+.finding-title { font-family: var(--font-serif); font-weight: 700; font-size: 15px; }
+.finding-flag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); }
 .finding-summary { margin: 6px 0 0; font-size: 13.5px; color: var(--text); }
 
 /* Per-finding taxonomy tags + the ratepayer-harm ("cost to customers") badge. */
 .finding-tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0 0; }
+/* Theme tags stay quiet — they're taxonomy, not status. Outline, no fill. */
 .finding-tag {
-  font-size: 10.5px;
+  font-size: 11px;
   line-height: 1.45;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: var(--surface-2);
+  padding: 1px 7px;
+  border-radius: 3px;
+  background: transparent;
   color: var(--text-muted);
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
 }
 .finding-tag.cost-tag {
   background: transparent;
   color: var(--status-finding);
   border-color: var(--status-finding);
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
+/* C1 — money is data, not status: ink + mono, no hue. It used to borrow the
+   brand accent, which made a dollar figure look like a link. */
 .finding-tag.amount-tag {
   background: transparent;
-  color: var(--accent, var(--status-finding));
-  border-color: currentColor;
+  color: var(--text);
+  border-color: var(--text-muted);
+  font-family: var(--font-mono);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.01em;
@@ -783,7 +856,7 @@ a:hover { color: var(--accent-hover); }
     min-height: 44px;
     padding: 8px 18px;
     background: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     border: 0;
     border-radius: 8px;
     cursor: pointer;

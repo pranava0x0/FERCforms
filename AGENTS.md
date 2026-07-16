@@ -131,6 +131,15 @@ with sync_playwright() as p:
 The panes are still the right tool for DOM/text/state assertions (`get_page_text`, `read_page`,
 `javascript_tool`) and for static screenshots — just not for anything gated on the page painting.
 
+**Check that the files you think you committed are actually IN the commit** — `git log -1 --stat`.
+The repo's credential guards in `.gitignore` are broad globs (`*_token*`, `*_secret*`, `*_password*`,
+`oauth*.json`), and `git add -A` obeys them **silently**: no warning, no error, exit 0. On
+2026-07-16 `tests/test_tokens.py` — the whole point of the identity phase — was ignored by
+`*_token*` and dropped from its commit, whose message described it in detail; a fresh clone would
+have had 188 tests instead of 230 and no contrast guard at all. **Never weaken the glob** (it exists
+to stop real credentials); **rename the file** (`tests/test_palette.py`) and move on. Anything named
+`*token*`, `*secret*`, or `*password*` in this repo is presumed to be a credential.
+
 **For data changes**, diff the canonical output (`docs/data/*.json` or equivalent) and skim the diff before committing. A 30-second skim catches regressions tests miss (especially around character encoding, pretty-printer drift, and unintended fields).
 
 ---

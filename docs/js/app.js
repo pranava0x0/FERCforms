@@ -492,13 +492,19 @@ function trendColumns(title, unit, entries) {
   ]);
 }
 
-/* A horizontal bar chart — used for the few-category breakdowns. */
+/* A horizontal bar chart — used for the few-category breakdowns.
+   Each row takes a categorical tone (C1): these are categories, not statuses, so
+   they're distinguished without ranking and never borrow the brand or semantic
+   palettes. Cycles at 5 — no breakdown here has more rows than that. */
+const CAT_CLASSES = 5;
 function trendBars(title, unit, entries, note) {
   const max = Math.max(1, ...entries.map(([, v]) => v));
-  const rows = entries.map(([label, v]) =>
+  const rows = entries.map(([label, v], i) =>
     el("div", { class: "trend-row", role: "listitem", "aria-label": `${label}: ${v} ${unit}`, title: `${label}: ${v} ${unit}` }, [
       el("span", { class: "trend-row-label", text: label }),
-      el("span", { class: "trend-track", "aria-hidden": "true" }, [el("span", { class: "trend-bar", style: `width:${Math.round((v / max) * 100)}%` })]),
+      el("span", { class: "trend-track", "aria-hidden": "true" }, [
+        el("span", { class: `trend-bar cat-${(i % CAT_CLASSES) + 1}`, style: `width:${Math.round((v / max) * 100)}%` }),
+      ]),
       el("span", { class: "trend-row-val", text: String(v) }),
     ])
   );
