@@ -33,7 +33,9 @@ are marked ⊕; full descriptions in the sections below.
 10. **[high — large] Second module: forward-looking FERC dockets** + **[med] Form 1 financials via PUDL** / the Form 1 ETL — separate big-scope builds, not refresh increments. → *The bigger vision / FERC Form 1 Analysis*
 
 **P2.5 — user-facing (site) track, parallel to the data track:**
-10b. ⊕ **[high — Phase 1 DONE 2026-07-16; Phases 2–4 open] Analyst-grade UX + visual-identity refresh** — placeholder for the full phased spec in [docs/analyst-ux-identity-spec.md](docs/analyst-ux-identity-spec.md) (written 2026-07-16 from a FERC-analyst + general-energy-reader evaluation, emp.lbl.gov data-product research, and a 10-product comparative study — Violation Tracker/ECHO/EDGAR/ProPublica/CourtListener/LegiScan/OpenSecrets/PUDL/DOL/eLibrary — yielding an 11-job JTBD map, 6 core flows, and a per-surface CTA system with hero search + trust line + feeds). 4 phases: **(1) ✅ card info-scent + sort + incremental render + payload split + hero/entry layer — shipped**; (2) periwinkle "public record" identity (color-theory palette, stamp pills, ledger surfaces); (3) URL state/permalinks + Ledger view + company/theme lenses + data-downloads page + feeds + full CTA build-out; (4) dollar lens + annual "Edition" briefing (gated on amounts scale-out, P1 #4). → *Design / UI*
+10b. ⊕ **[high — Phases 1–3 SHIPPED (`bc169d8`, 2026-07-16); Phase 4 open] Analyst-grade UX + visual-identity refresh** — placeholder for the full phased spec in [docs/analyst-ux-identity-spec.md](docs/analyst-ux-identity-spec.md) (written 2026-07-16 from a FERC-analyst + general-energy-reader evaluation, emp.lbl.gov data-product research, and a 10-product comparative study — Violation Tracker/ECHO/EDGAR/ProPublica/CourtListener/LegiScan/OpenSecrets/PUDL/DOL/eLibrary — yielding an 11-job JTBD map, 6 core flows, and a per-surface CTA system with hero search + trust line + feeds). 4 phases: **(1) ✅ card info-scent + sort + incremental render + payload split + hero/entry layer**; **(2) ✅ periwinkle "public record" identity** (color-theory palette, stamp pills, ledger surfaces, contrast-guard tests); **(3) ✅ URL state/permalinks + Ledger view + company/theme lenses**; (4) open — dollar lens + annual "Edition" briefing (gated on amounts scale-out, P1 #4), A8 glossary/start-here, A9 coverage table. **UAT'd live 2026-08-09 (see Done section below): Phases 1–3 verified working via Playwright e2e (83 tests) + spot checks — no regressions found.** → *Design / UI*
+14. ✅ **[DONE 2026-08-09] Per-jurisdiction coverage transparency — extends A9.** Shipped as a collapsed-by-default "Coverage by jurisdiction" table (below the trends band, matching the "How to use this explorer" treatment) on every tab with >1 jurisdiction: state/report/finding counts sorted by finding_count desc, so thin (0-finding, metadata-only-by-design) states visually recede while PA/NY/NJ stand out. Pipeline: new `JurisdictionStat` model + `PatternsSummary.by_jurisdiction`, computed in `pipeline.patterns.summarize()`, baked per-collection into `patterns_by_collection.json`. Auto-hides on ferc_audit (single jurisdiction = nothing to show). Verified live with Playwright (desktop + mobile screenshots, both themes); see the Done section below for the mobile-overflow bug this UAT pass also caught and fixed. → *Design / UI*
+15. ✅ **[DONE 2026-08-09] Real CA ERRA-decision parser.** Turned out more feasible than scoped: every CPUC decision carries a formally-headed, sequentially-numbered "Findings of Fact" section — a genuine anchor, not prose to pattern-match. New `parse_ca_findings_of_fact` (anchored, bounded, numbering-validated, fail-closed) replaced the old marker-based parser entirely. **+37 findings** from the one currently-fetchable ERRA seed (2025 PG&E decision, D.25-06-007); the corpus's other 4 ERRA seeds are 2003-2010 HTML-only captures (`fetch: false`) — untested against this parser, likely need HTML extraction support first (separate, smaller follow-up if more ERRA decisions get seeded). See ISSUES.md 2026-08-09 for the full design writeup (including the "take every Finding of Fact, don't curate which ones read as newsworthy" call). → *Pipeline & data*
 
 **P4 — supporting / DX / lower (pull when adjacent):**
 11. ✅ **[DONE 2026-07-10] Reusable `verify-by-download` helper** — landed as `pipeline.verify_sources --live` + the reusable primitives `fetch_pdf_bytes` (stream-GET + 45 MB cap + browser-UA fallback), `company_tokens`, `content_match_fails`. Re-fetches every fetchable PDF and re-confirms it is STILL the claimed document (page-count == committed report + a company token present in the text), closing the gap where the offline sweep marks a `fetch=true` record PROVEN on the `page_count>0` shortcut without re-checking content. Caught the image-only CA UAB scans (0 extractable text) that would otherwise have shipped blind. Full corpus: 279 verified, 0 mismatches. → *Quality & testing*
@@ -41,6 +43,41 @@ are marked ⊕; full descriptions in the sections below.
 13. [low] absolute llms.txt URLs · per-report markdown pages · MBR-seller relabel of the 3 `unknown` FERC audits · theme A/B variants · accessibility/Lighthouse pass.
 
 ---
+
+## ▶ Done 2026-08-09 — CA parser garbage bug (found via thin-insight survey) + UAT of Phase 1–3 UX ship
+
+- **Fixed a 4th recurrence of the loose-marker-parser anti-pattern.** Surveying per-state finding
+  density to find where to "dig in more" (per-jurisdiction query against `docs/data/reports.json`)
+  surfaced CA at only 4 findings across 22 records — both from a `balancing accounts performance
+  audit (Utility Audits Branch)` doc_type, not the ERRA decisions `structure_ca_audit` was built for.
+  The 2 "findings" were boilerplate (interest-rate methodology paragraph, standard distribution
+  notice), not audit content. Root cause: `pipeline/sources.py` dispatched CA to
+  `structure_ca_audit`/`parse_ca_erra_findings` (generic markers: "is not", "required to", "is
+  reasonable") on `jurisdiction == "CA"` alone, with 2 non-ERRA seeds left `parse: true` by
+  copy-paste. **Fixed:** gated the CA dispatch on doc_type containing "erra"; flipped the 2 seeds to
+  `parse: false`; hand-corrected the 2 committed `report.json` to metadata-only; new regression guard
+  `test_ca_findings_only_from_erra_decisions`. Corpus findings 813→**809**. Full detail: ISSUES.md
+  2026-08-09. **Also confirmed (not a bug):** both genuine CA ERRA seeds still show 0 findings —
+  `parse_ca_erra_findings` doesn't reliably work even on its intended target. A real ERRA-decision
+  parser is a candidate P2 item below, not attempted this session.
+- **UAT of the Phase 1–3 UX ship** (payload split, permalinks, lenses, ledger — merged `bc169d8`,
+  never live-UAT'd before this). Verified via the project's own Playwright e2e suite (`tests/e2e/`,
+  83 tests) + spot checks: sticky mobile bottom bar genuinely pins to the viewport (375×812), URL
+  permalinks round-trip, sort + Ledger view work, theme drill-down panel renders correctly, F2's
+  "0 recs" fix is live. **Tooling gotcha hit and resolved:** the Claude Browser MCP pane's "mobile"
+  resize preset sets `visualViewport.width=375` for painting but leaves `window.innerWidth≈888` for
+  layout — CSS `position:fixed` containing-block math (and any `getBoundingClientRect` read) is
+  computed off the latter, so the pane made a *working* sticky bar look broken (`top:1860`, way
+  outside the visible viewport). Cross-checked with real Playwright (`page_factory(width=375,
+  height=812)`) which showed the correct `top:751, width:375` — confirms this is a pane rendering
+  quirk, not a site bug (extends the existing "hidden-tab" MCP-pane caveat in AGENTS.md/memory to
+  fixed-position layout measurement, not just rAF/IntersectionObserver). **251+83 tests pass.**
+- **No new website bugs found** — Phase 1–3 is solid. One genuine gap identified for Phase 4/backlog
+  (not yet built): A9 "coverage & freshness transparency" is scoped at the *collection* level only;
+  there's no *per-jurisdiction* view, so a user can't see at a glance that (e.g.) CA/MI/most states
+  are metadata-only while PA/NY/NJ carry the real findings — the exact question this session's own
+  survey had to answer by hand-querying `reports.json`. Candidate: a per-state facet or a compact
+  jurisdiction table (docs/state-coverage.md already has the content, just stale and off-site).
 
 ## ▶ Done 2026-06-23 (cont. 2) — hardened loose parsers + corpus-wide garbage-finding guard
 

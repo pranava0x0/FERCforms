@@ -1051,11 +1051,11 @@
         "count": 3
       }
     ],
-    "generated_at": "2026-08-09"
+    "generated_at": "2026-08-10"
   },
   "prudence_review": {
     "report_count": 29,
-    "finding_count": 0,
+    "finding_count": 37,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
@@ -1079,6 +1079,12 @@
     "by_function": {},
     "by_jurisdiction": [
       {
+        "jurisdiction": "CA",
+        "report_count": 2,
+        "finding_count": 37,
+        "structured_count": 1
+      },
+      {
         "jurisdiction": "FERC",
         "report_count": 14,
         "finding_count": 0,
@@ -1098,12 +1104,6 @@
       },
       {
         "jurisdiction": "WI",
-        "report_count": 2,
-        "finding_count": 0,
-        "structured_count": 0
-      },
-      {
-        "jurisdiction": "CA",
         "report_count": 2,
         "finding_count": 0,
         "structured_count": 0
@@ -1169,11 +1169,11 @@
           "energy cost recovery"
         ],
         "finding_count": 0,
-        "report_count": 9,
+        "report_count": 8,
         "example_titles": [],
         "by_year": {
           "2022": 1,
-          "2025": 7
+          "2025": 6
         },
         "top_companies": [
           {
@@ -1193,7 +1193,7 @@
             "report_count": 1
           },
           {
-            "company": "Pacific Gas and Electric Company",
+            "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
             "report_count": 1
           }
         ]
@@ -1227,6 +1227,30 @@
         ]
       },
       {
+        "theme": "Tariff administration & oversight",
+        "description": "Not following the utility's own FERC-approved tariff.",
+        "keywords": [
+          "tariff"
+        ],
+        "finding_count": 10,
+        "report_count": 1,
+        "example_titles": [
+          "The extensive record in this proceeding provides a sufficient showing that PG…",
+          "PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar…",
+          "In 2023, no customers took service under the Regional Renewable Choice progra…",
+          "PG&E’s testimony demonstrated that its entries recorded in the Community Sola…"
+        ],
+        "by_year": {
+          "2025": 1
+        },
+        "top_companies": [
+          {
+            "company": "Pacific Gas and Electric Company",
+            "report_count": 1
+          }
+        ]
+      },
+      {
         "theme": "Below-the-line costs (lobbying, charitable, etc.)",
         "description": "Non-recoverable costs (lobbying, charity, ads) charged to ratepayers.",
         "keywords": [
@@ -1250,8 +1274,109 @@
         ]
       }
     ],
-    "top_titles": [],
-    "generated_at": "2026-08-09"
+    "top_titles": [
+      {
+        "title": "PG&E’s testimony demonstrates that it complied with all Commission decisions …",
+        "count": 2
+      },
+      {
+        "title": "PG&E’s testimony demonstrated that its entries recorded in the Community Sola…",
+        "count": 2
+      },
+      {
+        "title": "The 2023 Record Year extended from January 1, 2023 through December 31, 2023.",
+        "count": 1
+      },
+      {
+        "title": "PG&E operates the following UOG types: 1) hydroelectric, 2) fossil fuel, 3) b…",
+        "count": 1
+      },
+      {
+        "title": "PG&E’s utility-owned hydroelectric portfolio consists of 61 powerhouses with …",
+        "count": 1
+      },
+      {
+        "title": "During the Record Year, PG&E owned, operated and maintained three fossil fuel…",
+        "count": 1
+      },
+      {
+        "title": "PG&E’s Gateway Generation Station, which is a fossil fuel generating facility…",
+        "count": 1
+      },
+      {
+        "title": "PG&E’s Humbolt Bay Generating Station, a fossil fuel generating facility, exp…",
+        "count": 1
+      },
+      {
+        "title": "During August 2023, Humbolt Bay Generating Station unit 6 was forced out of s…",
+        "count": 1
+      },
+      {
+        "title": "PG&E owns the Elkhorn Battery Storage facility located in Monterey County.",
+        "count": 1
+      },
+      {
+        "title": "On February 6, 2023, the Elkhorn Battery Storage facility was forced out of s…",
+        "count": 1
+      },
+      {
+        "title": "PG&E’s PV generating facilities were operated at only 70.7 percent of expecte…",
+        "count": 1
+      },
+      {
+        "title": "PG&E owns and operates the Diablo Canyon Nuclear Power Plant.",
+        "count": 1
+      },
+      {
+        "title": "There were no forced outages at the Diablo Canyon Nuclear Power Plant during …",
+        "count": 1
+      },
+      {
+        "title": "PG&E’s testimony demonstrates that it operated Diablo Canyon Nuclear Power Pl…",
+        "count": 1
+      },
+      {
+        "title": "PG&E is in the process of conducting cause evaluations on the outages at the …",
+        "count": 1
+      },
+      {
+        "title": "During the Record Year, PG&E managed 482 and settled 485 energy contracts. Ne…",
+        "count": 1
+      },
+      {
+        "title": "The evidentiary record supports a finding that PG&E reasonably and prudently …",
+        "count": 1
+      },
+      {
+        "title": "PG&E's testimony demonstrates that it achieved least cost dispatch of its ene…",
+        "count": 1
+      },
+      {
+        "title": "In 2023, the Commission did not approve any PG&E PCIA-eligible UOG facilities…",
+        "count": 1
+      },
+      {
+        "title": "PG&E has not provided independent evaluator reports in its quarterly complian…",
+        "count": 1
+      },
+      {
+        "title": "The extensive record in this proceeding provides a sufficient showing that PG…",
+        "count": 1
+      },
+      {
+        "title": "The evidentiary record in this proceeding supports a finding that PG&E satisf…",
+        "count": 1
+      },
+      {
+        "title": "PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar…",
+        "count": 1
+      },
+      {
+        "title": "In 2023, no customers took service under the Regional Renewable Choice progra…",
+        "count": 1
+      }
+    ],
+    "generated_at": "2026-08-10"
   },
   "state_audit": {
     "report_count": 82,
@@ -2268,7 +2393,7 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-08-09"
+    "generated_at": "2026-08-10"
   },
   "state_rate_case": {
     "report_count": 122,
@@ -2805,7 +2930,7 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-08-09"
+    "generated_at": "2026-08-10"
   },
   "state_reference": {
     "report_count": 84,
@@ -2925,6 +3050,6 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-08-09"
+    "generated_at": "2026-08-10"
   }
 }

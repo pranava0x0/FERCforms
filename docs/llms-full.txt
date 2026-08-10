@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 440 records, 809 findings, 2026 recommendations. Generated 2026-08-09.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 440 records, 846 findings, 2026 recommendations. Generated 2026-08-10.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -5478,9 +5478,117 @@ PSC of Wisconsin Final Decision reconciling We Energies (WEPCO) actual 2024 fuel
 - Docket: A.24-02-012 | Audit type: n/a
 - Issued: 2025-06-12 | Industry: electric | FERC Form: n/a
 - Source page: https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF
-- Status: listed for reference (not machine-parsed into findings)
 
-CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.
+### Finding 1: The 2023 Record Year extended from January 1, 2023 through December 31, 2023.
+The 2023 Record Year extended from January 1, 2023 through December 31, 2023.
+
+### Finding 2: PG&E operates the following UOG types: 1) hydroelectric, 2) fossil fuel, 3) b…
+PG&E operates the following UOG types: 1) hydroelectric, 2) fossil fuel, 3) battery energy storage, 4) solar, and 5) nuclear.
+
+### Finding 3: PG&E’s utility-owned hydroelectric portfolio consists of 61 powerhouses with …
+PG&E’s utility-owned hydroelectric portfolio consists of 61 powerhouses with 99 generating units with ancillary support facilities that include reservoirs, diversions, dams and water conveyance apparatus.
+
+### Finding 4: During the Record Year, PG&E owned, operated and maintained three fossil fuel…
+During the Record Year, PG&E owned, operated and maintained three fossil fuel generating stations, one battery storage energy project, and 10 ground- mounted PV solar stations.
+
+### Finding 5: PG&E’s Gateway Generation Station, which is a fossil fuel generating facility…
+PG&E’s Gateway Generation Station, which is a fossil fuel generating facility, experienced one forced outage during the Record Year.
+
+### Finding 6: PG&E’s Humbolt Bay Generating Station, a fossil fuel generating facility, exp…
+PG&E’s Humbolt Bay Generating Station, a fossil fuel generating facility, experienced 12 forced outages during the Record Year.
+
+### Finding 7: During August 2023, Humbolt Bay Generating Station unit 6 was forced out of s…
+During August 2023, Humbolt Bay Generating Station unit 6 was forced out of service because the engine water pump bearings failed.
+
+### Finding 8: PG&E owns the Elkhorn Battery Storage facility located in Monterey County.
+PG&E owns the Elkhorn Battery Storage facility located in Monterey County.
+
+### Finding 9: On February 6, 2023, the Elkhorn Battery Storage facility was forced out of s…
+On February 6, 2023, the Elkhorn Battery Storage facility was forced out of service for 45 hours while Tesla performed an emergency critical control system update for the site controller and tested the facility following the changes to the control system.
+
+### Finding 10: PG&E’s PV generating facilities were operated at only 70.7 percent of expecte…
+PG&E’s PV generating facilities were operated at only 70.7 percent of expected output because CAISO requested that PG&E curtail output for economic dispatch purposes. Otherwise, PG&E’s PV output would have achieved 81.9 percent of expected output.
+
+### Finding 11: PG&E owns and operates the Diablo Canyon Nuclear Power Plant.
+PG&E owns and operates the Diablo Canyon Nuclear Power Plant.
+
+### Finding 12: There were no forced outages at the Diablo Canyon Nuclear Power Plant during …
+There were no forced outages at the Diablo Canyon Nuclear Power Plant during the Record Year.
+
+### Finding 13: PG&E’s testimony demonstrates that it operated Diablo Canyon Nuclear Power Pl…
+PG&E’s testimony demonstrates that it operated Diablo Canyon Nuclear Power Plant in a reasonable manner during the Record Year.
+
+### Finding 14: PG&E is in the process of conducting cause evaluations on the outages at the …
+PG&E is in the process of conducting cause evaluations on the outages at the Belden and Caribou 1 Powerhouse outages and two maintenance outages at Diablo Canyon Nuclear Power Plant during the Record Year.
+
+### Finding 15: During the Record Year, PG&E managed 482 and settled 485 energy contracts. Ne…
+During the Record Year, PG&E managed 482 and settled 485 energy contracts. Net energy and RA payments totaled roughly $2.5 billion. PG&E also managed 112 contracts for projects that began delivery or achieved commercial operation, entered into 50 contract amendments, and settled disputes resulting in the collection of roughly $11.4 million in damages.
+
+### Finding 16: The evidentiary record supports a finding that PG&E reasonably and prudently …
+The evidentiary record supports a finding that PG&E reasonably and prudently administered its QF and non-QF contracts reasonably and in conformance with SOC4 and its BPP.
+
+### Finding 17: PG&E's testimony demonstrates that it achieved least cost dispatch of its ene…
+PG&E's testimony demonstrates that it achieved least cost dispatch of its energy resources and economically triggered demand response programs pursuant to SOC 4 in the Record Year.
+
+### Finding 18: PG&E’s testimony demonstrates that it complied with all Commission decisions …
+PG&E’s testimony demonstrates that it complied with all Commission decisions in recording entries into the ERRA BA appropriately and accurately during the Record Year.
+
+### Finding 19: In 2023, the Commission did not approve any PG&E PCIA-eligible UOG facilities…
+In 2023, the Commission did not approve any PG&E PCIA-eligible UOG facilities and no construction commenced during the Record Year.
+
+### Finding 20: PG&E’s testimony demonstrates that it complied with all Commission decisions …
+PG&E’s testimony demonstrates that it complied with all Commission decisions in recording entries in the PABA appropriately and accurately.
+
+### Finding 21: PG&E has not provided independent evaluator reports in its quarterly complian…
+PG&E has not provided independent evaluator reports in its quarterly compliance reports in cases where it has not sought approval for executed RA transactions.
+
+### Finding 22: The extensive record in this proceeding provides a sufficient showing that PG…
+The extensive record in this proceeding provides a sufficient showing that PG&E’s procurement of Greenhouse Gas Compliance Instruments is in compliance with its BPP, Commission directives and applicable tariffs.
+
+### Finding 23: The evidentiary record in this proceeding supports a finding that PG&E satisf…
+The evidentiary record in this proceeding supports a finding that PG&E satisfied the Commission’s requirements for the purchase and sale of RA capacity consistent with PG&E’s BPP.
+
+### Finding 24: PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar…
+PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar Choice,” for customers and the “Regional Renewable Choice” program for developers.
+
+### Finding 25: In 2023, no customers took service under the Regional Renewable Choice progra…
+In 2023, no customers took service under the Regional Renewable Choice program tariff.
+
+### Finding 26: PG&E’s testimony demonstrated that its entries recorded in the Community Sola…
+PG&E’s testimony demonstrated that its entries recorded in the Community Solar Green Tariff Shared Renewables Memorandum Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.
+
+### Finding 27: PG&E’s testimony demonstrated that its entries recorded in the Green Tariff S…
+PG&E’s testimony demonstrated that its entries recorded in the Green Tariff Shared Renewables BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.
+
+### Finding 28: The Disadvantaged Communities – Single Family Solar Affordable Homes BA recor…
+The Disadvantaged Communities – Single Family Solar Affordable Homes BA records the costs of the Disadvantaged Communities – Single Family Solar Affordable Solar Housing program.
+
+### Finding 29: PG&E’s testimony demonstrated that its entries into the Disadvantaged Communi…
+PG&E’s testimony demonstrated that its entries into the Disadvantaged Communities-Single Family Solar Affordable Homes BA are reasonable and in compliance with applicable tariffs and Commission directives.
+
+### Finding 30: PG&E’s testimony demonstrated that its entries recorded in the Disadvantaged …
+PG&E’s testimony demonstrated that its entries recorded in the Disadvantaged Communities Green Tariff Balancing Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.
+
+### Finding 31: The Community Solar Green Tariff program engages communities in developing so…
+The Community Solar Green Tariff program engages communities in developing solar projects within five miles of the participating customer’s community, or within 40 miles in the San Joaquin Valley pilot community.
+
+### Finding 32: The Community Solar Green Tariff program had no customers during the Record Y…
+The Community Solar Green Tariff program had no customers during the Record Year because customers will not be enrolled until the first Community Solar Green Tariff program comes online in 2024.
+
+### Finding 33: PG&E’s testimony demonstrated that its entries recorded in the Community Sola…
+PG&E’s testimony demonstrated that its entries recorded in the Community Solar Green Tariff BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.
+
+### Finding 34: PG&E recorded the procurement and administrative costs it incurred as a centr…
+PG&E recorded the procurement and administrative costs it incurred as a central procurement entity for local RA in the Centralized Local Procurement Sub-Account of the New System Balancing Account.
+
+### Finding 35: In 2023, PG&E procured local RA in its capacity as the central procurement en…
+In 2023, PG&E procured local RA in its capacity as the central procurement entity for load serving entities under the Commission’s jurisdiction within the PG&E distribution services area.
+
+### Finding 36: PG&E’s testimony demonstrated that its recorded costs in the Centralized Loca…
+PG&E’s testimony demonstrated that its recorded costs in the Centralized Local Procurement Sub-Account of the New System Generation BA during the Record Year to be reasonable and in compliance with Commission decisions.
+
+### Finding 37: No safety considerations were raised in the Application.
+No safety considerations were raised in the Application.
 
 ---
 
