@@ -1341,11 +1341,21 @@ const LEDGER_COLUMNS = [
   // F2 again: no recs parsed is not "0 recommendations" — show a dash, not a zero.
   { key: "recs", label: "Recs", numeric: true, cell: (r) => el("td", { class: "lg-num", text: r.rec_count > 0 ? String(r.rec_count) : "—" }) },
   {
-    key: "amount", label: "$", numeric: true,
+    // cellClass is load-bearing, not decoration (bot-caught, 2026-08-10):
+    // without it the "$" header only gets the "lg-num" class from `numeric`,
+    // so table-layout:fixed sizes the whole column from lg-num's narrower
+    // width — the .lg-amt CSS rule (meant to be wider, for "$109M"-class
+    // figures) never reaches the header row that actually governs column
+    // width. Body cells looked fine in isolation only because they carry
+    // BOTH classes and .lg-amt's declaration wins the cascade there; the
+    // header's missing class was the actual bug (same class as the
+    // "Findings" header fix earlier in this PR — a column's *-text
+    // truncating span hides a too-narrow column instead of fixing it).
+    key: "amount", label: "$", numeric: true, cellClass: "lg-amt",
     // Nested truncating span, same defensive pattern as Company/Docket/Type —
     // a percentage column width is occasionally a sub-pixel short of a wide
     // figure like "$109M" (rounding, not a budgeting error); this just clips
-    // cleanly instead of a 1-2px paint spill (2026-08-10 code review).
+    // cleanly instead of a 1-2px paint spill.
     cell: (r) => el("td", { class: "lg-num lg-amt" }, [el("span", { class: "lg-amt-text", text: fmtAmount(r.amount_max) || "—" })]),
   },
   {
