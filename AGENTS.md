@@ -115,6 +115,17 @@ code was correct; the environment simply wasn't rendering. Tells that you are ch
 not a bug: a *control* IO on an obviously-visible element also never fires; screenshots come back
 blank; `computer{action:"scroll"}` times out after 30s.
 
+**The same pane also breaks fixed-position/viewport-unit layout math after `resize_window({preset:
+"mobile"})` — not just rAF/IO** (found 2026-08-09). `window.visualViewport.width` correctly reads
+375 (screenshots paint at 375), but `window.innerWidth`/`innerHeight` read ≈888×1923 — a real
+sticky/fixed mobile toolbar measured `top:1860, width:888` (looking broken, 1000+px below the
+visible viewport) purely because `position:fixed`'s containing-block math is computed off
+`innerWidth`, not `visualViewport`. Cross-checked with Playwright (`page_factory(width=375,
+height=812)`): the SAME element measured `top:751, width:375` — correct. Tell: `window.innerWidth
+!== window.visualViewport.width` after a mobile resize. Don't trust `getBoundingClientRect()` on
+any `position:fixed`/`sticky` element measured this way; re-verify with Playwright before reporting
+a "sticky element renders off-screen" bug.
+
 **That class of behaviour has a suite: `tests/e2e/`** (Playwright — it renders for real:
 `visibilityState: "visible"`, rAF fires). It serves `docs/` on an ephemeral port exactly as GitHub
 Pages does, so the committed `docs/data/*.json` are the fixtures and a stale bake fails there rather
