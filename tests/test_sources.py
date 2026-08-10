@@ -315,6 +315,28 @@ def test_state_rate_case_reports_are_metadata_only():
     assert not offenders, f"state_rate_case reports must be metadata-only: {offenders}"
 
 
+def test_ca_findings_only_from_erra_decisions():
+    """structure_ca_audit / parse_ca_erra_findings is a marker-based parser built for
+    ERRA reasonableness-decision prose ("We find that...", "is ordered", "is
+    reasonable"). Its markers are generic enough to match ordinary sentences in any
+    CA legal document, so pointing it at a non-ERRA doc_type garbles: 2 CPUC Utility
+    Audits Branch "balancing accounts performance audit" records (parse=True left on
+    by copy-paste from the ERRA seeds) were "structured" into 2 findings each that
+    were actually the interest-rate-methodology boilerplate paragraph and the
+    standard "this report is intended solely for..." distribution notice — not
+    audit findings. Fixed by gating the CA dispatch in pipeline/sources.py on
+    doc_type; this guards against a future seed reintroducing parse=True on a
+    non-ERRA CA record. See ISSUES.md 2026-08-09."""
+    offenders = []
+    for p in sorted(config.PROCESSED_DIR.glob("*/report.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("jurisdiction") != "CA" or not d.get("findings"):
+            continue
+        if "erra" not in (d.get("doc_type") or "").lower():
+            offenders.append(f"{p.parent.name}: doc_type={d.get('doc_type')!r}")
+    assert not offenders, f"non-ERRA CA reports carrying findings: {offenders}"
+
+
 def test_check_offline_rejects_quote_spanning_summary_and_recommendation():
     """Regression (2026-07-06 code review): check_offline used to join summary +
     every recommendation's text with a single space before the substring check, so

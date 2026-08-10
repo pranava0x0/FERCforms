@@ -1,8 +1,8 @@
 {
   "report_count": 440,
-  "finding_count": 813,
+  "finding_count": 809,
   "other_matter_count": 10,
-  "recommendation_count": 2030,
+  "recommendation_count": 2026,
   "by_industry": {
     "electric": 281,
     "unknown": 91,
@@ -1409,5 +1409,5 @@
       "count": 4
     }
   ],
-  "generated_at": "2026-07-16"
+  "generated_at": "2026-08-09"
 }

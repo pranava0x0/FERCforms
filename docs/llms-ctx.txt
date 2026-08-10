@@ -1,5 +1,5 @@
-<project title="FERC Audit Explorer" summary="440 structured records (123 FERC audits, 29 prudence reviews, 82 state PUC audits); 813 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
-Machine-readable context generated from the FERC Audit Explorer corpus (2026-07-16). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
+<project title="FERC Audit Explorer" summary="440 structured records (123 FERC audits, 29 prudence reviews, 82 state PUC audits); 809 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+Machine-readable context generated from the FERC Audit Explorer corpus (2026-08-09). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Southern Electric Generating Company" collection="FERC Audits" docket="FA24-3-000" issued="2026-05-07" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260507-3001&amp;optimized=false">
 Finding 1: Accounting for Replacement of Minor Items of Property
@@ -3303,10 +3303,8 @@ Listed for reference (not machine-parsed into findings).
 MD PSC Order No. 91643, Case No. 9791 (issued May 8, 2025) — initiates an investigation into BGE gas-system inspection issues, documenting the PSC Engineering Division (PSCED) Investigation Report findings/recommendations (falsified-records pattern, QA/compliance-oversight gaps). 9 pp. Page 1 verified.
 </doc>
 <doc title="Southern California Gas Company" collection="State PUC Audits" docket="n/a" issued="2025-02-19" industry="gas" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
-Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
-1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
-Finding 2: This audit report is intended solely for the information and use of SoCalGas and
-2. This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).
+Listed for reference (not machine-parsed into findings).
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.
 </doc>
 <doc title="Eversource Energy&#x27;s Connecticut Companies (Connecticut Light and Power Company, Yankee Gas Services Company, Aquarion Water Company)" collection="State PUC Audits" docket="RFP #2022-01" issued="2025-02-11" industry="electric" source="https://portal.ct.gov/PURA/Docket/Management-Audit-Reports">
 Listed for reference (not machine-parsed into findings).
@@ -3514,10 +3512,8 @@ Listed for reference (not machine-parsed into findings).
 Washington UTC Pipeline Safety Program technical/compliance inspection report #8807 — LNG Standard Inspection of Puget Sound Energy's Gig Harbor LNG satellite plant, protocol set LNG.2024.01 (approved Sept 10, 2024, 18 pp). UTC inspectors audit the operator's program against a published protocol set, recording scope, findings and satisfactory/unsatisfactory ratings ('No violations or concerns from this inspection'). These program inspections carry no docket number; the report id + protocol set is the stable key. Static .gov PDF on utc.wa.gov. Page 1 verified 2026-07-10. Listed for reference (metadata-only).
 </doc>
 <doc title="Southern California Edison Company" collection="State PUC Audits" docket="n/a" issued="2024-07-23" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
-Finding 1: the balancing account. Additionally, unless approved otherwise, a balancing acco
-1. the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to
-Finding 2: This audit report is intended solely for the information and use of SCE and the 
-2. This audit report is intended solely for the information and use of SCE and the CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this audit report, which is a matter of public record and will be available on the CPUC website at Audit Reports by Industry (ca.gov).
+Listed for reference (not machine-parsed into findings).
+CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.
 </doc>
 <doc title="PPL Electric Utilities Corporation" collection="State PUC Audits" docket="D-2023-3039488" issued="2024-07-11" industry="electric" source="https://www.puc.pa.gov/press-release/2024/puc-issues-management-and-operations-audit-for-ppl-electric-utilities-corporation">
 Finding 1: Executive Management and Organizational Structure

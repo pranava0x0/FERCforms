@@ -435,7 +435,15 @@ def process_seed(
                     report = structure_mo_audit(seed, parse_pages, scanned)
                 elif seed.jurisdiction == "MI":
                     report = structure_mi_audit(seed, parse_pages, scanned)
-                elif seed.jurisdiction == "CA":
+                elif seed.jurisdiction == "CA" and "erra" in (seed.doc_type or "").lower():
+                    # structure_ca_audit's marker-based parser (parse_ca_erra_findings)
+                    # is built for ERRA reasonableness-decision prose ("We find that...",
+                    # "is ordered") and garbles when pointed at other CA doc types — it
+                    # matched CPUC boilerplate ("This audit report is intended solely for
+                    # the information and use of...") as a "finding" on 2 Utility Audits
+                    # Branch balancing-accounts audits that had parse=True left on by
+                    # mistake. Gate on doc_type so a stray parse=True on a non-ERRA CA
+                    # seed can't reproduce this. See ISSUES.md 2026-08-09.
                     report = structure_ca_audit(seed, parse_pages, scanned)
                 else:
                     # NJ included here: its M&O/affiliate audits use the Overland
