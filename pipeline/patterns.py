@@ -16,7 +16,7 @@ from datetime import date
 from pathlib import Path
 
 from pipeline import config
-from pipeline.models import AuditReport, PatternsSummary, ThemeStat
+from pipeline.models import AuditReport, JurisdictionStat, PatternsSummary, ThemeStat
 
 logger = logging.getLogger(__name__)
 
@@ -209,6 +209,9 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
     by_industry: Counter[str] = Counter()
     by_year: Counter[str] = Counter()
     by_function: Counter[str] = Counter()
+    juris_reports: Counter[str] = Counter()
+    juris_findings: Counter[str] = Counter()
+    juris_structured: Counter[str] = Counter()
     title_counts: Counter[str] = Counter()
     theme_findings: Counter[str] = Counter()
     theme_reports: dict[str, set[str]] = {theme: set() for theme, _ in THEME_RULES}
@@ -225,6 +228,10 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             by_year[str(r.issued_date.year)] += 1
         for fn in r.functions:
             by_function[fn] += 1
+        juris_reports[r.jurisdiction] += 1
+        juris_findings[r.jurisdiction] += sum(1 for f in r.findings if not f.is_other_matter)
+        if r.structured:
+            juris_structured[r.jurisdiction] += 1
         # Themes this REPORT carries — collected first, then tallied once, so a
         # report restating one theme across several findings counts once.
         report_themes: set[str] = set()
@@ -269,6 +276,17 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
 
     top_titles = [{"title": t, "count": c} for t, c in title_counts.most_common(25)]
 
+    by_jurisdiction = [
+        JurisdictionStat(
+            jurisdiction=j,
+            report_count=juris_reports[j],
+            finding_count=juris_findings[j],
+            structured_count=juris_structured[j],
+        )
+        for j in juris_reports
+    ]
+    by_jurisdiction.sort(key=lambda j: (j.finding_count, j.report_count), reverse=True)
+
     return PatternsSummary(
         report_count=len(reports),
         finding_count=finding_count,
@@ -277,6 +295,7 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
         by_industry=dict(by_industry.most_common()),
         by_year=dict(sorted(by_year.items())),
         by_function=dict(by_function.most_common()),
+        by_jurisdiction=by_jurisdiction,
         themes=themes,
         top_titles=top_titles,
         generated_at=date.today(),

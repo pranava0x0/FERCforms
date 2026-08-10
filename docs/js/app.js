@@ -17,8 +17,13 @@ const COLLECTIONS = [
   {
     key: "prudence_review",
     label: "Prudence Reviews",
-    lead: "<strong><span class=\"intro-count\">—</span> FERC prudence determinations</strong> from rate-case orders, formal challenges &amp; fuel-cost disputes. These are free-form legal orders — listed with their source, not parsed into findings.",
-    empty: "No FERC prudence determinations in this build yet — coming soon.",
+    // Mixed collection (FERC + state prudence/reasonableness reviews, e.g. CPUC
+    // ERRA decisions) — "FERC" was inaccurate before this label even accounted
+    // for CA (2026-08-09). Most are free-form legal orders (metadata-only by
+    // design); CPUC decisions carry an enumerated "Findings of Fact" section
+    // that IS parsed verbatim (see pipeline/state_structure.py).
+    lead: "<strong><span class=\"intro-count\">—</span> prudence &amp; reasonableness determinations</strong> from FERC and state proceedings — rate-case orders, formal challenges, fuel-cost disputes &amp; CPUC reasonableness reviews. Most are free-form legal orders, listed with their source; decisions with an enumerated Findings of Fact section are parsed into findings.",
+    empty: "No prudence or reasonableness determinations in this build yet — coming soon.",
   },
   {
     key: "state_audit",
@@ -258,6 +263,7 @@ function renderCollectionSurfaces() {
   renderFilters();
   renderPatternsBand();
   renderTrends();
+  renderJurisdictionCoverage();
 }
 
 /* A3 — the view toggle mirrors state.view, and hides itself where the ledger
@@ -833,6 +839,28 @@ function renderTrends() {
   host.replaceChildren(...cards);
 }
 
+/* A9 extension (BACKLOG item 14): per-jurisdiction coverage. A collapsed-by-
+   default table so a reader can tell "0 findings because not parsed" from
+   "0 findings because nothing found" without opening every card — the
+   question this feature exists to answer at a glance rather than by
+   hand-querying the corpus. Skipped when the tab has one jurisdiction
+   (ferc_audit is always "FERC") since a 1-row table says nothing. */
+function renderJurisdictionCoverage() {
+  const host = document.getElementById("juris-table-body");
+  const details = document.getElementById("juris-coverage");
+  if (!host || !details) return;
+  const rows = activePatterns().by_jurisdiction || [];
+  details.hidden = rows.length < 2;
+  if (rows.length < 2) { host.replaceChildren(); return; }
+  host.replaceChildren(...rows.map((j) =>
+    el("tr", { class: j.finding_count ? "" : "juris-row-empty" }, [
+      el("th", { scope: "row", text: j.jurisdiction }),
+      el("td", { text: String(j.report_count) }),
+      el("td", { text: j.finding_count ? String(j.finding_count) : "—" }),
+    ])
+  ));
+}
+
 /* ---------- active-filter chips (shows WHY the stream is narrowed) ---------- */
 const _GROUP_ORDER = ["impact", "company", "industry", "audit_type", "functions", "form", "year", "theme"];
 function activeChipLabel(group, value) {
@@ -1238,7 +1266,11 @@ function renderLedgerHead() {
   if (!head || head.childElementCount) return; // static across renders
   head.replaceChildren(
     el("tr", {}, LEDGER_COLUMNS.map((c) =>
-      el("th", { scope: "col", class: c.numeric ? "lg-num" : null, text: c.label })
+      // Same class as the column's <td> (c.cellClass) so a tablet-width column
+      // rule applies to the whole column under table-layout:fixed, which sizes
+      // columns from the header row — a header with no matching class was
+      // invisible to those rules (regression fixed 2026-08-09, see ISSUES.md).
+      el("th", { scope: "col", class: [c.numeric ? "lg-num" : null, c.cellClass].filter(Boolean).join(" ") || null, text: c.label })
     ))
   );
 }
@@ -1255,18 +1287,40 @@ const ledgerAvailable = () => window.innerWidth >= LEDGER_MIN_WIDTH;
 const useLedger = () => state.view === "ledger" && ledgerAvailable();
 
 const LEDGER_COLUMNS = [
-  { key: "issued", label: "Issued", cell: (r) => el("td", { class: "lg-date", text: fmtDate(r.issued_date, true) }) },
-  { key: "company", label: "Company", cell: (r) => el("td", { class: "lg-co", text: r.company }) },
-  { key: "docket", label: "Docket", cell: (r) => el("td", { class: "lg-docket", text: r.docket_full || r.docket || "—" }) },
+  { key: "issued", label: "Issued", cellClass: "lg-date", cell: (r) => el("td", { class: "lg-date", text: fmtDate(r.issued_date, true) }) },
+  {
+    key: "company", label: "Company", cellClass: "lg-co",
+    // Truncation lives on a nested block span, not the <td> itself: text-overflow
+    // on a bare table-cell box is unreliable across engines (the same reason the
+    // Issues column already does this via .lg-theme-text) — found 2026-08-09 when
+    // overflow/text-overflow set directly on .lg-co clipped visually but the cell's
+    // intrinsic content width still leaked into the table's layout/scrollWidth.
+    cell: (r) => el("td", { class: "lg-co" }, [el("span", { class: "lg-co-text", title: r.company, text: r.company })]),
+  },
+  {
+    key: "docket", label: "Docket", cellClass: "lg-docket",
+    // Same nested-span truncation as Company — some state dockets are dual
+    // case numbers ("OAH 21-2500-39686 / MPUC E-015/GRE-23-155", 41 chars)
+    // that would otherwise overflow a narrow tablet column.
+    cell: (r) => {
+      const full = r.docket_full || r.docket || "—";
+      return el("td", { class: "lg-docket" }, [el("span", { class: "lg-docket-text", title: full, text: full })]);
+    },
+  },
   // Density is the whole point of this view, so the type is the SHORT form here
   // ("FA"/"PA", not "Non-financial (PA)", which wraps to three lines and triples
   // the row height). The full label rides in the title attribute.
   {
-    key: "type", label: "Type",
+    key: "type", label: "Type", cellClass: "lg-type",
     cell: (r) => {
       const full = r.doc_type ? cap(r.doc_type) : (_ABBR[r.audit_type] || r.audit_type || "—");
+      // FERC's short form is a 2-letter abbreviation ("FA"/"PA"); every other
+      // collection has no audit_type, so `short` fell through to the FULL
+      // doc_type sentence with no truncation span — the same overflow bug as
+      // Company/Docket, just missed on the first pass (found re-verifying at
+      // desktop width after fixing those two, 2026-08-09).
       const short = r.audit_type === "financial" ? "FA" : r.audit_type === "non-financial" ? "PA" : full;
-      return el("td", { class: "lg-type", title: full, text: short });
+      return el("td", { class: "lg-type" }, [el("span", { class: "lg-type-text", title: full, text: short })]);
     },
   },
   {
@@ -1281,7 +1335,7 @@ const LEDGER_COLUMNS = [
   { key: "recs", label: "Recs", numeric: true, cell: (r) => el("td", { class: "lg-num", text: r.rec_count > 0 ? String(r.rec_count) : "—" }) },
   { key: "amount", label: "$", numeric: true, cell: (r) => el("td", { class: "lg-num lg-amt", text: fmtAmount(r.amount_max) || "—" }) },
   {
-    key: "themes", label: "Issues",
+    key: "themes", label: "Issues", cellClass: "lg-themes",
     cell: (r) => el("td", { class: "lg-themes" }, [
       el("span", { class: "lg-theme-text", title: (r.themes || []).join(" · "), text: (r.themes || []).slice(0, 2).join(" · ") || "—" }),
       (r.themes || []).length > 2 ? el("span", { class: "lg-more", text: ` +${r.themes.length - 2}` }) : null,

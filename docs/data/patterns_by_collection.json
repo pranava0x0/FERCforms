@@ -30,6 +30,14 @@
       "generation": 65,
       "distribution": 2
     },
+    "by_jurisdiction": [
+      {
+        "jurisdiction": "FERC",
+        "report_count": 123,
+        "finding_count": 663,
+        "structured_count": 123
+      }
+    ],
     "themes": [
       {
         "theme": "Accounting misclassification",
@@ -1069,6 +1077,62 @@
       "2025": 8
     },
     "by_function": {},
+    "by_jurisdiction": [
+      {
+        "jurisdiction": "FERC",
+        "report_count": 14,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WA",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "GA",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WI",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "CA",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "IL",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "IN",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "VA",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "KS",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      }
+    ],
     "themes": [
       {
         "theme": "Fuel & purchased-power cost recovery",
@@ -1217,6 +1281,122 @@
       "2026": 4
     },
     "by_function": {},
+    "by_jurisdiction": [
+      {
+        "jurisdiction": "PA",
+        "report_count": 14,
+        "finding_count": 106,
+        "structured_count": 11
+      },
+      {
+        "jurisdiction": "NY",
+        "report_count": 8,
+        "finding_count": 24,
+        "structured_count": 2
+      },
+      {
+        "jurisdiction": "NJ",
+        "report_count": 4,
+        "finding_count": 16,
+        "structured_count": 1
+      },
+      {
+        "jurisdiction": "CA",
+        "report_count": 17,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "FL",
+        "report_count": 6,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "IL",
+        "report_count": 5,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WA",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MI",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "DC",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "CT",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MS",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "UT",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "OH",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MO",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "AR",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "RI",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "TN",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MD",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "AZ",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      }
+    ],
     "themes": [
       {
         "theme": "Affiliate / intercompany transactions",
@@ -2115,6 +2295,224 @@
       "2026": 5
     },
     "by_function": {},
+    "by_jurisdiction": [
+      {
+        "jurisdiction": "IL",
+        "report_count": 8,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "FL",
+        "report_count": 8,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "SC",
+        "report_count": 7,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MN",
+        "report_count": 6,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "VA",
+        "report_count": 6,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MO",
+        "report_count": 5,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "TX",
+        "report_count": 5,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WA",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "KY",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "AR",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "LA",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "NJ",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "ND",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "NY",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "GA",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "SD",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "IN",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "CO",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "OR",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "NE",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "CA",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WI",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "OH",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WV",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "ID",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "DC",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "RI",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "DE",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MD",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "AZ",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "KS",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "UT",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "NM",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MT",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "NV",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "TN",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      }
+    ],
     "themes": [
       {
         "theme": "Fuel & purchased-power cost recovery",
@@ -2419,6 +2817,74 @@
     },
     "by_year": {},
     "by_function": {},
+    "by_jurisdiction": [
+      {
+        "jurisdiction": "DC",
+        "report_count": 27,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "TX",
+        "report_count": 19,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "PA",
+        "report_count": 13,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WV",
+        "report_count": 8,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "TN",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "OK",
+        "report_count": 4,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "ID",
+        "report_count": 3,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "MT",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "ME",
+        "report_count": 2,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "WI",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      },
+      {
+        "jurisdiction": "GA",
+        "report_count": 1,
+        "finding_count": 0,
+        "structured_count": 0
+      }
+    ],
     "themes": [
       {
         "theme": "Internal audit & internal controls",

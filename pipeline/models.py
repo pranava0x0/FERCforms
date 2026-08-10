@@ -207,6 +207,22 @@ class ThemeStat(BaseModel):
     top_companies: list[dict] = [] # [{"company": str, "report_count": int}], top 5
 
 
+class JurisdictionStat(BaseModel):
+    """Per-jurisdiction coverage — how many reports vs. how many actually carry
+    parsed findings (BACKLOG item 14, 2026-08-09). Most state legal prose is
+    intentionally metadata-only (see CLAUDE.md "quote verbatim or not at all"),
+    so `finding_count == 0` here is usually by design, not a gap — the site
+    surfaces the split so a reader can tell absence-of-findings from
+    absence-of-parsing at a glance instead of opening every card."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    jurisdiction: str
+    report_count: int
+    finding_count: int
+    structured_count: int   # reports with structured=True (>=1 parsed finding)
+
+
 class PatternsSummary(BaseModel):
     """Cross-report aggregates (data/processed/patterns.json)."""
 
@@ -219,6 +235,7 @@ class PatternsSummary(BaseModel):
     by_industry: dict[str, int]
     by_year: dict[str, int]
     by_function: dict[str, int]   # reports touching each function (gen/trans/distribution)
+    by_jurisdiction: list[JurisdictionStat] = []  # sorted by finding_count desc
     themes: list[ThemeStat]       # sorted by report_count desc
     top_titles: list[dict]        # [{"title": str, "count": int}], most common first
     generated_at: date

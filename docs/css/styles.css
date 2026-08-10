@@ -427,6 +427,62 @@ a:hover { color: var(--accent-hover); }
   .trends-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- Coverage by jurisdiction (A9 extension, BACKLOG item 14) ---------- */
+.juris-coverage {
+  max-width: 1180px;
+  margin: 14px auto 0;
+  padding: 0 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-rest);
+}
+.juris-coverage summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.juris-coverage summary::-webkit-details-marker { display: none; }
+.juris-coverage[open] summary { color: var(--text); }
+.juris-coverage[open] summary .chev { transform: rotate(180deg); }
+.juris-note { margin: 0; padding: 0 16px 10px; font-size: 12.5px; line-height: 1.4; color: var(--text-muted); }
+.juris-table-wrap { margin: 0 16px 14px; max-height: 320px; overflow-y: auto; border: 1px solid var(--rule); border-radius: 8px; }
+.juris-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.juris-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--surface-2);
+  position: sticky;
+  top: 0;
+}
+.juris-table td, .juris-table th[scope="row"] {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: tabular-nums;
+}
+.juris-table th[scope="row"] { font-weight: 500; color: var(--text); text-align: left; }
+.juris-table td { font-family: var(--font-mono); color: var(--text); text-align: right; width: 90px; }
+.juris-table tr:last-child td, .juris-table tr:last-child th { border-bottom: 0; }
+/* Reference-only jurisdictions (0 parsed findings) recede — the eye should land
+   on rows with real content first; the juris-note above explains why 0 isn't a gap. */
+.juris-row-empty td:last-child { color: var(--text-muted); }
+.juris-row-empty th[scope="row"] { color: var(--text-muted); }
+
 /* ---------- Active filters (shows why the stream is narrowed) ---------- */
 .active-filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 12px; }
 .active-chip {
@@ -667,7 +723,16 @@ a:hover { color: var(--accent-hover); }
 
 /* ---------- Ledger (A3) — the analyst scan mode ---------- */
 .ledger-wrap { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); overflow-x: auto; }
-.ledger { width: 100%; border-collapse: collapse; font-size: 13px; }
+/* table-layout:fixed, not auto (found 2026-08-09 — see ISSUES.md): auto sizes
+   every column from its WIDEST cell across ALL rows, so one long value on any
+   collection (a dual docket, a full-sentence doc_type) silently blows the
+   whole table past its container — 1650px wide on the state_audit tab even
+   at a 1280px desktop viewport, despite the "tuned to fit 1180px" comment
+   this rule used to carry. Fixed layout makes column width a CSS decision,
+   independent of content; every column that can carry a long value truncates
+   via a nested *-text span (text-overflow on a bare <td> clips visually but
+   still leaks its intrinsic width into the table's own scrollWidth). */
+.ledger { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; }
 .ledger th {
   text-align: left;
   font-size: 10.5px;
@@ -696,14 +761,23 @@ a:hover { color: var(--accent-hover); }
 .lg-date { white-space: nowrap; color: var(--text-muted); font-variant-numeric: tabular-nums; }
 /* Widths are tuned so the table FITS a 1180px layout without horizontal scroll —
    a ledger you have to scroll sideways to read defeats its own purpose. Company
-   + Issues are the elastic ones; both truncate with the full value in `title`. */
-.lg-co { font-weight: 600; max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
-.lg-docket { font-family: var(--font-mono); font-size: 11.5px; white-space: nowrap; user-select: all; }
-.lg-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+   + Issues are the elastic ones; both truncate with the full value in `title`.
+   Truncation lives on a nested block span (.lg-co-text), not the <td> itself —
+   text-overflow set directly on a table-cell box clips visually but its
+   intrinsic content width can still leak into the table's layout/scrollWidth
+   (found 2026-08-09 chasing a tablet ledger-overflow regression — see ISSUES.md). */
+.lg-date { width: 100px; }
+.lg-co { font-weight: 600; width: 220px; }
+.lg-co-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
+.lg-docket { font-family: var(--font-mono); font-size: 11.5px; width: 100px; }
+.lg-docket-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; user-select: all; }
+.lg-type { width: 54px; }
+.lg-type-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
+.lg-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; width: 58px; }
 .lg-amt { font-family: var(--font-mono); font-size: 12px; }
-/* Issues column: one truncated line (full list in the title). max-width + the
-   table's fixed-ish layout keep it from pushing the numeric columns off-screen. */
-.lg-themes { color: var(--text-muted); font-size: 12px; max-width: 220px; width: 220px; }
+/* Issues column: one truncated line (full list in the title). Fixed width +
+   the nested .lg-theme-text span keep it from pushing other columns off-screen. */
+.lg-themes { color: var(--text-muted); font-size: 12px; width: 220px; }
 .lg-theme-text { display: inline-block; max-width: 185px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
 .lg-more { color: var(--text-muted); font-variant-numeric: tabular-nums; }
 
@@ -796,7 +870,15 @@ a:hover { color: var(--accent-hover); }
    terms, not brand: periwinkle stays chrome (C1). */
 .pill.solid { background: var(--text); color: var(--bg); border-color: var(--text); }
 .pill.outline { color: var(--text-muted); }
-.pill.kind { color: var(--text); border-color: var(--text-muted); }
+/* .kind carries the doc_type verbatim for non-FERC collections (state audits/
+   rate cases/reference docs) — free prose, not a short fixed badge (FERC's is
+   just "FA"/"PA"). Some run 90+ chars ("Pipeline-safety technical/compliance
+   inspection report (standard gas distribution inspection)"); nowrap on that
+   forced a flex-item min-content width the whole page couldn't shrink below,
+   overflowing horizontally at 375px. Found 2026-08-09 UAT'ing the state_audit
+   tab at mobile width — every other .pill variant is a genuinely short badge,
+   so this is the one exception, not a reason to drop nowrap everywhere. */
+.pill.kind { color: var(--text); border-color: var(--text-muted); white-space: normal; }
 .pill.func { color: var(--text-muted); }
 .pill.muted { color: var(--text-muted); border-style: dashed; }
 /* Money is data, not status: ink + mono tabular numerals, no hue (spec C1). */
@@ -965,7 +1047,14 @@ a:hover { color: var(--accent-hover); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1023px) {
-  .layout { grid-template-columns: 1fr; }
+  /* minmax(0, 1fr), not bare 1fr: a bare 1fr track has an implicit auto
+     minimum (won't shrink below its content's min-content width), so a long
+     unbreakable token anywhere in the stream (a doc_type, a docket id) could
+     force this single-column track past the viewport — the same class of bug
+     as the .pill.kind fix above, caught by the same 2026-08-09 mobile UAT
+     pass on the state_audit tab. minmax(0, 1fr) is what the desktop 2-column
+     rule above already uses for exactly this reason. */
+  .layout { grid-template-columns: minmax(0, 1fr); }
   /* Patterns become a horizontal swipe rail so trends stay one compact row, not a tall stack. */
   .patterns-rail {
     grid-template-columns: none;
@@ -1047,6 +1136,32 @@ a:hover { color: var(--accent-hover); }
     padding-bottom: 14px;
   }
   .filters.open { transform: translateX(0); }
+}
+
+/* Ledger (A3) narrow-column widths — its OWN range, not tied to the filters
+   breakpoint above: the base (desktop) widths only actually fit once the
+   two-column .layout's content area is wide enough (~1180px viewport, where
+   .layout's own max-width caps and the content column stabilizes at its
+   widest). Below that, the .layout grid keeps shrinking the ledger-wrap right
+   up to 1023px — including right past 1023px too, at e.g. 1024px, a common
+   iPad-landscape width — so this covers the whole 640-1179px span, not just
+   the tablet single-column range. Found scanning every collection across a
+   width sweep, not just the two widths the original test checked (2026-08-09). */
+@media (min-width: 640px) and (max-width: 1179px) {
+  /* Budgeted against the WORST case in this range: 606px available at exactly
+     640px (LEDGER_MIN_WIDTH — the ledger's minimum activation width), not the
+     more comfortable ~734px at 768px. Comfortably under-budget everywhere else
+     in the range; that's fine, a few extra px of column padding costs nothing. */
+  .lg-date { width: 84px; }
+  .lg-co { width: 120px; }
+  .lg-docket { width: 78px; }
+  .lg-type { width: 40px; }
+  .ledger th.lg-num, .ledger td.lg-num { width: 50px; }
+  .lg-themes { width: 120px; }
+  /* Leaves room for the "+N" more-themes suffix that sits beside this span
+     inside the same cell — a max-width that only accounts for the span itself
+     let the pair together overflow the cell by a few px (state_audit, 2026-08-09). */
+  .lg-theme-text { max-width: 88px; }
 }
 
 /* Phone (B3) — the toolbar is fixed to the bottom so Filters/sort/count/top stay

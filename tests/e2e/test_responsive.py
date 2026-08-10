@@ -80,6 +80,25 @@ def test_no_horizontal_page_scroll(page_factory, width, height, name):
     ), f"the page scrolls horizontally at {name} ({width}px)"
 
 
+# Regression (2026-08-09): the test above only ever visited the default tab
+# (ferc_audit, hash_=""). state_audit/state_rate_case/prudence_review render a
+# doc_type as a nowrap .pill.kind — free prose for non-FERC collections, up to
+# ~95 chars ("Pipeline-safety technical/compliance inspection report
+# (standard gas distribution inspection)"), vs. FERC's short "FA"/"PA" — which
+# forced the mobile single-column .layout grid track (bare `1fr`, missing the
+# `minmax(0, ...)` the desktop 2-column rule already had) past the viewport.
+# Never caught because no test loaded a non-default tab at a narrow width.
+@pytest.mark.parametrize("collection", [
+    "ferc_audit", "prudence_review", "state_audit", "state_rate_case", "state_reference",
+])
+def test_no_horizontal_page_scroll_on_every_tab_at_375(page_factory, collection):
+    p = page_factory(width=375, height=812, hash_=f"#/{collection}")
+    p.wait_for_timeout(300)
+    sw = p.evaluate("document.documentElement.scrollWidth")
+    cw = p.evaluate("document.documentElement.clientWidth")
+    assert sw <= cw, f"{collection} scrolls horizontally at 375px ({sw}px content in a {cw}px viewport)"
+
+
 def test_tablet_filters_slide_in_from_the_left(page_factory):
     """B3: a bottom sheet feels phone-y at 768px and hides the stream it filters."""
     p = page_factory(width=768, height=1024)
