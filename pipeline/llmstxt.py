@@ -89,10 +89,22 @@ def _report_line(r: AuditReport) -> str:
     if r.structured and r.finding_count:
         titles = "; ".join(f.title for f in r.findings if not f.is_other_matter)
         suffix = f" — findings: {titles}" if titles else ""
+        # FERC audits always carry audit_type (financial/non-financial); every
+        # other structured collection (PA/NY/NJ M&O audits, CA ERRA decisions)
+        # doesn't, and used to render this as the nonsensical "audit audit,
+        # n/a" — fall back to doc_type + jurisdiction, the same descriptor the
+        # metadata-only branch below already uses (bot-caught in code review,
+        # 2026-08-10; pre-existing for every structured state record, not
+        # introduced by the CA parser that happened to surface it in a diff).
+        if r.audit_type:
+            kind = f"{r.audit_type} audit"
+        else:
+            juris = f"{r.jurisdiction} · " if r.jurisdiction and r.jurisdiction != "FERC" else ""
+            kind = f"{juris}{r.doc_type or 'audit'}"
         fns = "/".join(r.functions) if r.functions else "n/a"
         return (
             f"- [{r.company}]({r.source_page_url}): Docket {r.docket_full or r.docket or 'n/a'}, "
-            f"issued {r.issued_date or 'n/a'}, {r.audit_type or 'audit'} audit, {fns}, "
+            f"issued {r.issued_date or 'n/a'}, {kind}, {fns}, "
             f"{r.finding_count} finding(s){suffix}"
         )
     label = r.doc_type or "document"
