@@ -81,7 +81,7 @@
     "docket": null,
     "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SoCalGas (review period CY2023), dated Feb 19, 2025. 15 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Gas Company'.",
     "captured_at": "2026-06-08",
-    "parse": true
+    "parse": false
   },
   {
     "id": "2024-07-23_southern-california-edison_ca-balancing-accounts-audit",
@@ -97,7 +97,7 @@
     "docket": null,
     "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of SCE (review period CY2022), dated July 23, 2024. 16 pp. Page 1 verified: 'BALANCING ACCOUNTS PERFORMANCE AUDIT Southern California Edison Company'.",
     "captured_at": "2026-06-08",
-    "parse": true
+    "parse": false
   },
   {
     "id": "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",

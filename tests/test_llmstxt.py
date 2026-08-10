@@ -71,6 +71,43 @@ def _patterns() -> PatternsSummary:
     )
 
 
+def _state_report() -> AuditReport:
+    """A structured non-FERC record (PA/NY/NJ M&O audits, CA ERRA decisions) —
+    audit_type is FERC-specific and always None here; doc_type + jurisdiction
+    carry the descriptor instead."""
+    return AuditReport(
+        id="r2",
+        company="Example Gas Co",
+        company_raw="Example Gas Co",
+        jurisdiction="PA",
+        collection="state_audit",
+        source="PA PUC Bureau of Audits",
+        doc_type="management & operations audit",
+        docket=None,
+        issued_date=date(2025, 3, 4),
+        source_page_url="https://www.puc.pa.gov/x",
+        pdf_download_url="https://www.puc.pa.gov/dl",
+        captured_at=date(2026, 2, 3),
+        page_count=40,
+        industry="gas",
+        finding_count=1,
+        findings=[Finding(index=1, title="Corporate Governance", summary="Gap found.")],
+    )
+
+
+def test_report_line_uses_doc_type_not_audit_type_for_structured_state_records():
+    """Regression (bot-caught in code review, 2026-08-10): _report_line's
+    structured branch assumed FERC's audit_type ("financial"/"non-financial")
+    is always set, so every structured non-FERC record (PA/NY/NJ M&O audits,
+    CA ERRA decisions) rendered as the nonsensical 'audit audit, n/a' instead
+    of its real doc_type. Pre-existing for every prior structured state
+    record; a CA addition just happened to be the diff a reviewer looked at."""
+    line = llmstxt._report_line(_state_report())
+    assert "audit audit" not in line
+    assert "management & operations audit" in line
+    assert "PA · " in line
+
+
 def test_index_is_spec_shaped():
     s = llmstxt.build_index([_report()], _patterns(), _META)
     assert s.startswith("# FERC Audit Explorer")  # required H1

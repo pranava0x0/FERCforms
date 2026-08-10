@@ -3960,7 +3960,7 @@
     "captured_at": "2026-06-10",
     "source_note": "CPUC Decision 25-06-007 (decided June 12, 2025; date of issuance June 16, 2025), Application 24-02-012 — Decision Approving Pacific Gas and Electric Company's 2023 Energy Resource Recovery Account (ERRA) Entries and Related Matters: the annual ERRA compliance/reasonableness (prudence) review of PG&E's utility-owned generation operations, ERRA entries, contract administration, economic dispatch and fuel procurement for record year January 1 – December 31, 2023 (35 pp, born-digital PDF). Unlike the older CA ERRA decisions (HTML-only, fetch=false), this decision is a fetchable PDF on docs.cpuc.ca.gov/PublishedDocs. Page-1 verified 2026-06-10.",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 35,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,
@@ -3968,11 +3968,476 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 0,
-    "findings": [],
-    "structured": false,
+    "finding_count": 37,
+    "findings": [
+      {
+        "index": 1,
+        "title": "The 2023 Record Year extended from January 1, 2023 through December 31, 2023.",
+        "summary": "The 2023 Record Year extended from January 1, 2023 through December 31, 2023.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 2,
+        "title": "PG&E operates the following UOG types: 1) hydroelectric, 2) fossil fuel, 3) b…",
+        "summary": "PG&E operates the following UOG types: 1) hydroelectric, 2) fossil fuel, 3) battery energy storage, 4) solar, and 5) nuclear.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 3,
+        "title": "PG&E’s utility-owned hydroelectric portfolio consists of 61 powerhouses with …",
+        "summary": "PG&E’s utility-owned hydroelectric portfolio consists of 61 powerhouses with 99 generating units with ancillary support facilities that include reservoirs, diversions, dams and water conveyance apparatus.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 4,
+        "title": "During the Record Year, PG&E owned, operated and maintained three fossil fuel…",
+        "summary": "During the Record Year, PG&E owned, operated and maintained three fossil fuel generating stations, one battery storage energy project, and 10 ground- mounted PV solar stations.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 5,
+        "title": "PG&E’s Gateway Generation Station, which is a fossil fuel generating facility…",
+        "summary": "PG&E’s Gateway Generation Station, which is a fossil fuel generating facility, experienced one forced outage during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 6,
+        "title": "PG&E’s Humbolt Bay Generating Station, a fossil fuel generating facility, exp…",
+        "summary": "PG&E’s Humbolt Bay Generating Station, a fossil fuel generating facility, experienced 12 forced outages during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 7,
+        "title": "During August 2023, Humbolt Bay Generating Station unit 6 was forced out of s…",
+        "summary": "During August 2023, Humbolt Bay Generating Station unit 6 was forced out of service because the engine water pump bearings failed.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 8,
+        "title": "PG&E owns the Elkhorn Battery Storage facility located in Monterey County.",
+        "summary": "PG&E owns the Elkhorn Battery Storage facility located in Monterey County.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 9,
+        "title": "On February 6, 2023, the Elkhorn Battery Storage facility was forced out of s…",
+        "summary": "On February 6, 2023, the Elkhorn Battery Storage facility was forced out of service for 45 hours while Tesla performed an emergency critical control system update for the site controller and tested the facility following the changes to the control system.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 10,
+        "title": "PG&E’s PV generating facilities were operated at only 70.7 percent of expecte…",
+        "summary": "PG&E’s PV generating facilities were operated at only 70.7 percent of expected output because CAISO requested that PG&E curtail output for economic dispatch purposes. Otherwise, PG&E’s PV output would have achieved 81.9 percent of expected output.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 11,
+        "title": "PG&E owns and operates the Diablo Canyon Nuclear Power Plant.",
+        "summary": "PG&E owns and operates the Diablo Canyon Nuclear Power Plant.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 12,
+        "title": "There were no forced outages at the Diablo Canyon Nuclear Power Plant during …",
+        "summary": "There were no forced outages at the Diablo Canyon Nuclear Power Plant during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 13,
+        "title": "PG&E’s testimony demonstrates that it operated Diablo Canyon Nuclear Power Pl…",
+        "summary": "PG&E’s testimony demonstrates that it operated Diablo Canyon Nuclear Power Plant in a reasonable manner during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 14,
+        "title": "PG&E is in the process of conducting cause evaluations on the outages at the …",
+        "summary": "PG&E is in the process of conducting cause evaluations on the outages at the Belden and Caribou 1 Powerhouse outages and two maintenance outages at Diablo Canyon Nuclear Power Plant during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 15,
+        "title": "During the Record Year, PG&E managed 482 and settled 485 energy contracts. Ne…",
+        "summary": "During the Record Year, PG&E managed 482 and settled 485 energy contracts. Net energy and RA payments totaled roughly $2.5 billion. PG&E also managed 112 contracts for projects that began delivery or achieved commercial operation, entered into 50 contract amendments, and settled disputes resulting in the collection of roughly $11.4 million in damages.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 16,
+        "title": "The evidentiary record supports a finding that PG&E reasonably and prudently …",
+        "summary": "The evidentiary record supports a finding that PG&E reasonably and prudently administered its QF and non-QF contracts reasonably and in conformance with SOC4 and its BPP.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 17,
+        "title": "PG&E's testimony demonstrates that it achieved least cost dispatch of its ene…",
+        "summary": "PG&E's testimony demonstrates that it achieved least cost dispatch of its energy resources and economically triggered demand response programs pursuant to SOC 4 in the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 18,
+        "title": "PG&E’s testimony demonstrates that it complied with all Commission decisions …",
+        "summary": "PG&E’s testimony demonstrates that it complied with all Commission decisions in recording entries into the ERRA BA appropriately and accurately during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 19,
+        "title": "In 2023, the Commission did not approve any PG&E PCIA-eligible UOG facilities…",
+        "summary": "In 2023, the Commission did not approve any PG&E PCIA-eligible UOG facilities and no construction commenced during the Record Year.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 20,
+        "title": "PG&E’s testimony demonstrates that it complied with all Commission decisions …",
+        "summary": "PG&E’s testimony demonstrates that it complied with all Commission decisions in recording entries in the PABA appropriately and accurately.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 21,
+        "title": "PG&E has not provided independent evaluator reports in its quarterly complian…",
+        "summary": "PG&E has not provided independent evaluator reports in its quarterly compliance reports in cases where it has not sought approval for executed RA transactions.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 22,
+        "title": "The extensive record in this proceeding provides a sufficient showing that PG…",
+        "summary": "The extensive record in this proceeding provides a sufficient showing that PG&E’s procurement of Greenhouse Gas Compliance Instruments is in compliance with its BPP, Commission directives and applicable tariffs.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 23,
+        "title": "The evidentiary record in this proceeding supports a finding that PG&E satisf…",
+        "summary": "The evidentiary record in this proceeding supports a finding that PG&E satisfied the Commission’s requirements for the purchase and sale of RA capacity consistent with PG&E’s BPP.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 24,
+        "title": "PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar…",
+        "summary": "PG&E offers two Green Tariff Shared Renewables Programs, namely “PG&E’s Solar Choice,” for customers and the “Regional Renewable Choice” program for developers.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 25,
+        "title": "In 2023, no customers took service under the Regional Renewable Choice progra…",
+        "summary": "In 2023, no customers took service under the Regional Renewable Choice program tariff.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 26,
+        "title": "PG&E’s testimony demonstrated that its entries recorded in the Community Sola…",
+        "summary": "PG&E’s testimony demonstrated that its entries recorded in the Community Solar Green Tariff Shared Renewables Memorandum Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 27,
+        "title": "PG&E’s testimony demonstrated that its entries recorded in the Green Tariff S…",
+        "summary": "PG&E’s testimony demonstrated that its entries recorded in the Green Tariff Shared Renewables BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 28,
+        "title": "The Disadvantaged Communities – Single Family Solar Affordable Homes BA recor…",
+        "summary": "The Disadvantaged Communities – Single Family Solar Affordable Homes BA records the costs of the Disadvantaged Communities – Single Family Solar Affordable Solar Housing program.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 29,
+        "title": "PG&E’s testimony demonstrated that its entries into the Disadvantaged Communi…",
+        "summary": "PG&E’s testimony demonstrated that its entries into the Disadvantaged Communities-Single Family Solar Affordable Homes BA are reasonable and in compliance with applicable tariffs and Commission directives.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 30,
+        "title": "PG&E’s testimony demonstrated that its entries recorded in the Disadvantaged …",
+        "summary": "PG&E’s testimony demonstrated that its entries recorded in the Disadvantaged Communities Green Tariff Balancing Account during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 31,
+        "title": "The Community Solar Green Tariff program engages communities in developing so…",
+        "summary": "The Community Solar Green Tariff program engages communities in developing solar projects within five miles of the participating customer’s community, or within 40 miles in the San Joaquin Valley pilot community.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 32,
+        "title": "The Community Solar Green Tariff program had no customers during the Record Y…",
+        "summary": "The Community Solar Green Tariff program had no customers during the Record Year because customers will not be enrolled until the first Community Solar Green Tariff program comes online in 2024.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 33,
+        "title": "PG&E’s testimony demonstrated that its entries recorded in the Community Sola…",
+        "summary": "PG&E’s testimony demonstrated that its entries recorded in the Community Solar Green Tariff BA during the Record Year are reasonable and in compliance with applicable tariffs and Commission directives.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [
+          "Tariff administration & oversight"
+        ],
+        "cost_to_customers": false
+      },
+      {
+        "index": 34,
+        "title": "PG&E recorded the procurement and administrative costs it incurred as a centr…",
+        "summary": "PG&E recorded the procurement and administrative costs it incurred as a central procurement entity for local RA in the Centralized Local Procurement Sub-Account of the New System Balancing Account.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 35,
+        "title": "In 2023, PG&E procured local RA in its capacity as the central procurement en…",
+        "summary": "In 2023, PG&E procured local RA in its capacity as the central procurement entity for load serving entities under the Commission’s jurisdiction within the PG&E distribution services area.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 36,
+        "title": "PG&E’s testimony demonstrated that its recorded costs in the Centralized Loca…",
+        "summary": "PG&E’s testimony demonstrated that its recorded costs in the Centralized Local Procurement Sub-Account of the New System Generation BA during the Record Year to be reasonable and in compliance with Commission decisions.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      },
+      {
+        "index": 37,
+        "title": "No safety considerations were raised in the Application.",
+        "summary": "No safety considerations were raised in the Application.",
+        "is_other_matter": false,
+        "recommendations": [],
+        "amount_usd": null,
+        "amount_usd_quote": null,
+        "amount_usd_page": null,
+        "themes": [],
+        "cost_to_customers": false
+      }
+    ],
+    "structured": true,
     "themes": [
-      "Fuel & purchased-power cost recovery"
+      "Tariff administration & oversight"
     ],
     "cost_to_customers": false
   },
@@ -4685,46 +5150,9 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 2,
-    "findings": [
-      {
-        "index": 1,
-        "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
-        "summary": null,
-        "is_other_matter": false,
-        "recommendations": [
-          {
-            "number": 1,
-            "text": "the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to",
-            "source_page": null
-          }
-        ],
-        "amount_usd": null,
-        "amount_usd_quote": null,
-        "amount_usd_page": null,
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "This audit report is intended solely for the information and use of SoCalGas and",
-        "summary": null,
-        "is_other_matter": false,
-        "recommendations": [
-          {
-            "number": 2,
-            "text": "This audit report is intended solely for the information and use of SoCalGas and CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this final audit report, which is a matter of public record and will be available on CPUC website at Audit Reports by Industry (ca.gov).",
-            "source_page": null
-          }
-        ],
-        "amount_usd": null,
-        "amount_usd_quote": null,
-        "amount_usd_page": null,
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
-    "structured": true,
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
     "themes": [],
     "cost_to_customers": false
   },
@@ -8730,46 +9158,9 @@
     "audit_type": null,
     "functions": [],
     "forms": [],
-    "finding_count": 2,
-    "findings": [
-      {
-        "index": 1,
-        "title": "the balancing account. Additionally, unless approved otherwise, a balancing acco",
-        "summary": null,
-        "is_other_matter": false,
-        "recommendations": [
-          {
-            "number": 1,
-            "text": "the balancing account. Additionally, unless approved otherwise, a balancing account is required to accumulate monthly interest at a rate equal to one-twelfth of the most recent month’s interest rate on three-month Commercial Paper published by the Federal Reserve. Actual revenues collected by a utility in rates can be more or less than what CPUC had authorized to",
-            "source_page": null
-          }
-        ],
-        "amount_usd": null,
-        "amount_usd_quote": null,
-        "amount_usd_page": null,
-        "themes": [],
-        "cost_to_customers": false
-      },
-      {
-        "index": 2,
-        "title": "This audit report is intended solely for the information and use of SCE and the ",
-        "summary": null,
-        "is_other_matter": false,
-        "recommendations": [
-          {
-            "number": 2,
-            "text": "This audit report is intended solely for the information and use of SCE and the CPUC; it is not intended to be and should not be used by anyone other than these specified parties. This restriction is not intended to limit distribution of this audit report, which is a matter of public record and will be available on the CPUC website at Audit Reports by Industry (ca.gov).",
-            "source_page": null
-          }
-        ],
-        "amount_usd": null,
-        "amount_usd_quote": null,
-        "amount_usd_page": null,
-        "themes": [],
-        "cost_to_customers": false
-      }
-    ],
-    "structured": true,
+    "finding_count": 0,
+    "findings": [],
+    "structured": false,
     "themes": [],
     "cost_to_customers": false
   },
@@ -37399,7 +37790,7 @@
     "captured_at": "2026-06-08",
     "source_note": "CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -> issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'",
     "archived_via": null,
-    "page_count": 0,
+    "page_count": 1,
     "scanned_pages": [],
     "ocr_used": false,
     "audit_period": null,

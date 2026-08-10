@@ -1,8 +1,8 @@
 {
   "report_count": 440,
-  "finding_count": 813,
+  "finding_count": 846,
   "other_matter_count": 10,
-  "recommendation_count": 2030,
+  "recommendation_count": 2026,
   "by_industry": {
     "electric": 281,
     "unknown": 91,
@@ -33,6 +33,223 @@
     "generation": 65,
     "distribution": 2
   },
+  "by_jurisdiction": [
+    {
+      "jurisdiction": "FERC",
+      "report_count": 137,
+      "finding_count": 663
+    },
+    {
+      "jurisdiction": "PA",
+      "report_count": 27,
+      "finding_count": 106
+    },
+    {
+      "jurisdiction": "CA",
+      "report_count": 22,
+      "finding_count": 37
+    },
+    {
+      "jurisdiction": "NY",
+      "report_count": 12,
+      "finding_count": 24
+    },
+    {
+      "jurisdiction": "NJ",
+      "report_count": 8,
+      "finding_count": 16
+    },
+    {
+      "jurisdiction": "DC",
+      "report_count": 32,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "TX",
+      "report_count": 24,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "IL",
+      "report_count": 15,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "FL",
+      "report_count": 14,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "WA",
+      "report_count": 11,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "WV",
+      "report_count": 10,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "GA",
+      "report_count": 8,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "VA",
+      "report_count": 7,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MO",
+      "report_count": 7,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "SC",
+      "report_count": 7,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MN",
+      "report_count": 6,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "AR",
+      "report_count": 6,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "WI",
+      "report_count": 6,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "TN",
+      "report_count": 6,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "ID",
+      "report_count": 5,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "IN",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "KY",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "OH",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "LA",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "ND",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MI",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "SD",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "OK",
+      "report_count": 4,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "RI",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MD",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "UT",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "CT",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MT",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "AZ",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "CO",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "OR",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "KS",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "NE",
+      "report_count": 3,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "MS",
+      "report_count": 2,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "DE",
+      "report_count": 2,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "ME",
+      "report_count": 2,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "NM",
+      "report_count": 1,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "NV",
+      "report_count": 1,
+      "finding_count": 0
+    }
+  ],
   "themes": [
     {
       "theme": "Accounting misclassification",
@@ -176,7 +393,7 @@
         "energy cost recovery"
       ],
       "finding_count": 12,
-      "report_count": 55,
+      "report_count": 54,
       "example_titles": [
         "Recovery of Fuel Contract Buyout Costs",
         "Accounting for Fuel Storage and Handling",
@@ -192,7 +409,7 @@
         "2022": 5,
         "2023": 1,
         "2024": 14,
-        "2025": 17,
+        "2025": 16,
         "2026": 1
       },
       "top_companies": [
@@ -535,6 +752,54 @@
       ]
     },
     {
+      "theme": "Tariff administration & oversight",
+      "description": "Not following the utility's own FERC-approved tariff.",
+      "keywords": [
+        "tariff"
+      ],
+      "finding_count": 51,
+      "report_count": 36,
+      "example_titles": [
+        "Renewable Natural Gas Quality Specifications",
+        "Tariff Administration and Oversight",
+        "Creditworthiness Standards",
+        "Customer Service (continued)"
+      ],
+      "by_year": {
+        "2016": 4,
+        "2018": 6,
+        "2019": 2,
+        "2020": 3,
+        "2021": 1,
+        "2022": 3,
+        "2023": 3,
+        "2024": 4,
+        "2025": 9
+      },
+      "top_companies": [
+        {
+          "company": "Montana-Dakota Utilities Co.",
+          "report_count": 2
+        },
+        {
+          "company": "Florida investor-owned utilities (energy conservation cost recovery)",
+          "report_count": 2
+        },
+        {
+          "company": "Duke Energy Kentucky, Inc.",
+          "report_count": 1
+        },
+        {
+          "company": "Kern River Gas Transmission Company",
+          "report_count": 1
+        },
+        {
+          "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
+          "report_count": 1
+        }
+      ]
+    },
+    {
       "theme": "Cost of service & rates",
       "description": "Errors in rate-base or return inputs to cost-of-service rates.",
       "keywords": [
@@ -584,54 +849,6 @@
         },
         {
           "company": "EnLink NGL Pipeline, LP",
-          "report_count": 1
-        }
-      ]
-    },
-    {
-      "theme": "Tariff administration & oversight",
-      "description": "Not following the utility's own FERC-approved tariff.",
-      "keywords": [
-        "tariff"
-      ],
-      "finding_count": 41,
-      "report_count": 35,
-      "example_titles": [
-        "Renewable Natural Gas Quality Specifications",
-        "Tariff Administration and Oversight",
-        "Creditworthiness Standards",
-        "Customer Service (continued)"
-      ],
-      "by_year": {
-        "2016": 4,
-        "2018": 6,
-        "2019": 2,
-        "2020": 3,
-        "2021": 1,
-        "2022": 3,
-        "2023": 3,
-        "2024": 4,
-        "2025": 8
-      },
-      "top_companies": [
-        {
-          "company": "Montana-Dakota Utilities Co.",
-          "report_count": 2
-        },
-        {
-          "company": "Florida investor-owned utilities (energy conservation cost recovery)",
-          "report_count": 2
-        },
-        {
-          "company": "Duke Energy Kentucky, Inc.",
-          "report_count": 1
-        },
-        {
-          "company": "Kern River Gas Transmission Company",
-          "report_count": 1
-        },
-        {
-          "company": "Pike County Light & Power Company / Leatherstocking Gas Company LLC",
           "report_count": 1
         }
       ]
@@ -1409,5 +1626,5 @@
       "count": 4
     }
   ],
-  "generated_at": "2026-07-16"
+  "generated_at": "2026-08-10"
 }

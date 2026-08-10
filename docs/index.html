@@ -123,6 +123,26 @@
     <div id="trends" class="trends-grid"></div>
   </section>
 
+  <!-- A9 extension: per-jurisdiction coverage (BACKLOG item 14, 2026-08-09).
+       Collapsed by default — a 40+-row table shouldn't cost every visitor a
+       scroll; JS hides the whole <details> on tabs with only one jurisdiction. -->
+  <details class="juris-coverage" id="juris-coverage">
+    <summary>
+      <span>Coverage by jurisdiction</span>
+      <span class="chev" aria-hidden="true">▾</span>
+    </summary>
+    <p class="juris-note">Most state legal filings are intentionally listed for reference, not parsed into findings (verbatim quotes only — see the About page). 0 findings usually means "not parsed," not "nothing found."</p>
+    <div class="juris-table-wrap">
+      <table class="juris-table">
+        <caption class="sr-only">Reports and parsed findings per jurisdiction for the active tab</caption>
+        <thead>
+          <tr><th scope="col">Jurisdiction</th><th scope="col">Reports</th><th scope="col">Findings</th></tr>
+        </thead>
+        <tbody id="juris-table-body"></tbody>
+      </table>
+    </div>
+  </details>
+
   <div class="layout">
     <!-- Filters -->
     <aside class="filters" id="filters" aria-label="Filters">

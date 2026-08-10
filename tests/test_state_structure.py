@@ -345,3 +345,104 @@ def test_comprehensive_mo_audits_regression(rid, seed_file, min_findings, min_re
     assert sum(len(f.recommendations) for f in report.findings) >= min_recs
     assert all(f.title for f in report.findings)
     assert all(r.text for f in report.findings for r in f.recommendations)
+
+
+# --- California ERRA decisions — "Findings of Fact" (replaces the marker-based
+# parser removed 2026-08-09; see ISSUES.md for why it garbled 2 unrelated audits).
+# Synthetic decision: a TOC entry with dotted leader (must NOT be mistaken for the
+# real body heading), the real heading immediately followed by "1. ", a mid-list
+# page-break (docket caption + page number) that must be stripped without fusing
+# item 1 into item 2, and a trailing page-break right before "Conclusions of Law".
+_CA_ERRA = """TABLE OF CONTENTS
+Summary ....................................................................1
+Findings of Fact ....................................................................25
+Conclusions of Law ....................................................................30
+
+Findings of Fact
+1. The Record Year extended from January 1 through December 31.
+2. The utility operates hydroelectric, fossil fuel, and solar generation.
+
+A.24-02-012  ALJ/LGG/asf
+
+
+- 26 -
+3. The utility's testimony demonstrates it operated its portfolio in a
+reasonable manner during the Record Year.
+
+A.24-02-012  ALJ/LGG/asf
+
+
+- 27 -
+Conclusions of Law
+1. The utility acted reasonably in addressing forced outages during
+the Record Year.
+"""
+
+
+def _ca_seed(parse: bool = True) -> SourceSeed:
+    return SourceSeed(
+        id="2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra",
+        company="Pacific Gas and Electric Company",
+        collection="prudence_review",
+        jurisdiction="CA",
+        source="California Public Utilities Commission",
+        doc_type="ERRA compliance & reasonableness review decision",
+        industry="electric",
+        pdf_url="https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
+        source_page_url="https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M569/K665/569665704.PDF",
+        issued_date=date(2025, 6, 12),
+        captured_at=date(2026, 6, 10),
+        parse=parse,
+    )
+
+
+def test_parse_ca_findings_of_fact_skips_toc_and_strips_page_noise():
+    items = state_structure.parse_ca_findings_of_fact(_CA_ERRA)
+    assert items == [
+        "The Record Year extended from January 1 through December 31.",
+        "The utility operates hydroelectric, fossil fuel, and solar generation.",
+        "The utility's testimony demonstrates it operated its portfolio in a reasonable manner during the Record Year.",
+    ]
+    # Neither the page-break docket caption nor "Conclusions of Law"'s own item 1
+    # leaked into the Findings of Fact list.
+    assert not any("ALJ" in t or "reasonably in addressing" in t for t in items)
+
+
+def test_parse_ca_findings_of_fact_returns_none_without_the_section():
+    assert state_structure.parse_ca_findings_of_fact("A legal order with no enumerated findings.") is None
+
+
+def test_parse_ca_findings_of_fact_rejects_broken_numbering():
+    """Fail-closed: a gap/repeat in the numbering means the anchor or the
+    page-noise strip missed something — don't ship a misaligned list."""
+    broken = _CA_ERRA.replace("2. The utility operates", "3. The utility operates")
+    assert state_structure.parse_ca_findings_of_fact(broken) is None
+
+
+def test_structure_ca_audit_maps_findings_verbatim():
+    pages = [PageText(page=1, char_count=len(_CA_ERRA), is_image_only=False, extractor="pymupdf", text=_CA_ERRA)]
+    report = state_structure.structure_ca_audit(_ca_seed(), pages, scanned_pages=[])
+    assert report is not None
+    assert report.finding_count == 3
+    assert report.findings[0].summary == "The Record Year extended from January 1 through December 31."
+    assert all(f.recommendations == [] for f in report.findings)  # no per-fact recommendation to pair
+
+
+def test_structure_ca_audit_returns_none_for_non_erra_prose():
+    pages = [PageText(page=1, char_count=20, is_image_only=False, extractor="pymupdf", text="A balancing-account audit report with no Findings of Fact section.")]
+    assert state_structure.structure_ca_audit(_ca_seed(), pages, scanned_pages=[]) is None
+
+
+# --- No-regression snapshot over the real CA ERRA decision (skip if not ingested) ---
+def test_real_ca_erra_decision_regression():
+    rid = "2025-06-12_pacific-gas-and-electric_ca-a24-02-012-d25-06-007-erra"
+    text_path = config.PROCESSED_DIR / rid / "text.json"
+    if not text_path.exists():
+        pytest.skip(f"{rid} not ingested locally (run: pipeline.sources --seed data/seeds/ca_cpuc.json)")
+    seeds = {s["id"]: SourceSeed.model_validate(s) for s in json.loads((config.SEEDS_DIR / "ca_cpuc.json").read_text())}
+    text = ReportText.model_validate_json(text_path.read_text(encoding="utf-8"))
+    report = state_structure.structure_ca_audit(seeds[rid], text.pages, text.scanned_pages)
+    assert report is not None
+    assert report.finding_count >= 30
+    assert all(f.summary for f in report.findings)
+    assert all(f.title for f in report.findings)

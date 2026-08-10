@@ -273,6 +273,27 @@ explicitly, not assumed:
 - **Assert it**: `tests/e2e/test_ledger.py` fails if row height exceeds 40px or the table overflows
   at 1280/768. Measured result: 34px rows, ~26 reports/screen vs ~6 cards.
 
+  **2026-08-09 update — both bullets above were insufficient, not wrong.** Verifying the ledger on
+  every tab (not just the one this test happened to check) found it 1650px wide at a 1280px
+  viewport for 4 of 5 collections. Two things this section didn't say:
+  - **`table-layout: auto` (the default) sizes every column from its WIDEST cell across ALL rows,
+    ignoring any width you set.** "Tune column widths" only works under `table-layout: fixed` with
+    explicit per-column widths — auto layout treats a tuned width as a hint it's free to ignore the
+    moment one row's content (a 95-char doc_type, a dual docket like `"OAH 21-2500-39686 / MPUC
+    E-015/GRE-23-155"`) disagrees.
+  - **`overflow: hidden; text-overflow: ellipsis` set directly on the `<td>` clips visually but the
+    cell's intrinsic content width can still leak into the table's own `scrollWidth`** under fixed
+    layout. Wrap the truncated value in a nested `display: inline-block` span instead (`<td><span
+    class="cell-text">…</span></td>`) — the same fix §12.2 already prescribes for ellipsis-on-inline,
+    generalized to table cells.
+  - Corollary of §12.4: if the header `<th>` and body `<td>` for the same column don't share a
+    class, a width rule targeting that class silently only ever matches the body — under
+    `table-layout: fixed`, **column width is set by the header row**, so this is a no-op that looks
+    like nothing changed. Build header cells from the same column-definition array as body cells
+    (never a parallel hardcoded list), one more instance of "enumerate the source array."
+  - The regression test only ever loaded the default tab. Widen any width/overflow test to
+    parametrize the tab/collection too, not just the viewport — see AGENTS.md.
+
 ## 13. What's intentionally NOT in design
 
 Decisions made by *omission*:

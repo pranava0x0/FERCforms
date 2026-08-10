@@ -51,4 +51,3 @@ oauth*.json
 # Track .claude/skills/ — project skills ship with the repo; ignore everything else.
 .claude/*
 !.claude/skills/
-data/processed/*/report.json

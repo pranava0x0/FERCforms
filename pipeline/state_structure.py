@@ -528,85 +528,87 @@ def structure_mi_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: l
 
 
 # --- California ERRA Decisions ---
-def parse_ca_erra_findings(full_text: str) -> list[tuple[str, list[tuple[str, "int | None"]]]]:
-    """Parse California CPUC ERRA decision findings.
+# Every CPUC decision (ERRA reasonableness reviews included) ends with a
+# formally-headed, sequentially-numbered "Findings of Fact" section — the
+# Commission's own enumerated factual record, immediately followed by
+# "Conclusions of Law". This is a real structural anchor (verified 2026-08-09
+# against a live-fetched decision, D.25-06-007), unlike the marker-based
+# `parse_ca_erra_findings` this replaces: that scanned the WHOLE document for
+# generic phrases ("is not", "required to", "is reasonable") that match
+# ordinary sentences anywhere in CA legal prose, and it garbled 2 unrelated
+# Utility Audits Branch audits when a stray seed flag pointed it at the wrong
+# doc_type (see ISSUES.md 2026-08-09). Findings of Fact are a mix of neutral
+# background ("PG&E owns the Diablo Canyon Nuclear Power Plant") and
+# reasonableness/compliance determinations ("has not provided independent
+# evaluator reports...") — the SAME "take every row, never curate which ones
+# count" rule other verbatim parsers in this project follow applies here too.
+_FOF_HEADING_RE = re.compile(r"Findings of Fact\s*\n(?=\s*1\.\s)")
+_COL_HEADING_RE = re.compile(r"\n\s*Conclusions of Law\s*\n")
+# A repeating running header/footer: a docket-caption line ("A.24-02-012
+# ALJ/LGG/asf") and/or a lone page-number line ("- 26 -"). Two INDEPENDENT
+# patterns, not one ordered sequence (2026-08-10 code review) — a single
+# combined pattern requiring "caption, then page number" only stripped that
+# one layout; a page-break can just as easily land as page-number-then-
+# caption (footer of page N immediately followed by the header of page N+1,
+# normal reading order), caption with no adjacent page number, or a page
+# number with no caption line. Stripped independently so any combination
+# still gets removed rather than fusing into or splitting an item's text.
+_DOCKET_CAPTION_LINE_RE = re.compile(r"\n?\s*[A-Z]\.\d{2}-\d{2}-\d{3}\s+\S+\s*(?:\n|\Z)")
+_PAGE_NUMBER_LINE_RE = re.compile(r"\n?\s*-\s*\d+\s*-\s*(?:\n|\Z)")
+_FOF_ITEM_RE = re.compile(r"\n(\d{1,3})\.\s+")
 
-    CPUC ERRA decisions use prose format with finding markers like:
-    - "We find that..."
-    - "The Commission finds..."
-    - "found from its..."
-    - "is reasonable"
-    - "must reject"
-    - Section headers and explanations
-    """
-    chapters: list[tuple[str, list[tuple[str, "int | None"]]]] = []
-    lines = [ln.strip() for ln in full_text.splitlines() if ln.strip()]
 
-    # More flexible finding/issue detection
-    finding_markers = [
-        "found from its",  # "DRA found from its examination..."
-        "We find",         # "We find that..."
-        "The Commission finds",
-        "is ordered",
-        "It is ordered",
-        "is reasonable",   # SCE's process is reasonable
-        "must reject",     # we must reject
-        "is not",          # "X is not reasonable"
-        "are reasonable",  # processes/activities are reasonable
-        "required to",     # utilities are required to
-    ]
+def parse_ca_findings_of_fact(full_text: str) -> list[str] | None:
+    """Return verbatim Findings-of-Fact items (index order), or None if the
+    section isn't present or the numbering isn't a clean, unbroken 1..N
+    sequence — a parse this parser can't confidently anchor stays
+    metadata-only rather than emit a partial/misaligned list (see CLAUDE.md
+    "loose heuristic parsers" guidance: validate against a self-stated
+    structure, never guess)."""
+    start_match = _FOF_HEADING_RE.search(full_text)
+    if not start_match:
+        return None
+    end_match = _COL_HEADING_RE.search(full_text, start_match.end())
+    if not end_match:
+        return None
+    # Leading \n lets _FOF_ITEM_RE (which requires a preceding newline) match
+    # item 1 too, not just items 2..N — the heading match ends right before
+    # "1." with nothing to anchor a split on otherwise.
+    body = "\n" + full_text[start_match.end():end_match.start()]
+    body = _DOCKET_CAPTION_LINE_RE.sub("\n", body)
+    body = _PAGE_NUMBER_LINE_RE.sub("\n", body)
 
-    current_section = None
-    for i, line in enumerate(lines):
-        # Check if this line contains a finding marker
-        has_marker = any(marker in line for marker in finding_markers)
-        if has_marker and len(line) > 15 and len(line) < 300:
-            # This looks like a finding/ruling statement
-            finding_text = line
-            # Gather next 2-3 lines that might be part of the same thought
-            j = i + 1
-            while j < len(lines) and j < i + 4:
-                next_line = lines[j]
-                # Stop if we hit another marker (start of new finding)
-                if any(marker in next_line for marker in finding_markers):
-                    break
-                # Add continuation lines
-                if next_line and not next_line.startswith(("1", "2", "3")):  # Skip footnotes
-                    finding_text += " " + next_line
-                j += 1
-
-            # Clean up and store
-            text_clean = re.sub(r"\s+", " ", finding_text).strip()
-            if text_clean and len(text_clean) > 20:
-                title = text_clean[:80]
-                chapters.append((title, [(text_clean, None)]))
-
-    return chapters
+    parts = _FOF_ITEM_RE.split(body)
+    # re.split with one capture group yields [pre, num, text, num, text, ...];
+    # `pre` (anything before the first "N. ") should be empty/whitespace here
+    # since start_match already ends right at "1. ".
+    if len(parts) < 3 or parts[0].strip():
+        return None
+    numbers = [int(n) for n in parts[1::2]]
+    texts = [re.sub(r"\s+", " ", t).strip() for t in parts[2::2]]
+    if numbers != list(range(1, len(numbers) + 1)):
+        return None  # gap, repeat, or out-of-order numbering — don't guess
+    if not all(len(t) > 5 for t in texts):
+        return None
+    return texts
 
 
 def structure_ca_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: list[int]) -> "AuditReport | None":
-    """Build AuditReport from California ERRA decision."""
+    """Build AuditReport from a California ERRA decision's Findings of Fact."""
     full_text = "\n".join(p.text for p in pages)
-    chapters = parse_ca_erra_findings(full_text)
-    with_findings = [(title, findings) for title, findings in chapters if findings]
-
-    if not with_findings:
+    items = parse_ca_findings_of_fact(full_text)
+    if not items:
         return None
 
-    findings: list[Finding] = []
-    rec_no = 0
-    for idx, (title, finding_items) in enumerate(with_findings, 1):
-        rec_models = []
-        for text, _page in finding_items:
-            rec_no += 1
-            text_clean = re.sub(r"\s+", " ", text).strip()
-            if text_clean and len(text_clean) > 10:
-                rec_models.append(Recommendation(number=rec_no, text=text_clean, source_page=None))
-        if rec_models:
-            findings.append(Finding(index=idx, title=title, summary=None, recommendations=rec_models))
-
-    if not findings:
-        return None
+    findings = [
+        Finding(
+            index=idx,
+            title=(text[:77] + "…") if len(text) > 78 else text,
+            summary=text,
+            recommendations=[],
+        )
+        for idx, text in enumerate(items, 1)
+    ]
 
     return AuditReport(
         collection=seed.collection, jurisdiction=seed.jurisdiction, source=seed.source,
