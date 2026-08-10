@@ -220,7 +220,6 @@ class JurisdictionStat(BaseModel):
     jurisdiction: str
     report_count: int
     finding_count: int
-    structured_count: int   # reports with structured=True (>=1 parsed finding)
 
 
 class PatternsSummary(BaseModel):

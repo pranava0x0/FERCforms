@@ -211,7 +211,6 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
     by_function: Counter[str] = Counter()
     juris_reports: Counter[str] = Counter()
     juris_findings: Counter[str] = Counter()
-    juris_structured: Counter[str] = Counter()
     title_counts: Counter[str] = Counter()
     theme_findings: Counter[str] = Counter()
     theme_reports: dict[str, set[str]] = {theme: set() for theme, _ in THEME_RULES}
@@ -230,8 +229,6 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             by_function[fn] += 1
         juris_reports[r.jurisdiction] += 1
         juris_findings[r.jurisdiction] += sum(1 for f in r.findings if not f.is_other_matter)
-        if r.structured:
-            juris_structured[r.jurisdiction] += 1
         # Themes this REPORT carries — collected first, then tallied once, so a
         # report restating one theme across several findings counts once.
         report_themes: set[str] = set()
@@ -281,7 +278,6 @@ def summarize(reports: list[AuditReport]) -> PatternsSummary:
             jurisdiction=j,
             report_count=juris_reports[j],
             finding_count=juris_findings[j],
-            structured_count=juris_structured[j],
         )
         for j in juris_reports
     ]

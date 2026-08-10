@@ -113,16 +113,28 @@ def test_below_the_breakpoint_a_ledger_link_still_honours_open(page_factory):
     assert p2.evaluate(f"document.getElementById('r-{rid}')?.open") is True
 
 
-def test_ledger_fits_without_horizontal_scroll(page_factory):
-    """A ledger you scroll sideways to read defeats its own purpose. Both the
-    desktop and tablet widths must fit."""
+# Regression (2026-08-10 code review): this test only ever visited ferc_audit,
+# whose Type column shows a short "FA"/"PA" — every other collection shows the
+# full doc_type sentence and a state docket can be a dual case number ("OAH
+# 21-2500-39686 / MPUC E-015/GRE-23-155", 41 chars). On origin/main at the time
+# of that review, state_audit's ledger measured 1649px wide in a 906px
+# container at a 1280px viewport — a bug this test, scoped to one collection,
+# could not have caught. Parametrized across all 5 + the two widths that
+# matter for real devices (768px+; below that, .ledger-wrap's overflow-x:auto
+# is the documented, intentional fallback — see the base .ledger CSS comment).
+@pytest.mark.parametrize("collection", [
+    "ferc_audit", "prudence_review", "state_audit", "state_rate_case", "state_reference",
+])
+def test_ledger_fits_without_horizontal_scroll(page_factory, collection):
+    """A ledger you scroll sideways to read defeats its own purpose. Every
+    collection must fit at both the desktop and tablet widths."""
     for width in (1280, 768):
-        p = page_factory(width=width, hash_="#/ferc_audit?view=ledger")
+        p = page_factory(width=width, hash_=f"#/{collection}?view=ledger")
         m = p.evaluate(
             """(() => { const t=document.querySelector('.ledger'), w=document.querySelector('.ledger-wrap');
                  return { overflows: t.scrollWidth > w.clientWidth + 1 }; })()"""
         )
-        assert not m["overflows"], f"ledger overflows its container at {width}px"
+        assert not m["overflows"], f"{collection} ledger overflows its container at {width}px"
 
 
 def test_resetting_filters_keeps_the_view_toggle_selected(page_factory):

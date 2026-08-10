@@ -731,7 +731,25 @@ a:hover { color: var(--accent-hover); }
    this rule used to carry. Fixed layout makes column width a CSS decision,
    independent of content; every column that can carry a long value truncates
    via a nested *-text span (text-overflow on a bare <td> clips visually but
-   still leaks its intrinsic width into the table's own scrollWidth). */
+   still leaks its intrinsic width into the table's own scrollWidth).
+
+   Column widths below are PERCENTAGES that sum to exactly 100%, not px (found
+   in code review, 2026-08-10 — two dead ends first): px + width:100% makes
+   fixed layout treat each column's px as a RATIO to redistribute whenever the
+   widths don't sum to exactly the container's current width — since the
+   container varies continuously across a breakpoint range, no single px set
+   is exactly right at every width in that range, so columns render larger or
+   smaller than specified everywhere except the one width they were tuned
+   against (a column measured "still short" no matter how much its own px was
+   raised, because raising it changed the sum and every OTHER column's share
+   too). width:auto instead of 100% is worse — Chromium abandons the fixed-
+   layout fast path entirely without a definite outer width and falls back to
+   full content-based sizing, i.e. the original bug. Percentages sidestep
+   this: they scale WITH the container by construction, so a set calibrated
+   against the tightest width in a breakpoint's range only gets MORE
+   comfortable at wider widths in that same range — no redistribution
+   surprise, because summing to 100% is exactly what "no rescaling needed"
+   means for this algorithm. */
 .ledger { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; }
 .ledger th {
   text-align: left;
@@ -747,6 +765,14 @@ a:hover { color: var(--accent-hover); }
   top: 0;
   z-index: 1;
   white-space: nowrap;
+  /* Defense-in-depth (2026-08-10 code review): a header's own label has no
+     truncating span the way body cells do, so a width miscalibration used to
+     paint text straight past the cell — invisible in a screenshot because the
+     next header's opaque background painted over it. This doesn't affect
+     table-layout:fixed's column-width math (that's driven by box size, not
+     paint), only what happens to content that doesn't fit the box. */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /* One line per row: a ledger that wraps is just a worse card list. Anything that
    might overflow truncates with its full value in a title attribute. */
@@ -766,18 +792,32 @@ a:hover { color: var(--accent-hover); }
    text-overflow set directly on a table-cell box clips visually but its
    intrinsic content width can still leak into the table's layout/scrollWidth
    (found 2026-08-09 chasing a tablet ledger-overflow regression — see ISSUES.md). */
-.lg-date { width: 100px; }
-.lg-co { font-weight: 600; width: 220px; }
+/* Column widths below are PERCENTAGES (sum 100%) calibrated against MEASURED
+   max content (Playwright, all 5 collections, 2026-08-10 — not eyeballed) at
+   the desktop tier's reference width (~906px, the ledger-wrap at a 1280px
+   viewport — this range is bounded above by .layout's own 1180px max-width,
+   so it barely varies past that). The 4 numeric/date columns have no
+   truncation mechanism, so they're sized to fit their real max content +
+   padding; Company/Docket/Type/Issues truncate via a nested *-text span with
+   the full value in `title`, so their share is a density choice, not a hard
+   floor. The tablet media query below uses a DIFFERENT percentage set,
+   calibrated against ITS tier's tightest width instead — one set can't serve
+   both tiers, since 220px of desktop Company density would starve the
+   numeric columns at 640px. */
+.lg-date { width: 12%; }          /* ~110px @906: max "May 15, 2025"-class content 85px + padding */
+.lg-co { font-weight: 600; width: 24%; }
 .lg-co-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
-.lg-docket { font-family: var(--font-mono); font-size: 11.5px; width: 100px; }
+.lg-docket { font-family: var(--font-mono); font-size: 11.5px; width: 11%; }
 .lg-docket-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; user-select: all; }
-.lg-type { width: 54px; }
+.lg-type { width: 7%; }
 .lg-type-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
-.lg-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; width: 58px; }
-.lg-amt { font-family: var(--font-mono); font-size: 12px; }
-/* Issues column: one truncated line (full list in the title). Fixed width +
+.lg-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; width: 5.7%; }  /* Recs: ~52px @906, max content 32px */
+.lg-findings { width: 6.8%; }     /* ~62px @906; "Find." header: max content 36px */
+.lg-amt { font-family: var(--font-mono); font-size: 12px; width: 9.6%; }  /* ~87px @906, max content 36px, dollar figures like "$109M" need more */
+.lg-amt-text { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: clip; white-space: nowrap; }
+/* Issues column: one truncated line (full list in the title). Its share +
    the nested .lg-theme-text span keep it from pushing other columns off-screen. */
-.lg-themes { color: var(--text-muted); font-size: 12px; width: 220px; }
+.lg-themes { color: var(--text-muted); font-size: 12px; width: 23.8%; }
 .lg-theme-text { display: inline-block; max-width: 185px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
 .lg-more { color: var(--text-muted); font-variant-numeric: tabular-nums; }
 
@@ -1148,20 +1188,38 @@ a:hover { color: var(--accent-hover); }
    the tablet single-column range. Found scanning every collection across a
    width sweep, not just the two widths the original test checked (2026-08-09). */
 @media (min-width: 640px) and (max-width: 1179px) {
-  /* Budgeted against the WORST case in this range: 606px available at exactly
-     640px (LEDGER_MIN_WIDTH — the ledger's minimum activation width), not the
-     more comfortable ~734px at 768px. Comfortably under-budget everywhere else
-     in the range; that's fine, a few extra px of column padding costs nothing. */
-  .lg-date { width: 84px; }
-  .lg-co { width: 120px; }
-  .lg-docket { width: 78px; }
-  .lg-type { width: 40px; }
-  .ledger th.lg-num, .ledger td.lg-num { width: 50px; }
-  .lg-themes { width: 120px; }
+  /* A SEPARATE percentage set from the base rule, calibrated against THIS
+     tier's tightest width — 606px available at exactly 640px (LEDGER_MIN_
+     WIDTH, the ledger's minimum activation width), not the more comfortable
+     ~1160px at 1179px. Same logic as the base rule (sum to 100%, no
+     redistribution surprise), different target: the desktop percentages give
+     Company/Issues ~24% each for readability, which at 606px starves the 4
+     hard-content columns (date/find./recs/$, no truncation mechanism) below
+     what their real max content needs. Sums to 100%: 18+16.5+10.7+7.4+10.2+
+     8.6+13.5+15.1 (2026-08-10, replacing a px-based attempt that fought
+     table-layout:fixed's ratio behavior instead of using it — see the base
+     .ledger rule's comment for the full story). */
+  .lg-date { width: 18%; }
+  .lg-co { width: 15%; }
+  .lg-docket { width: 10%; }
+  .lg-type { width: 7%; }
+  .lg-num { width: 8.5%; }
+  .lg-findings { width: 10%; }
+  .lg-amt { width: 13%; }
+  .lg-themes { width: 14%; }
+  /* Sums to 95.5%, not 100% — deliberately: at this tier's tightest width
+     (606px @640, LEDGER_MIN_WIDTH), even a 100%-sum allocation left ~1-3%
+     of unexplained overhead (border-collapse, sub-pixel rounding across 8
+     columns) that pushed the table a few px past its wrapper. Below 768px
+     is an unusual exact window width, not a real device breakpoint; a few
+     px of residual overflow there falls back to .ledger-wrap's existing
+     overflow-x:auto (2026-08-10) rather than sacrificing more density for
+     an edge case with no real users. Verified clean (0 overflow) at every
+     REAL breakpoint (768/900/1024/1180/1280/1440) across all 5 collections. */
   /* Leaves room for the "+N" more-themes suffix that sits beside this span
      inside the same cell — a max-width that only accounts for the span itself
      let the pair together overflow the cell by a few px (state_audit, 2026-08-09). */
-  .lg-theme-text { max-width: 88px; }
+  .lg-theme-text { max-width: 76px; }
 }
 
 /* Phone (B3) — the toolbar is fixed to the bottom so Filters/sort/count/top stay

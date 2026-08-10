@@ -337,6 +337,24 @@ def test_ca_findings_only_from_erra_decisions():
     assert not offenders, f"non-ERRA CA reports carrying findings: {offenders}"
 
 
+def test_ca_erra_parser_still_produces_findings():
+    """Companion to the negative check above (2026-08-10 code review): that test
+    passes vacuously if the ERRA parser silently regresses to 0 findings on
+    every CA record — nothing else in the suite would catch it, since
+    tests/test_state_structure.py's real-report regression test reads a
+    gitignored text.json and only runs locally, skipping in CI. This operates
+    on the COMMITTED report.json corpus, so a regression that wipes the
+    already-parsed findings fails here regardless of what's cached locally."""
+    erra_with_findings = [
+        p.parent.name
+        for p in sorted(config.PROCESSED_DIR.glob("*/report.json"))
+        for d in [json.loads(p.read_text(encoding="utf-8"))]
+        if d.get("jurisdiction") == "CA" and "erra" in (d.get("doc_type") or "").lower()
+        and d.get("finding_count", 0) > 0
+    ]
+    assert erra_with_findings, "no committed CA ERRA report carries findings — parser may have regressed to 0"
+
+
 def test_check_offline_rejects_quote_spanning_summary_and_recommendation():
     """Regression (2026-07-06 code review): check_offline used to join summary +
     every recommendation's text with a single space before the substring check, so

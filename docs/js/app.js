@@ -1324,8 +1324,15 @@ const LEDGER_COLUMNS = [
     },
   },
   {
-    key: "findings", label: "Findings", numeric: true,
-    cell: (r) => el("td", { class: "lg-num" }, [
+    // "Findings" (8 chars, uppercase + letter-spacing per .ledger th) doesn't
+    // fit a numeric column's width — it painted 17px past its cell at 1280px,
+    // silently covered by the next header's opaque sticky background rather
+    // than visibly broken (found in code review, 2026-08-10). Abbreviated to
+    // match "Recs"'s existing precedent, rather than widening the column and
+    // squeezing the truncatable ones (Company/Docket/Type/Issues, which have
+    // a title-attribute fallback numeric cells don't).
+    key: "findings", label: "Find.", numeric: true, cellClass: "lg-findings",
+    cell: (r) => el("td", { class: "lg-num lg-findings" }, [
       r.finding_count > 0
         ? el("span", { text: String(r.finding_count) })
         : el("span", { class: "muted-cell", text: r.structured === false ? "ref." : "0" }),
@@ -1333,7 +1340,14 @@ const LEDGER_COLUMNS = [
   },
   // F2 again: no recs parsed is not "0 recommendations" — show a dash, not a zero.
   { key: "recs", label: "Recs", numeric: true, cell: (r) => el("td", { class: "lg-num", text: r.rec_count > 0 ? String(r.rec_count) : "—" }) },
-  { key: "amount", label: "$", numeric: true, cell: (r) => el("td", { class: "lg-num lg-amt", text: fmtAmount(r.amount_max) || "—" }) },
+  {
+    key: "amount", label: "$", numeric: true,
+    // Nested truncating span, same defensive pattern as Company/Docket/Type —
+    // a percentage column width is occasionally a sub-pixel short of a wide
+    // figure like "$109M" (rounding, not a budgeting error); this just clips
+    // cleanly instead of a 1-2px paint spill (2026-08-10 code review).
+    cell: (r) => el("td", { class: "lg-num lg-amt" }, [el("span", { class: "lg-amt-text", text: fmtAmount(r.amount_max) || "—" })]),
+  },
   {
     key: "themes", label: "Issues", cellClass: "lg-themes",
     cell: (r) => el("td", { class: "lg-themes" }, [

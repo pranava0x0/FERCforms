@@ -545,10 +545,16 @@ def structure_mi_audit(seed: SourceSeed, pages: list[PageText], scanned_pages: l
 _FOF_HEADING_RE = re.compile(r"Findings of Fact\s*\n(?=\s*1\.\s)")
 _COL_HEADING_RE = re.compile(r"\n\s*Conclusions of Law\s*\n")
 # A repeating running header/footer: a docket-caption line ("A.24-02-012
-# ALJ/LGG/asf") followed (a couple of near-blank lines later) by a lone
-# page-number line ("- 26 -"). Stripped so it never fuses onto or splits an
-# item's verbatim text.
-_PAGE_NOISE_RE = re.compile(r"\n\S*\d{2}-\d{2}-\d{3}\S*[^\n]*\n\s*\n?\s*-\s*\d+\s*-\s*(?:\n|\Z)")
+# ALJ/LGG/asf") and/or a lone page-number line ("- 26 -"). Two INDEPENDENT
+# patterns, not one ordered sequence (2026-08-10 code review) — a single
+# combined pattern requiring "caption, then page number" only stripped that
+# one layout; a page-break can just as easily land as page-number-then-
+# caption (footer of page N immediately followed by the header of page N+1,
+# normal reading order), caption with no adjacent page number, or a page
+# number with no caption line. Stripped independently so any combination
+# still gets removed rather than fusing into or splitting an item's text.
+_DOCKET_CAPTION_LINE_RE = re.compile(r"\n?\s*[A-Z]\.\d{2}-\d{2}-\d{3}\s+\S+\s*(?:\n|\Z)")
+_PAGE_NUMBER_LINE_RE = re.compile(r"\n?\s*-\s*\d+\s*-\s*(?:\n|\Z)")
 _FOF_ITEM_RE = re.compile(r"\n(\d{1,3})\.\s+")
 
 
@@ -569,7 +575,8 @@ def parse_ca_findings_of_fact(full_text: str) -> list[str] | None:
     # item 1 too, not just items 2..N — the heading match ends right before
     # "1." with nothing to anchor a split on otherwise.
     body = "\n" + full_text[start_match.end():end_match.start()]
-    body = _PAGE_NOISE_RE.sub("\n", body)
+    body = _DOCKET_CAPTION_LINE_RE.sub("\n", body)
+    body = _PAGE_NUMBER_LINE_RE.sub("\n", body)
 
     parts = _FOF_ITEM_RE.split(body)
     # re.split with one capture group yields [pre, num, text, num, text, ...];
