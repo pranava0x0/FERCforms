@@ -7,9 +7,9 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 ## Current priorities — 2026-09-24
 
 This queue supersedes the historical ordering below. [Stocktake](docs/stocktake-2026-09-24.md)
-contains evidence, acceptance criteria and alternatives. Current corpus: **444 documents**;
-only **14/83 state audits** and **1/29 prudence reviews** contain extracted findings;
-**0/122 rate-case documents** do. Breadth is not docket completeness.
+contains evidence, acceptance criteria and alternatives. Current corpus after the CA expansion: **459 documents**;
+only **14/92 state audits** and **1/29 prudence reviews** contain extracted findings;
+**0/125 rate-case documents** do. Breadth is not docket completeness.
 
 1. **P0: publication and rerun safety.** Approved-record inventory gate; discovery candidates
    cannot publish; unify `sources`/`structure` dispatch; reject changed source identity rather
@@ -32,6 +32,11 @@ only **14/83 state audits** and **1/29 prudence reviews** contain extracted find
 Completed this stocktake: three FERC audits and one SCE report verified/added; CSV regenerated;
 finding-permalink race fixed; all five collections UAT checked. **341 tests passed, 15 skipped**
 for unavailable cached source fixtures. See source receipts for discovery limits; no 50-state sweep.
+
+Completed CA expansion (same date): reusable `pipeline.discover_ca`, nine audits/reviews,
+three rate-case documents and three recurring reference reports; metadata-only, source receipts
+retained. Next depth work: source-specific UAB parsing and final-decision/implementation links.
+This user-requested breadth pass does not close the P0/P1 integrity work above.
 
 ## Historical prioritized queue (2026-06-22; superseded above)
 

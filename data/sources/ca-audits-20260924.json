@@ -1,0 +1,317 @@
+{
+  "captured_at": "2026-09-24",
+  "kind": "audit",
+  "index_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+  "index_sha256": "5a7910d2c26cd8af3da4cd5367876072d1eec4b254f58f4c0b6f0f13be530bd1",
+  "scope": "One index page; no pagination. Review captions before seeding.",
+  "candidates": [
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-07-27_sdge_cra.pdf",
+      "label": "San Diego Gas and Electric Company, Cost Recovery Application 22-05-016, July 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "2620472e3070705059f8676b335d8a3d348531629de4df985e4bc845e7c3e587",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-07-27_sdge_cra.pdf",
+      "downloaded_at": "2026-09-24T13:13:35.929707+00:00",
+      "page_count": 32,
+      "bytes": 1660812,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "APPLICATION 22-05-016 \nMOBILE HOME PARK PROGRAM \nPERFORMANCE AUDIT\nSan Diego Gas and Electric Company \nJanuary 1, 2017, through December 31, 2021 \nUtility Audits, Risk and Compliance Division \nUtility Audits Branch \nJuly 27, 2026 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "San Diego Gas and Electric Company \nApplication 22-05-016 \nMEMBERS OF THE TEAM \nAngie Williams, Director \nMasha Vorobyova, Assistant Director \n Nancy Ta, Program and Project Supervisor \nMoses Ofurio, Lead  \nKhusbindar Kaur, Staff \nCatlin Ha, Staff \nJeffrey Walter, Staff \nAlexandra Lee, Staff \nA digital copy of this report can be found at: \nAudit Reports by Industry (ca.gov) \nYou can contact our office at:  \nCalifornia Public Utilities Commission \nUtility Audits, Risk and Compliance Division \n400 R Street, Suite 221 \nSacramento, CA 95811  \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "STATE OF CALIFORNIA \n GAVIN NEWSOM, Governor\nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA  94102-3298 \nTransmitted via e-mail \nJuly 27, 2026 \nTashonda Taylor  \nVice President, Gas Operations & Construction Division \nSan Diego Gas and Electric Company \n8326 Century Park Court, CP33B \nSan Diego, CA 92123  \nDear Tashonda Taylor: \nFinal Report Transmittal Letter—Audit of San Diego Gas and Electric \nCompany’s Mobile Home Park Utility Upgrade Program for the Period of \nJanuary 1, 2017, Through December 31, 2021 \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its audit of San Diego Gas and Electric Company’s (SDG&E) Mobile Home Park \nUtility Upgrade Program for the period of January 1, 2017, through December 31, 2021. The \nfinal audit report is enclosed. \nWe issued the draft audit report on June 23, 2026.  SDG&E’s response to the draft audit \nreport findings and our evaluation of the response are incorporated into this final report. \nIn addition, as outlined in General Order 66-D and the California Public Records Act \n(Government Code sections 6250-6276.48.), SDG&E requested confidential treatment of \nthe Housing and Community Development Permit Numbers (HCD ID).  As a result, the \nconfidential HCD ID information contained in the final public report is redacted.  We will \npost the final redacted audit report on our website at Audit Reports by Industry (ca.gov). \nA Corrective Action Plan (CAP) addressing the findings and recommendations is required. \nSDG&E’s response to the draft audit report included information on corrective actions \nplanned. SDG&E should submit further detailed CAP information including specific steps \nand target dates to correct the findings identified, please submit the CAP within 45 calendar \ndays from the issuance of this final audit report to: UtilityAudits@cpuc.ca.gov. \nWe appreciate SDG&E’s assistance and cooperation during the engagement, and its \nwillingness to implement corrective actions. If you have any questions regarding this report, \nplease contact Nancy Ta, Supervisor, at (415) 914-4841.   \nSincerely, \nAngie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division \ncc: See next page \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-07-27_san-diego-gas-and-electric_ca-mobile-home-park-audit",
+        "company": "San Diego Gas & Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-07-27",
+        "docket": "A.22-05-016",
+        "doc_type": "Mobile Home Park Utility Upgrade Program performance audit",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 32 pages. Final performance audit with utility response and UAB evaluation; requires corrective action plan. Report concerns a program within the named rate-case application, not the final rate-case decision. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-29_scg_mhp.pdf",
+      "label": "Southern California Gas Company, Cost Recovery Application 22-05-015, June 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "17f8e65284b7fc0f6d26562388aa2b812ad203f6c2eb5e7e33f19d735a58347f",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-29_scg_mhp.pdf",
+      "downloaded_at": "2026-09-24T13:13:38.320436+00:00",
+      "page_count": 39,
+      "bytes": 1409090,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": " \n \n \n \nAPPLICATION 22-05-015 \nMOBILE HOME PARK PROGRAM \nPERFORMANCE AUDIT\nSouthern California Gas Company \nJanuary 1, 2016, through December 31, 2021 \n \n \nUtility Audits, Risk and Compliance Division  \nUtility Audits Branch \nJune 29, 2026 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "Southern California Gas Company \n \nApplication 22-05-015 \n \n \n \n \n \n \n \n \n \nMEMBERS OF THE TEAM \n \n \nAngie Williams, Director \n \nMasha Vorobyova, Assistant Director \n \n Nancy Ta, Program and Project Supervisor \n \nKhusbindar Kaur, Lead  \n \nMoses Ofurio, Staff \n \nCatlin Ha, Staff \n \nAlexandra Lee, Staff \n \n \n \nA digital copy of this report can be found at: \nAudit Reports by Industry (ca.gov) \n \n \n \n \n \n \nYou can contact our office at:  \nCalifornia Public Utilities Commission \nUtility Audits, Risk and Compliance Division \n400 R Street, Suite 221 \nSacramento, CA 95811  \n \n \n \n \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "STATE OF CALIFORNIA                                                                                                   \n GAVIN NEWSOM, Governor \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA  94102-3298 \n \n \n \nTransmitted via e-mail \nJune 29, 2026 \n \nJennifer L. Walker   \nVice President, Gas Distribution  \nSouthern California Gas Company \n555 West Fifth Street, GT-21C3 \nLos Angeles, California 90013  \n \nDear Jennifer Walker: \n \nFinal Report Transmittal Letter— Audit of Southern California Gas Company’s \nMobile Home Park Utility Upgrade Program for the Billing Period of January 1, 2016, \nThrough December 31, 2021 \n \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its audit of Southern California Gas Company’s (SoCalGas) Mobile Home Park \nUtility Upgrade program for the billing period of January 1, 2016, through December \n31, 2021.  The final audit report is enclosed. \n \nWe issued the draft audit report on June 9, 2026.  SoCalGas’s response to the draft report \nfindings and our evaluation of the response are incorporated into this final report.  \n \nIn addition, as outlined in General Order 66-D and the California Public Records Act \n(Government Code sections 6250-6276.48.), SoCalGas requested confidential treatment of \nmaterial descriptions. As a result, the confidential material description information contained \nin the final public report is redacted. We will post the final redacted audit report on our \nwebsite at Audit Reports by Industry (ca.gov). \n \nA Corrective Action Plan (CAP) addressing the findings and recommendations is required. \nSoCalGas’s response to the draft audit report included information on corrective actions \nimplemented and planned.  SoCalGas should submit further detailed CAP information \nincluding specific steps and target dates to address the recommendations within 45 calendar \ndays from the issuance of this final audit report to: UtilityAudits@cpuc.ca.gov. \n \nWe appreciate SoCalGas’s assistance and cooperation during the engagement, and its \nwillingness to implement corrective actions. If you have any questions regarding this report, \nplease contact Nancy Ta, Supervisor, at (415) 914-4841. \n \nSincerely, \n \nAngie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division \n \ncc: See next page \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-06-29_southern-california-gas_ca-mobile-home-park-audit",
+        "company": "Southern California Gas Company",
+        "collection": "state_audit",
+        "issued_date": "2026-06-29",
+        "docket": "A.22-05-015",
+        "doc_type": "Mobile Home Park Utility Upgrade Program performance audit",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 39 pages. Final performance audit with utility response and UAB evaluation; requires corrective action plan. Report concerns a program within the named rate-case application, not the final rate-case decision. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-09-18_sdge_qp.pdf",
+      "label": "San Diego Gas and Electric Company, Energy Procurement, September 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "7f576d7477812d44b83d7bd32b3999ad3e38f915bd9895118976f90b623daa66",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-09-18_sdge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:40.728449+00:00",
+      "page_count": 13,
+      "bytes": 572576,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": " \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nQUARTERLY ENERGY PROCUREMENT COMPLIANCE  \nAGREED-UPON PROCEDURES ENGAGEMENT \nSan Diego Gas and Electric Company \nFirst Quarter of 2026 - Advice Letter 4840-E  \n \n \nUtility Audits, Risk and Compliance Division \nUtility Audits Branch \nSeptember 18, 2026 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nSeptember 18, 2026 \n \nMiguel Romero \nSenior Vice President, Chief Commercial Officer \nEnergy Innovation & Commercial Development \nSan Diego Gas and Electric Company \n8330 Century Park Court, CP33B \nSan Diego, CA 92123 \n \nDear Miguel Romero: \n \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of San \nDiego Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of January 1, 2026, Through March 31, 2026 \n \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of San Diego Gas and Electric \nCompany’s (SDG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for \nits First Quarter of 2026 in Advice Letter (AL) 4840-E.  The final AUP report is enclosed. \n \nSDG&E’s response to the AUP engagement findings are incorporated into this report.  We \nwill post the final audit report on our website at Audit Reports by Industry (ca.gov). \n \nA corrective action plan (CAP) addressing the findings is required.  SDG&E has already \nprovided the information regarding its corrective actions planned and those responses \nhave been included in the report.  However, SDG&E is still required to file a supplemental \nAL 4840-E with amended Attachments A, B, and D of its QCR by October 2, 2026. \nOnce SDG&E submits its supplemental AL, no further action will be required. \n \nWe appreciate SDG&E’s assistance and cooperation during the engagement.  If you have \nany questions regarding this report, please contact Tracy Fok, Program and Project \nSupervisor, at (415) 703-3122 tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \n \nAngie Williams \n \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Miguel Romero \nSenior Vice President, Chief Commercial Officer \nEnergy Innovation & Commercial Development \nSan Diego Gas and Electric Company \nSeptember 18, 2026 \nPage 2 \n \n \ncc: \nChris Summers, Origination, Energy Supply and Dispatch, Energy Procurement and Rates, \n SDG&E \nAnthony Deiko, Energy Risk Management, SDG&E \nJoe Pasquito, Origination and Portfolio Design, SDG&E \nScott Lewis, Origination & Portfolio Design, SDG&E  \nKathy Anisovets, Regulatory Affairs Compliance, Policy & Proceedings, SDG&E \nNick Santos, Regulatory Affairs & Compliance, Policy & Proceedings, SDG&E \nLeuwam Tesfai, Executive Director, CPUC \nMerideth “Molly” Sterkel, Director of Energy Electricity Supply, Planning, and Costs Division, \nEnergy Division (ED), CPUC \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC  \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC  \nTheresa Buckley, Assistant General Counsel, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nJudith Mason, Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-09-18_san-diego-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "San Diego Gas & Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-09-18",
+        "docket": "AL 4840-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-08-28_pge_qp.pdf",
+      "label": "Pacific Gas and Electric Company, Energy Procurement, August 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "debf156bca81038718ec1ad05ea820030a4c3f808b5e677d4ae8c8cd929e806c",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-08-28_pge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:43.292520+00:00",
+      "page_count": 13,
+      "bytes": 490867,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": " \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nQUARTERLY ENERGY PROCUREMENT COMPLIANCE \nAGREED-UPON PROCEDURES ENGAGEMENT \nPacific Gas and Electric Company \nFirst Quarter of 2026 - Advice Letter 7900-E \n \nUtility Audits, Risk and Compliance Division \nUtility Audits Branch \nAugust 28, 2026 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \nTransmitted via e-mail \nAugust 28, 2026 \n \nMarianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company \n300 Lakeside Drive \nOakland, CA 94612 \nDear Marianne Aikawa: \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of \nPacific Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of January 1, 2026, Through March 31, 2026 \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of Pacific Gas and Electric \nCompany’s (PG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for its \nFirst Quarter of 2026 in Advice Letter (AL) 7900-E. The final AUP report is enclosed. \nWe will post the final audit report on our website at Audit Reports by Industry (ca.gov). \nThe completed audit resulted in no reportable findings relating to PG&E’s First Quarter of \n2026 QCR filed in AL 7900-E. \nWe appreciate PG&E’s assistance and cooperation during the engagement. If you have any \nquestions regarding this report, please contact Tracy Fok, Program and Project Supervisor, \nat (415) 703-3122 or tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \nAngie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division (UARCD) \ncc: See next page \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Marianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company \nAugust 28, 2026 \nPage 2 \n \n \ncc: \nMelissa Hines, Manager, Risk, Compliance & Reporting (RCR), PG&E \nChristina Honey, Principal Analyst, RCR, PG&E \nLeuwam Tesfai, Executive Director, CPUC \nMerideth “Molly” Sterkel, Director of Energy Electricity Supply, Planning, and Costs \nDivision, ED, CPUC \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC \nTheresa Buckley, Assistant General Counsel, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nJudith Mason, Public Utility Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-08-28_pacific-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "Pacific Gas and Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-08-28",
+        "docket": "AL 7900-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-25_sdge_qp.pdf",
+      "label": "San Diego Gas and Electric Company, Energy Procurement, June 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "819bfc069d1549f73a4bb5d6af91d2848e035c6bbf98b91a71a3976a6163915c",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-25_sdge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:45.874597+00:00",
+      "page_count": 15,
+      "bytes": 2714238,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nJune 25, 2026 \n \nMiguel Romero \nSenior Vice President, Chief Commercial Officer \nEnergy Innovation & Commercial Development \nSan Diego Gas and Electric Company \n8330 Century Park Court, CP33B \nSan Diego, CA 92123 \n \nDear Miguel Romero: \n \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of San \nDiego Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of October 1, 2025, Through December 31, 2025 \n \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of San Diego Gas and Electric \nCompany’s (SDG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for \nits Fourth Quarter of 2025 in Advice Letter (AL) 4797-E.  The final AUP report is enclosed. \n \nSDG&E’s response to the AUP engagement findings are incorporated into this report.  As \nrequired by Public Utilities Code Section 454.5(g), the confidential market sensitive \ninformation contained in the AUP report is redacted.  We will post the final redacted audit \nreport on our website at Audit Reports by Industry (ca.gov). \n \nA corrective action plan (CAP) addressing the findings is required.  SDG&E has already \nprovided the information regarding its corrective actions planned and those responses \nhave been included in the report.  However, SDG&E is still required to file a supplemental \nAL 4797-E with amended Attachments B, H, and M of its QCR by July 9, 2026. Once \nSDG&E submits its CAP and the supplemental AL, no further action will be required. \n \nWe appreciate SDG&E’s assistance and cooperation during the engagement.  If you have \nany questions regarding this report, please contact Tracy Fok, Program and Project \nSupervisor, at (415) 703-3122 tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \n \nAngie Williams \n \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Miguel Romero \nSenior Vice President, Chief Commercial Officer \nEnergy Innovation & Commercial Development \nSan Diego Gas and Electric Company \nJune 25, 2026 \nPage 2 \n \n \ncc: \nChris Summers, Origination, Energy Supply and Dispatch, Energy Procurement and Rates, \nSDG&E \nAnthony Deiko, Energy Risk Management, SDG&E \nJoe Pasquito, Origination and Portfolio Design, SDG&E \nScott Lewis, Origination & Portfolio Design, SDG&E  \nKathy Anisovets, Regulatory Affairs Compliance, Policy & Proceedings, SDG&E \nNick Santos, Regulatory Affairs & Compliance, Policy & Proceedings, SDG&E \nLeuwam Tesfai, Executive Director, CPUC \nKristin Stauffacher, Deputy Executive Director, Office of the Commission, CPUC  \nMerideth “Molly” Sterkel, Director of Energy Electricity Supply, Planning, and Costs Division, \nEnergy Division (ED), CPUC \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC  \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC  \nTheresa Buckley, Assistant General Counsel, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nAlexandria Jiral, Senior Management Auditor, UAB, CPUC \nJudith Mason, Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-06-25_san-diego-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "San Diego Gas & Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-06-25",
+        "docket": "AL 4797-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 15 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-25_sce_qp.pdf",
+      "label": "Southern California Edison Company, Energy Procurement, June 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "ded5d6f90016771ba7a0fbac2155b8e6d7b04773022259883d11833801f8a629",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-06-25_sce_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:48.468007+00:00",
+      "page_count": 14,
+      "bytes": 2681104,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nJune 25, 2026 \n \nWilliam V. Walsh, Vice President  \nEnergy Procurement and Management \nSouthern California Edison Company \n2244 Walnut Grove Avenue \n183-A, Quad- 1d, GO1 \nRosemead, CA 91770 \n \nDear William Walsh: \n \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of \nSouthern California Edison Company’s Quarterly Energy Procurement \nCompliance Report for the Period of October 1, 2025, Through December 31, 2025 \n \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of Southern California Edison \nCompany’s (SCE) Quarterly Energy Procurement Compliance Report (QCR) filed for its \nFourth Quarter of 2025 in Advice Letter (AL) 5739-E.  The final AUP report is enclosed. \n \nSCE’s response to the AUP engagement findings are incorporated into this report.  As \nrequired by Public Utilities Code Section 454.5(g), the confidential market sensitive \ninformation contained in the AUP report is redacted.  We will post the final redacted audit \nreport on our website at Audit Reports by Industry (ca.gov). \n \nA corrective action plan (CAP) addressing the findings is required.  SCE has already \nprovided the information regarding its corrective actions planned and those responses \nhave been included in the report.  However, SCE is still required to file a supplemental AL \n5739-E with amended Attachments B, H, and Green House Gas (GHG) Emission Deals \nTransactions of its QCR by July 9, 2026. Once SCE submits its CAP and the \nsupplemental AL, no further action will be required. \n \nWe appreciate SCE’s assistance and cooperation during the engagement.  If you have any \nquestions regarding this report, please contact Tracy Fok, Program and Project Supervisor, \nat (415) 703-3122 tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \n \nAngie Williams \n \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "William V. Walsh, Vice President \nEnergy Procurement and Management \nSouthern California Edison Company \nJune 25, 2026 \nPage 2 \n \n \ncc: \nJabari Martin, Portfolio Planning and Analysis, SCE \nElizabeth Leano, External Regulatory Audits & Wildfire, SCE  \nAngela Munante, Energy Procurement & Management, SCE \nPatrick Nandy, External Regulatory Audits & Wildfire, SCE  \nHeidi Lopez, External Regulatory Audits & Wildfire, SCE \nLeuwam Tesfai, Executive Director, CPUC \nKristin Stauffacher, Deputy Executive Director, Office of the Commission, CPUC  \nMerideth “Molly” Sterkel, Director of Energy Electricity Supply, Planning, and Costs Division, \nEnergy Division (ED), CPUC \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC  \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC \nTheresa Buckley, Assistant General Counsel, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nJudith Mason, Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-06-25_southern-california-edison_ca-quarterly-procurement-review",
+        "company": "Southern California Edison Company",
+        "collection": "state_audit",
+        "issued_date": "2026-06-25",
+        "docket": "AL 5739-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 14 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-05-22_pge_qp.pdf",
+      "label": "Pacific Gas and Electric Company, Energy Procurement, May 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "c535f91e93608948ea02b86ac46b6671bec4f3230c48d26e2ed18d9428aeb85b",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-05-22_pge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:51.037172+00:00",
+      "page_count": 13,
+      "bytes": 2605044,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nMay 22, 2026 \n \nMarianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company \n300 Lakeside Drive \nOakland, CA 94612 \nDear Marianne Aikawa: \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of \nPacific Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of October 1, 2025, Through December 31, 2025 \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of Pacific Gas and Electric \nCompany’s (PG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for its \nFourth Quarter of 2025 in Advice Letter (AL) 7824-E. The final AUP report is enclosed. \nAs required by Public Utilities Code Section 454.5(g), the confidential market sensitive \ninformation contained in the AUP report is redacted.  We will post the final redacted audit \nreport on our website at Audit Reports by Industry (ca.gov). \nThe completed audit resulted in no reportable findings relating to PG&E’s Fourth Quarter \nof 2025 QCR filed in AL 7824-E.  \n \nWe appreciate PG&E’s assistance and cooperation during the engagement. If you have any \nquestions regarding this report, please contact Tracy Fok, Program and Project Supervisor, \nat (415) 703-3122 or tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \nAngie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division (UARCD) \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Marianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company  \nMay 22, 2026 \nPage 2 \n \n \ncc: \nMelissa Hines, Manager, Risk, Compliance & Reporting (RCR), PG&E \n \nChristina Honey, Principal Analyst, RCR, PG&E  \n \nGurjit Singh, Analyst, RCR, PG&E \nLeuwam Tesfai, Executive Director, CPUC \nKristin Stauffacher, Deputy Executive Director, Office of the Commission, CPUC  \nMerideth “Molly” Sterkel, Director of Energy Electricity Supply, Planning, and Costs \nDivision, ED, CPUC  \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nTheresa Buckley, Assistant General Counsel, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nAlexandria Jiral, Senior Management Auditor, UAB, CPUC \nJudith Mason, Public Utility Financial Examiner IV, UAB, CPUC  \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-05-22_pacific-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "Pacific Gas and Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-05-22",
+        "docket": "AL 7824-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-03-27_sdge_qp.pdf",
+      "label": "San Diego Gas and Electric Company, Energy Procurement, March 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "3d3bc95b4d1ac62218dd99c590bc8dec3f3506d42dd4304bcbb974086ad32805",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-03-27_sdge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:53.644598+00:00",
+      "page_count": 16,
+      "bytes": 2752846,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nMarch 27, 2026 \n \nAdam Pierce \nVice President – Energy Procurement Rates \nSan Diego Gas and Electric Company \n8330 Century Park Court, CP33B \nSan Diego, CA 92123 \nDear Adam Pierce: \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of \nSan Diego Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of July 1, 2025, Through September 30, 2025 \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of San Diego Gas and Electric \nCompany’s (SDG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for \nits Third Quarter of 2025 in Advice Letter (AL) 4745-E. The final AUP report is enclosed. \nSDG&E’s response to the AUP engagement findings are incorporated into this report.  As \nrequired by Public Utilities Code Section 454.5(g), the confidential market sensitive \ninformation contained in the AUP report is redacted.  We will post the final redacted audit \nreport on our website at Audit Reports by Industry (ca.gov). \nA corrective action plan (CAP) addressing the findings is required.  SDG&E has already \nprovided the information regarding its corrective actions planned and those responses have \nbeen included in the report. However, SDG&E is still required to file a supplemental AL \n4745-E with amended Attachments H and M of its QCR by April 10, 2026. Once SDG&E \nsubmits the supplemental AL, no further action will be required.   \n \nWe appreciate SDG&E’s assistance and cooperation during the engagement. If you have \nany questions regarding this report, please contact Tracy Fok, Program and Project \nSupervisor, at (415) 703-3122 or tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \nMasha Vorobyova for Angie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division (UARCD) \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Adam Pierce \nVice President – Energy Procurement and Rates \nSan Diego Gas and Electric Company  \nMarch 27, 2026 \nPage 2 \n \n \ncc: \nChris Summers, Director, Origination, Energy Supply and Dispatch, Energy \nProcurement and Rates, SDG&E \n \nJoe Pasquito, Market Analysis Manager, Origination and Portfolio Design, SDG&E \nScott D Lewis, Electric & Fuels Trading Manager, Organization and Portfolio \nDesign,  SDG&E  \n \nAnthony Deiko, Marketing Risk Principal I, Energy Risk Management, SDG&E \n \nNick Santos, Regulatory Affairs & Compliance Associate II, Policy and \nProceedings, SDG&E  \n \nEneida Alvarez – Regulatory Case Manager II, SDG&E \nLeuwam Tesfai, Executive Director, CPUC \nKristin Stauffacher, Deputy Executive Director, Office of the Commission, CPUC  \nMerideth “Molly” Sterkel, Director for Energy and Climate Policy, Energy Division \n(ED), CPUC  \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC \nTheresa Buckley, Assistant General Counsel, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nJudith Mason, Public Utility Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-03-27_san-diego-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "San Diego Gas & Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-03-27",
+        "docket": "AL 4745-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 16 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-02-24_pge_qp.pdf",
+      "label": "Pacific Gas and Electric Company, Energy Procurement, February 2026",
+      "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+      "pdf_sha256": "63fe7acf894cd563d0693d6edfbaa08508c60e1ca0af1eaaf4496c0fcd635685",
+      "resolved_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-02-24_pge_qp.pdf",
+      "downloaded_at": "2026-09-24T13:13:56.211594+00:00",
+      "page_count": 14,
+      "bytes": 2600423,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": "STATE OF CALIFORNIA \nGAVIN NEWSOM, Governor \n \nPUBLIC UTILITIES COMMISSION \n505 VAN NESS AVENUE \nSAN FRANCISCO, CA 94102-3298 \n \n \n \nTransmitted via e-mail \nFebruary 24, 2026 \n \nMarianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company \n300 Lakeside Drive \nOakland, CA 94612 \nDear Marianne Aikawa: \nFinal Report Transmittal Letter – Agreed-Upon Procedures Engagement of \nPacific Gas and Electric Company’s Quarterly Energy Procurement Compliance \nReport for the Period of July 1, 2025, Through September 30, 2025 \nThe Utility Audits Branch (UAB) of the California Public Utilities Commission (CPUC) has \ncompleted its agreed-upon procedures (AUP) engagement of Pacific Gas and Electric \nCompany’s (PG&E) Quarterly Energy Procurement Compliance Report (QCR) filed for its \nThird Quarter of 2025 in Advice Letter (AL) 7746-E. The final AUP report is enclosed. \nAs required by Public Utilities Code Section 454.5(g), the confidential market sensitive \ninformation contained in the AUP report is redacted.  We will post the final redacted audit \nreport on our website at Audit Reports by Industry (ca.gov). \nThe completed audit resulted in no reportable findings relating to PG&E’s Third Quarter of \n2025 QCR filed in AL 7746-E.  \n \nWe appreciate PG&E’s assistance and cooperation during the engagement. If you have any \nquestions regarding this report, please contact Tracy Fok, Program and Project Supervisor, \nat (415) 703-3122 or tracy.fok@cpuc.ca.gov. \n \n \nSincerely, \nMasha Vorobyova for Angie Williams \nAngie Williams, Director \nUtility Audits, Risk and Compliance Division (UARCD) \ncc: See next page\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Marianne Aikawa, Director \nRisk, Compliance & Reporting Department \nPacific Gas and Electric Company  \nFebruary 24, 2026 \nPage 2 \n \n \ncc: \nMelissa Hines, Manager, Risk, Compliance & Reporting (RCR), PG&E \n \nChristina Honey, Principal Analyst, RCR, PG&E  \n \nGurjit Singh, Analyst, RCR, PG&E \nLeuwam Tesfai, Executive Director, CPUC \nKristin Stauffacher, Deputy Executive Director, Office of the Commission, CPUC  \nMerideth “Molly” Sterkel, Director for Energy and Climate Policy, Energy Division (ED), \nCPUC  \nJaime Rose Gannon, Program & Project Supervisor, ED, CPUC \nEric Dupre, Public Utilities Regulatory Analyst, ED, CPUC \nTheresa Buckley, Assistant General Counsel, CPUC \nNatalie Guishar, Public Utilities Regulatory Analyst, ED, CPUC \nMasha Vorobyova, Assistant Director, UAB, CPUC \nTracy Fok, Program & Project Supervisor, UAB, CPUC \nJudith Mason, Public Utility Financial Examiner IV, UAB, CPUC \nKeen Banh, Associate Management Auditor, UAB, CPUC \nPaulina Zepeda Gomez, Associate Management Auditor, UAB, CPUC \nYaelan Wong, Staff Services Management Auditor, UAB, CPUC \n \n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-02-24_pacific-gas-and-electric_ca-quarterly-procurement-review",
+        "company": "Pacific Gas and Electric Company",
+        "collection": "state_audit",
+        "issued_date": "2026-02-24",
+        "docket": "AL 7746-E",
+        "doc_type": "quarterly energy procurement compliance agreed-upon procedures report",
+        "source_note": "Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 14 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed."
+      },
+      "reviewed_at": "2026-09-24"
+    }
+  ],
+  "failures": [],
+  "already_held": 4
+}

@@ -9,7 +9,7 @@ The older completeness ratings below are historical and have not been renewed.
 |---|---:|---:|---:|---:|---:|
 | AR | 2 | 0 | 4 | 0 | 0 |
 | AZ | 1 | 0 | 2 | 0 | 0 |
-| CA | 18 | 2 | 3 | 0 | 1 |
+| CA | 27 | 2 | 6 | 3 | 1 |
 | CO | 0 | 0 | 3 | 0 | 0 |
 | CT | 3 | 0 | 0 | 0 | 0 |
 | DC | 3 | 0 | 2 | 27 | 0 |

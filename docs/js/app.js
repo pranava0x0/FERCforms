@@ -1150,6 +1150,9 @@ function threadNode(r, detail) {
   const sourceLabel = detail.jurisdiction === "FERC" ? "View on eLibrary ↗" : "View source ↗";
   const footer = el("div", { class: "thread-footer" }, [
     el("a", { class: "btn-secondary primary", href: detail.source_page_url, rel: "noopener", target: "_blank", text: sourceLabel }),
+    detail.jurisdiction !== "FERC" && detail.pdf_download_url && detail.pdf_download_url !== detail.source_page_url
+      ? el("a", { class: "btn-secondary", href: detail.pdf_download_url, rel: "noopener", target: "_blank", text: "Read document ↗" })
+      : null,
     detail.archived_via
       ? el("a", { class: "btn-secondary", href: detail.archived_via, rel: "noopener", target: "_blank", text: "View Wayback snapshot ↗" })
       : null,

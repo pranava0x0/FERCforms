@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="444 structured records (126 FERC audits, 29 prudence reviews, 83 state PUC audits); 861 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="459 structured records (126 FERC audits, 29 prudence reviews, 92 state PUC audits); 861 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-09-24). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Niagara Mohawk Power Corporation" collection="FERC Audits" docket="FA25-3-000" issued="2026-09-18" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260918-3038">
@@ -3372,13 +3372,49 @@ Georgia PSC direct testimony of Staff/Independent Construction Monitor (Steven D
 Listed for reference (not machine-parsed into findings).
 CPUC Decision D.10-07-049, Application A.09-04-002 — SCE Energy Resource Recovery Account (ERRA) compliance and reasonableness review. Published HTML decision (docs.cpuc.ca.gov); fetch=false (HTML, like the other CA ERRA decisions). The HTML body does not carry an explicit issuance day -&gt; issued_date null. Content verified: 'D1007049 SoCal Edison Co. Energy Resource Recovery Account Compliance and Reasonableness Review.'
 </doc>
+<doc title="San Diego Gas &amp; Electric Company" collection="State PUC Audits" docket="AL 4840-E" issued="2026-09-18" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="AL 7900-E" issued="2026-08-28" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="San Diego Gas &amp; Electric Company" collection="State PUC Audits" docket="A.22-05-016" issued="2026-07-27" industry="n/a" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 32 pages. Final performance audit with utility response and UAB evaluation; requires corrective action plan. Report concerns a program within the named rate-case application, not the final rate-case decision. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="Southern California Gas Company" collection="State PUC Audits" docket="A.22-05-015" issued="2026-06-29" industry="gas" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 39 pages. Final performance audit with utility response and UAB evaluation; requires corrective action plan. Report concerns a program within the named rate-case application, not the final rate-case decision. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="Southern California Edison Company" collection="State PUC Audits" docket="AL 5739-E" issued="2026-06-25" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 14 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="San Diego Gas &amp; Electric Company" collection="State PUC Audits" docket="AL 4797-E" issued="2026-06-25" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 15 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
 <doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="n/a" issued="2026-06-05" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
 Listed for reference (not machine-parsed into findings).
 CPUC Utility Audits Branch Balancing Accounts Performance Audit of Pacific Gas and Electric Company, dated 2026-06-05 (30 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).
 </doc>
+<doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="AL 7824-E" issued="2026-05-22" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 13 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
+<doc title="San Diego Gas &amp; Electric Company" collection="State PUC Audits" docket="AL 4745-E" issued="2026-03-27" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 16 pages. Advice letter identifier, not a formal application docket. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
+</doc>
 <doc title="Southern California Edison Company" collection="State PUC Audits" docket="AL 5660-E" issued="2026-03-20" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
 Listed for reference (not machine-parsed into findings).
 Final agreed-upon procedures report for Southern California Edison quarterly energy procurement compliance, July 1–September 30, 2025. Advice Letter 5660-E (an advice-letter identifier, not a formal application docket). Verified by direct official PDF download and pages 1–3 on 2026-09-24: transmittal dated March 20, 2026, company and period confirmed, 17 PDF pages. The letter requires amended Attachments A, B and D by April 3, 2026; implementation was not verified. Metadata-only: this review format has no validated findings parser. PDF SHA-256 recorded in data/sources/refresh-verification-20260924.json.
+</doc>
+<doc title="Pacific Gas and Electric Company" collection="State PUC Audits" docket="AL 7746-E" issued="2026-02-24" industry="electric" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
+Listed for reference (not machine-parsed into findings).
+Discovered on CPUC UAB energy index; downloaded with pipeline User-Agent and read PDF pages 1–3 on 2026-09-24. 14 pages. Advice letter identifier, not a formal application docket. Transmittal on PDF page 2 explicitly states no reportable findings; record remains metadata-only because the format is not machine-structured. No implementation/compliance outcome inferred. PDF hash and caption-page text: data/sources/ca-audits-20260924.json. No findings parsed.
 </doc>
 <doc title="Southwest Gas Corporation" collection="State PUC Audits" docket="n/a" issued="2026-02-12" industry="gas" source="https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry">
 Listed for reference (not machine-parsed into findings).

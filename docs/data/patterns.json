@@ -1,12 +1,12 @@
 {
-  "report_count": 444,
+  "report_count": 459,
   "finding_count": 861,
   "other_matter_count": 11,
   "recommendation_count": 2099,
   "by_industry": {
-    "electric": 284,
-    "unknown": 91,
-    "gas": 51,
+    "electric": 297,
+    "unknown": 92,
+    "gas": 52,
     "oil": 18
   },
   "by_year": {
@@ -22,11 +22,11 @@
     "2019": 15,
     "2020": 16,
     "2021": 19,
-    "2022": 23,
-    "2023": 29,
+    "2022": 24,
+    "2023": 31,
     "2024": 54,
     "2025": 76,
-    "2026": 16
+    "2026": 28
   },
   "by_function": {
     "transmission": 71,
@@ -46,7 +46,7 @@
     },
     {
       "jurisdiction": "CA",
-      "report_count": 23,
+      "report_count": 38,
       "finding_count": 37
     },
     {

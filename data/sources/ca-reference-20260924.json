@@ -1,0 +1,116 @@
+{
+  "captured_at": "2026-09-24",
+  "kind": "reference",
+  "index_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses",
+  "index_sha256": "644020838fef50b6facc8c5e52e46742edf337df8806a9b09e626e33cf6d9cd3",
+  "scope": "One index page; no pagination. Review captions before seeding.",
+  "candidates": [
+    {
+      "url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260727-public-advocates-office-q2-2026-electric-rates-report.pdf",
+      "label": "2026 Q2 Electric Rates Report",
+      "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2026-q2-electric-rates-report",
+      "detail_sha256": "a6edaa0c7f58282ca5b71b547e23f29f97b619b50e2df904b102a14d22548022",
+      "pdf_sha256": "6115802f30f3d2213964eecdebb28622cbfed08c4850f5f64f2961660672b4ae",
+      "resolved_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260727-public-advocates-office-q2-2026-electric-rates-report.pdf",
+      "downloaded_at": "2026-09-24T13:13:50.747082+00:00",
+      "page_count": 24,
+      "bytes": 292848,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "Q2 2026 Electric Rates Report\nThe Public Advocates Office at the California Public Utilities Commission\nJuly 2026\n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "About\n•\nThe Public Advocates Office represents utility customers’ interests primarily by \nparticipating in proceedings before the California Public Utilities Commission and \nengaging in other policymaking forums. \n•\nThe California electric utilities recover their operational and investment costs through \nthe rates they charge their customers.  These rates regularly change due to many \nfactors. We track the rates and develop recommendations to minimize costs to \nratepayers. \n•\nThis report summarizes residential electric rate changes across Pacific Gas and \nElectric (PG&E), San Diego Gas & Electric (SDG&E), and Southern California Edison \n(SCE) service territories through June 2026.\n2\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Source: Public Advocates Office analysis of utility data and household consumption for unsubsidized (Non-CARE) customers\n*Los Angeles Department of Water and Power services the City of Los Angeles.\n•\nOver the last few years electric bills \nare generally rising due to higher \nelectricity use (e.g., air conditioning) \nand higher overall electricity prices \n(\"rates\").\n•\nLow-income households are most \ndisproportionately impacted from \nhigher rates and bills.\nBills compound affordability challenges across the state\nAverage Monthly Bill ($)\nGreater \nL.A. Area*\nAverage Q2 2026 Electric Bill by City\nSan Jose\nSan Diego\n3\nPG&E\nSCE\nSDG&E\n $-\n $50\n $100\n $150\n $200\n $250\n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-07-27_california-electric-utilities_ca-2026-q2-electric-rates-report",
+        "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+        "collection": "state_reference",
+        "issued_date": "2026-07-27",
+        "docket": null,
+        "doc_type": "2026 Q2 Electric Rates Report (recurring informational report)",
+        "source_note": "Official Public Advocates Office report index publication date 2026-07-27; PDF cover gives only July 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through June 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260430-public-advocates-office-q1-2026-electric-rates-report.pdf",
+      "label": "2026 Q1 Electric Rates Report",
+      "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2026-q1-electric-rates-report",
+      "detail_sha256": "bf02c7ed3b650ca6c700b7299eb6bbfc0e9e88ef25c7575c804859dc9df0ef20",
+      "pdf_sha256": "7ba448fc404dd0351f8efbd42f8b5ea0c0757e73b08486cea8dce6fe1c253522",
+      "resolved_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260430-public-advocates-office-q1-2026-electric-rates-report.pdf",
+      "downloaded_at": "2026-09-24T13:13:55.502135+00:00",
+      "page_count": 24,
+      "bytes": 287355,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "Q1 2026 Electric Rates Report\nThe Public Advocates Office at the California Public Utilities Commission\nMarch 2026\n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "About\n•\nThe Public Advocates Office represents utility customers’ interests primarily by \nparticipating in proceedings before the California Public Utilities Commission and \nengaging in other policymaking forums. \n•\nThe California electric utilities recover their operational and investment costs through \nthe rates they charge their customers.  These rates regularly change due to many \nfactors. We track the rates and develop recommendations to minimize costs to \nratepayers. \n•\nThis report summarizes residential electric rate changes across Pacific Gas and \nElectric (PG&E), San Diego Gas & Electric (SDG&E), and Southern California Edison \n(SCE) service territories through March 2026.\n2\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Source: Public Advocates Office analysis of utility data and household consumption for unsubsidized (Non-CARE) customers\n*Los Angeles Department of Water and Power services the City of Los Angeles.\n•\nOver the last few years electric bills \nare generally rising due to higher \nelectricity use (e.g., air conditioning) \nand higher overall electricity prices \n(\"rates\").\n•\nLow-income households are most \ndisproportionately impacted from \nhigher rates and bills.\nBills compound affordability challenges across the state\nAverage Monthly Bill ($)\nGreater \nL.A. Area*\nAverage Q1 2026 Electric Bill by City\nSan Jose\nSan Diego\n3\n $-\n $50\n $100\n $150\n $200\n $250\nPG&E\nSCE\nSDG&E\n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-04-30_california-electric-utilities_ca-2026-q1-electric-rates-report",
+        "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+        "collection": "state_reference",
+        "issued_date": "2026-04-30",
+        "docket": null,
+        "doc_type": "2026 Q1 Electric Rates Report (recurring informational report)",
+        "source_note": "Official Public Advocates Office report index publication date 2026-04-30; PDF cover gives only March 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through March 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+      },
+      "reviewed_at": "2026-09-24"
+    },
+    {
+      "url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260210-public-advocates-office-q4-2025-rates-report.pdf",
+      "label": "2025 Q4 Electric Rates Report",
+      "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2025-q4-electric-rates-report",
+      "detail_sha256": "90239841e4c177a010e169aa4454ba6768c93d00d0fb651bed602c21d982fc83",
+      "pdf_sha256": "2f3bf1c5b6ea0a007b6f170d5d6611a66ed47a4007411fd00569dc3c608f0d89",
+      "resolved_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260210-public-advocates-office-q4-2025-rates-report.pdf",
+      "downloaded_at": "2026-09-24T13:14:00.160499+00:00",
+      "page_count": 24,
+      "bytes": 309295,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "Q4 2025 Electric Rates Report\nThe Public Advocates Office at the California Public Utilities Commission\nFebruary 2026\n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "About\n•\nThe Public Advocates Office represents utility customers’ interests primarily by \nparticipating in proceedings before the California Public Utilities Commission and \nengaging in other policymaking forums. \n•\nThe California electric utilities recover their operational and investment costs through \nthe rates they charge their customers.  These rates regularly change due to many \nfactors. We track the rates and develop recommendations to minimize costs to \nratepayers. \n•\nThis report summarizes residential electric rate changes across Pacific Gas and \nElectric (PG&E), San Diego Gas & Electric (SDG&E), and Southern California Edison \n(SCE) service territories through January 1, 2026.\n2\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "Source: Public Advocates Office analysis of utility data and household consumption for unsubsidized (Non-\nCARE) customers\n*Los Angeles Department of Water and Power services the City of Los Angeles.\n•\nOver the last few years electric bills \nare generally rising due to higher \nelectricity use (e.g., air conditioning) \nand higher overall electricity prices \n(\"rates\").\n•\nLow-income households are most \ndisproportionately impacted from \nhigher rates and bills.\nBills compound affordability challenges across the state\nAverage Monthly Bill ($)\nGreater \nL.A. Area*\nAverage Q4 2025 Electric Bill by City\nSan Jose\nSan Diego\n3\n $-\n $50\n $100\n $150\n $200\n $250\n"
+        }
+      ],
+      "reviewed_metadata": {
+        "id": "2026-02-11_california-electric-utilities_ca-2025-q4-electric-rates-report",
+        "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+        "collection": "state_reference",
+        "issued_date": "2026-02-11",
+        "docket": null,
+        "doc_type": "2025 Q4 Electric Rates Report (recurring informational report)",
+        "source_note": "Official Public Advocates Office report index publication date 2026-02-11; PDF cover gives only February 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through January 1, 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+      },
+      "reviewed_at": "2026-09-24"
+    }
+  ],
+  "failures": [],
+  "already_held": 0
+}

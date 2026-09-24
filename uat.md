@@ -3,7 +3,21 @@
 _Created: 2026-05-31_
 _Last run: 2026-09-24_
 
-## Current run — September 24, 2026
+## California expansion — September 24, 2026
+
+Final full suite: **352 passed, 15 skipped** (uncached historical PDF/text fixtures).
+
+Added 15 documents: state audits 92, rate cases 125, reference 87 (459 total).
+All three expanded collections manually checked in the local browser: document roles, page counts,
+metadata-only labels and direct document URLs. Six browser regressions cover the new audit,
+application and reference report at 375px and 1280px, including horizontal overflow. Direct links
+reuse existing button styles. Repeat audit discovery returned 0 candidates / 13 held / 0 failures.
+Prior 444 report objects unchanged. No new findings claims or parsing were introduced.
+Gzip estimates: index 26,041→26,585 bytes; state audit details 69,072→69,561;
+rate-case details 23,213→23,768; reference details 4,186→4,699.
+Rate-case ingest (233 pages): 34.6 seconds, 92.6 MB peak RSS; PDFs processed page-by-page.
+
+## Earlier stocktake run — September 24, 2026
 
 All five collection tabs checked at 1280×900 and 375×812: counts, cards, source links, desktop
 Ledger, no page overflow or uncaught JavaScript errors. Full suite: **341 passed, 15 skipped**

@@ -1376,14 +1376,14 @@
     "generated_at": "2026-09-24"
   },
   "state_audit": {
-    "report_count": 83,
+    "report_count": 92,
     "finding_count": 146,
     "other_matter_count": 0,
     "recommendation_count": 547,
     "by_industry": {
-      "electric": 59,
-      "gas": 22,
-      "unknown": 2
+      "electric": 66,
+      "gas": 23,
+      "unknown": 3
     },
     "by_year": {
       "2011": 1,
@@ -1400,7 +1400,7 @@
       "2023": 9,
       "2024": 18,
       "2025": 19,
-      "2026": 5
+      "2026": 14
     },
     "by_function": {},
     "by_jurisdiction": [
@@ -1421,7 +1421,7 @@
       },
       {
         "jurisdiction": "CA",
-        "report_count": 18,
+        "report_count": 27,
         "finding_count": 0
       },
       {
@@ -2374,12 +2374,12 @@
     "generated_at": "2026-09-24"
   },
   "state_rate_case": {
-    "report_count": 122,
+    "report_count": 125,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 110,
+      "electric": 113,
       "gas": 10,
       "unknown": 2
     },
@@ -2391,8 +2391,8 @@
       "2019": 2,
       "2020": 1,
       "2021": 5,
-      "2022": 5,
-      "2023": 7,
+      "2022": 6,
+      "2023": 9,
       "2024": 24,
       "2025": 40,
       "2026": 5
@@ -2421,6 +2421,11 @@
       },
       {
         "jurisdiction": "VA",
+        "report_count": 6,
+        "finding_count": 0
+      },
+      {
+        "jurisdiction": "CA",
         "report_count": 6,
         "finding_count": 0
       },
@@ -2496,11 +2501,6 @@
       },
       {
         "jurisdiction": "NE",
-        "report_count": 3,
-        "finding_count": 0
-      },
-      {
-        "jurisdiction": "CA",
         "report_count": 3,
         "finding_count": 0
       },
@@ -2875,14 +2875,17 @@
     "generated_at": "2026-09-24"
   },
   "state_reference": {
-    "report_count": 84,
+    "report_count": 87,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "unknown": 84
+      "unknown": 84,
+      "electric": 3
     },
-    "by_year": {},
+    "by_year": {
+      "2026": 3
+    },
     "by_function": {},
     "by_jurisdiction": [
       {
@@ -2913,6 +2916,11 @@
       {
         "jurisdiction": "OK",
         "report_count": 4,
+        "finding_count": 0
+      },
+      {
+        "jurisdiction": "CA",
+        "report_count": 3,
         "finding_count": 0
       },
       {

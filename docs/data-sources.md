@@ -7,6 +7,55 @@ and the per-source backlog in [BACKLOG.md](../BACKLOG.md). To actually run a ref
 
 ---
 
+## Reusable California discovery — September 24, 2026
+
+`python3 -m pipeline.discover_ca` covers three **specific CPUC sources**: the UAB energy
+index, the Public Advocates Office quarterly electric-rate report index, and the SCE GRC index.
+This batch added **15 documents**: nine 2026 audits/AUP reviews, three SCE rate-case documents
+(2022–2023), and three recurring electric-rate reports. It is not a complete CA docket refresh.
+
+Run in a clean worktree: the main checkout still contains pre-existing unapproved processed files.
+Discovery never writes seeds or published reports. URLs come from actual index anchors; no guessed
+PDF paths. Existing seed URLs are deduplicated; same docket/different document remains valid.
+
+```bash
+python3 -m pipeline.discover_ca discover --kind audit --year 2026 --limit 12 --output data/raw/ca-audit-candidates.json
+python3 -m pipeline.discover_ca discover --kind reference --limit 3 --output data/raw/ca-reference-candidates.json
+python3 -m pipeline.discover_ca discover --kind rate-case --match 'Application A.23|Track 3|Track 4' --limit 3 --output data/raw/ca-rate-candidates.json
+```
+
+Each receipt saves source/index URLs and hashes, resolved PDF URL, download timestamp, byte/page
+counts and pages 1–3 as text. Review those captions before creating a standard `SourceSeed` file;
+confirm utility, document role, issue/adoption/publication date differences and docket. Leave
+`parse:false`. Never treat an application as an approved rate, or a recurring report as an audit.
+
+```bash
+python3 -m pipeline.discover_ca ingest --seed data/seeds/<reviewed-file>.json --receipt data/raw/<candidate-file>.json
+python3 -m pipeline.build
+python3 -m pipeline.patterns
+python3 -m pipeline.csv_export
+python3 -m pytest -q
+```
+
+Ingest checks the reviewed PDF hash, source-page identity, collection and page count; refuses to
+overwrite a changed existing report; scans pages individually with PyMuPDF for image-only pages;
+and writes metadata only. The 233-page, three-document rate-case batch took 34.6 seconds and
+92.6 MB peak RSS on this Mac (not a general large-PDF benchmark). It avoids the generic ingest path's full pdfplumber extraction. PDFs are
+streamed with a 45 MB cap, per-request timeout, overall download deadline and atomic cache writes.
+Every redirect must remain on a CPUC HTTPS host. Failures checkpoint to `data/ingest_log.jsonl` and
+return a nonzero exit status. Candidate receipts checkpoint after every document.
+
+**Limits:** one index page per run, no reference pagination, SCE only for rate cases. The nine new
+2026 UAB records plus four already-held URLs cover the 13 energy PDFs currently listed for 2026.
+This is index coverage, not proof that all CA audits are listed. Download cache is reused after
+hash validation; `downloaded_at` stays the original date. Held PDFs are not re-verified by discovery;
+use a separate live verification run for that purpose. Captions with insufficient text stop for
+manual/OCR review. Metadata labels still require review. No new findings parser was introduced.
+
+Receipts: [audits](../data/sources/ca-audits-20260924.json),
+[reference reports](../data/sources/ca-reference-20260924.json),
+[rate cases](../data/sources/ca-rate-cases-20260924.json).
+
 ## Latest checked refresh — September 24, 2026
 
 Three FERC audits added: FA25-3 (Niagara Mohawk), FA25-4 (Atlantic City Electric), PA24-7
