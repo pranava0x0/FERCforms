@@ -1,0 +1,67 @@
+{
+  "jurisdiction": "OR",
+  "captured_at": "2026-09-24T13:38:54.243690+00:00",
+  "target": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24011",
+  "match": "24-454",
+  "search_text": "Order",
+  "scope": "One index page; GA at most 50 matching filings. Not a completeness claim.",
+  "indexes": [
+    {
+      "url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24011",
+      "resolved_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24011",
+      "sha256": "238a48b1a2e213c055c33d4b075fbf7485dcc27dbed3c607227fd70139edcfff"
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=24-454",
+      "label": "",
+      "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24011",
+      "pdf_sha256": "109403faa57dcf82b0a714af22352fdf5f312f59bc621c74cf3f26265bc9352e",
+      "resolved_url": "https://apps.puc.state.or.us/orders/2024ords/24-454.pdf",
+      "downloaded_at": "2026-09-24T13:39:03.482055+00:00",
+      "page_count": 126,
+      "bytes": 21033402,
+      "cache_path": "data/raw/state_portals/c3297b4131c8ff393aaf9fc4374819284db9eb66c58a192a9947b8ffcaada1fe.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "ORDER NO. 24-454 \nENTERED \nDec 20, 2024 \nBEFORE THE PUBLIC UTILITY COMMISSION \nOF OREGON \nIn the Matter of \nPORTLAND GENERAL ELECTRIC \nCOMPANY, \nRe uest for a General Rate Revision. \nUE435 \nORDER \nDISPOSITION: \nAPPLICATION FOR GENERAL RATE REVISION APPROVED \nAS REVISED \nI. \nSUMMARY \nThis order addresses Portland General Electric Company's request for a general rate \nrevision. In this general rate case, we approve an increase to PGE' s revenue requirement \nof approximately 3.3 percent from the company's previous rates. Also effective \nJanuary 1, 2025, will be rate changes from separate dockets, including stipulations we \napproved for PGE' s power costs forecasted for 2025. We expect the combined change \nfrom all rate adjustments effective January 1, 2025, to be an increase of approximately \n6.2 percent in PGE's overall revenue requirement, with the rate increase for residential \ncustomers expected to be slightly lower, at approximately 5.5 percent. More detailed rate \nimpacts, including how this overall increase will impact other customer classes, will be \nprovided after the PUC reviews the company's compliance filing in response to this \norder. \nThe rate increase we adopt follows two years in a row of significant rate increases for \nPGE customers-on January 1, 2023, and January 1, 2024-that pushed up residential \nrates by approximately 33 percent. It is understandable that frustration with PGE's filing \nfor an additional rate increase to take effect on January 1, 2025, has garnered significant \nattention within the general public and with policy makers. When early in 2024 we \ndenied CUB's request to dismiss PGE's filing without review, we pledged that our \nevaluation of the merits of PGE's request would consider-as much as possible-PGE's \nrecent increases and the corresponding pressure on its customers. In adjudicating as many \nas 65 discrete issues, plus subparts, ranging from minor disagreements on accounting \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "ORDER NO. 24-454 \npractice to renewed requests to dismiss the entire case, we maintain a focus on the core \ncustomer needs for safety, reliability, and affordability in their essential utility services, \nbalancing short-term rate impacts and long-term customer interests. \nWe address each issue individually in the order that follows, but our decisions follow \nfrom several overarching principles. First, we conclude that customers are right to \ndemand that PGE better control the costs under its influence. Our decision denies nearly \nall of PGE's requests for expense growth beyond its last full year of actual, demonstrated \nexpenses, plus inflation. These adjustments result in our adopting a lower rate increase \nthan PGE requested. We are committed to continued use of a future test year, but we \nintend to implement this constructive regulatory policy in a manner that incents PGE to \ncontrol costs and gives Staff and intervenors a reasonable opportunity to review and \ndiscipline PGE's expenses. We understand why PGE projected growth from prior \nbudgets, given year-upon-year rate case filings, but we believe that this is an untenable \napproach to achieving true regulatory discipline on utility spending. We also know that \ncustomers depend on the PUC to hold PGE accountable for holding down its costs. \nDespite the discipline we impose on PGE's expenses, we still find the need for a rate \nincrease to cover prudent capital PGE has invested to benefit customers. A significant \nportion of PGE's rate increase request is driven by infrastructure needs, and we reject \narguments that we believe would undermine fair and consistent regulatory treatment for \nnecessary capital investments to maintain system safety and reliability and reduce \ncustomer exposure to volatile power purchases. PGE's frequent rate case filings help it \nmanage its risk, however, and help justify our decisions to lower PGE's return on equity \n(ROE) and deny PGE's request for an additional, automatic mid-year rate increase. \nWe recognize that our decision makes frequent general rate case filings likely to \ncontinue. Although we invite PGE to file for a balanced tracker to incorporate the Seaside \nbattery into rates without filing a general rate case, we caution that any such rate \nmechanism must balance the need for PGE to bring new investments into rates with the \nopportunity to capture for customers other costs that have decreased. If a balanced \nmechanism cannot be achieved and PGE files a new general rate case to recover capital \ncosts, we expect PGE to be more mindful of the impacts of the timing and breadth of its \nfiling on customers and stakeholders. We also expect that our recent changes to \ndistribution system planning guidelines will uncover ways to discipline the overall pace \nand allocation of costs in PGE's capital investment program, ensuring that it is carefully \ntuned to safety, reliability, and affordability. \nWe will continue to address customer impacts of the increasing cost pressures that \nutilities face. We already have recognized the unique hardships faced by the most \n2 \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "ORDER NO. 24-454 \nvulnerable by suspending winter disconnections for bill discount program participants \nand directing PGE to evaluate changes to the discounts available in its bill discount \nprogram. We also will consider PGE's proposal in UE 430 to protect residential \ncustomers from projected growth in demand from large energy users, though we note that \nwe are not aware of significant influence from large user demand growth in the increase \nwe adopt here. In short, in the order that follows and in all the work of the PUC, we will \nmaintain a focus on a fair allocation of costs for delivering on core customer needs for \nsafety, reliability, and affordability in their essential utility services. \nII. \nBACKGROUND AND PROCEDURAL HISTORY \nOn February 29, 2024, PGE filed Advice No. 24-06, requesting a general rate increase for \nits Oregon retail customers effective January 1, 2025. In this proceeding, we investigated \nthe propriety and reasonableness of the proposed tariffs. Staff of the Public Utility \nCommission of Oregon; the Alliance of Western Energy Consumers (A WEC); Calpine \nEnergy Solutions, LLC; ChargePoint, Inc.; Fred Meyer Stores, Inc., a subsidiary of The \nKroger Co. and Quality Food Centers, a Division of the Fred Meyer Stores, Inc. (Fred \nMeyer); NewSun Energy LLC (NewSun); the Oregon Citizens' Utility Board (CUB); \nVerde; and Walmart, Inc., all participated as parties to the proceeding. \nDuring the course of the investigation, the parties filed testimony and exhibits, and PGE \nresponded to a bench request. The general public was given the opportunity to comment \non PGE's filing at a public comment meeting on May 16, 2024, which was conducted \nonline. Members of the public also submitted significant written comments. \nOn October 10, 2024, the Commission conducted an evidentiary hearing. On \nOctober 28, 2024, PGE, Staff, CUB, NewSun, Verde, and Walmart filed their opening \nbriefs. On October 29, 2024, A WEC filed its opening brief. On November 8, 2024, PGE, \nStaff, A WEC, CUB, NewSun, and Verde filed their closing briefs. The Commission \nheard oral argument on November 14, 2024. \nIII. \nCOMPANYFILING \nOn February 29, 2024, PGE filed this general rate case. In its filing, PGE stated that the \nprimary drivers of its rate case are capital investments, which are intended \"to provide \nsystem reliability and resiliency, safety, and security for our customers.\"1 These include \ntwo battery storage projects, Constable Battery Energy Storage Project, which is \nscheduled to go into service in December 2024, and Seaside Battery Energy Storage \n1 PGE/100, Pope-Simms/17. \n3 \n"
+        }
+      ],
+      "index_metadata": null,
+      "needs_visual_review": false,
+      "reviewed_metadata": {
+        "id": "2024-12-20_portland-general-electric_or-ue435-final-order",
+        "company": "Portland General Electric Company",
+        "collection": "state_rate_case",
+        "jurisdiction": "OR",
+        "source": "Oregon Public Utility Commission",
+        "doc_type": "Order 24-454 — General Rate Revision",
+        "industry": "electric",
+        "pdf_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=24-454",
+        "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24011",
+        "accession": null,
+        "issued_date": "2024-12-20",
+        "docket": "UE 435",
+        "captured_at": "2026-09-24",
+        "source_note": "PDF pages 1–3 text verified. Entered December 20, 2024. Covers expense growth, capital investment, return on equity and customer affordability. Rate-case order, not a standalone audit. 126 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/or-pge-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "text pages 1–3",
+      "review_note": "PDF pages 1–3 text verified. Entered December 20, 2024. Covers expense growth, capital investment, return on equity and customer affordability. Rate-case order, not a standalone audit."
+    }
+  ],
+  "failures": [],
+  "already_held": 0
+}

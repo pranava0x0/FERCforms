@@ -7,6 +7,55 @@ and the per-source backlog in [BACKLOG.md](../BACKLOG.md). To actually run a ref
 
 ---
 
+## Reusable California discovery — September 24, 2026
+
+`python3 -m pipeline.discover_ca` covers three **specific CPUC sources**: the UAB energy
+index, the Public Advocates Office quarterly electric-rate report index, and the SCE GRC index.
+This batch added **15 documents**: nine 2026 audits/AUP reviews, three SCE rate-case documents
+(2022–2023), and three recurring electric-rate reports. It is not a complete CA docket refresh.
+
+Run in a clean worktree: the main checkout still contains pre-existing unapproved processed files.
+Discovery never writes seeds or published reports. URLs come from actual index anchors; no guessed
+PDF paths. Existing seed URLs are deduplicated; same docket/different document remains valid.
+
+```bash
+python3 -m pipeline.discover_ca discover --kind audit --year 2026 --limit 12 --output data/raw/ca-audit-candidates.json
+python3 -m pipeline.discover_ca discover --kind reference --limit 3 --output data/raw/ca-reference-candidates.json
+python3 -m pipeline.discover_ca discover --kind rate-case --match 'Application A.23|Track 3|Track 4' --limit 3 --output data/raw/ca-rate-candidates.json
+```
+
+Each receipt saves source/index URLs and hashes, resolved PDF URL, download timestamp, byte/page
+counts and pages 1–3 as text. Review those captions before creating a standard `SourceSeed` file;
+confirm utility, document role, issue/adoption/publication date differences and docket. Leave
+`parse:false`. Never treat an application as an approved rate, or a recurring report as an audit.
+
+```bash
+python3 -m pipeline.discover_ca ingest --seed data/seeds/<reviewed-file>.json --receipt data/raw/<candidate-file>.json
+python3 -m pipeline.build
+python3 -m pipeline.patterns
+python3 -m pipeline.csv_export
+python3 -m pytest -q
+```
+
+Ingest checks the reviewed PDF hash, source-page identity, collection and page count; refuses to
+overwrite a changed existing report; scans pages individually with PyMuPDF for image-only pages;
+and writes metadata only. The 233-page, three-document rate-case batch took 34.6 seconds and
+92.6 MB peak RSS on this Mac (not a general large-PDF benchmark). It avoids the generic ingest path's full pdfplumber extraction. PDFs are
+streamed with a 45 MB cap, per-request timeout, overall download deadline and atomic cache writes.
+Every redirect must remain on a CPUC HTTPS host. Failures checkpoint to `data/ingest_log.jsonl` and
+return a nonzero exit status. Candidate receipts checkpoint after every document.
+
+**Limits:** one index page per run, no reference pagination, SCE only for rate cases. The nine new
+2026 UAB records plus four already-held URLs cover the 13 energy PDFs currently listed for 2026.
+This is index coverage, not proof that all CA audits are listed. Download cache is reused after
+hash validation; `downloaded_at` stays the original date. Held PDFs are not re-verified by discovery;
+use a separate live verification run for that purpose. Captions with insufficient text stop for
+manual/OCR review. Metadata labels still require review. No new findings parser was introduced.
+
+Receipts: [audits](../data/sources/ca-audits-20260924.json),
+[reference reports](../data/sources/ca-reference-20260924.json),
+[rate cases](../data/sources/ca-rate-cases-20260924.json).
+
 ## Latest checked refresh — September 24, 2026
 
 Three FERC audits added: FA25-3 (Niagara Mohawk), FA25-4 (Atlantic City Electric), PA24-7
@@ -609,3 +658,51 @@ not effort limits — recorded so a future session doesn't re-spend a finder age
   docid and search surfaces docids only for testimony/CPCN/intervenor letters. The Oak Creek CT
   cost-overrun generic investigation (docket 6630-CE-317) was only *opened* May 2025 — no report
   exists yet. Breaking this seam needs browser-capture (Chrome MCP) once a report lands.
+
+## Seven-state refresh — 2026-09-24
+
+[Evidence, counts and comparison limits](state-expansion-2026-09-24.md). These are bounded
+source-specific recipes, not exhaustive state crawlers. Write new candidates into `data/raw`;
+never overwrite a committed review receipt during discovery.
+
+```bash
+# VA: observed Breeze case/document API; exact docket, then caption review.
+python3 -m pipeline.discover_eastern_states VA --docket PUR-2024-00137 --match 'Final Order' --limit 2 --output data/raw/va-candidates.json
+# TX: official filing index → item page → single PDF. Match includes table row metadata.
+python3 -m pipeline.discover_eastern_states TX --docket 56211 --match 'ORDER' --limit 3 --output data/raw/tx-candidates.json
+# PA: static links on an official release or Bureau of Audits page.
+python3 -m pipeline.discover_eastern_states PA --index-url https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026 --match 'MEI Report|Management Efficiency Investigation Report' --limit 1 --output data/raw/pa-candidates.json
+# NY: official document search; may return sibling cases. Inspect every caption.
+python3 -m pipeline.discover_eastern_states NY --docket 24-E-0322 --match 'Order Adopting' --limit 2 --output data/raw/ny-candidates.json
+# GA: public docket.v2.js exposes service-facts-docket; first 50 server-filtered rows.
+python3 -m pipeline.discover_state_portals discover --state GA --target 44280 --search-text Order --match '^ORDER GRANTING JOINT|^ORDER ADOPTING STIPULATION' --limit 3 --output data/raw/ga-candidates.json
+# OR: actual docket links → orders.asp → server-redirected PDF, no guessed file paths.
+python3 -m pipeline.discover_state_portals discover --state OR --target 'https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006' --match '24-447|25-136' --limit 2 --output data/raw/or-candidates.json
+# OH: Auditor of State's actual report links; legacy auditor.state.oh.us certificate is invalid.
+python3 -m pipeline.discover_state_portals discover --state OH --target https://ohioauditor.gov/performance/PUCO-2026.html --match Performance --limit 1 --output data/raw/oh-candidates.json
+```
+
+After reading captions and date-bearing pages, prepare `SourceSeed` records and copy their
+normalized `SourceSeed.model_dump(mode='json')` into each candidate's `reviewed_metadata`.
+Review is explicit: this ingestion command rejects a different seed, source page, PDF hash
+or page count. It accepts several receipts for one state. Do not enable `parse:true`.
+
+```bash
+python3 -m pipeline.discover_state_portals ingest --seed data/seeds/pa_expansion_20260924.json --receipt data/sources/eastern-pa-ppl-rate.json data/sources/eastern-pa-peco-billing.json data/sources/eastern-pa-peco-mei.json
+python3 -m pipeline.build
+python3 -m pipeline.csv_export
+```
+
+Cache must exist at the receipt's `cache_path`; discovery supplies it. On a fresh clone, download
+the exact seed URLs to that path and verify the committed SHA-256 before ingesting. Do not edit
+an approved hash to accept changed bytes; review a new source revision. Standard `pipeline.sources`
+can also rebuild metadata-only records, but performs heavier text extraction.
+
+Access lessons: GA filing-list API is scriptable, superseding the old SPA-only note above;
+GA orders are often scans and need visual review. OR HTML is Windows-1252 in some dockets.
+TX 56211 item 496 has four attachments: the script refuses to choose one implicitly; final
+order item 518 is held. PA scanned PPL motion 1933620 is not the final rate order and remains
+unseeded. NY search is capped/relevance-ranked and not a complete docket export. The live 24-E-0322
+query returned no matching final order in its first 50 rows; that is unknown coverage, not
+evidence that no order exists. The seeded final order was separately located by its official PDF URL. OH's separate
+PUCO DIS utility-case wall remains unresolved; this pass used the Auditor of State's report.

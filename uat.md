@@ -3,7 +3,34 @@
 _Created: 2026-05-31_
 _Last run: 2026-09-24_
 
-## Current run — September 24, 2026
+## Seven-state expansion — September 24, 2026
+
+Full suite: **375 passed, 15 skipped**, including **100 browser tests** (195.6 seconds).
+After the live NY title-selector correction, **10 focused scraper/evidence checks passed**.
+Fourteen added browser cases open each state's new metadata-only record at 375px and 1280px;
+source links, loading, metadata-only labels and no horizontal overflow verified.
+All 459 prior report objects unchanged; 14 new records bring the corpus to 473.
+Repeat GA discovery: 0 new / 3 held / 0 failures; OR: 0 new / 2 held / 0 failures.
+NY returned no matching final order in the sampled search results; the separately located
+official order was caption/hash checked. This is not a completeness result.
+PA repeat ingestion: 374 pages, 1.73 seconds, 87.3 MB peak RSS. Index gzip grew 873 bytes.
+[Evidence and limitations](docs/state-expansion-2026-09-24.md).
+
+## California expansion — September 24, 2026
+
+Final full suite: **352 passed, 15 skipped** (uncached historical PDF/text fixtures).
+
+Added 15 documents: state audits 92, rate cases 125, reference 87 (459 total).
+All three expanded collections manually checked in the local browser: document roles, page counts,
+metadata-only labels and direct document URLs. Six browser regressions cover the new audit,
+application and reference report at 375px and 1280px, including horizontal overflow. Direct links
+reuse existing button styles. Repeat audit discovery returned 0 candidates / 13 held / 0 failures.
+Prior 444 report objects unchanged. No new findings claims or parsing were introduced.
+Gzip estimates: index 26,041→26,585 bytes; state audit details 69,072→69,561;
+rate-case details 23,213→23,768; reference details 4,186→4,699.
+Rate-case ingest (233 pages): 34.6 seconds, 92.6 MB peak RSS; PDFs processed page-by-page.
+
+## Earlier stocktake run — September 24, 2026
 
 All five collection tabs checked at 1280×900 and 375×812: counts, cards, source links, desktop
 Ledger, no page overflow or uncaught JavaScript errors. Full suite: **341 passed, 15 skipped**

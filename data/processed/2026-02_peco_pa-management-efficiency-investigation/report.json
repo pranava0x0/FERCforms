@@ -1,0 +1,31 @@
+{
+  "collection": "state_audit",
+  "jurisdiction": "PA",
+  "source": "Pennsylvania Public Utility Commission, Bureau of Audits",
+  "doc_type": "Management Efficiency Investigation — follow-up to 2022 audit",
+  "id": "2026-02_peco_pa-management-efficiency-investigation",
+  "company": "PECO Energy Company",
+  "company_raw": "PECO Energy Company",
+  "docket": "D-2025-3053971",
+  "docket_full": null,
+  "issued_date": null,
+  "source_page_url": "https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026",
+  "pdf_download_url": "https://www.puc.pa.gov/pcdocs/1917812.pdf",
+  "captured_at": "2026-09-24",
+  "source_note": "Cover visually verified: issued February 2026; no exact issue day stated. Public release March 12, 2026. Cover docket D-2025-3053971 and PECO identity verified; PDF pages 2–3 contents and page 5 introduction reviewed. Covers electric and gas operations, billing, overtime and implementation of earlier audit recommendations. MEI format is not supported by the M&O parser, so metadata-only. PDF hash and caption evidence: data/sources/eastern-pa-peco-mei.json.",
+  "archived_via": null,
+  "page_count": 64,
+  "scanned_pages": [
+    1,
+    64
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

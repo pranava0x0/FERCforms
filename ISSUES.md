@@ -1,5 +1,26 @@
 # Issues
 
+## 2026-09-24 · seven-state expansion
+
+- Added 14 verified official PDFs across VA, TX, PA, NY, OH, GA and OR; 473 total.
+- GA public filing API and OR docket/order redirects now have reusable scripts. Legacy OR
+  encoding handled; GA/OR scans manually reviewed. CPUC download bounds reused by both scripts.
+- Added PECO 2026 MEI as metadata-only. Unsupported MEI extraction remains open.
+- OH regulator performance audit is reference material; PUCO DIS utility-document access remains open.
+- TX multi-attachment settlement is recorded as unselected, not silently treated as one PDF.
+- Existing 459 report objects unchanged. Evidence and remaining targets: [refresh report](docs/state-expansion-2026-09-24.md).
+
+
+## 2026-09-24 California source expansion
+
+Added 15 verified PDFs through a reusable CPUC discovery/metadata-ingest CLI. Separate candidate
+receipts from reviewed seeds; capped downloads, redirect checks, caption/hash evidence and
+no-clobber ingestion. No existing report changed. Non-FERC cards now expose a direct “Read document” link alongside
+the source index, guarded at 375px and desktop. Three PG&E AUP transmittals explicitly state
+no reportable findings; still metadata-only, not asserted as parsed. Dates distinguish publication
+from cover month and decision adoption from issuance. See [source workflow](docs/data-sources.md).
+
+
 ## 2026-09-24 stocktake and targeted refresh
 
 - **Fixed · data refresh:** added three signed FERC audit reports (Niagara Mohawk FA25-3, Atlantic City Electric FA25-4, Houston Pipe Line PA24-7) and one SCE quarterly procurement AUP reference. 440→444 documents; 846→861 findings, plus 11 other matters; 2,026→2,099 recommendations. New FERC excerpts were source-curated against explicit page regions and transmittal counts; 89 quote hashes/page ranges and four PDF hashes are recorded in `data/sources/refresh-verification-20260924.json`. Existing 440 baked report objects unchanged. `test_september_refresh_matches_signed_transmittals` guards curated counts/quotes/citations without a PDF-cache dependency.

@@ -1,0 +1,31 @@
+{
+  "collection": "state_reference",
+  "jurisdiction": "OH",
+  "source": "Ohio Auditor of State",
+  "doc_type": "Ohio Auditor of State — PUCO Performance Audit",
+  "id": "2026-09-15_ohio-puco_performance-audit",
+  "company": "Public Utilities Commission of Ohio",
+  "company_raw": "Public Utilities Commission of Ohio",
+  "docket": null,
+  "docket_full": null,
+  "issued_date": "2026-09-15",
+  "source_page_url": "https://ohioauditor.gov/performance/PUCO-2026.html",
+  "pdf_download_url": "https://ohioauditor.gov/auditsearch/Reports/2026/Public_Utilities_Commission_of_Ohio_26_Performance_Franklin_FINAL.pdf",
+  "captured_at": "2026-09-24",
+  "source_note": "PDF pages 1–3 verified; cover gives September 2026 and transmittal at PDF page 4 gives September 15, 2026. Summary at PDF pages 6–7 reviewed. Audit of the regulator itself, including rate-case processing and the Ohio Power Siting Board; not an audit of a regulated utility, so state_reference. 104 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/oh-expansion-20260924.json. Metadata-only.",
+  "archived_via": null,
+  "page_count": 104,
+  "scanned_pages": [
+    3,
+    5
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "other",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

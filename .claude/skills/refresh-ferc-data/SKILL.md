@@ -10,6 +10,15 @@ static site reads. Full per-source access mechanics: [docs/data-sources.md](../.
 Commit discipline (load-bearing): **keep a seed and its baked output (`docs/data/*.json`,
 `docs/llms*.txt`) in the SAME commit.** Run `python3 -m pytest` before every commit.
 
+## California shortcut — use before web research
+
+`python3 -m pipeline.discover_ca discover --kind audit|reference|rate-case --output <receipt.json>`
+reads the known official CPUC indexes, skips held URLs, and caches capped PDFs with pages 1–3
+and hashes. Review candidates, then `ingest --seed <reviewed-seed.json> --receipt <receipt.json>`.
+It accepts metadata-only CA records and refuses changed existing reports. See
+[the reusable CA workflow](../../../docs/data-sources.md#reusable-california-discovery--september-24-2026)
+for selectors, year/match/limit flags and limits. Discovery is not an automatic publisher.
+
 ## 1. Rebuild only (data already ingested)
 
 Edit happened to `pipeline/patterns.py` (themes), `pipeline/llmstxt.py`, or a `report.json`?

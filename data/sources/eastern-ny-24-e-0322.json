@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "NY",
+  "docket_query": null,
+  "index_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+      "label": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+      "index_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+      "source_page_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+      "cache_path": "data/raw/eastern_discovery/ny/604c43d444fb89f5/14d91af5aec5a3ef7955ff18561976eaeaee16d5c48d559bc108637827f04db0.pdf",
+      "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+      "downloaded_at": "2026-09-24T13:37:53.623182+00:00",
+      "pdf_sha256": "d2c78b47f3c543c9b0388fb94710bb8b83e667fa777ad0693ec7db4c583e4665",
+      "page_count": 112,
+      "bytes": 410693,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "STATE OF NEW YORK \nPUBLIC SERVICE COMMISSION \n \n \n \nCASE 24-E-0322 - Proceeding on Motion of the Commission as to \nthe Rates, Charges, Rules and Regulations of \nNiagara Mohawk Power Corporation d/b/a National \nGrid for Electric Service. \n \nCASE 24-G-0323 - Proceeding on Motion of the Commission as to \nthe Rates, Charges, Rules and Regulations of \nNiagara Mohawk Power Corporation d/b/a National \nGrid for Gas Service.  \n \n \n \n \n \n \n \n \n \n \n \n \n \nORDER ADOPTING TERMS OF JOINT PROPOSAL AND  \nESTABLISHING RATE PLANS \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nIssued and Effective: August 14, 2025 \n \n \n \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "CASES 24-E-0322 et al. \n \n \n \nTABLE OF CONTENTS \nINTRODUCTION................................................... 1 \nBACKGROUND..................................................... 3 \nNOTICE OF PROPOSED RULE MAKING................................. 6 \nREGULATORY FRAMEWORK........................................... 8 \nTHE JOINT PROPOSAL............................................. 9 \nA. Term .................................................... 9 \nB. Revenue Requirements and Depreciation .................. 10 \n1.Revenue Requirements................................... 10 \na.Electric............................................... 10 \nb.Gas.................................................... 12 \n2.Rate Drivers........................................... 13 \n3.Rate Mitigation........................................ 14 \n4.Make Whole............................................. 16 \n5.Depreciation........................................... 17 \nC. Cost of Capital and Disposition of Earnings ............ 22 \nD. Pension and Other Post-Employment Benefits (OPEB) ...... 26 \nE. Electric Revenue Allocation and Rate Design ............ 30 \n1.Electric Revenue Forecast.............................. 30 \n2.TCC Auction Revenues................................... 31 \n3.Electric Revenue Allocation............................ 31 \n4.Electric Rate Design................................... 33 \n5.Excelsior Job Program Rates............................ 34 \n6.Earnings Adjustment Mechanism Surcharge................ 34 \n7.Other Electric Tariff Changes.......................... 35 \n8.Rate Adjustment Mechanism (Electric and Gas)........... 36 \nF. Gas Revenue Allocation and Rate Design ................. 37 \n1.Gas Revenue Forecast................................... 37 \n2.Gas Revenue Allocation................................. 38 \n3.Gas Rate Design........................................ 38 \n4.Lost and Unaccounted for Gas (LAUF).................... 39 \n5.Other Gas Provisions................................... 40 \nG. New Reconciliations, Deferrals, and True-Ups ........... 41 \n1.Leak Repairs (Gas Only)................................ 41 \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "CASES 24-E-0322 et al. \n \n \n \n2.Uncollectible Expenses................................. 41 \n3.Management and Operations Audit Expenses............... 42 \n4.Non-Pipes Alternatives (NPA) Implementation Coordinator 43 \nH. Capital Expenditures ................................... 43 \n1.PL-16 Pipeline Integrity Verification Project.......... 50 \n2.PL-E18 Pipeline Integrity Verification Project......... 51 \nI. Electric Infrastructure and Operations Program ......... 53 \n1.Vegetation Management.................................. 53 \n2.Major Storms........................................... 53 \n3.Minor Storms and Silver Lining Storms.................. 54 \n4.Pre-Staging Storm Costs................................ 56 \n5.Non-Wires Alternatives................................. 56 \n6.Distributed Energy Resources (DER)..................... 56 \n7.Battery Storage........................................ 57 \nJ. Gas Infrastructure and Operations Programs ............. 58 \n1.East Gate Reliability Assessment....................... 58 \n2.Energy Transfer Station Site 2 and Moreau Injection \nFacility Compressed Natural Gas/Renewable Natural Gas \nInjection .............................................. 58 \n3.Residential Methane Detectors.......................... 59 \n4.Damage Prevention Costs................................ 59 \nK. Gas Matters ............................................ 60 \n1.Gas Customer Choice.................................... 60 \n2.Primary Point Capacity – Daily Balanced Customers...... 60 \n3.Daily Balanced Pool Alert.............................. 63 \n4.Daily Imbalance Cash-out Changes....................... 65 \n5.D-1 Nominations........................................ 65 \nL. Gas Safety Performance Metrics ......................... 70 \n1.Leak Prone Pipe (LPP).................................. 71 \n2.Leak Management........................................ 72 \n3.Damage Prevention...................................... 72 \n4.Emergency Response..................................... 73 \n5.Gas Safety Regulations Performance Metrics............. 73 \nM. Customer Programs ...................................... 74 \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+        "checked_at": "2026-09-24T13:46:24.999626+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2025-08-14_national-grid_ny-24-e-0322-rate-order",
+        "company": "Niagara Mohawk Power Corporation d/b/a National Grid",
+        "collection": "state_rate_case",
+        "jurisdiction": "NY",
+        "source": "New York Public Service Commission",
+        "doc_type": "order adopting joint proposal and establishing rate plans",
+        "industry": "electric",
+        "pdf_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+        "source_page_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B2087A998-0000-C22F-BBDD-FA9090F43FAC%7D",
+        "accession": null,
+        "issued_date": "2025-08-14",
+        "docket": "24-E-0322",
+        "captured_at": "2026-09-24",
+        "source_note": "PSC order adopting terms of a joint proposal and setting National Grid electric and gas rate plans, Cases 24-E-0322 and 24-G-0323. Seeded under the electric case; the same PDF covers gas. Listed for reference; no findings parsed. PDF hash and caption evidence: data/sources/eastern-ny-24-e-0322.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note."
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "jurisdiction": "NY",
+  "indexes": []
+}

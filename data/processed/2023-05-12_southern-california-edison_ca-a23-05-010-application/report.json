@@ -1,0 +1,32 @@
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "CA",
+  "source": "California Public Utilities Commission",
+  "doc_type": "test-year 2025 general rate case application",
+  "id": "2023-05-12_southern-california-edison_ca-a23-05-010-application",
+  "company": "Southern California Edison Company",
+  "company_raw": "Southern California Edison Company",
+  "docket": "A.23-05-010",
+  "docket_full": null,
+  "issued_date": "2023-05-12",
+  "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-rates/general-rate-case/southern-california-edison-grc-proceedings",
+  "pdf_download_url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M508/K571/508571137.PDF",
+  "captured_at": "2026-09-24",
+  "source_note": "Enumerated from official SCE GRC index; downloaded and verified PDF pages 1–3; 104 pages. Application filed May 12, 2023; PDF filing stamp confirms A2305010 while the typeset caption reads A.23-05-XXX. Utility request, not an approved outcome. PDF hash and caption-page text: data/sources/ca-rate-cases-20260924.json. Metadata-only; no legal findings extraction attempted.",
+  "archived_via": null,
+  "page_count": 104,
+  "scanned_pages": [
+    59,
+    60,
+    64
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

@@ -1,0 +1,32 @@
+{
+  "collection": "state_reference",
+  "jurisdiction": "GA",
+  "source": "Georgia Public Service Commission",
+  "doc_type": "Order Approving 2024 Annual Surveillance Report",
+  "id": "2025-12-24_georgia-power_ga-2024-surveillance-order",
+  "company": "Georgia Power Company",
+  "company_raw": "Georgia Power Company",
+  "docket": "44280",
+  "docket_full": null,
+  "issued_date": "2025-12-24",
+  "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=224945",
+  "pdf_download_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/224945/106426",
+  "captured_at": "2026-09-24",
+  "source_note": "All three scanned pages visually inspected. Filing stamp and signatures dated December 24, 2025; Commission action December 16. Recurring earnings-surveillance disposition with staff review recommendations, not a standalone utility audit. Kept as reference; no findings extracted. 3 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/ga-expansion-20260924.json. Metadata-only.",
+  "archived_via": null,
+  "page_count": 3,
+  "scanned_pages": [
+    1,
+    2,
+    3
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

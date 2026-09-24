@@ -1,0 +1,30 @@
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "TX",
+  "source": "Public Utility Commission of Texas",
+  "doc_type": "energy efficiency cost recovery factor order",
+  "id": "2025-12-12_centerpoint-houston_tx-58185-eecrf-order",
+  "company": "CenterPoint Energy Houston Electric, LLC",
+  "company_raw": "CenterPoint Energy Houston Electric, LLC",
+  "docket": "58185",
+  "docket_full": null,
+  "issued_date": "2025-12-12",
+  "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58185&itemNumber=46",
+  "pdf_download_url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+  "captured_at": "2026-09-24",
+  "source_note": "PUCT order adjusting CenterPoint Houston energy efficiency cost recovery factor for program year 2026, Item 46. Printed page 1 (PDF page 2) states approximately $95,837,175 in annual recovery. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-58185.json.",
+  "archived_via": null,
+  "page_count": 21,
+  "scanned_pages": [
+    1
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

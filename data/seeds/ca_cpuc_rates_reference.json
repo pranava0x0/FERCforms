@@ -1,0 +1,53 @@
+[
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2026-07-27_california-electric-utilities_ca-2026-q2-electric-rates-report",
+    "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+    "collection": "state_reference",
+    "source": "CPUC Public Advocates Office",
+    "doc_type": "2026 Q2 Electric Rates Report (recurring informational report)",
+    "industry": "electric",
+    "pdf_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260727-public-advocates-office-q2-2026-electric-rates-report.pdf",
+    "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2026-q2-electric-rates-report",
+    "issued_date": "2026-07-27",
+    "docket": null,
+    "source_note": "Official Public Advocates Office report index publication date 2026-07-27; PDF cover gives only July 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through June 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+  },
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2026-04-30_california-electric-utilities_ca-2026-q1-electric-rates-report",
+    "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+    "collection": "state_reference",
+    "source": "CPUC Public Advocates Office",
+    "doc_type": "2026 Q1 Electric Rates Report (recurring informational report)",
+    "industry": "electric",
+    "pdf_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260430-public-advocates-office-q1-2026-electric-rates-report.pdf",
+    "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2026-q1-electric-rates-report",
+    "issued_date": "2026-04-30",
+    "docket": null,
+    "source_note": "Official Public Advocates Office report index publication date 2026-04-30; PDF cover gives only March 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through March 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+  },
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2026-02-11_california-electric-utilities_ca-2025-q4-electric-rates-report",
+    "company": "Pacific Gas and Electric Company; San Diego Gas & Electric Company; Southern California Edison Company",
+    "collection": "state_reference",
+    "source": "CPUC Public Advocates Office",
+    "doc_type": "2025 Q4 Electric Rates Report (recurring informational report)",
+    "industry": "electric",
+    "pdf_url": "https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/260210-public-advocates-office-q4-2025-rates-report.pdf",
+    "source_page_url": "https://www.publicadvocates.cpuc.ca.gov/press-room/reports-and-analyses/2025-q4-electric-rates-report",
+    "issued_date": "2026-02-11",
+    "docket": null,
+    "source_note": "Official Public Advocates Office report index publication date 2026-02-11; PDF cover gives only February 2026. Pages 1–3 verified; 24 pages. Describes residential electric rates through January 1, 2026. Informational advocacy-office analysis, not an audit finding or Commission rate-case order. No docket stated on the caption. PDF hash and caption-page text: data/sources/ca-reference-20260924.json. Metadata-only."
+  }
+]

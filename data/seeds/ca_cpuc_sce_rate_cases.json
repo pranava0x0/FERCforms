@@ -1,0 +1,53 @@
+[
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2023-05-12_southern-california-edison_ca-a23-05-010-application",
+    "company": "Southern California Edison Company",
+    "collection": "state_rate_case",
+    "source": "California Public Utilities Commission",
+    "doc_type": "test-year 2025 general rate case application",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M508/K571/508571137.PDF",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-rates/general-rate-case/southern-california-edison-grc-proceedings",
+    "issued_date": "2023-05-12",
+    "docket": "A.23-05-010",
+    "source_note": "Enumerated from official SCE GRC index; downloaded and verified PDF pages 1–3; 104 pages. Application filed May 12, 2023; PDF filing stamp confirms A2305010 while the typeset caption reads A.23-05-XXX. Utility request, not an approved outcome. PDF hash and caption-page text: data/sources/ca-rate-cases-20260924.json. Metadata-only; no legal findings extraction attempted."
+  },
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2022-06-30_southern-california-edison_ca-a19-08-013-track-3-decision",
+    "company": "Southern California Edison Company",
+    "collection": "state_rate_case",
+    "source": "California Public Utilities Commission",
+    "doc_type": "general rate case Track 3 decision D.22-06-032",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M490/K158/490158786.PDF",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-rates/general-rate-case/southern-california-edison-grc-proceedings",
+    "issued_date": "2022-06-30",
+    "docket": "A.19-08-013",
+    "source_note": "Enumerated from official SCE GRC index; downloaded and verified PDF pages 1–3; 114 pages. Decision adopted June 23, 2022; issued June 30, 2022 (page 1). Addresses wildfire mitigation memorandum and balancing account cost recovery. PDF hash and caption-page text: data/sources/ca-rate-cases-20260924.json. Metadata-only; no legal findings extraction attempted."
+  },
+  {
+    "jurisdiction": "CA",
+    "captured_at": "2026-09-24",
+    "parse": false,
+    "fetch": true,
+    "id": "2023-12-05_southern-california-edison_ca-a19-08-013-track-4-decision",
+    "company": "Southern California Edison Company",
+    "collection": "state_rate_case",
+    "source": "California Public Utilities Commission",
+    "doc_type": "general rate case Track 4 settlement decision D.23-11-096",
+    "industry": "electric",
+    "pdf_url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M521/K186/521186460.PDF",
+    "source_page_url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-rates/general-rate-case/southern-california-edison-grc-proceedings",
+    "issued_date": "2023-12-05",
+    "docket": "A.19-08-013",
+    "source_note": "Enumerated from official SCE GRC index; downloaded and verified PDF pages 1–3; 15 pages. Decision adopted November 30, 2023; issued December 5, 2023 (page 1). Adopts settlement covering 2024 revenue requirement. A separate document in the same docket as Track 3, not a duplicate. PDF hash and caption-page text: data/sources/ca-rate-cases-20260924.json. Metadata-only; no legal findings extraction attempted."
+  }
+]

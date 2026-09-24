@@ -1,0 +1,21 @@
+[
+  {
+    "id": "2025-05-01_dominion_va-pur-2024-00137-final-order",
+    "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
+    "collection": "state_rate_case",
+    "jurisdiction": "VA",
+    "source": "Virginia State Corporation Commission",
+    "doc_type": "final rate adjustment clause order",
+    "industry": "electric",
+    "pdf_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85%40701!.PDF",
+    "source_page_url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO%20eq%20145411&$select=Document_Name,DocID,FileName",
+    "accession": null,
+    "issued_date": "2025-05-01",
+    "docket": "PUR-2024-00137",
+    "captured_at": "2026-09-24",
+    "source_note": "Final order on Dominion petition for Rider DIST and consolidation of Riders GT and U. Page 1 confirms company, case, and May 1, 2025. Listed for reference; no findings parsed. PDF hash and caption evidence: data/sources/eastern-va-pur-2024-00137.json.",
+    "archived_via": null,
+    "parse": false,
+    "fetch": true
+  }
+]

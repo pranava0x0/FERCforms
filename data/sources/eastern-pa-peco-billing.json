@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "PA",
+  "docket_query": null,
+  "index_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+      "label": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+      "index_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+      "source_page_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+      "cache_path": "data/raw/eastern_discovery/pa/81cbcee6d57e0c1e/81cbcee6d57e0c1e48954692426ba2f6a0fc731787e769359b42fee5294541ac.pdf",
+      "resolved_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+      "downloaded_at": "2026-09-24T13:37:53.277836+00:00",
+      "pdf_sha256": "8b78567506aad138ad27afd0fb007cffb6973bf9048c33800689259f2c6333f7",
+      "page_count": 4,
+      "bytes": 142792,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": " \nPENNSYLVANIA \nPUBLIC UTILITY COMMISSION \nHARRISBURG, PA  17120 \n \n \n \n \n \n \nPublic Meeting held February 1, 2024 \nCommissioners Present: \n \n \nStephen M. DeFrank, Chairman \nKimberly Barrow, Vice Chair \nRalph V. Yanora \nKathryn L. Zerfuss \nJohn F. Coleman, Jr. \n \n \nPECO Energy Company Pro Forma Tariff Changes \nto Tariff Electric Pa. P.U.C. No. 7 \nDocket Number: \nR-2023-3043673 \n \n \nORDER \n \nBY THE COMMISSION: \n \nOn October 20, 2023, PECO Energy Company (PECO), Utility Code 110550, \nfiled Supplement No. 36 to Tariff Electric Pa. P.U.C. No. 7 (Supplement No. 36), to \nbecome effective January 16, 2024.  On December 1, 2023, PECO filed to withdraw \nSupplement No. 36 and replace it with Pro Forma tariff changes to Tariff Electric Pa \nP.U.C. No. 7 (Pro Forma tariff).  PECO is requesting that the Commission allow it to file \na tariff supplement consistent with the Pro Forma tariff changes to be effective on \none-day’s notice when the implementation date for its Customer Care and Billing System \n(CC&B) is known. \n \nPECO states the proposed Pro Forma tariff reflects the elimination of Billing on \nSupplier Switch (BOSS Billing), changing the use of the customer’s account number with a \nnew Electric Choice ID (Choice ID), and removal of the application of late fees to unpaid \nbalances on final bills.  \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": " \n2\nPECO states the proposed tariff changes are necessary to complete its plan to upgrade \nits current Customer Information Management System (CIMS) to a new customer \ninformation system, Oracle’s Customer Care and Billing.  PECO states the tariff changes are \nrequired to support applicable convergence of existing business processes and functionality.   \nPro Forma Tariff Supplement filing (a)(1). \n \nPECO currently uses BOSS Billing and generates a bill for every Electric Generation \nSupplier (EGS) enrollment or drop.  PECO states that with the elimination of BOSS Billing, \ncustomers will receive on-cycle bills that reflect all customer EGS switches within the billing \nperiod.  PECO states the new system will continue to support accelerated switching of \nsuppliers within three business days, as well as the ability for customers to switch suppliers \nmultiple times within the same billing period.  Additionally, PECO states that the elimination \nof BOSS Billing will reduce O&M expenses by approximately $11,000 per month.   \n \nPECO states that it will replace customer’s account numbers with a Choice ID.  PECO \nstates that EGSs will use this unique Choice ID for all supplier enrollments, drops, and \nhistorical usage requests.  PECO states that they will accept the old account number from \nEGSs for incoming transactions for a period of ninety days after implementation.  Response \nto TUS Data Request pg. 1. \n \nPECO states that it will no longer apply late fees to unpaid balances on final bills.  Pro \nForma Tariff Supplement filing (a)(1) ¶¶1, 2, and 3. \n \nPECO avers that the use of a Choice ID and the removal of late fees on unpaid \nbalances on final bills will have minimal to no impact on revenues or expenses.  Pro Forma \nTariff Supplement filing (a)(5) ¶¶ 1and 2. \n \nPECO served the Pro Forma tariff on the Commission’s Bureau of Investigation \nand Enforcement, the Office of Consumer Advocate, and the Office of Small Business \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": " \n3\nAdvocate.  Notice of the filing was published in the Pennsylvania Bulletin (53 Pa.B. \n7824) on December 16, 2023, with a complaint period ending on January 9, 2024.  No \nprotests or comments have been received and no hearings have been held.   \n \n \nThe Commission agrees that the proposed tariff changes are required to support \nboth the new Customer Care and Billing system and applicable convergence of business \npractices and functionality.  Upon review of the Pro Forma tariff, we find that the \nproposed modifications contained therein do not appear to be unlawful, unjust, \nunreasonable, or contrary to the public interest.   \n \n \nAccordingly, we approved the changes requested in the Pro Forma tariff and direct \nthat PECO file a compliance tariff to become effective on one day’s notice when the \nimplementation date for the Customer Care and Billing system is known.  However, \napproval of this filing does not constitute a determination that this filing is lawful, just, or \nreasonable, but only that further investigation or suspension does not appear to be warranted \nat this time; THEREFORE, \n \n \n \nIT IS ORDERED: \n \n1. \nThat the PECO Energy Company Pro Forma tariff changes to Tariff Electric \nPa. P.U.C. No. 7 are hereby approved as to form and legality. \n \n2. \nThat PECO Energy Company be permitted to file a tariff supplement on at \nleast one-day’s notice to the Commission, containing the effective date, consistent with this \nOrder. \n \n \n \n3. \nThat a copy of this Order be served on the Office of Consumer Advocate, the \nOffice of Small Business Advocate, and the Bureau of Investigation and Enforcement. \n \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+        "checked_at": "2026-09-24T13:46:27.161346+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2024-02-01_peco_pa-r-2023-3043673-billing-tariff-order",
+        "company": "PECO Energy Company",
+        "collection": "state_rate_case",
+        "jurisdiction": "PA",
+        "source": "Pennsylvania Public Utility Commission",
+        "doc_type": "customer billing system tariff order",
+        "industry": "electric",
+        "pdf_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+        "source_page_url": "https://www.puc.pa.gov/pcdocs/1814749.pdf",
+        "accession": null,
+        "issued_date": "2024-02-01",
+        "docket": "R-2023-3043673",
+        "captured_at": "2026-09-24",
+        "source_note": "PUC order on PECO electric tariff changes tied to its Customer Care and Billing system, public meeting February 1, 2024. This addresses tariff implementation, not an audit of billing performance. Listed for reference; no findings parsed. PDF hash and caption evidence: data/sources/eastern-pa-peco-billing.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note."
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "jurisdiction": "PA",
+  "indexes": []
+}

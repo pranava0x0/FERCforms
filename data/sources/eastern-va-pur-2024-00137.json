@@ -1,0 +1,77 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "VA",
+  "docket_query": "PUR-2024-00137",
+  "index_url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO%20eq%20145411&$select=Document_Name,DocID,FileName",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "url": "https://www.scc.virginia.gov/docketsearch/DOCS/85%40701!.PDF",
+      "label": "Virginia Electric and Power Company - Final Order - 5/1/25.",
+      "index_url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO%20eq%20145411&$select=Document_Name,DocID,FileName",
+      "document_id": 380095,
+      "source_page_url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO%20eq%20145411&$select=Document_Name,DocID,FileName",
+      "cache_path": "data/raw/eastern_discovery/va/cc768b702834e76f/227d37b46861f1c8b65a2a06332c87ecd4d567465ceebc44e66ee667341e407c.pdf",
+      "resolved_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85%40701!.PDF",
+      "downloaded_at": "2026-09-24T13:39:52.950093+00:00",
+      "pdf_sha256": "f50c74c0ed93bfaff6ad1b9c316211f52f2eeee8573af3689b8b5962f7af8514",
+      "page_count": 14,
+      "bytes": 4246919,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "250510038\nCOMMONWEALTH OF VIRGINIA\nSTATE CORPORATION COMMISSION\nAT RICHMOND, MAY 1 2025\nPETITION OF\nVIRGINIA ELECTRIC AND POWER COMPANY\nCASE NO. PUR-2024-00137\nFINAL ORDER\nOn August 1, 2024, pursuant to § 56-585.1 A 6 (“Subsection A 6”) and § 56-585.1 A 7 \n(“Subsection A 7”) of the Code of Virginia (“Code”), Virginia Electric and Power Company\n(“Dominion” or “Company”) filed with the State Corporation Commission (“Commission”) a\n.1\npetition (“Petition”):\ni\n2 Ex. 2 (Petition) at 1, 3-4.\nPursuant to Code § 56-585.1 A 7, the Commission must issue a final order within nine months of the filing of a \ncomplete application.\n2. For approval to consolidate Riders GT and U, pursuant to Subsection A 7, \nresulting in: (i) the recovery of costs associated with the Rider DIST\n1. For approval of a new rate adjustment clause (“RAC”), designated Rider \nDIST, pursuant to Subsection A 6, to recover the projected and actual \ncosts related to certain electric distribution grid transformation projects \nthat the Commission has approved as part of the Company’s plan to \ntransform its electric distribution grid (“GT Plan”) and to recover the costs \nassociated with the Company’s Strategic Underground Program (“SUP”) \n(collectively, “Rider DIST Programs”) (“Request l”);* \n2\nFor approval of a rate adjustment clause, designated \nRider DIST, under § 56-585.1 A 6 of the\nCode of Virginia and the consolidation of\nRiders GT and U pursuant to § 56-585.1 A 7 of \nthe Code of Virginia\nState Corporation Commission \nDocument Control Center \n5/1/25-4:30 PM\n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "250510038\nRegarding Request 1, in Case Nos. PUR-2018-00100 and PUR-2019-00154, the\nCommission approved the Company’s projected investments related to 11 grid transformation \nprojects (“GT Projects”) for the years 2019, 2020, and 2021 (“Phase I”).5 In Case No.\nPUR-2021-00127, the Commission approved additional projected investments, subject to cost \ncaps, related to 14 GT Projects for the years 2022 and 2023 (“Phase II”).6 In Case No. PUR- \n2023-00051, the Commission approved projected investments, subject to cost caps, associated \n4 Ex. 2 (Petition) at 2.\n2\n3 Id. at 1, 3-5. As discussed in further detail below. Rider GT is a previously approved RAC to recover costs \nassociated with one or more electric distribution grid transformation projects. The Company’s last Rider GT update \nproceeding was Case No. PUR-2023-00136. See Petition of Virginia Electric and Power Company, For revision of \na rate adjustment clause, designated Rider GT, under § 56-585.1 A 6 of the Code of Virginia, Case No. \nPUR-2023-00136, Doc. Con. Cen. No. 240510023, Final Order (May 1, 2024). Rider U is a previously approved \nRAC to recover costs associated with the SUP. Through the SUP, the Company undergrounds overhead distribution \ntap lines that meet certain statutory outage and cost criteria found in Subsection A 6. See Application of Virginia \nElectric and Power Company, For revision of a rate adjustment clause: Rider U, new underground distribution \nfacilities, for the rate year commencing August 1, 2024, Case No. PUR-2023-00172, Doc. Con. Cen. No.\n240710057, Fmal Order (July 3, 2024); Ex. 2 (Petition) at 3-4, 7-8.\n5 Ex. 2 (Petition) at 5; Petition of Virginia Electric and Power Company, For approval of a plan for electric \ndistribution grid transformation projects pursuant to § 56-585.1 A 6 of the Code of Virginia, Case No. PUR-2018- \n00100, 2019 S.C.C. Ann. Rept. 234, Final Order (Jan. 17, 2019); Petition of Virginia Electric and Power Company, \nFor approval of a plan for electric distribution grid transformation projects pursuant to § 56-585.1 A 6 of the Code \nof Virginia, and approval of an addition to the terms and conditions applicable to electric service, Case No. \nPUR-2019-00154, 2020 S.C.C. Ann. Rept. 318, Fmal Order (Mar. 26, 2020). The Commission approved\ninvestments subject to cost caps in this subsequent case.\nPrograms through the proposed Rider DIST RAC; and (ii) the withdrawal \nof Riders GT and U, effective June 1, 2025 (“Request 2”);3 and\n3. For approval of an annual update procedure for Rider DIST with approval \nof the rate year commencing June 1, 2025 through May 31, 2026 (“Rate \nYear”) (“Request 3”).4\n6 Ex. 2 (Petition) at 5; Petition of Virginia Electric and Power Company, For approval of a plan for electric \ndistribution grid transformation projects pursuant to § 56-585.1 A 6 of the Code of Virginia, Case No. PUR-2021-\n00127, 2022 S.C.C. Ann. Rept. 271, Fmal Order (Jan. 7, 2022).\n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "250510038\nwith the continuation of 12 previously approved GT Projects and two new GT Projects for the \n7\nyears 2024, 2025, and 2026 (“Phase III”).\nDominion seeks approval of a new RAC, designated Rider DIST, to recover the ongoing \ncosts associated with certain of these GT Projects and the Company’s SUP.7 \n8 Specifically,\nDominion seeks cost recovery for a total of 18 GT Projects across all three Phases, including: \n(1) mainfeeder hardening, (2) targeted corridor improvement, (3) voltage island mitigation, (4) \nhosting capacity analysis, (5) the Locks Campus Microgrid, (6) physical security, (7) the Smart\nCharging Infrastructure Pilot Program, (8) telecommunications, (9) cyber security, (10) customer \neducation, (11) intelligent grid devices, (12) fault, location, isolation, and service restoration \n(“FLISR”), (13) Distributed Energy Resources Management System, (14) Enterprise Asset\nManagement System, (15) voltage optimization enablement, (16) substation technology \ndeployment, (17) Outage Management System, and (18) the Non-Wires Alternatives Pilot\nProgram.9 The Company represents that the Commission approved these 18 Phase I, II, and III \nprojects as reasonable and prudent up to the estimated capital and operations and maintenance \ncosts for each project.10 The Company further represents its understanding that, should costs \nexceed the cost caps, those costs would be incurred at the Company’s risk, and it would be the\n8 Ex. 2 (Petition) at 1.\n9 Id. at 6.\n10 Id.\n3\n7 Ex. 2 (Petition) at 5-6: Petition of Virginia Electric and Power Company, For approval of a plan for electric \ndistribution grid transformation projects pursuant to § 56-585.1 A 6 of the Code of Virginia, Case No. PUR-2023-\n00051, 2023 S.C.C. Ann. Rept. 418, Final Order (Sept. 18, 2023).\n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85%40701!.PDF",
+        "checked_at": "2026-09-24T13:46:37.840719+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2025-05-01_dominion_va-pur-2024-00137-final-order",
+        "company": "Virginia Electric and Power Company (Dominion Energy Virginia)",
+        "collection": "state_rate_case",
+        "jurisdiction": "VA",
+        "source": "Virginia State Corporation Commission",
+        "doc_type": "final rate adjustment clause order",
+        "industry": "electric",
+        "pdf_url": "https://www.scc.virginia.gov/docketsearch/DOCS/85%40701!.PDF",
+        "source_page_url": "https://www.scc.virginia.gov/DocketSearchAPI/breeze/CaseDetails/GetDocuments?$filter=MATTER_NO%20eq%20145411&$select=Document_Name,DocID,FileName",
+        "accession": null,
+        "issued_date": "2025-05-01",
+        "docket": "PUR-2024-00137",
+        "captured_at": "2026-09-24",
+        "source_note": "Final order on Dominion petition for Rider DIST and consolidation of Riders GT and U. Page 1 confirms company, case, and May 1, 2025. Listed for reference; no findings parsed. PDF hash and caption evidence: data/sources/eastern-va-pur-2024-00137.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note."
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "jurisdiction": "VA",
+  "indexes": [
+    {
+      "cache_path": "data/raw/eastern_discovery/va/cc768b702834e76f/cases.json",
+      "sha256": "ce16e19831bcf76136c7ca3771de7a7bc28539bad05771fb32baffd90ad89997",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/va/cc768b702834e76f/documents.json",
+      "sha256": "70d9ee0feaf183ba67ee48791f0936c300aef915586623700f376aae96a0c5a9",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    }
+  ]
+}

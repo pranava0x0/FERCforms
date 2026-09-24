@@ -1,0 +1,83 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "TX",
+  "docket_query": "58185",
+  "index_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=58185",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "detail_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58185&itemNumber=46",
+      "label": "46 12/12/2025 PUC OPDM PL ORDER",
+      "index_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=58185",
+      "url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+      "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58185&itemNumber=46",
+      "cache_path": "data/raw/eastern_discovery/tx/d8fee4a270058b69/dfc38c39234df5c31728a8d2b43d041eb57fafd02f213b3c264cd8237fd77516.pdf",
+      "resolved_url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+      "downloaded_at": "2026-09-24T13:39:10.071794+00:00",
+      "pdf_sha256": "cf855fa883fe17736c0c33a5f56843f36bfa2d4516a410083aca7cee8085bdc9",
+      "page_count": 21,
+      "bytes": 582737,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "Control Number: 58185 \nItem Number: 46 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "PUC DOCKET NO. 58185 \nSOAH DOCKET NO. 473-25-20558 \nAPPLICATION OF CENTERPOINT \n§ \nPUBLIC UTILITY COMMISSION \nENERGY HOUSTON ELECTRIC, LLC \n§ \nTO ADJUST ITS ENERGY \n§ \nOF TEXAS \nEFFICIENCY COST RECOVERY \n§ \nFACTOR \n§ \nORDER \nThis Order addresses the application of CenterPoint Energy Houston Electric, LLC to \nadjust its energy-efficiency cost recovery factor (EECRF) for program year 2026 under PURA' \n§ 39.905 and 16 Texas Administrative Code (TAC) § 25.182. \nCenterPoint Houston filed an \nunopposed agreement among the parties in this proceeding. Under the agreement, CenterPoint \nHouston's EECRF will recover approximately $95,837,175 in revenue annually, reflecting an \nincremental increase of $33,096,829 as compared to the amount approved by the Commission in \nDocket No. 56690,2 CenterPoint Houston's last EECRF proceeding. The Commission adjusts \nCenterPoint Houston's EECRF to the extent provided in this Order. \nI. \nFindings of Fact \nThe Commission makes the following findings of fact. \nApplicant \n1. \nCenterPoint Houston is a Texas limited liability company registered with the Texas \nsecretary of state under filing number 800119842. \n2. \nCenterPoint Houston owns and operates for compensation in Texas facilities and \nequipment to transmit and distribute electricity in the Electric Reliability Council of Texas \nregion. \n3. \nCenterPoint Houston holds certificate of convenience and necessity number 30086 to \nprovide service to the public within its certificated area. \n' Public Utility Regulatory Act, Tex. Util. Code §§ 11.001-66.017. \n2 Application of CenterPoint Energy Houston Electric, LLC to Adjust Its Energy Efficiency Cost Recovery \nFactor , Docket No . 56690 , Order ( Dec . 12 , 2024 ). \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "PUC Docket No. 58185 \nSOAH Docket No. 473-25-20558 \nOrder \nPage 2 of 20 \nApplication \n4. \nOn May 30,2025, CenterPoint Houston filed an application to adjust its EECRF, effective \nMarch 1, 2026. \n5. \nIn the application, CenterPoint Houston sought Commission approval to adjust its EECRF \nto recover $95,837,175 during program year 2026, which includes the following: \na. \nCenterPoint Houston's forecasted energy-efficiency costs of $50,155,355 in \nprogram year 2026; \nb. \nprojected evaluation, measurement, and verification expenses in the amount of \n$576,924 in program year 2026 for the evaluation of program year 2025; \nc. \na charge of $4,298,232, plus interest in the amount of $448,229, for CenterPoint \nHouston's net under-recovery of program year 2024 energy efficiency costs; \nd. \na performance bonus of $40,313,445 for 2024 program achievements; and \ne. \nrate-case expenses incurred in CenterPoint Houston's most recent EECRF \nproceeding, Docket No. 56690, in the amounts of $36,245 for CenterPoint Houston \nand $8,745 for the City of Houston. \n6. \nIn Order No. 1 filed on October 20,2025, the administrative law judge (ALJ) found the \napplication sufficient. \nNotice \n7. \nOn May 30,2025, CenterPoint Houston sent notice of the application by first-class mail to \nthe following: (a) all parties of record in CenterPoint Houston's most recent EECRF \nproceeding, Docket No. 56690; (b) all retail electric providers that were authorized to \nprovide service in CenterPoint Houston's service area at the time the EECRF application \nwas filed; (c) all parties of record in CenterPoint Houston's most recent base-rate case, \nDocket No. 56211;3 and (d) the Texas Department of Housing and Community Affairs, the \nstate agency that administers the federal weatherization program. \n3 Application of CenterPoint Energy Houston Electric, LLC for Authority to Change Rates, Docket \nNo. 56211, Order (Mar. 13,2025). \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+        "checked_at": "2026-09-24T13:46:35.729481+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2025-12-12_centerpoint-houston_tx-58185-eecrf-order",
+        "company": "CenterPoint Energy Houston Electric, LLC",
+        "collection": "state_rate_case",
+        "jurisdiction": "TX",
+        "source": "Public Utility Commission of Texas",
+        "doc_type": "energy efficiency cost recovery factor order",
+        "industry": "electric",
+        "pdf_url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+        "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58185&itemNumber=46",
+        "accession": null,
+        "issued_date": "2025-12-12",
+        "docket": "58185",
+        "captured_at": "2026-09-24",
+        "source_note": "PUCT order adjusting CenterPoint Houston energy efficiency cost recovery factor for program year 2026, Item 46. Printed page 1 (PDF page 2) states approximately $95,837,175 in annual recovery. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-58185.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note.",
+      "additional_pages": [
+        {
+          "pdf_page": 21,
+          "text": "PUC Docket No. 58185 \nSOAH Docket No. 473-25-20558 \nOrder \nPage 20 of 20 \nSigned at Austin, Texas on the \\14 day of b e.cern\\ocr \n20_25 \nPUBLIC UTILITY COMMISSION OF TEXAS \nA \n.J \nTHOMAS J. GLEESON, CHAIRMAN \n%44„. \nzAA 01--/ \nA \nKAtHLEEN J \nSON, COMMISSIONER \nA \nNEY K.~ALT~AN, COMN \nCOURT \nIISSIONER \n0+ \nAAInD r A N Jp]~INSUf COMMISSIONER \nQ·\\CADM\\ORDERS\\FINAL\\58000\\58185 FO.docx \n"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "jurisdiction": "TX",
+  "indexes": [
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/d8fee4a270058b69/670cec90d9f33c83.html",
+      "sha256": "7a5390656df65827eafd89007b64d1d94a9a279d6186ab97f03c36c72e0bdb7e",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/d8fee4a270058b69/index.html",
+      "sha256": "41814a8579def6b07bda9df0d5c3ede8ed5fdba80b3324269da9d7f115dbff05",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    }
+  ]
+}

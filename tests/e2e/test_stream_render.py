@@ -6,6 +6,11 @@ there regardless of whether it works. See conftest.
 """
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+import pytest
+
 FERC_TOTAL = 126  # reports on the default tab; also asserted against the UI's own count
 
 
@@ -80,3 +85,20 @@ def test_first_paint_does_not_fetch_the_full_corpus(site_page):
     assert not any(u.endswith("/data/reports.json") for u in requested), (
         "the full corpus was fetched at first paint — the payload split has regressed"
     )
+
+
+@pytest.mark.parametrize("width", [375, 1280])
+@pytest.mark.parametrize("seed_file", [
+    "ca_cpuc_energy_2026.json", "ca_cpuc_rates_reference.json", "ca_cpuc_sce_rate_cases.json",
+    *[f"{st}_expansion_20260924.json" for st in ("va", "tx", "pa", "ny", "oh", "ga", "or")],
+])
+def test_reviewed_state_documents_open_with_direct_source(page_factory, seed_file: str, width: int) -> None:
+    seed = json.loads((Path(__file__).resolve().parents[2] / "data/seeds" / seed_file).read_text())[0]
+    page = page_factory(width=width, height=812, hash_=f"#/{seed['collection']}?open={seed['id']}")
+    card = page.locator(f"#r-{seed['id']}")
+    card.locator(".thread").wait_for()
+    assert "Listed for reference" in card.locator(".no-findings").inner_text()
+    if seed["pdf_url"] != seed["source_page_url"]:
+        assert card.get_by_role("link", name="Read document").get_attribute("href") == seed["pdf_url"]
+    assert card.get_by_role("link", name="View source").get_attribute("href") == seed['source_page_url']
+    assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")

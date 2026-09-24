@@ -1,13 +1,14 @@
 {
-  "report_count": 444,
+  "report_count": 473,
   "finding_count": 861,
   "other_matter_count": 11,
   "recommendation_count": 2099,
   "by_industry": {
-    "electric": 284,
-    "unknown": 91,
-    "gas": 51,
-    "oil": 18
+    "electric": 310,
+    "unknown": 92,
+    "gas": 52,
+    "oil": 18,
+    "other": 1
   },
   "by_year": {
     "2005": 2,
@@ -22,11 +23,11 @@
     "2019": 15,
     "2020": 16,
     "2021": 19,
-    "2022": 23,
-    "2023": 29,
-    "2024": 54,
-    "2025": 76,
-    "2026": 16
+    "2022": 24,
+    "2023": 31,
+    "2024": 57,
+    "2025": 83,
+    "2026": 31
   },
   "by_function": {
     "transmission": 71,
@@ -41,17 +42,17 @@
     },
     {
       "jurisdiction": "PA",
-      "report_count": 27,
+      "report_count": 30,
       "finding_count": 106
     },
     {
       "jurisdiction": "CA",
-      "report_count": 23,
+      "report_count": 38,
       "finding_count": 37
     },
     {
       "jurisdiction": "NY",
-      "report_count": 12,
+      "report_count": 13,
       "finding_count": 24
     },
     {
@@ -66,7 +67,7 @@
     },
     {
       "jurisdiction": "TX",
-      "report_count": 24,
+      "report_count": 26,
       "finding_count": 0
     },
     {
@@ -80,6 +81,11 @@
       "finding_count": 0
     },
     {
+      "jurisdiction": "GA",
+      "report_count": 11,
+      "finding_count": 0
+    },
+    {
       "jurisdiction": "WA",
       "report_count": 11,
       "finding_count": 0
@@ -90,13 +96,8 @@
       "finding_count": 0
     },
     {
-      "jurisdiction": "GA",
-      "report_count": 8,
-      "finding_count": 0
-    },
-    {
       "jurisdiction": "VA",
-      "report_count": 7,
+      "report_count": 8,
       "finding_count": 0
     },
     {
@@ -130,6 +131,16 @@
       "finding_count": 0
     },
     {
+      "jurisdiction": "OR",
+      "report_count": 6,
+      "finding_count": 0
+    },
+    {
+      "jurisdiction": "OH",
+      "report_count": 5,
+      "finding_count": 0
+    },
+    {
       "jurisdiction": "ID",
       "report_count": 5,
       "finding_count": 0
@@ -141,11 +152,6 @@
     },
     {
       "jurisdiction": "KY",
-      "report_count": 4,
-      "finding_count": 0
-    },
-    {
-      "jurisdiction": "OH",
       "report_count": 4,
       "finding_count": 0
     },
@@ -206,11 +212,6 @@
     },
     {
       "jurisdiction": "CO",
-      "report_count": 3,
-      "finding_count": 0
-    },
-    {
-      "jurisdiction": "OR",
       "report_count": 3,
       "finding_count": 0
     },
@@ -763,7 +764,7 @@
         "rate design"
       ],
       "finding_count": 55,
-      "report_count": 36,
+      "report_count": 37,
       "example_titles": [
         "Zero Emission Credits and Renewable Energy Certificates",
         "Annual Membership Dues",
@@ -779,7 +780,7 @@
         "2021": 4,
         "2022": 4,
         "2023": 6,
-        "2024": 4,
+        "2024": 5,
         "2025": 4,
         "2026": 1
       },
@@ -813,7 +814,7 @@
         "tariff"
       ],
       "finding_count": 51,
-      "report_count": 36,
+      "report_count": 37,
       "example_titles": [
         "Renewable Natural Gas Quality Specifications",
         "Tariff Administration and Oversight",
@@ -828,7 +829,7 @@
         "2021": 1,
         "2022": 3,
         "2023": 3,
-        "2024": 4,
+        "2024": 5,
         "2025": 9
       },
       "top_companies": [
@@ -1065,6 +1066,61 @@
       ]
     },
     {
+      "theme": "Storm cost recovery & securitization",
+      "description": "Storm restoration costs, storm riders/reserves, or securitization.",
+      "keywords": [
+        "storm cost",
+        "storm protection plan",
+        "storm restoration",
+        "storm damage",
+        "storm rider",
+        "storm expense",
+        "storm recovery",
+        "storm deferral",
+        "storm revenue",
+        "storm reserve",
+        "securitization"
+      ],
+      "finding_count": 9,
+      "report_count": 13,
+      "example_titles": [
+        "Electric Operations",
+        "Wholesale Storm Damage Revenues",
+        "Other Special Funds Related To Storm Damages",
+        "Regulatory Assets"
+      ],
+      "by_year": {
+        "2017": 5,
+        "2022": 1,
+        "2023": 1,
+        "2024": 2,
+        "2025": 2,
+        "2026": 1
+      },
+      "top_companies": [
+        {
+          "company": "Georgia Power Company",
+          "report_count": 2
+        },
+        {
+          "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
+          "report_count": 2
+        },
+        {
+          "company": "Appalachian Power Company and Wheeling Power Company",
+          "report_count": 1
+        },
+        {
+          "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
+          "report_count": 1
+        },
+        {
+          "company": "Tampa Electric Company",
+          "report_count": 1
+        }
+      ]
+    },
+    {
       "theme": "Membership dues & industry associations",
       "description": "Trade-association dues (e.g., EEI) improperly charged to ratepayers.",
       "keywords": [
@@ -1108,60 +1164,6 @@
         },
         {
           "company": "Gulf South Pipeline Company, LLC",
-          "report_count": 1
-        }
-      ]
-    },
-    {
-      "theme": "Storm cost recovery & securitization",
-      "description": "Storm restoration costs, storm riders/reserves, or securitization.",
-      "keywords": [
-        "storm cost",
-        "storm protection plan",
-        "storm restoration",
-        "storm damage",
-        "storm rider",
-        "storm expense",
-        "storm recovery",
-        "storm deferral",
-        "storm revenue",
-        "storm reserve",
-        "securitization"
-      ],
-      "finding_count": 9,
-      "report_count": 12,
-      "example_titles": [
-        "Electric Operations",
-        "Wholesale Storm Damage Revenues",
-        "Other Special Funds Related To Storm Damages",
-        "Regulatory Assets"
-      ],
-      "by_year": {
-        "2017": 5,
-        "2022": 1,
-        "2023": 1,
-        "2024": 2,
-        "2025": 2
-      },
-      "top_companies": [
-        {
-          "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
-          "report_count": 2
-        },
-        {
-          "company": "Appalachian Power Company and Wheeling Power Company",
-          "report_count": 1
-        },
-        {
-          "company": "New York State Electric & Gas Corporation and Rochester Gas and Electric Corporation",
-          "report_count": 1
-        },
-        {
-          "company": "Tampa Electric Company",
-          "report_count": 1
-        },
-        {
-          "company": "Evergy Kansas Metro, Inc. and Evergy Kansas Central, Inc.",
           "report_count": 1
         }
       ]

@@ -1,0 +1,77 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "PA",
+  "docket_query": null,
+  "index_url": "https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "url": "https://www.puc.pa.gov/pcdocs/1917812.pdf",
+      "label": "Management Efficiency Investigation Report",
+      "index_url": "https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026",
+      "source_page_url": "https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026",
+      "cache_path": "data/raw/eastern_discovery/pa/d9abe624150c5bcc/f54227617277b31db5aa5cc93bcfd8e5800ed23bd2e4ccf96be23a6ef30d5630.pdf",
+      "resolved_url": "https://www.puc.pa.gov/pcdocs/1917812.pdf",
+      "downloaded_at": "2026-09-24T13:43:01.178742+00:00",
+      "pdf_sha256": "59b0c8225df10014cc5d944712c607c7151884dea4a176b8d54ba93b75c660dc",
+      "page_count": 64,
+      "bytes": 693885,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": " \n- i - \nPECO ENERGY COMPANY \nMANAGEMENT EFFICIENCY INVESTIGATION \n \nTABLE OF CONTENTS \n \nChapter \nPage\n \n \nI. \nINTRODUCTION \n1\n \nA. Background \n1\n \nB. Objective and Scope\n1\n \nC. Approach \n2\n \n \nII. \nSUMMARY OF MANAGEMENT EFFECTIVENESS AND \nOPERATING EFFICIENCY\n3 \n \n \nIII. \nAFFILIATED INTERESTS AND COST ALLOCATIONS\n9\n \n \nIV. \nELECTRIC OPERATIONS\n15\n \n \nV. \nGAS OPERATIONS \n32\n \n \nVI. \nEMERGENCY PREPAREDNESS\n45\n \n \nVII. \nCUSTOMER SERVICE\n50\n \n \nVIII. \nHUMAN RESOURCES \n57\n \n \n \n \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": " \n- ii - \nPECO ENERGY COMPANY \nMANAGEMENT EFFICIENCY INVESTIGATION \n \nLIST OF EXHIBITS \n \nExhibit \nPage \n \n \n \nII-1 \nSummary of 2022 Management and Operations Audit \nRecommendations and Current Findings, Conclusions, and \nRecommendations \n5 \n \n \n \nIV-1 \nElectric Operations Total Overtime Hours Worked as a Percentage of \nNormal Hours Worked for 2017 – 2021\n16 \n \n \n \nIV-2 \nElectric Operations Departmental Non-Storm Overtime Hours to \nStraight Hours Comparison for 2023 – March 2025 YTD\n17 \n \n \n \nIV-3 \nElectric Operations Departmental Storm Overtime Hours to Straight \nHours Comparison for 2023 – March 2025 YTD\n17 \n \n \n \nIV-4 \nElectric Operations Departmental Non-Storm & Storm Overtime Hours \nto Straight Hours Comparison for 2023 – March 2025 YTD\n18 \n \n \n \nIV-5 \nElectric Operations Reliability Indicators for 2017 – 2021\n21 \n \n \n \nIV-6 \nElectric Operations Reliability Indicators for 2022 – 2024\n22 \n \n \n \nIV-7 \nCEMI Outages for 2017 – 2021\n23 \n \n \n \nIV-8 \nCEMI Outages for 2022 – 2024\n24 \n \n \n \nIV-9 \nVegetation Outages for 2017 – 2021\n26 \n \n \n \nIV-10 \nCustomer Interruptions from Vegetation Outages for 2017 – 2021\n26 \n \n \n \nIV-11 \nVegetation Outages for 2022 – 2024\n28 \n \n \n \nIV-12 \nCustomer Interruptions from Vegetation Outages by Type for 2022 – \n2024 \n28 \n \n \nIV-13 \nCustomer Interruptions from Vegetation Outages by Region for 2022 – \n2024 \n29 \n \n \nIV-14 \nEquipment Outages and Interruptions for 2017 – 2021\n30 \n \n \nIV-15 \nEquipment Outages and Interruptions for 2022 – 2024\n31 \n \n \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://www.puc.pa.gov/pcdocs/1917812.pdf",
+        "checked_at": "2026-09-24T13:46:29.319345+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2026-02_peco_pa-management-efficiency-investigation",
+        "company": "PECO Energy Company",
+        "collection": "state_audit",
+        "jurisdiction": "PA",
+        "source": "Pennsylvania Public Utility Commission, Bureau of Audits",
+        "doc_type": "Management Efficiency Investigation — follow-up to 2022 audit",
+        "industry": "electric",
+        "pdf_url": "https://www.puc.pa.gov/pcdocs/1917812.pdf",
+        "source_page_url": "https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026",
+        "accession": null,
+        "issued_date": null,
+        "docket": "D-2025-3053971",
+        "captured_at": "2026-09-24",
+        "source_note": "Cover visually verified: issued February 2026; no exact issue day stated. Public release March 12, 2026. Cover docket D-2025-3053971 and PECO identity verified; PDF pages 2–3 contents and page 5 introduction reviewed. Covers electric and gas operations, billing, overtime and implementation of earlier audit recommendations. MEI format is not supported by the M&O parser, so metadata-only. PDF hash and caption evidence: data/sources/eastern-pa-peco-mei.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note.",
+      "additional_pages": [
+        {
+          "pdf_page": 5,
+          "text": " \n- 1 - \nI. INTRODUCTION \n \n \nA. Background \n \n \nPECO Energy Company (PECO or Company) is an electric and natural gas utility \nheadquartered in Philadelphia, Pennsylvania. PECO is a subsidiary of Exelon \nCorporation (Exelon or parent company). In 2022, the Pennsylvania Public Utility \nCommission’s (PUC) Bureau of Audits (Audits) conducted a management and operations \naudit (2022 Management Audit) of PECO. In July 2022, Audits issued its final report with \n22 recommendations for improvement. PECO submitted their August 2022 \nImplementation Plan indicating that 19 recommendations were accepted, and three \nrecommendations were accepted in part. On August 25, 20221, the PUC released Audits’ \n2022 Management and Operations Audit Report (2022 Audit Report) and PECO’s August \n2022 Implementation Plan to the public. The PUC further directed that the Company \nshould proceed with the August 2022 Implementation Plan and submit progress reports \non the implementation, by September 1st annually, for each of the next three years. \n \nPECO submitted annual implementation progress reports, as requested by the \nPUC, reporting on the status of implementing the recommendations from the \n2022 Audit Report. Based upon the review of these progress reports, Audits’ \nEastern Region Management Auditors (PUC Auditors or Audit Staff) conducted a \nmanagement efficiency investigation (MEI), pursuant to 66 Pa. C.S. § 516(b), to verify \nPECO’s progress in implementing the original 22 recommendations. \n \n \nB. Objective and Scope \n \nThe objective of this MEI was to review and evaluate the effectiveness of PECO’s \nefforts to implement specific recommendations contained within the 2022 Audit Report. \nThe scope of the evaluation is limited to PECO’s efforts in implementing the \nrecommendations in the following functional areas: \n \nx Affiliated Interests and Cost Allocations \nx Electric Operations \nx Gas Operations \nx Emergency Preparedness \nx Customer Service \nx Human Resources \n \nIn addition, the PUC Auditors deemed it prudent to review PECO’s compliance with the \nPUC’s regulations at 52 Pa. Code § 101 regarding physical security, cybersecurity, \nemergency response, and business continuity plans. \n \n \n \n1 D-2021-3023906 \n"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "jurisdiction": "PA",
+  "indexes": [
+    {
+      "cache_path": "data/raw/eastern_discovery/pa/d9abe624150c5bcc/index.html",
+      "sha256": "a98f31f1fb263009a99651122ec69978a299b64311441fbb8eee9a7b397e1011",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    }
+  ]
+}
