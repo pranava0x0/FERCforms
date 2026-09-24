@@ -185,5 +185,24 @@
     "source_note": "CPUC Utility Audits Branch Balancing Accounts Performance Audit of Pacific Gas and Electric Company, dated 2026-06-05 (30 pp). Enumerated from the UAB energy audit-reports index and page-content-verified 2026-07-10 (verify_sources --live: company token present). Listed for reference (metadata-only).",
     "parse": false,
     "fetch": true
+  },
+  {
+    "id": "2026-03-20_southern-california-edison_ca-quarterly-procurement-review",
+    "company": "Southern California Edison Company",
+    "collection": "state_audit",
+    "jurisdiction": "CA",
+    "source": "CPUC Utility Audits, Risk and Compliance Division",
+    "doc_type": "agreed-upon procedures review of quarterly energy procurement compliance",
+    "industry": "electric",
+    "pdf_url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-03-20_sce_qp.pdf",
+    "source_page_url": "https://www.cpuc.ca.gov/about-cpuc/divisions/utility-audits-risk-and-compliance-division/utility-audits-branch/audit-reports-by-industry/audit-reports-energy-industry",
+    "accession": null,
+    "issued_date": "2026-03-20",
+    "docket": "AL 5660-E",
+    "captured_at": "2026-09-24",
+    "source_note": "Final agreed-upon procedures report for Southern California Edison quarterly energy procurement compliance, July 1–September 30, 2025. Advice Letter 5660-E (an advice-letter identifier, not a formal application docket). Verified by direct official PDF download and pages 1–3 on 2026-09-24: transmittal dated March 20, 2026, company and period confirmed, 17 PDF pages. The letter requires amended Attachments A, B and D by April 3, 2026; implementation was not verified. Metadata-only: this review format has no validated findings parser. PDF SHA-256 recorded in data/sources/refresh-verification-20260924.json.",
+    "archived_via": null,
+    "parse": false,
+    "fetch": true
   }
 ]

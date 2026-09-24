@@ -32,7 +32,14 @@ Why all three (each omission bit in the 2026-06-19 session):
 
 ## 2. Full FERC pipeline (from scratch / new audit year)
 
-Run in order (each stage is idempotent + cached; safe to re-run):
+**2026-09-24 safety correction:** this is a from-scratch stage map, **not a safe refresh command
+sequence for the curated corpus**. `structure` can erase accepted state findings and new FERC
+recommendations; `listing` can replace historical entries; `build` admits untracked processed
+records. Use an isolated approved inventory, explicitly selected new IDs, and compare existing
+report objects before publication. Do not run the whole sequence on an existing checkout.
+See [stocktake](../../../docs/stocktake-2026-09-24.md) and its source receipts.
+
+Stage order (for a controlled from-scratch build only):
 
 ```bash
 python3 -m pipeline.listing     # parse data/listing.json from the browser-captured /audits snapshot (2019+)

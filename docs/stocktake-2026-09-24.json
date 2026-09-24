@@ -1,0 +1,603 @@
+{
+  "as_of": "2026-09-24",
+  "baseline_commit": "66d0119",
+  "collections": {
+    "ferc_audit": {
+      "reports": 126,
+      "with_findings": 114,
+      "findings": 678,
+      "other_matters": 11,
+      "recommendations": 1552,
+      "missing_exact_date": 0,
+      "missing_docket": 0,
+      "zero_pages": 0,
+      "jurisdictions": {
+        "FERC": 126
+      }
+    },
+    "prudence_review": {
+      "reports": 29,
+      "with_findings": 1,
+      "findings": 37,
+      "other_matters": 0,
+      "recommendations": 0,
+      "missing_exact_date": 4,
+      "missing_docket": 0,
+      "zero_pages": 0,
+      "jurisdictions": {
+        "WA": 3,
+        "IN": 1,
+        "FERC": 14,
+        "WI": 2,
+        "CA": 2,
+        "VA": 1,
+        "IL": 2,
+        "KS": 1,
+        "GA": 3
+      }
+    },
+    "state_audit": {
+      "reports": 83,
+      "with_findings": 14,
+      "findings": 146,
+      "other_matters": 0,
+      "recommendations": 547,
+      "missing_exact_date": 11,
+      "missing_docket": 37,
+      "zero_pages": 4,
+      "jurisdictions": {
+        "CA": 18,
+        "WA": 4,
+        "DC": 3,
+        "RI": 1,
+        "PA": 14,
+        "TN": 1,
+        "MS": 2,
+        "NY": 8,
+        "MD": 1,
+        "CT": 3,
+        "UT": 2,
+        "MI": 4,
+        "FL": 6,
+        "IL": 5,
+        "NJ": 4,
+        "OH": 2,
+        "AZ": 1,
+        "MO": 2,
+        "AR": 2
+      }
+    },
+    "state_rate_case": {
+      "reports": 122,
+      "with_findings": 0,
+      "findings": 0,
+      "other_matters": 0,
+      "recommendations": 0,
+      "missing_exact_date": 27,
+      "missing_docket": 5,
+      "zero_pages": 3,
+      "jurisdictions": {
+        "MN": 6,
+        "IN": 3,
+        "WA": 4,
+        "KY": 4,
+        "OH": 2,
+        "IL": 8,
+        "AR": 4,
+        "VA": 6,
+        "LA": 4,
+        "FL": 8,
+        "NJ": 4,
+        "ND": 4,
+        "MO": 5,
+        "WV": 2,
+        "NY": 4,
+        "ID": 2,
+        "GA": 4,
+        "UT": 1,
+        "TX": 5,
+        "DC": 2,
+        "RI": 2,
+        "SC": 7,
+        "DE": 2,
+        "SD": 4,
+        "MD": 2,
+        "NM": 1,
+        "MT": 1,
+        "AZ": 2,
+        "CO": 3,
+        "OR": 3,
+        "KS": 2,
+        "NE": 3,
+        "CA": 3,
+        "WI": 3,
+        "NV": 1,
+        "TN": 1
+      }
+    },
+    "state_reference": {
+      "reports": 84,
+      "with_findings": 0,
+      "findings": 0,
+      "other_matters": 0,
+      "recommendations": 0,
+      "missing_exact_date": 84,
+      "missing_docket": 84,
+      "zero_pages": 11,
+      "jurisdictions": {
+        "WV": 8,
+        "WI": 1,
+        "TX": 19,
+        "TN": 4,
+        "PA": 13,
+        "OK": 4,
+        "MT": 2,
+        "ME": 2,
+        "ID": 3,
+        "GA": 1,
+        "DC": 27
+      }
+    }
+  },
+  "forms": {
+    "1": {
+      "reports": 71,
+      "reports_with_finding_theme": {
+        "Accounting misclassification": 50,
+        "Form reporting (Form No. 1/2/6, Page 700)": 38,
+        "AFUDC / cost of capital": 29,
+        "Depreciation": 27,
+        "Below-the-line costs (lobbying, charitable, etc.)": 22,
+        "Property & plant records": 20,
+        "Capitalization vs. expense": 15,
+        "Affiliate / intercompany transactions": 13,
+        "Cost of service & rates": 8,
+        "Membership dues & industry associations": 7,
+        "Tariff administration & oversight": 7,
+        "Fuel & purchased-power cost recovery": 6,
+        "Informational postings": 6,
+        "Storm cost recovery & securitization": 5,
+        "Inventory, materials & fleet": 3,
+        "Service reliability & vegetation management": 3,
+        "Information technology & systems": 1,
+        "Internal audit & internal controls": 1
+      }
+    },
+    "2": {
+      "reports": 11,
+      "reports_with_finding_theme": {
+        "Accounting misclassification": 10,
+        "Below-the-line costs (lobbying, charitable, etc.)": 9,
+        "AFUDC / cost of capital": 8,
+        "Tariff administration & oversight": 7,
+        "Form reporting (Form No. 1/2/6, Page 700)": 7,
+        "Property & plant records": 6,
+        "Cost of service & rates": 4,
+        "Capitalization vs. expense": 4,
+        "Membership dues & industry associations": 3,
+        "Depreciation": 3,
+        "Affiliate / intercompany transactions": 3,
+        "Informational postings": 1,
+        "Fuel & purchased-power cost recovery": 1
+      }
+    },
+    "6": {
+      "reports": 17,
+      "reports_with_finding_theme": {
+        "Form reporting (Form No. 1/2/6, Page 700)": 17,
+        "Property & plant records": 16,
+        "Accounting misclassification": 15,
+        "Depreciation": 15,
+        "Below-the-line costs (lobbying, charitable, etc.)": 13,
+        "Cost of service & rates": 12,
+        "Affiliate / intercompany transactions": 8,
+        "Tariff administration & oversight": 7,
+        "AFUDC / cost of capital": 4,
+        "Capitalization vs. expense": 3,
+        "Membership dues & industry associations": 2,
+        "Internal audit & internal controls": 1
+      }
+    },
+    "549D": {
+      "reports": 1,
+      "reports_with_finding_theme": {
+        "Fuel & purchased-power cost recovery": 1,
+        "Form reporting (Form No. 1/2/6, Page 700)": 1
+      }
+    }
+  },
+  "cross_collection_themes": {
+    "ferc_audit": {
+      "AFUDC / cost of capital": {
+        "finding_reports": 43,
+        "descriptor_only_reports": 0
+      },
+      "Accounting misclassification": {
+        "finding_reports": 78,
+        "descriptor_only_reports": 0
+      },
+      "Affiliate / intercompany transactions": {
+        "finding_reports": 27,
+        "descriptor_only_reports": 0
+      },
+      "Below-the-line costs (lobbying, charitable, etc.)": {
+        "finding_reports": 44,
+        "descriptor_only_reports": 0
+      },
+      "Capitalization vs. expense": {
+        "finding_reports": 22,
+        "descriptor_only_reports": 0
+      },
+      "Cost of service & rates": {
+        "finding_reports": 25,
+        "descriptor_only_reports": 0
+      },
+      "Creditworthiness": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 0
+      },
+      "Depreciation": {
+        "finding_reports": 46,
+        "descriptor_only_reports": 0
+      },
+      "Form reporting (Form No. 1/2/6, Page 700)": {
+        "finding_reports": 65,
+        "descriptor_only_reports": 0
+      },
+      "Fuel & purchased-power cost recovery": {
+        "finding_reports": 9,
+        "descriptor_only_reports": 0
+      },
+      "Information technology & systems": {
+        "finding_reports": 1,
+        "descriptor_only_reports": 0
+      },
+      "Informational postings": {
+        "finding_reports": 10,
+        "descriptor_only_reports": 0
+      },
+      "Internal audit & internal controls": {
+        "finding_reports": 3,
+        "descriptor_only_reports": 0
+      },
+      "Inventory, materials & fleet": {
+        "finding_reports": 3,
+        "descriptor_only_reports": 0
+      },
+      "Membership dues & industry associations": {
+        "finding_reports": 12,
+        "descriptor_only_reports": 0
+      },
+      "Property & plant records": {
+        "finding_reports": 42,
+        "descriptor_only_reports": 0
+      },
+      "Service reliability & vegetation management": {
+        "finding_reports": 3,
+        "descriptor_only_reports": 0
+      },
+      "Storm cost recovery & securitization": {
+        "finding_reports": 5,
+        "descriptor_only_reports": 0
+      },
+      "Tariff administration & oversight": {
+        "finding_reports": 24,
+        "descriptor_only_reports": 0
+      }
+    },
+    "prudence_review": {
+      "Below-the-line costs (lobbying, charitable, etc.)": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 1
+      },
+      "Cost of service & rates": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 2
+      },
+      "Fuel & purchased-power cost recovery": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 8
+      },
+      "Tariff administration & oversight": {
+        "finding_reports": 1,
+        "descriptor_only_reports": 0
+      }
+    },
+    "state_audit": {
+      "AFUDC / cost of capital": {
+        "finding_reports": 1,
+        "descriptor_only_reports": 0
+      },
+      "Affiliate / intercompany transactions": {
+        "finding_reports": 10,
+        "descriptor_only_reports": 8
+      },
+      "Cost of service & rates": {
+        "finding_reports": 3,
+        "descriptor_only_reports": 1
+      },
+      "Customer service & billing": {
+        "finding_reports": 13,
+        "descriptor_only_reports": 0
+      },
+      "Cybersecurity & physical security": {
+        "finding_reports": 9,
+        "descriptor_only_reports": 1
+      },
+      "Dividend policy & capital management": {
+        "finding_reports": 5,
+        "descriptor_only_reports": 0
+      },
+      "Emergency preparedness & business continuity": {
+        "finding_reports": 9,
+        "descriptor_only_reports": 1
+      },
+      "Fuel & purchased-power cost recovery": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 4
+      },
+      "Gas safety & pipeline integrity": {
+        "finding_reports": 5,
+        "descriptor_only_reports": 0
+      },
+      "Information technology & systems": {
+        "finding_reports": 8,
+        "descriptor_only_reports": 0
+      },
+      "Internal audit & internal controls": {
+        "finding_reports": 12,
+        "descriptor_only_reports": 4
+      },
+      "Inventory, materials & fleet": {
+        "finding_reports": 10,
+        "descriptor_only_reports": 0
+      },
+      "Property & plant records": {
+        "finding_reports": 2,
+        "descriptor_only_reports": 0
+      },
+      "Service reliability & vegetation management": {
+        "finding_reports": 6,
+        "descriptor_only_reports": 0
+      },
+      "Storm cost recovery & securitization": {
+        "finding_reports": 2,
+        "descriptor_only_reports": 1
+      },
+      "Tariff administration & oversight": {
+        "finding_reports": 4,
+        "descriptor_only_reports": 0
+      },
+      "Workforce, training & succession planning": {
+        "finding_reports": 13,
+        "descriptor_only_reports": 0
+      }
+    },
+    "state_rate_case": {
+      "Affiliate / intercompany transactions": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 1
+      },
+      "Below-the-line costs (lobbying, charitable, etc.)": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 2
+      },
+      "Cost of service & rates": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 5
+      },
+      "Customer service & billing": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 1
+      },
+      "Fuel & purchased-power cost recovery": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 34
+      },
+      "Service reliability & vegetation management": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 1
+      },
+      "Storm cost recovery & securitization": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 4
+      },
+      "Tariff administration & oversight": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 7
+      }
+    },
+    "state_reference": {
+      "Internal audit & internal controls": {
+        "finding_reports": 0,
+        "descriptor_only_reports": 19
+      }
+    }
+  },
+  "quote_screen": {
+    "reports_without_cached_text": 15,
+    "reports_checked": 111,
+    "summary_checked": 638,
+    "recommendation_checked": 1551,
+    "summary_not_exact_normalized_match": 68,
+    "recommendation_not_exact_normalized_match": 46,
+    "unmatched_records": 56,
+    "normalization": "ASCII letters/digits only, lowercase; diagnostic mismatch, not proof of wrong quote",
+    "baseline": "440 published reports; local cached text availability, not a fresh corpus-wide download"
+  },
+  "uat_baseline": [
+    {
+      "width": 1280,
+      "collection": "ferc_audit",
+      "reports": "123 reports · 663 findings",
+      "findings": "663",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2,
+      "ledger_rows": 60
+    },
+    {
+      "width": 1280,
+      "collection": "prudence_review",
+      "reports": "29 reports · 37 findings",
+      "findings": "37",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2,
+      "ledger_rows": 29
+    },
+    {
+      "width": 1280,
+      "collection": "state_audit",
+      "reports": "82 reports · 146 findings",
+      "findings": "146",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2,
+      "ledger_rows": 60
+    },
+    {
+      "width": 1280,
+      "collection": "state_rate_case",
+      "reports": "122 reports · 0 findings",
+      "findings": "0",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2,
+      "ledger_rows": 60
+    },
+    {
+      "width": 1280,
+      "collection": "state_reference",
+      "reports": "84 reports · 0 findings",
+      "findings": "0",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2,
+      "ledger_rows": 60
+    },
+    {
+      "width": 1280,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "collection": "ferc_audit",
+      "reports": "123 reports · 663 findings",
+      "findings": "663",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2
+    },
+    {
+      "width": 375,
+      "collection": "prudence_review",
+      "reports": "29 reports · 37 findings",
+      "findings": "37",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2
+    },
+    {
+      "width": 375,
+      "collection": "state_audit",
+      "reports": "82 reports · 146 findings",
+      "findings": "146",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2
+    },
+    {
+      "width": 375,
+      "collection": "state_rate_case",
+      "reports": "122 reports · 0 findings",
+      "findings": "0",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2
+    },
+    {
+      "width": 375,
+      "collection": "state_reference",
+      "reports": "84 reports · 0 findings",
+      "findings": "0",
+      "overflow": false,
+      "cards": 20,
+      "source_links": 2
+    },
+    {
+      "width": 375,
+      "errors": []
+    }
+  ],
+  "performance_baseline": {
+    "resource_entries_after_idle": 11,
+    "local_decoded_bytes": 1482022,
+    "resource_names": [
+      "reports_index.json",
+      "styles.css",
+      "analytics.js",
+      "urlstate.js",
+      "app.js",
+      "js",
+      "meta.json",
+      "patterns.json",
+      "patterns_by_collection.json",
+      "findings_ferc_audit.json",
+      "collect"
+    ],
+    "note": "Local HTTP, no compression. Gzip below is a reproducible estimate, not measured production transfer. External GA bodies unavailable in Resource Timing. Heap reading rounded; not a memory benchmark.",
+    "assets": [
+      {
+        "file": "docs/index.html",
+        "bytes_after_refresh": 14937,
+        "gzip_bytes": 5225
+      },
+      {
+        "file": "docs/css/styles.css",
+        "bytes_after_refresh": 49991,
+        "gzip_bytes": 14081
+      },
+      {
+        "file": "docs/js/analytics.js",
+        "bytes_after_refresh": 2229,
+        "gzip_bytes": 1094
+      },
+      {
+        "file": "docs/js/app.js",
+        "bytes_after_refresh": 82835,
+        "gzip_bytes": 26811
+      },
+      {
+        "file": "docs/js/urlstate.js",
+        "bytes_after_refresh": 4103,
+        "gzip_bytes": 1914
+      },
+      {
+        "file": "docs/data/reports_index.json",
+        "bytes_after_refresh": 249501,
+        "gzip_bytes": 26041
+      },
+      {
+        "file": "docs/data/meta.json",
+        "bytes_after_refresh": 957,
+        "gzip_bytes": 451
+      },
+      {
+        "file": "docs/data/patterns.json",
+        "bytes_after_refresh": 40841,
+        "gzip_bytes": 5825
+      },
+      {
+        "file": "docs/data/patterns_by_collection.json",
+        "bytes_after_refresh": 80493,
+        "gzip_bytes": 9179
+      },
+      {
+        "file": "docs/data/findings_ferc_audit.json",
+        "bytes_after_refresh": 1007177,
+        "gzip_bytes": 167224
+      }
+    ]
+  }
+}

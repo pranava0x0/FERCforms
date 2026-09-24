@@ -1,0 +1,199 @@
+{
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement and Regulatory Accounting, Division of Audits and Accounting",
+  "doc_type": null,
+  "id": "2026-08-06_atlantic-city-electric-company_fa25-4",
+  "company": "Atlantic City Electric Company",
+  "company_raw": "Atlantic City Electric Company",
+  "docket": "FA25-4",
+  "docket_full": "FA25-4-000",
+  "issued_date": "2026-08-06",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260806-3006",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260806-3006",
+  "captured_at": "2026-09-24",
+  "source_note": "FERC eLibrary Issuance search, captured 2026-09-24. Letter order to Atlantic City Electric Company issuing audit report covering the period of 01/01/2021 through 12/31/2025 under FA25-4. Accession 20260806-3006; PDF caption verified before ingest. Executive Summary quotes curated from bounded PDF page regions; whitespace reflow only, running headers and unrelated footnotes excluded. Counts checked against the signed transmittal. Page map and PDF SHA-256: data/sources/refresh-verification-20260924.json. Automated parser output was not accepted unchanged.",
+  "archived_via": null,
+  "page_count": 39,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2021 through December 31, 2025",
+  "industry": "electric",
+  "audit_type": "financial",
+  "functions": [
+    "transmission"
+  ],
+  "forms": [
+    "1",
+    "3-Q"
+  ],
+  "finding_count": 5,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Accounting for Compromise Settlements",
+      "summary": "ACE improperly recorded compromise settlement payments made to settle claims of alleged employment discrimination in various operation and maintenance (O&M) and administrative and general (A&G) accounts, instead of in Account 426.5, Other Deductions. As a result, ACE overstated its annual transmission revenue requirement (ATRR) and overbilled its transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise accounting policies and procedures to ensure that ACE properly records compromise settlement payments and expenses resulting from employment discrimination claims in Account 426.5, consistent with the Commission’s accounting regulations and Accounting Release No. 12.",
+          "source_page": 3
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such training as needed.",
+          "source_page": 3
+        },
+        {
+          "number": 3,
+          "text": "Perform an analysis to identify all compromise settlement payments and expenses that were improperly included in accounts that had balances used as inputs to ACE’s wholesale transmission formula rates and the determination of customer billings from 2021 to the present. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": 3
+        },
+        {
+          "number": 4,
+          "text": "Submit a refund analysis, within 90 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that result from correcting the improper accounting for compromise settlement payments and expenses from 2021 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) in which refunds will be made.",
+          "source_page": 3
+        },
+        {
+          "number": 5,
+          "text": "File a refund report with the Commission that accords with DAA’s assessment of the accounting and refund analysis described in the preceding two recommendations.",
+          "source_page": 3
+        },
+        {
+          "number": 6,
+          "text": "Refund amounts disclosed in the refund report to transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": 3
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 2,
+      "title": "Accounting for Materials and Supplies",
+      "summary": "ACE did not record the cost of materials and supplies inventory write-offs to the appropriate O&M accounts based on the intended use of the materials and supplies. As a result, ACE may have overstated its ATRR and overbilled wholesale transmission customers.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 7,
+          "text": "Revise and implement policies and procedures to ensure that materials and supplies inventory write-off costs are recorded in the proper functional accounts in accordance with the Commission’s accounting regulations.",
+          "source_page": 3
+        },
+        {
+          "number": 8,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 7, and repeat such training as needed.",
+          "source_page": 3
+        },
+        {
+          "number": 9,
+          "text": "Perform an analysis of materials and supplies write-offs from 2021 to the present to identify all materials and supplies write-offs that were improperly accounted for and included in ACE’s wholesale transmission formula rate calculations and the related customer billings. Provide the results of the analysis to audit staff within 60 days of the date of issuance of the audit report.",
+          "source_page": 4
+        },
+        {
+          "number": 10,
+          "text": "Submit a refund analysis, within 90 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries that resulted from the improper accounting for materials and supplies write offs from 2021 to the present, plus interest; (2) determinative components of the refund; (3) refund method; (4) customers to receive refunds; and (5) period(s) for which refunds will be made.",
+          "source_page": 4
+        },
+        {
+          "number": 11,
+          "text": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis.",
+          "source_page": 4
+        },
+        {
+          "number": 12,
+          "text": "Refund the amounts disclosed in the refund report to wholesale customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations.",
+          "source_page": 4
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 3,
+      "title": "Accounting for Bank Fees",
+      "summary": "ACE improperly accounted for various bank fees using incorrect A&G accounts contrary to the Commission’s accounting regulations. The improper accounting affected the accuracy of the information reported in ACE’s FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 13,
+          "text": "Revise accounting policies and procedures to ensure that ACE properly accounts for fees associated with short-term debt consistent with the Commission’s accounting requirements.",
+          "source_page": 4
+        },
+        {
+          "number": 14,
+          "text": "Provide training to relevant staff on the revised accounting policies and procedures implemented in response to Recommendation 13, and repeat such training as needed.",
+          "source_page": 4
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 4,
+      "title": "Excess Accumulated Deferred Income Tax",
+      "summary": "ACE improperly netted the excess and deficient accumulated deferred income tax (ADIT) related to the corporate tax rate change and associated adjustments required due to the Tax Cuts and Jobs Act of 2017 (TCJA) and recorded the amount that resulted from this improper netting in Account 254, Other Regulatory Liabilities. This action affected the transparency and accuracy of the excess and deficient ADIT amounts reported in ACE’s FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 15,
+          "text": "Revise and implement policies and procedures to ensure that ACE properly accounts for and reports the effect of changes in tax laws or tax rates consistent with the Commission’s accounting regulations.",
+          "source_page": 4
+        },
+        {
+          "number": 16,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 15, and repeat such training as needed.",
+          "source_page": 4
+        },
+        {
+          "number": 17,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of recorded excess and deficient ADIT, within 60 days of issuance of this audit report.",
+          "source_page": 5
+        },
+        {
+          "number": 18,
+          "text": "Revise the improper accounting of excess and deficient ADIT amounts in accordance with DAA’s assessment of the proposed accounting entries per Recommendation 17.",
+          "source_page": 5
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 5,
+      "title": "Accounting for Equity AFUDC ADIT",
+      "summary": "ACE improperly recorded amounts related to equity allowance for funds used during construction (AFUDC) ADIT in Account 254, Other Regulatory Liabilities, and Account 190, Accumulated Deferred Income Taxes, instead of in Accounts 182.3, Other Regulatory Assets; 282, Accumulated Deferred Income Taxes – Other Property; and 283, Accumulated Deferred Income Taxes – Other. This action affected the transparency and accuracy of ADIT amounts reported in ACE’s FERC Form No. 1 filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 19,
+          "text": "Revise and implement policies and procedures to ensure that ACE properly records and reports equity AFUDC ADIT and the associated equity AFUDC ADIT gross-up amounts consistent with the Commission’s accounting guidance in Accounting Interpretation 93-5.",
+          "source_page": 5
+        },
+        {
+          "number": 20,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 19, and repeat such training as needed.",
+          "source_page": 5
+        },
+        {
+          "number": 21,
+          "text": "Submit proposed accounting entries and supporting documentation to DAA that reflect the correction of equity AFUDC ADIT and equity ADIT gross-up amounts from Accounts 190 and 254, within 60 days of issuance of this audit report.",
+          "source_page": 5
+        },
+        {
+          "number": 22,
+          "text": "Revise the improper accounting of equity AFUDC ADIT and equity AFUDC ADIT gross up amounts after receiving DAA’s assessment of the proposed accounting entries per Recommendation 21.",
+          "source_page": 5
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    }
+  ],
+  "structured": true
+}

@@ -4,9 +4,38 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 
 ---
 
-## ⭐ Prioritized queue (reprioritized 2026-06-22)
+## Current priorities — 2026-09-24
 
-Single source of priority truth — the ranked order to pull work from. Anchor: the north-star
+This queue supersedes the historical ordering below. [Stocktake](docs/stocktake-2026-09-24.md)
+contains evidence, acceptance criteria and alternatives. Current corpus: **444 documents**;
+only **14/83 state audits** and **1/29 prudence reviews** contain extracted findings;
+**0/122 rate-case documents** do. Breadth is not docket completeness.
+
+1. **P0: publication and rerun safety.** Approved-record inventory gate; discovery candidates
+   cannot publish; unify `sources`/`structure` dispatch; reject changed source identity rather
+   than preserving stale findings. Keep original untracked records outside builds meanwhile.
+2. **P1: extraction and provenance.** Snapshot-tested boundaries, `DAA’s` recommendation intros,
+   correct Form 549D/scope classification; PDF hashes, parser versions and quote page ranges;
+   distinct partial/unreadable/not-attempted states; generated CSV/JSON parity gate. Preserve
+   the three curated September-refresh records until generic reruns reproduce their receipts.
+3. **P1: insight semantics (approval required).** Separate descriptor tags from finding evidence,
+   facts from violations, and customer-cost direction from topic. PacifiCorp underbilling must
+   not imply overcharge. Page-cited dollar mentions are not additive customer impact.
+4. **P2: CA or NY docket depth.** Connect utility, proceeding, document role, audit, response,
+   implementation and final order. Pilot a bounded CA UAB parser; keep unsupported formats
+   metadata-only. No legacy broad-crawler refresh before P0.
+5. **P2: supported comparisons.** Forms 1/2/6 accounting commonalities; FERC/state affiliate,
+   controls and plant-record comparisons with denominators and source passages. Rate-case
+   comparisons remain descriptor-only until structured evidence exists.
+6. **P3: broader discovery/OCR/impact briefing/audit-my-document**, after evidence gates.
+
+Completed this stocktake: three FERC audits and one SCE report verified/added; CSV regenerated;
+finding-permalink race fixed; all five collections UAT checked. **341 tests passed, 15 skipped**
+for unavailable cached source fixtures. See source receipts for discovery limits; no 50-state sweep.
+
+## Historical prioritized queue (2026-06-22; superseded above)
+
+Historical rationale and completion log. Anchor: the north-star
 ("audit-my-document") needs **parsed findings**, and "data is the product" — so **depth + integrity beat
 thin metadata-only breadth** (the corpus is broad but shallow: real findings sit in ~60 of ~342 state
 records — after the 2026-06-22 WA+IN junk purge, down from 518). New items from the 2026-06-22 session

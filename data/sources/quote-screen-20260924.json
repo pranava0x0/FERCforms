@@ -1,0 +1,813 @@
+{
+  "stats": {
+    "reports_without_cached_text": 15,
+    "reports_checked": 111,
+    "summary_checked": 638,
+    "recommendation_checked": 1551,
+    "summary_not_exact_normalized_match": 68,
+    "recommendation_not_exact_normalized_match": 46
+  },
+  "unmatched": [
+    {
+      "id": "2025-09-29_kern-river-gas-transmission-company_fa23-10",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "Kern River incorrectly recorded certain membership dues in Account 850, Operation Supervision and Engineering, rather than in Accounts 921, Office Supplies and Expenses, and 930.2, Miscellaneous General Expenses. Additionally, a portion of the dues paid for one membership supported lobbying activities, which Kern River should have recorded in Account 426.4, Expenditures for Certain Civic, Political and Related Activities, instead of Account 850. Such misclassifications can affect Kern River’s cost-of-service rate development and result in improper functionalization of costs and rate recovery of nonoperating expenses. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250929-3000"
+    },
+    {
+      "id": "2025-09-25_medallion-pipeline-company-llc_fa23-9",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "Medallion improperly recorded certain nonoperating expenses, including costs for charitable donations and lobbying costs, in operating expense accounts, rather than recording these costs 2 As a result of the ONEOK Acquisition, Medallion’s headquarters are now in Tulsa, Oklahoma. 3 A reticulated pipeline system has a “web-like” design, with multiple paths to any given point, which may allow oil to be rerouted in the event of problems on certain pipeline segments. 4 During the audit period, Medallion reported that it provided transportation service on its pipeline system exclusively by gathering lines. in a nonoperating expense account. The incorrect accounting for these expenses resulted in Medallion overstating operating expenses and the total cost of service on Page 700. Additionally, Medallion misclassified dues paid to certain industry and trade associations in an incorrect operating expense account, which did not impact the total cost of service on Page 700.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250925-3005"
+    },
+    {
+      "id": "2025-09-08_talen-energy_pa22-7",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Provide training to relevant staff on policies and procedures implemented in response to Recommendations 11, 12, and 13, and repeat such trainings as needed. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250908-3009"
+    },
+    {
+      "id": "2025-06-16_portland-general-electric-company_pa23-10",
+      "finding": 11,
+      "kind": "summary",
+      "quote": "PGE did not post certain transmission planning content on its OASIS website during the audit period. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250616-3008"
+    },
+    {
+      "id": "2025-06-16_portland-general-electric-company_pa23-10",
+      "finding": 11,
+      "kind": "recommendation",
+      "quote": "Perform periodic reviews of PGE’s OASIS postings to verify that PGE is posting all required Attachment K information timely and accurately. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250616-3008"
+    },
+    {
+      "id": "2025-04-10_midcontinent-independent-system-operator-inc_pa21-2",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "MISO did not update its Market Reports following the implementation of Value of Lost Load (VOLL) pricing for eight five-minute periods falling within the time frame of 8:05 p.m. to 9:00 p.m. during Winter Storm Uri on February 16, 2021.2",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250410-3014"
+    },
+    {
+      "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Restate and footnote Page 700 of PXP’s 2019 FERC Form No. 6. For 2019, refile the FERC Form No. 6 (only restating Page 700) after audit staff reviews and approves all analyses and revised procedures affecting Page 700. For the FERC Form No. 6 annual filings submitted subsequent to this audit report, ensure that corrections made to impacted accounts and inputs are properly reported in current year financial statements, including prior year corrected numbers, supporting schedules and Page 700. Also ensure appropriate footnote disclosures about the corrections made are included in the notes to the financial statements and other relevant pages of the FERC Form No. 6. Tallgrass Pony Express Pipeline, LLC Docket No. PA23-5-000",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250106-3000"
+    },
+    {
+      "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Review and update the fixed asset subledger to incorporate the policy and procedural changes discussed in this audit finding to ensure that all costs are properly capitalized and expensed prospectively in accordance with PXP’s revised property unit listing. Tallgrass Pony Express Pipeline, LLC Docket No. PA23-5-000",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250106-3000"
+    },
+    {
+      "id": "2025-01-06_tallgrass-pony-express-pipeline-llc_fa23-5",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "PXP incorrectly recorded membership dues paid to the Liquid Energy Pipeline Association (LEPA) in an operating and maintenance (O&M) expense account, rather than in a general expense account, in 2020 and 2021. Further, for those same years, PXP improperly recorded the lobbying portion of membership dues paid to both LEPA and the American Petroleum Institute (API) in operating expense accounts rather than in a nonoperating expense account. Conversely, in 2022, PXP incorrectly recorded the full amount of membership dues paid to LEPA in a nonoperating expense account, rather than recording the lobbying portion in a nonoperating expense account and the remaining non-lobbying portion in a general expense account. Collectively, these errors resulted in PXP misstating the operating Tallgrass Pony Express Pipeline, LLC Docket No. PA23-5-000 expenses reported on Page 700, Line 1, and reduced the overall accuracy of the account information reported in PXP’s FERC Form No. 6 filings.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20250106-3000"
+    },
+    {
+      "id": "2024-11-27_alliant-energy-corporate-services-inc_fa23-7",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "AECS improperly recorded two donations totaling $10,000 in Account 921, Office Supplies and Expenses, rather than in Account 426.1, Donations. Due to the service company’s accounting misclassifications, these expenses were improperly accounted for and reported on the books of WPL and IPL. As a result, WPL and IPL included these amounts in wholesale power rate determinations and overcharged wholesale power customers. D. List of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20241127-3007"
+    },
+    {
+      "id": "2024-09-27_southern-indiana-gas-and-electric-company_fa23-4",
+      "finding": 7,
+      "kind": "summary",
+      "quote": "SIGECO did not properly follow the FERC Form No. 1 page instructions and, therefore, did not accurately report all required information in certain pages of its FERC Form No. 1 filings. These actions affected the transparency, accuracy, and usefulness of the affected pages of the FERC Form No. 1 filings. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240927-3006"
+    },
+    {
+      "id": "2024-08-22_black-hills-corporation_pa23-3",
+      "finding": 3,
+      "kind": "summary",
+      "quote": "The Black Hills Electric Utilities’ postings for monthly and yearly capability, along with a narrative explanation, for instances in which Total Transfer Capability (TTC) changed by more than 10 percent were not made publicly available. As a result, there was a lack of transparency and information available to transmission customers regarding TTC and potential transmission services across certain paths, which may have impacted transmission customers and their transmission activities. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240822-3000"
+    },
+    {
+      "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "NEET incurred $8,801 of acquisition-related costs that it allocated to the GridLiance Transcos, which 4 These sales are limited to customers located: (i) in the balancing area authorities operated by Florida Power Corporation (d/b/a Duke Energy Florida, LLC), JEA, Seminole Electric Cooperative, Tampa Electric Company, and City of Tallahassee; and, (ii) outside of Peninsular Florida. See Florida Power & Light Company, Market-Based Rate Tariff, Volume No. 7, § 8 Limitations and Exemptions Regarding Market-Based Rate Authority (1.0.0). 5 After the consolidation of Gulf Power’s OATT into the FPL OATT, see supra n.3, FPL’s peninsular and panhandle transmission systems both served customers under the FPL OATT, with separate billing determined by the OATT’s Attachment H-1, Peninsular Florida System Network Transmission Service Rate, and the Attachment H-2, NWFL System Formula Rate (for panhandle service). 6 See Open Access and Priority Rights on Interconnection Customer’s Interconnection Facilities, Order No. 807, 150 FERC ¶ 61,211, at P 89 (2015) (discussing interconnection facility owner’s eligibility for the blanket waiver granted by Order No. 807). then recovered these costs through FERC-jurisdictional rates. As a result, the GridLiance Transcos inappropriately billed FERC-jurisdictional customers for acquisition-related costs without Commission approval.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240821-3003"
+    },
+    {
+      "id": "2024-08-21_nextera-energy-transmission-llc_pa23-2",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "NEET and Trans Bay Cable incurred $257,000 of employee retention expenses related to the Trans Bay Cable acquisition but did not track these costs as acquisition- related. NEET is encouraged to clarify its internal policies regarding merger and acquisition costs to ensure transparent and accurate cost tracking for future merger- and acquisition-related costs. D. List of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240821-3003"
+    },
+    {
+      "id": "2024-08-14_enlink-ngl-pipeline-lp_fa22-2",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "EnLink NGL improperly accepted nominations for transportation of liquids that were not submitted in the written form required by its FERC tariff. While this did not impact financial statements or operations, this was a violation of its tariff. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240814-3002"
+    },
+    {
+      "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "DESC incurred merger-related refinancing costs of 6 See Dominion Energy’s SEC Form 10-K, p. 105 at Note 1 “Nature of Operations,” as filed February 23, 2024. $2,552,000 but did not exclude them from FERC-jurisdictional revenue requirements. As a result, a portion of these costs were recovered from FERC- jurisdictional customers without the Commission’s approval.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240812-3031"
+    },
+    {
+      "id": "2024-08-12_dominion-energy-services-inc-and-dominion-energy_fa22-4",
+      "finding": 12,
+      "kind": "recommendation",
+      "quote": "Within 120 days of the issuance of this audit report, refile revised DES FERC Forms No. 60 for 2019 and 2020 to accurately report functional expense classification by correcting the errors noted in this finding. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240812-3031"
+    },
+    {
+      "id": "2024-03-07_net-mexico-pipeline-partners-llc_pa23-1",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "NET Mexico’s procedure for calculating Operational Flow Order (OFO) penalties did not align with the provisions of its SOC. Rather than using the pricing point closest to the applicable receipt or delivery point as required by its SOC, NET Mexico’s procedure was to calculate OFO penalties using the Houston Ship Channel index pricing point (HSC index). Although NET Mexico did not assess any OFO penalties during the audit period, NET Mexico should nevertheless ensure that the provisions of its SOC and procedures for calculating OFO penalties are aligned with each other.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240307-3007"
+    },
+    {
+      "id": "2024-03-07_net-mexico-pipeline-partners-llc_pa23-1",
+      "finding": 9,
+      "kind": "recommendation",
+      "quote": "Train relevant staff on the revised FERC Form No. 549D filing procedures and controls and provide periodic training in this area, as needed. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240307-3007"
+    },
+    {
+      "id": "2024-01-26_northwestern-wisconsin-electric-company_fa23-3",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "NWECo did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. These actions affected the transparency and accuracy of the reported information. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20240126-3008"
+    },
+    {
+      "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "File currently effective versions of Tariff Nos. 6.0.0 and 169.0.0 in eTariff, along with any prior versions that were inadvertently omitted from eTariff, so that eTariff includes an accurate record of all Commission-approved versions of these tariffs. Also, correct the collation value(s), so that they 2 Electronic Tariff Filings, Order No. 714, 124 FERC ¶ 61,270 (2008), clarified Order No. 714-A, 147 FERC ¶ 61,115 (2014). will provide proper sequencing of Sunoco’s tariff records in eTariff and update all miscoded filings.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230929-3011"
+    },
+    {
+      "id": "2023-09-29_sunoco-pipeline-l-p_pa21-4",
+      "finding": 10,
+      "kind": "summary",
+      "quote": "Sunoco did not report complete information in certain supporting schedules of its FERC Form No. 6 filings. Sunoco also did not accurately account for certain activities in accordance with the Commission’s accounting instructions. While these oversights did not impact the determination of cost of service on Page 700, they did reduce the accuracy and usefulness of the information reported in Sunoco’s FERC Form No. 6 filings. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230929-3011"
+    },
+    {
+      "id": "2023-09-18_gulf-south-pipeline-company-llc_pa21-3",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Strengthen accounting procedures to ensure Gulf South properly includes all short-term debt in the determination of the maximum AFUDC rate as prescribed in Order Nos. 561 and 561-A and Gas Plant Instruction No. 3(17) (GPI No. 3(17)). This pertains to all outstanding short-term debt secured through an external third-party bank or other financial institution and through internal funding sources, such as borrowings through a cash management arrangement or direct loan from any affiliate or subsidiary company.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230918-3019"
+    },
+    {
+      "id": "2023-09-18_gulf-south-pipeline-company-llc_pa21-3",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "Gulf South did not include the cost rates and balances associated with short-term debt borrowings from its cash management program in the computation of its maximum allowance for funds used during construction (AFUDC) rate. Instead, Gulf South included only the cost rates and balances for the long- term debt and equity components, which resulted in Gulf South applying AFUDC rates that exceeded the Commission’s maximum allowable rate by approximately 7.43 percent and 9.25 percent in 2019 and 2020, respectively. As a result, Gulf South over accrued the AFUDC on capital projects by approximately $12.4 million in these two years. Although the over-accrual only pertained to these two years, Gulf South confirmed that it has not considered internal short-term debt borrowings in its AFUDC rate calculations since the inception of its cash management program.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230918-3019"
+    },
+    {
+      "id": "2023-07-27_commonwealth-edison-company_fa21-5",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Refund the amounts disclosed in the refund report to wholesale transmission customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. Allocation of Overhead Costs to CWIP",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230727-3010"
+    },
+    {
+      "id": "2023-07-27_commonwealth-edison-company_fa21-5",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Submit a refund analysis to DAA that explains and details the following: (1) calculation of refunds, plus interest, that result from correction of the overstatement of electric plant in service due to the improper capitalization of labor costs, as determined by the labor time study conducted in response to Recommendation No. 13, from 2021 to the present; (2) determinative components of the refund; (3) refund method; (4) wholesale transmission customers to receive refunds; and (5) period(s) in which refunds will be made.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230727-3010"
+    },
+    {
+      "id": "2023-07-27_commonwealth-edison-company_fa21-5",
+      "finding": 11,
+      "kind": "recommendation",
+      "quote": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas as needed. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230727-3010"
+    },
+    {
+      "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Retain an independent third-party entity to conduct a representative labor-time study for allocation of overhead costs incurred in 2023, and to assist with the development of procedures PSCo shall use after 2023 to periodically determine the allocation of overhead labor and labor-related costs capitalized by PSCo into the cost of construction. The consultant should have experience independently performing time studies used in the determination of overhead capitalization rates of U.S.-based utilities subject to the accounting requirements prescribed for public utilities and licensees or for natural gas companies under 18 C.F.R. Part 101 or Part 201, respectively. The time study should involve a representative sample of study participants (employees) that provides for extrapolation of the study results to the full population of PSCo employees. The time study should include processes to apply the study results from the beginning of the audit period to the issue date of this audit report. In addition, the study should include processes to apply the capitalization rate(s) the study finds for 2023 back to the period January 1, 2018 through December 31, 2022, either with no change to the capitalization rates found in the study or with such modifications to the capitalization rate(s) that the independent consultant finds reasonable and supported by evidence. The independent consultant should use its expertise and all relevant information available to it to make recommendations as to what the capitalization rate(s) should be for prior years for PSCo, set forth the basis for its recommendations, and provide both the recommendations and the basis to PSCo and DAA. If there is no recommendation by the independent consultant for any year or other period between January 1, 2018 and December 31, 2022 for any specific capitalizable department and associated internal orders, then PSCo should base its capitalization rate and the amount to be capitalized for such year or period on the rates and costs of such specific internal orders for which PSCo can provide to DAA reasonable evidence as to the time employees charging such internal orders spent having a definite relation to construction and exclude from consideration those internal orders for which PSCo cannot provide such evidence, per, for example, 18 C.F.R. Part 101, General Instruction No. 2 and § 41.8.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230621-3003"
+    },
+    {
+      "id": "2023-06-21_public-service-company-of-colorado_fa22-3",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "PSCo’s method for computing and accounting for its AFUDC rate was deficient. Specifically, PSCo improperly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, and Account 219, Accumulated Other Comprehensive Income, in determining the equity component of its AFUDC rate. Also, PSCo improperly recorded ADIT amounts related to equity AFUDC gross-up in Account 282, Accumulated Deferred Income Taxes – Other Property, instead of Account 283, Accumulated Deferred Income Taxes – Other. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230621-3003"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "WEC Business Services and the WEC 3 electric utilities, which were allocated a portion of the service company’s costs, improperly accounted for their portion of approximately $142.2 million of merger- related capital costs in operating capital expenditure accounts and also improperly accounted for the related, resulting depreciation in operating expense accounts, rather than accounting for their portion of the $142.2 million in non-operating Account 426.5, Other Deductions. This improper accounting resulted in the inappropriate recovery of merger-related costs through two of the WEC electric utilities’ cost-based rate recovery mechanisms without the WEC electric utilities first seeking and obtaining the Commission’s approval for recovery under section 205 of the Federal Power Act as required by the 2015 merger order. As a result, the WEC electric utilities over- collected approximately $1,419,000 from wholesale customers during the hold- harmless period between 2015 and 2020.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "WEC Business Services improperly accounted for a reserve for charitable contributions established under WEC Energy’s Directors’ Charitable Awards Program. WEC Business Services’ improper accounting resulted in such expenses being allocated to and misclassified on the books of WEC electric utilities. This led the WEC electric utilities to overstate the revenue requirements underlying their wholesale cost-based rates and overcharge wholesale customers by approximately $22,000.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Strengthen policies, procedures, and controls to account for donations, accruals and reserves consistent with the Commission accounting requirements.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Train relevant staff on the revised policies, procedures, and controls and perform periodic training in this area, as needed.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Perform an analysis of all charges recognized in connection with the Directors’ Charitable Awards program. Show and reconcile the amounts included in reserves as of the beginning of the audit period, the amounts accrued and payments made during the audit period, and the total amount remaining in reserves as of the end of the audit period and the date of this report. Provide WEC Business Services LLC Docket No. FA21-2-000 the results of the analysis to audit staff within 60 days of the date of issuance of this audit report.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Perform an analysis to identify lobbying expenses, membership dues, advertising expenses, regulatory commission expenses, and other A&G expenses that were improperly accounted for during the audit period. Provide the results of the analysis to DAA within 60 days of the date of issuance of this audit report. WEC Business Services LLC Docket No. FA21-2-000",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "WEC Business Services improperly allocated costs associated with non-regulated affiliates to the WEC electric utilities and made other allocation errors among its affiliates. This led WEC electric utilities to overstate their wholesale cost-based revenue requirements and overcharge wholesale customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Submit a refund analysis, within 60 days of issuance of this audit report, to DAA for review that explains and details the following: (1) calculation of refunds that include the amount of inappropriate recoveries during the audit WEC Business Services LLC Docket No. FA21-2-000 period that resulted from the improper allocation of costs as identified pursuant to the analyses performed in response to Recommendations No. 24 and 25, plus interest; (2) determinative components of the refund; (3) refund method; (4) wholesale and other customers to receive refunds; and (5) period(s) for which refunds will be made.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "WEC Business Services improperly accounted for total payments of around $3.3 million made annually to comply with a settlement agreement instrumental in the relicensing of a power plant it co-owns and operates through its franchised public utility, WEPCO. As a result, WEPCO understated its Steam Power Generation expenses and overstated its Administrative & General (A&G) expenses as reported in its FERC Form No. 1 filings. 4",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 5,
+      "kind": "recommendation",
+      "quote": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. WEC Business Services LLC Docket No. FA21-2-000",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2023-02-10_wec-business-services-llc_fa21-2",
+      "finding": 6,
+      "kind": "recommendation",
+      "quote": "Refund the amounts disclosed in the refund report to the customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. WEC Business Services LLC Docket No. FA21-2-000",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20230210-3000"
+    },
+    {
+      "id": "2022-11-04_tucson-electric-power-company_fa21-3",
+      "finding": 3,
+      "kind": "summary",
+      "quote": "TEP accounted for and reported approximately $29 million of unrecovered plant on its books when it retired, prior to the end of their useful life, certain generating assets during the audit period. However, TEP did not record the unrecovered plant balance in Account 182.2, Elec. Power Co., Docket No. ER22-1212-000 (May 4, 2022) (delegated order accepting revised tariff provisions authorizing TEP to participate in CAISO’s Energy Imbalance Market). Unrecovered Plant and Regulatory Study Costs, nor seek authorization from the Commission for its proposed accounting entries for this early retirement of the generating assets. TEP also misclassified the amortization of the unrecovered plant balance to Account 403, Depreciation Expense, rather than recording the amortization in Account 407, Amortization of Property Losses, Unrecovered Plant, and Regulatory Study Costs. As a result, TEP did not complete an important step in enabling the Commission to exercise its regulatory accounting oversight (i.e., submitting accounting entries regarding unrecovered plant balances to the Commission for review and authorization) and did not adequately distinguish the balance of assets and other debits reported in its FERC Form No. 1. In addition, the foregoing errors led TEP to overstate its annual transmission revenue requirement by approximately $11,500 during the audit period and over collect from FERC-jurisdictional transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20221104-3000"
+    },
+    {
+      "id": "2022-11-04_tucson-electric-power-company_fa21-3",
+      "finding": 11,
+      "kind": "recommendation",
+      "quote": "Train relevant staff on the revised policies, procedures, and controls and provide periodic training in this area, as needed. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20221104-3000"
+    },
+    {
+      "id": "2022-09-01_pjm-interconnection-l-l-c_pa19-2",
+      "finding": 3,
+      "kind": "summary",
+      "quote": "PJM should consider increasing transparency, regarding whether Day-ahead resource commitments minimize overall system production costs as required by OATT Attachment K-Appendix, Section 6.4.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220901-3021"
+    },
+    {
+      "id": "2022-04-15_florida-power-light-company_fa21-6",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Provide training to relevant staff on the revised FERC Form No. 1 policies, procedures, and practices. Provide periodic training in these areas, as needed. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220415-3012"
+    },
+    {
+      "id": "2022-03-23_arizona-public-service-company_pa20-1",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "APS transmission staff improperly directed existing long-term firm Point-to-Point (PTP) customers to execute a short-term transmission service agreement when requesting non-firm redirect service. This process was implemented because an OASIS configuration error prevented existing long-term firm PTP customers from requesting non-firm redirect service on APS’s OASIS and, instead, required customers to manually request redirect service. Not only was the process involving these short-term agreements inconsistent with APS’s OATT, the process also improperly enabled customers to manually select a higher priority for this redirect service request than they otherwise should have received. D. List of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220323-3002"
+    },
+    {
+      "id": "2022-02-04_firstenergy-corporation_fa19-1",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Retain an independent third-party entity, subject to approval by DAA, to conduct a representative labor time study for allocation of overhead costs incurred in 2021 to CWIP, and to assist with the development of procedures FirstEnergy subsidiaries shall use to periodically determine the allocation of overhead labor and labor- related costs capitalized by each FirstEnergy subsidiary into the cost of construction after 2021. The independent consultant should have expertise and experience independently performing time studies used in the determination of overhead capitalization rates of U.S. based utilities subject to the accounting requirements prescribed for public utilities and licensees or for natural gas companies under 18 C.F.R. Part 101 or Part 201, respectively. The time study should involve a representative sample of study participants (employees) that provides for extrapolation of the study results to the full population of FirstEnergy employees, and should include processes for application of the study results from the audit period to the issue date of this audit report, and processes for applying the capitalization rate(s) the study finds for 2021 back to the period January 1, 2015 through December 31, 2020, either with no change to the capitalization rates found in the study or with such modifications to the capitalization rate(s) the independent consultant finds reasonable and supported by evidence. The independent consultant should use its expertise and all relevant information available to it to make recommendations as to what the capitalization rate(s) should be for prior years for each FirstEnergy subsidiary, should set forth the basis for its recommendations, and provide both the recommendations and the basis therefore to FirstEnergy and DAA. If there is no recommendation by the independent consultant for any year or other period between January 1, 2015 and December 31, 2020 for any specific capitalizable cost center, then FirstEnergy should base its capitalization rate and the amount to be capitalized for such year or period on the rates and costs of such specific cost centers for which FirstEnergy can provide to DAA reasonable evidence as to the time employees in such cost centers spent having a definite relation to construction, and exclude from consideration those cost centers for which FirstEnergy cannot provide such evidence, per, for example, 18 C.F.R. Part 101, General Instruction No. 2 and § 41.8. The progress of the study should be reported within 120 days and the time study results provided to DAA for review and consideration within 180 days of the date of issuance of this audit report, and the developed allocation procedures should be submitted when complete, but no later than 60 days after completion of DAA’s review of the labor time study. At a minimum, the developed allocation procedures should provide a method for overhead cost allocation and capitalization to construction based on actual timecard distributions or where this procedure is impractical, based on periodic time studies.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220204-3012"
+    },
+    {
+      "id": "2022-02-04_firstenergy-corporation_fa19-1",
+      "finding": 7,
+      "kind": "recommendation",
+      "quote": "Refund the amounts disclosed in the refund report to customers, with interest calculated in accordance with section 35.19a of the Commission’s regulations. E. Implementation of Recommendations Audit staff further recommends that FirstEnergy submit the following:  A plan for implementing the audit recommendations within 30 days after the audit report is issued;  Quarterly reports describing progress in completing each corrective action recommended. Quarterly nonpublic submissions should be made no later than 30 days after the end of each calendar quarter, beginning with the first quarter after the audit report is issued, and continuing until all recommended corrective actions are completed; and  Copies of any written policies and procedures developed in response to the recommendations. These documents should be submitted in the first quarterly filing after development of a written policy or procedures.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220204-3012"
+    },
+    {
+      "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
+      "finding": 5,
+      "kind": "recommendation",
+      "quote": "File a depreciation study and associated depreciation rate for the Norwalk Harbor- Northport underground transmission line in a docket relating to its transmission formula rate within 60 days of issuance of the audit report. F.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220204-3014"
+    },
+    {
+      "id": "2022-02-04_connecticut-light-and-power-company_fa19-8",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "CL&P included capital cost charges from its service company, Eversource Energy Service Company (EESCO), in jurisdictional rate determinations. CL&P is encouraged to disclose the EESCO cost components and attributes that are considered in the derivation of the capital cost charges and included in CL&P’s transmission rates in its future transmission formula rate annual informational updates and true-up filings. Such disclosure will ensure the filings include information useful in determining how service company capital costs are derived that are included in CL&P’s jurisdictional rates and recovered from its transmission customers. E. List of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20220204-3014"
+    },
+    {
+      "id": "2021-11-17_ameren-corporation_fa20-6",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Refund the amounts disclosed in the refund report to wholesale transmission customers, if applicable, with interest calculated in accordance with section 35.19(a) of the Commission’s regulations. Remeasurement of Accumulated Deferred Income Taxes Resulting from the Tax Cuts and Jobs Act",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20211117-3000"
+    },
+    {
+      "id": "2021-11-17_ameren-corporation_fa20-6",
+      "finding": 6,
+      "kind": "recommendation",
+      "quote": "Submit an estimate, within 30 days of the completion of Recommendation No. 26, to DAA for review, that includes the calculations and determinative components, of overhead costs that would have been allocated to CWIP during the audit period consistent with the requirements of Electric Plant Instruction No. 4 and General Instruction No. 9. The estimate should be based on a recalculation of 2016 and subsequent years’ overhead costs allocated to construction with labor and related costs removed from the cost of plant that were not associated with construction activities based on the methodology developed in response to Recommendation No. 26.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20211117-3000"
+    },
+    {
+      "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Reclassify all idled pipeline assets recorded in Account 30, Carrier Property, for which a definite plan for future use does not exist, to Account 34, Noncarrier Property; and reclassify the related accrued depreciation from Account 31, Accrued Depreciation – Carrier Property, to Account 35, Accrued Depreciation – Noncarrier Property. Submit accounting entries supporting adjustments within the carrier and noncarrier property accounts to audit staff for review within 30 days of issuance of this audit report. Make the accounting entries supporting this adjustment within 30 days of receiving approval from DAA.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210923-3015"
+    },
+    {
+      "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "Bridger incorrectly accounted for and reported on certain activities associated with its pipeline loss allowance (PLA) and gravity shrinkage deduction (GSD). Specifically:  Bridger incorrectly recorded oil losses as an offset to revenue in Account 230, Allowance Oil Revenues, rather than as an operating expense in Account 340, Oil Losses and Shortages. This resulted in Bridger understating its annual interstate operating expenses on Page 700, Line 1 of its FERC Form No. 6. Bridger also did not track the costs or keep records to identify the amount of oil lost in transportation that should have been recorded in Account 340.  Bridger incorrectly omitted PLA and GSD revenues reported in Account 230 on Page 301 of its FERC Form No. 6, when it reported jurisdictional operating revenue on Page 700, Line 10. This resulted in Bridger understating its annual interstate operating revenues on Line 10. The annual interstate portion of the allowance oil revenues during the audit period ranged from $2.8 million to $25 million.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210923-3015"
+    },
+    {
+      "id": "2021-09-23_bridger-pipeline-llc_fa19-10",
+      "finding": 9,
+      "kind": "recommendation",
+      "quote": "Prospectively, file an accounting request with the Commission to seek approval to use Account 710, Other Credits to Retained Income, as required by the instructions for this account. F.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210923-3015"
+    },
+    {
+      "id": "2021-07-20_mustang-pipe-line-llc_fa20-4",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "Mustang did not file its initial and amended cash management agreements with the Commission, which impaired the Commission’s knowledge of Mustang’s cash management program and limited the Commission’s ability to monitor the program. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210720-3012"
+    },
+    {
+      "id": "2021-06-28_southern-california-edison-company_fa20-1",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Revise policies and procedures to properly account for vendor discounts consistent Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible with Commission accounting requirements.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210628-3011"
+    },
+    {
+      "id": "2021-06-28_southern-california-edison-company_fa20-1",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "File a refund report with the Commission after receiving DAA’s assessment of the refund analysis. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210628-3011"
+    },
+    {
+      "id": "2021-06-28_southern-california-edison-company_fa20-1",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "SCE improperly recorded various A&G expenses in a manner contrary to the Commission’s accounting regulations. As a result of the improper accounting, SCE misrepresented A&G expense account balances reported in its FERC Form No. 1 filings. Document Accession #: 20210628-3011 Filed D ate: 06/28/2021 PDF/A non-compatible",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210628-3011"
+    },
+    {
+      "id": "2021-01-28_el-paso-electric-company_pa19-3",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "El Paso applied state- approved depreciation rates to assets included in its wholesale production formula rate from 2016 through 2018, but did not file these updated depreciation rates with the Commission and obtain Commission approval prior to using them in wholesale formula rate determinations. Other Matter El Paso’s transmission function created Transmission Service Numbers (TSN) and assigned these TSNs to its merchant function to facilitate scheduling of transmission service, which is less transparent than assigning Transmission Service Requests (TSR) created in OASIS because TSNs are manually created outside of OASIS. D. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210128-3015"
+    },
+    {
+      "id": "2021-01-14_ugi-utilities-inc_fa20-3",
+      "finding": 10,
+      "kind": "summary",
+      "quote": "UGIU did not record or report in its FERC Form No. 1 deferred income taxes associated with debt and equity AFUDC. UGIU did not record deferred income taxes consistent with the Internal Revenue Service (IRS) uniform capitalization rule for tax purposes regarding AFUDC, which resulted in the same amount of debt and equity AFUDC reported on UGIU’s accounting books and Federal tax returns. Had UGIU filed its federal income tax returns in a manner consistent with the IRS’s uniform capitalization rule, the resulting deferred income taxes associated with AFUDC debt and equity may have affected UGIU’s wholesale transmission formula rate computation. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20210114-3022"
+    },
+    {
+      "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "Maritimes improperly accounted for certain operating expenses, such as transmission operating expenses, regulatory activities, and legal fees, in a manner inconsistent with the Commission’s accounting regulations. While these accounting misclassifications had no impact on total operating expenses, the misclassifications nevertheless reduced the accuracy and transparency of operating expenses as reported in Maritimes’ FERC Form No. 2 filings.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201112-3002"
+    },
+    {
+      "id": "2020-11-12_maritimes-northeast-pipeline-l-l-c_fa19-9",
+      "finding": 8,
+      "kind": "summary",
+      "quote": "Maritimes’ tariff provisions for scheduling penalties and park and loan penalties contain some inconsistencies with Commission policy. Although these provisions are in Maritimes’ approved Tariff, updating these provisions will better align them with Commission policy, and provide the appropriate outcomes for assessing penalties to offending shippers and crediting back penalty revenues to non-offending shippers. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20201112-3002"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "SDG&E’s methods for calculating its Allowance for Funds Used During Construction (AFUDC) base and rate were deficient. Specifically, SDG&E improperly included unpaid contract retention accruals in its construction work in process (CWIP) balance, and unamortized debt discounts and losses on reacquired debt in the determination of its long-term debt balance. As a result, SDG&E miscalculated its AFUDC base and rate. This led it to over-accrue AFUDC, which resulted in an overstatement of CWIP and plant in service balances. This resulted in SDG&E overbilling wholesale transmission customers because the excessive AFUDC costs were included in utility plant that impacted wholesale formula rate determinations. 3 16 U.S.C. § 824s (2018). 4 Promoting Transmission Investment through Pricing Reform, Order No. 679, 116 FERC ¶ 61,057, order on reh’g, Order No. 679-A, 117 FERC ¶ 61,345 (2006), order on reh’g, 119 FERC ¶ 61,062 (2007). The Commission provided additional guidance regarding the application of its transmission incentive policies in Promoting Transmission Investment through Pricing Reform, 141 FERC ¶ 61,129 (2012). 5 San Diego Gas & Elec. Co., 151 FERC ¶ 61,011 (2015). 3",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "SDG&E improperly accounted for upfront fees it paid that were associated with revolving line of credit agreements in Account 182.3, Other Regulatory Assets, and improperly accounted for quarterly commitment fees associated with the agreements in Account 923, Outside Services Employed. In addition, SDG&E improperly included the amortization of upfront line of credit fees in its calculation of long-term debt interest expense used to compute its AFUDC rate.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "SDG&E improperly accounted for electric vehicle (EV) charging station distribution assets in Account 398, Miscellaneous Equipment. SDG&E’s accounting resulted in the cost of the assets and associated expenses being incorrectly included in accounts that are wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "SDG&E improperly accounted for regulatory commission expenses. SDG&E’s accounting resulted in regulatory commission expenses being incorrectly included in accounts that are wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers. 4",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "SDG&E improperly accounted for distribution-related operation costs in a transmission operation expense account. SDG&E’s accounting resulted in expenses being incorrectly included in accounts that were wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 7,
+      "kind": "summary",
+      "quote": "SDG&E misclassified donation payments and costs incurred to support activities to influence public opinion with regard to legislation. SDG&E’s accounting resulted in such expenses being incorrectly included in accounts that were wholesale transmission formula rate inputs. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 8,
+      "kind": "summary",
+      "quote": "SDG&E improperly accounted for external consultant fees incurred to support general services not applicable to a particular operating function. SDG&E’s accounting resulted in expenses being incorrectly included in an account that is a wholesale transmission formula rate input. This led the company to overstate its wholesale transmission revenue requirement and overcharge wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 9,
+      "kind": "summary",
+      "quote": "SDG&E did not properly file all Tariff Records, as required, in the Commission’s electronic tariff (eTariff) database. Specifically, SDG&E’s eTariff filing omitted Attachment 2, its Formula Rate Spreadsheet, from its tariff filed in the eTariff database. This impacted interested parties’ ability to access and review the attachment through the Commission’s eTariff Public Viewer.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 10,
+      "kind": "summary",
+      "quote": "SDG&E could not verify the existence of an asset, or provide documentation associated with the asset’s cost, that was recorded in Account 154, Plant Materials and Operating Supplies. SDG&E’s inability to produce the documentation represents an instance of premature destruction or loss of records.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-30_san-diego-gas-electric-company_fa19-3",
+      "finding": 11,
+      "kind": "summary",
+      "quote": "SDG&E did not file its proposed journal entries for the purchase of electric plant within six months, as required. This hindered the Commission’s and other interested parties’ ability to timely review and monitor the transaction. 5 D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200730-3038"
+    },
+    {
+      "id": "2020-07-15_national-fuel-gas-supply-corporation_fa19-6",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "National Fuel improperly recorded amounts for lost and unaccounted for gas (LAUF) and gas used for underground storage compressor stations in a transmission expense account rather than in production and gas storage expense accounts. Additionally, National Fuel recorded the cost of gas purchased to replace system gas encroachments in the incorrect production gas supply expense account. National Fuel’s improper account classifications reduced the transparency of these gas activities reported in the FERC Form No. 2.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200715-3008"
+    },
+    {
+      "id": "2020-07-15_national-fuel-gas-supply-corporation_fa19-6",
+      "finding": 5,
+      "kind": "recommendation",
+      "quote": "Include a footnote disclosure to explain changes in the presentation of imbalances in National Fuel’s next annual FERC Form No. 2 filing. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200715-3008"
+    },
+    {
+      "id": "2020-07-07_pnm-resources-inc_pa18-1",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Develop and implement processes and procedures to prevent ARO costs from being included in PNM’s annual revenue requirement and being passed on through PNM’s formula rate mechanism to customers without the Commission’s approval. Allowance for Funds Used During Construction",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200707-3025"
+    },
+    {
+      "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Perform an analysis to determine the full scale of Page 700 impacts, including impacts to Line 1, Operating and Maintenance Expense; Line 2, Depreciation Expense; Lines 5a-5d, Rate Base; and other Lines on Page 700, and provide this analysis to DAA staff for further review. 10.Upon receiving DAA staff’s review and response, file an updated FERC Form No. 6 for 2015, 2016, and 2017 that reflects the results of this analysis, including notes that explain the corrections being made.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200109-3025"
+    },
+    {
+      "id": "2020-01-09_oneok-ngl-pipeline-l-l-c_fa18-1",
+      "finding": 7,
+      "kind": "summary",
+      "quote": "ONEOK NGL improperly applied depreciation rates for carrier property assets that were not approved by and on file with the Commission. As a result, ONEOK NGL overstated depreciation expense and misreported amounts on its Page 700 from 2015-2017. D. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20200109-3025"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "National Grid USA Service Company (NGUSASCo) and National Grid Engineering & Survey Inc. (NGE&S) used improper composite depreciation rates to determine depreciation expense accrued on certain property. This led the two service companies to accrue depreciation expense at rates not consistent with Commission accounting rules. The service companies then allocated and billed the incorrectly calculated depreciation expense to their public utility and nonutility affiliates. As a result, amounts billed to public utility affiliates with transmission formula rates were included in the rates charged to wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "NGUSASCo and NGE&S did not consistently use their documented cost allocation methods, nor timely update their general ledger system to reflect changes in the allocation percentages actually used to bill affiliates. These errors led the service companies to over- allocate costs to certain National Grid public utility subsidiaries, and these public utilities in turn overbilled their respective wholesale transmission customers.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 3,
+      "kind": "summary",
+      "quote": "NGUSACo improperly accounted for and allocated a portion of the cost of its gas and electric industry associations’ membership dues to National Grid’s public utility subsidiaries. As a result, National Grid’s public utility subsidiaries improperly included the lobbying component of industry association payments in their wholesale transmission rates.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 4,
+      "kind": "summary",
+      "quote": "NGUSASCo improperly recorded certain donations to Account 921, Office Supplies and Expenses, and Account 930.2, Miscellaneous General Expenses, instead of Account 426.1, Donations, as required by Commission regulations. Amounts recorded in Accounts 921 and 930.2 were allocated to National Grid’s public utility subsidiaries and other affiliates and accounted for by the entities using the same accounts, and for some public utility subsidiaries were included as inputs to their respective wholesale transmission formula rate cost recovery mechanisms. As a result, in some years National Grid’s public utility subsidiaries improperly included the donations in their wholesale transmission rates. 3",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "NGUSASCo improperly accounted for various administrative and general expenses in its books and records. As a result, NGUSASCo overstated certain administrative and general accounts it billed to National Grid public utility subsidiaries, resulting in misclassifications reported in the public utilities’ FERC Form No. 1.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "National Grid’s public utility subsidiaries did not follow the instructions on page 429, Transactions with Associated (Affiliated) Companies, of the FERC Form No. 1 and as a result reported inaccurate and incomplete information for transactions with associated companies.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-11-15_national-grid-usa_fa16-2",
+      "finding": 7,
+      "kind": "summary",
+      "quote": "NGUSASCo and NGE&S did not complete the FERC Form No. 60 reports filed during the audit period in accordance with the general and schedule instructions of the form. D.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20191115-3010"
+    },
+    {
+      "id": "2019-09-27_cleco-power-llc_fa18-3",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "Cleco Power improperly recorded rental revenue from its affiliate in Account 455, Interdepartmental Rents, instead of in Account 454, Rent from Electric Property. As a result, Cleco Power understated the revenue credits included in its wholesale transmission formula rates, which led to an overstatement of its wholesale transmission revenue requirements by approximately $100,000 and overbilled its wholesale transmission customers from 2016 to 2018. • Accounting for Electric Generation Renewable Expenses – Cleco Power improperly recorded operating and maintenance costs associated with an electric generation renewable plant in Account 923, Outside Services Employed, instead of in Account 553, Maintenance of Generating and Electric Equipment (Major Only). Cleco Power improperly included the operating and maintenance costs associated with the electric generation renewable plant in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $124,000 and overbilled wholesale transmission customers from 2015 to 2018. • Accounting for Jointly Owned Assets – Cleco Power improperly recorded the cost of a transmission asset it did not own in Account 353, Station Equipment, and improperly included the cost of the transmission asset it did not own in its transmission formula rate for the purpose of computing billings to wholesale transmission customers. As a result, Cleco Power overstated its wholesale transmission revenue requirements by approximately $89,000 and overbilled wholesale transmission customers from 2014 to 2016. • Accounting for Legal Settlements – Cleco Power improperly recorded $100,000 for compromised settlement payments it made for a discriminatory employment practice suit in Account 921, Office Supplies and Expenses, instead of Account 426.5, Other Deductions. As a result, Cleco Power overstated its wholesale transmission revenue requirements and overbilled its wholesale transmission customers for that amount. • Electric Plant Held for Future Use – Cleco Power improperly recovered the cost of generation, distribution and gas pipeline assets recorded in Account 105, Electric Plant Held for Future Use, through its wholesale transmission formula rates. As a result, Cleco Power overstated its wholesale transmission revenue requirement by approximately $158,000 and overbilled wholesale transmission customers from 2014 to 2018. • Other Accounting Misclassifications – Cleco Power improperly accounted for various expenses totaling approximately $481,000 in its books and records from 2014 to 2018. These expenses were included in wholesale transmission formula rate determinations. As a result, Cleco Power overstated its wholesale transmission revenue requirement and overbilled wholesale transmission customers. • Accounting for Regulatory Assets – Cleco Power improperly recorded regulatory assets approved by the Louisiana Public Service Commission (LPSC) in Account 182.1, Extraordinary Property Losses, without Commission approval. • FERC Form No. 1 Reporting – Cleco Power did not properly follow the FERC Form No. 1 instructions and, therefore, did not report all required information in its FERC Form No. 1 filings. D. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190927-3042"
+    },
+    {
+      "id": "2019-09-19_avista-corporation_pa18-2",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "Avista’s methods for calculating and accounting for its AFUDC rate were deficient and caused Avista’s AFUDC to exceed the maximum AFUDC permitted by the Commission’s regulations, as follows: • Avista included revolving credit facility commitment fees (up-front and quarterly) as part of short-term debt interest expense to compute its AFUDC rate. Avista did not have Commission approval, required by Order No. 561-A, to include revolving credit facility commitment fees in the calculation of its AFUDC rate. • Avista incorrectly included Account 216.1, Unappropriated Undistributed Subsidiary Earnings, as part of the equity component for the purpose of computing its AFUDC rate. • Avista incorrectly included Account 219, Accumulated Other Comprehensive Income (AOCI), as part of the equity component for the purpose of computing its AFUDC rate. • Avista used monthly Equity and Long-Term Debt balances in AFUDC rate development instead of the using the balances for Equity and Long-Term Debt existing at the end of the prior year. • Avista excluded Account 234, Notes Payable to Associated Companies, in the computation of its AFUDC rate instead of including Account 234 as a short-term financing source – i.e., in the short-term debt component for purposes of calculating its AFUDC rate. • Avista accounted for the excess arising from higher state-approved AFUDC over AFUDC as computed in accordance with the Commission’s accounting regulations as a cost of plant in Account 101, Electric Plant in Service, through Account 107, Construction Work In Progress, instead of recording the excess in Account 182.3, Other Regulatory Assets. As a result of these methods, Avista overstated AFUDC by approximately $19.7 million for the period 2015 through 2017.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190919-3007"
+    },
+    {
+      "id": "2019-09-06_ohio-power-company_fa17-2",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Revise and strengthen policies and procedures to improve accounting practices for plant in service and ensure that work order expenses associated with projects that have been placed in service are transferred to appropriate plant in service accounts in a timely manner. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190906-3014"
+    },
+    {
+      "id": "2019-06-25_transcontinental-gas-pipe-line-company-llc_fa18-2",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "Transco improperly included undistributed subsidiary earnings, accumulated other 1 Transcontinental Gas Pipe Line Co., LLC, 145 FERC ¶ 61,205 (2013). 2 Transcontinental Gas Pipe Line Co., LLC, 164 FERC ¶ 61,236 (2018). comprehensive income, and unamortized discounts on long-term debt in debt and equity for the purposes of computing AFUDC rates. As a result, Transco over-accrued AFUDC, which led it to overstate its construction work in progress (CWIP) and plant in service balances.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190625-3009"
+    },
+    {
+      "id": "2019-05-14_northern-natural-gas-company_pa16-2",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "Northern Natural’s accounting for operational gas sales was inconsistent with Commission regulations governing system gas accounting. Due to the inconsistencies, Northern Natural incorrectly reported the transactions in the Form No. 2. D. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190514-3013"
+    },
+    {
+      "id": "2019-05-14_northern-natural-gas-company_pa16-2",
+      "finding": 5,
+      "kind": "recommendation",
+      "quote": "Adjust the comparative financial statements in its next Form No. 2 and disclose the reasons for the changes in the presentation of accounts reclassified. E.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20190514-3013"
+    },
+    {
+      "id": "2018-12-14_black-hills-corporation_fa16-3",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Submit a refund analysis, within 60 days of receiving the final audit report, to DAA for review that explains and details the following: (1) calculations of the refunds resulting from BHP’s accounting for legal expenses, plus interest; (2) Document Accession #: 20181214-3016 Filed Date: 12/14/2018 Black Hills Power, Inc. determinative components of the refund; (3) refund method; (4) customers to be refunded; and (5) period(s) in which refunds will be made.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181214-3016"
+    },
+    {
+      "id": "2018-10-19_trunkline-gas-company_pa16-4",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Adjust the comparative financial statements and include footnote disclosures to explain changes in the presentation of cash management program and affiliate transactions in its next FERC Form 2. Document Accession #: 20181019-3029 Filed Date: 10/19/2018 Trunkline Gas Company, LLC Allowance for Funds Used During Construction (AFUDC)",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181019-3029"
+    },
+    {
+      "id": "2018-10-19_equitrans-l-p_fa17-6",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "Equitrans inappropriately included unpaid contract retention accruals in the calculation of its AFUDC rate. In addition, the company erroneously Document Accession #: 20181019-3030 Filed Date: 10/19/2018 Equitrans L.P. excluded certain other cash outlays from the calculation. This led Equitrans to under-accrue AFUDC capitalized into construction work in progress (CWIP) and plant in service of approximately $694,000 on its Ohio Valley Connector (OVC) pipeline system, and over-accrue $127,000 on its Allegheny Valley Connector (AVC) pipeline system, and $49,000 on other Equitrans pipelines.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181019-3030"
+    },
+    {
+      "id": "2018-10-19_equitrans-l-p_fa17-6",
+      "finding": 8,
+      "kind": "summary",
+      "quote": "Equitrans did not report certain information in its FERC Form No. 2 filings as required, resulting in reduced overall transparency, accuracy, and usefulness of the filings. Document Accession #: 20181019-3030 Filed Date: 10/19/2018 Equitrans L.P. D. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20181019-3030"
+    },
+    {
+      "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
+      "finding": 1,
+      "kind": "recommendation",
+      "quote": "Ensure the DMM Director has the opportunity to bring any unresolved concerns on matters of potential impacts of staff relocation, and other issues of inadequacies in physical separation before the DMM Oversight Committee, who will have the authority itself to address, or bring them to the full Board to address, regarding actions sufficient to ensure independence around the DMM workspace.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180914-3005"
+    },
+    {
+      "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
+      "finding": 3,
+      "kind": "summary",
+      "quote": "CAISO did not conduct the range and frequency of testing and auditing required by the CAISO OATT to verify, within 2 reasonable timeframes, that generators paid to provide ancillary services were capable of providing the services.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180914-3005"
+    },
+    {
+      "id": "2018-09-14_california-independent-system-operator-corporati_pa17-3",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Adding staff or supplementing the necessary skills in operational areas to empower IA in performing the full range of audits necessary to provide adequate assurance of CAISO's compliance to its OATT. E. Compliance with Implementation of Recommendations Audit staff further recommends that CAISO submit for review: • Plans for implementing audit staffs recommendations within 30 days after the issuance of this report. • Quarterly reports to DAA describing CAISO's progress in completing each corrective action. CAISO should make these nonpublic quarterly filings no later than 30 days after the end of each calendar quarter, beginning with the first quarter after the Commission issues this report, and continuing until it completes all recommended actions. • Copies of written policies and procedures developed in response to the recommendations. These documents should be submitted for audit staffs review in the first nonpublic quarterly filing after CAISO completes them.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180914-3005"
+    },
+    {
+      "id": "2018-06-11_idaho-power-company_pa17-7",
+      "finding": 7,
+      "kind": "summary",
+      "quote": "Idaho Power did not maintain documentation to demonstrate whether, and how, it met the requirement 5 to reevaluate its capacity benefit margin (CBM) needs at least annually, and post its practices for reevaluating its CBM needs.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180611-3038"
+    },
+    {
+      "id": "2018-01-12_plains-pipeline-l-p_fa16-6",
+      "finding": 12,
+      "kind": "recommendation",
+      "quote": "Establish policies and procedures to ensure that acquisitions of properties comprising a distinct operating system, or an integral portion thereof, are accounted for in accordance with Commission regulations, including submitting tentative journal entries to the Commission for approval when the purchase price exceeds $250,000. Document Accession #: 20180112-3041 Filed Date: 01/12/2018 Plains Pipeline, L.P. Other Matters Cost Allocation",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3041"
+    },
+    {
+      "id": "2018-01-12_explorer-pipeline-company_fa16-5",
+      "finding": 12,
+      "kind": "summary",
+      "quote": "Payment for Retirement of Long Term Debt Page 121, Line Explorer could not explain or provide records or documents to support the difference between the retirement of long term debt reported on page 121, Line 73 and page 227, Line 30, Column (g) in its 2014 Form 6. Carrier Property Page 213, Column (g) Explorer could not explain or provide records or documents to support the amount recorded as an adjustment to carrier property for the audit period. Accrued Depreciation – Carrier Property Page 216, Column (d), Lines 21 and 26 Explorer could not provide records or documents to support the amount",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3040"
+    },
+    {
+      "id": "2018-01-12_explorer-pipeline-company_fa16-5",
+      "finding": 13,
+      "kind": "summary",
+      "quote": "Balance Sheet - Derivative Instrument Liabilities (Hedge) Page 113 Explorer did not maintain records and documents to support the carrying value and subsequent monthly valuations from the initial recording of the interest rate swap in 2002 to the balance reported in Explorer’s 2013 Form 6. Statement of Cash Flows – Untitled Page 120, Line Explorer could not explain or provide records or documents to support the manual adjustment reported on this line for 2013 and 2014. This line consisted of several activities, including a change in other deferred charges, accumulated deferred income tax credi",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20180112-3040"
+    },
+    {
+      "id": "2017-11-09_chevron-u-s-a-inc_pa16-1",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "CUSA improperly reported four transactions on its 2014 Form 552 filing. Also, CUSA improperly applied a reporting threshold used to exclude individual transactions from Form 552 reporting when the volume of the transaction was smaller than 0.05 TBtu per year (or 137 MMBtu per day). E. Summary of",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20171109-3042"
+    },
+    {
+      "id": "2017-08-29_pacificorp_fa16-4",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "PacifiCorp’s accounting and wholesale formula rate billings for storm damage costs during the period of 2012 through 2015 were deficient as follows:  PacifiCorp improperly overbilled storm damage costs to its merchant function and third-party wholesale customers that procured transmission services under PacifiCorp’s OATT. This occurred because PacifiCorp improperly included actual plus estimated costs associated with the same storms in billings to its merchant and third-party wholesale customers. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximatel",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170829-3016"
+    },
+    {
+      "id": "2017-08-29_pacificorp_fa16-4",
+      "finding": 2,
+      "kind": "summary",
+      "quote": "PacifiCorp inappropriately recovered from its wholesale customers the cost of production related mining assets through its wholesale formula rates. As a result, PacifiCorp overstated its wholesale transmission revenue requirement by approximately $3.7 million, which led to overbillings to third-party wholesale customers by approximately $600,000.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170829-3016"
+    },
+    {
+      "id": "2017-08-29_pacificorp_fa16-4",
+      "finding": 5,
+      "kind": "summary",
+      "quote": "PacifiCorp’s methods for calculating Allowance for Funds Used During Construction (AFUDC) rate was deficient as follows:  PacifiCorp inappropriately included letter of credit fees (up-front and quarterly) as part of short term debt interest expense to compute AFUDC rate.  PacifiCorp inappropriately included Unappropriated Undistributed Subsidiary Earnings as part of the equity component for the purpose of computing AFUDC rate.  PacifiCorp inappropriately included Accumulated Other Comprehensive Income (AOCI) as part of the equity component for the purpose of computing AFUDC rate in 2013. As",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170829-3016"
+    },
+    {
+      "id": "2017-08-29_pacificorp_fa16-4",
+      "finding": 6,
+      "kind": "summary",
+      "quote": "PacifiCorp’s accounting and rate treatment of Asset Retirement Obligations (ARO) were deficient as follows:  PacifiCorp inappropriately excluded accumulated depreciation amounts removed from Account 108, Accumulated Provision for Depreciation of Electric Utility Plant, to implement ARO accounting in the wholesale formula rates determinations. As a result, PacifiCorp understated its wholesale transmission revenue requirement which led to under-billings to its wholesale customers through its wholesale formula rates.  PacifiCorp inappropriately included estimated future asset retirement costs r",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170829-3016"
+    },
+    {
+      "id": "2017-08-29_pacificorp_fa16-4",
+      "finding": 9,
+      "kind": "summary",
+      "quote": "PacifiCorp recorded the cost of pensions, post-retirement benefits other than pensions (PBOP) and other employee benefits in various functional operating and maintenance expense accounts, instead of in Account 926, Employee Pensions and Benefits.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170829-3016"
+    },
+    {
+      "id": "2017-02-01_nv-energy-inc_pa15-2",
+      "finding": 2,
+      "kind": "recommendation",
+      "quote": "Within 60 days of receiving the final audit report, submit proposed accounting entries and supporting documentation to DAA that reflect the removal of ARO asset- and liability-related depreciation and accretion expense amounts from the regulatory asset accounts no longer probable for recovery in future rates. Also, remove corresponding amounts of the negative ARO asset balances from the plant accounts.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20170201-3016"
+    },
+    {
+      "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "Record FERC annual charges in Account 510, and DOT-PHMSA fees, Commonwealth of Virginia fees, and Association of Oil Pipeline (AOPL) dues in Account 590, instead of Account 660. Submit journal entries to support the change in accounting treatment for these operating activities to DAA within 60 days of issuance of this final audit report.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20161223-3023"
+    },
+    {
+      "id": "2016-12-23_plantation-pipe-line-company_fa15-12",
+      "finding": 7,
+      "kind": "recommendation",
+      "quote": "Strengthen communication between accountants and field engineers to ensure timely closure of project work orders. Reporting of Interstate Volumes",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20161223-3023"
+    },
+    {
+      "id": "2016-09-29_westar-energy-inc_fa15-9",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Determine the impact of misclassified costs associated with discriminatory employment practices on Westar’s transmission formula rate. To the extent that the misclassified amounts affected a transmission formula rate, submit refund calculations to DAA for review that explains and details Westar’s calculation of the refunds and determinative components. Following submittal of the refund calculations to DAA, submit a refund report to the Commission in Docket No. ER11-2395. The refunds should include the net amount of inappropriate recoveries that resulted from the misclassifications, including interest calculated in accordance with section 35.19a of Commission regulations.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20160929-3027"
+    },
+    {
+      "id": "2015-06-04_kinder-morgan_fa14-10",
+      "finding": 3,
+      "kind": "recommendation",
+      "quote": "Depending on the intended use of the projects, their expenses should have been recorded to the appropriate transmission or storage expense accounts. Recommendations Audit staff recommends EPC Legacy companies: 5. Modify its existing accounting practice to ensure that costs for canceled or abandoned capital projects are expensed to the functional accounts related to the intended function of the abandoned project. 6. Submit to DAA their documented accounting practice implementing the proper accounting for canceled or abandoned capital projects. Kinder Morgan, Inc. 4.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150604-3010"
+    },
+    {
+      "id": "2015-06-04_kinder-morgan_fa14-10",
+      "finding": 4,
+      "kind": "recommendation",
+      "quote": "23 Account 923, Outside Services Employed, states: A. This account shall include the fees and expenses of professional consultants and others for general services which are not applicable to a particular operating function or to other accounts. It shall include also the pay and expenses of persons engaged for a special or temporary administrative or general purpose in circumstances where the person so engaged is not considered as an employee of the utility. 24 Account 924, Property Insurance, states in part: 21 18 C.F.R. pt. 201, Account 426.1. 22 Id. at Account 426.5. 23 Id. at Account 921. 24 Id. at Account 923. Kinder Morgan, Inc. A. This account shall include the cost of insurance or reserve accruals to protect the utility against losses and damages to owned or leased property used in its utility operations . . . . 25 Account 925, Injuries and Damages, states in part: A. This account shall include the cost of insurance or reserve accruals to protect the utility against injuries and damages claims of employees or others, losses of such character not covered by insurance, and expenses incurred in settlement of injuries and damages claims. 26 Account 931, Rents, states: This account shall include rents properly includible in utility operating expenses for the property of others used, occupied, or operated in connection with the customer accounts, customer service and informational, sales, and general and administrative functions of the utility. 27 Account 816, Wells Expenses, states: This account shall include the cost of labor, materials used and expenses incurred in operating storage gas wells.28 Account 832, Maintenance of Reservoirs and Wells, states: This account shall include the cost of labor, materials used and expenses incurred in the maintenance of storage wells, the book cost of which is included in account 352, Wells, and the maintenance of reservoirs, the book cost of which is included in account 352.2, Reservoirs.29 25 Id. at Account 924. 26 Id. at Account 925. 27 1d. at Account 931. 28 Id. at Account 816. 29 Id. at Account 832. Kinder Morgan, Inc. Background Audit staff tested a sample of charges made to certain expense accounts to attest to the types of merger-related costs the KMI jurisdictional entities recorded, and evaluated whether they were recorded consistent with Commission accounting requirements. Audit staff testing identified several accounting misclassification errors in the sample that related to the cost types in the table below: . cco i Use il 1 Liability Insurance Premiums Office Building Rent 930.2 Storage Well Maintenance Stora:e Field Shut in Ex senses Donations 426.1 Outside Tax Services Environmental Legal Reserve 426.5 Civil Penalties 426.3 Audit staff believes that the KMI jurisdictional entities should have classified these charges in the appropriate accounts as Commission rules and regulations have prescribed. Further, the KMI jurisdictional entities should strengthen their procedures to ensure that accounting misclassifications identified do not reoccur. Recommendations Audit staff recommends that the KMI jurisdictional entities: 7. Modify their accounting system and policy so KMI costs allocated to its jurisdictional entities can be accounted for appropriately. 8. Establish and implement procedures to ensure proper coding and accounting of expenses under Commission regulations. 9. Revise their procedures to properly classify the costs identified in the",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20150604-3010"
+    },
+    {
+      "id": "2014-10-24_cargill_fa14-6",
+      "finding": 1,
+      "kind": "summary",
+      "quote": "Cargill incorrectly reported certain nonreportable purchase and sales volumes as transactions contracted: at fixed prices, at prices that refer to published daily and monthly indices, and at prices set upon a physical basis transaction value. This resulted in Cargill over-reporting purchase and sales volumes by 202.2 TBtu and 218.6 TBtu, respectively, in its 2012 Form 552.",
+      "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20141024-3019"
+    }
+  ],
+  "captured_at": "2026-09-24",
+  "baseline_commit": "66d0119",
+  "method": "Lowercase, retain ASCII letters and digits, compare full summary/recommendation as substring of concatenated cached page text. Diagnostic screen only: unmatched does not establish fabricated or wrong text. Different extractors, footers and page breaks can cause mismatches. Fifteen finding-bearing records lacked cached text."
+}

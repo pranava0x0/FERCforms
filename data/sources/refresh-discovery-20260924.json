@@ -1,0 +1,1057 @@
+{
+  "captured_at": "2026-09-24",
+  "source": "https://elibrary.ferc.gov/eLibraryWebAPI/api/Search/AdvancedSearch",
+  "method": "Issuance searches FA20-FA26 and PA20-PA26; searchFullText=false, sortBy=date; first page only. Not exhaustive where totalHits exceeds returned_hits. Signed PDF caption/count verification determines ingest.",
+  "queries": [
+    {
+      "query": "FA20",
+      "total_hits": 36,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20191108-3018",
+          "issuedDate": "11/08/2019",
+          "docketNumbers": [
+            "FA20-2-000"
+          ],
+          "description": "Letter informing ALLETE, Inc. that FERC is commencing an audit covering the period of January 1, 2016 to present under FA20-2."
+        },
+        {
+          "acesssionNumber": "20240201-3046",
+          "issuedDate": "02/01/2024",
+          "docketNumbers": [
+            "FA20-6-000"
+          ],
+          "description": "Order Denying Motion to Intervene and Rejecting Protest re Ameren Corporation under FA20-6. "
+        },
+        {
+          "acesssionNumber": "20231128-3057",
+          "issuedDate": "11/28/2023",
+          "docketNumbers": [
+            "ER23-1598-000",
+            "ER23-1598-002",
+            "ER23-1598-001"
+          ],
+          "description": "Order Approving Stipulation re Versant Power under ER23-1598. Commissioner Danly is not participating. "
+        },
+        {
+          "acesssionNumber": "20231116-3119",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "AD07-13-017"
+          ],
+          "description": "Office of Enforcement’s 2023 Staff Report, dated November 16, 2023 under AD07-13."
+        },
+        {
+          "acesssionNumber": "20231116-3052",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "ER23-1335-000"
+          ],
+          "description": "Order on Formal Challenge re Ameren Illinois Company under ER23-1335."
+        },
+        {
+          "acesssionNumber": "20230515-3011",
+          "issuedDate": "05/15/2023",
+          "docketNumbers": [
+            "EL20-72-000"
+          ],
+          "description": "Certification of Initial Decision and Official Record in Louisiana Public Service Commission, et al. v. System Energy Resources, Inc. and Entergy Services, LLC under Docket No. EL20-72-000 (ADMITTED EXHIBITS) Part 1 of 4"
+        },
+        {
+          "acesssionNumber": "20230605-3008",
+          "issuedDate": "06/05/2023",
+          "docketNumbers": [
+            "ER23-1598-000"
+          ],
+          "description": "Letter informing Versant Power that the April 7, 2023 filing is deficient and requesting additional information within 30 days under ER23-1598."
+        },
+        {
+          "acesssionNumber": "20230515-3014",
+          "issuedDate": "05/15/2023",
+          "docketNumbers": [
+            "EL20-72-000"
+          ],
+          "description": "Certification of Initial Decision and Official Record in Louisiana Public Service Commission, et al. v. System Energy Resources, Inc. and Entergy Services, LLC under Docket No. EL20-72-000 (ADMITTED EXHIBITS) Part 3 of 4"
+        },
+        {
+          "acesssionNumber": "20220601-3039",
+          "issuedDate": "06/01/2022",
+          "docketNumbers": [
+            "FA20-5-000"
+          ],
+          "description": "Letter order to Enterprise Crude Pipeline LLC approving the final audit report covering the period of January 1, 2014 through December 31, 2018 under FA20-5. "
+        }
+      ]
+    },
+    {
+      "query": "FA21",
+      "total_hits": 45,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260629-3044",
+          "issuedDate": "06/29/2026",
+          "docketNumbers": [
+            "FA21-5-000"
+          ],
+          "description": "Updated Notice of Designation of Commission Staff as Non-Decisional re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20260320-3047",
+          "issuedDate": "03/20/2026",
+          "docketNumbers": [
+            "ER25-2129-001",
+            "ER25-2129-002",
+            "EL25-94-000"
+          ],
+          "description": "Certification of Uncontested Offer of Settlement re Commonwealth Edison Company under ER25-2129 et al. "
+        },
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250630-3063",
+          "issuedDate": "06/30/2025",
+          "docketNumbers": [
+            "ER25-2129-001",
+            "EL25-94-000"
+          ],
+          "description": "Order on Formula Rate Tariff Revisions, Initiating a Proceeding Pursuant to Section 206 of the Federal Power Act, Consolidating Proceedings, and Establishing Hearing and Settlement Judge Procedures re Commonwealth Edison Company et al., ER25-2129 et al. "
+        },
+        {
+          "acesssionNumber": "20250513-3056",
+          "issuedDate": "05/13/2025",
+          "docketNumbers": [
+            "FA21-5-000"
+          ],
+          "description": "Notice Granting Motion to Extend the Deadline for Supplemental Reply Memoranda and for Expedited Treatment re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20250210-3017",
+          "issuedDate": "02/10/2025",
+          "docketNumbers": [
+            "FA21-5-001"
+          ],
+          "description": "Seventh Status Report of Settlement Judge re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20250212-3030",
+          "issuedDate": "02/12/2025",
+          "docketNumbers": [
+            "FA21-5-001",
+            "FA21-5-000"
+          ],
+          "description": "Order of Chief Judge Shortening Settlement Comment Periods re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20250304-3046",
+          "issuedDate": "03/04/2025",
+          "docketNumbers": [
+            "FA21-5-001"
+          ],
+          "description": "Certification of Uncontested Settlement re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20250313-3084",
+          "issuedDate": "03/13/2025",
+          "docketNumbers": [
+            "FA21-5-000"
+          ],
+          "description": "Notice Granting Motion to Extend the Deadline for Supplemental Reply Memoranda and for Expedited Treatment re Commonwealth Edison Company under FA21-5. "
+        },
+        {
+          "acesssionNumber": "20240812-3037",
+          "issuedDate": "08/12/2024",
+          "docketNumbers": [
+            "FA21-5-001"
+          ],
+          "description": "Fourth Status Report of Settlement Judge re Commonwealth Edison Company under FA21-5. "
+        }
+      ]
+    },
+    {
+      "query": "FA22",
+      "total_hits": 14,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20251110-3038",
+          "issuedDate": "11/10/2025",
+          "docketNumbers": [
+            "ER25-2686-001"
+          ],
+          "description": "Order Rejecting Agreements re Appalachian Power Company under ER25-2686. "
+        },
+        {
+          "acesssionNumber": "20240814-3002",
+          "issuedDate": "08/14/2024",
+          "docketNumbers": [
+            "FA22-2-000"
+          ],
+          "description": "Letter order to EnLink NGL Pipeline, LP issuing audit report covering\nthe period of 01/01/2019 through 12/31/2022 under FA22-2."
+        },
+        {
+          "acesssionNumber": "20231116-3119",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "AD07-13-017"
+          ],
+          "description": "Office of Enforcement’s 2023 Staff Report, dated November 16, 2023 under AD07-13."
+        },
+        {
+          "acesssionNumber": "20230621-3003",
+          "issuedDate": "06/21/2023",
+          "docketNumbers": [
+            "FA22-3-000"
+          ],
+          "description": "Letter order to Public Service Company of Colorado approving the final audit report covering the period January 1, 2018 through January 31, 2023 under FA22-3."
+        },
+        {
+          "acesssionNumber": "20220419-3009",
+          "issuedDate": "04/19/2022",
+          "docketNumbers": [
+            "FA22-4-000"
+          ],
+          "description": "Letter informing Dominion Energy Services, Inc. that FERC will be commencing an audit covering the period of January 1, 2019 to the present under FA22-4."
+        },
+        {
+          "acesssionNumber": "20250430-3086",
+          "issuedDate": "04/30/2025",
+          "docketNumbers": [
+            "ER22-1525-002"
+          ],
+          "description": "Certification of Initial Decision and Official Record in Southwest Power Pool, Inc. under Docket No. ER22-1525-002 (ADMITTED EXHIBITS) Part 1 of 3 "
+        },
+        {
+          "acesssionNumber": "20220225-3004",
+          "issuedDate": "02/25/2022",
+          "docketNumbers": [
+            "FA22-3-000"
+          ],
+          "description": "Letter informing Public Service Company of Colorado that the Commission is commencing an audit covering the period January 1, 2018 to present under FA22-3."
+        },
+        {
+          "acesssionNumber": "20240812-3031",
+          "issuedDate": "08/12/2024",
+          "docketNumbers": [
+            "FA22-4-000"
+          ],
+          "description": "Letter order to Dominion Energy Services, Inc. et al. issuing audit report covering the period of 01/01/2019 through 12/31/2023 under FA22-4. "
+        },
+        {
+          "acesssionNumber": "20240315-3000",
+          "issuedDate": "03/15/2024",
+          "docketNumbers": [
+            "FA22-1-000"
+          ],
+          "description": "Letter order to Appalachian Power Company issuing audit report covering the period of January 1, 2019, through June 30, 2023, under FA22-1-000."
+        }
+      ]
+    },
+    {
+      "query": "FA23",
+      "total_hits": 19,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260813-3071",
+          "issuedDate": "08/13/2026",
+          "docketNumbers": [
+            "ER25-209-000",
+            "ER25-209-001",
+            "ER25-1794-001"
+          ],
+          "description": "Certification of Uncontested Settlement re Pacific Gas and Electric Company under ER25-209 et al. "
+        },
+        {
+          "acesssionNumber": "20251121-3032",
+          "issuedDate": "11/21/2025",
+          "docketNumbers": [
+            "ER25-3483-000",
+            "ER25-3482-000"
+          ],
+          "description": "Order Accepting Filings and Directing Refunds re Duke Energy Progress, LLC et al. under ER25-3482 et al. Commissioner LaCerte is not participating. "
+        },
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250929-3000",
+          "issuedDate": "09/29/2025",
+          "docketNumbers": [
+            "FA23-10-000"
+          ],
+          "description": "Letter order to Kern River Gas Transmission Company issuing audit report covering the period of 01/01/2020 to 12/31/2023 under FA23-10."
+        },
+        {
+          "acesssionNumber": "20250925-3005",
+          "issuedDate": "09/25/2025",
+          "docketNumbers": [
+            "FA23-9-000"
+          ],
+          "description": "Letter order to Medallion Pipeline Company, LLC issuing audit report covering the period of 01/01/2020 to 12/31/2023 under FA23-9. "
+        },
+        {
+          "acesssionNumber": "20250918-3011",
+          "issuedDate": "09/18/2025",
+          "docketNumbers": [
+            "FA23-8-000"
+          ],
+          "description": "Letter order to Pacific Gas and Electric Company issuing audit report covering the period of 01/01/2020 to 04/30/2025 under FA23-8."
+        },
+        {
+          "acesssionNumber": "20250725-3010",
+          "issuedDate": "07/25/2025",
+          "docketNumbers": [
+            "FA23-6-000"
+          ],
+          "description": "Letter order to Duke Energy Progress, LLC issuing audit report covering the period of January 1, 2020, through September 30, 2024 under FA23-6."
+        },
+        {
+          "acesssionNumber": "20241127-3007",
+          "issuedDate": "11/27/2024",
+          "docketNumbers": [
+            "FA23-7-000"
+          ],
+          "description": "Letter order to Alliant Energy Corporate Services, Inc. issuing audit report covering the period of 01/01/2019 through 12/31/2023 under FA23-7. "
+        },
+        {
+          "acesssionNumber": "20230929-3012",
+          "issuedDate": "09/29/2023",
+          "docketNumbers": [
+            "FA23-10-000"
+          ],
+          "description": "Letter informing Kern River Gas Transmission Company that the Commission is commencing an audit covering the period of January 1, 2020 to the present under FA23-10."
+        },
+        {
+          "acesssionNumber": "20230221-3002",
+          "issuedDate": "02/21/2023",
+          "docketNumbers": [
+            "FA23-3-000"
+          ],
+          "description": "Letter informing Northwestern Wisconsin Electric Company that the Commission is commencing an audit covering the period of January 1, 2020 to the present under FA23-3."
+        }
+      ]
+    },
+    {
+      "query": "FA24",
+      "total_hits": 5,
+      "returned_hits": 5,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260507-3001",
+          "issuedDate": "05/07/2026",
+          "docketNumbers": [
+            "FA24-3-000"
+          ],
+          "description": "Letter order to Southern Electric Generating Company issuing audit report covering the period of 01/01/2021 through 12/31/2024 under FA24-3. "
+        },
+        {
+          "acesssionNumber": "20260319-3008",
+          "issuedDate": "03/19/2026",
+          "docketNumbers": [
+            "FA24-2-000"
+          ],
+          "description": "Letter order to Southwestern Electric Power Company issuing Audit Report covering the period of 01/01/2021 through 12/31/2025 under FA24-2. "
+        },
+        {
+          "acesssionNumber": "20251125-3121",
+          "issuedDate": "11/25/2025",
+          "docketNumbers": [
+            "ER24-298-001",
+            "ER24-299-000",
+            "ER24-305-000",
+            "ER24-298-000",
+            "ER24-301-000",
+            "ER24-302-000",
+            "ER24-304-000"
+          ],
+          "description": "Certification of Uncontested Settlement re Southwestern Electric Power Company under ER24-298 et al. "
+        },
+        {
+          "acesssionNumber": "20240712-3005",
+          "issuedDate": "07/12/2024",
+          "docketNumbers": [
+            "FA24-3-000"
+          ],
+          "description": "Letter informing Southern Company Services, Inc. that the Commission is commencing an audit covering the period of 01/01/2021 to present under FA24-3. "
+        },
+        {
+          "acesssionNumber": "20240410-3008",
+          "issuedDate": "04/10/2024",
+          "docketNumbers": [
+            "FA24-2-000"
+          ],
+          "description": "Letter informing Southwestern Electric Power Company that the Commission is commencing an audit covering the period of January 1, 2021 to the present under FA24-2."
+        }
+      ]
+    },
+    {
+      "query": "FA25",
+      "total_hits": 8,
+      "returned_hits": 8,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260918-3038",
+          "issuedDate": "09/18/2026",
+          "docketNumbers": [
+            "FA25-3-000"
+          ],
+          "description": "Letter order to Niagara Mohawk Power Corporation issuing audit report covering the period of 01/01/2022 through 12/31/2025 under FA25-3. "
+        },
+        {
+          "acesssionNumber": "20260806-3006",
+          "issuedDate": "08/06/2026",
+          "docketNumbers": [
+            "FA25-4-000"
+          ],
+          "description": "Letter order to Atlantic City Electric Company issuing audit report covering the period of 01/01/2021 through 12/31/2025 under FA25-4. "
+        },
+        {
+          "acesssionNumber": "20250919-3003",
+          "issuedDate": "09/19/2025",
+          "docketNumbers": [
+            "FA25-6-000"
+          ],
+          "description": "Letter informing Saddlehorn Pipeline Company, LLC that the Commission is commencing an audit covering the period of 01/01/2022 to present under FA25-6."
+        },
+        {
+          "acesssionNumber": "20250411-3005",
+          "issuedDate": "04/11/2025",
+          "docketNumbers": [
+            "FA25-4-000"
+          ],
+          "description": "Letter informing Atlantic City Electric Company that the Commission is commencing an audit covering the period of 01/01/2021 to present under FA25-4. "
+        },
+        {
+          "acesssionNumber": "20250411-3001",
+          "issuedDate": "04/11/2025",
+          "docketNumbers": [
+            "FA25-2-000"
+          ],
+          "description": "Letter informing Entergy Arkansas, LLC that the Commission is commencing an audit covering the period of 01/01/2022 to present under FA25-2. "
+        },
+        {
+          "acesssionNumber": "20250411-3000",
+          "issuedDate": "04/11/2025",
+          "docketNumbers": [
+            "FA25-5-000"
+          ],
+          "description": "Letter informing Northern Indiana Public Service Company LLC that the Commission is commencing an audit covering the period of 01/01/2022 to present under FA25-5. "
+        },
+        {
+          "acesssionNumber": "20250226-3015",
+          "issuedDate": "02/26/2025",
+          "docketNumbers": [
+            "FA25-1-000"
+          ],
+          "description": "Letter informing Texas Eastern Transmission, LP that the Commission is commencing an audit covering the period of 01/01/2022 to present under FA25-1. "
+        },
+        {
+          "acesssionNumber": "20250320-3084",
+          "issuedDate": "03/20/2025",
+          "docketNumbers": [
+            "FA25-3-000"
+          ],
+          "description": "Letter informing Niagara Mohawk Power Corporation that the Commission is commencing an audit covering the period of 01/01/2022 to present under FA25-3."
+        }
+      ]
+    },
+    {
+      "query": "FA26",
+      "total_hits": 7,
+      "returned_hits": 7,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260818-3033",
+          "issuedDate": "08/18/2026",
+          "docketNumbers": [
+            "FA26-7-000"
+          ],
+          "description": "Letter informing ITC Midwest LLC that the Commission is commencing an audit covering the period of 01/01/2023 to present under FA26-7. "
+        },
+        {
+          "acesssionNumber": "20260812-3004",
+          "issuedDate": "08/12/2026",
+          "docketNumbers": [
+            "FA26-6-000"
+          ],
+          "description": "Letter informing Northwest Pipeline LLC that the Commission is commencing an audit covering the period of 01/01/2024 to present under FA26-6."
+        },
+        {
+          "acesssionNumber": "20260427-3010",
+          "issuedDate": "04/27/2026",
+          "docketNumbers": [
+            "FA26-5-000"
+          ],
+          "description": "Letter informing Public Service Electric and Gas Company that the Commission is commencing an audit covering the period of 01/01/2023 to present under FA26-5. "
+        },
+        {
+          "acesssionNumber": "20260309-3023",
+          "issuedDate": "03/09/2026",
+          "docketNumbers": [
+            "FA26-1-000"
+          ],
+          "description": "Letter informing Central Hudson Gas & Electric Corporation that the Commission is commencing an audit covering the period of 01/01/2019 to present under FA26-1. "
+        },
+        {
+          "acesssionNumber": "20260414-3014",
+          "issuedDate": "04/14/2026",
+          "docketNumbers": [
+            "FA26-3-000"
+          ],
+          "description": "Letter informing The Empire District Electric Company that the Commission is commencing an audit covering the period of 01/01/2023 to present under FA26-3. "
+        },
+        {
+          "acesssionNumber": "20260401-3007",
+          "issuedDate": "04/01/2026",
+          "docketNumbers": [
+            "FA26-2-000"
+          ],
+          "description": "Letter informing Indianapolis Power & Light Company that the Commission is commencing an audit covering the period of 01/01/2023 to present under FA26-2."
+        },
+        {
+          "acesssionNumber": "20260414-3013",
+          "issuedDate": "04/14/2026",
+          "docketNumbers": [
+            "FA26-4-000"
+          ],
+          "description": "Letter informing Central Maine Power Company that the Commission is commencing an audit covering the period of 01/01/2023 to present under FA26-4."
+        }
+      ]
+    },
+    {
+      "query": "PA20",
+      "total_hits": 17,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250410-3014",
+          "issuedDate": "04/10/2025",
+          "docketNumbers": [
+            "PA21-2-000"
+          ],
+          "description": "Letter order to Midcontinent Independent System Operator, Inc. issuing the audit report covering the period of 01/01/2018 through 04/19/2024 under PA21-2. "
+        },
+        {
+          "acesssionNumber": "20231121-3001",
+          "issuedDate": "11/21/2023",
+          "docketNumbers": [
+            "PA20-7-000"
+          ],
+          "description": "Letter order to DTE Energy Company and its subsidiaries issuing audit report covering the period of January 1, 2017, through May 31, 2022 under PA20-7. "
+        },
+        {
+          "acesssionNumber": "20231116-3119",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "AD07-13-017"
+          ],
+          "description": "Office of Enforcement’s 2023 Staff Report, dated November 16, 2023 under AD07-13."
+        },
+        {
+          "acesssionNumber": "20221117-3129",
+          "issuedDate": "11/17/2022",
+          "docketNumbers": [
+            "AD07-13-016"
+          ],
+          "description": "Office of Enforcement’s 2022 Staff Report, dated November 17, 2022 under AD07-13. "
+        },
+        {
+          "acesssionNumber": "20220323-3002",
+          "issuedDate": "03/23/2022",
+          "docketNumbers": [
+            "PA20-1-000"
+          ],
+          "description": "Letter order to Arizona Public Service Company approving the audit report covering the period of January 1, 2016 through October 30, 2021 under PA20-1."
+        },
+        {
+          "acesssionNumber": "20210415-3109",
+          "issuedDate": "04/15/2021",
+          "docketNumbers": [
+            "EL21-18-000"
+          ],
+          "description": "Order Granting Formal Challenge and Complaint in Part and Establishing Hearing and Settlement Judge Procedures re Kansas Electric Power Cooperative, Inc. v. Evergy Kansas Central, Inc. under EL21-18."
+        },
+        {
+          "acesssionNumber": "20210414-3002",
+          "issuedDate": "04/14/2021",
+          "docketNumbers": [
+            "PA20-2-000"
+          ],
+          "description": "Letter order to Evergy, Inc. approving the final audit report covering the period of January 1, 2016 to December 31, 2020, under PA20-2."
+        },
+        {
+          "acesssionNumber": "20020515-2509",
+          "issuedDate": "05/15/2002",
+          "docketNumbers": [],
+          "description": "Attachment A to Testimony of Chairman Pat Wood, III, FERC before the Committee on Commerce, Science & Transportation Subcommittee on Consumers Affairs, Foreign Commerce & Tourism US Senate on 5/15/02 on  western electricity markets manipulation."
+        },
+        {
+          "acesssionNumber": "20020515-2506",
+          "issuedDate": "05/15/2002",
+          "docketNumbers": [],
+          "description": "Attachment A to theTestimony of Chairman Pat Wood, III, FERC before the Committee on Energy Policy and Natural Resources US Senate on 5/15/02 on allegations of manipulations in western electricity markets etc."
+        }
+      ]
+    },
+    {
+      "query": "PA21",
+      "total_hits": 17,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20020930-0497",
+          "issuedDate": "09/30/2002",
+          "docketNumbers": [
+            "CP01-415-000"
+          ],
+          "description": "CD containing Volume I of information for the Final Environmental Impact Statement for East Tennessee Patriot Project, dated September 2002 under CP01-415. Part 1 of 2. CD available in the PRR/RMC."
+        },
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20240327-3036",
+          "issuedDate": "03/27/2024",
+          "docketNumbers": [
+            "AC24-28-000"
+          ],
+          "description": "Letter order approving Gulf South Pipeline Company, LLC's 02/07/2024, as supplemented on 02/26/2024, and 03/15/3034, filing of a request for approval to use Account 429 to account for the inclusion of previously omitted balances etc. under AC24-28."
+        },
+        {
+          "acesssionNumber": "20231221-3083",
+          "issuedDate": "12/21/2023",
+          "docketNumbers": [
+            "AC24-11-000"
+          ],
+          "description": "Letter order approving Gulf South Pipeline Company, LLC's 10/31/2023, as supplemented on 12/14/2023, filing of a request of its current methodology of expense recognition for rent expense related to its operating leases etc. under AC24-11. "
+        },
+        {
+          "acesssionNumber": "20231116-3119",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "AD07-13-017"
+          ],
+          "description": "Office of Enforcement’s 2023 Staff Report, dated November 16, 2023 under AD07-13."
+        },
+        {
+          "acesssionNumber": "20250410-3014",
+          "issuedDate": "04/10/2025",
+          "docketNumbers": [
+            "PA21-2-000"
+          ],
+          "description": "Letter order to Midcontinent Independent System Operator, Inc. issuing the audit report covering the period of 01/01/2018 through 04/19/2024 under PA21-2. "
+        },
+        {
+          "acesssionNumber": "20221117-3129",
+          "issuedDate": "11/17/2022",
+          "docketNumbers": [
+            "AD07-13-016"
+          ],
+          "description": "Office of Enforcement’s 2022 Staff Report, dated November 17, 2022 under AD07-13. "
+        },
+        {
+          "acesssionNumber": "20230818-3022",
+          "issuedDate": "08/18/2023",
+          "docketNumbers": [
+            "PA21-5-000"
+          ],
+          "description": "Letter order to Puget Sound Energy Inc. issuing audit report covering the period of January 1, 2019 through December 31, 2022 under PA21-5."
+        },
+        {
+          "acesssionNumber": "20210506-3016",
+          "issuedDate": "05/06/2021",
+          "docketNumbers": [
+            "PA21-4-000"
+          ],
+          "description": "Letter informing Sunoco Pipeline L.P. that FERC will be commencing an audit covering the period of January 1, 2018 to the present under PA21-4. "
+        },
+        {
+          "acesssionNumber": "20220321-3011",
+          "issuedDate": "03/21/2022",
+          "docketNumbers": [
+            "PA21-1-000"
+          ],
+          "description": "Letter order to Tampa Electric Company approving the final audit report covering the period of January 1, 2018 through August 31, 2021 under PA21-1."
+        }
+      ]
+    },
+    {
+      "query": "PA22",
+      "total_hits": 10,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250908-3009",
+          "issuedDate": "09/08/2025",
+          "docketNumbers": [
+            "PA22-7-000"
+          ],
+          "description": "Letter order to Talen Energy Corporation issuing audit report covering the period of 01/01/2019 to 10/31/2024 under PA22-7."
+        },
+        {
+          "acesssionNumber": "20240815-3003",
+          "issuedDate": "08/15/2024",
+          "docketNumbers": [
+            "PA22-6-000"
+          ],
+          "description": "Letter order to Tri-State Generation and Transmission Association, Inc. approving the Audit Report covering the period January 1, 2020 to December 31, 2023 under PA22-6. "
+        },
+        {
+          "acesssionNumber": "20231116-3119",
+          "issuedDate": "11/16/2023",
+          "docketNumbers": [
+            "AD07-13-017"
+          ],
+          "description": "Office of Enforcement’s 2023 Staff Report, dated November 16, 2023 under AD07-13."
+        },
+        {
+          "acesssionNumber": "20220406-3002",
+          "issuedDate": "04/06/2022",
+          "docketNumbers": [
+            "PA22-6-000"
+          ],
+          "description": "Letter informing Tri-State Generation and Transmission Association Inc. that that the Commission is commencing an audit covering the period from January 1, 2019 to the present under PA22-6. "
+        },
+        {
+          "acesssionNumber": "20220429-3004",
+          "issuedDate": "04/29/2022",
+          "docketNumbers": [
+            "PA22-7-000"
+          ],
+          "description": "Letter informing Talen Energy Corporation that the Commission is commencing an audit covering the period of January 1, 2019 to the present under PA22-7."
+        },
+        {
+          "acesssionNumber": "20220322-3003",
+          "issuedDate": "03/22/2022",
+          "docketNumbers": [
+            "PA22-2-000"
+          ],
+          "description": "Letter informing PacifiCorp that FERC will be commencing an audit covering the period of January 1, 2018 to the present under PA22-2."
+        },
+        {
+          "acesssionNumber": "20240924-3073",
+          "issuedDate": "09/24/2024",
+          "docketNumbers": [
+            "CP24-453-000"
+          ],
+          "description": "Restoration Field Inspection Report for Columbia Gas Transmission, LLC's Line 641 Longwall Mining Mitigation Project, conducted on 08/21/2024 under CP24-453. "
+        },
+        {
+          "acesssionNumber": "20230629-3002",
+          "issuedDate": "06/29/2023",
+          "docketNumbers": [
+            "PA22-2-000"
+          ],
+          "description": "Letter order to PacifiCorp, approving the final audit report covering the period January 1, 2018, to October 31, 2022, under PA22-2."
+        },
+        {
+          "acesssionNumber": "19970203-0077",
+          "issuedDate": "01/29/1997",
+          "docketNumbers": [
+            "IS95-35-000"
+          ],
+          "description": "Transcript of 970129 hearing re Gaviota Terminal Co under IS95-35.Pp 821-995.Vol #11."
+        }
+      ]
+    },
+    {
+      "query": "PA23",
+      "total_hits": 19,
+      "returned_hits": 10,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260108-3014",
+          "issuedDate": "01/08/2026",
+          "docketNumbers": [
+            "PA23-11-000"
+          ],
+          "description": "Letter order to DC Energy Holdings, LLC issuing audit report covering the period of 01/01/2020 through 01/31/2025 under PA23-11. "
+        },
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250925-3005",
+          "issuedDate": "09/25/2025",
+          "docketNumbers": [
+            "FA23-9-000"
+          ],
+          "description": "Letter order to Medallion Pipeline Company, LLC issuing audit report covering the period of 01/01/2020 to 12/31/2023 under FA23-9. "
+        },
+        {
+          "acesssionNumber": "20250616-3008",
+          "issuedDate": "06/16/2025",
+          "docketNumbers": [
+            "PA23-10-000"
+          ],
+          "description": "Letter order to Portland General Electric Company issuing audit report covering the period of 01/01/2021 through 10/31/2024 under PA23-10. "
+        },
+        {
+          "acesssionNumber": "20240821-3003",
+          "issuedDate": "08/21/2024",
+          "docketNumbers": [
+            "PA23-2-000"
+          ],
+          "description": "Letter order to NextEra Energy Transmission, LLC's et al. approving the Final Audit Report covering the period of 01/01/2018 through 12/31/2023 under PA23-2."
+        },
+        {
+          "acesssionNumber": "20240822-3000",
+          "issuedDate": "08/22/2024",
+          "docketNumbers": [
+            "PA23-3-000"
+          ],
+          "description": "Letter order to Black Hills Corporation's et al. approving the Final Audit Report covering the period of 01/01/2020 through 11/30/2023 under PA23-3."
+        },
+        {
+          "acesssionNumber": "20240530-3024",
+          "issuedDate": "05/30/2024",
+          "docketNumbers": [
+            "PR24-67-000"
+          ],
+          "description": "Letter order accepting NET Mexico Pipeline Partners, LLC's 04/30/2024 filing of a tariff record in compliance with Recommendation Nos. 14, 17, and 20 of the Office of Enforcement, Division of Audits and Accounting, Audit Report etc. under PR24-67. "
+        },
+        {
+          "acesssionNumber": "20240307-3007",
+          "issuedDate": "03/07/2024",
+          "docketNumbers": [
+            "PA23-1-000"
+          ],
+          "description": "Letter order to NET Mexico Pipeline Partners, LLC, approving the Final Audit Report covering the period January 1, 2020 to December 31, 2022, under PA23-1. "
+        },
+        {
+          "acesssionNumber": "20230518-3015",
+          "issuedDate": "05/18/2023",
+          "docketNumbers": [
+            "PA23-10-000"
+          ],
+          "description": "Letter informing Portland General Electric Company that the Commission is commencing an audit covering the period of January 1, 2021 to the present under PA23-10."
+        },
+        {
+          "acesssionNumber": "20230308-3009",
+          "issuedDate": "03/08/2023",
+          "docketNumbers": [
+            "PA23-3-000"
+          ],
+          "description": "Letter informing Black Hills Corporation that the Commission is commencing an audit covering the period of January 1,2020 to the present under PA23-3."
+        }
+      ]
+    },
+    {
+      "query": "PA24",
+      "total_hits": 8,
+      "returned_hits": 8,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260721-3030",
+          "issuedDate": "07/21/2026",
+          "docketNumbers": [
+            "PA24-7-000"
+          ],
+          "description": "Letter order approving Houston Pipe Line Company LP's Final Audit Report covering the period of 01/01/2021 to 12/31/2024, under PA24-7. "
+        },
+        {
+          "acesssionNumber": "20251120-3112",
+          "issuedDate": "11/20/2025",
+          "docketNumbers": [
+            "AD07-13-019"
+          ],
+          "description": "Office of Enforcement’s 2025 Staff Report, dated November 20, 2025 under AD07-13.\t"
+        },
+        {
+          "acesssionNumber": "20250903-3001",
+          "issuedDate": "09/03/2025",
+          "docketNumbers": [
+            "PA24-5-000"
+          ],
+          "description": "Letter order to Alabama Power Company issuing audit report covering the period of 01/01/2019 through 12/31/2023 under PA24-5. "
+        },
+        {
+          "acesssionNumber": "20020930-0497",
+          "issuedDate": "09/30/2002",
+          "docketNumbers": [
+            "CP01-415-000"
+          ],
+          "description": "CD containing Volume I of information for the Final Environmental Impact Statement for East Tennessee Patriot Project, dated September 2002 under CP01-415. Part 1 of 2. CD available in the PRR/RMC."
+        },
+        {
+          "acesssionNumber": "20240905-3012",
+          "issuedDate": "09/05/2024",
+          "docketNumbers": [
+            "PA24-6-000"
+          ],
+          "description": "Letter informing ArcLight Capital Partners, LLC that the Commission is commencing an audit covering the period of 01/01/2022 to present under PA24-6. "
+        },
+        {
+          "acesssionNumber": "20240712-3004",
+          "issuedDate": "07/12/2024",
+          "docketNumbers": [
+            "PA24-5-000"
+          ],
+          "description": "Letter informing Alabama Power Company that the Commission is commencing an audit covering the period of 01/01/2019 to present under PA24-5. "
+        },
+        {
+          "acesssionNumber": "20240926-3004",
+          "issuedDate": "09/26/2024",
+          "docketNumbers": [
+            "PA24-8-000"
+          ],
+          "description": "Letter informing Southwest Power Pool, Inc. that the Commission is commencing an audit covering the period of 01/01/2021 to present under PA24-8. "
+        },
+        {
+          "acesssionNumber": "20240821-3004",
+          "issuedDate": "08/21/2024",
+          "docketNumbers": [
+            "PA24-7-000"
+          ],
+          "description": "Letter informing Houston Pipe Line Company LP that the Commission is commencing an audit covering the period of 01/01/2021 to present under PA24-7. "
+        }
+      ]
+    },
+    {
+      "query": "PA25",
+      "total_hits": 1,
+      "returned_hits": 1,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20250724-3005",
+          "issuedDate": "07/24/2025",
+          "docketNumbers": [
+            "PA25-5-000"
+          ],
+          "description": "Letter informing Idaho Power Company that the Commission is commencing an audit covering the period of 01/01/2022 to present under PA25-5."
+        }
+      ]
+    },
+    {
+      "query": "PA26",
+      "total_hits": 2,
+      "returned_hits": 2,
+      "error": null,
+      "hits": [
+        {
+          "acesssionNumber": "20260910-3020",
+          "issuedDate": "09/10/2026",
+          "docketNumbers": [
+            "PA26-6-000"
+          ],
+          "description": "Letter informing Constellation Energy Corporation et al. that the Commission is commencing an audit covering the period of 01/01/2023 to present under PA26-6. "
+        },
+        {
+          "acesssionNumber": "20260616-3009",
+          "issuedDate": "06/16/2026",
+          "docketNumbers": [
+            "PA26-5-000"
+          ],
+          "description": "Letter informing Vision Ridge Partners, LLC that the Commission is commencing an audit covering the period of 01/01/2023 to present under PA26-5."
+        }
+      ]
+    }
+  ],
+  "browser_index_check": {
+    "url": "https://www.ferc.gov/audits",
+    "page_last_updated": "2026-08-13",
+    "method": "Real browser; 2026 tab and linked accession DOM inspected",
+    "accessions_2026": [
+      "20260108-3014",
+      "20260319-3008",
+      "20260507-3001",
+      "20260806-3006",
+      "20260721-3030"
+    ],
+    "note": "Atlantic City Electric and Houston Pipe Line newly present relative to held corpus. Niagara Mohawk is newer than index update and was found via eLibrary."
+  },
+  "state_spot_checks": [
+    {
+      "id": "2024-07-11_ppl-electric-utilities_pa-mo-audit",
+      "url": "https://www.puc.pa.gov/pcdocs/1837310.pdf",
+      "bytes": 3962976,
+      "oversize": false,
+      "http_pdf_magic": true,
+      "expected_pages": 93,
+      "pages": 93,
+      "caption": "\nPPL ELECTRIC UTILITIES \nCORPORATION \nMANAGEMENT AND OPERATIONS AUDIT \nPennsylvania Public Utility Commission \nBureau of Audits \nIssued June 2024 \nDocket No. D-2023-3039488\n\n \n- i - \nPPL ELECTRIC UTILITIES CORPORATION \nMANAGEMENT AND OPERATIONS AUDIT \n \nTABLE OF CONTENTS \n \nChapter \n \n \nPage \n \n \n \nI. \nINTRODUCTION \n1 \n \n \n \n \nA.  Objectives and Scope \n1 \n \nB.  Audit Approach \n2 \n \nC.  Functional Area Ratings \n3 \n \nD.  Benefits \n4 \n \nE.  Recommendation Summary \n4 \n \n \n \nII. \nBACKGROUND  \n8 \n \n \n \nIII. \nEXECUTIVE MANAGEMENT AND ORGANIZATIONAL \nSTRUCTURE \n12 \n \n \n \nIV. \nCORPORATE GOVERNANCE \n17 \n \n \n \nV. \nCOST ALLOCATIONS AND AFFILIATED INTERESTS \n22 \n \n \n \nVI. \nFINANCIAL MANAGEMENT  \n30 \n \n \n \nVII. \nELECTRIC OPERATIONS \n37 \n \n \n \nVIII. \nEMERGENCY PREPAREDNESS \n48 \n \n \n \nIX. \nPURCHASING AND MATERIALS MANAGEMENT \n52 \n \n \n \nX. \nCUSTOMER SERVICE \n60 \n \n \n \nXI. \nINFORMATION TECHNOLOGY \n67 \n \n \n \nXII. \nHUMAN RESOURCES AND DIVERSITY \n76 \n \n \n \nXIII. \nACKNOWLEDGEMENTS \n79 \n \n \n \nXIV. \nAPPENDICES \n80 \n \n \n \n \n \n",
+      "sha256": "698c39068442f2b1765b790b116fffceb5366fe01015272564d18755a3908f19",
+      "seconds": 0.3
+    },
+    {
+      "id": "2025-02-04_nyseg-rge_ny-23-m-0103-mo-audit-final-report",
+      "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B3097E996-0000-C45D-8AB2-101DC6B879E5%7D",
+      "bytes": 7622418,
+      "oversize": false,
+      "http_pdf_magic": true,
+      "expected_pages": 439,
+      "pages": 439,
+      "caption": " \nA COMPREHENSIVE MANAGEMENT AND \nOPERATIONS AUDIT OF NEW YORK \nSTATE ELECTRIC & GAS CORPORATION \nAND ROCHESTER GAS & ELECTRIC \nCORPORATION \n \nCASE 23-M-0103 \n \n \n \nFINAL REPORT \n \n \nSubmitted to the: \n \nNew York Public Service Commission \n \nThree Empire State Plaza \nAlbany, NY 12223-1350 \n \n \n \nFEBRUARY 4, 2025 \n \n \n \n \n \n \n \n \nNORTHSTAR CONSULTING GROUP \nMANAGEMENT CONSULTANTS \n\n  \nTABLE OF CONTENTS \nNORTHSTAR \ni \nTABLE OF CONTENTS \n \n \nI. \nEXECUTIVE SUMMARY \n \nA.  BACKGROUND ..............................................................................................I-1 \n \nB.  KEY AUDIT FINDINGS ...................................................................................I-3 \n \nC.  SUMMARY OF RECOMMENDATIONS ..............................................................I-9 \nII. \nAUDIT BACKGROUND  \n \nA.  OVERVIEW ....................................................................................................II-1 \n \nB.  AUDIT SCOPE ................................................................................................II-4 \n \nC.  APPROACH TO THE AUDIT .............................................................................II-4 \n \nD.  ORGANIZATION OF THE REPORT ...................................................................II-7 \nIII. \nGOVERNANCE AND MANAGEMENT \nA.  BACKGROUND ..............................................................................................III-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................III-8 \nC.  FINDINGS AND CONCLUSIONS .......................................................................III-8 \nD.  RECOMMENDATIONS ....................................................................................III-28 \nIV. \nBUDGET AND FINANCE \nA.  BACKGROUND ..............................................................................................IV-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................IV-3 \nC.  FINDINGS AND CONCLUSIONS .......................................................................IV-3 \nD.  RECOMMENDATIONS ....................................................................................IV-12 \nV. \nELECTRIC OPERATIONS \nA.  BACKGROUND ..............................................................................................V-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................V-10 \nC.  FINDINGS AND CONCLUSIONS .......................................................................V-12 \nD.  RECOMMENDATIONS ....................................................................................V-28 \nVI. \nGAS OPERATIONS \nA.  BACKGROUND ..............................................................................................VI-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................VI-7 \nC.  FINDINGS AND CONCLUSIONS .......................................................................VI-7 \nD.  RECOMMENDATIONS ....................................................................................VI-38 \n\n  \nTABLE OF CONTENTS \nNORTHSTAR \nii \n \n \nVII. PROJECT MANAGEMENT  \nA.  BACKGROUND ..............................................................................................VII-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................VII-4 \nC.  FINDINGS AND CONCLUSIONS .......................................................................VII-5 \nD.  RECOMMENDATIONS ....................................................................................VII-38 \nVIII. WORK MANAGEMENT \nA.  BACKGROUND ..............................................................................................VIII-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................VIII-3 \nC.  FINDINGS AND CONCLUSIONS .......................................................................VIII-4 \nD.  RECOMMENDATIONS ....................................................................................VIII-15 \nIX. \nCUSTOMER OPERATIONS  \nA.  BACKGROUND ..............................................................................................IX-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................IX-12 \nC.  FINDINGS AND CONCLUSIONS .......................................................................IX-13 \nD.  RECOMMENDATIONS ....................................................................................IX-45 \nX. \nPHYSICAL AND CYBERSECURITY \nA.  BACKGROUND ..............................................................................................X-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................X-7 \nC.  FINDINGS AND CONCLUSIONS .......................................................................X-7 \nD.  RECOMMENDATIONS ....................................................................................X-27 \nXI. \nINFORMATION SYSTEMS \nA.  BACKGROUND ..............................................................................................XI-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................XI-9 \nC.  FINDINGS AND CONCLUSIONS .......................................................................XI-10 \nD.  RECOMMENDATIONS ....................................................................................XI-32 \nXII. PROCUREMENT \nA.  BACKGROUND ..............................................................................................XII-1 \nB.  AUDIT SCOPE ITEMS .....................................................................................XII-3 \nC.  FINDINGS AND CONCLUSIONS .......................................................................XII-3 \nD.  RECOMMENDATIONS ....................................................................................XII-10 \n",
+      "sha256": "b5a823dfe77b4a5c12b6243aa2c011634d9a9a7b8215725d4de2b5c2b8070dc3",
+      "seconds": 5.0
+    }
+  ]
+}

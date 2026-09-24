@@ -1473,20 +1473,23 @@ function revealOpenReport() {
   while (_render.shown < _render.visible.length && !document.getElementById(cardDomId(id))) appendPage();
   const card = document.getElementById(cardDomId(id));
   if (!card) return;
-  card.open = true; // fires the toggle handler → lazy-loads the thread
+  card.open = true;
+  // Start rendering here: the queued toggle event must not race the link scroll.
+  const threadReady = fillThread(card, _render.visible.find((r) => r.id === id));
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const behavior = reduce ? "auto" : "smooth";
   card.scrollIntoView({ behavior, block: "start" });
 
   // A finding target needs the thread to exist first, and the thread is filled
   // asynchronously (the detail file may still be in flight). Wait for the fetch
-  // this same toggle kicked off rather than guessing at a timeout.
+  // and DOM insertion rather than only waiting for the network response.
   if (!state.finding) return;
   const target = findingDomId(id, state.finding);
-  ensureDetails(state.collection)
+  threadReady
     .then(() => {
+      if (state.open !== id || !card.isConnected) return;
       const node = document.getElementById(target);
-      if (node) node.scrollIntoView({ behavior, block: "center" });
+      if (node) (node.querySelector(".finding-head") || node).scrollIntoView({ behavior, block: "center" });
     })
     .catch((e) => console.error(e)); // the report is open; only the scroll is lost
 }

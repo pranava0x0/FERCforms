@@ -6,7 +6,7 @@ there regardless of whether it works. See conftest.
 """
 from __future__ import annotations
 
-FERC_TOTAL = 123  # reports on the default tab; also asserted against the UI's own count
+FERC_TOTAL = 126  # reports on the default tab; also asserted against the UI's own count
 
 
 def _cards(site_page):

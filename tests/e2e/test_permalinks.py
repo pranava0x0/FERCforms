@@ -94,7 +94,11 @@ def test_deep_link_pages_expands_and_scrolls_to_a_report(page_factory, site_page
 
 
 def test_findings_carry_stable_anchors(page_factory, site_page):
-    rid = _deep_id(site_page)
+    # Corpus refreshes move clean audits between positions; select a deep report
+    # that actually has findings before asserting finding anchors exist.
+    rid = site_page.evaluate(
+        "state.reports.filter(r => r.collection === 'ferc_audit' && r.finding_count > 0)[60].id"
+    )
     p = page_factory(hash_=f"#/ferc_audit?open={rid}")
     p.wait_for_selector(f"#r-{rid} .thread", timeout=5000)
     ids = p.evaluate(f"[...document.querySelectorAll('#r-{rid} .finding[id]')].map(n=>n.id)")
@@ -118,7 +122,8 @@ def test_a_saved_search_permalink_restores_its_results(page_factory):
     assert n > 0, "a shared search permalink restored an empty stream"
 
 
-def test_a_finding_permalink_opens_and_scrolls_to_that_finding(clipboard_page, page_factory):
+@pytest.mark.parametrize("width", [1280, 375])
+def test_a_finding_permalink_opens_and_scrolls_to_that_finding(clipboard_page, page_factory, width):
     """REGRESSION (2026-07-16, Codex review). The `f-<report>-<n>` ids shipped as
     dead weight: this app owns the fragment for routing, so navigating to a bare
     "#f-…" anchor replaced the route and decoded to the default view — findings
@@ -136,14 +141,15 @@ def test_a_finding_permalink_opens_and_scrolls_to_that_finding(clipboard_page, p
     assert f"open={rid}" in link and "finding=3" in link
     assert "#f-" not in link, "a bare fragment anchor would collide with the router"
 
-    p = page_factory(hash_=link.split("#", 1)[1] and "#" + link.split("#", 1)[1])
+    p = page_factory(width=width, height=812 if width == 375 else 900,
+                     hash_=link.split("#", 1)[1] and "#" + link.split("#", 1)[1])
     p.wait_for_timeout(1600)
     assert p.evaluate(f"!!document.getElementById('r-{rid}')?.open") is True
     in_view = p.evaluate(
         f"""(() => {{ const n = document.getElementById('f-{rid}-3'); if (!n) return false;
-             const r = n.getBoundingClientRect(); return r.top > -50 && r.top < 900; }})()"""
+             const r = n.getBoundingClientRect(); return r.top >= 0 && r.top < innerHeight; }})()"""
     )
-    assert in_view, "followed a finding permalink but that finding wasn't scrolled into view"
+    assert in_view, str(p.evaluate(f"document.getElementById('f-{rid}-3').getBoundingClientRect().toJSON()"))
 
 
 def test_a_finding_index_without_an_open_report_is_dropped(page_factory):
@@ -262,7 +268,7 @@ def test_a_stale_open_id_does_not_hang_or_throw(page_factory):
     p = page_factory(hash_="#/ferc_audit?open=not-a-real-report-id")
     p.wait_for_timeout(600)
     assert p.locator("#stream .card").count() == 20  # normal first page
-    assert p.locator("#result-count").inner_text().startswith("123 report")
+    assert p.locator("#result-count").inner_text().startswith("126 report")
 
 
 def test_copy_citation_includes_the_permalink(clipboard_page):

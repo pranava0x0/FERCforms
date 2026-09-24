@@ -1,0 +1,155 @@
+{
+  "collection": "ferc_audit",
+  "jurisdiction": "FERC",
+  "source": "FERC Office of Enforcement and Regulatory Accounting, Division of Audits and Accounting",
+  "doc_type": null,
+  "id": "2026-07-21_houston-pipe-line-company-lp_pa24-7",
+  "company": "Houston Pipe Line Company LP",
+  "company_raw": "Houston Pipe Line Company LP",
+  "docket": "PA24-7",
+  "docket_full": "PA24-7-000",
+  "issued_date": "2026-07-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260721-3030",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260721-3030",
+  "captured_at": "2026-09-24",
+  "source_note": "FERC eLibrary Issuance search, captured 2026-09-24. Letter order approving Houston Pipe Line Company LP's Final Audit Report covering the period of 01/01/2021 to 12/31/2024, under PA24-7. Accession 20260721-3030; PDF caption verified before ingest. Executive Summary quotes curated from bounded PDF page regions; whitespace reflow only, running headers and unrelated footnotes excluded. Counts checked against the signed transmittal. Page map and PDF SHA-256: data/sources/refresh-verification-20260924.json. Automated parser output was not accepted unchanged.",
+  "archived_via": null,
+  "page_count": 53,
+  "scanned_pages": [],
+  "ocr_used": false,
+  "audit_period": "January 1, 2021 to December 31, 2024",
+  "industry": "gas",
+  "audit_type": "non-financial",
+  "functions": [],
+  "forms": [
+    "549D"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "index": 1,
+      "title": "Transportation Fuel Retention Percentage",
+      "summary": "HPL did not uniformly charge shippers the 1.3% fixed fuel retention percentage specified in its SOC for the transportation of gas on its pipeline system. HPL provided some shippers a discounted fuel retention percentage with some discounts as low as 0.00%. HPL also executed a transportation service agreement with a shipper that contained a fixed fuel retention percentage of 1.5%. HPL’s SOC provides no flexibility in the terms and conditions for assessing a fuel retention percentage other than 1.3%. It is important for HPL to only charge the prescribed fuel retention percentage to ensure similarly situated shippers are treated comparably and not in an unduly discriminatory manner, and to ensure the company adheres to the statement of rates in its SOC.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 1,
+          "text": "Revise and implement policies and procedures to ensure that all HPL’s transportation service agreements align with the fuel retention percentage specified in HPL’s SOC’s Statement of Rates.",
+          "source_page": 3
+        },
+        {
+          "number": 2,
+          "text": "Provide training to relevant staff on policies and procedures implemented in response to Recommendation 1, and repeat such trainings as needed.",
+          "source_page": 3
+        },
+        {
+          "number": 3,
+          "text": "If HPL chooses to continue charging fuel retention percentages that are different from the fixed 1.3% retention percentage in the SOC, file revisions to the SOC with the Commission within 60 days from the issuance of this audit report. Revisions made to the SOC’s Statement of Rates and terms and conditions of service must clearly state HPL’s fuel retention practice and fuel retention percentage charged to shippers. Additionally, revise transportation service agreements, as necessary, to ensure the fuel retention percentage(s) are in line with the SOC’s Statement of Rates. Provide a copy of the revised transportation service agreements to audit staff for review within 60 days of the issuance of the audit report.",
+          "source_page": 3
+        },
+        {
+          "number": 4,
+          "text": "If HPL chooses not to amend its SOC, revise those transportation service agreements to align with the fuel retention percentage of 1.3% in the SOC’s Statement of Rates, as necessary. Provide a copy of the revised transportation service agreements to audit staff for review within 60 days of the issuance of the audit report.",
+          "source_page": 4
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 2,
+      "title": "FERC Form No. 549D Reporting",
+      "summary": "HPL did not report complete and accurate information in its FERC Form No. 549D filings. HPL also did not timely submit its FERC Form No. 549Ds for some quarters. These deficiencies reduced the completeness, accuracy, and usefulness of the information reported in HPL’s FERC Form No. 549D filings.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 5,
+          "text": "Revise and implement policies and procedures to ensure complete and accurate information is reported in the FERC Form No. 549D in accordance with the instructions of the form and filed in a timely manner.",
+          "source_page": 4
+        },
+        {
+          "number": 6,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 5, and repeat such training as necessary.",
+          "source_page": 4
+        },
+        {
+          "number": 7,
+          "text": "Submit corrected FERC Form No. 549Ds for the audit period to audit staff for review within 60 days of the issuance of this report.",
+          "source_page": 4
+        },
+        {
+          "number": 8,
+          "text": "Refile HPL’s FERC Form No. 549Ds for the audit period with accurate and complete information in accordance with audit staff’s review referenced in the preceding recommendation. Include in the resubmission on Field 3a an explanation for the resubmission in accordance with the FERC Form No. 549D instructions.",
+          "source_page": 4
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 3,
+      "title": "Section 311 Construction Reporting",
+      "summary": "HPL did not file an annual report detailing information about the construction of facilities used for section 311 transportation as required by the Commission’s regulations. This inhibited the Commission’s ability to evaluate HPL’s construction activities associated with these facilities.",
+      "is_other_matter": false,
+      "recommendations": [
+        {
+          "number": 9,
+          "text": "Revise and implement policies and procedures to ensure that HPL reports on or before May 1 of each year, all section 311 facilities constructed and placed into service or facilities abandoned and removed from service in accordance with the Commission’s requirements in 18 C.F.R. § 284.11.",
+          "source_page": 4
+        },
+        {
+          "number": 10,
+          "text": "Provide training to relevant staff on the policies and procedures implemented in response to Recommendation 9, and repeat such trainings as needed.",
+          "source_page": 4
+        },
+        {
+          "number": 11,
+          "text": "File the construction report for calendar year 2022 as required by Commission requirements in 18 C.F.R. § 284.11.",
+          "source_page": 5
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    },
+    {
+      "index": 4,
+      "title": "In-Kind Transportation Fees",
+      "summary": "HPL’s transportation SOC provides shippers with the option to pay a portion of the transportation fees with in-kind gas by converting such gas into a transportation rate using a published price index. However, HPL’s SOC does not include the specific price index location, nor the index price to be used to value the gas. HPL’s SOC also does not contain a provision that allows for refunds to shippers if the price of the in-kind gas exceeds the maximum rate for transportation. Including such information in HPL’s SOC will provide greater transparency on HPL’s transportation rate and better align its in-kind gas practice with the Commission’s Price Index Policy.",
+      "is_other_matter": true,
+      "recommendations": [
+        {
+          "number": 12,
+          "text": "Implementing policies and procedures to continuously monitor the in-kind transportation fees charged by HPL to ensure its rates for transportation service do not exceed the maximum allowable rate specified in HPL’s transportation SOC.",
+          "source_page": 5
+        },
+        {
+          "number": 13,
+          "text": "Providing training to relevant staff on policies and procedures implemented in response to Recommendation 12, and repeating such trainings as needed.",
+          "source_page": 5
+        },
+        {
+          "number": 14,
+          "text": "Revising Section 8.1 of the SOC to state that in no event shall the total of the cash received and the in-kind transportation fee go above the maximum rate in the SOC.",
+          "source_page": 5
+        },
+        {
+          "number": 15,
+          "text": "Revising the SOC to include the specific index location (e.g., Houston Ship Channel) and price (e.g., daily, weekly, monthly, first-of-the-month) that HPL uses to value the in-kind gas received from shippers.",
+          "source_page": 5
+        },
+        {
+          "number": 16,
+          "text": "Adding language to Exhibit D, Statement of Rates, that states that the transporter may charge an in-kind transportation fee as detailed in Section 8.1.",
+          "source_page": 5
+        }
+      ],
+      "amount_usd": null,
+      "amount_usd_quote": null,
+      "amount_usd_page": null
+    }
+  ],
+  "structured": true
+}

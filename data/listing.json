@@ -1597,5 +1597,44 @@
   "captured_at": "2026-06-19",
   "source_note": "FERC audit report (Letter order issuing Audit Report), FA24-3; accession resolved via eLibrary AdvancedSearch API (searchText=FA24-3) during the 2026-06-19 corpus refresh (post-dates the 2026-02-03 /audits snapshot).",
   "archived_via": null
+ },
+ {
+  "id": "2026-09-18_niagara-mohawk-power-corporation_fa25-3",
+  "company": "Niagara Mohawk Power Corporation",
+  "company_raw": "Niagara Mohawk Power Corporation",
+  "docket": "FA25-3",
+  "accession_number": "20260918-3038",
+  "issued_date": "2026-09-18",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260918-3038",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260918-3038",
+  "captured_at": "2026-09-24",
+  "source_note": "FERC eLibrary Issuance search, captured 2026-09-24. Letter order to Niagara Mohawk Power Corporation issuing audit report covering the period of 01/01/2022 through 12/31/2025 under FA25-3. Accession 20260918-3038; PDF caption verified before ingest. Executive Summary quotes curated from bounded PDF page regions; whitespace reflow only, running headers and unrelated footnotes excluded. Counts checked against the signed transmittal. Page map and PDF SHA-256: data/sources/refresh-verification-20260924.json. Automated parser output was not accepted unchanged.",
+  "archived_via": null
+ },
+ {
+  "id": "2026-08-06_atlantic-city-electric-company_fa25-4",
+  "company": "Atlantic City Electric Company",
+  "company_raw": "Atlantic City Electric Company",
+  "docket": "FA25-4",
+  "accession_number": "20260806-3006",
+  "issued_date": "2026-08-06",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260806-3006",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260806-3006",
+  "captured_at": "2026-09-24",
+  "source_note": "FERC eLibrary Issuance search, captured 2026-09-24. Letter order to Atlantic City Electric Company issuing audit report covering the period of 01/01/2021 through 12/31/2025 under FA25-4. Accession 20260806-3006; PDF caption verified before ingest. Executive Summary quotes curated from bounded PDF page regions; whitespace reflow only, running headers and unrelated footnotes excluded. Counts checked against the signed transmittal. Page map and PDF SHA-256: data/sources/refresh-verification-20260924.json. Automated parser output was not accepted unchanged.",
+  "archived_via": null
+ },
+ {
+  "id": "2026-07-21_houston-pipe-line-company-lp_pa24-7",
+  "company": "Houston Pipe Line Company LP",
+  "company_raw": "Houston Pipe Line Company LP",
+  "docket": "PA24-7",
+  "accession_number": "20260721-3030",
+  "issued_date": "2026-07-21",
+  "source_page_url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260721-3030",
+  "pdf_download_url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260721-3030",
+  "captured_at": "2026-09-24",
+  "source_note": "FERC eLibrary Issuance search, captured 2026-09-24. Letter order approving Houston Pipe Line Company LP's Final Audit Report covering the period of 01/01/2021 to 12/31/2024, under PA24-7. Accession 20260721-3030; PDF caption verified before ingest. Executive Summary quotes curated from bounded PDF page regions; whitespace reflow only, running headers and unrelated footnotes excluded. Counts checked against the signed transmittal. Page map and PDF SHA-256: data/sources/refresh-verification-20260924.json. Automated parser output was not accepted unchanged.",
+  "archived_via": null
  }
 ]

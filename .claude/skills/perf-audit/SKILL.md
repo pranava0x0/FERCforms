@@ -16,19 +16,19 @@ confirm in the browser before "fixing".
 
 ## 1. Request count + transfer (gzip) size
 
-GitHub Pages serves gzip/brotli, so **wire size = gzip size**, not raw bytes. Measure both:
+Compressed file sizes estimate transfer cost; actual wire size depends on negotiated compression and caching. Measure both:
 
 ```bash
 cd "$(git rev-parse --show-toplevel)"
 for f in docs/index.html docs/css/styles.css docs/js/app.js \
-         docs/data/reports.json docs/data/patterns.json \
+         docs/data/reports_index.json docs/data/findings_ferc_audit.json docs/data/patterns.json \
          docs/data/patterns_by_collection.json docs/data/meta.json; do
   raw=$(wc -c < "$f"); gz=$(gzip -c "$f" | wc -c)
   printf "%-32s raw=%9d  gzip=%9d\n" "$(basename "$f")" "$raw" "$gz"
 done
 ```
 
-Then count what `index.html` actually pulls (should be **no third-party / font / framework** requests):
+Then inspect first-party and external requests separately. Google Analytics is present as of September 24; do not describe the site as third-party-free:
 
 ```bash
 grep -nE "<link|<script|fetch\(|preload" docs/index.html
@@ -43,17 +43,32 @@ then in the page run Resource Timing — it records every real network fetch:
 ```js
 (() => {
   const r = performance.getEntriesByType('resource');
-  const rep = r.filter(x => x.name.includes('reports.json'));
-  return { totalEntries: r.length, reportsJsonFetchCount: rep.length,
-           reportsJson: rep.map(x => ({initiator:x.initiatorType, transfer:x.transferSize})),
+  const rep = r.filter(x => x.name.includes('reports_index.json'));
+  return { totalEntries: r.length, reportsIndexFetchCount: rep.length,
+           reportsIndex: rep.map(x => ({initiator:x.initiatorType, transfer:x.transferSize})),
            names: r.map(x => x.name.split('/').pop()) };
 })()
 ```
 
-`reportsJsonFetchCount` **must be 1**. Two entries (`initiatorType` `link` *and* `fetch`) = the preload
+`reportsIndexFetchCount` **must be 1**. Two entries (`initiatorType` `link` *and* `fetch`) = the preload
 is being discarded and re-downloaded — a real regression to fix.
 
-## 3. Recorded baseline (2026-06-02)
+## 3. Current baseline (2026-09-24)
+
+| Metric | Value |
+| --- | --- |
+| Corpus | 444 records |
+| Local Resource Timing before refresh | 11 entries, including Google Analytics and active-tab detail prefetch |
+| First-party gzip estimate after refresh | About 91 KB before details; 258 KB with active FERC details |
+| Index | About 25 KB gzip; fetched once |
+| Full `reports.json` runtime fetches | Zero |
+| Details | Per-collection file, idle-prefetched; not solely expansion-triggered |
+
+Separate external analytics transfer from first-party estimates. Verify no duplicate index/detail
+requests and no full-corpus download. Compare against a baseline with the same loaded collections.
+Source measurements: `docs/stocktake-2026-09-24.json`; UAT summary: `uat.md`.
+
+### Historical baseline (2026-06-02; superseded)
 
 | Metric | Value |
 | --- | --- |
@@ -63,14 +78,14 @@ is being discarded and re-downloaded — a real regression to fix.
 | `app.js` / `styles.css` | 29 KB→8.8 KB / 21 KB→5.2 KB gzip |
 
 Flag a regression if: a new third-party/font request appears, total gzip jumps materially over baseline
-without a data/feature reason, or `reportsJsonFetchCount > 1`.
+without a data/feature reason, or `reportsIndexFetchCount > 1`.
 
-## 4. Known non-bug — do NOT "fix" it
+## 4. Historical preload observation — verify current index behavior
 
-`index.html` preloads `data/reports.json` with `crossorigin="anonymous"`, while `app.js` fetches it
+The June `index.html` preloaded `data/reports.json` with `crossorigin="anonymous"`, while `app.js` fetches it
 same-origin without CORS. On a static read this looks like a CORS mismatch that should double-fetch.
 **It does not** — verified via Resource Timing (one fetch, `initiatorType: "link"`, reused by the
-`fetch()`; no "preloaded but not used" warning). Same-origin in dev and on Pages. Leave the
+`fetch()`; no "preloaded but not used" warning). Current preload targets `reports_index.json`; re-check Resource Timing rather than assuming the old observation still holds. Leave the
 `crossorigin` attribute alone unless Resource Timing actually shows two fetches.
 
 ## 5. Close the loop

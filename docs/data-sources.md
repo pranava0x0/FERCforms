@@ -7,6 +7,24 @@ and the per-source backlog in [BACKLOG.md](../BACKLOG.md). To actually run a ref
 
 ---
 
+## Latest checked refresh — September 24, 2026
+
+Three FERC audits added: FA25-3 (Niagara Mohawk), FA25-4 (Atlantic City Electric), PA24-7
+(Houston Pipe Line). The real-browser `/audits` 2026 index listed the latter two; Niagara was
+found through eLibrary. Fourteen FA20–26/PA20–26 Issuance-prefix searches returned at most ten
+hits each; this is not exhaustive pagination. Preserve this limit when describing freshness.
+
+One CPUC document added: SCE quarterly procurement AUP, issued March 20, 2026, covering Q3
+2025, advice letter AL 5660-E. Metadata-only pending a validated UAB format parser. Existing
+PA PPL and NY NYSEG/RG&E source PDFs also passed fresh caption/docket/page-count checks.
+
+[Discovery receipts](../data/sources/refresh-discovery-20260924.json) and
+[verification receipts](../data/sources/refresh-verification-20260924.json) retain URLs, PDF
+hashes, source counts and quote page ranges. [Stocktake](stocktake-2026-09-24.md) reviews every
+scraper path. Legacy broad crawlers are discovery-only candidates; do not publish their output.
+No 50-state live sweep was performed. Earlier claims of exhausted seams below are dated findings,
+not guarantees about documents published since those checks.
+
 ## General principles (apply to every source)
 
 These are non-negotiable and enforced in code where possible:

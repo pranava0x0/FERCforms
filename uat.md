@@ -1,7 +1,26 @@
 # UAT Baseline — FERC Audit Explorer
 
 _Created: 2026-05-31_
-_Last run: 2026-06-02_
+_Last run: 2026-09-24_
+
+## Current run — September 24, 2026
+
+All five collection tabs checked at 1280×900 and 375×812: counts, cards, source links, desktop
+Ledger, no page overflow or uncaught JavaScript errors. Full suite: **341 passed, 15 skipped**
+(missing cached PDF/text fixtures). Finding permalink cold-load race fixed; regression exercises
+both desktop and 375px. New data: 444 documents; FERC 126, state audits 83, prudence 29,
+rate cases 122, reference 84. Hash routing, saved searches, report/finding links and lazy details
+now exist. Historical June counts and “no client router” notes below are superseded.
+
+### Performance — current baseline
+
+About 91 KB gzip first-party runtime assets before details, 258 KB including active FERC details;
+index about 25 KB gzip. Estimates from compressed local files, not measured production transfers.
+Baseline local Resource Timing: 11 entries including Google Analytics and idle detail prefetch.
+`reports.json` is not loaded; `reports_index.json` plus per-collection details are used. No framework
+or font requests added. See [stocktake](docs/stocktake-2026-09-24.md) and its JSON measurements.
+
+## Historical baseline — June 2026
 
 ## Project Info
 - **Stack**: static vanilla HTML/CSS/JS (no framework, no build). Python CLI pipeline bakes `docs/data/*.json`.

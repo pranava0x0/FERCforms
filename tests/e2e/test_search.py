@@ -71,7 +71,7 @@ def test_no_match_shows_the_honest_empty_state(site_page):
     assert site_page.is_visible("#empty-state")
     site_page.click("#empty-reset")
     site_page.wait_for_timeout(400)
-    assert site_page.locator("#result-count").inner_text().startswith("123 report")
+    assert site_page.locator("#result-count").inner_text().startswith("126 report")
 
 
 def test_queued_search_does_not_apply_to_another_tab(page_factory, site_url, site_browser):

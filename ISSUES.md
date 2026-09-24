@@ -1,5 +1,19 @@
 # Issues
 
+## 2026-09-24 stocktake and targeted refresh
+
+- **Fixed · data refresh:** added three signed FERC audit reports (Niagara Mohawk FA25-3, Atlantic City Electric FA25-4, Houston Pipe Line PA24-7) and one SCE quarterly procurement AUP reference. 440→444 documents; 846→861 findings, plus 11 other matters; 2,026→2,099 recommendations. New FERC excerpts were source-curated against explicit page regions and transmittal counts; 89 quote hashes/page ranges and four PDF hashes are recorded in `data/sources/refresh-verification-20260924.json`. Existing 440 baked report objects unchanged. `test_september_refresh_matches_signed_transmittals` guards curated counts/quotes/citations without a PDF-cache dependency.
+- **Fixed · CSV build drift:** old export retained four discarded CA boilerplate rows and lacked 37 valid ERRA findings. Regenerated through `pipeline.csv_export`; canonical JSON reports unchanged by this repair. A generated-output parity gate remains open.
+- **Fixed · finding permalink loading race:** `revealOpenReport` waited on the detail fetch before the queued toggle handler had inserted the thread. A new Niagara Mohawk finding link landed above its target. Explicitly start and await `fillThread`, then scroll to the heading; guard detached cards/new navigation. Existing permalink regression now exercises desktop and 375px. A separate anchor test had assumed a fixed-position report contained findings; selecting a deep finding-bearing record fixes that test bug.
+- **Open · publication inventory:** local main has 68 untracked processed reports and unverified placeholder seeds. `patterns.load_reports` loads every on-disk report, so an ordinary rebuild can reintroduce junk. Worktree isolation prevented this refresh from incorporating it. No original local files were deleted; the old conflicting WA seed is preserved in `/tmp/ferc-sync-20260924/wa_utc_audits.json`.
+- **Open · conflicting structuring paths:** a read-only `structure_report` call on the CA ERRA prudence record returns zero instead of 37 findings and discards its docket. Blanket re-structure remains unsafe. The generic FERC parser also misses all 35/22 recommendations in the two new financial reports (`DAA’s` intro instead of `Audit staff`) and admits page headers/trailing section labels. The three new records must not be blindly regenerated until this is fixed.
+- **Open · form/industry detection:** Houston Form 549D was parsed as form `549`, plus a spurious `32`, and electric/generation. Corrected the new record against PDF page 1; shared form detection and existing tags still need repair.
+- **Open · insights overclaim:** the customer-harm theme flag labels PacifiCorp FA16-4 finding 6 as an overcharge class although PDF pages 7/45 state net underbilling. Editorial relabel/effect schema requires review.
+- **Open · verification semantics:** offline PROVEN trusts page counts; FERC ID/accession are checked independently; oversized live PDFs count as no failures. These are screens, not full identity/quote verification.
+
+Detailed evidence, architecture, source checks, quote-review queue and ordered fixes: [stocktake](docs/stocktake-2026-09-24.md).
+
+
 Living audit trail. Each bug: date · area · description · root cause (**code bug** vs **test bug** vs **environmental**) · status. On resolution: the fix + the commit that resolved it.
 
 ## Resolved (this session)

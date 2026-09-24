@@ -1,0 +1,986 @@
+[
+  {
+    "id": "2026-09-18_niagara-mohawk-power-corporation_fa25-3",
+    "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260918-3038",
+    "accession": "20260918-3038",
+    "captured_at": "2026-09-24",
+    "pdf_sha256": "1b97fc0ff03fb94804138c9c5c1946a496a7ab9494deed567ba649612453ceb7",
+    "pdf_pages": 53,
+    "stated_findings": 7,
+    "stated_other_matters": 0,
+    "stated_recommendations": 35,
+    "curation_method": "Source-specific Executive Summary page regions; whitespace reflow only. Explicit recommendation-heading-to-finding mapping. No generic parser change.",
+    "regions": [
+      {
+        "pdf_page": 6,
+        "clip": [
+          0,
+          81,
+          612,
+          620
+        ]
+      },
+      {
+        "pdf_page": 7,
+        "clip": [
+          0,
+          81,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "clip": [
+          0,
+          81,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "clip": [
+          0,
+          81,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 10,
+        "clip": [
+          0,
+          81,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "clip": [
+          0,
+          81,
+          612,
+          725
+        ]
+      }
+    ],
+    "recommendation_headings": [
+      "Accounting for Prepayments",
+      "Accounting for Operating and Maintenance Expenses",
+      "Accounting for Administrative and General Expenses",
+      "Accounting for Transmission Assets",
+      "Transmission Revenue Credits",
+      "Allowance for Funds Used During Construction",
+      "Excess and Deficient Accumulated Deferred Income Tax"
+    ],
+    "quotes": [
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 1,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "8944678d9c7f50795d7488255ac1999a947596996e024d333d7309f4a598499c",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 2,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "0fcad2ceb91340d50455132cb35ba49fa4f15319dc0463783506a35a25ea0e36",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 3,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "e94a89b4b6617152bd95fc206cc086880a340571e89259ed744285c9072710a3",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 4,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "5a5f95898d3f8a9abec8d03c1f63478febba0250578bfb29406c9ea98731a33b",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 5,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "763edce7a74d62d158cffe89c84ec2dce91bafccf6372418fb4b90a5d4ec577d",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 6,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "006b9ae2b26deccb9b0495d2a239dc8fbfea8c1b860fa465ff59ef1ca7be7284",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 1,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "d91ce68d543321a644288cc29dfc5f078d8678f9e3da851a75ffc99df5bc8862",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 7,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "1462cd44ae005b980b92f813294e401266b117245da2d4723a735466995a0417",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 8,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "9cc9f4215a4ff35b70e299c4ca65adb1ea59c8cb64c30ce2e45ec69d322f179c",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 9,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "6a3531b6c5965c5cd85efed2660bdd34a9ed4b083f51b9ea2d1f6be74b22effa",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 10,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "fafcba6a23ea4b678674296e16e1287fbbd3ee5ea4a39e3cc6806b8766e9fd0a",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 11,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "763edce7a74d62d158cffe89c84ec2dce91bafccf6372418fb4b90a5d4ec577d",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 12,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "f116ef9b4d1b977acdffe9ea5955d1506c410707dde8ab2ece4848f5528dd130",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "4e01297cf8982fd9b5468ef747918f59e293df6618b1b85bd28498ebef76ff6c",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 13,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "ee42acea36e88079911d503552b99d642de51e15e06f00cf4ad26726dcf80c88",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 14,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "647e6a7ba9b2b2789f6757d95e99cd50f28111b37e48cbf8058d4e09e4e2f3dc",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 15,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "6a3531b6c5965c5cd85efed2660bdd34a9ed4b083f51b9ea2d1f6be74b22effa",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 16,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "19a3b27ac069fcac20235b826f28b0005508b616c7e79d87d24b7f96b2f17ddb",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 17,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "763edce7a74d62d158cffe89c84ec2dce91bafccf6372418fb4b90a5d4ec577d",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 18,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "f116ef9b4d1b977acdffe9ea5955d1506c410707dde8ab2ece4848f5528dd130",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "c5aa456a301cfd2f11cc3dca09668371a630060a995b763a40b9e73d8ff0c8e8",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 19,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "5cb16d91d4fdee7c45a555e795ac7053cc5120632ea03af43dff69409089883d",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 20,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "3360822905fe06a6e953e05a95f8bb619c11c131e52491c6d54b1290e5173379",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 21,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "99b40276994a88809934e1c69bc7bba295c9b50c82608a9e918111e41031c057",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 22,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "aa6c0e8896a2af5d2bd2190de2b1582b6dd1c4e8805764663085f52486e5b38a",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 23,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "763edce7a74d62d158cffe89c84ec2dce91bafccf6372418fb4b90a5d4ec577d",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 24,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "006b9ae2b26deccb9b0495d2a239dc8fbfea8c1b860fa465ff59ef1ca7be7284",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 4,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "fa1c2109b9eba025f8ce735f7f5a122ed90cf570cd2553f93a5f7c556a0debda",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 25,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "24bde69a265f8c89eda45bac9b52ed11ee6ab4a4d358fd99840e2cde4750a6e7",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 26,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "bc75048094c45efb23a9cbfed246244c336b9b2b23db885bfa2983e17ee00897",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 27,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "d9c38e47c1c77098a0e51d8b4d6c11b91c40c22ce6736d39fffb33b0249520bb",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 28,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "7cf5cdc07d83706660e913cc85ed0d2ea4b28f948f47dfe0e2024c4a2fba1459",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 29,
+        "pdf_page_start": 10,
+        "printed_page_start": 6,
+        "quote_sha256": "763edce7a74d62d158cffe89c84ec2dce91bafccf6372418fb4b90a5d4ec577d",
+        "pdf_page_end": 10
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 30,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "006b9ae2b26deccb9b0495d2a239dc8fbfea8c1b860fa465ff59ef1ca7be7284",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 5,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "0a14eb39131ccdc757405e134c9bd956ac53158c3809cd915d71b5f6072f9fa8",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 6,
+        "field": "recommendation",
+        "number": 31,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "366cf41a1d23ac18fc9cb54f672d9370e6b81349a0216c37cb9b860387a11c76",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 6,
+        "field": "recommendation",
+        "number": 32,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "7a98f4b69dd759ff199bbb86179184f20547f07dc249f34bcc07f02d97f83608",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 6,
+        "field": "summary",
+        "pdf_page_start": 7,
+        "quote_sha256": "d694eac7cc2882d68397862dd9beb3865bf5f7ef691f842d226a2868e008b269",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 7,
+        "field": "recommendation",
+        "number": 33,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "04d72d96bd817c8ff5b4ebf14271025862c4f889a1fc9b17e87af2c44b79700f",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 7,
+        "field": "recommendation",
+        "number": 34,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "0178bb7a821d3217ec9d7b97bc43a69c3babf6b6fe53195ac311ec5e6e2101bf",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 7,
+        "field": "recommendation",
+        "number": 35,
+        "pdf_page_start": 11,
+        "printed_page_start": 7,
+        "quote_sha256": "6746ed7ebfac1195568b0b6a3e7e82525373ae9406a927c25202471d9422e9c4",
+        "pdf_page_end": 11
+      },
+      {
+        "finding": 7,
+        "field": "summary",
+        "pdf_page_start": 7,
+        "quote_sha256": "073661df0c4c510090c31e3e773232a040914e5c098b04f51a39bc9f9fca5280",
+        "pdf_page_end": 7
+      }
+    ],
+    "metadata_verified_pdf_page": 1,
+    "metadata_note": "Forms and industry verified against signed audit scope, not incidental whole-document form/statute mentions. Recommendations source_page is printed page (PDF page minus 4)."
+  },
+  {
+    "id": "2026-08-06_atlantic-city-electric-company_fa25-4",
+    "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260806-3006",
+    "accession": "20260806-3006",
+    "captured_at": "2026-09-24",
+    "pdf_sha256": "a0657db13067c1473311eb41bd496c4648547e3a2cc72ee995c3ce5996c76cf4",
+    "pdf_pages": 39,
+    "stated_findings": 5,
+    "stated_other_matters": 0,
+    "stated_recommendations": 22,
+    "curation_method": "Source-specific Executive Summary page regions; whitespace reflow only. Explicit recommendation-heading-to-finding mapping. No generic parser change.",
+    "regions": [
+      {
+        "pdf_page": 6,
+        "clip": [
+          0,
+          96,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 7,
+        "clip": [
+          0,
+          96,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "clip": [
+          0,
+          96,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "clip": [
+          0,
+          96,
+          612,
+          725
+        ]
+      }
+    ],
+    "recommendation_headings": [
+      "Accounting for Compromise Settlements",
+      "Accounting for Materials and Supplies",
+      "Accounting for Bank Fees",
+      "Excess Accumulated Deferred Income Tax",
+      "Accounting for Equity AFUDC ADIT"
+    ],
+    "quotes": [
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 1,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "f2f1ad82358eaa215e29ba73e1119f55b0e6bd3730c93102f954f16134b454b5",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 2,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "0fcad2ceb91340d50455132cb35ba49fa4f15319dc0463783506a35a25ea0e36",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 3,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "d9d87cc539631500c3179a8737e2ff50330a982562196b68c610d257265a05c4",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 4,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "1e4ad67e42d82456cd7814e61454a3c85727ffcf8b7b7226ba5dcb6e711f51ef",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 5,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "e6cc28669a5a0b99b01fb29970a7312753a203c2c739ab0d00d73ef4d844f6f7",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 6,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "27c2a48921c53aa446469515986a2e6a796ca7c1fe18fc6c2b7a753a630761e6",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "483bffec2cd6b4b25d9b704d669041993ad69662342607bde5defc95ec2465b8",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 7,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "96a913f0a51e82f13e1a2dc1c2e94e9e283cdc119da741ef5af80525b1698be3",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 8,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "9cc9f4215a4ff35b70e299c4ca65adb1ea59c8cb64c30ce2e45ec69d322f179c",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 9,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "ce45050408e7c7fbbb1531bb701c021e87e429894a7fc28a15a170768a3a3eb6",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 10,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "21fbf696ff6f00b0a6905e1928780ecbc53455743ab84a0495dc20c8a112921e",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 11,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "e4009b6c7afa57657076c87256f553aadf3482d25296964f76a0e53b66881ae6",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 12,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "871ff38cea694706fd9a46fe2b22b3aa7b98295628a29bdcbddb71a7e9e81b22",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "0261d2336f8eecff627c54e5304adfeff9230324d1e9ca5f989a1b41ec82ac80",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 13,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "6fbde80fb1e5966a18591e83998331be5dd5f6057c7edea40112ec6d5ea2efb7",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 14,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "d300a999785235229fca0ca268a25de96d8bcfbfb5733f7a58ce18036ebe27a9",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 3,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "a88eb5bf13f74d0f84982c0363c0ae380d78bbb7997d863c7153adae37276a25",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 15,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "fb7be81631d6390862672f4158628cf778ba16972d6fde33591e9f9c7c5fa03b",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 16,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "53de1ec73fd423121f6aa424f9a201bf50c0b67c8c98cf64742bd9faab214036",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 17,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "0b909dd63c35db5fcfb6b27da988452f5cb7015913135d84a97db966f0707095",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 18,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "1edef67ad8316ed5da13496312a231b30a1e1811a0395d1b16fe67e68651ddc2",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "30a062054652087b39341e9d4d8d13e9bd2da7e98ccf91ec619d501f9b41487d",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 19,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "46ed9bd6f70b0beebd0812f09b0467217ae8699de65c782d7878b0d6714d08b1",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 20,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "9367d6c865ce12ae71ec0f476ff82edd4261c91f17de17f471cd5ec7c6146498",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 21,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "a9900ff4ab600bed3b1ee42772408d2d6e2375da3db16f56a9bc4d04729df2f6",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 5,
+        "field": "recommendation",
+        "number": 22,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "4552f5aa1fd5b0cb05ae711cf58cb67f03634f2ee03a084a78e91c3595db0edb",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 5,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "505d77609115afc31b5803c9a1b519c50722e89d1afb8b598abf118a98322c28",
+        "pdf_page_end": 6
+      }
+    ],
+    "metadata_verified_pdf_page": 1,
+    "metadata_note": "Forms and industry verified against signed audit scope, not incidental whole-document form/statute mentions. Recommendations source_page is printed page (PDF page minus 4)."
+  },
+  {
+    "id": "2026-07-21_houston-pipe-line-company-lp_pa24-7",
+    "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/DownloadPDF?accesssionNumber=20260721-3030",
+    "accession": "20260721-3030",
+    "captured_at": "2026-09-24",
+    "pdf_sha256": "32926e1b7985d8053d057ea352c9cb31326637d4071a108d33a16943257b59c2",
+    "pdf_pages": 53,
+    "stated_findings": 3,
+    "stated_other_matters": 1,
+    "stated_recommendations": 16,
+    "curation_method": "Source-specific Executive Summary page regions; whitespace reflow only. Explicit recommendation-heading-to-finding mapping. No generic parser change.",
+    "regions": [
+      {
+        "pdf_page": 6,
+        "clip": [
+          0,
+          82,
+          612,
+          585
+        ]
+      },
+      {
+        "pdf_page": 7,
+        "clip": [
+          0,
+          82,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 8,
+        "clip": [
+          0,
+          82,
+          612,
+          725
+        ]
+      },
+      {
+        "pdf_page": 9,
+        "clip": [
+          0,
+          82,
+          612,
+          725
+        ]
+      }
+    ],
+    "recommendation_headings": [
+      "Transportation Fuel Retention Percentage",
+      "FERC Form No. 549D Reporting",
+      "Section 311 Construction Reporting",
+      "In-Kind Transportation Fees"
+    ],
+    "quotes": [
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 1,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "89143a3b76ec8993bd46c9c2633fb35310b5ef8d3bfc2951d4b9cb95742a7d2a",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 2,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "8f17676cf67f691556324dafdc2e20f5b950e51fb99991f53d45a72c397d5a9f",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 3,
+        "pdf_page_start": 7,
+        "printed_page_start": 3,
+        "quote_sha256": "605a1cda4ebdde679c6ef385d792bf9b1dfda208ae6d815799162f61992f5811",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 1,
+        "field": "recommendation",
+        "number": 4,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "82d66884d3471c9905f2a1f6322f965d71a81a629117627ea756cb2c33aa44c2",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 1,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "def3e3145c03db80b8dd5a0db2f774157ef961d9e5728f80a15dab1df9c59b78",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 5,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "a5228526c9aa58f44b62840be3e096746860751be3771e097515a4671e4d1d6e",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 6,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "379051a360b90498e4df284ff5c8d729bd2512cb2c74314d29fd2dd3bc76b211",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 7,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "aa261a093452c5a7cc0405913a4c9268ff1ff0802388ea2565d1625ef014b2a7",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "recommendation",
+        "number": 8,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "bac80254acefd44c230dbb67838dad71c8e47314053e24ee3336f60ae639587e",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 2,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "4e068bc03a41aabdec4b3783812e2eb5d7c6e25cc650604fab64e989552de9a0",
+        "pdf_page_end": 6
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 9,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "c59590d9d47d37c0a443f10f249d4165d442d2cca4278aee2975518180cbf38f",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 10,
+        "pdf_page_start": 8,
+        "printed_page_start": 4,
+        "quote_sha256": "af40651fafc29024f5d412c08f3f72da9ea2538bccac1eb9058692cc4a62f771",
+        "pdf_page_end": 8
+      },
+      {
+        "finding": 3,
+        "field": "recommendation",
+        "number": 11,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "d9bb5861bacb5d6be4581aeaee2387444bcb2ef0d40cb43d092eb9ff2323c029",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 3,
+        "field": "summary",
+        "pdf_page_start": 6,
+        "quote_sha256": "129c694f30dc8b904a0eb7466afa8580efbc1e2f35b5a08a2b0a8515c0781e2e",
+        "pdf_page_end": 7
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 12,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "079ae54dcacf64951e0ed0335f4cc6b458a2c6e0267d1eef870d6ce5476f6487",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 13,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "f358ab5df42dc7c73378c55751d9754c90422053233a8c1115a558c1670c6312",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 14,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "8c2f22877a3b7b902d6188adb1494b619a8c279df94108479fd37ba4ddaf77a8",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 15,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "4edc306672f4d4b3d92f9b3272417d57e8f229650887490a6fc5162b6d49cb3a",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "recommendation",
+        "number": 16,
+        "pdf_page_start": 9,
+        "printed_page_start": 5,
+        "quote_sha256": "487d8cc786341bbdc74a163b39a53f4b879713ccb0eb779852693d0ec4670347",
+        "pdf_page_end": 9
+      },
+      {
+        "finding": 4,
+        "field": "summary",
+        "pdf_page_start": 7,
+        "quote_sha256": "573687aaf31c816f05e4fc596f517704f00c791fa0dd595830bacda53a98d139",
+        "pdf_page_end": 7
+      }
+    ],
+    "metadata_verified_pdf_page": 1,
+    "metadata_note": "Forms and industry verified against signed audit scope, not incidental whole-document form/statute mentions. Recommendations source_page is printed page (PDF page minus 4)."
+  },
+  {
+    "id": "2026-03-20_southern-california-edison_ca-quarterly-procurement-review",
+    "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/utility-audits--risk--and-compliance-division/reports/energy/2026/energy_2026-03-20_sce_qp.pdf",
+    "captured_at": "2026-09-24",
+    "pdf_sha256": "c421e57033870e46db74a0a13d3c2e4b0f3c68dc49db01771b2e1f24fd9b8348",
+    "pdf_pages": 17,
+    "caption_verified_pdf_pages": [
+      1,
+      2,
+      3
+    ],
+    "structured": false
+  }
+]

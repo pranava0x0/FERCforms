@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10",
+  "generated_at": "2026-09-24",
   "jurisdictions_covered": [
     "AR",
     "AZ",
@@ -47,18 +47,18 @@
   ],
   "source": "https://www.ferc.gov/audits",
   "scope": "FERC utility audits — electric, gas & oil",
-  "reports_total_listed": 123,
+  "reports_total_listed": 126,
   "by_industry_identified": {
-    "electric": 281,
-    "gas": 50,
+    "electric": 284,
+    "gas": 51,
     "oil": 18,
     "unknown": 91
   },
-  "reports_structured": 440,
+  "reports_structured": 444,
   "by_collection": {
-    "ferc_audit": 123,
+    "ferc_audit": 126,
     "prudence_review": 29,
-    "state_audit": 82,
+    "state_audit": 83,
     "state_rate_case": 122,
     "state_reference": 84
   },

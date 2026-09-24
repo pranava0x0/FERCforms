@@ -407,3 +407,46 @@ def test_metadata_only_structurers_handle_existing_structured_key(structure_fn):
     assert report.structured is False
     assert report.findings == []
     assert report.finding_count == 0
+
+
+@pytest.mark.parametrize(
+    "rid, findings, other, recs, industry, forms",
+    [
+        ("2026-09-18_niagara-mohawk-power-corporation_fa25-3", 7, 0, 35, "electric", ["1", "3-Q"]),
+        ("2026-08-06_atlantic-city-electric-company_fa25-4", 5, 0, 22, "electric", ["1", "3-Q"]),
+        ("2026-07-21_houston-pipe-line-company-lp_pa24-7", 3, 1, 16, "gas", ["549D"]),
+    ],
+)
+def test_september_refresh_matches_signed_transmittals(
+    rid: str, findings: int, other: int, recs: int, industry: str, forms: list[str]
+) -> None:
+    """Source-stated counts on PDF page 1; no local PDF/cache dependency.
+
+    Also guard curated quote hashes and printed-page citations against the
+    independent refresh receipt. Whole-corpus re-structure must not erase these.
+    """
+    import hashlib
+
+    report = json.loads((config.PROCESSED_DIR / rid / "report.json").read_text())
+    receipts = json.loads((config.DATA_DIR / "sources/refresh-verification-20260924.json").read_text())
+    receipt = next(r for r in receipts if r["id"] == rid)
+    assert report["finding_count"] == findings
+    assert sum(not f["is_other_matter"] for f in report["findings"]) == findings
+    assert sum(f["is_other_matter"] for f in report["findings"]) == other
+    recommendations = [r for f in report["findings"] for r in f["recommendations"]]
+    assert [r["number"] for r in recommendations] == list(range(1, recs + 1))
+    assert report["industry"] == industry
+    assert report["forms"] == forms
+    assert receipt["stated_recommendations"] == recs
+    assert len(receipt["quotes"]) == findings + other + recs
+    for citation in receipt["quotes"]:
+        finding = report["findings"][citation["finding"] - 1]
+        if citation["field"] == "summary":
+            quote = finding["summary"]
+        else:
+            rec = next(r for r in finding["recommendations"] if r["number"] == citation["number"])
+            quote = rec["text"]
+            assert rec["source_page"] == citation["printed_page_start"]
+            assert rec["source_page"] == citation["pdf_page_start"] - 4
+        assert hashlib.sha256(quote.encode()).hexdigest() == citation["quote_sha256"]
+        assert "Document Accession" not in quote

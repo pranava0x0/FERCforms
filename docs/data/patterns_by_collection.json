@@ -1,13 +1,13 @@
 {
   "ferc_audit": {
-    "report_count": 123,
-    "finding_count": 663,
-    "other_matter_count": 10,
-    "recommendation_count": 1479,
+    "report_count": 126,
+    "finding_count": 678,
+    "other_matter_count": 11,
+    "recommendation_count": 1552,
     "by_industry": {
-      "electric": 89,
+      "electric": 91,
       "oil": 17,
-      "gas": 14,
+      "gas": 15,
       "unknown": 3
     },
     "by_year": {
@@ -23,18 +23,18 @@
       "2023": 9,
       "2024": 10,
       "2025": 9,
-      "2026": 3
+      "2026": 6
     },
     "by_function": {
-      "transmission": 69,
+      "transmission": 71,
       "generation": 65,
       "distribution": 2
     },
     "by_jurisdiction": [
       {
         "jurisdiction": "FERC",
-        "report_count": 123,
-        "finding_count": 663
+        "report_count": 126,
+        "finding_count": 678
       }
     ],
     "themes": [
@@ -48,13 +48,13 @@
           "improperly included",
           "incorrectly included"
         ],
-        "finding_count": 200,
-        "report_count": 76,
+        "finding_count": 204,
+        "report_count": 78,
         "example_titles": [
-          "Prepayments",
-          "Accounting Misclassifications",
-          "Allowance for Funds Used During Construction",
-          "Annual Membership Dues"
+          "Zero Emission Credits and Renewable Energy Certificates",
+          "Accounting for Transmission Assets",
+          "Accounting for Compromise Settlements",
+          "Accounting for Equity AFUDC ADIT"
         ],
         "by_year": {
           "2015": 3,
@@ -68,7 +68,7 @@
           "2023": 6,
           "2024": 7,
           "2025": 6,
-          "2026": 1
+          "2026": 3
         },
         "top_companies": [
           {
@@ -76,19 +76,19 @@
             "report_count": 2
           },
           {
+            "company": "Niagara Mohawk Power Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Atlantic City Electric Company",
+            "report_count": 1
+          },
+          {
             "company": "Southwestern Electric Power Company",
             "report_count": 1
           },
           {
             "company": "Kern River Gas Transmission Company",
-            "report_count": 1
-          },
-          {
-            "company": "Medallion Pipeline Company, LLC",
-            "report_count": 1
-          },
-          {
-            "company": "Pacific Gas and Electric Company",
             "report_count": 1
           }
         ]
@@ -100,13 +100,13 @@
           "form no.",
           "page 700"
         ],
-        "finding_count": 162,
-        "report_count": 62,
+        "finding_count": 167,
+        "report_count": 65,
         "example_titles": [
-          "Prepayments",
-          "Excess and Deficient Accumulated Deferred Income Tax",
-          "FERC Form No. 1 Reporting",
-          "Annual Cost of Service Based Analysis Schedule"
+          "Excess and Deficient Accumulated Deferred Income Tax (ADIT)",
+          "Accounting for Bank Fees",
+          "Excess Accumulated Deferred Income Tax",
+          "Accounting for Equity AFUDC ADIT"
         ],
         "by_year": {
           "2015": 3,
@@ -120,27 +120,27 @@
           "2023": 5,
           "2024": 7,
           "2025": 4,
-          "2026": 1
+          "2026": 4
         },
         "top_companies": [
+          {
+            "company": "Niagara Mohawk Power Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Atlantic City Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Houston Pipe Line Company LP",
+            "report_count": 1
+          },
           {
             "company": "Southwestern Electric Power Company",
             "report_count": 1
           },
           {
             "company": "Medallion Pipeline Company, LLC",
-            "report_count": 1
-          },
-          {
-            "company": "Pacific Gas and Electric Company",
-            "report_count": 1
-          },
-          {
-            "company": "Duke Energy Progress, LLC",
-            "report_count": 1
-          },
-          {
-            "company": "Tallgrass Pony Express Pipeline, LLC",
             "report_count": 1
           }
         ]
@@ -250,6 +250,57 @@
         ]
       },
       {
+        "theme": "AFUDC / cost of capital",
+        "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
+        "keywords": [
+          "allowance for funds used during construction",
+          "afudc"
+        ],
+        "finding_count": 56,
+        "report_count": 43,
+        "example_titles": [
+          "Allowance for Funds Used During Construction (AFUDC)",
+          "Accounting for Equity AFUDC ADIT",
+          "Allowance for Funds Used During Construction",
+          "Capitalization of Vegetation Management Costs"
+        ],
+        "by_year": {
+          "2016": 2,
+          "2017": 5,
+          "2018": 3,
+          "2019": 3,
+          "2020": 7,
+          "2021": 4,
+          "2022": 6,
+          "2023": 5,
+          "2024": 1,
+          "2025": 3,
+          "2026": 4
+        },
+        "top_companies": [
+          {
+            "company": "Niagara Mohawk Power Corporation",
+            "report_count": 1
+          },
+          {
+            "company": "Atlantic City Electric Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southern Electric Generating Company",
+            "report_count": 1
+          },
+          {
+            "company": "Southwestern Electric Power Company",
+            "report_count": 1
+          },
+          {
+            "company": "Kern River Gas Transmission Company",
+            "report_count": 1
+          }
+        ]
+      },
+      {
         "theme": "Property & plant records",
         "description": "Incomplete or inaccurate utility plant and property records.",
         "keywords": [
@@ -300,57 +351,6 @@
           },
           {
             "company": "Pacific Gas and Electric Company",
-            "report_count": 1
-          }
-        ]
-      },
-      {
-        "theme": "AFUDC / cost of capital",
-        "description": "Mis-stated AFUDC — the financing cost capitalized during construction.",
-        "keywords": [
-          "allowance for funds used during construction",
-          "afudc"
-        ],
-        "finding_count": 54,
-        "report_count": 41,
-        "example_titles": [
-          "Allowance for Funds Used During Construction",
-          "Capitalization of Vegetation Management Costs",
-          "Prepaid Pension AFUDC",
-          "Capitalized Interest Expense"
-        ],
-        "by_year": {
-          "2016": 2,
-          "2017": 5,
-          "2018": 3,
-          "2019": 3,
-          "2020": 7,
-          "2021": 4,
-          "2022": 6,
-          "2023": 5,
-          "2024": 1,
-          "2025": 3,
-          "2026": 2
-        },
-        "top_companies": [
-          {
-            "company": "Southern Electric Generating Company",
-            "report_count": 1
-          },
-          {
-            "company": "Southwestern Electric Power Company",
-            "report_count": 1
-          },
-          {
-            "company": "Kern River Gas Transmission Company",
-            "report_count": 1
-          },
-          {
-            "company": "Pacific Gas and Electric Company",
-            "report_count": 1
-          },
-          {
-            "company": "Duke Energy Progress, LLC",
             "report_count": 1
           }
         ]
@@ -418,13 +418,13 @@
           "return on equity",
           "rate design"
         ],
-        "finding_count": 51,
-        "report_count": 24,
+        "finding_count": 52,
+        "report_count": 25,
         "example_titles": [
+          "Zero Emission Credits and Renewable Energy Certificates",
           "Annual Membership Dues",
           "Annual Cost of Service Based Analysis Schedule",
-          "Nonoperating and Operating Expenses",
-          "Recognition of Intrastate Transportation Movements"
+          "Nonoperating and Operating Expenses"
         ],
         "by_year": {
           "2015": 1,
@@ -436,9 +436,14 @@
           "2022": 3,
           "2023": 4,
           "2024": 1,
-          "2025": 3
+          "2025": 3,
+          "2026": 1
         },
         "top_companies": [
+          {
+            "company": "Niagara Mohawk Power Corporation",
+            "report_count": 1
+          },
           {
             "company": "Kern River Gas Transmission Company",
             "report_count": 1
@@ -453,10 +458,6 @@
           },
           {
             "company": "EnLink NGL Pipeline, LP",
-            "report_count": 1
-          },
-          {
-            "company": "Sunoco Pipeline L.P.",
             "report_count": 1
           }
         ]
@@ -688,13 +689,13 @@
           "gas cost adjustment",
           "energy cost recovery"
         ],
-        "finding_count": 12,
-        "report_count": 8,
+        "finding_count": 13,
+        "report_count": 9,
         "example_titles": [
+          "Transportation Fuel Retention Percentage",
           "Recovery of Fuel Contract Buyout Costs",
           "Accounting for Fuel Storage and Handling",
-          "Auxiliary Fuel Costs in Nuclear Power Generation",
-          "Amortization of Retail Regulatory Assets"
+          "Auxiliary Fuel Costs in Nuclear Power Generation"
         ],
         "by_year": {
           "2018": 2,
@@ -702,9 +703,14 @@
           "2021": 1,
           "2022": 1,
           "2024": 2,
-          "2025": 1
+          "2025": 1,
+          "2026": 1
         },
         "top_companies": [
+          {
+            "company": "Houston Pipe Line Company LP",
+            "report_count": 1
+          },
           {
             "company": "Duke Energy Progress, LLC",
             "report_count": 1
@@ -719,10 +725,6 @@
           },
           {
             "company": "FirstEnergy Corporation",
-            "report_count": 1
-          },
-          {
-            "company": "Southern California Edison Company",
             "report_count": 1
           }
         ]
@@ -879,17 +881,22 @@
           "fleet management",
           "vehicle replacement"
         ],
-        "finding_count": 2,
-        "report_count": 2,
+        "finding_count": 3,
+        "report_count": 3,
         "example_titles": [
-          "Auxiliary Fuel Costs in Nuclear Power Generation",
-          "Accounting for Materials and Supplies"
+          "Accounting for Materials and Supplies",
+          "Auxiliary Fuel Costs in Nuclear Power Generation"
         ],
         "by_year": {
           "2023": 1,
-          "2025": 1
+          "2025": 1,
+          "2026": 1
         },
         "top_companies": [
+          {
+            "company": "Atlantic City Electric Company",
+            "report_count": 1
+          },
           {
             "company": "Duke Energy Progress, LLC",
             "report_count": 1
@@ -959,18 +966,18 @@
       },
       {
         "title": "Allowance for Funds Used During Construction (AFUDC)",
-        "count": 10
+        "count": 11
       },
       {
         "title": "Asset Retirement Obligations",
         "count": 9
       },
       {
-        "title": "Accounting Misclassifications",
-        "count": 7
+        "title": "Accounting for Compromise Settlements",
+        "count": 8
       },
       {
-        "title": "Accounting for Compromise Settlements",
+        "title": "Accounting Misclassifications",
         "count": 7
       },
       {
@@ -982,12 +989,20 @@
         "count": 6
       },
       {
+        "title": "Excess Accumulated Deferred Income Tax",
+        "count": 5
+      },
+      {
         "title": "Allocation of Overhead Costs to CWIP",
         "count": 5
       },
       {
         "title": "FERC Form No. 2 Reporting",
         "count": 5
+      },
+      {
+        "title": "Transmission Revenue Credits",
+        "count": 4
       },
       {
         "title": "Annual Cost of Service Based Analysis Schedule",
@@ -999,10 +1014,6 @@
       },
       {
         "title": "Accounting for Administrative and General Expenses",
-        "count": 4
-      },
-      {
-        "title": "Excess Accumulated Deferred Income Tax",
         "count": 4
       },
       {
@@ -1044,13 +1055,9 @@
       {
         "title": "Preservation of Records",
         "count": 3
-      },
-      {
-        "title": "Amortization of Retail Regulatory Assets",
-        "count": 3
       }
     ],
-    "generated_at": "2026-08-10"
+    "generated_at": "2026-09-24"
   },
   "prudence_review": {
     "report_count": 29,
@@ -1366,15 +1373,15 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-08-10"
+    "generated_at": "2026-09-24"
   },
   "state_audit": {
-    "report_count": 82,
+    "report_count": 83,
     "finding_count": 146,
     "other_matter_count": 0,
     "recommendation_count": 547,
     "by_industry": {
-      "electric": 58,
+      "electric": 59,
       "gas": 22,
       "unknown": 2
     },
@@ -1393,7 +1400,7 @@
       "2023": 9,
       "2024": 18,
       "2025": 19,
-      "2026": 4
+      "2026": 5
     },
     "by_function": {},
     "by_jurisdiction": [
@@ -1414,7 +1421,7 @@
       },
       {
         "jurisdiction": "CA",
-        "report_count": 17,
+        "report_count": 18,
         "finding_count": 0
       },
       {
@@ -2364,7 +2371,7 @@
         "count": 1
       }
     ],
-    "generated_at": "2026-08-10"
+    "generated_at": "2026-09-24"
   },
   "state_rate_case": {
     "report_count": 122,
@@ -2865,7 +2872,7 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-08-10"
+    "generated_at": "2026-09-24"
   },
   "state_reference": {
     "report_count": 84,
@@ -2974,6 +2981,6 @@
       }
     ],
     "top_titles": [],
-    "generated_at": "2026-08-10"
+    "generated_at": "2026-09-24"
   }
 }
