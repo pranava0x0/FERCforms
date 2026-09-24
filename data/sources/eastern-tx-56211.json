@@ -1,0 +1,103 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "TX",
+  "docket_query": "56211",
+  "index_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=56211",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "detail_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=518",
+      "label": "518 3/13/2025 PUC OPDM PL ORDER",
+      "index_url": "https://interchange.puc.texas.gov/search/filings/?ControlNumber=56211",
+      "url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+      "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=518",
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/25c272b6f647370707cc949eafebb0cff9ee60c5f39ac19771790560462f8dc6.pdf",
+      "resolved_url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+      "downloaded_at": "2026-09-24T13:37:59.904825+00:00",
+      "pdf_sha256": "5a11e032656cfb136e1df28eed0fac5ff96db7862f0ee180b7758d001f00ebcd",
+      "page_count": 29,
+      "bytes": 858693,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "Control Number: 56211 \nItem Number: 518 \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "PUC DOCKET NO. 56211 \nSOAH DOCKET NO. 473-24-13232 C./S \nRECEIFED \n.l . -' toi \nr' : , ,~ . 0 n \n1 J \n; ,! .f. CO \nAPPLICATION OF CENTERPOINT \n§ \nPUBLIC UUIJITY COMNIISSION~ \nENERGY HOUSTON ELECTRIC, LLC \n§ \nE H 2:u CL LRK \nFOR AUTHORITY TO CHANGE \n§ \nOF TEXAS \nRATES \n§ \nORDER \nThis Order addresses the application of CenterPoint Energy Houston Electric, LLC for \nauthority to change its rates. On January 29,2025, CenterPoint Houston filed an unopposed \nagreement between certain parties in this proceeding that, among other things, provides for a \n$44,153,511.40 reduction to CenterPoint Houston's present wholesale and retail revenues of \n$2.305 billion, plus an additional explicit reduction to remove chief executive officer \ncompensation expense of $2,424,013, for a total reduction of $46,577,524.40. The Commission \napproves the rates, terms, and conditions set forth in the agreement to the extent provided in this \nOrder. \nI. \nFindings of Fact \nThe Commission makes the following findings of fact. \nApplicant \n1. \nCenterPoint Houston is a Texas limited liability company registered with the Texas \nsecretary of state under filing 800119842. \n2. \nCenterPoint Houston is a wholly owned subsidiary of CenterPoint Energy, Inc. \n3. \nCenterPoint Houston owns and operates for compensation in Texas facilities and \nequipment to transmit and distribute electricity in the Electric Reliability Council of Texas \nregion. \n4. \nCenterPoint Houston holds certificate of convenience and necessity number 30086 to \nprovide service to the public. \n5. \nCenterPoint Houston serves approximately 2.8 million metered customers. \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "PUC Docket No. 56211 \nSOAH Docket No. 473-24-13232 \nOrder \nPage 2 of 28 \n6. \nCenterPoint Houston's electric system covers approximately 5,000 square miles located in \nand around Houston, Texas, and is composed of approximately 58,000 miles of overhead \nand underground transmission and distribution lines and streetlights. \n7. \nCenterPoint Houston's last comprehensive base rate proceeding was Docket No. 49421.1 \nApplication \n8. \nOn March 6,2024, CenterPoint Houston filed an application and statement o f intent to \nchange its retail transmission and distribution rates and wholesale transmission rates, with \na proposed effective date of April 10, 2024. \n9. \nThe applicable test year was the 12-month period ending December 31,2023. \n10. \nThrough its application and subsequent errata, CenterPoint Houston sought \nCommission approval to increase transmission and distribution revenues by \napproximately $57 million, consisting of approximately $15 million related to service \nto retail customers, excluding transmission cost recovery factor (TCRF) and rate-case \nexpenses, and approximately $42 million for wholesale transmission service. \n11. \nIn addition to the rate increase, CenterPoint Houston requested the Commission: \na. \nfind that CenterPoint Houston's capital additions placed into service from \nJanuary 1,2019 through December 31, 2023, were prudent; \nb. \napprove its proposed capital structure and return on equity; \nc. \napprove its proposed cost allocation methodology and rate design; \nd. \napprove its proposed updates or removal of Rider TCRF, Rider distribution cost \nrecovery factor (DCRF), Rider rate case expense (RCE) surcharge, Schedule TC2, \nSchedule TC, Rider system restoration charge (SRC), and Rider accumulated \ndeferred federal income tax credit (ADFITC); \ne. \napprove its proposed Rider IRAs; \nf. \napprove its proposed charges to its tari ff for wholesale delivery service; \n1 \nApplication of CenterPoint Energy Houston Electric , LLC for Authority to Change Rates , Docket \nNo. 49421, Order (Mar. 9,2020). \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+        "checked_at": "2026-09-24T13:46:33.636162+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2025-03-13_centerpoint-houston_tx-56211-rate-order",
+        "company": "CenterPoint Energy Houston Electric, LLC",
+        "collection": "state_rate_case",
+        "jurisdiction": "TX",
+        "source": "Public Utility Commission of Texas",
+        "doc_type": "base rate order",
+        "industry": "electric",
+        "pdf_url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+        "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=518",
+        "accession": null,
+        "issued_date": "2025-03-13",
+        "docket": "56211",
+        "captured_at": "2026-09-24",
+        "source_note": "PUCT final order in CenterPoint Houston base rate case, Item 518. Printed page 1 (PDF page 2) says commission approves an unopposed agreement and a $46,577,524.40 total revenue reduction. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-56211.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note.",
+      "additional_pages": [
+        {
+          "pdf_page": 29,
+          "text": "PUC Docket No. 56211 \nSOAH Docket No. 473-24-13232 \nSigned at Austin, Texas the IMP,/ \nOrder \n2025 \nPage 28 of 28 \nPUBLIC UTILITY COMMISSION OF TEXAS \n/i \nTHOMAS J. GL€FSON, CHXiRMAN \n-4 \n)*duUJ 1 Eu-~A WJ \nKAtHLEEN, \nKSON, COMMISSIONER \nl-Recused from docketl \nCOURTNEY K. HJALTMAN, COMMISSIONER \nq \\cadm\\orders\\final\\56000\\562 I l fo docx \n"
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=496",
+      "error": "Expected one PDF on TX item page, found 4"
+    }
+  ],
+  "already_held": 0,
+  "jurisdiction": "TX",
+  "indexes": [
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/3cce3ae5f8c8e4b8.html",
+      "sha256": "18bb4aaa33a0aba6aee9c589a444faed942199c54b2cbdd8c3164577939feabe",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/5d56a27669214970.html",
+      "sha256": "ec94f5cc371e4321977d33fd7870f0b5a7278b9d806cb3bab8f91d6db47bf412",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/ab5a9961189e9711.html",
+      "sha256": "fe1bf954dd3a88fa2d59814c246296210ad5662038157131d2a81e33cdba3f74",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/ee469b527a6ec66a.html",
+      "sha256": "e55cc8aed1cb72aafac4365f7d116922ff5f88fa25d3b5c3f1c434738c1e4873",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    },
+    {
+      "cache_path": "data/raw/eastern_discovery/tx/047d0645d14f6db8/index.html",
+      "sha256": "f6545a1265ccdeace42c6c236a6bc9e2ed133741d1664d00d725183be53940c9",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    }
+  ]
+}

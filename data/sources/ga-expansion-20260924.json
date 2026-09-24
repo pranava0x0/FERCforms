@@ -1,0 +1,195 @@
+{
+  "jurisdiction": "GA",
+  "captured_at": "2026-09-24T13:38:07.990985+00:00",
+  "target": "44280",
+  "match": "^ORDER GRANTING JOINT|^ORDER ADOPTING STIPULATION|^ORDER APPROVING GEORGIA POWER COMPANY.*2024 ANNUAL",
+  "search_text": "Order",
+  "scope": "One index page; GA at most 50 matching filings. Not a completeness claim.",
+  "indexes": [
+    {
+      "url": "https://psc.ga.gov/search/service-facts-docket/?docketId=44280&sortDirection=DESC&sortColumn=Filed&searchText=Order&pageSize=50&pageNumber=1",
+      "resolved_url": "https://psc.ga.gov/search/service-facts-docket/?docketId=44280&sortDirection=DESC&sortColumn=Filed&searchText=Order&pageSize=50&pageNumber=1",
+      "sha256": "e36b3f4d21d0a83510531a65aabc919889371b915cc52e518ef89b9641cf3410"
+    },
+    {
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=227446",
+      "resolved_url": "https://psc.ga.gov/search/facts-document/?documentId=227446",
+      "sha256": "2ba5a9b64db3cb9f941e327bc04cf60420e61c54229cd2c65833bf391b1acbf9"
+    },
+    {
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=224945",
+      "resolved_url": "https://psc.ga.gov/search/facts-document/?documentId=224945",
+      "sha256": "d8aeaca7f33073dc7e8354e64a11970bdbc12e815bb02517ae9985441eac5d7b"
+    },
+    {
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=223495",
+      "resolved_url": "https://psc.ga.gov/search/facts-document/?documentId=223495",
+      "sha256": "f5408e14730f3abec6346e906de734f914d9301faa618c75a234bd2059ebfc34"
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227446/108709",
+      "label": "227446.pdf",
+      "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=227446",
+      "pdf_sha256": "89b5823851e1978c2f9495862a204bcc63ae0c05912d46de728c530d11dc1b96",
+      "resolved_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227446/108709",
+      "downloaded_at": "2026-09-24T13:37:30.374082+00:00",
+      "page_count": 18,
+      "bytes": 5343830,
+      "cache_path": "data/raw/state_portals/ff4b3207dcb803197df512e90fa030ec90a83ec4c78f76b0bd3dcb13a144be4e.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": ""
+        },
+        {
+          "pdf_page": 3,
+          "text": ""
+        }
+      ],
+      "index_metadata": {
+        "documentId": 227446,
+        "description": "ORDER ADOPTING STIPULATION",
+        "filedDateString": "8/4/2026",
+        "receivedDateString": "8/4/2026"
+      },
+      "needs_visual_review": true,
+      "reviewed_metadata": {
+        "id": "2026-08-04_georgia-power_ga-storm-recovery-order",
+        "company": "Georgia Power Company",
+        "collection": "state_rate_case",
+        "jurisdiction": "GA",
+        "source": "Georgia Public Service Commission",
+        "doc_type": "Order Adopting Stipulation — Storm Damage Recovery Application",
+        "industry": "electric",
+        "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/227446/108709",
+        "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=227446",
+        "accession": null,
+        "issued_date": "2026-08-04",
+        "docket": "44280",
+        "captured_at": "2026-09-24",
+        "source_note": "Pages 1–3 visually inspected from the image-only PDF. Page 1 filing stamp August 4, 2026; docket and utility caption verified. Storm recovery application and procedural history on pages 2–3; company cost assertions remain assertions, not extracted audit findings. 18 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/ga-expansion-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "visual pages 1–3",
+      "review_note": "Pages 1–3 visually inspected from the image-only PDF. Page 1 filing stamp August 4, 2026; docket and utility caption verified. Storm recovery application and procedural history on pages 2–3; company cost assertions remain assertions, not extracted audit findings."
+    },
+    {
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/224945/106426",
+      "label": "224945(f).pdf",
+      "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=224945",
+      "pdf_sha256": "c08e786bd2c1adc836844f27f0b41927c96cd322bceca7fb5075b0159455d370",
+      "resolved_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/224945/106426",
+      "downloaded_at": "2026-09-24T13:38:36.218186+00:00",
+      "page_count": 3,
+      "bytes": 1250710,
+      "cache_path": "data/raw/state_portals/d3a66649253a0914177ce14b641adf052f629ae610afb9eb2c40e6477d6554a9.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": ""
+        },
+        {
+          "pdf_page": 3,
+          "text": ""
+        }
+      ],
+      "index_metadata": {
+        "documentId": 224945,
+        "description": "ORDER APPROVING GEORGIA POWER COMPANY’S 2024 ANNUAL SURVEILLANCE REPORT",
+        "filedDateString": "12/24/2025",
+        "receivedDateString": "12/24/2025"
+      },
+      "needs_visual_review": true,
+      "reviewed_metadata": {
+        "id": "2025-12-24_georgia-power_ga-2024-surveillance-order",
+        "company": "Georgia Power Company",
+        "collection": "state_reference",
+        "jurisdiction": "GA",
+        "source": "Georgia Public Service Commission",
+        "doc_type": "Order Approving 2024 Annual Surveillance Report",
+        "industry": "electric",
+        "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/224945/106426",
+        "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=224945",
+        "accession": null,
+        "issued_date": "2025-12-24",
+        "docket": "44280",
+        "captured_at": "2026-09-24",
+        "source_note": "All three scanned pages visually inspected. Filing stamp and signatures dated December 24, 2025; Commission action December 16. Recurring earnings-surveillance disposition with staff review recommendations, not a standalone utility audit. Kept as reference; no findings extracted. 3 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/ga-expansion-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "visual pages 1–3",
+      "review_note": "All three scanned pages visually inspected. Filing stamp and signatures dated December 24, 2025; Commission action December 16. Recurring earnings-surveillance disposition with staff review recommendations, not a standalone utility audit. Kept as reference; no findings extracted."
+    },
+    {
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223495/104715",
+      "label": "223495.pdf",
+      "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=223495",
+      "pdf_sha256": "954c7585ad9ee7eeee994d4646c3af94c2bdfbed28beef04d70fb0e4e0756e5c",
+      "resolved_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223495/104715",
+      "downloaded_at": "2026-09-24T13:38:43.135313+00:00",
+      "page_count": 15,
+      "bytes": 6755031,
+      "cache_path": "data/raw/state_portals/86766667363c26b668fda9fad21c30f9b5a28b32582f3ffc305593351c4a7313.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": ""
+        },
+        {
+          "pdf_page": 3,
+          "text": ""
+        }
+      ],
+      "index_metadata": {
+        "documentId": 223495,
+        "description": "ORDER GRANTING JOINT PETITION OF GEORGIA POWER COMPANY AND THE PUBLIC INTEREST ADVOCACY STAFF AND APPROVAL OF THE STIPULATION TO EXTEND THE ALTERNATIVE RATE PLAN\r\n\r\n",
+        "filedDateString": "7/31/2025",
+        "receivedDateString": "7/31/2025"
+      },
+      "needs_visual_review": true,
+      "reviewed_metadata": {
+        "id": "2025-07-31_georgia-power_ga-alternate-rate-plan-extension",
+        "company": "Georgia Power Company",
+        "collection": "state_rate_case",
+        "jurisdiction": "GA",
+        "source": "Georgia Public Service Commission",
+        "doc_type": "Order Extending the Alternate Rate Plan",
+        "industry": "electric",
+        "pdf_url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223495/104715",
+        "source_page_url": "https://psc.ga.gov/search/facts-document/?documentId=223495",
+        "accession": null,
+        "issued_date": "2025-07-31",
+        "docket": "44280",
+        "captured_at": "2026-09-24",
+        "source_note": "Pages 1–3 visually inspected from the image-only PDF. Page 1 distinguishes decision July 1, 2025 from filing July 31, 2025; issued_date uses the filed order date. Caption identifies the 2022 Rate Case and extension of the Alternate Rate Plan. 15 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/ga-expansion-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "visual pages 1–3",
+      "review_note": "Pages 1–3 visually inspected from the image-only PDF. Page 1 distinguishes decision July 1, 2025 from filing July 31, 2025; issued_date uses the filed order date. Caption identifies the 2022 Rate Case and extension of the Alternate Rate Plan."
+    }
+  ],
+  "failures": [],
+  "already_held": 0,
+  "results_count": 35,
+  "truncated": false
+}

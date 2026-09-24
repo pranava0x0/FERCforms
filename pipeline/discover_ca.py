@@ -71,13 +71,14 @@ def failure(url: str, exc: Exception) -> None:
     logger.error('%s: %s', url, exc)
 
 
-def download(session: requests.Session, url: str, dest: Path, max_bytes: int) -> str:
+def download(session: requests.Session, url: str, dest: Path, max_bytes: int, validate_url=None) -> str:
     """Stream one response with a deadline; never cache partial/error content."""
+    validate_url = validate_url or assert_host
     temporary = dest.with_suffix(dest.suffix + '.part')
     started = time.monotonic()
     try:
         for _ in range(6):
-            assert_host(url)
+            validate_url(url)
             time.sleep(config.REQUEST_DELAY_SECONDS)
             with session.get(url, stream=True, timeout=(15, 40), allow_redirects=False) as response:
                 response.raise_for_status()

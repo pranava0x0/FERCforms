@@ -7,9 +7,13 @@ Ideas, features, enhancements. Each item: brief description + priority (**low / 
 ## Current priorities — 2026-09-24
 
 This queue supersedes the historical ordering below. [Stocktake](docs/stocktake-2026-09-24.md)
-contains evidence, acceptance criteria and alternatives. Current corpus after the CA expansion: **459 documents**;
-only **14/92 state audits** and **1/29 prudence reviews** contain extracted findings;
-**0/125 rate-case documents** do. Breadth is not docket completeness.
+contains evidence, acceptance criteria and alternatives. Current corpus after the seven-state expansion: **473 documents**;
+only **14/93 state audits** and **1/29 prudence reviews** contain extracted findings;
+**0/136 rate-case documents** do. Breadth is not docket completeness.
+
+Seven-state refresh added 14 official PDFs (VA1, TX2, PA3, NY1, OH1, GA3, OR3),
+including the 2026 PECO MEI. Reusable discovery and review receipts shipped;
+[coverage and remaining seams](docs/state-expansion-2026-09-24.md).
 
 1. **P0: publication and rerun safety.** Approved-record inventory gate; discovery candidates
    cannot publish; unify `sources`/`structure` dispatch; reject changed source identity rather

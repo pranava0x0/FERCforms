@@ -1,0 +1,30 @@
+{
+  "collection": "state_rate_case",
+  "jurisdiction": "TX",
+  "source": "Public Utility Commission of Texas",
+  "doc_type": "base rate order",
+  "id": "2025-03-13_centerpoint-houston_tx-56211-rate-order",
+  "company": "CenterPoint Energy Houston Electric, LLC",
+  "company_raw": "CenterPoint Energy Houston Electric, LLC",
+  "docket": "56211",
+  "docket_full": null,
+  "issued_date": "2025-03-13",
+  "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=518",
+  "pdf_download_url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+  "captured_at": "2026-09-24",
+  "source_note": "PUCT final order in CenterPoint Houston base rate case, Item 518. Printed page 1 (PDF page 2) says commission approves an unopposed agreement and a $46,577,524.40 total revenue reduction. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-56211.json.",
+  "archived_via": null,
+  "page_count": 29,
+  "scanned_pages": [
+    1
+  ],
+  "ocr_used": false,
+  "audit_period": null,
+  "industry": "electric",
+  "audit_type": null,
+  "functions": [],
+  "forms": [],
+  "finding_count": 0,
+  "findings": [],
+  "structured": false
+}

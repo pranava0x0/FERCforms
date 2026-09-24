@@ -1,0 +1,115 @@
+{
+  "jurisdiction": "OR",
+  "captured_at": "2026-09-24T13:38:09.063481+00:00",
+  "target": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+  "match": "24-447|25-136",
+  "search_text": "Order",
+  "scope": "One index page; GA at most 50 matching filings. Not a completeness claim.",
+  "indexes": [
+    {
+      "url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+      "resolved_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+      "sha256": "86c4141412a2a76d0e6a44694fbcca9a29a19b50cad80957088bf06de1cb2f75"
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=25-136",
+      "label": "",
+      "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+      "pdf_sha256": "a8816a96da67bca4fa9d12121eea9c51e3184f828c80d30a7f5534c9c575049c",
+      "resolved_url": "https://apps.puc.state.or.us/orders/2025ords/25-136.pdf",
+      "downloaded_at": "2026-09-24T13:38:16.857832+00:00",
+      "page_count": 13,
+      "bytes": 5247313,
+      "cache_path": "data/raw/state_portals/6be99d096afe7ec25b32beae516d32c21623f88cf1714950e086ccc5b9a76f6e.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": ""
+        },
+        {
+          "pdf_page": 2,
+          "text": ""
+        },
+        {
+          "pdf_page": 3,
+          "text": ""
+        }
+      ],
+      "index_metadata": null,
+      "needs_visual_review": true,
+      "reviewed_metadata": {
+        "id": "2025-04-11_pacificorp_or-ue433-reconsideration",
+        "company": "PacifiCorp",
+        "collection": "state_rate_case",
+        "jurisdiction": "OR",
+        "source": "Oregon Public Utility Commission",
+        "doc_type": "Order 25-136 — Reconsideration or Rehearing Denied",
+        "industry": "electric",
+        "pdf_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=25-136",
+        "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+        "accession": null,
+        "issued_date": "2025-04-11",
+        "docket": "UE 433",
+        "captured_at": "2026-09-24",
+        "source_note": "Pages 1–3 visually inspected because the PDF lacks a text layer. Entered April 11, 2025. Reconsideration of Order 24-447 denied; page 2 discusses wildfire investment prudence and Gateway South. Caption also lists UM 2116, UM 2220 and UM 2161. 13 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/or-pacificorp-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "visual pages 1–3",
+      "review_note": "Pages 1–3 visually inspected because the PDF lacks a text layer. Entered April 11, 2025. Reconsideration of Order 24-447 denied; page 2 discusses wildfire investment prudence and Gateway South. Caption also lists UM 2116, UM 2220 and UM 2161."
+    },
+    {
+      "url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=24-447",
+      "label": "",
+      "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+      "pdf_sha256": "c86248bf6acc6b2bb10e663a91f32ab2e33a81547867eb8ef4b9bd53c148f976",
+      "resolved_url": "https://apps.puc.state.or.us/orders/2024ords/24-447.pdf",
+      "downloaded_at": "2026-09-24T13:38:22.085987+00:00",
+      "page_count": 129,
+      "bytes": 764531,
+      "cache_path": "data/raw/state_portals/b8b413527c88f912a6ca256ce59a0d33839b5427aeff175fa0964c9b954bc5a1.pdf",
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": "ORDER NO. 24-447 \n \n \n \n \n \n \n \nENTERED Dec 19, 2024\nBEFORE THE PUBLIC UTILITY COMMISSION \nOF OREGON \nUE 433\nIn the Matters of\nPACIFICORP dba PACIFIC POWER, \n \nRequest for a General Rate Revision \n(UE 433), \n \nDeferred Accounting Related to Wildfire \nDamage and Restoration Costs (UM 2116), \nDeferred Accounting for Operating Costs \nand Capital Investments to Implement the \nCompany’s Distribution System Plan \n(UM 2220), and  \n \nDeferred Accounting of Deer Creek Mine \nRoyalty Payment Costs (UM 2161).\n \n \n \n \n \n \nORDER\nDISPOSITION: \nAPPLICATION FOR GENERAL RATE REVISION APPROVED \nAS REVISED\nI. \nSUMMARY \nThis order addresses PacifiCorp, dba Pacific Power’s request for a general rate revision. \nIn this general rate case, we approve an increase to PacifiCorp’s revenue requirement of \napproximately 8.5 percent from the company’s previous base rates, to be effective \nJanuary 1, 2025. Other rate changes from separate dockets, including a stipulation we \napproved for PacifiCorp’s power costs forecasted for 2025, will also go into effect on \nJanuary 1. These other changes will reduce the overall combined increase to PacifiCorp’s \nOregon revenue requirement on January 1, 2025, lowering it to an overall increase of \napproximately 7 percent. More detailed rate impacts, including how this overall increase \nwill impact residential bills and other customer classes, will be provided after the PUC \nreviews the company’s compliance filing with this order.  \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "ORDER NO. 24-447 \n2\nThe 8.5 percent increase we adopt after our extensive review of this general rate case is a \nsmaller increase than PacifiCorp requested. In its initial filing, PacifiCorp sought a rate \nincrease of approximately 17.9 percent, which it later lowered to approximately \n$208.8 million, or 11.2 percent. Although our review—aided by scrutiny from PUC Staff \nand other participants—allowed us to reduce PacifiCorp’s request, this may be little\ncomfort to those who provided public comment describing poor responsiveness, \nreliability and customer service from the company, along with their own economic \nhardships. We take the step of raising rates only after significant scrutiny and making all \nreductions we deem consistent with customers’ interests, reaching the independent \nconclusion that customers would face higher costs and further degradation of service in \nthe future if we cut further.  \nAs regulators, our job is to set customer rates to cover the reasonable cost of utility \nservice. We hold utilities accountable for performance, not allowing rates to include \nunreasonable or imprudent costs. But when evidence demonstrates an increase in costs \nand risks that would be unavoidable for a well-managed utility, we generally must \nincrease rates accordingly.  \nIn this case, we confront the central question of whether some of the increased costs and \nrisks PacifiCorp faces are self-inflicted and not reasonable, so should not be collected \nthrough customer rates. We uphold the foundation of utility accountability for imprudent \nand unreasonable conduct by requiring PacifiCorp to return with evidence that its conduct \nin 2020 met our prudence standard before recovering all of its 2020 wildfire restoration \ncosts. Yet we also find that many risks and costs would have increased regardless of \nPacifiCorp's conduct, as utility insurers and lenders react to wildfire events,  \nlandscape-level risk changes, and liability constructs across many states. Indeed, many of \nthese risks and costs would confront any company serving PacifiCorp’s territory.  \n \nOver the long-term, customers benefit from utility financial stability through lower costs \nand high-quality service, and PacifiCorp today faces a unique level of financial strain. \nOur order represents a commitment to regulate constructively provided that we see \ncontinued ownership actions to restore financial health, such as the commitment in 2023 \nto the suspension of dividends for five years, and begin to see real indicators of stronger \ncustomer service as financial health improves. At the same time, our order requires the \nutility’s owners to shoulder appropriate weight, including by paying a share of increasing \nwildfire insurance premiums and accepting lower allowed returns in some areas. \nAs to customer impacts, we have recognized the unique hardships faced by the most \nvulnerable. We suspended winter disconnections for bill discount program participants, \nordered PacifiCorp to establish a higher discount for its lowest income customers, and \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "ORDER NO. 24-447 \n3\ndirect PacifiCorp to return promptly with changes to other elements of its bill discount \nprogram that balance reducing energy burden with affordability and equitable impacts on \nall customers. We also set firm, albeit initial, requirements for very large load customers \nto pay their way, adopting new charges to ensure that fluctuations in their expected \ndemand will not increase power and transmission costs for other customers.\nWe decide many issues in the order that follows, balancing short-term rate impacts and \nlong-term customer interests. In doing so, we always maintain a focus on the core \ncustomer needs for safety, reliability, and affordability in their essential utility services.  \nII. \nBACKGROUND AND PROCEDURAL HISTORY\n \nOn February 14, 2024, PacifiCorp filed Advice No. 24-001 to request a general rate \nincrease for its Oregon retail customers as of January 1, 2025. In these proceedings, we \ninvestigated the propriety and reasonableness of the proposed tariffs. Staff of the Public \nUtility Commission of Oregon; Alliance of Western Energy Consumers (AWEC); \nAmazon Data Services (ADS); Calpine Energy Solutions, LLC (Calpine); Coalition of \nCommunities of Color; Community Energy Project Inc. (CEP); Data Center Coalition \n(DCC); Fred Meyer Stores and Quality Food Centers, Divisions of The Kroger Co. \n(Fred Meyer); Klamath Basin Water Users Protective Association dba Klamath Water \nUsers Association (KWUA); Oregon Citizens’ Utility Board (CUB); Verde; \nVictor Palfreyman on behalf of the certified class in James v. PacifiCorp; Vitesse, LLC; \nand Walmart Inc.1 all participated as parties to these proceedings. During the \ninvestigation, the parties filed testimony, exhibits, and briefing. PacifiCorp responded to \na bench request on March 26 and October 21, 2024.  \nThe Commission’s Administrative Hearings Division held a workshop on intervenor \nfunding and rate case processes on March 20, 2024. The general public was given the \nopportunity to provide comments on PacifiCorp’s filing at a public comment meeting on \nApril 30, 2024, via Zoom video conference. Members of the public also submitted \nsignificant written comments on PacifiCorp’s filing.  \nOn June 28, 2024, an Administrative Law Judge (ALJ) ruling granted in part CUB’s \nmotion to compel production of certain non-privileged documents. On August 22, 2024, \nan ALJ ruling allowed AWEC leave to file supplemental testimony. On August 30, 2024, \nOrder No. 24-305 denied PacifiCorp’s motion to enforce an ALJ ruling regarding \nVictor Palfreyman.  \n  \n \n1 Mr. Palfreyman’s petition to intervene was contested and was granted with conditions. \n"
+        }
+      ],
+      "index_metadata": null,
+      "needs_visual_review": false,
+      "reviewed_metadata": {
+        "id": "2024-12-19_pacificorp_or-ue433-final-order",
+        "company": "PacifiCorp",
+        "collection": "state_rate_case",
+        "jurisdiction": "OR",
+        "source": "Oregon Public Utility Commission",
+        "doc_type": "Order 24-447 — General Rate Revision",
+        "industry": "electric",
+        "pdf_url": "https://apps.puc.state.or.us/edockets/orders.asp?OrderNumber=24-447",
+        "source_page_url": "https://apps.puc.state.or.us/edockets/docket.asp?DocketID=24006",
+        "accession": null,
+        "issued_date": "2024-12-19",
+        "docket": "UE 433",
+        "captured_at": "2026-09-24",
+        "source_note": "PDF pages 1–3 text verified. Entered December 19, 2024. Covers general rate revision, wildfire restoration costs, financial risk and large-load cost allocation. Caption also lists UM 2116, UM 2220 and UM 2161. 129 pages. PDF SHA-256, discovery chain and caption evidence: data/sources/or-pacificorp-20260924.json. Metadata-only.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "text pages 1–3",
+      "review_note": "PDF pages 1–3 text verified. Entered December 19, 2024. Covers general rate revision, wildfire restoration costs, financial risk and large-load cost allocation. Caption also lists UM 2116, UM 2220 and UM 2161."
+    }
+  ],
+  "failures": [],
+  "already_held": 0
+}

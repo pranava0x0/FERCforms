@@ -3,6 +3,19 @@
 _Created: 2026-05-31_
 _Last run: 2026-09-24_
 
+## Seven-state expansion — September 24, 2026
+
+Full suite: **375 passed, 15 skipped**, including **100 browser tests** (195.6 seconds).
+After the live NY title-selector correction, **10 focused scraper/evidence checks passed**.
+Fourteen added browser cases open each state's new metadata-only record at 375px and 1280px;
+source links, loading, metadata-only labels and no horizontal overflow verified.
+All 459 prior report objects unchanged; 14 new records bring the corpus to 473.
+Repeat GA discovery: 0 new / 3 held / 0 failures; OR: 0 new / 2 held / 0 failures.
+NY returned no matching final order in the sampled search results; the separately located
+official order was caption/hash checked. This is not a completeness result.
+PA repeat ingestion: 374 pages, 1.73 seconds, 87.3 MB peak RSS. Index gzip grew 873 bytes.
+[Evidence and limitations](docs/state-expansion-2026-09-24.md).
+
 ## California expansion — September 24, 2026
 
 Final full suite: **352 passed, 15 skipped** (uncached historical PDF/text fixtures).

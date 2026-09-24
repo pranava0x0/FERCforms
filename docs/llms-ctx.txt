@@ -1,4 +1,4 @@
-<project title="FERC Audit Explorer" summary="459 structured records (126 FERC audits, 29 prudence reviews, 92 state PUC audits); 861 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
+<project title="FERC Audit Explorer" summary="473 structured records (126 FERC audits, 29 prudence reviews, 93 state PUC audits); 861 verbatim findings of noncompliance + staff recommendations. Independent public-interest tool, not affiliated with FERC.">
 Machine-readable context generated from the FERC Audit Explorer corpus (2026-09-24). Verbatim findings from FERC audits, FERC prudence reviews, and state PUC/PSC/SCC audits. Primary source: https://www.ferc.gov/audits. Themes are transparent keyword tags, never LLM judgement. The same data backs data/reports.json and llms-full.txt.
 <docs>
 <doc title="Niagara Mohawk Power Corporation" collection="FERC Audits" docket="FA25-3-000" issued="2026-09-18" industry="electric" source="https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260918-3038">
@@ -4220,6 +4220,10 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 <doc title="Connecticut electric distribution companies (Eversource / United Illuminating)" collection="State PUC Audits" docket="17-12-03RE011" issued="n/a" industry="electric" source="https://portal.ct.gov/pura/industries/rate-case-information">
 Listed for reference (not machine-parsed into findings).
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
+</doc>
+<doc title="PECO Energy Company" collection="State PUC Audits" docket="D-2025-3053971" issued="n/a" industry="electric" source="https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026">
+Listed for reference (not machine-parsed into findings).
+Cover visually verified: issued February 2026; no exact issue day stated. Public release March 12, 2026. Cover docket D-2025-3053971 and PECO identity verified; PDF pages 2–3 contents and page 5 introduction reviewed. Covers electric and gas operations, billing, overtime and implementation of earlier audit recommendations. MEI format is not supported by the M&amp;O parser, so metadata-only. PDF hash and caption evidence: data/sources/eastern-pa-peco-mei.json.
 </doc>
 <doc title="Otter Tail Power Company" collection="State PUC Audits" docket="n/a" issued="n/a" industry="electric" source="https://www.apsc.arkansas.gov/filings/">
 Listed for reference (not machine-parsed into findings).

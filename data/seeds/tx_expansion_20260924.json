@@ -1,0 +1,40 @@
+[
+  {
+    "id": "2025-03-13_centerpoint-houston_tx-56211-rate-order",
+    "company": "CenterPoint Energy Houston Electric, LLC",
+    "collection": "state_rate_case",
+    "jurisdiction": "TX",
+    "source": "Public Utility Commission of Texas",
+    "doc_type": "base rate order",
+    "industry": "electric",
+    "pdf_url": "https://interchange.puc.texas.gov/Documents/56211_518_1478763.PDF",
+    "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=56211&itemNumber=518",
+    "accession": null,
+    "issued_date": "2025-03-13",
+    "docket": "56211",
+    "captured_at": "2026-09-24",
+    "source_note": "PUCT final order in CenterPoint Houston base rate case, Item 518. Printed page 1 (PDF page 2) says commission approves an unopposed agreement and a $46,577,524.40 total revenue reduction. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-56211.json.",
+    "archived_via": null,
+    "parse": false,
+    "fetch": true
+  },
+  {
+    "id": "2025-12-12_centerpoint-houston_tx-58185-eecrf-order",
+    "company": "CenterPoint Energy Houston Electric, LLC",
+    "collection": "state_rate_case",
+    "jurisdiction": "TX",
+    "source": "Public Utility Commission of Texas",
+    "doc_type": "energy efficiency cost recovery factor order",
+    "industry": "electric",
+    "pdf_url": "https://interchange.puc.texas.gov/Documents/58185_46_1566146.PDF",
+    "source_page_url": "https://interchange.puc.texas.gov/search/documents/?controlNumber=58185&itemNumber=46",
+    "accession": null,
+    "issued_date": "2025-12-12",
+    "docket": "58185",
+    "captured_at": "2026-09-24",
+    "source_note": "PUCT order adjusting CenterPoint Houston energy efficiency cost recovery factor for program year 2026, Item 46. Printed page 1 (PDF page 2) states approximately $95,837,175 in annual recovery. Listed for reference; no findings parsed. Signature date visually verified on the last PDF page. PDF hash and caption evidence: data/sources/eastern-tx-58185.json.",
+    "archived_via": null,
+    "parse": false,
+    "fetch": true
+  }
+]

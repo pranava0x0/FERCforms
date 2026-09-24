@@ -1,5 +1,16 @@
 # Issues
 
+## 2026-09-24 · seven-state expansion
+
+- Added 14 verified official PDFs across VA, TX, PA, NY, OH, GA and OR; 473 total.
+- GA public filing API and OR docket/order redirects now have reusable scripts. Legacy OR
+  encoding handled; GA/OR scans manually reviewed. CPUC download bounds reused by both scripts.
+- Added PECO 2026 MEI as metadata-only. Unsupported MEI extraction remains open.
+- OH regulator performance audit is reference material; PUCO DIS utility-document access remains open.
+- TX multi-attachment settlement is recorded as unselected, not silently treated as one PDF.
+- Existing 459 report objects unchanged. Evidence and remaining targets: [refresh report](docs/state-expansion-2026-09-24.md).
+
+
 ## 2026-09-24 California source expansion
 
 Added 15 verified PDFs through a reusable CPUC discovery/metadata-ingest CLI. Separate candidate

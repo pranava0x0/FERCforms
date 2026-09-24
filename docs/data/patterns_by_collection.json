@@ -1376,12 +1376,12 @@
     "generated_at": "2026-09-24"
   },
   "state_audit": {
-    "report_count": 92,
+    "report_count": 93,
     "finding_count": 146,
     "other_matter_count": 0,
     "recommendation_count": 547,
     "by_industry": {
-      "electric": 66,
+      "electric": 67,
       "gas": 23,
       "unknown": 3
     },
@@ -1406,7 +1406,7 @@
     "by_jurisdiction": [
       {
         "jurisdiction": "PA",
-        "report_count": 14,
+        "report_count": 15,
         "finding_count": 106
       },
       {
@@ -2374,12 +2374,12 @@
     "generated_at": "2026-09-24"
   },
   "state_rate_case": {
-    "report_count": 125,
+    "report_count": 136,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
-      "electric": 113,
+      "electric": 124,
       "gas": 10,
       "unknown": 2
     },
@@ -2393,9 +2393,9 @@
       "2021": 5,
       "2022": 6,
       "2023": 9,
-      "2024": 24,
-      "2025": 40,
-      "2026": 5
+      "2024": 27,
+      "2025": 46,
+      "2026": 7
     },
     "by_function": {},
     "by_jurisdiction": [
@@ -2410,8 +2410,23 @@
         "finding_count": 0
       },
       {
+        "jurisdiction": "TX",
+        "report_count": 7,
+        "finding_count": 0
+      },
+      {
+        "jurisdiction": "VA",
+        "report_count": 7,
+        "finding_count": 0
+      },
+      {
         "jurisdiction": "SC",
         "report_count": 7,
+        "finding_count": 0
+      },
+      {
+        "jurisdiction": "GA",
+        "report_count": 6,
         "finding_count": 0
       },
       {
@@ -2420,7 +2435,7 @@
         "finding_count": 0
       },
       {
-        "jurisdiction": "VA",
+        "jurisdiction": "OR",
         "report_count": 6,
         "finding_count": 0
       },
@@ -2435,7 +2450,7 @@
         "finding_count": 0
       },
       {
-        "jurisdiction": "TX",
+        "jurisdiction": "NY",
         "report_count": 5,
         "finding_count": 0
       },
@@ -2470,16 +2485,6 @@
         "finding_count": 0
       },
       {
-        "jurisdiction": "NY",
-        "report_count": 4,
-        "finding_count": 0
-      },
-      {
-        "jurisdiction": "GA",
-        "report_count": 4,
-        "finding_count": 0
-      },
-      {
         "jurisdiction": "SD",
         "report_count": 4,
         "finding_count": 0
@@ -2495,11 +2500,6 @@
         "finding_count": 0
       },
       {
-        "jurisdiction": "OR",
-        "report_count": 3,
-        "finding_count": 0
-      },
-      {
         "jurisdiction": "NE",
         "report_count": 3,
         "finding_count": 0
@@ -2507,6 +2507,11 @@
       {
         "jurisdiction": "WI",
         "report_count": 3,
+        "finding_count": 0
+      },
+      {
+        "jurisdiction": "PA",
+        "report_count": 2,
         "finding_count": 0
       },
       {
@@ -2658,11 +2663,12 @@
           "tariff"
         ],
         "finding_count": 0,
-        "report_count": 7,
+        "report_count": 8,
         "example_titles": [],
         "by_year": {
           "2019": 1,
           "2023": 1,
+          "2024": 1,
           "2025": 4
         },
         "top_companies": [
@@ -2683,7 +2689,7 @@
             "report_count": 1
           },
           {
-            "company": "Wisconsin Electric Power Company (We Energies)",
+            "company": "PECO Energy Company",
             "report_count": 1
           }
         ]
@@ -2700,15 +2706,20 @@
           "rate design"
         ],
         "finding_count": 0,
-        "report_count": 5,
+        "report_count": 6,
         "example_titles": [],
         "by_year": {
           "2023": 2,
+          "2024": 1,
           "2025": 1
         },
         "top_companies": [
           {
             "company": "Ameren Illinois Company",
+            "report_count": 1
+          },
+          {
+            "company": "Portland General Electric Company",
             "report_count": 1
           },
           {
@@ -2721,10 +2732,6 @@
           },
           {
             "company": "Black Hills/Nebraska Gas Utility Company, LLC d/b/a Black Hills Energy",
-            "report_count": 1
-          },
-          {
-            "company": "The Empire District Electric Company d/b/a Liberty",
             "report_count": 1
           }
         ]
@@ -2746,18 +2753,23 @@
           "securitization"
         ],
         "finding_count": 0,
-        "report_count": 4,
+        "report_count": 5,
         "example_titles": [],
         "by_year": {
           "2022": 1,
           "2023": 1,
           "2024": 1,
-          "2025": 1
+          "2025": 1,
+          "2026": 1
         },
         "top_companies": [
           {
             "company": "Florida investor-owned electric utilities (storm protection plan cost recovery)",
             "report_count": 2
+          },
+          {
+            "company": "Georgia Power Company",
+            "report_count": 1
           },
           {
             "company": "Appalachian Power Company and Wheeling Power Company",
@@ -2875,16 +2887,18 @@
     "generated_at": "2026-09-24"
   },
   "state_reference": {
-    "report_count": 87,
+    "report_count": 89,
     "finding_count": 0,
     "other_matter_count": 0,
     "recommendation_count": 0,
     "by_industry": {
       "unknown": 84,
-      "electric": 3
+      "electric": 4,
+      "other": 1
     },
     "by_year": {
-      "2026": 3
+      "2025": 1,
+      "2026": 4
     },
     "by_function": {},
     "by_jurisdiction": [
@@ -2929,6 +2943,11 @@
         "finding_count": 0
       },
       {
+        "jurisdiction": "GA",
+        "report_count": 2,
+        "finding_count": 0
+      },
+      {
         "jurisdiction": "MT",
         "report_count": 2,
         "finding_count": 0
@@ -2939,12 +2958,12 @@
         "finding_count": 0
       },
       {
-        "jurisdiction": "WI",
+        "jurisdiction": "OH",
         "report_count": 1,
         "finding_count": 0
       },
       {
-        "jurisdiction": "GA",
+        "jurisdiction": "WI",
         "report_count": 1,
         "finding_count": 0
       }

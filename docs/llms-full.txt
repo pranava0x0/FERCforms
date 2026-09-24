@@ -1,6 +1,6 @@
 # FERC Audit Explorer — full structured corpus
 
-> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 459 records, 861 findings, 2099 recommendations. Generated 2026-09-24.
+> All structured records across FERC audits, FERC prudence reviews, and state PUC audits: findings (verbatim) plus staff recommendations, with a provenance note for documents listed for reference. 473 records, 861 findings, 2099 recommendations. Generated 2026-09-24.
 
 Primary source: https://www.ferc.gov/audits. Findings and recommendations are quoted verbatim; metadata-only documents (legal orders, testimony, settlements) carry their source note instead. Generated from the same data as data/reports.json.
 
@@ -7767,6 +7767,17 @@ Connecticut PURA Final Decision, Docket No. 20-08-03 — Investigation into the 
 - Status: listed for reference (not machine-parsed into findings)
 
 Connecticut PURA Decision (Phase 1A), Docket No. 17-12-03RE011 — PURA Investigation into Distribution System Planning of the Electric Distribution Companies, New Rate Designs (Eversource / United Illuminating) (23 pp). Listed for reference (metadata-only). Source: Connecticut PURA (portal.ct.gov/-/media/pura/electric/decision--phase-1a.pdf).
+
+---
+
+## PECO Energy Company
+- Collection: State PUC Audits | Source: Pennsylvania Public Utility Commission, Bureau of Audits
+- Docket: D-2025-3053971 | Audit type: n/a
+- Issued: n/a | Industry: electric | FERC Form: n/a
+- Source page: https://www.puc.pa.gov/press-release/2026/puc-releases-management-efficiency-investigation-report-on-peco-energy-company-03122026
+- Status: listed for reference (not machine-parsed into findings)
+
+Cover visually verified: issued February 2026; no exact issue day stated. Public release March 12, 2026. Cover docket D-2025-3053971 and PECO identity verified; PDF pages 2–3 contents and page 5 introduction reviewed. Covers electric and gas operations, billing, overtime and implementation of earlier audit recommendations. MEI format is not supported by the M&O parser, so metadata-only. PDF hash and caption evidence: data/sources/eastern-pa-peco-mei.json.
 
 ---
 

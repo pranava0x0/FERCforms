@@ -1,0 +1,82 @@
+{
+  "captured_at": "2026-09-24",
+  "state": "PA",
+  "docket_query": null,
+  "index_url": "https://www.puc.pa.gov/press-release/2026/puc-issues-decision-in-ppl-electric-rate-proceeding-06042026",
+  "scope": "Observed links only; review captions before seeding",
+  "candidates": [
+    {
+      "url": "https://www.puc.pa.gov/pcdocs/1923934.pdf",
+      "label": "adopt the recommendations",
+      "index_url": "https://www.puc.pa.gov/press-release/2026/puc-issues-decision-in-ppl-electric-rate-proceeding-06042026",
+      "source_page_url": "https://www.puc.pa.gov/press-release/2026/puc-issues-decision-in-ppl-electric-rate-proceeding-06042026",
+      "cache_path": "data/raw/eastern_discovery/pa/87787bf9a91ccdb3/233e56e017450085bc36e370bf561a2db5032f9b36664564d214e45b9ed72704.pdf",
+      "resolved_url": "https://www.puc.pa.gov/pcdocs/1923934.pdf",
+      "downloaded_at": "2026-09-24T13:38:36.279017+00:00",
+      "pdf_sha256": "d743c4db623549effae0d9e4092ca0d317f02bdd69d8a28faab735535a16dda0",
+      "page_count": 306,
+      "bytes": 1831534,
+      "caption_pages": [
+        {
+          "pdf_page": 1,
+          "text": " \nBEFORE THE \nPENNSYLVANIA PUBLIC UTILITY COMMISSION \n \n \n \nPennsylvania Public Utility Commission  \n: \n \nR-2025-3057164 \nCoalition For Affordable Utility Services and \n: \n \n \n \n \nEnergy Efficiency in Pennsylvania \n \n: \n \nC-2025-3057844 \nOffice of Small Business Advocate \n \n: \n \nC-2025-3057889 \nOffice of Consumer Advocate \n \n \n: \n \nC-2025-3058130 \nBrad and Jennifer Wooley  \n \n \n: \n \nC-2025-3057946 \nPP&L Industrial Customer Alliance \n \n: \n \nC-2025-3058271 \nConvergent Energy and Power LP  \n \n: \n \nC-2025-3058300 \nSolar Energy Industries Association and   \n: \n \nC-2025-3058251 \nThe Coalition for Community Solar Access \n: \nRik Bhattacharyya  \n \n \n \n: \n \nC-2025-3058846 \nSafiyah Junaid \n \n \n \n \n: \n \nC-2025-3058982 \nStacey Kimmel-Smith \n \n \n \n: \n \nC-2025-3059151 \nJohn Gadomski \n \n \n \n \n: \n \nC-2025-3059330 \nThatcher Graham \n \n \n \n \n: \n \nC-2026-3060429 \nWendy Johnson \n \n \n \n \n: \n \nC-2026-3061012 \nKenneth Johnson \n \n \n \n \n: \n \nC-2026-3061118 \nMary Bainbridge \n \n \n \n \n: \n \nC-2026-3061424 \nDiane Cheer  \n \n \n \n \n: \n \nC-2026-3061706 \nv. \n \n \n \n \n \n: \n \n \n \n \n \n \n \n: \nPPL Electric Utilities Corporation  \n \n: \n \n \n \nRECOMMENDED DECISION \n \nBefore \nChristopher P. Pell \nDeputy Chief Administrative Law Judge \n \nBarbara Shadie Nause \nAdministrative Law Judge \n \n \n"
+        },
+        {
+          "pdf_page": 2,
+          "text": "i \n \nTABLE OF CONTENTS \n \nI. \nINTRODUCTION ....................................................................................................... 1 \nII. \nHISTORY OF THE PROCEEDING .......................................................................... 2 \nIII. FINDINGS OF FACT ................................................................................................. 9 \nIV. PUBLIC INPUT HEARINGS ................................................................................... 17 \nV. \nLEGAL STANDARD/BURDEN OF PROOF ......................................................... 26 \nVI. DESCRIPTION OF THE NON-UNANIMOUS SETTLEMENT............................ 29 \nVII. TERMS AND CONDITIONS OF THE NON-UNANIMOUS SETTLEMENT ..... 30 \nVIII. DISCUSSION OF THE NON-UNANIMOUS SETTLEMENT .............................. 55 \nA. REVENUE REQUIREMENT ............................................................................. 55 \nB. REVENUE ALLOCATION ................................................................................ 63 \nC. RATE DESIGN ................................................................................................... 70 \nD. DISTRIBUTION SYSTEM IMPROVEMENT CHARGE (DSIC) .................... 78 \nE. STORM DAMAGE EXPENSE RIDER (SDER) ............................................... 81 \nF. CUSTOMER SERVICE, LOW INCOME, AND UNIVERSAL SERVICE \nISSUES ................................................................................................................ 84 \n1. Termination of Service Procedures ................................................................ 84 \n2. Medical Certificates ....................................................................................... 86 \n3. Call Center Performance ................................................................................ 91 \n4. Root Cause Analysis ...................................................................................... 96 \n5. Confirmed Low-Income Customers ............................................................... 99 \n6. Maximum CAP Credits ................................................................................ 105 \n7. Low-Income Usage Reduction Program (LIURP) ...................................... 110 \n8. Customer Screening ..................................................................................... 114 \n9. CAP Recovery Offset ................................................................................... 118 \n10. CAP Enrollment ........................................................................................... 121 \n11. CAP Billing Review Process ....................................................................... 127 \n12. Live Customer Service Representative Access for Low-Income Customers ....  \n   ...................................................................................................................... 129 \n"
+        },
+        {
+          "pdf_page": 3,
+          "text": "ii \n \n13. Universal Service and Energy Conservation Plan (USECP) Employees’ \nSalaries and Wages ...................................................................................... 131 \n14. Universal Service Rider (USR) Reconciliation ........................................... 135 \n15. Reconnection Fees ....................................................................................... 135 \n16. Security Deposits ......................................................................................... 139 \nG. VEGETATION MANAGEMENT ....................................................................... 146 \nH. RELIABILITY ..................................................................................................... 149 \nI. LARGE LOAD INTERCONNECTION .............................................................. 153 \nJ. MAXIMUM REGISTERED PEAK LOAD ........................................................ 184 \nK. ELECTRIC VEHICLES (EV) TIME-OF-USE (TOU) CHARGING REBATE \nPROGRAM AND DIRECT CURRENT FAST CHARGER (DCFC) RATE ..... 203 \nL. IT UPGRADES .................................................................................................... 209 \n1.  Capitalization of IT Upgrades ......................................................................... 209 \n2.  Coordination of IT Upgrades with Electric Generation Suppliers ................. 210 \n3.  Distributed Energy Resources Management System (DERMS) .................... 212 \nM. RETAIL TARIFF ................................................................................................. 215 \n1. Payment Transaction Fees .............................................................................. 215 \n2. Economic Development .................................................................................. 218 \n3. Rule 6 .............................................................................................................. 220 \n4. Alternative Energy Credit (AEC) Ownership ................................................. 221 \n5. Definition of “Tenant” .................................................................................... 223 \n6. Small Business Payment Arrangements ......................................................... 227 \n7. Customer Transformation Equipment Under Rate LP-5 ................................ 229 \nN. SUPPLIER TARIFF ............................................................................................. 231 \nO. BEHIND-THE-METER NON-EXPORTING BATTERY ENERGY ................ 236 \nP. OBJECTION TO THE NON-UNANIMOUS SETTLEMENT ........................... 238 \n1. CGC’s Position ................................................................................................. 238 \n2. PDMP’s Position .............................................................................................. 249 \n3. Disposition ........................................................................................................ 255 \nQ. RECOMMENDATION ........................................................................................ 260 \n"
+        }
+      ],
+      "parent_fetch_check": {
+        "status": 200,
+        "pdf_magic": true,
+        "resolved_url": "https://www.puc.pa.gov/pcdocs/1923934.pdf",
+        "checked_at": "2026-09-24T13:46:31.521883+00:00"
+      },
+      "reviewed_metadata": {
+        "id": "2026-04-17_ppl-electric_pa-r-2025-3057164-recommended-decision",
+        "company": "PPL Electric Utilities Corporation",
+        "collection": "state_rate_case",
+        "jurisdiction": "PA",
+        "source": "Pennsylvania Public Utility Commission",
+        "doc_type": "administrative law judge recommended rate decision",
+        "industry": "electric",
+        "pdf_url": "https://www.puc.pa.gov/pcdocs/1923934.pdf",
+        "source_page_url": "https://www.puc.pa.gov/press-release/2026/puc-issues-decision-in-ppl-electric-rate-proceeding-06042026",
+        "accession": null,
+        "issued_date": "2026-04-17",
+        "docket": "R-2025-3057164",
+        "captured_at": "2026-09-24",
+        "source_note": "ALJ recommended decision in PPL Electric base rate proceeding, 306 pages. It recommends approving a non-unanimous settlement; this is not the Commission final order. PUC June 4, 2026 release says the Commission adopted recommendations with modification. Listed for reference; no findings parsed. Signed decision date April 17, 2026 verified at PDF page 288. PDF hash and caption evidence: data/sources/eastern-pa-ppl-rate.json.",
+        "archived_via": null,
+        "parse": false,
+        "fetch": true
+      },
+      "review_method": "Parent read PDF pages 1–3; additional date evidence recorded in source_note.",
+      "additional_pages": [
+        {
+          "pdf_page": 288,
+          "text": "284 \n \n6. \nThat the Commission’s investigation at Docket No. R-2025-3057164 \nand the formal Complaints at Docket Nos. C-2025-3057844, C-2025-3057889, C-2025-\n3058130, C-2025-3058271, C-2025-3058300; C-2025-3058251, C-2025-3057946. C-\n2025-3058846, C-2025-3058982, C-2025-3059151, C-2025-3059330, C-2026-3060429, \nC-2026-3061012, C-2026-3061118, C-2026-3061424 and C-2026-3061706 be marked \nclosed. \n \n \nDate: April 17, 2026 \n \n \n \n \n \n/s/ \n \n \n \n \n \n \n \n \n \n \nChristopher P. Pell \n \n \n \n \n \n \n \nDeputy Chief Administrative Law Judge  \n \n \n \n \n \n \n \n \n \n \n \n/s/ \n \n \n \n \n \n \n \n \n \n \n \nBarbara Shadie Nause \n \n \n \n \n \n \n \nAdministrative Law Judge \n \n"
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://www.puc.pa.gov/pcdocs/1933620.pdf",
+      "error": "Pages 1-3 need OCR/manual inspection"
+    }
+  ],
+  "already_held": 0,
+  "jurisdiction": "PA",
+  "indexes": [
+    {
+      "cache_path": "data/raw/eastern_discovery/pa/87787bf9a91ccdb3/index.html",
+      "sha256": "362ee72bc708b948e38d764f58b162ea95f91421a54c14dfdf76a9d3eae12c92",
+      "note": "Saved discovery response; original URL is receipt index_url or candidate detail_url."
+    }
+  ]
+}
